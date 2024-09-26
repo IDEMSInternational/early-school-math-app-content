@@ -1,0 +1,164 @@
+{
+  "template_actions": [
+    {
+      "type": "app_update",
+      "count": 1
+    },
+    {
+      "type": "emit: completed",
+      "count": 58
+    },
+    {
+      "type": "emit: force_reload",
+      "count": 1
+    },
+    {
+      "type": "emit: force_reprocess",
+      "count": 4
+    },
+    {
+      "type": "emit: server_sync",
+      "count": 1
+    },
+    {
+      "type": "emit: set_language",
+      "count": 1
+    },
+    {
+      "type": "emit: uncompleted",
+      "count": 58
+    },
+    {
+      "type": "feedback",
+      "count": 7
+    },
+    {
+      "type": "go_to",
+      "count": 11
+    },
+    {
+      "type": "go_to_url",
+      "count": 3
+    },
+    {
+      "type": "reset_app",
+      "count": 1
+    },
+    {
+      "type": "set_field",
+      "count": 7
+    },
+    {
+      "type": "set_local",
+      "count": 4
+    }
+  ],
+  "template_components": [
+    {
+      "type": "accordion",
+      "count": 2
+    },
+    {
+      "type": "button",
+      "count": 22
+    },
+    {
+      "type": "debug_toggle",
+      "count": 1
+    },
+    {
+      "type": "display_group",
+      "count": 35
+    },
+    {
+      "type": "image",
+      "count": 3
+    },
+    {
+      "type": "items",
+      "count": 13
+    },
+    {
+      "type": "qr_code",
+      "count": 1
+    },
+    {
+      "type": "radio_button_grid",
+      "count": 1
+    },
+    {
+      "type": "select_text",
+      "count": 1
+    },
+    {
+      "type": "set_field",
+      "count": 10
+    },
+    {
+      "type": "set_variable",
+      "count": 251
+    },
+    {
+      "type": "template",
+      "count": 64
+    },
+    {
+      "type": "text",
+      "count": 40
+    },
+    {
+      "type": "text_area",
+      "count": 2
+    },
+    {
+      "type": "tile_component",
+      "count": 3
+    },
+    {
+      "type": "title",
+      "count": 22
+    }
+  ],
+  "flows_by_type": [
+    {
+      "type": "data_list",
+      "subtype": null,
+      "total": 75
+    },
+    {
+      "type": "data_list",
+      "subtype": "app_config_language_list",
+      "total": 1
+    },
+    {
+      "type": "data_list",
+      "subtype": "lifecycle_actions",
+      "total": 1
+    },
+    {
+      "type": "generator",
+      "subtype": null,
+      "total": 1
+    },
+    {
+      "type": "global",
+      "subtype": null,
+      "total": 2
+    },
+    {
+      "type": "template",
+      "subtype": null,
+      "total": 31
+    },
+    {
+      "type": "template",
+      "subtype": "generated",
+      "total": 58
+    },
+    {
+      "type": "tour",
+      "subtype": null,
+      "total": 6
+    }
+  ]
+}
