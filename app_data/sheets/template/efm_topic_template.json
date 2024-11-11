@@ -1,85 +1,76 @@
 {
   "flow_type": "template",
-  "flow_name": "efm_pd_template",
+  "flow_name": "efm_topic_template",
   "status": "released",
   "rows": [
     {
-      "name": "efm_pd_ptr",
-      "value": "@@fields.current_pd",
+      "name": "efm_topic",
+      "value": "@@fields.current_topic",
       "_translations": {
         "value": {}
       },
       "type": "set_variable",
-      "_nested_name": "efm_pd_ptr",
+      "_nested_name": "efm_topic",
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@@fields.current_pd",
-            "matchedExpression": "@fields.current_pd",
+            "fullExpression": "@@fields.current_topic",
+            "matchedExpression": "@fields.current_topic",
             "type": "fields",
-            "fieldName": "current_pd"
+            "fieldName": "current_topic"
           }
         ]
       },
       "_dynamicDependencies": {
-        "@fields.current_pd": [
+        "@fields.current_topic": [
           "value"
         ]
       }
     },
     {
-      "name": "template_text",
-      "value": "_template",
+      "name": "topic_title",
+      "value": "@local.efm_topic.title",
       "_translations": {
         "value": {}
       },
       "type": "set_variable",
-      "_nested_name": "template_text"
-    },
-    {
-      "name": "pd_title",
-      "value": "@local.efm_pd_ptr.title",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "pd_title",
+      "_nested_name": "topic_title",
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@local.efm_pd_ptr.title",
-            "matchedExpression": "@local.efm_pd_ptr.title",
+            "fullExpression": "@local.efm_topic.title",
+            "matchedExpression": "@local.efm_topic.title",
             "type": "local",
-            "fieldName": "efm_pd_ptr"
+            "fieldName": "efm_topic"
           }
         ]
       },
       "_dynamicDependencies": {
-        "@local.efm_pd_ptr.title": [
+        "@local.efm_topic.title": [
           "value"
         ]
       }
     },
     {
-      "name": "pd_id",
-      "value": "@local.efm_pd_ptr.id",
+      "name": "topic_id",
+      "value": "@local.efm_topic.id",
       "_translations": {
         "value": {}
       },
       "type": "set_variable",
-      "_nested_name": "pd_id",
+      "_nested_name": "topic_id",
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@local.efm_pd_ptr.id",
-            "matchedExpression": "@local.efm_pd_ptr.id",
+            "fullExpression": "@local.efm_topic.id",
+            "matchedExpression": "@local.efm_topic.id",
             "type": "local",
-            "fieldName": "efm_pd_ptr"
+            "fieldName": "efm_topic"
           }
         ]
       },
       "_dynamicDependencies": {
-        "@local.efm_pd_ptr.id": [
+        "@local.efm_topic.id": [
           "value"
         ]
       }
@@ -91,13 +82,13 @@
       "_nested_name": "local_false"
     },
     {
-      "name": "next_pd",
+      "name": "next_topic",
       "value": "@local.false",
       "_translations": {
         "value": {}
       },
       "type": "set_variable",
-      "_nested_name": "next_pd",
+      "_nested_name": "next_topic",
       "_dynamicFields": {
         "value": [
           {
@@ -115,13 +106,13 @@
       }
     },
     {
-      "name": "prev_pd",
+      "name": "prev_topic",
       "value": "@local.false",
       "_translations": {
         "value": {}
       },
       "type": "set_variable",
-      "_nested_name": "prev_pd",
+      "_nested_name": "prev_topic",
       "_dynamicFields": {
         "value": [
           {
@@ -139,13 +130,13 @@
       }
     },
     {
-      "name": "has_pd_been_seen",
+      "name": "has_topic_been_seen",
       "value": "@local.false",
       "_translations": {
         "value": {}
       },
       "type": "set_variable",
-      "_nested_name": "has_pd_been_seen",
+      "_nested_name": "has_topic_been_seen",
       "_dynamicFields": {
         "value": [
           {
@@ -187,60 +178,13 @@
       }
     },
     {
-      "name": "chapter",
-      "value": "Stage",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "chapter"
-    },
-    {
-      "type": "text",
-      "name": "chapter_section",
-      "value": "@local.chapter @local.efm_pd_ptr.chapter",
-      "_translations": {
-        "value": {}
-      },
-      "parameter_list": {
-        "text_align": "center",
-        "style": "small"
-      },
-      "exclude_from_translation": true,
-      "_nested_name": "chapter_section",
-      "_dynamicFields": {
-        "value": [
-          {
-            "fullExpression": "@local.chapter @local.efm_pd_ptr.chapter",
-            "matchedExpression": "@local.chapter",
-            "type": "local",
-            "fieldName": "chapter"
-          },
-          {
-            "fullExpression": "@local.chapter @local.efm_pd_ptr.chapter",
-            "matchedExpression": "@local.efm_pd_ptr.chapter",
-            "type": "local",
-            "fieldName": "efm_pd_ptr"
-          }
-        ]
-      },
-      "_dynamicDependencies": {
-        "@local.chapter": [
-          "value"
-        ],
-        "@local.efm_pd_ptr.chapter": [
-          "value"
-        ]
-      }
-    },
-    {
       "type": "items",
       "name": "find_next_and_prev",
-      "value": "@data.efm_pd",
+      "value": "@data.efm_topics",
       "rows": [
         {
           "name": "do_ids_match",
-          "value": "@item.id == @local.pd_id",
+          "value": "@item.id == @local.topic_id",
           "_translations": {
             "value": {}
           },
@@ -250,16 +194,16 @@
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "@item.id == @local.pd_id",
+                "fullExpression": "@item.id == @local.topic_id",
                 "matchedExpression": "@item.id",
                 "type": "item",
                 "fieldName": "id"
               },
               {
-                "fullExpression": "@item.id == @local.pd_id",
-                "matchedExpression": "@local.pd_id",
+                "fullExpression": "@item.id == @local.topic_id",
+                "matchedExpression": "@local.topic_id",
                 "type": "local",
-                "fieldName": "pd_id"
+                "fieldName": "topic_id"
               }
             ]
           },
@@ -267,30 +211,30 @@
             "@item.id": [
               "value"
             ],
-            "@local.pd_id": [
+            "@local.topic_id": [
               "value"
             ]
           }
         },
         {
-          "name": "has_pd_been_seen",
-          "value": "@local.has_pd_been_seen || @local.do_ids_match",
+          "name": "has_topic_been_seen",
+          "value": "@local.has_topic_been_seen || @local.do_ids_match",
           "_translations": {
             "value": {}
           },
           "exclude_from_translation": true,
           "type": "set_variable",
-          "_nested_name": "find_next_and_prev.has_pd_been_seen",
+          "_nested_name": "find_next_and_prev.has_topic_been_seen",
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "@local.has_pd_been_seen || @local.do_ids_match",
-                "matchedExpression": "@local.has_pd_been_seen",
+                "fullExpression": "@local.has_topic_been_seen || @local.do_ids_match",
+                "matchedExpression": "@local.has_topic_been_seen",
                 "type": "local",
-                "fieldName": "has_pd_been_seen"
+                "fieldName": "has_topic_been_seen"
               },
               {
-                "fullExpression": "@local.has_pd_been_seen || @local.do_ids_match",
+                "fullExpression": "@local.has_topic_been_seen || @local.do_ids_match",
                 "matchedExpression": "@local.do_ids_match",
                 "type": "local",
                 "fieldName": "do_ids_match"
@@ -298,7 +242,7 @@
             ]
           },
           "_dynamicDependencies": {
-            "@local.has_pd_been_seen": [
+            "@local.has_topic_been_seen": [
               "value"
             ],
             "@local.do_ids_match": [
@@ -307,19 +251,19 @@
           }
         },
         {
-          "name": "prev_pd",
-          "value": "data.efm_pd.@item.id",
+          "name": "prev_topic",
+          "value": "data.efm_topics.@item.id",
           "_translations": {
             "value": {}
           },
-          "condition": "!@local.do_ids_match && !@local.has_pd_been_seen",
+          "condition": "!@local.do_ids_match && !@local.has_topic_been_seen",
           "exclude_from_translation": true,
           "type": "set_variable",
-          "_nested_name": "find_next_and_prev.prev_pd",
+          "_nested_name": "find_next_and_prev.prev_topic",
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "data.efm_pd.@item.id",
+                "fullExpression": "data.efm_topics.@item.id",
                 "matchedExpression": "@item.id",
                 "type": "item",
                 "fieldName": "id"
@@ -327,16 +271,16 @@
             ],
             "condition": [
               {
-                "fullExpression": "!@local.do_ids_match && !@local.has_pd_been_seen",
+                "fullExpression": "!@local.do_ids_match && !@local.has_topic_been_seen",
                 "matchedExpression": "!@local.do_ids_match",
                 "type": "local",
                 "fieldName": "do_ids_match"
               },
               {
-                "fullExpression": "!@local.do_ids_match && !@local.has_pd_been_seen",
-                "matchedExpression": "!@local.has_pd_been_seen",
+                "fullExpression": "!@local.do_ids_match && !@local.has_topic_been_seen",
+                "matchedExpression": "!@local.has_topic_been_seen",
                 "type": "local",
-                "fieldName": "has_pd_been_seen"
+                "fieldName": "has_topic_been_seen"
               }
             ]
           },
@@ -347,25 +291,25 @@
             "!@local.do_ids_match": [
               "condition"
             ],
-            "!@local.has_pd_been_seen": [
+            "!@local.has_topic_been_seen": [
               "condition"
             ]
           }
         },
         {
-          "name": "next_pd",
-          "value": "data.efm_pd.@item.id",
+          "name": "next_topic",
+          "value": "data.efm_topics.@item.id",
           "_translations": {
             "value": {}
           },
-          "condition": "!@local.do_ids_match && @local.has_pd_been_seen && !@local.next_pd",
+          "condition": "!@local.do_ids_match && @local.has_topic_been_seen && !@local.next_topic",
           "exclude_from_translation": true,
           "type": "set_variable",
-          "_nested_name": "find_next_and_prev.next_pd",
+          "_nested_name": "find_next_and_prev.next_topic",
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "data.efm_pd.@item.id",
+                "fullExpression": "data.efm_topics.@item.id",
                 "matchedExpression": "@item.id",
                 "type": "item",
                 "fieldName": "id"
@@ -373,22 +317,22 @@
             ],
             "condition": [
               {
-                "fullExpression": "!@local.do_ids_match && @local.has_pd_been_seen && !@local.next_pd",
+                "fullExpression": "!@local.do_ids_match && @local.has_topic_been_seen && !@local.next_topic",
                 "matchedExpression": "!@local.do_ids_match",
                 "type": "local",
                 "fieldName": "do_ids_match"
               },
               {
-                "fullExpression": "!@local.do_ids_match && @local.has_pd_been_seen && !@local.next_pd",
-                "matchedExpression": "@local.has_pd_been_seen",
+                "fullExpression": "!@local.do_ids_match && @local.has_topic_been_seen && !@local.next_topic",
+                "matchedExpression": "@local.has_topic_been_seen",
                 "type": "local",
-                "fieldName": "has_pd_been_seen"
+                "fieldName": "has_topic_been_seen"
               },
               {
-                "fullExpression": "!@local.do_ids_match && @local.has_pd_been_seen && !@local.next_pd",
-                "matchedExpression": "!@local.next_pd",
+                "fullExpression": "!@local.do_ids_match && @local.has_topic_been_seen && !@local.next_topic",
+                "matchedExpression": "!@local.next_topic",
                 "type": "local",
-                "fieldName": "next_pd"
+                "fieldName": "next_topic"
               }
             ]
           },
@@ -399,10 +343,10 @@
             "!@local.do_ids_match": [
               "condition"
             ],
-            "@local.has_pd_been_seen": [
+            "@local.has_topic_been_seen": [
               "condition"
             ],
-            "!@local.next_pd": [
+            "!@local.next_topic": [
               "condition"
             ]
           }
@@ -412,15 +356,15 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@data.efm_pd",
-            "matchedExpression": "@data.efm_pd",
+            "fullExpression": "@data.efm_topics",
+            "matchedExpression": "@data.efm_topics",
             "type": "data",
-            "fieldName": "efm_pd"
+            "fieldName": "efm_topics"
           }
         ]
       },
       "_dynamicDependencies": {
-        "@data.efm_pd": [
+        "@data.efm_topics": [
           "value"
         ]
       }
@@ -443,11 +387,11 @@
               "trigger": "click",
               "action_id": "set_field",
               "args": [
-                "current_pd",
-                "@local.prev_pd"
+                "current_topic",
+                "@local.prev_topic"
               ],
-              "_raw": "click | set_field:current_pd:@local.prev_pd",
-              "_cleaned": "click | set_field:current_pd:@local.prev_pd"
+              "_raw": "click | set_field:current_topic:@local.prev_topic",
+              "_cleaned": "click | set_field:current_topic:@local.prev_topic"
             },
             {
               "trigger": "click",
@@ -459,7 +403,7 @@
               "_cleaned": "click | emit:force_reload"
             }
           ],
-          "condition": "@local.prev_pd",
+          "condition": "@local.prev_topic",
           "parameter_list": {
             "style": "short",
             "text_align": "center"
@@ -468,49 +412,49 @@
             "flex: 30"
           ],
           "exclude_from_translation": true,
-          "_nested_name": "display_group_15.prev_button_1",
+          "_nested_name": "display_group_12.prev_button_1",
           "_dynamicFields": {
             "action_list": {
               "0": {
                 "args": {
                   "1": [
                     {
-                      "fullExpression": "@local.prev_pd",
-                      "matchedExpression": "@local.prev_pd",
+                      "fullExpression": "@local.prev_topic",
+                      "matchedExpression": "@local.prev_topic",
                       "type": "local",
-                      "fieldName": "prev_pd"
+                      "fieldName": "prev_topic"
                     }
                   ]
                 },
                 "_raw": [
                   {
-                    "fullExpression": "click | set_field:current_pd:@local.prev_pd",
-                    "matchedExpression": "@local.prev_pd",
+                    "fullExpression": "click | set_field:current_topic:@local.prev_topic",
+                    "matchedExpression": "@local.prev_topic",
                     "type": "local",
-                    "fieldName": "prev_pd"
+                    "fieldName": "prev_topic"
                   }
                 ],
                 "_cleaned": [
                   {
-                    "fullExpression": "click | set_field:current_pd:@local.prev_pd",
-                    "matchedExpression": "@local.prev_pd",
+                    "fullExpression": "click | set_field:current_topic:@local.prev_topic",
+                    "matchedExpression": "@local.prev_topic",
                     "type": "local",
-                    "fieldName": "prev_pd"
+                    "fieldName": "prev_topic"
                   }
                 ]
               }
             },
             "condition": [
               {
-                "fullExpression": "@local.prev_pd",
-                "matchedExpression": "@local.prev_pd",
+                "fullExpression": "@local.prev_topic",
+                "matchedExpression": "@local.prev_topic",
                 "type": "local",
-                "fieldName": "prev_pd"
+                "fieldName": "prev_topic"
               }
             ]
           },
           "_dynamicDependencies": {
-            "@local.prev_pd": [
+            "@local.prev_topic": [
               "action_list.0.args.1",
               "action_list.0._raw",
               "action_list.0._cleaned",
@@ -521,23 +465,23 @@
         {
           "type": "text",
           "name": "left_spacer",
-          "condition": "!@local.prev_pd",
+          "condition": "!@local.prev_topic",
           "style_list": [
             "flex: 30"
           ],
-          "_nested_name": "display_group_15.left_spacer",
+          "_nested_name": "display_group_12.left_spacer",
           "_dynamicFields": {
             "condition": [
               {
-                "fullExpression": "!@local.prev_pd",
-                "matchedExpression": "!@local.prev_pd",
+                "fullExpression": "!@local.prev_topic",
+                "matchedExpression": "!@local.prev_topic",
                 "type": "local",
-                "fieldName": "prev_pd"
+                "fieldName": "prev_topic"
               }
             ]
           },
           "_dynamicDependencies": {
-            "!@local.prev_pd": [
+            "!@local.prev_topic": [
               "condition"
             ]
           }
@@ -545,7 +489,7 @@
         {
           "type": "text",
           "name": "title",
-          "value": "@local.pd_title",
+          "value": "@local.topic_title",
           "_translations": {
             "value": {}
           },
@@ -556,19 +500,19 @@
           "style_list": [
             "flex: 300"
           ],
-          "_nested_name": "display_group_15.title",
+          "_nested_name": "display_group_12.title",
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "@local.pd_title",
-                "matchedExpression": "@local.pd_title",
+                "fullExpression": "@local.topic_title",
+                "matchedExpression": "@local.topic_title",
                 "type": "local",
-                "fieldName": "pd_title"
+                "fieldName": "topic_title"
               }
             ]
           },
           "_dynamicDependencies": {
-            "@local.pd_title": [
+            "@local.topic_title": [
               "value"
             ]
           }
@@ -585,11 +529,11 @@
               "trigger": "click",
               "action_id": "set_field",
               "args": [
-                "current_pd",
-                "@local.next_pd"
+                "current_topic",
+                "@local.next_topic"
               ],
-              "_raw": "click | set_field:current_pd:@local.next_pd",
-              "_cleaned": "click | set_field:current_pd:@local.next_pd"
+              "_raw": "click | set_field:current_topic:@local.next_topic",
+              "_cleaned": "click | set_field:current_topic:@local.next_topic"
             },
             {
               "trigger": "click",
@@ -601,7 +545,7 @@
               "_cleaned": "click | emit:force_reload"
             }
           ],
-          "condition": "@local.next_pd",
+          "condition": "@local.next_topic",
           "parameter_list": {
             "style": "short",
             "text_align": "center"
@@ -610,49 +554,49 @@
             "flex: 30"
           ],
           "exclude_from_translation": true,
-          "_nested_name": "display_group_15.next_button_1",
+          "_nested_name": "display_group_12.next_button_1",
           "_dynamicFields": {
             "action_list": {
               "0": {
                 "args": {
                   "1": [
                     {
-                      "fullExpression": "@local.next_pd",
-                      "matchedExpression": "@local.next_pd",
+                      "fullExpression": "@local.next_topic",
+                      "matchedExpression": "@local.next_topic",
                       "type": "local",
-                      "fieldName": "next_pd"
+                      "fieldName": "next_topic"
                     }
                   ]
                 },
                 "_raw": [
                   {
-                    "fullExpression": "click | set_field:current_pd:@local.next_pd",
-                    "matchedExpression": "@local.next_pd",
+                    "fullExpression": "click | set_field:current_topic:@local.next_topic",
+                    "matchedExpression": "@local.next_topic",
                     "type": "local",
-                    "fieldName": "next_pd"
+                    "fieldName": "next_topic"
                   }
                 ],
                 "_cleaned": [
                   {
-                    "fullExpression": "click | set_field:current_pd:@local.next_pd",
-                    "matchedExpression": "@local.next_pd",
+                    "fullExpression": "click | set_field:current_topic:@local.next_topic",
+                    "matchedExpression": "@local.next_topic",
                     "type": "local",
-                    "fieldName": "next_pd"
+                    "fieldName": "next_topic"
                   }
                 ]
               }
             },
             "condition": [
               {
-                "fullExpression": "@local.next_pd",
-                "matchedExpression": "@local.next_pd",
+                "fullExpression": "@local.next_topic",
+                "matchedExpression": "@local.next_topic",
                 "type": "local",
-                "fieldName": "next_pd"
+                "fieldName": "next_topic"
               }
             ]
           },
           "_dynamicDependencies": {
-            "@local.next_pd": [
+            "@local.next_topic": [
               "action_list.0.args.1",
               "action_list.0._raw",
               "action_list.0._cleaned",
@@ -663,63 +607,78 @@
         {
           "type": "text",
           "name": "right_spacer",
-          "condition": "!@local.next_pd",
+          "condition": "!@local.next_topic",
           "style_list": [
             "flex: 30"
           ],
-          "_nested_name": "display_group_15.right_spacer",
+          "_nested_name": "display_group_12.right_spacer",
           "_dynamicFields": {
             "condition": [
               {
-                "fullExpression": "!@local.next_pd",
-                "matchedExpression": "!@local.next_pd",
+                "fullExpression": "!@local.next_topic",
+                "matchedExpression": "!@local.next_topic",
                 "type": "local",
-                "fieldName": "next_pd"
+                "fieldName": "next_topic"
               }
             ]
           },
           "_dynamicDependencies": {
-            "!@local.next_pd": [
+            "!@local.next_topic": [
               "condition"
             ]
           }
         }
       ],
-      "name": "display_group_15",
-      "_nested_name": "display_group_15"
+      "name": "display_group_12",
+      "_nested_name": "display_group_12"
     },
     {
       "type": "template",
-      "name": "activity_body_generator",
-      "value": "efm_pd_body_template",
+      "name": "topic_body_generator",
+      "value": "efm_topic_body_template",
       "rows": [
         {
-          "name": "efm_pd_a_ptr",
-          "value": "@local.efm_pd_ptr",
+          "name": "efm_topic_ptr",
+          "value": "@local.efm_topic",
           "_translations": {
             "value": {}
           },
           "type": "set_variable",
-          "_nested_name": "activity_body_generator.efm_pd_a_ptr",
+          "_nested_name": "topic_body_generator.efm_topic_ptr",
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "@local.efm_pd_ptr",
-                "matchedExpression": "@local.efm_pd_ptr",
+                "fullExpression": "@local.efm_topic",
+                "matchedExpression": "@local.efm_topic",
                 "type": "local",
-                "fieldName": "efm_pd_ptr"
+                "fieldName": "efm_topic"
               }
             ]
           },
           "_dynamicDependencies": {
-            "@local.efm_pd_ptr": [
+            "@local.efm_topic": [
               "value"
             ]
           }
         }
       ],
-      "_nested_name": "activity_body_generator"
+      "_nested_name": "topic_body_generator"
+    },
+    {
+      "type": "display_group",
+      "name": "fake_group",
+      "style_list": [
+        "margin-top: 12px"
+      ],
+      "rows": [
+        {
+          "type": "text",
+          "name": "empty",
+          "_nested_name": "fake_group.empty"
+        }
+      ],
+      "_nested_name": "fake_group"
     }
   ],
-  "_xlsxPath": "EFM_pd_high_level_sheets.xlsx"
+  "_xlsxPath": "EFM_topics_high_level_sheets.xlsx"
 }

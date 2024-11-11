@@ -1,0 +1,29 @@
+{
+  "flow_type": "tour",
+  "flow_name": "efm_pows_tour",
+  "status": "released",
+  "rows": [
+    {
+      "type": "step",
+      "title": "Puzzles of the Week",
+      "_translations": {
+        "title": {},
+        "message_text": {}
+      },
+      "message_text": "These are Puzzles of the Week. Have fun!",
+      "route": "template/efm_pows"
+    },
+    {
+      "type": "step",
+      "title": "Help",
+      "_translations": {
+        "title": {},
+        "message_text": {}
+      },
+      "message_text": "If you ever want to see this introduction again, just click on the question mark.",
+      "template_component_name": "dg_help",
+      "route": "template/efm_pows"
+    }
+  ],
+  "_xlsxPath": "EFM_tours.xlsx"
+}

@@ -356,107 +356,35 @@
       "flow_subtype": "app_config_language_list",
       "_xlsxPath": "EFM_high_level_sheets.xlsx"
     },
-    "efm_act_list_v_two": {
+    "efm_ga_list": {
       "flow_type": "data_list",
-      "flow_name": "efm_act_list_v_two",
-      "data_list_name": "efm_act_v_two",
-      "_xlsxPath": "EFM_activity_high_level_sheets.xlsx"
-    },
-    "efm_bonus_acts_content": {
-      "flow_type": "data_list",
-      "flow_name": "efm_bonus_acts_content",
-      "data_list_name": "efm_bon_acts_content",
-      "_xlsxPath": "EFM_activity_high_level_sheets.xlsx"
-    },
-    "efm_chapter_list": {
-      "flow_type": "data_list",
-      "flow_name": "efm_chapter_list",
-      "data_list_name": "efm_chapt",
-      "_xlsxPath": "EFM_activity_high_level_sheets.xlsx"
-    },
-    "efm_mls_list": {
-      "flow_type": "data_list",
-      "flow_name": "efm_mls_list",
-      "data_list_name": "efm_mls",
-      "_xlsxPath": "EFM_mls_high_level_sheets.xlsx"
-    },
-    "efm_number_list_one_to_six": {
-      "flow_type": "data_list",
-      "flow_name": "efm_number_list_one_to_six",
-      "data_list_name": "efm_num_list_one_to_six",
-      "_xlsxPath": "EFM_activity_high_level_sheets.xlsx"
+      "flow_name": "efm_ga_list",
+      "data_list_name": "efm_gas",
+      "_xlsxPath": "EFM_gas_high_level_sheets.xlsx"
     },
     "efm_number_list_one_to_ten": {
       "flow_type": "data_list",
       "flow_name": "efm_number_list_one_to_ten",
       "data_list_name": "efm_num_list_one_to_ten",
-      "_xlsxPath": "EFM_activity_high_level_sheets.xlsx"
+      "_xlsxPath": "EFM_topics_high_level_sheets.xlsx"
     },
-    "efm_pd_act_list_1": {
+    "efm_pow_list": {
       "flow_type": "data_list",
-      "flow_name": "efm_pd_act_list_1",
-      "data_list_name": "efm_pd_act_1",
-      "_xlsxPath": "EFM_pd_high_level_sheets.xlsx"
-    },
-    "efm_pd_act_list_2": {
-      "flow_type": "data_list",
-      "flow_name": "efm_pd_act_list_2",
-      "data_list_name": "efm_pd_act_2",
-      "_xlsxPath": "EFM_pd_high_level_sheets.xlsx"
-    },
-    "efm_pd_act_list_3": {
-      "flow_type": "data_list",
-      "flow_name": "efm_pd_act_list_3",
-      "data_list_name": "efm_pd_act_3",
-      "_xlsxPath": "EFM_pd_high_level_sheets.xlsx"
-    },
-    "efm_pd_act_list_4": {
-      "flow_type": "data_list",
-      "flow_name": "efm_pd_act_list_4",
-      "data_list_name": "efm_pd_act_4",
-      "_xlsxPath": "EFM_pd_high_level_sheets.xlsx"
-    },
-    "efm_pd_act_list_5": {
-      "flow_type": "data_list",
-      "flow_name": "efm_pd_act_list_5",
-      "data_list_name": "efm_pd_act_5",
-      "_xlsxPath": "EFM_pd_high_level_sheets.xlsx"
-    },
-    "efm_pd_list": {
-      "flow_type": "data_list",
-      "flow_name": "efm_pd_list",
-      "data_list_name": "efm_pd",
-      "_xlsxPath": "EFM_pd_high_level_sheets.xlsx"
-    },
-    "efm_pd_sb_list_1": {
-      "flow_type": "data_list",
-      "flow_name": "efm_pd_sb_list_1",
-      "data_list_name": "efm_pd_sb_1",
-      "_xlsxPath": "EFM_pd_high_level_sheets.xlsx"
-    },
-    "efm_pd_sb_list_2": {
-      "flow_type": "data_list",
-      "flow_name": "efm_pd_sb_list_2",
-      "data_list_name": "efm_pd_sb_2",
-      "_xlsxPath": "EFM_pd_high_level_sheets.xlsx"
-    },
-    "efm_pd_sb_list_3": {
-      "flow_type": "data_list",
-      "flow_name": "efm_pd_sb_list_3",
-      "data_list_name": "efm_pd_sb_3",
-      "_xlsxPath": "EFM_pd_high_level_sheets.xlsx"
-    },
-    "efm_pd_sb_list_4": {
-      "flow_type": "data_list",
-      "flow_name": "efm_pd_sb_list_4",
-      "data_list_name": "efm_pd_sb_4",
-      "_xlsxPath": "EFM_pd_high_level_sheets.xlsx"
+      "flow_name": "efm_pow_list",
+      "data_list_name": "efm_pows",
+      "_xlsxPath": "EFM_pows_high_level_sheets.xlsx"
     },
     "efm_sb_list": {
       "flow_type": "data_list",
       "flow_name": "efm_sb_list",
       "data_list_name": "efm_storybooks",
       "_xlsxPath": "EFM_storybooks_high_level_sheets.xlsx"
+    },
+    "efm_topic_list": {
+      "flow_type": "data_list",
+      "flow_name": "efm_topic_list",
+      "data_list_name": "efm_topics",
+      "_xlsxPath": "EFM_topics_high_level_sheets.xlsx"
     },
     "launch_actions": {
       "flow_type": "data_list",
@@ -810,90 +738,35 @@
       "flow_name": "app_update_complete",
       "_xlsxPath": "app_update.xlsx"
     },
-    "efm_activity_advice_template": {
+    "efm_ga_body_template": {
       "flow_type": "template",
-      "flow_name": "efm_activity_advice_template",
-      "_xlsxPath": "EFM_activity_high_level_sheets.xlsx"
+      "flow_name": "efm_ga_body_template",
+      "_xlsxPath": "EFM_gas_high_level_sheets.xlsx"
     },
-    "efm_activity_bodyvtwo_template": {
+    "efm_ga_template": {
       "flow_type": "template",
-      "flow_name": "efm_activity_bodyvtwo_template",
-      "_xlsxPath": "EFM_activity_high_level_sheets.xlsx"
+      "flow_name": "efm_ga_template",
+      "_xlsxPath": "EFM_gas_high_level_sheets.xlsx"
     },
-    "efm_activity_v_two_template": {
+    "efm_gas": {
       "flow_type": "template",
-      "flow_name": "efm_activity_v_two_template",
-      "_xlsxPath": "EFM_activity_high_level_sheets.xlsx"
+      "flow_name": "efm_gas",
+      "_xlsxPath": "EFM_gas_high_level_sheets.xlsx"
     },
-    "efm_bon_act_vtwo_template": {
+    "efm_pow_body_template": {
       "flow_type": "template",
-      "flow_name": "efm_bon_act_vtwo_template",
-      "_xlsxPath": "EFM_activity_high_level_sheets.xlsx"
+      "flow_name": "efm_pow_body_template",
+      "_xlsxPath": "EFM_pows_high_level_sheets.xlsx"
     },
-    "efm_bonus_chapters": {
+    "efm_pow_template": {
       "flow_type": "template",
-      "flow_name": "efm_bonus_chapters",
-      "_xlsxPath": "EFM_activity_high_level_sheets.xlsx"
+      "flow_name": "efm_pow_template",
+      "_xlsxPath": "EFM_pows_high_level_sheets.xlsx"
     },
-    "efm_chapter_acts_by_topic": {
+    "efm_pows": {
       "flow_type": "template",
-      "flow_name": "efm_chapter_acts_by_topic",
-      "_xlsxPath": "EFM_activity_high_level_sheets.xlsx"
-    },
-    "efm_chapter_acts_individually": {
-      "flow_type": "template",
-      "flow_name": "efm_chapter_acts_individually",
-      "_xlsxPath": "EFM_activity_high_level_sheets.xlsx"
-    },
-    "efm_chapter_bon_acts": {
-      "flow_type": "template",
-      "flow_name": "efm_chapter_bon_acts",
-      "_xlsxPath": "EFM_activity_high_level_sheets.xlsx"
-    },
-    "efm_chapter_mls_individually": {
-      "flow_type": "template",
-      "flow_name": "efm_chapter_mls_individually",
-      "_xlsxPath": "EFM_mls_high_level_sheets.xlsx"
-    },
-    "efm_chapter_pd_individually": {
-      "flow_type": "template",
-      "flow_name": "efm_chapter_pd_individually",
-      "_xlsxPath": "EFM_pd_high_level_sheets.xlsx"
-    },
-    "efm_chapters": {
-      "flow_type": "template",
-      "flow_name": "efm_chapters",
-      "_xlsxPath": "EFM_activity_high_level_sheets.xlsx"
-    },
-    "efm_math_learning_steps": {
-      "flow_type": "template",
-      "flow_name": "efm_math_learning_steps",
-      "_xlsxPath": "EFM_mls_high_level_sheets.xlsx"
-    },
-    "efm_mls_body_template": {
-      "flow_type": "template",
-      "flow_name": "efm_mls_body_template",
-      "_xlsxPath": "EFM_mls_high_level_sheets.xlsx"
-    },
-    "efm_mls_template": {
-      "flow_type": "template",
-      "flow_name": "efm_mls_template",
-      "_xlsxPath": "EFM_mls_high_level_sheets.xlsx"
-    },
-    "efm_pd_body_template": {
-      "flow_type": "template",
-      "flow_name": "efm_pd_body_template",
-      "_xlsxPath": "EFM_pd_high_level_sheets.xlsx"
-    },
-    "efm_pd_template": {
-      "flow_type": "template",
-      "flow_name": "efm_pd_template",
-      "_xlsxPath": "EFM_pd_high_level_sheets.xlsx"
-    },
-    "efm_playdates": {
-      "flow_type": "template",
-      "flow_name": "efm_playdates",
-      "_xlsxPath": "EFM_pd_high_level_sheets.xlsx"
+      "flow_name": "efm_pows",
+      "_xlsxPath": "EFM_pows_high_level_sheets.xlsx"
     },
     "efm_sb_intro": {
       "flow_type": "template",
@@ -909,6 +782,21 @@
       "flow_type": "template",
       "flow_name": "efm_storybooks",
       "_xlsxPath": "EFM_storybooks_high_level_sheets.xlsx"
+    },
+    "efm_topic_body_template": {
+      "flow_type": "template",
+      "flow_name": "efm_topic_body_template",
+      "_xlsxPath": "EFM_topics_high_level_sheets.xlsx"
+    },
+    "efm_topic_template": {
+      "flow_type": "template",
+      "flow_name": "efm_topic_template",
+      "_xlsxPath": "EFM_topics_high_level_sheets.xlsx"
+    },
+    "efm_topics": {
+      "flow_type": "template",
+      "flow_name": "efm_topics",
+      "_xlsxPath": "EFM_topics_high_level_sheets.xlsx"
     },
     "feature_feedback_debug": {
       "flow_type": "template",
@@ -1235,29 +1123,19 @@
     }
   },
   "tour": {
-    "efm_chapters_bonus_tour": {
+    "efm_gas_tour": {
       "flow_type": "tour",
-      "flow_name": "efm_chapters_bonus_tour",
+      "flow_name": "efm_gas_tour",
       "_xlsxPath": "EFM_tours.xlsx"
     },
-    "efm_chapters_tour": {
+    "efm_pows_tour": {
       "flow_type": "tour",
-      "flow_name": "efm_chapters_tour",
+      "flow_name": "efm_pows_tour",
       "_xlsxPath": "EFM_tours.xlsx"
     },
-    "efm_mls_tour": {
+    "efm_topics_tour": {
       "flow_type": "tour",
-      "flow_name": "efm_mls_tour",
-      "_xlsxPath": "EFM_tours.xlsx"
-    },
-    "efm_playdates_tour": {
-      "flow_type": "tour",
-      "flow_name": "efm_playdates_tour",
-      "_xlsxPath": "EFM_tours.xlsx"
-    },
-    "efm_storybooks_tour": {
-      "flow_type": "tour",
-      "flow_name": "efm_storybooks_tour",
+      "flow_name": "efm_topics_tour",
       "_xlsxPath": "EFM_tours.xlsx"
     },
     "home_screen_tour": {

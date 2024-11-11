@@ -1,0 +1,49 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "efm_pow_list",
+  "data_list_name": "efm_pows",
+  "status": "released",
+  "rows": [
+    {
+      "id": "pow_a",
+      "area": "Number",
+      "subarea": "Add Sub",
+      "block1_type": "all_text",
+      "title": "Why is 3 + 4 = 7?",
+      "_translations": {
+        "title": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Why is 3 + 4 = 7?"
+        },
+        "block1_text": {
+          "eng": "This is just a placeholder."
+        }
+      },
+      "block1_text": "This is just a placeholder."
+    },
+    {
+      "id": "pow_b",
+      "area": "Number",
+      "subarea": "Add Sub",
+      "block1_type": "all_text",
+      "title": "Why is 2 + 5 = 7?",
+      "_translations": {
+        "title": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Why is 2 + 5 = 7?"
+        },
+        "block1_text": {
+          "eng": "This is just another placeholder."
+        }
+      },
+      "block1_text": "This is just another placeholder."
+    }
+  ],
+  "_xlsxPath": "EFM_pows_high_level_sheets.xlsx"
+}
