@@ -1,13 +1,13 @@
 {
   "flow_type": "template",
-  "flow_name": "efm_mls_body_template",
+  "flow_name": "efm_pow_body_template",
   "status": "released",
   "rows": [
     {
-      "name": "efm_mls_a_ptr",
+      "name": "efm_pow_ptr",
       "exclude_from_translation": true,
       "type": "set_variable",
-      "_nested_name": "efm_mls_a_ptr"
+      "_nested_name": "efm_pow_ptr"
     },
     {
       "name": "block_chars",
@@ -102,7 +102,7 @@
     {
       "type": "items",
       "name": "run_through_body_sections",
-      "value": "@data.efm_num_list_one_to_six",
+      "value": "@data.efm_num_list_one_to_ten",
       "exclude_from_translation": true,
       "rows": [
         {
@@ -141,7 +141,7 @@
         },
         {
           "name": "block_type",
-          "value": "local.efm_mls_a_ptr.@local.block_num_chars@local.chars_type",
+          "value": "local.efm_pow_ptr.@local.block_num_chars@local.chars_type",
           "_translations": {
             "value": {}
           },
@@ -151,13 +151,13 @@
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "local.efm_mls_a_ptr.@local.block_num_chars@local.chars_type",
+                "fullExpression": "local.efm_pow_ptr.@local.block_num_chars@local.chars_type",
                 "matchedExpression": "@local.block_num_chars",
                 "type": "local",
                 "fieldName": "block_num_chars"
               },
               {
-                "fullExpression": "local.efm_mls_a_ptr.@local.block_num_chars@local.chars_type",
+                "fullExpression": "local.efm_pow_ptr.@local.block_num_chars@local.chars_type",
                 "matchedExpression": "@local.chars_type",
                 "type": "local",
                 "fieldName": "chars_type"
@@ -175,7 +175,7 @@
         },
         {
           "name": "block_text",
-          "value": "local.efm_mls_a_ptr.@local.block_num_chars@local.chars_text",
+          "value": "local.efm_pow_ptr.@local.block_num_chars@local.chars_text",
           "_translations": {
             "value": {}
           },
@@ -185,13 +185,13 @@
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "local.efm_mls_a_ptr.@local.block_num_chars@local.chars_text",
+                "fullExpression": "local.efm_pow_ptr.@local.block_num_chars@local.chars_text",
                 "matchedExpression": "@local.block_num_chars",
                 "type": "local",
                 "fieldName": "block_num_chars"
               },
               {
-                "fullExpression": "local.efm_mls_a_ptr.@local.block_num_chars@local.chars_text",
+                "fullExpression": "local.efm_pow_ptr.@local.block_num_chars@local.chars_text",
                 "matchedExpression": "@local.chars_text",
                 "type": "local",
                 "fieldName": "chars_text"
@@ -209,7 +209,7 @@
         },
         {
           "name": "accordion_label",
-          "value": "local.efm_mls_a_ptr.@local.block_num_chars@local.chars_accord",
+          "value": "local.efm_pow_ptr.@local.block_num_chars@local.chars_accord",
           "_translations": {
             "value": {}
           },
@@ -219,13 +219,13 @@
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "local.efm_mls_a_ptr.@local.block_num_chars@local.chars_accord",
+                "fullExpression": "local.efm_pow_ptr.@local.block_num_chars@local.chars_accord",
                 "matchedExpression": "@local.block_num_chars",
                 "type": "local",
                 "fieldName": "block_num_chars"
               },
               {
-                "fullExpression": "local.efm_mls_a_ptr.@local.block_num_chars@local.chars_accord",
+                "fullExpression": "local.efm_pow_ptr.@local.block_num_chars@local.chars_accord",
                 "matchedExpression": "@local.chars_accord",
                 "type": "local",
                 "fieldName": "chars_accord"
@@ -243,7 +243,7 @@
         },
         {
           "name": "block_illustration",
-          "value": "local.efm_mls_a_ptr.@local.block_num_chars@local.chars_illust",
+          "value": "local.efm_pow_ptr.@local.block_num_chars@local.chars_illust",
           "_translations": {
             "value": {}
           },
@@ -253,13 +253,13 @@
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "local.efm_mls_a_ptr.@local.block_num_chars@local.chars_illust",
+                "fullExpression": "local.efm_pow_ptr.@local.block_num_chars@local.chars_illust",
                 "matchedExpression": "@local.block_num_chars",
                 "type": "local",
                 "fieldName": "block_num_chars"
               },
               {
-                "fullExpression": "local.efm_mls_a_ptr.@local.block_num_chars@local.chars_illust",
+                "fullExpression": "local.efm_pow_ptr.@local.block_num_chars@local.chars_illust",
                 "matchedExpression": "@local.chars_illust",
                 "type": "local",
                 "fieldName": "chars_illust"
@@ -277,7 +277,7 @@
         },
         {
           "name": "block_illustration_flex",
-          "value": "local.efm_mls_a_ptr.@local.block_num_chars@local.chars_illust_flex",
+          "value": "local.efm_pow_ptr.@local.block_num_chars@local.chars_illust_flex",
           "_translations": {
             "value": {}
           },
@@ -287,13 +287,13 @@
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "local.efm_mls_a_ptr.@local.block_num_chars@local.chars_illust_flex",
+                "fullExpression": "local.efm_pow_ptr.@local.block_num_chars@local.chars_illust_flex",
                 "matchedExpression": "@local.block_num_chars",
                 "type": "local",
                 "fieldName": "block_num_chars"
               },
               {
-                "fullExpression": "local.efm_mls_a_ptr.@local.block_num_chars@local.chars_illust_flex",
+                "fullExpression": "local.efm_pow_ptr.@local.block_num_chars@local.chars_illust_flex",
                 "matchedExpression": "@local.chars_illust_flex",
                 "type": "local",
                 "fieldName": "chars_illust_flex"
@@ -311,7 +311,7 @@
         },
         {
           "name": "block_illustration_max_width",
-          "value": "local.efm_mls_a_ptr.@local.block_num_chars@local.chars_illust_max_width",
+          "value": "local.efm_pow_ptr.@local.block_num_chars@local.chars_illust_max_width",
           "_translations": {
             "value": {}
           },
@@ -321,13 +321,13 @@
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "local.efm_mls_a_ptr.@local.block_num_chars@local.chars_illust_max_width",
+                "fullExpression": "local.efm_pow_ptr.@local.block_num_chars@local.chars_illust_max_width",
                 "matchedExpression": "@local.block_num_chars",
                 "type": "local",
                 "fieldName": "block_num_chars"
               },
               {
-                "fullExpression": "local.efm_mls_a_ptr.@local.block_num_chars@local.chars_illust_max_width",
+                "fullExpression": "local.efm_pow_ptr.@local.block_num_chars@local.chars_illust_max_width",
                 "matchedExpression": "@local.chars_illust_max_width",
                 "type": "local",
                 "fieldName": "chars_illust_max_width"
@@ -908,19 +908,19 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@data.efm_num_list_one_to_six",
-            "matchedExpression": "@data.efm_num_list_one_to_six",
+            "fullExpression": "@data.efm_num_list_one_to_ten",
+            "matchedExpression": "@data.efm_num_list_one_to_ten",
             "type": "data",
-            "fieldName": "efm_num_list_one_to_six"
+            "fieldName": "efm_num_list_one_to_ten"
           }
         ]
       },
       "_dynamicDependencies": {
-        "@data.efm_num_list_one_to_six": [
+        "@data.efm_num_list_one_to_ten": [
           "value"
         ]
       }
     }
   ],
-  "_xlsxPath": "EFM_mls_high_level_sheets.xlsx"
+  "_xlsxPath": "EFM_pows_high_level_sheets.xlsx"
 }

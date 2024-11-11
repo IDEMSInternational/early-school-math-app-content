@@ -3,22 +3,22 @@
 
 | type | count |
 | --- | --- |
-| accordion | 2 |
-| button | 22 |
+| accordion | 1 |
+| button | 15 |
 | debug_toggle | 1 |
-| display_group | 35 |
+| display_group | 14 |
 | image | 3 |
-| items | 13 |
+| items | 1 |
 | qr_code | 1 |
 | radio_button_grid | 1 |
 | select_text | 1 |
 | set_field | 10 |
-| set_variable | 251 |
-| template | 64 |
-| text | 40 |
+| set_variable | 102 |
+| template | 60 |
+| text | 29 |
 | text_area | 2 |
 | tile_component | 3 |
-| title | 22 |
+| title | 16 |
 </details>
 
 <details >
@@ -34,10 +34,9 @@
 | emit: set_language | 1 |
 | emit: uncompleted | 58 |
 | feedback | 7 |
-| go_to | 11 |
+| go_to | 4 |
 | go_to_url | 3 |
 | reset_app | 1 |
-| set_field | 7 |
 | set_local | 4 |
 </details>
 
@@ -46,8 +45,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 28183 KB | 28.2 MB |
-| unused | 1498 KB | 1.5 MB |
+| total | 19190 KB | 19.2 MB |
+| unused | 10491 KB | 10.5 MB |
 </details>
 
 <details open>
@@ -61,46 +60,256 @@ Assets that appear in app-data but do not have references within sheets
 | EFM00Logo.svg | 10.6 |
 | EFM00LogoFixedDotsBad.svg | 13 |
 | EFM00LogoWhite2x.jpg | 190.5 |
+| EFM100DominoesGame.svg | 16.7 |
+| EFM100StealingBones.svg | 19.1 |
+| EFM105BackAndForth12Move0.svg | 11.8 |
+| EFM105BackAndForth12Move1.svg | 13.5 |
+| EFM105BingoWithCards.svg | 27.7 |
+| EFM105GoFish.svg | 16.9 |
+| EFM105GoFishMatch.svg | 11.9 |
+| EFM105MemoryChallenge.svg | 11.1 |
 | EFM10EFMPairLookingAway.svg | 23.6 |
+| EFM10PairLookingAway.svg | 23.6 |
+| EFM10PairReadingOnBench.svg | 33.7 |
+| EFM110InvisibleAddSub.svg | 16 |
 | EFM110NumberLineforNim.svg | 21 |
+| EFM110NumberLineforNimReverse.svg | 20.7 |
+| EFM110WithinOneorTwo.svg | 13.1 |
+| EFM115FeatureMatchingGame.svg | 17.1 |
+| EFM115MatchingPuzzle.svg | 11.4 |
+| EFM115TripletExamples.svg | 35.2 |
+| EFM120FittingIn.svg | 14.5 |
 | EFM120SmallestSingleNumber.svg | 48.6 |
+| EFM120WarCards.svg | 15.9 |
 | EFM125ImThinkingofaNumber1.svg | 14.9 |
 | EFM125ImThinkingofaNumber2.svg | 14.4 |
+| EFM125ImThinkingofaNumberAll.svg | 43.8 |
+| EFM125NumberLineBattleship.svg | 34.4 |
+| EFM12Apples.svg | 5.3 |
 | EFM12CautioinSign.svg | 1.8 |
+| EFM12EFMLogoNoEFM.svg | 12.8 |
+| EFM12StopSign.svg | 2.3 |
+| EFM12TrafficSignal.svg | 3.6 |
 | EFM12TriangleSign.svg | 2.3 |
+| EFM130FingerTenFrame.svg | 6.5 |
+| EFM130Fingers3plus1.svg | 10.9 |
+| EFM130WhatsMissing.svg | 16.8 |
 | EFM135MakingSquares.svg | 26.7 |
+| EFM135MakingSquaresComplex.svg | 12.8 |
+| EFM135MakingSquaresSimple.svg | 16 |
+| EFM135PatternsConnecttheDots.svg | 21.2 |
+| EFM135ShapeSoduku.svg | 30.7 |
 | EFM135ShapeSodukuExample.svg | 32.6 |
+| EFM140BagGame.svg | 14.9 |
+| EFM140IceCreamScoopStory.svg | 12.5 |
+| EFM145Estimation.svg | 34.4 |
+| EFM145GetOutofMyHouse.svg | 23.4 |
+| EFM145InBetweenGame.svg | 10.5 |
+| EFM150GreaterThanSudoku4by4.svg | 41.5 |
+| EFM150GreaterThanSudoku6by6.svg | 111.6 |
+| EFM150JigsawSudoku4by4.svg | 24.1 |
+| EFM150JigsawSudoku5by5.svg | 31.3 |
+| EFM160Codebreaker.svg | 11.2 |
+| EFM160FifteenPuzzle3by3.svg | 24.6 |
 | EFM170FIngers8-5asdifference.svg | 22.3 |
+| EFM170Fingers4Plus2.svg | 6.3 |
+| EFM170Fingers4Plus2CountingOn.svg | 17.3 |
 | EFM170Fingers8takeaway5.svg | 22.2 |
+| EFM170Fingers8takeaway5Fixed.svg | 21.8 |
+| EFM180ComplexShapeSums.svg | 14.8 |
+| EFM180SimpleShapeSums.svg | 10.3 |
+| EFM190NumberCardsto20.svg | 96.4 |
+| EFM200NumberShapes.svg | 6.7 |
+| EFM200NumberShapesAddingEvensOdds.svg | 21.4 |
+| EFM200NumberShapesEvensOdds.svg | 12.2 |
+| EFM200NumberShapesTrapezoidal.svg | 6.6 |
 | EFM200SimTriangle.svg | 5 |
+| EFM200SimTriangle0.svg | 5.3 |
+| EFM200SimTriangle13579.svg | 24.6 |
+| EFM200SimilarStars.svg | 4.1 |
+| EFM200SquareOfOddNumbers.svg | 9.7 |
+| EFM200SymmetricArt.svg | 12.3 |
+| EFM20Balloons.svg | 27 |
+| EFM20BlueClock.svg | 2.3 |
+| EFM20BoxWithHoles.svg | 8.3 |
+| EFM20ColoredTiling.svg | 14.7 |
+| EFM220NumberBlobs.svg | 39.3 |
+| EFM230OrderedSteps.svg | 4.1 |
+| EFM230OrderingCards.svg | 21.7 |
+| EFM240EvenOddAndKropkiSudoku4by4.svg | 19.9 |
+| EFM240SumdokuDiffdoku.svg | 25.6 |
+| EFM270PyramidSolitaire.svg | 32.5 |
+| EFM280DotsAndBoxes.svg | 6.8 |
+| EFM280DotsAndBoxesNumbered.svg | 8.8 |
+| EFM280Tapatan.svg | 7.1 |
+| EFM290Fingers11-3.svg | 21.6 |
+| EFM290FingersFor8-3.svg | 11.8 |
+| EFM290FingersFor8Plus3.svg | 11.8 |
+| EFM300IslandHoppingCompensation.svg | 24.7 |
+| EFM300RegionSums.svg | 10.9 |
+| EFM30MugOnShelf.svg | 4.9 |
+| EFM30ShapePattern.svg | 5.6 |
+| EFM30Socks.svg | 18 |
+| EFM310DiffTriangles.svg | 14.9 |
+| EFM310PanBalanceWithWeights4s7sOneSide.svg | 2699.7 |
+| EFM310SumTriangles.svg | 15.5 |
+| EFM330IslandHoppingSkipCounting.svg | 19.9 |
+| EFM340FixIt.svg | 17.3 |
+| EFM340PairingDown.svg | 29.6 |
+| EFM350ExpandedFormFoldingPaper.svg | 11.4 |
+| EFM350IslandHoppingby1sAnd10s.svg | 15.6 |
 | EFM370CircleGraphs1To12StarOfDavid.svg | 13.5 |
 | EFM370CircleGraphs1To7H.svg | 8.1 |
 | EFM370CircleGraphs1To9Star.svg | 7.3 |
+| EFM370CircleGraphs1to6MagicCircle.svg | 19.2 |
+| EFM370CircleGraphsAll4.svg | 29 |
+| EFM380MultiplyingCommutes.svg | 5.4 |
+| EFM385CoverUp.svg | 37.3 |
+| EFM390AdditionPyramid.svg | 18 |
+| EFM390SumSquare.svg | 8 |
+| EFM400FibTableTo9.svg | 14.5 |
+| EFM40CheerioPyramid.svg | 40.5 |
+| EFM40FindingTwos.svg | 17.5 |
+| EFM40OneMoreAppleSlice.svg | 18.4 |
+| EFM440BondedGroups.svg | 28.3 |
+| EFM440BondedGroupsOriginal.svg | 27.2 |
+| EFM440MissingNumbers.svg | 15.7 |
+| EFM450MultiplicationCards1.svg | 13.3 |
+| EFM450MultiplicationCards2.svg | 7.6 |
+| EFM450MultiplicationCards3.svg | 8 |
 | EFM450RevealingProducts.jpg | 52.1 |
 | EFM450RevealingProducts.odg | 12.1 |
+| EFM450RevealingProducts.svg | 71.8 |
+| EFM455CoverFactorsMultiples.svg | 16.4 |
+| EFM460SieveOfEratosthenes.svg | 47 |
+| EFM460SieveofEratosthenes2s3s.svg | 35.1 |
+| EFM470LeverBalance.svg | 11.3 |
+| EFM480TurningTheTables.svg | 17.4 |
+| EFM490DivideUpTheBox.svg | 7.3 |
+| EFM490RectangleArea.svg | 3.3 |
+| EFM500SimpleShapeProducts.svg | 10.3 |
+| EFM500SimpleShapeSums.svg | 10.3 |
+| EFM50NumberCards.svg | 133.6 |
+| EFM50NumberLine.svg | 21.7 |
+| EFM50ShapeDeck.svg | 42.9 |
+| EFM510FactorTrees.svg | 17.2 |
+| EFM510ProductPyramid.svg | 17.6 |
+| EFM520LetterSubstitution1.svg | 12.4 |
+| EFM520LetterSubstitution2.svg | 24.8 |
+| EFM530BilliardBallBouncing.svg | 5.9 |
+| EFM530Calculator4-7PlusMinus.svg | 841.1 |
+| EFM530SquaresInSquares.svg | 3.1 |
+| EFM540IslandHoppingWithProducts.svg | 21.7 |
+| EFM540ProductGame.svg | 26.5 |
+| EFM550Mobile1.svg | 6.9 |
+| EFM550Mobile2.svg | 10 |
+| EFM570CrossProducts3By3.svg | 12.9 |
+| EFM570CrossProducts4By4.svg | 17.7 |
+| EFM60HomeStoreItems.svg | 35.3 |
 | EFM60Hopscotch.svg | 9 |
+| EFM60Hopscotchto10.svg | 10.1 |
+| EFM60TwoCheeriosinahand.svg | 10.2 |
+| EFM70EachOfTheseIsDifferent.svg | 6.5 |
+| EFM70EachOfTheseIsDifferentExample.svg | 4.7 |
 | EFM70Fork.svg | 7.6 |
 | EFM70ForkGold.svg | 9.9 |
+| EFM70ForkSpoonGold.svg | 14.9 |
+| EFM70GoingInCircles.svg | 10.6 |
 | EFM70Spoon.svg | 5.2 |
 | EFM70SpoonGold.svg | 6.4 |
 | EFM70WhichOneIsDifferent.svg | 4.9 |
+| EFM90HouseConnecttheDots.svg | 9.2 |
 | EFM90HouseConnecttheDots2.svg | 8.5 |
+| EFM90IslandHoppingConsecutive.svg | 20.8 |
+| EFM90StringNumberLine.svg | 22 |
+| EFM95ColoredShapesonFloor.svg | 10.2 |
+| EFM95Kirigami.svg | 12.2 |
+| EFMBM135CirclesofDots.svg | 71 |
+| EFMBM135ConnecttheDotsBanana.svg | 9.1 |
+| EFMBM135ConnecttheDotsStringsAroundaCircle.svg | 57.8 |
+| EFMBM135ConnecttheDotsUmbrella.svg | 10.4 |
+| EFMBM135HouseConnecttheDotswithDashes.svg | 9.2 |
+| EFMBM135StringArtPattern.svg | 14.2 |
+| EFMBM135StringArtPatternsOneAngle.svg | 14.5 |
+| EFMBM135cFinishedShapeSodukuExamples.svg | 187 |
+| EFMBM150aJigsawSudoku4by4ExamplesSolved.svg | 132.1 |
+| EFMBM150aJigsawSudoku5by5ExamplesSolved.svg | 101.7 |
+| EFMBM150aJigsawSudoku6by6ExamplesSolved.svg | 75.6 |
 | EFMBM180 Complex Shape Sums Examples.svg | 14.8 |
 | EFMBM180ComplexShapeSums.svg | 15.9 |
+| EFMBM180ComplexShapeSums1.svg | 15.1 |
+| EFMBM180ComplexShapeSums2.svg | 15.9 |
+| EFMBM180ComplexShapeSums3.svg | 32.8 |
+| EFMBM180SimpleShapeSums.svg | 11.6 |
+| EFMBM180SimpleShapeSums7Examples.svg | 54 |
+| EFMBM220SumGroups.svg | 39.3 |
+| EFMBM220SumGroups10.svg | 132.7 |
+| EFMBM220SumGroups6.svg | 129.3 |
+| EFMBM220SumGroups7.svg | 132.5 |
+| EFMBM220SumGroups8.svg | 133.2 |
+| EFMBM220SumGroups9.svg | 133.3 |
+| EFMBM240EvenOddandKropkiSudoku4by4.svg | 19.9 |
+| EFMBM240SumdokuDiffdoku.svg | 25.6 |
+| EFMBM270DifferencePyramid6Solutions.svg | 31 |
+| EFMBM300IslandHoppingCompensation.svg | 25 |
+| EFMBM300RegionSums.svg | 10.9 |
+| EFMBM300RegionSumsMoreExamples.svg | 68 |
+| EFMBM310DiffTriangles.svg | 14.9 |
+| EFMBM310DiffTriangles1.svg | 35.8 |
+| EFMBM310DiffTriangles2.svg | 32 |
+| EFMBM310DiffTriangles3.svg | 51.7 |
+| EFMBM310SumTriangles.svg | 15.5 |
+| EFMBM310SumTriangles1.svg | 31.9 |
+| EFMBM330IslandHoppingConsecutivetoSkipping.svg | 23.8 |
+| EFMBM330IslandHoppingSkipCounting.svg | 19.9 |
 | EFMBM340FixIt.svg | 17.3 |
+| EFMBM340FixItMoreExamples1.svg | 68.7 |
+| EFMBM340FixItMoreExamples2.svg | 42 |
+| EFMBM350IslandHoppingBy1sand10s.svg | 15.6 |
+| EFMBM350IslandHoppingBy1sand10swithCircles.svg | 21.2 |
 | EFMBM370CircleGraphs1to12StarofDavid.svg | 13.5 |
 | EFMBM370CircleGraphs1to6MagicCircle.svg | 9.5 |
 | EFMBM370CircleGraphs1to7H.svg | 8.1 |
 | EFMBM370CircleGraphs1to9Star.svg | 7.3 |
+| EFMBM370MagicCircles1to6.svg | 19.2 |
+| EFMBM370MagicDesigns1.svg | 6.3 |
+| EFMBM370MagicDesigns2.svg | 14.7 |
+| EFMBM370MagicDesigns3.svg | 21.5 |
+| EFMBM370MagicDesigns4.svg | 24.4 |
+| EFMBM370MagicDesigns7.svg | 38.4 |
+| EFMBM370MagicDesigns8.svg | 20.8 |
+| EFMBM370MagicDesigns9.svg | 13.3 |
 | EFMBM390AdditionPyramid.svg | 17.6 |
+| EFMBM390AdditionPyramid2.svg | 26.3 |
 | EFMBM390SumSquare.svg | 10.9 |
+| EFMBM390SumSquare2.svg | 29.3 |
 | EFMBM400FibTableTo9.svg | 14.5 |
 | EFMBM400FibTableto9.png | 12.4 |
+| EFMBM470LeverBalance1.svg | 11.3 |
+| EFMBM470LeverBalance2.svg | 12.9 |
 | EFMBM490DivideUptheBox.svg | 7.3 |
+| EFMBM490DivideUptheBoxSolution1.svg | 16.3 |
+| EFMBM490DivideUptheBoxSolution2.svg | 28.2 |
+| EFMBM520LetterSubstitution1.svg | 12.4 |
 | EFMBM520LetterSubstitution2.svg | 24.8 |
+| EFMBM520LetterSubstitution3.svg | 52.8 |
+| EFMBM530BilliardBallBouncing.svg | 5.9 |
+| EFMBM530BilliardBallBouncingUnfolded.svg | 9 |
+| EFMBM530SquaresinSquares.svg | 3.1 |
 | EFMBM530SquaresinSquares2.svg | 3.8 |
+| EFMBM540ProductGame10-12.svg | 149.4 |
+| EFMBM540ProductGame9.svg | 32.1 |
+| EFMBM550Mobile1.svg | 6.9 |
 | EFMBM550Mobile2.svg | 10 |
 | EFMBM550Mobile3.svg | 12.6 |
+| EFMBM90IslandHoppingConsecutiveEasy.svg | 23 |
+| EFMBM90IslandHoppingConsecutiveEven Harder.svg | 15.8 |
+| EFMBM90IslandHoppingConsecutiveHarder.svg | 19.2 |
+| EFMBM95-1FoldTree.svg | 3.4 |
+| EFMBM95-1Foldstar.svg | 4.4 |
+| EFMBM95-2FoldsLeaves.svg | 5.5 |
+| EFMBM95-3FoldsFlower.svg | 12.2 |
+| EFMBM95SnowflakeFoldingSequence.svg | 53.2 |
 | EFMBM95SnowflakeFoldingSequence1.svg | 10.2 |
 | EFMBM95SnowflakeFoldingSequence2.svg | 10.4 |
 | EFMBM95SnowflakeFoldingSequence3.svg | 9.6 |
@@ -109,6 +318,8 @@ Assets that appear in app-data but do not have references within sheets
 | EFMBM95SnowflakeFoldingSequence6.svg | 9.2 |
 | EFMBM95SnowflakeFoldingSequence7.svg | 9.4 |
 | EFMBM95SnowflakeFoldingSequence8.svg | 16.8 |
+| EFMFactFamilies2And3.svg | 2.5 |
+| EFMSevenDotsInATenFrame.svg | 4.4 |
 | EFMStorybooks/EFM-SB-FB-.jpg | 29.2 |
 | EFMStorybooks/EFM-SB-KAHN-20.jpg | 3.5 |
 | EFMStorybooks/EFM-SB-SSMILE-8.jpg | 3.5 |
@@ -136,219 +347,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | path | size_kb | count |
 | --- | --- | --- |
-| EFM100DominoesGame.svg | 16.7 | 1 |
-| EFM100StealingBones.svg | 19.1 | 1 |
-| EFM105BackAndForth12Move0.svg | 11.8 | 1 |
-| EFM105BackAndForth12Move1.svg | 13.5 | 1 |
-| EFM105BingoWithCards.svg | 27.7 | 1 |
-| EFM105GoFish.svg | 16.9 | 1 |
-| EFM105GoFishMatch.svg | 11.9 | 1 |
-| EFM105MemoryChallenge.svg | 11.1 | 1 |
-| EFM10PairLookingAway.svg | 23.6 | 1 |
-| EFM10PairReadingOnBench.svg | 33.7 | 1 |
-| EFM110InvisibleAddSub.svg | 16 | 1 |
-| EFM110NumberLineforNimReverse.svg | 20.7 | 1 |
-| EFM110WithinOneorTwo.svg | 13.1 | 1 |
-| EFM115FeatureMatchingGame.svg | 17.1 | 1 |
-| EFM115MatchingPuzzle.svg | 11.4 | 1 |
-| EFM115TripletExamples.svg | 35.2 | 1 |
-| EFM120FittingIn.svg | 14.5 | 1 |
-| EFM120WarCards.svg | 15.9 | 1 |
-| EFM125ImThinkingofaNumberAll.svg | 43.8 | 1 |
-| EFM125NumberLineBattleship.svg | 34.4 | 1 |
-| EFM12Apples.svg | 5.3 | 1 |
-| EFM12EFMLogoNoEFM.svg | 12.8 | 1 |
 | EFM12EFMLogoNoEFMpng.png | 33.1 | 1 |
-| EFM12StopSign.svg | 2.3 | 1 |
-| EFM12TrafficSignal.svg | 3.6 | 1 |
-| EFM130FingerTenFrame.svg | 6.5 | 2 |
-| EFM130Fingers3plus1.svg | 10.9 | 1 |
-| EFM130WhatsMissing.svg | 16.8 | 1 |
-| EFM135MakingSquaresComplex.svg | 12.8 | 1 |
-| EFM135MakingSquaresSimple.svg | 16 | 1 |
-| EFM135PatternsConnecttheDots.svg | 21.2 | 1 |
-| EFM135ShapeSoduku.svg | 30.7 | 1 |
-| EFM140BagGame.svg | 14.9 | 1 |
-| EFM140IceCreamScoopStory.svg | 12.5 | 1 |
-| EFM145Estimation.svg | 34.4 | 1 |
-| EFM145GetOutofMyHouse.svg | 23.4 | 1 |
-| EFM145InBetweenGame.svg | 10.5 | 1 |
-| EFM150GreaterThanSudoku4by4.svg | 41.5 | 2 |
-| EFM150GreaterThanSudoku6by6.svg | 111.6 | 2 |
-| EFM150JigsawSudoku4by4.svg | 24.1 | 1 |
-| EFM150JigsawSudoku5by5.svg | 31.3 | 1 |
-| EFM160Codebreaker.svg | 11.2 | 1 |
-| EFM160FifteenPuzzle3by3.svg | 24.6 | 2 |
-| EFM170Fingers4Plus2.svg | 6.3 | 1 |
-| EFM170Fingers4Plus2CountingOn.svg | 17.3 | 2 |
-| EFM170Fingers8takeaway5Fixed.svg | 21.8 | 1 |
-| EFM180ComplexShapeSums.svg | 14.8 | 1 |
-| EFM180SimpleShapeSums.svg | 10.3 | 1 |
-| EFM190NumberCardsto20.svg | 96.4 | 1 |
-| EFM200NumberShapes.svg | 6.7 | 2 |
-| EFM200NumberShapesAddingEvensOdds.svg | 21.4 | 1 |
-| EFM200NumberShapesEvensOdds.svg | 12.2 | 1 |
-| EFM200NumberShapesTrapezoidal.svg | 6.6 | 1 |
-| EFM200SimTriangle0.svg | 5.3 | 1 |
-| EFM200SimTriangle13579.svg | 24.6 | 1 |
-| EFM200SimilarStars.svg | 4.1 | 1 |
-| EFM200SquareOfOddNumbers.svg | 9.7 | 1 |
-| EFM200SymmetricArt.svg | 12.3 | 1 |
-| EFM20Balloons.svg | 27 | 1 |
-| EFM20BlueClock.svg | 2.3 | 1 |
-| EFM20BoxWithHoles.svg | 8.3 | 1 |
-| EFM20ColoredTiling.svg | 14.7 | 1 |
-| EFM220NumberBlobs.svg | 39.3 | 1 |
-| EFM230OrderedSteps.svg | 4.1 | 1 |
-| EFM230OrderingCards.svg | 21.7 | 1 |
-| EFM240EvenOddAndKropkiSudoku4by4.svg | 19.9 | 1 |
-| EFM240SumdokuDiffdoku.svg | 25.6 | 1 |
-| EFM270PyramidSolitaire.svg | 32.5 | 1 |
-| EFM280DotsAndBoxes.svg | 6.8 | 1 |
-| EFM280DotsAndBoxesNumbered.svg | 8.8 | 1 |
-| EFM280Tapatan.svg | 7.1 | 1 |
-| EFM290Fingers11-3.svg | 21.6 | 1 |
-| EFM290FingersFor8-3.svg | 11.8 | 1 |
-| EFM290FingersFor8Plus3.svg | 11.8 | 1 |
-| EFM300IslandHoppingCompensation.svg | 24.7 | 1 |
-| EFM300RegionSums.svg | 10.9 | 1 |
-| EFM30MugOnShelf.svg | 4.9 | 1 |
-| EFM30ShapePattern.svg | 5.6 | 2 |
-| EFM30Socks.svg | 18 | 1 |
-| EFM310DiffTriangles.svg | 14.9 | 1 |
-| EFM310PanBalanceWithWeights4s7sOneSide.svg | 2699.7 | 1 |
-| EFM310SumTriangles.svg | 15.5 | 1 |
-| EFM330IslandHoppingSkipCounting.svg | 19.9 | 1 |
-| EFM340FixIt.svg | 17.3 | 1 |
-| EFM340PairingDown.svg | 29.6 | 1 |
-| EFM350ExpandedFormFoldingPaper.svg | 11.4 | 1 |
-| EFM350IslandHoppingby1sAnd10s.svg | 15.6 | 1 |
-| EFM370CircleGraphs1to6MagicCircle.svg | 19.2 | 1 |
-| EFM370CircleGraphsAll4.svg | 29 | 1 |
-| EFM380MultiplyingCommutes.svg | 5.4 | 3 |
-| EFM385CoverUp.svg | 37.3 | 1 |
-| EFM390AdditionPyramid.svg | 18 | 1 |
-| EFM390SumSquare.svg | 8 | 1 |
-| EFM400FibTableTo9.svg | 14.5 | 1 |
-| EFM40CheerioPyramid.svg | 40.5 | 1 |
-| EFM40FindingTwos.svg | 17.5 | 1 |
-| EFM40OneMoreAppleSlice.svg | 18.4 | 1 |
-| EFM440BondedGroups.svg | 28.3 | 1 |
-| EFM440BondedGroupsOriginal.svg | 27.2 | 1 |
-| EFM440MissingNumbers.svg | 15.7 | 1 |
-| EFM450MultiplicationCards1.svg | 13.3 | 1 |
-| EFM450MultiplicationCards2.svg | 7.6 | 1 |
-| EFM450MultiplicationCards3.svg | 8 | 1 |
-| EFM450RevealingProducts.svg | 71.8 | 1 |
-| EFM455CoverFactorsMultiples.svg | 16.4 | 1 |
-| EFM460SieveOfEratosthenes.svg | 47 | 2 |
-| EFM460SieveofEratosthenes2s3s.svg | 35.1 | 1 |
-| EFM470LeverBalance.svg | 11.3 | 1 |
-| EFM480TurningTheTables.svg | 17.4 | 1 |
-| EFM490DivideUpTheBox.svg | 7.3 | 1 |
-| EFM490RectangleArea.svg | 3.3 | 1 |
-| EFM500SimpleShapeProducts.svg | 10.3 | 1 |
-| EFM500SimpleShapeSums.svg | 10.3 | 1 |
-| EFM50NumberCards.svg | 133.6 | 1 |
-| EFM50NumberLine.svg | 21.7 | 1 |
-| EFM50ShapeDeck.svg | 42.9 | 1 |
-| EFM510FactorTrees.svg | 17.2 | 2 |
-| EFM510ProductPyramid.svg | 17.6 | 1 |
-| EFM520LetterSubstitution1.svg | 12.4 | 1 |
-| EFM520LetterSubstitution2.svg | 24.8 | 1 |
-| EFM530BilliardBallBouncing.svg | 5.9 | 1 |
-| EFM530Calculator4-7PlusMinus.svg | 841.1 | 1 |
-| EFM530SquaresInSquares.svg | 3.1 | 1 |
-| EFM540IslandHoppingWithProducts.svg | 21.7 | 1 |
-| EFM540ProductGame.svg | 26.5 | 1 |
-| EFM550Mobile1.svg | 6.9 | 1 |
-| EFM550Mobile2.svg | 10 | 1 |
-| EFM570CrossProducts3By3.svg | 12.9 | 1 |
-| EFM570CrossProducts4By4.svg | 17.7 | 1 |
-| EFM60HomeStoreItems.svg | 35.3 | 1 |
-| EFM60Hopscotchto10.svg | 10.1 | 1 |
-| EFM60TwoCheeriosinahand.svg | 10.2 | 1 |
-| EFM70EachOfTheseIsDifferent.svg | 6.5 | 1 |
-| EFM70EachOfTheseIsDifferentExample.svg | 4.7 | 2 |
-| EFM70ForkSpoonGold.svg | 14.9 | 1 |
-| EFM70GoingInCircles.svg | 10.6 | 2 |
-| EFM90HouseConnecttheDots.svg | 9.2 | 1 |
-| EFM90IslandHoppingConsecutive.svg | 20.8 | 1 |
-| EFM90StringNumberLine.svg | 22 | 1 |
-| EFM95ColoredShapesonFloor.svg | 10.2 | 1 |
-| EFM95Kirigami.svg | 12.2 | 1 |
-| EFMBM135CirclesofDots.svg | 71 | 1 |
-| EFMBM135ConnecttheDotsBanana.svg | 9.1 | 1 |
-| EFMBM135ConnecttheDotsStringsAroundaCircle.svg | 57.8 | 1 |
-| EFMBM135ConnecttheDotsUmbrella.svg | 10.4 | 1 |
-| EFMBM135HouseConnecttheDotswithDashes.svg | 9.2 | 1 |
-| EFMBM135StringArtPattern.svg | 14.2 | 1 |
-| EFMBM135StringArtPatternsOneAngle.svg | 14.5 | 1 |
-| EFMBM135cFinishedShapeSodukuExamples.svg | 187 | 1 |
-| EFMBM150aJigsawSudoku4by4ExamplesSolved.svg | 132.1 | 1 |
-| EFMBM150aJigsawSudoku5by5ExamplesSolved.svg | 101.7 | 1 |
-| EFMBM150aJigsawSudoku6by6ExamplesSolved.svg | 75.6 | 1 |
-| EFMBM180ComplexShapeSums1.svg | 15.1 | 1 |
-| EFMBM180ComplexShapeSums2.svg | 15.9 | 1 |
-| EFMBM180ComplexShapeSums3.svg | 32.8 | 1 |
-| EFMBM180SimpleShapeSums.svg | 11.6 | 1 |
-| EFMBM180SimpleShapeSums7Examples.svg | 54 | 1 |
-| EFMBM220SumGroups.svg | 39.3 | 1 |
-| EFMBM220SumGroups10.svg | 132.7 | 1 |
-| EFMBM220SumGroups6.svg | 129.3 | 1 |
-| EFMBM220SumGroups7.svg | 132.5 | 1 |
-| EFMBM220SumGroups8.svg | 133.2 | 1 |
-| EFMBM220SumGroups9.svg | 133.3 | 1 |
-| EFMBM240EvenOddandKropkiSudoku4by4.svg | 19.9 | 1 |
-| EFMBM240SumdokuDiffdoku.svg | 25.6 | 1 |
-| EFMBM270DifferencePyramid6Solutions.svg | 31 | 1 |
-| EFMBM300IslandHoppingCompensation.svg | 25 | 1 |
-| EFMBM300RegionSums.svg | 10.9 | 1 |
-| EFMBM300RegionSumsMoreExamples.svg | 68 | 1 |
-| EFMBM310DiffTriangles.svg | 14.9 | 1 |
-| EFMBM310DiffTriangles1.svg | 35.8 | 1 |
-| EFMBM310DiffTriangles2.svg | 32 | 1 |
-| EFMBM310DiffTriangles3.svg | 51.7 | 1 |
-| EFMBM310SumTriangles.svg | 15.5 | 1 |
-| EFMBM310SumTriangles1.svg | 31.9 | 1 |
-| EFMBM330IslandHoppingConsecutivetoSkipping.svg | 23.8 | 1 |
-| EFMBM330IslandHoppingSkipCounting.svg | 19.9 | 1 |
-| EFMBM340FixItMoreExamples1.svg | 68.7 | 1 |
-| EFMBM340FixItMoreExamples2.svg | 42 | 1 |
-| EFMBM350IslandHoppingBy1sand10s.svg | 15.6 | 1 |
-| EFMBM350IslandHoppingBy1sand10swithCircles.svg | 21.2 | 1 |
-| EFMBM370MagicCircles1to6.svg | 19.2 | 1 |
-| EFMBM370MagicDesigns1.svg | 6.3 | 1 |
-| EFMBM370MagicDesigns2.svg | 14.7 | 1 |
-| EFMBM370MagicDesigns3.svg | 21.5 | 1 |
-| EFMBM370MagicDesigns4.svg | 24.4 | 1 |
-| EFMBM370MagicDesigns7.svg | 38.4 | 1 |
-| EFMBM370MagicDesigns8.svg | 20.8 | 1 |
-| EFMBM370MagicDesigns9.svg | 13.3 | 1 |
-| EFMBM390AdditionPyramid2.svg | 26.3 | 1 |
-| EFMBM390SumSquare2.svg | 29.3 | 1 |
-| EFMBM470LeverBalance1.svg | 11.3 | 1 |
-| EFMBM470LeverBalance2.svg | 12.9 | 1 |
-| EFMBM490DivideUptheBoxSolution1.svg | 16.3 | 1 |
-| EFMBM490DivideUptheBoxSolution2.svg | 28.2 | 1 |
-| EFMBM520LetterSubstitution1.svg | 12.4 | 1 |
-| EFMBM520LetterSubstitution3.svg | 52.8 | 1 |
-| EFMBM530BilliardBallBouncing.svg | 5.9 | 1 |
-| EFMBM530BilliardBallBouncingUnfolded.svg | 9 | 1 |
-| EFMBM530SquaresinSquares.svg | 3.1 | 2 |
-| EFMBM540ProductGame10-12.svg | 149.4 | 1 |
-| EFMBM540ProductGame9.svg | 32.1 | 1 |
-| EFMBM550Mobile1.svg | 6.9 | 3 |
-| EFMBM90IslandHoppingConsecutiveEasy.svg | 23 | 1 |
-| EFMBM90IslandHoppingConsecutiveEven Harder.svg | 15.8 | 1 |
-| EFMBM90IslandHoppingConsecutiveHarder.svg | 19.2 | 1 |
-| EFMBM95-1FoldTree.svg | 3.4 | 1 |
-| EFMBM95-1Foldstar.svg | 4.4 | 1 |
-| EFMBM95-2FoldsLeaves.svg | 5.5 | 1 |
-| EFMBM95-3FoldsFlower.svg | 12.2 | 1 |
-| EFMBM95SnowflakeFoldingSequence.svg | 53.2 | 1 |
-| EFMFactFamilies2And3.svg | 2.5 | 1 |
-| EFMSevenDotsInATenFrame.svg | 4.4 | 3 |
 | EFMStorybooks/EFM-SB-0-PageDivider.svg | 3.2 | 2 |
 | EFMStorybooks/EFM-SB-AD-1.jpg | 21.9 | 1 |
 | EFMStorybooks/EFM-SB-AD-10.jpg | 12.7 | 1 |
@@ -1225,12 +1224,12 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | type | subtype | total |
 | --- | --- | --- |
-| data_list |  | 75 |
+| data_list |  | 59 |
 | data_list | app_config_language_list | 1 |
 | data_list | lifecycle_actions | 1 |
 | generator |  | 1 |
 | global |  | 2 |
-| template |  | 31 |
+| template |  | 14 |
 | template | generated | 58 |
 | tour |  | 6 |
 </details>

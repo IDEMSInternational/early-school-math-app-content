@@ -2,11 +2,11 @@
   "template_components": [
     {
       "type": "accordion",
-      "count": 2
+      "count": 1
     },
     {
       "type": "button",
-      "count": 22
+      "count": 15
     },
     {
       "type": "debug_toggle",
@@ -14,7 +14,7 @@
     },
     {
       "type": "display_group",
-      "count": 35
+      "count": 14
     },
     {
       "type": "image",
@@ -22,7 +22,7 @@
     },
     {
       "type": "items",
-      "count": 13
+      "count": 1
     },
     {
       "type": "qr_code",
@@ -42,15 +42,15 @@
     },
     {
       "type": "set_variable",
-      "count": 251
+      "count": 102
     },
     {
       "type": "template",
-      "count": 64
+      "count": 60
     },
     {
       "type": "text",
-      "count": 40
+      "count": 29
     },
     {
       "type": "text_area",
@@ -62,7 +62,7 @@
     },
     {
       "type": "title",
-      "count": 22
+      "count": 16
     }
   ],
   "template_actions": [
@@ -100,7 +100,7 @@
     },
     {
       "type": "go_to",
-      "count": 11
+      "count": 4
     },
     {
       "type": "go_to_url",
@@ -111,10 +111,6 @@
       "count": 1
     },
     {
-      "type": "set_field",
-      "count": 7
-    },
-    {
       "type": "set_local",
       "count": 4
     }
@@ -122,13 +118,13 @@
   "assets_size": [
     {
       "assets": "total",
-      "KB": "28183 KB",
-      "MB": "28.2 MB"
+      "KB": "19190 KB",
+      "MB": "19.2 MB"
     },
     {
       "assets": "unused",
-      "KB": "1498 KB",
-      "MB": "1.5 MB"
+      "KB": "10491 KB",
+      "MB": "10.5 MB"
     }
   ],
   "assets_unused": [
@@ -149,16 +145,88 @@
       "size_kb": 190.5
     },
     {
+      "path": "EFM100DominoesGame.svg",
+      "size_kb": 16.7
+    },
+    {
+      "path": "EFM100StealingBones.svg",
+      "size_kb": 19.1
+    },
+    {
+      "path": "EFM105BackAndForth12Move0.svg",
+      "size_kb": 11.8
+    },
+    {
+      "path": "EFM105BackAndForth12Move1.svg",
+      "size_kb": 13.5
+    },
+    {
+      "path": "EFM105BingoWithCards.svg",
+      "size_kb": 27.7
+    },
+    {
+      "path": "EFM105GoFish.svg",
+      "size_kb": 16.9
+    },
+    {
+      "path": "EFM105GoFishMatch.svg",
+      "size_kb": 11.9
+    },
+    {
+      "path": "EFM105MemoryChallenge.svg",
+      "size_kb": 11.1
+    },
+    {
       "path": "EFM10EFMPairLookingAway.svg",
       "size_kb": 23.6
+    },
+    {
+      "path": "EFM10PairLookingAway.svg",
+      "size_kb": 23.6
+    },
+    {
+      "path": "EFM10PairReadingOnBench.svg",
+      "size_kb": 33.7
+    },
+    {
+      "path": "EFM110InvisibleAddSub.svg",
+      "size_kb": 16
     },
     {
       "path": "EFM110NumberLineforNim.svg",
       "size_kb": 21
     },
     {
+      "path": "EFM110NumberLineforNimReverse.svg",
+      "size_kb": 20.7
+    },
+    {
+      "path": "EFM110WithinOneorTwo.svg",
+      "size_kb": 13.1
+    },
+    {
+      "path": "EFM115FeatureMatchingGame.svg",
+      "size_kb": 17.1
+    },
+    {
+      "path": "EFM115MatchingPuzzle.svg",
+      "size_kb": 11.4
+    },
+    {
+      "path": "EFM115TripletExamples.svg",
+      "size_kb": 35.2
+    },
+    {
+      "path": "EFM120FittingIn.svg",
+      "size_kb": 14.5
+    },
+    {
       "path": "EFM120SmallestSingleNumber.svg",
       "size_kb": 48.6
+    },
+    {
+      "path": "EFM120WarCards.svg",
+      "size_kb": 15.9
     },
     {
       "path": "EFM125ImThinkingofaNumber1.svg",
@@ -169,32 +237,304 @@
       "size_kb": 14.4
     },
     {
+      "path": "EFM125ImThinkingofaNumberAll.svg",
+      "size_kb": 43.8
+    },
+    {
+      "path": "EFM125NumberLineBattleship.svg",
+      "size_kb": 34.4
+    },
+    {
+      "path": "EFM12Apples.svg",
+      "size_kb": 5.3
+    },
+    {
       "path": "EFM12CautioinSign.svg",
       "size_kb": 1.8
+    },
+    {
+      "path": "EFM12EFMLogoNoEFM.svg",
+      "size_kb": 12.8
+    },
+    {
+      "path": "EFM12StopSign.svg",
+      "size_kb": 2.3
+    },
+    {
+      "path": "EFM12TrafficSignal.svg",
+      "size_kb": 3.6
     },
     {
       "path": "EFM12TriangleSign.svg",
       "size_kb": 2.3
     },
     {
+      "path": "EFM130FingerTenFrame.svg",
+      "size_kb": 6.5
+    },
+    {
+      "path": "EFM130Fingers3plus1.svg",
+      "size_kb": 10.9
+    },
+    {
+      "path": "EFM130WhatsMissing.svg",
+      "size_kb": 16.8
+    },
+    {
       "path": "EFM135MakingSquares.svg",
       "size_kb": 26.7
+    },
+    {
+      "path": "EFM135MakingSquaresComplex.svg",
+      "size_kb": 12.8
+    },
+    {
+      "path": "EFM135MakingSquaresSimple.svg",
+      "size_kb": 16
+    },
+    {
+      "path": "EFM135PatternsConnecttheDots.svg",
+      "size_kb": 21.2
+    },
+    {
+      "path": "EFM135ShapeSoduku.svg",
+      "size_kb": 30.7
     },
     {
       "path": "EFM135ShapeSodukuExample.svg",
       "size_kb": 32.6
     },
     {
+      "path": "EFM140BagGame.svg",
+      "size_kb": 14.9
+    },
+    {
+      "path": "EFM140IceCreamScoopStory.svg",
+      "size_kb": 12.5
+    },
+    {
+      "path": "EFM145Estimation.svg",
+      "size_kb": 34.4
+    },
+    {
+      "path": "EFM145GetOutofMyHouse.svg",
+      "size_kb": 23.4
+    },
+    {
+      "path": "EFM145InBetweenGame.svg",
+      "size_kb": 10.5
+    },
+    {
+      "path": "EFM150GreaterThanSudoku4by4.svg",
+      "size_kb": 41.5
+    },
+    {
+      "path": "EFM150GreaterThanSudoku6by6.svg",
+      "size_kb": 111.6
+    },
+    {
+      "path": "EFM150JigsawSudoku4by4.svg",
+      "size_kb": 24.1
+    },
+    {
+      "path": "EFM150JigsawSudoku5by5.svg",
+      "size_kb": 31.3
+    },
+    {
+      "path": "EFM160Codebreaker.svg",
+      "size_kb": 11.2
+    },
+    {
+      "path": "EFM160FifteenPuzzle3by3.svg",
+      "size_kb": 24.6
+    },
+    {
       "path": "EFM170FIngers8-5asdifference.svg",
       "size_kb": 22.3
+    },
+    {
+      "path": "EFM170Fingers4Plus2.svg",
+      "size_kb": 6.3
+    },
+    {
+      "path": "EFM170Fingers4Plus2CountingOn.svg",
+      "size_kb": 17.3
     },
     {
       "path": "EFM170Fingers8takeaway5.svg",
       "size_kb": 22.2
     },
     {
+      "path": "EFM170Fingers8takeaway5Fixed.svg",
+      "size_kb": 21.8
+    },
+    {
+      "path": "EFM180ComplexShapeSums.svg",
+      "size_kb": 14.8
+    },
+    {
+      "path": "EFM180SimpleShapeSums.svg",
+      "size_kb": 10.3
+    },
+    {
+      "path": "EFM190NumberCardsto20.svg",
+      "size_kb": 96.4
+    },
+    {
+      "path": "EFM200NumberShapes.svg",
+      "size_kb": 6.7
+    },
+    {
+      "path": "EFM200NumberShapesAddingEvensOdds.svg",
+      "size_kb": 21.4
+    },
+    {
+      "path": "EFM200NumberShapesEvensOdds.svg",
+      "size_kb": 12.2
+    },
+    {
+      "path": "EFM200NumberShapesTrapezoidal.svg",
+      "size_kb": 6.6
+    },
+    {
       "path": "EFM200SimTriangle.svg",
       "size_kb": 5
+    },
+    {
+      "path": "EFM200SimTriangle0.svg",
+      "size_kb": 5.3
+    },
+    {
+      "path": "EFM200SimTriangle13579.svg",
+      "size_kb": 24.6
+    },
+    {
+      "path": "EFM200SimilarStars.svg",
+      "size_kb": 4.1
+    },
+    {
+      "path": "EFM200SquareOfOddNumbers.svg",
+      "size_kb": 9.7
+    },
+    {
+      "path": "EFM200SymmetricArt.svg",
+      "size_kb": 12.3
+    },
+    {
+      "path": "EFM20Balloons.svg",
+      "size_kb": 27
+    },
+    {
+      "path": "EFM20BlueClock.svg",
+      "size_kb": 2.3
+    },
+    {
+      "path": "EFM20BoxWithHoles.svg",
+      "size_kb": 8.3
+    },
+    {
+      "path": "EFM20ColoredTiling.svg",
+      "size_kb": 14.7
+    },
+    {
+      "path": "EFM220NumberBlobs.svg",
+      "size_kb": 39.3
+    },
+    {
+      "path": "EFM230OrderedSteps.svg",
+      "size_kb": 4.1
+    },
+    {
+      "path": "EFM230OrderingCards.svg",
+      "size_kb": 21.7
+    },
+    {
+      "path": "EFM240EvenOddAndKropkiSudoku4by4.svg",
+      "size_kb": 19.9
+    },
+    {
+      "path": "EFM240SumdokuDiffdoku.svg",
+      "size_kb": 25.6
+    },
+    {
+      "path": "EFM270PyramidSolitaire.svg",
+      "size_kb": 32.5
+    },
+    {
+      "path": "EFM280DotsAndBoxes.svg",
+      "size_kb": 6.8
+    },
+    {
+      "path": "EFM280DotsAndBoxesNumbered.svg",
+      "size_kb": 8.8
+    },
+    {
+      "path": "EFM280Tapatan.svg",
+      "size_kb": 7.1
+    },
+    {
+      "path": "EFM290Fingers11-3.svg",
+      "size_kb": 21.6
+    },
+    {
+      "path": "EFM290FingersFor8-3.svg",
+      "size_kb": 11.8
+    },
+    {
+      "path": "EFM290FingersFor8Plus3.svg",
+      "size_kb": 11.8
+    },
+    {
+      "path": "EFM300IslandHoppingCompensation.svg",
+      "size_kb": 24.7
+    },
+    {
+      "path": "EFM300RegionSums.svg",
+      "size_kb": 10.9
+    },
+    {
+      "path": "EFM30MugOnShelf.svg",
+      "size_kb": 4.9
+    },
+    {
+      "path": "EFM30ShapePattern.svg",
+      "size_kb": 5.6
+    },
+    {
+      "path": "EFM30Socks.svg",
+      "size_kb": 18
+    },
+    {
+      "path": "EFM310DiffTriangles.svg",
+      "size_kb": 14.9
+    },
+    {
+      "path": "EFM310PanBalanceWithWeights4s7sOneSide.svg",
+      "size_kb": 2699.7
+    },
+    {
+      "path": "EFM310SumTriangles.svg",
+      "size_kb": 15.5
+    },
+    {
+      "path": "EFM330IslandHoppingSkipCounting.svg",
+      "size_kb": 19.9
+    },
+    {
+      "path": "EFM340FixIt.svg",
+      "size_kb": 17.3
+    },
+    {
+      "path": "EFM340PairingDown.svg",
+      "size_kb": 29.6
+    },
+    {
+      "path": "EFM350ExpandedFormFoldingPaper.svg",
+      "size_kb": 11.4
+    },
+    {
+      "path": "EFM350IslandHoppingby1sAnd10s.svg",
+      "size_kb": 15.6
     },
     {
       "path": "EFM370CircleGraphs1To12StarOfDavid.svg",
@@ -209,6 +549,70 @@
       "size_kb": 7.3
     },
     {
+      "path": "EFM370CircleGraphs1to6MagicCircle.svg",
+      "size_kb": 19.2
+    },
+    {
+      "path": "EFM370CircleGraphsAll4.svg",
+      "size_kb": 29
+    },
+    {
+      "path": "EFM380MultiplyingCommutes.svg",
+      "size_kb": 5.4
+    },
+    {
+      "path": "EFM385CoverUp.svg",
+      "size_kb": 37.3
+    },
+    {
+      "path": "EFM390AdditionPyramid.svg",
+      "size_kb": 18
+    },
+    {
+      "path": "EFM390SumSquare.svg",
+      "size_kb": 8
+    },
+    {
+      "path": "EFM400FibTableTo9.svg",
+      "size_kb": 14.5
+    },
+    {
+      "path": "EFM40CheerioPyramid.svg",
+      "size_kb": 40.5
+    },
+    {
+      "path": "EFM40FindingTwos.svg",
+      "size_kb": 17.5
+    },
+    {
+      "path": "EFM40OneMoreAppleSlice.svg",
+      "size_kb": 18.4
+    },
+    {
+      "path": "EFM440BondedGroups.svg",
+      "size_kb": 28.3
+    },
+    {
+      "path": "EFM440BondedGroupsOriginal.svg",
+      "size_kb": 27.2
+    },
+    {
+      "path": "EFM440MissingNumbers.svg",
+      "size_kb": 15.7
+    },
+    {
+      "path": "EFM450MultiplicationCards1.svg",
+      "size_kb": 13.3
+    },
+    {
+      "path": "EFM450MultiplicationCards2.svg",
+      "size_kb": 7.6
+    },
+    {
+      "path": "EFM450MultiplicationCards3.svg",
+      "size_kb": 8
+    },
+    {
       "path": "EFM450RevealingProducts.jpg",
       "size_kb": 52.1
     },
@@ -217,8 +621,132 @@
       "size_kb": 12.1
     },
     {
+      "path": "EFM450RevealingProducts.svg",
+      "size_kb": 71.8
+    },
+    {
+      "path": "EFM455CoverFactorsMultiples.svg",
+      "size_kb": 16.4
+    },
+    {
+      "path": "EFM460SieveOfEratosthenes.svg",
+      "size_kb": 47
+    },
+    {
+      "path": "EFM460SieveofEratosthenes2s3s.svg",
+      "size_kb": 35.1
+    },
+    {
+      "path": "EFM470LeverBalance.svg",
+      "size_kb": 11.3
+    },
+    {
+      "path": "EFM480TurningTheTables.svg",
+      "size_kb": 17.4
+    },
+    {
+      "path": "EFM490DivideUpTheBox.svg",
+      "size_kb": 7.3
+    },
+    {
+      "path": "EFM490RectangleArea.svg",
+      "size_kb": 3.3
+    },
+    {
+      "path": "EFM500SimpleShapeProducts.svg",
+      "size_kb": 10.3
+    },
+    {
+      "path": "EFM500SimpleShapeSums.svg",
+      "size_kb": 10.3
+    },
+    {
+      "path": "EFM50NumberCards.svg",
+      "size_kb": 133.6
+    },
+    {
+      "path": "EFM50NumberLine.svg",
+      "size_kb": 21.7
+    },
+    {
+      "path": "EFM50ShapeDeck.svg",
+      "size_kb": 42.9
+    },
+    {
+      "path": "EFM510FactorTrees.svg",
+      "size_kb": 17.2
+    },
+    {
+      "path": "EFM510ProductPyramid.svg",
+      "size_kb": 17.6
+    },
+    {
+      "path": "EFM520LetterSubstitution1.svg",
+      "size_kb": 12.4
+    },
+    {
+      "path": "EFM520LetterSubstitution2.svg",
+      "size_kb": 24.8
+    },
+    {
+      "path": "EFM530BilliardBallBouncing.svg",
+      "size_kb": 5.9
+    },
+    {
+      "path": "EFM530Calculator4-7PlusMinus.svg",
+      "size_kb": 841.1
+    },
+    {
+      "path": "EFM530SquaresInSquares.svg",
+      "size_kb": 3.1
+    },
+    {
+      "path": "EFM540IslandHoppingWithProducts.svg",
+      "size_kb": 21.7
+    },
+    {
+      "path": "EFM540ProductGame.svg",
+      "size_kb": 26.5
+    },
+    {
+      "path": "EFM550Mobile1.svg",
+      "size_kb": 6.9
+    },
+    {
+      "path": "EFM550Mobile2.svg",
+      "size_kb": 10
+    },
+    {
+      "path": "EFM570CrossProducts3By3.svg",
+      "size_kb": 12.9
+    },
+    {
+      "path": "EFM570CrossProducts4By4.svg",
+      "size_kb": 17.7
+    },
+    {
+      "path": "EFM60HomeStoreItems.svg",
+      "size_kb": 35.3
+    },
+    {
       "path": "EFM60Hopscotch.svg",
       "size_kb": 9
+    },
+    {
+      "path": "EFM60Hopscotchto10.svg",
+      "size_kb": 10.1
+    },
+    {
+      "path": "EFM60TwoCheeriosinahand.svg",
+      "size_kb": 10.2
+    },
+    {
+      "path": "EFM70EachOfTheseIsDifferent.svg",
+      "size_kb": 6.5
+    },
+    {
+      "path": "EFM70EachOfTheseIsDifferentExample.svg",
+      "size_kb": 4.7
     },
     {
       "path": "EFM70Fork.svg",
@@ -227,6 +755,14 @@
     {
       "path": "EFM70ForkGold.svg",
       "size_kb": 9.9
+    },
+    {
+      "path": "EFM70ForkSpoonGold.svg",
+      "size_kb": 14.9
+    },
+    {
+      "path": "EFM70GoingInCircles.svg",
+      "size_kb": 10.6
     },
     {
       "path": "EFM70Spoon.svg",
@@ -241,8 +777,72 @@
       "size_kb": 4.9
     },
     {
+      "path": "EFM90HouseConnecttheDots.svg",
+      "size_kb": 9.2
+    },
+    {
       "path": "EFM90HouseConnecttheDots2.svg",
       "size_kb": 8.5
+    },
+    {
+      "path": "EFM90IslandHoppingConsecutive.svg",
+      "size_kb": 20.8
+    },
+    {
+      "path": "EFM90StringNumberLine.svg",
+      "size_kb": 22
+    },
+    {
+      "path": "EFM95ColoredShapesonFloor.svg",
+      "size_kb": 10.2
+    },
+    {
+      "path": "EFM95Kirigami.svg",
+      "size_kb": 12.2
+    },
+    {
+      "path": "EFMBM135CirclesofDots.svg",
+      "size_kb": 71
+    },
+    {
+      "path": "EFMBM135ConnecttheDotsBanana.svg",
+      "size_kb": 9.1
+    },
+    {
+      "path": "EFMBM135ConnecttheDotsStringsAroundaCircle.svg",
+      "size_kb": 57.8
+    },
+    {
+      "path": "EFMBM135ConnecttheDotsUmbrella.svg",
+      "size_kb": 10.4
+    },
+    {
+      "path": "EFMBM135HouseConnecttheDotswithDashes.svg",
+      "size_kb": 9.2
+    },
+    {
+      "path": "EFMBM135StringArtPattern.svg",
+      "size_kb": 14.2
+    },
+    {
+      "path": "EFMBM135StringArtPatternsOneAngle.svg",
+      "size_kb": 14.5
+    },
+    {
+      "path": "EFMBM135cFinishedShapeSodukuExamples.svg",
+      "size_kb": 187
+    },
+    {
+      "path": "EFMBM150aJigsawSudoku4by4ExamplesSolved.svg",
+      "size_kb": 132.1
+    },
+    {
+      "path": "EFMBM150aJigsawSudoku5by5ExamplesSolved.svg",
+      "size_kb": 101.7
+    },
+    {
+      "path": "EFMBM150aJigsawSudoku6by6ExamplesSolved.svg",
+      "size_kb": 75.6
     },
     {
       "path": "EFMBM180 Complex Shape Sums Examples.svg",
@@ -253,8 +853,124 @@
       "size_kb": 15.9
     },
     {
+      "path": "EFMBM180ComplexShapeSums1.svg",
+      "size_kb": 15.1
+    },
+    {
+      "path": "EFMBM180ComplexShapeSums2.svg",
+      "size_kb": 15.9
+    },
+    {
+      "path": "EFMBM180ComplexShapeSums3.svg",
+      "size_kb": 32.8
+    },
+    {
+      "path": "EFMBM180SimpleShapeSums.svg",
+      "size_kb": 11.6
+    },
+    {
+      "path": "EFMBM180SimpleShapeSums7Examples.svg",
+      "size_kb": 54
+    },
+    {
+      "path": "EFMBM220SumGroups.svg",
+      "size_kb": 39.3
+    },
+    {
+      "path": "EFMBM220SumGroups10.svg",
+      "size_kb": 132.7
+    },
+    {
+      "path": "EFMBM220SumGroups6.svg",
+      "size_kb": 129.3
+    },
+    {
+      "path": "EFMBM220SumGroups7.svg",
+      "size_kb": 132.5
+    },
+    {
+      "path": "EFMBM220SumGroups8.svg",
+      "size_kb": 133.2
+    },
+    {
+      "path": "EFMBM220SumGroups9.svg",
+      "size_kb": 133.3
+    },
+    {
+      "path": "EFMBM240EvenOddandKropkiSudoku4by4.svg",
+      "size_kb": 19.9
+    },
+    {
+      "path": "EFMBM240SumdokuDiffdoku.svg",
+      "size_kb": 25.6
+    },
+    {
+      "path": "EFMBM270DifferencePyramid6Solutions.svg",
+      "size_kb": 31
+    },
+    {
+      "path": "EFMBM300IslandHoppingCompensation.svg",
+      "size_kb": 25
+    },
+    {
+      "path": "EFMBM300RegionSums.svg",
+      "size_kb": 10.9
+    },
+    {
+      "path": "EFMBM300RegionSumsMoreExamples.svg",
+      "size_kb": 68
+    },
+    {
+      "path": "EFMBM310DiffTriangles.svg",
+      "size_kb": 14.9
+    },
+    {
+      "path": "EFMBM310DiffTriangles1.svg",
+      "size_kb": 35.8
+    },
+    {
+      "path": "EFMBM310DiffTriangles2.svg",
+      "size_kb": 32
+    },
+    {
+      "path": "EFMBM310DiffTriangles3.svg",
+      "size_kb": 51.7
+    },
+    {
+      "path": "EFMBM310SumTriangles.svg",
+      "size_kb": 15.5
+    },
+    {
+      "path": "EFMBM310SumTriangles1.svg",
+      "size_kb": 31.9
+    },
+    {
+      "path": "EFMBM330IslandHoppingConsecutivetoSkipping.svg",
+      "size_kb": 23.8
+    },
+    {
+      "path": "EFMBM330IslandHoppingSkipCounting.svg",
+      "size_kb": 19.9
+    },
+    {
       "path": "EFMBM340FixIt.svg",
       "size_kb": 17.3
+    },
+    {
+      "path": "EFMBM340FixItMoreExamples1.svg",
+      "size_kb": 68.7
+    },
+    {
+      "path": "EFMBM340FixItMoreExamples2.svg",
+      "size_kb": 42
+    },
+    {
+      "path": "EFMBM350IslandHoppingBy1sand10s.svg",
+      "size_kb": 15.6
+    },
+    {
+      "path": "EFMBM350IslandHoppingBy1sand10swithCircles.svg",
+      "size_kb": 21.2
     },
     {
       "path": "EFMBM370CircleGraphs1to12StarofDavid.svg",
@@ -273,12 +989,52 @@
       "size_kb": 7.3
     },
     {
+      "path": "EFMBM370MagicCircles1to6.svg",
+      "size_kb": 19.2
+    },
+    {
+      "path": "EFMBM370MagicDesigns1.svg",
+      "size_kb": 6.3
+    },
+    {
+      "path": "EFMBM370MagicDesigns2.svg",
+      "size_kb": 14.7
+    },
+    {
+      "path": "EFMBM370MagicDesigns3.svg",
+      "size_kb": 21.5
+    },
+    {
+      "path": "EFMBM370MagicDesigns4.svg",
+      "size_kb": 24.4
+    },
+    {
+      "path": "EFMBM370MagicDesigns7.svg",
+      "size_kb": 38.4
+    },
+    {
+      "path": "EFMBM370MagicDesigns8.svg",
+      "size_kb": 20.8
+    },
+    {
+      "path": "EFMBM370MagicDesigns9.svg",
+      "size_kb": 13.3
+    },
+    {
       "path": "EFMBM390AdditionPyramid.svg",
       "size_kb": 17.6
     },
     {
+      "path": "EFMBM390AdditionPyramid2.svg",
+      "size_kb": 26.3
+    },
+    {
       "path": "EFMBM390SumSquare.svg",
       "size_kb": 10.9
+    },
+    {
+      "path": "EFMBM390SumSquare2.svg",
+      "size_kb": 29.3
     },
     {
       "path": "EFMBM400FibTableTo9.svg",
@@ -289,16 +1045,64 @@
       "size_kb": 12.4
     },
     {
+      "path": "EFMBM470LeverBalance1.svg",
+      "size_kb": 11.3
+    },
+    {
+      "path": "EFMBM470LeverBalance2.svg",
+      "size_kb": 12.9
+    },
+    {
       "path": "EFMBM490DivideUptheBox.svg",
       "size_kb": 7.3
+    },
+    {
+      "path": "EFMBM490DivideUptheBoxSolution1.svg",
+      "size_kb": 16.3
+    },
+    {
+      "path": "EFMBM490DivideUptheBoxSolution2.svg",
+      "size_kb": 28.2
+    },
+    {
+      "path": "EFMBM520LetterSubstitution1.svg",
+      "size_kb": 12.4
     },
     {
       "path": "EFMBM520LetterSubstitution2.svg",
       "size_kb": 24.8
     },
     {
+      "path": "EFMBM520LetterSubstitution3.svg",
+      "size_kb": 52.8
+    },
+    {
+      "path": "EFMBM530BilliardBallBouncing.svg",
+      "size_kb": 5.9
+    },
+    {
+      "path": "EFMBM530BilliardBallBouncingUnfolded.svg",
+      "size_kb": 9
+    },
+    {
+      "path": "EFMBM530SquaresinSquares.svg",
+      "size_kb": 3.1
+    },
+    {
       "path": "EFMBM530SquaresinSquares2.svg",
       "size_kb": 3.8
+    },
+    {
+      "path": "EFMBM540ProductGame10-12.svg",
+      "size_kb": 149.4
+    },
+    {
+      "path": "EFMBM540ProductGame9.svg",
+      "size_kb": 32.1
+    },
+    {
+      "path": "EFMBM550Mobile1.svg",
+      "size_kb": 6.9
     },
     {
       "path": "EFMBM550Mobile2.svg",
@@ -307,6 +1111,38 @@
     {
       "path": "EFMBM550Mobile3.svg",
       "size_kb": 12.6
+    },
+    {
+      "path": "EFMBM90IslandHoppingConsecutiveEasy.svg",
+      "size_kb": 23
+    },
+    {
+      "path": "EFMBM90IslandHoppingConsecutiveEven Harder.svg",
+      "size_kb": 15.8
+    },
+    {
+      "path": "EFMBM90IslandHoppingConsecutiveHarder.svg",
+      "size_kb": 19.2
+    },
+    {
+      "path": "EFMBM95-1FoldTree.svg",
+      "size_kb": 3.4
+    },
+    {
+      "path": "EFMBM95-1Foldstar.svg",
+      "size_kb": 4.4
+    },
+    {
+      "path": "EFMBM95-2FoldsLeaves.svg",
+      "size_kb": 5.5
+    },
+    {
+      "path": "EFMBM95-3FoldsFlower.svg",
+      "size_kb": 12.2
+    },
+    {
+      "path": "EFMBM95SnowflakeFoldingSequence.svg",
+      "size_kb": 53.2
     },
     {
       "path": "EFMBM95SnowflakeFoldingSequence1.svg",
@@ -339,6 +1175,14 @@
     {
       "path": "EFMBM95SnowflakeFoldingSequence8.svg",
       "size_kb": 16.8
+    },
+    {
+      "path": "EFMFactFamilies2And3.svg",
+      "size_kb": 2.5
+    },
+    {
+      "path": "EFMSevenDotsInATenFrame.svg",
+      "size_kb": 4.4
     },
     {
       "path": "EFMStorybooks/EFM-SB-FB-.jpg",
@@ -380,1069 +1224,9 @@
   "assets_missing": [],
   "asset_summary": [
     {
-      "path": "EFM100DominoesGame.svg",
-      "count": 1,
-      "size_kb": 16.7
-    },
-    {
-      "path": "EFM100StealingBones.svg",
-      "count": 1,
-      "size_kb": 19.1
-    },
-    {
-      "path": "EFM105BackAndForth12Move0.svg",
-      "count": 1,
-      "size_kb": 11.8
-    },
-    {
-      "path": "EFM105BackAndForth12Move1.svg",
-      "count": 1,
-      "size_kb": 13.5
-    },
-    {
-      "path": "EFM105BingoWithCards.svg",
-      "count": 1,
-      "size_kb": 27.7
-    },
-    {
-      "path": "EFM105GoFish.svg",
-      "count": 1,
-      "size_kb": 16.9
-    },
-    {
-      "path": "EFM105GoFishMatch.svg",
-      "count": 1,
-      "size_kb": 11.9
-    },
-    {
-      "path": "EFM105MemoryChallenge.svg",
-      "count": 1,
-      "size_kb": 11.1
-    },
-    {
-      "path": "EFM10PairLookingAway.svg",
-      "count": 1,
-      "size_kb": 23.6
-    },
-    {
-      "path": "EFM10PairReadingOnBench.svg",
-      "count": 1,
-      "size_kb": 33.7
-    },
-    {
-      "path": "EFM110InvisibleAddSub.svg",
-      "count": 1,
-      "size_kb": 16
-    },
-    {
-      "path": "EFM110NumberLineforNimReverse.svg",
-      "count": 1,
-      "size_kb": 20.7
-    },
-    {
-      "path": "EFM110WithinOneorTwo.svg",
-      "count": 1,
-      "size_kb": 13.1
-    },
-    {
-      "path": "EFM115FeatureMatchingGame.svg",
-      "count": 1,
-      "size_kb": 17.1
-    },
-    {
-      "path": "EFM115MatchingPuzzle.svg",
-      "count": 1,
-      "size_kb": 11.4
-    },
-    {
-      "path": "EFM115TripletExamples.svg",
-      "count": 1,
-      "size_kb": 35.2
-    },
-    {
-      "path": "EFM120FittingIn.svg",
-      "count": 1,
-      "size_kb": 14.5
-    },
-    {
-      "path": "EFM120WarCards.svg",
-      "count": 1,
-      "size_kb": 15.9
-    },
-    {
-      "path": "EFM125ImThinkingofaNumberAll.svg",
-      "count": 1,
-      "size_kb": 43.8
-    },
-    {
-      "path": "EFM125NumberLineBattleship.svg",
-      "count": 1,
-      "size_kb": 34.4
-    },
-    {
-      "path": "EFM12Apples.svg",
-      "count": 1,
-      "size_kb": 5.3
-    },
-    {
-      "path": "EFM12EFMLogoNoEFM.svg",
-      "count": 1,
-      "size_kb": 12.8
-    },
-    {
       "path": "EFM12EFMLogoNoEFMpng.png",
       "count": 1,
       "size_kb": 33.1
-    },
-    {
-      "path": "EFM12StopSign.svg",
-      "count": 1,
-      "size_kb": 2.3
-    },
-    {
-      "path": "EFM12TrafficSignal.svg",
-      "count": 1,
-      "size_kb": 3.6
-    },
-    {
-      "path": "EFM130FingerTenFrame.svg",
-      "count": 2,
-      "size_kb": 6.5
-    },
-    {
-      "path": "EFM130Fingers3plus1.svg",
-      "count": 1,
-      "size_kb": 10.9
-    },
-    {
-      "path": "EFM130WhatsMissing.svg",
-      "count": 1,
-      "size_kb": 16.8
-    },
-    {
-      "path": "EFM135MakingSquaresComplex.svg",
-      "count": 1,
-      "size_kb": 12.8
-    },
-    {
-      "path": "EFM135MakingSquaresSimple.svg",
-      "count": 1,
-      "size_kb": 16
-    },
-    {
-      "path": "EFM135PatternsConnecttheDots.svg",
-      "count": 1,
-      "size_kb": 21.2
-    },
-    {
-      "path": "EFM135ShapeSoduku.svg",
-      "count": 1,
-      "size_kb": 30.7
-    },
-    {
-      "path": "EFM140BagGame.svg",
-      "count": 1,
-      "size_kb": 14.9
-    },
-    {
-      "path": "EFM140IceCreamScoopStory.svg",
-      "count": 1,
-      "size_kb": 12.5
-    },
-    {
-      "path": "EFM145Estimation.svg",
-      "count": 1,
-      "size_kb": 34.4
-    },
-    {
-      "path": "EFM145GetOutofMyHouse.svg",
-      "count": 1,
-      "size_kb": 23.4
-    },
-    {
-      "path": "EFM145InBetweenGame.svg",
-      "count": 1,
-      "size_kb": 10.5
-    },
-    {
-      "path": "EFM150GreaterThanSudoku4by4.svg",
-      "count": 2,
-      "size_kb": 41.5
-    },
-    {
-      "path": "EFM150GreaterThanSudoku6by6.svg",
-      "count": 2,
-      "size_kb": 111.6
-    },
-    {
-      "path": "EFM150JigsawSudoku4by4.svg",
-      "count": 1,
-      "size_kb": 24.1
-    },
-    {
-      "path": "EFM150JigsawSudoku5by5.svg",
-      "count": 1,
-      "size_kb": 31.3
-    },
-    {
-      "path": "EFM160Codebreaker.svg",
-      "count": 1,
-      "size_kb": 11.2
-    },
-    {
-      "path": "EFM160FifteenPuzzle3by3.svg",
-      "count": 2,
-      "size_kb": 24.6
-    },
-    {
-      "path": "EFM170Fingers4Plus2.svg",
-      "count": 1,
-      "size_kb": 6.3
-    },
-    {
-      "path": "EFM170Fingers4Plus2CountingOn.svg",
-      "count": 2,
-      "size_kb": 17.3
-    },
-    {
-      "path": "EFM170Fingers8takeaway5Fixed.svg",
-      "count": 1,
-      "size_kb": 21.8
-    },
-    {
-      "path": "EFM180ComplexShapeSums.svg",
-      "count": 1,
-      "size_kb": 14.8
-    },
-    {
-      "path": "EFM180SimpleShapeSums.svg",
-      "count": 1,
-      "size_kb": 10.3
-    },
-    {
-      "path": "EFM190NumberCardsto20.svg",
-      "count": 1,
-      "size_kb": 96.4
-    },
-    {
-      "path": "EFM200NumberShapes.svg",
-      "count": 2,
-      "size_kb": 6.7
-    },
-    {
-      "path": "EFM200NumberShapesAddingEvensOdds.svg",
-      "count": 1,
-      "size_kb": 21.4
-    },
-    {
-      "path": "EFM200NumberShapesEvensOdds.svg",
-      "count": 1,
-      "size_kb": 12.2
-    },
-    {
-      "path": "EFM200NumberShapesTrapezoidal.svg",
-      "count": 1,
-      "size_kb": 6.6
-    },
-    {
-      "path": "EFM200SimTriangle0.svg",
-      "count": 1,
-      "size_kb": 5.3
-    },
-    {
-      "path": "EFM200SimTriangle13579.svg",
-      "count": 1,
-      "size_kb": 24.6
-    },
-    {
-      "path": "EFM200SimilarStars.svg",
-      "count": 1,
-      "size_kb": 4.1
-    },
-    {
-      "path": "EFM200SquareOfOddNumbers.svg",
-      "count": 1,
-      "size_kb": 9.7
-    },
-    {
-      "path": "EFM200SymmetricArt.svg",
-      "count": 1,
-      "size_kb": 12.3
-    },
-    {
-      "path": "EFM20Balloons.svg",
-      "count": 1,
-      "size_kb": 27
-    },
-    {
-      "path": "EFM20BlueClock.svg",
-      "count": 1,
-      "size_kb": 2.3
-    },
-    {
-      "path": "EFM20BoxWithHoles.svg",
-      "count": 1,
-      "size_kb": 8.3
-    },
-    {
-      "path": "EFM20ColoredTiling.svg",
-      "count": 1,
-      "size_kb": 14.7
-    },
-    {
-      "path": "EFM220NumberBlobs.svg",
-      "count": 1,
-      "size_kb": 39.3
-    },
-    {
-      "path": "EFM230OrderedSteps.svg",
-      "count": 1,
-      "size_kb": 4.1
-    },
-    {
-      "path": "EFM230OrderingCards.svg",
-      "count": 1,
-      "size_kb": 21.7
-    },
-    {
-      "path": "EFM240EvenOddAndKropkiSudoku4by4.svg",
-      "count": 1,
-      "size_kb": 19.9
-    },
-    {
-      "path": "EFM240SumdokuDiffdoku.svg",
-      "count": 1,
-      "size_kb": 25.6
-    },
-    {
-      "path": "EFM270PyramidSolitaire.svg",
-      "count": 1,
-      "size_kb": 32.5
-    },
-    {
-      "path": "EFM280DotsAndBoxes.svg",
-      "count": 1,
-      "size_kb": 6.8
-    },
-    {
-      "path": "EFM280DotsAndBoxesNumbered.svg",
-      "count": 1,
-      "size_kb": 8.8
-    },
-    {
-      "path": "EFM280Tapatan.svg",
-      "count": 1,
-      "size_kb": 7.1
-    },
-    {
-      "path": "EFM290Fingers11-3.svg",
-      "count": 1,
-      "size_kb": 21.6
-    },
-    {
-      "path": "EFM290FingersFor8-3.svg",
-      "count": 1,
-      "size_kb": 11.8
-    },
-    {
-      "path": "EFM290FingersFor8Plus3.svg",
-      "count": 1,
-      "size_kb": 11.8
-    },
-    {
-      "path": "EFM300IslandHoppingCompensation.svg",
-      "count": 1,
-      "size_kb": 24.7
-    },
-    {
-      "path": "EFM300RegionSums.svg",
-      "count": 1,
-      "size_kb": 10.9
-    },
-    {
-      "path": "EFM30MugOnShelf.svg",
-      "count": 1,
-      "size_kb": 4.9
-    },
-    {
-      "path": "EFM30ShapePattern.svg",
-      "count": 2,
-      "size_kb": 5.6
-    },
-    {
-      "path": "EFM30Socks.svg",
-      "count": 1,
-      "size_kb": 18
-    },
-    {
-      "path": "EFM310DiffTriangles.svg",
-      "count": 1,
-      "size_kb": 14.9
-    },
-    {
-      "path": "EFM310PanBalanceWithWeights4s7sOneSide.svg",
-      "count": 1,
-      "size_kb": 2699.7
-    },
-    {
-      "path": "EFM310SumTriangles.svg",
-      "count": 1,
-      "size_kb": 15.5
-    },
-    {
-      "path": "EFM330IslandHoppingSkipCounting.svg",
-      "count": 1,
-      "size_kb": 19.9
-    },
-    {
-      "path": "EFM340FixIt.svg",
-      "count": 1,
-      "size_kb": 17.3
-    },
-    {
-      "path": "EFM340PairingDown.svg",
-      "count": 1,
-      "size_kb": 29.6
-    },
-    {
-      "path": "EFM350ExpandedFormFoldingPaper.svg",
-      "count": 1,
-      "size_kb": 11.4
-    },
-    {
-      "path": "EFM350IslandHoppingby1sAnd10s.svg",
-      "count": 1,
-      "size_kb": 15.6
-    },
-    {
-      "path": "EFM370CircleGraphs1to6MagicCircle.svg",
-      "count": 1,
-      "size_kb": 19.2
-    },
-    {
-      "path": "EFM370CircleGraphsAll4.svg",
-      "count": 1,
-      "size_kb": 29
-    },
-    {
-      "path": "EFM380MultiplyingCommutes.svg",
-      "count": 3,
-      "size_kb": 5.4
-    },
-    {
-      "path": "EFM385CoverUp.svg",
-      "count": 1,
-      "size_kb": 37.3
-    },
-    {
-      "path": "EFM390AdditionPyramid.svg",
-      "count": 1,
-      "size_kb": 18
-    },
-    {
-      "path": "EFM390SumSquare.svg",
-      "count": 1,
-      "size_kb": 8
-    },
-    {
-      "path": "EFM400FibTableTo9.svg",
-      "count": 1,
-      "size_kb": 14.5
-    },
-    {
-      "path": "EFM40CheerioPyramid.svg",
-      "count": 1,
-      "size_kb": 40.5
-    },
-    {
-      "path": "EFM40FindingTwos.svg",
-      "count": 1,
-      "size_kb": 17.5
-    },
-    {
-      "path": "EFM40OneMoreAppleSlice.svg",
-      "count": 1,
-      "size_kb": 18.4
-    },
-    {
-      "path": "EFM440BondedGroups.svg",
-      "count": 1,
-      "size_kb": 28.3
-    },
-    {
-      "path": "EFM440BondedGroupsOriginal.svg",
-      "count": 1,
-      "size_kb": 27.2
-    },
-    {
-      "path": "EFM440MissingNumbers.svg",
-      "count": 1,
-      "size_kb": 15.7
-    },
-    {
-      "path": "EFM450MultiplicationCards1.svg",
-      "count": 1,
-      "size_kb": 13.3
-    },
-    {
-      "path": "EFM450MultiplicationCards2.svg",
-      "count": 1,
-      "size_kb": 7.6
-    },
-    {
-      "path": "EFM450MultiplicationCards3.svg",
-      "count": 1,
-      "size_kb": 8
-    },
-    {
-      "path": "EFM450RevealingProducts.svg",
-      "count": 1,
-      "size_kb": 71.8
-    },
-    {
-      "path": "EFM455CoverFactorsMultiples.svg",
-      "count": 1,
-      "size_kb": 16.4
-    },
-    {
-      "path": "EFM460SieveOfEratosthenes.svg",
-      "count": 2,
-      "size_kb": 47
-    },
-    {
-      "path": "EFM460SieveofEratosthenes2s3s.svg",
-      "count": 1,
-      "size_kb": 35.1
-    },
-    {
-      "path": "EFM470LeverBalance.svg",
-      "count": 1,
-      "size_kb": 11.3
-    },
-    {
-      "path": "EFM480TurningTheTables.svg",
-      "count": 1,
-      "size_kb": 17.4
-    },
-    {
-      "path": "EFM490DivideUpTheBox.svg",
-      "count": 1,
-      "size_kb": 7.3
-    },
-    {
-      "path": "EFM490RectangleArea.svg",
-      "count": 1,
-      "size_kb": 3.3
-    },
-    {
-      "path": "EFM500SimpleShapeProducts.svg",
-      "count": 1,
-      "size_kb": 10.3
-    },
-    {
-      "path": "EFM500SimpleShapeSums.svg",
-      "count": 1,
-      "size_kb": 10.3
-    },
-    {
-      "path": "EFM50NumberCards.svg",
-      "count": 1,
-      "size_kb": 133.6
-    },
-    {
-      "path": "EFM50NumberLine.svg",
-      "count": 1,
-      "size_kb": 21.7
-    },
-    {
-      "path": "EFM50ShapeDeck.svg",
-      "count": 1,
-      "size_kb": 42.9
-    },
-    {
-      "path": "EFM510FactorTrees.svg",
-      "count": 2,
-      "size_kb": 17.2
-    },
-    {
-      "path": "EFM510ProductPyramid.svg",
-      "count": 1,
-      "size_kb": 17.6
-    },
-    {
-      "path": "EFM520LetterSubstitution1.svg",
-      "count": 1,
-      "size_kb": 12.4
-    },
-    {
-      "path": "EFM520LetterSubstitution2.svg",
-      "count": 1,
-      "size_kb": 24.8
-    },
-    {
-      "path": "EFM530BilliardBallBouncing.svg",
-      "count": 1,
-      "size_kb": 5.9
-    },
-    {
-      "path": "EFM530Calculator4-7PlusMinus.svg",
-      "count": 1,
-      "size_kb": 841.1
-    },
-    {
-      "path": "EFM530SquaresInSquares.svg",
-      "count": 1,
-      "size_kb": 3.1
-    },
-    {
-      "path": "EFM540IslandHoppingWithProducts.svg",
-      "count": 1,
-      "size_kb": 21.7
-    },
-    {
-      "path": "EFM540ProductGame.svg",
-      "count": 1,
-      "size_kb": 26.5
-    },
-    {
-      "path": "EFM550Mobile1.svg",
-      "count": 1,
-      "size_kb": 6.9
-    },
-    {
-      "path": "EFM550Mobile2.svg",
-      "count": 1,
-      "size_kb": 10
-    },
-    {
-      "path": "EFM570CrossProducts3By3.svg",
-      "count": 1,
-      "size_kb": 12.9
-    },
-    {
-      "path": "EFM570CrossProducts4By4.svg",
-      "count": 1,
-      "size_kb": 17.7
-    },
-    {
-      "path": "EFM60HomeStoreItems.svg",
-      "count": 1,
-      "size_kb": 35.3
-    },
-    {
-      "path": "EFM60Hopscotchto10.svg",
-      "count": 1,
-      "size_kb": 10.1
-    },
-    {
-      "path": "EFM60TwoCheeriosinahand.svg",
-      "count": 1,
-      "size_kb": 10.2
-    },
-    {
-      "path": "EFM70EachOfTheseIsDifferent.svg",
-      "count": 1,
-      "size_kb": 6.5
-    },
-    {
-      "path": "EFM70EachOfTheseIsDifferentExample.svg",
-      "count": 2,
-      "size_kb": 4.7
-    },
-    {
-      "path": "EFM70ForkSpoonGold.svg",
-      "count": 1,
-      "size_kb": 14.9
-    },
-    {
-      "path": "EFM70GoingInCircles.svg",
-      "count": 2,
-      "size_kb": 10.6
-    },
-    {
-      "path": "EFM90HouseConnecttheDots.svg",
-      "count": 1,
-      "size_kb": 9.2
-    },
-    {
-      "path": "EFM90IslandHoppingConsecutive.svg",
-      "count": 1,
-      "size_kb": 20.8
-    },
-    {
-      "path": "EFM90StringNumberLine.svg",
-      "count": 1,
-      "size_kb": 22
-    },
-    {
-      "path": "EFM95ColoredShapesonFloor.svg",
-      "count": 1,
-      "size_kb": 10.2
-    },
-    {
-      "path": "EFM95Kirigami.svg",
-      "count": 1,
-      "size_kb": 12.2
-    },
-    {
-      "path": "EFMBM135CirclesofDots.svg",
-      "count": 1,
-      "size_kb": 71
-    },
-    {
-      "path": "EFMBM135ConnecttheDotsBanana.svg",
-      "count": 1,
-      "size_kb": 9.1
-    },
-    {
-      "path": "EFMBM135ConnecttheDotsStringsAroundaCircle.svg",
-      "count": 1,
-      "size_kb": 57.8
-    },
-    {
-      "path": "EFMBM135ConnecttheDotsUmbrella.svg",
-      "count": 1,
-      "size_kb": 10.4
-    },
-    {
-      "path": "EFMBM135HouseConnecttheDotswithDashes.svg",
-      "count": 1,
-      "size_kb": 9.2
-    },
-    {
-      "path": "EFMBM135StringArtPattern.svg",
-      "count": 1,
-      "size_kb": 14.2
-    },
-    {
-      "path": "EFMBM135StringArtPatternsOneAngle.svg",
-      "count": 1,
-      "size_kb": 14.5
-    },
-    {
-      "path": "EFMBM135cFinishedShapeSodukuExamples.svg",
-      "count": 1,
-      "size_kb": 187
-    },
-    {
-      "path": "EFMBM150aJigsawSudoku4by4ExamplesSolved.svg",
-      "count": 1,
-      "size_kb": 132.1
-    },
-    {
-      "path": "EFMBM150aJigsawSudoku5by5ExamplesSolved.svg",
-      "count": 1,
-      "size_kb": 101.7
-    },
-    {
-      "path": "EFMBM150aJigsawSudoku6by6ExamplesSolved.svg",
-      "count": 1,
-      "size_kb": 75.6
-    },
-    {
-      "path": "EFMBM180ComplexShapeSums1.svg",
-      "count": 1,
-      "size_kb": 15.1
-    },
-    {
-      "path": "EFMBM180ComplexShapeSums2.svg",
-      "count": 1,
-      "size_kb": 15.9
-    },
-    {
-      "path": "EFMBM180ComplexShapeSums3.svg",
-      "count": 1,
-      "size_kb": 32.8
-    },
-    {
-      "path": "EFMBM180SimpleShapeSums.svg",
-      "count": 1,
-      "size_kb": 11.6
-    },
-    {
-      "path": "EFMBM180SimpleShapeSums7Examples.svg",
-      "count": 1,
-      "size_kb": 54
-    },
-    {
-      "path": "EFMBM220SumGroups.svg",
-      "count": 1,
-      "size_kb": 39.3
-    },
-    {
-      "path": "EFMBM220SumGroups10.svg",
-      "count": 1,
-      "size_kb": 132.7
-    },
-    {
-      "path": "EFMBM220SumGroups6.svg",
-      "count": 1,
-      "size_kb": 129.3
-    },
-    {
-      "path": "EFMBM220SumGroups7.svg",
-      "count": 1,
-      "size_kb": 132.5
-    },
-    {
-      "path": "EFMBM220SumGroups8.svg",
-      "count": 1,
-      "size_kb": 133.2
-    },
-    {
-      "path": "EFMBM220SumGroups9.svg",
-      "count": 1,
-      "size_kb": 133.3
-    },
-    {
-      "path": "EFMBM240EvenOddandKropkiSudoku4by4.svg",
-      "count": 1,
-      "size_kb": 19.9
-    },
-    {
-      "path": "EFMBM240SumdokuDiffdoku.svg",
-      "count": 1,
-      "size_kb": 25.6
-    },
-    {
-      "path": "EFMBM270DifferencePyramid6Solutions.svg",
-      "count": 1,
-      "size_kb": 31
-    },
-    {
-      "path": "EFMBM300IslandHoppingCompensation.svg",
-      "count": 1,
-      "size_kb": 25
-    },
-    {
-      "path": "EFMBM300RegionSums.svg",
-      "count": 1,
-      "size_kb": 10.9
-    },
-    {
-      "path": "EFMBM300RegionSumsMoreExamples.svg",
-      "count": 1,
-      "size_kb": 68
-    },
-    {
-      "path": "EFMBM310DiffTriangles.svg",
-      "count": 1,
-      "size_kb": 14.9
-    },
-    {
-      "path": "EFMBM310DiffTriangles1.svg",
-      "count": 1,
-      "size_kb": 35.8
-    },
-    {
-      "path": "EFMBM310DiffTriangles2.svg",
-      "count": 1,
-      "size_kb": 32
-    },
-    {
-      "path": "EFMBM310DiffTriangles3.svg",
-      "count": 1,
-      "size_kb": 51.7
-    },
-    {
-      "path": "EFMBM310SumTriangles.svg",
-      "count": 1,
-      "size_kb": 15.5
-    },
-    {
-      "path": "EFMBM310SumTriangles1.svg",
-      "count": 1,
-      "size_kb": 31.9
-    },
-    {
-      "path": "EFMBM330IslandHoppingConsecutivetoSkipping.svg",
-      "count": 1,
-      "size_kb": 23.8
-    },
-    {
-      "path": "EFMBM330IslandHoppingSkipCounting.svg",
-      "count": 1,
-      "size_kb": 19.9
-    },
-    {
-      "path": "EFMBM340FixItMoreExamples1.svg",
-      "count": 1,
-      "size_kb": 68.7
-    },
-    {
-      "path": "EFMBM340FixItMoreExamples2.svg",
-      "count": 1,
-      "size_kb": 42
-    },
-    {
-      "path": "EFMBM350IslandHoppingBy1sand10s.svg",
-      "count": 1,
-      "size_kb": 15.6
-    },
-    {
-      "path": "EFMBM350IslandHoppingBy1sand10swithCircles.svg",
-      "count": 1,
-      "size_kb": 21.2
-    },
-    {
-      "path": "EFMBM370MagicCircles1to6.svg",
-      "count": 1,
-      "size_kb": 19.2
-    },
-    {
-      "path": "EFMBM370MagicDesigns1.svg",
-      "count": 1,
-      "size_kb": 6.3
-    },
-    {
-      "path": "EFMBM370MagicDesigns2.svg",
-      "count": 1,
-      "size_kb": 14.7
-    },
-    {
-      "path": "EFMBM370MagicDesigns3.svg",
-      "count": 1,
-      "size_kb": 21.5
-    },
-    {
-      "path": "EFMBM370MagicDesigns4.svg",
-      "count": 1,
-      "size_kb": 24.4
-    },
-    {
-      "path": "EFMBM370MagicDesigns7.svg",
-      "count": 1,
-      "size_kb": 38.4
-    },
-    {
-      "path": "EFMBM370MagicDesigns8.svg",
-      "count": 1,
-      "size_kb": 20.8
-    },
-    {
-      "path": "EFMBM370MagicDesigns9.svg",
-      "count": 1,
-      "size_kb": 13.3
-    },
-    {
-      "path": "EFMBM390AdditionPyramid2.svg",
-      "count": 1,
-      "size_kb": 26.3
-    },
-    {
-      "path": "EFMBM390SumSquare2.svg",
-      "count": 1,
-      "size_kb": 29.3
-    },
-    {
-      "path": "EFMBM470LeverBalance1.svg",
-      "count": 1,
-      "size_kb": 11.3
-    },
-    {
-      "path": "EFMBM470LeverBalance2.svg",
-      "count": 1,
-      "size_kb": 12.9
-    },
-    {
-      "path": "EFMBM490DivideUptheBoxSolution1.svg",
-      "count": 1,
-      "size_kb": 16.3
-    },
-    {
-      "path": "EFMBM490DivideUptheBoxSolution2.svg",
-      "count": 1,
-      "size_kb": 28.2
-    },
-    {
-      "path": "EFMBM520LetterSubstitution1.svg",
-      "count": 1,
-      "size_kb": 12.4
-    },
-    {
-      "path": "EFMBM520LetterSubstitution3.svg",
-      "count": 1,
-      "size_kb": 52.8
-    },
-    {
-      "path": "EFMBM530BilliardBallBouncing.svg",
-      "count": 1,
-      "size_kb": 5.9
-    },
-    {
-      "path": "EFMBM530BilliardBallBouncingUnfolded.svg",
-      "count": 1,
-      "size_kb": 9
-    },
-    {
-      "path": "EFMBM530SquaresinSquares.svg",
-      "count": 2,
-      "size_kb": 3.1
-    },
-    {
-      "path": "EFMBM540ProductGame10-12.svg",
-      "count": 1,
-      "size_kb": 149.4
-    },
-    {
-      "path": "EFMBM540ProductGame9.svg",
-      "count": 1,
-      "size_kb": 32.1
-    },
-    {
-      "path": "EFMBM550Mobile1.svg",
-      "count": 3,
-      "size_kb": 6.9
-    },
-    {
-      "path": "EFMBM90IslandHoppingConsecutiveEasy.svg",
-      "count": 1,
-      "size_kb": 23
-    },
-    {
-      "path": "EFMBM90IslandHoppingConsecutiveEven Harder.svg",
-      "count": 1,
-      "size_kb": 15.8
-    },
-    {
-      "path": "EFMBM90IslandHoppingConsecutiveHarder.svg",
-      "count": 1,
-      "size_kb": 19.2
-    },
-    {
-      "path": "EFMBM95-1FoldTree.svg",
-      "count": 1,
-      "size_kb": 3.4
-    },
-    {
-      "path": "EFMBM95-1Foldstar.svg",
-      "count": 1,
-      "size_kb": 4.4
-    },
-    {
-      "path": "EFMBM95-2FoldsLeaves.svg",
-      "count": 1,
-      "size_kb": 5.5
-    },
-    {
-      "path": "EFMBM95-3FoldsFlower.svg",
-      "count": 1,
-      "size_kb": 12.2
-    },
-    {
-      "path": "EFMBM95SnowflakeFoldingSequence.svg",
-      "count": 1,
-      "size_kb": 53.2
-    },
-    {
-      "path": "EFMFactFamilies2And3.svg",
-      "count": 1,
-      "size_kb": 2.5
-    },
-    {
-      "path": "EFMSevenDotsInATenFrame.svg",
-      "count": 3,
-      "size_kb": 4.4
     },
     {
       "path": "EFMStorybooks/EFM-SB-0-PageDivider.svg",
@@ -5794,7 +5578,7 @@
     {
       "type": "data_list",
       "subtype": null,
-      "total": 75
+      "total": 59
     },
     {
       "type": "data_list",
@@ -5819,7 +5603,7 @@
     {
       "type": "template",
       "subtype": null,
-      "total": 31
+      "total": 14
     },
     {
       "type": "template",

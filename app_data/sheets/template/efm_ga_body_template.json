@@ -1,13 +1,13 @@
 {
   "flow_type": "template",
-  "flow_name": "efm_activity_bodyvtwo_template",
+  "flow_name": "efm_ga_body_template",
   "status": "released",
   "rows": [
     {
-      "name": "efm_activity_ptr",
+      "name": "efm_ga_ptr",
       "exclude_from_translation": true,
       "type": "set_variable",
-      "_nested_name": "efm_activity_ptr"
+      "_nested_name": "efm_ga_ptr"
     },
     {
       "name": "block_chars",
@@ -80,15 +80,6 @@
       "_nested_name": "chars_illust_max_width"
     },
     {
-      "name": "bonus_button_text",
-      "value": "Read Bonus Material",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "bonus_button_text"
-    },
-    {
       "name": "remove_paragraph_space",
       "value": "margin-top: -5px",
       "_translations": {
@@ -111,7 +102,7 @@
     {
       "type": "items",
       "name": "run_through_body_sections",
-      "value": "@data.efm_num_list_one_to_six",
+      "value": "@data.efm_num_list_one_to_ten",
       "exclude_from_translation": true,
       "rows": [
         {
@@ -150,7 +141,7 @@
         },
         {
           "name": "block_type",
-          "value": "local.efm_activity_ptr.@local.block_num_chars@local.chars_type",
+          "value": "local.efm_ga_ptr.@local.block_num_chars@local.chars_type",
           "_translations": {
             "value": {}
           },
@@ -160,13 +151,13 @@
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "local.efm_activity_ptr.@local.block_num_chars@local.chars_type",
+                "fullExpression": "local.efm_ga_ptr.@local.block_num_chars@local.chars_type",
                 "matchedExpression": "@local.block_num_chars",
                 "type": "local",
                 "fieldName": "block_num_chars"
               },
               {
-                "fullExpression": "local.efm_activity_ptr.@local.block_num_chars@local.chars_type",
+                "fullExpression": "local.efm_ga_ptr.@local.block_num_chars@local.chars_type",
                 "matchedExpression": "@local.chars_type",
                 "type": "local",
                 "fieldName": "chars_type"
@@ -184,7 +175,7 @@
         },
         {
           "name": "block_text",
-          "value": "local.efm_activity_ptr.@local.block_num_chars@local.chars_text",
+          "value": "local.efm_ga_ptr.@local.block_num_chars@local.chars_text",
           "_translations": {
             "value": {}
           },
@@ -194,13 +185,13 @@
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "local.efm_activity_ptr.@local.block_num_chars@local.chars_text",
+                "fullExpression": "local.efm_ga_ptr.@local.block_num_chars@local.chars_text",
                 "matchedExpression": "@local.block_num_chars",
                 "type": "local",
                 "fieldName": "block_num_chars"
               },
               {
-                "fullExpression": "local.efm_activity_ptr.@local.block_num_chars@local.chars_text",
+                "fullExpression": "local.efm_ga_ptr.@local.block_num_chars@local.chars_text",
                 "matchedExpression": "@local.chars_text",
                 "type": "local",
                 "fieldName": "chars_text"
@@ -218,7 +209,7 @@
         },
         {
           "name": "accordion_label",
-          "value": "local.efm_activity_ptr.@local.block_num_chars@local.chars_accord",
+          "value": "local.efm_ga_ptr.@local.block_num_chars@local.chars_accord",
           "_translations": {
             "value": {}
           },
@@ -228,13 +219,13 @@
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "local.efm_activity_ptr.@local.block_num_chars@local.chars_accord",
+                "fullExpression": "local.efm_ga_ptr.@local.block_num_chars@local.chars_accord",
                 "matchedExpression": "@local.block_num_chars",
                 "type": "local",
                 "fieldName": "block_num_chars"
               },
               {
-                "fullExpression": "local.efm_activity_ptr.@local.block_num_chars@local.chars_accord",
+                "fullExpression": "local.efm_ga_ptr.@local.block_num_chars@local.chars_accord",
                 "matchedExpression": "@local.chars_accord",
                 "type": "local",
                 "fieldName": "chars_accord"
@@ -252,7 +243,7 @@
         },
         {
           "name": "block_illustration",
-          "value": "local.efm_activity_ptr.@local.block_num_chars@local.chars_illust",
+          "value": "local.efm_ga_ptr.@local.block_num_chars@local.chars_illust",
           "_translations": {
             "value": {}
           },
@@ -262,13 +253,13 @@
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "local.efm_activity_ptr.@local.block_num_chars@local.chars_illust",
+                "fullExpression": "local.efm_ga_ptr.@local.block_num_chars@local.chars_illust",
                 "matchedExpression": "@local.block_num_chars",
                 "type": "local",
                 "fieldName": "block_num_chars"
               },
               {
-                "fullExpression": "local.efm_activity_ptr.@local.block_num_chars@local.chars_illust",
+                "fullExpression": "local.efm_ga_ptr.@local.block_num_chars@local.chars_illust",
                 "matchedExpression": "@local.chars_illust",
                 "type": "local",
                 "fieldName": "chars_illust"
@@ -286,7 +277,7 @@
         },
         {
           "name": "block_illustration_flex",
-          "value": "local.efm_activity_ptr.@local.block_num_chars@local.chars_illust_flex",
+          "value": "local.efm_ga_ptr.@local.block_num_chars@local.chars_illust_flex",
           "_translations": {
             "value": {}
           },
@@ -296,13 +287,13 @@
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "local.efm_activity_ptr.@local.block_num_chars@local.chars_illust_flex",
+                "fullExpression": "local.efm_ga_ptr.@local.block_num_chars@local.chars_illust_flex",
                 "matchedExpression": "@local.block_num_chars",
                 "type": "local",
                 "fieldName": "block_num_chars"
               },
               {
-                "fullExpression": "local.efm_activity_ptr.@local.block_num_chars@local.chars_illust_flex",
+                "fullExpression": "local.efm_ga_ptr.@local.block_num_chars@local.chars_illust_flex",
                 "matchedExpression": "@local.chars_illust_flex",
                 "type": "local",
                 "fieldName": "chars_illust_flex"
@@ -320,7 +311,7 @@
         },
         {
           "name": "block_illustration_max_width",
-          "value": "local.efm_activity_ptr.@local.block_num_chars@local.chars_illust_max_width",
+          "value": "local.efm_ga_ptr.@local.block_num_chars@local.chars_illust_max_width",
           "_translations": {
             "value": {}
           },
@@ -330,13 +321,13 @@
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "local.efm_activity_ptr.@local.block_num_chars@local.chars_illust_max_width",
+                "fullExpression": "local.efm_ga_ptr.@local.block_num_chars@local.chars_illust_max_width",
                 "matchedExpression": "@local.block_num_chars",
                 "type": "local",
                 "fieldName": "block_num_chars"
               },
               {
-                "fullExpression": "local.efm_activity_ptr.@local.block_num_chars@local.chars_illust_max_width",
+                "fullExpression": "local.efm_ga_ptr.@local.block_num_chars@local.chars_illust_max_width",
                 "matchedExpression": "@local.chars_illust_max_width",
                 "type": "local",
                 "fieldName": "chars_illust_max_width"
@@ -917,139 +908,19 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@data.efm_num_list_one_to_six",
-            "matchedExpression": "@data.efm_num_list_one_to_six",
+            "fullExpression": "@data.efm_num_list_one_to_ten",
+            "matchedExpression": "@data.efm_num_list_one_to_ten",
             "type": "data",
-            "fieldName": "efm_num_list_one_to_six"
+            "fieldName": "efm_num_list_one_to_ten"
           }
         ]
       },
       "_dynamicDependencies": {
-        "@data.efm_num_list_one_to_six": [
+        "@data.efm_num_list_one_to_ten": [
           "value"
-        ]
-      }
-    },
-    {
-      "name": "bonus_act_id",
-      "value": "@local.efm_activity_ptr.bonus_activity_id",
-      "_translations": {
-        "value": {}
-      },
-      "exclude_from_translation": true,
-      "type": "set_variable",
-      "_nested_name": "bonus_act_id",
-      "_dynamicFields": {
-        "value": [
-          {
-            "fullExpression": "@local.efm_activity_ptr.bonus_activity_id",
-            "matchedExpression": "@local.efm_activity_ptr.bonus_activity_id",
-            "type": "local",
-            "fieldName": "efm_activity_ptr"
-          }
-        ]
-      },
-      "_dynamicDependencies": {
-        "@local.efm_activity_ptr.bonus_activity_id": [
-          "value"
-        ]
-      }
-    },
-    {
-      "type": "button",
-      "name": "bonus_button",
-      "value": "@local.bonus_button_text",
-      "_translations": {
-        "value": {}
-      },
-      "action_list": [
-        {
-          "trigger": "click",
-          "action_id": "set_field",
-          "args": [
-            "current_bonus_activity",
-            "data.efm_bon_acts_content.@local.bonus_act_id"
-          ],
-          "_raw": "click | set_field:current_bonus_activity: data.efm_bon_acts_content.@local.bonus_act_id",
-          "_cleaned": "click | set_field:current_bonus_activity: data.efm_bon_acts_content.@local.bonus_act_id"
-        },
-        {
-          "trigger": "click",
-          "action_id": "go_to",
-          "args": [
-            "efm_bon_act_vtwo_template"
-          ],
-          "_raw": "click | go_to: efm_bon_act_vtwo_template",
-          "_cleaned": "click | go_to: efm_bon_act_vtwo_template"
-        }
-      ],
-      "condition": "@local.bonus_act_id",
-      "parameter_list": {
-        "style": "short",
-        "text_align": "center"
-      },
-      "exclude_from_translation": true,
-      "_nested_name": "bonus_button",
-      "_dynamicFields": {
-        "value": [
-          {
-            "fullExpression": "@local.bonus_button_text",
-            "matchedExpression": "@local.bonus_button_text",
-            "type": "local",
-            "fieldName": "bonus_button_text"
-          }
-        ],
-        "action_list": {
-          "0": {
-            "args": {
-              "1": [
-                {
-                  "fullExpression": "data.efm_bon_acts_content.@local.bonus_act_id",
-                  "matchedExpression": "@local.bonus_act_id",
-                  "type": "local",
-                  "fieldName": "bonus_act_id"
-                }
-              ]
-            },
-            "_raw": [
-              {
-                "fullExpression": "click | set_field:current_bonus_activity: data.efm_bon_acts_content.@local.bonus_act_id",
-                "matchedExpression": "@local.bonus_act_id",
-                "type": "local",
-                "fieldName": "bonus_act_id"
-              }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "click | set_field:current_bonus_activity: data.efm_bon_acts_content.@local.bonus_act_id",
-                "matchedExpression": "@local.bonus_act_id",
-                "type": "local",
-                "fieldName": "bonus_act_id"
-              }
-            ]
-          }
-        },
-        "condition": [
-          {
-            "fullExpression": "@local.bonus_act_id",
-            "matchedExpression": "@local.bonus_act_id",
-            "type": "local",
-            "fieldName": "bonus_act_id"
-          }
-        ]
-      },
-      "_dynamicDependencies": {
-        "@local.bonus_button_text": [
-          "value"
-        ],
-        "@local.bonus_act_id": [
-          "action_list.0.args.1",
-          "action_list.0._raw",
-          "action_list.0._cleaned",
-          "condition"
         ]
       }
     }
   ],
-  "_xlsxPath": "EFM_activity_high_level_sheets.xlsx"
+  "_xlsxPath": "EFM_gas_high_level_sheets.xlsx"
 }

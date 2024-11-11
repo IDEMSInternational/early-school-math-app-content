@@ -1,85 +1,76 @@
 {
   "flow_type": "template",
-  "flow_name": "efm_mls_template",
+  "flow_name": "efm_pow_template",
   "status": "released",
   "rows": [
     {
-      "name": "efm_mls_ptr",
-      "value": "@@fields.current_mls",
+      "name": "efm_pow",
+      "value": "@@fields.current_pow",
       "_translations": {
         "value": {}
       },
       "type": "set_variable",
-      "_nested_name": "efm_mls_ptr",
+      "_nested_name": "efm_pow",
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@@fields.current_mls",
-            "matchedExpression": "@fields.current_mls",
+            "fullExpression": "@@fields.current_pow",
+            "matchedExpression": "@fields.current_pow",
             "type": "fields",
-            "fieldName": "current_mls"
+            "fieldName": "current_pow"
           }
         ]
       },
       "_dynamicDependencies": {
-        "@fields.current_mls": [
+        "@fields.current_pow": [
           "value"
         ]
       }
     },
     {
-      "name": "template_text",
-      "value": "_template",
+      "name": "pow_title",
+      "value": "@local.efm_pow.title",
       "_translations": {
         "value": {}
       },
       "type": "set_variable",
-      "_nested_name": "template_text"
-    },
-    {
-      "name": "mls_title",
-      "value": "@local.efm_mls_ptr.title",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "mls_title",
+      "_nested_name": "pow_title",
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@local.efm_mls_ptr.title",
-            "matchedExpression": "@local.efm_mls_ptr.title",
+            "fullExpression": "@local.efm_pow.title",
+            "matchedExpression": "@local.efm_pow.title",
             "type": "local",
-            "fieldName": "efm_mls_ptr"
+            "fieldName": "efm_pow"
           }
         ]
       },
       "_dynamicDependencies": {
-        "@local.efm_mls_ptr.title": [
+        "@local.efm_pow.title": [
           "value"
         ]
       }
     },
     {
-      "name": "mls_id",
-      "value": "@local.efm_mls_ptr.id",
+      "name": "pow_id",
+      "value": "@local.efm_pow.id",
       "_translations": {
         "value": {}
       },
       "type": "set_variable",
-      "_nested_name": "mls_id",
+      "_nested_name": "pow_id",
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@local.efm_mls_ptr.id",
-            "matchedExpression": "@local.efm_mls_ptr.id",
+            "fullExpression": "@local.efm_pow.id",
+            "matchedExpression": "@local.efm_pow.id",
             "type": "local",
-            "fieldName": "efm_mls_ptr"
+            "fieldName": "efm_pow"
           }
         ]
       },
       "_dynamicDependencies": {
-        "@local.efm_mls_ptr.id": [
+        "@local.efm_pow.id": [
           "value"
         ]
       }
@@ -91,13 +82,13 @@
       "_nested_name": "local_false"
     },
     {
-      "name": "next_mls",
+      "name": "next_pow",
       "value": "@local.false",
       "_translations": {
         "value": {}
       },
       "type": "set_variable",
-      "_nested_name": "next_mls",
+      "_nested_name": "next_pow",
       "_dynamicFields": {
         "value": [
           {
@@ -115,13 +106,13 @@
       }
     },
     {
-      "name": "prev_mls",
+      "name": "prev_pow",
       "value": "@local.false",
       "_translations": {
         "value": {}
       },
       "type": "set_variable",
-      "_nested_name": "prev_mls",
+      "_nested_name": "prev_pow",
       "_dynamicFields": {
         "value": [
           {
@@ -139,13 +130,13 @@
       }
     },
     {
-      "name": "has_mls_been_seen",
+      "name": "has_pow_been_seen",
       "value": "@local.false",
       "_translations": {
         "value": {}
       },
       "type": "set_variable",
-      "_nested_name": "has_mls_been_seen",
+      "_nested_name": "has_pow_been_seen",
       "_dynamicFields": {
         "value": [
           {
@@ -187,60 +178,13 @@
       }
     },
     {
-      "name": "chapter",
-      "value": "Stage",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "chapter"
-    },
-    {
-      "type": "text",
-      "name": "chapter_section",
-      "value": "@local.chapter @local.efm_mls_ptr.chapter",
-      "_translations": {
-        "value": {}
-      },
-      "parameter_list": {
-        "text_align": "center",
-        "style": "small"
-      },
-      "exclude_from_translation": true,
-      "_nested_name": "chapter_section",
-      "_dynamicFields": {
-        "value": [
-          {
-            "fullExpression": "@local.chapter @local.efm_mls_ptr.chapter",
-            "matchedExpression": "@local.chapter",
-            "type": "local",
-            "fieldName": "chapter"
-          },
-          {
-            "fullExpression": "@local.chapter @local.efm_mls_ptr.chapter",
-            "matchedExpression": "@local.efm_mls_ptr.chapter",
-            "type": "local",
-            "fieldName": "efm_mls_ptr"
-          }
-        ]
-      },
-      "_dynamicDependencies": {
-        "@local.chapter": [
-          "value"
-        ],
-        "@local.efm_mls_ptr.chapter": [
-          "value"
-        ]
-      }
-    },
-    {
       "type": "items",
       "name": "find_next_and_prev",
-      "value": "@data.efm_mls",
+      "value": "@data.efm_pows",
       "rows": [
         {
           "name": "do_ids_match",
-          "value": "@item.id == @local.mls_id",
+          "value": "@item.id == @local.pow_id",
           "_translations": {
             "value": {}
           },
@@ -250,16 +194,16 @@
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "@item.id == @local.mls_id",
+                "fullExpression": "@item.id == @local.pow_id",
                 "matchedExpression": "@item.id",
                 "type": "item",
                 "fieldName": "id"
               },
               {
-                "fullExpression": "@item.id == @local.mls_id",
-                "matchedExpression": "@local.mls_id",
+                "fullExpression": "@item.id == @local.pow_id",
+                "matchedExpression": "@local.pow_id",
                 "type": "local",
-                "fieldName": "mls_id"
+                "fieldName": "pow_id"
               }
             ]
           },
@@ -267,30 +211,30 @@
             "@item.id": [
               "value"
             ],
-            "@local.mls_id": [
+            "@local.pow_id": [
               "value"
             ]
           }
         },
         {
-          "name": "has_mls_been_seen",
-          "value": "@local.has_mls_been_seen || @local.do_ids_match",
+          "name": "has_pow_been_seen",
+          "value": "@local.has_pow_been_seen || @local.do_ids_match",
           "_translations": {
             "value": {}
           },
           "exclude_from_translation": true,
           "type": "set_variable",
-          "_nested_name": "find_next_and_prev.has_mls_been_seen",
+          "_nested_name": "find_next_and_prev.has_pow_been_seen",
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "@local.has_mls_been_seen || @local.do_ids_match",
-                "matchedExpression": "@local.has_mls_been_seen",
+                "fullExpression": "@local.has_pow_been_seen || @local.do_ids_match",
+                "matchedExpression": "@local.has_pow_been_seen",
                 "type": "local",
-                "fieldName": "has_mls_been_seen"
+                "fieldName": "has_pow_been_seen"
               },
               {
-                "fullExpression": "@local.has_mls_been_seen || @local.do_ids_match",
+                "fullExpression": "@local.has_pow_been_seen || @local.do_ids_match",
                 "matchedExpression": "@local.do_ids_match",
                 "type": "local",
                 "fieldName": "do_ids_match"
@@ -298,7 +242,7 @@
             ]
           },
           "_dynamicDependencies": {
-            "@local.has_mls_been_seen": [
+            "@local.has_pow_been_seen": [
               "value"
             ],
             "@local.do_ids_match": [
@@ -307,19 +251,19 @@
           }
         },
         {
-          "name": "prev_mls",
-          "value": "data.efm_mls.@item.id",
+          "name": "prev_pow",
+          "value": "data.efm_pows.@item.id",
           "_translations": {
             "value": {}
           },
-          "condition": "!@local.do_ids_match && !@local.has_mls_been_seen",
+          "condition": "!@local.do_ids_match && !@local.has_pow_been_seen",
           "exclude_from_translation": true,
           "type": "set_variable",
-          "_nested_name": "find_next_and_prev.prev_mls",
+          "_nested_name": "find_next_and_prev.prev_pow",
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "data.efm_mls.@item.id",
+                "fullExpression": "data.efm_pows.@item.id",
                 "matchedExpression": "@item.id",
                 "type": "item",
                 "fieldName": "id"
@@ -327,16 +271,16 @@
             ],
             "condition": [
               {
-                "fullExpression": "!@local.do_ids_match && !@local.has_mls_been_seen",
+                "fullExpression": "!@local.do_ids_match && !@local.has_pow_been_seen",
                 "matchedExpression": "!@local.do_ids_match",
                 "type": "local",
                 "fieldName": "do_ids_match"
               },
               {
-                "fullExpression": "!@local.do_ids_match && !@local.has_mls_been_seen",
-                "matchedExpression": "!@local.has_mls_been_seen",
+                "fullExpression": "!@local.do_ids_match && !@local.has_pow_been_seen",
+                "matchedExpression": "!@local.has_pow_been_seen",
                 "type": "local",
-                "fieldName": "has_mls_been_seen"
+                "fieldName": "has_pow_been_seen"
               }
             ]
           },
@@ -347,25 +291,25 @@
             "!@local.do_ids_match": [
               "condition"
             ],
-            "!@local.has_mls_been_seen": [
+            "!@local.has_pow_been_seen": [
               "condition"
             ]
           }
         },
         {
-          "name": "next_mls",
-          "value": "data.efm_mls.@item.id",
+          "name": "next_pow",
+          "value": "data.efm_pows.@item.id",
           "_translations": {
             "value": {}
           },
-          "condition": "!@local.do_ids_match && @local.has_mls_been_seen && !@local.next_mls",
+          "condition": "!@local.do_ids_match && @local.has_pow_been_seen && !@local.next_pow",
           "exclude_from_translation": true,
           "type": "set_variable",
-          "_nested_name": "find_next_and_prev.next_mls",
+          "_nested_name": "find_next_and_prev.next_pow",
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "data.efm_mls.@item.id",
+                "fullExpression": "data.efm_pows.@item.id",
                 "matchedExpression": "@item.id",
                 "type": "item",
                 "fieldName": "id"
@@ -373,22 +317,22 @@
             ],
             "condition": [
               {
-                "fullExpression": "!@local.do_ids_match && @local.has_mls_been_seen && !@local.next_mls",
+                "fullExpression": "!@local.do_ids_match && @local.has_pow_been_seen && !@local.next_pow",
                 "matchedExpression": "!@local.do_ids_match",
                 "type": "local",
                 "fieldName": "do_ids_match"
               },
               {
-                "fullExpression": "!@local.do_ids_match && @local.has_mls_been_seen && !@local.next_mls",
-                "matchedExpression": "@local.has_mls_been_seen",
+                "fullExpression": "!@local.do_ids_match && @local.has_pow_been_seen && !@local.next_pow",
+                "matchedExpression": "@local.has_pow_been_seen",
                 "type": "local",
-                "fieldName": "has_mls_been_seen"
+                "fieldName": "has_pow_been_seen"
               },
               {
-                "fullExpression": "!@local.do_ids_match && @local.has_mls_been_seen && !@local.next_mls",
-                "matchedExpression": "!@local.next_mls",
+                "fullExpression": "!@local.do_ids_match && @local.has_pow_been_seen && !@local.next_pow",
+                "matchedExpression": "!@local.next_pow",
                 "type": "local",
-                "fieldName": "next_mls"
+                "fieldName": "next_pow"
               }
             ]
           },
@@ -399,10 +343,10 @@
             "!@local.do_ids_match": [
               "condition"
             ],
-            "@local.has_mls_been_seen": [
+            "@local.has_pow_been_seen": [
               "condition"
             ],
-            "!@local.next_mls": [
+            "!@local.next_pow": [
               "condition"
             ]
           }
@@ -412,15 +356,15 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@data.efm_mls",
-            "matchedExpression": "@data.efm_mls",
+            "fullExpression": "@data.efm_pows",
+            "matchedExpression": "@data.efm_pows",
             "type": "data",
-            "fieldName": "efm_mls"
+            "fieldName": "efm_pows"
           }
         ]
       },
       "_dynamicDependencies": {
-        "@data.efm_mls": [
+        "@data.efm_pows": [
           "value"
         ]
       }
@@ -443,11 +387,11 @@
               "trigger": "click",
               "action_id": "set_field",
               "args": [
-                "current_mls",
-                "@local.prev_mls"
+                "current_pow",
+                "@local.prev_pow"
               ],
-              "_raw": "click | set_field:current_mls:@local.prev_mls",
-              "_cleaned": "click | set_field:current_mls:@local.prev_mls"
+              "_raw": "click | set_field:current_pow:@local.prev_pow",
+              "_cleaned": "click | set_field:current_pow:@local.prev_pow"
             },
             {
               "trigger": "click",
@@ -459,7 +403,7 @@
               "_cleaned": "click | emit:force_reload"
             }
           ],
-          "condition": "@local.prev_mls",
+          "condition": "@local.prev_pow",
           "parameter_list": {
             "style": "short",
             "text_align": "center"
@@ -468,49 +412,49 @@
             "flex: 30"
           ],
           "exclude_from_translation": true,
-          "_nested_name": "display_group_15.prev_button_1",
+          "_nested_name": "display_group_12.prev_button_1",
           "_dynamicFields": {
             "action_list": {
               "0": {
                 "args": {
                   "1": [
                     {
-                      "fullExpression": "@local.prev_mls",
-                      "matchedExpression": "@local.prev_mls",
+                      "fullExpression": "@local.prev_pow",
+                      "matchedExpression": "@local.prev_pow",
                       "type": "local",
-                      "fieldName": "prev_mls"
+                      "fieldName": "prev_pow"
                     }
                   ]
                 },
                 "_raw": [
                   {
-                    "fullExpression": "click | set_field:current_mls:@local.prev_mls",
-                    "matchedExpression": "@local.prev_mls",
+                    "fullExpression": "click | set_field:current_pow:@local.prev_pow",
+                    "matchedExpression": "@local.prev_pow",
                     "type": "local",
-                    "fieldName": "prev_mls"
+                    "fieldName": "prev_pow"
                   }
                 ],
                 "_cleaned": [
                   {
-                    "fullExpression": "click | set_field:current_mls:@local.prev_mls",
-                    "matchedExpression": "@local.prev_mls",
+                    "fullExpression": "click | set_field:current_pow:@local.prev_pow",
+                    "matchedExpression": "@local.prev_pow",
                     "type": "local",
-                    "fieldName": "prev_mls"
+                    "fieldName": "prev_pow"
                   }
                 ]
               }
             },
             "condition": [
               {
-                "fullExpression": "@local.prev_mls",
-                "matchedExpression": "@local.prev_mls",
+                "fullExpression": "@local.prev_pow",
+                "matchedExpression": "@local.prev_pow",
                 "type": "local",
-                "fieldName": "prev_mls"
+                "fieldName": "prev_pow"
               }
             ]
           },
           "_dynamicDependencies": {
-            "@local.prev_mls": [
+            "@local.prev_pow": [
               "action_list.0.args.1",
               "action_list.0._raw",
               "action_list.0._cleaned",
@@ -521,23 +465,23 @@
         {
           "type": "text",
           "name": "left_spacer",
-          "condition": "!@local.prev_mls",
+          "condition": "!@local.prev_pow",
           "style_list": [
             "flex: 30"
           ],
-          "_nested_name": "display_group_15.left_spacer",
+          "_nested_name": "display_group_12.left_spacer",
           "_dynamicFields": {
             "condition": [
               {
-                "fullExpression": "!@local.prev_mls",
-                "matchedExpression": "!@local.prev_mls",
+                "fullExpression": "!@local.prev_pow",
+                "matchedExpression": "!@local.prev_pow",
                 "type": "local",
-                "fieldName": "prev_mls"
+                "fieldName": "prev_pow"
               }
             ]
           },
           "_dynamicDependencies": {
-            "!@local.prev_mls": [
+            "!@local.prev_pow": [
               "condition"
             ]
           }
@@ -545,7 +489,7 @@
         {
           "type": "text",
           "name": "title",
-          "value": "@local.mls_title",
+          "value": "@local.pow_title",
           "_translations": {
             "value": {}
           },
@@ -556,19 +500,19 @@
           "style_list": [
             "flex: 300"
           ],
-          "_nested_name": "display_group_15.title",
+          "_nested_name": "display_group_12.title",
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "@local.mls_title",
-                "matchedExpression": "@local.mls_title",
+                "fullExpression": "@local.pow_title",
+                "matchedExpression": "@local.pow_title",
                 "type": "local",
-                "fieldName": "mls_title"
+                "fieldName": "pow_title"
               }
             ]
           },
           "_dynamicDependencies": {
-            "@local.mls_title": [
+            "@local.pow_title": [
               "value"
             ]
           }
@@ -585,11 +529,11 @@
               "trigger": "click",
               "action_id": "set_field",
               "args": [
-                "current_mls",
-                "@local.next_mls"
+                "current_pow",
+                "@local.next_pow"
               ],
-              "_raw": "click | set_field:current_mls:@local.next_mls",
-              "_cleaned": "click | set_field:current_mls:@local.next_mls"
+              "_raw": "click | set_field:current_pow:@local.next_pow",
+              "_cleaned": "click | set_field:current_pow:@local.next_pow"
             },
             {
               "trigger": "click",
@@ -601,7 +545,7 @@
               "_cleaned": "click | emit:force_reload"
             }
           ],
-          "condition": "@local.next_mls",
+          "condition": "@local.next_pow",
           "parameter_list": {
             "style": "short",
             "text_align": "center"
@@ -610,49 +554,49 @@
             "flex: 30"
           ],
           "exclude_from_translation": true,
-          "_nested_name": "display_group_15.next_button_1",
+          "_nested_name": "display_group_12.next_button_1",
           "_dynamicFields": {
             "action_list": {
               "0": {
                 "args": {
                   "1": [
                     {
-                      "fullExpression": "@local.next_mls",
-                      "matchedExpression": "@local.next_mls",
+                      "fullExpression": "@local.next_pow",
+                      "matchedExpression": "@local.next_pow",
                       "type": "local",
-                      "fieldName": "next_mls"
+                      "fieldName": "next_pow"
                     }
                   ]
                 },
                 "_raw": [
                   {
-                    "fullExpression": "click | set_field:current_mls:@local.next_mls",
-                    "matchedExpression": "@local.next_mls",
+                    "fullExpression": "click | set_field:current_pow:@local.next_pow",
+                    "matchedExpression": "@local.next_pow",
                     "type": "local",
-                    "fieldName": "next_mls"
+                    "fieldName": "next_pow"
                   }
                 ],
                 "_cleaned": [
                   {
-                    "fullExpression": "click | set_field:current_mls:@local.next_mls",
-                    "matchedExpression": "@local.next_mls",
+                    "fullExpression": "click | set_field:current_pow:@local.next_pow",
+                    "matchedExpression": "@local.next_pow",
                     "type": "local",
-                    "fieldName": "next_mls"
+                    "fieldName": "next_pow"
                   }
                 ]
               }
             },
             "condition": [
               {
-                "fullExpression": "@local.next_mls",
-                "matchedExpression": "@local.next_mls",
+                "fullExpression": "@local.next_pow",
+                "matchedExpression": "@local.next_pow",
                 "type": "local",
-                "fieldName": "next_mls"
+                "fieldName": "next_pow"
               }
             ]
           },
           "_dynamicDependencies": {
-            "@local.next_mls": [
+            "@local.next_pow": [
               "action_list.0.args.1",
               "action_list.0._raw",
               "action_list.0._cleaned",
@@ -663,63 +607,63 @@
         {
           "type": "text",
           "name": "right_spacer",
-          "condition": "!@local.next_mls",
+          "condition": "!@local.next_pow",
           "style_list": [
             "flex: 30"
           ],
-          "_nested_name": "display_group_15.right_spacer",
+          "_nested_name": "display_group_12.right_spacer",
           "_dynamicFields": {
             "condition": [
               {
-                "fullExpression": "!@local.next_mls",
-                "matchedExpression": "!@local.next_mls",
+                "fullExpression": "!@local.next_pow",
+                "matchedExpression": "!@local.next_pow",
                 "type": "local",
-                "fieldName": "next_mls"
+                "fieldName": "next_pow"
               }
             ]
           },
           "_dynamicDependencies": {
-            "!@local.next_mls": [
+            "!@local.next_pow": [
               "condition"
             ]
           }
         }
       ],
-      "name": "display_group_15",
-      "_nested_name": "display_group_15"
+      "name": "display_group_12",
+      "_nested_name": "display_group_12"
     },
     {
       "type": "template",
-      "name": "activity_body_generator",
-      "value": "efm_mls_body_template",
+      "name": "pow_body_generator",
+      "value": "efm_pow_body_template",
       "rows": [
         {
-          "name": "efm_mls_a_ptr",
-          "value": "@local.efm_mls_ptr",
+          "name": "efm_pow_ptr",
+          "value": "@local.efm_pow",
           "_translations": {
             "value": {}
           },
           "type": "set_variable",
-          "_nested_name": "activity_body_generator.efm_mls_a_ptr",
+          "_nested_name": "pow_body_generator.efm_pow_ptr",
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "@local.efm_mls_ptr",
-                "matchedExpression": "@local.efm_mls_ptr",
+                "fullExpression": "@local.efm_pow",
+                "matchedExpression": "@local.efm_pow",
                 "type": "local",
-                "fieldName": "efm_mls_ptr"
+                "fieldName": "efm_pow"
               }
             ]
           },
           "_dynamicDependencies": {
-            "@local.efm_mls_ptr": [
+            "@local.efm_pow": [
               "value"
             ]
           }
         }
       ],
-      "_nested_name": "activity_body_generator"
+      "_nested_name": "pow_body_generator"
     }
   ],
-  "_xlsxPath": "EFM_mls_high_level_sheets.xlsx"
+  "_xlsxPath": "EFM_pows_high_level_sheets.xlsx"
 }
