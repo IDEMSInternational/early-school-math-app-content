@@ -5,44 +5,174 @@
   "status": "released",
   "rows": [
     {
-      "id": "pow_a",
+      "id": "esm_pow_a_cons_num_1",
+      "level": "A",
       "area": "Number",
-      "subarea": "Add Sub",
-      "block1_type": "all_text",
-      "title": "Why is 3 + 4 = 7?",
+      "subarea": "Counting",
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWAConsecutiveNumbersIntro.svg",
+      "block1_illust_max_size": "400px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWAConsecutiveNumbersChallenge1.svg",
+      "block2_illust_max_size": "240px",
+      "block3_type": "all_text",
+      "block4_type": "notes_illust_below",
+      "block4_illust": "ESMIll/ESMPOWAConsecutiveNumbersAnswer1.svg",
+      "block4_illust_max_size": "240px",
+      "title": "Consecutive Numbers - 1",
       "_translations": {
         "title": {},
-        "block1_text": {}
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Why is 3 + 4 = 7?"
+          "eng": "Consecutive Numbers - 1"
         },
         "block1_text": {
-          "eng": "This is just a placeholder."
+          "eng": "The numbers from 1 to 10 have been placed in these two diagrams. In the diagram on the left, the boxes with numbers 2 and 3 share a side, and the boxes with numbers 9 and 10 touch diagonally. In the diagram on the right, no two consecutive numbers share a side or touch diagonally."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Place the numbers from 1 to 9 in this diagram so that the boxes for consecutive numbers do not share a side or touch diagonally."
+        },
+        "block3_text": {
+          "eng": "**Exploration:** Make these puzzles for your friends."
+        },
+        "block4_text": {
+          "eng": "**The Challenge:** The first and last numbers only have one neighboring number, unlike the other numbers which have two, so put them in the most central locations. Here is one possible solution."
         }
       },
-      "block1_text": "This is just a placeholder."
+      "block1_text": "The numbers from 1 to 10 have been placed in these two diagrams. In the diagram on the left, the boxes with numbers 2 and 3 share a side, and the boxes with numbers 9 and 10 touch diagonally. In the diagram on the right, no two consecutive numbers share a side or touch diagonally.",
+      "block2_text": "**The Challenge:** Place the numbers from 1 to 9 in this diagram so that the boxes for consecutive numbers do not share a side or touch diagonally.",
+      "block3_text": "**Exploration:** Make these puzzles for your friends.",
+      "block4_text": "**The Challenge:** The first and last numbers only have one neighboring number, unlike the other numbers which have two, so put them in the most central locations. Here is one possible solution."
     },
     {
-      "id": "pow_b",
+      "id": "esm_pow_a_sum_groups_6a",
+      "level": "A",
       "area": "Number",
       "subarea": "Add Sub",
-      "block1_type": "all_text",
-      "title": "Why is 2 + 5 = 7?",
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWASumGroups6aExample.svg",
+      "block1_illust_max_size": "300px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWASumGroups6aChallenge.svg",
+      "block2_illust_max_size": "360px",
+      "block3_type": "all_text",
+      "title": "Sum Groups - 6-a",
       "_translations": {
         "title": {},
-        "block1_text": {}
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Why is 2 + 5 = 7?"
+          "eng": "Sum Groups - 6-a"
         },
         "block1_text": {
-          "eng": "This is just another placeholder."
+          "eng": "This puzzle is filled with numbers that can be grouped together to sum to 6. Each group of numbers that sum to 6 must be connected, and each square must share a side with at least one other square in the group."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Divide each of these squares into groups of two or three numbers that add up to 6."
+        },
+        "block3_text": {
+          "eng": "**Exploration:** Make some of these puzzles for others to solve."
         }
       },
-      "block1_text": "This is just another placeholder."
+      "block1_text": "This puzzle is filled with numbers that can be grouped together to sum to 6. Each group of numbers that sum to 6 must be connected, and each square must share a side with at least one other square in the group.",
+      "block2_text": "**The Challenge:** Divide each of these squares into groups of two or three numbers that add up to 6.",
+      "block3_text": "**Exploration:** Make some of these puzzles for others to solve."
+    },
+    {
+      "id": "esm_pow_b_equal_sums_1",
+      "level": "B",
+      "area": "Number",
+      "subarea": "Add Sub",
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWBEqualSums1Challenge.svg",
+      "block1_illust_max_size": "240px",
+      "block2_type": "all_text",
+      "block3_type": "notes_illust_below",
+      "block3_illust": "ESMIll/ESMPOWBEqualSums1Answer.svg",
+      "block3_illust_max_size": "400px",
+      "block4_type": "all_text",
+      "title": "Equal Sums - 1",
+      "_translations": {
+        "title": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Equal Sums - 1"
+        },
+        "block1_text": {
+          "eng": "**The Challenge:** Here is a diagram created by overlapping three circles. The overlapping circles create five regions. Put a number in each of the five regions, using each of the numbers 1 to 5 exactly once, so that the sum of the numbers in each circle is the same."
+        },
+        "block2_text": {
+          "eng": "**Exploration:** How many different answers can you find? How do you know if you have found them all?"
+        },
+        "block3_text": {
+          "eng": "**The Challenge & Exploration:** There are two solutions. Going from left to right, the sum in each circle is 6 and 7."
+        },
+        "block4_text": {
+          "eng": "Analyze the possibilities by letting A and B be the two numbers in the intersections of the circles. Let Sum be the common sum inside each circle. Then 3 x Sum = 1 + 2 + 3 + 4 + 5 + A + B = 15 + A + B.\n\nThe left side of 3 x Sum = 15 + A + B is a multiple of 3, so the right side is as well. This forces A + B to be a multiple of three. That leaves only three possibilities.\n\n* A + B = 3. In this case 3 x Sum = 15 + 3 = 18 tells us Sum = 6, and A and B are 1 and 2.\n* A + B = 6. In this case 3 x Sum = 15 + 6 = 21 tells us Sum = 7. A + B = 6 forces A and B to be either 1 and 5 or 2 and 4. Having A and B be 1 and 5 does not work (1 is repeated), so that leaves us with just 2 and 4.\n* A + B = 9. In this case 3 x Sum = 15 + 9 = 24 tells us Sum = 8, and A and B are 4 and 5. However, because A and B are both in the middle circle, it is not possible for A + B = 9 and yet the Sum is only 8. So this case cannot happen."
+        }
+      },
+      "block1_text": "**The Challenge:** Here is a diagram created by overlapping three circles. The overlapping circles create five regions. Put a number in each of the five regions, using each of the numbers 1 to 5 exactly once, so that the sum of the numbers in each circle is the same.",
+      "block2_text": "**Exploration:** How many different answers can you find? How do you know if you have found them all?",
+      "block3_text": "**The Challenge & Exploration:** There are two solutions. Going from left to right, the sum in each circle is 6 and 7.",
+      "block4_text": "Analyze the possibilities by letting A and B be the two numbers in the intersections of the circles. Let Sum be the common sum inside each circle. Then 3 x Sum = 1 + 2 + 3 + 4 + 5 + A + B = 15 + A + B.\n\nThe left side of 3 x Sum = 15 + A + B is a multiple of 3, so the right side is as well. This forces A + B to be a multiple of three. That leaves only three possibilities.\n\n* A + B = 3. In this case 3 x Sum = 15 + 3 = 18 tells us Sum = 6, and A and B are 1 and 2.\n* A + B = 6. In this case 3 x Sum = 15 + 6 = 21 tells us Sum = 7. A + B = 6 forces A and B to be either 1 and 5 or 2 and 4. Having A and B be 1 and 5 does not work (1 is repeated), so that leaves us with just 2 and 4.\n* A + B = 9. In this case 3 x Sum = 15 + 9 = 24 tells us Sum = 8, and A and B are 4 and 5. However, because A and B are both in the middle circle, it is not possible for A + B = 9 and yet the Sum is only 8. So this case cannot happen."
+    },
+    {
+      "id": "esm_pow_b_diff_pyramids_1",
+      "level": "B",
+      "area": "Number",
+      "subarea": "Sub",
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWBDiffPyramid6Intro.svg",
+      "block1_illust_max_size": "240px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWBDiffPyramid6Challenge.svg",
+      "block2_illust_max_size": "180px",
+      "block3_type": "all_text",
+      "block4_type": "notes_illust_below",
+      "block4_illust": "ESMIll/ESMPOWBDiffPyramid6Solutions.svg",
+      "block4_illust_max_size": "400px",
+      "title": "Difference Pyramids - 1",
+      "_translations": {
+        "title": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Difference Pyramids - 1"
+        },
+        "block1_text": {
+          "eng": "These pyramids are called **Difference Pyramids.** The number on top is the difference of the two numbers below."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Place the numbers from 1 to 6 to make a Difference Pyramid."
+        },
+        "block3_text": {
+          "eng": "EXPLORATION: Find different ways this can be done. Are some of these essentially the same?"
+        },
+        "block4_text": {
+          "eng": "**The Challenge & Exploration:** A good start is to realize that because 6 cannot be the difference of two cards, it must go on the bottom row. \n\nNext, the only way 5 can be the difference is if it is above the 6 and the 1. So, either 5 goes directly above the 6 (with the 1 next to the 6), or 5 is in the bottom row.\n\nAt this point it is useful to consider what makes solutions different. Because the mirror image of any solution is also a solution, it makes sense to ignore those. Ignoring mirror images will reduce the number of solutions to consider by half. \n\nFor example, we can assume that not only is the 6 in the bottom row, but it is either in the middle or the right side of the bottom row - if it were on the left side, we could take the mirror image of the whole puzzle and put it on the right side.\n\nUsing this thinking, the bottom row can have five possible layouts (up to using mirror images):    5 X 6,   X 5 6,    X 6 5,    X 1 6,    X 6 1.\n\nAt this point, it is a matter of working through the various possibilities. The only 5 X 6 that works is 5 2 6. It turns out X 5 6 never works. The only X 6 5 is 2 6 5. The only X 1 6 is 4 1 6, and the only X 6 1 is 4 6 1.\n\nSo, ignoring mirror images, there are four solutions:"
+        }
+      },
+      "block1_text": "These pyramids are called **Difference Pyramids.** The number on top is the difference of the two numbers below.",
+      "block2_text": "**The Challenge:** Place the numbers from 1 to 6 to make a Difference Pyramid.",
+      "block3_text": "EXPLORATION: Find different ways this can be done. Are some of these essentially the same?",
+      "block4_text": "**The Challenge & Exploration:** A good start is to realize that because 6 cannot be the difference of two cards, it must go on the bottom row. \n\nNext, the only way 5 can be the difference is if it is above the 6 and the 1. So, either 5 goes directly above the 6 (with the 1 next to the 6), or 5 is in the bottom row.\n\nAt this point it is useful to consider what makes solutions different. Because the mirror image of any solution is also a solution, it makes sense to ignore those. Ignoring mirror images will reduce the number of solutions to consider by half. \n\nFor example, we can assume that not only is the 6 in the bottom row, but it is either in the middle or the right side of the bottom row - if it were on the left side, we could take the mirror image of the whole puzzle and put it on the right side.\n\nUsing this thinking, the bottom row can have five possible layouts (up to using mirror images):    5 X 6,   X 5 6,    X 6 5,    X 1 6,    X 6 1.\n\nAt this point, it is a matter of working through the various possibilities. The only 5 X 6 that works is 5 2 6. It turns out X 5 6 never works. The only X 6 5 is 2 6 5. The only X 1 6 is 4 1 6, and the only X 6 1 is 4 6 1.\n\nSo, ignoring mirror images, there are four solutions:"
     }
   ],
   "_xlsxPath": "EFM_pows_high_level_sheets.xlsx"

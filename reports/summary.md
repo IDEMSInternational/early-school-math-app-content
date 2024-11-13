@@ -6,15 +6,15 @@
 | accordion | 1 |
 | button | 15 |
 | debug_toggle | 1 |
-| display_group | 14 |
+| display_group | 30 |
 | image | 3 |
-| items | 1 |
+| items | 7 |
 | qr_code | 1 |
 | radio_button_grid | 1 |
 | select_text | 1 |
 | set_field | 10 |
-| set_variable | 102 |
-| template | 60 |
+| set_variable | 174 |
+| template | 63 |
 | text | 29 |
 | text_area | 2 |
 | tile_component | 3 |
@@ -45,7 +45,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 19190 KB | 19.2 MB |
+| total | 19399 KB | 19.4 MB |
 | unused | 10491 KB | 10.5 MB |
 </details>
 
@@ -1217,6 +1217,20 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | EFMStorybooks/EFM-SB-WIMC-8.jpg | 23.1 | 1 |
 | EFMStorybooks/EFM-SB-WIMC-9.jpg | 38.1 | 1 |
 | EFMStorybooks/EFM-SB-WIMC-Cover.jpg | 30.3 | 1 |
+| ESMIll/ESMGADots and Boxes Numbered Unmarked.svg | 8 | 1 |
+| ESMIll/ESMGADots and Boxes Numbered.svg | 9.6 | 1 |
+| ESMIll/ESMGADotsandBoxesUnnumvwewsEmpty.svg | 5.2 | 1 |
+| ESMIll/ESMGADotsandBoxesUnnumvwewsExample.svg | 7.1 | 1 |
+| ESMIll/ESMPOWAConsecutiveNumbersAnswer1.svg | 6.2 | 1 |
+| ESMIll/ESMPOWAConsecutiveNumbersChallenge1.svg | 2.4 | 1 |
+| ESMIll/ESMPOWAConsecutiveNumbersIntro.svg | 18.6 | 1 |
+| ESMIll/ESMPOWASumGroups6aChallenge.svg | 59.1 | 1 |
+| ESMIll/ESMPOWASumGroups6aExample.svg | 30.7 | 1 |
+| ESMIll/ESMPOWBDiffPyramid6Challenge.svg | 4.1 | 1 |
+| ESMIll/ESMPOWBDiffPyramid6Intro.svg | 6.8 | 1 |
+| ESMIll/ESMPOWBDiffPyramid6Solutions.svg | 41.4 | 1 |
+| ESMIll/ESMPOWBEqualSums1Answer.svg | 7.6 | 1 |
+| ESMIll/ESMPOWBEqualSums1Challenge.svg | 2.3 | 1 |
 </details>
 
 <details >
@@ -1224,12 +1238,12 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | type | subtype | total |
 | --- | --- | --- |
-| data_list |  | 59 |
+| data_list |  | 63 |
 | data_list | app_config_language_list | 1 |
 | data_list | lifecycle_actions | 1 |
 | generator |  | 1 |
 | global |  | 2 |
-| template |  | 14 |
+| template |  | 23 |
 | template | generated | 58 |
-| tour |  | 6 |
+| tour |  | 4 |
 </details>
