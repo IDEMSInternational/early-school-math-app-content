@@ -1,0 +1,425 @@
+{
+  "flow_type": "template",
+  "flow_name": "efm_topics_listed",
+  "status": "released",
+  "rows": [
+    {
+      "type": "display_group",
+      "name": "dg_top_of_page",
+      "rows": [
+        {
+          "type": "title",
+          "name": "spacer",
+          "value": "Topics",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "flex:1"
+          ],
+          "_nested_name": "dg_top_of_page.spacer"
+        },
+        {
+          "type": "display_group",
+          "name": "dg_help",
+          "rows": [
+            {
+              "type": "round_button",
+              "name": "help_button",
+              "action_list": [
+                {
+                  "trigger": "click",
+                  "action_id": "start_tour",
+                  "args": [
+                    "efm_topics_tour"
+                  ],
+                  "_raw": "click | start_tour: efm_topics_tour",
+                  "_cleaned": "click | start_tour: efm_topics_tour"
+                }
+              ],
+              "parameter_list": {
+                "icon_src": "help",
+                "style": "navigation"
+              },
+              "_nested_name": "dg_top_of_page.dg_help.help_button"
+            }
+          ],
+          "_nested_name": "dg_top_of_page.dg_help"
+        }
+      ],
+      "_nested_name": "dg_top_of_page"
+    },
+    {
+      "name": "now",
+      "value": "@calc(timestamp())",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "now",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(timestamp())",
+            "matchedExpression": "@calc(timestamp())",
+            "type": "calc",
+            "fieldName": "timestamp()"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@calc(timestamp())": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "topic_click_history",
+      "value": "_topic_click_history",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "topic_click_history"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_topiclist",
+      "parameter_list": {
+        "style": "column"
+      },
+      "rows": [
+        {
+          "type": "items",
+          "name": "activity_buttons",
+          "value": "@data.efm_topics",
+          "rows": [
+            {
+              "name": "topic_id",
+              "value": "@item.id",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "dg_topiclist.activity_buttons.topic_id",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@item.id",
+                    "matchedExpression": "@item.id",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.id": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "click_history_field_name",
+              "value": "@local.topic_id@local.topic_click_history",
+              "_translations": {
+                "value": {}
+              },
+              "exclude_from_translation": true,
+              "type": "set_variable",
+              "_nested_name": "dg_topiclist.activity_buttons.click_history_field_name",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@local.topic_id@local.topic_click_history",
+                    "matchedExpression": "@local.topic_id",
+                    "type": "local",
+                    "fieldName": "topic_id"
+                  },
+                  {
+                    "fullExpression": "@local.topic_id@local.topic_click_history",
+                    "matchedExpression": "@local.topic_click_history",
+                    "type": "local",
+                    "fieldName": "topic_click_history"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.topic_id": [
+                  "value"
+                ],
+                "@local.topic_click_history": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "topics_click_history",
+              "value": "@fields.@local.click_history_field_name ;  @local.now",
+              "_translations": {
+                "value": {}
+              },
+              "condition": "!!(@fields.@local.click_history_field_name)",
+              "exclude_from_translation": true,
+              "type": "set_variable",
+              "_nested_name": "dg_topiclist.activity_buttons.topics_click_history",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@fields.@local.click_history_field_name ;  @local.now",
+                    "matchedExpression": "@local.click_history_field_name",
+                    "type": "local",
+                    "fieldName": "click_history_field_name"
+                  },
+                  {
+                    "fullExpression": "@fields.@local.click_history_field_name ;  @local.now",
+                    "matchedExpression": "@local.now",
+                    "type": "local",
+                    "fieldName": "now"
+                  }
+                ],
+                "condition": [
+                  {
+                    "fullExpression": "!!(@fields.@local.click_history_field_name)",
+                    "matchedExpression": "@local.click_history_field_name",
+                    "type": "local",
+                    "fieldName": "click_history_field_name"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.click_history_field_name": [
+                  "value",
+                  "condition"
+                ],
+                "@local.now": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "topics_click_history",
+              "value": "@local.now",
+              "_translations": {
+                "value": {}
+              },
+              "condition": "!(@fields.@local.click_history_field_name)",
+              "exclude_from_translation": true,
+              "type": "set_variable",
+              "_nested_name": "dg_topiclist.activity_buttons.topics_click_history",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@local.now",
+                    "matchedExpression": "@local.now",
+                    "type": "local",
+                    "fieldName": "now"
+                  }
+                ],
+                "condition": [
+                  {
+                    "fullExpression": "!(@fields.@local.click_history_field_name)",
+                    "matchedExpression": "@local.click_history_field_name",
+                    "type": "local",
+                    "fieldName": "click_history_field_name"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.now": [
+                  "value"
+                ],
+                "@local.click_history_field_name": [
+                  "condition"
+                ]
+              }
+            },
+            {
+              "type": "button",
+              "name": "button_topic",
+              "value": "@item.title",
+              "_translations": {
+                "value": {}
+              },
+              "action_list": [
+                {
+                  "trigger": "click",
+                  "action_id": "set_field",
+                  "args": [
+                    "current_topic",
+                    "data.efm_topics.@item.id"
+                  ],
+                  "_raw": "click | set_field:current_topic: data.efm_topics.@item.id",
+                  "_cleaned": "click | set_field:current_topic: data.efm_topics.@item.id"
+                },
+                {
+                  "trigger": "click",
+                  "action_id": "go_to",
+                  "args": [
+                    "efm_topic_template"
+                  ],
+                  "_raw": "click | go_to: efm_topic_template",
+                  "_cleaned": "click | go_to: efm_topic_template"
+                },
+                {
+                  "trigger": "click",
+                  "action_id": "set_field",
+                  "args": [
+                    "@local.click_history_field_name",
+                    "@local.topics_click_history"
+                  ],
+                  "_raw": "click | set_field:@local.click_history_field_name: @local.topics_click_history",
+                  "_cleaned": "click | set_field:@local.click_history_field_name: @local.topics_click_history"
+                }
+              ],
+              "parameter_list": {
+                "style": "short",
+                "text_align": "center"
+              },
+              "_nested_name": "dg_topiclist.activity_buttons.button_topic",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@item.title",
+                    "matchedExpression": "@item.title",
+                    "type": "item",
+                    "fieldName": "title"
+                  }
+                ],
+                "action_list": {
+                  "0": {
+                    "args": {
+                      "1": [
+                        {
+                          "fullExpression": "data.efm_topics.@item.id",
+                          "matchedExpression": "@item.id",
+                          "type": "item",
+                          "fieldName": "id"
+                        }
+                      ]
+                    },
+                    "_raw": [
+                      {
+                        "fullExpression": "click | set_field:current_topic: data.efm_topics.@item.id",
+                        "matchedExpression": "@item.id",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ],
+                    "_cleaned": [
+                      {
+                        "fullExpression": "click | set_field:current_topic: data.efm_topics.@item.id",
+                        "matchedExpression": "@item.id",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ]
+                  },
+                  "2": {
+                    "args": {
+                      "0": [
+                        {
+                          "fullExpression": "@local.click_history_field_name",
+                          "matchedExpression": "@local.click_history_field_name",
+                          "type": "local",
+                          "fieldName": "click_history_field_name"
+                        }
+                      ],
+                      "1": [
+                        {
+                          "fullExpression": "@local.topics_click_history",
+                          "matchedExpression": "@local.topics_click_history",
+                          "type": "local",
+                          "fieldName": "topics_click_history"
+                        }
+                      ]
+                    },
+                    "_raw": [
+                      {
+                        "fullExpression": "click | set_field:@local.click_history_field_name: @local.topics_click_history",
+                        "matchedExpression": "@local.click_history_field_name",
+                        "type": "local",
+                        "fieldName": "click_history_field_name"
+                      },
+                      {
+                        "fullExpression": "click | set_field:@local.click_history_field_name: @local.topics_click_history",
+                        "matchedExpression": "@local.topics_click_history",
+                        "type": "local",
+                        "fieldName": "topics_click_history"
+                      }
+                    ],
+                    "_cleaned": [
+                      {
+                        "fullExpression": "click | set_field:@local.click_history_field_name: @local.topics_click_history",
+                        "matchedExpression": "@local.click_history_field_name",
+                        "type": "local",
+                        "fieldName": "click_history_field_name"
+                      },
+                      {
+                        "fullExpression": "click | set_field:@local.click_history_field_name: @local.topics_click_history",
+                        "matchedExpression": "@local.topics_click_history",
+                        "type": "local",
+                        "fieldName": "topics_click_history"
+                      }
+                    ]
+                  }
+                }
+              },
+              "_dynamicDependencies": {
+                "@item.title": [
+                  "value"
+                ],
+                "@item.id": [
+                  "action_list.0.args.1",
+                  "action_list.0._raw",
+                  "action_list.0._cleaned"
+                ],
+                "@local.click_history_field_name": [
+                  "action_list.2.args.0",
+                  "action_list.2._raw",
+                  "action_list.2._cleaned"
+                ],
+                "@local.topics_click_history": [
+                  "action_list.2.args.1",
+                  "action_list.2._raw",
+                  "action_list.2._cleaned"
+                ]
+              }
+            }
+          ],
+          "_nested_name": "dg_topiclist.activity_buttons",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@data.efm_topics",
+                "matchedExpression": "@data.efm_topics",
+                "type": "data",
+                "fieldName": "efm_topics"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@data.efm_topics": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "dg_topiclist"
+    },
+    {
+      "type": "display_group",
+      "name": "fake_group",
+      "rows": [
+        {
+          "type": "text",
+          "name": "spacer",
+          "_nested_name": "fake_group.spacer"
+        }
+      ],
+      "_nested_name": "fake_group"
+    }
+  ],
+  "_xlsxPath": "EFM_topics_high_level_sheets.xlsx"
+}

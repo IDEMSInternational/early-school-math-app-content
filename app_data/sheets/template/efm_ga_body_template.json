@@ -1044,9 +1044,6 @@
           "parameter_list": {
             "style": "column"
           },
-          "style_list": [
-            "@local.paragraph_space"
-          ],
           "exclude_from_translation": true,
           "rows": [
             {
@@ -1130,24 +1127,11 @@
                 "type": "local",
                 "fieldName": "block_type"
               }
-            ],
-            "style_list": {
-              "0": [
-                {
-                  "fullExpression": "@local.paragraph_space",
-                  "matchedExpression": "@local.paragraph_space",
-                  "type": "local",
-                  "fieldName": "paragraph_space"
-                }
-              ]
-            }
+            ]
           },
           "_dynamicDependencies": {
             "@local.block_type": [
               "condition"
-            ],
-            "@local.paragraph_space": [
-              "style_list.0"
             ]
           }
         },
@@ -1157,9 +1141,6 @@
           "parameter_list": {
             "style": "column"
           },
-          "style_list": [
-            "@local.paragraph_space"
-          ],
           "exclude_from_translation": true,
           "rows": [
             {
@@ -1285,24 +1266,11 @@
                 "type": "local",
                 "fieldName": "block_type"
               }
-            ],
-            "style_list": {
-              "0": [
-                {
-                  "fullExpression": "@local.paragraph_space",
-                  "matchedExpression": "@local.paragraph_space",
-                  "type": "local",
-                  "fieldName": "paragraph_space"
-                }
-              ]
-            }
+            ]
           },
           "_dynamicDependencies": {
             "@local.block_type": [
               "condition"
-            ],
-            "@local.paragraph_space": [
-              "style_list.0"
             ]
           }
         },
@@ -1312,9 +1280,6 @@
           "parameter_list": {
             "style": "column"
           },
-          "style_list": [
-            "@local.paragraph_space"
-          ],
           "exclude_from_translation": true,
           "rows": [
             {
@@ -1398,24 +1363,11 @@
                 "type": "local",
                 "fieldName": "block_type"
               }
-            ],
-            "style_list": {
-              "0": [
-                {
-                  "fullExpression": "@local.paragraph_space",
-                  "matchedExpression": "@local.paragraph_space",
-                  "type": "local",
-                  "fieldName": "paragraph_space"
-                }
-              ]
-            }
+            ]
           },
           "_dynamicDependencies": {
             "@local.block_type": [
               "condition"
-            ],
-            "@local.paragraph_space": [
-              "style_list.0"
             ]
           }
         },
@@ -1425,9 +1377,6 @@
           "parameter_list": {
             "style": "column"
           },
-          "style_list": [
-            "@local.paragraph_space"
-          ],
           "exclude_from_translation": true,
           "rows": [
             {
@@ -1553,24 +1502,11 @@
                 "type": "local",
                 "fieldName": "block_type"
               }
-            ],
-            "style_list": {
-              "0": [
-                {
-                  "fullExpression": "@local.paragraph_space",
-                  "matchedExpression": "@local.paragraph_space",
-                  "type": "local",
-                  "fieldName": "paragraph_space"
-                }
-              ]
-            }
+            ]
           },
           "_dynamicDependencies": {
             "@local.block_type": [
               "condition"
-            ],
-            "@local.paragraph_space": [
-              "style_list.0"
             ]
           }
         }
