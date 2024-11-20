@@ -9,6 +9,7 @@
       "level": "A",
       "area": "Number",
       "subarea": "Counting",
+      "notes_block_start": 4,
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMPOWAConsecutiveNumbersIntro.svg",
       "block1_illust_max_size": "400px",
@@ -16,7 +17,7 @@
       "block2_illust": "ESMIll/ESMPOWAConsecutiveNumbersChallenge1.svg",
       "block2_illust_max_size": "240px",
       "block3_type": "all_text",
-      "block4_type": "notes_illust_below",
+      "block4_type": "illust_below",
       "block4_illust": "ESMIll/ESMPOWAConsecutiveNumbersAnswer1.svg",
       "block4_illust_max_size": "240px",
       "title": "Consecutive Numbers - 1",
@@ -50,10 +51,11 @@
       "block4_text": "**The Challenge:** The first and last numbers only have one neighboring number, unlike the other numbers which have two, so put them in the most central locations. Here is one possible solution."
     },
     {
-      "id": "esm_pow_a_sum_groups_6a",
+      "id": "esm_pow_a_sum_groups_6",
       "level": "A",
       "area": "Number",
       "subarea": "Add Sub",
+      "notes_block_start": 100,
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMPOWASumGroups6aExample.svg",
       "block1_illust_max_size": "300px",
@@ -61,7 +63,7 @@
       "block2_illust": "ESMIll/ESMPOWASumGroups6aChallenge.svg",
       "block2_illust_max_size": "360px",
       "block3_type": "all_text",
-      "title": "Groups that add up to 6-a",
+      "title": "Groups that add up to 6",
       "_translations": {
         "title": {},
         "block1_text": {},
@@ -70,7 +72,7 @@
       },
       "_translatedFields": {
         "title": {
-          "eng": "Groups that add up to 6-a"
+          "eng": "Groups that add up to 6"
         },
         "block1_text": {
           "eng": "**Introduction:** This puzzle is filled with numbers that can be grouped together to sum to 6. Each group of numbers that sum to 6 must be connected, and each square must share a side with at least one other square in the group."
@@ -91,11 +93,12 @@
       "level": "B",
       "area": "Number",
       "subarea": "Add Sub",
+      "notes_block_start": 3,
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMPOWBEqualSums1Challenge.svg",
       "block1_illust_max_size": "240px",
       "block2_type": "all_text",
-      "block3_type": "notes_illust_below",
+      "block3_type": "illust_below",
       "block3_illust": "ESMIll/ESMPOWBEqualSums1Answer.svg",
       "block3_illust_max_size": "400px",
       "block4_type": "all_text",
@@ -118,7 +121,7 @@
           "eng": "**Exploration:** How many different answers can you find? How do you know if you have found them all?"
         },
         "block3_text": {
-          "eng": "**The Challenge & Exploration:** There are two solutions. Going from left to right, the sum in each circle is 6 and 7."
+          "eng": "**The Challenge & Exploration:** There are two solutions. The sum in each circle is 6 on the left and 7 on the right."
         },
         "block4_text": {
           "eng": "Analyze the possibilities by letting A and B be the two numbers in the intersections of the circles. Let Sum be the common sum inside each circle. Then 3 x Sum = 1 + 2 + 3 + 4 + 5 + A + B = 15 + A + B.\n\nThe left side of 3 x Sum = 15 + A + B is a multiple of 3, so the right side is as well. This forces A + B to be a multiple of three. That leaves only three possibilities.\n\n* A + B = 3. In this case 3 x Sum = 15 + 3 = 18 tells us Sum = 6, and A and B are 1 and 2.\n* A + B = 6. In this case 3 x Sum = 15 + 6 = 21 tells us Sum = 7. A + B = 6 forces A and B to be either 1 and 5 or 2 and 4. Having A and B be 1 and 5 does not work (1 is repeated), so that leaves us with just 2 and 4.\n* A + B = 9. In this case 3 x Sum = 15 + 9 = 24 tells us Sum = 8, and A and B are 4 and 5. However, because A and B are both in the middle circle, it is not possible for A + B = 9 and yet the Sum is only 8. So this case cannot happen."
@@ -126,25 +129,24 @@
       },
       "block1_text": "**The Challenge:** Here is a diagram created by overlapping three circles. The overlapping circles create five regions. Put a number in each of the five regions, using each of the numbers 1 to 5 exactly once, so that the sum of the numbers in each circle is the same.",
       "block2_text": "**Exploration:** How many different answers can you find? How do you know if you have found them all?",
-      "block3_text": "**The Challenge & Exploration:** There are two solutions. Going from left to right, the sum in each circle is 6 and 7.",
+      "block3_text": "**The Challenge & Exploration:** There are two solutions. The sum in each circle is 6 on the left and 7 on the right.",
       "block4_text": "Analyze the possibilities by letting A and B be the two numbers in the intersections of the circles. Let Sum be the common sum inside each circle. Then 3 x Sum = 1 + 2 + 3 + 4 + 5 + A + B = 15 + A + B.\n\nThe left side of 3 x Sum = 15 + A + B is a multiple of 3, so the right side is as well. This forces A + B to be a multiple of three. That leaves only three possibilities.\n\n* A + B = 3. In this case 3 x Sum = 15 + 3 = 18 tells us Sum = 6, and A and B are 1 and 2.\n* A + B = 6. In this case 3 x Sum = 15 + 6 = 21 tells us Sum = 7. A + B = 6 forces A and B to be either 1 and 5 or 2 and 4. Having A and B be 1 and 5 does not work (1 is repeated), so that leaves us with just 2 and 4.\n* A + B = 9. In this case 3 x Sum = 15 + 9 = 24 tells us Sum = 8, and A and B are 4 and 5. However, because A and B are both in the middle circle, it is not possible for A + B = 9 and yet the Sum is only 8. So this case cannot happen."
     },
     {
-      "id": "esm_pow_b_diff_pyramids_1",
+      "id": "esm_pow_b_equal_sums_2",
       "level": "B",
       "area": "Number",
-      "subarea": "Sub",
+      "subarea": "Add Sub",
+      "notes_block_start": 3,
       "block1_type": "illust_below",
-      "block1_illust": "ESMIll/ESMPOWBDiffPyramid6Intro.svg",
+      "block1_illust": "ESMIll/ESMPOWBEqualNumberSumsVennDiagram2.svg",
       "block1_illust_max_size": "240px",
-      "block2_type": "illust_below",
-      "block2_illust": "ESMIll/ESMPOWBDiffPyramid6Challenge.svg",
-      "block2_illust_max_size": "180px",
-      "block3_type": "all_text",
-      "block4_type": "notes_illust_below",
-      "block4_illust": "ESMIll/ESMPOWBDiffPyramid6Solutions.svg",
-      "block4_illust_max_size": "400px",
-      "title": "Difference Pyramids - 1",
+      "block2_type": "all_text",
+      "block3_type": "illust_below",
+      "block3_illust": "ESMIll/ESMPOWBEqualNumberSumsVennDiagram2Answer.svg",
+      "block3_illust_max_size": "400px",
+      "block4_type": "all_text",
+      "title": "Equal Sums - 2",
       "_translations": {
         "title": {},
         "block1_text": {},
@@ -154,7 +156,135 @@
       },
       "_translatedFields": {
         "title": {
-          "eng": "Difference Pyramids - 1"
+          "eng": "Equal Sums - 2"
+        },
+        "block1_text": {
+          "eng": "**The Challenge:** Here is a diagram created by overlapping three circles. The overlapping circles create six regions. Put a number in each of the six regions, using each of the numbers 1 to 6 exactly once, so that the sum of the numbers in each circle is the same."
+        },
+        "block2_text": {
+          "eng": "**Exploration:** How many different answers can you find? How do you know if you have found them all?"
+        },
+        "block3_text": {
+          "eng": "**The Challenge & Exploration:** Here are the four solutions. To see why these are the only ones, let A, B, and C be the three regions where two circles intersect, and let Sum be the common sum for the three circles. Calculate the total sum in two ways. As the sum of the three circles, the sum is 3 x Sum. As the sum of all six numbers plus A, B, and C the sum is 1 + 2 + 3 + 4 + 5 + 6 + A + B + C. The two things are equal, so that gives us 3 x Sum = 21 + A + B + C. Dividing by 3, we have Sum = 7 + (A + B + C)/3.\n\nFor Sum to be an integer in this last equation, A + B + C must be evenly divisible by 3. This allows for only four possibilities for A + B + C - it is either 6, 9, 12, or 15, and the corresponding values for Sum are 9, 10, 11, or 12.\n\nThe four solutions given here have Sum values of 9, 10, 11, and 12. As we shall see, these are all of the solutions!"
+        },
+        "block4_text": {
+          "eng": "To save some work, note that if we take one solution and subtract all the entries from 7, we get another solution. Also, note that the new solution will have a Sum value which is 21 - (old Sum). Hence, the solutions for Sum values 9 and 10 give us the solutions for Sum values 11 and 12.\n\nIf A + B + C = 6, then A, B, and C are 1, 2, and 3, and Sum = 9.  That is the upper left solution.\n\nIf A + B + C = 9, then Sum = 10 and (A, B, C) is (1, 2, 6), (1, 3, 5), or (2, 3, 4). If you check it, (1, 2, 6) and (2, 3, 4) are impossible. This leaves the upper right solution as the only Sum = 10 solution.\n\nIf you compare “Equal Sums – 2” with “Magic Triangles – 1,” you will see that they are the same puzzle!"
+        }
+      },
+      "block1_text": "**The Challenge:** Here is a diagram created by overlapping three circles. The overlapping circles create six regions. Put a number in each of the six regions, using each of the numbers 1 to 6 exactly once, so that the sum of the numbers in each circle is the same.",
+      "block2_text": "**Exploration:** How many different answers can you find? How do you know if you have found them all?",
+      "block3_text": "**The Challenge & Exploration:** Here are the four solutions. To see why these are the only ones, let A, B, and C be the three regions where two circles intersect, and let Sum be the common sum for the three circles. Calculate the total sum in two ways. As the sum of the three circles, the sum is 3 x Sum. As the sum of all six numbers plus A, B, and C the sum is 1 + 2 + 3 + 4 + 5 + 6 + A + B + C. The two things are equal, so that gives us 3 x Sum = 21 + A + B + C. Dividing by 3, we have Sum = 7 + (A + B + C)/3.\n\nFor Sum to be an integer in this last equation, A + B + C must be evenly divisible by 3. This allows for only four possibilities for A + B + C - it is either 6, 9, 12, or 15, and the corresponding values for Sum are 9, 10, 11, or 12.\n\nThe four solutions given here have Sum values of 9, 10, 11, and 12. As we shall see, these are all of the solutions!",
+      "block4_text": "To save some work, note that if we take one solution and subtract all the entries from 7, we get another solution. Also, note that the new solution will have a Sum value which is 21 - (old Sum). Hence, the solutions for Sum values 9 and 10 give us the solutions for Sum values 11 and 12.\n\nIf A + B + C = 6, then A, B, and C are 1, 2, and 3, and Sum = 9.  That is the upper left solution.\n\nIf A + B + C = 9, then Sum = 10 and (A, B, C) is (1, 2, 6), (1, 3, 5), or (2, 3, 4). If you check it, (1, 2, 6) and (2, 3, 4) are impossible. This leaves the upper right solution as the only Sum = 10 solution.\n\nIf you compare “Equal Sums – 2” with “Magic Triangles – 1,” you will see that they are the same puzzle!"
+    },
+    {
+      "id": "esm_pow_b_equal_sums_3",
+      "level": "B",
+      "area": "Number",
+      "subarea": "Add Sub",
+      "notes_block_start": 3,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWBEqualNumberSums3.svg",
+      "block1_illust_max_size": "240px",
+      "block2_type": "all_text",
+      "block3_type": "illust_below",
+      "block3_illust": "ESMIll/ESMPOWBEqualNumberSums3Answers.svg",
+      "block3_illust_max_size": "400px",
+      "title": "Equal Sums - 3",
+      "_translations": {
+        "title": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Equal Sums - 3"
+        },
+        "block1_text": {
+          "eng": "**The Challenge:** Here is a diagram created by overlapping three circles. The overlapping circles create seven regions. Put a number in each of the seven regions, using each of the numbers 1 to 7 exactly once, so that the sum of the numbers in each circle is the same."
+        },
+        "block2_text": {
+          "eng": "**Exploration:** How many different answers can you find? How do you know if you have found them all?"
+        },
+        "block3_text": {
+          "eng": "**The Challenge & Exploration:** The first question with these problems is what the possible sums in the circles are. Narrow this down by looking at the sum of the entries in two ways. Let A, B, and C be the three values where two circles intersect, let M be the value where all three circles intersect, and let Sum be the common sum in each circle. The sum of the three circles is 3 x Sum. That sum is also the sum of the numbers from 1 to 7 plus A + B + C plus 2 x M. Therefore, 3 x Sum = 28 + A + B + C + 2 x M.\n\nBefore going further with this, note that if we start with any solution, we can get a new solution by subtracting all the entries from 8. This will have the effect of replacing Sum by 32 - Sum. Because of this, we only need to look for values of Sum up to 16 - the remaining larger values can be obtained by subtracting those solution entries from 8.\n\nThe smallest A + B + C + 2 x M can be is 2 + 3 + 4 + 2 x 1 = 11. So the smallest Sum can be is (28 + 11) / 3 = 13. Consequently, we want to see which of the Sum values from 13 to 16 are possible. It turns out that they are all possible. \n\nHere is one solution for each Sum value starting at 13 and ending at 16. There are many more."
+        }
+      },
+      "block1_text": "**The Challenge:** Here is a diagram created by overlapping three circles. The overlapping circles create seven regions. Put a number in each of the seven regions, using each of the numbers 1 to 7 exactly once, so that the sum of the numbers in each circle is the same.",
+      "block2_text": "**Exploration:** How many different answers can you find? How do you know if you have found them all?",
+      "block3_text": "**The Challenge & Exploration:** The first question with these problems is what the possible sums in the circles are. Narrow this down by looking at the sum of the entries in two ways. Let A, B, and C be the three values where two circles intersect, let M be the value where all three circles intersect, and let Sum be the common sum in each circle. The sum of the three circles is 3 x Sum. That sum is also the sum of the numbers from 1 to 7 plus A + B + C plus 2 x M. Therefore, 3 x Sum = 28 + A + B + C + 2 x M.\n\nBefore going further with this, note that if we start with any solution, we can get a new solution by subtracting all the entries from 8. This will have the effect of replacing Sum by 32 - Sum. Because of this, we only need to look for values of Sum up to 16 - the remaining larger values can be obtained by subtracting those solution entries from 8.\n\nThe smallest A + B + C + 2 x M can be is 2 + 3 + 4 + 2 x 1 = 11. So the smallest Sum can be is (28 + 11) / 3 = 13. Consequently, we want to see which of the Sum values from 13 to 16 are possible. It turns out that they are all possible. \n\nHere is one solution for each Sum value starting at 13 and ending at 16. There are many more."
+    },
+    {
+      "id": "esm_pow_b_equal_sums_4",
+      "level": "B",
+      "area": "Number",
+      "subarea": "Add Sub",
+      "notes_block_start": 3,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWBEqualNumberSums4.svg",
+      "block1_illust_max_size": "240px",
+      "block2_type": "all_text",
+      "block3_type": "illust_below",
+      "block3_illust": "ESMIll/ESMPOWBEqualNumberSums4Answers.svg",
+      "block3_illust_max_size": "400px",
+      "block4_type": "all_text",
+      "title": "Equal Sums - 4",
+      "_translations": {
+        "title": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Equal Sums - 4"
+        },
+        "block1_text": {
+          "eng": "**The Challenge:** Here is a diagram created by overlapping four circles. The overlapping circles create eight regions. Put a number in each of the eight regions, using each of the numbers 1 to 8 exactly once, so that the sum of the numbers in each circle is the same."
+        },
+        "block2_text": {
+          "eng": "**Exploration:** How many different answers can you find? Do you think there are any more? What happens if you use other number ranges? Are there other interesting problems like this with intersecting circles?"
+        },
+        "block3_text": {
+          "eng": "**The Challenge & Exploration:** Start by deciding which sums are possible for the common sum for all circles. Let Sum be that value. Let A, B, C, and D be the values of the four regions where two circles intersect. The sum of the four circles is 4 x Sum, and it is also 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + A + B + C + D. Then we have the equation 4 x Sum = 36 + A + B + C + D, so Sum = 9 + (A + B + C + D) / 4. The smallest that A + B + C + D can have is 1 + 2 + 3 + 4 = 10. This needs to be divisible, so it’s smallest possible value is 12, which means the smallest possible value is Sum = 9 + 12/4 = 12.\n\nNote that any solution can be turned into another solution by subtracting all entries from 9. Doing this will turn the old Sum into 27 - Sum. Consequently, the only possible values for Sum are 12, 13, 14, and 15. Because 12 and 15 are tied together, and 13 and 14 are tied together, we only need to check for solutions for 12 and 13.\n\nHere are solutions for Sum with values 12 and 13. It turns out these are the only ones for these two sums."
+        },
+        "block4_text": {
+          "eng": "Notice that the numbers in the center of circles not touching each other add up to the same thing. For example, in the leftmost diagram, 8 + 4 = 5 + 7. Prove that this always happens with a bit of algebra. Let K and L be the values in the centers of two of the opposite circles, and let M and N be the other two values. If we add up the regions for the two circles for K and L we get 2 x Sum = K + L + (A + B + C + D). Similarly, adding up the regions for the two circles for M and N gives 2 x Sum = M + N + (A + B + C + D). This forces K + L = M + N.\n\nAlso, note that since 4 x Sum = 36 + A + B + C + D, we get 2 x Sum = M + N + (4 x Sum - 36). Rewriting this we have M + N = 36 - 2 x Sum. For our four values of Sum, 12 through 15, the values of M + N are 12, 10, 8, and 6.\n\nBecause 12 = 4 + 8 = 5 + 7 are the only ways to get 12, the solution above for Sum = 12 is the only solution. While 10 = 2 + 8 = 3 + 7 = 4 + 6 suggests there are more possibilities for Sum = 13, a quick check of the three possible pairings of (2, 8), (3, 7), and (4, 6) shows that the solution above is the only one for Sum = 13."
+        }
+      },
+      "block1_text": "**The Challenge:** Here is a diagram created by overlapping four circles. The overlapping circles create eight regions. Put a number in each of the eight regions, using each of the numbers 1 to 8 exactly once, so that the sum of the numbers in each circle is the same.",
+      "block2_text": "**Exploration:** How many different answers can you find? Do you think there are any more? What happens if you use other number ranges? Are there other interesting problems like this with intersecting circles?",
+      "block3_text": "**The Challenge & Exploration:** Start by deciding which sums are possible for the common sum for all circles. Let Sum be that value. Let A, B, C, and D be the values of the four regions where two circles intersect. The sum of the four circles is 4 x Sum, and it is also 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + A + B + C + D. Then we have the equation 4 x Sum = 36 + A + B + C + D, so Sum = 9 + (A + B + C + D) / 4. The smallest that A + B + C + D can have is 1 + 2 + 3 + 4 = 10. This needs to be divisible, so it’s smallest possible value is 12, which means the smallest possible value is Sum = 9 + 12/4 = 12.\n\nNote that any solution can be turned into another solution by subtracting all entries from 9. Doing this will turn the old Sum into 27 - Sum. Consequently, the only possible values for Sum are 12, 13, 14, and 15. Because 12 and 15 are tied together, and 13 and 14 are tied together, we only need to check for solutions for 12 and 13.\n\nHere are solutions for Sum with values 12 and 13. It turns out these are the only ones for these two sums.",
+      "block4_text": "Notice that the numbers in the center of circles not touching each other add up to the same thing. For example, in the leftmost diagram, 8 + 4 = 5 + 7. Prove that this always happens with a bit of algebra. Let K and L be the values in the centers of two of the opposite circles, and let M and N be the other two values. If we add up the regions for the two circles for K and L we get 2 x Sum = K + L + (A + B + C + D). Similarly, adding up the regions for the two circles for M and N gives 2 x Sum = M + N + (A + B + C + D). This forces K + L = M + N.\n\nAlso, note that since 4 x Sum = 36 + A + B + C + D, we get 2 x Sum = M + N + (4 x Sum - 36). Rewriting this we have M + N = 36 - 2 x Sum. For our four values of Sum, 12 through 15, the values of M + N are 12, 10, 8, and 6.\n\nBecause 12 = 4 + 8 = 5 + 7 are the only ways to get 12, the solution above for Sum = 12 is the only solution. While 10 = 2 + 8 = 3 + 7 = 4 + 6 suggests there are more possibilities for Sum = 13, a quick check of the three possible pairings of (2, 8), (3, 7), and (4, 6) shows that the solution above is the only one for Sum = 13."
+    },
+    {
+      "id": "esm_pow_b_diff_pyramids_6",
+      "level": "B",
+      "area": "Number",
+      "subarea": "Sub",
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWBDiffPyramid6Intro.svg",
+      "block1_illust_max_size": "240px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWBDiffPyramid6Challenge.svg",
+      "block2_illust_max_size": "180px",
+      "block3_type": "all_text",
+      "block4_type": "illust_below",
+      "block4_illust": "ESMIll/ESMPOWBDiffPyramid6Solutions.svg",
+      "block4_illust_max_size": "400px",
+      "title": "Difference Pyramids - 6",
+      "_translations": {
+        "title": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Difference Pyramids - 6"
         },
         "block1_text": {
           "eng": "**Introduction:** These pyramids are called **Difference Pyramids.** The number on top is the difference of the two numbers below."
@@ -173,6 +303,50 @@
       "block2_text": "**The Challenge:** Place the numbers from 1 to 6 to make a Difference Pyramid.",
       "block3_text": "**Exploration:** Find different ways this can be done. Are some of these essentially the same?",
       "block4_text": "**The Challenge & Exploration:** A good start is to realize that because 6 cannot be the difference of two cards, it must go on the bottom row. \n\nNext, the only way 5 can be the difference is if it is above the 6 and the 1. So, either 5 goes directly above the 6 (with the 1 next to the 6), or 5 is in the bottom row.\n\nAt this point it is useful to consider what makes solutions different. Because the mirror image of any solution is also a solution, it makes sense to ignore those. Ignoring mirror images will reduce the number of solutions to consider by half. \n\nFor example, we can assume that not only is the 6 in the bottom row, but it is either in the middle or the right side of the bottom row - if it were on the left side, we could take the mirror image of the whole puzzle and put it on the right side.\n\nUsing this thinking, the bottom row can have five possible layouts (up to using mirror images):    5 X 6,   X 5 6,    X 6 5,    X 1 6,    X 6 1.\n\nAt this point, it is a matter of working through the various possibilities. The only 5 X 6 that works is 5 2 6. It turns out X 5 6 never works. The only X 6 5 is 2 6 5. The only X 1 6 is 4 1 6, and the only X 6 1 is 4 6 1.\n\nSo, ignoring mirror images, there are four solutions:"
+    },
+    {
+      "id": "esm_pow_b_diff_pyramids_10",
+      "level": "B",
+      "area": "Number",
+      "subarea": "Sub",
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWBDiffPyramid6Intro.svg",
+      "block1_illust_max_size": "240px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWBDiffPyramid10Challenge.svg",
+      "block2_illust_max_size": "180px",
+      "block3_type": "all_text",
+      "block4_type": "all_text",
+      "title": "Difference Pyramids - 10",
+      "_translations": {
+        "title": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Difference Pyramids - 10"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** These pyramids are called **Difference Pyramids.** The number on top is the difference of the two numbers below."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Place the numbers from 1 to 10 to make a Difference Pyramid."
+        },
+        "block3_text": {
+          "eng": "**Exploration:** Play with even larger pyramids."
+        },
+        "block4_text": {
+          "eng": "**The Challenge & Exploration:**  Because 10 cannot be the difference of two cards, it must go on the bottom row. Similarly, either 9 is in the bottom row or it is in the next-to-the-bottom row above the 1 and the 10. The 8 and 7 cards are also good cards to focus on to get rid of possibilities.\n\nThis means the bottom row looks like one of the following (ignoring mirror images):\n\nX Y 9 10,   X 9 Y 10,   9 X Y 10,   X Y 10 9,   X 9 10 Y,   9 X 10 Y,   X Y 1 10,   X 1 10 Y,  X Y 10 1\n\nThat is a lot of possibilities to consider!\n\nFortunately, if you consider where 8 and 7 can go, the possibilities are reduced to the following list (assuming we haven’t missed any). It is easy to finish each of these once you have the bottom row.\n\n8 3 10 9,   9 3 10 8,   6 1 10 8,   8 1 10 6\n\nInvestigating pyramids of size 15, 21, or higher are for the truly dedicated.\n\nFrom the literature, there is only one solution (up to reflections) for 15, and its bottom row is {6, 14, 15, 3, 13}. Even more surprisingly, there are no solutions for 21, 28, and 36, and it has been conjectured that there are no solutions above that!"
+        }
+      },
+      "block1_text": "**Introduction:** These pyramids are called **Difference Pyramids.** The number on top is the difference of the two numbers below.",
+      "block2_text": "**The Challenge:** Place the numbers from 1 to 10 to make a Difference Pyramid.",
+      "block3_text": "**Exploration:** Play with even larger pyramids.",
+      "block4_text": "**The Challenge & Exploration:**  Because 10 cannot be the difference of two cards, it must go on the bottom row. Similarly, either 9 is in the bottom row or it is in the next-to-the-bottom row above the 1 and the 10. The 8 and 7 cards are also good cards to focus on to get rid of possibilities.\n\nThis means the bottom row looks like one of the following (ignoring mirror images):\n\nX Y 9 10,   X 9 Y 10,   9 X Y 10,   X Y 10 9,   X 9 10 Y,   9 X 10 Y,   X Y 1 10,   X 1 10 Y,  X Y 10 1\n\nThat is a lot of possibilities to consider!\n\nFortunately, if you consider where 8 and 7 can go, the possibilities are reduced to the following list (assuming we haven’t missed any). It is easy to finish each of these once you have the bottom row.\n\n8 3 10 9,   9 3 10 8,   6 1 10 8,   8 1 10 6\n\nInvestigating pyramids of size 15, 21, or higher are for the truly dedicated.\n\nFrom the literature, there is only one solution (up to reflections) for 15, and its bottom row is {6, 14, 15, 3, 13}. Even more surprisingly, there are no solutions for 21, 28, and 36, and it has been conjectured that there are no solutions above that!"
     }
   ],
   "_xlsxPath": "EFM_pows_high_level_sheets.xlsx"
