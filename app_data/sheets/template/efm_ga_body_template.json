@@ -1183,71 +1183,81 @@
                   "exclude_from_translation": true,
                   "rows": [
                     {
-                      "type": "text",
-                      "name": "display_text",
-                      "value": "@@local.block_text",
-                      "_translations": {
-                        "value": {}
+                      "type": "display_group",
+                      "name": "make_it_a_column_1",
+                      "parameter_list": {
+                        "style": "column"
                       },
-                      "exclude_from_translation": true,
-                      "_nested_name": "run_through_body_sections.display_group_15.accordion.bloxk_2_tips.display_text",
-                      "_dynamicFields": {
-                        "value": [
-                          {
-                            "fullExpression": "@@local.block_text",
-                            "matchedExpression": "@local.block_text",
-                            "type": "local",
-                            "fieldName": "block_text"
+                      "rows": [
+                        {
+                          "type": "text",
+                          "name": "display_text",
+                          "value": "@@local.block_text",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "exclude_from_translation": true,
+                          "_nested_name": "run_through_body_sections.display_group_15.accordion.bloxk_2_tips.make_it_a_column_1.display_text",
+                          "_dynamicFields": {
+                            "value": [
+                              {
+                                "fullExpression": "@@local.block_text",
+                                "matchedExpression": "@local.block_text",
+                                "type": "local",
+                                "fieldName": "block_text"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@local.block_text": [
+                              "value"
+                            ]
                           }
-                        ]
-                      },
-                      "_dynamicDependencies": {
-                        "@local.block_text": [
-                          "value"
-                        ]
-                      }
-                    },
-                    {
-                      "type": "image",
-                      "name": "display_illust",
-                      "value": "@@local.block_illustration",
-                      "_translations": {
-                        "value": {}
-                      },
-                      "style_list": [
-                        "margin_top: -8px",
-                        "max-width: @@local.block_illustration_max_width"
-                      ],
-                      "exclude_from_translation": true,
-                      "_nested_name": "run_through_body_sections.display_group_15.accordion.bloxk_2_tips.display_illust",
-                      "_dynamicFields": {
-                        "value": [
-                          {
-                            "fullExpression": "@@local.block_illustration",
-                            "matchedExpression": "@local.block_illustration",
-                            "type": "local",
-                            "fieldName": "block_illustration"
-                          }
-                        ],
-                        "style_list": {
-                          "1": [
-                            {
-                              "fullExpression": "max-width: @@local.block_illustration_max_width",
-                              "matchedExpression": "@local.block_illustration_max_width",
-                              "type": "local",
-                              "fieldName": "block_illustration_max_width"
+                        },
+                        {
+                          "type": "image",
+                          "name": "display_illust",
+                          "value": "@@local.block_illustration",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "style_list": [
+                            "margin_top: -8px",
+                            "max-width: @@local.block_illustration_max_width"
+                          ],
+                          "exclude_from_translation": true,
+                          "_nested_name": "run_through_body_sections.display_group_15.accordion.bloxk_2_tips.make_it_a_column_1.display_illust",
+                          "_dynamicFields": {
+                            "value": [
+                              {
+                                "fullExpression": "@@local.block_illustration",
+                                "matchedExpression": "@local.block_illustration",
+                                "type": "local",
+                                "fieldName": "block_illustration"
+                              }
+                            ],
+                            "style_list": {
+                              "1": [
+                                {
+                                  "fullExpression": "max-width: @@local.block_illustration_max_width",
+                                  "matchedExpression": "@local.block_illustration_max_width",
+                                  "type": "local",
+                                  "fieldName": "block_illustration_max_width"
+                                }
+                              ]
                             }
-                          ]
+                          },
+                          "_dynamicDependencies": {
+                            "@local.block_illustration": [
+                              "value"
+                            ],
+                            "@local.block_illustration_max_width": [
+                              "style_list.1"
+                            ]
+                          }
                         }
-                      },
-                      "_dynamicDependencies": {
-                        "@local.block_illustration": [
-                          "value"
-                        ],
-                        "@local.block_illustration_max_width": [
-                          "style_list.1"
-                        ]
-                      }
+                      ],
+                      "_nested_name": "run_through_body_sections.display_group_15.accordion.bloxk_2_tips.make_it_a_column_1"
                     }
                   ],
                   "_nested_name": "run_through_body_sections.display_group_15.accordion.bloxk_2_tips"
@@ -1373,6 +1383,7 @@
         },
         {
           "type": "display_group",
+          "name": "var_ill_below",
           "condition": "@@local.block_type == \"variations_illust_below\"",
           "parameter_list": {
             "style": "column"
@@ -1387,7 +1398,7 @@
               },
               "exclude_from_translation": true,
               "type": "set_variable",
-              "_nested_name": "run_through_body_sections.display_group_17.paragraph_space",
+              "_nested_name": "run_through_body_sections.var_ill_below.paragraph_space",
               "_dynamicFields": {
                 "value": [
                   {
@@ -1419,81 +1430,90 @@
                   "exclude_from_translation": true,
                   "rows": [
                     {
-                      "type": "text",
-                      "name": "display_text",
-                      "value": "@@local.block_text",
-                      "_translations": {
-                        "value": {}
+                      "type": "display_group",
+                      "name": "make_it_a_column_2",
+                      "parameter_list": {
+                        "style": "column"
                       },
-                      "exclude_from_translation": true,
-                      "_nested_name": "run_through_body_sections.display_group_17.accordion.bloxk_1_var.display_text",
-                      "_dynamicFields": {
-                        "value": [
-                          {
-                            "fullExpression": "@@local.block_text",
-                            "matchedExpression": "@local.block_text",
-                            "type": "local",
-                            "fieldName": "block_text"
+                      "rows": [
+                        {
+                          "type": "text",
+                          "name": "display_text",
+                          "value": "@@local.block_text",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "exclude_from_translation": true,
+                          "_nested_name": "run_through_body_sections.var_ill_below.accordion.bloxk_1_var.make_it_a_column_2.display_text",
+                          "_dynamicFields": {
+                            "value": [
+                              {
+                                "fullExpression": "@@local.block_text",
+                                "matchedExpression": "@local.block_text",
+                                "type": "local",
+                                "fieldName": "block_text"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@local.block_text": [
+                              "value"
+                            ]
                           }
-                        ]
-                      },
-                      "_dynamicDependencies": {
-                        "@local.block_text": [
-                          "value"
-                        ]
-                      }
-                    },
-                    {
-                      "type": "image",
-                      "name": "display_illust",
-                      "value": "@@local.block_illustration",
-                      "_translations": {
-                        "value": {}
-                      },
-                      "style_list": [
-                        "margin_top: -8px",
-                        "max-width: @@local.block_illustration_max_width"
-                      ],
-                      "exclude_from_translation": true,
-                      "_nested_name": "run_through_body_sections.display_group_17.accordion.bloxk_1_var.display_illust",
-                      "_dynamicFields": {
-                        "value": [
-                          {
-                            "fullExpression": "@@local.block_illustration",
-                            "matchedExpression": "@local.block_illustration",
-                            "type": "local",
-                            "fieldName": "block_illustration"
-                          }
-                        ],
-                        "style_list": {
-                          "1": [
-                            {
-                              "fullExpression": "max-width: @@local.block_illustration_max_width",
-                              "matchedExpression": "@local.block_illustration_max_width",
-                              "type": "local",
-                              "fieldName": "block_illustration_max_width"
+                        },
+                        {
+                          "type": "image",
+                          "name": "display_illust",
+                          "value": "@@local.block_illustration",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "style_list": [
+                            "margin_top: -8px",
+                            "max-width: @@local.block_illustration_max_width"
+                          ],
+                          "exclude_from_translation": true,
+                          "_nested_name": "run_through_body_sections.var_ill_below.accordion.bloxk_1_var.make_it_a_column_2.display_illust",
+                          "_dynamicFields": {
+                            "value": [
+                              {
+                                "fullExpression": "@@local.block_illustration",
+                                "matchedExpression": "@local.block_illustration",
+                                "type": "local",
+                                "fieldName": "block_illustration"
+                              }
+                            ],
+                            "style_list": {
+                              "1": [
+                                {
+                                  "fullExpression": "max-width: @@local.block_illustration_max_width",
+                                  "matchedExpression": "@local.block_illustration_max_width",
+                                  "type": "local",
+                                  "fieldName": "block_illustration_max_width"
+                                }
+                              ]
                             }
-                          ]
+                          },
+                          "_dynamicDependencies": {
+                            "@local.block_illustration": [
+                              "value"
+                            ],
+                            "@local.block_illustration_max_width": [
+                              "style_list.1"
+                            ]
+                          }
                         }
-                      },
-                      "_dynamicDependencies": {
-                        "@local.block_illustration": [
-                          "value"
-                        ],
-                        "@local.block_illustration_max_width": [
-                          "style_list.1"
-                        ]
-                      }
+                      ],
+                      "_nested_name": "run_through_body_sections.var_ill_below.accordion.bloxk_1_var.make_it_a_column_2"
                     }
                   ],
-                  "_nested_name": "run_through_body_sections.display_group_17.accordion.bloxk_1_var"
+                  "_nested_name": "run_through_body_sections.var_ill_below.accordion.bloxk_1_var"
                 }
               ],
-              "_nested_name": "run_through_body_sections.display_group_17.accordion"
+              "_nested_name": "run_through_body_sections.var_ill_below.accordion"
             }
           ],
-          "name": "display_group_17",
-          "_nested_name": "run_through_body_sections.display_group_17",
+          "_nested_name": "run_through_body_sections.var_ill_below",
           "_dynamicFields": {
             "condition": [
               {
@@ -1527,6 +1547,21 @@
           "value"
         ]
       }
+    },
+    {
+      "type": "display_group",
+      "name": "fake_space_maker2",
+      "style_list": [
+        "margin_top: 15px"
+      ],
+      "rows": [
+        {
+          "type": "text",
+          "name": "fakeit",
+          "_nested_name": "fake_space_maker2.fakeit"
+        }
+      ],
+      "_nested_name": "fake_space_maker2"
     }
   ],
   "_xlsxPath": "EFM_gas_high_level_sheets.xlsx"

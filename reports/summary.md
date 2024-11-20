@@ -4,18 +4,18 @@
 | type | count |
 | --- | --- |
 | accordion | 1 |
-| button | 15 |
+| button | 17 |
 | debug_toggle | 1 |
-| display_group | 30 |
+| display_group | 37 |
 | image | 3 |
 | items | 7 |
 | qr_code | 1 |
 | radio_button_grid | 1 |
 | select_text | 1 |
 | set_field | 10 |
-| set_variable | 174 |
+| set_variable | 181 |
 | template | 63 |
-| text | 29 |
+| text | 36 |
 | text_area | 2 |
 | tile_component | 3 |
 | title | 16 |
@@ -34,7 +34,7 @@
 | emit: set_language | 1 |
 | emit: uncompleted | 58 |
 | feedback | 7 |
-| go_to | 4 |
+| go_to | 6 |
 | go_to_url | 3 |
 | reset_app | 1 |
 | set_local | 4 |
@@ -45,8 +45,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 19399 KB | 19.4 MB |
-| unused | 10491 KB | 10.5 MB |
+| total | 19509 KB | 19.5 MB |
+| unused | 10506 KB | 10.5 MB |
 </details>
 
 <details open>
@@ -324,6 +324,7 @@ Assets that appear in app-data but do not have references within sheets
 | EFMStorybooks/EFM-SB-KAHN-20.jpg | 3.5 |
 | EFMStorybooks/EFM-SB-SSMILE-8.jpg | 3.5 |
 | EFMStorybooks/EFM-SB-TFHH-2.jpg | 10.6 |
+| ESMIll/ESMGAImThinkingOfANumberNumberLineTo12.svg | 15.5 |
 | android/icon-background.png | 7 |
 | android/icon-foreground.png | 53.9 |
 | android/icon.png | 75.2 |
@@ -1221,14 +1222,23 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMGADots and Boxes Numbered.svg | 9.6 | 1 |
 | ESMIll/ESMGADotsandBoxesUnnumvwewsEmpty.svg | 5.2 | 1 |
 | ESMIll/ESMGADotsandBoxesUnnumvwewsExample.svg | 7.1 | 1 |
+| ESMIll/ESMGAGetOutOfMyHouseEmpty.svg | 22.6 | 2 |
+| ESMIll/ESMGAGetOutOfMyHouseMidgame.svg | 23.6 | 2 |
 | ESMIll/ESMPOWAConsecutiveNumbersAnswer1.svg | 6.2 | 1 |
 | ESMIll/ESMPOWAConsecutiveNumbersChallenge1.svg | 2.4 | 1 |
 | ESMIll/ESMPOWAConsecutiveNumbersIntro.svg | 18.6 | 1 |
 | ESMIll/ESMPOWASumGroups6aChallenge.svg | 59.1 | 1 |
 | ESMIll/ESMPOWASumGroups6aExample.svg | 30.7 | 1 |
+| ESMIll/ESMPOWBDiffPyramid10Challenge.svg | 6.7 | 1 |
 | ESMIll/ESMPOWBDiffPyramid6Challenge.svg | 4.1 | 1 |
-| ESMIll/ESMPOWBDiffPyramid6Intro.svg | 6.8 | 1 |
+| ESMIll/ESMPOWBDiffPyramid6Intro.svg | 6.8 | 2 |
 | ESMIll/ESMPOWBDiffPyramid6Solutions.svg | 41.4 | 1 |
+| ESMIll/ESMPOWBEqualNumberSums3.svg | 2.5 | 1 |
+| ESMIll/ESMPOWBEqualNumberSums3Answers.svg | 22.3 | 1 |
+| ESMIll/ESMPOWBEqualNumberSums4.svg | 2.7 | 1 |
+| ESMIll/ESMPOWBEqualNumberSums4Answers.svg | 11.2 | 1 |
+| ESMIll/ESMPOWBEqualNumberSumsVennDiagram2.svg | 2.3 | 1 |
+| ESMIll/ESMPOWBEqualNumberSumsVennDiagram2Answer.svg | 16.1 | 1 |
 | ESMIll/ESMPOWBEqualSums1Answer.svg | 7.6 | 1 |
 | ESMIll/ESMPOWBEqualSums1Challenge.svg | 2.3 | 1 |
 </details>
@@ -1243,7 +1253,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | data_list | lifecycle_actions | 1 |
 | generator |  | 1 |
 | global |  | 2 |
-| template |  | 23 |
+| template |  | 25 |
 | template | generated | 58 |
 | tour |  | 4 |
 </details>

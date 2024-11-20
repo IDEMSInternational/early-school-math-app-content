@@ -5,15 +5,15 @@
   "status": "released",
   "rows": [
     {
-      "id": "ga_A",
+      "id": "ga_1",
       "US Grades": "K, 1",
       "area": "Number",
       "subarea": "Counting",
-      "Type": "Game",
-      "Uses": "Break, Tutoring, Home",
-      "Concepts": "Counting, Squares, Strategy",
-      "Materials": "Paper, Pencil",
-      "Players": 2,
+      "type": "Game",
+      "uses": "Breaks, Tutoring, Home",
+      "concepts": "Counting, Squares, Strategy",
+      "materials": "Paper, Pencil",
+      "players": 2,
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMGADotsandBoxesUnnumvwewsExample.svg",
       "block1_illust_max_size": "180px",
@@ -59,15 +59,15 @@
       "block5_text": "**Larger grids:** Use larger grids of points for more challenging games.\n\n**Shapes:** You can play this with a triangular grid of dots."
     },
     {
-      "id": "ga_B",
+      "id": "ga_2",
       "US Grades": "K, 1",
       "area": "Number",
       "subarea": "Add Sub",
-      "Type": "Game",
-      "Uses": "Break, Tutoring, Home",
-      "Concepts": "Adding small numbers, Squares, Strategy",
-      "Materials": "Paper, Pencil",
-      "Players": 2,
+      "type": "Game",
+      "uses": "Breaks, Tutoring, Home",
+      "concepts": "Adding small numbers, Squares, Strategy",
+      "materials": "Paper, Pencil",
+      "players": 2,
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMGADots and Boxes Numbered.svg",
       "block1_illust_max_size": "180px",
@@ -113,19 +113,129 @@
       "block5_text": "**Larger grids:** Use larger grids of points for more challenging games.\n\n**Shapes:** You can play this with a triangular grid of dots.\n\n**Subtraction:** By using numbers with subtraction signs, you can introduce subtraction into this game."
     },
     {
-      "id": "ga_C",
+      "id": "ga_3_1",
+      "US Grades": "K, 1",
+      "area": "Number",
+      "subarea": "Add Sub",
+      "type": "Game",
+      "uses": "Tutoring, Home",
+      "concepts": "Add Sub 1",
+      "materials": "Paper, Pencil, Colored tokens",
+      "players": 2,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMGAGetOutOfMyHouseEmpty.svg",
+      "block1_illust_max_size": "240px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMGAGetOutOfMyHouseMidgame.svg",
+      "block2_illust_max_size": "240px",
+      "block3_type": "all_text",
+      "block4_type": "tips_text",
+      "block5_type": "variations_text",
+      "title": "Get Out of My House within 1",
+      "_translations": {
+        "title": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {},
+        "block5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Get Out of My House within 1"
+        },
+        "block1_text": {
+          "eng": "**Set up:** Have one shared piece of paper with house shapes marked on it from 0 to 11. To promote more interactions with the number sequence, the houses should not be laid out in order. Use a deck of cards with the face cards removed. Each player starts with seven markers of their distinctive color."
+        },
+        "block2_text": {
+          "eng": "**Play:** On a turn, a player picks a card. The player has the option of placing a marker on a house with a number one more or one less than the number on the card. If a house has three or more of the opponent’s markers, that house is safe and the player cannot move there. If a house has one or two of the opponent’s markers, the player can send those markers back to the opponent with the phrase “Get out of my house!”\n\n**Goal:** The first player to have all seven markers on the board at one time wins."
+        },
+        "block3_text": {
+          "eng": "**Example move:** For the last move in the game above, red picked the “3” card. Red had a choice of moving to 2 or 4, and red chose to put the second marker on the 2."
+        },
+        "block4_text": {
+          "eng": "Discuss whether some house numbers are better than others.\n\nDiscuss whether, given the choice, it is better to put a second marker on a house or a single marker on a new house."
+        },
+        "block5_text": {
+          "eng": "**Use 2 instead of 1:** Practice a different set of math facts by using the number plus or minus 2 instead of plus or minus 1."
+        }
+      },
+      "block1_text": "**Set up:** Have one shared piece of paper with house shapes marked on it from 0 to 11. To promote more interactions with the number sequence, the houses should not be laid out in order. Use a deck of cards with the face cards removed. Each player starts with seven markers of their distinctive color.",
+      "block2_text": "**Play:** On a turn, a player picks a card. The player has the option of placing a marker on a house with a number one more or one less than the number on the card. If a house has three or more of the opponent’s markers, that house is safe and the player cannot move there. If a house has one or two of the opponent’s markers, the player can send those markers back to the opponent with the phrase “Get out of my house!”\n\n**Goal:** The first player to have all seven markers on the board at one time wins.",
+      "block3_text": "**Example move:** For the last move in the game above, red picked the “3” card. Red had a choice of moving to 2 or 4, and red chose to put the second marker on the 2.",
+      "block4_text": "Discuss whether some house numbers are better than others.\n\nDiscuss whether, given the choice, it is better to put a second marker on a house or a single marker on a new house.",
+      "block5_text": "**Use 2 instead of 1:** Practice a different set of math facts by using the number plus or minus 2 instead of plus or minus 1."
+    },
+    {
+      "id": "ga_3",
       "US Grades": "K, 1, 2",
       "area": "Number",
       "subarea": "Add Sub",
-      "Type": "Game",
-      "Uses": "Tutoring, Home",
-      "Concepts": "Add Sub single digit",
-      "Materials": "Paper, Pencil, colored tokens",
-      "Players": 2,
+      "type": "Game",
+      "uses": "Tutoring, Home",
+      "concepts": "Add Sub single digit",
+      "materials": "Paper, Pencil, Colored tokens",
+      "players": 2,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMGAGetOutOfMyHouseEmpty.svg",
+      "block1_illust_max_size": "240px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMGAGetOutOfMyHouseMidgame.svg",
+      "block2_illust_max_size": "240px",
+      "block3_type": "all_text",
+      "block4_type": "tips_text",
+      "block5_type": "variations_text",
+      "title": "Get Out of My House with Add & Subtract",
+      "_translations": {
+        "title": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {},
+        "block5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Get Out of My House with Add & Subtract"
+        },
+        "block1_text": {
+          "eng": "**Set up:** Use a deck of cards with numbers from 1 (Ace) to 10. On a shared piece of paper, draw 21 boxes or simple houses numbered from 0 to 20 (only 11 boxes are shown). Each player has 7 tokens distinct from the other player’s 7 tokens."
+        },
+        "block2_text": {
+          "eng": "**Play:** During a turn, a player selects two random cards to work with. They then choose whether to add or subtract them to put their token in a house with fewer than three of the opponent’s tokens. If the house contains one or two of the opponent’s tokens, those tokens are given back to the opponent and the player says “Get out of my house.”"
+        },
+        "block3_text": {
+          "eng": "**Goal:** The first player to put all their tokens in houses wins."
+        },
+        "block4_text": {
+          "eng": "Which houses are the most likely to occur?\n\nWhat are the advantages and disadvantages of putting tokens on frequently occurring houses?"
+        },
+        "block5_text": {
+          "eng": "A simpler version of the game, that involves no choices, uses only one operation of addition and subtraction for a given game.\n\nYou can extend the operations by allowing addition, subtraction, or multiplication."
+        }
+      },
+      "block1_text": "**Set up:** Use a deck of cards with numbers from 1 (Ace) to 10. On a shared piece of paper, draw 21 boxes or simple houses numbered from 0 to 20 (only 11 boxes are shown). Each player has 7 tokens distinct from the other player’s 7 tokens.",
+      "block2_text": "**Play:** During a turn, a player selects two random cards to work with. They then choose whether to add or subtract them to put their token in a house with fewer than three of the opponent’s tokens. If the house contains one or two of the opponent’s tokens, those tokens are given back to the opponent and the player says “Get out of my house.”",
+      "block3_text": "**Goal:** The first player to put all their tokens in houses wins.",
+      "block4_text": "Which houses are the most likely to occur?\n\nWhat are the advantages and disadvantages of putting tokens on frequently occurring houses?",
+      "block5_text": "A simpler version of the game, that involves no choices, uses only one operation of addition and subtraction for a given game.\n\nYou can extend the operations by allowing addition, subtraction, or multiplication."
+    },
+    {
+      "id": "ga_3a",
+      "US Grades": "K, 1, 2",
+      "area": "Number",
+      "subarea": "Comparing",
+      "type": "Activity",
+      "uses": "Tutoring, Home",
+      "concepts": "Comparing, Number line",
+      "materials": "Paper and pencil - or - None",
+      "players": 2,
       "block1_type": "all_text",
       "block2_type": "tips_text",
-      "block3_type": "variations_text",
-      "title": "Get Out of My House",
+      "block3_type": "variations_illust_below",
+      "block3_illust": "ESMIll/ESMGAImThinkingOfANumberNumberLineTo12.svg",
+      "block3_illust_max_size": "280px",
+      "title": "I'm Thinking of a Number",
       "_translations": {
         "title": {},
         "block1_text": {},
@@ -134,32 +244,32 @@
       },
       "_translatedFields": {
         "title": {
-          "eng": "Get Out of My House"
+          "eng": "I'm Thinking of a Number"
         },
         "block1_text": {
-          "eng": "**Set up:** Use a deck of cards with numbers from 1 (Ace) to 10. On a shared piece of paper, draw 21 boxes or simple houses numbered from 0 to 20. Each player has 7 tokens distinct from the other player’s 7 tokens.\n\n**Play:** During a turn, a player selects two random cards to work with. They then choose whether to add or subtract them to put their token in a house with fewer than three of the opponent’s tokens. If the house contains one or two of the opponent’s tokens, those tokens are given back to the opponent and the player says “Get out of my house.”\n\n**Goal:** The first player to put all their tokens in houses wins."
+          "eng": "**Set up:** Use the paper and pencil to keep track of the questions and answers. If you play verbally, no paper is needed. Choose roles – one player is the Puzzler and the other is the Questioner. The Puzzler starts by saying “I’m thinking of a number between 1 and <#>.” \n\n**Play:** The Questioner asks questions of the form: “How does your number compare to <#>?” The Puzzler answers by saying that their number is greater than, equal to, or less than that number.\n\n**Goal:** The Questioner tries to guess the Puzzler’s number with as few questions as possible.\n\n**Example game:** The Puzzler thinks of 6 and starts with “I’m thinking of a number between 1 and 10.”\n\n* Questioner: “How does your number compare to 5?” – Puzzler: “My number is greater than 5.” \n* Questioner: “How does your number compare to 7?” – Puzzler: “My number is less than 7.” \n* Questioner: “How does your number compare to 6?” – Puzzler:“Congratulations, my number is equal to 6!”"
         },
         "block2_text": {
-          "eng": "Which houses are the most likely to occur?\n\nWhat are the advantages and disadvantages in putting tokens on frequently occurring houses?"
+          "eng": "Discuss which number is best to ask about at a given moment in the game.\n\nDiscuss how much information a certain guess gives you. How many numbers can you cross off after a given guess?\n\nDiscuss what is a reasonable number of questions for a given range of numbers."
         },
         "block3_text": {
-          "eng": "A simpler version of the game, that involves no choices, uses only one operation of addition and subtraction for a given game.\n\nYou can extend the operations by allowing addition, subtraction, or multiplication."
+          "eng": "**Question limit:** Set a limit and challenge your children to discover the answer in at most that many questions.\n\n**Scoring:** Count the number of questions asked over several rounds. The player with the lowest total wins.\n\n**Extend:** Use an extended range of numbers, say up to 100.\n\n**Number line:** Use a number line to keep track of the information and to practice with a number line. Each time a question is answered, mark off the numbers that are no longer possible. For example, if the range is 0 to 12 and the number is larger than 6, then the numbers 0, 1, 2, 3, 4, 5, and 6 are crossed off."
         }
       },
-      "block1_text": "**Set up:** Use a deck of cards with numbers from 1 (Ace) to 10. On a shared piece of paper, draw 21 boxes or simple houses numbered from 0 to 20. Each player has 7 tokens distinct from the other player’s 7 tokens.\n\n**Play:** During a turn, a player selects two random cards to work with. They then choose whether to add or subtract them to put their token in a house with fewer than three of the opponent’s tokens. If the house contains one or two of the opponent’s tokens, those tokens are given back to the opponent and the player says “Get out of my house.”\n\n**Goal:** The first player to put all their tokens in houses wins.",
-      "block2_text": "Which houses are the most likely to occur?\n\nWhat are the advantages and disadvantages in putting tokens on frequently occurring houses?",
-      "block3_text": "A simpler version of the game, that involves no choices, uses only one operation of addition and subtraction for a given game.\n\nYou can extend the operations by allowing addition, subtraction, or multiplication."
+      "block1_text": "**Set up:** Use the paper and pencil to keep track of the questions and answers. If you play verbally, no paper is needed. Choose roles – one player is the Puzzler and the other is the Questioner. The Puzzler starts by saying “I’m thinking of a number between 1 and <#>.” \n\n**Play:** The Questioner asks questions of the form: “How does your number compare to <#>?” The Puzzler answers by saying that their number is greater than, equal to, or less than that number.\n\n**Goal:** The Questioner tries to guess the Puzzler’s number with as few questions as possible.\n\n**Example game:** The Puzzler thinks of 6 and starts with “I’m thinking of a number between 1 and 10.”\n\n* Questioner: “How does your number compare to 5?” – Puzzler: “My number is greater than 5.” \n* Questioner: “How does your number compare to 7?” – Puzzler: “My number is less than 7.” \n* Questioner: “How does your number compare to 6?” – Puzzler:“Congratulations, my number is equal to 6!”",
+      "block2_text": "Discuss which number is best to ask about at a given moment in the game.\n\nDiscuss how much information a certain guess gives you. How many numbers can you cross off after a given guess?\n\nDiscuss what is a reasonable number of questions for a given range of numbers.",
+      "block3_text": "**Question limit:** Set a limit and challenge your children to discover the answer in at most that many questions.\n\n**Scoring:** Count the number of questions asked over several rounds. The player with the lowest total wins.\n\n**Extend:** Use an extended range of numbers, say up to 100.\n\n**Number line:** Use a number line to keep track of the information and to practice with a number line. Each time a question is answered, mark off the numbers that are no longer possible. For example, if the range is 0 to 12 and the number is larger than 6, then the numbers 0, 1, 2, 3, 4, 5, and 6 are crossed off."
     },
     {
-      "id": "ga_D",
+      "id": "ga_4",
       "US Grades": "K, 1, 2, 3",
       "area": "Number",
       "subarea": "Add Sub",
-      "Type": "Game",
-      "Uses": "Break, Tutoring, Home",
-      "Concepts": "Counting, Add Sub single digit",
-      "Materials": "Paper, Pencil",
-      "Players": 2,
+      "type": "Game",
+      "uses": "Breaks, Tutoring, Home",
+      "concepts": "Counting, Add Sub single digit",
+      "materials": "Paper, Pencil",
+      "players": 2,
       "block1_type": "all_text",
       "block2_type": "tips_text",
       "block3_type": "variations_text",

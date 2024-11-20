@@ -83,7 +83,7 @@
     },
     {
       "name": "next_ga",
-      "value": "@local.false",
+      "value": "@local.local_false",
       "_translations": {
         "value": {}
       },
@@ -92,22 +92,22 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@local.false",
-            "matchedExpression": "@local.false",
+            "fullExpression": "@local.local_false",
+            "matchedExpression": "@local.local_false",
             "type": "local",
-            "fieldName": "false"
+            "fieldName": "local_false"
           }
         ]
       },
       "_dynamicDependencies": {
-        "@local.false": [
+        "@local.local_false": [
           "value"
         ]
       }
     },
     {
       "name": "prev_ga",
-      "value": "@local.false",
+      "value": "@local.local_false",
       "_translations": {
         "value": {}
       },
@@ -116,22 +116,22 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@local.false",
-            "matchedExpression": "@local.false",
+            "fullExpression": "@local.local_false",
+            "matchedExpression": "@local.local_false",
             "type": "local",
-            "fieldName": "false"
+            "fieldName": "local_false"
           }
         ]
       },
       "_dynamicDependencies": {
-        "@local.false": [
+        "@local.local_false": [
           "value"
         ]
       }
     },
     {
       "name": "has_ga_been_seen",
-      "value": "@local.false",
+      "value": "@local.local_false",
       "_translations": {
         "value": {}
       },
@@ -140,22 +140,22 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@local.false",
-            "matchedExpression": "@local.false",
+            "fullExpression": "@local.local_false",
+            "matchedExpression": "@local.local_false",
             "type": "local",
-            "fieldName": "false"
+            "fieldName": "local_false"
           }
         ]
       },
       "_dynamicDependencies": {
-        "@local.false": [
+        "@local.local_false": [
           "value"
         ]
       }
     },
     {
       "name": "do_ids_match",
-      "value": "@local.false",
+      "value": "@local.local_false",
       "_translations": {
         "value": {}
       },
@@ -164,15 +164,15 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@local.false",
-            "matchedExpression": "@local.false",
+            "fullExpression": "@local.local_false",
+            "matchedExpression": "@local.local_false",
             "type": "local",
-            "fieldName": "false"
+            "fieldName": "local_false"
           }
         ]
       },
       "_dynamicDependencies": {
-        "@local.false": [
+        "@local.local_false": [
           "value"
         ]
       }
@@ -631,6 +631,111 @@
       ],
       "name": "display_group_12",
       "_nested_name": "display_group_12"
+    },
+    {
+      "type": "text",
+      "name": "ga_concepts",
+      "value": "Concepts: @local.efm_ga.concepts",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "ga_concepts",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Concepts: @local.efm_ga.concepts",
+            "matchedExpression": "@local.efm_ga.concepts",
+            "type": "local",
+            "fieldName": "efm_ga"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.efm_ga.concepts": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "ga_uses",
+      "value": "Uses: @local.efm_ga.uses",
+      "_translations": {
+        "value": {}
+      },
+      "style_list": [
+        "margin-top: -14px"
+      ],
+      "_nested_name": "ga_uses",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Uses: @local.efm_ga.uses",
+            "matchedExpression": "@local.efm_ga.uses",
+            "type": "local",
+            "fieldName": "efm_ga"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.efm_ga.uses": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "ga_materials",
+      "value": "Materials: @local.efm_ga.materials",
+      "_translations": {
+        "value": {}
+      },
+      "style_list": [
+        "margin-top: -14px"
+      ],
+      "_nested_name": "ga_materials",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Materials: @local.efm_ga.materials",
+            "matchedExpression": "@local.efm_ga.materials",
+            "type": "local",
+            "fieldName": "efm_ga"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.efm_ga.materials": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "ga_players",
+      "value": "Players: @local.efm_ga.players",
+      "_translations": {
+        "value": {}
+      },
+      "style_list": [
+        "margin-top: -14px"
+      ],
+      "_nested_name": "ga_players",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Players: @local.efm_ga.players",
+            "matchedExpression": "@local.efm_ga.players",
+            "type": "local",
+            "fieldName": "efm_ga"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.efm_ga.players": [
+          "value"
+        ]
+      }
     },
     {
       "type": "template",
