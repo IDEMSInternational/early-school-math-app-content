@@ -45,8 +45,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 19509 KB | 19.5 MB |
-| unused | 10506 KB | 10.5 MB |
+| total | 20565 KB | 20.6 MB |
+| unused | 10491 KB | 10.5 MB |
 </details>
 
 <details open>
@@ -324,7 +324,6 @@ Assets that appear in app-data but do not have references within sheets
 | EFMStorybooks/EFM-SB-KAHN-20.jpg | 3.5 |
 | EFMStorybooks/EFM-SB-SSMILE-8.jpg | 3.5 |
 | EFMStorybooks/EFM-SB-TFHH-2.jpg | 10.6 |
-| ESMIll/ESMGAImThinkingOfANumberNumberLineTo12.svg | 15.5 |
 | android/icon-background.png | 7 |
 | android/icon-foreground.png | 53.9 |
 | android/icon.png | 75.2 |
@@ -1224,11 +1223,30 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMGADotsandBoxesUnnumvwewsExample.svg | 7.1 | 1 |
 | ESMIll/ESMGAGetOutOfMyHouseEmpty.svg | 22.6 | 2 |
 | ESMIll/ESMGAGetOutOfMyHouseMidgame.svg | 23.6 | 2 |
+| ESMIll/ESMGAImThinkingOfANumberNumberLineTo12.svg | 15.5 | 1 |
 | ESMIll/ESMPOWAConsecutiveNumbersAnswer1.svg | 6.2 | 1 |
 | ESMIll/ESMPOWAConsecutiveNumbersChallenge1.svg | 2.4 | 1 |
 | ESMIll/ESMPOWAConsecutiveNumbersIntro.svg | 18.6 | 1 |
+| ESMIll/ESMPOWASumGroups10Example.svg | 36 | 1 |
+| ESMIll/ESMPOWASumGroups10a.svg | 55.4 | 1 |
+| ESMIll/ESMPOWASumGroups10aAnswers.svg | 62.1 | 1 |
+| ESMIll/ESMPOWASumGroups10bAnswers.svg | 62 | 1 |
+| ESMIll/ESMPOWASumGroups6aAnswers.svg | 64.1 | 1 |
 | ESMIll/ESMPOWASumGroups6aChallenge.svg | 59.1 | 1 |
 | ESMIll/ESMPOWASumGroups6aExample.svg | 30.7 | 1 |
+| ESMIll/ESMPOWASumGroups6bAnswers.svg | 64.1 | 1 |
+| ESMIll/ESMPOWASumGroups7Example.svg | 30.3 | 1 |
+| ESMIll/ESMPOWASumGroups7a.svg | 59 | 1 |
+| ESMIll/ESMPOWASumGroups7aAnswers.svg | 65.1 | 1 |
+| ESMIll/ESMPOWASumGroups7bAnswers.svg | 64.5 | 1 |
+| ESMIll/ESMPOWASumGroups8Example.svg | 30.4 | 1 |
+| ESMIll/ESMPOWASumGroups8a.svg | 56 | 1 |
+| ESMIll/ESMPOWASumGroups8aAnswers.svg | 61.8 | 1 |
+| ESMIll/ESMPOWASumGroups8bAnswers.svg | 61.9 | 1 |
+| ESMIll/ESMPOWASumGroups9Example.svg | 34.9 | 1 |
+| ESMIll/ESMPOWASumGroups9a.svg | 56.3 | 1 |
+| ESMIll/ESMPOWASumGroups9aAnswers.svg | 62.9 | 1 |
+| ESMIll/ESMPOWASumGroups9bAnswers.svg | 62.2 | 1 |
 | ESMIll/ESMPOWBDiffPyramid10Challenge.svg | 6.7 | 1 |
 | ESMIll/ESMPOWBDiffPyramid6Challenge.svg | 4.1 | 1 |
 | ESMIll/ESMPOWBDiffPyramid6Intro.svg | 6.8 | 2 |
@@ -1241,6 +1259,13 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMPOWBEqualNumberSumsVennDiagram2Answer.svg | 16.1 | 1 |
 | ESMIll/ESMPOWBEqualSums1Answer.svg | 7.6 | 1 |
 | ESMIll/ESMPOWBEqualSums1Challenge.svg | 2.3 | 1 |
+| ESMIll/ESMPOWBFillInTheBlanks1-Question.svg | 4.3 | 1 |
+| ESMIll/ESMPOWBFillInTheBlanks2-Question.svg | 6.2 | 1 |
+| ESMIll/ESMPOWBFillInTheBlanks3-Question.svg | 6 | 1 |
+| ESMIll/ESMPOWBFillInTheBlanks4-Question.svg | 7 | 1 |
+| ESMIll/ESMPOWBFillInTheBlanks5-Question.svg | 9.6 | 1 |
+| ESMIll/ESMPOWBFillInTheBlanksIntro-Answers.svg | 14.3 | 5 |
+| ESMIll/ESMPOWBFillInTheBlanksIntro.svg | 4.1 | 5 |
 </details>
 
 <details >
