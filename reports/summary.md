@@ -3,17 +3,17 @@
 
 | type | count |
 | --- | --- |
-| accordion | 1 |
+| accordion | 3 |
 | button | 17 |
 | debug_toggle | 1 |
-| display_group | 37 |
+| display_group | 43 |
 | image | 3 |
 | items | 7 |
 | qr_code | 1 |
 | radio_button_grid | 1 |
 | select_text | 1 |
 | set_field | 10 |
-| set_variable | 181 |
+| set_variable | 185 |
 | template | 63 |
 | text | 36 |
 | text_area | 2 |
@@ -45,7 +45,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 20565 KB | 20.6 MB |
+| total | 20595 KB | 20.6 MB |
 | unused | 10491 KB | 10.5 MB |
 </details>
 
@@ -1225,8 +1225,14 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMGAGetOutOfMyHouseMidgame.svg | 23.6 | 2 |
 | ESMIll/ESMGAImThinkingOfANumberNumberLineTo12.svg | 15.5 | 1 |
 | ESMIll/ESMPOWAConsecutiveNumbersAnswer1.svg | 6.2 | 1 |
+| ESMIll/ESMPOWAConsecutiveNumbersAnswer2.svg | 6 | 1 |
+| ESMIll/ESMPOWAConsecutiveNumbersAnswer3.svg | 7.3 | 1 |
+| ESMIll/ESMPOWAConsecutiveNumbersAnswer4.svg | 8.2 | 1 |
 | ESMIll/ESMPOWAConsecutiveNumbersChallenge1.svg | 2.4 | 1 |
-| ESMIll/ESMPOWAConsecutiveNumbersIntro.svg | 18.6 | 1 |
+| ESMIll/ESMPOWAConsecutiveNumbersChallenge2.svg | 2.6 | 1 |
+| ESMIll/ESMPOWAConsecutiveNumbersChallenge3.svg | 2.6 | 1 |
+| ESMIll/ESMPOWAConsecutiveNumbersChallenge4.svg | 3.1 | 1 |
+| ESMIll/ESMPOWAConsecutiveNumbersIntro.svg | 18.6 | 4 |
 | ESMIll/ESMPOWASumGroups10Example.svg | 36 | 1 |
 | ESMIll/ESMPOWASumGroups10a.svg | 55.4 | 1 |
 | ESMIll/ESMPOWASumGroups10aAnswers.svg | 62.1 | 1 |
@@ -1278,7 +1284,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | data_list | lifecycle_actions | 1 |
 | generator |  | 1 |
 | global |  | 2 |
-| template |  | 25 |
+| template |  | 27 |
 | template | generated | 58 |
 | tour |  | 4 |
 </details>
