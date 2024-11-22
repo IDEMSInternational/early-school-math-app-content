@@ -1,95 +1,57 @@
 {
   "flow_type": "template",
-  "flow_name": "home_screen",
+  "flow_name": "esm_resources",
   "status": "released",
   "rows": [
     {
-      "type": "template",
-      "name": "inits",
-      "value": "initializations_on_startup",
-      "condition": "! @fields.already_started",
-      "rows": [],
-      "_nested_name": "inits",
-      "_dynamicFields": {
-        "condition": [
-          {
-            "fullExpression": "! @fields.already_started",
-            "matchedExpression": "@fields.already_started",
-            "type": "fields",
-            "fieldName": "already_started"
-          }
-        ]
-      },
-      "_dynamicDependencies": {
-        "@fields.already_started": [
-          "condition"
-        ]
-      }
-    },
-    {
       "type": "display_group",
-      "name": "dg_top_of_page",
+      "name": "top_of_page",
       "rows": [
         {
           "type": "title",
           "name": "spacer",
-          "value": "Welcome!",
+          "value": "Resources",
           "_translations": {
             "value": {}
           },
-          "style_list": [
-            "flex:1"
-          ],
-          "_nested_name": "dg_top_of_page.spacer"
-        },
-        {
-          "type": "display_group",
-          "name": "dg_help",
-          "rows": [
-            {
-              "type": "round_button",
-              "name": "help_button",
-              "action_list": [
-                {
-                  "trigger": "click",
-                  "action_id": "start_tour",
-                  "args": [
-                    "home_screen_tour"
-                  ],
-                  "_raw": "click | start_tour: home_screen_tour",
-                  "_cleaned": "click | start_tour: home_screen_tour"
-                }
-              ],
-              "parameter_list": {
-                "icon_src": "help",
-                "style": "navigation"
-              },
-              "_nested_name": "dg_top_of_page.dg_help.help_button"
-            }
-          ],
-          "_nested_name": "dg_top_of_page.dg_help"
+          "_nested_name": "top_of_page.spacer"
         }
       ],
-      "_nested_name": "dg_top_of_page"
+      "_nested_name": "top_of_page"
     },
     {
       "type": "display_group",
-      "name": "dg_image",
-      "parameter_list": {
-        "style": "dashed_box"
-      },
+      "name": "resource_finder",
+      "style_list": [
+        "margin-top: 10px"
+      ],
       "rows": [
         {
-          "type": "image",
-          "name": "main_image",
-          "value": "EFM12EFMLogoNoEFMpng.png",
+          "type": "button",
+          "name": "button_resources_finder",
+          "value": "Resources Finder",
           "_translations": {
             "value": {}
           },
-          "_nested_name": "dg_image.main_image"
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "go_to",
+              "args": [
+                "esm_resources_finder"
+              ],
+              "_raw": "click | go_to: esm_resources_finder",
+              "_cleaned": "click | go_to: esm_resources_finder"
+            }
+          ],
+          "parameter_list": {
+            "style": "short",
+            "text_align": "center"
+          },
+          "_nested_name": "resource_finder.button_resources_finder"
         }
       ],
-      "_nested_name": "dg_image"
+      "_nested_name": "resource_finder"
     },
     {
       "name": "now",
@@ -118,7 +80,7 @@
     },
     {
       "name": "click_history_field_name",
-      "value": "topics_button_click_history",
+      "value": "pows_button_click_history",
       "_translations": {
         "value": {}
       },
@@ -209,12 +171,12 @@
     },
     {
       "type": "display_group",
-      "name": "dg_topics",
+      "name": "dg_pows",
       "rows": [
         {
           "type": "button",
-          "name": "button_topics",
-          "value": "Topics",
+          "name": "button_pows",
+          "value": "Puzzles of the Week",
           "_translations": {
             "value": {}
           },
@@ -223,20 +185,20 @@
               "trigger": "click",
               "action_id": "start_tour",
               "args": [
-                "efm_topics_tour"
+                "efm_pows_tour"
               ],
-              "_raw": "click | start_tour: efm_topics_tour",
-              "_cleaned": "click | start_tour: efm_topics_tour"
+              "_raw": "click | start_tour: efm_pows_tour",
+              "_cleaned": "click | start_tour: efm_pows_tour"
             },
             {
               "trigger": "click",
               "action_id": "set_field",
               "args": [
-                "has_accessed_topics",
+                "has_accessed_pows",
                 true
               ],
-              "_raw": "click | set_field: has_accessed_topics: TRUE",
-              "_cleaned": "click | set_field: has_accessed_topics: TRUE"
+              "_raw": "click | set_field: has_accessed_pows: TRUE",
+              "_cleaned": "click | set_field: has_accessed_pows: TRUE"
             },
             {
               "trigger": "click",
@@ -249,12 +211,12 @@
               "_cleaned": "click | set_field:@local.click_history_field_name: @local.button_click_history"
             }
           ],
-          "condition": "!@fields.has_accessed_topics",
+          "condition": "!@fields.has_accessed_pows",
           "parameter_list": {
             "style": "short",
             "text_align": "center"
           },
-          "_nested_name": "dg_topics.button_topics",
+          "_nested_name": "dg_pows.button_pows",
           "_dynamicFields": {
             "action_list": {
               "2": {
@@ -308,10 +270,10 @@
             },
             "condition": [
               {
-                "fullExpression": "!@fields.has_accessed_topics",
-                "matchedExpression": "!@fields.has_accessed_topics",
+                "fullExpression": "!@fields.has_accessed_pows",
+                "matchedExpression": "!@fields.has_accessed_pows",
                 "type": "fields",
-                "fieldName": "has_accessed_topics"
+                "fieldName": "has_accessed_pows"
               }
             ]
           },
@@ -326,15 +288,15 @@
               "action_list.2._raw",
               "action_list.2._cleaned"
             ],
-            "!@fields.has_accessed_topics": [
+            "!@fields.has_accessed_pows": [
               "condition"
             ]
           }
         },
         {
           "type": "button",
-          "name": "button_topics",
-          "value": "Topics",
+          "name": "button_pows",
+          "value": "Puzzles of the Week",
           "_translations": {
             "value": {}
           },
@@ -343,10 +305,10 @@
               "trigger": "click",
               "action_id": "go_to",
               "args": [
-                "efm_topic_start"
+                "efm_pow_start"
               ],
-              "_raw": "click | go_to: efm_topic_start",
-              "_cleaned": "click | go_to: efm_topic_start"
+              "_raw": "click | go_to: efm_pow_start",
+              "_cleaned": "click | go_to: efm_pow_start"
             },
             {
               "trigger": "click",
@@ -359,12 +321,12 @@
               "_cleaned": "click | set_field:@local.click_history_field_name: @local.button_click_history"
             }
           ],
-          "condition": "@fields.has_accessed_topics",
+          "condition": "@fields.has_accessed_pows",
           "parameter_list": {
             "style": "short",
             "text_align": "center"
           },
-          "_nested_name": "dg_topics.button_topics",
+          "_nested_name": "dg_pows.button_pows",
           "_dynamicFields": {
             "action_list": {
               "1": {
@@ -418,10 +380,10 @@
             },
             "condition": [
               {
-                "fullExpression": "@fields.has_accessed_topics",
-                "matchedExpression": "@fields.has_accessed_topics",
+                "fullExpression": "@fields.has_accessed_pows",
+                "matchedExpression": "@fields.has_accessed_pows",
                 "type": "fields",
-                "fieldName": "has_accessed_topics"
+                "fieldName": "has_accessed_pows"
               }
             ]
           },
@@ -436,13 +398,13 @@
               "action_list.1._raw",
               "action_list.1._cleaned"
             ],
-            "@fields.has_accessed_topics": [
+            "@fields.has_accessed_pows": [
               "condition"
             ]
           }
         }
       ],
-      "_nested_name": "dg_topics"
+      "_nested_name": "dg_pows"
     },
     {
       "name": "now",
@@ -471,7 +433,7 @@
     },
     {
       "name": "click_history_field_name",
-      "value": "resources_button_click_history",
+      "value": "gas_button_click_history",
       "_translations": {
         "value": {}
       },
@@ -562,25 +524,34 @@
     },
     {
       "type": "display_group",
-      "name": "dg_resources",
+      "name": "dg_gas",
       "rows": [
         {
           "type": "button",
-          "name": "button_pows",
-          "value": "Resources",
+          "name": "button_gas",
+          "value": "Games and Activities",
           "_translations": {
             "value": {}
           },
           "action_list": [
             {
               "trigger": "click",
+              "action_id": "start_tour",
+              "args": [
+                "efm_gas_tour"
+              ],
+              "_raw": "click | start_tour: efm_gas_tour",
+              "_cleaned": "click | start_tour: efm_gas_tour"
+            },
+            {
+              "trigger": "click",
               "action_id": "set_field",
               "args": [
-                "has_accessed_resources",
+                "has_accessed_gas",
                 true
               ],
-              "_raw": "click | set_field: has_accessed_resources: TRUE",
-              "_cleaned": "click | set_field: has_accessed_resources: TRUE"
+              "_raw": "click | set_field: has_accessed_gas: TRUE",
+              "_cleaned": "click | set_field: has_accessed_gas: TRUE"
             },
             {
               "trigger": "click",
@@ -593,15 +564,15 @@
               "_cleaned": "click | set_field:@local.click_history_field_name: @local.button_click_history"
             }
           ],
-          "condition": "!@fields.has_accessed_resources",
+          "condition": "!@fields.has_accessed_gas",
           "parameter_list": {
             "style": "short",
             "text_align": "center"
           },
-          "_nested_name": "dg_resources.button_pows",
+          "_nested_name": "dg_gas.button_gas",
           "_dynamicFields": {
             "action_list": {
-              "1": {
+              "2": {
                 "args": {
                   "0": [
                     {
@@ -652,33 +623,33 @@
             },
             "condition": [
               {
-                "fullExpression": "!@fields.has_accessed_resources",
-                "matchedExpression": "!@fields.has_accessed_resources",
+                "fullExpression": "!@fields.has_accessed_gas",
+                "matchedExpression": "!@fields.has_accessed_gas",
                 "type": "fields",
-                "fieldName": "has_accessed_resources"
+                "fieldName": "has_accessed_gas"
               }
             ]
           },
           "_dynamicDependencies": {
             "@local.click_history_field_name": [
-              "action_list.1.args.0",
-              "action_list.1._raw",
-              "action_list.1._cleaned"
+              "action_list.2.args.0",
+              "action_list.2._raw",
+              "action_list.2._cleaned"
             ],
             "@local.button_click_history": [
-              "action_list.1.args.1",
-              "action_list.1._raw",
-              "action_list.1._cleaned"
+              "action_list.2.args.1",
+              "action_list.2._raw",
+              "action_list.2._cleaned"
             ],
-            "!@fields.has_accessed_resources": [
+            "!@fields.has_accessed_gas": [
               "condition"
             ]
           }
         },
         {
           "type": "button",
-          "name": "button_pows",
-          "value": "Resources",
+          "name": "button_gas",
+          "value": "Games and Activities",
           "_translations": {
             "value": {}
           },
@@ -687,10 +658,10 @@
               "trigger": "click",
               "action_id": "go_to",
               "args": [
-                "esm_resources"
+                "efm_ga_start"
               ],
-              "_raw": "click | go_to: esm_resources",
-              "_cleaned": "click | go_to: esm_resources"
+              "_raw": "click | go_to: efm_ga_start",
+              "_cleaned": "click | go_to: efm_ga_start"
             },
             {
               "trigger": "click",
@@ -703,12 +674,12 @@
               "_cleaned": "click | set_field:@local.click_history_field_name: @local.button_click_history"
             }
           ],
-          "condition": "@fields.has_accessed_resources",
+          "condition": "@fields.has_accessed_gas",
           "parameter_list": {
             "style": "short",
             "text_align": "center"
           },
-          "_nested_name": "dg_resources.button_pows",
+          "_nested_name": "dg_gas.button_gas",
           "_dynamicFields": {
             "action_list": {
               "1": {
@@ -762,10 +733,10 @@
             },
             "condition": [
               {
-                "fullExpression": "@fields.has_accessed_resources",
-                "matchedExpression": "@fields.has_accessed_resources",
+                "fullExpression": "@fields.has_accessed_gas",
+                "matchedExpression": "@fields.has_accessed_gas",
                 "type": "fields",
-                "fieldName": "has_accessed_resources"
+                "fieldName": "has_accessed_gas"
               }
             ]
           },
@@ -780,13 +751,366 @@
               "action_list.1._raw",
               "action_list.1._cleaned"
             ],
-            "@fields.has_accessed_resources": [
+            "@fields.has_accessed_gas": [
               "condition"
             ]
           }
         }
       ],
-      "_nested_name": "dg_resources"
+      "_nested_name": "dg_gas"
+    },
+    {
+      "name": "now",
+      "value": "@calc(timestamp())",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "now",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(timestamp())",
+            "matchedExpression": "@calc(timestamp())",
+            "type": "calc",
+            "fieldName": "timestamp()"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@calc(timestamp())": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "click_history_field_name",
+      "value": "storybooks_button_click_history",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "click_history_field_name"
+    },
+    {
+      "name": "button_click_history",
+      "value": "@fields.@local.click_history_field_name ;  @local.now",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "!!(@fields.@local.click_history_field_name)",
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "button_click_history",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@fields.@local.click_history_field_name ;  @local.now",
+            "matchedExpression": "@local.click_history_field_name",
+            "type": "local",
+            "fieldName": "click_history_field_name"
+          },
+          {
+            "fullExpression": "@fields.@local.click_history_field_name ;  @local.now",
+            "matchedExpression": "@local.now",
+            "type": "local",
+            "fieldName": "now"
+          }
+        ],
+        "condition": [
+          {
+            "fullExpression": "!!(@fields.@local.click_history_field_name)",
+            "matchedExpression": "@local.click_history_field_name",
+            "type": "local",
+            "fieldName": "click_history_field_name"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.click_history_field_name": [
+          "value",
+          "condition"
+        ],
+        "@local.now": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "button_click_history",
+      "value": "@local.now",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "!(@fields.@local.click_history_field_name)",
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "button_click_history",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.now",
+            "matchedExpression": "@local.now",
+            "type": "local",
+            "fieldName": "now"
+          }
+        ],
+        "condition": [
+          {
+            "fullExpression": "!(@fields.@local.click_history_field_name)",
+            "matchedExpression": "@local.click_history_field_name",
+            "type": "local",
+            "fieldName": "click_history_field_name"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.now": [
+          "value"
+        ],
+        "@local.click_history_field_name": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "display_group",
+      "name": "dg_storybooks",
+      "rows": [
+        {
+          "type": "button",
+          "name": "button_storybooks",
+          "value": "Storybooks",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "start_tour",
+              "args": [
+                "efm_storybooks_tour"
+              ],
+              "_raw": "click | start_tour: efm_storybooks_tour",
+              "_cleaned": "click | start_tour: efm_storybooks_tour"
+            },
+            {
+              "trigger": "click",
+              "action_id": "set_field",
+              "args": [
+                "has_accessed_storybooks",
+                true
+              ],
+              "_raw": "click | set_field: has_accessed_storybooks: TRUE",
+              "_cleaned": "click | set_field: has_accessed_storybooks: TRUE"
+            },
+            {
+              "trigger": "click",
+              "action_id": "set_field",
+              "args": [
+                "@local.click_history_field_name",
+                "@local.button_click_history"
+              ],
+              "_raw": "click | set_field:@local.click_history_field_name: @local.button_click_history",
+              "_cleaned": "click | set_field:@local.click_history_field_name: @local.button_click_history"
+            }
+          ],
+          "condition": "!@fields.has_accessed_storybooks",
+          "parameter_list": {
+            "style": "short",
+            "text_align": "center"
+          },
+          "_nested_name": "dg_storybooks.button_storybooks",
+          "_dynamicFields": {
+            "action_list": {
+              "2": {
+                "args": {
+                  "0": [
+                    {
+                      "fullExpression": "@local.click_history_field_name",
+                      "matchedExpression": "@local.click_history_field_name",
+                      "type": "local",
+                      "fieldName": "click_history_field_name"
+                    }
+                  ],
+                  "1": [
+                    {
+                      "fullExpression": "@local.button_click_history",
+                      "matchedExpression": "@local.button_click_history",
+                      "type": "local",
+                      "fieldName": "button_click_history"
+                    }
+                  ]
+                },
+                "_raw": [
+                  {
+                    "fullExpression": "click | set_field:@local.click_history_field_name: @local.button_click_history",
+                    "matchedExpression": "@local.click_history_field_name",
+                    "type": "local",
+                    "fieldName": "click_history_field_name"
+                  },
+                  {
+                    "fullExpression": "click | set_field:@local.click_history_field_name: @local.button_click_history",
+                    "matchedExpression": "@local.button_click_history",
+                    "type": "local",
+                    "fieldName": "button_click_history"
+                  }
+                ],
+                "_cleaned": [
+                  {
+                    "fullExpression": "click | set_field:@local.click_history_field_name: @local.button_click_history",
+                    "matchedExpression": "@local.click_history_field_name",
+                    "type": "local",
+                    "fieldName": "click_history_field_name"
+                  },
+                  {
+                    "fullExpression": "click | set_field:@local.click_history_field_name: @local.button_click_history",
+                    "matchedExpression": "@local.button_click_history",
+                    "type": "local",
+                    "fieldName": "button_click_history"
+                  }
+                ]
+              }
+            },
+            "condition": [
+              {
+                "fullExpression": "!@fields.has_accessed_storybooks",
+                "matchedExpression": "!@fields.has_accessed_storybooks",
+                "type": "fields",
+                "fieldName": "has_accessed_storybooks"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.click_history_field_name": [
+              "action_list.2.args.0",
+              "action_list.2._raw",
+              "action_list.2._cleaned"
+            ],
+            "@local.button_click_history": [
+              "action_list.2.args.1",
+              "action_list.2._raw",
+              "action_list.2._cleaned"
+            ],
+            "!@fields.has_accessed_storybooks": [
+              "condition"
+            ]
+          }
+        },
+        {
+          "type": "button",
+          "name": "button_storybooks",
+          "value": "Storybooks",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "go_to",
+              "args": [
+                "efm_storybooks"
+              ],
+              "_raw": "click | go_to: efm_storybooks",
+              "_cleaned": "click | go_to: efm_storybooks"
+            },
+            {
+              "trigger": "click",
+              "action_id": "set_field",
+              "args": [
+                "@local.click_history_field_name",
+                "@local.button_click_history"
+              ],
+              "_raw": "click | set_field:@local.click_history_field_name: @local.button_click_history",
+              "_cleaned": "click | set_field:@local.click_history_field_name: @local.button_click_history"
+            }
+          ],
+          "condition": "@fields.has_accessed_storybooks",
+          "parameter_list": {
+            "style": "short",
+            "text_align": "center"
+          },
+          "_nested_name": "dg_storybooks.button_storybooks",
+          "_dynamicFields": {
+            "action_list": {
+              "1": {
+                "args": {
+                  "0": [
+                    {
+                      "fullExpression": "@local.click_history_field_name",
+                      "matchedExpression": "@local.click_history_field_name",
+                      "type": "local",
+                      "fieldName": "click_history_field_name"
+                    }
+                  ],
+                  "1": [
+                    {
+                      "fullExpression": "@local.button_click_history",
+                      "matchedExpression": "@local.button_click_history",
+                      "type": "local",
+                      "fieldName": "button_click_history"
+                    }
+                  ]
+                },
+                "_raw": [
+                  {
+                    "fullExpression": "click | set_field:@local.click_history_field_name: @local.button_click_history",
+                    "matchedExpression": "@local.click_history_field_name",
+                    "type": "local",
+                    "fieldName": "click_history_field_name"
+                  },
+                  {
+                    "fullExpression": "click | set_field:@local.click_history_field_name: @local.button_click_history",
+                    "matchedExpression": "@local.button_click_history",
+                    "type": "local",
+                    "fieldName": "button_click_history"
+                  }
+                ],
+                "_cleaned": [
+                  {
+                    "fullExpression": "click | set_field:@local.click_history_field_name: @local.button_click_history",
+                    "matchedExpression": "@local.click_history_field_name",
+                    "type": "local",
+                    "fieldName": "click_history_field_name"
+                  },
+                  {
+                    "fullExpression": "click | set_field:@local.click_history_field_name: @local.button_click_history",
+                    "matchedExpression": "@local.button_click_history",
+                    "type": "local",
+                    "fieldName": "button_click_history"
+                  }
+                ]
+              }
+            },
+            "condition": [
+              {
+                "fullExpression": "@fields.has_accessed_storybooks",
+                "matchedExpression": "@fields.has_accessed_storybooks",
+                "type": "fields",
+                "fieldName": "has_accessed_storybooks"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.click_history_field_name": [
+              "action_list.1.args.0",
+              "action_list.1._raw",
+              "action_list.1._cleaned"
+            ],
+            "@local.button_click_history": [
+              "action_list.1.args.1",
+              "action_list.1._raw",
+              "action_list.1._cleaned"
+            ],
+            "@fields.has_accessed_storybooks": [
+              "condition"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "dg_storybooks"
     }
   ],
   "_xlsxPath": "EFM_high_level_sheets.xlsx"
