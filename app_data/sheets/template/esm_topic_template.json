@@ -1,16 +1,16 @@
 {
   "flow_type": "template",
-  "flow_name": "efm_topic_template",
+  "flow_name": "esm_topic_template",
   "status": "released",
   "rows": [
     {
-      "name": "efm_topic",
+      "name": "esm_topic",
       "value": "@@fields.current_topic",
       "_translations": {
         "value": {}
       },
       "type": "set_variable",
-      "_nested_name": "efm_topic",
+      "_nested_name": "esm_topic",
       "_dynamicFields": {
         "value": [
           {
@@ -28,32 +28,32 @@
       }
     },
     {
-      "name": "topic_title",
-      "value": "@local.efm_topic.title",
+      "name": "topic_name",
+      "value": "@local.esm_topic.name",
       "_translations": {
         "value": {}
       },
       "type": "set_variable",
-      "_nested_name": "topic_title",
+      "_nested_name": "topic_name",
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@local.efm_topic.title",
-            "matchedExpression": "@local.efm_topic.title",
+            "fullExpression": "@local.esm_topic.name",
+            "matchedExpression": "@local.esm_topic.name",
             "type": "local",
-            "fieldName": "efm_topic"
+            "fieldName": "esm_topic"
           }
         ]
       },
       "_dynamicDependencies": {
-        "@local.efm_topic.title": [
+        "@local.esm_topic.name": [
           "value"
         ]
       }
     },
     {
       "name": "topic_id",
-      "value": "@local.efm_topic.id",
+      "value": "@local.esm_topic.id",
       "_translations": {
         "value": {}
       },
@@ -62,15 +62,15 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@local.efm_topic.id",
-            "matchedExpression": "@local.efm_topic.id",
+            "fullExpression": "@local.esm_topic.id",
+            "matchedExpression": "@local.esm_topic.id",
             "type": "local",
-            "fieldName": "efm_topic"
+            "fieldName": "esm_topic"
           }
         ]
       },
       "_dynamicDependencies": {
-        "@local.efm_topic.id": [
+        "@local.esm_topic.id": [
           "value"
         ]
       }
@@ -180,7 +180,7 @@
     {
       "type": "items",
       "name": "find_next_and_prev",
-      "value": "@data.efm_topics",
+      "value": "@data.esm_topics",
       "rows": [
         {
           "name": "do_ids_match",
@@ -252,7 +252,7 @@
         },
         {
           "name": "prev_topic",
-          "value": "data.efm_topics.@item.id",
+          "value": "data.esm_topics.@item.id",
           "_translations": {
             "value": {}
           },
@@ -263,7 +263,7 @@
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "data.efm_topics.@item.id",
+                "fullExpression": "data.esm_topics.@item.id",
                 "matchedExpression": "@item.id",
                 "type": "item",
                 "fieldName": "id"
@@ -298,7 +298,7 @@
         },
         {
           "name": "next_topic",
-          "value": "data.efm_topics.@item.id",
+          "value": "data.esm_topics.@item.id",
           "_translations": {
             "value": {}
           },
@@ -309,7 +309,7 @@
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "data.efm_topics.@item.id",
+                "fullExpression": "data.esm_topics.@item.id",
                 "matchedExpression": "@item.id",
                 "type": "item",
                 "fieldName": "id"
@@ -356,15 +356,15 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@data.efm_topics",
-            "matchedExpression": "@data.efm_topics",
+            "fullExpression": "@data.esm_topics",
+            "matchedExpression": "@data.esm_topics",
             "type": "data",
-            "fieldName": "efm_topics"
+            "fieldName": "esm_topics"
           }
         ]
       },
       "_dynamicDependencies": {
-        "@data.efm_topics": [
+        "@data.esm_topics": [
           "value"
         ]
       }
@@ -489,7 +489,7 @@
         {
           "type": "text",
           "name": "title",
-          "value": "@local.topic_title",
+          "value": "@local.topic_name",
           "_translations": {
             "value": {}
           },
@@ -504,15 +504,15 @@
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "@local.topic_title",
-                "matchedExpression": "@local.topic_title",
+                "fullExpression": "@local.topic_name",
+                "matchedExpression": "@local.topic_name",
                 "type": "local",
-                "fieldName": "topic_title"
+                "fieldName": "topic_name"
               }
             ]
           },
           "_dynamicDependencies": {
-            "@local.topic_title": [
+            "@local.topic_name": [
               "value"
             ]
           }
@@ -635,28 +635,28 @@
     {
       "type": "template",
       "name": "topic_body_generator",
-      "value": "efm_topic_body_template",
+      "value": "esm_topic_body_template",
       "rows": [
         {
-          "name": "efm_topic_ptr",
-          "value": "@local.efm_topic",
+          "name": "esm_topic_ptr",
+          "value": "@local.esm_topic",
           "_translations": {
             "value": {}
           },
           "type": "set_variable",
-          "_nested_name": "topic_body_generator.efm_topic_ptr",
+          "_nested_name": "topic_body_generator.esm_topic_ptr",
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "@local.efm_topic",
-                "matchedExpression": "@local.efm_topic",
+                "fullExpression": "@local.esm_topic",
+                "matchedExpression": "@local.esm_topic",
                 "type": "local",
-                "fieldName": "efm_topic"
+                "fieldName": "esm_topic"
               }
             ]
           },
           "_dynamicDependencies": {
-            "@local.efm_topic": [
+            "@local.esm_topic": [
               "value"
             ]
           }

@@ -1,0 +1,1716 @@
+{
+  "flow_type": "template",
+  "flow_name": "esm_topic_start",
+  "status": "released",
+  "rows": [
+    {
+      "type": "display_group",
+      "name": "dg_top_of_page",
+      "rows": [
+        {
+          "type": "title",
+          "name": "spacer",
+          "value": "Topics",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "flex:1"
+          ],
+          "_nested_name": "dg_top_of_page.spacer"
+        },
+        {
+          "type": "display_group",
+          "name": "dg_help",
+          "rows": [
+            {
+              "type": "round_button",
+              "name": "help_button",
+              "action_list": [
+                {
+                  "trigger": "click",
+                  "action_id": "start_tour",
+                  "args": [
+                    "esm_topics_tour"
+                  ],
+                  "_raw": "click | start_tour: esm_topics_tour",
+                  "_cleaned": "click | start_tour: esm_topics_tour"
+                }
+              ],
+              "parameter_list": {
+                "icon_src": "help",
+                "style": "navigation"
+              },
+              "_nested_name": "dg_top_of_page.dg_help.help_button"
+            }
+          ],
+          "_nested_name": "dg_top_of_page.dg_help"
+        }
+      ],
+      "_nested_name": "dg_top_of_page"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_alert",
+      "rows": [
+        {
+          "type": "text",
+          "name": "txt_alert",
+          "value": "**Alert:** Names that start with \"NR – \" are \"Not Ready\" and only have subject names.",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "dg_alert.txt_alert"
+        }
+      ],
+      "_nested_name": "dg_alert"
+    },
+    {
+      "name": "now",
+      "value": "@calc(timestamp())",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "now",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(timestamp())",
+            "matchedExpression": "@calc(timestamp())",
+            "type": "calc",
+            "fieldName": "timestamp()"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@calc(timestamp())": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "topic_click_history",
+      "value": "_topic_click_history",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "topic_click_history"
+    },
+    {
+      "name": "now",
+      "value": "@calc(timestamp())",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "now",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(timestamp())",
+            "matchedExpression": "@calc(timestamp())",
+            "type": "calc",
+            "fieldName": "timestamp()"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@calc(timestamp())": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "topic_click_history",
+      "value": "_topic_click_history",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "topic_click_history"
+    },
+    {
+      "type": "display_group",
+      "parameter_list": {
+        "style": "column"
+      },
+      "rows": [
+        {
+          "type": "accordion",
+          "name": "accordion_strands",
+          "parameter_list": {
+            "open_multiple": "TRUE"
+          },
+          "rows": [
+            {
+              "type": "items",
+              "name": "strand_acoords",
+              "value": "@data.esm_strands",
+              "rows": [
+                {
+                  "type": "accordion_section",
+                  "name": "block2_@item.id",
+                  "value": "@item.name",
+                  "rows": [
+                    {
+                      "type": "display_group",
+                      "name": "dg_@item.id",
+                      "parameter_list": {
+                        "style": "column"
+                      },
+                      "rows": [
+                        {
+                          "name": "strand_ptr",
+                          "value": "data.esm_strands.@item.id",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "type": "set_variable",
+                          "_nested_name": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.strand_ptr",
+                          "_dynamicFields": {
+                            "value": [
+                              {
+                                "fullExpression": "data.esm_strands.@item.id",
+                                "matchedExpression": "@item.id",
+                                "type": "item",
+                                "fieldName": "id"
+                              }
+                            ],
+                            "_nested_name": [
+                              {
+                                "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.strand_ptr",
+                                "matchedExpression": "@item.id.dg_",
+                                "type": "item",
+                                "fieldName": "id"
+                              },
+                              {
+                                "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.strand_ptr",
+                                "matchedExpression": "@item.id.strand_ptr",
+                                "type": "item",
+                                "fieldName": "id"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@item.id": [
+                              "value"
+                            ],
+                            "@item.id.dg_": [
+                              "_nested_name"
+                            ],
+                            "@item.id.strand_ptr": [
+                              "_nested_name"
+                            ]
+                          }
+                        },
+                        {
+                          "name": "strand_entries",
+                          "value": "@@local.strand_ptr",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "type": "set_variable",
+                          "_nested_name": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.strand_entries",
+                          "_dynamicFields": {
+                            "value": [
+                              {
+                                "fullExpression": "@@local.strand_ptr",
+                                "matchedExpression": "@local.strand_ptr",
+                                "type": "local",
+                                "fieldName": "strand_ptr"
+                              }
+                            ],
+                            "_nested_name": [
+                              {
+                                "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.strand_entries",
+                                "matchedExpression": "@item.id.dg_",
+                                "type": "item",
+                                "fieldName": "id"
+                              },
+                              {
+                                "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.strand_entries",
+                                "matchedExpression": "@item.id.strand_entries",
+                                "type": "item",
+                                "fieldName": "id"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@local.strand_ptr": [
+                              "value"
+                            ],
+                            "@item.id.dg_": [
+                              "_nested_name"
+                            ],
+                            "@item.id.strand_entries": [
+                              "_nested_name"
+                            ]
+                          }
+                        },
+                        {
+                          "type": "accordion",
+                          "name": "accordion_themes",
+                          "parameter_list": {
+                            "open_multiple": "TRUE"
+                          },
+                          "rows": [
+                            {
+                              "type": "items",
+                              "name": "strand_theme_accords",
+                              "value": "@data.efm_num_list_one_to_ten",
+                              "parameter_list": {
+                                "style": "column"
+                              },
+                              "rows": [
+                                {
+                                  "name": "theme_index",
+                                  "value": "theme_id_@item.number",
+                                  "_translations": {
+                                    "value": {}
+                                  },
+                                  "type": "set_variable",
+                                  "_nested_name": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.theme_index",
+                                  "_dynamicFields": {
+                                    "value": [
+                                      {
+                                        "fullExpression": "theme_id_@item.number",
+                                        "matchedExpression": "@item.number",
+                                        "type": "item",
+                                        "fieldName": "number"
+                                      }
+                                    ],
+                                    "_nested_name": [
+                                      {
+                                        "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.theme_index",
+                                        "matchedExpression": "@item.id.dg_",
+                                        "type": "item",
+                                        "fieldName": "id"
+                                      },
+                                      {
+                                        "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.theme_index",
+                                        "matchedExpression": "@item.id.accordion_themes.strand_theme_accords.theme_index",
+                                        "type": "item",
+                                        "fieldName": "id"
+                                      }
+                                    ]
+                                  },
+                                  "_dynamicDependencies": {
+                                    "@item.number": [
+                                      "value"
+                                    ],
+                                    "@item.id.dg_": [
+                                      "_nested_name"
+                                    ],
+                                    "@item.id.accordion_themes.strand_theme_accords.theme_index": [
+                                      "_nested_name"
+                                    ]
+                                  }
+                                },
+                                {
+                                  "name": "theme_id_ptr",
+                                  "value": "local.strand_entries.@local.theme_index",
+                                  "_translations": {
+                                    "value": {}
+                                  },
+                                  "type": "set_variable",
+                                  "_nested_name": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.theme_id_ptr",
+                                  "_dynamicFields": {
+                                    "value": [
+                                      {
+                                        "fullExpression": "local.strand_entries.@local.theme_index",
+                                        "matchedExpression": "@local.theme_index",
+                                        "type": "local",
+                                        "fieldName": "theme_index"
+                                      }
+                                    ],
+                                    "_nested_name": [
+                                      {
+                                        "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.theme_id_ptr",
+                                        "matchedExpression": "@item.id.dg_",
+                                        "type": "item",
+                                        "fieldName": "id"
+                                      },
+                                      {
+                                        "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.theme_id_ptr",
+                                        "matchedExpression": "@item.id.accordion_themes.strand_theme_accords.theme_id_ptr",
+                                        "type": "item",
+                                        "fieldName": "id"
+                                      }
+                                    ]
+                                  },
+                                  "_dynamicDependencies": {
+                                    "@local.theme_index": [
+                                      "value"
+                                    ],
+                                    "@item.id.dg_": [
+                                      "_nested_name"
+                                    ],
+                                    "@item.id.accordion_themes.strand_theme_accords.theme_id_ptr": [
+                                      "_nested_name"
+                                    ]
+                                  }
+                                },
+                                {
+                                  "name": "theme_id",
+                                  "value": "@@local.theme_id_ptr",
+                                  "_translations": {
+                                    "value": {}
+                                  },
+                                  "condition": "@@local.theme_id_ptr",
+                                  "type": "set_variable",
+                                  "_nested_name": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.theme_id",
+                                  "_dynamicFields": {
+                                    "value": [
+                                      {
+                                        "fullExpression": "@@local.theme_id_ptr",
+                                        "matchedExpression": "@local.theme_id_ptr",
+                                        "type": "local",
+                                        "fieldName": "theme_id_ptr"
+                                      }
+                                    ],
+                                    "condition": [
+                                      {
+                                        "fullExpression": "@@local.theme_id_ptr",
+                                        "matchedExpression": "@local.theme_id_ptr",
+                                        "type": "local",
+                                        "fieldName": "theme_id_ptr"
+                                      }
+                                    ],
+                                    "_nested_name": [
+                                      {
+                                        "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.theme_id",
+                                        "matchedExpression": "@item.id.dg_",
+                                        "type": "item",
+                                        "fieldName": "id"
+                                      },
+                                      {
+                                        "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.theme_id",
+                                        "matchedExpression": "@item.id.accordion_themes.strand_theme_accords.theme_id",
+                                        "type": "item",
+                                        "fieldName": "id"
+                                      }
+                                    ]
+                                  },
+                                  "_dynamicDependencies": {
+                                    "@local.theme_id_ptr": [
+                                      "value",
+                                      "condition"
+                                    ],
+                                    "@item.id.dg_": [
+                                      "_nested_name"
+                                    ],
+                                    "@item.id.accordion_themes.strand_theme_accords.theme_id": [
+                                      "_nested_name"
+                                    ]
+                                  }
+                                },
+                                {
+                                  "name": "theme_ptr",
+                                  "value": "data.esm_themes.@local.theme_id",
+                                  "_translations": {
+                                    "value": {}
+                                  },
+                                  "condition": "@@local.theme_id_ptr",
+                                  "type": "set_variable",
+                                  "_nested_name": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.theme_ptr",
+                                  "_dynamicFields": {
+                                    "value": [
+                                      {
+                                        "fullExpression": "data.esm_themes.@local.theme_id",
+                                        "matchedExpression": "@local.theme_id",
+                                        "type": "local",
+                                        "fieldName": "theme_id"
+                                      }
+                                    ],
+                                    "condition": [
+                                      {
+                                        "fullExpression": "@@local.theme_id_ptr",
+                                        "matchedExpression": "@local.theme_id_ptr",
+                                        "type": "local",
+                                        "fieldName": "theme_id_ptr"
+                                      }
+                                    ],
+                                    "_nested_name": [
+                                      {
+                                        "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.theme_ptr",
+                                        "matchedExpression": "@item.id.dg_",
+                                        "type": "item",
+                                        "fieldName": "id"
+                                      },
+                                      {
+                                        "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.theme_ptr",
+                                        "matchedExpression": "@item.id.accordion_themes.strand_theme_accords.theme_ptr",
+                                        "type": "item",
+                                        "fieldName": "id"
+                                      }
+                                    ]
+                                  },
+                                  "_dynamicDependencies": {
+                                    "@local.theme_id": [
+                                      "value"
+                                    ],
+                                    "@local.theme_id_ptr": [
+                                      "condition"
+                                    ],
+                                    "@item.id.dg_": [
+                                      "_nested_name"
+                                    ],
+                                    "@item.id.accordion_themes.strand_theme_accords.theme_ptr": [
+                                      "_nested_name"
+                                    ]
+                                  }
+                                },
+                                {
+                                  "name": "theme_entries",
+                                  "value": "@@local.theme_ptr",
+                                  "_translations": {
+                                    "value": {}
+                                  },
+                                  "condition": "@@local.theme_id_ptr",
+                                  "type": "set_variable",
+                                  "_nested_name": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.theme_entries",
+                                  "_dynamicFields": {
+                                    "value": [
+                                      {
+                                        "fullExpression": "@@local.theme_ptr",
+                                        "matchedExpression": "@local.theme_ptr",
+                                        "type": "local",
+                                        "fieldName": "theme_ptr"
+                                      }
+                                    ],
+                                    "condition": [
+                                      {
+                                        "fullExpression": "@@local.theme_id_ptr",
+                                        "matchedExpression": "@local.theme_id_ptr",
+                                        "type": "local",
+                                        "fieldName": "theme_id_ptr"
+                                      }
+                                    ],
+                                    "_nested_name": [
+                                      {
+                                        "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.theme_entries",
+                                        "matchedExpression": "@item.id.dg_",
+                                        "type": "item",
+                                        "fieldName": "id"
+                                      },
+                                      {
+                                        "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.theme_entries",
+                                        "matchedExpression": "@item.id.accordion_themes.strand_theme_accords.theme_entries",
+                                        "type": "item",
+                                        "fieldName": "id"
+                                      }
+                                    ]
+                                  },
+                                  "_dynamicDependencies": {
+                                    "@local.theme_ptr": [
+                                      "value"
+                                    ],
+                                    "@local.theme_id_ptr": [
+                                      "condition"
+                                    ],
+                                    "@item.id.dg_": [
+                                      "_nested_name"
+                                    ],
+                                    "@item.id.accordion_themes.strand_theme_accords.theme_entries": [
+                                      "_nested_name"
+                                    ]
+                                  }
+                                },
+                                {
+                                  "type": "accordion_section",
+                                  "name": "block2_@item.id",
+                                  "value": "@local.theme_entries.name",
+                                  "condition": "@@local.theme_id_ptr",
+                                  "rows": [
+                                    {
+                                      "type": "display_group",
+                                      "name": "dgg_@item.id",
+                                      "parameter_list": {
+                                        "style": "column"
+                                      },
+                                      "rows": [
+                                        {
+                                          "type": "items",
+                                          "name": "theme_topic_accords",
+                                          "value": "@data.efm_num_list_one_to_ten",
+                                          "parameter_list": {
+                                            "style": "column"
+                                          },
+                                          "rows": [
+                                            {
+                                              "name": "topic_index",
+                                              "value": "topic_id_@item.number",
+                                              "_translations": {
+                                                "value": {}
+                                              },
+                                              "type": "set_variable",
+                                              "_nested_name": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_index",
+                                              "_dynamicFields": {
+                                                "value": [
+                                                  {
+                                                    "fullExpression": "topic_id_@item.number",
+                                                    "matchedExpression": "@item.number",
+                                                    "type": "item",
+                                                    "fieldName": "number"
+                                                  }
+                                                ],
+                                                "_nested_name": [
+                                                  {
+                                                    "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_index",
+                                                    "matchedExpression": "@item.id.dg_",
+                                                    "type": "item",
+                                                    "fieldName": "id"
+                                                  },
+                                                  {
+                                                    "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_index",
+                                                    "matchedExpression": "@item.id.accordion_themes.strand_theme_accords.block2_",
+                                                    "type": "item",
+                                                    "fieldName": "id"
+                                                  },
+                                                  {
+                                                    "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_index",
+                                                    "matchedExpression": "@item.id.dgg_",
+                                                    "type": "item",
+                                                    "fieldName": "id"
+                                                  },
+                                                  {
+                                                    "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_index",
+                                                    "matchedExpression": "@item.id.theme_topic_accords.topic_index",
+                                                    "type": "item",
+                                                    "fieldName": "id"
+                                                  }
+                                                ]
+                                              },
+                                              "_dynamicDependencies": {
+                                                "@item.number": [
+                                                  "value"
+                                                ],
+                                                "@item.id.dg_": [
+                                                  "_nested_name"
+                                                ],
+                                                "@item.id.accordion_themes.strand_theme_accords.block2_": [
+                                                  "_nested_name"
+                                                ],
+                                                "@item.id.dgg_": [
+                                                  "_nested_name"
+                                                ],
+                                                "@item.id.theme_topic_accords.topic_index": [
+                                                  "_nested_name"
+                                                ]
+                                              }
+                                            },
+                                            {
+                                              "name": "topic_id_ptr",
+                                              "value": "local.theme_entries.@local.topic_index",
+                                              "_translations": {
+                                                "value": {}
+                                              },
+                                              "type": "set_variable",
+                                              "_nested_name": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_id_ptr",
+                                              "_dynamicFields": {
+                                                "value": [
+                                                  {
+                                                    "fullExpression": "local.theme_entries.@local.topic_index",
+                                                    "matchedExpression": "@local.topic_index",
+                                                    "type": "local",
+                                                    "fieldName": "topic_index"
+                                                  }
+                                                ],
+                                                "_nested_name": [
+                                                  {
+                                                    "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_id_ptr",
+                                                    "matchedExpression": "@item.id.dg_",
+                                                    "type": "item",
+                                                    "fieldName": "id"
+                                                  },
+                                                  {
+                                                    "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_id_ptr",
+                                                    "matchedExpression": "@item.id.accordion_themes.strand_theme_accords.block2_",
+                                                    "type": "item",
+                                                    "fieldName": "id"
+                                                  },
+                                                  {
+                                                    "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_id_ptr",
+                                                    "matchedExpression": "@item.id.dgg_",
+                                                    "type": "item",
+                                                    "fieldName": "id"
+                                                  },
+                                                  {
+                                                    "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_id_ptr",
+                                                    "matchedExpression": "@item.id.theme_topic_accords.topic_id_ptr",
+                                                    "type": "item",
+                                                    "fieldName": "id"
+                                                  }
+                                                ]
+                                              },
+                                              "_dynamicDependencies": {
+                                                "@local.topic_index": [
+                                                  "value"
+                                                ],
+                                                "@item.id.dg_": [
+                                                  "_nested_name"
+                                                ],
+                                                "@item.id.accordion_themes.strand_theme_accords.block2_": [
+                                                  "_nested_name"
+                                                ],
+                                                "@item.id.dgg_": [
+                                                  "_nested_name"
+                                                ],
+                                                "@item.id.theme_topic_accords.topic_id_ptr": [
+                                                  "_nested_name"
+                                                ]
+                                              }
+                                            },
+                                            {
+                                              "name": "topic_id",
+                                              "value": "@@local.topic_id_ptr",
+                                              "_translations": {
+                                                "value": {}
+                                              },
+                                              "condition": "@@local.topic_id_ptr",
+                                              "type": "set_variable",
+                                              "_nested_name": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_id",
+                                              "_dynamicFields": {
+                                                "value": [
+                                                  {
+                                                    "fullExpression": "@@local.topic_id_ptr",
+                                                    "matchedExpression": "@local.topic_id_ptr",
+                                                    "type": "local",
+                                                    "fieldName": "topic_id_ptr"
+                                                  }
+                                                ],
+                                                "condition": [
+                                                  {
+                                                    "fullExpression": "@@local.topic_id_ptr",
+                                                    "matchedExpression": "@local.topic_id_ptr",
+                                                    "type": "local",
+                                                    "fieldName": "topic_id_ptr"
+                                                  }
+                                                ],
+                                                "_nested_name": [
+                                                  {
+                                                    "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_id",
+                                                    "matchedExpression": "@item.id.dg_",
+                                                    "type": "item",
+                                                    "fieldName": "id"
+                                                  },
+                                                  {
+                                                    "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_id",
+                                                    "matchedExpression": "@item.id.accordion_themes.strand_theme_accords.block2_",
+                                                    "type": "item",
+                                                    "fieldName": "id"
+                                                  },
+                                                  {
+                                                    "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_id",
+                                                    "matchedExpression": "@item.id.dgg_",
+                                                    "type": "item",
+                                                    "fieldName": "id"
+                                                  },
+                                                  {
+                                                    "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_id",
+                                                    "matchedExpression": "@item.id.theme_topic_accords.topic_id",
+                                                    "type": "item",
+                                                    "fieldName": "id"
+                                                  }
+                                                ]
+                                              },
+                                              "_dynamicDependencies": {
+                                                "@local.topic_id_ptr": [
+                                                  "value",
+                                                  "condition"
+                                                ],
+                                                "@item.id.dg_": [
+                                                  "_nested_name"
+                                                ],
+                                                "@item.id.accordion_themes.strand_theme_accords.block2_": [
+                                                  "_nested_name"
+                                                ],
+                                                "@item.id.dgg_": [
+                                                  "_nested_name"
+                                                ],
+                                                "@item.id.theme_topic_accords.topic_id": [
+                                                  "_nested_name"
+                                                ]
+                                              }
+                                            },
+                                            {
+                                              "name": "topic_ptr",
+                                              "value": "data.esm_topics.@local.topic_id",
+                                              "_translations": {
+                                                "value": {}
+                                              },
+                                              "condition": "@@local.topic_id_ptr",
+                                              "type": "set_variable",
+                                              "_nested_name": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_ptr",
+                                              "_dynamicFields": {
+                                                "value": [
+                                                  {
+                                                    "fullExpression": "data.esm_topics.@local.topic_id",
+                                                    "matchedExpression": "@local.topic_id",
+                                                    "type": "local",
+                                                    "fieldName": "topic_id"
+                                                  }
+                                                ],
+                                                "condition": [
+                                                  {
+                                                    "fullExpression": "@@local.topic_id_ptr",
+                                                    "matchedExpression": "@local.topic_id_ptr",
+                                                    "type": "local",
+                                                    "fieldName": "topic_id_ptr"
+                                                  }
+                                                ],
+                                                "_nested_name": [
+                                                  {
+                                                    "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_ptr",
+                                                    "matchedExpression": "@item.id.dg_",
+                                                    "type": "item",
+                                                    "fieldName": "id"
+                                                  },
+                                                  {
+                                                    "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_ptr",
+                                                    "matchedExpression": "@item.id.accordion_themes.strand_theme_accords.block2_",
+                                                    "type": "item",
+                                                    "fieldName": "id"
+                                                  },
+                                                  {
+                                                    "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_ptr",
+                                                    "matchedExpression": "@item.id.dgg_",
+                                                    "type": "item",
+                                                    "fieldName": "id"
+                                                  },
+                                                  {
+                                                    "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_ptr",
+                                                    "matchedExpression": "@item.id.theme_topic_accords.topic_ptr",
+                                                    "type": "item",
+                                                    "fieldName": "id"
+                                                  }
+                                                ]
+                                              },
+                                              "_dynamicDependencies": {
+                                                "@local.topic_id": [
+                                                  "value"
+                                                ],
+                                                "@local.topic_id_ptr": [
+                                                  "condition"
+                                                ],
+                                                "@item.id.dg_": [
+                                                  "_nested_name"
+                                                ],
+                                                "@item.id.accordion_themes.strand_theme_accords.block2_": [
+                                                  "_nested_name"
+                                                ],
+                                                "@item.id.dgg_": [
+                                                  "_nested_name"
+                                                ],
+                                                "@item.id.theme_topic_accords.topic_ptr": [
+                                                  "_nested_name"
+                                                ]
+                                              }
+                                            },
+                                            {
+                                              "name": "topic_entries",
+                                              "value": "@@local.topic_ptr",
+                                              "_translations": {
+                                                "value": {}
+                                              },
+                                              "condition": "@@local.topic_id_ptr",
+                                              "type": "set_variable",
+                                              "_nested_name": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_entries",
+                                              "_dynamicFields": {
+                                                "value": [
+                                                  {
+                                                    "fullExpression": "@@local.topic_ptr",
+                                                    "matchedExpression": "@local.topic_ptr",
+                                                    "type": "local",
+                                                    "fieldName": "topic_ptr"
+                                                  }
+                                                ],
+                                                "condition": [
+                                                  {
+                                                    "fullExpression": "@@local.topic_id_ptr",
+                                                    "matchedExpression": "@local.topic_id_ptr",
+                                                    "type": "local",
+                                                    "fieldName": "topic_id_ptr"
+                                                  }
+                                                ],
+                                                "_nested_name": [
+                                                  {
+                                                    "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_entries",
+                                                    "matchedExpression": "@item.id.dg_",
+                                                    "type": "item",
+                                                    "fieldName": "id"
+                                                  },
+                                                  {
+                                                    "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_entries",
+                                                    "matchedExpression": "@item.id.accordion_themes.strand_theme_accords.block2_",
+                                                    "type": "item",
+                                                    "fieldName": "id"
+                                                  },
+                                                  {
+                                                    "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_entries",
+                                                    "matchedExpression": "@item.id.dgg_",
+                                                    "type": "item",
+                                                    "fieldName": "id"
+                                                  },
+                                                  {
+                                                    "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_entries",
+                                                    "matchedExpression": "@item.id.theme_topic_accords.topic_entries",
+                                                    "type": "item",
+                                                    "fieldName": "id"
+                                                  }
+                                                ]
+                                              },
+                                              "_dynamicDependencies": {
+                                                "@local.topic_ptr": [
+                                                  "value"
+                                                ],
+                                                "@local.topic_id_ptr": [
+                                                  "condition"
+                                                ],
+                                                "@item.id.dg_": [
+                                                  "_nested_name"
+                                                ],
+                                                "@item.id.accordion_themes.strand_theme_accords.block2_": [
+                                                  "_nested_name"
+                                                ],
+                                                "@item.id.dgg_": [
+                                                  "_nested_name"
+                                                ],
+                                                "@item.id.theme_topic_accords.topic_entries": [
+                                                  "_nested_name"
+                                                ]
+                                              }
+                                            },
+                                            {
+                                              "type": "display_group",
+                                              "name": "dggg_@item_id",
+                                              "condition": "@@local.topic_id_ptr",
+                                              "parameter_list": {
+                                                "style": "column"
+                                              },
+                                              "rows": [
+                                                {
+                                                  "name": "click_history_field_name",
+                                                  "value": "@local.topic_id@local.topic_click_history",
+                                                  "_translations": {
+                                                    "value": {}
+                                                  },
+                                                  "exclude_from_translation": true,
+                                                  "type": "set_variable",
+                                                  "_nested_name": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id.click_history_field_name",
+                                                  "_dynamicFields": {
+                                                    "value": [
+                                                      {
+                                                        "fullExpression": "@local.topic_id@local.topic_click_history",
+                                                        "matchedExpression": "@local.topic_id",
+                                                        "type": "local",
+                                                        "fieldName": "topic_id"
+                                                      },
+                                                      {
+                                                        "fullExpression": "@local.topic_id@local.topic_click_history",
+                                                        "matchedExpression": "@local.topic_click_history",
+                                                        "type": "local",
+                                                        "fieldName": "topic_click_history"
+                                                      }
+                                                    ],
+                                                    "_nested_name": [
+                                                      {
+                                                        "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id.click_history_field_name",
+                                                        "matchedExpression": "@item.id.dg_",
+                                                        "type": "item",
+                                                        "fieldName": "id"
+                                                      },
+                                                      {
+                                                        "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id.click_history_field_name",
+                                                        "matchedExpression": "@item.id.accordion_themes.strand_theme_accords.block2_",
+                                                        "type": "item",
+                                                        "fieldName": "id"
+                                                      },
+                                                      {
+                                                        "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id.click_history_field_name",
+                                                        "matchedExpression": "@item.id.dgg_",
+                                                        "type": "item",
+                                                        "fieldName": "id"
+                                                      },
+                                                      {
+                                                        "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id.click_history_field_name",
+                                                        "matchedExpression": "@item.id.theme_topic_accords.dggg_",
+                                                        "type": "item",
+                                                        "fieldName": "id"
+                                                      }
+                                                    ]
+                                                  },
+                                                  "_dynamicDependencies": {
+                                                    "@local.topic_id": [
+                                                      "value"
+                                                    ],
+                                                    "@local.topic_click_history": [
+                                                      "value"
+                                                    ],
+                                                    "@item.id.dg_": [
+                                                      "_nested_name"
+                                                    ],
+                                                    "@item.id.accordion_themes.strand_theme_accords.block2_": [
+                                                      "_nested_name"
+                                                    ],
+                                                    "@item.id.dgg_": [
+                                                      "_nested_name"
+                                                    ],
+                                                    "@item.id.theme_topic_accords.dggg_": [
+                                                      "_nested_name"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "name": "topics_click_history",
+                                                  "value": "@fields.@local.click_history_field_name ;  @local.now",
+                                                  "_translations": {
+                                                    "value": {}
+                                                  },
+                                                  "condition": "!!(@fields.@local.click_history_field_name)",
+                                                  "exclude_from_translation": true,
+                                                  "type": "set_variable",
+                                                  "_nested_name": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id.topics_click_history",
+                                                  "_dynamicFields": {
+                                                    "value": [
+                                                      {
+                                                        "fullExpression": "@fields.@local.click_history_field_name ;  @local.now",
+                                                        "matchedExpression": "@local.click_history_field_name",
+                                                        "type": "local",
+                                                        "fieldName": "click_history_field_name"
+                                                      },
+                                                      {
+                                                        "fullExpression": "@fields.@local.click_history_field_name ;  @local.now",
+                                                        "matchedExpression": "@local.now",
+                                                        "type": "local",
+                                                        "fieldName": "now"
+                                                      }
+                                                    ],
+                                                    "condition": [
+                                                      {
+                                                        "fullExpression": "!!(@fields.@local.click_history_field_name)",
+                                                        "matchedExpression": "@local.click_history_field_name",
+                                                        "type": "local",
+                                                        "fieldName": "click_history_field_name"
+                                                      }
+                                                    ],
+                                                    "_nested_name": [
+                                                      {
+                                                        "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id.topics_click_history",
+                                                        "matchedExpression": "@item.id.dg_",
+                                                        "type": "item",
+                                                        "fieldName": "id"
+                                                      },
+                                                      {
+                                                        "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id.topics_click_history",
+                                                        "matchedExpression": "@item.id.accordion_themes.strand_theme_accords.block2_",
+                                                        "type": "item",
+                                                        "fieldName": "id"
+                                                      },
+                                                      {
+                                                        "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id.topics_click_history",
+                                                        "matchedExpression": "@item.id.dgg_",
+                                                        "type": "item",
+                                                        "fieldName": "id"
+                                                      },
+                                                      {
+                                                        "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id.topics_click_history",
+                                                        "matchedExpression": "@item.id.theme_topic_accords.dggg_",
+                                                        "type": "item",
+                                                        "fieldName": "id"
+                                                      }
+                                                    ]
+                                                  },
+                                                  "_dynamicDependencies": {
+                                                    "@local.click_history_field_name": [
+                                                      "value",
+                                                      "condition"
+                                                    ],
+                                                    "@local.now": [
+                                                      "value"
+                                                    ],
+                                                    "@item.id.dg_": [
+                                                      "_nested_name"
+                                                    ],
+                                                    "@item.id.accordion_themes.strand_theme_accords.block2_": [
+                                                      "_nested_name"
+                                                    ],
+                                                    "@item.id.dgg_": [
+                                                      "_nested_name"
+                                                    ],
+                                                    "@item.id.theme_topic_accords.dggg_": [
+                                                      "_nested_name"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "name": "topics_click_history",
+                                                  "value": "@local.now",
+                                                  "_translations": {
+                                                    "value": {}
+                                                  },
+                                                  "condition": "!(@fields.@local.click_history_field_name)",
+                                                  "exclude_from_translation": true,
+                                                  "type": "set_variable",
+                                                  "_nested_name": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id.topics_click_history",
+                                                  "_dynamicFields": {
+                                                    "value": [
+                                                      {
+                                                        "fullExpression": "@local.now",
+                                                        "matchedExpression": "@local.now",
+                                                        "type": "local",
+                                                        "fieldName": "now"
+                                                      }
+                                                    ],
+                                                    "condition": [
+                                                      {
+                                                        "fullExpression": "!(@fields.@local.click_history_field_name)",
+                                                        "matchedExpression": "@local.click_history_field_name",
+                                                        "type": "local",
+                                                        "fieldName": "click_history_field_name"
+                                                      }
+                                                    ],
+                                                    "_nested_name": [
+                                                      {
+                                                        "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id.topics_click_history",
+                                                        "matchedExpression": "@item.id.dg_",
+                                                        "type": "item",
+                                                        "fieldName": "id"
+                                                      },
+                                                      {
+                                                        "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id.topics_click_history",
+                                                        "matchedExpression": "@item.id.accordion_themes.strand_theme_accords.block2_",
+                                                        "type": "item",
+                                                        "fieldName": "id"
+                                                      },
+                                                      {
+                                                        "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id.topics_click_history",
+                                                        "matchedExpression": "@item.id.dgg_",
+                                                        "type": "item",
+                                                        "fieldName": "id"
+                                                      },
+                                                      {
+                                                        "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id.topics_click_history",
+                                                        "matchedExpression": "@item.id.theme_topic_accords.dggg_",
+                                                        "type": "item",
+                                                        "fieldName": "id"
+                                                      }
+                                                    ]
+                                                  },
+                                                  "_dynamicDependencies": {
+                                                    "@local.now": [
+                                                      "value"
+                                                    ],
+                                                    "@local.click_history_field_name": [
+                                                      "condition"
+                                                    ],
+                                                    "@item.id.dg_": [
+                                                      "_nested_name"
+                                                    ],
+                                                    "@item.id.accordion_themes.strand_theme_accords.block2_": [
+                                                      "_nested_name"
+                                                    ],
+                                                    "@item.id.dgg_": [
+                                                      "_nested_name"
+                                                    ],
+                                                    "@item.id.theme_topic_accords.dggg_": [
+                                                      "_nested_name"
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "type": "button",
+                                                  "name": "button_topic",
+                                                  "value": "@local.topic_entries.name",
+                                                  "_translations": {
+                                                    "value": {}
+                                                  },
+                                                  "action_list": [
+                                                    {
+                                                      "trigger": "click",
+                                                      "action_id": "set_field",
+                                                      "args": [
+                                                        "current_topic",
+                                                        "@local.topic_ptr"
+                                                      ],
+                                                      "_raw": "click | set_field:current_topic: @local.topic_ptr",
+                                                      "_cleaned": "click | set_field:current_topic: @local.topic_ptr"
+                                                    },
+                                                    {
+                                                      "trigger": "click",
+                                                      "action_id": "go_to",
+                                                      "args": [
+                                                        "esm_topic_template"
+                                                      ],
+                                                      "_raw": "click | go_to: esm_topic_template",
+                                                      "_cleaned": "click | go_to: esm_topic_template"
+                                                    },
+                                                    {
+                                                      "trigger": "click",
+                                                      "action_id": "set_field",
+                                                      "args": [
+                                                        "@local.click_history_field_name",
+                                                        "@local.topics_click_history"
+                                                      ],
+                                                      "_raw": "click | set_field:@local.click_history_field_name: @local.topics_click_history",
+                                                      "_cleaned": "click | set_field:@local.click_history_field_name: @local.topics_click_history"
+                                                    }
+                                                  ],
+                                                  "parameter_list": {
+                                                    "style": "short",
+                                                    "text_align": "center"
+                                                  },
+                                                  "_nested_name": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id.button_topic",
+                                                  "_dynamicFields": {
+                                                    "value": [
+                                                      {
+                                                        "fullExpression": "@local.topic_entries.name",
+                                                        "matchedExpression": "@local.topic_entries.name",
+                                                        "type": "local",
+                                                        "fieldName": "topic_entries"
+                                                      }
+                                                    ],
+                                                    "action_list": {
+                                                      "0": {
+                                                        "args": {
+                                                          "1": [
+                                                            {
+                                                              "fullExpression": "@local.topic_ptr",
+                                                              "matchedExpression": "@local.topic_ptr",
+                                                              "type": "local",
+                                                              "fieldName": "topic_ptr"
+                                                            }
+                                                          ]
+                                                        },
+                                                        "_raw": [
+                                                          {
+                                                            "fullExpression": "click | set_field:current_topic: @local.topic_ptr",
+                                                            "matchedExpression": "@local.topic_ptr",
+                                                            "type": "local",
+                                                            "fieldName": "topic_ptr"
+                                                          }
+                                                        ],
+                                                        "_cleaned": [
+                                                          {
+                                                            "fullExpression": "click | set_field:current_topic: @local.topic_ptr",
+                                                            "matchedExpression": "@local.topic_ptr",
+                                                            "type": "local",
+                                                            "fieldName": "topic_ptr"
+                                                          }
+                                                        ]
+                                                      },
+                                                      "2": {
+                                                        "args": {
+                                                          "0": [
+                                                            {
+                                                              "fullExpression": "@local.click_history_field_name",
+                                                              "matchedExpression": "@local.click_history_field_name",
+                                                              "type": "local",
+                                                              "fieldName": "click_history_field_name"
+                                                            }
+                                                          ],
+                                                          "1": [
+                                                            {
+                                                              "fullExpression": "@local.topics_click_history",
+                                                              "matchedExpression": "@local.topics_click_history",
+                                                              "type": "local",
+                                                              "fieldName": "topics_click_history"
+                                                            }
+                                                          ]
+                                                        },
+                                                        "_raw": [
+                                                          {
+                                                            "fullExpression": "click | set_field:@local.click_history_field_name: @local.topics_click_history",
+                                                            "matchedExpression": "@local.click_history_field_name",
+                                                            "type": "local",
+                                                            "fieldName": "click_history_field_name"
+                                                          },
+                                                          {
+                                                            "fullExpression": "click | set_field:@local.click_history_field_name: @local.topics_click_history",
+                                                            "matchedExpression": "@local.topics_click_history",
+                                                            "type": "local",
+                                                            "fieldName": "topics_click_history"
+                                                          }
+                                                        ],
+                                                        "_cleaned": [
+                                                          {
+                                                            "fullExpression": "click | set_field:@local.click_history_field_name: @local.topics_click_history",
+                                                            "matchedExpression": "@local.click_history_field_name",
+                                                            "type": "local",
+                                                            "fieldName": "click_history_field_name"
+                                                          },
+                                                          {
+                                                            "fullExpression": "click | set_field:@local.click_history_field_name: @local.topics_click_history",
+                                                            "matchedExpression": "@local.topics_click_history",
+                                                            "type": "local",
+                                                            "fieldName": "topics_click_history"
+                                                          }
+                                                        ]
+                                                      }
+                                                    },
+                                                    "_nested_name": [
+                                                      {
+                                                        "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id.button_topic",
+                                                        "matchedExpression": "@item.id.dg_",
+                                                        "type": "item",
+                                                        "fieldName": "id"
+                                                      },
+                                                      {
+                                                        "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id.button_topic",
+                                                        "matchedExpression": "@item.id.accordion_themes.strand_theme_accords.block2_",
+                                                        "type": "item",
+                                                        "fieldName": "id"
+                                                      },
+                                                      {
+                                                        "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id.button_topic",
+                                                        "matchedExpression": "@item.id.dgg_",
+                                                        "type": "item",
+                                                        "fieldName": "id"
+                                                      },
+                                                      {
+                                                        "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id.button_topic",
+                                                        "matchedExpression": "@item.id.theme_topic_accords.dggg_",
+                                                        "type": "item",
+                                                        "fieldName": "id"
+                                                      }
+                                                    ]
+                                                  },
+                                                  "_dynamicDependencies": {
+                                                    "@local.topic_entries.name": [
+                                                      "value"
+                                                    ],
+                                                    "@local.topic_ptr": [
+                                                      "action_list.0.args.1",
+                                                      "action_list.0._raw",
+                                                      "action_list.0._cleaned"
+                                                    ],
+                                                    "@local.click_history_field_name": [
+                                                      "action_list.2.args.0",
+                                                      "action_list.2._raw",
+                                                      "action_list.2._cleaned"
+                                                    ],
+                                                    "@local.topics_click_history": [
+                                                      "action_list.2.args.1",
+                                                      "action_list.2._raw",
+                                                      "action_list.2._cleaned"
+                                                    ],
+                                                    "@item.id.dg_": [
+                                                      "_nested_name"
+                                                    ],
+                                                    "@item.id.accordion_themes.strand_theme_accords.block2_": [
+                                                      "_nested_name"
+                                                    ],
+                                                    "@item.id.dgg_": [
+                                                      "_nested_name"
+                                                    ],
+                                                    "@item.id.theme_topic_accords.dggg_": [
+                                                      "_nested_name"
+                                                    ]
+                                                  }
+                                                }
+                                              ],
+                                              "_nested_name": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id",
+                                              "_dynamicFields": {
+                                                "condition": [
+                                                  {
+                                                    "fullExpression": "@@local.topic_id_ptr",
+                                                    "matchedExpression": "@local.topic_id_ptr",
+                                                    "type": "local",
+                                                    "fieldName": "topic_id_ptr"
+                                                  }
+                                                ],
+                                                "_nested_name": [
+                                                  {
+                                                    "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id",
+                                                    "matchedExpression": "@item.id.dg_",
+                                                    "type": "item",
+                                                    "fieldName": "id"
+                                                  },
+                                                  {
+                                                    "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id",
+                                                    "matchedExpression": "@item.id.accordion_themes.strand_theme_accords.block2_",
+                                                    "type": "item",
+                                                    "fieldName": "id"
+                                                  },
+                                                  {
+                                                    "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id",
+                                                    "matchedExpression": "@item.id.dgg_",
+                                                    "type": "item",
+                                                    "fieldName": "id"
+                                                  },
+                                                  {
+                                                    "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id",
+                                                    "matchedExpression": "@item.id.theme_topic_accords.dggg_",
+                                                    "type": "item",
+                                                    "fieldName": "id"
+                                                  }
+                                                ]
+                                              },
+                                              "_dynamicDependencies": {
+                                                "@local.topic_id_ptr": [
+                                                  "condition"
+                                                ],
+                                                "@item.id.dg_": [
+                                                  "_nested_name"
+                                                ],
+                                                "@item.id.accordion_themes.strand_theme_accords.block2_": [
+                                                  "_nested_name"
+                                                ],
+                                                "@item.id.dgg_": [
+                                                  "_nested_name"
+                                                ],
+                                                "@item.id.theme_topic_accords.dggg_": [
+                                                  "_nested_name"
+                                                ]
+                                              }
+                                            }
+                                          ],
+                                          "_nested_name": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords",
+                                          "_dynamicFields": {
+                                            "value": [
+                                              {
+                                                "fullExpression": "@data.efm_num_list_one_to_ten",
+                                                "matchedExpression": "@data.efm_num_list_one_to_ten",
+                                                "type": "data",
+                                                "fieldName": "efm_num_list_one_to_ten"
+                                              }
+                                            ],
+                                            "_nested_name": [
+                                              {
+                                                "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords",
+                                                "matchedExpression": "@item.id.dg_",
+                                                "type": "item",
+                                                "fieldName": "id"
+                                              },
+                                              {
+                                                "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords",
+                                                "matchedExpression": "@item.id.accordion_themes.strand_theme_accords.block2_",
+                                                "type": "item",
+                                                "fieldName": "id"
+                                              },
+                                              {
+                                                "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords",
+                                                "matchedExpression": "@item.id.dgg_",
+                                                "type": "item",
+                                                "fieldName": "id"
+                                              },
+                                              {
+                                                "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords",
+                                                "matchedExpression": "@item.id.theme_topic_accords",
+                                                "type": "item",
+                                                "fieldName": "id"
+                                              }
+                                            ]
+                                          },
+                                          "_dynamicDependencies": {
+                                            "@data.efm_num_list_one_to_ten": [
+                                              "value"
+                                            ],
+                                            "@item.id.dg_": [
+                                              "_nested_name"
+                                            ],
+                                            "@item.id.accordion_themes.strand_theme_accords.block2_": [
+                                              "_nested_name"
+                                            ],
+                                            "@item.id.dgg_": [
+                                              "_nested_name"
+                                            ],
+                                            "@item.id.theme_topic_accords": [
+                                              "_nested_name"
+                                            ]
+                                          }
+                                        }
+                                      ],
+                                      "_nested_name": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id",
+                                      "_dynamicFields": {
+                                        "name": [
+                                          {
+                                            "fullExpression": "dgg_@item.id",
+                                            "matchedExpression": "@item.id",
+                                            "type": "item",
+                                            "fieldName": "id"
+                                          }
+                                        ],
+                                        "_nested_name": [
+                                          {
+                                            "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id",
+                                            "matchedExpression": "@item.id.dg_",
+                                            "type": "item",
+                                            "fieldName": "id"
+                                          },
+                                          {
+                                            "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id",
+                                            "matchedExpression": "@item.id.accordion_themes.strand_theme_accords.block2_",
+                                            "type": "item",
+                                            "fieldName": "id"
+                                          },
+                                          {
+                                            "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id",
+                                            "matchedExpression": "@item.id.dgg_",
+                                            "type": "item",
+                                            "fieldName": "id"
+                                          },
+                                          {
+                                            "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id",
+                                            "matchedExpression": "@item.id",
+                                            "type": "item",
+                                            "fieldName": "id"
+                                          }
+                                        ]
+                                      },
+                                      "_dynamicDependencies": {
+                                        "@item.id": [
+                                          "name",
+                                          "_nested_name"
+                                        ],
+                                        "@item.id.dg_": [
+                                          "_nested_name"
+                                        ],
+                                        "@item.id.accordion_themes.strand_theme_accords.block2_": [
+                                          "_nested_name"
+                                        ],
+                                        "@item.id.dgg_": [
+                                          "_nested_name"
+                                        ]
+                                      }
+                                    }
+                                  ],
+                                  "_nested_name": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id",
+                                  "_dynamicFields": {
+                                    "name": [
+                                      {
+                                        "fullExpression": "block2_@item.id",
+                                        "matchedExpression": "@item.id",
+                                        "type": "item",
+                                        "fieldName": "id"
+                                      }
+                                    ],
+                                    "value": [
+                                      {
+                                        "fullExpression": "@local.theme_entries.name",
+                                        "matchedExpression": "@local.theme_entries.name",
+                                        "type": "local",
+                                        "fieldName": "theme_entries"
+                                      }
+                                    ],
+                                    "condition": [
+                                      {
+                                        "fullExpression": "@@local.theme_id_ptr",
+                                        "matchedExpression": "@local.theme_id_ptr",
+                                        "type": "local",
+                                        "fieldName": "theme_id_ptr"
+                                      }
+                                    ],
+                                    "_nested_name": [
+                                      {
+                                        "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id",
+                                        "matchedExpression": "@item.id.dg_",
+                                        "type": "item",
+                                        "fieldName": "id"
+                                      },
+                                      {
+                                        "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id",
+                                        "matchedExpression": "@item.id.accordion_themes.strand_theme_accords.block2_",
+                                        "type": "item",
+                                        "fieldName": "id"
+                                      },
+                                      {
+                                        "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id",
+                                        "matchedExpression": "@item.id",
+                                        "type": "item",
+                                        "fieldName": "id"
+                                      }
+                                    ]
+                                  },
+                                  "_dynamicDependencies": {
+                                    "@item.id": [
+                                      "name",
+                                      "_nested_name"
+                                    ],
+                                    "@local.theme_entries.name": [
+                                      "value"
+                                    ],
+                                    "@local.theme_id_ptr": [
+                                      "condition"
+                                    ],
+                                    "@item.id.dg_": [
+                                      "_nested_name"
+                                    ],
+                                    "@item.id.accordion_themes.strand_theme_accords.block2_": [
+                                      "_nested_name"
+                                    ]
+                                  }
+                                }
+                              ],
+                              "_nested_name": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords",
+                              "_dynamicFields": {
+                                "value": [
+                                  {
+                                    "fullExpression": "@data.efm_num_list_one_to_ten",
+                                    "matchedExpression": "@data.efm_num_list_one_to_ten",
+                                    "type": "data",
+                                    "fieldName": "efm_num_list_one_to_ten"
+                                  }
+                                ],
+                                "_nested_name": [
+                                  {
+                                    "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords",
+                                    "matchedExpression": "@item.id.dg_",
+                                    "type": "item",
+                                    "fieldName": "id"
+                                  },
+                                  {
+                                    "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords",
+                                    "matchedExpression": "@item.id.accordion_themes.strand_theme_accords",
+                                    "type": "item",
+                                    "fieldName": "id"
+                                  }
+                                ]
+                              },
+                              "_dynamicDependencies": {
+                                "@data.efm_num_list_one_to_ten": [
+                                  "value"
+                                ],
+                                "@item.id.dg_": [
+                                  "_nested_name"
+                                ],
+                                "@item.id.accordion_themes.strand_theme_accords": [
+                                  "_nested_name"
+                                ]
+                              }
+                            }
+                          ],
+                          "_nested_name": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes",
+                          "_dynamicFields": {
+                            "_nested_name": [
+                              {
+                                "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes",
+                                "matchedExpression": "@item.id.dg_",
+                                "type": "item",
+                                "fieldName": "id"
+                              },
+                              {
+                                "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes",
+                                "matchedExpression": "@item.id.accordion_themes",
+                                "type": "item",
+                                "fieldName": "id"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@item.id.dg_": [
+                              "_nested_name"
+                            ],
+                            "@item.id.accordion_themes": [
+                              "_nested_name"
+                            ]
+                          }
+                        }
+                      ],
+                      "_nested_name": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id",
+                      "_dynamicFields": {
+                        "name": [
+                          {
+                            "fullExpression": "dg_@item.id",
+                            "matchedExpression": "@item.id",
+                            "type": "item",
+                            "fieldName": "id"
+                          }
+                        ],
+                        "_nested_name": [
+                          {
+                            "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id",
+                            "matchedExpression": "@item.id.dg_",
+                            "type": "item",
+                            "fieldName": "id"
+                          },
+                          {
+                            "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id",
+                            "matchedExpression": "@item.id",
+                            "type": "item",
+                            "fieldName": "id"
+                          }
+                        ]
+                      },
+                      "_dynamicDependencies": {
+                        "@item.id": [
+                          "name",
+                          "_nested_name"
+                        ],
+                        "@item.id.dg_": [
+                          "_nested_name"
+                        ]
+                      }
+                    }
+                  ],
+                  "_nested_name": "display_group_10.accordion_strands.strand_acoords.block2_@item.id",
+                  "_dynamicFields": {
+                    "name": [
+                      {
+                        "fullExpression": "block2_@item.id",
+                        "matchedExpression": "@item.id",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ],
+                    "value": [
+                      {
+                        "fullExpression": "@item.name",
+                        "matchedExpression": "@item.name",
+                        "type": "item",
+                        "fieldName": "name"
+                      }
+                    ],
+                    "_nested_name": [
+                      {
+                        "fullExpression": "display_group_10.accordion_strands.strand_acoords.block2_@item.id",
+                        "matchedExpression": "@item.id",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@item.id": [
+                      "name",
+                      "_nested_name"
+                    ],
+                    "@item.name": [
+                      "value"
+                    ]
+                  }
+                }
+              ],
+              "_nested_name": "display_group_10.accordion_strands.strand_acoords",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@data.esm_strands",
+                    "matchedExpression": "@data.esm_strands",
+                    "type": "data",
+                    "fieldName": "esm_strands"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@data.esm_strands": [
+                  "value"
+                ]
+              }
+            }
+          ],
+          "_nested_name": "display_group_10.accordion_strands"
+        }
+      ],
+      "name": "display_group_10",
+      "_nested_name": "display_group_10"
+    }
+  ],
+  "_xlsxPath": "EFM_topics_high_level_sheets.xlsx"
+}

@@ -1,6 +1,6 @@
 {
   "flow_type": "tour",
-  "flow_name": "efm_topics_tour",
+  "flow_name": "esm_topics_tour",
   "status": "released",
   "rows": [
     {
@@ -11,7 +11,7 @@
         "message_text": {}
       },
       "message_text": "This is a collection of significant topics in the teaching of early mathematics.",
-      "route": "template/efm_topic_start"
+      "route": "template/esm_topic_start"
     },
     {
       "type": "step",
@@ -22,7 +22,7 @@
       },
       "message_text": "If you ever want to see this introduction again, just click on the question mark.",
       "template_component_name": "dg_help",
-      "route": "template/efm_topic_start"
+      "route": "template/esm_topic_start"
     }
   ],
   "_xlsxPath": "EFM_tours.xlsx"
