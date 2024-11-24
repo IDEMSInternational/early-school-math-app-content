@@ -1,13 +1,13 @@
 {
   "flow_type": "template",
-  "flow_name": "efm_topic_body_template",
+  "flow_name": "esm_topic_body_template",
   "status": "released",
   "rows": [
     {
-      "name": "efm_topic_ptr",
+      "name": "esm_topic_ptr",
       "exclude_from_translation": true,
       "type": "set_variable",
-      "_nested_name": "efm_topic_ptr"
+      "_nested_name": "esm_topic_ptr"
     },
     {
       "name": "block_chars",
@@ -141,7 +141,7 @@
         },
         {
           "name": "block_type",
-          "value": "local.efm_topic_ptr.@local.block_num_chars@local.chars_type",
+          "value": "local.esm_topic_ptr.@local.block_num_chars@local.chars_type",
           "_translations": {
             "value": {}
           },
@@ -151,13 +151,13 @@
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "local.efm_topic_ptr.@local.block_num_chars@local.chars_type",
+                "fullExpression": "local.esm_topic_ptr.@local.block_num_chars@local.chars_type",
                 "matchedExpression": "@local.block_num_chars",
                 "type": "local",
                 "fieldName": "block_num_chars"
               },
               {
-                "fullExpression": "local.efm_topic_ptr.@local.block_num_chars@local.chars_type",
+                "fullExpression": "local.esm_topic_ptr.@local.block_num_chars@local.chars_type",
                 "matchedExpression": "@local.chars_type",
                 "type": "local",
                 "fieldName": "chars_type"
@@ -175,7 +175,7 @@
         },
         {
           "name": "block_text",
-          "value": "local.efm_topic_ptr.@local.block_num_chars@local.chars_text",
+          "value": "local.esm_topic_ptr.@local.block_num_chars@local.chars_text",
           "_translations": {
             "value": {}
           },
@@ -185,13 +185,13 @@
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "local.efm_topic_ptr.@local.block_num_chars@local.chars_text",
+                "fullExpression": "local.esm_topic_ptr.@local.block_num_chars@local.chars_text",
                 "matchedExpression": "@local.block_num_chars",
                 "type": "local",
                 "fieldName": "block_num_chars"
               },
               {
-                "fullExpression": "local.efm_topic_ptr.@local.block_num_chars@local.chars_text",
+                "fullExpression": "local.esm_topic_ptr.@local.block_num_chars@local.chars_text",
                 "matchedExpression": "@local.chars_text",
                 "type": "local",
                 "fieldName": "chars_text"
@@ -209,7 +209,7 @@
         },
         {
           "name": "accordion_label",
-          "value": "local.efm_topic_ptr.@local.block_num_chars@local.chars_accord",
+          "value": "local.esm_topic_ptr.@local.block_num_chars@local.chars_accord",
           "_translations": {
             "value": {}
           },
@@ -219,13 +219,13 @@
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "local.efm_topic_ptr.@local.block_num_chars@local.chars_accord",
+                "fullExpression": "local.esm_topic_ptr.@local.block_num_chars@local.chars_accord",
                 "matchedExpression": "@local.block_num_chars",
                 "type": "local",
                 "fieldName": "block_num_chars"
               },
               {
-                "fullExpression": "local.efm_topic_ptr.@local.block_num_chars@local.chars_accord",
+                "fullExpression": "local.esm_topic_ptr.@local.block_num_chars@local.chars_accord",
                 "matchedExpression": "@local.chars_accord",
                 "type": "local",
                 "fieldName": "chars_accord"
@@ -243,7 +243,7 @@
         },
         {
           "name": "block_illustration",
-          "value": "local.efm_topic_ptr.@local.block_num_chars@local.chars_illust",
+          "value": "local.esm_topic_ptr.@local.block_num_chars@local.chars_illust",
           "_translations": {
             "value": {}
           },
@@ -253,13 +253,13 @@
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "local.efm_topic_ptr.@local.block_num_chars@local.chars_illust",
+                "fullExpression": "local.esm_topic_ptr.@local.block_num_chars@local.chars_illust",
                 "matchedExpression": "@local.block_num_chars",
                 "type": "local",
                 "fieldName": "block_num_chars"
               },
               {
-                "fullExpression": "local.efm_topic_ptr.@local.block_num_chars@local.chars_illust",
+                "fullExpression": "local.esm_topic_ptr.@local.block_num_chars@local.chars_illust",
                 "matchedExpression": "@local.chars_illust",
                 "type": "local",
                 "fieldName": "chars_illust"
@@ -277,7 +277,7 @@
         },
         {
           "name": "block_illustration_flex",
-          "value": "local.efm_topic_ptr.@local.block_num_chars@local.chars_illust_flex",
+          "value": "local.esm_topic_ptr.@local.block_num_chars@local.chars_illust_flex",
           "_translations": {
             "value": {}
           },
@@ -287,13 +287,13 @@
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "local.efm_topic_ptr.@local.block_num_chars@local.chars_illust_flex",
+                "fullExpression": "local.esm_topic_ptr.@local.block_num_chars@local.chars_illust_flex",
                 "matchedExpression": "@local.block_num_chars",
                 "type": "local",
                 "fieldName": "block_num_chars"
               },
               {
-                "fullExpression": "local.efm_topic_ptr.@local.block_num_chars@local.chars_illust_flex",
+                "fullExpression": "local.esm_topic_ptr.@local.block_num_chars@local.chars_illust_flex",
                 "matchedExpression": "@local.chars_illust_flex",
                 "type": "local",
                 "fieldName": "chars_illust_flex"
@@ -311,7 +311,7 @@
         },
         {
           "name": "block_illustration_max_width",
-          "value": "local.efm_topic_ptr.@local.block_num_chars@local.chars_illust_max_width",
+          "value": "local.esm_topic_ptr.@local.block_num_chars@local.chars_illust_max_width",
           "_translations": {
             "value": {}
           },
@@ -321,13 +321,13 @@
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "local.efm_topic_ptr.@local.block_num_chars@local.chars_illust_max_width",
+                "fullExpression": "local.esm_topic_ptr.@local.block_num_chars@local.chars_illust_max_width",
                 "matchedExpression": "@local.block_num_chars",
                 "type": "local",
                 "fieldName": "block_num_chars"
               },
               {
-                "fullExpression": "local.efm_topic_ptr.@local.block_num_chars@local.chars_illust_max_width",
+                "fullExpression": "local.esm_topic_ptr.@local.block_num_chars@local.chars_illust_max_width",
                 "matchedExpression": "@local.chars_illust_max_width",
                 "type": "local",
                 "fieldName": "chars_illust_max_width"
