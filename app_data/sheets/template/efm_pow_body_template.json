@@ -190,30 +190,6 @@
       }
     },
     {
-      "type": "text",
-      "name": "debugging_check",
-      "value": "@@local.pow_title",
-      "_translations": {
-        "value": {}
-      },
-      "_nested_name": "debugging_check",
-      "_dynamicFields": {
-        "value": [
-          {
-            "fullExpression": "@@local.pow_title",
-            "matchedExpression": "@local.pow_title",
-            "type": "local",
-            "fieldName": "pow_title"
-          }
-        ]
-      },
-      "_dynamicDependencies": {
-        "@local.pow_title": [
-          "value"
-        ]
-      }
-    },
-    {
       "type": "items",
       "name": "run_through_body_sections",
       "value": "@data.efm_num_list_one_to_ten",

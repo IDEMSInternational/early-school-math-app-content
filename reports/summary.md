@@ -19,7 +19,7 @@
 | set_variable | 356 |
 | simple_checkbox | 4 |
 | template | 63 |
-| text | 96 |
+| text | 94 |
 | text_area | 2 |
 | tile_component | 3 |
 | title | 22 |
@@ -52,8 +52,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 20595 KB | 20.6 MB |
-| unused | 10491 KB | 10.5 MB |
+| total | 32890 KB | 32.9 MB |
+| unused | 22117 KB | 22.1 MB |
 </details>
 
 <details open>
@@ -331,6 +331,7 @@ Assets that appear in app-data but do not have references within sheets
 | EFMStorybooks/EFM-SB-KAHN-20.jpg | 3.5 |
 | EFMStorybooks/EFM-SB-SSMILE-8.jpg | 3.5 |
 | EFMStorybooks/EFM-SB-TFHH-2.jpg | 10.6 |
+| ESMIll/ESMPOWACoinFlipStart2.svg | 11626.6 |
 | android/icon-background.png | 7 |
 | android/icon-foreground.png | 53.9 |
 | android/icon.png | 75.2 |
@@ -345,6 +346,7 @@ Assets that have references within sheets but do not appear in app-data
 
 | path | count |
 | --- | --- |
+| ESMIll/ESMPOWACoinFlipFirstMoves2.svg | 1 |
 </details>
 
 <details >
@@ -1231,6 +1233,8 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMGAGetOutOfMyHouseEmpty.svg | 22.6 | 2 |
 | ESMIll/ESMGAGetOutOfMyHouseMidgame.svg | 23.6 | 2 |
 | ESMIll/ESMGAImThinkingOfANumberNumberLineTo12.svg | 15.5 | 1 |
+| ESMIll/ESMPOWACoinFlipFirstMoves1.svg | 5403.6 | 1 |
+| ESMIll/ESMPOWACoinFlipStart1.svg | 6752.5 | 2 |
 | ESMIll/ESMPOWAConsecutiveNumbersAnswer1.svg | 6.2 | 1 |
 | ESMIll/ESMPOWAConsecutiveNumbersAnswer2.svg | 6 | 1 |
 | ESMIll/ESMPOWAConsecutiveNumbersAnswer3.svg | 7.3 | 1 |
@@ -1240,6 +1244,8 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMPOWAConsecutiveNumbersChallenge3.svg | 2.6 | 1 |
 | ESMIll/ESMPOWAConsecutiveNumbersChallenge4.svg | 3.1 | 1 |
 | ESMIll/ESMPOWAConsecutiveNumbersIntro.svg | 18.6 | 4 |
+| ESMIll/ESMPOWAFindingthePieces1Challenge.svg | 4.9 | 1 |
+| ESMIll/ESMPOWAFindingthePieces1Intro.svg | 8.2 | 1 |
 | ESMIll/ESMPOWASumGroups10Example.svg | 36 | 1 |
 | ESMIll/ESMPOWASumGroups10a.svg | 55.4 | 1 |
 | ESMIll/ESMPOWASumGroups10aAnswers.svg | 62.1 | 1 |
@@ -1261,8 +1267,9 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMPOWASumGroups9aAnswers.svg | 62.9 | 1 |
 | ESMIll/ESMPOWASumGroups9bAnswers.svg | 62.2 | 1 |
 | ESMIll/ESMPOWBDiffPyramid10Challenge.svg | 6.7 | 1 |
+| ESMIll/ESMPOWBDiffPyramid62Solutions.svg | 21.5 | 1 |
 | ESMIll/ESMPOWBDiffPyramid6Challenge.svg | 4.1 | 1 |
-| ESMIll/ESMPOWBDiffPyramid6Intro.svg | 6.8 | 2 |
+| ESMIll/ESMPOWBDiffPyramid6Intro.svg | 6.8 | 3 |
 | ESMIll/ESMPOWBDiffPyramid6Solutions.svg | 41.4 | 1 |
 | ESMIll/ESMPOWBEqualNumberSums3.svg | 2.5 | 1 |
 | ESMIll/ESMPOWBEqualNumberSums3Answers.svg | 22.3 | 1 |
@@ -1279,6 +1286,21 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMPOWBFillInTheBlanks5-Question.svg | 9.6 | 1 |
 | ESMIll/ESMPOWBFillInTheBlanksIntro-Answers.svg | 14.3 | 5 |
 | ESMIll/ESMPOWBFillInTheBlanksIntro.svg | 4.1 | 5 |
+| ESMIll/ESMPOWBFindingthePieces2Challenge.svg | 23.9 | 1 |
+| ESMIll/ESMPOWBFindingthePieces2Intro.svg | 11.3 | 1 |
+| ESMIll/ESMPOWBFindingthePieces3Answers.svg | 7.1 | 1 |
+| ESMIll/ESMPOWBFindingthePieces3Challenge.svg | 4 | 1 |
+| ESMIll/ESMPOWBFindingthePieces4Answers.svg | 4.9 | 1 |
+| ESMIll/ESMPOWBFindingthePieces4Challenge.svg | 3.2 | 1 |
+| ESMIll/ESMPOWBFindingthePieces4Intro.svg | 6.7 | 1 |
+| ESMIll/ESMPOWBFindingthePieces5Answers.svg | 6.6 | 1 |
+| ESMIll/ESMPOWBFindingthePieces5Challenge.svg | 2.2 | 1 |
+| ESMIll/ESMPOWBFindingthePieces5Intro.svg | 4.5 | 1 |
+| ESMIll/ESMPOWBSumPyramid1Challenge.svg | 3.6 | 1 |
+| ESMIll/ESMPOWBSumPyramid2Challenge.svg | 4.9 | 1 |
+| ESMIll/ESMPOWBSumPyramid3Challenge.svg | 5.3 | 1 |
+| ESMIll/ESMPOWBSumPyramid4Challenge.svg | 7.1 | 1 |
+| ESMIll/ESMPOWBSumPyramidIntro.svg | 8.4 | 5 |
 </details>
 
 <details >
