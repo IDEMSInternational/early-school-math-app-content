@@ -52,30 +52,6 @@
       }
     },
     {
-      "type": "text",
-      "name": "debugggg",
-      "value": "@local.pow_title",
-      "_translations": {
-        "value": {}
-      },
-      "_nested_name": "debugggg",
-      "_dynamicFields": {
-        "value": [
-          {
-            "fullExpression": "@local.pow_title",
-            "matchedExpression": "@local.pow_title",
-            "type": "local",
-            "fieldName": "pow_title"
-          }
-        ]
-      },
-      "_dynamicDependencies": {
-        "@local.pow_title": [
-          "value"
-        ]
-      }
-    },
-    {
       "name": "pow_id",
       "value": "@local.efm_pow.id",
       "_translations": {
@@ -436,7 +412,7 @@
             "flex: 30"
           ],
           "exclude_from_translation": true,
-          "_nested_name": "display_group_13.prev_button_1",
+          "_nested_name": "display_group_12.prev_button_1",
           "_dynamicFields": {
             "action_list": {
               "0": {
@@ -493,7 +469,7 @@
           "style_list": [
             "flex: 30"
           ],
-          "_nested_name": "display_group_13.left_spacer",
+          "_nested_name": "display_group_12.left_spacer",
           "_dynamicFields": {
             "condition": [
               {
@@ -524,7 +500,7 @@
           "style_list": [
             "flex: 300"
           ],
-          "_nested_name": "display_group_13.title",
+          "_nested_name": "display_group_12.title",
           "_dynamicFields": {
             "value": [
               {
@@ -578,7 +554,7 @@
             "flex: 30"
           ],
           "exclude_from_translation": true,
-          "_nested_name": "display_group_13.next_button_1",
+          "_nested_name": "display_group_12.next_button_1",
           "_dynamicFields": {
             "action_list": {
               "0": {
@@ -635,7 +611,7 @@
           "style_list": [
             "flex: 30"
           ],
-          "_nested_name": "display_group_13.right_spacer",
+          "_nested_name": "display_group_12.right_spacer",
           "_dynamicFields": {
             "condition": [
               {
@@ -653,8 +629,8 @@
           }
         }
       ],
-      "name": "display_group_13",
-      "_nested_name": "display_group_13"
+      "name": "display_group_12",
+      "_nested_name": "display_group_12"
     },
     {
       "type": "template",

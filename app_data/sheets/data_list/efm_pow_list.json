@@ -5,6 +5,94 @@
   "status": "released",
   "rows": [
     {
+      "id": "esm_pow_a_coin_flip_1",
+      "level": "A",
+      "area": "Number",
+      "subarea": "Counting",
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWACoinFlipFirstMoves1.svg",
+      "block1_illust_max_size": "360px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWACoinFlipStart1.svg",
+      "block2_illust_max_size": "360px",
+      "block3_type": "all_text",
+      "block4_type": "all_text",
+      "title": "Coin Flipping - 1",
+      "_translations": {
+        "title": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Coin Flipping - 1"
+        },
+        "block1_text": {
+          "eng": "**Introduction** A coin may be placed heads up or down in any empty spot. When a coin is placed, all coins touching its sides must be flipped over."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Fill this grid so all the coins end up heads up or heads down."
+        },
+        "block3_text": {
+          "eng": "**Exploration:** Put a few coins in other starting positions and see which of these work out. Can you find any patterns in which ones work and which ones don’t?"
+        },
+        "block4_text": {
+          "eng": "**The Challenge:** There are many simple strategies for doing this puzzle. Perhaps the easiest is to start by  putting heads up coins in the four squares that have a single neighbor. Then, in the 3 by 3 empty box that remains, put heads down coins along a diagonal of the 3 by 3 box. Now you can finish solving this exactly as you did the “Coin Flipping - 1” puzzle.\n\nA different strategy is to start at the top and fill them in order from top to bottom and left to right. Look at how many coins have yet to be filled in that will neighbor the current square - if that number is even, make that coin heads up, and if it is odd, make that coin heads down.\n\n**Exploration:** They should all be possible. It is just a matter of keeping track of evens and odds."
+        }
+      },
+      "block1_text": "**Introduction** A coin may be placed heads up or down in any empty spot. When a coin is placed, all coins touching its sides must be flipped over.",
+      "block2_text": "**The Challenge:** Fill this grid so all the coins end up heads up or heads down.",
+      "block3_text": "**Exploration:** Put a few coins in other starting positions and see which of these work out. Can you find any patterns in which ones work and which ones don’t?",
+      "block4_text": "**The Challenge:** There are many simple strategies for doing this puzzle. Perhaps the easiest is to start by  putting heads up coins in the four squares that have a single neighbor. Then, in the 3 by 3 empty box that remains, put heads down coins along a diagonal of the 3 by 3 box. Now you can finish solving this exactly as you did the “Coin Flipping - 1” puzzle.\n\nA different strategy is to start at the top and fill them in order from top to bottom and left to right. Look at how many coins have yet to be filled in that will neighbor the current square - if that number is even, make that coin heads up, and if it is odd, make that coin heads down.\n\n**Exploration:** They should all be possible. It is just a matter of keeping track of evens and odds."
+    },
+    {
+      "id": "esm_pow_a_coin_flip_2",
+      "level": "A",
+      "area": "Number",
+      "subarea": "Counting",
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWACoinFlipFirstMoves2.svg",
+      "block1_illust_max_size": "360px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWACoinFlipStart1.svg",
+      "block2_illust_max_size": "360px",
+      "block3_type": "all_text",
+      "block4_type": "all_text",
+      "title": "Coin Flipping - 2",
+      "_translations": {
+        "title": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Coin Flipping - 2"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** A coin may be placed heads up or down in any empty spot. When a coin is placed, all coins touching its sides must be flipped over."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Fill this grid so all the coins end up heads up or heads down."
+        },
+        "block3_text": {
+          "eng": "**Exploration:** See what happens with other patterns of squares. Are there any that are impossible?"
+        },
+        "block4_text": {
+          "eng": "**The Challenge:** This puzzle can be solved enjoyably and satisfactorily with a lot of trial and error. To reduce the trial and error, predict the number of flips an existing coin will have. For example, the coins in the upper left and lower right corners have two neighbors, so they will each be flipped twice (ultimately leaving them the same as they started). Similarly, the coin in the center has four neighbors, so it will be flipped four times and return to its original state. So, no matter the choices that are made, the three diagonal coins will all end up being heads down.\n\nOnce you know how to handle the diagonal coins, the rest of this small puzzle is pretty straightforward.\n\n**Exploration:** For any puzzle with three coins in a single row, column, or diagonal, to be doable the coins must all be heads up or heads down. For other arrangements, it will be determined by whether the initial number of empty slots around each coin is odd or even."
+        }
+      },
+      "block1_text": "**Introduction:** A coin may be placed heads up or down in any empty spot. When a coin is placed, all coins touching its sides must be flipped over.",
+      "block2_text": "**The Challenge:** Fill this grid so all the coins end up heads up or heads down.",
+      "block3_text": "**Exploration:** See what happens with other patterns of squares. Are there any that are impossible?",
+      "block4_text": "**The Challenge:** This puzzle can be solved enjoyably and satisfactorily with a lot of trial and error. To reduce the trial and error, predict the number of flips an existing coin will have. For example, the coins in the upper left and lower right corners have two neighbors, so they will each be flipped twice (ultimately leaving them the same as they started). Similarly, the coin in the center has four neighbors, so it will be flipped four times and return to its original state. So, no matter the choices that are made, the three diagonal coins will all end up being heads down.\n\nOnce you know how to handle the diagonal coins, the rest of this small puzzle is pretty straightforward.\n\n**Exploration:** For any puzzle with three coins in a single row, column, or diagonal, to be doable the coins must all be heads up or heads down. For other arrangements, it will be determined by whether the initial number of empty slots around each coin is odd or even."
+    },
+    {
       "id": "esm_pow_a_cons_num_1",
       "level": "A",
       "area": "Number",
@@ -187,6 +275,224 @@
       "block2_text": "**The Challenge:** Place the numbers from 1 to 12 in this diagram so that the boxes for consecutive numbers do not share a side or touch diagonally.",
       "block3_text": "**Exploration:** Make some of these puzzles for others to solve.",
       "block4_text": "**The Challenge:** The first and last numbers only have one neighboring number, unlike the other numbers which have two, so put them in the most central locations. Here is one possible solution."
+    },
+    {
+      "id": "esm_pow_a_find_pieces_1",
+      "level": "A",
+      "area": "Number",
+      "subarea": "Counting",
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWAFindingthePieces1Intro.svg",
+      "block1_illust_max_size": "360px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWAFindingthePieces1Challenge.svg",
+      "block2_illust_max_size": "360px",
+      "block3_type": "all_text",
+      "block4_type": "all_text",
+      "title": "Finding the Pieces - 1",
+      "_translations": {
+        "title": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Finding the Pieces - 1"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** A **trapezoid** is a four-sided figure that has exactly one pair of parallel sides (parallel lines in a surface are lines that never meet). In the large triangle on the left, there are five triangles marked – the four colored triangles and the entire triangle. The same large triangle on the right has one of its three trapezoids colored in green."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** In each of these three figures, count the number of triangles and trapezoids."
+        },
+        "block3_text": {
+          "eng": "**Exploration:** Make drawings like these for other people to count the triangles and trapezoids."
+        },
+        "block4_text": {
+          "eng": "**The Challenge:** The square in the upper left has four smaller triangles plus four more triangles made out of pairs of smaller triangles. So it has eight triangles in all. It has no trapezoids in it.\n\nThe square in the upper right corner eight triangles in the inside square and eight more in the big square, so 16 triangles in all. It has four trapezoids.\n\nThe triangle in the bottom has a total of 12 triangles and six trapezoids."
+        }
+      },
+      "block1_text": "**Introduction:** A **trapezoid** is a four-sided figure that has exactly one pair of parallel sides (parallel lines in a surface are lines that never meet). In the large triangle on the left, there are five triangles marked – the four colored triangles and the entire triangle. The same large triangle on the right has one of its three trapezoids colored in green.",
+      "block2_text": "**The Challenge:** In each of these three figures, count the number of triangles and trapezoids.",
+      "block3_text": "**Exploration:** Make drawings like these for other people to count the triangles and trapezoids.",
+      "block4_text": "**The Challenge:** The square in the upper left has four smaller triangles plus four more triangles made out of pairs of smaller triangles. So it has eight triangles in all. It has no trapezoids in it.\n\nThe square in the upper right corner eight triangles in the inside square and eight more in the big square, so 16 triangles in all. It has four trapezoids.\n\nThe triangle in the bottom has a total of 12 triangles and six trapezoids."
+    },
+    {
+      "id": "esm_pow_a_find_pieces_2",
+      "level": "B",
+      "area": "Number",
+      "subarea": "Counting",
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWBFindingthePieces2Intro.svg",
+      "block1_illust_max_size": "360px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWBFindingthePieces2Challenge.svg",
+      "block2_illust_max_size": "360px",
+      "block3_type": "all_text",
+      "block4_type": "all_text",
+      "title": "Finding the Pieces - 2",
+      "_translations": {
+        "title": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Finding the Pieces - 2"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** A **trapezoid** is a four-sided figure that has exactly one pair of parallel sides (parallel lines in a surface are lines that never meet). A **parallelogram** is a four-sided figure that has two pairs of parallel sides. In the large triangle on the left, there are five triangles marked – the four colored triangles and the entire triangle. The same large triangle in the middle has one of its three trapezoids colored in green. The same large triangle on the right has one of its three parallelograms colored in red."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** In each of these figures, count the number of triangles, trapezoids, and parallelograms."
+        },
+        "block3_text": {
+          "eng": "**Exploration:** Make drawings like these for other people to count the triangles, parallelograms, and trapezoids."
+        },
+        "block4_text": {
+          "eng": "**The Challenge:** Work on organized counting using these two figures. The second one requires a lot of careful counting.\n\n**The large triangle on the left:**\n\nIt has 9 small triangles (base 1), 3 intermediate triangles (base 2), and 1 large triangle (base 3), for a total of 13 triangles.\n\nIt has 9 small trapezoids (base 2 top 1), 3 intermediate trapezoids (base 3 top 2), and 3 large trapezoids (base 3 top 1), for a total of 15 trapezoids.\n\nIt has 9 small parallelograms (sides 1 and 1) and 6 intermediate parallelograms (sides 2 and 1), for a total of 15 parallelograms.\n\n**The large triangle on the right:**\n\nThe large triangle on the right has 16 small triangles (base 1), 7 small intermediate triangles (base 2), 3 large intermediate triangles (base 3), and 1 large triangle (base 4), for a total of 27 triangles. \nIt has 18 small trapezoids (base 2 top 1), 9 longer small trapezoids (base 3 top 2), 3 very long small trapezoids (base 4 top 3), 9 intermediate trapezoids (base 3 top 1), 3 intermediate longer trapezoids (base 4 top 2), and 3 large trapezoids (base 4 top 1), for a total of 18 + 9 + 3 + 9 + 3 + 3 = 45 trapezoids.\n\nIt has 18 small parallelograms (sides 1 and 1), 18 long small parallelograms (sides 2 and 1), 6 longer small parallelograms (sides 3 and 1), and 3 intermediate parallelograms (sides 2 and 2), for a total of 18 + 18 + 6 + 3 = 45 parallelograms."
+        }
+      },
+      "block1_text": "**Introduction:** A **trapezoid** is a four-sided figure that has exactly one pair of parallel sides (parallel lines in a surface are lines that never meet). A **parallelogram** is a four-sided figure that has two pairs of parallel sides. In the large triangle on the left, there are five triangles marked – the four colored triangles and the entire triangle. The same large triangle in the middle has one of its three trapezoids colored in green. The same large triangle on the right has one of its three parallelograms colored in red.",
+      "block2_text": "**The Challenge:** In each of these figures, count the number of triangles, trapezoids, and parallelograms.",
+      "block3_text": "**Exploration:** Make drawings like these for other people to count the triangles, parallelograms, and trapezoids.",
+      "block4_text": "**The Challenge:** Work on organized counting using these two figures. The second one requires a lot of careful counting.\n\n**The large triangle on the left:**\n\nIt has 9 small triangles (base 1), 3 intermediate triangles (base 2), and 1 large triangle (base 3), for a total of 13 triangles.\n\nIt has 9 small trapezoids (base 2 top 1), 3 intermediate trapezoids (base 3 top 2), and 3 large trapezoids (base 3 top 1), for a total of 15 trapezoids.\n\nIt has 9 small parallelograms (sides 1 and 1) and 6 intermediate parallelograms (sides 2 and 1), for a total of 15 parallelograms.\n\n**The large triangle on the right:**\n\nThe large triangle on the right has 16 small triangles (base 1), 7 small intermediate triangles (base 2), 3 large intermediate triangles (base 3), and 1 large triangle (base 4), for a total of 27 triangles. \nIt has 18 small trapezoids (base 2 top 1), 9 longer small trapezoids (base 3 top 2), 3 very long small trapezoids (base 4 top 3), 9 intermediate trapezoids (base 3 top 1), 3 intermediate longer trapezoids (base 4 top 2), and 3 large trapezoids (base 4 top 1), for a total of 18 + 9 + 3 + 9 + 3 + 3 = 45 trapezoids.\n\nIt has 18 small parallelograms (sides 1 and 1), 18 long small parallelograms (sides 2 and 1), 6 longer small parallelograms (sides 3 and 1), and 3 intermediate parallelograms (sides 2 and 2), for a total of 18 + 18 + 6 + 3 = 45 parallelograms."
+    },
+    {
+      "id": "esm_pow_a_find_pieces_3",
+      "level": "B",
+      "area": "Number",
+      "subarea": "Counting",
+      "notes_block_start": 4,
+      "block1_type": "all_text",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWBFindingthePieces3Challenge.svg",
+      "block2_illust_max_size": "360px",
+      "block3_type": "all_text",
+      "block4_type": "illust_below",
+      "block4_illust": "ESMIll/ESMPOWBFindingthePieces3Answers.svg",
+      "block4_illust_max_size": "360px",
+      "title": "Finding the Pieces - 3",
+      "_translations": {
+        "title": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Finding the Pieces - 3"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** A **trapezoid** is a four-sided figure that has exactly one pair of parallel sides (parallel lines in a surface are lines that never meet). A **parallelogram** is a four-sided figure that has two pairs of parallel sides. A **rectangle** is a four-sided figure with four right angles. A **square** is a rectangle with four equal sides. A **right triangle** is a triangle with a right angle."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Break this figure up using trapezoids, parallelograms, rectangles, squares and right triangles. Use as few pieces as you can."
+        },
+        "block3_text": {
+          "eng": "**Exploration:** How many ways can you find to do this using this fewest number of pieces?"
+        },
+        "block4_text": {
+          "eng": "**The Challenge:** Here are two ways to break this drawing into four figures. The answer on the left uses a square, a parallelogram, a right triangle, and a rectangle. The answer on the right uses a square, two trapezoids, and a rectangle. There are other answers, such as changing the first answer by turning the square and parallelogram into a trapezoid and a right triangle. How many answers can your students find?"
+        }
+      },
+      "block1_text": "**Introduction:** A **trapezoid** is a four-sided figure that has exactly one pair of parallel sides (parallel lines in a surface are lines that never meet). A **parallelogram** is a four-sided figure that has two pairs of parallel sides. A **rectangle** is a four-sided figure with four right angles. A **square** is a rectangle with four equal sides. A **right triangle** is a triangle with a right angle.",
+      "block2_text": "**The Challenge:** Break this figure up using trapezoids, parallelograms, rectangles, squares and right triangles. Use as few pieces as you can.",
+      "block3_text": "**Exploration:** How many ways can you find to do this using this fewest number of pieces?",
+      "block4_text": "**The Challenge:** Here are two ways to break this drawing into four figures. The answer on the left uses a square, a parallelogram, a right triangle, and a rectangle. The answer on the right uses a square, two trapezoids, and a rectangle. There are other answers, such as changing the first answer by turning the square and parallelogram into a trapezoid and a right triangle. How many answers can your students find?"
+    },
+    {
+      "id": "esm_pow_a_find_pieces_4",
+      "level": "B",
+      "area": "Number",
+      "subarea": "Counting",
+      "notes_block_start": 3,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWBFindingthePieces4Intro.svg",
+      "block1_illust_max_size": "360px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWBFindingthePieces4Challenge.svg",
+      "block2_illust_max_size": "360px",
+      "block3_type": "illust_below",
+      "block3_illust": "ESMIll/ESMPOWBFindingthePieces4Answers.svg",
+      "block3_illust_max_size": "360px",
+      "title": "Finding the Pieces - 4",
+      "_translations": {
+        "title": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Finding the Pieces - 4"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** The figure on the left has a shaded part in red and an unshaded part. The figure on the right shows how to fill the unshaded part with seven exact copies of the shaded part."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** In these two figures, there is a shaded part and an unshaded part. Find out how many times the shaded part will exactly fit into the unshaded part."
+        },
+        "block3_text": {
+          "eng": "**The Challenge:** In the left figure, there are 7 triangles like the red one. In the right figure, there are four L-shaped pieces like the red one."
+        }
+      },
+      "block1_text": "**Introduction:** The figure on the left has a shaded part in red and an unshaded part. The figure on the right shows how to fill the unshaded part with seven exact copies of the shaded part.",
+      "block2_text": "**The Challenge:** In these two figures, there is a shaded part and an unshaded part. Find out how many times the shaded part will exactly fit into the unshaded part.",
+      "block3_text": "**The Challenge:** In the left figure, there are 7 triangles like the red one. In the right figure, there are four L-shaped pieces like the red one."
+    },
+    {
+      "id": "esm_pow_a_find_pieces_5",
+      "level": "B",
+      "area": "Number",
+      "subarea": "Counting",
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWBFindingthePieces5Intro.svg",
+      "block1_illust_max_size": "360px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWBFindingthePieces5Challenge.svg",
+      "block2_illust_max_size": "360px",
+      "block3_type": "all_text",
+      "block4_type": "illust_below",
+      "block4_illust": "ESMIll/ESMPOWBFindingthePieces5Answers.svg",
+      "block4_illust_max_size": "360px",
+      "title": "Finding the Pieces - 5",
+      "_translations": {
+        "title": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Finding the Pieces - 5"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** A **trapezoid** is a four-sided figure that has exactly one pair of parallel sides (parallel lines in a surface are lines that never meet). The figure on the left can be broken into three pieces which are triangles. It can also be broken into two trapezoids."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** For each of these two figures, find a way to break the figure into as few triangles as possible. Also find a way to break each figure into as few trapezoids as possible."
+        },
+        "block3_text": {
+          "eng": "**Exploration:** Are there other ways to break these two figures into triangles or trapezoids in as few pieces?"
+        },
+        "block4_text": {
+          "eng": "**The Challenge & Exploration:** One example of breaking up the two figures into triangles and trapezoids is given below. There are other possible choices for how to do it, so be sure to talk about all the different possibilities that everyone finds."
+        }
+      },
+      "block1_text": "**Introduction:** A **trapezoid** is a four-sided figure that has exactly one pair of parallel sides (parallel lines in a surface are lines that never meet). The figure on the left can be broken into three pieces which are triangles. It can also be broken into two trapezoids.",
+      "block2_text": "**The Challenge:** For each of these two figures, find a way to break the figure into as few triangles as possible. Also find a way to break each figure into as few trapezoids as possible.",
+      "block3_text": "**Exploration:** Are there other ways to break these two figures into triangles or trapezoids in as few pieces?",
+      "block4_text": "**The Challenge & Exploration:** One example of breaking up the two figures into triangles and trapezoids is given below. There are other possible choices for how to do it, so be sure to talk about all the different possibilities that everyone finds."
     },
     {
       "id": "esm_pow_a_sum_groups_6",
@@ -977,6 +1283,203 @@
       "block3_text": "**The Challenge:** Use the numbers from 0 to 9 at most once to fill in these blanks.",
       "block4_text": "**Exploration:** Can you solve similar puzzles that break up a number range into common sums? How about four pairs using the numbers 0 to 7 or 1 to 8? How about 3 triplets from 0 to 8 or 1 to 9? How about 2 groups of 5 for the numbers from 0 to 9? Do you see any patterns for when it works and when it doesn’t?",
       "block5_text": "**The Challenge:** As with the other Fill in the Blanks puzzles, a child can just play with this and eventually arrive at the answers. That exploration involves a lot of good experiences, and there is no reason to avoid it.\n\nIf you want to be more systematic, the first question is: What is the common sum for these pairs of numbers? The five pairs have the same sum, and when we add them all up we get the same thing as adding the numbers up from 0 to 9. The sum from 0 to 9 is 45, so when we divide that by 5 we get 9 - the sum for each pair must be 9. Once that is established, the rest is simple:\n\n0 + 9 = 1 + 8 = 2 + 7 = 3 + 6 = 4 + 5.\n\n**Exploration:** The first step is to see whether the sum of the range of numbers can be broken into that many equal pieces. Also, note that it makes no difference whether we start at 0 or 1, so we’ll just look at starting at 0.\n\n**0 to 7 using 4 pairs:** The sum of the numbers from 0 to 7 is 28. Dividing 28 into 4 pairs gives a sum of 7 for each pair.\n\nThis is simple enough: 7 = 0 + 7 = 1 + 6 = 2 + 5 = 3 + 4.\n\n**0 to 2n - 1 using n pairs:** After looking at 0 to 7 and 0 to 9, the pattern is clear: write n as the n possible sums.\n\n**0 to 8 using 3 triplets:** The sum from 0 to 8 is 36. Dividing 36 into 3 triplets gives a sum of 12 for each triplet. The triplets will be largely driven by the three largest numbers (6, 7, 8), no two of which can be in a triplet together. This produces triplets (8, 0, 4), (7, 2, 3), and (6, 1, 5). This could also be done as (8, 1, 3), (7, 0, 5), and (6, 2, 4).\n\n**0 to 9 using 2 groups of 5:** The sum from 0 to 9 is 45. 45 cannot be divided evenly into two equal groups!\n\nThe very interested child may want to go exploring further to see more examples of when this works and when it doesn’t. What fun!"
+    },
+    {
+      "id": "esm_pow_b_sum_pyramids_1",
+      "level": "B",
+      "area": "Number",
+      "subarea": "Add Sub",
+      "notes_block_start": 3,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWBSumPyramidIntro.svg",
+      "block1_illust_max_size": "300px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWBSumPyramid1Challenge.svg",
+      "block2_illust_max_size": "180px",
+      "block3_type": "all_text",
+      "title": "Sum Pyramids - 1",
+      "_translations": {
+        "title": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Sum Pyramids - 1"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** These pyramids are called **Sum Pyramids.** The number above each pair of connected numbers is their sum."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Place some of the numbers from 1 to 10, not repeating any number, to make a Sum Pyramid with the smallest possible number on top. Can you do better than 11?"
+        },
+        "block3_text": {
+          "eng": "**The Challenge:** The center square in the bottom right will contribute to both squares in the middle row, and so its value will show up twice in the top number. To keep the top number as small as possible, we should put a 1 in the middle of the bottom row. We would like to put 2 and 3 in the two remaining squares in the bottom row, but that is not possible because 1 + 2 = 3 would cause 3 to be used twice.\n\nTo make the sum as small as possible, we will use (2 1 4) in the bottom row. This produces the pyramid:\n\n(8)\n(3 5)\n(2 1 4)\n\nThis is a considerable improvement over having 11 on top!"
+        }
+      },
+      "block1_text": "**Introduction:** These pyramids are called **Sum Pyramids.** The number above each pair of connected numbers is their sum.",
+      "block2_text": "**The Challenge:** Place some of the numbers from 1 to 10, not repeating any number, to make a Sum Pyramid with the smallest possible number on top. Can you do better than 11?",
+      "block3_text": "**The Challenge:** The center square in the bottom right will contribute to both squares in the middle row, and so its value will show up twice in the top number. To keep the top number as small as possible, we should put a 1 in the middle of the bottom row. We would like to put 2 and 3 in the two remaining squares in the bottom row, but that is not possible because 1 + 2 = 3 would cause 3 to be used twice.\n\nTo make the sum as small as possible, we will use (2 1 4) in the bottom row. This produces the pyramid:\n\n(8)\n(3 5)\n(2 1 4)\n\nThis is a considerable improvement over having 11 on top!"
+    },
+    {
+      "id": "esm_pow_b_sum_pyramids_2",
+      "level": "B",
+      "area": "Number",
+      "subarea": "Add Sub",
+      "notes_block_start": 3,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWBSumPyramidIntro.svg",
+      "block1_illust_max_size": "300px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWBSumPyramid2Challenge.svg",
+      "block2_illust_max_size": "200px",
+      "block3_type": "all_text",
+      "title": "Sum Pyramids - 2",
+      "_translations": {
+        "title": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Sum Pyramids - 2"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** These pyramids are called **Sum Pyramids.** The number above each pair of connected numbers is their sum."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Place some of the numbers from 1 to 25, not repeating any number, to make a Sum Pyramid with the smallest possible number on top. Can you do better than 25?"
+        },
+        "block3_text": {
+          "eng": "**The Challenge:** The pyramid is completely determined by the entries in the bottom row.\n\nEach of the middle numbers in the bottom row will contribute a total of three times to the number on the top of the pyramid. The corner numbers in the bottom row will each only contribute once to the number on the top of the pyramid. Therefore, let’s use 1 and 2 for those middle numbers on the bottom row.\n1 and 2 creates a 3 on the next row, so we can’t use it in the bottom row. Exploring how to finish out the bottom row we should consider (4 1 2 5), (5 1 2 4), (4 1 2 6), and (6 1 2 4). All of these produce duplicates. Looking further, we can try (5 1 2 7) or (6 1 2 8). However, (5 1 2 7) produces a duplicate entry, and (6 1 2 8) has a top number of 23, which is only a little better than 25.\n\nGoing back, let’s consider using 1 and 3 in the middle of the bottom row. Some exploration produces the following, which is our best answer.\n\n(20)\n(11 9)\n(7 4 5)\n(6 1 3 2)"
+        }
+      },
+      "block1_text": "**Introduction:** These pyramids are called **Sum Pyramids.** The number above each pair of connected numbers is their sum.",
+      "block2_text": "**The Challenge:** Place some of the numbers from 1 to 25, not repeating any number, to make a Sum Pyramid with the smallest possible number on top. Can you do better than 25?",
+      "block3_text": "**The Challenge:** The pyramid is completely determined by the entries in the bottom row.\n\nEach of the middle numbers in the bottom row will contribute a total of three times to the number on the top of the pyramid. The corner numbers in the bottom row will each only contribute once to the number on the top of the pyramid. Therefore, let’s use 1 and 2 for those middle numbers on the bottom row.\n1 and 2 creates a 3 on the next row, so we can’t use it in the bottom row. Exploring how to finish out the bottom row we should consider (4 1 2 5), (5 1 2 4), (4 1 2 6), and (6 1 2 4). All of these produce duplicates. Looking further, we can try (5 1 2 7) or (6 1 2 8). However, (5 1 2 7) produces a duplicate entry, and (6 1 2 8) has a top number of 23, which is only a little better than 25.\n\nGoing back, let’s consider using 1 and 3 in the middle of the bottom row. Some exploration produces the following, which is our best answer.\n\n(20)\n(11 9)\n(7 4 5)\n(6 1 3 2)"
+    },
+    {
+      "id": "esm_pow_b_sum_pyramids_3",
+      "level": "B",
+      "area": "Number",
+      "subarea": "Add Sub",
+      "notes_block_start": 3,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWBSumPyramidIntro.svg",
+      "block1_illust_max_size": "300px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWBSumPyramid3Challenge.svg",
+      "block2_illust_max_size": "180px",
+      "block3_type": "all_text",
+      "title": "Sum Pyramids - 3",
+      "_translations": {
+        "title": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Sum Pyramids - 3"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** These pyramids are called **Sum Pyramids.** The number above each pair of connected numbers is their sum."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Place some of the numbers from 1 to 15, not repeating any number, to complete this Sum Pyramid. Can you find more than one solution?"
+        },
+        "block3_text": {
+          "eng": "**The Challenge:** Following the numbers up, 15 will equal 3 plus twice the middle number in the bottom row plus the leftmost number in the bottom row. So, 12 will be twice the middle number plus the leftmost number.\n\nThe possibilities for the bottom row are: (2 5 3), (4 4 3), (6 3 3), (8 2 3), and (10 1 3). This gives us three possible solutions:\n\n(15)\n(7 8)\n(2 5 3)\n\nor\n\n(15)\n(10 5)\n(8 2 3)\n\nor\n\n(15)\n(11 4)\n(10 1 3)"
+        }
+      },
+      "block1_text": "**Introduction:** These pyramids are called **Sum Pyramids.** The number above each pair of connected numbers is their sum.",
+      "block2_text": "**The Challenge:** Place some of the numbers from 1 to 15, not repeating any number, to complete this Sum Pyramid. Can you find more than one solution?",
+      "block3_text": "**The Challenge:** Following the numbers up, 15 will equal 3 plus twice the middle number in the bottom row plus the leftmost number in the bottom row. So, 12 will be twice the middle number plus the leftmost number.\n\nThe possibilities for the bottom row are: (2 5 3), (4 4 3), (6 3 3), (8 2 3), and (10 1 3). This gives us three possible solutions:\n\n(15)\n(7 8)\n(2 5 3)\n\nor\n\n(15)\n(10 5)\n(8 2 3)\n\nor\n\n(15)\n(11 4)\n(10 1 3)"
+    },
+    {
+      "id": "esm_pow_b_sum_pyramids_4",
+      "level": "B",
+      "area": "Number",
+      "subarea": "Add Sub",
+      "notes_block_start": 3,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWBSumPyramidIntro.svg",
+      "block1_illust_max_size": "300px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWBSumPyramid4Challenge.svg",
+      "block2_illust_max_size": "200px",
+      "block3_type": "all_text",
+      "title": "Sum Pyramids - 4",
+      "_translations": {
+        "title": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Sum Pyramids - 4"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** These pyramids are called **Sum Pyramids.** The number above each pair of connected numbers is their sum."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Place some of the numbers from 1 to 24, not repeating any number, to complete this Sum Pyramid. Can you find more than one solution?"
+        },
+        "block3_text": {
+          "eng": "**The Challenge:** The puzzle is completely determined by its bottom row.\n\nTracing numbers up, we have two immediate constraints on the bottom row. The leftmost two numbers on the bottom row must add up to 6, so they are 1 + 5 or 2 + 4. Also, three times the sum of the two middle numbers, plus the sum of the two corner numbers, must be 24.\n\nThere are four possible contributions from the left side of the bottom row. In each case, we see the right side will contribute the remainder using 3 times its central number plus 1 times its corner number.\n\n* Case 1: (1 5) which contributes 1 + 3 x 5 = 16. We need 8 more from the right side. That cannot be done without duplicating numbers.\n* Case 2: (5 1) which contributes 5 + 3 x 1 = 8. We need 16 more from the right side. This can work with (3 7) or (2 10). If the bottom is (5 1 3 7), there is a duplication. If the bottom is (5 1 2 10), it works!\n* Case 3: (2 4) which contributes 2 + 3 x 4 = 14. We need 10 more from the right side. This can work with (3 1) or (1 7). (f the bottom is (2 4 3 1), there is a duplication. If the bottom is (2 4 1 7), it works!\n* Case 4: (4 2) which contributes 4 + 3 x 2 = 10. We need 14 more from the right side. This can work with (3 5) or (1 11). If the bottom is (4 2 3 5), there is a duplication. If the bottom is (4 2 1 11), it works!\n\nPutting this together, there are the three solutions:\n\n(24)\n(9 15)\n(6 3 12)\n(5 1 2 10)\n\nor\n\n(24)\n(11 13)\n(6 5 8)\n(2 4 1 7)\n\nor\n\n(24)\n(9 15)\n(6 3 12)\n(4 2 1 11)"
+        }
+      },
+      "block1_text": "**Introduction:** These pyramids are called **Sum Pyramids.** The number above each pair of connected numbers is their sum.",
+      "block2_text": "**The Challenge:** Place some of the numbers from 1 to 24, not repeating any number, to complete this Sum Pyramid. Can you find more than one solution?",
+      "block3_text": "**The Challenge:** The puzzle is completely determined by its bottom row.\n\nTracing numbers up, we have two immediate constraints on the bottom row. The leftmost two numbers on the bottom row must add up to 6, so they are 1 + 5 or 2 + 4. Also, three times the sum of the two middle numbers, plus the sum of the two corner numbers, must be 24.\n\nThere are four possible contributions from the left side of the bottom row. In each case, we see the right side will contribute the remainder using 3 times its central number plus 1 times its corner number.\n\n* Case 1: (1 5) which contributes 1 + 3 x 5 = 16. We need 8 more from the right side. That cannot be done without duplicating numbers.\n* Case 2: (5 1) which contributes 5 + 3 x 1 = 8. We need 16 more from the right side. This can work with (3 7) or (2 10). If the bottom is (5 1 3 7), there is a duplication. If the bottom is (5 1 2 10), it works!\n* Case 3: (2 4) which contributes 2 + 3 x 4 = 14. We need 10 more from the right side. This can work with (3 1) or (1 7). (f the bottom is (2 4 3 1), there is a duplication. If the bottom is (2 4 1 7), it works!\n* Case 4: (4 2) which contributes 4 + 3 x 2 = 10. We need 14 more from the right side. This can work with (3 5) or (1 11). If the bottom is (4 2 3 5), there is a duplication. If the bottom is (4 2 1 11), it works!\n\nPutting this together, there are the three solutions:\n\n(24)\n(9 15)\n(6 3 12)\n(5 1 2 10)\n\nor\n\n(24)\n(11 13)\n(6 5 8)\n(2 4 1 7)\n\nor\n\n(24)\n(9 15)\n(6 3 12)\n(4 2 1 11)"
+    },
+    {
+      "id": "esm_pow_b_sum_pyramids_5",
+      "level": "B",
+      "area": "Number",
+      "subarea": "Add Sub",
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWBSumPyramidIntro.svg",
+      "block1_illust_max_size": "300px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWBDiffPyramid6Intro.svg",
+      "block2_illust_max_size": "270px",
+      "block3_type": "all_text",
+      "block4_type": "illust_below",
+      "block4_illust": "ESMIll/ESMPOWBDiffPyramid62Solutions.svg",
+      "title": "Sum Pyramids - 5",
+      "_translations": {
+        "title": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Sum Pyramids - 5"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** These pyramids are called **Sum Pyramids.** The number above each pair of connected numbers is their sum."
+        },
+        "block2_text": {
+          "eng": "These pyramids are called **Difference Pyramids.** The number on top is the difference of the two numbers below."
+        },
+        "block3_text": {
+          "eng": "**The Challenge:** Describe how any Sum Pyramid can easily be turned into a Difference Pyramid. Can you find an example of a Difference Pyramid that cannot be easily turned into a Sum Pyramid?"
+        },
+        "block4_text": {
+          "eng": "**The Challenge:** To make a Difference Pyramid out of any Sum Pyramid, simply rotate the Sum Pyramid onto its left or right side!\n\nWhat can go wrong in wanting to turn a Difference Pyramid into a Sum Pyramid is that the differences may not always go in the same direction. Neither of the following Difference Pyramids can be turned into a Sum Pyramid without a complete rearrangement of the numbers. That’s because they both have a 6 in the middle of a side, and any Sum Pyramid with the numbers 1 to 6 must have the 6 at the tip."
+        }
+      },
+      "block1_text": "**Introduction:** These pyramids are called **Sum Pyramids.** The number above each pair of connected numbers is their sum.",
+      "block2_text": "These pyramids are called **Difference Pyramids.** The number on top is the difference of the two numbers below.",
+      "block3_text": "**The Challenge:** Describe how any Sum Pyramid can easily be turned into a Difference Pyramid. Can you find an example of a Difference Pyramid that cannot be easily turned into a Sum Pyramid?",
+      "block4_text": "**The Challenge:** To make a Difference Pyramid out of any Sum Pyramid, simply rotate the Sum Pyramid onto its left or right side!\n\nWhat can go wrong in wanting to turn a Difference Pyramid into a Sum Pyramid is that the differences may not always go in the same direction. Neither of the following Difference Pyramids can be turned into a Sum Pyramid without a complete rearrangement of the numbers. That’s because they both have a 6 in the middle of a side, and any Sum Pyramid with the numbers 1 to 6 must have the 6 at the tip."
     }
   ],
   "_xlsxPath": "EFM_pows_high_level_sheets.xlsx",
