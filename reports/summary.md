@@ -8,18 +8,18 @@
 | accordion_section | 17 |
 | button | 42 |
 | debug_toggle | 1 |
-| display_group | 91 |
-| image | 21 |
+| display_group | 92 |
+| image | 22 |
 | items | 16 |
 | qr_code | 1 |
 | radio_button_grid | 1 |
 | round_button | 5 |
 | select_text | 1 |
 | set_field | 11 |
-| set_variable | 356 |
+| set_variable | 357 |
 | simple_checkbox | 4 |
 | template | 63 |
-| text | 94 |
+| text | 95 |
 | text_area | 2 |
 | tile_component | 3 |
 | title | 22 |
@@ -52,8 +52,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 32890 KB | 32.9 MB |
-| unused | 22117 KB | 22.1 MB |
+| total | 32947 KB | 32.9 MB |
+| unused | 22060 KB | 22.1 MB |
 </details>
 
 <details open>
@@ -76,8 +76,6 @@ Assets that appear in app-data but do not have references within sheets
 | EFM105GoFishMatch.svg | 11.9 |
 | EFM105MemoryChallenge.svg | 11.1 |
 | EFM10EFMPairLookingAway.svg | 23.6 |
-| EFM10PairLookingAway.svg | 23.6 |
-| EFM10PairReadingOnBench.svg | 33.7 |
 | EFM110InvisibleAddSub.svg | 16 |
 | EFM110NumberLineforNim.svg | 21 |
 | EFM110NumberLineforNimReverse.svg | 20.7 |
@@ -356,6 +354,8 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | path | size_kb | count |
 | --- | --- | --- |
+| EFM10PairLookingAway.svg | 23.6 | 1 |
+| EFM10PairReadingOnBench.svg | 33.7 | 1 |
 | EFM12EFMLogoNoEFMpng.png | 33.1 | 1 |
 | EFMStorybooks/EFM-SB-0-PageDivider.svg | 3.2 | 2 |
 | EFMStorybooks/EFM-SB-AD-1.jpg | 21.9 | 1 |
