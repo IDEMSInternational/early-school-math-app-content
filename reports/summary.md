@@ -52,8 +52,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 32947 KB | 32.9 MB |
-| unused | 22060 KB | 22.1 MB |
+| total | 32970 KB | 33 MB |
+| unused | 22037 KB | 22 MB |
 </details>
 
 <details open>
@@ -90,9 +90,7 @@ Assets that appear in app-data but do not have references within sheets
 | EFM125ImThinkingofaNumber2.svg | 14.4 |
 | EFM125ImThinkingofaNumberAll.svg | 43.8 |
 | EFM125NumberLineBattleship.svg | 34.4 |
-| EFM12Apples.svg | 5.3 |
 | EFM12CautioinSign.svg | 1.8 |
-| EFM12EFMLogoNoEFM.svg | 12.8 |
 | EFM12StopSign.svg | 2.3 |
 | EFM12TrafficSignal.svg | 3.6 |
 | EFM12TriangleSign.svg | 2.3 |
@@ -152,7 +150,6 @@ Assets that appear in app-data but do not have references within sheets
 | EFM290FingersFor8Plus3.svg | 11.8 |
 | EFM300IslandHoppingCompensation.svg | 24.7 |
 | EFM300RegionSums.svg | 10.9 |
-| EFM30MugOnShelf.svg | 4.9 |
 | EFM30ShapePattern.svg | 5.6 |
 | EFM30Socks.svg | 18 |
 | EFM310DiffTriangles.svg | 14.9 |
@@ -356,7 +353,10 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | --- | --- | --- |
 | EFM10PairLookingAway.svg | 23.6 | 1 |
 | EFM10PairReadingOnBench.svg | 33.7 | 1 |
+| EFM12Apples.svg | 5.3 | 1 |
+| EFM12EFMLogoNoEFM.svg | 12.8 | 1 |
 | EFM12EFMLogoNoEFMpng.png | 33.1 | 1 |
+| EFM30MugOnShelf.svg | 4.9 | 1 |
 | EFMStorybooks/EFM-SB-0-PageDivider.svg | 3.2 | 2 |
 | EFMStorybooks/EFM-SB-AD-1.jpg | 21.9 | 1 |
 | EFMStorybooks/EFM-SB-AD-10.jpg | 12.7 | 1 |
