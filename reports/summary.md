@@ -52,8 +52,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 32970 KB | 33 MB |
-| unused | 22037 KB | 22 MB |
+| total | 33007 KB | 33 MB |
+| unused | 22006 KB | 22 MB |
 </details>
 
 <details open>
@@ -150,7 +150,6 @@ Assets that appear in app-data but do not have references within sheets
 | EFM290FingersFor8Plus3.svg | 11.8 |
 | EFM300IslandHoppingCompensation.svg | 24.7 |
 | EFM300RegionSums.svg | 10.9 |
-| EFM30ShapePattern.svg | 5.6 |
 | EFM30Socks.svg | 18 |
 | EFM310DiffTriangles.svg | 14.9 |
 | EFM310PanBalanceWithWeights4s7sOneSide.svg | 2699.7 |
@@ -215,8 +214,6 @@ Assets that appear in app-data but do not have references within sheets
 | EFM70EachOfTheseIsDifferentExample.svg | 4.7 |
 | EFM70Fork.svg | 7.6 |
 | EFM70ForkGold.svg | 9.9 |
-| EFM70ForkSpoonGold.svg | 14.9 |
-| EFM70GoingInCircles.svg | 10.6 |
 | EFM70Spoon.svg | 5.2 |
 | EFM70SpoonGold.svg | 6.4 |
 | EFM70WhichOneIsDifferent.svg | 4.9 |
@@ -357,6 +354,10 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | EFM12EFMLogoNoEFM.svg | 12.8 | 1 |
 | EFM12EFMLogoNoEFMpng.png | 33.1 | 1 |
 | EFM30MugOnShelf.svg | 4.9 | 1 |
+| EFM30ShapePattern.svg | 5.6 | 1 |
+| EFM70EachOfTheseIsDifferent2Example.svg | 6.5 | 1 |
+| EFM70ForkSpoonGold.svg | 14.9 | 1 |
+| EFM70GoingInCircles.svg | 10.6 | 1 |
 | EFMStorybooks/EFM-SB-0-PageDivider.svg | 3.2 | 2 |
 | EFMStorybooks/EFM-SB-AD-1.jpg | 21.9 | 1 |
 | EFMStorybooks/EFM-SB-AD-10.jpg | 12.7 | 1 |
