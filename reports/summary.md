@@ -52,8 +52,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 33007 KB | 33 MB |
-| unused | 22006 KB | 22 MB |
+| total | 33083 KB | 33.1 MB |
+| unused | 21980 KB | 22 MB |
 </details>
 
 <details open>
@@ -69,11 +69,8 @@ Assets that appear in app-data but do not have references within sheets
 | EFM00LogoWhite2x.jpg | 190.5 |
 | EFM100DominoesGame.svg | 16.7 |
 | EFM100StealingBones.svg | 19.1 |
-| EFM105BackAndForth12Move0.svg | 11.8 |
-| EFM105BackAndForth12Move1.svg | 13.5 |
 | EFM105BingoWithCards.svg | 27.7 |
 | EFM105GoFish.svg | 16.9 |
-| EFM105GoFishMatch.svg | 11.9 |
 | EFM105MemoryChallenge.svg | 11.1 |
 | EFM10EFMPairLookingAway.svg | 23.6 |
 | EFM110InvisibleAddSub.svg | 16 |
@@ -323,6 +320,7 @@ Assets that appear in app-data but do not have references within sheets
 | EFMStorybooks/EFM-SB-KAHN-20.jpg | 3.5 |
 | EFMStorybooks/EFM-SB-SSMILE-8.jpg | 3.5 |
 | EFMStorybooks/EFM-SB-TFHH-2.jpg | 10.6 |
+| ESMIll/EFM105BackAndForth12MoveIntro.svg | 11.2 |
 | ESMIll/ESMPOWACoinFlipStart2.svg | 11626.6 |
 | android/icon-background.png | 7 |
 | android/icon-foreground.png | 53.9 |
@@ -348,6 +346,9 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | path | size_kb | count |
 | --- | --- | --- |
+| EFM105BackAndForth12Move0.svg | 11.8 | 1 |
+| EFM105BackAndForth12Move1.svg | 13.5 | 1 |
+| EFM105GoFishMatch.svg | 11.9 | 1 |
 | EFM10PairLookingAway.svg | 23.6 | 1 |
 | EFM10PairReadingOnBench.svg | 33.7 | 1 |
 | EFM12Apples.svg | 5.3 | 1 |
@@ -1227,6 +1228,9 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | EFMStorybooks/EFM-SB-WIMC-8.jpg | 23.1 | 1 |
 | EFMStorybooks/EFM-SB-WIMC-9.jpg | 38.1 | 1 |
 | EFMStorybooks/EFM-SB-WIMC-Cover.jpg | 30.3 | 1 |
+| ESMIll/ESMGA105GoFish.svg | 17 | 1 |
+| ESMIll/ESMGA105MemoryChallenge.svg | 11.2 | 1 |
+| ESMIll/ESMGA145In-BetweenGame.svg | 10.6 | 1 |
 | ESMIll/ESMGADots and Boxes Numbered Unmarked.svg | 8 | 1 |
 | ESMIll/ESMGADots and Boxes Numbered.svg | 9.6 | 1 |
 | ESMIll/ESMGADotsandBoxesUnnumvwewsEmpty.svg | 5.2 | 1 |
