@@ -69,25 +69,20 @@
       }
     },
     {
-      "id": "Geom_Shap",
+      "id": "Geom_Shape",
       "strand_id": "Geom",
-      "topic_id_1": "Geom_Shap_DS",
-      "topic_id_2": "Geom_Shap_SN2D",
-      "topic_id_3": "Geom_Shap_SN3D",
-      "topic_id_4": "Geom_Shap_2Dof3DS",
-      "topic_id_5": "Geom_Shap_CS",
-      "topic_id_6": "Geom_Shap_C2Dand3D",
-      "topic_id_7": "Geom_Shap_SSbyP",
-      "topic_id_8": "Geom_Shap_CSfOS",
-      "topic_id_9": "Geom_Shap_DSiOS",
-      "topic_id_10": "Geom_Shap_DandMS",
-      "name": "NR – Shapes",
+      "topic_id_1": "Geom_Shape_DS",
+      "topic_id_2": "Geom_Shape_SN2D3D",
+      "topic_id_3": "Geom_Shape_CompSort",
+      "topic_id_4": "Geom_Shape_2Dof3DS",
+      "topic_id_5": "Geom_Shape_CompDecomp",
+      "name": "Shapes",
       "_translations": {
         "name": {}
       },
       "_translatedFields": {
         "name": {
-          "eng": "NR – Shapes"
+          "eng": "Shapes"
         }
       }
     },
@@ -101,27 +96,27 @@
       "topic_id_5": "NPV_QC10_OrdN",
       "topic_id_6": "NPV_QC10_WN10",
       "topic_id_7": "NPV_QC10_MQ10",
-      "name": "NR – Quantities and Counting to 10",
+      "name": "NR – Quantities & Counting to 10",
       "_translations": {
         "name": {}
       },
       "_translatedFields": {
         "name": {
-          "eng": "NR – Quantities and Counting to 10"
+          "eng": "NR – Quantities & Counting to 10"
         }
       }
     },
     {
-      "id": "NPV_CW10",
+      "id": "NPV_C10",
       "strand_id": "NPV",
-      "topic_id_1": "NPV_CW10_P",
-      "name": "NR – Comparing within 10",
+      "topic_id_1": "NPV_C10_P",
+      "name": "NR – Comparing to 10",
       "_translations": {
         "name": {}
       },
       "_translatedFields": {
         "name": {
-          "eng": "NR – Comparing within 10"
+          "eng": "NR – Comparing to 10"
         }
       }
     },
@@ -143,46 +138,46 @@
       "id": "NPV_CPV100",
       "strand_id": "NPV",
       "topic_id_1": "NPV_CPV100_P",
-      "name": "NR – Counting and Place Value to 100",
+      "name": "NR – Counting & Place Value to 100",
       "_translations": {
         "name": {}
       },
       "_translatedFields": {
         "name": {
-          "eng": "NR – Counting and Place Value to 100"
+          "eng": "NR – Counting & Place Value to 100"
         }
       }
     },
     {
-      "id": "NPV_CW100",
+      "id": "NPV_C100",
       "strand_id": "NPV",
-      "topic_id_1": "NPV_CW100_P",
-      "name": "NR – Comparing within 100",
+      "topic_id_1": "NPV_C100_P",
+      "name": "NR – Comparing to 100",
       "_translations": {
         "name": {}
       },
       "_translatedFields": {
         "name": {
-          "eng": "NR – Comparing within 100"
+          "eng": "NR – Comparing to 100"
         }
       }
     },
     {
-      "id": "NO_ASW10",
+      "id": "NO_AS10",
       "strand_id": "NO",
-      "topic_id_1": "NO_ASW10_QAS",
-      "topic_id_2": "NO_ASW10_AS1and2",
-      "topic_id_3": "NO_ASW10_ASto5",
-      "topic_id_4": "NO_ASW10_AT",
-      "topic_id_5": "NO_ASW10_ANT",
-      "topic_id_6": "NO_ASW10_NBFF",
-      "name": "Add and subtract within 10",
+      "topic_id_1": "NO_AS10_QAS",
+      "topic_id_2": "NO_AS10_AS1and2",
+      "topic_id_3": "NO_AS10_ASto5",
+      "topic_id_4": "NO_AS10_AT",
+      "topic_id_5": "NO_AS10_ANT",
+      "topic_id_6": "NO_AS10_NBFF",
+      "name": "Add & Subtract within 10",
       "_translations": {
         "name": {}
       },
       "_translatedFields": {
         "name": {
-          "eng": "Add and subtract within 10"
+          "eng": "Add & Subtract within 10"
         }
       }
     },
@@ -194,13 +189,13 @@
       "topic_id_3": "NO_ASSD_ASto10",
       "topic_id_4": "NO_ASSD_10BA",
       "topic_id_5": "NO_ASSD_10BS",
-      "name": "Add and Subtract – Single Digit",
+      "name": "Add & Subtract – Single Digit",
       "_translations": {
         "name": {}
       },
       "_translatedFields": {
         "name": {
-          "eng": "Add and Subtract – Single Digit"
+          "eng": "Add & Subtract – Single Digit"
         }
       }
     },
@@ -208,13 +203,13 @@
       "id": "NO_DD",
       "strand_id": "NO",
       "topic_id_1": "NO_DD_P",
-      "name": "NR – Add and Subtract – Double Digit",
+      "name": "NR – Add & Subtract – Double Digit",
       "_translations": {
         "name": {}
       },
       "_translatedFields": {
         "name": {
-          "eng": "NR – Add and Subtract – Double Digit"
+          "eng": "NR – Add & Subtract – Double Digit"
         }
       }
     },
