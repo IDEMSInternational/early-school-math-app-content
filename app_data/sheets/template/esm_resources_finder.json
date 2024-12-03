@@ -10,7 +10,7 @@
         {
           "type": "Title",
           "name": "ta_da",
-          "value": "Resources Finder",
+          "value": "Resource Finder",
           "_translations": {
             "value": {}
           },
@@ -86,15 +86,6 @@
                   },
                   "type": "set_variable",
                   "_nested_name": "accordion1.sect1.dg_types1.description_4"
-                },
-                {
-                  "name": "description_5",
-                  "value": "Dot Cards",
-                  "_translations": {
-                    "value": {}
-                  },
-                  "type": "set_variable",
-                  "_nested_name": "accordion1.sect1.dg_types1.description_5"
                 },
                 {
                   "type": "display_group",
@@ -357,83 +348,6 @@
                     }
                   ],
                   "_nested_name": "accordion1.sect1.dg_types1.second2"
-                },
-                {
-                  "type": "display_group",
-                  "name": "last_one",
-                  "rows": [
-                    {
-                      "type": "toggle_bar",
-                      "name": "checkbox_dot_cards",
-                      "value": "@fields.see_resources_dot_cards",
-                      "_translations": {
-                        "value": {}
-                      },
-                      "condition": "changed | set_field:see_resources_dot_cards: @local.checkbox_dot_cards;",
-                      "parameter_list": {
-                        "true_text": "@local.description_5",
-                        "false_text": "@local.description_5"
-                      },
-                      "_nested_name": "accordion1.sect1.dg_types1.last_one.checkbox_dot_cards",
-                      "_dynamicFields": {
-                        "value": [
-                          {
-                            "fullExpression": "@fields.see_resources_dot_cards",
-                            "matchedExpression": "@fields.see_resources_dot_cards",
-                            "type": "fields",
-                            "fieldName": "see_resources_dot_cards"
-                          }
-                        ],
-                        "condition": [
-                          {
-                            "fullExpression": "changed | set_field:see_resources_dot_cards: @local.checkbox_dot_cards;",
-                            "matchedExpression": "@local.checkbox_dot_cards",
-                            "type": "local",
-                            "fieldName": "checkbox_dot_cards"
-                          }
-                        ],
-                        "parameter_list": {
-                          "true_text": [
-                            {
-                              "fullExpression": "@local.description_5",
-                              "matchedExpression": "@local.description_5",
-                              "type": "local",
-                              "fieldName": "description_5"
-                            }
-                          ],
-                          "false_text": [
-                            {
-                              "fullExpression": "@local.description_5",
-                              "matchedExpression": "@local.description_5",
-                              "type": "local",
-                              "fieldName": "description_5"
-                            }
-                          ]
-                        }
-                      },
-                      "_dynamicDependencies": {
-                        "@fields.see_resources_dot_cards": [
-                          "value"
-                        ],
-                        "@local.checkbox_dot_cards": [
-                          "condition"
-                        ],
-                        "@local.description_5": [
-                          "parameter_list.true_text",
-                          "parameter_list.false_text"
-                        ]
-                      }
-                    },
-                    {
-                      "type": "text",
-                      "name": "blank",
-                      "style_list": [
-                        "flex: 1"
-                      ],
-                      "_nested_name": "accordion1.sect1.dg_types1.last_one.blank"
-                    }
-                  ],
-                  "_nested_name": "accordion1.sect1.dg_types1.last_one"
                 }
               ],
               "_nested_name": "accordion1.sect1.dg_types1"
@@ -453,12 +367,12 @@
       "rows": [
         {
           "type": "text",
-          "name": "dbg_topics",
+          "name": "dbggg_topics",
           "value": "Topics: @local.checkbox_topics",
           "_translations": {
             "value": {}
           },
-          "_nested_name": "results1.dbg_topics",
+          "_nested_name": "results1.dbggg_topics",
           "_dynamicFields": {
             "value": [
               {
@@ -471,102 +385,6 @@
           },
           "_dynamicDependencies": {
             "@local.checkbox_topics": [
-              "value"
-            ]
-          }
-        },
-        {
-          "type": "text",
-          "name": "dbg_games",
-          "value": "Games: @local.checkbox_games",
-          "_translations": {
-            "value": {}
-          },
-          "_nested_name": "results1.dbg_games",
-          "_dynamicFields": {
-            "value": [
-              {
-                "fullExpression": "Games: @local.checkbox_games",
-                "matchedExpression": "@local.checkbox_games",
-                "type": "local",
-                "fieldName": "checkbox_games"
-              }
-            ]
-          },
-          "_dynamicDependencies": {
-            "@local.checkbox_games": [
-              "value"
-            ]
-          }
-        },
-        {
-          "type": "text",
-          "name": "dbg_puzzles",
-          "value": "Puzzles: @local.checkbox_puzzles",
-          "_translations": {
-            "value": {}
-          },
-          "_nested_name": "results1.dbg_puzzles",
-          "_dynamicFields": {
-            "value": [
-              {
-                "fullExpression": "Puzzles: @local.checkbox_puzzles",
-                "matchedExpression": "@local.checkbox_puzzles",
-                "type": "local",
-                "fieldName": "checkbox_puzzles"
-              }
-            ]
-          },
-          "_dynamicDependencies": {
-            "@local.checkbox_puzzles": [
-              "value"
-            ]
-          }
-        },
-        {
-          "type": "text",
-          "name": "dbg_stories",
-          "value": "Stories: @local.checkbox_stories",
-          "_translations": {
-            "value": {}
-          },
-          "_nested_name": "results1.dbg_stories",
-          "_dynamicFields": {
-            "value": [
-              {
-                "fullExpression": "Stories: @local.checkbox_stories",
-                "matchedExpression": "@local.checkbox_stories",
-                "type": "local",
-                "fieldName": "checkbox_stories"
-              }
-            ]
-          },
-          "_dynamicDependencies": {
-            "@local.checkbox_stories": [
-              "value"
-            ]
-          }
-        },
-        {
-          "type": "text",
-          "name": "dbg_dot_cards",
-          "value": "Dot Cards: @local.checkbox_dot_cards",
-          "_translations": {
-            "value": {}
-          },
-          "_nested_name": "results1.dbg_dot_cards",
-          "_dynamicFields": {
-            "value": [
-              {
-                "fullExpression": "Dot Cards: @local.checkbox_dot_cards",
-                "matchedExpression": "@local.checkbox_dot_cards",
-                "type": "local",
-                "fieldName": "checkbox_dot_cards"
-              }
-            ]
-          },
-          "_dynamicDependencies": {
-            "@local.checkbox_dot_cards": [
               "value"
             ]
           }
