@@ -204,6 +204,7 @@
       "theme_id": "MT_RWC",
       "strand_id": "MT",
       "prev_topic_1": "MT_RWC_DRP",
+      "next_topic_1": "Geom_OP_PG",
       "block1_type": "all_text",
       "name": "Dialogic Reading – Verbal",
       "_translations": {
@@ -224,6 +225,8 @@
       "id": "Geom_OP_PG",
       "theme_id": "Geom_OP",
       "strand_id": "Geom",
+      "next_topic_1": "Geom_OP_SD",
+      "next_topic_2": "Geom_Pat_Intro",
       "block1_type": "illust_below",
       "block1_illust": "EFM70GoingInCircles.svg",
       "block1_illust_max_size": "240px",
@@ -252,6 +255,7 @@
       "id": "Geom_OP_SD",
       "theme_id": "Geom_OP",
       "strand_id": "Geom",
+      "prev_topic_1": "Geom_OP_PG",
       "block1_type": "all_text",
       "block2_type": "illust_left",
       "block2_illust": "EFM70ForkSpoonGold.svg",
@@ -289,6 +293,7 @@
       "id": "Geom_Pat_Intro",
       "theme_id": "Geom_Pat",
       "strand_id": "Geom",
+      "prev_topic_1": "Geom_OP_PG",
       "block1_type": "illust_below",
       "block1_illust": "EFM30ShapePattern.svg",
       "block1_illust_max_size": "300px",
@@ -712,6 +717,7 @@
       "id": "NO_AS10_AS1and2",
       "theme_id": "NO_AS10",
       "strand_id": "NO",
+      "prev_topic_1": "NO_AS10_QAS",
       "block1_type": "all_text",
       "block2_type": "accord_all_text",
       "block3_type": "accord_all_text",
@@ -776,6 +782,7 @@
       "id": "NO_AS10_ASto5",
       "theme_id": "NO_AS10",
       "strand_id": "NO",
+      "prev_topic_1": "NO_AS10_QAS",
       "block1_type": "all_text",
       "block2_type": "accord_all_text",
       "block3_type": "accord_all_text",
@@ -829,11 +836,12 @@
       "id": "NO_AS10_AT",
       "theme_id": "NO_AS10",
       "strand_id": "NO",
+      "next_topic_1": "NO_AS10_ANT",
       "block1_type": "all_text",
       "block2_type": "accord_all_text",
       "block3_type": "accord_all_text",
       "block4_type": "accord_all_text",
-      "name": "Adding Twins to 5 (and 10)",
+      "name": "Adding Twins to 10",
       "_translations": {
         "name": {},
         "block1_text": {},
@@ -846,7 +854,7 @@
       },
       "_translatedFields": {
         "name": {
-          "eng": "Adding Twins to 5 (and 10)"
+          "eng": "Adding Twins to 10"
         },
         "block1_text": {
           "eng": "**Adding Twins** are when you add a number to itself. Children generally enjoy Adding Twins, so these facts are easily learned and make a good part of a foundation for learning addition."
@@ -882,6 +890,7 @@
       "id": "NO_AS10_ANT",
       "theme_id": "NO_AS10",
       "strand_id": "NO",
+      "prev_topic_1": "NO_AS10_AT",
       "block1_type": "all_text",
       "name": "Adding Near Twins",
       "_translations": {

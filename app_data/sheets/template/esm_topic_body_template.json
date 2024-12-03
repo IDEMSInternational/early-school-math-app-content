@@ -1410,10 +1410,19 @@
                                   "action_id": "set_field",
                                   "args": [
                                     "current_topic",
-                                    "@local.prev_id"
+                                    "@local.prev_row"
                                   ],
-                                  "_raw": "click | set_field:current_topic:@local.prev_id",
-                                  "_cleaned": "click | set_field:current_topic:@local.prev_id"
+                                  "_raw": "click | set_field:current_topic:@local.prev_row",
+                                  "_cleaned": "click | set_field:current_topic:@local.prev_row"
+                                },
+                                {
+                                  "trigger": "click",
+                                  "action_id": "go_to",
+                                  "args": [
+                                    "esm_topic_template"
+                                  ],
+                                  "_raw": "click | go_to: esm_topic_template",
+                                  "_cleaned": "click | go_to: esm_topic_template"
                                 },
                                 {
                                   "trigger": "click",
@@ -1453,27 +1462,27 @@
                                     "args": {
                                       "1": [
                                         {
-                                          "fullExpression": "@local.prev_id",
-                                          "matchedExpression": "@local.prev_id",
+                                          "fullExpression": "@local.prev_row",
+                                          "matchedExpression": "@local.prev_row",
                                           "type": "local",
-                                          "fieldName": "prev_id"
+                                          "fieldName": "prev_row"
                                         }
                                       ]
                                     },
                                     "_raw": [
                                       {
-                                        "fullExpression": "click | set_field:current_topic:@local.prev_id",
-                                        "matchedExpression": "@local.prev_id",
+                                        "fullExpression": "click | set_field:current_topic:@local.prev_row",
+                                        "matchedExpression": "@local.prev_row",
                                         "type": "local",
-                                        "fieldName": "prev_id"
+                                        "fieldName": "prev_row"
                                       }
                                     ],
                                     "_cleaned": [
                                       {
-                                        "fullExpression": "click | set_field:current_topic:@local.prev_id",
-                                        "matchedExpression": "@local.prev_id",
+                                        "fullExpression": "click | set_field:current_topic:@local.prev_row",
+                                        "matchedExpression": "@local.prev_row",
                                         "type": "local",
-                                        "fieldName": "prev_id"
+                                        "fieldName": "prev_row"
                                       }
                                     ]
                                   }
@@ -1503,10 +1512,12 @@
                                 "@local.prev_name": [
                                   "value"
                                 ],
-                                "@local.prev_id": [
+                                "@local.prev_row": [
                                   "action_list.0.args.1",
                                   "action_list.0._raw",
-                                  "action_list.0._cleaned",
+                                  "action_list.0._cleaned"
+                                ],
+                                "@local.prev_id": [
                                   "condition"
                                 ]
                               }
@@ -1779,10 +1790,19 @@
                                   "action_id": "set_field",
                                   "args": [
                                     "current_topic",
-                                    "@local.next_id"
+                                    "@local.next_row"
                                   ],
-                                  "_raw": "click | set_field:current_topic:@local.next_id",
-                                  "_cleaned": "click | set_field:current_topic:@local.next_id"
+                                  "_raw": "click | set_field:current_topic:@local.next_row",
+                                  "_cleaned": "click | set_field:current_topic:@local.next_row"
+                                },
+                                {
+                                  "trigger": "click",
+                                  "action_id": "go_to",
+                                  "args": [
+                                    "esm_topic_template"
+                                  ],
+                                  "_raw": "click | go_to: esm_topic_template",
+                                  "_cleaned": "click | go_to: esm_topic_template"
                                 },
                                 {
                                   "trigger": "click",
@@ -1822,27 +1842,27 @@
                                     "args": {
                                       "1": [
                                         {
-                                          "fullExpression": "@local.next_id",
-                                          "matchedExpression": "@local.next_id",
+                                          "fullExpression": "@local.next_row",
+                                          "matchedExpression": "@local.next_row",
                                           "type": "local",
-                                          "fieldName": "next_id"
+                                          "fieldName": "next_row"
                                         }
                                       ]
                                     },
                                     "_raw": [
                                       {
-                                        "fullExpression": "click | set_field:current_topic:@local.next_id",
-                                        "matchedExpression": "@local.next_id",
+                                        "fullExpression": "click | set_field:current_topic:@local.next_row",
+                                        "matchedExpression": "@local.next_row",
                                         "type": "local",
-                                        "fieldName": "next_id"
+                                        "fieldName": "next_row"
                                       }
                                     ],
                                     "_cleaned": [
                                       {
-                                        "fullExpression": "click | set_field:current_topic:@local.next_id",
-                                        "matchedExpression": "@local.next_id",
+                                        "fullExpression": "click | set_field:current_topic:@local.next_row",
+                                        "matchedExpression": "@local.next_row",
                                         "type": "local",
-                                        "fieldName": "next_id"
+                                        "fieldName": "next_row"
                                       }
                                     ]
                                   }
@@ -1872,10 +1892,12 @@
                                 "@local.next_name": [
                                   "value"
                                 ],
-                                "@local.next_id": [
+                                "@local.next_row": [
                                   "action_list.0.args.1",
                                   "action_list.0._raw",
-                                  "action_list.0._cleaned",
+                                  "action_list.0._cleaned"
+                                ],
+                                "@local.next_id": [
                                   "condition"
                                 ]
                               }
