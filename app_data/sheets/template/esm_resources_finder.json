@@ -8,7 +8,7 @@
       "name": "top_of_page",
       "rows": [
         {
-          "type": "Title",
+          "type": "title",
           "name": "ta_da",
           "value": "Resource Finder",
           "_translations": {
@@ -84,12 +84,12 @@
             },
             {
               "type": "set_field",
-              "name": "topics_search_1.",
+              "name": "topics_search_1",
               "value": "NPV_QC10_QC",
               "_translations": {
                 "value": {}
               },
-              "_nested_name": "alert.alert.topics_search_1."
+              "_nested_name": "alert.alert.topics_search_1"
             }
           ],
           "_nested_name": "alert.alert",

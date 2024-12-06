@@ -28,25 +28,25 @@
       }
     },
     {
-      "name": "pow_title",
-      "value": "@local.efm_pow.title",
+      "name": "pow_name",
+      "value": "@local.efm_pow.name",
       "_translations": {
         "value": {}
       },
       "type": "set_variable",
-      "_nested_name": "pow_title",
+      "_nested_name": "pow_name",
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@local.efm_pow.title",
-            "matchedExpression": "@local.efm_pow.title",
+            "fullExpression": "@local.efm_pow.name",
+            "matchedExpression": "@local.efm_pow.name",
             "type": "local",
             "fieldName": "efm_pow"
           }
         ]
       },
       "_dynamicDependencies": {
-        "@local.efm_pow.title": [
+        "@local.efm_pow.name": [
           "value"
         ]
       }
@@ -489,7 +489,7 @@
         {
           "type": "text",
           "name": "title",
-          "value": "@local.pow_title",
+          "value": "@local.pow_name",
           "_translations": {
             "value": {}
           },
@@ -504,15 +504,15 @@
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "@local.pow_title",
-                "matchedExpression": "@local.pow_title",
+                "fullExpression": "@local.pow_name",
+                "matchedExpression": "@local.pow_name",
                 "type": "local",
-                "fieldName": "pow_title"
+                "fieldName": "pow_name"
               }
             ]
           },
           "_dynamicDependencies": {
-            "@local.pow_title": [
+            "@local.pow_name": [
               "value"
             ]
           }
