@@ -80,6 +80,15 @@
       "_nested_name": "chars_illust_max_width"
     },
     {
+      "name": "chars_id",
+      "value": "id",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "chars_id"
+    },
+    {
       "name": "remove_paragraph_space",
       "value": "margin-top: -5px",
       "_translations": {
@@ -1060,6 +1069,54 @@
       "type": "display_group",
       "rows": [
         {
+          "name": "topic_id_ptr",
+          "value": "local.esm_topic_ptr.@local.chars_id",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "display_group_15.topic_id_ptr",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "local.esm_topic_ptr.@local.chars_id",
+                "matchedExpression": "@local.chars_id",
+                "type": "local",
+                "fieldName": "chars_id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.chars_id": [
+              "value"
+            ]
+          }
+        },
+        {
+          "name": "topic_id",
+          "value": "@@local.topic_id_ptr",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "display_group_15.topic_id",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@@local.topic_id_ptr",
+                "matchedExpression": "@local.topic_id_ptr",
+                "type": "local",
+                "fieldName": "topic_id_ptr"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.topic_id_ptr": [
+              "value"
+            ]
+          }
+        },
+        {
           "type": "button",
           "name": "resources",
           "value": "Find Resources",
@@ -1071,11 +1128,21 @@
               "trigger": "click",
               "action_id": "set_field",
               "args": [
-                "resources_topic",
+                "topics_search_count",
+                "1"
+              ],
+              "_raw": "click | set_field:topics_search_count : 1",
+              "_cleaned": "click | set_field:topics_search_count : 1"
+            },
+            {
+              "trigger": "click",
+              "action_id": "set_field",
+              "args": [
+                "topics_search_1",
                 "@local.topic_id"
               ],
-              "_raw": "click | set_field:resources_topic:@local.topic_id",
-              "_cleaned": "click | set_field:resources_topic:@local.topic_id"
+              "_raw": "click | set_field:topics_search_1:@local.topic_id",
+              "_cleaned": "click | set_field:topics_search_1:@local.topic_id"
             },
             {
               "trigger": "click",
@@ -1091,10 +1158,10 @@
             "style": "short",
             "text_align": "center"
           },
-          "_nested_name": "display_group_14.resources",
+          "_nested_name": "display_group_15.resources",
           "_dynamicFields": {
             "action_list": {
-              "0": {
+              "1": {
                 "args": {
                   "1": [
                     {
@@ -1107,7 +1174,7 @@
                 },
                 "_raw": [
                   {
-                    "fullExpression": "click | set_field:resources_topic:@local.topic_id",
+                    "fullExpression": "click | set_field:topics_search_1:@local.topic_id",
                     "matchedExpression": "@local.topic_id",
                     "type": "local",
                     "fieldName": "topic_id"
@@ -1115,7 +1182,7 @@
                 ],
                 "_cleaned": [
                   {
-                    "fullExpression": "click | set_field:resources_topic:@local.topic_id",
+                    "fullExpression": "click | set_field:topics_search_1:@local.topic_id",
                     "matchedExpression": "@local.topic_id",
                     "type": "local",
                     "fieldName": "topic_id"
@@ -1126,15 +1193,15 @@
           },
           "_dynamicDependencies": {
             "@local.topic_id": [
-              "action_list.0.args.1",
-              "action_list.0._raw",
-              "action_list.0._cleaned"
+              "action_list.1.args.1",
+              "action_list.1._raw",
+              "action_list.1._cleaned"
             ]
           }
         }
       ],
-      "name": "display_group_14",
-      "_nested_name": "display_group_14"
+      "name": "display_group_15",
+      "_nested_name": "display_group_15"
     },
     {
       "name": "prev_topic1",
@@ -1193,7 +1260,7 @@
                           "_translations": {
                             "value": {}
                           },
-                          "_nested_name": "display_group_18.accordion_related_topics.required_topics_block.related_topics_content.previous_topics_content.previous_topics_start"
+                          "_nested_name": "display_group_19.accordion_related_topics.required_topics_block.related_topics_content.previous_topics_content.previous_topics_start"
                         },
                         {
                           "name": "temp_ptr",
@@ -1202,7 +1269,7 @@
                             "value": {}
                           },
                           "type": "set_variable",
-                          "_nested_name": "display_group_18.accordion_related_topics.required_topics_block.related_topics_content.previous_topics_content.temp_ptr"
+                          "_nested_name": "display_group_19.accordion_related_topics.required_topics_block.related_topics_content.previous_topics_content.temp_ptr"
                         },
                         {
                           "type": "text",
@@ -1212,7 +1279,7 @@
                             "value": {}
                           },
                           "condition": "@@local.temp_ptr",
-                          "_nested_name": "display_group_18.accordion_related_topics.required_topics_block.related_topics_content.previous_topics_content.previous_topics_intro",
+                          "_nested_name": "display_group_19.accordion_related_topics.required_topics_block.related_topics_content.previous_topics_content.previous_topics_intro",
                           "_dynamicFields": {
                             "value": [
                               {
@@ -1250,7 +1317,7 @@
                                 "value": {}
                               },
                               "type": "set_variable",
-                              "_nested_name": "display_group_18.accordion_related_topics.required_topics_block.related_topics_content.previous_topics_content.run_through_previous_topics.prev_topic_n",
+                              "_nested_name": "display_group_19.accordion_related_topics.required_topics_block.related_topics_content.previous_topics_content.run_through_previous_topics.prev_topic_n",
                               "_dynamicFields": {
                                 "value": [
                                   {
@@ -1274,7 +1341,7 @@
                                 "value": {}
                               },
                               "type": "set_variable",
-                              "_nested_name": "display_group_18.accordion_related_topics.required_topics_block.related_topics_content.previous_topics_content.run_through_previous_topics.prev_id",
+                              "_nested_name": "display_group_19.accordion_related_topics.required_topics_block.related_topics_content.previous_topics_content.run_through_previous_topics.prev_id",
                               "_dynamicFields": {
                                 "value": [
                                   {
@@ -1299,7 +1366,7 @@
                               },
                               "condition": "@local.prev_id",
                               "type": "set_variable",
-                              "_nested_name": "display_group_18.accordion_related_topics.required_topics_block.related_topics_content.previous_topics_content.run_through_previous_topics.prev_row",
+                              "_nested_name": "display_group_19.accordion_related_topics.required_topics_block.related_topics_content.previous_topics_content.run_through_previous_topics.prev_row",
                               "_dynamicFields": {
                                 "value": [
                                   {
@@ -1333,7 +1400,7 @@
                               },
                               "condition": "@local.prev_id",
                               "type": "set_variable",
-                              "_nested_name": "display_group_18.accordion_related_topics.required_topics_block.related_topics_content.previous_topics_content.run_through_previous_topics.prev_row_ptr",
+                              "_nested_name": "display_group_19.accordion_related_topics.required_topics_block.related_topics_content.previous_topics_content.run_through_previous_topics.prev_row_ptr",
                               "_dynamicFields": {
                                 "value": [
                                   {
@@ -1369,7 +1436,7 @@
                               },
                               "condition": "@local.prev_id",
                               "type": "set_variable",
-                              "_nested_name": "display_group_18.accordion_related_topics.required_topics_block.related_topics_content.previous_topics_content.run_through_previous_topics.prev_name",
+                              "_nested_name": "display_group_19.accordion_related_topics.required_topics_block.related_topics_content.previous_topics_content.run_through_previous_topics.prev_name",
                               "_dynamicFields": {
                                 "value": [
                                   {
@@ -1439,7 +1506,7 @@
                                 "style": "short",
                                 "text_align": "center"
                               },
-                              "_nested_name": "display_group_18.accordion_related_topics.required_topics_block.related_topics_content.previous_topics_content.run_through_previous_topics.previous_@item.number",
+                              "_nested_name": "display_group_19.accordion_related_topics.required_topics_block.related_topics_content.previous_topics_content.run_through_previous_topics.previous_@item.number",
                               "_dynamicFields": {
                                 "name": [
                                   {
@@ -1497,7 +1564,7 @@
                                 ],
                                 "_nested_name": [
                                   {
-                                    "fullExpression": "display_group_18.accordion_related_topics.required_topics_block.related_topics_content.previous_topics_content.run_through_previous_topics.previous_@item.number",
+                                    "fullExpression": "display_group_19.accordion_related_topics.required_topics_block.related_topics_content.previous_topics_content.run_through_previous_topics.previous_@item.number",
                                     "matchedExpression": "@item.number",
                                     "type": "item",
                                     "fieldName": "number"
@@ -1523,7 +1590,7 @@
                               }
                             }
                           ],
-                          "_nested_name": "display_group_18.accordion_related_topics.required_topics_block.related_topics_content.previous_topics_content.run_through_previous_topics",
+                          "_nested_name": "display_group_19.accordion_related_topics.required_topics_block.related_topics_content.previous_topics_content.run_through_previous_topics",
                           "_dynamicFields": {
                             "value": [
                               {
@@ -1541,7 +1608,7 @@
                           }
                         }
                       ],
-                      "_nested_name": "display_group_18.accordion_related_topics.required_topics_block.related_topics_content.previous_topics_content",
+                      "_nested_name": "display_group_19.accordion_related_topics.required_topics_block.related_topics_content.previous_topics_content",
                       "_dynamicFields": {
                         "condition": [
                           {
@@ -1573,7 +1640,7 @@
                           "_translations": {
                             "value": {}
                           },
-                          "_nested_name": "display_group_18.accordion_related_topics.required_topics_block.related_topics_content.next_topics_content.next_topics_start"
+                          "_nested_name": "display_group_19.accordion_related_topics.required_topics_block.related_topics_content.next_topics_content.next_topics_start"
                         },
                         {
                           "name": "temp_ptr",
@@ -1582,7 +1649,7 @@
                             "value": {}
                           },
                           "type": "set_variable",
-                          "_nested_name": "display_group_18.accordion_related_topics.required_topics_block.related_topics_content.next_topics_content.temp_ptr"
+                          "_nested_name": "display_group_19.accordion_related_topics.required_topics_block.related_topics_content.next_topics_content.temp_ptr"
                         },
                         {
                           "type": "text",
@@ -1592,7 +1659,7 @@
                             "value": {}
                           },
                           "condition": "@@local.temp_ptr",
-                          "_nested_name": "display_group_18.accordion_related_topics.required_topics_block.related_topics_content.next_topics_content.next_topics_intro",
+                          "_nested_name": "display_group_19.accordion_related_topics.required_topics_block.related_topics_content.next_topics_content.next_topics_intro",
                           "_dynamicFields": {
                             "value": [
                               {
@@ -1630,7 +1697,7 @@
                                 "value": {}
                               },
                               "type": "set_variable",
-                              "_nested_name": "display_group_18.accordion_related_topics.required_topics_block.related_topics_content.next_topics_content.run_through_next_topics.next_topic_n",
+                              "_nested_name": "display_group_19.accordion_related_topics.required_topics_block.related_topics_content.next_topics_content.run_through_next_topics.next_topic_n",
                               "_dynamicFields": {
                                 "value": [
                                   {
@@ -1654,7 +1721,7 @@
                                 "value": {}
                               },
                               "type": "set_variable",
-                              "_nested_name": "display_group_18.accordion_related_topics.required_topics_block.related_topics_content.next_topics_content.run_through_next_topics.next_id",
+                              "_nested_name": "display_group_19.accordion_related_topics.required_topics_block.related_topics_content.next_topics_content.run_through_next_topics.next_id",
                               "_dynamicFields": {
                                 "value": [
                                   {
@@ -1679,7 +1746,7 @@
                               },
                               "condition": "@local.next_id",
                               "type": "set_variable",
-                              "_nested_name": "display_group_18.accordion_related_topics.required_topics_block.related_topics_content.next_topics_content.run_through_next_topics.next_row",
+                              "_nested_name": "display_group_19.accordion_related_topics.required_topics_block.related_topics_content.next_topics_content.run_through_next_topics.next_row",
                               "_dynamicFields": {
                                 "value": [
                                   {
@@ -1713,7 +1780,7 @@
                               },
                               "condition": "@local.next_id",
                               "type": "set_variable",
-                              "_nested_name": "display_group_18.accordion_related_topics.required_topics_block.related_topics_content.next_topics_content.run_through_next_topics.next_row_ptr",
+                              "_nested_name": "display_group_19.accordion_related_topics.required_topics_block.related_topics_content.next_topics_content.run_through_next_topics.next_row_ptr",
                               "_dynamicFields": {
                                 "value": [
                                   {
@@ -1749,7 +1816,7 @@
                               },
                               "condition": "@local.next_id",
                               "type": "set_variable",
-                              "_nested_name": "display_group_18.accordion_related_topics.required_topics_block.related_topics_content.next_topics_content.run_through_next_topics.next_name",
+                              "_nested_name": "display_group_19.accordion_related_topics.required_topics_block.related_topics_content.next_topics_content.run_through_next_topics.next_name",
                               "_dynamicFields": {
                                 "value": [
                                   {
@@ -1819,7 +1886,7 @@
                                 "style": "short",
                                 "text_align": "center"
                               },
-                              "_nested_name": "display_group_18.accordion_related_topics.required_topics_block.related_topics_content.next_topics_content.run_through_next_topics.next_@item.number",
+                              "_nested_name": "display_group_19.accordion_related_topics.required_topics_block.related_topics_content.next_topics_content.run_through_next_topics.next_@item.number",
                               "_dynamicFields": {
                                 "name": [
                                   {
@@ -1877,7 +1944,7 @@
                                 ],
                                 "_nested_name": [
                                   {
-                                    "fullExpression": "display_group_18.accordion_related_topics.required_topics_block.related_topics_content.next_topics_content.run_through_next_topics.next_@item.number",
+                                    "fullExpression": "display_group_19.accordion_related_topics.required_topics_block.related_topics_content.next_topics_content.run_through_next_topics.next_@item.number",
                                     "matchedExpression": "@item.number",
                                     "type": "item",
                                     "fieldName": "number"
@@ -1903,7 +1970,7 @@
                               }
                             }
                           ],
-                          "_nested_name": "display_group_18.accordion_related_topics.required_topics_block.related_topics_content.next_topics_content.run_through_next_topics",
+                          "_nested_name": "display_group_19.accordion_related_topics.required_topics_block.related_topics_content.next_topics_content.run_through_next_topics",
                           "_dynamicFields": {
                             "value": [
                               {
@@ -1921,7 +1988,7 @@
                           }
                         }
                       ],
-                      "_nested_name": "display_group_18.accordion_related_topics.required_topics_block.related_topics_content.next_topics_content",
+                      "_nested_name": "display_group_19.accordion_related_topics.required_topics_block.related_topics_content.next_topics_content",
                       "_dynamicFields": {
                         "condition": [
                           {
@@ -1939,17 +2006,17 @@
                       }
                     }
                   ],
-                  "_nested_name": "display_group_18.accordion_related_topics.required_topics_block.related_topics_content"
+                  "_nested_name": "display_group_19.accordion_related_topics.required_topics_block.related_topics_content"
                 }
               ],
-              "_nested_name": "display_group_18.accordion_related_topics.required_topics_block"
+              "_nested_name": "display_group_19.accordion_related_topics.required_topics_block"
             }
           ],
-          "_nested_name": "display_group_18.accordion_related_topics"
+          "_nested_name": "display_group_19.accordion_related_topics"
         }
       ],
-      "name": "display_group_18",
-      "_nested_name": "display_group_18",
+      "name": "display_group_19",
+      "_nested_name": "display_group_19",
       "_dynamicFields": {
         "condition": [
           {

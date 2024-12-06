@@ -36,6 +36,16 @@
           "action_list": [
             {
               "trigger": "click",
+              "action_id": "set_field",
+              "args": [
+                "topics_search_count",
+                "0"
+              ],
+              "_raw": "click | set_field:topics_search_count : 0",
+              "_cleaned": "click | set_field:topics_search_count : 0"
+            },
+            {
+              "trigger": "click",
               "action_id": "go_to",
               "args": [
                 "esm_resources_finder"
