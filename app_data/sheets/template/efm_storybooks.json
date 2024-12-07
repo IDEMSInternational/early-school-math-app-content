@@ -429,7 +429,7 @@
             {
               "type": "button",
               "name": "button_sb",
-              "value": "@item.title",
+              "value": "@item.name",
               "_translations": {
                 "value": {}
               },
@@ -463,10 +463,10 @@
               "_dynamicFields": {
                 "value": [
                   {
-                    "fullExpression": "@item.title",
-                    "matchedExpression": "@item.title",
+                    "fullExpression": "@item.name",
+                    "matchedExpression": "@item.name",
                     "type": "item",
-                    "fieldName": "title"
+                    "fieldName": "name"
                   }
                 ],
                 "action_list": {
@@ -557,7 +557,7 @@
                 ]
               },
               "_dynamicDependencies": {
-                "@item.title": [
+                "@item.name": [
                   "value"
                 ],
                 "@item.id": [
@@ -780,7 +780,7 @@
             {
               "type": "button",
               "name": "button_sb",
-              "value": "@item.title",
+              "value": "@item.name",
               "_translations": {
                 "value": {}
               },
@@ -814,10 +814,10 @@
               "_dynamicFields": {
                 "value": [
                   {
-                    "fullExpression": "@item.title",
-                    "matchedExpression": "@item.title",
+                    "fullExpression": "@item.name",
+                    "matchedExpression": "@item.name",
                     "type": "item",
-                    "fieldName": "title"
+                    "fieldName": "name"
                   }
                 ],
                 "action_list": {
@@ -908,7 +908,7 @@
                 ]
               },
               "_dynamicDependencies": {
-                "@item.title": [
+                "@item.name": [
                   "value"
                 ],
                 "@item.id": [
@@ -1131,7 +1131,7 @@
             {
               "type": "button",
               "name": "button_sb",
-              "value": "@item.title",
+              "value": "@item.name",
               "_translations": {
                 "value": {}
               },
@@ -1165,10 +1165,10 @@
               "_dynamicFields": {
                 "value": [
                   {
-                    "fullExpression": "@item.title",
-                    "matchedExpression": "@item.title",
+                    "fullExpression": "@item.name",
+                    "matchedExpression": "@item.name",
                     "type": "item",
-                    "fieldName": "title"
+                    "fieldName": "name"
                   }
                 ],
                 "action_list": {
@@ -1259,7 +1259,7 @@
                 ]
               },
               "_dynamicDependencies": {
-                "@item.title": [
+                "@item.name": [
                   "value"
                 ],
                 "@item.id": [

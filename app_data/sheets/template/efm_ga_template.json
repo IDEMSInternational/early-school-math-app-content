@@ -28,25 +28,25 @@
       }
     },
     {
-      "name": "ga_title",
-      "value": "@local.efm_ga.title",
+      "name": "ga_name",
+      "value": "@local.efm_ga.name",
       "_translations": {
         "value": {}
       },
       "type": "set_variable",
-      "_nested_name": "ga_title",
+      "_nested_name": "ga_name",
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@local.efm_ga.title",
-            "matchedExpression": "@local.efm_ga.title",
+            "fullExpression": "@local.efm_ga.name",
+            "matchedExpression": "@local.efm_ga.name",
             "type": "local",
             "fieldName": "efm_ga"
           }
         ]
       },
       "_dynamicDependencies": {
-        "@local.efm_ga.title": [
+        "@local.efm_ga.name": [
           "value"
         ]
       }
@@ -489,7 +489,7 @@
         {
           "type": "text",
           "name": "title",
-          "value": "@local.ga_title",
+          "value": "@local.ga_name",
           "_translations": {
             "value": {}
           },
@@ -504,15 +504,15 @@
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "@local.ga_title",
-                "matchedExpression": "@local.ga_title",
+                "fullExpression": "@local.ga_name",
+                "matchedExpression": "@local.ga_name",
                 "type": "local",
-                "fieldName": "ga_title"
+                "fieldName": "ga_name"
               }
             ]
           },
           "_dynamicDependencies": {
-            "@local.ga_title": [
+            "@local.ga_name": [
               "value"
             ]
           }
