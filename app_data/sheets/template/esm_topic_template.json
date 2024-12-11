@@ -371,6 +371,7 @@
     },
     {
       "type": "display_group",
+      "name": "dg_prev_next_topics",
       "style_list": [
         "margin-top: -8px"
       ],
@@ -412,7 +413,7 @@
             "flex: 30"
           ],
           "exclude_from_translation": true,
-          "_nested_name": "display_group_12.prev_button_1",
+          "_nested_name": "dg_prev_next_topics.prev_button_1",
           "_dynamicFields": {
             "action_list": {
               "0": {
@@ -469,7 +470,7 @@
           "style_list": [
             "flex: 30"
           ],
-          "_nested_name": "display_group_12.left_spacer",
+          "_nested_name": "dg_prev_next_topics.left_spacer",
           "_dynamicFields": {
             "condition": [
               {
@@ -500,7 +501,7 @@
           "style_list": [
             "flex: 300"
           ],
-          "_nested_name": "display_group_12.title",
+          "_nested_name": "dg_prev_next_topics.title",
           "_dynamicFields": {
             "value": [
               {
@@ -554,7 +555,7 @@
             "flex: 30"
           ],
           "exclude_from_translation": true,
-          "_nested_name": "display_group_12.next_button_1",
+          "_nested_name": "dg_prev_next_topics.next_button_1",
           "_dynamicFields": {
             "action_list": {
               "0": {
@@ -611,7 +612,7 @@
           "style_list": [
             "flex: 30"
           ],
-          "_nested_name": "display_group_12.right_spacer",
+          "_nested_name": "dg_prev_next_topics.right_spacer",
           "_dynamicFields": {
             "condition": [
               {
@@ -629,8 +630,7 @@
           }
         }
       ],
-      "name": "display_group_12",
-      "_nested_name": "display_group_12"
+      "_nested_name": "dg_prev_next_topics"
     },
     {
       "type": "template",
