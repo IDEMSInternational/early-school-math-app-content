@@ -698,6 +698,9 @@
       "data_list_name": "esm_topics",
       "_xlsxPath": "EFM_topics_high_level_sheets.xlsx",
       "_metadata": {
+        "searching_for_this": {
+          "type": "boolean"
+        },
         "block2_illust_flex": {
           "type": "number"
         },
@@ -714,6 +717,16 @@
       "_metadata": {
         "priority": {
           "type": "number"
+        }
+      }
+    },
+    "test_list": {
+      "flow_type": "data_list",
+      "flow_name": "test_list",
+      "_xlsxPath": "EFM_high_level_sheets.xlsx",
+      "_metadata": {
+        "torf": {
+          "type": "boolean"
         }
       }
     }
