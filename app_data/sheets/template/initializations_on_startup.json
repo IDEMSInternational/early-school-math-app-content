@@ -11,33 +11,21 @@
     },
     {
       "type": "set_field",
-      "name": "see_activities_introduction",
+      "name": "see_games_tutoring",
       "value": true,
-      "_nested_name": "see_activities_introduction"
+      "_nested_name": "see_games_tutoring"
     },
     {
       "type": "set_field",
-      "name": "see_activities_game",
+      "name": "see_games_breaks",
       "value": true,
-      "_nested_name": "see_activities_game"
+      "_nested_name": "see_games_breaks"
     },
     {
       "type": "set_field",
-      "name": "see_activities_puzzle",
+      "name": "see_games_home",
       "value": true,
-      "_nested_name": "see_activities_puzzle"
-    },
-    {
-      "type": "set_field",
-      "name": "see_activities_activity",
-      "value": true,
-      "_nested_name": "see_activities_activity"
-    },
-    {
-      "type": "set_field",
-      "name": "see_activities_investigation",
-      "value": true,
-      "_nested_name": "see_activities_investigation"
+      "_nested_name": "see_games_home"
     }
   ],
   "_xlsxPath": "EFM_high_level_sheets.xlsx"
