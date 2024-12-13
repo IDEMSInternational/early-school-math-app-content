@@ -3,27 +3,26 @@
 
 | type | count |
 | --- | --- |
-| Title | 1 |
-| accordion | 13 |
-| accordion_section | 17 |
-| button | 42 |
+| accordion | 15 |
+| accordion_section | 23 |
+| button | 50 |
 | debug_toggle | 1 |
-| display_group | 92 |
-| image | 22 |
-| items | 16 |
+| display_group | 101 |
+| image | 23 |
+| items | 27 |
 | qr_code | 1 |
 | radio_button_grid | 1 |
 | round_button | 5 |
 | select_text | 1 |
-| set_field | 11 |
-| set_variable | 357 |
+| set_field | 14 |
+| set_variable | 390 |
 | simple_checkbox | 4 |
 | template | 63 |
 | text | 95 |
 | text_area | 2 |
 | tile_component | 3 |
-| title | 22 |
-| toggle_bar | 10 |
+| title | 23 |
+| toggle_bar | 3 |
 </details>
 
 <details >
@@ -33,16 +32,16 @@
 | --- | --- |
 | app_update | 1 |
 | emit: completed | 58 |
-| emit: force_reload | 7 |
+| emit: force_reload | 9 |
 | emit: force_reprocess | 4 |
 | emit: server_sync | 1 |
 | emit: set_language | 1 |
 | emit: uncompleted | 58 |
 | feedback | 11 |
-| go_to | 16 |
+| go_to | 24 |
 | go_to_url | 3 |
 | reset_app | 1 |
-| set_field | 30 |
+| set_field | 40 |
 | set_local | 4 |
 | start_tour | 9 |
 </details>
@@ -52,8 +51,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 33083 KB | 33.1 MB |
-| unused | 21980 KB | 22 MB |
+| total | 38757 KB | 38.8 MB |
+| unused | 21968 KB | 22 MB |
 </details>
 
 <details open>
@@ -69,8 +68,8 @@ Assets that appear in app-data but do not have references within sheets
 | EFM00LogoWhite2x.jpg | 190.5 |
 | EFM100DominoesGame.svg | 16.7 |
 | EFM100StealingBones.svg | 19.1 |
-| EFM105BingoWithCards.svg | 27.7 |
 | EFM105GoFish.svg | 16.9 |
+| EFM105GoFishMatch.svg | 11.9 |
 | EFM105MemoryChallenge.svg | 11.1 |
 | EFM10EFMPairLookingAway.svg | 23.6 |
 | EFM110InvisibleAddSub.svg | 16 |
@@ -211,6 +210,7 @@ Assets that appear in app-data but do not have references within sheets
 | EFM70EachOfTheseIsDifferentExample.svg | 4.7 |
 | EFM70Fork.svg | 7.6 |
 | EFM70ForkGold.svg | 9.9 |
+| EFM70ForkSpoonGold.svg | 14.9 |
 | EFM70Spoon.svg | 5.2 |
 | EFM70SpoonGold.svg | 6.4 |
 | EFM70WhichOneIsDifferent.svg | 4.9 |
@@ -320,7 +320,6 @@ Assets that appear in app-data but do not have references within sheets
 | EFMStorybooks/EFM-SB-KAHN-20.jpg | 3.5 |
 | EFMStorybooks/EFM-SB-SSMILE-8.jpg | 3.5 |
 | EFMStorybooks/EFM-SB-TFHH-2.jpg | 10.6 |
-| ESMIll/EFM105BackAndForth12MoveIntro.svg | 11.2 |
 | ESMIll/ESMPOWACoinFlipStart2.svg | 11626.6 |
 | android/icon-background.png | 7 |
 | android/icon-foreground.png | 53.9 |
@@ -336,7 +335,6 @@ Assets that have references within sheets but do not appear in app-data
 
 | path | count |
 | --- | --- |
-| ESMIll/ESMPOWACoinFlipFirstMoves2.svg | 1 |
 </details>
 
 <details >
@@ -348,7 +346,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | --- | --- | --- |
 | EFM105BackAndForth12Move0.svg | 11.8 | 1 |
 | EFM105BackAndForth12Move1.svg | 13.5 | 1 |
-| EFM105GoFishMatch.svg | 11.9 | 1 |
+| EFM105BingoWithCards.svg | 27.7 | 1 |
 | EFM10PairLookingAway.svg | 23.6 | 1 |
 | EFM10PairReadingOnBench.svg | 33.7 | 1 |
 | EFM12Apples.svg | 5.3 | 1 |
@@ -357,7 +355,6 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | EFM30MugOnShelf.svg | 4.9 | 1 |
 | EFM30ShapePattern.svg | 5.6 | 1 |
 | EFM70EachOfTheseIsDifferent2Example.svg | 6.5 | 1 |
-| EFM70ForkSpoonGold.svg | 14.9 | 1 |
 | EFM70GoingInCircles.svg | 10.6 | 1 |
 | EFMStorybooks/EFM-SB-0-PageDivider.svg | 3.2 | 2 |
 | EFMStorybooks/EFM-SB-AD-1.jpg | 21.9 | 1 |
@@ -1228,7 +1225,8 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | EFMStorybooks/EFM-SB-WIMC-8.jpg | 23.1 | 1 |
 | EFMStorybooks/EFM-SB-WIMC-9.jpg | 38.1 | 1 |
 | EFMStorybooks/EFM-SB-WIMC-Cover.jpg | 30.3 | 1 |
-| ESMIll/ESMGA105GoFish.svg | 17 | 1 |
+| ESMIll/EFM105BackAndForth12MoveIntro.svg | 11.2 | 1 |
+| ESMIll/ESMGA105GoFish.svg | 17 | 2 |
 | ESMIll/ESMGA105MemoryChallenge.svg | 11.2 | 1 |
 | ESMIll/ESMGA145In-BetweenGame.svg | 10.6 | 1 |
 | ESMIll/ESMGADots and Boxes Numbered Unmarked.svg | 8 | 1 |
@@ -1238,7 +1236,9 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMGAGetOutOfMyHouseEmpty.svg | 22.6 | 2 |
 | ESMIll/ESMGAGetOutOfMyHouseMidgame.svg | 23.6 | 2 |
 | ESMIll/ESMGAImThinkingOfANumberNumberLineTo12.svg | 15.5 | 1 |
-| ESMIll/ESMPOWACoinFlipFirstMoves1.svg | 5403.6 | 1 |
+| ESMIll/ESMPOWACardStackingChallenge.svg | 11.9 | 1 |
+| ESMIll/ESMPOWACardStackingIntro.svg | 19 | 1 |
+| ESMIll/ESMPOWACoinFlipFirstMoves1.svg | 5403.6 | 2 |
 | ESMIll/ESMPOWACoinFlipStart1.svg | 6752.5 | 2 |
 | ESMIll/ESMPOWAConsecutiveNumbersAnswer1.svg | 6.2 | 1 |
 | ESMIll/ESMPOWAConsecutiveNumbersAnswer2.svg | 6 | 1 |
@@ -1249,8 +1249,30 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMPOWAConsecutiveNumbersChallenge3.svg | 2.6 | 1 |
 | ESMIll/ESMPOWAConsecutiveNumbersChallenge4.svg | 3.1 | 1 |
 | ESMIll/ESMPOWAConsecutiveNumbersIntro.svg | 18.6 | 4 |
+| ESMIll/ESMPOWAEachOfThese2-furniture.svg | 155.9 | 1 |
+| ESMIll/ESMPOWAEachOfTheseIsDifferent1ShapesChallenge.svg | 6.5 | 1 |
+| ESMIll/ESMPOWAEachOfTheseIsDifferentIntro.svg | 5.2 | 2 |
 | ESMIll/ESMPOWAFindingthePieces1Challenge.svg | 4.9 | 1 |
 | ESMIll/ESMPOWAFindingthePieces1Intro.svg | 8.2 | 1 |
+| ESMIll/ESMPOWALines2by2Answer.svg | 3.9 | 1 |
+| ESMIll/ESMPOWALines2by2Blank.svg | 2.3 | 1 |
+| ESMIll/ESMPOWALines2by2Example.svg | 3 | 1 |
+| ESMIll/ESMPOWALines3by3Answer.svg | 5.1 | 1 |
+| ESMIll/ESMPOWALines3by3Blank.svg | 3.3 | 1 |
+| ESMIll/ESMPOWALines3by3Example.svg | 4.5 | 1 |
+| ESMIll/ESMPOWAPanBalanceWithCoins.svg | 4378.5 | 2 |
+| ESMIll/ESMPOWAPatternBlocksHexagons1.svg | 448.8 | 1 |
+| ESMIll/ESMPOWAPatternBlocksHexagonsIntro.svg | 69.9 | 1 |
+| ESMIll/ESMPOWAPatternBlocksTrianglesAnswer.svg | 27.3 | 1 |
+| ESMIll/ESMPOWAPatternBlocksTrianglesIntro.svg | 27.3 | 1 |
+| ESMIll/ESMPOWAReflectOnThisAnswer1.svg | 26.5 | 1 |
+| ESMIll/ESMPOWAReflectOnThisAnswer2.svg | 36.3 | 1 |
+| ESMIll/ESMPOWAReflectOnThisChallenge1.svg | 9.5 | 1 |
+| ESMIll/ESMPOWAReflectOnThisChallenge2.svg | 11.1 | 1 |
+| ESMIll/ESMPOWAReflectOnThisIntro.svg | 20.9 | 2 |
+| ESMIll/ESMPOWAStackingHats1Challenge.svg | 73.3 | 1 |
+| ESMIll/ESMPOWAStackingHats2Challenge.svg | 72.4 | 1 |
+| ESMIll/ESMPOWAStackingHatsIntro.svg | 146.8 | 2 |
 | ESMIll/ESMPOWASumGroups10Example.svg | 36 | 1 |
 | ESMIll/ESMPOWASumGroups10a.svg | 55.4 | 1 |
 | ESMIll/ESMPOWASumGroups10aAnswers.svg | 62.1 | 1 |
@@ -1271,6 +1293,9 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMPOWASumGroups9a.svg | 56.3 | 1 |
 | ESMIll/ESMPOWASumGroups9aAnswers.svg | 62.9 | 1 |
 | ESMIll/ESMPOWASumGroups9bAnswers.svg | 62.2 | 1 |
+| ESMIll/ESMPOWATreasureMap1Challenge.svg | 13.5 | 1 |
+| ESMIll/ESMPOWATreasureMap2Challenge.svg | 14 | 1 |
+| ESMIll/ESMPOWATreasureMapIntro.svg | 64.2 | 2 |
 | ESMIll/ESMPOWBDiffPyramid10Challenge.svg | 6.7 | 1 |
 | ESMIll/ESMPOWBDiffPyramid62Solutions.svg | 21.5 | 1 |
 | ESMIll/ESMPOWBDiffPyramid6Challenge.svg | 4.1 | 1 |
@@ -1313,7 +1338,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | type | subtype | total |
 | --- | --- | --- |
-| data_list |  | 65 |
+| data_list |  | 66 |
 | data_list | app_config_language_list | 1 |
 | data_list | lifecycle_actions | 1 |
 | generator |  | 1 |

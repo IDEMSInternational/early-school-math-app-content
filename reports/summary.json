@@ -2,20 +2,16 @@
   "template_components": {
     "data": [
       {
-        "type": "Title",
-        "count": 1
-      },
-      {
         "type": "accordion",
-        "count": 13
+        "count": 15
       },
       {
         "type": "accordion_section",
-        "count": 17
+        "count": 23
       },
       {
         "type": "button",
-        "count": 42
+        "count": 50
       },
       {
         "type": "debug_toggle",
@@ -23,15 +19,15 @@
       },
       {
         "type": "display_group",
-        "count": 92
+        "count": 101
       },
       {
         "type": "image",
-        "count": 22
+        "count": 23
       },
       {
         "type": "items",
-        "count": 16
+        "count": 27
       },
       {
         "type": "qr_code",
@@ -51,11 +47,11 @@
       },
       {
         "type": "set_field",
-        "count": 11
+        "count": 14
       },
       {
         "type": "set_variable",
-        "count": 357
+        "count": 390
       },
       {
         "type": "simple_checkbox",
@@ -79,11 +75,11 @@
       },
       {
         "type": "title",
-        "count": 22
+        "count": 23
       },
       {
         "type": "toggle_bar",
-        "count": 10
+        "count": 3
       }
     ]
   },
@@ -99,7 +95,7 @@
       },
       {
         "type": "emit: force_reload",
-        "count": 7
+        "count": 9
       },
       {
         "type": "emit: force_reprocess",
@@ -123,7 +119,7 @@
       },
       {
         "type": "go_to",
-        "count": 16
+        "count": 24
       },
       {
         "type": "go_to_url",
@@ -135,7 +131,7 @@
       },
       {
         "type": "set_field",
-        "count": 30
+        "count": 40
       },
       {
         "type": "set_local",
@@ -151,12 +147,12 @@
     "data": [
       {
         "assets": "total",
-        "KB": "33083 KB",
-        "MB": "33.1 MB"
+        "KB": "38757 KB",
+        "MB": "38.8 MB"
       },
       {
         "assets": "unused",
-        "KB": "21980 KB",
+        "KB": "21968 KB",
         "MB": "22 MB"
       }
     ]
@@ -188,12 +184,12 @@
         "size_kb": 19.1
       },
       {
-        "path": "EFM105BingoWithCards.svg",
-        "size_kb": 27.7
-      },
-      {
         "path": "EFM105GoFish.svg",
         "size_kb": 16.9
+      },
+      {
+        "path": "EFM105GoFishMatch.svg",
+        "size_kb": 11.9
       },
       {
         "path": "EFM105MemoryChallenge.svg",
@@ -756,6 +752,10 @@
         "size_kb": 9.9
       },
       {
+        "path": "EFM70ForkSpoonGold.svg",
+        "size_kb": 14.9
+      },
+      {
         "path": "EFM70Spoon.svg",
         "size_kb": 5.2
       },
@@ -1192,10 +1192,6 @@
         "size_kb": 10.6
       },
       {
-        "path": "ESMIll/EFM105BackAndForth12MoveIntro.svg",
-        "size_kb": 11.2
-      },
-      {
         "path": "ESMIll/ESMPOWACoinFlipStart2.svg",
         "size_kb": 11626.6
       },
@@ -1222,13 +1218,7 @@
     ]
   },
   "assets_missing": {
-    "data": [
-      {
-        "path": "ESMIll/ESMPOWACoinFlipFirstMoves2.svg",
-        "count": 1,
-        "missing": true
-      }
-    ]
+    "data": []
   },
   "asset_summary": {
     "data": [
@@ -1243,9 +1233,9 @@
         "size_kb": 13.5
       },
       {
-        "path": "EFM105GoFishMatch.svg",
+        "path": "EFM105BingoWithCards.svg",
         "count": 1,
-        "size_kb": 11.9
+        "size_kb": 27.7
       },
       {
         "path": "EFM10PairLookingAway.svg",
@@ -1286,11 +1276,6 @@
         "path": "EFM70EachOfTheseIsDifferent2Example.svg",
         "count": 1,
         "size_kb": 6.5
-      },
-      {
-        "path": "EFM70ForkSpoonGold.svg",
-        "count": 1,
-        "size_kb": 14.9
       },
       {
         "path": "EFM70GoingInCircles.svg",
@@ -5643,8 +5628,13 @@
         "size_kb": 30.3
       },
       {
-        "path": "ESMIll/ESMGA105GoFish.svg",
+        "path": "ESMIll/EFM105BackAndForth12MoveIntro.svg",
         "count": 1,
+        "size_kb": 11.2
+      },
+      {
+        "path": "ESMIll/ESMGA105GoFish.svg",
+        "count": 2,
         "size_kb": 17
       },
       {
@@ -5693,8 +5683,18 @@
         "size_kb": 15.5
       },
       {
-        "path": "ESMIll/ESMPOWACoinFlipFirstMoves1.svg",
+        "path": "ESMIll/ESMPOWACardStackingChallenge.svg",
         "count": 1,
+        "size_kb": 11.9
+      },
+      {
+        "path": "ESMIll/ESMPOWACardStackingIntro.svg",
+        "count": 1,
+        "size_kb": 19
+      },
+      {
+        "path": "ESMIll/ESMPOWACoinFlipFirstMoves1.svg",
+        "count": 2,
         "size_kb": 5403.6
       },
       {
@@ -5748,6 +5748,21 @@
         "size_kb": 18.6
       },
       {
+        "path": "ESMIll/ESMPOWAEachOfThese2-furniture.svg",
+        "count": 1,
+        "size_kb": 155.9
+      },
+      {
+        "path": "ESMIll/ESMPOWAEachOfTheseIsDifferent1ShapesChallenge.svg",
+        "count": 1,
+        "size_kb": 6.5
+      },
+      {
+        "path": "ESMIll/ESMPOWAEachOfTheseIsDifferentIntro.svg",
+        "count": 2,
+        "size_kb": 5.2
+      },
+      {
         "path": "ESMIll/ESMPOWAFindingthePieces1Challenge.svg",
         "count": 1,
         "size_kb": 4.9
@@ -5756,6 +5771,101 @@
         "path": "ESMIll/ESMPOWAFindingthePieces1Intro.svg",
         "count": 1,
         "size_kb": 8.2
+      },
+      {
+        "path": "ESMIll/ESMPOWALines2by2Answer.svg",
+        "count": 1,
+        "size_kb": 3.9
+      },
+      {
+        "path": "ESMIll/ESMPOWALines2by2Blank.svg",
+        "count": 1,
+        "size_kb": 2.3
+      },
+      {
+        "path": "ESMIll/ESMPOWALines2by2Example.svg",
+        "count": 1,
+        "size_kb": 3
+      },
+      {
+        "path": "ESMIll/ESMPOWALines3by3Answer.svg",
+        "count": 1,
+        "size_kb": 5.1
+      },
+      {
+        "path": "ESMIll/ESMPOWALines3by3Blank.svg",
+        "count": 1,
+        "size_kb": 3.3
+      },
+      {
+        "path": "ESMIll/ESMPOWALines3by3Example.svg",
+        "count": 1,
+        "size_kb": 4.5
+      },
+      {
+        "path": "ESMIll/ESMPOWAPanBalanceWithCoins.svg",
+        "count": 2,
+        "size_kb": 4378.5
+      },
+      {
+        "path": "ESMIll/ESMPOWAPatternBlocksHexagons1.svg",
+        "count": 1,
+        "size_kb": 448.8
+      },
+      {
+        "path": "ESMIll/ESMPOWAPatternBlocksHexagonsIntro.svg",
+        "count": 1,
+        "size_kb": 69.9
+      },
+      {
+        "path": "ESMIll/ESMPOWAPatternBlocksTrianglesAnswer.svg",
+        "count": 1,
+        "size_kb": 27.3
+      },
+      {
+        "path": "ESMIll/ESMPOWAPatternBlocksTrianglesIntro.svg",
+        "count": 1,
+        "size_kb": 27.3
+      },
+      {
+        "path": "ESMIll/ESMPOWAReflectOnThisAnswer1.svg",
+        "count": 1,
+        "size_kb": 26.5
+      },
+      {
+        "path": "ESMIll/ESMPOWAReflectOnThisAnswer2.svg",
+        "count": 1,
+        "size_kb": 36.3
+      },
+      {
+        "path": "ESMIll/ESMPOWAReflectOnThisChallenge1.svg",
+        "count": 1,
+        "size_kb": 9.5
+      },
+      {
+        "path": "ESMIll/ESMPOWAReflectOnThisChallenge2.svg",
+        "count": 1,
+        "size_kb": 11.1
+      },
+      {
+        "path": "ESMIll/ESMPOWAReflectOnThisIntro.svg",
+        "count": 2,
+        "size_kb": 20.9
+      },
+      {
+        "path": "ESMIll/ESMPOWAStackingHats1Challenge.svg",
+        "count": 1,
+        "size_kb": 73.3
+      },
+      {
+        "path": "ESMIll/ESMPOWAStackingHats2Challenge.svg",
+        "count": 1,
+        "size_kb": 72.4
+      },
+      {
+        "path": "ESMIll/ESMPOWAStackingHatsIntro.svg",
+        "count": 2,
+        "size_kb": 146.8
       },
       {
         "path": "ESMIll/ESMPOWASumGroups10Example.svg",
@@ -5856,6 +5966,21 @@
         "path": "ESMIll/ESMPOWASumGroups9bAnswers.svg",
         "count": 1,
         "size_kb": 62.2
+      },
+      {
+        "path": "ESMIll/ESMPOWATreasureMap1Challenge.svg",
+        "count": 1,
+        "size_kb": 13.5
+      },
+      {
+        "path": "ESMIll/ESMPOWATreasureMap2Challenge.svg",
+        "count": 1,
+        "size_kb": 14
+      },
+      {
+        "path": "ESMIll/ESMPOWATreasureMapIntro.svg",
+        "count": 2,
+        "size_kb": 64.2
       },
       {
         "path": "ESMIll/ESMPOWBDiffPyramid10Challenge.svg",
@@ -6039,7 +6164,7 @@
       {
         "type": "data_list",
         "subtype": null,
-        "total": 65
+        "total": 66
       },
       {
         "type": "data_list",
