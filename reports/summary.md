@@ -51,7 +51,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 38757 KB | 38.8 MB |
+| total | 38866 KB | 38.9 MB |
 | unused | 21968 KB | 22 MB |
 </details>
 
@@ -1264,7 +1264,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMPOWAPatternBlocksHexagons1.svg | 448.8 | 1 |
 | ESMIll/ESMPOWAPatternBlocksHexagonsIntro.svg | 69.9 | 1 |
 | ESMIll/ESMPOWAPatternBlocksTrianglesAnswer.svg | 27.3 | 1 |
-| ESMIll/ESMPOWAPatternBlocksTrianglesIntro.svg | 27.3 | 1 |
+| ESMIll/ESMPOWAPatternBlocksTrianglesIntro.svg | 136.4 | 1 |
 | ESMIll/ESMPOWAReflectOnThisAnswer1.svg | 26.5 | 1 |
 | ESMIll/ESMPOWAReflectOnThisAnswer2.svg | 36.3 | 1 |
 | ESMIll/ESMPOWAReflectOnThisChallenge1.svg | 9.5 | 1 |
