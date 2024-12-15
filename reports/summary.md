@@ -7,22 +7,22 @@
 | accordion_section | 23 |
 | button | 50 |
 | debug_toggle | 1 |
-| display_group | 101 |
+| display_group | 107 |
 | image | 23 |
 | items | 27 |
 | qr_code | 1 |
 | radio_button_grid | 1 |
 | round_button | 5 |
 | select_text | 1 |
-| set_field | 14 |
-| set_variable | 390 |
+| set_field | 12 |
+| set_variable | 398 |
 | simple_checkbox | 4 |
 | template | 63 |
-| text | 95 |
+| text | 96 |
 | text_area | 2 |
 | tile_component | 3 |
 | title | 23 |
-| toggle_bar | 3 |
+| toggle_bar | 7 |
 </details>
 
 <details >
@@ -51,8 +51,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 38866 KB | 38.9 MB |
-| unused | 21968 KB | 22 MB |
+| total | 39490 KB | 39.5 MB |
+| unused | 21993 KB | 22 MB |
 </details>
 
 <details open>
@@ -68,6 +68,8 @@ Assets that appear in app-data but do not have references within sheets
 | EFM00LogoWhite2x.jpg | 190.5 |
 | EFM100DominoesGame.svg | 16.7 |
 | EFM100StealingBones.svg | 19.1 |
+| EFM105BackAndForth12Move0.svg | 11.8 |
+| EFM105BackAndForth12Move1.svg | 13.5 |
 | EFM105GoFish.svg | 16.9 |
 | EFM105GoFishMatch.svg | 11.9 |
 | EFM105MemoryChallenge.svg | 11.1 |
@@ -344,8 +346,6 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | path | size_kb | count |
 | --- | --- | --- |
-| EFM105BackAndForth12Move0.svg | 11.8 | 1 |
-| EFM105BackAndForth12Move1.svg | 13.5 | 1 |
 | EFM105BingoWithCards.svg | 27.7 | 1 |
 | EFM10PairLookingAway.svg | 23.6 | 1 |
 | EFM10PairReadingOnBench.svg | 33.7 | 1 |
@@ -1225,10 +1225,23 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | EFMStorybooks/EFM-SB-WIMC-8.jpg | 23.1 | 1 |
 | EFMStorybooks/EFM-SB-WIMC-9.jpg | 38.1 | 1 |
 | EFMStorybooks/EFM-SB-WIMC-Cover.jpg | 30.3 | 1 |
+| ESMIll/EFM105BackAndForth12Move0.svg | 11.8 | 1 |
+| ESMIll/EFM105BackAndForth12Move1.svg | 13.5 | 1 |
 | ESMIll/EFM105BackAndForth12MoveIntro.svg | 11.2 | 1 |
+| ESMIll/EFM105BackAndForth20Move0.svg | 18.3 | 1 |
+| ESMIll/EFM105BackAndForth20Move1.svg | 19.3 | 1 |
+| ESMIll/EFM105BackAndForth20MoveIntro.svg | 16.9 | 1 |
+| ESMIll/EFM105BackAndForth24Move0.svg | 20.1 | 1 |
+| ESMIll/EFM105BackAndForth24Move1.svg | 21.1 | 1 |
+| ESMIll/EFM105BackAndForth24MoveIntro.svg | 19.4 | 1 |
 | ESMIll/ESMGA105GoFish.svg | 17 | 2 |
 | ESMIll/ESMGA105MemoryChallenge.svg | 11.2 | 1 |
+| ESMIll/ESMGA125NumberLineBattleship.svg | 31.3 | 1 |
+| ESMIll/ESMGA135MakingSquaresComplex.svg | 12.8 | 1 |
+| ESMIll/ESMGA135MakingSquaresSimple.svg | 16 | 1 |
 | ESMIll/ESMGA145In-BetweenGame.svg | 10.6 | 1 |
+| ESMIll/ESMGA90IslandHoppingConsecutiveModerate.svg | 20.3 | 1 |
+| ESMIll/ESMGACuttingSymmetricShapes.svg | 65.6 | 1 |
 | ESMIll/ESMGADots and Boxes Numbered Unmarked.svg | 8 | 1 |
 | ESMIll/ESMGADots and Boxes Numbered.svg | 9.6 | 1 |
 | ESMIll/ESMGADotsandBoxesUnnumvwewsEmpty.svg | 5.2 | 1 |
@@ -1236,6 +1249,11 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMGAGetOutOfMyHouseEmpty.svg | 22.6 | 2 |
 | ESMIll/ESMGAGetOutOfMyHouseMidgame.svg | 23.6 | 2 |
 | ESMIll/ESMGAImThinkingOfANumberNumberLineTo12.svg | 15.5 | 1 |
+| ESMIll/ESMGASameDifferent.svg | 303.4 | 1 |
+| ESMIll/ESMGAStringNumberLine.svg | 22.1 | 1 |
+| ESMIll/ESMGAWarDoubleDigit.svg | 16.5 | 2 |
+| ESMIll/ESMGAWarSingleDigit.svg | 16 | 1 |
+| ESMIll/ESMGAWhichOneIsDifferent.svg | 5.1 | 1 |
 | ESMIll/ESMPOWACardStackingChallenge.svg | 11.9 | 1 |
 | ESMIll/ESMPOWACardStackingIntro.svg | 19 | 1 |
 | ESMIll/ESMPOWACoinFlipFirstMoves1.svg | 5403.6 | 2 |
