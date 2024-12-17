@@ -51,6 +51,26 @@
     },
     {
       "type": "display_group",
+      "name": "dg_info",
+      "rows": [
+        {
+          "type": "text",
+          "name": "help_button",
+          "value": "In addition to their use during classroom lessons, these games have other specialty uses that you can choose.\n\n* **Tutoring:** These games are good for focused practice with a particular skill.\n* **Breaks:** These are quick to set up and play games that are ideal for short breaks between longer activities.\n* **Home:** These are good games to send home for families to play together and practice the skills being learned in the classroom.",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "icon_src": "help",
+            "style": "navigation"
+          },
+          "_nested_name": "dg_info.help_button"
+        }
+      ],
+      "_nested_name": "dg_info"
+    },
+    {
+      "type": "display_group",
       "name": "dg_types",
       "parameter_list": {
         "style": "column"
