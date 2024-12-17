@@ -56,7 +56,7 @@
         {
           "type": "text",
           "name": "help_button",
-          "value": "These puzzles are separated into increasing levels of difficulty and not by grade level. With each increase in level there will tend to be more difficult puzzles and the mathematics is more advanced.",
+          "value": "These puzzles are separated into dropdown menus with increasing levels of difficulty and math content.\n\nSelect from two types of puzzles. \n* **Eye Openers** are puzzles that open one's eyes and can probably be done quickly during a single class session.\n* **Puzzlers** are puzzles that will take time, quite possibly several days to work through thoroughly.",
           "_translations": {
             "value": {}
           },
@@ -68,6 +68,137 @@
         }
       ],
       "_nested_name": "dg_info"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_types",
+      "parameter_list": {
+        "style": "column"
+      },
+      "rows": [
+        {
+          "name": "description_0",
+          "value": "Eye Opener",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "dg_types.description_0"
+        },
+        {
+          "name": "description_1",
+          "value": "Puzzler",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "dg_types.description_1"
+        },
+        {
+          "type": "display_group",
+          "name": "dg_puzzle_types",
+          "parameter_list": {
+            "style": "column"
+          },
+          "rows": [
+            {
+              "type": "display_group",
+              "name": "dg_first_pair_puzzle_types",
+              "rows": [
+                {
+                  "type": "toggle_bar",
+                  "name": "checkbox_eye_opener",
+                  "value": true,
+                  "parameter_list": {
+                    "true_text": "@local.description_0",
+                    "false_text": "@local.description_0"
+                  },
+                  "_nested_name": "dg_types.dg_puzzle_types.dg_first_pair_puzzle_types.checkbox_eye_opener",
+                  "_dynamicFields": {
+                    "parameter_list": {
+                      "true_text": [
+                        {
+                          "fullExpression": "@local.description_0",
+                          "matchedExpression": "@local.description_0",
+                          "type": "local",
+                          "fieldName": "description_0"
+                        }
+                      ],
+                      "false_text": [
+                        {
+                          "fullExpression": "@local.description_0",
+                          "matchedExpression": "@local.description_0",
+                          "type": "local",
+                          "fieldName": "description_0"
+                        }
+                      ]
+                    }
+                  },
+                  "_dynamicDependencies": {
+                    "@local.description_0": [
+                      "parameter_list.true_text",
+                      "parameter_list.false_text"
+                    ]
+                  }
+                },
+                {
+                  "type": "toggle_bar",
+                  "name": "checkbox_puzzler",
+                  "value": true,
+                  "parameter_list": {
+                    "true_text": "@local.description_1",
+                    "false_text": "@local.description_1"
+                  },
+                  "_nested_name": "dg_types.dg_puzzle_types.dg_first_pair_puzzle_types.checkbox_puzzler",
+                  "_dynamicFields": {
+                    "parameter_list": {
+                      "true_text": [
+                        {
+                          "fullExpression": "@local.description_1",
+                          "matchedExpression": "@local.description_1",
+                          "type": "local",
+                          "fieldName": "description_1"
+                        }
+                      ],
+                      "false_text": [
+                        {
+                          "fullExpression": "@local.description_1",
+                          "matchedExpression": "@local.description_1",
+                          "type": "local",
+                          "fieldName": "description_1"
+                        }
+                      ]
+                    }
+                  },
+                  "_dynamicDependencies": {
+                    "@local.description_1": [
+                      "parameter_list.true_text",
+                      "parameter_list.false_text"
+                    ]
+                  }
+                }
+              ],
+              "_nested_name": "dg_types.dg_puzzle_types.dg_first_pair_puzzle_types"
+            },
+            {
+              "type": "text",
+              "name": "blank",
+              "style_list": [
+                "flex: 1"
+              ],
+              "_nested_name": "dg_types.dg_puzzle_types.blank"
+            }
+          ],
+          "_nested_name": "dg_types.dg_puzzle_types"
+        },
+        {
+          "type": "display_group",
+          "name": "dg_spacer",
+          "rows": [],
+          "_nested_name": "dg_types.dg_spacer"
+        }
+      ],
+      "_nested_name": "dg_types"
     },
     {
       "name": "now",
@@ -114,7 +245,7 @@
         {
           "type": "accordion_section",
           "name": "level_a",
-          "value": "Level A",
+          "value": "Count to 15; One-digit Add",
           "parameter_list": {
             "text_align": "center",
             "style": "large emphasised"
@@ -160,287 +291,409 @@
                       }
                     },
                     {
-                      "name": "click_history_field_name",
-                      "value": "@local.pow_id@local.pow_click_history",
+                      "name": "okay_eye_opener",
+                      "value": "@local.checkbox_eye_opener && @item.eye_opener",
                       "_translations": {
                         "value": {}
                       },
-                      "exclude_from_translation": true,
                       "type": "set_variable",
-                      "_nested_name": "accordion_for_pows.level_a.dg_powlist_a.activity_buttons_a.click_history_field_name",
+                      "_nested_name": "accordion_for_pows.level_a.dg_powlist_a.activity_buttons_a.okay_eye_opener",
                       "_dynamicFields": {
                         "value": [
                           {
-                            "fullExpression": "@local.pow_id@local.pow_click_history",
-                            "matchedExpression": "@local.pow_id",
+                            "fullExpression": "@local.checkbox_eye_opener && @item.eye_opener",
+                            "matchedExpression": "@local.checkbox_eye_opener",
                             "type": "local",
-                            "fieldName": "pow_id"
+                            "fieldName": "checkbox_eye_opener"
                           },
                           {
-                            "fullExpression": "@local.pow_id@local.pow_click_history",
-                            "matchedExpression": "@local.pow_click_history",
-                            "type": "local",
-                            "fieldName": "pow_click_history"
+                            "fullExpression": "@local.checkbox_eye_opener && @item.eye_opener",
+                            "matchedExpression": "@item.eye_opener",
+                            "type": "item",
+                            "fieldName": "eye_opener"
                           }
                         ]
                       },
                       "_dynamicDependencies": {
-                        "@local.pow_id": [
+                        "@local.checkbox_eye_opener": [
                           "value"
                         ],
-                        "@local.pow_click_history": [
+                        "@item.eye_opener": [
                           "value"
                         ]
                       }
                     },
                     {
-                      "name": "pows_click_history",
-                      "value": "@fields.@local.click_history_field_name ;  @local.now",
+                      "name": "okay_puzzler",
+                      "value": "@local.checkbox_puzzler && @item.puzzler",
                       "_translations": {
                         "value": {}
                       },
-                      "condition": "!!(@fields.@local.click_history_field_name)",
-                      "exclude_from_translation": true,
                       "type": "set_variable",
-                      "_nested_name": "accordion_for_pows.level_a.dg_powlist_a.activity_buttons_a.pows_click_history",
+                      "_nested_name": "accordion_for_pows.level_a.dg_powlist_a.activity_buttons_a.okay_puzzler",
                       "_dynamicFields": {
                         "value": [
                           {
-                            "fullExpression": "@fields.@local.click_history_field_name ;  @local.now",
-                            "matchedExpression": "@local.click_history_field_name",
+                            "fullExpression": "@local.checkbox_puzzler && @item.puzzler",
+                            "matchedExpression": "@local.checkbox_puzzler",
                             "type": "local",
-                            "fieldName": "click_history_field_name"
+                            "fieldName": "checkbox_puzzler"
                           },
                           {
-                            "fullExpression": "@fields.@local.click_history_field_name ;  @local.now",
-                            "matchedExpression": "@local.now",
-                            "type": "local",
-                            "fieldName": "now"
-                          }
-                        ],
-                        "condition": [
-                          {
-                            "fullExpression": "!!(@fields.@local.click_history_field_name)",
-                            "matchedExpression": "@local.click_history_field_name",
-                            "type": "local",
-                            "fieldName": "click_history_field_name"
+                            "fullExpression": "@local.checkbox_puzzler && @item.puzzler",
+                            "matchedExpression": "@item.puzzler",
+                            "type": "item",
+                            "fieldName": "puzzler"
                           }
                         ]
                       },
                       "_dynamicDependencies": {
-                        "@local.click_history_field_name": [
-                          "value",
-                          "condition"
+                        "@local.checkbox_puzzler": [
+                          "value"
                         ],
-                        "@local.now": [
+                        "@item.puzzler": [
                           "value"
                         ]
                       }
                     },
                     {
-                      "name": "pows_click_history",
-                      "value": "@local.now",
+                      "name": "its_an_okay_puzzle",
+                      "value": "@local.okay_eye_opener || @local.okay_puzzler",
                       "_translations": {
                         "value": {}
                       },
-                      "condition": "!(@fields.@local.click_history_field_name)",
-                      "exclude_from_translation": true,
                       "type": "set_variable",
-                      "_nested_name": "accordion_for_pows.level_a.dg_powlist_a.activity_buttons_a.pows_click_history",
+                      "_nested_name": "accordion_for_pows.level_a.dg_powlist_a.activity_buttons_a.its_an_okay_puzzle",
                       "_dynamicFields": {
                         "value": [
                           {
-                            "fullExpression": "@local.now",
-                            "matchedExpression": "@local.now",
+                            "fullExpression": "@local.okay_eye_opener || @local.okay_puzzler",
+                            "matchedExpression": "@local.okay_eye_opener",
                             "type": "local",
-                            "fieldName": "now"
-                          }
-                        ],
-                        "condition": [
+                            "fieldName": "okay_eye_opener"
+                          },
                           {
-                            "fullExpression": "!(@fields.@local.click_history_field_name)",
-                            "matchedExpression": "@local.click_history_field_name",
+                            "fullExpression": "@local.okay_eye_opener || @local.okay_puzzler",
+                            "matchedExpression": "@local.okay_puzzler",
                             "type": "local",
-                            "fieldName": "click_history_field_name"
+                            "fieldName": "okay_puzzler"
                           }
                         ]
                       },
                       "_dynamicDependencies": {
-                        "@local.now": [
+                        "@local.okay_eye_opener": [
                           "value"
                         ],
-                        "@local.click_history_field_name": [
-                          "condition"
+                        "@local.okay_puzzler": [
+                          "value"
                         ]
                       }
                     },
                     {
-                      "type": "button",
-                      "name": "button_pow_@item.id",
-                      "value": "@item.name",
-                      "_translations": {
-                        "value": {}
-                      },
-                      "action_list": [
+                      "type": "display_group",
+                      "name": "dg_ok_puzzle_a",
+                      "condition": "@local.its_an_okay_puzzle",
+                      "rows": [
                         {
-                          "trigger": "click",
-                          "action_id": "set_field",
-                          "args": [
-                            "current_pow",
-                            "data.efm_pows.@item.id"
-                          ],
-                          "_raw": "click | set_field:current_pow: data.efm_pows.@item.id",
-                          "_cleaned": "click | set_field:current_pow: data.efm_pows.@item.id"
+                          "name": "click_history_field_name",
+                          "value": "@local.pow_id@local.pow_click_history",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "exclude_from_translation": true,
+                          "type": "set_variable",
+                          "_nested_name": "accordion_for_pows.level_a.dg_powlist_a.activity_buttons_a.dg_ok_puzzle_a.click_history_field_name",
+                          "_dynamicFields": {
+                            "value": [
+                              {
+                                "fullExpression": "@local.pow_id@local.pow_click_history",
+                                "matchedExpression": "@local.pow_id",
+                                "type": "local",
+                                "fieldName": "pow_id"
+                              },
+                              {
+                                "fullExpression": "@local.pow_id@local.pow_click_history",
+                                "matchedExpression": "@local.pow_click_history",
+                                "type": "local",
+                                "fieldName": "pow_click_history"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@local.pow_id": [
+                              "value"
+                            ],
+                            "@local.pow_click_history": [
+                              "value"
+                            ]
+                          }
                         },
                         {
-                          "trigger": "click",
-                          "action_id": "go_to",
-                          "args": [
-                            "efm_pow_template"
-                          ],
-                          "_raw": "click | go_to: efm_pow_template",
-                          "_cleaned": "click | go_to: efm_pow_template"
+                          "name": "pows_click_history",
+                          "value": "@fields.@local.click_history_field_name ;  @local.now",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "condition": "!!(@fields.@local.click_history_field_name)",
+                          "exclude_from_translation": true,
+                          "type": "set_variable",
+                          "_nested_name": "accordion_for_pows.level_a.dg_powlist_a.activity_buttons_a.dg_ok_puzzle_a.pows_click_history",
+                          "_dynamicFields": {
+                            "value": [
+                              {
+                                "fullExpression": "@fields.@local.click_history_field_name ;  @local.now",
+                                "matchedExpression": "@local.click_history_field_name",
+                                "type": "local",
+                                "fieldName": "click_history_field_name"
+                              },
+                              {
+                                "fullExpression": "@fields.@local.click_history_field_name ;  @local.now",
+                                "matchedExpression": "@local.now",
+                                "type": "local",
+                                "fieldName": "now"
+                              }
+                            ],
+                            "condition": [
+                              {
+                                "fullExpression": "!!(@fields.@local.click_history_field_name)",
+                                "matchedExpression": "@local.click_history_field_name",
+                                "type": "local",
+                                "fieldName": "click_history_field_name"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@local.click_history_field_name": [
+                              "value",
+                              "condition"
+                            ],
+                            "@local.now": [
+                              "value"
+                            ]
+                          }
                         },
                         {
-                          "trigger": "click",
-                          "action_id": "set_field",
-                          "args": [
-                            "@local.click_history_field_name",
-                            "@local.pows_click_history"
+                          "name": "pows_click_history",
+                          "value": "@local.now",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "condition": "!(@fields.@local.click_history_field_name)",
+                          "exclude_from_translation": true,
+                          "type": "set_variable",
+                          "_nested_name": "accordion_for_pows.level_a.dg_powlist_a.activity_buttons_a.dg_ok_puzzle_a.pows_click_history",
+                          "_dynamicFields": {
+                            "value": [
+                              {
+                                "fullExpression": "@local.now",
+                                "matchedExpression": "@local.now",
+                                "type": "local",
+                                "fieldName": "now"
+                              }
+                            ],
+                            "condition": [
+                              {
+                                "fullExpression": "!(@fields.@local.click_history_field_name)",
+                                "matchedExpression": "@local.click_history_field_name",
+                                "type": "local",
+                                "fieldName": "click_history_field_name"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@local.now": [
+                              "value"
+                            ],
+                            "@local.click_history_field_name": [
+                              "condition"
+                            ]
+                          }
+                        },
+                        {
+                          "type": "button",
+                          "name": "button_pow_@item.id",
+                          "value": "@item.name",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "action_list": [
+                            {
+                              "trigger": "click",
+                              "action_id": "set_field",
+                              "args": [
+                                "current_pow",
+                                "data.efm_pows.@item.id"
+                              ],
+                              "_raw": "click | set_field:current_pow: data.efm_pows.@item.id",
+                              "_cleaned": "click | set_field:current_pow: data.efm_pows.@item.id"
+                            },
+                            {
+                              "trigger": "click",
+                              "action_id": "go_to",
+                              "args": [
+                                "efm_pow_template"
+                              ],
+                              "_raw": "click | go_to: efm_pow_template",
+                              "_cleaned": "click | go_to: efm_pow_template"
+                            },
+                            {
+                              "trigger": "click",
+                              "action_id": "set_field",
+                              "args": [
+                                "@local.click_history_field_name",
+                                "@local.pows_click_history"
+                              ],
+                              "_raw": "click | set_field:@local.click_history_field_name: @local.pows_click_history",
+                              "_cleaned": "click | set_field:@local.click_history_field_name: @local.pows_click_history"
+                            }
                           ],
-                          "_raw": "click | set_field:@local.click_history_field_name: @local.pows_click_history",
-                          "_cleaned": "click | set_field:@local.click_history_field_name: @local.pows_click_history"
+                          "parameter_list": {
+                            "style": "short",
+                            "text_align": "center"
+                          },
+                          "_nested_name": "accordion_for_pows.level_a.dg_powlist_a.activity_buttons_a.dg_ok_puzzle_a.button_pow_@item.id",
+                          "_dynamicFields": {
+                            "name": [
+                              {
+                                "fullExpression": "button_pow_@item.id",
+                                "matchedExpression": "@item.id",
+                                "type": "item",
+                                "fieldName": "id"
+                              }
+                            ],
+                            "value": [
+                              {
+                                "fullExpression": "@item.name",
+                                "matchedExpression": "@item.name",
+                                "type": "item",
+                                "fieldName": "name"
+                              }
+                            ],
+                            "action_list": {
+                              "0": {
+                                "args": {
+                                  "1": [
+                                    {
+                                      "fullExpression": "data.efm_pows.@item.id",
+                                      "matchedExpression": "@item.id",
+                                      "type": "item",
+                                      "fieldName": "id"
+                                    }
+                                  ]
+                                },
+                                "_raw": [
+                                  {
+                                    "fullExpression": "click | set_field:current_pow: data.efm_pows.@item.id",
+                                    "matchedExpression": "@item.id",
+                                    "type": "item",
+                                    "fieldName": "id"
+                                  }
+                                ],
+                                "_cleaned": [
+                                  {
+                                    "fullExpression": "click | set_field:current_pow: data.efm_pows.@item.id",
+                                    "matchedExpression": "@item.id",
+                                    "type": "item",
+                                    "fieldName": "id"
+                                  }
+                                ]
+                              },
+                              "2": {
+                                "args": {
+                                  "0": [
+                                    {
+                                      "fullExpression": "@local.click_history_field_name",
+                                      "matchedExpression": "@local.click_history_field_name",
+                                      "type": "local",
+                                      "fieldName": "click_history_field_name"
+                                    }
+                                  ],
+                                  "1": [
+                                    {
+                                      "fullExpression": "@local.pows_click_history",
+                                      "matchedExpression": "@local.pows_click_history",
+                                      "type": "local",
+                                      "fieldName": "pows_click_history"
+                                    }
+                                  ]
+                                },
+                                "_raw": [
+                                  {
+                                    "fullExpression": "click | set_field:@local.click_history_field_name: @local.pows_click_history",
+                                    "matchedExpression": "@local.click_history_field_name",
+                                    "type": "local",
+                                    "fieldName": "click_history_field_name"
+                                  },
+                                  {
+                                    "fullExpression": "click | set_field:@local.click_history_field_name: @local.pows_click_history",
+                                    "matchedExpression": "@local.pows_click_history",
+                                    "type": "local",
+                                    "fieldName": "pows_click_history"
+                                  }
+                                ],
+                                "_cleaned": [
+                                  {
+                                    "fullExpression": "click | set_field:@local.click_history_field_name: @local.pows_click_history",
+                                    "matchedExpression": "@local.click_history_field_name",
+                                    "type": "local",
+                                    "fieldName": "click_history_field_name"
+                                  },
+                                  {
+                                    "fullExpression": "click | set_field:@local.click_history_field_name: @local.pows_click_history",
+                                    "matchedExpression": "@local.pows_click_history",
+                                    "type": "local",
+                                    "fieldName": "pows_click_history"
+                                  }
+                                ]
+                              }
+                            },
+                            "_nested_name": [
+                              {
+                                "fullExpression": "accordion_for_pows.level_a.dg_powlist_a.activity_buttons_a.dg_ok_puzzle_a.button_pow_@item.id",
+                                "matchedExpression": "@item.id",
+                                "type": "item",
+                                "fieldName": "id"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@item.id": [
+                              "name",
+                              "action_list.0.args.1",
+                              "action_list.0._raw",
+                              "action_list.0._cleaned",
+                              "_nested_name"
+                            ],
+                            "@item.name": [
+                              "value"
+                            ],
+                            "@local.click_history_field_name": [
+                              "action_list.2.args.0",
+                              "action_list.2._raw",
+                              "action_list.2._cleaned"
+                            ],
+                            "@local.pows_click_history": [
+                              "action_list.2.args.1",
+                              "action_list.2._raw",
+                              "action_list.2._cleaned"
+                            ]
+                          }
                         }
                       ],
-                      "parameter_list": {
-                        "style": "short",
-                        "text_align": "center"
-                      },
-                      "_nested_name": "accordion_for_pows.level_a.dg_powlist_a.activity_buttons_a.button_pow_@item.id",
+                      "_nested_name": "accordion_for_pows.level_a.dg_powlist_a.activity_buttons_a.dg_ok_puzzle_a",
                       "_dynamicFields": {
-                        "name": [
+                        "condition": [
                           {
-                            "fullExpression": "button_pow_@item.id",
-                            "matchedExpression": "@item.id",
-                            "type": "item",
-                            "fieldName": "id"
-                          }
-                        ],
-                        "value": [
-                          {
-                            "fullExpression": "@item.name",
-                            "matchedExpression": "@item.name",
-                            "type": "item",
-                            "fieldName": "name"
-                          }
-                        ],
-                        "action_list": {
-                          "0": {
-                            "args": {
-                              "1": [
-                                {
-                                  "fullExpression": "data.efm_pows.@item.id",
-                                  "matchedExpression": "@item.id",
-                                  "type": "item",
-                                  "fieldName": "id"
-                                }
-                              ]
-                            },
-                            "_raw": [
-                              {
-                                "fullExpression": "click | set_field:current_pow: data.efm_pows.@item.id",
-                                "matchedExpression": "@item.id",
-                                "type": "item",
-                                "fieldName": "id"
-                              }
-                            ],
-                            "_cleaned": [
-                              {
-                                "fullExpression": "click | set_field:current_pow: data.efm_pows.@item.id",
-                                "matchedExpression": "@item.id",
-                                "type": "item",
-                                "fieldName": "id"
-                              }
-                            ]
-                          },
-                          "2": {
-                            "args": {
-                              "0": [
-                                {
-                                  "fullExpression": "@local.click_history_field_name",
-                                  "matchedExpression": "@local.click_history_field_name",
-                                  "type": "local",
-                                  "fieldName": "click_history_field_name"
-                                }
-                              ],
-                              "1": [
-                                {
-                                  "fullExpression": "@local.pows_click_history",
-                                  "matchedExpression": "@local.pows_click_history",
-                                  "type": "local",
-                                  "fieldName": "pows_click_history"
-                                }
-                              ]
-                            },
-                            "_raw": [
-                              {
-                                "fullExpression": "click | set_field:@local.click_history_field_name: @local.pows_click_history",
-                                "matchedExpression": "@local.click_history_field_name",
-                                "type": "local",
-                                "fieldName": "click_history_field_name"
-                              },
-                              {
-                                "fullExpression": "click | set_field:@local.click_history_field_name: @local.pows_click_history",
-                                "matchedExpression": "@local.pows_click_history",
-                                "type": "local",
-                                "fieldName": "pows_click_history"
-                              }
-                            ],
-                            "_cleaned": [
-                              {
-                                "fullExpression": "click | set_field:@local.click_history_field_name: @local.pows_click_history",
-                                "matchedExpression": "@local.click_history_field_name",
-                                "type": "local",
-                                "fieldName": "click_history_field_name"
-                              },
-                              {
-                                "fullExpression": "click | set_field:@local.click_history_field_name: @local.pows_click_history",
-                                "matchedExpression": "@local.pows_click_history",
-                                "type": "local",
-                                "fieldName": "pows_click_history"
-                              }
-                            ]
-                          }
-                        },
-                        "_nested_name": [
-                          {
-                            "fullExpression": "accordion_for_pows.level_a.dg_powlist_a.activity_buttons_a.button_pow_@item.id",
-                            "matchedExpression": "@item.id",
-                            "type": "item",
-                            "fieldName": "id"
+                            "fullExpression": "@local.its_an_okay_puzzle",
+                            "matchedExpression": "@local.its_an_okay_puzzle",
+                            "type": "local",
+                            "fieldName": "its_an_okay_puzzle"
                           }
                         ]
                       },
                       "_dynamicDependencies": {
-                        "@item.id": [
-                          "name",
-                          "action_list.0.args.1",
-                          "action_list.0._raw",
-                          "action_list.0._cleaned",
-                          "_nested_name"
-                        ],
-                        "@item.name": [
-                          "value"
-                        ],
-                        "@local.click_history_field_name": [
-                          "action_list.2.args.0",
-                          "action_list.2._raw",
-                          "action_list.2._cleaned"
-                        ],
-                        "@local.pows_click_history": [
-                          "action_list.2.args.1",
-                          "action_list.2._raw",
-                          "action_list.2._cleaned"
+                        "@local.its_an_okay_puzzle": [
+                          "condition"
                         ]
                       }
                     }
@@ -484,7 +737,7 @@
         {
           "type": "accordion_section",
           "name": "level_b",
-          "value": "Level B",
+          "value": "Count to 100; One-digit Add / Sub",
           "parameter_list": {
             "text_align": "center",
             "style": "large emphasised"
@@ -530,287 +783,409 @@
                       }
                     },
                     {
-                      "name": "click_history_field_name",
-                      "value": "@local.pow_id@local.pow_click_history",
+                      "name": "okay_eye_opener",
+                      "value": "@local.checkbox_eye_opener && @item.eye_opener",
                       "_translations": {
                         "value": {}
                       },
-                      "exclude_from_translation": true,
                       "type": "set_variable",
-                      "_nested_name": "accordion_for_pows.level_b.dg_powlist_b.activity_buttons_b.click_history_field_name",
+                      "_nested_name": "accordion_for_pows.level_b.dg_powlist_b.activity_buttons_b.okay_eye_opener",
                       "_dynamicFields": {
                         "value": [
                           {
-                            "fullExpression": "@local.pow_id@local.pow_click_history",
-                            "matchedExpression": "@local.pow_id",
+                            "fullExpression": "@local.checkbox_eye_opener && @item.eye_opener",
+                            "matchedExpression": "@local.checkbox_eye_opener",
                             "type": "local",
-                            "fieldName": "pow_id"
+                            "fieldName": "checkbox_eye_opener"
                           },
                           {
-                            "fullExpression": "@local.pow_id@local.pow_click_history",
-                            "matchedExpression": "@local.pow_click_history",
-                            "type": "local",
-                            "fieldName": "pow_click_history"
+                            "fullExpression": "@local.checkbox_eye_opener && @item.eye_opener",
+                            "matchedExpression": "@item.eye_opener",
+                            "type": "item",
+                            "fieldName": "eye_opener"
                           }
                         ]
                       },
                       "_dynamicDependencies": {
-                        "@local.pow_id": [
+                        "@local.checkbox_eye_opener": [
                           "value"
                         ],
-                        "@local.pow_click_history": [
+                        "@item.eye_opener": [
                           "value"
                         ]
                       }
                     },
                     {
-                      "name": "pows_click_history",
-                      "value": "@fields.@local.click_history_field_name ;  @local.now",
+                      "name": "okay_puzzler",
+                      "value": "@local.checkbox_puzzler && @item.puzzler",
                       "_translations": {
                         "value": {}
                       },
-                      "condition": "!!(@fields.@local.click_history_field_name)",
-                      "exclude_from_translation": true,
                       "type": "set_variable",
-                      "_nested_name": "accordion_for_pows.level_b.dg_powlist_b.activity_buttons_b.pows_click_history",
+                      "_nested_name": "accordion_for_pows.level_b.dg_powlist_b.activity_buttons_b.okay_puzzler",
                       "_dynamicFields": {
                         "value": [
                           {
-                            "fullExpression": "@fields.@local.click_history_field_name ;  @local.now",
-                            "matchedExpression": "@local.click_history_field_name",
+                            "fullExpression": "@local.checkbox_puzzler && @item.puzzler",
+                            "matchedExpression": "@local.checkbox_puzzler",
                             "type": "local",
-                            "fieldName": "click_history_field_name"
+                            "fieldName": "checkbox_puzzler"
                           },
                           {
-                            "fullExpression": "@fields.@local.click_history_field_name ;  @local.now",
-                            "matchedExpression": "@local.now",
-                            "type": "local",
-                            "fieldName": "now"
-                          }
-                        ],
-                        "condition": [
-                          {
-                            "fullExpression": "!!(@fields.@local.click_history_field_name)",
-                            "matchedExpression": "@local.click_history_field_name",
-                            "type": "local",
-                            "fieldName": "click_history_field_name"
+                            "fullExpression": "@local.checkbox_puzzler && @item.puzzler",
+                            "matchedExpression": "@item.puzzler",
+                            "type": "item",
+                            "fieldName": "puzzler"
                           }
                         ]
                       },
                       "_dynamicDependencies": {
-                        "@local.click_history_field_name": [
-                          "value",
-                          "condition"
+                        "@local.checkbox_puzzler": [
+                          "value"
                         ],
-                        "@local.now": [
+                        "@item.puzzler": [
                           "value"
                         ]
                       }
                     },
                     {
-                      "name": "pows_click_history",
-                      "value": "@local.now",
+                      "name": "its_an_okay_puzzle",
+                      "value": "@local.okay_eye_opener || @local.okay_puzzler",
                       "_translations": {
                         "value": {}
                       },
-                      "condition": "!(@fields.@local.click_history_field_name)",
-                      "exclude_from_translation": true,
                       "type": "set_variable",
-                      "_nested_name": "accordion_for_pows.level_b.dg_powlist_b.activity_buttons_b.pows_click_history",
+                      "_nested_name": "accordion_for_pows.level_b.dg_powlist_b.activity_buttons_b.its_an_okay_puzzle",
                       "_dynamicFields": {
                         "value": [
                           {
-                            "fullExpression": "@local.now",
-                            "matchedExpression": "@local.now",
+                            "fullExpression": "@local.okay_eye_opener || @local.okay_puzzler",
+                            "matchedExpression": "@local.okay_eye_opener",
                             "type": "local",
-                            "fieldName": "now"
-                          }
-                        ],
-                        "condition": [
+                            "fieldName": "okay_eye_opener"
+                          },
                           {
-                            "fullExpression": "!(@fields.@local.click_history_field_name)",
-                            "matchedExpression": "@local.click_history_field_name",
+                            "fullExpression": "@local.okay_eye_opener || @local.okay_puzzler",
+                            "matchedExpression": "@local.okay_puzzler",
                             "type": "local",
-                            "fieldName": "click_history_field_name"
+                            "fieldName": "okay_puzzler"
                           }
                         ]
                       },
                       "_dynamicDependencies": {
-                        "@local.now": [
+                        "@local.okay_eye_opener": [
                           "value"
                         ],
-                        "@local.click_history_field_name": [
-                          "condition"
+                        "@local.okay_puzzler": [
+                          "value"
                         ]
                       }
                     },
                     {
-                      "type": "button",
-                      "name": "button_pow_@item.id",
-                      "value": "@item.name",
-                      "_translations": {
-                        "value": {}
-                      },
-                      "action_list": [
+                      "type": "display_group",
+                      "name": "dg_ok_puzzle_b",
+                      "condition": "@local.its_an_okay_puzzle",
+                      "rows": [
                         {
-                          "trigger": "click",
-                          "action_id": "set_field",
-                          "args": [
-                            "current_pow",
-                            "data.efm_pows.@item.id"
-                          ],
-                          "_raw": "click | set_field:current_pow: data.efm_pows.@item.id",
-                          "_cleaned": "click | set_field:current_pow: data.efm_pows.@item.id"
+                          "name": "click_history_field_name",
+                          "value": "@local.pow_id@local.pow_click_history",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "exclude_from_translation": true,
+                          "type": "set_variable",
+                          "_nested_name": "accordion_for_pows.level_b.dg_powlist_b.activity_buttons_b.dg_ok_puzzle_b.click_history_field_name",
+                          "_dynamicFields": {
+                            "value": [
+                              {
+                                "fullExpression": "@local.pow_id@local.pow_click_history",
+                                "matchedExpression": "@local.pow_id",
+                                "type": "local",
+                                "fieldName": "pow_id"
+                              },
+                              {
+                                "fullExpression": "@local.pow_id@local.pow_click_history",
+                                "matchedExpression": "@local.pow_click_history",
+                                "type": "local",
+                                "fieldName": "pow_click_history"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@local.pow_id": [
+                              "value"
+                            ],
+                            "@local.pow_click_history": [
+                              "value"
+                            ]
+                          }
                         },
                         {
-                          "trigger": "click",
-                          "action_id": "go_to",
-                          "args": [
-                            "efm_pow_template"
-                          ],
-                          "_raw": "click | go_to: efm_pow_template",
-                          "_cleaned": "click | go_to: efm_pow_template"
+                          "name": "pows_click_history",
+                          "value": "@fields.@local.click_history_field_name ;  @local.now",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "condition": "!!(@fields.@local.click_history_field_name)",
+                          "exclude_from_translation": true,
+                          "type": "set_variable",
+                          "_nested_name": "accordion_for_pows.level_b.dg_powlist_b.activity_buttons_b.dg_ok_puzzle_b.pows_click_history",
+                          "_dynamicFields": {
+                            "value": [
+                              {
+                                "fullExpression": "@fields.@local.click_history_field_name ;  @local.now",
+                                "matchedExpression": "@local.click_history_field_name",
+                                "type": "local",
+                                "fieldName": "click_history_field_name"
+                              },
+                              {
+                                "fullExpression": "@fields.@local.click_history_field_name ;  @local.now",
+                                "matchedExpression": "@local.now",
+                                "type": "local",
+                                "fieldName": "now"
+                              }
+                            ],
+                            "condition": [
+                              {
+                                "fullExpression": "!!(@fields.@local.click_history_field_name)",
+                                "matchedExpression": "@local.click_history_field_name",
+                                "type": "local",
+                                "fieldName": "click_history_field_name"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@local.click_history_field_name": [
+                              "value",
+                              "condition"
+                            ],
+                            "@local.now": [
+                              "value"
+                            ]
+                          }
                         },
                         {
-                          "trigger": "click",
-                          "action_id": "set_field",
-                          "args": [
-                            "@local.click_history_field_name",
-                            "@local.pows_click_history"
+                          "name": "pows_click_history",
+                          "value": "@local.now",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "condition": "!(@fields.@local.click_history_field_name)",
+                          "exclude_from_translation": true,
+                          "type": "set_variable",
+                          "_nested_name": "accordion_for_pows.level_b.dg_powlist_b.activity_buttons_b.dg_ok_puzzle_b.pows_click_history",
+                          "_dynamicFields": {
+                            "value": [
+                              {
+                                "fullExpression": "@local.now",
+                                "matchedExpression": "@local.now",
+                                "type": "local",
+                                "fieldName": "now"
+                              }
+                            ],
+                            "condition": [
+                              {
+                                "fullExpression": "!(@fields.@local.click_history_field_name)",
+                                "matchedExpression": "@local.click_history_field_name",
+                                "type": "local",
+                                "fieldName": "click_history_field_name"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@local.now": [
+                              "value"
+                            ],
+                            "@local.click_history_field_name": [
+                              "condition"
+                            ]
+                          }
+                        },
+                        {
+                          "type": "button",
+                          "name": "button_pow_@item.id",
+                          "value": "@item.name",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "action_list": [
+                            {
+                              "trigger": "click",
+                              "action_id": "set_field",
+                              "args": [
+                                "current_pow",
+                                "data.efm_pows.@item.id"
+                              ],
+                              "_raw": "click | set_field:current_pow: data.efm_pows.@item.id",
+                              "_cleaned": "click | set_field:current_pow: data.efm_pows.@item.id"
+                            },
+                            {
+                              "trigger": "click",
+                              "action_id": "go_to",
+                              "args": [
+                                "efm_pow_template"
+                              ],
+                              "_raw": "click | go_to: efm_pow_template",
+                              "_cleaned": "click | go_to: efm_pow_template"
+                            },
+                            {
+                              "trigger": "click",
+                              "action_id": "set_field",
+                              "args": [
+                                "@local.click_history_field_name",
+                                "@local.pows_click_history"
+                              ],
+                              "_raw": "click | set_field:@local.click_history_field_name: @local.pows_click_history",
+                              "_cleaned": "click | set_field:@local.click_history_field_name: @local.pows_click_history"
+                            }
                           ],
-                          "_raw": "click | set_field:@local.click_history_field_name: @local.pows_click_history",
-                          "_cleaned": "click | set_field:@local.click_history_field_name: @local.pows_click_history"
+                          "parameter_list": {
+                            "style": "short",
+                            "text_align": "center"
+                          },
+                          "_nested_name": "accordion_for_pows.level_b.dg_powlist_b.activity_buttons_b.dg_ok_puzzle_b.button_pow_@item.id",
+                          "_dynamicFields": {
+                            "name": [
+                              {
+                                "fullExpression": "button_pow_@item.id",
+                                "matchedExpression": "@item.id",
+                                "type": "item",
+                                "fieldName": "id"
+                              }
+                            ],
+                            "value": [
+                              {
+                                "fullExpression": "@item.name",
+                                "matchedExpression": "@item.name",
+                                "type": "item",
+                                "fieldName": "name"
+                              }
+                            ],
+                            "action_list": {
+                              "0": {
+                                "args": {
+                                  "1": [
+                                    {
+                                      "fullExpression": "data.efm_pows.@item.id",
+                                      "matchedExpression": "@item.id",
+                                      "type": "item",
+                                      "fieldName": "id"
+                                    }
+                                  ]
+                                },
+                                "_raw": [
+                                  {
+                                    "fullExpression": "click | set_field:current_pow: data.efm_pows.@item.id",
+                                    "matchedExpression": "@item.id",
+                                    "type": "item",
+                                    "fieldName": "id"
+                                  }
+                                ],
+                                "_cleaned": [
+                                  {
+                                    "fullExpression": "click | set_field:current_pow: data.efm_pows.@item.id",
+                                    "matchedExpression": "@item.id",
+                                    "type": "item",
+                                    "fieldName": "id"
+                                  }
+                                ]
+                              },
+                              "2": {
+                                "args": {
+                                  "0": [
+                                    {
+                                      "fullExpression": "@local.click_history_field_name",
+                                      "matchedExpression": "@local.click_history_field_name",
+                                      "type": "local",
+                                      "fieldName": "click_history_field_name"
+                                    }
+                                  ],
+                                  "1": [
+                                    {
+                                      "fullExpression": "@local.pows_click_history",
+                                      "matchedExpression": "@local.pows_click_history",
+                                      "type": "local",
+                                      "fieldName": "pows_click_history"
+                                    }
+                                  ]
+                                },
+                                "_raw": [
+                                  {
+                                    "fullExpression": "click | set_field:@local.click_history_field_name: @local.pows_click_history",
+                                    "matchedExpression": "@local.click_history_field_name",
+                                    "type": "local",
+                                    "fieldName": "click_history_field_name"
+                                  },
+                                  {
+                                    "fullExpression": "click | set_field:@local.click_history_field_name: @local.pows_click_history",
+                                    "matchedExpression": "@local.pows_click_history",
+                                    "type": "local",
+                                    "fieldName": "pows_click_history"
+                                  }
+                                ],
+                                "_cleaned": [
+                                  {
+                                    "fullExpression": "click | set_field:@local.click_history_field_name: @local.pows_click_history",
+                                    "matchedExpression": "@local.click_history_field_name",
+                                    "type": "local",
+                                    "fieldName": "click_history_field_name"
+                                  },
+                                  {
+                                    "fullExpression": "click | set_field:@local.click_history_field_name: @local.pows_click_history",
+                                    "matchedExpression": "@local.pows_click_history",
+                                    "type": "local",
+                                    "fieldName": "pows_click_history"
+                                  }
+                                ]
+                              }
+                            },
+                            "_nested_name": [
+                              {
+                                "fullExpression": "accordion_for_pows.level_b.dg_powlist_b.activity_buttons_b.dg_ok_puzzle_b.button_pow_@item.id",
+                                "matchedExpression": "@item.id",
+                                "type": "item",
+                                "fieldName": "id"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@item.id": [
+                              "name",
+                              "action_list.0.args.1",
+                              "action_list.0._raw",
+                              "action_list.0._cleaned",
+                              "_nested_name"
+                            ],
+                            "@item.name": [
+                              "value"
+                            ],
+                            "@local.click_history_field_name": [
+                              "action_list.2.args.0",
+                              "action_list.2._raw",
+                              "action_list.2._cleaned"
+                            ],
+                            "@local.pows_click_history": [
+                              "action_list.2.args.1",
+                              "action_list.2._raw",
+                              "action_list.2._cleaned"
+                            ]
+                          }
                         }
                       ],
-                      "parameter_list": {
-                        "style": "short",
-                        "text_align": "center"
-                      },
-                      "_nested_name": "accordion_for_pows.level_b.dg_powlist_b.activity_buttons_b.button_pow_@item.id",
+                      "_nested_name": "accordion_for_pows.level_b.dg_powlist_b.activity_buttons_b.dg_ok_puzzle_b",
                       "_dynamicFields": {
-                        "name": [
+                        "condition": [
                           {
-                            "fullExpression": "button_pow_@item.id",
-                            "matchedExpression": "@item.id",
-                            "type": "item",
-                            "fieldName": "id"
-                          }
-                        ],
-                        "value": [
-                          {
-                            "fullExpression": "@item.name",
-                            "matchedExpression": "@item.name",
-                            "type": "item",
-                            "fieldName": "name"
-                          }
-                        ],
-                        "action_list": {
-                          "0": {
-                            "args": {
-                              "1": [
-                                {
-                                  "fullExpression": "data.efm_pows.@item.id",
-                                  "matchedExpression": "@item.id",
-                                  "type": "item",
-                                  "fieldName": "id"
-                                }
-                              ]
-                            },
-                            "_raw": [
-                              {
-                                "fullExpression": "click | set_field:current_pow: data.efm_pows.@item.id",
-                                "matchedExpression": "@item.id",
-                                "type": "item",
-                                "fieldName": "id"
-                              }
-                            ],
-                            "_cleaned": [
-                              {
-                                "fullExpression": "click | set_field:current_pow: data.efm_pows.@item.id",
-                                "matchedExpression": "@item.id",
-                                "type": "item",
-                                "fieldName": "id"
-                              }
-                            ]
-                          },
-                          "2": {
-                            "args": {
-                              "0": [
-                                {
-                                  "fullExpression": "@local.click_history_field_name",
-                                  "matchedExpression": "@local.click_history_field_name",
-                                  "type": "local",
-                                  "fieldName": "click_history_field_name"
-                                }
-                              ],
-                              "1": [
-                                {
-                                  "fullExpression": "@local.pows_click_history",
-                                  "matchedExpression": "@local.pows_click_history",
-                                  "type": "local",
-                                  "fieldName": "pows_click_history"
-                                }
-                              ]
-                            },
-                            "_raw": [
-                              {
-                                "fullExpression": "click | set_field:@local.click_history_field_name: @local.pows_click_history",
-                                "matchedExpression": "@local.click_history_field_name",
-                                "type": "local",
-                                "fieldName": "click_history_field_name"
-                              },
-                              {
-                                "fullExpression": "click | set_field:@local.click_history_field_name: @local.pows_click_history",
-                                "matchedExpression": "@local.pows_click_history",
-                                "type": "local",
-                                "fieldName": "pows_click_history"
-                              }
-                            ],
-                            "_cleaned": [
-                              {
-                                "fullExpression": "click | set_field:@local.click_history_field_name: @local.pows_click_history",
-                                "matchedExpression": "@local.click_history_field_name",
-                                "type": "local",
-                                "fieldName": "click_history_field_name"
-                              },
-                              {
-                                "fullExpression": "click | set_field:@local.click_history_field_name: @local.pows_click_history",
-                                "matchedExpression": "@local.pows_click_history",
-                                "type": "local",
-                                "fieldName": "pows_click_history"
-                              }
-                            ]
-                          }
-                        },
-                        "_nested_name": [
-                          {
-                            "fullExpression": "accordion_for_pows.level_b.dg_powlist_b.activity_buttons_b.button_pow_@item.id",
-                            "matchedExpression": "@item.id",
-                            "type": "item",
-                            "fieldName": "id"
+                            "fullExpression": "@local.its_an_okay_puzzle",
+                            "matchedExpression": "@local.its_an_okay_puzzle",
+                            "type": "local",
+                            "fieldName": "its_an_okay_puzzle"
                           }
                         ]
                       },
                       "_dynamicDependencies": {
-                        "@item.id": [
-                          "name",
-                          "action_list.0.args.1",
-                          "action_list.0._raw",
-                          "action_list.0._cleaned",
-                          "_nested_name"
-                        ],
-                        "@item.name": [
-                          "value"
-                        ],
-                        "@local.click_history_field_name": [
-                          "action_list.2.args.0",
-                          "action_list.2._raw",
-                          "action_list.2._cleaned"
-                        ],
-                        "@local.pows_click_history": [
-                          "action_list.2.args.1",
-                          "action_list.2._raw",
-                          "action_list.2._cleaned"
+                        "@local.its_an_okay_puzzle": [
+                          "condition"
                         ]
                       }
                     }
