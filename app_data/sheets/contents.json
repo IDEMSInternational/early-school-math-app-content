@@ -663,11 +663,11 @@
         }
       }
     },
-    "efm_gloss_list": {
+    "efm_mts_list": {
       "flow_type": "data_list",
-      "flow_name": "efm_gloss_list",
-      "data_list_name": "efm_glossary",
-      "_xlsxPath": "EFM_glossary_high_level_sheets.xlsx",
+      "flow_name": "efm_mts_list",
+      "data_list_name": "efm_mts",
+      "_xlsxPath": "EFM_math_talks_high_level_sheets.xlsx",
       "_metadata": {
         "eye_opener": {
           "type": "boolean"
@@ -714,6 +714,12 @@
       "data_list_name": "efm_storybooks",
       "_xlsxPath": "EFM_storybooks_high_level_sheets.xlsx"
     },
+    "esm_gloss_list": {
+      "flow_type": "data_list",
+      "flow_name": "esm_gloss_list",
+      "data_list_name": "esm_glossary",
+      "_xlsxPath": "EFM_glossary_high_level_sheets.xlsx"
+    },
     "esm_strand_list": {
       "flow_type": "data_list",
       "flow_name": "esm_strand_list",
@@ -734,6 +740,9 @@
       "_metadata": {
         "searching_for_this": {
           "type": "boolean"
+        },
+        "glossary_count": {
+          "type": "number"
         },
         "block2_illust_flex": {
           "type": "number"
@@ -1130,6 +1139,26 @@
       "flow_name": "efm_gloss_start",
       "_xlsxPath": "EFM_glossary_high_level_sheets.xlsx"
     },
+    "efm_glossa_body_template": {
+      "flow_type": "template",
+      "flow_name": "efm_glossa_body_template",
+      "_xlsxPath": "EFM_glossary_high_level_sheets.xlsx"
+    },
+    "efm_glossa_start": {
+      "flow_type": "template",
+      "flow_name": "efm_glossa_start",
+      "_xlsxPath": "EFM_glossary_high_level_sheets.xlsx"
+    },
+    "efm_glossa_template": {
+      "flow_type": "template",
+      "flow_name": "efm_glossa_template",
+      "_xlsxPath": "EFM_glossary_high_level_sheets.xlsx"
+    },
+    "efm_mts_start": {
+      "flow_type": "template",
+      "flow_name": "efm_mts_start",
+      "_xlsxPath": "EFM_math_talks_high_level_sheets.xlsx"
+    },
     "efm_pow_body_template": {
       "flow_type": "template",
       "flow_name": "efm_pow_body_template",
@@ -1163,12 +1192,12 @@
     "esm_resources": {
       "flow_type": "template",
       "flow_name": "esm_resources",
-      "_xlsxPath": "EFM_high_level_sheets.xlsx"
+      "_xlsxPath": "EFM_resources_level_sheets.xlsx"
     },
     "esm_resources_finder": {
       "flow_type": "template",
       "flow_name": "esm_resources_finder",
-      "_xlsxPath": "EFM_high_level_sheets.xlsx"
+      "_xlsxPath": "EFM_resources_level_sheets.xlsx"
     },
     "esm_topic_body_template": {
       "flow_type": "template",
@@ -1510,14 +1539,34 @@
     }
   },
   "tour": {
-    "efm_gas_tour": {
+    "esm_gas_tour": {
       "flow_type": "tour",
-      "flow_name": "efm_gas_tour",
+      "flow_name": "esm_gas_tour",
       "_xlsxPath": "EFM_tours.xlsx"
     },
-    "efm_pows_tour": {
+    "esm_glossary_tour": {
       "flow_type": "tour",
-      "flow_name": "efm_pows_tour",
+      "flow_name": "esm_glossary_tour",
+      "_xlsxPath": "EFM_tours.xlsx"
+    },
+    "esm_math_talks_tour": {
+      "flow_type": "tour",
+      "flow_name": "esm_math_talks_tour",
+      "_xlsxPath": "EFM_tours.xlsx"
+    },
+    "esm_pows_tour": {
+      "flow_type": "tour",
+      "flow_name": "esm_pows_tour",
+      "_xlsxPath": "EFM_tours.xlsx"
+    },
+    "esm_resources_tour": {
+      "flow_type": "tour",
+      "flow_name": "esm_resources_tour",
+      "_xlsxPath": "EFM_tours.xlsx"
+    },
+    "esm_storybooks_tour": {
+      "flow_type": "tour",
+      "flow_name": "esm_storybooks_tour",
       "_xlsxPath": "EFM_tours.xlsx"
     },
     "esm_topics_tour": {

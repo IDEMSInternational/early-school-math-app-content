@@ -1,0 +1,95 @@
+{
+  "flow_type": "tour",
+  "flow_name": "esm_resources_tour",
+  "status": "released",
+  "rows": [
+    {
+      "type": "step",
+      "title": "Resources",
+      "_translations": {
+        "title": {},
+        "message_text": {}
+      },
+      "message_text": "This is a collection of teaching resources.",
+      "route": "template/esm_resources"
+    },
+    {
+      "type": "step",
+      "title": "Resource finder",
+      "_translations": {
+        "title": {},
+        "message_text": {}
+      },
+      "message_text": "This tool will find all the resources associated with a topic.",
+      "template_component_name": "dg_resource_finder",
+      "route": "template/esm_resources"
+    },
+    {
+      "type": "step",
+      "title": "Puzzles",
+      "_translations": {
+        "title": {},
+        "message_text": {}
+      },
+      "message_text": "These are math puzzles divided into increasing levels of sophistication – both in math content and in difficulty.",
+      "template_component_name": "dg_pows",
+      "route": "template/esm_resources"
+    },
+    {
+      "type": "step",
+      "title": "Games",
+      "_translations": {
+        "title": {},
+        "message_text": {}
+      },
+      "message_text": "These are math games.",
+      "template_component_name": "dg_gas",
+      "route": "template/esm_resources"
+    },
+    {
+      "type": "step",
+      "title": "Storybooks",
+      "_translations": {
+        "title": {},
+        "message_text": {}
+      },
+      "message_text": "These storybooks are for an adult to read to a child. They have math comments and guiding questions on every page. Help your child grow mathematically and create strong associations of math with the happy, cozy experience of reading together!",
+      "template_component_name": "dg_storybooks",
+      "route": "template/esm_resources"
+    },
+    {
+      "type": "step",
+      "title": "Math Talks",
+      "_translations": {
+        "title": {},
+        "message_text": {}
+      },
+      "message_text": "This has all the math talks used throughout this app. It will have number talks, dot talks, shape talks, fraction talks, and more.",
+      "template_component_name": "dg_math_talks",
+      "route": "template/esm_resources"
+    },
+    {
+      "type": "step",
+      "title": "Glossary",
+      "_translations": {
+        "title": {},
+        "message_text": {}
+      },
+      "message_text": "This is a glossary of significant math vocabulary.",
+      "template_component_name": "dg_glossary",
+      "route": "template/esm_resources"
+    },
+    {
+      "type": "step",
+      "title": "Help",
+      "_translations": {
+        "title": {},
+        "message_text": {}
+      },
+      "message_text": "If you ever want to see this introduction again, just click on the question mark.",
+      "template_component_name": "dg_help",
+      "route": "template/esm_resources"
+    }
+  ],
+  "_xlsxPath": "EFM_tours.xlsx"
+}

@@ -1,17 +1,17 @@
 {
   "flow_type": "tour",
-  "flow_name": "efm_pows_tour",
+  "flow_name": "esm_glossary_tour",
   "status": "released",
   "rows": [
     {
       "type": "step",
-      "title": "Puzzles",
+      "title": "Glossary",
       "_translations": {
         "title": {},
         "message_text": {}
       },
-      "message_text": "Have fun with these math puzzles!",
-      "route": "template/efm_pow_start"
+      "message_text": "This contains definitions and explanations of various mathematical words and phrases.",
+      "route": "template/efm_gloss_start"
     },
     {
       "type": "step",
@@ -22,7 +22,7 @@
       },
       "message_text": "If you ever want to see this introduction again, just click on the question mark.",
       "template_component_name": "dg_help",
-      "route": "template/efm_pow_start"
+      "route": "template/efm_gloss_start"
     }
   ],
   "_xlsxPath": "EFM_tours.xlsx"

@@ -14,14 +14,44 @@
           "_translations": {
             "value": {}
           },
+          "style_list": [
+            "flex:1"
+          ],
           "_nested_name": "top_of_page.spacer"
+        },
+        {
+          "type": "display_group",
+          "name": "dg_help",
+          "rows": [
+            {
+              "type": "round_button",
+              "name": "help_button",
+              "action_list": [
+                {
+                  "trigger": "click",
+                  "action_id": "start_tour",
+                  "args": [
+                    "esm_resources_tour"
+                  ],
+                  "_raw": "click | start_tour: esm_resources_tour",
+                  "_cleaned": "click | start_tour: esm_resources_tour"
+                }
+              ],
+              "parameter_list": {
+                "icon_src": "help",
+                "style": "navigation"
+              },
+              "_nested_name": "top_of_page.dg_help.help_button"
+            }
+          ],
+          "_nested_name": "top_of_page.dg_help"
         }
       ],
       "_nested_name": "top_of_page"
     },
     {
       "type": "display_group",
-      "name": "resource_finder",
+      "name": "dg_resource_finder",
       "style_list": [
         "margin-top: 10px"
       ],
@@ -58,10 +88,10 @@
             "style": "short",
             "text_align": "center"
           },
-          "_nested_name": "resource_finder.button_resources_finder"
+          "_nested_name": "dg_resource_finder.button_resources_finder"
         }
       ],
-      "_nested_name": "resource_finder"
+      "_nested_name": "dg_resource_finder"
     },
     {
       "name": "now",
@@ -195,10 +225,10 @@
               "trigger": "click",
               "action_id": "start_tour",
               "args": [
-                "efm_pows_tour"
+                "esm_pows_tour"
               ],
-              "_raw": "click | start_tour: efm_pows_tour",
-              "_cleaned": "click | start_tour: efm_pows_tour"
+              "_raw": "click | start_tour: esm_pows_tour",
+              "_cleaned": "click | start_tour: esm_pows_tour"
             },
             {
               "trigger": "click",
@@ -548,10 +578,10 @@
               "trigger": "click",
               "action_id": "start_tour",
               "args": [
-                "efm_gas_tour"
+                "esm_gas_tour"
               ],
-              "_raw": "click | start_tour: efm_gas_tour",
-              "_cleaned": "click | start_tour: efm_gas_tour"
+              "_raw": "click | start_tour: esm_gas_tour",
+              "_cleaned": "click | start_tour: esm_gas_tour"
             },
             {
               "trigger": "click",
@@ -901,10 +931,10 @@
               "trigger": "click",
               "action_id": "start_tour",
               "args": [
-                "efm_storybooks_tour"
+                "esm_storybooks_tour"
               ],
-              "_raw": "click | start_tour: efm_storybooks_tour",
-              "_cleaned": "click | start_tour: efm_storybooks_tour"
+              "_raw": "click | start_tour: esm_storybooks_tour",
+              "_cleaned": "click | start_tour: esm_storybooks_tour"
             },
             {
               "trigger": "click",
@@ -1149,6 +1179,359 @@
     },
     {
       "name": "click_history_field_name",
+      "value": "math_talks_button_click_history",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "click_history_field_name"
+    },
+    {
+      "name": "button_click_history",
+      "value": "@fields.@local.click_history_field_name ;  @local.now",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "!!(@fields.@local.click_history_field_name)",
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "button_click_history",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@fields.@local.click_history_field_name ;  @local.now",
+            "matchedExpression": "@local.click_history_field_name",
+            "type": "local",
+            "fieldName": "click_history_field_name"
+          },
+          {
+            "fullExpression": "@fields.@local.click_history_field_name ;  @local.now",
+            "matchedExpression": "@local.now",
+            "type": "local",
+            "fieldName": "now"
+          }
+        ],
+        "condition": [
+          {
+            "fullExpression": "!!(@fields.@local.click_history_field_name)",
+            "matchedExpression": "@local.click_history_field_name",
+            "type": "local",
+            "fieldName": "click_history_field_name"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.click_history_field_name": [
+          "value",
+          "condition"
+        ],
+        "@local.now": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "button_click_history",
+      "value": "@local.now",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "!(@fields.@local.click_history_field_name)",
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "button_click_history",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.now",
+            "matchedExpression": "@local.now",
+            "type": "local",
+            "fieldName": "now"
+          }
+        ],
+        "condition": [
+          {
+            "fullExpression": "!(@fields.@local.click_history_field_name)",
+            "matchedExpression": "@local.click_history_field_name",
+            "type": "local",
+            "fieldName": "click_history_field_name"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.now": [
+          "value"
+        ],
+        "@local.click_history_field_name": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "display_group",
+      "name": "dg_math_talks",
+      "rows": [
+        {
+          "type": "button",
+          "name": "button_math_talks",
+          "value": "Math Talks",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "start_tour",
+              "args": [
+                "esm_math_talks_tour"
+              ],
+              "_raw": "click | start_tour: esm_math_talks_tour",
+              "_cleaned": "click | start_tour: esm_math_talks_tour"
+            },
+            {
+              "trigger": "click",
+              "action_id": "set_field",
+              "args": [
+                "has_accessed_math_talks",
+                true
+              ],
+              "_raw": "click | set_field: has_accessed_math_talks: TRUE",
+              "_cleaned": "click | set_field: has_accessed_math_talks: TRUE"
+            },
+            {
+              "trigger": "click",
+              "action_id": "set_field",
+              "args": [
+                "@local.click_history_field_name",
+                "@local.button_click_history"
+              ],
+              "_raw": "click | set_field:@local.click_history_field_name: @local.button_click_history",
+              "_cleaned": "click | set_field:@local.click_history_field_name: @local.button_click_history"
+            }
+          ],
+          "condition": "!@fields.has_accessed_math_talks",
+          "parameter_list": {
+            "style": "short",
+            "text_align": "center"
+          },
+          "_nested_name": "dg_math_talks.button_math_talks",
+          "_dynamicFields": {
+            "action_list": {
+              "2": {
+                "args": {
+                  "0": [
+                    {
+                      "fullExpression": "@local.click_history_field_name",
+                      "matchedExpression": "@local.click_history_field_name",
+                      "type": "local",
+                      "fieldName": "click_history_field_name"
+                    }
+                  ],
+                  "1": [
+                    {
+                      "fullExpression": "@local.button_click_history",
+                      "matchedExpression": "@local.button_click_history",
+                      "type": "local",
+                      "fieldName": "button_click_history"
+                    }
+                  ]
+                },
+                "_raw": [
+                  {
+                    "fullExpression": "click | set_field:@local.click_history_field_name: @local.button_click_history",
+                    "matchedExpression": "@local.click_history_field_name",
+                    "type": "local",
+                    "fieldName": "click_history_field_name"
+                  },
+                  {
+                    "fullExpression": "click | set_field:@local.click_history_field_name: @local.button_click_history",
+                    "matchedExpression": "@local.button_click_history",
+                    "type": "local",
+                    "fieldName": "button_click_history"
+                  }
+                ],
+                "_cleaned": [
+                  {
+                    "fullExpression": "click | set_field:@local.click_history_field_name: @local.button_click_history",
+                    "matchedExpression": "@local.click_history_field_name",
+                    "type": "local",
+                    "fieldName": "click_history_field_name"
+                  },
+                  {
+                    "fullExpression": "click | set_field:@local.click_history_field_name: @local.button_click_history",
+                    "matchedExpression": "@local.button_click_history",
+                    "type": "local",
+                    "fieldName": "button_click_history"
+                  }
+                ]
+              }
+            },
+            "condition": [
+              {
+                "fullExpression": "!@fields.has_accessed_math_talks",
+                "matchedExpression": "!@fields.has_accessed_math_talks",
+                "type": "fields",
+                "fieldName": "has_accessed_math_talks"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.click_history_field_name": [
+              "action_list.2.args.0",
+              "action_list.2._raw",
+              "action_list.2._cleaned"
+            ],
+            "@local.button_click_history": [
+              "action_list.2.args.1",
+              "action_list.2._raw",
+              "action_list.2._cleaned"
+            ],
+            "!@fields.has_accessed_math_talks": [
+              "condition"
+            ]
+          }
+        },
+        {
+          "type": "button",
+          "name": "button_math_talks",
+          "value": "Math Talks",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "go_to",
+              "args": [
+                "efm_mts_start"
+              ],
+              "_raw": "click | go_to: efm_mts_start",
+              "_cleaned": "click | go_to: efm_mts_start"
+            },
+            {
+              "trigger": "click",
+              "action_id": "set_field",
+              "args": [
+                "@local.click_history_field_name",
+                "@local.button_click_history"
+              ],
+              "_raw": "click | set_field:@local.click_history_field_name: @local.button_click_history",
+              "_cleaned": "click | set_field:@local.click_history_field_name: @local.button_click_history"
+            }
+          ],
+          "condition": "@fields.has_accessed_math_talks",
+          "parameter_list": {
+            "style": "short",
+            "text_align": "center"
+          },
+          "_nested_name": "dg_math_talks.button_math_talks",
+          "_dynamicFields": {
+            "action_list": {
+              "1": {
+                "args": {
+                  "0": [
+                    {
+                      "fullExpression": "@local.click_history_field_name",
+                      "matchedExpression": "@local.click_history_field_name",
+                      "type": "local",
+                      "fieldName": "click_history_field_name"
+                    }
+                  ],
+                  "1": [
+                    {
+                      "fullExpression": "@local.button_click_history",
+                      "matchedExpression": "@local.button_click_history",
+                      "type": "local",
+                      "fieldName": "button_click_history"
+                    }
+                  ]
+                },
+                "_raw": [
+                  {
+                    "fullExpression": "click | set_field:@local.click_history_field_name: @local.button_click_history",
+                    "matchedExpression": "@local.click_history_field_name",
+                    "type": "local",
+                    "fieldName": "click_history_field_name"
+                  },
+                  {
+                    "fullExpression": "click | set_field:@local.click_history_field_name: @local.button_click_history",
+                    "matchedExpression": "@local.button_click_history",
+                    "type": "local",
+                    "fieldName": "button_click_history"
+                  }
+                ],
+                "_cleaned": [
+                  {
+                    "fullExpression": "click | set_field:@local.click_history_field_name: @local.button_click_history",
+                    "matchedExpression": "@local.click_history_field_name",
+                    "type": "local",
+                    "fieldName": "click_history_field_name"
+                  },
+                  {
+                    "fullExpression": "click | set_field:@local.click_history_field_name: @local.button_click_history",
+                    "matchedExpression": "@local.button_click_history",
+                    "type": "local",
+                    "fieldName": "button_click_history"
+                  }
+                ]
+              }
+            },
+            "condition": [
+              {
+                "fullExpression": "@fields.has_accessed_math_talks",
+                "matchedExpression": "@fields.has_accessed_math_talks",
+                "type": "fields",
+                "fieldName": "has_accessed_math_talks"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.click_history_field_name": [
+              "action_list.1.args.0",
+              "action_list.1._raw",
+              "action_list.1._cleaned"
+            ],
+            "@local.button_click_history": [
+              "action_list.1.args.1",
+              "action_list.1._raw",
+              "action_list.1._cleaned"
+            ],
+            "@fields.has_accessed_math_talks": [
+              "condition"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "dg_math_talks"
+    },
+    {
+      "name": "now",
+      "value": "@calc(timestamp())",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "now",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(timestamp())",
+            "matchedExpression": "@calc(timestamp())",
+            "type": "calc",
+            "fieldName": "timestamp()"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@calc(timestamp())": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "click_history_field_name",
       "value": "glossary_button_click_history",
       "_translations": {
         "value": {}
@@ -1240,7 +1623,7 @@
     },
     {
       "type": "display_group",
-      "name": "dg_storybooks",
+      "name": "dg_glossary",
       "rows": [
         {
           "type": "button",
@@ -1254,10 +1637,10 @@
               "trigger": "click",
               "action_id": "start_tour",
               "args": [
-                "efm_glossary_tour"
+                "esm_glossary_tour"
               ],
-              "_raw": "click | start_tour: efm_glossary_tour",
-              "_cleaned": "click | start_tour: efm_glossary_tour"
+              "_raw": "click | start_tour: esm_glossary_tour",
+              "_cleaned": "click | start_tour: esm_glossary_tour"
             },
             {
               "trigger": "click",
@@ -1285,7 +1668,7 @@
             "style": "short",
             "text_align": "center"
           },
-          "_nested_name": "dg_storybooks.button_glossary",
+          "_nested_name": "dg_glossary.button_glossary",
           "_dynamicFields": {
             "action_list": {
               "2": {
@@ -1372,6 +1755,46 @@
           "action_list": [
             {
               "trigger": "click",
+              "action_id": "set_field",
+              "args": [
+                "glossary_words_count",
+                "0"
+              ],
+              "_raw": "click | set_field:glossary_words_count : 0",
+              "_cleaned": "click | set_field:glossary_words_count : 0"
+            },
+            {
+              "trigger": "click",
+              "action_id": "set_field",
+              "args": [
+                "glossary_word_1",
+                "NO_ENTRY"
+              ],
+              "_raw": "click | set_field:glossary_word_1 : NO_ENTRY",
+              "_cleaned": "click | set_field:glossary_word_1 : NO_ENTRY"
+            },
+            {
+              "trigger": "click",
+              "action_id": "set_field",
+              "args": [
+                "glossary_word_2",
+                "NO_ENTRY"
+              ],
+              "_raw": "click | set_field:glossary_word_2 : NO_ENTRY",
+              "_cleaned": "click | set_field:glossary_word_2 : NO_ENTRY"
+            },
+            {
+              "trigger": "click",
+              "action_id": "set_field",
+              "args": [
+                "glossary_word_3",
+                "NO_ENTRY"
+              ],
+              "_raw": "click | set_field:glossary_word_3 : NO_ENTRY",
+              "_cleaned": "click | set_field:glossary_word_3 : NO_ENTRY"
+            },
+            {
+              "trigger": "click",
               "action_id": "go_to",
               "args": [
                 "efm_gloss_start"
@@ -1395,10 +1818,10 @@
             "style": "short",
             "text_align": "center"
           },
-          "_nested_name": "dg_storybooks.button_glossary",
+          "_nested_name": "dg_glossary.button_glossary",
           "_dynamicFields": {
             "action_list": {
-              "1": {
+              "5": {
                 "args": {
                   "0": [
                     {
@@ -1458,14 +1881,14 @@
           },
           "_dynamicDependencies": {
             "@local.click_history_field_name": [
-              "action_list.1.args.0",
-              "action_list.1._raw",
-              "action_list.1._cleaned"
+              "action_list.5.args.0",
+              "action_list.5._raw",
+              "action_list.5._cleaned"
             ],
             "@local.button_click_history": [
-              "action_list.1.args.1",
-              "action_list.1._raw",
-              "action_list.1._cleaned"
+              "action_list.5.args.1",
+              "action_list.5._raw",
+              "action_list.5._cleaned"
             ],
             "@fields.has_accessed_glossary": [
               "condition"
@@ -1473,8 +1896,8 @@
           }
         }
       ],
-      "_nested_name": "dg_storybooks"
+      "_nested_name": "dg_glossary"
     }
   ],
-  "_xlsxPath": "EFM_high_level_sheets.xlsx"
+  "_xlsxPath": "EFM_resources_level_sheets.xlsx"
 }

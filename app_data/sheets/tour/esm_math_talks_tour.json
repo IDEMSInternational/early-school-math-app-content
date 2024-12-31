@@ -1,17 +1,17 @@
 {
   "flow_type": "tour",
-  "flow_name": "esm_topics_tour",
+  "flow_name": "esm_math_talks_tour",
   "status": "released",
   "rows": [
     {
       "type": "step",
-      "title": "Topics",
+      "title": "Math Talks",
       "_translations": {
         "title": {},
         "message_text": {}
       },
-      "message_text": "This is a collection of significant topics in the teaching of early mathematics. This is an early prototype – we will be adding significant functionality.",
-      "route": "template/esm_topic_start"
+      "message_text": "These are many types of talks to do with a class. There are number talks, shape talks, fraction talks, and probably many more.",
+      "route": "template/efm_mts_start"
     },
     {
       "type": "step",
@@ -22,7 +22,7 @@
       },
       "message_text": "If you ever want to see this introduction again, just click on the question mark.",
       "template_component_name": "dg_help",
-      "route": "template/esm_topic_start"
+      "route": "template/efm_mts_start"
     }
   ],
   "_xlsxPath": "EFM_tours.xlsx"

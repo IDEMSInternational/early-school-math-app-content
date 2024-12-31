@@ -590,6 +590,15 @@
           "action_list": [
             {
               "trigger": "click",
+              "action_id": "start_tour",
+              "args": [
+                "esm_resources_tour"
+              ],
+              "_raw": "click | start_tour: esm_resources_tour",
+              "_cleaned": "click | start_tour: esm_resources_tour"
+            },
+            {
+              "trigger": "click",
               "action_id": "set_field",
               "args": [
                 "has_accessed_resources",
@@ -617,7 +626,7 @@
           "_nested_name": "dg_resources.button_pows",
           "_dynamicFields": {
             "action_list": {
-              "1": {
+              "2": {
                 "args": {
                   "0": [
                     {
@@ -677,14 +686,14 @@
           },
           "_dynamicDependencies": {
             "@local.click_history_field_name": [
-              "action_list.1.args.0",
-              "action_list.1._raw",
-              "action_list.1._cleaned"
+              "action_list.2.args.0",
+              "action_list.2._raw",
+              "action_list.2._cleaned"
             ],
             "@local.button_click_history": [
-              "action_list.1.args.1",
-              "action_list.1._raw",
-              "action_list.1._cleaned"
+              "action_list.2.args.1",
+              "action_list.2._raw",
+              "action_list.2._cleaned"
             ],
             "!@fields.has_accessed_resources": [
               "condition"

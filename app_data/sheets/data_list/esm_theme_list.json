@@ -5,88 +5,6 @@
   "status": "released",
   "rows": [
     {
-      "id": "MT_EAA_",
-      "strand_id": "MT",
-      "topic_id_1": "MT_EAA_EandO",
-      "topic_id_2": "MT_EAA_MTinH",
-      "topic_id_3": "MT_EAA_MTOA",
-      "topic_id_4": "MT_EAA_MTDC",
-      "topic_id_5": "MT_EAA_MTC",
-      "topic_id_6": "MT_EAA_MTPDA",
-      "name": "Early, Anytime, & Anywhere",
-      "_translations": {
-        "name": {}
-      },
-      "_translatedFields": {
-        "name": {
-          "eng": "Early, Anytime, & Anywhere"
-        }
-      }
-    },
-    {
-      "id": "MT_RWC_",
-      "strand_id": "MT",
-      "topic_id_1": "MT_RWC_DRP",
-      "topic_id_2": "MT_RWC_DRV",
-      "name": "Reading with Children",
-      "_translations": {
-        "name": {}
-      },
-      "_translatedFields": {
-        "name": {
-          "eng": "Reading with Children"
-        }
-      }
-    },
-    {
-      "id": "Geom_OP_",
-      "strand_id": "Geom",
-      "topic_id_1": "Geom_OP_PG",
-      "topic_id_2": "Geom_OP_SD",
-      "name": "Object Properties",
-      "_translations": {
-        "name": {}
-      },
-      "_translatedFields": {
-        "name": {
-          "eng": "Object Properties"
-        }
-      }
-    },
-    {
-      "id": "Geom_Pat_",
-      "strand_id": "Geom",
-      "topic_id_1": "Geom_Pat_Intro",
-      "topic_id_2": "Geom_Pat_MSP",
-      "name": "Patterns",
-      "_translations": {
-        "name": {}
-      },
-      "_translatedFields": {
-        "name": {
-          "eng": "Patterns"
-        }
-      }
-    },
-    {
-      "id": "Geom_Shape_",
-      "strand_id": "Geom",
-      "topic_id_1": "Geom_Shape_DS",
-      "topic_id_2": "Geom_Shape_SN2D3D",
-      "topic_id_3": "Geom_Shape_CompSort",
-      "topic_id_4": "Geom_Shape_2Dof3DS",
-      "topic_id_5": "Geom_Shape_CompDecomp",
-      "name": "Shapes",
-      "_translations": {
-        "name": {}
-      },
-      "_translatedFields": {
-        "name": {
-          "eng": "Shapes"
-        }
-      }
-    },
-    {
       "id": "NPV_QC10_",
       "strand_id": "NPV",
       "topic_id_1": "NPV_QC10_QC",
@@ -215,6 +133,118 @@
       }
     },
     {
+      "id": "Meas_Dist_",
+      "strand_id": "Meas",
+      "topic_id_1": "Meas_Dist_CL",
+      "topic_id_2": "Meas_Dist_MLNS",
+      "topic_id_3": "Meas_Dist_MLS",
+      "name": "Distance",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Distance"
+        }
+      }
+    },
+    {
+      "id": "Meas_Wt_",
+      "strand_id": "Meas",
+      "topic_id_1": "Meas_Wt_CW",
+      "topic_id_2": "Meas_Wt_MWNS",
+      "topic_id_3": "Meas_Wt_MWS",
+      "name": "Weight",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Weight"
+        }
+      }
+    },
+    {
+      "id": "Meas_Vol_",
+      "strand_id": "Meas",
+      "topic_id_1": "Meas_Vol_CV",
+      "topic_id_2": "Meas_Vol_CVNS",
+      "topic_id_3": "Meas_Vol_CVS",
+      "name": "Volume",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Volume"
+        }
+      }
+    },
+    {
+      "id": "Meas_Time_",
+      "strand_id": "Meas",
+      "topic_id_1": "Meas_Time_PofD",
+      "topic_id_2": "Meas_Time_Cal",
+      "topic_id_3": "Meas_Time_TTH",
+      "name": "Time",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Time"
+        }
+      }
+    },
+    {
+      "id": "Geom_OP_",
+      "strand_id": "Geom",
+      "topic_id_1": "Geom_OP_PG",
+      "topic_id_2": "Geom_OP_SD",
+      "name": "Object Properties",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Object Properties"
+        }
+      }
+    },
+    {
+      "id": "Geom_Pat_",
+      "strand_id": "Geom",
+      "topic_id_1": "Geom_Pat_Intro",
+      "topic_id_2": "Geom_Pat_MSP",
+      "name": "Patterns",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Patterns"
+        }
+      }
+    },
+    {
+      "id": "Geom_Shape_",
+      "strand_id": "Geom",
+      "topic_id_1": "Geom_Shape_DS",
+      "topic_id_2": "Geom_Shape_SN2D3D",
+      "topic_id_3": "Geom_Shape_CompSort",
+      "topic_id_4": "Geom_Shape_2Dof3DS",
+      "topic_id_5": "Geom_Shape_CompDecomp",
+      "name": "Shapes",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Shapes"
+        }
+      }
+    },
+    {
       "id": "FEP_EPW_",
       "strand_id": "FP",
       "topic_id_1": "FEP_EPW_NEP",
@@ -301,66 +331,36 @@
       }
     },
     {
-      "id": "Meas_Dist_",
-      "strand_id": "Meas",
-      "topic_id_1": "Meas_Dist_CL",
-      "topic_id_2": "Meas_Dist_MLNS",
-      "topic_id_3": "Meas_Dist_MLS",
-      "name": "Distance",
+      "id": "FMT_EAA_",
+      "strand_id": "FMT",
+      "topic_id_1": "FMT_EAA_EandO",
+      "topic_id_2": "FMT_EAA_FMTinH",
+      "topic_id_3": "FMT_EAA_FMTOA",
+      "topic_id_4": "FMT_EAA_FMTDC",
+      "topic_id_5": "FMT_EAA_FMTC",
+      "topic_id_6": "FMT_EAA_FMTPDA",
+      "name": "Early, Anytime, & Anywhere",
       "_translations": {
         "name": {}
       },
       "_translatedFields": {
         "name": {
-          "eng": "Distance"
+          "eng": "Early, Anytime, & Anywhere"
         }
       }
     },
     {
-      "id": "Meas_Wt_",
-      "strand_id": "Meas",
-      "topic_id_1": "Meas_Wt_CW",
-      "topic_id_2": "Meas_Wt_MWNS",
-      "topic_id_3": "Meas_Wt_MWS",
-      "name": "Weight",
+      "id": "FMT_RWC_",
+      "strand_id": "FMT",
+      "topic_id_1": "FMT_RWC_DRP",
+      "topic_id_2": "FMT_RWC_DRV",
+      "name": "Reading with Children",
       "_translations": {
         "name": {}
       },
       "_translatedFields": {
         "name": {
-          "eng": "Weight"
-        }
-      }
-    },
-    {
-      "id": "Meas_Vol_",
-      "strand_id": "Meas",
-      "topic_id_1": "Meas_Vol_CV",
-      "topic_id_2": "Meas_Vol_CVNS",
-      "topic_id_3": "Meas_Vol_CVS",
-      "name": "Volume",
-      "_translations": {
-        "name": {}
-      },
-      "_translatedFields": {
-        "name": {
-          "eng": "Volume"
-        }
-      }
-    },
-    {
-      "id": "Meas_Time_",
-      "strand_id": "Meas",
-      "topic_id_1": "Meas_Time_PofD",
-      "topic_id_2": "Meas_Time_Cal",
-      "topic_id_3": "Meas_Time_TTH",
-      "name": "Time",
-      "_translations": {
-        "name": {}
-      },
-      "_translatedFields": {
-        "name": {
-          "eng": "Time"
+          "eng": "Reading with Children"
         }
       }
     }
