@@ -1,17 +1,17 @@
 {
   "flow_type": "tour",
-  "flow_name": "esm_topics_tour",
+  "flow_name": "esm_storybooks_tour",
   "status": "released",
   "rows": [
     {
       "type": "step",
-      "title": "Topics",
+      "title": "Storybooks",
       "_translations": {
         "title": {},
         "message_text": {}
       },
-      "message_text": "This is a collection of significant topics in the teaching of early mathematics. This is an early prototype – we will be adding significant functionality.",
-      "route": "template/esm_topic_start"
+      "message_text": "These storybooks are for an adult to read to a child. They have math comments and guiding questions on every page. Help your child grow mathematically and create strong associations of math with the happy, cozy experience of reading together!",
+      "route": "template/efm_storybooks"
     },
     {
       "type": "step",
@@ -22,7 +22,7 @@
       },
       "message_text": "If you ever want to see this introduction again, just click on the question mark.",
       "template_component_name": "dg_help",
-      "route": "template/esm_topic_start"
+      "route": "template/efm_storybooks"
     }
   ],
   "_xlsxPath": "EFM_tours.xlsx"

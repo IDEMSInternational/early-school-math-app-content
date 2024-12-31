@@ -1,6 +1,6 @@
 {
   "flow_type": "template",
-  "flow_name": "efm_pow_start",
+  "flow_name": "efm_glossa_start",
   "status": "released",
   "rows": [
     {
@@ -31,10 +31,10 @@
                   "trigger": "click",
                   "action_id": "start_tour",
                   "args": [
-                    "esm_pows_tour"
+                    "efm_pows_tour"
                   ],
-                  "_raw": "click | start_tour: esm_pows_tour",
-                  "_cleaned": "click | start_tour: esm_pows_tour"
+                  "_raw": "click | start_tour: efm_pows_tour",
+                  "_cleaned": "click | start_tour: efm_pows_tour"
                 }
               ],
               "parameter_list": {
@@ -1242,5 +1242,5 @@
       "_nested_name": "fake_group"
     }
   ],
-  "_xlsxPath": "EFM_pows_high_level_sheets.xlsx"
+  "_xlsxPath": "EFM_glossary_high_level_sheets.xlsx"
 }
