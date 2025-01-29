@@ -1635,6 +1635,16 @@
           "action_list": [
             {
               "trigger": "click",
+              "action_id": "set_field",
+              "args": [
+                "glossary_words_count",
+                "0"
+              ],
+              "_raw": "click | set_field:glossary_words_count : 0",
+              "_cleaned": "click | set_field:glossary_words_count : 0"
+            },
+            {
+              "trigger": "click",
               "action_id": "start_tour",
               "args": [
                 "esm_glossary_tour"
@@ -1671,7 +1681,7 @@
           "_nested_name": "dg_glossary.button_glossary",
           "_dynamicFields": {
             "action_list": {
-              "2": {
+              "3": {
                 "args": {
                   "0": [
                     {
@@ -1731,14 +1741,14 @@
           },
           "_dynamicDependencies": {
             "@local.click_history_field_name": [
-              "action_list.2.args.0",
-              "action_list.2._raw",
-              "action_list.2._cleaned"
+              "action_list.3.args.0",
+              "action_list.3._raw",
+              "action_list.3._cleaned"
             ],
             "@local.button_click_history": [
-              "action_list.2.args.1",
-              "action_list.2._raw",
-              "action_list.2._cleaned"
+              "action_list.3.args.1",
+              "action_list.3._raw",
+              "action_list.3._cleaned"
             ],
             "!@fields.has_accessed_glossary": [
               "condition"

@@ -3,26 +3,26 @@
 
 | type | count |
 | --- | --- |
-| accordion | 18 |
-| accordion_section | 27 |
-| button | 59 |
+| accordion | 15 |
+| accordion_section | 23 |
+| button | 55 |
 | debug_toggle | 1 |
-| display_group | 154 |
-| image | 30 |
-| items | 33 |
+| display_group | 127 |
+| image | 24 |
+| items | 28 |
 | qr_code | 1 |
 | radio_button_grid | 1 |
-| round_button | 9 |
+| round_button | 8 |
 | select_text | 1 |
 | set_field | 12 |
-| set_variable | 481 |
+| set_variable | 424 |
 | simple_checkbox | 4 |
-| template | 64 |
-| text | 121 |
+| template | 63 |
+| text | 107 |
 | text_area | 2 |
 | tile_component | 3 |
-| title | 26 |
-| toggle_bar | 11 |
+| title | 25 |
+| toggle_bar | 10 |
 </details>
 
 <details >
@@ -32,18 +32,18 @@
 | --- | --- |
 | app_update | 1 |
 | emit: completed | 58 |
-| emit: force_reload | 11 |
+| emit: force_reload | 9 |
 | emit: force_reprocess | 4 |
 | emit: server_sync | 1 |
 | emit: set_language | 1 |
 | emit: uncompleted | 58 |
 | feedback | 11 |
-| go_to | 29 |
+| go_to | 27 |
 | go_to_url | 3 |
 | reset_app | 1 |
 | set_field | 54 |
 | set_local | 4 |
-| start_tour | 16 |
+| start_tour | 15 |
 </details>
 
 <details open>
@@ -1362,7 +1362,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | data_list | lifecycle_actions | 1 |
 | generator |  | 1 |
 | global |  | 2 |
-| template |  | 30 |
+| template |  | 27 |
 | template | generated | 58 |
 | tour |  | 8 |
 </details>
