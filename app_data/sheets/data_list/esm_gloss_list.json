@@ -7,6 +7,48 @@
     {
       "id": "id_1",
       "block1_type": "all_text",
+      "phrase": "acute angle",
+      "_translations": {
+        "phrase": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "phrase": {
+          "eng": "acute angle"
+        },
+        "block1_text": {
+          "eng": "See \"angles – acute, right, obtuse.\""
+        }
+      },
+      "block1_text": "See \"angles – acute, right, obtuse.\""
+    },
+    {
+      "id": "id_2",
+      "block1_type": "all_text",
+      "block2_type": "all_text",
+      "phrase": "acute triangle",
+      "_translations": {
+        "phrase": {},
+        "block1_text": {},
+        "block2_text": {}
+      },
+      "_translatedFields": {
+        "phrase": {
+          "eng": "acute triangle"
+        },
+        "block1_text": {
+          "eng": "An acute triangle is a triangle with three acute angles."
+        },
+        "block2_text": {
+          "eng": "Examples: draw a picture of an acute triangle"
+        }
+      },
+      "block1_text": "An acute triangle is a triangle with three acute angles.",
+      "block2_text": "Examples: draw a picture of an acute triangle"
+    },
+    {
+      "id": "id_3",
+      "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "angle",
       "_translations": {
@@ -19,17 +61,17 @@
           "eng": "angle"
         },
         "block1_text": {
-          "eng": "Definition: An angle is a geometric figure created by two lines, line segments, or rays meeting at a point."
+          "eng": "An angle is a geometric figure created by two lines, line segments, or rays meeting at a point."
         },
         "block2_text": {
-          "eng": "Examples: draw simple pictures of the three examples"
+          "eng": "Examples: draw pictures of the three ways of creating an angle"
         }
       },
-      "block1_text": "Definition: An angle is a geometric figure created by two lines, line segments, or rays meeting at a point.",
-      "block2_text": "Examples: draw simple pictures of the three examples"
+      "block1_text": "An angle is a geometric figure created by two lines, line segments, or rays meeting at a point.",
+      "block2_text": "Examples: draw pictures of the three ways of creating an angle"
     },
     {
-      "id": "id_2",
+      "id": "id_4",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "angle measure",
@@ -43,17 +85,17 @@
           "eng": "angle measure"
         },
         "block1_text": {
-          "eng": "Definition: This is the size of an angle, usually measured in degrees in the earlier school years. 90 degrees is the size of an angle formed at the corner of most pieces of paper."
+          "eng": "This measure is the size of an angle, usually measured in degrees in the earlier school years. 90 degrees is the size of an angle formed at the corner of most pieces of paper."
         },
         "block2_text": {
-          "eng": "Example: draw a pretty picture."
+          "eng": "Example: draw pictures of a 90 degree and a 20 degree angle, with the size of the angle indicated"
         }
       },
-      "block1_text": "Definition: This is the size of an angle, usually measured in degrees in the earlier school years. 90 degrees is the size of an angle formed at the corner of most pieces of paper.",
-      "block2_text": "Example: draw a pretty picture."
+      "block1_text": "This measure is the size of an angle, usually measured in degrees in the earlier school years. 90 degrees is the size of an angle formed at the corner of most pieces of paper.",
+      "block2_text": "Example: draw pictures of a 90 degree and a 20 degree angle, with the size of the angle indicated"
     },
     {
-      "id": "id_3",
+      "id": "id_5",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "angles – acute, right, obtuse",
@@ -67,17 +109,35 @@
           "eng": "angles – acute, right, obtuse"
         },
         "block1_text": {
-          "eng": "Definition: A right angle is a 90 degree angle. It is the size of the corner of most pieces of paper. A scalene angle is smaller than a right angle, and an obtuse angle is larger than a right angle."
+          "eng": "A right angle is a 90 degree angle. It is the size of the corner of most pieces of paper. A scalene angle is smaller than a right angle, and an obtuse angle is larger than a right angle."
         },
         "block2_text": {
-          "eng": "Example: draw a pretty picture."
+          "eng": "Example: draw pictures of the three kinds of angles."
         }
       },
-      "block1_text": "Definition: A right angle is a 90 degree angle. It is the size of the corner of most pieces of paper. A scalene angle is smaller than a right angle, and an obtuse angle is larger than a right angle.",
-      "block2_text": "Example: draw a pretty picture."
+      "block1_text": "A right angle is a 90 degree angle. It is the size of the corner of most pieces of paper. A scalene angle is smaller than a right angle, and an obtuse angle is larger than a right angle.",
+      "block2_text": "Example: draw pictures of the three kinds of angles."
     },
     {
-      "id": "id_4",
+      "id": "id_6",
+      "block1_type": "all_text",
+      "phrase": "cardinal number",
+      "_translations": {
+        "phrase": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "phrase": {
+          "eng": "cardinal number"
+        },
+        "block1_text": {
+          "eng": "A cardinal number is the count or size of a collection. This is in contrast to an ordinal number, which describes the relative position. For example, you might have the second in a collection of four objects - four is the cardinal number and second is the ordinal number."
+        }
+      },
+      "block1_text": "A cardinal number is the count or size of a collection. This is in contrast to an ordinal number, which describes the relative position. For example, you might have the second in a collection of four objects - four is the cardinal number and second is the ordinal number."
+    },
+    {
+      "id": "id_7",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "compensation",
@@ -91,188 +151,467 @@
           "eng": "compensation"
         },
         "block1_text": {
-          "eng": "Definition: Compensation can be used to make some addition or subtraction calculations simpler.\n\nFor addition, a simpler problem is created by taking away a portion of one number and adding it to the other. For example, 6 + 9 can be turned into (6 – 1) + (9 + 1) = 5 + 10, which is a much easier problem.\n\nFor subtraction, a simpler problem is created by adding or taking away the same amount from both numbers. This maintains the distance between the two numbers. For example, 15 – 9 can be turned into 16 – 10. Similarly, 12 – 7 can be turned into 10 – 5 (which is easier as the number bonds for 10 are learned early)."
+          "eng": "Compensation can be used to make some addition or subtraction calculations simpler.\n\nFor addition, a simpler problem is created by taking away a portion of one number and adding it to the other. For example, 6 + 9 can be turned into (6 – 1) + (9 + 1) = 5 + 10, which is a much easier problem.\n\nFor subtraction, a simpler problem is created by adding or taking away the same amount from both numbers. This maintains the distance between the two numbers. For example, 15 – 9 can be turned into 16 – 10. Similarly, 12 – 7 can be turned into 10 – 5 (which is easier as the number bonds for 10 are learned early)."
         },
         "block2_text": {
           "eng": "Example: draw a pretty picture."
         }
       },
-      "block1_text": "Definition: Compensation can be used to make some addition or subtraction calculations simpler.\n\nFor addition, a simpler problem is created by taking away a portion of one number and adding it to the other. For example, 6 + 9 can be turned into (6 – 1) + (9 + 1) = 5 + 10, which is a much easier problem.\n\nFor subtraction, a simpler problem is created by adding or taking away the same amount from both numbers. This maintains the distance between the two numbers. For example, 15 – 9 can be turned into 16 – 10. Similarly, 12 – 7 can be turned into 10 – 5 (which is easier as the number bonds for 10 are learned early).",
-      "block2_text": "Example: draw a pretty picture."
-    },
-    {
-      "id": "id_5",
-      "block1_type": "all_text",
-      "block2_type": "all_text",
-      "phrase": "counting on",
-      "_translations": {
-        "phrase": {},
-        "block2_text": {}
-      },
-      "_translatedFields": {
-        "phrase": {
-          "eng": "counting on"
-        },
-        "block2_text": {
-          "eng": "Example: draw a pretty picture."
-        }
-      },
-      "block2_text": "Example: draw a pretty picture."
-    },
-    {
-      "id": "id_6",
-      "block1_type": "all_text",
-      "block2_type": "all_text",
-      "phrase": "dialogic reading",
-      "_translations": {
-        "phrase": {},
-        "block2_text": {}
-      },
-      "_translatedFields": {
-        "phrase": {
-          "eng": "dialogic reading"
-        },
-        "block2_text": {
-          "eng": "Example: draw a pretty picture."
-        }
-      },
-      "block2_text": "Example: draw a pretty picture."
-    },
-    {
-      "id": "id_7",
-      "block1_type": "all_text",
-      "block2_type": "all_text",
-      "phrase": "difference",
-      "_translations": {
-        "phrase": {},
-        "block2_text": {}
-      },
-      "_translatedFields": {
-        "phrase": {
-          "eng": "difference"
-        },
-        "block2_text": {
-          "eng": "Example: draw a pretty picture."
-        }
-      },
+      "block1_text": "Compensation can be used to make some addition or subtraction calculations simpler.\n\nFor addition, a simpler problem is created by taking away a portion of one number and adding it to the other. For example, 6 + 9 can be turned into (6 – 1) + (9 + 1) = 5 + 10, which is a much easier problem.\n\nFor subtraction, a simpler problem is created by adding or taking away the same amount from both numbers. This maintains the distance between the two numbers. For example, 15 – 9 can be turned into 16 – 10. Similarly, 12 – 7 can be turned into 10 – 5 (which is easier as the number bonds for 10 are learned early).",
       "block2_text": "Example: draw a pretty picture."
     },
     {
       "id": "id_8",
       "block1_type": "all_text",
       "block2_type": "all_text",
-      "phrase": "estimate",
+      "phrase": "counting number",
       "_translations": {
         "phrase": {},
+        "block1_text": {},
         "block2_text": {}
       },
       "_translatedFields": {
         "phrase": {
-          "eng": "estimate"
+          "eng": "counting number"
+        },
+        "block1_text": {
+          "eng": "These are the positive integers. Their name comes from the idea that these are the numbers that child typically counts when starting at 1. The natural numbers are usually defined to be the same as the counting numbers."
         },
         "block2_text": {
           "eng": "Example: draw a pretty picture."
         }
       },
+      "block1_text": "These are the positive integers. Their name comes from the idea that these are the numbers that child typically counts when starting at 1. The natural numbers are usually defined to be the same as the counting numbers.",
       "block2_text": "Example: draw a pretty picture."
     },
     {
       "id": "id_9",
       "block1_type": "all_text",
       "block2_type": "all_text",
-      "phrase": "expanded form",
+      "phrase": "counting on",
       "_translations": {
         "phrase": {},
+        "block1_text": {},
         "block2_text": {}
       },
       "_translatedFields": {
         "phrase": {
-          "eng": "expanded form"
+          "eng": "counting on"
+        },
+        "block1_text": {
+          "eng": "Counting on is a way of counting a group of objects by treating a partion of them as one unit whose size is already known.\n\nFor example, suppose you have 3 objects and 4 objects. You could use counting on for the seven objects by starting at 3 for the 3 known objects, and then counting \"4, 5, 6, 7\" pointing one at a time at the 4 objects.\n\nBeing able to treat a group of objects as a unit is an important developmental step."
         },
         "block2_text": {
           "eng": "Example: draw a pretty picture."
         }
       },
+      "block1_text": "Counting on is a way of counting a group of objects by treating a partion of them as one unit whose size is already known.\n\nFor example, suppose you have 3 objects and 4 objects. You could use counting on for the seven objects by starting at 3 for the 3 known objects, and then counting \"4, 5, 6, 7\" pointing one at a time at the 4 objects.\n\nBeing able to treat a group of objects as a unit is an important developmental step.",
       "block2_text": "Example: draw a pretty picture."
     },
     {
       "id": "id_10",
       "block1_type": "all_text",
       "block2_type": "all_text",
-      "phrase": "expression",
+      "phrase": "dialogic reading",
       "_translations": {
         "phrase": {},
+        "block1_text": {},
         "block2_text": {}
       },
       "_translatedFields": {
         "phrase": {
-          "eng": "expression"
+          "eng": "dialogic reading"
+        },
+        "block1_text": {
+          "eng": "When reading a story to someone, having a dialog or discussion with them about the story as you read each page is called dialogic reading. The kind of dialog that is appropriate is dependent on the listener's developmental level.\n\n**For preverbal children:**\n\nIf the child does not understand your words yet, use \"Point and Describe\" and do not expect a response.\n\nIf the child does understand some of what you are saying, use \"Point, Describe, and Ask.\" The responses to your questions may be for the child to point or otherwise indicate and answer.\n\n**For verbal children:**\n\nContinue to do \"Point, Describe, and Ask.\" This can be broken into three levels as follows.\n\n1. Simple questions. Ask simple questions such as \"Is the ball red?\" or \"Where is the cat?\"\n2. More open-ended questions. Ask more complex questions such as \"What is the bird doing?\" or \"Do you think that was fair?\" Expand on the child's response to create further questions and discussion ideas. These questions will still be focused on the current page of the story.\n3. More sophisticated questions. These questions may discuss the narrative of the story, such as what has happened so far or what will happen next, or they may relate back to the child’s life or world, such as \"Do you like it when it rains?\" Also ask questions about a character’s inner life, such as what the character is feeling and have they ever felt like that. At this level, there should be much more give and take, and the child should be encouraged to put questions of their own into the dialogue."
         },
         "block2_text": {
           "eng": "Example: draw a pretty picture."
         }
       },
+      "block1_text": "When reading a story to someone, having a dialog or discussion with them about the story as you read each page is called dialogic reading. The kind of dialog that is appropriate is dependent on the listener's developmental level.\n\n**For preverbal children:**\n\nIf the child does not understand your words yet, use \"Point and Describe\" and do not expect a response.\n\nIf the child does understand some of what you are saying, use \"Point, Describe, and Ask.\" The responses to your questions may be for the child to point or otherwise indicate and answer.\n\n**For verbal children:**\n\nContinue to do \"Point, Describe, and Ask.\" This can be broken into three levels as follows.\n\n1. Simple questions. Ask simple questions such as \"Is the ball red?\" or \"Where is the cat?\"\n2. More open-ended questions. Ask more complex questions such as \"What is the bird doing?\" or \"Do you think that was fair?\" Expand on the child's response to create further questions and discussion ideas. These questions will still be focused on the current page of the story.\n3. More sophisticated questions. These questions may discuss the narrative of the story, such as what has happened so far or what will happen next, or they may relate back to the child’s life or world, such as \"Do you like it when it rains?\" Also ask questions about a character’s inner life, such as what the character is feeling and have they ever felt like that. At this level, there should be much more give and take, and the child should be encouraged to put questions of their own into the dialogue.",
       "block2_text": "Example: draw a pretty picture."
     },
     {
       "id": "id_11",
       "block1_type": "all_text",
       "block2_type": "all_text",
-      "phrase": "grouping",
+      "phrase": "difference",
       "_translations": {
         "phrase": {},
+        "block1_text": {},
         "block2_text": {}
       },
       "_translatedFields": {
         "phrase": {
-          "eng": "grouping"
+          "eng": "difference"
+        },
+        "block1_text": {
+          "eng": "When referring to subtraction, the difference of two numbers is how far apart they are. For example, the difference of 6 and 4 is 2 because they are 2 apart.\n\nIt can be subtle whether \"difference\" should be considered as having a signed value or not. Put another way, is the distance between the numbers being in a directed sense or an absolute sense. \n\nThe difference is usually considered to be a positive number, though the longer phrase \"positive difference\" can be used to emphasize that meaning. WIth that understanding, the difference of 6 and 4 is the same as the difference of 4 and 6, and is 2 in both cases. It is how far apart the two numbers are on the number line, without regard to the direction being traveled from one number to the other. Some would suggest that \"difference\" is another word for subtraction, and so the result can be negative."
         },
         "block2_text": {
           "eng": "Example: draw a pretty picture."
         }
       },
+      "block1_text": "When referring to subtraction, the difference of two numbers is how far apart they are. For example, the difference of 6 and 4 is 2 because they are 2 apart.\n\nIt can be subtle whether \"difference\" should be considered as having a signed value or not. Put another way, is the distance between the numbers being in a directed sense or an absolute sense. \n\nThe difference is usually considered to be a positive number, though the longer phrase \"positive difference\" can be used to emphasize that meaning. WIth that understanding, the difference of 6 and 4 is the same as the difference of 4 and 6, and is 2 in both cases. It is how far apart the two numbers are on the number line, without regard to the direction being traveled from one number to the other. Some would suggest that \"difference\" is another word for subtraction, and so the result can be negative.",
       "block2_text": "Example: draw a pretty picture."
     },
     {
       "id": "id_12",
       "block1_type": "all_text",
       "block2_type": "all_text",
+      "phrase": "edge",
+      "_translations": {
+        "phrase": {},
+        "block1_text": {},
+        "block2_text": {}
+      },
+      "_translatedFields": {
+        "phrase": {
+          "eng": "edge"
+        },
+        "block1_text": {
+          "eng": "An edge is usually a straight line segment that forms part of the boundary of a polygon. An edge can also be called a side."
+        },
+        "block2_text": {
+          "eng": "Example: draw a pretty picture."
+        }
+      },
+      "block1_text": "An edge is usually a straight line segment that forms part of the boundary of a polygon. An edge can also be called a side.",
+      "block2_text": "Example: draw a pretty picture."
+    },
+    {
+      "id": "id_13",
+      "block1_type": "all_text",
+      "phrase": "equal sign",
+      "_translations": {
+        "phrase": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "phrase": {
+          "eng": "equal sign"
+        },
+        "block1_text": {
+          "eng": "An equal sign \"=\" is used to indicate that two expressions have the same value. For example, 2 x 3 = 4 + 2 asserts that the expression on the left side of the equal sign, 2 x 3, has the same value as the expression on the right side of the equal sign, 4 + 2.\n\nSome believe that an equal sign indicates that a value is beiing produced by one side of the equation, as in 4 + 2 = 6. This is not the case. The equal sign has no preferred side to it. Also, some people believe that one of the two sides of an equal sign should be a solitary number. This also need not be the case, and it is important to not leave children with this impression.\n\nSee also the entries for \"equation\" and \"expression.\""
+        }
+      },
+      "block1_text": "An equal sign \"=\" is used to indicate that two expressions have the same value. For example, 2 x 3 = 4 + 2 asserts that the expression on the left side of the equal sign, 2 x 3, has the same value as the expression on the right side of the equal sign, 4 + 2.\n\nSome believe that an equal sign indicates that a value is beiing produced by one side of the equation, as in 4 + 2 = 6. This is not the case. The equal sign has no preferred side to it. Also, some people believe that one of the two sides of an equal sign should be a solitary number. This also need not be the case, and it is important to not leave children with this impression.\n\nSee also the entries for \"equation\" and \"expression.\""
+    },
+    {
+      "id": "id_14",
+      "block1_type": "all_text",
+      "block2_type": "all_text",
+      "phrase": "eqation",
+      "_translations": {
+        "phrase": {},
+        "block1_text": {},
+        "block2_text": {}
+      },
+      "_translatedFields": {
+        "phrase": {
+          "eng": "eqation"
+        },
+        "block1_text": {
+          "eng": "An equation is given by having two expressions being compared using an equal sign. For example, x + 3 = y - 2 and 42 - 7 = 33 + 2."
+        },
+        "block2_text": {
+          "eng": "Example: draw a pretty picture."
+        }
+      },
+      "block1_text": "An equation is given by having two expressions being compared using an equal sign. For example, x + 3 = y - 2 and 42 - 7 = 33 + 2.",
+      "block2_text": "Example: draw a pretty picture."
+    },
+    {
+      "id": "id_15",
+      "block1_type": "all_text",
+      "block2_type": "all_text",
+      "phrase": "estimate",
+      "_translations": {
+        "phrase": {},
+        "block1_text": {},
+        "block2_text": {}
+      },
+      "_translatedFields": {
+        "phrase": {
+          "eng": "estimate"
+        },
+        "block1_text": {
+          "eng": "An estimate is an approximate count or answer for the size of something. It can be called an \"educated guess\" in that some ideas are being used to come up with an answer, so it is different from simply guessing."
+        },
+        "block2_text": {
+          "eng": "Example: draw a pretty picture."
+        }
+      },
+      "block1_text": "An estimate is an approximate count or answer for the size of something. It can be called an \"educated guess\" in that some ideas are being used to come up with an answer, so it is different from simply guessing.",
+      "block2_text": "Example: draw a pretty picture."
+    },
+    {
+      "id": "id_16",
+      "block1_type": "all_text",
+      "block2_type": "all_text",
+      "phrase": "even number",
+      "_translations": {
+        "phrase": {},
+        "block1_text": {},
+        "block2_text": {}
+      },
+      "_translatedFields": {
+        "phrase": {
+          "eng": "even number"
+        },
+        "block1_text": {
+          "eng": "An even number is an integer that can be evenly divided by 2 – when it is divided by 2, the remainder is 0. It is also an integer that can be split into two equal integer parts.\n\nFor positive whole numbers, even numbers are quantities of objects that can be shared evenly between between two groups."
+        },
+        "block2_text": {
+          "eng": "Example: draw a pretty picture."
+        }
+      },
+      "block1_text": "An even number is an integer that can be evenly divided by 2 – when it is divided by 2, the remainder is 0. It is also an integer that can be split into two equal integer parts.\n\nFor positive whole numbers, even numbers are quantities of objects that can be shared evenly between between two groups.",
+      "block2_text": "Example: draw a pretty picture."
+    },
+    {
+      "id": "id_17",
+      "block1_type": "all_text",
+      "block2_type": "all_text",
+      "phrase": "expanded form",
+      "_translations": {
+        "phrase": {},
+        "block1_text": {},
+        "block2_text": {}
+      },
+      "_translatedFields": {
+        "phrase": {
+          "eng": "expanded form"
+        },
+        "block1_text": {
+          "eng": "The expanded form of a multi-digit number, also called the \"expanded notation\" for it, expresses the number in terms of its place value. For example, 576 in expanded form is 500 + 70 + 6.\n\nExpanded form is extremely useful in understanding place value and how it is involved in doing the four basic operations."
+        },
+        "block2_text": {
+          "eng": "Example: draw a pretty picture."
+        }
+      },
+      "block1_text": "The expanded form of a multi-digit number, also called the \"expanded notation\" for it, expresses the number in terms of its place value. For example, 576 in expanded form is 500 + 70 + 6.\n\nExpanded form is extremely useful in understanding place value and how it is involved in doing the four basic operations.",
+      "block2_text": "Example: draw a pretty picture."
+    },
+    {
+      "id": "id_18",
+      "block1_type": "all_text",
+      "block2_type": "all_text",
+      "phrase": "expanded notation",
+      "_translations": {
+        "phrase": {},
+        "block1_text": {},
+        "block2_text": {}
+      },
+      "_translatedFields": {
+        "phrase": {
+          "eng": "expanded notation"
+        },
+        "block1_text": {
+          "eng": "Please see the \"expanded form\" entry."
+        },
+        "block2_text": {
+          "eng": "Example: draw a pretty picture."
+        }
+      },
+      "block1_text": "Please see the \"expanded form\" entry.",
+      "block2_text": "Example: draw a pretty picture."
+    },
+    {
+      "id": "id_19",
+      "block1_type": "all_text",
+      "block2_type": "all_text",
+      "phrase": "expression",
+      "_translations": {
+        "phrase": {},
+        "block1_text": {},
+        "block2_text": {}
+      },
+      "_translatedFields": {
+        "phrase": {
+          "eng": "expression"
+        },
+        "block1_text": {
+          "eng": "An expression is a representation of a quantity in numeric or algebraic form. This representation may involve numbers, variables, or operations. Some examples are: 42, x, (413 + 82) / 17, and (x + 2) x y."
+        },
+        "block2_text": {
+          "eng": "Example: draw a pretty picture."
+        }
+      },
+      "block1_text": "An expression is a representation of a quantity in numeric or algebraic form. This representation may involve numbers, variables, or operations. Some examples are: 42, x, (413 + 82) / 17, and (x + 2) x y.",
+      "block2_text": "Example: draw a pretty picture."
+    },
+    {
+      "id": "id_20",
+      "block1_type": "all_text",
+      "block2_type": "all_text",
+      "phrase": "face",
+      "_translations": {
+        "phrase": {},
+        "block1_text": {},
+        "block2_text": {}
+      },
+      "_translatedFields": {
+        "phrase": {
+          "eng": "face"
+        },
+        "block1_text": {
+          "eng": "A face of a polyhedron is one of the polygons that makes up the surface of that polyhedron. For example, the faces of a cube are squares."
+        },
+        "block2_text": {
+          "eng": "Example: draw a pretty picture."
+        }
+      },
+      "block1_text": "A face of a polyhedron is one of the polygons that makes up the surface of that polyhedron. For example, the faces of a cube are squares.",
+      "block2_text": "Example: draw a pretty picture."
+    },
+    {
+      "id": "id_21",
+      "block1_type": "all_text",
+      "block2_type": "all_text",
+      "phrase": "fact family",
+      "_translations": {
+        "phrase": {},
+        "block1_text": {},
+        "block2_text": {}
+      },
+      "_translatedFields": {
+        "phrase": {
+          "eng": "fact family"
+        },
+        "block1_text": {
+          "eng": "A fact family is a group of four related calculations involving the structural connection between three numbers and two operations.\n\nFor example, using the connection between addition and subtraction, 2 + 4 = 6; 4 + 2 = 6; 6 - 2 = 4; and 6 - 4 = 2 form a fact family\n\nSimilarly, using the connection between multiplication and division, 2 x 4 = 8; 4 x 2 = 8; 8 / 2 = 4; and 8 / 4 = 2 form a fact family.."
+        },
+        "block2_text": {
+          "eng": "Example: draw a pretty picture."
+        }
+      },
+      "block1_text": "A fact family is a group of four related calculations involving the structural connection between three numbers and two operations.\n\nFor example, using the connection between addition and subtraction, 2 + 4 = 6; 4 + 2 = 6; 6 - 2 = 4; and 6 - 4 = 2 form a fact family\n\nSimilarly, using the connection between multiplication and division, 2 x 4 = 8; 4 x 2 = 8; 8 / 2 = 4; and 8 / 4 = 2 form a fact family..",
+      "block2_text": "Example: draw a pretty picture."
+    },
+    {
+      "id": "id_22",
+      "block1_type": "all_text",
+      "block2_type": "all_text",
+      "phrase": "factor",
+      "_translations": {
+        "phrase": {},
+        "block1_text": {},
+        "block2_text": {}
+      },
+      "_translatedFields": {
+        "phrase": {
+          "eng": "factor"
+        },
+        "block1_text": {
+          "eng": "One number is said to be a factor of another if it divides it evenly, that is, when there is no remainder for the division.\n\nFor example, 2 is a factor of 6 because 6 divided by 2 is exactly 3 with remainder 0. 2 is not a factor of 7 because 7 divided by 2 is 3 with a remainder of 1."
+        },
+        "block2_text": {
+          "eng": "Example: draw a pretty picture."
+        }
+      },
+      "block1_text": "One number is said to be a factor of another if it divides it evenly, that is, when there is no remainder for the division.\n\nFor example, 2 is a factor of 6 because 6 divided by 2 is exactly 3 with remainder 0. 2 is not a factor of 7 because 7 divided by 2 is 3 with a remainder of 1.",
+      "block2_text": "Example: draw a pretty picture."
+    },
+    {
+      "id": "id_23",
+      "block1_type": "all_text",
+      "block2_type": "all_text",
+      "phrase": "grouping",
+      "_translations": {
+        "phrase": {},
+        "block1_text": {},
+        "block2_text": {}
+      },
+      "_translatedFields": {
+        "phrase": {
+          "eng": "grouping"
+        },
+        "block1_text": {
+          "eng": "In a mathematical expression, there are a few notational ways to separate and group a part of the expression. Such groups are always evaluated together first and then that value is combined with the rest of the expression. For example, (2 + 3) x 4 becomes 5 x 4.\n\nThe most common is to use a pair of parentheses, a pair of brackets, or (less commonly) a pair of curly braces. Examples of that are (2 + 3) x 5; [(2 + 3) * 5] / 4; and {2 + 4} - 7.\n\nWriting a fraction in vertical format causes the top half and bottom half of the expression to be put into groups. Functional notation, such as f(2 + 4), is another example of grouping."
+        },
+        "block2_text": {
+          "eng": "Example: draw a pretty picture."
+        }
+      },
+      "block1_text": "In a mathematical expression, there are a few notational ways to separate and group a part of the expression. Such groups are always evaluated together first and then that value is combined with the rest of the expression. For example, (2 + 3) x 4 becomes 5 x 4.\n\nThe most common is to use a pair of parentheses, a pair of brackets, or (less commonly) a pair of curly braces. Examples of that are (2 + 3) x 5; [(2 + 3) * 5] / 4; and {2 + 4} - 7.\n\nWriting a fraction in vertical format causes the top half and bottom half of the expression to be put into groups. Functional notation, such as f(2 + 4), is another example of grouping.",
+      "block2_text": "Example: draw a pretty picture."
+    },
+    {
+      "id": "id_24",
+      "block1_type": "all_text",
+      "block2_type": "all_text",
       "phrase": "hexagon",
       "_translations": {
         "phrase": {},
+        "block1_text": {},
         "block2_text": {}
       },
       "_translatedFields": {
         "phrase": {
           "eng": "hexagon"
         },
+        "block1_text": {
+          "eng": "A hexagon is a six-sided polygon."
+        },
         "block2_text": {
           "eng": "Example: draw a pretty picture."
         }
       },
+      "block1_text": "A hexagon is a six-sided polygon.",
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "id_13",
+      "id": "id_25",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "horizontal",
       "_translations": {
         "phrase": {},
+        "block1_text": {},
         "block2_text": {}
       },
       "_translatedFields": {
         "phrase": {
           "eng": "horizontal"
         },
+        "block1_text": {
+          "eng": "A horizontal object, such as a horizontal line, is one that goes in the same direction as the horizon line."
+        },
         "block2_text": {
           "eng": "Example: draw a pretty picture."
         }
       },
+      "block1_text": "A horizontal object, such as a horizontal line, is one that goes in the same direction as the horizon line.",
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "id_14",
+      "id": "id_26",
+      "block1_type": "all_text",
+      "block2_type": "all_text",
+      "phrase": "hundreds chart",
+      "_translations": {
+        "phrase": {},
+        "block1_text": {},
+        "block2_text": {}
+      },
+      "_translatedFields": {
+        "phrase": {
+          "eng": "hundreds chart"
+        },
+        "block1_text": {
+          "eng": "A hundreds chart is a 10 by 10 chart that has the numbers 1 to 100, or 0 to 99, in order going along its rows. The entries of consecutive rows will be 10 apart."
+        },
+        "block2_text": {
+          "eng": "Example: draw a pretty picture."
+        }
+      },
+      "block1_text": "A hundreds chart is a 10 by 10 chart that has the numbers 1 to 100, or 0 to 99, in order going along its rows. The entries of consecutive rows will be 10 apart.",
+      "block2_text": "Example: draw a pretty picture."
+    },
+    {
+      "id": "id_27",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "inequality",
@@ -291,7 +630,7 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "id_15",
+      "id": "id_28",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "integer",
@@ -310,7 +649,7 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "id_16",
+      "id": "id_29",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "line",
@@ -329,7 +668,26 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "id_17",
+      "id": "id_30",
+      "block1_type": "all_text",
+      "block2_type": "all_text",
+      "phrase": "line of symmetry",
+      "_translations": {
+        "phrase": {},
+        "block2_text": {}
+      },
+      "_translatedFields": {
+        "phrase": {
+          "eng": "line of symmetry"
+        },
+        "block2_text": {
+          "eng": "Example: draw a pretty picture."
+        }
+      },
+      "block2_text": "Example: draw a pretty picture."
+    },
+    {
+      "id": "id_31",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "line segment",
@@ -348,7 +706,31 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "id_18",
+      "id": "id_32",
+      "block1_type": "all_text",
+      "block2_type": "all_text",
+      "phrase": "making tens",
+      "_translations": {
+        "phrase": {},
+        "block1_text": {},
+        "block2_text": {}
+      },
+      "_translatedFields": {
+        "phrase": {
+          "eng": "making tens"
+        },
+        "block1_text": {
+          "eng": "Making tens can be an effective strategy for adding up a series of single-digit numbers.\n\nFor example, 2 + 7 + 3 + 5 + 8 can be rearranged in groups of 10 as 2 + 8 + 7 + 3 + 5 = 10 + 10 + 5 = 25."
+        },
+        "block2_text": {
+          "eng": "Example: draw a pretty picture."
+        }
+      },
+      "block1_text": "Making tens can be an effective strategy for adding up a series of single-digit numbers.\n\nFor example, 2 + 7 + 3 + 5 + 8 can be rearranged in groups of 10 as 2 + 8 + 7 + 3 + 5 = 10 + 10 + 5 = 25.",
+      "block2_text": "Example: draw a pretty picture."
+    },
+    {
+      "id": "id_33",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "math talk",
@@ -367,7 +749,31 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "id_19",
+      "id": "id_34",
+      "block1_type": "all_text",
+      "block2_type": "all_text",
+      "phrase": "natural number",
+      "_translations": {
+        "phrase": {},
+        "block1_text": {},
+        "block2_text": {}
+      },
+      "_translatedFields": {
+        "phrase": {
+          "eng": "natural number"
+        },
+        "block1_text": {
+          "eng": "These are the counting numbers, also described as positive integers. Confusingly, 0 is sometimes included in the natural numbers."
+        },
+        "block2_text": {
+          "eng": "Example: draw a pretty picture."
+        }
+      },
+      "block1_text": "These are the counting numbers, also described as positive integers. Confusingly, 0 is sometimes included in the natural numbers.",
+      "block2_text": "Example: draw a pretty picture."
+    },
+    {
+      "id": "id_35",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "number bond",
@@ -386,7 +792,7 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "id_20",
+      "id": "id_36",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "number line",
@@ -405,7 +811,7 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "id_21",
+      "id": "id_37",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "number path",
@@ -424,7 +830,7 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "id_22",
+      "id": "id_38",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "numeral",
@@ -443,17 +849,89 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "id_23",
+      "id": "id_39",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "numerical expression",
+      "_translations": {
+        "phrase": {},
+        "block1_text": {},
+        "block2_text": {}
+      },
+      "_translatedFields": {
+        "phrase": {
+          "eng": "numerical expression"
+        },
+        "block1_text": {
+          "eng": "A numerical expression is a representation of a quantity in numeric form. This representation may involve numbers, or operations. An example is: 42, x, (413 + 82) / 17. Another description for numerical expression is an expression not containing any variables."
+        },
+        "block2_text": {
+          "eng": "Example: draw a pretty picture."
+        }
+      },
+      "block1_text": "A numerical expression is a representation of a quantity in numeric form. This representation may involve numbers, or operations. An example is: 42, x, (413 + 82) / 17. Another description for numerical expression is an expression not containing any variables.",
+      "block2_text": "Example: draw a pretty picture."
+    },
+    {
+      "id": "id_40",
+      "block1_type": "all_text",
+      "block2_type": "all_text",
+      "phrase": "obtuse angle",
+      "_translations": {
+        "phrase": {},
+        "block1_text": {},
+        "block2_text": {}
+      },
+      "_translatedFields": {
+        "phrase": {
+          "eng": "obtuse angle"
+        },
+        "block1_text": {
+          "eng": "See \"angles – acute, right, obtuse.\""
+        },
+        "block2_text": {
+          "eng": "Example: draw a pretty picture."
+        }
+      },
+      "block1_text": "See \"angles – acute, right, obtuse.\"",
+      "block2_text": "Example: draw a pretty picture."
+    },
+    {
+      "id": "id_41",
+      "block1_type": "all_text",
+      "block2_type": "all_text",
+      "phrase": "obtuse triangle",
+      "_translations": {
+        "phrase": {},
+        "block1_text": {},
+        "block2_text": {}
+      },
+      "_translatedFields": {
+        "phrase": {
+          "eng": "obtuse triangle"
+        },
+        "block1_text": {
+          "eng": "An obtuse triangle is a triangle with an obtuse angle."
+        },
+        "block2_text": {
+          "eng": "Example: draw a pretty picture."
+        }
+      },
+      "block1_text": "An obtuse triangle is a triangle with an obtuse angle.",
+      "block2_text": "Example: draw a pretty picture."
+    },
+    {
+      "id": "id_42",
+      "block1_type": "all_text",
+      "block2_type": "all_text",
+      "phrase": "odd number",
       "_translations": {
         "phrase": {},
         "block2_text": {}
       },
       "_translatedFields": {
         "phrase": {
-          "eng": "numerical expression"
+          "eng": "odd number"
         },
         "block2_text": {
           "eng": "Example: draw a pretty picture."
@@ -462,7 +940,7 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "id_24",
+      "id": "id_43",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "octagon",
@@ -481,7 +959,7 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "id_25",
+      "id": "id_44",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "order of operations",
@@ -500,7 +978,7 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "id_26",
+      "id": "id_45",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "ordinal number",
@@ -519,7 +997,7 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "id_27",
+      "id": "id_46",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "parallel lines or sides",
@@ -538,7 +1016,7 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "id_28",
+      "id": "id_47",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "parallelogram",
@@ -557,7 +1035,7 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "id_29",
+      "id": "id_48",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "parentheses, brackets, grouping",
@@ -576,17 +1054,17 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "id_30",
+      "id": "id_49",
       "block1_type": "all_text",
       "block2_type": "all_text",
-      "phrase": "part whole",
+      "phrase": "part-whole",
       "_translations": {
         "phrase": {},
         "block2_text": {}
       },
       "_translatedFields": {
         "phrase": {
-          "eng": "part whole"
+          "eng": "part-whole"
         },
         "block2_text": {
           "eng": "Example: draw a pretty picture."
@@ -595,7 +1073,7 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "id_31",
+      "id": "id_50",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "pattern",
@@ -614,7 +1092,7 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "id_32",
+      "id": "id_51",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "pentagon",
@@ -633,7 +1111,7 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "id_33",
+      "id": "id_52",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "perpendicular",
@@ -652,7 +1130,7 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "id_34",
+      "id": "id_53",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "place value",
@@ -671,7 +1149,7 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "id_35",
+      "id": "id_54",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "plane",
@@ -690,7 +1168,7 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "id_36",
+      "id": "id_55",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "plane figure",
@@ -709,7 +1187,7 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "id_37",
+      "id": "id_56",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "point",
@@ -728,7 +1206,7 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "id_38",
+      "id": "id_57",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "polygon",
@@ -747,7 +1225,26 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "id_39",
+      "id": "id_58",
+      "block1_type": "all_text",
+      "block2_type": "all_text",
+      "phrase": "polyhedron",
+      "_translations": {
+        "phrase": {},
+        "block2_text": {}
+      },
+      "_translatedFields": {
+        "phrase": {
+          "eng": "polyhedron"
+        },
+        "block2_text": {
+          "eng": "Example: draw a pretty picture."
+        }
+      },
+      "block2_text": "Example: draw a pretty picture."
+    },
+    {
+      "id": "id_59",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "properties of operations",
@@ -766,7 +1263,7 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "id_40",
+      "id": "id_60",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "quadrilateral",
@@ -785,7 +1282,26 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "id_41",
+      "id": "id_61",
+      "block1_type": "all_text",
+      "block2_type": "all_text",
+      "phrase": "radius",
+      "_translations": {
+        "phrase": {},
+        "block2_text": {}
+      },
+      "_translatedFields": {
+        "phrase": {
+          "eng": "radius"
+        },
+        "block2_text": {
+          "eng": "Example: draw a pretty picture."
+        }
+      },
+      "block2_text": "Example: draw a pretty picture."
+    },
+    {
+      "id": "id_62",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "ray",
@@ -804,7 +1320,7 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "id_42",
+      "id": "id_63",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "rectangle",
@@ -823,7 +1339,7 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "id_43",
+      "id": "id_64",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "regular polygon",
@@ -842,7 +1358,7 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "id_44",
+      "id": "id_65",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "repeating pattern",
@@ -861,7 +1377,26 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "id_45",
+      "id": "id_66",
+      "block1_type": "all_text",
+      "block2_type": "all_text",
+      "phrase": "scalene triangle",
+      "_translations": {
+        "phrase": {},
+        "block2_text": {}
+      },
+      "_translatedFields": {
+        "phrase": {
+          "eng": "scalene triangle"
+        },
+        "block2_text": {
+          "eng": "Example: draw a pretty picture."
+        }
+      },
+      "block2_text": "Example: draw a pretty picture."
+    },
+    {
+      "id": "id_67",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "shapes 2d",
@@ -880,7 +1415,7 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "id_46",
+      "id": "id_68",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "shapes 3d",
@@ -899,7 +1434,7 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "id_47",
+      "id": "id_69",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "subitizing",
@@ -918,7 +1453,7 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "id_48",
+      "id": "id_70",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "sum",
@@ -937,7 +1472,7 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "id_49",
+      "id": "id_71",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "take away",
@@ -956,7 +1491,7 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "id_50",
+      "id": "id_72",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "ten frame",
@@ -975,7 +1510,7 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "id_51",
+      "id": "id_73",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "three-dimensional",
@@ -994,7 +1529,7 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "id_52",
+      "id": "id_74",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "tiling",
@@ -1013,7 +1548,7 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "id_53",
+      "id": "id_75",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "triangle",
@@ -1032,7 +1567,7 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "id_54",
+      "id": "id_76",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "triangles – scalene, isosceles, equilateral",
@@ -1051,7 +1586,7 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "id_55",
+      "id": "id_77",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "two-dimensional",
@@ -1070,7 +1605,7 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "id_56",
+      "id": "id_78",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "unitizing",
@@ -1089,7 +1624,45 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "id_57",
+      "id": "id_79",
+      "block1_type": "all_text",
+      "block2_type": "all_text",
+      "phrase": "Venn diagram",
+      "_translations": {
+        "phrase": {},
+        "block2_text": {}
+      },
+      "_translatedFields": {
+        "phrase": {
+          "eng": "Venn diagram"
+        },
+        "block2_text": {
+          "eng": "Example: draw a pretty picture."
+        }
+      },
+      "block2_text": "Example: draw a pretty picture."
+    },
+    {
+      "id": "id_80",
+      "block1_type": "all_text",
+      "block2_type": "all_text",
+      "phrase": "vertex",
+      "_translations": {
+        "phrase": {},
+        "block2_text": {}
+      },
+      "_translatedFields": {
+        "phrase": {
+          "eng": "vertex"
+        },
+        "block2_text": {
+          "eng": "Example: draw a pretty picture."
+        }
+      },
+      "block2_text": "Example: draw a pretty picture."
+    },
+    {
+      "id": "id_81",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "vertical",
@@ -1108,22 +1681,27 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "id_58",
+      "id": "id_82",
       "block1_type": "all_text",
       "block2_type": "all_text",
       "phrase": "whole number",
       "_translations": {
         "phrase": {},
+        "block1_text": {},
         "block2_text": {}
       },
       "_translatedFields": {
         "phrase": {
           "eng": "whole number"
         },
+        "block1_text": {
+          "eng": "Confusingly, some people consider whole numbers to be all the integers, and others feel they should not include the negative integers. The first group justifies their definition by saying that whole numbers are all numbers with no fractional part."
+        },
         "block2_text": {
           "eng": "Example: draw a pretty picture."
         }
       },
+      "block1_text": "Confusingly, some people consider whole numbers to be all the integers, and others feel they should not include the negative integers. The first group justifies their definition by saying that whole numbers are all numbers with no fractional part.",
       "block2_text": "Example: draw a pretty picture."
     }
   ],
