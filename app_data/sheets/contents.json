@@ -663,23 +663,6 @@
         }
       }
     },
-    "efm_mts_list": {
-      "flow_type": "data_list",
-      "flow_name": "efm_mts_list",
-      "data_list_name": "efm_mts",
-      "_xlsxPath": "EFM_math_talks_high_level_sheets.xlsx",
-      "_metadata": {
-        "eye_opener": {
-          "type": "boolean"
-        },
-        "puzzler": {
-          "type": "boolean"
-        },
-        "notes_block_start": {
-          "type": "number"
-        }
-      }
-    },
     "efm_number_list_one_to_ten": {
       "flow_type": "data_list",
       "flow_name": "efm_number_list_one_to_ten",
@@ -759,6 +742,17 @@
       "_xlsxPath": "EFM_app_launch.xlsx",
       "_metadata": {
         "priority": {
+          "type": "number"
+        }
+      }
+    },
+    "number_list_one_to_twenty": {
+      "flow_type": "data_list",
+      "flow_name": "number_list_one_to_twenty",
+      "data_list_name": "num_list_one_to_twenty",
+      "_xlsxPath": "EFM_high_level_sheets.xlsx",
+      "_metadata": {
+        "number": {
           "type": "number"
         }
       }
@@ -1139,11 +1133,6 @@
       "flow_name": "efm_gloss_start",
       "_xlsxPath": "EFM_glossary_high_level_sheets.xlsx"
     },
-    "efm_mts_start": {
-      "flow_type": "template",
-      "flow_name": "efm_mts_start",
-      "_xlsxPath": "EFM_math_talks_high_level_sheets.xlsx"
-    },
     "efm_pow_body_template": {
       "flow_type": "template",
       "flow_name": "efm_pow_body_template",
@@ -1159,6 +1148,16 @@
       "flow_name": "efm_pow_template",
       "_xlsxPath": "EFM_pows_high_level_sheets.xlsx"
     },
+    "efm_rich_tasks_start": {
+      "flow_type": "template",
+      "flow_name": "efm_rich_tasks_start",
+      "_xlsxPath": "EFM_rich_tasks_high_level_sheets.xlsx"
+    },
+    "efm_routines_start": {
+      "flow_type": "template",
+      "flow_name": "efm_routines_start",
+      "_xlsxPath": "EFM_routines_high_level_sheets.xlsx"
+    },
     "efm_sb_intro": {
       "flow_type": "template",
       "flow_name": "efm_sb_intro",
@@ -1173,6 +1172,11 @@
       "flow_type": "template",
       "flow_name": "efm_storybooks",
       "_xlsxPath": "EFM_storybooks_high_level_sheets.xlsx"
+    },
+    "esm_found_resources": {
+      "flow_type": "template",
+      "flow_name": "esm_found_resources",
+      "_xlsxPath": "EFM_resources_level_sheets.xlsx"
     },
     "esm_resources": {
       "flow_type": "template",
@@ -1534,11 +1538,6 @@
       "flow_name": "esm_glossary_tour",
       "_xlsxPath": "EFM_tours.xlsx"
     },
-    "esm_math_talks_tour": {
-      "flow_type": "tour",
-      "flow_name": "esm_math_talks_tour",
-      "_xlsxPath": "EFM_tours.xlsx"
-    },
     "esm_pows_tour": {
       "flow_type": "tour",
       "flow_name": "esm_pows_tour",
@@ -1547,6 +1546,16 @@
     "esm_resources_tour": {
       "flow_type": "tour",
       "flow_name": "esm_resources_tour",
+      "_xlsxPath": "EFM_tours.xlsx"
+    },
+    "esm_rich_tasks_tour": {
+      "flow_type": "tour",
+      "flow_name": "esm_rich_tasks_tour",
+      "_xlsxPath": "EFM_tours.xlsx"
+    },
+    "esm_routines_tour": {
+      "flow_type": "tour",
+      "flow_name": "esm_routines_tour",
       "_xlsxPath": "EFM_tours.xlsx"
     },
     "esm_storybooks_tour": {

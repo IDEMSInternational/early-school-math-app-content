@@ -57,6 +57,15 @@
       ],
       "rows": [
         {
+          "name": "EmPtY_string",
+          "value": "EmPtY",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "dg_resource_finder.EmPtY_string"
+        },
+        {
           "type": "button",
           "name": "button_resources_finder",
           "value": "Resource Finder",
@@ -68,11 +77,11 @@
               "trigger": "click",
               "action_id": "set_field",
               "args": [
-                "topics_search_count",
-                "0"
+                "topics_search_set",
+                "@local.EmPtY_string"
               ],
-              "_raw": "click | set_field:topics_search_count : 0",
-              "_cleaned": "click | set_field:topics_search_count : 0"
+              "_raw": "click | set_field:topics_search_set: @local.EmPtY_string",
+              "_cleaned": "click | set_field:topics_search_set: @local.EmPtY_string"
             },
             {
               "trigger": "click",
@@ -88,7 +97,46 @@
             "style": "short",
             "text_align": "center"
           },
-          "_nested_name": "dg_resource_finder.button_resources_finder"
+          "_nested_name": "dg_resource_finder.button_resources_finder",
+          "_dynamicFields": {
+            "action_list": {
+              "0": {
+                "args": {
+                  "1": [
+                    {
+                      "fullExpression": "@local.EmPtY_string",
+                      "matchedExpression": "@local.EmPtY_string",
+                      "type": "local",
+                      "fieldName": "EmPtY_string"
+                    }
+                  ]
+                },
+                "_raw": [
+                  {
+                    "fullExpression": "click | set_field:topics_search_set: @local.EmPtY_string",
+                    "matchedExpression": "@local.EmPtY_string",
+                    "type": "local",
+                    "fieldName": "EmPtY_string"
+                  }
+                ],
+                "_cleaned": [
+                  {
+                    "fullExpression": "click | set_field:topics_search_set: @local.EmPtY_string",
+                    "matchedExpression": "@local.EmPtY_string",
+                    "type": "local",
+                    "fieldName": "EmPtY_string"
+                  }
+                ]
+              }
+            }
+          },
+          "_dynamicDependencies": {
+            "@local.EmPtY_string": [
+              "action_list.0.args.1",
+              "action_list.0._raw",
+              "action_list.0._cleaned"
+            ]
+          }
         }
       ],
       "_nested_name": "dg_resource_finder"
@@ -1179,7 +1227,7 @@
     },
     {
       "name": "click_history_field_name",
-      "value": "math_talks_button_click_history",
+      "value": "routines_button_click_history",
       "_translations": {
         "value": {}
       },
@@ -1270,12 +1318,12 @@
     },
     {
       "type": "display_group",
-      "name": "dg_math_talks",
+      "name": "dg_routines",
       "rows": [
         {
           "type": "button",
-          "name": "button_math_talks",
-          "value": "Math Talks",
+          "name": "button_routines",
+          "value": "Routines",
           "_translations": {
             "value": {}
           },
@@ -1284,20 +1332,20 @@
               "trigger": "click",
               "action_id": "start_tour",
               "args": [
-                "esm_math_talks_tour"
+                "esm_routines_tour"
               ],
-              "_raw": "click | start_tour: esm_math_talks_tour",
-              "_cleaned": "click | start_tour: esm_math_talks_tour"
+              "_raw": "click | start_tour: esm_routines_tour",
+              "_cleaned": "click | start_tour: esm_routines_tour"
             },
             {
               "trigger": "click",
               "action_id": "set_field",
               "args": [
-                "has_accessed_math_talks",
+                "has_accessed_routines",
                 true
               ],
-              "_raw": "click | set_field: has_accessed_math_talks: TRUE",
-              "_cleaned": "click | set_field: has_accessed_math_talks: TRUE"
+              "_raw": "click | set_field: has_accessed_routines: TRUE",
+              "_cleaned": "click | set_field: has_accessed_routines: TRUE"
             },
             {
               "trigger": "click",
@@ -1310,12 +1358,12 @@
               "_cleaned": "click | set_field:@local.click_history_field_name: @local.button_click_history"
             }
           ],
-          "condition": "!@fields.has_accessed_math_talks",
+          "condition": "!@fields.has_accessed_routines",
           "parameter_list": {
             "style": "short",
             "text_align": "center"
           },
-          "_nested_name": "dg_math_talks.button_math_talks",
+          "_nested_name": "dg_routines.button_routines",
           "_dynamicFields": {
             "action_list": {
               "2": {
@@ -1369,10 +1417,10 @@
             },
             "condition": [
               {
-                "fullExpression": "!@fields.has_accessed_math_talks",
-                "matchedExpression": "!@fields.has_accessed_math_talks",
+                "fullExpression": "!@fields.has_accessed_routines",
+                "matchedExpression": "!@fields.has_accessed_routines",
                 "type": "fields",
-                "fieldName": "has_accessed_math_talks"
+                "fieldName": "has_accessed_routines"
               }
             ]
           },
@@ -1387,15 +1435,15 @@
               "action_list.2._raw",
               "action_list.2._cleaned"
             ],
-            "!@fields.has_accessed_math_talks": [
+            "!@fields.has_accessed_routines": [
               "condition"
             ]
           }
         },
         {
           "type": "button",
-          "name": "button_math_talks",
-          "value": "Math Talks",
+          "name": "button_routines",
+          "value": "Routines",
           "_translations": {
             "value": {}
           },
@@ -1404,10 +1452,10 @@
               "trigger": "click",
               "action_id": "go_to",
               "args": [
-                "efm_mts_start"
+                "efm_routines_start"
               ],
-              "_raw": "click | go_to: efm_mts_start",
-              "_cleaned": "click | go_to: efm_mts_start"
+              "_raw": "click | go_to: efm_routines_start",
+              "_cleaned": "click | go_to: efm_routines_start"
             },
             {
               "trigger": "click",
@@ -1420,12 +1468,12 @@
               "_cleaned": "click | set_field:@local.click_history_field_name: @local.button_click_history"
             }
           ],
-          "condition": "@fields.has_accessed_math_talks",
+          "condition": "@fields.has_accessed_routines",
           "parameter_list": {
             "style": "short",
             "text_align": "center"
           },
-          "_nested_name": "dg_math_talks.button_math_talks",
+          "_nested_name": "dg_routines.button_routines",
           "_dynamicFields": {
             "action_list": {
               "1": {
@@ -1479,10 +1527,10 @@
             },
             "condition": [
               {
-                "fullExpression": "@fields.has_accessed_math_talks",
-                "matchedExpression": "@fields.has_accessed_math_talks",
+                "fullExpression": "@fields.has_accessed_routines",
+                "matchedExpression": "@fields.has_accessed_routines",
                 "type": "fields",
-                "fieldName": "has_accessed_math_talks"
+                "fieldName": "has_accessed_routines"
               }
             ]
           },
@@ -1497,13 +1545,366 @@
               "action_list.1._raw",
               "action_list.1._cleaned"
             ],
-            "@fields.has_accessed_math_talks": [
+            "@fields.has_accessed_routines": [
               "condition"
             ]
           }
         }
       ],
-      "_nested_name": "dg_math_talks"
+      "_nested_name": "dg_routines"
+    },
+    {
+      "name": "now",
+      "value": "@calc(timestamp())",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "now",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(timestamp())",
+            "matchedExpression": "@calc(timestamp())",
+            "type": "calc",
+            "fieldName": "timestamp()"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@calc(timestamp())": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "click_history_field_name",
+      "value": "rich_tasks_button_click_history",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "click_history_field_name"
+    },
+    {
+      "name": "button_click_history",
+      "value": "@fields.@local.click_history_field_name ;  @local.now",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "!!(@fields.@local.click_history_field_name)",
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "button_click_history",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@fields.@local.click_history_field_name ;  @local.now",
+            "matchedExpression": "@local.click_history_field_name",
+            "type": "local",
+            "fieldName": "click_history_field_name"
+          },
+          {
+            "fullExpression": "@fields.@local.click_history_field_name ;  @local.now",
+            "matchedExpression": "@local.now",
+            "type": "local",
+            "fieldName": "now"
+          }
+        ],
+        "condition": [
+          {
+            "fullExpression": "!!(@fields.@local.click_history_field_name)",
+            "matchedExpression": "@local.click_history_field_name",
+            "type": "local",
+            "fieldName": "click_history_field_name"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.click_history_field_name": [
+          "value",
+          "condition"
+        ],
+        "@local.now": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "button_click_history",
+      "value": "@local.now",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "!(@fields.@local.click_history_field_name)",
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "button_click_history",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.now",
+            "matchedExpression": "@local.now",
+            "type": "local",
+            "fieldName": "now"
+          }
+        ],
+        "condition": [
+          {
+            "fullExpression": "!(@fields.@local.click_history_field_name)",
+            "matchedExpression": "@local.click_history_field_name",
+            "type": "local",
+            "fieldName": "click_history_field_name"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.now": [
+          "value"
+        ],
+        "@local.click_history_field_name": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "display_group",
+      "name": "dg_rich_tasks",
+      "rows": [
+        {
+          "type": "button",
+          "name": "button_rich_tasks",
+          "value": "Rich Tasks",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "start_tour",
+              "args": [
+                "esm_rich_tasks_tour"
+              ],
+              "_raw": "click | start_tour: esm_rich_tasks_tour",
+              "_cleaned": "click | start_tour: esm_rich_tasks_tour"
+            },
+            {
+              "trigger": "click",
+              "action_id": "set_field",
+              "args": [
+                "has_accessed_routines",
+                true
+              ],
+              "_raw": "click | set_field: has_accessed_routines: TRUE",
+              "_cleaned": "click | set_field: has_accessed_routines: TRUE"
+            },
+            {
+              "trigger": "click",
+              "action_id": "set_field",
+              "args": [
+                "@local.click_history_field_name",
+                "@local.button_click_history"
+              ],
+              "_raw": "click | set_field:@local.click_history_field_name: @local.button_click_history",
+              "_cleaned": "click | set_field:@local.click_history_field_name: @local.button_click_history"
+            }
+          ],
+          "condition": "!@fields.has_accessed_rich_tasks",
+          "parameter_list": {
+            "style": "short",
+            "text_align": "center"
+          },
+          "_nested_name": "dg_rich_tasks.button_rich_tasks",
+          "_dynamicFields": {
+            "action_list": {
+              "2": {
+                "args": {
+                  "0": [
+                    {
+                      "fullExpression": "@local.click_history_field_name",
+                      "matchedExpression": "@local.click_history_field_name",
+                      "type": "local",
+                      "fieldName": "click_history_field_name"
+                    }
+                  ],
+                  "1": [
+                    {
+                      "fullExpression": "@local.button_click_history",
+                      "matchedExpression": "@local.button_click_history",
+                      "type": "local",
+                      "fieldName": "button_click_history"
+                    }
+                  ]
+                },
+                "_raw": [
+                  {
+                    "fullExpression": "click | set_field:@local.click_history_field_name: @local.button_click_history",
+                    "matchedExpression": "@local.click_history_field_name",
+                    "type": "local",
+                    "fieldName": "click_history_field_name"
+                  },
+                  {
+                    "fullExpression": "click | set_field:@local.click_history_field_name: @local.button_click_history",
+                    "matchedExpression": "@local.button_click_history",
+                    "type": "local",
+                    "fieldName": "button_click_history"
+                  }
+                ],
+                "_cleaned": [
+                  {
+                    "fullExpression": "click | set_field:@local.click_history_field_name: @local.button_click_history",
+                    "matchedExpression": "@local.click_history_field_name",
+                    "type": "local",
+                    "fieldName": "click_history_field_name"
+                  },
+                  {
+                    "fullExpression": "click | set_field:@local.click_history_field_name: @local.button_click_history",
+                    "matchedExpression": "@local.button_click_history",
+                    "type": "local",
+                    "fieldName": "button_click_history"
+                  }
+                ]
+              }
+            },
+            "condition": [
+              {
+                "fullExpression": "!@fields.has_accessed_rich_tasks",
+                "matchedExpression": "!@fields.has_accessed_rich_tasks",
+                "type": "fields",
+                "fieldName": "has_accessed_rich_tasks"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.click_history_field_name": [
+              "action_list.2.args.0",
+              "action_list.2._raw",
+              "action_list.2._cleaned"
+            ],
+            "@local.button_click_history": [
+              "action_list.2.args.1",
+              "action_list.2._raw",
+              "action_list.2._cleaned"
+            ],
+            "!@fields.has_accessed_rich_tasks": [
+              "condition"
+            ]
+          }
+        },
+        {
+          "type": "button",
+          "name": "button_rich_tasks",
+          "value": "Rich Tasks",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "go_to",
+              "args": [
+                "efm_rich_tasks_start"
+              ],
+              "_raw": "click | go_to: efm_rich_tasks_start",
+              "_cleaned": "click | go_to: efm_rich_tasks_start"
+            },
+            {
+              "trigger": "click",
+              "action_id": "set_field",
+              "args": [
+                "@local.click_history_field_name",
+                "@local.button_click_history"
+              ],
+              "_raw": "click | set_field:@local.click_history_field_name: @local.button_click_history",
+              "_cleaned": "click | set_field:@local.click_history_field_name: @local.button_click_history"
+            }
+          ],
+          "condition": "@fields.has_accessed_rich_tasks",
+          "parameter_list": {
+            "style": "short",
+            "text_align": "center"
+          },
+          "_nested_name": "dg_rich_tasks.button_rich_tasks",
+          "_dynamicFields": {
+            "action_list": {
+              "1": {
+                "args": {
+                  "0": [
+                    {
+                      "fullExpression": "@local.click_history_field_name",
+                      "matchedExpression": "@local.click_history_field_name",
+                      "type": "local",
+                      "fieldName": "click_history_field_name"
+                    }
+                  ],
+                  "1": [
+                    {
+                      "fullExpression": "@local.button_click_history",
+                      "matchedExpression": "@local.button_click_history",
+                      "type": "local",
+                      "fieldName": "button_click_history"
+                    }
+                  ]
+                },
+                "_raw": [
+                  {
+                    "fullExpression": "click | set_field:@local.click_history_field_name: @local.button_click_history",
+                    "matchedExpression": "@local.click_history_field_name",
+                    "type": "local",
+                    "fieldName": "click_history_field_name"
+                  },
+                  {
+                    "fullExpression": "click | set_field:@local.click_history_field_name: @local.button_click_history",
+                    "matchedExpression": "@local.button_click_history",
+                    "type": "local",
+                    "fieldName": "button_click_history"
+                  }
+                ],
+                "_cleaned": [
+                  {
+                    "fullExpression": "click | set_field:@local.click_history_field_name: @local.button_click_history",
+                    "matchedExpression": "@local.click_history_field_name",
+                    "type": "local",
+                    "fieldName": "click_history_field_name"
+                  },
+                  {
+                    "fullExpression": "click | set_field:@local.click_history_field_name: @local.button_click_history",
+                    "matchedExpression": "@local.button_click_history",
+                    "type": "local",
+                    "fieldName": "button_click_history"
+                  }
+                ]
+              }
+            },
+            "condition": [
+              {
+                "fullExpression": "@fields.has_accessed_rich_tasks",
+                "matchedExpression": "@fields.has_accessed_rich_tasks",
+                "type": "fields",
+                "fieldName": "has_accessed_rich_tasks"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.click_history_field_name": [
+              "action_list.1.args.0",
+              "action_list.1._raw",
+              "action_list.1._cleaned"
+            ],
+            "@local.button_click_history": [
+              "action_list.1.args.1",
+              "action_list.1._raw",
+              "action_list.1._cleaned"
+            ],
+            "@fields.has_accessed_rich_tasks": [
+              "condition"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "dg_rich_tasks"
     },
     {
       "name": "now",

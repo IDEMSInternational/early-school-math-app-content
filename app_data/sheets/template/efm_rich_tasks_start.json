@@ -1,6 +1,6 @@
 {
   "flow_type": "template",
-  "flow_name": "efm_mts_start",
+  "flow_name": "efm_rich_tasks_start",
   "status": "released",
   "rows": [
     {
@@ -10,7 +10,7 @@
         {
           "type": "title",
           "name": "spacer",
-          "value": "Math Talks",
+          "value": "Rich Tasks",
           "_translations": {
             "value": {}
           },
@@ -31,10 +31,10 @@
                   "trigger": "click",
                   "action_id": "start_tour",
                   "args": [
-                    "esm_math_talks_tour"
+                    "esm_rich_tasks_tour"
                   ],
-                  "_raw": "click | start_tour: esm_math_talks_tour",
-                  "_cleaned": "click | start_tour: esm_math_talks_tour"
+                  "_raw": "click | start_tour: esm_rich_tasks_tour",
+                  "_cleaned": "click | start_tour: esm_rich_tasks_tour"
                 }
               ],
               "parameter_list": {
@@ -56,7 +56,7 @@
         {
           "type": "text",
           "name": "help_text",
-          "value": "This will have a collection of math talks to use with a class. There will be several types - at least number talks, shape talks, dot talks, and fraction talks.\n\nIn addition to having a master list here that is easily searchable, each of these will be available to be linked to from various topics.",
+          "value": "This will have a collection of longer rich tasks. These will be in addition to the math games and puzzles.",
           "_translations": {
             "value": {}
           },
@@ -82,5 +82,5 @@
       "_nested_name": "fake_group"
     }
   ],
-  "_xlsxPath": "EFM_math_talks_high_level_sheets.xlsx"
+  "_xlsxPath": "EFM_rich_tasks_high_level_sheets.xlsx"
 }

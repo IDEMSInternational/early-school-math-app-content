@@ -2139,6 +2139,15 @@
           "_nested_name": "dg_find_resources.glossary_word_3_ptr"
         },
         {
+          "name": "EmPtY_string",
+          "value": "EmPtY",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "dg_find_resources.EmPtY_string"
+        },
+        {
           "type": "button",
           "name": "button_resources",
           "value": "Resources",
@@ -2150,21 +2159,11 @@
               "trigger": "click",
               "action_id": "set_field",
               "args": [
-                "topics_search_count",
-                "1"
-              ],
-              "_raw": "click | set_field:topics_search_count : 1",
-              "_cleaned": "click | set_field:topics_search_count : 1"
-            },
-            {
-              "trigger": "click",
-              "action_id": "set_field",
-              "args": [
-                "topics_search_1",
+                "topics_search_set",
                 "@local.topic_id"
               ],
-              "_raw": "click | set_field:topics_search_1:@local.topic_id",
-              "_cleaned": "click | set_field:topics_search_1:@local.topic_id"
+              "_raw": "click | set_field:topics_search_set: @local.topic_id",
+              "_cleaned": "click | set_field:topics_search_set: @local.topic_id"
             },
             {
               "trigger": "click",
@@ -2183,7 +2182,7 @@
           "_nested_name": "dg_find_resources.button_resources",
           "_dynamicFields": {
             "action_list": {
-              "1": {
+              "0": {
                 "args": {
                   "1": [
                     {
@@ -2196,7 +2195,7 @@
                 },
                 "_raw": [
                   {
-                    "fullExpression": "click | set_field:topics_search_1:@local.topic_id",
+                    "fullExpression": "click | set_field:topics_search_set: @local.topic_id",
                     "matchedExpression": "@local.topic_id",
                     "type": "local",
                     "fieldName": "topic_id"
@@ -2204,7 +2203,7 @@
                 ],
                 "_cleaned": [
                   {
-                    "fullExpression": "click | set_field:topics_search_1:@local.topic_id",
+                    "fullExpression": "click | set_field:topics_search_set: @local.topic_id",
                     "matchedExpression": "@local.topic_id",
                     "type": "local",
                     "fieldName": "topic_id"
@@ -2215,9 +2214,9 @@
           },
           "_dynamicDependencies": {
             "@local.topic_id": [
-              "action_list.1.args.1",
-              "action_list.1._raw",
-              "action_list.1._cleaned"
+              "action_list.0.args.1",
+              "action_list.0._raw",
+              "action_list.0._cleaned"
             ]
           }
         },
