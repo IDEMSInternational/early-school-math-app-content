@@ -1,0 +1,86 @@
+{
+  "flow_type": "template",
+  "flow_name": "efm_routines_start",
+  "status": "released",
+  "rows": [
+    {
+      "type": "display_group",
+      "name": "dg_top_of_page",
+      "rows": [
+        {
+          "type": "title",
+          "name": "spacer",
+          "value": "Routines",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "flex:1"
+          ],
+          "_nested_name": "dg_top_of_page.spacer"
+        },
+        {
+          "type": "display_group",
+          "name": "dg_help",
+          "rows": [
+            {
+              "type": "round_button",
+              "name": "help_button",
+              "action_list": [
+                {
+                  "trigger": "click",
+                  "action_id": "start_tour",
+                  "args": [
+                    "esm_routines_tour"
+                  ],
+                  "_raw": "click | start_tour: esm_routines_tour",
+                  "_cleaned": "click | start_tour: esm_routines_tour"
+                }
+              ],
+              "parameter_list": {
+                "icon_src": "help",
+                "style": "navigation"
+              },
+              "_nested_name": "dg_top_of_page.dg_help.help_button"
+            }
+          ],
+          "_nested_name": "dg_top_of_page.dg_help"
+        }
+      ],
+      "_nested_name": "dg_top_of_page"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_info",
+      "rows": [
+        {
+          "type": "text",
+          "name": "help_text",
+          "value": "This will have a collection of quick 1 to 10 minute routines in various categories.\n\nHere is a very tentative list of kinds of routines that will be included here:\n\n* Subitizing dot talks - develop counting skills, unitizing skills, counting on skills\n* Choral counting - count together as a group. Counting on, skip counting, counting down, estimate and then count\n* Target number - have a number of the day. See how many ways the number can be created. Add restrictions to the ways allowed to guide the practice.\n* Equality concept - find ways to create the same value on two sides of an equal sign\n* Number Line - put a collection of numbers on a number line or number path\n* \"I have ... I wish I had\" - how many more do you need? Counting on, counting down\n* Shape talks - talks involving shape properties\n* Fluency practice\n* Which One Doesn't Belong or Who is the Spy or Each of these things is different from the others\n* Short math games - Nim 1-2, I'm Thinking of a Number",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "icon_src": "help",
+            "style": "navigation"
+          },
+          "_nested_name": "dg_info.help_text"
+        }
+      ],
+      "_nested_name": "dg_info"
+    },
+    {
+      "type": "display_group",
+      "name": "fake_group",
+      "rows": [
+        {
+          "type": "text",
+          "name": "spacer",
+          "_nested_name": "fake_group.spacer"
+        }
+      ],
+      "_nested_name": "fake_group"
+    }
+  ],
+  "_xlsxPath": "EFM_routines_high_level_sheets.xlsx"
+}

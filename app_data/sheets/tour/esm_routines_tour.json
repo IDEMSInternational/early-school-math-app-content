@@ -1,0 +1,29 @@
+{
+  "flow_type": "tour",
+  "flow_name": "esm_routines_tour",
+  "status": "released",
+  "rows": [
+    {
+      "type": "step",
+      "title": "Routines",
+      "_translations": {
+        "title": {},
+        "message_text": {}
+      },
+      "message_text": "There are many types of quick 1 to 10 minute routines to do with a class. There are number talks, shape talks, fraction talks, and probably many more.",
+      "route": "template/efm_routines_start"
+    },
+    {
+      "type": "step",
+      "title": "Help",
+      "_translations": {
+        "title": {},
+        "message_text": {}
+      },
+      "message_text": "If you ever want to see this introduction again, just click on the question mark.",
+      "template_component_name": "dg_help",
+      "route": "template/efm_routines_start"
+    }
+  ],
+  "_xlsxPath": "EFM_tours.xlsx"
+}

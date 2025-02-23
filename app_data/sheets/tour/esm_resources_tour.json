@@ -15,7 +15,7 @@
     },
     {
       "type": "step",
-      "title": "Resource finder",
+      "title": "Resource Finder",
       "_translations": {
         "title": {},
         "message_text": {}
@@ -59,13 +59,24 @@
     },
     {
       "type": "step",
-      "title": "Math Talks",
+      "title": "Routines",
       "_translations": {
         "title": {},
         "message_text": {}
       },
-      "message_text": "This has all the math talks used throughout this app. It will have number talks, dot talks, shape talks, fraction talks, and more.",
-      "template_component_name": "dg_math_talks",
+      "message_text": "This has 1 to 10-minute routines to do with your class. It has math talks, fluency tasks, and things like Which One Doesn't Belong?",
+      "template_component_name": "dg_routines",
+      "route": "template/esm_resources"
+    },
+    {
+      "type": "step",
+      "title": "Rich Tasks",
+      "_translations": {
+        "title": {},
+        "message_text": {}
+      },
+      "message_text": "This has 20-minute to multi-class tasks that allow more depth with multiple facets.",
+      "template_component_name": "dg_rich_tasks",
       "route": "template/esm_resources"
     },
     {

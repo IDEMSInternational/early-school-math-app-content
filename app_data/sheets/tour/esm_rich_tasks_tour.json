@@ -1,17 +1,17 @@
 {
   "flow_type": "tour",
-  "flow_name": "esm_math_talks_tour",
+  "flow_name": "esm_rich_tasks_tour",
   "status": "released",
   "rows": [
     {
       "type": "step",
-      "title": "Math Talks",
+      "title": "Rich Tasks",
       "_translations": {
         "title": {},
         "message_text": {}
       },
-      "message_text": "These are many types of talks to do with a class. There are number talks, shape talks, fraction talks, and probably many more.",
-      "route": "template/efm_mts_start"
+      "message_text": "These tasks are meant to be deeper, multi-faceted tasks that may take anywhere from 20 minutes to more than one class period. Many of the games and puzzles fall under this heading.",
+      "route": "template/efm_rich_tasks_start"
     },
     {
       "type": "step",
@@ -22,7 +22,7 @@
       },
       "message_text": "If you ever want to see this introduction again, just click on the question mark.",
       "template_component_name": "dg_help",
-      "route": "template/efm_mts_start"
+      "route": "template/efm_rich_tasks_start"
     }
   ],
   "_xlsxPath": "EFM_tours.xlsx"
