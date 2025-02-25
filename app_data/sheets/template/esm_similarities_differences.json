@@ -1,0 +1,59 @@
+{
+  "flow_type": "template",
+  "flow_name": "esm_similarities_differences",
+  "status": "released",
+  "rows": [
+    {
+      "type": "display_group",
+      "name": "dg_top_of_page",
+      "rows": [
+        {
+          "type": "title",
+          "name": "spacer",
+          "value": "Similarities and Differences",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "flex:1"
+          ],
+          "_nested_name": "dg_top_of_page.spacer"
+        }
+      ],
+      "_nested_name": "dg_top_of_page"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_info",
+      "rows": [
+        {
+          "type": "text",
+          "name": "help_text",
+          "value": "These will be a sequence of collections of four things. They can either be used for \"Which One Doesn't Belong?\" \"Who is the Spy?\" or \"Each of These is Different from the Others.\"\n\nIt can also be pairs of things (e.g. spoon and fork) to have Similar and Different challenges.",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "icon_src": "help",
+            "style": "navigation"
+          },
+          "_nested_name": "dg_info.help_text"
+        }
+      ],
+      "_nested_name": "dg_info"
+    },
+    {
+      "type": "display_group",
+      "name": "fake_group",
+      "rows": [
+        {
+          "type": "text",
+          "name": "spacer",
+          "_nested_name": "fake_group.spacer"
+        }
+      ],
+      "_nested_name": "fake_group"
+    }
+  ],
+  "_xlsxPath": "EFM_routines_high_level_sheets.xlsx"
+}

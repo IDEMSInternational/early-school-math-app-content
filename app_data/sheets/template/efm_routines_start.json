@@ -52,11 +52,335 @@
     {
       "type": "display_group",
       "name": "dg_info",
+      "parameter_list": {
+        "style": "column"
+      },
       "rows": [
         {
           "type": "text",
-          "name": "help_text",
-          "value": "This will have a collection of quick 1 to 10 minute routines in various categories.\n\nHere is a very tentative list of kinds of routines that will be included here:\n\n* Subitizing dot talks - develop counting skills, unitizing skills, counting on skills\n* Choral counting - count together as a group. Counting on, skip counting, counting down, estimate and then count\n* Target number - have a number of the day. See how many ways the number can be created. Add restrictions to the ways allowed to guide the practice.\n* Equality concept - find ways to create the same value on two sides of an equal sign\n* Number Line - put a collection of numbers on a number line or number path\n* \"I have ... I wish I had\" - how many more do you need? Counting on, counting down\n* Shape talks - talks involving shape properties\n* Fluency practice\n* Which One Doesn't Belong or Who is the Spy or Each of these things is different from the others\n* Short math games - Nim 1-2, I'm Thinking of a Number",
+          "name": "Intro_text",
+          "value": "This is a collection of quick 1 to 10 minute routines in various categories.",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "dg_info.Intro_text"
+        },
+        {
+          "type": "button",
+          "name": "button_shapes_properties",
+          "value": "Properties and Shapes Talks",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "go_to",
+              "args": [
+                "esm_properties_and_shapes"
+              ],
+              "_raw": "click | go_to: esm_properties_and_shapes",
+              "_cleaned": "click | go_to: esm_properties_and_shapes"
+            }
+          ],
+          "parameter_list": {
+            "style": "short",
+            "text_align": "center"
+          },
+          "_nested_name": "dg_info.button_shapes_properties"
+        },
+        {
+          "type": "button",
+          "name": "button_similarities_and_differences",
+          "value": "Similarities and Differences",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "go_to",
+              "args": [
+                "esm_similarities_differences"
+              ],
+              "_raw": "click | go_to: esm_similarities_differences",
+              "_cleaned": "click | go_to: esm_similarities_differences"
+            }
+          ],
+          "parameter_list": {
+            "style": "short",
+            "text_align": "center"
+          },
+          "_nested_name": "dg_info.button_similarities_and_differences"
+        },
+        {
+          "type": "button",
+          "name": "button_pattern_block_challenges",
+          "value": "Pattern Block Challenges",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "go_to",
+              "args": [
+                "esm_pattern_block_challenges"
+              ],
+              "_raw": "click | go_to: esm_pattern_block_challenges",
+              "_cleaned": "click | go_to: esm_pattern_block_challenges"
+            }
+          ],
+          "parameter_list": {
+            "style": "short",
+            "text_align": "center"
+          },
+          "_nested_name": "dg_info.button_pattern_block_challenges"
+        },
+        {
+          "type": "button",
+          "name": "button_sub_dot_talks",
+          "value": "Subitizing Dot Talks",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "go_to",
+              "args": [
+                "esm_sub_dot_talks"
+              ],
+              "_raw": "click | go_to: esm_sub_dot_talks",
+              "_cleaned": "click | go_to: esm_sub_dot_talks"
+            }
+          ],
+          "parameter_list": {
+            "style": "short",
+            "text_align": "center"
+          },
+          "_nested_name": "dg_info.button_sub_dot_talks"
+        },
+        {
+          "type": "button",
+          "name": "button_short_math_games",
+          "value": "Short Math Games",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "go_to",
+              "args": [
+                "esm_short_math_games"
+              ],
+              "_raw": "click | go_to: esm_short_math_games",
+              "_cleaned": "click | go_to: esm_short_math_games"
+            }
+          ],
+          "parameter_list": {
+            "style": "short",
+            "text_align": "center"
+          },
+          "_nested_name": "dg_info.button_short_math_games"
+        },
+        {
+          "type": "button",
+          "name": "button_target_number",
+          "value": "Target Number",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "go_to",
+              "args": [
+                "esm_target_number"
+              ],
+              "_raw": "click | go_to: esm_target_number",
+              "_cleaned": "click | go_to: esm_target_number"
+            }
+          ],
+          "parameter_list": {
+            "style": "short",
+            "text_align": "center"
+          },
+          "_nested_name": "dg_info.button_target_number"
+        },
+        {
+          "type": "button",
+          "name": "button_equality_concept",
+          "value": "Equality Concept",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "go_to",
+              "args": [
+                "esm_equality_concept"
+              ],
+              "_raw": "click | go_to: esm_equality_concept",
+              "_cleaned": "click | go_to: esm_equality_concept"
+            }
+          ],
+          "parameter_list": {
+            "style": "short",
+            "text_align": "center"
+          },
+          "_nested_name": "dg_info.button_equality_concept"
+        },
+        {
+          "type": "button",
+          "name": "button_number_line",
+          "value": "Number Line Tasks",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "go_to",
+              "args": [
+                "esm_number_line"
+              ],
+              "_raw": "click | go_to: esm_number_line",
+              "_cleaned": "click | go_to: esm_number_line"
+            }
+          ],
+          "parameter_list": {
+            "style": "short",
+            "text_align": "center"
+          },
+          "_nested_name": "dg_info.button_number_line"
+        },
+        {
+          "type": "button",
+          "name": "button_number_strings",
+          "value": "Number Strings",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "go_to",
+              "args": [
+                "esm_number_strings"
+              ],
+              "_raw": "click | go_to: esm_number_strings",
+              "_cleaned": "click | go_to: esm_number_strings"
+            }
+          ],
+          "parameter_list": {
+            "style": "short",
+            "text_align": "center"
+          },
+          "_nested_name": "dg_info.button_number_strings"
+        },
+        {
+          "type": "button",
+          "name": "button_problem_sort",
+          "value": "Problem Sort",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "go_to",
+              "args": [
+                "esm_problem_sort"
+              ],
+              "_raw": "click | go_to: esm_problem_sort",
+              "_cleaned": "click | go_to: esm_problem_sort"
+            }
+          ],
+          "parameter_list": {
+            "style": "short",
+            "text_align": "center"
+          },
+          "_nested_name": "dg_info.button_problem_sort"
+        },
+        {
+          "type": "button",
+          "name": "button_choral_counting",
+          "value": "Choral Counting",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "go_to",
+              "args": [
+                "esm_choral_counting"
+              ],
+              "_raw": "click | go_to: esm_choral_counting",
+              "_cleaned": "click | go_to: esm_choral_counting"
+            }
+          ],
+          "parameter_list": {
+            "style": "short",
+            "text_align": "center"
+          },
+          "_nested_name": "dg_info.button_choral_counting"
+        },
+        {
+          "type": "button",
+          "name": "button_i_have_i_wish_i_had",
+          "value": "I Have ... I Wish I Had",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "go_to",
+              "args": [
+                "esm_i_have_i_wish"
+              ],
+              "_raw": "click | go_to: esm_i_have_i_wish",
+              "_cleaned": "click | go_to: esm_i_have_i_wish"
+            }
+          ],
+          "parameter_list": {
+            "style": "short",
+            "text_align": "center"
+          },
+          "_nested_name": "dg_info.button_i_have_i_wish_i_had"
+        },
+        {
+          "type": "button",
+          "name": "button_fluency_practice",
+          "value": "Fluency Practice",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "go_to",
+              "args": [
+                "esm_fluency_practice"
+              ],
+              "_raw": "click | go_to: esm_fluency_practice",
+              "_cleaned": "click | go_to: esm_fluency_practice"
+            }
+          ],
+          "parameter_list": {
+            "style": "short",
+            "text_align": "center"
+          },
+          "_nested_name": "dg_info.button_fluency_practice"
+        },
+        {
+          "type": "text",
+          "name": "ideas_text",
+          "value": "Here are some more ideas possibly worth pursuing.\n* Splat routines (need a new name)\n* Dot Parties (new name needed) - too advanced?\n* Number patterns - what comes next and why",
           "_translations": {
             "value": {}
           },
@@ -64,7 +388,7 @@
             "icon_src": "help",
             "style": "navigation"
           },
-          "_nested_name": "dg_info.help_text"
+          "_nested_name": "dg_info.ideas_text"
         }
       ],
       "_nested_name": "dg_info"
