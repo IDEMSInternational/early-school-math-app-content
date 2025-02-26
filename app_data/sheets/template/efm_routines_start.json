@@ -59,7 +59,7 @@
         {
           "type": "text",
           "name": "Intro_text",
-          "value": "This is a collection of quick 1 to 10 minute routines in various categories.",
+          "value": "These are quick 1 to 10 minute routines.",
           "_translations": {
             "value": {}
           },
@@ -307,30 +307,6 @@
         },
         {
           "type": "button",
-          "name": "button_i_have_i_wish_i_had",
-          "value": "I Have ... I Wish I Had",
-          "_translations": {
-            "value": {}
-          },
-          "action_list": [
-            {
-              "trigger": "click",
-              "action_id": "go_to",
-              "args": [
-                "esm_i_have_i_wish"
-              ],
-              "_raw": "click | go_to: esm_i_have_i_wish",
-              "_cleaned": "click | go_to: esm_i_have_i_wish"
-            }
-          ],
-          "parameter_list": {
-            "style": "short",
-            "text_align": "center"
-          },
-          "_nested_name": "dg_info.button_i_have_i_wish_i_had"
-        },
-        {
-          "type": "button",
           "name": "button_splat_routines",
           "value": "Splat! Routines",
           "_translations": {
@@ -352,30 +328,6 @@
             "text_align": "center"
           },
           "_nested_name": "dg_info.button_splat_routines"
-        },
-        {
-          "type": "button",
-          "name": "button_dot_parties",
-          "value": "Dot Parties",
-          "_translations": {
-            "value": {}
-          },
-          "action_list": [
-            {
-              "trigger": "click",
-              "action_id": "go_to",
-              "args": [
-                "esm_dot_parties"
-              ],
-              "_raw": "click | go_to: esm_dot_parties",
-              "_cleaned": "click | go_to: esm_dot_parties"
-            }
-          ],
-          "parameter_list": {
-            "style": "short",
-            "text_align": "center"
-          },
-          "_nested_name": "dg_info.button_dot_parties"
         },
         {
           "type": "button",
