@@ -115,8 +115,8 @@
         },
         {
           "type": "button",
-          "name": "button_sub_dot_talks",
-          "value": "Subitizing Dot Talks",
+          "name": "button_dot_talks",
+          "value": "Dot Talks",
           "_translations": {
             "value": {}
           },
@@ -125,17 +125,41 @@
               "trigger": "click",
               "action_id": "go_to",
               "args": [
-                "esm_sub_dot_talks"
+                "esm_dot_talks"
               ],
-              "_raw": "click | go_to: esm_sub_dot_talks",
-              "_cleaned": "click | go_to: esm_sub_dot_talks"
+              "_raw": "click | go_to: esm_dot_talks",
+              "_cleaned": "click | go_to: esm_dot_talks"
             }
           ],
           "parameter_list": {
             "style": "short",
             "text_align": "center"
           },
-          "_nested_name": "dg_info.button_sub_dot_talks"
+          "_nested_name": "dg_info.button_dot_talks"
+        },
+        {
+          "type": "button",
+          "name": "button_splat_routines",
+          "value": "Splat!",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "go_to",
+              "args": [
+                "esm_splat_routines"
+              ],
+              "_raw": "click | go_to: esm_splat_routines",
+              "_cleaned": "click | go_to: esm_splat_routines"
+            }
+          ],
+          "parameter_list": {
+            "style": "short",
+            "text_align": "center"
+          },
+          "_nested_name": "dg_info.button_splat_routines"
         },
         {
           "type": "button",
@@ -304,30 +328,6 @@
             "text_align": "center"
           },
           "_nested_name": "dg_info.button_choral_counting"
-        },
-        {
-          "type": "button",
-          "name": "button_splat_routines",
-          "value": "Splat! Routines",
-          "_translations": {
-            "value": {}
-          },
-          "action_list": [
-            {
-              "trigger": "click",
-              "action_id": "go_to",
-              "args": [
-                "esm_splat_routines"
-              ],
-              "_raw": "click | go_to: esm_splat_routines",
-              "_cleaned": "click | go_to: esm_splat_routines"
-            }
-          ],
-          "parameter_list": {
-            "style": "short",
-            "text_align": "center"
-          },
-          "_nested_name": "dg_info.button_splat_routines"
         },
         {
           "type": "button",
