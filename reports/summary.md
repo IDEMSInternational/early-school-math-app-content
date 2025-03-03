@@ -3,26 +3,26 @@
 
 | type | count |
 | --- | --- |
-| accordion | 15 |
-| accordion_section | 23 |
-| button | 55 |
+| accordion | 20 |
+| accordion_section | 28 |
+| button | 73 |
 | debug_toggle | 1 |
-| display_group | 127 |
-| image | 24 |
-| items | 28 |
+| display_group | 197 |
+| image | 29 |
+| items | 34 |
 | qr_code | 1 |
 | radio_button_grid | 1 |
-| round_button | 8 |
+| round_button | 9 |
 | select_text | 1 |
-| set_field | 12 |
-| set_variable | 424 |
+| set_field | 9 |
+| set_variable | 519 |
 | simple_checkbox | 4 |
-| template | 63 |
-| text | 107 |
+| template | 65 |
+| text | 149 |
 | text_area | 2 |
 | tile_component | 3 |
-| title | 25 |
-| toggle_bar | 10 |
+| title | 40 |
+| toggle_bar | 11 |
 </details>
 
 <details >
@@ -38,12 +38,12 @@
 | emit: set_language | 1 |
 | emit: uncompleted | 58 |
 | feedback | 11 |
-| go_to | 27 |
+| go_to | 42 |
 | go_to_url | 3 |
 | reset_app | 1 |
-| set_field | 54 |
-| set_local | 4 |
-| start_tour | 15 |
+| set_field | 57 |
+| set_local | 9 |
+| start_tour | 17 |
 </details>
 
 <details open>
@@ -51,8 +51,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 39493 KB | 39.5 MB |
-| unused | 21993 KB | 22 MB |
+| total | 39514 KB | 39.5 MB |
+| unused | 22008 KB | 22 MB |
 </details>
 
 <details open>
@@ -322,6 +322,12 @@ Assets that appear in app-data but do not have references within sheets
 | EFMStorybooks/EFM-SB-KAHN-20.jpg | 3.5 |
 | EFMStorybooks/EFM-SB-SSMILE-8.jpg | 3.5 |
 | EFMStorybooks/EFM-SB-TFHH-2.jpg | 10.6 |
+| ESMIll/ESMDots1.svg | 2 |
+| ESMIll/ESMDots2.svg | 2.1 |
+| ESMIll/ESMDots3.svg | 2.3 |
+| ESMIll/ESMDots4.svg | 2.5 |
+| ESMIll/ESMDots5.svg | 2.7 |
+| ESMIll/ESMDots6.svg | 3.1 |
 | ESMIll/ESMPOWACoinFlipStart2.svg | 11626.6 |
 | android/icon-background.png | 7 |
 | android/icon-foreground.png | 53.9 |
@@ -1235,6 +1241,12 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/EFM105BackAndForth24Move1.svg | 21.1 | 1 |
 | ESMIll/EFM105BackAndForth24MoveIntro.svg | 19.4 | 1 |
 | ESMIll/ESM0GlossaryDividingLine.svg | 3.2 | 1 |
+| ESMIll/ESMDots1-2.svg | 2.8 | 1 |
+| ESMIll/ESMDots2Plus1.svg | 3.3 | 1 |
+| ESMIll/ESMDots3-4.svg | 3.5 | 1 |
+| ESMIll/ESMDots3Plus1.svg | 3.5 | 1 |
+| ESMIll/ESMDots4Plus1.svg | 3.9 | 1 |
+| ESMIll/ESMDots5-6.svg | 4.5 | 1 |
 | ESMIll/ESMGA105GoFish.svg | 17 | 2 |
 | ESMIll/ESMGA105MemoryChallenge.svg | 11.2 | 1 |
 | ESMIll/ESMGA125NumberLineBattleship.svg | 31.3 | 1 |
@@ -1255,101 +1267,101 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMGAWarDoubleDigit.svg | 16.5 | 2 |
 | ESMIll/ESMGAWarSingleDigit.svg | 16 | 1 |
 | ESMIll/ESMGAWhichOneIsDifferent.svg | 5.1 | 1 |
-| ESMIll/ESMPOWACardStackingChallenge.svg | 11.9 | 2 |
-| ESMIll/ESMPOWACardStackingIntro.svg | 19 | 2 |
-| ESMIll/ESMPOWACoinFlipFirstMoves1.svg | 5403.6 | 4 |
-| ESMIll/ESMPOWACoinFlipStart1.svg | 6752.5 | 4 |
-| ESMIll/ESMPOWAConsecutiveNumbersAnswer1.svg | 6.2 | 2 |
-| ESMIll/ESMPOWAConsecutiveNumbersAnswer2.svg | 6 | 2 |
-| ESMIll/ESMPOWAConsecutiveNumbersAnswer3.svg | 7.3 | 2 |
-| ESMIll/ESMPOWAConsecutiveNumbersAnswer4.svg | 8.2 | 2 |
-| ESMIll/ESMPOWAConsecutiveNumbersChallenge1.svg | 2.4 | 2 |
-| ESMIll/ESMPOWAConsecutiveNumbersChallenge2.svg | 2.6 | 2 |
-| ESMIll/ESMPOWAConsecutiveNumbersChallenge3.svg | 2.6 | 2 |
-| ESMIll/ESMPOWAConsecutiveNumbersChallenge4.svg | 3.1 | 2 |
-| ESMIll/ESMPOWAConsecutiveNumbersIntro.svg | 18.6 | 8 |
-| ESMIll/ESMPOWAEachOfThese2-furniture.svg | 155.9 | 2 |
-| ESMIll/ESMPOWAEachOfTheseIsDifferent1ShapesChallenge.svg | 6.5 | 2 |
-| ESMIll/ESMPOWAEachOfTheseIsDifferentIntro.svg | 5.2 | 4 |
-| ESMIll/ESMPOWAFindingthePieces1Challenge.svg | 4.9 | 2 |
-| ESMIll/ESMPOWAFindingthePieces1Intro.svg | 8.2 | 2 |
-| ESMIll/ESMPOWALines2by2Answer.svg | 3.9 | 2 |
-| ESMIll/ESMPOWALines2by2Blank.svg | 2.3 | 2 |
-| ESMIll/ESMPOWALines2by2Example.svg | 3 | 2 |
-| ESMIll/ESMPOWALines3by3Answer.svg | 5.1 | 2 |
-| ESMIll/ESMPOWALines3by3Blank.svg | 3.3 | 2 |
-| ESMIll/ESMPOWALines3by3Example.svg | 4.5 | 2 |
-| ESMIll/ESMPOWAPanBalanceWithCoins.svg | 4378.5 | 4 |
-| ESMIll/ESMPOWAPatternBlocksHexagons1.svg | 448.8 | 2 |
-| ESMIll/ESMPOWAPatternBlocksHexagonsIntro.svg | 69.9 | 2 |
-| ESMIll/ESMPOWAPatternBlocksTrianglesAnswer.svg | 27.3 | 2 |
-| ESMIll/ESMPOWAPatternBlocksTrianglesIntro.svg | 136.4 | 2 |
-| ESMIll/ESMPOWAReflectOnThisAnswer1.svg | 26.5 | 2 |
-| ESMIll/ESMPOWAReflectOnThisAnswer2.svg | 36.3 | 2 |
-| ESMIll/ESMPOWAReflectOnThisChallenge1.svg | 9.5 | 2 |
-| ESMIll/ESMPOWAReflectOnThisChallenge2.svg | 11.1 | 2 |
-| ESMIll/ESMPOWAReflectOnThisIntro.svg | 20.9 | 4 |
-| ESMIll/ESMPOWAStackingHats1Challenge.svg | 73.3 | 2 |
-| ESMIll/ESMPOWAStackingHats2Challenge.svg | 72.4 | 2 |
-| ESMIll/ESMPOWAStackingHatsIntro.svg | 146.8 | 4 |
-| ESMIll/ESMPOWASumGroups10Example.svg | 36 | 2 |
-| ESMIll/ESMPOWASumGroups10a.svg | 55.4 | 2 |
-| ESMIll/ESMPOWASumGroups10aAnswers.svg | 62.1 | 2 |
-| ESMIll/ESMPOWASumGroups10bAnswers.svg | 62 | 2 |
-| ESMIll/ESMPOWASumGroups6aAnswers.svg | 64.1 | 2 |
-| ESMIll/ESMPOWASumGroups6aChallenge.svg | 59.1 | 2 |
-| ESMIll/ESMPOWASumGroups6aExample.svg | 30.7 | 2 |
-| ESMIll/ESMPOWASumGroups6bAnswers.svg | 64.1 | 2 |
-| ESMIll/ESMPOWASumGroups7Example.svg | 30.3 | 2 |
-| ESMIll/ESMPOWASumGroups7a.svg | 59 | 2 |
-| ESMIll/ESMPOWASumGroups7aAnswers.svg | 65.1 | 2 |
-| ESMIll/ESMPOWASumGroups7bAnswers.svg | 64.5 | 2 |
-| ESMIll/ESMPOWASumGroups8Example.svg | 30.4 | 2 |
-| ESMIll/ESMPOWASumGroups8a.svg | 56 | 2 |
-| ESMIll/ESMPOWASumGroups8aAnswers.svg | 61.8 | 2 |
-| ESMIll/ESMPOWASumGroups8bAnswers.svg | 61.9 | 2 |
-| ESMIll/ESMPOWASumGroups9Example.svg | 34.9 | 2 |
-| ESMIll/ESMPOWASumGroups9a.svg | 56.3 | 2 |
-| ESMIll/ESMPOWASumGroups9aAnswers.svg | 62.9 | 2 |
-| ESMIll/ESMPOWASumGroups9bAnswers.svg | 62.2 | 2 |
-| ESMIll/ESMPOWATreasureMap1Challenge.svg | 13.5 | 2 |
-| ESMIll/ESMPOWATreasureMap2Challenge.svg | 14 | 2 |
-| ESMIll/ESMPOWATreasureMapIntro.svg | 64.2 | 4 |
-| ESMIll/ESMPOWBDiffPyramid10Challenge.svg | 6.7 | 2 |
-| ESMIll/ESMPOWBDiffPyramid62Solutions.svg | 21.5 | 2 |
-| ESMIll/ESMPOWBDiffPyramid6Challenge.svg | 4.1 | 2 |
-| ESMIll/ESMPOWBDiffPyramid6Intro.svg | 6.8 | 6 |
-| ESMIll/ESMPOWBDiffPyramid6Solutions.svg | 41.4 | 2 |
-| ESMIll/ESMPOWBEqualNumberSums3.svg | 2.5 | 2 |
-| ESMIll/ESMPOWBEqualNumberSums3Answers.svg | 22.3 | 2 |
-| ESMIll/ESMPOWBEqualNumberSums4.svg | 2.7 | 2 |
-| ESMIll/ESMPOWBEqualNumberSums4Answers.svg | 11.2 | 2 |
-| ESMIll/ESMPOWBEqualNumberSumsVennDiagram2.svg | 2.3 | 2 |
-| ESMIll/ESMPOWBEqualNumberSumsVennDiagram2Answer.svg | 16.1 | 2 |
-| ESMIll/ESMPOWBEqualSums1Answer.svg | 7.6 | 2 |
-| ESMIll/ESMPOWBEqualSums1Challenge.svg | 2.3 | 2 |
-| ESMIll/ESMPOWBFillInTheBlanks1-Question.svg | 4.3 | 2 |
-| ESMIll/ESMPOWBFillInTheBlanks2-Question.svg | 6.2 | 2 |
-| ESMIll/ESMPOWBFillInTheBlanks3-Question.svg | 6 | 2 |
-| ESMIll/ESMPOWBFillInTheBlanks4-Question.svg | 7 | 2 |
-| ESMIll/ESMPOWBFillInTheBlanks5-Question.svg | 9.6 | 2 |
-| ESMIll/ESMPOWBFillInTheBlanksIntro-Answers.svg | 14.3 | 10 |
-| ESMIll/ESMPOWBFillInTheBlanksIntro.svg | 4.1 | 10 |
-| ESMIll/ESMPOWBFindingthePieces2Challenge.svg | 23.9 | 2 |
-| ESMIll/ESMPOWBFindingthePieces2Intro.svg | 11.3 | 2 |
-| ESMIll/ESMPOWBFindingthePieces3Answers.svg | 7.1 | 2 |
-| ESMIll/ESMPOWBFindingthePieces3Challenge.svg | 4 | 2 |
-| ESMIll/ESMPOWBFindingthePieces4Answers.svg | 4.9 | 2 |
-| ESMIll/ESMPOWBFindingthePieces4Challenge.svg | 3.2 | 2 |
-| ESMIll/ESMPOWBFindingthePieces4Intro.svg | 6.7 | 2 |
-| ESMIll/ESMPOWBFindingthePieces5Answers.svg | 6.6 | 2 |
-| ESMIll/ESMPOWBFindingthePieces5Challenge.svg | 2.2 | 2 |
-| ESMIll/ESMPOWBFindingthePieces5Intro.svg | 4.5 | 2 |
-| ESMIll/ESMPOWBSumPyramid1Challenge.svg | 3.6 | 2 |
-| ESMIll/ESMPOWBSumPyramid2Challenge.svg | 4.9 | 2 |
-| ESMIll/ESMPOWBSumPyramid3Challenge.svg | 5.3 | 2 |
-| ESMIll/ESMPOWBSumPyramid4Challenge.svg | 7.1 | 2 |
-| ESMIll/ESMPOWBSumPyramidIntro.svg | 8.4 | 10 |
+| ESMIll/ESMPOWACardStackingChallenge.svg | 11.9 | 1 |
+| ESMIll/ESMPOWACardStackingIntro.svg | 19 | 1 |
+| ESMIll/ESMPOWACoinFlipFirstMoves1.svg | 5403.6 | 2 |
+| ESMIll/ESMPOWACoinFlipStart1.svg | 6752.5 | 2 |
+| ESMIll/ESMPOWAConsecutiveNumbersAnswer1.svg | 6.2 | 1 |
+| ESMIll/ESMPOWAConsecutiveNumbersAnswer2.svg | 6 | 1 |
+| ESMIll/ESMPOWAConsecutiveNumbersAnswer3.svg | 7.3 | 1 |
+| ESMIll/ESMPOWAConsecutiveNumbersAnswer4.svg | 8.2 | 1 |
+| ESMIll/ESMPOWAConsecutiveNumbersChallenge1.svg | 2.4 | 1 |
+| ESMIll/ESMPOWAConsecutiveNumbersChallenge2.svg | 2.6 | 1 |
+| ESMIll/ESMPOWAConsecutiveNumbersChallenge3.svg | 2.6 | 1 |
+| ESMIll/ESMPOWAConsecutiveNumbersChallenge4.svg | 3.1 | 1 |
+| ESMIll/ESMPOWAConsecutiveNumbersIntro.svg | 18.6 | 4 |
+| ESMIll/ESMPOWAEachOfThese2-furniture.svg | 155.9 | 1 |
+| ESMIll/ESMPOWAEachOfTheseIsDifferent1ShapesChallenge.svg | 6.5 | 1 |
+| ESMIll/ESMPOWAEachOfTheseIsDifferentIntro.svg | 5.2 | 2 |
+| ESMIll/ESMPOWAFindingthePieces1Challenge.svg | 4.9 | 1 |
+| ESMIll/ESMPOWAFindingthePieces1Intro.svg | 8.2 | 1 |
+| ESMIll/ESMPOWALines2by2Answer.svg | 3.9 | 1 |
+| ESMIll/ESMPOWALines2by2Blank.svg | 2.3 | 1 |
+| ESMIll/ESMPOWALines2by2Example.svg | 3 | 1 |
+| ESMIll/ESMPOWALines3by3Answer.svg | 5.1 | 1 |
+| ESMIll/ESMPOWALines3by3Blank.svg | 3.3 | 1 |
+| ESMIll/ESMPOWALines3by3Example.svg | 4.5 | 1 |
+| ESMIll/ESMPOWAPanBalanceWithCoins.svg | 4378.5 | 2 |
+| ESMIll/ESMPOWAPatternBlocksHexagons1.svg | 448.8 | 1 |
+| ESMIll/ESMPOWAPatternBlocksHexagonsIntro.svg | 69.9 | 1 |
+| ESMIll/ESMPOWAPatternBlocksTrianglesAnswer.svg | 27.3 | 1 |
+| ESMIll/ESMPOWAPatternBlocksTrianglesIntro.svg | 136.4 | 1 |
+| ESMIll/ESMPOWAReflectOnThisAnswer1.svg | 26.5 | 1 |
+| ESMIll/ESMPOWAReflectOnThisAnswer2.svg | 36.3 | 1 |
+| ESMIll/ESMPOWAReflectOnThisChallenge1.svg | 9.5 | 1 |
+| ESMIll/ESMPOWAReflectOnThisChallenge2.svg | 11.1 | 1 |
+| ESMIll/ESMPOWAReflectOnThisIntro.svg | 20.9 | 2 |
+| ESMIll/ESMPOWAStackingHats1Challenge.svg | 73.3 | 1 |
+| ESMIll/ESMPOWAStackingHats2Challenge.svg | 72.4 | 1 |
+| ESMIll/ESMPOWAStackingHatsIntro.svg | 146.8 | 2 |
+| ESMIll/ESMPOWASumGroups10Example.svg | 36 | 1 |
+| ESMIll/ESMPOWASumGroups10a.svg | 55.4 | 1 |
+| ESMIll/ESMPOWASumGroups10aAnswers.svg | 62.1 | 1 |
+| ESMIll/ESMPOWASumGroups10bAnswers.svg | 62 | 1 |
+| ESMIll/ESMPOWASumGroups6aAnswers.svg | 64.1 | 1 |
+| ESMIll/ESMPOWASumGroups6aChallenge.svg | 59.1 | 1 |
+| ESMIll/ESMPOWASumGroups6aExample.svg | 30.7 | 1 |
+| ESMIll/ESMPOWASumGroups6bAnswers.svg | 64.1 | 1 |
+| ESMIll/ESMPOWASumGroups7Example.svg | 30.3 | 1 |
+| ESMIll/ESMPOWASumGroups7a.svg | 59 | 1 |
+| ESMIll/ESMPOWASumGroups7aAnswers.svg | 65.1 | 1 |
+| ESMIll/ESMPOWASumGroups7bAnswers.svg | 64.5 | 1 |
+| ESMIll/ESMPOWASumGroups8Example.svg | 30.4 | 1 |
+| ESMIll/ESMPOWASumGroups8a.svg | 56 | 1 |
+| ESMIll/ESMPOWASumGroups8aAnswers.svg | 61.8 | 1 |
+| ESMIll/ESMPOWASumGroups8bAnswers.svg | 61.9 | 1 |
+| ESMIll/ESMPOWASumGroups9Example.svg | 34.9 | 1 |
+| ESMIll/ESMPOWASumGroups9a.svg | 56.3 | 1 |
+| ESMIll/ESMPOWASumGroups9aAnswers.svg | 62.9 | 1 |
+| ESMIll/ESMPOWASumGroups9bAnswers.svg | 62.2 | 1 |
+| ESMIll/ESMPOWATreasureMap1Challenge.svg | 13.5 | 1 |
+| ESMIll/ESMPOWATreasureMap2Challenge.svg | 14 | 1 |
+| ESMIll/ESMPOWATreasureMapIntro.svg | 64.2 | 2 |
+| ESMIll/ESMPOWBDiffPyramid10Challenge.svg | 6.7 | 1 |
+| ESMIll/ESMPOWBDiffPyramid62Solutions.svg | 21.5 | 1 |
+| ESMIll/ESMPOWBDiffPyramid6Challenge.svg | 4.1 | 1 |
+| ESMIll/ESMPOWBDiffPyramid6Intro.svg | 6.8 | 3 |
+| ESMIll/ESMPOWBDiffPyramid6Solutions.svg | 41.4 | 1 |
+| ESMIll/ESMPOWBEqualNumberSums3.svg | 2.5 | 1 |
+| ESMIll/ESMPOWBEqualNumberSums3Answers.svg | 22.3 | 1 |
+| ESMIll/ESMPOWBEqualNumberSums4.svg | 2.7 | 1 |
+| ESMIll/ESMPOWBEqualNumberSums4Answers.svg | 11.2 | 1 |
+| ESMIll/ESMPOWBEqualNumberSumsVennDiagram2.svg | 2.3 | 1 |
+| ESMIll/ESMPOWBEqualNumberSumsVennDiagram2Answer.svg | 16.1 | 1 |
+| ESMIll/ESMPOWBEqualSums1Answer.svg | 7.6 | 1 |
+| ESMIll/ESMPOWBEqualSums1Challenge.svg | 2.3 | 1 |
+| ESMIll/ESMPOWBFillInTheBlanks1-Question.svg | 4.3 | 1 |
+| ESMIll/ESMPOWBFillInTheBlanks2-Question.svg | 6.2 | 1 |
+| ESMIll/ESMPOWBFillInTheBlanks3-Question.svg | 6 | 1 |
+| ESMIll/ESMPOWBFillInTheBlanks4-Question.svg | 7 | 1 |
+| ESMIll/ESMPOWBFillInTheBlanks5-Question.svg | 9.6 | 1 |
+| ESMIll/ESMPOWBFillInTheBlanksIntro-Answers.svg | 14.3 | 5 |
+| ESMIll/ESMPOWBFillInTheBlanksIntro.svg | 4.1 | 5 |
+| ESMIll/ESMPOWBFindingthePieces2Challenge.svg | 23.9 | 1 |
+| ESMIll/ESMPOWBFindingthePieces2Intro.svg | 11.3 | 1 |
+| ESMIll/ESMPOWBFindingthePieces3Answers.svg | 7.1 | 1 |
+| ESMIll/ESMPOWBFindingthePieces3Challenge.svg | 4 | 1 |
+| ESMIll/ESMPOWBFindingthePieces4Answers.svg | 4.9 | 1 |
+| ESMIll/ESMPOWBFindingthePieces4Challenge.svg | 3.2 | 1 |
+| ESMIll/ESMPOWBFindingthePieces4Intro.svg | 6.7 | 1 |
+| ESMIll/ESMPOWBFindingthePieces5Answers.svg | 6.6 | 1 |
+| ESMIll/ESMPOWBFindingthePieces5Challenge.svg | 2.2 | 1 |
+| ESMIll/ESMPOWBFindingthePieces5Intro.svg | 4.5 | 1 |
+| ESMIll/ESMPOWBSumPyramid1Challenge.svg | 3.6 | 1 |
+| ESMIll/ESMPOWBSumPyramid2Challenge.svg | 4.9 | 1 |
+| ESMIll/ESMPOWBSumPyramid3Challenge.svg | 5.3 | 1 |
+| ESMIll/ESMPOWBSumPyramid4Challenge.svg | 7.1 | 1 |
+| ESMIll/ESMPOWBSumPyramidIntro.svg | 8.4 | 5 |
 </details>
 
 <details >
@@ -1357,12 +1369,12 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | type | subtype | total |
 | --- | --- | --- |
-| data_list |  | 68 |
+| data_list |  | 69 |
 | data_list | app_config_language_list | 1 |
 | data_list | lifecycle_actions | 1 |
 | generator |  | 1 |
 | global |  | 2 |
-| template |  | 27 |
+| template |  | 44 |
 | template | generated | 58 |
-| tour |  | 8 |
+| tour |  | 9 |
 </details>
