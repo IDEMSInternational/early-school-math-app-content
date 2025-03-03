@@ -3,22 +3,22 @@
 
 | type | count |
 | --- | --- |
-| accordion | 20 |
-| accordion_section | 28 |
+| accordion | 23 |
+| accordion_section | 31 |
 | button | 73 |
 | debug_toggle | 1 |
-| display_group | 197 |
+| display_group | 203 |
 | image | 29 |
-| items | 34 |
+| items | 35 |
 | qr_code | 1 |
 | radio_button_grid | 1 |
 | round_button | 9 |
 | select_text | 1 |
 | set_field | 9 |
-| set_variable | 519 |
+| set_variable | 521 |
 | simple_checkbox | 4 |
-| template | 65 |
-| text | 149 |
+| template | 66 |
+| text | 153 |
 | text_area | 2 |
 | tile_component | 3 |
 | title | 40 |
@@ -51,7 +51,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 39514 KB | 39.5 MB |
+| total | 39542 KB | 39.5 MB |
 | unused | 22008 KB | 22 MB |
 </details>
 
@@ -1246,7 +1246,11 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMDots3-4.svg | 3.5 | 1 |
 | ESMIll/ESMDots3Plus1.svg | 3.5 | 1 |
 | ESMIll/ESMDots4Plus1.svg | 3.9 | 1 |
-| ESMIll/ESMDots5-6.svg | 4.5 | 1 |
+| ESMIll/ESMDots5-6.svg | 4.5 | 2 |
+| ESMIll/ESMDots5Plus1.svg | 4.2 | 1 |
+| ESMIll/ESMDots6Plus1.svg | 5.2 | 1 |
+| ESMIll/ESMDots7-8.svg | 5.1 | 2 |
+| ESMIll/ESMDots9-10.svg | 8.6 | 2 |
 | ESMIll/ESMGA105GoFish.svg | 17 | 2 |
 | ESMIll/ESMGA105MemoryChallenge.svg | 11.2 | 1 |
 | ESMIll/ESMGA125NumberLineBattleship.svg | 31.3 | 1 |
@@ -1362,6 +1366,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMPOWBSumPyramid3Challenge.svg | 5.3 | 1 |
 | ESMIll/ESMPOWBSumPyramid4Challenge.svg | 7.1 | 1 |
 | ESMIll/ESMPOWBSumPyramidIntro.svg | 8.4 | 5 |
+| ESMIll/ESMSplatsLevelA5-2.svg | 4.1 | 1 |
 </details>
 
 <details >
@@ -1369,7 +1374,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | type | subtype | total |
 | --- | --- | --- |
-| data_list |  | 69 |
+| data_list |  | 70 |
 | data_list | app_config_language_list | 1 |
 | data_list | lifecycle_actions | 1 |
 | generator |  | 1 |

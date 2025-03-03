@@ -1,0 +1,60 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "esm_splats_list",
+  "data_list_name": "esm_splats_data_list",
+  "status": "released",
+  "rows": [
+    {
+      "id": "esm_splats_singles",
+      "block1_type": "all_illust",
+      "block1_illust": "ESMIll/ESMSplatsLevelA5-2.svg",
+      "block1_illust_max_size": "270px",
+      "name": "Single Splats",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Single Splats"
+        }
+      }
+    },
+    {
+      "id": "esm_splats_double_same",
+      "block1_type": "all_text",
+      "name": "Two Splats with Same Color",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Two Splats with Same Color"
+        },
+        "block1_text": {
+          "eng": "These will have two Splats of the same color."
+        }
+      },
+      "block1_text": "These will have two Splats of the same color."
+    },
+    {
+      "id": "esm_splats_double_different",
+      "block1_type": "all_text",
+      "name": "Two Splats with DIfferent Colors",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Two Splats with DIfferent Colors"
+        },
+        "block1_text": {
+          "eng": "These will have two Splats of different colors."
+        }
+      },
+      "block1_text": "These will have two Splats of different colors."
+    }
+  ],
+  "_xlsxPath": "EFM_routines_high_level_sheets.xlsx"
+}
