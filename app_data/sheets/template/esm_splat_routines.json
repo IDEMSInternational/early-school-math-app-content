@@ -29,7 +29,7 @@
         {
           "type": "text",
           "name": "help_text",
-          "value": "This is based on the Splat! routines of Steve Wyborney. For the Splats with just one thing covered, they could be portrayed as Mike's \"I have ... I wish I had\" scenario.\n\nThis will be a collection of images with short text describing the challenge. These should probably be put into the categories of skills being worked on.\n\nTypical guiding questions for the teacher:\n* How many dots can you see?\n* What is the total?\n* How many dots are covered by the Splat? How do you know?\n* Think of other ways to figure that out or confirm it.\n* Let's check to see if that works.\n\nThese first ones can be done in the following steps:\n* Show all the dots and count them together\n* Cover over some of the dots with a Splat\n* Count the number of dots you can see\n* Figure out how dots are covered.\n\nWe could have 3 buttons for each Splat - one that reveals the total count, one that covers and uncovers the Splat, and one that gives the answer for how many things were covered. Will we want people to use it this way, or do we just want to enable them to be able to do this on their own with paper and dots? Will teachers be showing students what's on their phone?\n\n**SIngle Splats With Total Given**\n\nSome dots of one color will show, the rest are covered by a Splat, and a total is prominently displayed.\n\nFor some of these, it may not be determinable what's under a Splat - in which case discuss what the possibilities are.\n\n**Two Splats With Same Color** - Same color must have same count.\n\n**Two Splats With Different Colors** - Different color must have different counts.",
+          "value": "This is a collection of dot cards where one or more \"Splats\" cover some of the dots. The total number of dots is written on each card.",
           "_translations": {
             "value": {}
           },
@@ -41,6 +41,323 @@
         }
       ],
       "_nested_name": "dg_info"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_advice",
+      "parameter_list": {
+        "style": "column"
+      },
+      "rows": [
+        {
+          "type": "accordion",
+          "name": "accordion_for_dot_talk_categories",
+          "parameter_list": {
+            "open_multiple": "TRUE"
+          },
+          "rows": [
+            {
+              "type": "accordion_section",
+              "name": "accord_advice",
+              "value": "Directions and Observations",
+              "parameter_list": {
+                "text_align": "center",
+                "style": "large emphasised"
+              },
+              "rows": [
+                {
+                  "type": "display_group",
+                  "name": "dg_advice_accord",
+                  "parameter_list": {
+                    "style": "column"
+                  },
+                  "rows": [
+                    {
+                      "type": "text",
+                      "name": "advice_text",
+                      "value": "This material follows the Splat! routines of Steve Wyborney. The total number of dots is written in the upper right hand corner. The Splats here are shown as transparent, but the Splats you use should be opaque. When there are several Splats, all Splats with the same color must have the same value, and Splats with different colors must have different values.\n\nFor the **Single Splats**, it may make sense to start with the Splat removed and count all the dots together. After counting, place the Splat over the number of dots you wish to cover. As a child matures with this activity, you will start with all the Splats in place.\n\n**Another story** for Single Splats is: \"I have ... I wish I had.\" Show the Splat on the card and say that \"you have\" the number of dots showing. You can then say \"you wish you had\" the total of dots shown in the corner of the card. How many more dots do you need to get what you wish you had?\n\n**The guiding questions** are:\n\n1. How many dots can you see?\n2. What is the total?\n3. How many dots are covered by the Splat? How do you know?\n4. Think of other ways to figure that out or confirm it.\n5. Let's check to see if that works.\n\nThe \"How do you know?\" part of step 3 is where the fun begins. The exploration in step 4 is where a lot of good stuff can happen. When there is more than one possible answer, discuss how to find all the answers.",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "parameter_list": {
+                        "icon_src": "help",
+                        "style": "navigation"
+                      },
+                      "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.advice_text"
+                    }
+                  ],
+                  "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord"
+                }
+              ],
+              "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice"
+            }
+          ],
+          "_nested_name": "dg_advice.accordion_for_dot_talk_categories"
+        }
+      ],
+      "_nested_name": "dg_advice"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_splat_talks",
+      "parameter_list": {
+        "style": "column"
+      },
+      "rows": [
+        {
+          "type": "text",
+          "name": "example__intro",
+          "value": "Here are categories of Splat! talks.",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "dg_splat_talks.example__intro"
+        },
+        {
+          "type": "accordion",
+          "name": "accordion_for_splat_categories",
+          "parameter_list": {
+            "open_multiple": "TRUE"
+          },
+          "rows": [
+            {
+              "type": "items",
+              "name": "splat_accordions",
+              "value": "@data.esm_splats_data_list",
+              "rows": [
+                {
+                  "type": "accordion_section",
+                  "name": "accord_@item.id",
+                  "value": "@item.name",
+                  "parameter_list": {
+                    "text_align": "center",
+                    "style": "large emphasised"
+                  },
+                  "rows": [
+                    {
+                      "type": "display_group",
+                      "name": "dg_@item.id",
+                      "parameter_list": {
+                        "style": "column"
+                      },
+                      "rows": [
+                        {
+                          "name": "content_ptr",
+                          "value": "data.esm_splats_data_list.@item.id",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "type": "set_variable",
+                          "_nested_name": "dg_splat_talks.accordion_for_splat_categories.splat_accordions.accord_@item.id.dg_@item.id.content_ptr",
+                          "_dynamicFields": {
+                            "value": [
+                              {
+                                "fullExpression": "data.esm_splats_data_list.@item.id",
+                                "matchedExpression": "@item.id",
+                                "type": "item",
+                                "fieldName": "id"
+                              }
+                            ],
+                            "_nested_name": [
+                              {
+                                "fullExpression": "dg_splat_talks.accordion_for_splat_categories.splat_accordions.accord_@item.id.dg_@item.id.content_ptr",
+                                "matchedExpression": "@item.id.dg_",
+                                "type": "item",
+                                "fieldName": "id"
+                              },
+                              {
+                                "fullExpression": "dg_splat_talks.accordion_for_splat_categories.splat_accordions.accord_@item.id.dg_@item.id.content_ptr",
+                                "matchedExpression": "@item.id.content_ptr",
+                                "type": "item",
+                                "fieldName": "id"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@item.id": [
+                              "value"
+                            ],
+                            "@item.id.dg_": [
+                              "_nested_name"
+                            ],
+                            "@item.id.content_ptr": [
+                              "_nested_name"
+                            ]
+                          }
+                        },
+                        {
+                          "type": "template",
+                          "name": "splat_body_maker",
+                          "value": "esm_page_viewer",
+                          "rows": [
+                            {
+                              "name": "esm_content_ptr",
+                              "value": "@@local.content_ptr",
+                              "_translations": {
+                                "value": {}
+                              },
+                              "type": "set_variable",
+                              "_nested_name": "dg_splat_talks.accordion_for_splat_categories.splat_accordions.accord_@item.id.dg_@item.id.splat_body_maker.esm_content_ptr",
+                              "_dynamicFields": {
+                                "value": [
+                                  {
+                                    "fullExpression": "@@local.content_ptr",
+                                    "matchedExpression": "@local.content_ptr",
+                                    "type": "local",
+                                    "fieldName": "content_ptr"
+                                  }
+                                ],
+                                "_nested_name": [
+                                  {
+                                    "fullExpression": "dg_splat_talks.accordion_for_splat_categories.splat_accordions.accord_@item.id.dg_@item.id.splat_body_maker.esm_content_ptr",
+                                    "matchedExpression": "@item.id.dg_",
+                                    "type": "item",
+                                    "fieldName": "id"
+                                  },
+                                  {
+                                    "fullExpression": "dg_splat_talks.accordion_for_splat_categories.splat_accordions.accord_@item.id.dg_@item.id.splat_body_maker.esm_content_ptr",
+                                    "matchedExpression": "@item.id.splat_body_maker.esm_content_ptr",
+                                    "type": "item",
+                                    "fieldName": "id"
+                                  }
+                                ]
+                              },
+                              "_dynamicDependencies": {
+                                "@local.content_ptr": [
+                                  "value"
+                                ],
+                                "@item.id.dg_": [
+                                  "_nested_name"
+                                ],
+                                "@item.id.splat_body_maker.esm_content_ptr": [
+                                  "_nested_name"
+                                ]
+                              }
+                            }
+                          ],
+                          "_nested_name": "dg_splat_talks.accordion_for_splat_categories.splat_accordions.accord_@item.id.dg_@item.id.splat_body_maker",
+                          "_dynamicFields": {
+                            "_nested_name": [
+                              {
+                                "fullExpression": "dg_splat_talks.accordion_for_splat_categories.splat_accordions.accord_@item.id.dg_@item.id.splat_body_maker",
+                                "matchedExpression": "@item.id.dg_",
+                                "type": "item",
+                                "fieldName": "id"
+                              },
+                              {
+                                "fullExpression": "dg_splat_talks.accordion_for_splat_categories.splat_accordions.accord_@item.id.dg_@item.id.splat_body_maker",
+                                "matchedExpression": "@item.id.splat_body_maker",
+                                "type": "item",
+                                "fieldName": "id"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@item.id.dg_": [
+                              "_nested_name"
+                            ],
+                            "@item.id.splat_body_maker": [
+                              "_nested_name"
+                            ]
+                          }
+                        }
+                      ],
+                      "_nested_name": "dg_splat_talks.accordion_for_splat_categories.splat_accordions.accord_@item.id.dg_@item.id",
+                      "_dynamicFields": {
+                        "name": [
+                          {
+                            "fullExpression": "dg_@item.id",
+                            "matchedExpression": "@item.id",
+                            "type": "item",
+                            "fieldName": "id"
+                          }
+                        ],
+                        "_nested_name": [
+                          {
+                            "fullExpression": "dg_splat_talks.accordion_for_splat_categories.splat_accordions.accord_@item.id.dg_@item.id",
+                            "matchedExpression": "@item.id.dg_",
+                            "type": "item",
+                            "fieldName": "id"
+                          },
+                          {
+                            "fullExpression": "dg_splat_talks.accordion_for_splat_categories.splat_accordions.accord_@item.id.dg_@item.id",
+                            "matchedExpression": "@item.id",
+                            "type": "item",
+                            "fieldName": "id"
+                          }
+                        ]
+                      },
+                      "_dynamicDependencies": {
+                        "@item.id": [
+                          "name",
+                          "_nested_name"
+                        ],
+                        "@item.id.dg_": [
+                          "_nested_name"
+                        ]
+                      }
+                    }
+                  ],
+                  "_nested_name": "dg_splat_talks.accordion_for_splat_categories.splat_accordions.accord_@item.id",
+                  "_dynamicFields": {
+                    "name": [
+                      {
+                        "fullExpression": "accord_@item.id",
+                        "matchedExpression": "@item.id",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ],
+                    "value": [
+                      {
+                        "fullExpression": "@item.name",
+                        "matchedExpression": "@item.name",
+                        "type": "item",
+                        "fieldName": "name"
+                      }
+                    ],
+                    "_nested_name": [
+                      {
+                        "fullExpression": "dg_splat_talks.accordion_for_splat_categories.splat_accordions.accord_@item.id",
+                        "matchedExpression": "@item.id",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@item.id": [
+                      "name",
+                      "_nested_name"
+                    ],
+                    "@item.name": [
+                      "value"
+                    ]
+                  }
+                }
+              ],
+              "_nested_name": "dg_splat_talks.accordion_for_splat_categories.splat_accordions",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@data.esm_splats_data_list",
+                    "matchedExpression": "@data.esm_splats_data_list",
+                    "type": "data",
+                    "fieldName": "esm_splats_data_list"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@data.esm_splats_data_list": [
+                  "value"
+                ]
+              }
+            }
+          ],
+          "_nested_name": "dg_splat_talks.accordion_for_splat_categories"
+        }
+      ],
+      "_nested_name": "dg_splat_talks"
     },
     {
       "type": "display_group",
