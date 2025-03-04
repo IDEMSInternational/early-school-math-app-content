@@ -51,7 +51,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 39542 KB | 39.5 MB |
+| total | 39587 KB | 39.6 MB |
 | unused | 22008 KB | 22 MB |
 </details>
 
@@ -1242,15 +1242,20 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/EFM105BackAndForth24MoveIntro.svg | 19.4 | 1 |
 | ESMIll/ESM0GlossaryDividingLine.svg | 3.2 | 1 |
 | ESMIll/ESMDots1-2.svg | 2.8 | 1 |
+| ESMIll/ESMDots1Plus1.svg | 4.6 | 1 |
 | ESMIll/ESMDots2Plus1.svg | 3.3 | 1 |
+| ESMIll/ESMDots2Plus2.svg | 5.5 | 1 |
 | ESMIll/ESMDots3-4.svg | 3.5 | 1 |
 | ESMIll/ESMDots3Plus1.svg | 3.5 | 1 |
+| ESMIll/ESMDots3Plus3.svg | 6.6 | 1 |
 | ESMIll/ESMDots4Plus1.svg | 3.9 | 1 |
-| ESMIll/ESMDots5-6.svg | 4.5 | 2 |
+| ESMIll/ESMDots4Plus4.svg | 7.9 | 1 |
+| ESMIll/ESMDots5-6.svg | 4.5 | 1 |
 | ESMIll/ESMDots5Plus1.svg | 4.2 | 1 |
+| ESMIll/ESMDots5Plus5.svg | 9 | 1 |
 | ESMIll/ESMDots6Plus1.svg | 5.2 | 1 |
-| ESMIll/ESMDots7-8.svg | 5.1 | 2 |
-| ESMIll/ESMDots9-10.svg | 8.6 | 2 |
+| ESMIll/ESMDots7-8.svg | 5.1 | 1 |
+| ESMIll/ESMDots9-10.svg | 8.6 | 1 |
 | ESMIll/ESMGA105GoFish.svg | 17 | 2 |
 | ESMIll/ESMGA105MemoryChallenge.svg | 11.2 | 1 |
 | ESMIll/ESMGA125NumberLineBattleship.svg | 31.3 | 1 |
@@ -1367,6 +1372,8 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMPOWBSumPyramid4Challenge.svg | 7.1 | 1 |
 | ESMIll/ESMPOWBSumPyramidIntro.svg | 8.4 | 5 |
 | ESMIll/ESMSplatsLevelA5-2.svg | 4.1 | 1 |
+| ESMIll/ESMSplatsLevelB9-5.svg | 5.8 | 1 |
+| ESMIll/ESMSplatsLevelC9-1.svg | 5.8 | 1 |
 </details>
 
 <details >
