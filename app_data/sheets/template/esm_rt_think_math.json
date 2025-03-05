@@ -1,0 +1,58 @@
+{
+  "flow_type": "template",
+  "flow_name": "esm_rt_think_math",
+  "status": "released",
+  "rows": [
+    {
+      "type": "display_group",
+      "name": "dg_top_of_page",
+      "rows": [
+        {
+          "type": "title",
+          "name": "spacer",
+          "value": "Thinking Mathematically",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "flex:1"
+          ],
+          "_nested_name": "dg_top_of_page.spacer"
+        }
+      ],
+      "_nested_name": "dg_top_of_page"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_info",
+      "parameter_list": {
+        "style": "column"
+      },
+      "rows": [
+        {
+          "type": "text",
+          "name": "help_text",
+          "value": "These will be based on the ideas in Mason's book Thinking Mathematically. It's quite likely these would be best put into one of the other categories of Rich Tasks, but I thought I'd create a placeholder anyway.",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "dg_info.help_text"
+        }
+      ],
+      "_nested_name": "dg_info"
+    },
+    {
+      "type": "display_group",
+      "name": "fake_group",
+      "rows": [
+        {
+          "type": "text",
+          "name": "spacer",
+          "_nested_name": "fake_group.spacer"
+        }
+      ],
+      "_nested_name": "fake_group"
+    }
+  ],
+  "_xlsxPath": "EFM_rich_tasks_high_level_sheets.xlsx"
+}
