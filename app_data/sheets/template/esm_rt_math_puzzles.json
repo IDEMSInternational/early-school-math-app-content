@@ -1,0 +1,67 @@
+{
+  "flow_type": "template",
+  "flow_name": "esm_rt_math_puzzles",
+  "status": "released",
+  "rows": [
+    {
+      "type": "display_group",
+      "name": "dg_top_of_page",
+      "rows": [
+        {
+          "type": "title",
+          "name": "spacer",
+          "value": "Rich Task Math Puzzles",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "flex:1"
+          ],
+          "_nested_name": "dg_top_of_page.spacer"
+        }
+      ],
+      "_nested_name": "dg_top_of_page"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_info",
+      "parameter_list": {
+        "style": "column"
+      },
+      "rows": [
+        {
+          "type": "text",
+          "name": "help_text",
+          "value": "Some of the EFM math puzzles provide excellent rich tasks. \n\nThe given puzzle is not the end of the journey  – encourage your students to come up with new versions or variations of the puzzle and see about solving those.",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "dg_info.help_text"
+        },
+        {
+          "type": "text",
+          "name": "ideas_text",
+          "value": "Instead of asking your students to do basic calculations, have them practice those same skills in more engaging ways that invite discussion and exploration. Using open problems invites experimentation and exploration, rather than simple calculational tasks.\n\nNumbers in order - Consecutive Numbers - 1-4\n\nShape puzzles - Pattern Blocks - Hexagons, Triangles\nFinding the Pieces 1-5\n\nDifference Pyramids - 6 & 10\nEqual Sums - 1-4\nFill in the Blanks - 1-5\nSum Pyramids - 1-5",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "dg_info.ideas_text"
+        }
+      ],
+      "_nested_name": "dg_info"
+    },
+    {
+      "type": "display_group",
+      "name": "fake_group",
+      "rows": [
+        {
+          "type": "text",
+          "name": "spacer",
+          "_nested_name": "fake_group.spacer"
+        }
+      ],
+      "_nested_name": "fake_group"
+    }
+  ],
+  "_xlsxPath": "EFM_rich_tasks_high_level_sheets.xlsx"
+}

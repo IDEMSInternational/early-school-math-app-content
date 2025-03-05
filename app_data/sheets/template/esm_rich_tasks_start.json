@@ -1,0 +1,260 @@
+{
+  "flow_type": "template",
+  "flow_name": "esm_rich_tasks_start",
+  "status": "released",
+  "rows": [
+    {
+      "type": "display_group",
+      "name": "dg_top_of_page",
+      "rows": [
+        {
+          "type": "title",
+          "name": "spacer",
+          "value": "Rich Tasks",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "flex:1"
+          ],
+          "_nested_name": "dg_top_of_page.spacer"
+        },
+        {
+          "type": "display_group",
+          "name": "dg_help",
+          "rows": [
+            {
+              "type": "round_button",
+              "name": "help_button",
+              "action_list": [
+                {
+                  "trigger": "click",
+                  "action_id": "start_tour",
+                  "args": [
+                    "esm_rich_tasks_tour"
+                  ],
+                  "_raw": "click | start_tour: esm_rich_tasks_tour",
+                  "_cleaned": "click | start_tour: esm_rich_tasks_tour"
+                }
+              ],
+              "parameter_list": {
+                "icon_src": "help",
+                "style": "navigation"
+              },
+              "_nested_name": "dg_top_of_page.dg_help.help_button"
+            }
+          ],
+          "_nested_name": "dg_top_of_page.dg_help"
+        }
+      ],
+      "_nested_name": "dg_top_of_page"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_info",
+      "parameter_list": {
+        "style": "column"
+      },
+      "rows": [
+        {
+          "type": "text",
+          "name": "help_text",
+          "value": "Rich tasks are flexible and encourage exploration. They typically accomodate all students by having low floors and high ceilings.",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "icon_src": "help",
+            "style": "navigation"
+          },
+          "_nested_name": "dg_info.help_text"
+        },
+        {
+          "type": "display_group",
+          "name": "dg_advice",
+          "parameter_list": {
+            "style": "column"
+          },
+          "rows": [
+            {
+              "type": "accordion",
+              "name": "accordion_for_rt_categories",
+              "parameter_list": {
+                "open_multiple": "TRUE"
+              },
+              "rows": [
+                {
+                  "type": "accordion_section",
+                  "name": "accord_advice",
+                  "value": "Directions and Observations",
+                  "parameter_list": {
+                    "text_align": "center",
+                    "style": "large emphasised"
+                  },
+                  "rows": [
+                    {
+                      "type": "display_group",
+                      "name": "dg_advice_accord",
+                      "parameter_list": {
+                        "style": "column"
+                      },
+                      "rows": [
+                        {
+                          "type": "text",
+                          "name": "advice_text",
+                          "value": "The game Counterexamples is helpful preparation for doing rich tasks. Deepen a task by having students conjecture about what is going on. If they are accustomed to discussing conjectures and their counterexamples, they can approach this playfully and cooperatively.\n\nYou don't need to tightly control the discussions. Remember that you are not the answer key. Be open to hearing student ideas and follow them when reasonable. They may have interesting variations they want to pursue, and giving them agency will greatly increase their engagement. Develop a culture where students are not afraid to share ideas and take risks, where partial answers are valued, where mistakes are okay and are steps to possible answers, and where the group acts together to explore and learn math together.\n\nModel patience and persistence by not insisting on always coming up with an answer immediately. Let your students see that it is not only okay, it's a good thing, to come back to a puzzle the next day or even the next week. You can have a list of puzzles started and unanswered to highlight that this is an interesting challenge.",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "_nested_name": "dg_info.dg_advice.accordion_for_rt_categories.accord_advice.dg_advice_accord.advice_text"
+                        }
+                      ],
+                      "_nested_name": "dg_info.dg_advice.accordion_for_rt_categories.accord_advice.dg_advice_accord"
+                    }
+                  ],
+                  "_nested_name": "dg_info.dg_advice.accordion_for_rt_categories.accord_advice"
+                }
+              ],
+              "_nested_name": "dg_info.dg_advice.accordion_for_rt_categories"
+            }
+          ],
+          "_nested_name": "dg_info.dg_advice"
+        },
+        {
+          "type": "button",
+          "name": "button_math_games",
+          "value": "Math Games",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "go_to",
+              "args": [
+                "esm_rt_math_games"
+              ],
+              "_raw": "click | go_to: esm_rt_math_games",
+              "_cleaned": "click | go_to: esm_rt_math_games"
+            }
+          ],
+          "parameter_list": {
+            "style": "short",
+            "text_align": "center"
+          },
+          "_nested_name": "dg_info.button_math_games"
+        },
+        {
+          "type": "button",
+          "name": "button_math_puzzles",
+          "value": "Math Puzzles",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "go_to",
+              "args": [
+                "esm_rt_math_puzzles"
+              ],
+              "_raw": "click | go_to: esm_rt_math_puzzles",
+              "_cleaned": "click | go_to: esm_rt_math_puzzles"
+            }
+          ],
+          "parameter_list": {
+            "style": "short",
+            "text_align": "center"
+          },
+          "_nested_name": "dg_info.button_math_puzzles"
+        },
+        {
+          "type": "button",
+          "name": "button_thinking_tasks",
+          "value": "Thinking Tasks",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "go_to",
+              "args": [
+                "esm_rt_thinking_tasks"
+              ],
+              "_raw": "click | go_to: esm_rt_thinking_tasks",
+              "_cleaned": "click | go_to: esm_rt_thinking_tasks"
+            }
+          ],
+          "parameter_list": {
+            "style": "short",
+            "text_align": "center"
+          },
+          "_nested_name": "dg_info.button_thinking_tasks"
+        },
+        {
+          "type": "button",
+          "name": "button_open_ended_tasks",
+          "value": "Open Ended Tasks",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "go_to",
+              "args": [
+                "esm_rt_open_ended"
+              ],
+              "_raw": "click | go_to: esm_rt_open_ended",
+              "_cleaned": "click | go_to: esm_rt_open_ended"
+            }
+          ],
+          "parameter_list": {
+            "style": "short",
+            "text_align": "center"
+          },
+          "_nested_name": "dg_info.button_open_ended_tasks"
+        },
+        {
+          "type": "button",
+          "name": "button_thinking_mathematically",
+          "value": "Thinking Mathematically",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "go_to",
+              "args": [
+                "esm_rt_think_math"
+              ],
+              "_raw": "click | go_to: esm_rt_think_math",
+              "_cleaned": "click | go_to: esm_rt_think_math"
+            }
+          ],
+          "parameter_list": {
+            "style": "short",
+            "text_align": "center"
+          },
+          "_nested_name": "dg_info.button_thinking_mathematically"
+        }
+      ],
+      "_nested_name": "dg_info"
+    },
+    {
+      "type": "display_group",
+      "name": "fake_group",
+      "rows": [
+        {
+          "type": "text",
+          "name": "spacer",
+          "_nested_name": "fake_group.spacer"
+        }
+      ],
+      "_nested_name": "fake_group"
+    }
+  ],
+  "_xlsxPath": "EFM_rich_tasks_high_level_sheets.xlsx"
+}

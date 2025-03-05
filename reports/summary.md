@@ -5,9 +5,9 @@
 | --- | --- |
 | accordion | 23 |
 | accordion_section | 31 |
-| button | 73 |
+| button | 79 |
 | debug_toggle | 1 |
-| display_group | 203 |
+| display_group | 221 |
 | image | 29 |
 | items | 35 |
 | qr_code | 1 |
@@ -18,10 +18,10 @@
 | set_variable | 521 |
 | simple_checkbox | 4 |
 | template | 66 |
-| text | 153 |
+| text | 165 |
 | text_area | 2 |
 | tile_component | 3 |
-| title | 40 |
+| title | 46 |
 | toggle_bar | 11 |
 </details>
 
@@ -38,7 +38,7 @@
 | emit: set_language | 1 |
 | emit: uncompleted | 58 |
 | feedback | 11 |
-| go_to | 42 |
+| go_to | 48 |
 | go_to_url | 3 |
 | reset_app | 1 |
 | set_field | 57 |
@@ -1386,7 +1386,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | data_list | lifecycle_actions | 1 |
 | generator |  | 1 |
 | global |  | 2 |
-| template |  | 44 |
+| template |  | 50 |
 | template | generated | 58 |
 | tour |  | 9 |
 </details>
