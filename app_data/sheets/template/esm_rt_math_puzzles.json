@@ -32,16 +32,67 @@
         {
           "type": "text",
           "name": "help_text",
-          "value": "Some of the EFM math puzzles provide excellent rich tasks. \n\nThe given puzzle is not the end of the journey  – encourage your students to come up with new versions or variations of the puzzle and see about solving those.",
+          "value": "Many of the EFM math puzzles provide excellent rich tasks. For each puzzle that can be explored, there are usually interesting observations along the road to solving it, and there are many directions to explore in for further puzzles and engaging mathematics. Each EFM puzzle comes with ideas for further exploration. Encourage your students to see each puzzle as the beginning of a mathematical journey.",
           "_translations": {
             "value": {}
           },
           "_nested_name": "dg_info.help_text"
         },
         {
+          "type": "display_group",
+          "name": "dg_advice",
+          "parameter_list": {
+            "style": "column"
+          },
+          "rows": [
+            {
+              "type": "accordion",
+              "name": "accordion_for_rt_categories",
+              "parameter_list": {
+                "open_multiple": "TRUE"
+              },
+              "rows": [
+                {
+                  "type": "accordion_section",
+                  "name": "accord_advice",
+                  "value": "Directions and Observations",
+                  "parameter_list": {
+                    "text_align": "center",
+                    "style": "large emphasised"
+                  },
+                  "rows": [
+                    {
+                      "type": "display_group",
+                      "name": "dg_advice_accord",
+                      "parameter_list": {
+                        "style": "column"
+                      },
+                      "rows": [
+                        {
+                          "type": "text",
+                          "name": "advice_text",
+                          "value": "While there is an important place for occasional practice of routine math facts and skills, have your students instead practice those same skills in more engaging ways that invite discussion and exploration. Using open puzzles invites experimentation and exploration. \n\nAdd in: general advice for discussion points and questions to ask. Also advice for extending beyond the current puzzle.",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "_nested_name": "dg_info.dg_advice.accordion_for_rt_categories.accord_advice.dg_advice_accord.advice_text"
+                        }
+                      ],
+                      "_nested_name": "dg_info.dg_advice.accordion_for_rt_categories.accord_advice.dg_advice_accord"
+                    }
+                  ],
+                  "_nested_name": "dg_info.dg_advice.accordion_for_rt_categories.accord_advice"
+                }
+              ],
+              "_nested_name": "dg_info.dg_advice.accordion_for_rt_categories"
+            }
+          ],
+          "_nested_name": "dg_info.dg_advice"
+        },
+        {
           "type": "text",
           "name": "ideas_text",
-          "value": "Instead of asking your students to do basic calculations, have them practice those same skills in more engaging ways that invite discussion and exploration. Using open problems invites experimentation and exploration, rather than simple calculational tasks.\n\nNumbers in order - Consecutive Numbers - 1-4\n\nShape puzzles - Pattern Blocks - Hexagons, Triangles\nFinding the Pieces 1-5\n\nDifference Pyramids - 6 & 10\nEqual Sums - 1-4\nFill in the Blanks - 1-5\nSum Pyramids - 1-5",
+          "value": "Here is a list of topics with the puzzles that provide practice with those topics.\n\n**Shapes**\n* Pattern Blocks – Hexagons\n* Pattern Blocks – Triangles\n* Finding the Pieces 1-5\n\n**Numbers in Order**\n* Consecutive Numbers 1-4\n\n**Basic Addition and Subtraction with 0 to 10**\n* Difference Pyramids - 6 & 10\n* Equal Sums - 1-4\n* Fill in the Blanks - 1-5\n* Sum Pyramids - 1-5",
           "_translations": {
             "value": {}
           },
