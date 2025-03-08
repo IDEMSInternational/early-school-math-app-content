@@ -3,11 +3,11 @@
 
 | type | count |
 | --- | --- |
-| accordion | 23 |
-| accordion_section | 31 |
+| accordion | 26 |
+| accordion_section | 34 |
 | button | 79 |
 | debug_toggle | 1 |
-| display_group | 221 |
+| display_group | 228 |
 | image | 29 |
 | items | 35 |
 | qr_code | 1 |
@@ -18,7 +18,7 @@
 | set_variable | 521 |
 | simple_checkbox | 4 |
 | template | 66 |
-| text | 165 |
+| text | 170 |
 | text_area | 2 |
 | tile_component | 3 |
 | title | 46 |
@@ -51,8 +51,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 39587 KB | 39.6 MB |
-| unused | 22008 KB | 22 MB |
+| total | 40112 KB | 40.1 MB |
+| unused | 21993 KB | 22 MB |
 </details>
 
 <details open>
@@ -322,12 +322,6 @@ Assets that appear in app-data but do not have references within sheets
 | EFMStorybooks/EFM-SB-KAHN-20.jpg | 3.5 |
 | EFMStorybooks/EFM-SB-SSMILE-8.jpg | 3.5 |
 | EFMStorybooks/EFM-SB-TFHH-2.jpg | 10.6 |
-| ESMIll/ESMDots1.svg | 2 |
-| ESMIll/ESMDots2.svg | 2.1 |
-| ESMIll/ESMDots3.svg | 2.3 |
-| ESMIll/ESMDots4.svg | 2.5 |
-| ESMIll/ESMDots5.svg | 2.7 |
-| ESMIll/ESMDots6.svg | 3.1 |
 | ESMIll/ESMPOWACoinFlipStart2.svg | 11626.6 |
 | android/icon-background.png | 7 |
 | android/icon-foreground.png | 53.9 |
@@ -1242,20 +1236,64 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/EFM105BackAndForth24MoveIntro.svg | 19.4 | 1 |
 | ESMIll/ESM0GlossaryDividingLine.svg | 3.2 | 1 |
 | ESMIll/ESMDots1-2.svg | 2.8 | 1 |
+| ESMIll/ESMDots10-10.svg | 8.6 | 1 |
+| ESMIll/ESMDots10And1or2-11-13.svg | 15.9 | 1 |
+| ESMIll/ESMDots10And1or2-12-14.svg | 16.3 | 1 |
+| ESMIll/ESMDots10And1or2-13-18.svg | 17.4 | 1 |
+| ESMIll/ESMDots10And1or2-15-16.svg | 17.4 | 1 |
+| ESMIll/ESMDots10And1or2-17-19.svg | 18.4 | 1 |
+| ESMIll/ESMDots10AndMore11-12.svg | 15 | 1 |
+| ESMIll/ESMDots10AndMore13-14.svg | 15.9 | 1 |
+| ESMIll/ESMDots10AndMore15-16.svg | 16.7 | 1 |
+| ESMIll/ESMDots10AndMore17-18.svg | 17.6 | 1 |
+| ESMIll/ESMDots10AndMore19-20.svg | 18.4 | 1 |
 | ESMIll/ESMDots1Plus1.svg | 4.6 | 1 |
+| ESMIll/ESMDots2And2.svg | 3.5 | 1 |
 | ESMIll/ESMDots2Plus1.svg | 3.3 | 1 |
 | ESMIll/ESMDots2Plus2.svg | 5.5 | 1 |
-| ESMIll/ESMDots3-4.svg | 3.5 | 1 |
+| ESMIll/ESMDots3-3.svg | 3.2 | 1 |
+| ESMIll/ESMDots3And2.svg | 3.8 | 1 |
 | ESMIll/ESMDots3Plus1.svg | 3.5 | 1 |
 | ESMIll/ESMDots3Plus3.svg | 6.6 | 1 |
-| ESMIll/ESMDots4Plus1.svg | 3.9 | 1 |
+| ESMIll/ESMDots4-5.svg | 4 | 1 |
+| ESMIll/ESMDots4And2.svg | 4.3 | 1 |
+| ESMIll/ESMDots4Plus1.svg | 4 | 1 |
 | ESMIll/ESMDots4Plus4.svg | 7.9 | 1 |
-| ESMIll/ESMDots5-6.svg | 4.5 | 1 |
-| ESMIll/ESMDots5Plus1.svg | 4.2 | 1 |
+| ESMIll/ESMDots5And2.svg | 4.7 | 1 |
+| ESMIll/ESMDots5Plus1.svg | 4.3 | 1 |
 | ESMIll/ESMDots5Plus5.svg | 9 | 1 |
+| ESMIll/ESMDots6-6.svg | 6.4 | 1 |
+| ESMIll/ESMDots6And2.svg | 5.6 | 1 |
 | ESMIll/ESMDots6Plus1.svg | 5.2 | 1 |
-| ESMIll/ESMDots7-8.svg | 5.1 | 1 |
-| ESMIll/ESMDots9-10.svg | 8.6 | 1 |
+| ESMIll/ESMDots7-7.svg | 6.6 | 1 |
+| ESMIll/ESMDots8-8.svg | 7 | 1 |
+| ESMIll/ESMDots9-9.svg | 7.9 | 1 |
+| ESMIll/ESMDotsCombosOf10-1-9.svg | 9.6 | 1 |
+| ESMIll/ESMDotsCombosOf10-2-8.svg | 9.6 | 1 |
+| ESMIll/ESMDotsCombosOf10-3-7.svg | 9.2 | 1 |
+| ESMIll/ESMDotsCombosOf10-4-6.svg | 9.2 | 1 |
+| ESMIll/ESMDotsCombosOf10-5-10.svg | 10.1 | 1 |
+| ESMIll/ESMDotsDouble1Plus1.svg | 4.9 | 1 |
+| ESMIll/ESMDotsDouble2Plus1.svg | 5.9 | 1 |
+| ESMIll/ESMDotsDouble3Plus1.svg | 6.8 | 1 |
+| ESMIll/ESMDotsDouble4Plus1.svg | 7.9 | 1 |
+| ESMIll/ESMDotsDouble5Plus1.svg | 8.7 | 1 |
+| ESMIll/ESMDotsDoubles10.svg | 14.9 | 1 |
+| ESMIll/ESMDotsDoubles5.svg | 6 | 1 |
+| ESMIll/ESMDotsDoubles6.svg | 6.8 | 1 |
+| ESMIll/ESMDotsDoubles7.svg | 8.1 | 1 |
+| ESMIll/ESMDotsDoubles8.svg | 9.9 | 1 |
+| ESMIll/ESMDotsDoubles9.svg | 9.1 | 1 |
+| ESMIll/ESMDotsMaking10-6-4.svg | 15.6 | 1 |
+| ESMIll/ESMDotsMaking10-6-5.svg | 16.1 | 1 |
+| ESMIll/ESMDotsMaking10-7-5.svg | 16.7 | 1 |
+| ESMIll/ESMDotsMaking10-7-6.svg | 17.1 | 1 |
+| ESMIll/ESMDotsMaking10-8-3.svg | 16.5 | 1 |
+| ESMIll/ESMDotsMaking10-8-6.svg | 17.8 | 1 |
+| ESMIll/ESMDotsMaking10-8-7.svg | 18.4 | 1 |
+| ESMIll/ESMDotsMaking10-9-4.svg | 17.6 | 1 |
+| ESMIll/ESMDotsMaking10-9-6.svg | 19.8 | 1 |
+| ESMIll/ESMDotsMaking10-9-8.svg | 20.2 | 1 |
 | ESMIll/ESMGA105GoFish.svg | 17 | 2 |
 | ESMIll/ESMGA105MemoryChallenge.svg | 11.2 | 1 |
 | ESMIll/ESMGA125NumberLineBattleship.svg | 31.3 | 1 |
