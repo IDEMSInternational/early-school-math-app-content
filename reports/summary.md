@@ -51,7 +51,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 40112 KB | 40.1 MB |
+| total | 40241 KB | 40.2 MB |
 | unused | 21993 KB | 22 MB |
 </details>
 
@@ -1294,6 +1294,11 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMDotsMaking10-9-4.svg | 17.6 | 1 |
 | ESMIll/ESMDotsMaking10-9-6.svg | 19.8 | 1 |
 | ESMIll/ESMDotsMaking10-9-8.svg | 20.2 | 1 |
+| ESMIll/ESMDotsRandom1.svg | 9.9 | 1 |
+| ESMIll/ESMDotsRandom2.svg | 10.4 | 1 |
+| ESMIll/ESMDotsRandom3.svg | 10.1 | 1 |
+| ESMIll/ESMDotsRandom4.svg | 9.7 | 1 |
+| ESMIll/ESMDotsRandom5.svg | 11.4 | 1 |
 | ESMIll/ESMGA105GoFish.svg | 17 | 2 |
 | ESMIll/ESMGA105MemoryChallenge.svg | 11.2 | 1 |
 | ESMIll/ESMGA125NumberLineBattleship.svg | 31.3 | 1 |
@@ -1409,9 +1414,23 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMPOWBSumPyramid3Challenge.svg | 5.3 | 1 |
 | ESMIll/ESMPOWBSumPyramid4Challenge.svg | 7.1 | 1 |
 | ESMIll/ESMPOWBSumPyramidIntro.svg | 8.4 | 5 |
-| ESMIll/ESMSplatsLevelA5-2.svg | 4.1 | 1 |
-| ESMIll/ESMSplatsLevelB9-5.svg | 5.8 | 1 |
-| ESMIll/ESMSplatsLevelC9-1.svg | 5.8 | 1 |
+| ESMIll/ESMSplats1Color1Splat10-10.svg | 5 | 1 |
+| ESMIll/ESMSplats1Color1Splat5-2.svg | 4.1 | 1 |
+| ESMIll/ESMSplats1Color1Splat6-1.svg | 4.3 | 1 |
+| ESMIll/ESMSplats1Color1Splat8-0.svg | 4.6 | 1 |
+| ESMIll/ESMSplats1Color1Splat8-3.svg | 4.6 | 1 |
+| ESMIll/ESMSplats1Color1Splat9-5.svg | 4.8 | 1 |
+| ESMIll/ESMSplats1Color2-3Splat12-6.svg | 6.3 | 1 |
+| ESMIll/ESMSplats1Color2-3Splat14-5.svg | 7.8 | 1 |
+| ESMIll/ESMSplats1Color2-3Splat6-4.svg | 5.3 | 1 |
+| ESMIll/ESMSplats1Color2-3Splat7-1.svg | 5.5 | 1 |
+| ESMIll/ESMSplats1Color2-3Splat9-3.svg | 6.9 | 1 |
+| ESMIll/ESMSplats1Color2-3Splat9-5.svg | 5.8 | 1 |
+| ESMIll/ESMSplats2Color2-3Splat10-3.svg | 6 | 1 |
+| ESMIll/ESMSplats2Color2-3Splat5-1.svg | 5.2 | 1 |
+| ESMIll/ESMSplats2Color2-3Splat6-3.svg | 5.4 | 1 |
+| ESMIll/ESMSplats2Color2-3Splat7-2.svg | 5.5 | 1 |
+| ESMIll/ESMSplats2Color2-3Splat9-1.svg | 5.8 | 1 |
 </details>
 
 <details >
