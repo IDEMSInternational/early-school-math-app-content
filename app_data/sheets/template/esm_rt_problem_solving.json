@@ -10,7 +10,7 @@
         {
           "type": "title",
           "name": "spacer",
-          "value": "Problem Solving and Exploring",
+          "value": "Problem Solving",
           "_translations": {
             "value": {}
           },
@@ -32,11 +32,145 @@
         {
           "type": "text",
           "name": "help_text",
-          "value": "Problem solving is central to rich tasks. This will cover techniques and attitudes of problem solving and the exploration of mathematical environments.\n\nThe nurturing of attitudes from the earliest ages forms an important foundation for successful problem solving. Willingness to take risks and acceptance of failure as a part of the process. Importance of persistence and grit. Growth mindset. etc.\n\nThis could be folded into other places, but it seems better to give a definite place to this very important topic that is typically not very well served.",
+          "value": "Problem solving is the most fulfilling part of rich tasks and to mathematics. During these earliest years, lots of interesting problem solving can occur. It is important that you lay the foundation for good lifelong attitudes and habits for your students towards problem solving.\n\nThere are three aspects of problem solving to pay attention to. While it is tempting to focus all your attention on strategies, the strategies are useless in the absence of good attitudes and self monitoring.\n\nOnce all these three aspects are in place, the last step to understand is the Process of Problem Solving. Much of this, such as the self-monitoring, is a bit sophisticated for a young child. The point here is to have you be aware of all these parts of problem solving and let you introduce them to your students as they become ready for them.",
           "_translations": {
             "value": {}
           },
           "_nested_name": "dg_info.help_text"
+        },
+        {
+          "type": "accordion",
+          "name": "accordion_for_problem_solving",
+          "parameter_list": {
+            "open_multiple": "TRUE"
+          },
+          "rows": [
+            {
+              "type": "accordion_section",
+              "name": "accord_attitudes",
+              "value": "Attitudes and Beliefs",
+              "parameter_list": {
+                "text_align": "center",
+                "style": "large emphasised"
+              },
+              "rows": [
+                {
+                  "type": "display_group",
+                  "name": "dg_prob_solv_attitudes",
+                  "parameter_list": {
+                    "style": "column"
+                  },
+                  "rows": [
+                    {
+                      "type": "text",
+                      "name": "temp_text_a",
+                      "value": "A person's attitudes and beliefs about mathematics have a very strong influence in how successful they will be as a problem solver and how much they will enjoy it. As an example, Carol Dweck's work on growth mindset illustrates how significantly a person’s mindset can affect their performance.\n\nOne of your most important tasks as a math teacher is to create a classroom culture that promotes good attitudes in your students. Creating this culture will not happen overnight and it requires patience and persistence on your part.\n\nHere are a list of positive attitudes to promote and nuture:\n* Math is fun, playful, and social.\n* Math can be challenging and fun.\n* Mistakes and failures are an important part of the process, everyone makes them, and they are good things. Point out your own mistakes when they occur.\n* Enoucrage students to respectuflly challenge the ideas of others, and to learn how to listen to and build on the good ideas of others.\n* It's good to take appropriate risks - it is often how progress is made.\n* Having a partial solution may be an important step to help a group move forward. Having a partial solution is not a failure.\n* Persistence and grit are powerful attributes. Putting a problem aside and coming back to it after a break can lead to fresh insights.\n* A group working together cooperatively can make amazing progress and have a lot of fun.\n* Everyone can see themselves as a math person.\n* The current puzzle can be a stepping stone to an exciting journey in related puzzles the students discover.\n\nYou will be fighting against a very large collection of negative misconceptions:\n* People are either born with math talent or they are not.\n* I am a weak math student, so my ideas are generally useless.\n* Math work is lonely and is performed by an isolated individual.\n* Weak students attribute their math successes to luck and their failures to lack of ability.\n* I will never use this math in my real life.\n* Formal mathematics has little to do with real thinking.\n* Only geniuses are capable of discovering or creating mathematics. If you forget something, don't try to recreate it. Accept procedures at face value and don't try to understand why they work.\n* If I can't solve a problem in 2 minutes, it must require an expert.\n* Immediately after reading a problem statement, I should understand what is asked.\n* Each step must be accurate without trial and error experiments.\n* Attaining the answer is the most important aspect of problem solving.\n* Problem solving is a linear process towards a solution.\n* A proposition is true if it sounds true or rings true.\n* When I do a proof, I can only verify something a mathematician has shown to be true.\n* The math I learn in school is mostly facts and procedures that have to be memorized.\n* It's okay to use math that you do not understand as long as you know how to use it.\n* Learning mathematics is mostly memorizing.\n* There is always a rule to follow in solving math problems.\n* Math problems have one and only one right answer. There is only one correct way to solve any math problem (usually the method most recently deomonstrated by the teacher).",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "_nested_name": "dg_info.accordion_for_problem_solving.accord_attitudes.dg_prob_solv_attitudes.temp_text_a"
+                    }
+                  ],
+                  "_nested_name": "dg_info.accordion_for_problem_solving.accord_attitudes.dg_prob_solv_attitudes"
+                }
+              ],
+              "_nested_name": "dg_info.accordion_for_problem_solving.accord_attitudes"
+            },
+            {
+              "type": "accordion_section",
+              "name": "accord_time",
+              "value": "Self Monitoring",
+              "parameter_list": {
+                "text_align": "center",
+                "style": "large emphasised"
+              },
+              "rows": [
+                {
+                  "type": "display_group",
+                  "name": "dg_prob_solv_time",
+                  "parameter_list": {
+                    "style": "column"
+                  },
+                  "rows": [
+                    {
+                      "type": "text",
+                      "name": "temp_text_b",
+                      "value": "Here are three questions you can ask your students when they are problem solving:\n* What (exactly) are you doing? Can you describe it precisely?\n* Why are you doing what you are doing? How does it fit into your vision of the solution?\n* How does it help you? What will you do with the outcome when you obtain it?\n\nHere are some questions a problem solver should ask themselves on a regular basis:\n* Should I pursue this line of thought further, or should I back off and put it aside for now and consider an alternative approach?\n* Should I take this opportunity to create a list of possible next steps by applying some problem-solving strategies that appear to apply to this situation?\n* How do I rank the possible next steps I have generated? Generally speaking, quicker steps would rank higher because they can be dispensed with quickly. Complex calculations should generally be avoided unless no simpler options are available. However; a particularly promising long calculation might be preferred if confidence in it is high.\n* Is it time to take a break and let my thoughts regroup in the background?",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "_nested_name": "dg_info.accordion_for_problem_solving.accord_time.dg_prob_solv_time.temp_text_b"
+                    }
+                  ],
+                  "_nested_name": "dg_info.accordion_for_problem_solving.accord_time.dg_prob_solv_time"
+                }
+              ],
+              "_nested_name": "dg_info.accordion_for_problem_solving.accord_time"
+            },
+            {
+              "type": "accordion_section",
+              "name": "accord_strategies",
+              "value": "Strategies",
+              "parameter_list": {
+                "text_align": "center",
+                "style": "large emphasised"
+              },
+              "rows": [
+                {
+                  "type": "display_group",
+                  "name": "dg_prob_solv_strategies",
+                  "parameter_list": {
+                    "style": "column"
+                  },
+                  "rows": [
+                    {
+                      "type": "text",
+                      "name": "temp_text_c",
+                      "value": "* Learning from examples\n* Learning from Simpler versions of the problem\n* Identifying a solved related problem\n* Organize your data\n* Act out a scenario when appropriate",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "_nested_name": "dg_info.accordion_for_problem_solving.accord_strategies.dg_prob_solv_strategies.temp_text_c"
+                    }
+                  ],
+                  "_nested_name": "dg_info.accordion_for_problem_solving.accord_strategies.dg_prob_solv_strategies"
+                }
+              ],
+              "_nested_name": "dg_info.accordion_for_problem_solving.accord_strategies"
+            },
+            {
+              "type": "accordion_section",
+              "name": "accord_process",
+              "value": "Process of Problem Solving",
+              "parameter_list": {
+                "text_align": "center",
+                "style": "large emphasised"
+              },
+              "rows": [
+                {
+                  "type": "display_group",
+                  "name": "dg_process_problem_solving",
+                  "parameter_list": {
+                    "style": "column"
+                  },
+                  "rows": [
+                    {
+                      "type": "text",
+                      "name": "temp_text_d",
+                      "value": "1. **Understand the problem deeply.** Read the problem carefully and make sure you understand all the terms and the assumptions built into the problem. Look for similar problems you've seen in the past. Look for a good way to present the information of the problem (e.g. tables, drawing).\n2. **Search for and pursue strategies.** This is where most of the time will be spent.\n    - a. Analyze the problem looking for entry points and strategies. Make a list (at least mentally) of your strategies and rank them by probable usefulness.\n    - b. Pick your top ranked strategy and pursue it. As you do, monitor the time you spend on it and whether pursuing it continues to make sense. When it stops making sense, go on to step c.\n    - c. Select a new strategy. Do this either by choosing the next strategy on your list, or by going back to step (1) and check for things you may have misunderstood or missed.\n3. **Review your solution.** Check that your solution is correct and that it makes sense in the world of the problem (for example, deciding that you need 2 2/3 cars would not make sense). Write out all the steps in your solution as clearly as you can. Compare it to other problems you have worked on. Look for new directions you can take the ideas of this problem to explore more math puzzles.",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "_nested_name": "dg_info.accordion_for_problem_solving.accord_process.dg_process_problem_solving.temp_text_d"
+                    }
+                  ],
+                  "_nested_name": "dg_info.accordion_for_problem_solving.accord_process.dg_process_problem_solving"
+                }
+              ],
+              "_nested_name": "dg_info.accordion_for_problem_solving.accord_process"
+            }
+          ],
+          "_nested_name": "dg_info.accordion_for_problem_solving"
         }
       ],
       "_nested_name": "dg_info"

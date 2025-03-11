@@ -3,11 +3,11 @@
 
 | type | count |
 | --- | --- |
-| accordion | 26 |
-| accordion_section | 34 |
+| accordion | 27 |
+| accordion_section | 37 |
 | button | 79 |
 | debug_toggle | 1 |
-| display_group | 228 |
+| display_group | 231 |
 | image | 29 |
 | items | 35 |
 | qr_code | 1 |
@@ -18,7 +18,7 @@
 | set_variable | 521 |
 | simple_checkbox | 4 |
 | template | 66 |
-| text | 170 |
+| text | 173 |
 | text_area | 2 |
 | tile_component | 3 |
 | title | 46 |
