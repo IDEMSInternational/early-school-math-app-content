@@ -29,7 +29,7 @@
         {
           "type": "text",
           "name": "help_text",
-          "value": "This is a collection of dot cards where one or more \"Splats\" cover some of the dots. The total number of dots is written on each card.",
+          "value": "This is a collection of dot cards where one or more \"Splats\" cover some of the dots. The total number of dots, covered and uncovered, is written on each card.",
           "_translations": {
             "value": {}
           },
@@ -75,7 +75,7 @@
                     {
                       "type": "text",
                       "name": "advice_text",
-                      "value": "This uses the idea of Splat! routines from Steve Wyborney. The total number of dots is written in the upper right hand corner. These slides are illustrated with transparent Splats so you can see what is underneath; however, the Splats you use should be opaque. When there are several Splats, all Splats with the same color must have the same value, and Splats with different colors must have different values.\n\nFor **Single Splats,** start by showing your students the card with the Splat removed and count all the dots together. After counting, place the Splat over some of the dots. As a child matures with this activity, skip the first step and start with all the Splats in place.\n\n**Another story** for Single Splats is: \"I have ... I wish I had.\" Show the Splat on the card and say that \"you have\" the number of dots showing. Then say \"I wish I had\" the total of dots shown in the corner of the card. How many more dots do you need to get what you wish you had?\n\nFor **Double Splats,** initially mentally group the Splats together and proceed as you would with a Single Splat. Once your students figure out what must be in the combination of the Splats, then figure out how that amount should be apportioned to the Splats individually. For two colors, after you remove one Splat ask what must be under the other Splat.\n\n**The guiding questions** are:\n\n1. How many dots can you see?\n2. What is the total?\n3. How many dots are covered by the Splat? How do you know?\n4. Think of other ways to figure that out or confirm it.\n5. Let's check to see if that works.\n\nThe \"How do you know?\" part of step 3 is where the fun begins. The exploration in step 4 is where a lot of good stuff can happen. When there is more than one possible answer, discuss how to find all the answers.",
+                      "value": "This uses the idea of Splat! routines from Steve Wyborney. The total number of dots is written in the upper right hand corner. These slides are illustrated with transparent Splats so you can see what is underneath; however, the Splats you use should be opaque. When there are several Splats, all Splats with the same color must have the same value, and Splats with different colors must have different values.\n\n**Other Presentations** While using \"Splats\" is an engaging, playful way to present these ideas to students, there are lots of equivalent ways to do this that can be made playful. You can use anything you have handy to cover some of the dots. Some examples are a plate, a cup, or your hand, You can use physical objects such as beans or stones, and you can grab some of the objects in a closed hand.\n\nFor **Single Splats,** start by showing your students the card with the Splat removed and count all the dots together. After counting, place the Splat over some of the dots. As a child matures with this activity, skip the first step and start with all the Splats in place.\n\n**Another story** for Single Splats is: \"I have ... I wish I had.\" Show the Splat on the card and say that \"you have\" the number of dots showing. Then say \"I wish I had\" the total of dots shown in the corner of the card. How many more dots do you need to get what you wish you had?\n\nFor **Double Splats,** initially mentally group the Splats together and proceed as you would with a Single Splat. Once your students figure out what must be in the combination of the Splats, then figure out how that amount should be apportioned to the Splats individually. For two colors, after you remove one Splat ask what must be under the other Splat. If you have a student with color blindness, use different shades of gray or different designs on the Splats.\n\n**The guiding questions** are:\n\n1. How many dots can you see?\n2. What is the total number of dots?\n3. How many dots are covered by the Splat? How do you know?\n4. Think of many other ways to figure that out or confirm it.\n5. Uncover a Splat and check to see if that works.\n\nThe \"How do you know?\" part of step 3 is where the fun begins. The exploration in step 4 is where a lot of good stuff can happen. When there is more than one possible answer, discuss how to find all the answers.",
                       "_translations": {
                         "value": {}
                       },
@@ -90,6 +90,41 @@
                 }
               ],
               "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice"
+            },
+            {
+              "type": "accordion_section",
+              "name": "accord_topics",
+              "value": "Topics",
+              "parameter_list": {
+                "text_align": "center",
+                "style": "large emphasised"
+              },
+              "rows": [
+                {
+                  "type": "display_group",
+                  "name": "dg_topics_accord",
+                  "parameter_list": {
+                    "style": "column"
+                  },
+                  "rows": [
+                    {
+                      "type": "text",
+                      "name": "topics_text",
+                      "value": "This drop down would describe how this fits into teaching goals. For example, how this helps with Counting, Counting On, Addition, and Subtraction. We need to figure out how this relates to \"Directions and Observations.\"\n\nAlso, instead of using accordions for some of this, we could have a system similar to the red round question mark buttons. The existing question mark buttons signal that they will give you guidance on how to use the app. Perhaps we could have additional round help buttons, with different icons, that would give technical information in a pop-up window. If we establish this as a standard throughout the app, it might simplify some things and save some space as well.",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "parameter_list": {
+                        "icon_src": "help",
+                        "style": "navigation"
+                      },
+                      "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_topics.dg_topics_accord.topics_text"
+                    }
+                  ],
+                  "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_topics.dg_topics_accord"
+                }
+              ],
+              "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_topics"
             }
           ],
           "_nested_name": "dg_advice.accordion_for_dot_talk_categories"
