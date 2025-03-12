@@ -4,10 +4,10 @@
 | type | count |
 | --- | --- |
 | accordion | 27 |
-| accordion_section | 37 |
+| accordion_section | 40 |
 | button | 79 |
 | debug_toggle | 1 |
-| display_group | 231 |
+| display_group | 234 |
 | image | 29 |
 | items | 35 |
 | qr_code | 1 |
@@ -18,7 +18,7 @@
 | set_variable | 521 |
 | simple_checkbox | 4 |
 | template | 66 |
-| text | 173 |
+| text | 176 |
 | text_area | 2 |
 | tile_component | 3 |
 | title | 46 |
@@ -51,7 +51,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 40241 KB | 40.2 MB |
+| total | 40248 KB | 40.2 MB |
 | unused | 21993 KB | 22 MB |
 </details>
 
@@ -1431,6 +1431,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMSplats2Color2-3Splat6-3.svg | 5.4 | 1 |
 | ESMIll/ESMSplats2Color2-3Splat7-2.svg | 5.5 | 1 |
 | ESMIll/ESMSplats2Color2-3Splat9-1.svg | 5.8 | 1 |
+| ESMIll/ESMSplatsCombos5.svg | 6.7 | 1 |
 </details>
 
 <details >

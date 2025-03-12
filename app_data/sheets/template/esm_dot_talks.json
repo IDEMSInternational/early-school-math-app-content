@@ -90,6 +90,41 @@
                 }
               ],
               "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice"
+            },
+            {
+              "type": "accordion_section",
+              "name": "accord_topics",
+              "value": "Topics",
+              "parameter_list": {
+                "text_align": "center",
+                "style": "large emphasised"
+              },
+              "rows": [
+                {
+                  "type": "display_group",
+                  "name": "dg_topics_accord",
+                  "parameter_list": {
+                    "style": "column"
+                  },
+                  "rows": [
+                    {
+                      "type": "text",
+                      "name": "topics_text",
+                      "value": "This drop down would describe how this fits into teaching goals. For example, how this helps with Counting, Counting On, Addition, and Subtraction. We need to figure out how this relates to \"Directions and Observations.\"\n\nAlso, instead of using accordions for some of this, we could have a system similar to the red round question mark buttons. The existing question mark buttons signal that they will give you guidance on how to use the app. Perhaps we could have additional round help buttons, with different icons, that would give technical information in a pop-up window. If we establish this as a standard throughout the app, it might simplify some things and save some space as well.",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "parameter_list": {
+                        "icon_src": "help",
+                        "style": "navigation"
+                      },
+                      "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_topics.dg_topics_accord.topics_text"
+                    }
+                  ],
+                  "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_topics.dg_topics_accord"
+                }
+              ],
+              "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_topics"
             }
           ],
           "_nested_name": "dg_advice.accordion_for_dot_talk_categories"
