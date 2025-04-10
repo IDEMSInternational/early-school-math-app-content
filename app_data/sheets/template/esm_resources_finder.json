@@ -2701,7 +2701,7 @@
       "rows": [
         {
           "name": "display_the_results",
-          "value": false,
+          "value": true,
           "type": "set_variable",
           "_nested_name": "display_group_16.display_the_results"
         },
@@ -2724,6 +2724,7 @@
               "_cleaned": "click | set_local : display_the_results: !@local.display_the_results"
             }
           ],
+          "condition": false,
           "parameter_list": {
             "style": "short",
             "text_align": "center"
@@ -2771,16 +2772,7 @@
         },
         {
           "name": "comment",
-          "value": "If button is pushed,then display resource informations.",
-          "_translations": {
-            "value": {}
-          },
-          "type": "set_variable",
-          "_nested_name": "display_group_16.comment"
-        },
-        {
-          "name": "comment",
-          "value": "First, count each of the resource types that these topics relate to",
+          "value": "If button is pushed,then display resource information",
           "_translations": {
             "value": {}
           },
