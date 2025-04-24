@@ -3,22 +3,22 @@
 
 | type | count |
 | --- | --- |
-| accordion | 27 |
-| accordion_section | 40 |
-| button | 79 |
+| accordion | 29 |
+| accordion_section | 52 |
+| button | 81 |
 | debug_toggle | 1 |
-| display_group | 234 |
-| image | 29 |
-| items | 35 |
+| display_group | 248 |
+| image | 33 |
+| items | 37 |
 | qr_code | 1 |
 | radio_button_grid | 1 |
 | round_button | 9 |
 | select_text | 1 |
 | set_field | 9 |
-| set_variable | 521 |
+| set_variable | 537 |
 | simple_checkbox | 4 |
 | template | 66 |
-| text | 176 |
+| text | 186 |
 | text_area | 2 |
 | tile_component | 3 |
 | title | 46 |
@@ -38,10 +38,10 @@
 | emit: set_language | 1 |
 | emit: uncompleted | 58 |
 | feedback | 11 |
-| go_to | 48 |
+| go_to | 50 |
 | go_to_url | 3 |
 | reset_app | 1 |
-| set_field | 57 |
+| set_field | 61 |
 | set_local | 9 |
 | start_tour | 17 |
 </details>
@@ -51,8 +51,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 40248 KB | 40.2 MB |
-| unused | 21993 KB | 22 MB |
+| total | 40812 KB | 40.8 MB |
+| unused | 22001 KB | 22 MB |
 </details>
 
 <details open>
@@ -323,6 +323,7 @@ Assets that appear in app-data but do not have references within sheets
 | EFMStorybooks/EFM-SB-SSMILE-8.jpg | 3.5 |
 | EFMStorybooks/EFM-SB-TFHH-2.jpg | 10.6 |
 | ESMIll/ESMPOWACoinFlipStart2.svg | 11626.6 |
+| ESMIll/ESMPOWCAvoidingRectanglesAnswer4.svg | 7.5 |
 | android/icon-background.png | 7 |
 | android/icon-foreground.png | 53.9 |
 | android/icon.png | 75.2 |
@@ -1235,6 +1236,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/EFM105BackAndForth24Move1.svg | 21.1 | 1 |
 | ESMIll/EFM105BackAndForth24MoveIntro.svg | 19.4 | 1 |
 | ESMIll/ESM0GlossaryDividingLine.svg | 3.2 | 1 |
+| ESMIll/ESMBridgesOfKonigsbergChallenge.svg | 19.9 | 1 |
 | ESMIll/ESMDots1-2.svg | 2.8 | 1 |
 | ESMIll/ESMDots10-10.svg | 8.6 | 1 |
 | ESMIll/ESMDots10And1or2-11-13.svg | 15.9 | 1 |
@@ -1414,6 +1416,41 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMPOWBSumPyramid3Challenge.svg | 5.3 | 1 |
 | ESMIll/ESMPOWBSumPyramid4Challenge.svg | 7.1 | 1 |
 | ESMIll/ESMPOWBSumPyramidIntro.svg | 8.4 | 5 |
+| ESMIll/ESMPOWCAvoidingRectanglesAnswer3.svg | 5.4 | 1 |
+| ESMIll/ESMPOWCAvoidingRectanglesAnswer6.svg | 13.2 | 1 |
+| ESMIll/ESMPOWCAvoidingRectanglesEmpty4.svg | 3.7 | 1 |
+| ESMIll/ESMPOWCAvoidingRectanglesIntro.svg | 11.8 | 1 |
+| ESMIll/ESMPOWCLines3Answer.svg | 3.6 | 1 |
+| ESMIll/ESMPOWCLines3Intro.svg | 5.2 | 3 |
+| ESMIll/ESMPOWCLines4Answer.svg | 4.2 | 1 |
+| ESMIll/ESMPOWCLines5Answer1.svg | 3.8 | 1 |
+| ESMIll/ESMPOWCLines5Answer2.svg | 7.5 | 1 |
+| ESMIll/ESMPOWCMapColoring2CurvedIntro.svg | 10.1 | 1 |
+| ESMIll/ESMPOWCMapColoring4ColorChallenge.svg | 6 | 1 |
+| ESMIll/ESMPOWCMapColoring4ColorChallengeColored.svg | 28.2 | 1 |
+| ESMIll/ESMPOWCMapColoring4ColorsIntro.svg | 11 | 1 |
+| ESMIll/ESMPOWCMapColoringCurvedChallenge.svg | 5.6 | 1 |
+| ESMIll/ESMPOWCMapColoringCurvedChallengeColored.svg | 37.5 | 1 |
+| ESMIll/ESMPOWCMapColoringSimple4.svg | 5.2 | 1 |
+| ESMIll/ESMPOWCMapColoringStraightLinesChallenge.svg | 4.7 | 1 |
+| ESMIll/ESMPOWCMapColoringStraightLinesChallengeColored.svg | 33.2 | 1 |
+| ESMIll/ESMPOWCMapColoringStraightLinesIntro.svg | 6 | 1 |
+| ESMIll/ESMPOWCParades1Challenge.svg | 17.5 | 1 |
+| ESMIll/ESMPOWCParades1Intro.svg | 19.7 | 1 |
+| ESMIll/ESMPOWCParades2BridgesOfKonigsbergAnswer.svg | 9.6 | 1 |
+| ESMIll/ESMPOWCParades2BridgesOfKonigsbergChallengeOld.svg | 5.8 | 1 |
+| ESMIll/ESMPOWCParades2BridgesOfKonigsbergIntro.svg | 6.9 | 1 |
+| ESMIll/ESMPOWCPathChallengeAnswer.svg | 10.2 | 1 |
+| ESMIll/ESMPOWCPathChallengeChallenge.svg | 2.8 | 1 |
+| ESMIll/ESMPOWCPathChallengeIntroRevised.svg | 4.3 | 1 |
+| ESMIll/ESMPOWCSquareGrid4by4 Simple ExamplesIntro.svg | 5.1 | 1 |
+| ESMIll/ESMPOWCSquareGrid4by4Challenge.svg | 4.5 | 1 |
+| ESMIll/ESMPOWCSquareGrid5by5 Simple ExamplesIntro.svg | 7.9 | 1 |
+| ESMIll/ESMPOWCSquareGrid5by5Challenge.svg | 6.5 | 1 |
+| ESMIll/ESMPOWCSquareGrid5by5Diagonals.svg | 7.3 | 1 |
+| ESMIll/ESMPOWCTiedHandsAnswer.svg | 100.4 | 1 |
+| ESMIll/ESMPOWCTiedHandsChallenge.svg | 51.5 | 1 |
+| ESMIll/ESMParades1.svg | 17.5 | 1 |
 | ESMIll/ESMSplats1Color1Splat10-10.svg | 5 | 1 |
 | ESMIll/ESMSplats1Color1Splat5-2.svg | 4.1 | 1 |
 | ESMIll/ESMSplats1Color1Splat6-1.svg | 4.3 | 1 |
@@ -1432,6 +1469,8 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMSplats2Color2-3Splat7-2.svg | 5.5 | 1 |
 | ESMIll/ESMSplats2Color2-3Splat9-1.svg | 5.8 | 1 |
 | ESMIll/ESMSplatsCombos5.svg | 6.7 | 1 |
+| ESMIll/ESMSumGroups10.svg | 47.3 | 1 |
+| ESMIll/ESMTreasureMap2.svg | 13.7 | 1 |
 </details>
 
 <details >

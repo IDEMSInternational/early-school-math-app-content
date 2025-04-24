@@ -685,100 +685,6 @@
       "block3_text": "**The Challenge:** The maximum number is four for two weighings.\n\nStart by choosing two coins and weighing them against each other.\n\nIf they balance, the counterfeit is one of the two remaining coins. Choose one of the original two coins and weigh it against one of the two remaining ones. If they balance, then the last coin is counterfeit; if they don’t balance, then the coin being weighed that wasn’t in the original pair must be counterfeit.\n\nIf they don’t balance, then one of those two is counterfeit and the remaining two are normal. Choose one of the original two coins and one of the remaining two coins and weigh them against each other. The logic is then similar to the last case.\n\n**Exploration:** For three weighings, the maximum number is 13. The logic for doing three weighings for 12 or 13 coins is fairly involved. Rather than repeating it here, please see “Balance Puzzle” on Wikipedia. There is also extensive mathematical literature on pan balance problems.\n\nTo solve the puzzle of using 4 weighings to find the counterfeit coin among 16 coins, start by weighing two groups of four against each other. If they balance, use four of those coins to test four of the remaining coins. If they do not balance, use four of the remaining coins to test one of the first two groups of coins. In every instance, we have now narrowed down the possibilities to one group of four coins with two weighings remaining. Note we also know of 12 regular coins at this point. \n\nUse two of the regular coins to test two of the coins in the special group of four - if they balance, the counterfeit is in the remaining two; if they don’t balance the counterfeit is one of those two from the group of four. Now use one normal coin to test one of the two coins. This will finally identify which of the two coins is the counterfeit coin."
     },
     {
-      "id": "esm_pow_a_reflect_on_this_1",
-      "level": "A",
-      "topic_theme_1": "NPV_QC10_QC",
-      "eye_opener": true,
-      "puzzler": false,
-      "notes_block_start": 4,
-      "block1_type": "illust_below",
-      "block1_illust": "ESMIll/ESMPOWAReflectOnThisIntro.svg",
-      "block1_illust_max_size": "360px",
-      "block2_type": "illust_below",
-      "block2_illust": "ESMIll/ESMPOWAReflectOnThisChallenge1.svg",
-      "block2_illust_max_size": "260px",
-      "block3_type": "all_text",
-      "block4_type": "illust_below",
-      "block4_illust": "ESMIll/ESMPOWAReflectOnThisAnswer1.svg",
-      "block4_illust_max_size": "360px",
-      "name": "Reflect on This! – 1",
-      "_translations": {
-        "name": {},
-        "block1_text": {},
-        "block2_text": {},
-        "block3_text": {},
-        "block4_text": {}
-      },
-      "_translatedFields": {
-        "name": {
-          "eng": "Reflect on This! – 1"
-        },
-        "block1_text": {
-          "eng": "**Introduction:** This larger square is broken into regions with dark borders. Each region has a number that indicates how many X’s it should have. Whether in the same region or not, no two X’s may share a side or touch diagonally. Lastly, any X to the left of the gray column must be matched with its reflection, an X in the same position to the right of the gray column."
-        },
-        "block2_text": {
-          "eng": "**The Challenge:** Solve this larger Reflect on This! puzzle."
-        },
-        "block3_text": {
-          "eng": "**Exploration:** Make some of these puzzles for others."
-        },
-        "block4_text": {
-          "eng": "**The Challenge & Exploration:** Start by looking at the two regions colored light blue. Because of symmetry, the only way the bottom blue region can have one X is if that X is in the middle square. The only way the top blue region can have three X’s is if there are X’s at the far right and left, and one X in the middle, in one of the two squares marked with a ?.\n\nIf the X is in the square with the lower of the two ?’s, then it is impossible to get two X’s in the uncolored ‘2’ region. So, the third X in the upper blue region must be in the upper square with a ?.\n\nAt this point, do the uncolored ‘2’ region next, then the ‘1’ region. Finally, the positions of the X’s in the pink ‘2’ region are both forced by symmetry."
-        }
-      },
-      "block1_text": "**Introduction:** This larger square is broken into regions with dark borders. Each region has a number that indicates how many X’s it should have. Whether in the same region or not, no two X’s may share a side or touch diagonally. Lastly, any X to the left of the gray column must be matched with its reflection, an X in the same position to the right of the gray column.",
-      "block2_text": "**The Challenge:** Solve this larger Reflect on This! puzzle.",
-      "block3_text": "**Exploration:** Make some of these puzzles for others.",
-      "block4_text": "**The Challenge & Exploration:** Start by looking at the two regions colored light blue. Because of symmetry, the only way the bottom blue region can have one X is if that X is in the middle square. The only way the top blue region can have three X’s is if there are X’s at the far right and left, and one X in the middle, in one of the two squares marked with a ?.\n\nIf the X is in the square with the lower of the two ?’s, then it is impossible to get two X’s in the uncolored ‘2’ region. So, the third X in the upper blue region must be in the upper square with a ?.\n\nAt this point, do the uncolored ‘2’ region next, then the ‘1’ region. Finally, the positions of the X’s in the pink ‘2’ region are both forced by symmetry."
-    },
-    {
-      "id": "esm_pow_a_reflect_on_this_2",
-      "level": "A",
-      "topic_theme_1": "NPV_QC10_QC",
-      "eye_opener": true,
-      "puzzler": false,
-      "notes_block_start": 4,
-      "block1_type": "illust_below",
-      "block1_illust": "ESMIll/ESMPOWAReflectOnThisIntro.svg",
-      "block1_illust_max_size": "360px",
-      "block2_type": "illust_below",
-      "block2_illust": "ESMIll/ESMPOWAReflectOnThisChallenge2.svg",
-      "block2_illust_max_size": "260px",
-      "block3_type": "all_text",
-      "block4_type": "illust_below",
-      "block4_illust": "ESMIll/ESMPOWAReflectOnThisAnswer2.svg",
-      "block4_illust_max_size": "360px",
-      "name": "Reflect on This! – 2",
-      "_translations": {
-        "name": {},
-        "block1_text": {},
-        "block2_text": {},
-        "block3_text": {},
-        "block4_text": {}
-      },
-      "_translatedFields": {
-        "name": {
-          "eng": "Reflect on This! – 2"
-        },
-        "block1_text": {
-          "eng": "**Introduction:** This larger square is broken into regions with dark borders. Each region has a number that indicates how many X’s it should have. Whether in the same region or not, no two X’s may share a side or touch diagonally. Lastly, any X to the left of the gray column must be matched with its reflection, an X in the same position to the right of the gray column."
-        },
-        "block2_text": {
-          "eng": "**The Challenge:** Solve this larger Reflect on This! puzzle."
-        },
-        "block3_text": {
-          "eng": "**Exploration:** Make some of these puzzles for others."
-        },
-        "block4_text": {
-          "eng": "**The Challenge & Exploration:** The purple “2” region is one of the easier places to start. There is only one way to place two X’s into that region.\n\nThe blue “2” region is a good next step. With the X in the upper purple region, there is only one way to place two X’s in the blue region.\n\nThe “4” region on the bottom can only be filled in one way.\n\nWith those regions filled, there is only one square available in the green “1” region.\n\nSimilarly, with all that done, there is only one place left in the “1” region above the green region.\n\nThe rest can be filled in using the reflection property."
-        }
-      },
-      "block1_text": "**Introduction:** This larger square is broken into regions with dark borders. Each region has a number that indicates how many X’s it should have. Whether in the same region or not, no two X’s may share a side or touch diagonally. Lastly, any X to the left of the gray column must be matched with its reflection, an X in the same position to the right of the gray column.",
-      "block2_text": "**The Challenge:** Solve this larger Reflect on This! puzzle.",
-      "block3_text": "**Exploration:** Make some of these puzzles for others.",
-      "block4_text": "**The Challenge & Exploration:** The purple “2” region is one of the easier places to start. There is only one way to place two X’s into that region.\n\nThe blue “2” region is a good next step. With the X in the upper purple region, there is only one way to place two X’s in the blue region.\n\nThe “4” region on the bottom can only be filled in one way.\n\nWith those regions filled, there is only one square available in the green “1” region.\n\nSimilarly, with all that done, there is only one place left in the “1” region above the green region.\n\nThe rest can be filled in using the reflection property."
-    },
-    {
       "id": "esm_pow_a_stacking_hats_1",
       "level": "A",
       "topic_theme_1": "NPV_QC10_QC",
@@ -1461,6 +1367,100 @@
       "block1_text": "**Introduction:** Using just four of the standard pattern block shapes, here are examples of making triangles with one, two, three, and four of those shapes.",
       "block2_text": "**The Challenge:** For each of the numbers from 5 to 10, make a triangle that uses that many of these shapes. \n\n**Exploration:** Can you find more than one way to do some of these? Extend your list of possible numbers to 20!",
       "block3_text": "**The Challenge & Exploration:** There are a very large number of ways to do this. Any design that involves a parallelogram can be used to create a triangle with one more triangle by splitting the parallelogram into two triangles. Similarly, trapezoids can be split into a parallelogram and a triangle. Also, hexagons can be split into two trapezoids, three parallelograms, or six triangles. All of these give automatic ways of creating triangles with one additional shape over and over again.\n\nHere are just a few of the starting numbers. There are too many to attempt to show them all. Some of the patterns your students create will make pretty patterns and may look good hung on the walls of your classroom."
+    },
+    {
+      "id": "esm_pow_a_reflect_on_this_1",
+      "level": "S1",
+      "topic_theme_1": "NPV_QC10_QC",
+      "eye_opener": true,
+      "puzzler": false,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWAReflectOnThisIntro.svg",
+      "block1_illust_max_size": "360px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWAReflectOnThisChallenge1.svg",
+      "block2_illust_max_size": "260px",
+      "block3_type": "all_text",
+      "block4_type": "illust_below",
+      "block4_illust": "ESMIll/ESMPOWAReflectOnThisAnswer1.svg",
+      "block4_illust_max_size": "360px",
+      "name": "Reflect on This! – 1",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Reflect on This! – 1"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** This larger square is broken into regions with dark borders. Each region has a number that indicates how many X’s it should have. Whether in the same region or not, no two X’s may share a side or touch diagonally. Lastly, any X to the left of the gray column must be matched with its reflection, an X in the same position to the right of the gray column."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Solve this larger Reflect on This! puzzle."
+        },
+        "block3_text": {
+          "eng": "**Exploration:** Make some of these puzzles for others."
+        },
+        "block4_text": {
+          "eng": "**The Challenge & Exploration:** Start by looking at the two regions colored light blue. Because of symmetry, the only way the bottom blue region can have one X is if that X is in the middle square. The only way the top blue region can have three X’s is if there are X’s at the far right and left, and one X in the middle, in one of the two squares marked with a ?.\n\nIf the X is in the square with the lower of the two ?’s, then it is impossible to get two X’s in the uncolored ‘2’ region. So, the third X in the upper blue region must be in the upper square with a ?.\n\nAt this point, do the uncolored ‘2’ region next, then the ‘1’ region. Finally, the positions of the X’s in the pink ‘2’ region are both forced by symmetry."
+        }
+      },
+      "block1_text": "**Introduction:** This larger square is broken into regions with dark borders. Each region has a number that indicates how many X’s it should have. Whether in the same region or not, no two X’s may share a side or touch diagonally. Lastly, any X to the left of the gray column must be matched with its reflection, an X in the same position to the right of the gray column.",
+      "block2_text": "**The Challenge:** Solve this larger Reflect on This! puzzle.",
+      "block3_text": "**Exploration:** Make some of these puzzles for others.",
+      "block4_text": "**The Challenge & Exploration:** Start by looking at the two regions colored light blue. Because of symmetry, the only way the bottom blue region can have one X is if that X is in the middle square. The only way the top blue region can have three X’s is if there are X’s at the far right and left, and one X in the middle, in one of the two squares marked with a ?.\n\nIf the X is in the square with the lower of the two ?’s, then it is impossible to get two X’s in the uncolored ‘2’ region. So, the third X in the upper blue region must be in the upper square with a ?.\n\nAt this point, do the uncolored ‘2’ region next, then the ‘1’ region. Finally, the positions of the X’s in the pink ‘2’ region are both forced by symmetry."
+    },
+    {
+      "id": "esm_pow_a_reflect_on_this_2",
+      "level": "S1",
+      "topic_theme_1": "NPV_QC10_QC",
+      "eye_opener": true,
+      "puzzler": false,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWAReflectOnThisIntro.svg",
+      "block1_illust_max_size": "360px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWAReflectOnThisChallenge2.svg",
+      "block2_illust_max_size": "260px",
+      "block3_type": "all_text",
+      "block4_type": "illust_below",
+      "block4_illust": "ESMIll/ESMPOWAReflectOnThisAnswer2.svg",
+      "block4_illust_max_size": "360px",
+      "name": "Reflect on This! – 2",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Reflect on This! – 2"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** This larger square is broken into regions with dark borders. Each region has a number that indicates how many X’s it should have. Whether in the same region or not, no two X’s may share a side or touch diagonally. Lastly, any X to the left of the gray column must be matched with its reflection, an X in the same position to the right of the gray column."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Solve this larger Reflect on This! puzzle."
+        },
+        "block3_text": {
+          "eng": "**Exploration:** Make some of these puzzles for others."
+        },
+        "block4_text": {
+          "eng": "**The Challenge & Exploration:** The purple “2” region is one of the easier places to start. There is only one way to place two X’s into that region.\n\nThe blue “2” region is a good next step. With the X in the upper purple region, there is only one way to place two X’s in the blue region.\n\nThe “4” region on the bottom can only be filled in one way.\n\nWith those regions filled, there is only one square available in the green “1” region.\n\nSimilarly, with all that done, there is only one place left in the “1” region above the green region.\n\nThe rest can be filled in using the reflection property."
+        }
+      },
+      "block1_text": "**Introduction:** This larger square is broken into regions with dark borders. Each region has a number that indicates how many X’s it should have. Whether in the same region or not, no two X’s may share a side or touch diagonally. Lastly, any X to the left of the gray column must be matched with its reflection, an X in the same position to the right of the gray column.",
+      "block2_text": "**The Challenge:** Solve this larger Reflect on This! puzzle.",
+      "block3_text": "**Exploration:** Make some of these puzzles for others.",
+      "block4_text": "**The Challenge & Exploration:** The purple “2” region is one of the easier places to start. There is only one way to place two X’s into that region.\n\nThe blue “2” region is a good next step. With the X in the upper purple region, there is only one way to place two X’s in the blue region.\n\nThe “4” region on the bottom can only be filled in one way.\n\nWith those regions filled, there is only one square available in the green “1” region.\n\nSimilarly, with all that done, there is only one place left in the “1” region above the green region.\n\nThe rest can be filled in using the reflection property."
     },
     {
       "id": "esm_pow_b_diff_pyramids_6",
@@ -2162,6 +2162,7 @@
       "block3_type": "all_text",
       "block4_type": "illust_below",
       "block4_illust": "ESMIll/ESMPOWBDiffPyramid62Solutions.svg",
+      "block4_illust_max_size": "270px",
       "name": "Sum Pyramids - 5",
       "_translations": {
         "name": {},
@@ -2191,6 +2192,598 @@
       "block2_text": "These pyramids are called **Difference Pyramids.** The number on top is the difference of the two numbers below.",
       "block3_text": "**The Challenge:** Describe how any Sum Pyramid can easily be turned into a Difference Pyramid. Can you find an example of a Difference Pyramid that cannot be easily turned into a Sum Pyramid?",
       "block4_text": "**The Challenge:** To make a Difference Pyramid out of any Sum Pyramid, simply rotate the Sum Pyramid onto its left or right side!\n\nWhat can go wrong in wanting to turn a Difference Pyramid into a Sum Pyramid is that the differences may not always go in the same direction. Neither of the following Difference Pyramids can be turned into a Sum Pyramid without a complete rearrangement of the numbers. That’s because they both have a 6 in the middle of a side, and any Sum Pyramid with the numbers 1 to 6 must have the 6 at the tip."
+    },
+    {
+      "id": "esm_pow_c_tied_hands",
+      "level": "S2",
+      "eye_opener": false,
+      "puzzler": true,
+      "notes_block_start": 2,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWCTiedHandsChallenge.svg",
+      "block1_illust_max_size": "250px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWCTiedHandsAnswer.svg",
+      "block2_illust_max_size": "340px",
+      "name": "Are Their Hands Tied?",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Are Their Hands Tied?"
+        },
+        "block1_text": {
+          "eng": "**The Challenge:** There are two people. Each person ties their hands together (loosely) with a string. As this is being done, the strings loop inside each other as shown. How do the two people get apart without untying their strings?"
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** The key insight is to let go of the idea that the string is tied tightly around the wrists. The best way to visualize what to do is to open up the string around one of the wrists and fully withdraw that hand from the string. Once this is done, all you have to do is slide the other person’s string off.\n\nThat feels like cheating, but it isn’t! Topologically, a little bit of space is the same as a great deal of space. In any event, you don’t need to withdraw your hand to solve the puzzle. However, withdrawing the hand will help you see why the solution works.\n\nTo solve this without pulling a hand out, take the loop that goes around the other string and move it inside one of the loops around a hand - then move it around that hand and out the other side. You should find that the two strings are no longer entangled!\n\nReading this is a lot harder than trying it out for yourself now that you’ve got the idea. Grab some string and a partner and try it out!"
+        }
+      },
+      "block1_text": "**The Challenge:** There are two people. Each person ties their hands together (loosely) with a string. As this is being done, the strings loop inside each other as shown. How do the two people get apart without untying their strings?",
+      "block2_text": "**The Challenge:** The key insight is to let go of the idea that the string is tied tightly around the wrists. The best way to visualize what to do is to open up the string around one of the wrists and fully withdraw that hand from the string. Once this is done, all you have to do is slide the other person’s string off.\n\nThat feels like cheating, but it isn’t! Topologically, a little bit of space is the same as a great deal of space. In any event, you don’t need to withdraw your hand to solve the puzzle. However, withdrawing the hand will help you see why the solution works.\n\nTo solve this without pulling a hand out, take the loop that goes around the other string and move it inside one of the loops around a hand - then move it around that hand and out the other side. You should find that the two strings are no longer entangled!\n\nReading this is a lot harder than trying it out for yourself now that you’ve got the idea. Grab some string and a partner and try it out!"
+    },
+    {
+      "id": "esm_pow_c_avoiding_rectangles_2",
+      "level": "S2",
+      "eye_opener": false,
+      "puzzler": true,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWCAvoidingRectanglesIntro.svg",
+      "block1_illust_max_size": "330px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWCAvoidingRectanglesEmpty4.svg",
+      "block2_illust_max_size": "180px",
+      "block3_type": "all_text",
+      "block4_type": "illust_below",
+      "block4_illust": "ESMIll/ESMPOWCAvoidingRectanglesAnswer3.svg",
+      "block4_illust_max_size": "270px",
+      "block5_type": "illust_below",
+      "block5_illust_max_size": "270px",
+      "block6_type": "illust_below",
+      "block6_illust": "ESMIll/ESMPOWCAvoidingRectanglesAnswer6.svg",
+      "block6_illust_max_size": "270px",
+      "name": "Avoiding Rectangles – 2",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {},
+        "block5_text": {},
+        "block6_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Avoiding Rectangles – 2"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** The X’s in a grid can become the corners of rectangles with horizontal and vertical sides. The X’s in this first grid form two rectangles. However, the goal is to avoid creating rectangles. The X’s in the second grid are placed to avoid forming any rectangles."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Place as many X’s as you can in this 4 by 4 grid and avoid creating any rectangles."
+        },
+        "block3_text": {
+          "eng": "**Exploration:** What is the most you can have for other sizes of grids? Do you see any patterns in your answers?"
+        },
+        "block4_text": {
+          "eng": "**The Challenge:** To solve this in general is a very hard, unsolved problem in mathematics. However, that should not keep a student from playing around with it and learning a lot of interesting things along the way.\n\nSuppose the grid has m rows and n columns. In Avoiding Rectangles – 1, we found the following results for the best answers.\n\n**1 and 2 rows:** We had m + n - 1 X’s\n\n**3 rows:** We had m + n X’s using a starting diagram for a 3 by 3 grid that looked like the following diagram. Using that diagram, if we had 3 rows with more columns, we can just add a single X in each new column."
+        },
+        "block5_text": {
+          "eng": "The 3 by 3 case required a different look from the 1 and 2 row strategy, and it is tempting to think that the examples with 4 or more rows will also require some new thinking. To state the obvious, we want to create a collection of columns that never share a pair of rows with X’s in them.\n\nOne strategy is to fill in everything in the leftmost column except the bottom square, and then the rest of the columns have one X in the bottom row and one X in another row. This will always work and produces (m - 1) + 2 x (m - 1) = 3 x (m - 1) X’s for an m by m square grid. This method for filling in the square can then be extended (by adding a single X in each new column) to anything with m rows to give 3 x (m - 1) + (n - m) = n + 2m - 3 X’s, when m < n. This formula works for all the answers for any size grid (with more than 1 row) so far."
+        },
+        "block6_text": {
+          "eng": "**Exploration:** Looking for the best answers online shows you can do 12 X’s for the 5 by 5 case (which you can get using the pattern), and then 16 X’s for the 6 by 6 case (shown here).\n\nAfter that, the numbers starting at 7 by 7 in order are: 21, 24, 29, 34, 39, 45, 52, 56, 61, 67, 74, 81, 88, 96, 105, 108, 115, and 122. Mathematicians have done a lot of interesting explorations for how these work, and your mathematicians can have a lot of fun with it too!"
+        }
+      },
+      "block1_text": "**Introduction:** The X’s in a grid can become the corners of rectangles with horizontal and vertical sides. The X’s in this first grid form two rectangles. However, the goal is to avoid creating rectangles. The X’s in the second grid are placed to avoid forming any rectangles.",
+      "block2_text": "**The Challenge:** Place as many X’s as you can in this 4 by 4 grid and avoid creating any rectangles.",
+      "block3_text": "**Exploration:** What is the most you can have for other sizes of grids? Do you see any patterns in your answers?",
+      "block4_text": "**The Challenge:** To solve this in general is a very hard, unsolved problem in mathematics. However, that should not keep a student from playing around with it and learning a lot of interesting things along the way.\n\nSuppose the grid has m rows and n columns. In Avoiding Rectangles – 1, we found the following results for the best answers.\n\n**1 and 2 rows:** We had m + n - 1 X’s\n\n**3 rows:** We had m + n X’s using a starting diagram for a 3 by 3 grid that looked like the following diagram. Using that diagram, if we had 3 rows with more columns, we can just add a single X in each new column.",
+      "block5_text": "The 3 by 3 case required a different look from the 1 and 2 row strategy, and it is tempting to think that the examples with 4 or more rows will also require some new thinking. To state the obvious, we want to create a collection of columns that never share a pair of rows with X’s in them.\n\nOne strategy is to fill in everything in the leftmost column except the bottom square, and then the rest of the columns have one X in the bottom row and one X in another row. This will always work and produces (m - 1) + 2 x (m - 1) = 3 x (m - 1) X’s for an m by m square grid. This method for filling in the square can then be extended (by adding a single X in each new column) to anything with m rows to give 3 x (m - 1) + (n - m) = n + 2m - 3 X’s, when m < n. This formula works for all the answers for any size grid (with more than 1 row) so far.",
+      "block6_text": "**Exploration:** Looking for the best answers online shows you can do 12 X’s for the 5 by 5 case (which you can get using the pattern), and then 16 X’s for the 6 by 6 case (shown here).\n\nAfter that, the numbers starting at 7 by 7 in order are: 21, 24, 29, 34, 39, 45, 52, 56, 61, 67, 74, 81, 88, 96, 105, 108, 115, and 122. Mathematicians have done a lot of interesting explorations for how these work, and your mathematicians can have a lot of fun with it too!"
+    },
+    {
+      "id": "esm_pow_c_finding_squares_1",
+      "level": "S2",
+      "eye_opener": true,
+      "puzzler": false,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWCSquareGrid4by4 Simple ExamplesIntro.svg",
+      "block1_illust_max_size": "180px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWCSquareGrid4by4Challenge.svg",
+      "block2_illust_max_size": "180px",
+      "block3_type": "all_text",
+      "block4_type": "all_text",
+      "name": "Finding Squares – 1",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Finding Squares – 1"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** Drawn in red in this grid are two 1 by 1 squares and one 2 by 2 square with horizontal and vertical sides."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Count the number of squares of all sizes with horizontal and vertical sides in this grid."
+        },
+        "block3_text": {
+          "eng": "**Exploration:** Play with even bigger grids. Can you discover a systematic way to count all the squares? How does your answer change, if at all, if the grid of points is a rectangle that is not a square?"
+        },
+        "block4_text": {
+          "eng": "**The Challenge:** The possible squares have side lengths from 1 up to 4.\n\nFor each size of square, think of the upper left corner as the starting position. You can produce all squares of this size in the grid by shifting this starter square around. You have the choice of moving it to the right or down the remaining number of positions. These are independent choices, so you get <this number plus 1> squared of that size square.\n\nFor example, suppose you are counting 1 by 1 squares in this 4 by 4 grid. A 1 by 1 square in the upper left-hand corner can be shifted 1 or 2 to the right and 1 or 2 down. So there are 3 possible positions horizontally (counting the original position) and 3 possible positions vertically. Thus there are 3 x 3 of these 1 by 1 squares.\n\nFor the original 4 by 4 grid problem, this gives the following count:\n* 1 by 1 squares: 3 x 3 = 9\n* 2 by 2 squares: 2 x 2 = 4\n* 3 by 3 squares: 1 x 1 = 1.\n\nThere are a total of 3 x 3 + 2 x 2 + 1 x 1 =  9 + 4 + 1 = 14 possible squares.\n\n**Exploartion:** For any square grid, the total number of squares will be the sum of the square numbers less than the size of the grid. For example, a 7 by 7 grid will have 36 + 25 + 16 + 9 + 4 + 1 = 91 squares.\n\nRectangular grids are almost as easy to count. The smaller of the two dimensions of the rectangle will restrict the maximum size of the possible squares. Count them in a similar way as the square grid case. Rather than doing the general case, let’s just do one illustrative example.\n\nSuppose you are counting the squares in a 5 by 7 grid. Because there are only 5 rows, no square can be bigger than 4 by 4.\n* 1 by 1 squares: 4 x 6 = 24\n* 2 by 2 squares: 3 x 5 = 15\n* 3 by 3 squares: 2 x 4 = 8\n* 4 by 4 squares: 1 x 3 = 3\n\nThe total number of squares is 24 + 15 + 8 + 3 = 50."
+        }
+      },
+      "block1_text": "**Introduction:** Drawn in red in this grid are two 1 by 1 squares and one 2 by 2 square with horizontal and vertical sides.",
+      "block2_text": "**The Challenge:** Count the number of squares of all sizes with horizontal and vertical sides in this grid.",
+      "block3_text": "**Exploration:** Play with even bigger grids. Can you discover a systematic way to count all the squares? How does your answer change, if at all, if the grid of points is a rectangle that is not a square?",
+      "block4_text": "**The Challenge:** The possible squares have side lengths from 1 up to 4.\n\nFor each size of square, think of the upper left corner as the starting position. You can produce all squares of this size in the grid by shifting this starter square around. You have the choice of moving it to the right or down the remaining number of positions. These are independent choices, so you get <this number plus 1> squared of that size square.\n\nFor example, suppose you are counting 1 by 1 squares in this 4 by 4 grid. A 1 by 1 square in the upper left-hand corner can be shifted 1 or 2 to the right and 1 or 2 down. So there are 3 possible positions horizontally (counting the original position) and 3 possible positions vertically. Thus there are 3 x 3 of these 1 by 1 squares.\n\nFor the original 4 by 4 grid problem, this gives the following count:\n* 1 by 1 squares: 3 x 3 = 9\n* 2 by 2 squares: 2 x 2 = 4\n* 3 by 3 squares: 1 x 1 = 1.\n\nThere are a total of 3 x 3 + 2 x 2 + 1 x 1 =  9 + 4 + 1 = 14 possible squares.\n\n**Exploartion:** For any square grid, the total number of squares will be the sum of the square numbers less than the size of the grid. For example, a 7 by 7 grid will have 36 + 25 + 16 + 9 + 4 + 1 = 91 squares.\n\nRectangular grids are almost as easy to count. The smaller of the two dimensions of the rectangle will restrict the maximum size of the possible squares. Count them in a similar way as the square grid case. Rather than doing the general case, let’s just do one illustrative example.\n\nSuppose you are counting the squares in a 5 by 7 grid. Because there are only 5 rows, no square can be bigger than 4 by 4.\n* 1 by 1 squares: 4 x 6 = 24\n* 2 by 2 squares: 3 x 5 = 15\n* 3 by 3 squares: 2 x 4 = 8\n* 4 by 4 squares: 1 x 3 = 3\n\nThe total number of squares is 24 + 15 + 8 + 3 = 50."
+    },
+    {
+      "id": "esm_pow_c_finding_squares_2",
+      "level": "S2",
+      "eye_opener": false,
+      "puzzler": true,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWCSquareGrid5by5 Simple ExamplesIntro.svg",
+      "block1_illust_max_size": "180px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWCSquareGrid5by5Challenge.svg",
+      "block2_illust_max_size": "200px",
+      "block3_type": "all_text",
+      "block4_type": "illust_below",
+      "block4_illust": "ESMIll/ESMPOWCSquareGrid5by5Diagonals.svg",
+      "block4_illust_max_size": "220px",
+      "name": "Finding Squares – 2",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Finding Squares – 2"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** Drawn in red in this grid are two 1 by 1 squares and one 2 by 2 square with horizontal and vertical sides."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** FInd the number of  squares of all sizes and orientations in this grid. Unlike what is shown in the introduction, not all of these squares will have horizontal and vertical sides!"
+        },
+        "block3_text": {
+          "eng": "**Exploration:** Play with what happens with larger grids and with grids that are not squares."
+        },
+        "block4_text": {
+          "eng": "**The Challenge:** The possible squares with horizontal and vertical sides have side lengths from 1 up to one less than the number of rows/columns.\n\nFor each size of square, think of the upper left corner as the starting position. You can produce all squares of this size in the grid by shifting this starter square around. You have the choice of moving it to the right or down the remaining number of positions. These are independent choices, so you get <this number plus 1> squared of that size square.\n\nFor example, suppose you are counting 2 by 2 squares in this 5 by 5 grid. A 2 by 2 square in the upper left-hand corner can be shifted 1 or 2 to the right and 1 or 2 down. So there are 3 possible positions horizontally (counting the original position) and 3 possible positions vertically. Thus there are 3 x 3 of these 1 by 1 squares.\n\nFor the original 5 by 5 grid problem, this gives the following count of squares with horizontal and vertical sides:\n* 1 by 1 squares: 4 x 4 = 16\n* 2 by 2 squares: 3 x 3 = 9\n* 3 by 3 squares: 2 x 2 = 4\n* 4 by 4 squares: 1 x 1 = 1.\n\nThere are a total of 16 +  9 + 4 + 1 = 30 possible squares with horizontal and vertical sides.\n\nThe trick for the remaining squares is to continue to be organized in your counting. I’ll describe a square by what one of its sides does. For example, a square with a side that goes one to the right and one up, or a square with a side that goes two the right and one up - these are two of the squares pictured in this illustration.\n\nCounting by sliding as before we have:\n* 1 to the right & 1 up: 3 x 3 = 9\n* 2 to the right & 1 up: 2 x 2 = 4\n* 3 to the right & 1 up: 1 x 1 = 1\n* 2 to the left & 1 up: 2 x 2 = 4\n* 3 to the left & 1 up: 1 x 1 = 1\n* 2 to the right and 2 up: 1 x 1 = 1\n\nSo the total is: 30 (from earlier) + 9 + 4 + 1 + 4 + 1 = 49.\n\n**Exploration:** You can explore other sizes by finding an organized system of counting!"
+        }
+      },
+      "block1_text": "**Introduction:** Drawn in red in this grid are two 1 by 1 squares and one 2 by 2 square with horizontal and vertical sides.",
+      "block2_text": "**The Challenge:** FInd the number of  squares of all sizes and orientations in this grid. Unlike what is shown in the introduction, not all of these squares will have horizontal and vertical sides!",
+      "block3_text": "**Exploration:** Play with what happens with larger grids and with grids that are not squares.",
+      "block4_text": "**The Challenge:** The possible squares with horizontal and vertical sides have side lengths from 1 up to one less than the number of rows/columns.\n\nFor each size of square, think of the upper left corner as the starting position. You can produce all squares of this size in the grid by shifting this starter square around. You have the choice of moving it to the right or down the remaining number of positions. These are independent choices, so you get <this number plus 1> squared of that size square.\n\nFor example, suppose you are counting 2 by 2 squares in this 5 by 5 grid. A 2 by 2 square in the upper left-hand corner can be shifted 1 or 2 to the right and 1 or 2 down. So there are 3 possible positions horizontally (counting the original position) and 3 possible positions vertically. Thus there are 3 x 3 of these 1 by 1 squares.\n\nFor the original 5 by 5 grid problem, this gives the following count of squares with horizontal and vertical sides:\n* 1 by 1 squares: 4 x 4 = 16\n* 2 by 2 squares: 3 x 3 = 9\n* 3 by 3 squares: 2 x 2 = 4\n* 4 by 4 squares: 1 x 1 = 1.\n\nThere are a total of 16 +  9 + 4 + 1 = 30 possible squares with horizontal and vertical sides.\n\nThe trick for the remaining squares is to continue to be organized in your counting. I’ll describe a square by what one of its sides does. For example, a square with a side that goes one to the right and one up, or a square with a side that goes two the right and one up - these are two of the squares pictured in this illustration.\n\nCounting by sliding as before we have:\n* 1 to the right & 1 up: 3 x 3 = 9\n* 2 to the right & 1 up: 2 x 2 = 4\n* 3 to the right & 1 up: 1 x 1 = 1\n* 2 to the left & 1 up: 2 x 2 = 4\n* 3 to the left & 1 up: 1 x 1 = 1\n* 2 to the right and 2 up: 1 x 1 = 1\n\nSo the total is: 30 (from earlier) + 9 + 4 + 1 + 4 + 1 = 49.\n\n**Exploration:** You can explore other sizes by finding an organized system of counting!"
+    },
+    {
+      "id": "esm_pow_c_lines_3",
+      "level": "S2",
+      "eye_opener": false,
+      "puzzler": true,
+      "notes_block_start": 3,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWCLines3Intro.svg",
+      "block1_illust_max_size": "220px",
+      "block2_type": "all_text",
+      "block3_type": "illust_below",
+      "block3_illust": "ESMIll/ESMPOWCLines3Answer.svg",
+      "block3_illust_max_size": "220px",
+      "name": "Lines – 3",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Lines – 3"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** Here is an example of 12 dots with 6 straight line segments so that each line segment goes through exactly 4 dots."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Design an arrangement of 10 dots with 5 straight line segments so that each line segment goes through exactly 4 dots."
+        },
+        "block3_text": {
+          "eng": "**The Challenge:** A star shape works well for this. Here is an answer. Perhaps one of your students will come up with a different answer?"
+        }
+      },
+      "block1_text": "**Introduction:** Here is an example of 12 dots with 6 straight line segments so that each line segment goes through exactly 4 dots.",
+      "block2_text": "**The Challenge:** Design an arrangement of 10 dots with 5 straight line segments so that each line segment goes through exactly 4 dots.",
+      "block3_text": "**The Challenge:** A star shape works well for this. Here is an answer. Perhaps one of your students will come up with a different answer?"
+    },
+    {
+      "id": "esm_pow_c_lines_4",
+      "level": "S2",
+      "eye_opener": false,
+      "puzzler": true,
+      "notes_block_start": 3,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWCLines3Intro.svg",
+      "block1_illust_max_size": "220px",
+      "block2_type": "all_text",
+      "block3_type": "illust_below",
+      "block3_illust": "ESMIll/ESMPOWCLines4Answer.svg",
+      "block3_illust_max_size": "220px",
+      "name": "Lines – 4",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Lines – 4"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** Here is an example of 12 dots with 6 straight line segments so that each line segment goes through exactly 4 dots."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Design a completely different arrangement of 12 dots with 6 straight line segments so that each line segment goes through exactly 4 dots."
+        },
+        "block3_text": {
+          "eng": "**The Challenge:** A star shape works well for this. Here is an answer. Perhaps one of your students will come up with a different answer?"
+        }
+      },
+      "block1_text": "**Introduction:** Here is an example of 12 dots with 6 straight line segments so that each line segment goes through exactly 4 dots.",
+      "block2_text": "**The Challenge:** Design a completely different arrangement of 12 dots with 6 straight line segments so that each line segment goes through exactly 4 dots.",
+      "block3_text": "**The Challenge:** A star shape works well for this. Here is an answer. Perhaps one of your students will come up with a different answer?"
+    },
+    {
+      "id": "esm_pow_c_lines_5",
+      "level": "S2",
+      "eye_opener": false,
+      "puzzler": true,
+      "notes_block_start": 3,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWCLines3Intro.svg",
+      "block1_illust_max_size": "220px",
+      "block2_type": "all_text",
+      "block3_type": "illust_below",
+      "block3_illust": "ESMIll/ESMPOWCLines5Answer1.svg",
+      "block3_illust_max_size": "220px",
+      "block4_type": "illust_below",
+      "block4_illust": "ESMIll/ESMPOWCLines5Answer2.svg",
+      "block4_illust_max_size": "360px",
+      "name": "Lines – 5",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Lines – 5"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** Here is an example of 12 dots with 6 straight line segments so that each line segment goes through exactly 4 dots."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Design an arrangement of 7 dots with 6 straight line segments so that each line segment goes through exactly 3 dots."
+        },
+        "block3_text": {
+          "eng": "**The Challenge:** The answer involves putting a point inside a triangle. Once you think of this, it is tempting to create an equilateral triangle and have the three internal lines meet as in this diagram."
+        },
+        "block4_text": {
+          "eng": "However, lest you think the equilateral triangle is important, there is no need for that much care. Take any triangle, put two internal lines across from the corners, and then create the last line to go through the remaining corner and the intersection point inside the triangle."
+        }
+      },
+      "block1_text": "**Introduction:** Here is an example of 12 dots with 6 straight line segments so that each line segment goes through exactly 4 dots.",
+      "block2_text": "**The Challenge:** Design an arrangement of 7 dots with 6 straight line segments so that each line segment goes through exactly 3 dots.",
+      "block3_text": "**The Challenge:** The answer involves putting a point inside a triangle. Once you think of this, it is tempting to create an equilateral triangle and have the three internal lines meet as in this diagram.",
+      "block4_text": "However, lest you think the equilateral triangle is important, there is no need for that much care. Take any triangle, put two internal lines across from the corners, and then create the last line to go through the remaining corner and the intersection point inside the triangle."
+    },
+    {
+      "id": "esm_pow_c_map_coloring_with_2_1",
+      "level": "S2",
+      "eye_opener": false,
+      "puzzler": true,
+      "notes_block_start": 3,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWCMapColoringStraightLinesIntro.svg",
+      "block1_illust_max_size": "250px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWCMapColoringStraightLinesChallenge.svg",
+      "block2_illust_max_size": "240px",
+      "block3_type": "illust_below",
+      "block3_illust": "ESMIll/ESMPOWCMapColoringStraightLinesChallengeColored.svg",
+      "name": "Map Coloring – 2 Colors – 1",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Map Coloring – 2 Colors – 1"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** Map makers color maps so regions sharing a border have different colors. Here is a map where the regions are created by drawing straight lines across the map. Notice how it has been colored using just two colors."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Color this more complicated map using just two colors."
+        },
+        "block3_text": {
+          "eng": "**The Challenge:** Here is a fun demonstration for coloring maps such as the two on the first page, where the regions are made by a collection of lines. It’s probably best to do this on a whiteboard or some other easily erasable surface.\n\nStart with an empty oval. Now draw a line across it. Lightly darken one side of the line.\n\nNext, draw another line across that. Flip the color used for every region on one side of the line - if it was white, make it dark, and if it was dark, make it light.\n\nKeep adding lines one at a time and flipping all the colors on one side of the line. Do this for as long as your patience holds out. In the end you will have a map that is colored using just two colors!"
+        }
+      },
+      "block1_text": "**Introduction:** Map makers color maps so regions sharing a border have different colors. Here is a map where the regions are created by drawing straight lines across the map. Notice how it has been colored using just two colors.",
+      "block2_text": "**The Challenge:** Color this more complicated map using just two colors.",
+      "block3_text": "**The Challenge:** Here is a fun demonstration for coloring maps such as the two on the first page, where the regions are made by a collection of lines. It’s probably best to do this on a whiteboard or some other easily erasable surface.\n\nStart with an empty oval. Now draw a line across it. Lightly darken one side of the line.\n\nNext, draw another line across that. Flip the color used for every region on one side of the line - if it was white, make it dark, and if it was dark, make it light.\n\nKeep adding lines one at a time and flipping all the colors on one side of the line. Do this for as long as your patience holds out. In the end you will have a map that is colored using just two colors!"
+    },
+    {
+      "id": "esm_pow_c_map_coloring_with_2_2",
+      "level": "S2",
+      "eye_opener": false,
+      "puzzler": true,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWCMapColoring2CurvedIntro.svg",
+      "block1_illust_max_size": "250px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWCMapColoringCurvedChallenge.svg",
+      "block2_illust_max_size": "240px",
+      "block3_type": "all_text",
+      "block4_type": "illust_below",
+      "block4_illust": "ESMIll/ESMPOWCMapColoringCurvedChallengeColored.svg",
+      "block4_illust_max_size": "330px",
+      "block5_type": "all_text",
+      "name": "Map Coloring – 2 Colors – 2",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {},
+        "block5_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Map Coloring – 2 Colors – 2"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** Map makers color maps so regions sharing a border have different colors. Maps that have an even number of lines going out from each interior intersection point can always be colored using 2 colors. Here is an example."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** This more complicated map has an even number of lines going out from each interior  intersection point. Color it using just two colors."
+        },
+        "block3_text": {
+          "eng": "**Exploration:** Create a simple map with an interior intersection point that has an odd number of lines going out from it. Why is it impossible to color your map with just 2 colors?"
+        },
+        "block4_text": {
+          "eng": "**The Challenge:** This is easier than it sounds. The only trick is to not jump around in the map.\n\nStart at any intersection point. For all the regions that have that point as a corner, color the regions with alternating colors as you work your way around the point in one direction.\n\nOnce you have finished with a point, move to any other point that has at least one region already colored. Starting with the region that was already colored, work your way around this new point alternating colors as you go.\n\nBecause there is an even number of regions that have a common corner, you will always be able to alternate the colors when working your way around an intersection point.\nIt’s as simple as that!"
+        },
+        "block5_text": {
+          "eng": "**Exploration:** If you have an odd number of regions surrounding a point and you try to use alternating colors, you will get stuck as you work your way around the point. At the end, you will have to use a new color for the last region!"
+        }
+      },
+      "block1_text": "**Introduction:** Map makers color maps so regions sharing a border have different colors. Maps that have an even number of lines going out from each interior intersection point can always be colored using 2 colors. Here is an example.",
+      "block2_text": "**The Challenge:** This more complicated map has an even number of lines going out from each interior  intersection point. Color it using just two colors.",
+      "block3_text": "**Exploration:** Create a simple map with an interior intersection point that has an odd number of lines going out from it. Why is it impossible to color your map with just 2 colors?",
+      "block4_text": "**The Challenge:** This is easier than it sounds. The only trick is to not jump around in the map.\n\nStart at any intersection point. For all the regions that have that point as a corner, color the regions with alternating colors as you work your way around the point in one direction.\n\nOnce you have finished with a point, move to any other point that has at least one region already colored. Starting with the region that was already colored, work your way around this new point alternating colors as you go.\n\nBecause there is an even number of regions that have a common corner, you will always be able to alternate the colors when working your way around an intersection point.\nIt’s as simple as that!",
+      "block5_text": "**Exploration:** If you have an odd number of regions surrounding a point and you try to use alternating colors, you will get stuck as you work your way around the point. At the end, you will have to use a new color for the last region!"
+    },
+    {
+      "id": "esm_pow_c_map_coloring_with_2_3",
+      "level": "S2",
+      "eye_opener": false,
+      "puzzler": true,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWCMapColoring4ColorsIntro.svg",
+      "block1_illust_max_size": "250px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWCMapColoring4ColorChallenge.svg",
+      "block2_illust_max_size": "240px",
+      "block3_type": "all_text",
+      "block4_type": "illust_below",
+      "block4_illust": "ESMIll/ESMPOWCMapColoring4ColorChallengeColored.svg",
+      "block4_illust_max_size": "240px",
+      "block5_type": "illust_below",
+      "block5_illust": "ESMIll/ESMPOWCMapColoringSimple4.svg",
+      "block5_illust_max_size": "150px",
+      "block6_type": "all_text",
+      "name": "Map Coloring – 4 Colors",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {},
+        "block5_text": {},
+        "block6_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Map Coloring – 4 Colors"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** Map makers color maps so regions sharing a border have different colors. Mathematicians have shown that every map that has connected regions can be colored with four or fewer colors. In a previous puzzle, we saw that if there is a place on a map that has an odd number of lines coming out from it, then the map will need at least three colors. Here is an example of such a map."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Color this map using as few colors as you can."
+        },
+        "block3_text": {
+          "eng": "**Exploration:** Create the simplest map you can that requires four colors. What happens if you have a map with some “regions” made up of completely separate pieces. These multi-piece regions still must be a single color. Make a map with some multi-piece regions that needs more than four colors to color."
+        },
+        "block4_text": {
+          "eng": "**The Challenge:**  In “Map Coloring with 2 Colors - 2” we saw that a single corner that has an odd number of regions around it will require three colors to color those regions.\n\nWell, if we have a single region with an odd number of regions around it, that will force the use of four colors. If you look at the oval at the center of the second map on the previous page, that oval has an odd number of regions around it and that will force the use of four distinct colors to color everything."
+        },
+        "block5_text": {
+          "eng": "This happens on the map of the United States. The state of Nevada has five states surrounding it, so those six states (including Nevada) will always require at least four colors.\n\n**Exploration:** The following map forces the use of four colors and is as simple as you can get."
+        },
+        "block6_text": {
+          "eng": "If you allow disconnected regions, you can force as many colors as there are regions - you just construct it so that every region touches every other region. Because every region can be disconnected, there aren’t any true physical limitations."
+        }
+      },
+      "block1_text": "**Introduction:** Map makers color maps so regions sharing a border have different colors. Mathematicians have shown that every map that has connected regions can be colored with four or fewer colors. In a previous puzzle, we saw that if there is a place on a map that has an odd number of lines coming out from it, then the map will need at least three colors. Here is an example of such a map.",
+      "block2_text": "**The Challenge:** Color this map using as few colors as you can.",
+      "block3_text": "**Exploration:** Create the simplest map you can that requires four colors. What happens if you have a map with some “regions” made up of completely separate pieces. These multi-piece regions still must be a single color. Make a map with some multi-piece regions that needs more than four colors to color.",
+      "block4_text": "**The Challenge:**  In “Map Coloring with 2 Colors - 2” we saw that a single corner that has an odd number of regions around it will require three colors to color those regions.\n\nWell, if we have a single region with an odd number of regions around it, that will force the use of four colors. If you look at the oval at the center of the second map on the previous page, that oval has an odd number of regions around it and that will force the use of four distinct colors to color everything.",
+      "block5_text": "This happens on the map of the United States. The state of Nevada has five states surrounding it, so those six states (including Nevada) will always require at least four colors.\n\n**Exploration:** The following map forces the use of four colors and is as simple as you can get.",
+      "block6_text": "If you allow disconnected regions, you can force as many colors as there are regions - you just construct it so that every region touches every other region. Because every region can be disconnected, there aren’t any true physical limitations."
+    },
+    {
+      "id": "esm_pow_c_parades_1",
+      "level": "S2",
+      "eye_opener": false,
+      "puzzler": true,
+      "notes_block_start": 3,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWCParades1Intro.svg",
+      "block1_illust_max_size": "300px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWCParades1Challenge.svg",
+      "block2_illust_max_size": "300px",
+      "block3_type": "all_text",
+      "name": "Parades – 1",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Parades – 1"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** Parades wish to visit each street on their route exactly once. In these two examples, the first one is a successful parade route and the second one is not (one street is left out)."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** For each street layout, either find a parade route that visits each street exactly once or decide that it is impossible. For street layouts that have a parade, which ones allow parades to start and end at the same place? Can you find a pattern in your results?"
+        },
+        "block3_text": {
+          "eng": "**Exploration:** The key idea is to keep track of where parades start and end, if they exist at all for a street map. Some parades can start and end anywhere, and some must start or end at very specific locations.\n\nAfter looking at lots of examples, the following observation emerges. It is not important for young children to prove these things.\n\n**Result 1:** If a corner has an odd number of streets coming to it, the parade must start or end there. \nThe reason for this is simple. Every time a parade goes into and back out of a corner, that accounts for an even number of streets coming to that corner. Therefore, corners with an odd number of streets must be the start or end of the parade.\n\n**Result 2:** If there are more than two corners with an odd number of streets coming into them, then this map cannot have a parade.\n\n**Result 3:** If there are exactly two corners with an odd number of streets, then any parade must begin at one of them and end at the other. In particular, it is impossible to have a parade that begins and ends at the same place.\n\n**Result 4:** If there are no corners with an odd number of streets, then a parade can start anywhere, and it must start and end at the same place."
+        }
+      },
+      "block1_text": "**Introduction:** Parades wish to visit each street on their route exactly once. In these two examples, the first one is a successful parade route and the second one is not (one street is left out).",
+      "block2_text": "**The Challenge:** For each street layout, either find a parade route that visits each street exactly once or decide that it is impossible. For street layouts that have a parade, which ones allow parades to start and end at the same place? Can you find a pattern in your results?",
+      "block3_text": "**Exploration:** The key idea is to keep track of where parades start and end, if they exist at all for a street map. Some parades can start and end anywhere, and some must start or end at very specific locations.\n\nAfter looking at lots of examples, the following observation emerges. It is not important for young children to prove these things.\n\n**Result 1:** If a corner has an odd number of streets coming to it, the parade must start or end there. \nThe reason for this is simple. Every time a parade goes into and back out of a corner, that accounts for an even number of streets coming to that corner. Therefore, corners with an odd number of streets must be the start or end of the parade.\n\n**Result 2:** If there are more than two corners with an odd number of streets coming into them, then this map cannot have a parade.\n\n**Result 3:** If there are exactly two corners with an odd number of streets, then any parade must begin at one of them and end at the other. In particular, it is impossible to have a parade that begins and ends at the same place.\n\n**Result 4:** If there are no corners with an odd number of streets, then a parade can start anywhere, and it must start and end at the same place."
+    },
+    {
+      "id": "esm_pow_c_parades_2",
+      "level": "S2",
+      "eye_opener": false,
+      "puzzler": true,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWCParades2BridgesOfKonigsbergIntro.svg",
+      "block1_illust_max_size": "250px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWCParades2BridgesOfKonigsbergChallengeOld.svg",
+      "block2_illust_max_size": "240px",
+      "block3_type": "all_text",
+      "block4_type": "illust_below",
+      "block4_illust": "ESMIll/ESMPOWCParades2BridgesOfKonigsbergAnswer.svg",
+      "block4_illust_max_size": "300px",
+      "block5_type": "all_text",
+      "name": "Parades – 2",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {},
+        "block5_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Parades – 2"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** This is a map of Königsberg showing the river that runs through it, the island in the middle of the river, and the seven bridges that span the river. The people of Königsberg wanted to have a parade that went over each of their bridges exactly once. They could not seem to find a parade route that visited all seven bridges."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** If you can, find a parade route that crosses each of their bridges exactly once. If you can’t, give a reason for why it is impossible."
+        },
+        "block3_text": {
+          "eng": "**Exploration:** If you add another bridge over the river, would that make the problem easier or harder?"
+        },
+        "block4_text": {
+          "eng": "**The Challenge:** Start by translating this problem into one that has edges we need to traverse. We saw in the earlier “Parades” Puzzle of the Week that it is crucial to have no more than two nodes where an odd number of sides come in."
+        },
+        "block5_text": {
+          "eng": "Because all four of the nodes have an odd number of edges coming into them, it will be impossible to find a parade route!\n\n**Exploration:** If you add one more bridge across the river anywhere, you will make it very easy to solve this problem. That’s because two of the four nodes will then have an even number of edges coming into them, and that will leave only two nodes with an odd number of edges coming into them."
+        }
+      },
+      "block1_text": "**Introduction:** This is a map of Königsberg showing the river that runs through it, the island in the middle of the river, and the seven bridges that span the river. The people of Königsberg wanted to have a parade that went over each of their bridges exactly once. They could not seem to find a parade route that visited all seven bridges.",
+      "block2_text": "**The Challenge:** If you can, find a parade route that crosses each of their bridges exactly once. If you can’t, give a reason for why it is impossible.",
+      "block3_text": "**Exploration:** If you add another bridge over the river, would that make the problem easier or harder?",
+      "block4_text": "**The Challenge:** Start by translating this problem into one that has edges we need to traverse. We saw in the earlier “Parades” Puzzle of the Week that it is crucial to have no more than two nodes where an odd number of sides come in.",
+      "block5_text": "Because all four of the nodes have an odd number of edges coming into them, it will be impossible to find a parade route!\n\n**Exploration:** If you add one more bridge across the river anywhere, you will make it very easy to solve this problem. That’s because two of the four nodes will then have an even number of edges coming into them, and that will leave only two nodes with an odd number of edges coming into them."
+    },
+    {
+      "id": "esm_pow_c_parades_3",
+      "level": "S2",
+      "eye_opener": false,
+      "puzzler": true,
+      "notes_block_start": 3,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWCPathChallengeIntroRevised.svg",
+      "block1_illust_max_size": "250px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWCPathChallengeChallenge.svg",
+      "block2_illust_max_size": "240px",
+      "block3_type": "illust_below",
+      "block3_illust": "ESMIll/ESMPOWCPathChallengeAnswer.svg",
+      "block3_illust_max_size": "300px",
+      "block4_type": "all_text",
+      "name": "Parades – 3",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Parades – 3"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** The red path is an attempt to find a parade route that crosses each edge of this diagram exactly once. Alas, one of the sides has been missed!"
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** If you can, find a parade route that crosses each edge of this diagram exactly once. If you can’t, give a reason for why it is impossible."
+        },
+        "block3_text": {
+          "eng": "**The Challenge:** Start by translating this problem into one that has edges we need to traverse. We saw in the earlier “Parades” Puzzle of the Week that it is crucial to have no more than two nodes where an odd number of sides come in."
+        },
+        "block4_text": {
+          "eng": "The red lines represent paths that must be taken to cross each of the edges. We are looking for a parade route that will follow each of the red paths once. Unfortunately, there are four nodes that have an odd number of red paths coming into them. Therefore, it is impossible to find a route that will work!"
+        }
+      },
+      "block1_text": "**Introduction:** The red path is an attempt to find a parade route that crosses each edge of this diagram exactly once. Alas, one of the sides has been missed!",
+      "block2_text": "**The Challenge:** If you can, find a parade route that crosses each edge of this diagram exactly once. If you can’t, give a reason for why it is impossible.",
+      "block3_text": "**The Challenge:** Start by translating this problem into one that has edges we need to traverse. We saw in the earlier “Parades” Puzzle of the Week that it is crucial to have no more than two nodes where an odd number of sides come in.",
+      "block4_text": "The red lines represent paths that must be taken to cross each of the edges. We are looking for a parade route that will follow each of the red paths once. Unfortunately, there are four nodes that have an odd number of red paths coming into them. Therefore, it is impossible to find a route that will work!"
     }
   ],
   "_xlsxPath": "EFM_pows_high_level_sheets.xlsx",

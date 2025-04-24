@@ -66,316 +66,392 @@
           "_nested_name": "dg_info.Intro_text"
         },
         {
-          "type": "button",
-          "name": "button_shapes_properties",
-          "value": "Properties and Shapes Talks",
-          "_translations": {
-            "value": {}
+          "type": "accordion",
+          "name": "accordion_for_routines",
+          "parameter_list": {
+            "open_multiple": "TRUE"
           },
-          "action_list": [
+          "rows": [
             {
-              "trigger": "click",
-              "action_id": "go_to",
-              "args": [
-                "esm_properties_and_shapes"
+              "type": "accordion_section",
+              "name": "level_shapes",
+              "value": "Shapes",
+              "parameter_list": {
+                "text_align": "center",
+                "style": "large emphasised"
+              },
+              "rows": [
+                {
+                  "type": "display_group",
+                  "name": "dg_routinelist_shapes",
+                  "parameter_list": {
+                    "style": "column"
+                  },
+                  "rows": [
+                    {
+                      "type": "button",
+                      "name": "button_shapes_properties",
+                      "value": "Properties and Shapes Talks",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "action_list": [
+                        {
+                          "trigger": "click",
+                          "action_id": "go_to",
+                          "args": [
+                            "esm_properties_and_shapes"
+                          ],
+                          "_raw": "click | go_to: esm_properties_and_shapes",
+                          "_cleaned": "click | go_to: esm_properties_and_shapes"
+                        }
+                      ],
+                      "parameter_list": {
+                        "style": "short",
+                        "text_align": "center"
+                      },
+                      "_nested_name": "dg_info.accordion_for_routines.level_shapes.dg_routinelist_shapes.button_shapes_properties"
+                    },
+                    {
+                      "type": "button",
+                      "name": "button_pattern_block_challenges",
+                      "value": "Pattern Block Challenges",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "action_list": [
+                        {
+                          "trigger": "click",
+                          "action_id": "go_to",
+                          "args": [
+                            "esm_pattern_block_challenges"
+                          ],
+                          "_raw": "click | go_to: esm_pattern_block_challenges",
+                          "_cleaned": "click | go_to: esm_pattern_block_challenges"
+                        }
+                      ],
+                      "parameter_list": {
+                        "style": "short",
+                        "text_align": "center"
+                      },
+                      "_nested_name": "dg_info.accordion_for_routines.level_shapes.dg_routinelist_shapes.button_pattern_block_challenges"
+                    }
+                  ],
+                  "_nested_name": "dg_info.accordion_for_routines.level_shapes.dg_routinelist_shapes"
+                }
               ],
-              "_raw": "click | go_to: esm_properties_and_shapes",
-              "_cleaned": "click | go_to: esm_properties_and_shapes"
+              "_nested_name": "dg_info.accordion_for_routines.level_shapes"
+            },
+            {
+              "type": "accordion_section",
+              "name": "level_quants_and_counts",
+              "value": "Small Quantities and Counting",
+              "parameter_list": {
+                "text_align": "center",
+                "style": "large emphasised"
+              },
+              "rows": [
+                {
+                  "type": "display_group",
+                  "name": "dg_routinelist_quants_and_counts",
+                  "parameter_list": {
+                    "style": "column"
+                  },
+                  "rows": [
+                    {
+                      "type": "button",
+                      "name": "button_dot_talks",
+                      "value": "Dot Talks",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "action_list": [
+                        {
+                          "trigger": "click",
+                          "action_id": "go_to",
+                          "args": [
+                            "esm_dot_talks"
+                          ],
+                          "_raw": "click | go_to: esm_dot_talks",
+                          "_cleaned": "click | go_to: esm_dot_talks"
+                        }
+                      ],
+                      "parameter_list": {
+                        "style": "short",
+                        "text_align": "center"
+                      },
+                      "_nested_name": "dg_info.accordion_for_routines.level_quants_and_counts.dg_routinelist_quants_and_counts.button_dot_talks"
+                    },
+                    {
+                      "type": "button",
+                      "name": "button_splat_routines",
+                      "value": "Splat!",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "action_list": [
+                        {
+                          "trigger": "click",
+                          "action_id": "go_to",
+                          "args": [
+                            "esm_splat_routines"
+                          ],
+                          "_raw": "click | go_to: esm_splat_routines",
+                          "_cleaned": "click | go_to: esm_splat_routines"
+                        }
+                      ],
+                      "parameter_list": {
+                        "style": "short",
+                        "text_align": "center"
+                      },
+                      "_nested_name": "dg_info.accordion_for_routines.level_quants_and_counts.dg_routinelist_quants_and_counts.button_splat_routines"
+                    },
+                    {
+                      "type": "button",
+                      "name": "button_number_line",
+                      "value": "Number Line Tasks",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "action_list": [
+                        {
+                          "trigger": "click",
+                          "action_id": "go_to",
+                          "args": [
+                            "esm_number_line"
+                          ],
+                          "_raw": "click | go_to: esm_number_line",
+                          "_cleaned": "click | go_to: esm_number_line"
+                        }
+                      ],
+                      "parameter_list": {
+                        "style": "short",
+                        "text_align": "center"
+                      },
+                      "_nested_name": "dg_info.accordion_for_routines.level_quants_and_counts.dg_routinelist_quants_and_counts.button_number_line"
+                    },
+                    {
+                      "type": "button",
+                      "name": "button_choral_counting",
+                      "value": "Choral Counting",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "action_list": [
+                        {
+                          "trigger": "click",
+                          "action_id": "go_to",
+                          "args": [
+                            "esm_choral_counting"
+                          ],
+                          "_raw": "click | go_to: esm_choral_counting",
+                          "_cleaned": "click | go_to: esm_choral_counting"
+                        }
+                      ],
+                      "parameter_list": {
+                        "style": "short",
+                        "text_align": "center"
+                      },
+                      "_nested_name": "dg_info.accordion_for_routines.level_quants_and_counts.dg_routinelist_quants_and_counts.button_choral_counting"
+                    }
+                  ],
+                  "_nested_name": "dg_info.accordion_for_routines.level_quants_and_counts.dg_routinelist_quants_and_counts"
+                }
+              ],
+              "_nested_name": "dg_info.accordion_for_routines.level_quants_and_counts"
+            },
+            {
+              "type": "accordion_section",
+              "name": "level_misc",
+              "value": "Misc",
+              "parameter_list": {
+                "text_align": "center",
+                "style": "large emphasised"
+              },
+              "rows": [
+                {
+                  "type": "display_group",
+                  "name": "dg_routinelist_misc",
+                  "parameter_list": {
+                    "style": "column"
+                  },
+                  "rows": [
+                    {
+                      "type": "button",
+                      "name": "button_short_math_games",
+                      "value": "Short Math Games",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "action_list": [
+                        {
+                          "trigger": "click",
+                          "action_id": "go_to",
+                          "args": [
+                            "esm_short_math_games"
+                          ],
+                          "_raw": "click | go_to: esm_short_math_games",
+                          "_cleaned": "click | go_to: esm_short_math_games"
+                        }
+                      ],
+                      "parameter_list": {
+                        "style": "short",
+                        "text_align": "center"
+                      },
+                      "_nested_name": "dg_info.accordion_for_routines.level_misc.dg_routinelist_misc.button_short_math_games"
+                    },
+                    {
+                      "type": "button",
+                      "name": "button_target_number",
+                      "value": "Target Number",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "action_list": [
+                        {
+                          "trigger": "click",
+                          "action_id": "go_to",
+                          "args": [
+                            "esm_target_number"
+                          ],
+                          "_raw": "click | go_to: esm_target_number",
+                          "_cleaned": "click | go_to: esm_target_number"
+                        }
+                      ],
+                      "parameter_list": {
+                        "style": "short",
+                        "text_align": "center"
+                      },
+                      "_nested_name": "dg_info.accordion_for_routines.level_misc.dg_routinelist_misc.button_target_number"
+                    },
+                    {
+                      "type": "button",
+                      "name": "button_equality_concept",
+                      "value": "Equality Concept",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "action_list": [
+                        {
+                          "trigger": "click",
+                          "action_id": "go_to",
+                          "args": [
+                            "esm_equality_concept"
+                          ],
+                          "_raw": "click | go_to: esm_equality_concept",
+                          "_cleaned": "click | go_to: esm_equality_concept"
+                        }
+                      ],
+                      "parameter_list": {
+                        "style": "short",
+                        "text_align": "center"
+                      },
+                      "_nested_name": "dg_info.accordion_for_routines.level_misc.dg_routinelist_misc.button_equality_concept"
+                    },
+                    {
+                      "type": "button",
+                      "name": "button_number_strings",
+                      "value": "Number Strings",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "action_list": [
+                        {
+                          "trigger": "click",
+                          "action_id": "go_to",
+                          "args": [
+                            "esm_number_strings"
+                          ],
+                          "_raw": "click | go_to: esm_number_strings",
+                          "_cleaned": "click | go_to: esm_number_strings"
+                        }
+                      ],
+                      "parameter_list": {
+                        "style": "short",
+                        "text_align": "center"
+                      },
+                      "_nested_name": "dg_info.accordion_for_routines.level_misc.dg_routinelist_misc.button_number_strings"
+                    },
+                    {
+                      "type": "button",
+                      "name": "button_problem_sort",
+                      "value": "Problem Sort",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "action_list": [
+                        {
+                          "trigger": "click",
+                          "action_id": "go_to",
+                          "args": [
+                            "esm_problem_sort"
+                          ],
+                          "_raw": "click | go_to: esm_problem_sort",
+                          "_cleaned": "click | go_to: esm_problem_sort"
+                        }
+                      ],
+                      "parameter_list": {
+                        "style": "short",
+                        "text_align": "center"
+                      },
+                      "_nested_name": "dg_info.accordion_for_routines.level_misc.dg_routinelist_misc.button_problem_sort"
+                    },
+                    {
+                      "type": "button",
+                      "name": "button_number_patterns",
+                      "value": "Number Patterns",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "action_list": [
+                        {
+                          "trigger": "click",
+                          "action_id": "go_to",
+                          "args": [
+                            "esm_number_patterns"
+                          ],
+                          "_raw": "click | go_to: esm_number_patterns",
+                          "_cleaned": "click | go_to: esm_number_patterns"
+                        }
+                      ],
+                      "parameter_list": {
+                        "style": "short",
+                        "text_align": "center"
+                      },
+                      "_nested_name": "dg_info.accordion_for_routines.level_misc.dg_routinelist_misc.button_number_patterns"
+                    },
+                    {
+                      "type": "button",
+                      "name": "button_fluency_practice",
+                      "value": "Fluency Practice",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "action_list": [
+                        {
+                          "trigger": "click",
+                          "action_id": "go_to",
+                          "args": [
+                            "esm_fluency_practice"
+                          ],
+                          "_raw": "click | go_to: esm_fluency_practice",
+                          "_cleaned": "click | go_to: esm_fluency_practice"
+                        }
+                      ],
+                      "parameter_list": {
+                        "style": "short",
+                        "text_align": "center"
+                      },
+                      "_nested_name": "dg_info.accordion_for_routines.level_misc.dg_routinelist_misc.button_fluency_practice"
+                    }
+                  ],
+                  "_nested_name": "dg_info.accordion_for_routines.level_misc.dg_routinelist_misc"
+                }
+              ],
+              "_nested_name": "dg_info.accordion_for_routines.level_misc"
             }
           ],
-          "parameter_list": {
-            "style": "short",
-            "text_align": "center"
-          },
-          "_nested_name": "dg_info.button_shapes_properties"
-        },
-        {
-          "type": "button",
-          "name": "button_pattern_block_challenges",
-          "value": "Pattern Block Challenges",
-          "_translations": {
-            "value": {}
-          },
-          "action_list": [
-            {
-              "trigger": "click",
-              "action_id": "go_to",
-              "args": [
-                "esm_pattern_block_challenges"
-              ],
-              "_raw": "click | go_to: esm_pattern_block_challenges",
-              "_cleaned": "click | go_to: esm_pattern_block_challenges"
-            }
-          ],
-          "parameter_list": {
-            "style": "short",
-            "text_align": "center"
-          },
-          "_nested_name": "dg_info.button_pattern_block_challenges"
-        },
-        {
-          "type": "button",
-          "name": "button_dot_talks",
-          "value": "Dot Talks",
-          "_translations": {
-            "value": {}
-          },
-          "action_list": [
-            {
-              "trigger": "click",
-              "action_id": "go_to",
-              "args": [
-                "esm_dot_talks"
-              ],
-              "_raw": "click | go_to: esm_dot_talks",
-              "_cleaned": "click | go_to: esm_dot_talks"
-            }
-          ],
-          "parameter_list": {
-            "style": "short",
-            "text_align": "center"
-          },
-          "_nested_name": "dg_info.button_dot_talks"
-        },
-        {
-          "type": "button",
-          "name": "button_splat_routines",
-          "value": "Splat!",
-          "_translations": {
-            "value": {}
-          },
-          "action_list": [
-            {
-              "trigger": "click",
-              "action_id": "go_to",
-              "args": [
-                "esm_splat_routines"
-              ],
-              "_raw": "click | go_to: esm_splat_routines",
-              "_cleaned": "click | go_to: esm_splat_routines"
-            }
-          ],
-          "parameter_list": {
-            "style": "short",
-            "text_align": "center"
-          },
-          "_nested_name": "dg_info.button_splat_routines"
-        },
-        {
-          "type": "button",
-          "name": "button_short_math_games",
-          "value": "Short Math Games",
-          "_translations": {
-            "value": {}
-          },
-          "action_list": [
-            {
-              "trigger": "click",
-              "action_id": "go_to",
-              "args": [
-                "esm_short_math_games"
-              ],
-              "_raw": "click | go_to: esm_short_math_games",
-              "_cleaned": "click | go_to: esm_short_math_games"
-            }
-          ],
-          "parameter_list": {
-            "style": "short",
-            "text_align": "center"
-          },
-          "_nested_name": "dg_info.button_short_math_games"
-        },
-        {
-          "type": "button",
-          "name": "button_target_number",
-          "value": "Target Number",
-          "_translations": {
-            "value": {}
-          },
-          "action_list": [
-            {
-              "trigger": "click",
-              "action_id": "go_to",
-              "args": [
-                "esm_target_number"
-              ],
-              "_raw": "click | go_to: esm_target_number",
-              "_cleaned": "click | go_to: esm_target_number"
-            }
-          ],
-          "parameter_list": {
-            "style": "short",
-            "text_align": "center"
-          },
-          "_nested_name": "dg_info.button_target_number"
-        },
-        {
-          "type": "button",
-          "name": "button_equality_concept",
-          "value": "Equality Concept",
-          "_translations": {
-            "value": {}
-          },
-          "action_list": [
-            {
-              "trigger": "click",
-              "action_id": "go_to",
-              "args": [
-                "esm_equality_concept"
-              ],
-              "_raw": "click | go_to: esm_equality_concept",
-              "_cleaned": "click | go_to: esm_equality_concept"
-            }
-          ],
-          "parameter_list": {
-            "style": "short",
-            "text_align": "center"
-          },
-          "_nested_name": "dg_info.button_equality_concept"
-        },
-        {
-          "type": "button",
-          "name": "button_number_line",
-          "value": "Number Line Tasks",
-          "_translations": {
-            "value": {}
-          },
-          "action_list": [
-            {
-              "trigger": "click",
-              "action_id": "go_to",
-              "args": [
-                "esm_number_line"
-              ],
-              "_raw": "click | go_to: esm_number_line",
-              "_cleaned": "click | go_to: esm_number_line"
-            }
-          ],
-          "parameter_list": {
-            "style": "short",
-            "text_align": "center"
-          },
-          "_nested_name": "dg_info.button_number_line"
-        },
-        {
-          "type": "button",
-          "name": "button_number_strings",
-          "value": "Number Strings",
-          "_translations": {
-            "value": {}
-          },
-          "action_list": [
-            {
-              "trigger": "click",
-              "action_id": "go_to",
-              "args": [
-                "esm_number_strings"
-              ],
-              "_raw": "click | go_to: esm_number_strings",
-              "_cleaned": "click | go_to: esm_number_strings"
-            }
-          ],
-          "parameter_list": {
-            "style": "short",
-            "text_align": "center"
-          },
-          "_nested_name": "dg_info.button_number_strings"
-        },
-        {
-          "type": "button",
-          "name": "button_problem_sort",
-          "value": "Problem Sort",
-          "_translations": {
-            "value": {}
-          },
-          "action_list": [
-            {
-              "trigger": "click",
-              "action_id": "go_to",
-              "args": [
-                "esm_problem_sort"
-              ],
-              "_raw": "click | go_to: esm_problem_sort",
-              "_cleaned": "click | go_to: esm_problem_sort"
-            }
-          ],
-          "parameter_list": {
-            "style": "short",
-            "text_align": "center"
-          },
-          "_nested_name": "dg_info.button_problem_sort"
-        },
-        {
-          "type": "button",
-          "name": "button_choral_counting",
-          "value": "Choral Counting",
-          "_translations": {
-            "value": {}
-          },
-          "action_list": [
-            {
-              "trigger": "click",
-              "action_id": "go_to",
-              "args": [
-                "esm_choral_counting"
-              ],
-              "_raw": "click | go_to: esm_choral_counting",
-              "_cleaned": "click | go_to: esm_choral_counting"
-            }
-          ],
-          "parameter_list": {
-            "style": "short",
-            "text_align": "center"
-          },
-          "_nested_name": "dg_info.button_choral_counting"
-        },
-        {
-          "type": "button",
-          "name": "button_number_patterns",
-          "value": "Number Patterns",
-          "_translations": {
-            "value": {}
-          },
-          "action_list": [
-            {
-              "trigger": "click",
-              "action_id": "go_to",
-              "args": [
-                "esm_number_patterns"
-              ],
-              "_raw": "click | go_to: esm_number_patterns",
-              "_cleaned": "click | go_to: esm_number_patterns"
-            }
-          ],
-          "parameter_list": {
-            "style": "short",
-            "text_align": "center"
-          },
-          "_nested_name": "dg_info.button_number_patterns"
-        },
-        {
-          "type": "button",
-          "name": "button_fluency_practice",
-          "value": "Fluency Practice",
-          "_translations": {
-            "value": {}
-          },
-          "action_list": [
-            {
-              "trigger": "click",
-              "action_id": "go_to",
-              "args": [
-                "esm_fluency_practice"
-              ],
-              "_raw": "click | go_to: esm_fluency_practice",
-              "_cleaned": "click | go_to: esm_fluency_practice"
-            }
-          ],
-          "parameter_list": {
-            "style": "short",
-            "text_align": "center"
-          },
-          "_nested_name": "dg_info.button_fluency_practice"
+          "_nested_name": "dg_info.accordion_for_routines"
         }
       ],
       "_nested_name": "dg_info"
