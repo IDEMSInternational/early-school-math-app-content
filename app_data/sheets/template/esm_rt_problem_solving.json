@@ -157,12 +157,54 @@
                               "rows": [
                                 {
                                   "type": "text",
-                                  "name": "example_text_for_strategy_1",
-                                  "value": "**Overview:** Doing lots of examples and variations can open your eyes to things easily missed in the original problem statements. One example is often not enough to see the mechanisms at play in a puzzle. It’s too easy to get distracted by unimportant details in that particular situation. By looking at many examples, patterns emerge and common characteristics that are crucial start to stand out.\n\n**Do many examples and look for patterns:** Describe Bridges of Königsberg problem and using diagrams.\n\n**Do simipler versions of the problem and look for patterns:** There are many versions of the game of Nim. Suppose you have ten things and you and your opponent are allowed to remove 1 or 2 things from the pile on each turn. The player who removes the last piece wins. Is it better to go first or second, and what is your strategy?\n\nTen is too big a number for seeing the strategy, so let’s reduce it to create simpler versions of the problem. When I asked my high school seniors to do this, they would choose numbers like 3 or 5. If it provides information, always start with the simplest version (1 in this case) and work your way up. Write down what happens if it’s your turn and there are 1, 2, 3, 4, or 5 things in a pile. In a few seconds  the pattern emerges and you have conquered this game.\n\n**Add or remove elements in the original problem:**",
+                                  "name": "example_text_for_strategy_1a",
+                                  "value": "**Overview:** Doing lots of examples and variations can open your eyes to things easily missed in the original problem statements. One example is often not enough to see the mechanisms at play in a puzzle. It’s too easy to get distracted by unimportant details in that particular situation. By looking at many examples, patterns emerge and common characteristics that are crucial start to stand out.\n\nA fun aspect of playing with examples and variations is that they may lead you to ask new questions to explore.\n\n**Do many examples and look for patterns:** Describe Bridges of Königsberg problem and using diagrams.",
                                   "_translations": {
                                     "value": {}
                                   },
-                                  "_nested_name": "dg_info.accordion_for_problem_solving.accord_strategies.dg_prob_solv_strategies.accordion_for_strategies.accord_strategies_1.dg_strategy_1.example_text_for_strategy_1"
+                                  "_nested_name": "dg_info.accordion_for_problem_solving.accord_strategies.dg_prob_solv_strategies.accordion_for_strategies.accord_strategies_1.dg_strategy_1.example_text_for_strategy_1a"
+                                },
+                                {
+                                  "type": "image",
+                                  "name": "bridges_of_k_illustration",
+                                  "value": "ESMIll/ESMBridgesOfKonigsbergChallenge.svg",
+                                  "_translations": {
+                                    "value": {}
+                                  },
+                                  "style_list": [
+                                    "max-width:300px"
+                                  ],
+                                  "_nested_name": "dg_info.accordion_for_problem_solving.accord_strategies.dg_prob_solv_strategies.accordion_for_strategies.accord_strategies_1.dg_strategy_1.bridges_of_k_illustration"
+                                },
+                                {
+                                  "type": "text",
+                                  "name": "example_text_for_strategy_1b",
+                                  "value": "For this puzzle, there are many simpler diagrams that one can play with, some of which are illustrated above. After playing with those, and perhaps others, a pattern emerges. Any node that has an odd number of sides attached to it must be the beginning or ending of a path. That is the key insight which leads to a complete understanding of these parade puzzles.",
+                                  "_translations": {
+                                    "value": {}
+                                  },
+                                  "_nested_name": "dg_info.accordion_for_problem_solving.accord_strategies.dg_prob_solv_strategies.accordion_for_strategies.accord_strategies_1.dg_strategy_1.example_text_for_strategy_1b"
+                                },
+                                {
+                                  "type": "image",
+                                  "name": "parades_illustration",
+                                  "value": "ESMIll/ESMParades1.svg",
+                                  "_translations": {
+                                    "value": {}
+                                  },
+                                  "style_list": [
+                                    "max-width:300px"
+                                  ],
+                                  "_nested_name": "dg_info.accordion_for_problem_solving.accord_strategies.dg_prob_solv_strategies.accordion_for_strategies.accord_strategies_1.dg_strategy_1.parades_illustration"
+                                },
+                                {
+                                  "type": "text",
+                                  "name": "example_text_for_strategy_1c",
+                                  "value": "**Do simipler versions of the problem and look for patterns:**\n\n**Example - Nim:** There are many versions of the game of Nim. Suppose you have ten things and you and your opponent are allowed to remove 1 or 2 things from the pile on each turn. The player who removes the last piece wins. Is it better to go first or second, and what is your strategy?\n\nTen is too big a number for seeing the strategy, so let’s reduce it to create simpler versions of the problem. When I asked my high school seniors to do this, they would choose numbers like 3 or 5. If it provides information, always start with the simplest version (1 in this case) and work your way up. Write down what happens if it’s your turn and there are 1, 2, 3, 4, or 5 things in a pile. In a few seconds  the pattern emerges and you have conquered this game.",
+                                  "_translations": {
+                                    "value": {}
+                                  },
+                                  "_nested_name": "dg_info.accordion_for_problem_solving.accord_strategies.dg_prob_solv_strategies.accordion_for_strategies.accord_strategies_1.dg_strategy_1.example_text_for_strategy_1c"
                                 }
                               ],
                               "_nested_name": "dg_info.accordion_for_problem_solving.accord_strategies.dg_prob_solv_strategies.accordion_for_strategies.accord_strategies_1.dg_strategy_1"
@@ -220,7 +262,7 @@
                                 {
                                   "type": "text",
                                   "name": "example_text_for_strategy_3",
-                                  "value": "There is a tendency to consider Guess and Check as something an unintelligent person does when they have no ideas. Those people are needlessly losing the use of a very powerful strategy.\n\n**Puzzle:** Suppose a farmer has a total of 200 chickens and cows. Weirdly, the farmer counts the legs and notices there are 680 legs. How many of each animal are there, and what is wrong with this farmer?\n\nIf there were 200 cows, there would be 800 legs, and if there were 200 chickens, there would be 400 legs. Let’s guess 100 of each animal. That would give 600 legs. To get more legs, we need more cows. Let’s guess 150 cows – this gives 700 legs. Reduce the cows to 140 and you get exactly 680 legs. \n\nThe thoughtful person using Guess and Check here would notice that the number of legs increases by twice as much as the increase in the number of cows, and would then use that information to improve future trial numbers. If you are watching and thinking as you do Guess and Check, it has many of the strengths of using the lots of examples strategy.",
+                                  "value": "There is a tendency to consider Guess and Check as something an unintelligent person does when they have no ideas. Those people are needlessly losing the use of a very powerful strategy.\n\n**Puzzle:** Suppose a farmer has a total of 200 chickens and cows. Weirdly, the farmer counts the legs and notices there are 680 legs. How many of each animal are there?\n\nIf there were 200 cows, there would be 800 legs, and if there were 200 chickens, there would be 400 legs. Let’s guess 100 of each animal. That would give 600 legs. To get more legs, we need more cows. Let’s guess 150 cows – this gives 700 legs. Reduce the cows to 140 and you get exactly 680 legs. \n\nThe thoughtful person using Guess and Check here would notice that the number of legs increases by twice as much as the increase in the number of cows, and would then use that information to improve future trial numbers. If you are watching and thinking as you do Guess and Check, it has many of the strengths of using the lots of examples strategy.",
                                   "_translations": {
                                     "value": {}
                                   },
@@ -282,7 +324,7 @@
                                 {
                                   "type": "text",
                                   "name": "example_text_for_strategy_5",
-                                  "value": "Do Nim example",
+                                  "value": "Sometimes one problem uses structures or rules that are similar to a problem you have already figured out. In that case, we can use our understand of the old problem to save work with the new one.\n\n**Example: Nim with Addition:** Suppose you want to understand the version of Nim where you start at 0, add one or two things each time, and the person who brings the total number of things to ten wins.\n\nThis is just like the subtraction version of Nim described earlier, which we’ve already analyzed. If you think of the ten things sitting off to the side ready to be added to the pile, each time you add one or two to the adding pile you are removing one or two from the pile of ten – the adding pile will reach ten exactly when the subtracting pile reaches zero!",
                                   "_translations": {
                                     "value": {}
                                   },
@@ -312,12 +354,33 @@
                               "rows": [
                                 {
                                   "type": "text",
-                                  "name": "example_text_for_strategy_6",
-                                  "value": "These parts often dictate what happens in the rest of the problem and are often easier starting points.",
+                                  "name": "example_text_for_strategy_6a",
+                                  "value": "Extreme parts often dictate what happens in the rest of the problem and are often easier starting points.",
                                   "_translations": {
                                     "value": {}
                                   },
-                                  "_nested_name": "dg_info.accordion_for_problem_solving.accord_strategies.dg_prob_solv_strategies.accordion_for_strategies.accord_strategies_6.dg_strategy_6.example_text_for_strategy_6"
+                                  "_nested_name": "dg_info.accordion_for_problem_solving.accord_strategies.dg_prob_solv_strategies.accordion_for_strategies.accord_strategies_6.dg_strategy_6.example_text_for_strategy_6a"
+                                },
+                                {
+                                  "type": "image",
+                                  "name": "sum_groups_illustratioin",
+                                  "value": "ESMIll/ESMSumGroups10.svg",
+                                  "_translations": {
+                                    "value": {}
+                                  },
+                                  "style_list": [
+                                    "max-width: 160px"
+                                  ],
+                                  "_nested_name": "dg_info.accordion_for_problem_solving.accord_strategies.dg_prob_solv_strategies.accordion_for_strategies.accord_strategies_6.dg_strategy_6.sum_groups_illustratioin"
+                                },
+                                {
+                                  "type": "text",
+                                  "name": "example_text_for_strategy_6b",
+                                  "value": "The challenge here is to find pairs and triplets of connecting squares that add up to 10, and to fill the whole square with such groups. What are the extreme points here? The smallest and largest numbers are very restricted in how they can match, so those are good places to start. Also, the corners (and to a lesser extent the edges) are restricted. Once you’ve determined what happens with the 1s, 2s, 8s, and 9s, the rest of this puzzle goes very quickly.",
+                                  "_translations": {
+                                    "value": {}
+                                  },
+                                  "_nested_name": "dg_info.accordion_for_problem_solving.accord_strategies.dg_prob_solv_strategies.accordion_for_strategies.accord_strategies_6.dg_strategy_6.example_text_for_strategy_6b"
                                 }
                               ],
                               "_nested_name": "dg_info.accordion_for_problem_solving.accord_strategies.dg_prob_solv_strategies.accordion_for_strategies.accord_strategies_6.dg_strategy_6"
@@ -343,12 +406,33 @@
                               "rows": [
                                 {
                                   "type": "text",
-                                  "name": "example_text_for_strategy_7",
-                                  "value": "Do treasure map example.",
+                                  "name": "example_text_for_strategy_7a",
+                                  "value": "This strategy is particularly effective in many geometry proofs, but those problems are more advanced than the material in this app.\n\n**Puzzle – Treasure Hunt:** Even for a puzzle as small as this, there can be many choices to consider if we only start at the beginning and go forward. Save work by combining going forward with going backward from the goal.",
                                   "_translations": {
                                     "value": {}
                                   },
-                                  "_nested_name": "dg_info.accordion_for_problem_solving.accord_strategies.dg_prob_solv_strategies.accordion_for_strategies.accord_strategies_7.dg_strategy_7.example_text_for_strategy_7"
+                                  "_nested_name": "dg_info.accordion_for_problem_solving.accord_strategies.dg_prob_solv_strategies.accordion_for_strategies.accord_strategies_7.dg_strategy_7.example_text_for_strategy_7a"
+                                },
+                                {
+                                  "type": "image",
+                                  "name": "treasure_hunt_puzzle",
+                                  "value": "ESMIll/ESMTreasureMap2.svg",
+                                  "_translations": {
+                                    "value": {}
+                                  },
+                                  "style_list": [
+                                    "max-width: 160px"
+                                  ],
+                                  "_nested_name": "dg_info.accordion_for_problem_solving.accord_strategies.dg_prob_solv_strategies.accordion_for_strategies.accord_strategies_7.dg_strategy_7.treasure_hunt_puzzle"
+                                },
+                                {
+                                  "type": "text",
+                                  "name": "example_text_for_strategy_7b",
+                                  "value": "Going forward from the Start we can go to either the upper right corner or the lower left corner. From those corners there are four places to consider, which begins to be a lot.\n\nWhich squares can end at the $$ goal square? There is only one square that can land there, which is the “1” in the square next to the $$. Continuing, there is only one square that can reach that “1,” and that is the “2” two squares above the \"1.\" It will not be long before this backtracking reaches one of the four going-forward possibilities found earlier, and then you are done.",
+                                  "_translations": {
+                                    "value": {}
+                                  },
+                                  "_nested_name": "dg_info.accordion_for_problem_solving.accord_strategies.dg_prob_solv_strategies.accordion_for_strategies.accord_strategies_7.dg_strategy_7.example_text_for_strategy_7b"
                                 }
                               ],
                               "_nested_name": "dg_info.accordion_for_problem_solving.accord_strategies.dg_prob_solv_strategies.accordion_for_strategies.accord_strategies_7.dg_strategy_7"
