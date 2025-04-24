@@ -1,0 +1,427 @@
+{
+  "flow_type": "template",
+  "flow_name": "esm_dot_talks_structured",
+  "status": "released",
+  "rows": [
+    {
+      "type": "display_group",
+      "name": "dg_top_of_page",
+      "rows": [
+        {
+          "type": "title",
+          "name": "spacer",
+          "value": "Dot Talks – Structured",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "flex:1"
+          ],
+          "_nested_name": "dg_top_of_page.spacer"
+        }
+      ],
+      "_nested_name": "dg_top_of_page"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_info",
+      "rows": [
+        {
+          "type": "text",
+          "name": "help_text",
+          "value": "These routines have collections of dots in different patterns. They develop counting, subitizing, unitizing, and Counting On skills.",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "icon_src": "help",
+            "style": "navigation"
+          },
+          "_nested_name": "dg_info.help_text"
+        }
+      ],
+      "_nested_name": "dg_info"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_advice",
+      "parameter_list": {
+        "style": "column"
+      },
+      "rows": [
+        {
+          "type": "accordion",
+          "name": "accordion_for_dot_talk_categories",
+          "parameter_list": {
+            "open_multiple": "TRUE"
+          },
+          "rows": [
+            {
+              "type": "accordion_section",
+              "name": "accord_advice",
+              "value": "Directions and Observations",
+              "parameter_list": {
+                "text_align": "center",
+                "style": "large emphasised"
+              },
+              "rows": [
+                {
+                  "type": "display_group",
+                  "name": "dg_advice_accord",
+                  "parameter_list": {
+                    "style": "column"
+                  },
+                  "rows": [
+                    {
+                      "type": "text",
+                      "name": "advice_text",
+                      "value": "**Subitizing** is the ability to \"instantly\" see the size of small groups. It builds quantity recognition and saves time while counting. Recognizing small groups also starts unitizing those groups. \n\n**Unitizing** is seeing a group of items as a single new kind of thing. It is an important developmental step and may take time. Unitizing groups of 10 is central to understanding place value. It also helps with Counting On and beginning addition.\n\nA good alternative to dot cards is dot plates. Use paper plates with dots drawn on them or with cut out dots placed on them.",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "parameter_list": {
+                        "icon_src": "help",
+                        "style": "navigation"
+                      },
+                      "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.advice_text"
+                    }
+                  ],
+                  "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord"
+                }
+              ],
+              "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice"
+            },
+            {
+              "type": "accordion_section",
+              "name": "accord_topics",
+              "value": "Topics",
+              "parameter_list": {
+                "text_align": "center",
+                "style": "large emphasised"
+              },
+              "rows": [
+                {
+                  "type": "display_group",
+                  "name": "dg_topics_accord",
+                  "parameter_list": {
+                    "style": "column"
+                  },
+                  "rows": [
+                    {
+                      "type": "text",
+                      "name": "topics_text",
+                      "value": "This drop down would describe how this fits into teaching goals. For example, how this helps with Counting, Counting On, Addition, and Subtraction. We need to figure out how this relates to \"Directions and Observations.\"\n\nAlso, instead of using accordions for some of this, we could have a system similar to the red round question mark buttons. The existing question mark buttons signal that they will give you guidance on how to use the app. Perhaps we could have additional round help buttons, with different icons, that would give technical information in a pop-up window. If we establish this as a standard throughout the app, it might simplify some things and save some space as well.",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "parameter_list": {
+                        "icon_src": "help",
+                        "style": "navigation"
+                      },
+                      "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_topics.dg_topics_accord.topics_text"
+                    }
+                  ],
+                  "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_topics.dg_topics_accord"
+                }
+              ],
+              "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_topics"
+            }
+          ],
+          "_nested_name": "dg_advice.accordion_for_dot_talk_categories"
+        }
+      ],
+      "_nested_name": "dg_advice"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_all_dot_talks",
+      "parameter_list": {
+        "style": "column"
+      },
+      "rows": [
+        {
+          "type": "text",
+          "name": "example__intro",
+          "value": "Here are categories of dot talks.",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "dg_all_dot_talks.example__intro"
+        },
+        {
+          "type": "accordion",
+          "name": "accordion_for_dot_talk_categories",
+          "parameter_list": {
+            "open_multiple": "TRUE"
+          },
+          "rows": [
+            {
+              "type": "items",
+              "name": "dot_talk_accordions",
+              "value": "@data.esm_dot_talks_data_list",
+              "parameter_list": {
+                "filter": "@item.type==\"structured\""
+              },
+              "rows": [
+                {
+                  "type": "accordion_section",
+                  "name": "accord_@item.id",
+                  "value": "@item.name",
+                  "parameter_list": {
+                    "text_align": "center",
+                    "style": "large emphasised"
+                  },
+                  "rows": [
+                    {
+                      "type": "display_group",
+                      "name": "dg_@item.id",
+                      "parameter_list": {
+                        "style": "column"
+                      },
+                      "rows": [
+                        {
+                          "name": "content_ptr",
+                          "value": "data.esm_dot_talks_data_list.@item.id",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "type": "set_variable",
+                          "_nested_name": "dg_all_dot_talks.accordion_for_dot_talk_categories.dot_talk_accordions.accord_@item.id.dg_@item.id.content_ptr",
+                          "_dynamicFields": {
+                            "value": [
+                              {
+                                "fullExpression": "data.esm_dot_talks_data_list.@item.id",
+                                "matchedExpression": "@item.id",
+                                "type": "item",
+                                "fieldName": "id"
+                              }
+                            ],
+                            "_nested_name": [
+                              {
+                                "fullExpression": "dg_all_dot_talks.accordion_for_dot_talk_categories.dot_talk_accordions.accord_@item.id.dg_@item.id.content_ptr",
+                                "matchedExpression": "@item.id.dg_",
+                                "type": "item",
+                                "fieldName": "id"
+                              },
+                              {
+                                "fullExpression": "dg_all_dot_talks.accordion_for_dot_talk_categories.dot_talk_accordions.accord_@item.id.dg_@item.id.content_ptr",
+                                "matchedExpression": "@item.id.content_ptr",
+                                "type": "item",
+                                "fieldName": "id"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@item.id": [
+                              "value"
+                            ],
+                            "@item.id.dg_": [
+                              "_nested_name"
+                            ],
+                            "@item.id.content_ptr": [
+                              "_nested_name"
+                            ]
+                          }
+                        },
+                        {
+                          "type": "template",
+                          "name": "dot_talk_body_maker",
+                          "value": "esm_page_viewer",
+                          "rows": [
+                            {
+                              "name": "esm_content_ptr",
+                              "value": "@@local.content_ptr",
+                              "_translations": {
+                                "value": {}
+                              },
+                              "type": "set_variable",
+                              "_nested_name": "dg_all_dot_talks.accordion_for_dot_talk_categories.dot_talk_accordions.accord_@item.id.dg_@item.id.dot_talk_body_maker.esm_content_ptr",
+                              "_dynamicFields": {
+                                "value": [
+                                  {
+                                    "fullExpression": "@@local.content_ptr",
+                                    "matchedExpression": "@local.content_ptr",
+                                    "type": "local",
+                                    "fieldName": "content_ptr"
+                                  }
+                                ],
+                                "_nested_name": [
+                                  {
+                                    "fullExpression": "dg_all_dot_talks.accordion_for_dot_talk_categories.dot_talk_accordions.accord_@item.id.dg_@item.id.dot_talk_body_maker.esm_content_ptr",
+                                    "matchedExpression": "@item.id.dg_",
+                                    "type": "item",
+                                    "fieldName": "id"
+                                  },
+                                  {
+                                    "fullExpression": "dg_all_dot_talks.accordion_for_dot_talk_categories.dot_talk_accordions.accord_@item.id.dg_@item.id.dot_talk_body_maker.esm_content_ptr",
+                                    "matchedExpression": "@item.id.dot_talk_body_maker.esm_content_ptr",
+                                    "type": "item",
+                                    "fieldName": "id"
+                                  }
+                                ]
+                              },
+                              "_dynamicDependencies": {
+                                "@local.content_ptr": [
+                                  "value"
+                                ],
+                                "@item.id.dg_": [
+                                  "_nested_name"
+                                ],
+                                "@item.id.dot_talk_body_maker.esm_content_ptr": [
+                                  "_nested_name"
+                                ]
+                              }
+                            }
+                          ],
+                          "_nested_name": "dg_all_dot_talks.accordion_for_dot_talk_categories.dot_talk_accordions.accord_@item.id.dg_@item.id.dot_talk_body_maker",
+                          "_dynamicFields": {
+                            "_nested_name": [
+                              {
+                                "fullExpression": "dg_all_dot_talks.accordion_for_dot_talk_categories.dot_talk_accordions.accord_@item.id.dg_@item.id.dot_talk_body_maker",
+                                "matchedExpression": "@item.id.dg_",
+                                "type": "item",
+                                "fieldName": "id"
+                              },
+                              {
+                                "fullExpression": "dg_all_dot_talks.accordion_for_dot_talk_categories.dot_talk_accordions.accord_@item.id.dg_@item.id.dot_talk_body_maker",
+                                "matchedExpression": "@item.id.dot_talk_body_maker",
+                                "type": "item",
+                                "fieldName": "id"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@item.id.dg_": [
+                              "_nested_name"
+                            ],
+                            "@item.id.dot_talk_body_maker": [
+                              "_nested_name"
+                            ]
+                          }
+                        }
+                      ],
+                      "_nested_name": "dg_all_dot_talks.accordion_for_dot_talk_categories.dot_talk_accordions.accord_@item.id.dg_@item.id",
+                      "_dynamicFields": {
+                        "name": [
+                          {
+                            "fullExpression": "dg_@item.id",
+                            "matchedExpression": "@item.id",
+                            "type": "item",
+                            "fieldName": "id"
+                          }
+                        ],
+                        "_nested_name": [
+                          {
+                            "fullExpression": "dg_all_dot_talks.accordion_for_dot_talk_categories.dot_talk_accordions.accord_@item.id.dg_@item.id",
+                            "matchedExpression": "@item.id.dg_",
+                            "type": "item",
+                            "fieldName": "id"
+                          },
+                          {
+                            "fullExpression": "dg_all_dot_talks.accordion_for_dot_talk_categories.dot_talk_accordions.accord_@item.id.dg_@item.id",
+                            "matchedExpression": "@item.id",
+                            "type": "item",
+                            "fieldName": "id"
+                          }
+                        ]
+                      },
+                      "_dynamicDependencies": {
+                        "@item.id": [
+                          "name",
+                          "_nested_name"
+                        ],
+                        "@item.id.dg_": [
+                          "_nested_name"
+                        ]
+                      }
+                    }
+                  ],
+                  "_nested_name": "dg_all_dot_talks.accordion_for_dot_talk_categories.dot_talk_accordions.accord_@item.id",
+                  "_dynamicFields": {
+                    "name": [
+                      {
+                        "fullExpression": "accord_@item.id",
+                        "matchedExpression": "@item.id",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ],
+                    "value": [
+                      {
+                        "fullExpression": "@item.name",
+                        "matchedExpression": "@item.name",
+                        "type": "item",
+                        "fieldName": "name"
+                      }
+                    ],
+                    "_nested_name": [
+                      {
+                        "fullExpression": "dg_all_dot_talks.accordion_for_dot_talk_categories.dot_talk_accordions.accord_@item.id",
+                        "matchedExpression": "@item.id",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@item.id": [
+                      "name",
+                      "_nested_name"
+                    ],
+                    "@item.name": [
+                      "value"
+                    ]
+                  }
+                }
+              ],
+              "_nested_name": "dg_all_dot_talks.accordion_for_dot_talk_categories.dot_talk_accordions",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@data.esm_dot_talks_data_list",
+                    "matchedExpression": "@data.esm_dot_talks_data_list",
+                    "type": "data",
+                    "fieldName": "esm_dot_talks_data_list"
+                  }
+                ],
+                "parameter_list": {
+                  "filter": [
+                    {
+                      "fullExpression": "@item.type==\"structured\"",
+                      "matchedExpression": "@item.type",
+                      "type": "item",
+                      "fieldName": "type"
+                    }
+                  ]
+                }
+              },
+              "_dynamicDependencies": {
+                "@data.esm_dot_talks_data_list": [
+                  "value"
+                ],
+                "@item.type": [
+                  "parameter_list.filter"
+                ]
+              }
+            }
+          ],
+          "_nested_name": "dg_all_dot_talks.accordion_for_dot_talk_categories"
+        }
+      ],
+      "_nested_name": "dg_all_dot_talks"
+    },
+    {
+      "type": "display_group",
+      "name": "fake_group",
+      "rows": [
+        {
+          "type": "text",
+          "name": "spacer",
+          "_nested_name": "fake_group.spacer"
+        }
+      ],
+      "_nested_name": "fake_group"
+    }
+  ],
+  "_xlsxPath": "EFM_routines_high_level_sheets.xlsx"
+}
