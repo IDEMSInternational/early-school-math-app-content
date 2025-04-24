@@ -6,6 +6,7 @@
   "rows": [
     {
       "id": "esm_dt_1_to_10",
+      "type": "beginning",
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMDots1-2.svg",
       "block1_illust_max_size": "270px",
@@ -47,6 +48,7 @@
     },
     {
       "id": "esm_dt_one_more_under_10",
+      "type": "beginning",
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMDots2Plus1.svg",
       "block1_illust_max_size": "270px",
@@ -79,6 +81,7 @@
     },
     {
       "id": "esm_dt_two_more_under_10",
+      "type": "beginning",
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMDots2And2.svg",
       "block1_illust_max_size": "270px",
@@ -110,7 +113,41 @@
       "block1_text": "Use a second color to emphasize the \"two more\" aspect of these. When adding new dots outside the original pattern, put them on the right side of the diagram so students will get used to starting with the larger number when doing addition."
     },
     {
+      "id": "esm_dt_random_dot_patterns",
+      "type": "beginning",
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMDotsRandom1.svg",
+      "block1_illust_max_size": "270px",
+      "block2_type": "all_illust",
+      "block2_illust": "ESMIll/ESMDotsRandom2.svg",
+      "block2_illust_max_size": "270px",
+      "block3_type": "all_illust",
+      "block3_illust": "ESMIll/ESMDotsRandom3.svg",
+      "block3_illust_max_size": "270px",
+      "block4_type": "all_illust",
+      "block4_illust": "ESMIll/ESMDotsRandom4.svg",
+      "block4_illust_max_size": "270px",
+      "block5_type": "all_illust",
+      "block5_illust": "ESMIll/ESMDotsRandom5.svg",
+      "block5_illust_max_size": "270px",
+      "name": "Random Dot Patterns",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Random Dot Patterns"
+        },
+        "block1_text": {
+          "eng": "Encourage your students to find familiar patterns within these bigger patterns, and to use those to find many different ways to count the dots."
+        }
+      },
+      "block1_text": "Encourage your students to find familiar patterns within these bigger patterns, and to use those to find many different ways to count the dots."
+    },
+    {
       "id": "esm_dt_small_doubles",
+      "type": "structured",
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMDots1Plus1.svg",
       "block1_illust_max_size": "270px",
@@ -143,6 +180,7 @@
     },
     {
       "id": "esm_dt_one_more_small_doubles",
+      "type": "structured",
       "block1_type": "all_illust",
       "block1_illust": "ESMIll/ESMDotsDouble1Plus1.svg",
       "block1_illust_max_size": "270px",
@@ -170,6 +208,7 @@
     },
     {
       "id": "esm_dt_combinations_of_10",
+      "type": "structured",
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMDotsCombosOf10-1-9.svg",
       "block1_illust_max_size": "300px",
@@ -202,6 +241,7 @@
     },
     {
       "id": "esm_dt_10_and_some_more",
+      "type": "structured",
       "block1_type": "all_illust",
       "block1_illust": "ESMIll/ESMDots10AndMore11-12.svg",
       "block1_illust_max_size": "270px",
@@ -229,6 +269,7 @@
     },
     {
       "id": "esm_dt_larger_doubles_to_20",
+      "type": "structured",
       "block1_type": "all_illust",
       "block1_illust": "ESMIll/ESMDotsDoubles5.svg",
       "block1_illust_max_size": "270px",
@@ -258,39 +299,8 @@
       }
     },
     {
-      "id": "esm_dt_random_dot_patterns",
-      "block1_type": "illust_below",
-      "block1_illust": "ESMIll/ESMDotsRandom1.svg",
-      "block1_illust_max_size": "270px",
-      "block2_type": "all_illust",
-      "block2_illust": "ESMIll/ESMDotsRandom2.svg",
-      "block2_illust_max_size": "270px",
-      "block3_type": "all_illust",
-      "block3_illust": "ESMIll/ESMDotsRandom3.svg",
-      "block3_illust_max_size": "270px",
-      "block4_type": "all_illust",
-      "block4_illust": "ESMIll/ESMDotsRandom4.svg",
-      "block4_illust_max_size": "270px",
-      "block5_type": "all_illust",
-      "block5_illust": "ESMIll/ESMDotsRandom5.svg",
-      "block5_illust_max_size": "270px",
-      "name": "Random Dot Patterns",
-      "_translations": {
-        "name": {},
-        "block1_text": {}
-      },
-      "_translatedFields": {
-        "name": {
-          "eng": "Random Dot Patterns"
-        },
-        "block1_text": {
-          "eng": "Encourage your students to find familiar patterns within these bigger patterns, and to use those to find many different ways to count the dots."
-        }
-      },
-      "block1_text": "Encourage your students to find familiar patterns within these bigger patterns, and to use those to find many different ways to count the dots."
-    },
-    {
       "id": "esm_dt_one_or_two_more_10_to_20",
+      "type": "structured",
       "block1_type": "all_illust",
       "block1_illust": "ESMIll/ESMDots10And1or2-11-13.svg",
       "block1_illust_max_size": "270px",
@@ -318,6 +328,7 @@
     },
     {
       "id": "esm_dt_making_10s_addition_strategy",
+      "type": "structured",
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMDotsMaking10-9-6.svg",
       "block1_illust_max_size": "300px",

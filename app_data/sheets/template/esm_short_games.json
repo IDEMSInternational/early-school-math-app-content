@@ -1,0 +1,95 @@
+{
+  "flow_type": "template",
+  "flow_name": "esm_short_games",
+  "status": "released",
+  "rows": [
+    {
+      "type": "display_group",
+      "name": "dg_top_of_page",
+      "rows": [
+        {
+          "type": "title",
+          "name": "spacer",
+          "value": "Short Math Games",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "flex:1"
+          ],
+          "_nested_name": "dg_top_of_page.spacer"
+        }
+      ],
+      "_nested_name": "dg_top_of_page"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_info",
+      "parameter_list": {
+        "style": "column"
+      },
+      "rows": [
+        {
+          "type": "text",
+          "name": "intro_text",
+          "value": "These games take just a few minutes, and many are active. Learn more about them by selecting the button below, then selecting \"Breaks\" and deselecting \"All.\"",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "dg_info.intro_text"
+        },
+        {
+          "type": "button",
+          "name": "button_to_games",
+          "value": "Go To Games",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "go_to",
+              "args": [
+                "efm_ga_start"
+              ],
+              "_raw": "click | go_to: efm_ga_start",
+              "_cleaned": "click | go_to: efm_ga_start"
+            }
+          ],
+          "parameter_list": {
+            "style": "short",
+            "text_align": "center"
+          },
+          "_nested_name": "dg_info.button_to_games"
+        },
+        {
+          "type": "text",
+          "name": "help_text",
+          "value": "* **Counterexamples** – Someone declares a statement and others find a counterexample to it.\n* **Follow the Leader** – A leader demonstrates a pattern and others repeat it.\n* **Dots and Boxes** – 2-players - The players attempt to make the boxes in a grid (written).\n* **High Fives and More** – Students give the right number of high fives to other students.\n* **Nim 1-2** – 2-player or groups – Use subtraction or addition of 1 and 2 (written or verbal).\n* **Stand Up / Sit Down** – Students stand up or sit down depending on whether the leader gives an equivalent expression to the target number.",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "icon_src": "help",
+            "style": "navigation"
+          },
+          "_nested_name": "dg_info.help_text"
+        }
+      ],
+      "_nested_name": "dg_info"
+    },
+    {
+      "type": "display_group",
+      "name": "fake_group",
+      "rows": [
+        {
+          "type": "text",
+          "name": "spacer",
+          "_nested_name": "fake_group.spacer"
+        }
+      ],
+      "_nested_name": "fake_group"
+    }
+  ],
+  "_xlsxPath": "EFM_routines_high_level_sheets.xlsx"
+}
