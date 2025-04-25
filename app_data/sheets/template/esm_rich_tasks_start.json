@@ -180,10 +180,10 @@
               "trigger": "click",
               "action_id": "go_to",
               "args": [
-                "esm_rt_open_ended"
+                "esm_rt_open_ended_tasks"
               ],
-              "_raw": "click | go_to: esm_rt_open_ended",
-              "_cleaned": "click | go_to: esm_rt_open_ended"
+              "_raw": "click | go_to: esm_rt_open_ended_tasks",
+              "_cleaned": "click | go_to: esm_rt_open_ended_tasks"
             }
           ],
           "parameter_list": {
@@ -194,8 +194,8 @@
         },
         {
           "type": "button",
-          "name": "button_thinking_mathematically",
-          "value": "Thinking Mathematically Tasks",
+          "name": "button_ps_tasks",
+          "value": "Problem Solving Tasks",
           "_translations": {
             "value": {}
           },
@@ -204,17 +204,17 @@
               "trigger": "click",
               "action_id": "go_to",
               "args": [
-                "esm_rt_think_math"
+                "esm_rt_ps_tasks"
               ],
-              "_raw": "click | go_to: esm_rt_think_math",
-              "_cleaned": "click | go_to: esm_rt_think_math"
+              "_raw": "click | go_to: esm_rt_ps_tasks",
+              "_cleaned": "click | go_to: esm_rt_ps_tasks"
             }
           ],
           "parameter_list": {
             "style": "short",
             "text_align": "center"
           },
-          "_nested_name": "dg_info.button_thinking_mathematically"
+          "_nested_name": "dg_info.button_ps_tasks"
         },
         {
           "type": "button",
