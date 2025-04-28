@@ -125,7 +125,7 @@
                   "rows": [
                     {
                       "name": "intro_strategies_text",
-                      "value": "There are hundreds of problem solving strategies. However, among those are a few general strategies that will serve you and your students well in a great many circumstances. Early introduction and repeated explicitly exposure will build these into lifelong tools for your students.",
+                      "value": "There are many problem solving strategies. Among those are a few general strategies that will serve you and your students well in a great many circumstances. Early introduction and repeated explicitly exposure will build these into lifelong tools for your students.",
                       "_translations": {
                         "value": {}
                       },
@@ -158,7 +158,7 @@
                                 {
                                   "type": "text",
                                   "name": "example_text_for_strategy_1a",
-                                  "value": "**Overview:** Doing lots of examples and variations can open your eyes to things easily missed in the original problem statements. One example is often not enough to see the mechanisms at play in a puzzle. It’s too easy to get distracted by unimportant details in that particular situation. By looking at many examples, patterns emerge and common characteristics that are crucial start to stand out.\n\nA fun aspect of playing with examples and variations is that they may lead you to ask new questions to explore.\n\n**Do many examples and look for patterns:** Describe Bridges of Königsberg problem and using diagrams.",
+                                  "value": "**Overview:** Doing lots of examples and variations can open your eyes to things easily missed in the original problem. One example is often not enough to see the mechanisms at play in a puzzle. It’s too easy to get distracted by unimportant details in that particular situation. By looking at many examples, patterns emerge and common characteristics that are crucial start to stand out.\n\nA fun aspect of playing with examples and variations is that they may lead you to ask new questions to explore.\n\n**Do many examples and look for patterns:**\n\n**Example – Bridges of Königsberg:** The challenge in this puzzle is to find a parade route that will travel exactly once across each of the seven bridges in this diagram. A little experimentation will quickly convince you that it is impossible, but how do you understand and prove it?",
                                   "_translations": {
                                     "value": {}
                                   },
@@ -200,7 +200,7 @@
                                 {
                                   "type": "text",
                                   "name": "example_text_for_strategy_1c",
-                                  "value": "**Do simipler versions of the problem and look for patterns:**\n\n**Example - Nim:** There are many versions of the game of Nim. Suppose you have ten things and you and your opponent are allowed to remove 1 or 2 things from the pile on each turn. The player who removes the last piece wins. Is it better to go first or second, and what is your strategy?\n\nTen is too big a number for seeing the strategy, so let’s reduce it to create simpler versions of the problem. When I asked my high school seniors to do this, they would choose numbers like 3 or 5. If it provides information, always start with the simplest version (1 in this case) and work your way up. Write down what happens if it’s your turn and there are 1, 2, 3, 4, or 5 things in a pile. In a few seconds  the pattern emerges and you have conquered this game.",
+                                  "value": "**Do simipler versions of the problem and look for patterns:**\n\n**Example - Nim:** Suppose you have ten things and you and your opponent are allowed to remove 1 or 2 things from the pile on each turn. The player who removes the last piece wins. Is it better to go first or second, and what is your strategy?\n\nTen is too big a number for seeing the strategy, so let’s reduce it to create simpler versions of the problem. When I asked my high school seniors to do this, they would choose numbers like 3 or 5. If it provides information, always start with the simplest version (1 in this case) and work your way up. Write down what happens if it’s your turn and there are 1, 2, 3, 4, or 5 things in a pile. In a few seconds  the pattern emerges and you have conquered this game.",
                                   "_translations": {
                                     "value": {}
                                   },
@@ -261,12 +261,12 @@
                               "rows": [
                                 {
                                   "type": "text",
-                                  "name": "example_text_for_strategy_3",
-                                  "value": "There is a tendency to consider Guess and Check as something an unintelligent person does when they have no ideas. Those people are needlessly losing the use of a very powerful strategy.\n\n**Puzzle:** Suppose a farmer has a total of 200 chickens and cows. Weirdly, the farmer counts the legs and notices there are 680 legs. How many of each animal are there?\n\nIf there were 200 cows, there would be 800 legs, and if there were 200 chickens, there would be 400 legs. Let’s guess 100 of each animal. That would give 600 legs. To get more legs, we need more cows. Let’s guess 150 cows – this gives 700 legs. Reduce the cows to 140 and you get exactly 680 legs. \n\nThe thoughtful person using Guess and Check here would notice that the number of legs increases by twice as much as the increase in the number of cows, and would then use that information to improve future trial numbers. If you are watching and thinking as you do Guess and Check, it has many of the strengths of using the lots of examples strategy.",
+                                  "value": "Some consider Guess and Check as something an unintelligent person does when they have no ideas. That attitude needlessly wastes the use of a very powerful strategy.\n\n**Puzzle:** Suppose a farmer has a total of 200 chickens and cows. Weirdly, the farmer counts the legs and notices there are 680 legs. How many of each animal are there?\n\nIf there were 200 cows, there would be 800 legs, and if there were 200 chickens, there would be 400 legs. Let’s guess 100 of each animal. That would give 600 legs. To get more legs, we need more cows. Let’s guess 150 cows – this gives 700 legs. Reduce the cows to 140 and you get exactly 680 legs. \n\nThe thoughtful person using Guess and Check here would notice that the number of legs increases by twice as much as the increase in the number of cows, and would then use that information to improve future trial numbers. If you are watching and thinking as you do Guess and Check, it has many of the strengths of using the lots of examples strategy.",
                                   "_translations": {
                                     "value": {}
                                   },
-                                  "_nested_name": "dg_info.accordion_for_problem_solving.accord_strategies.dg_prob_solv_strategies.accordion_for_strategies.accord_strategies_3.dg_strategy_3.example_text_for_strategy_3"
+                                  "name": "text_1",
+                                  "_nested_name": "dg_info.accordion_for_problem_solving.accord_strategies.dg_prob_solv_strategies.accordion_for_strategies.accord_strategies_3.dg_strategy_3.text_1"
                                 }
                               ],
                               "_nested_name": "dg_info.accordion_for_problem_solving.accord_strategies.dg_prob_solv_strategies.accordion_for_strategies.accord_strategies_3.dg_strategy_3"
@@ -293,7 +293,7 @@
                                 {
                                   "type": "text",
                                   "name": "example_text_for_strategy_4",
-                                  "value": "This may involve acting it out, or perhaps making a diagram or a model. Or it may involve making a table or list of the information organized in an easier to understand fashion",
+                                  "value": "This can be done in many ways. The most common is to organize the given information into a list, table, or graph. Sometimes it takes the form of an annotated drawing the captures the puzzle information and also conveys the activities in the puzzle. A less common form is to act out the problem in some physical way using objects or people.\n\nFor example, there are several puzzles involving flipping over coins. To get a better understanding of this puzzle, you might set up a collection of coins and watch what happens when you flip the coins.\n\nSuppose you have a problem such as: You are given two apples, then you are given 4 more apples. When some apples are taken away you are left with 3 apples. How many apples were taken away. For a student struggling to understand the problem, they can use some collection of small objects and act out the actions in the problem.\n\nIf the problem involves collecting apples from two places and then leaving some at a friends house, it may be helpful to draw a simple diagram with counts of apples at each location.",
                                   "_translations": {
                                     "value": {}
                                   },
