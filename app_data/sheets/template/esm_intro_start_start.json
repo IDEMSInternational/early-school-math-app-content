@@ -1,0 +1,24 @@
+{
+  "flow_type": "template",
+  "flow_name": "esm_intro_start_start",
+  "status": "released",
+  "rows": [
+    {
+      "type": "display_group",
+      "name": "dg_help",
+      "rows": [
+        {
+          "type": "text",
+          "name": "intro_text",
+          "value": "This is an area for first-time users. It will have some general advice for using the app. It will also have our favorite examples so that new users will see what wonderful things this app offers and therefore want to continue using it.",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "dg_help.intro_text"
+        }
+      ],
+      "_nested_name": "dg_help"
+    }
+  ],
+  "_xlsxPath": "EFM_high_level_sheets.xlsx"
+}

@@ -1,0 +1,29 @@
+{
+  "flow_type": "tour",
+  "flow_name": "esm_intro_start_tour",
+  "status": "released",
+  "rows": [
+    {
+      "type": "step",
+      "title": "Introduction",
+      "_translations": {
+        "title": {},
+        "message_text": {}
+      },
+      "message_text": "This will be an introduction to using the app.",
+      "route": "template/esm_intro_start_start"
+    },
+    {
+      "type": "step",
+      "title": "Help",
+      "_translations": {
+        "title": {},
+        "message_text": {}
+      },
+      "message_text": "If you ever want to see this introduction again, just click on the question mark.",
+      "template_component_name": "dg_help",
+      "route": "template/esm_intro_start_start"
+    }
+  ],
+  "_xlsxPath": "EFM_tours.xlsx"
+}

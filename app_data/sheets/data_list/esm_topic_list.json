@@ -915,23 +915,24 @@
       "theme_id": "NPV_C20_",
       "strand_id": "NPV",
       "prev_topic_1": "NPV_C20_Count20",
+      "prev_topic_2": "NO_ASSD_PVto19",
       "glossary_count": 1,
       "glossary_1": "expanded form",
       "block1_type": "all_text",
-      "name": "Place Value to 20",
+      "name": "Expanded Notation Introduction",
       "_translations": {
         "name": {},
         "block1_text": {}
       },
       "_translatedFields": {
         "name": {
-          "eng": "Place Value to 20"
+          "eng": "Expanded Notation Introduction"
         },
         "block1_text": {
-          "eng": "**Expanded notation:** In the topic \"Quantities and Counting to 20,\" we used two ten frames, or made use of bundles of ten, to organize the counting and to make the quantities easier to understand. **Expanded Notation** does the same thing for written numbers. It is handy to introduce it now for understanding numbers between 10 and 20, and it will become an essential tool for breaking apart and understanding numbers above 100.\n\nExpanded notation takes the contribution of each digit of a number and isolates it. In the number 17, the one represents 10, so expand 17 as 10 + 7. Similarly, the expanded form of 276 is 200 + 70 + 6.\n\nExpanded notation is extremely useful for learning arithmetic operations with multi-digit numbers. This will be an important tool and it should be developed fully and practiced thoroughly."
+          "eng": "**Expanded notation:** In the topic \"Quantities and Counting to 20,\" we used two ten frames, or made use of bundles of ten, to organize the counting and to make the quantities easier to understand. Expanded Notation does the same thing for written numbers. It is handy to introduce it now for understanding numbers between 10 and 20, and it will become an essential tool for breaking apart and understanding numbers above 100.\n\n**Example:** Expanded notation takes the contribution of each digit of a number and isolates it. In the number 17, the one represents 10, so expand 17 as 10 + 7. Similarly, the expanded form of 276 is 200 + 70 + 6.\n\nExpanded notation is extremely useful for learning arithmetic operations with multi-digit numbers. This will be an important tool and it should be developed fully and practiced thoroughly."
         }
       },
-      "block1_text": "**Expanded notation:** In the topic \"Quantities and Counting to 20,\" we used two ten frames, or made use of bundles of ten, to organize the counting and to make the quantities easier to understand. **Expanded Notation** does the same thing for written numbers. It is handy to introduce it now for understanding numbers between 10 and 20, and it will become an essential tool for breaking apart and understanding numbers above 100.\n\nExpanded notation takes the contribution of each digit of a number and isolates it. In the number 17, the one represents 10, so expand 17 as 10 + 7. Similarly, the expanded form of 276 is 200 + 70 + 6.\n\nExpanded notation is extremely useful for learning arithmetic operations with multi-digit numbers. This will be an important tool and it should be developed fully and practiced thoroughly."
+      "block1_text": "**Expanded notation:** In the topic \"Quantities and Counting to 20,\" we used two ten frames, or made use of bundles of ten, to organize the counting and to make the quantities easier to understand. Expanded Notation does the same thing for written numbers. It is handy to introduce it now for understanding numbers between 10 and 20, and it will become an essential tool for breaking apart and understanding numbers above 100.\n\n**Example:** Expanded notation takes the contribution of each digit of a number and isolates it. In the number 17, the one represents 10, so expand 17 as 10 + 7. Similarly, the expanded form of 276 is 200 + 70 + 6.\n\nExpanded notation is extremely useful for learning arithmetic operations with multi-digit numbers. This will be an important tool and it should be developed fully and practiced thoroughly."
     },
     {
       "id": "NPV_C20_Comp20",
@@ -1393,6 +1394,7 @@
       "searching_for_this": false,
       "theme_id": "NO_ASSD_",
       "strand_id": "NO",
+      "prev_topic_text": "NPV_C20_PV20",
       "glossary_count": 3,
       "glossary_1": "place value",
       "glossary_2": "unitizing",
@@ -1596,26 +1598,291 @@
       "block1_text": "This is just a placeholder."
     },
     {
-      "id": "NO_MSD_P",
+      "id": "NO_MSD_Doubing",
       "searching_for_this": false,
       "theme_id": "NO_MSD_",
       "strand_id": "NO",
+      "prev_topic_1": "NO_AS10_AT",
       "glossary_count": 0,
       "block1_type": "all_text",
-      "name": "~~NO MSD Placeholder~~",
+      "name": "Doubling as Multiplying",
       "_translations": {
         "name": {},
         "block1_text": {}
       },
       "_translatedFields": {
         "name": {
-          "eng": "~~NO MSD Placeholder~~"
+          "eng": "Doubling as Multiplying"
         },
         "block1_text": {
-          "eng": "This is just a placeholder."
+          "eng": "Doubling is a natural entry point to multiplication. Mention even and odd numbers here?"
         }
       },
-      "block1_text": "This is just a placeholder."
+      "block1_text": "Doubling is a natural entry point to multiplication. Mention even and odd numbers here?"
+    },
+    {
+      "id": "NO_MSD_MultRep",
+      "searching_for_this": false,
+      "theme_id": "NO_MSD_",
+      "strand_id": "NO",
+      "glossary_count": 0,
+      "block1_type": "all_text",
+      "name": "Multiplication Representations",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Multiplication Representations"
+        },
+        "block1_text": {
+          "eng": "Arrays of dots and Rectangle areas are great representations for multiplication. The standard way to show multiplication, say 3 x 4, is to show 3 circled groups of 4."
+        }
+      },
+      "block1_text": "Arrays of dots and Rectangle areas are great representations for multiplication. The standard way to show multiplication, say 3 x 4, is to show 3 circled groups of 4."
+    },
+    {
+      "id": "NO_MSD_MultCommutes",
+      "searching_for_this": false,
+      "theme_id": "NO_MSD_",
+      "strand_id": "NO",
+      "glossary_count": 0,
+      "block1_type": "all_text",
+      "name": "Multiplication Commutes",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Multiplication Commutes"
+        },
+        "block1_text": {
+          "eng": "3x4 = 4x3. This is very helpful for cutting in half the number of multiplication facts that need to be learned. Knowing the name is not overly important for now. The array and rectangle area representations make it easy to see why it is true."
+        }
+      },
+      "block1_text": "3x4 = 4x3. This is very helpful for cutting in half the number of multiplication facts that need to be learned. Knowing the name is not overly important for now. The array and rectangle area representations make it easy to see why it is true."
+    },
+    {
+      "id": "NO_MSD_Skipping",
+      "searching_for_this": false,
+      "theme_id": "NO_MSD_",
+      "strand_id": "NO",
+      "glossary_count": 0,
+      "block1_type": "all_text",
+      "name": "Skip Counting",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Skip Counting"
+        },
+        "block1_text": {
+          "eng": "Skip Counting is multiplication and is also great mental addition practice. Do both skip counting from 0 and any multiple, and skip counting from any number. Also skip counting in both directions. Is this too much for one explanation?"
+        }
+      },
+      "block1_text": "Skip Counting is multiplication and is also great mental addition practice. Do both skip counting from 0 and any multiple, and skip counting from any number. Also skip counting in both directions. Is this too much for one explanation?"
+    },
+    {
+      "id": "NO_MSD_FiveTen",
+      "searching_for_this": false,
+      "theme_id": "NO_MSD_",
+      "strand_id": "NO",
+      "glossary_count": 0,
+      "block1_type": "all_text",
+      "name": "Multiplying by 5 and 10",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Multiplying by 5 and 10"
+        },
+        "block1_text": {
+          "eng": "Multiplying by 5 and 10 is relatively easy and builds comfort with the multiplication concept. Multiplying by 10 is also important for place value."
+        }
+      },
+      "block1_text": "Multiplying by 5 and 10 is relatively easy and builds comfort with the multiplication concept. Multiplying by 10 is also important for place value."
+    },
+    {
+      "id": "NO_MSD_ThreeFour",
+      "searching_for_this": false,
+      "theme_id": "NO_MSD_",
+      "strand_id": "NO",
+      "glossary_count": 0,
+      "block1_type": "all_text",
+      "name": "Multiplying by 3 and 4",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Multiplying by 3 and 4"
+        },
+        "block1_text": {
+          "eng": "Multiplying by 3 is doubling plus one more or it is skip counting by 3. Multiplying by 4 is doubling twice or skip counting or one less than multiplying by 5."
+        }
+      },
+      "block1_text": "Multiplying by 3 is doubling plus one more or it is skip counting by 3. Multiplying by 4 is doubling twice or skip counting or one less than multiplying by 5."
+    },
+    {
+      "id": "NO_MSD_OneMoreLess",
+      "searching_for_this": false,
+      "theme_id": "NO_MSD_",
+      "strand_id": "NO",
+      "glossary_count": 0,
+      "block1_type": "all_text",
+      "name": "Multiplying with One More or Less",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Multiplying with One More or Less"
+        },
+        "block1_text": {
+          "eng": "As seen for 3 and 4, using one more or one less can help learn new multiplication facts in terms of known ones."
+        }
+      },
+      "block1_text": "As seen for 3 and 4, using one more or one less can help learn new multiplication facts in terms of known ones."
+    },
+    {
+      "id": "NO_MSD_Squares",
+      "searching_for_this": false,
+      "theme_id": "NO_MSD_",
+      "strand_id": "NO",
+      "glossary_count": 0,
+      "block1_type": "all_text",
+      "name": "Squares",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Squares"
+        },
+        "block1_text": {
+          "eng": "Squares are like doubles - many children like learning them and they continue to build up the framework."
+        }
+      },
+      "block1_text": "Squares are like doubles - many children like learning them and they continue to build up the framework."
+    },
+    {
+      "id": "NO_MSD_AllSingles",
+      "searching_for_this": false,
+      "theme_id": "NO_MSD_",
+      "strand_id": "NO",
+      "glossary_count": 0,
+      "block1_type": "all_text",
+      "name": "Multiplying All Single Digits",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Multiplying All Single Digits"
+        },
+        "block1_text": {
+          "eng": "There are just a few multiplication facts not covered in earlier steps - 6 x 7, 6 x 8, and 7 x 8 - these can be mastered with some practice. At this point all the single digit multiplication facts are mastered. Do isolated practice to solidify any weak facts. Encourage multiple structural strategies (when possible) for learning and practicing the multiplication facts."
+        }
+      },
+      "block1_text": "There are just a few multiplication facts not covered in earlier steps - 6 x 7, 6 x 8, and 7 x 8 - these can be mastered with some practice. At this point all the single digit multiplication facts are mastered. Do isolated practice to solidify any weak facts. Encourage multiple structural strategies (when possible) for learning and practicing the multiplication facts."
+    },
+    {
+      "id": "NO_NT_PowExp",
+      "searching_for_this": false,
+      "theme_id": "NO_NT_",
+      "strand_id": "NO",
+      "glossary_count": 0,
+      "block1_type": "all_text",
+      "name": "Powers and Exponents",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Powers and Exponents"
+        },
+        "block1_text": {
+          "eng": "Introduce powers and exponents."
+        }
+      },
+      "block1_text": "Introduce powers and exponents."
+    },
+    {
+      "id": "NO_NT_Primes",
+      "searching_for_this": false,
+      "theme_id": "NO_NT_",
+      "strand_id": "NO",
+      "glossary_count": 0,
+      "block1_type": "all_text",
+      "name": "Unit, Primes, Composites",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Unit, Primes, Composites"
+        },
+        "block1_text": {
+          "eng": "Define that primes, composites, and that 1 is a unit. Use rectangles to motivate prime definition and factoring."
+        }
+      },
+      "block1_text": "Define that primes, composites, and that 1 is a unit. Use rectangles to motivate prime definition and factoring."
+    },
+    {
+      "id": "NO_NT_Sieve",
+      "searching_for_this": false,
+      "theme_id": "NO_NT_",
+      "strand_id": "NO",
+      "glossary_count": 0,
+      "block1_type": "all_text",
+      "name": "Sieve of Eratosthenes",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Sieve of Eratosthenes"
+        },
+        "block1_text": {
+          "eng": "Introduce the sieve, how it finds primes and composites, and the questions it can bring up."
+        }
+      },
+      "block1_text": "Introduce the sieve, how it finds primes and composites, and the questions it can bring up."
+    },
+    {
+      "id": "NO_NT_Factoring",
+      "searching_for_this": false,
+      "theme_id": "NO_NT_",
+      "strand_id": "NO",
+      "glossary_count": 0,
+      "block1_type": "all_text",
+      "name": "Prime Factorizations",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Prime Factorizations"
+        },
+        "block1_text": {
+          "eng": "Talk about priime factorizations and fundamental theorem. Introduce factor trees."
+        }
+      },
+      "block1_text": "Talk about priime factorizations and fundamental theorem. Introduce factor trees."
     },
     {
       "id": "FEP_EPW_NEP",
