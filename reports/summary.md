@@ -3,25 +3,25 @@
 
 | type | count |
 | --- | --- |
-| accordion | 29 |
-| accordion_section | 52 |
-| button | 81 |
+| accordion | 33 |
+| accordion_section | 57 |
+| button | 88 |
 | debug_toggle | 1 |
-| display_group | 248 |
+| display_group | 265 |
 | image | 33 |
-| items | 37 |
+| items | 40 |
 | qr_code | 1 |
 | radio_button_grid | 1 |
 | round_button | 9 |
 | select_text | 1 |
 | set_field | 9 |
-| set_variable | 537 |
+| set_variable | 547 |
 | simple_checkbox | 4 |
-| template | 66 |
-| text | 186 |
+| template | 69 |
+| text | 197 |
 | text_area | 2 |
 | tile_component | 3 |
-| title | 46 |
+| title | 48 |
 | toggle_bar | 11 |
 </details>
 
@@ -38,12 +38,12 @@
 | emit: set_language | 1 |
 | emit: uncompleted | 58 |
 | feedback | 11 |
-| go_to | 50 |
+| go_to | 56 |
 | go_to_url | 3 |
 | reset_app | 1 |
-| set_field | 61 |
+| set_field | 64 |
 | set_local | 9 |
-| start_tour | 17 |
+| start_tour | 18 |
 </details>
 
 <details open>
@@ -51,7 +51,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 40812 KB | 40.8 MB |
+| total | 40893 KB | 40.9 MB |
 | unused | 22001 KB | 22 MB |
 </details>
 
@@ -1451,23 +1451,23 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMPOWCTiedHandsAnswer.svg | 100.4 | 1 |
 | ESMIll/ESMPOWCTiedHandsChallenge.svg | 51.5 | 1 |
 | ESMIll/ESMParades1.svg | 17.5 | 1 |
-| ESMIll/ESMSplats1Color1Splat10-10.svg | 5 | 1 |
-| ESMIll/ESMSplats1Color1Splat5-2.svg | 4.1 | 1 |
-| ESMIll/ESMSplats1Color1Splat6-1.svg | 4.3 | 1 |
-| ESMIll/ESMSplats1Color1Splat8-0.svg | 4.6 | 1 |
-| ESMIll/ESMSplats1Color1Splat8-3.svg | 4.6 | 1 |
-| ESMIll/ESMSplats1Color1Splat9-5.svg | 4.8 | 1 |
-| ESMIll/ESMSplats1Color2-3Splat12-6.svg | 6.3 | 1 |
-| ESMIll/ESMSplats1Color2-3Splat14-5.svg | 7.8 | 1 |
-| ESMIll/ESMSplats1Color2-3Splat6-4.svg | 5.3 | 1 |
-| ESMIll/ESMSplats1Color2-3Splat7-1.svg | 5.5 | 1 |
-| ESMIll/ESMSplats1Color2-3Splat9-3.svg | 6.9 | 1 |
-| ESMIll/ESMSplats1Color2-3Splat9-5.svg | 5.8 | 1 |
-| ESMIll/ESMSplats2Color2-3Splat10-3.svg | 6 | 1 |
-| ESMIll/ESMSplats2Color2-3Splat5-1.svg | 5.2 | 1 |
-| ESMIll/ESMSplats2Color2-3Splat6-3.svg | 5.4 | 1 |
-| ESMIll/ESMSplats2Color2-3Splat7-2.svg | 5.5 | 1 |
-| ESMIll/ESMSplats2Color2-3Splat9-1.svg | 5.8 | 1 |
+| ESMIll/ESMSplats1Color1Splat10-10.svg | 9.2 | 1 |
+| ESMIll/ESMSplats1Color1Splat5-2.svg | 7.8 | 1 |
+| ESMIll/ESMSplats1Color1Splat6-1.svg | 7.9 | 1 |
+| ESMIll/ESMSplats1Color1Splat8-0.svg | 8.5 | 1 |
+| ESMIll/ESMSplats1Color1Splat8-3.svg | 8.5 | 1 |
+| ESMIll/ESMSplats1Color1Splat9-5.svg | 8.9 | 1 |
+| ESMIll/ESMSplats1Color2-3Splat12-6.svg | 11.9 | 1 |
+| ESMIll/ESMSplats1Color2-3Splat14-5.svg | 14.8 | 1 |
+| ESMIll/ESMSplats1Color2-3Splat6-4.svg | 9.9 | 1 |
+| ESMIll/ESMSplats1Color2-3Splat7-1.svg | 10.3 | 1 |
+| ESMIll/ESMSplats1Color2-3Splat9-3.svg | 13 | 1 |
+| ESMIll/ESMSplats1Color2-3Splat9-5.svg | 10.9 | 1 |
+| ESMIll/ESMSplats2Color2-3Splat10-3.svg | 11.3 | 1 |
+| ESMIll/ESMSplats2Color2-3Splat5-1.svg | 9.6 | 1 |
+| ESMIll/ESMSplats2Color2-3Splat6-3.svg | 9.9 | 1 |
+| ESMIll/ESMSplats2Color2-3Splat7-2.svg | 10.3 | 1 |
+| ESMIll/ESMSplats2Color2-3Splat9-1.svg | 10.9 | 1 |
 | ESMIll/ESMSplatsCombos5.svg | 6.7 | 1 |
 | ESMIll/ESMSumGroups10.svg | 47.3 | 1 |
 | ESMIll/ESMTreasureMap2.svg | 13.7 | 1 |
@@ -1478,12 +1478,12 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | type | subtype | total |
 | --- | --- | --- |
-| data_list |  | 70 |
+| data_list |  | 72 |
 | data_list | app_config_language_list | 1 |
 | data_list | lifecycle_actions | 1 |
 | generator |  | 1 |
 | global |  | 2 |
-| template |  | 50 |
+| template |  | 53 |
 | template | generated | 58 |
-| tour |  | 9 |
+| tour |  | 10 |
 </details>
