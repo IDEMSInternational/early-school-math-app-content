@@ -51,8 +51,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 40893 KB | 40.9 MB |
-| unused | 22001 KB | 22 MB |
+| total | 40929 KB | 40.9 MB |
+| unused | 21980 KB | 22 MB |
 </details>
 
 <details open>
@@ -185,13 +185,11 @@ Assets that appear in app-data but do not have references within sheets
 | EFM470LeverBalance.svg | 11.3 |
 | EFM480TurningTheTables.svg | 17.4 |
 | EFM490DivideUpTheBox.svg | 7.3 |
-| EFM490RectangleArea.svg | 3.3 |
 | EFM500SimpleShapeProducts.svg | 10.3 |
 | EFM500SimpleShapeSums.svg | 10.3 |
 | EFM50NumberCards.svg | 133.6 |
 | EFM50NumberLine.svg | 21.7 |
 | EFM50ShapeDeck.svg | 42.9 |
-| EFM510FactorTrees.svg | 17.2 |
 | EFM510ProductPyramid.svg | 17.6 |
 | EFM520LetterSubstitution1.svg | 12.4 |
 | EFM520LetterSubstitution2.svg | 24.8 |
@@ -338,6 +336,7 @@ Assets that have references within sheets but do not appear in app-data
 
 | path | count |
 | --- | --- |
+| EFM380Multiplyingcommutes.svg | 1 |
 </details>
 
 <details >
@@ -355,6 +354,8 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | EFM12EFMLogoNoEFMpng.png | 33.1 | 1 |
 | EFM30MugOnShelf.svg | 4.9 | 1 |
 | EFM30ShapePattern.svg | 5.6 | 1 |
+| EFM490RectangleArea.svg | 3.3 | 1 |
+| EFM510FactorTrees.svg | 17.2 | 1 |
 | EFM70EachOfTheseIsDifferent2Example.svg | 6.5 | 1 |
 | EFM70GoingInCircles.svg | 10.6 | 1 |
 | EFMStorybooks/EFM-SB-0-PageDivider.svg | 3.2 | 2 |
@@ -1236,6 +1237,9 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/EFM105BackAndForth24Move1.svg | 21.1 | 1 |
 | ESMIll/EFM105BackAndForth24MoveIntro.svg | 19.4 | 1 |
 | ESMIll/ESM0GlossaryDividingLine.svg | 3.2 | 1 |
+| ESMIll/ESM200NumberShapesEvens.svg | 5.2 | 1 |
+| ESMIll/ESM200NumberShapesOdds.svg | 4.6 | 1 |
+| ESMIll/ESM380Multiplying3Rows.svg | 5.4 | 1 |
 | ESMIll/ESMBridgesOfKonigsbergChallenge.svg | 19.9 | 1 |
 | ESMIll/ESMDots1-2.svg | 2.8 | 1 |
 | ESMIll/ESMDots10-10.svg | 8.6 | 1 |
