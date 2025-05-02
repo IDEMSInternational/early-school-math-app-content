@@ -92,22 +92,6 @@
       "_nested_name": "dg_image"
     },
     {
-      "type": "display_group",
-      "name": "prototype_alert",
-      "rows": [
-        {
-          "type": "text",
-          "name": "alert_message",
-          "value": "**NB:** This is a **very early** prototype. We welcome and encourage feedback. There are many, many features, graphics, and resources we plan to add, and much revising and polishing to be done.",
-          "_translations": {
-            "value": {}
-          },
-          "_nested_name": "prototype_alert.alert_message"
-        }
-      ],
-      "_nested_name": "prototype_alert"
-    },
-    {
       "name": "now",
       "value": "@calc(timestamp())",
       "_translations": {
@@ -1167,5 +1151,6 @@
       "_nested_name": "dg_resources"
     }
   ],
-  "_xlsxPath": "EFM_high_level_sheets.xlsx"
+  "_xlsxPath": "EFM_high_level_sheets.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1PeJ5ishcTCWUvjhflbQqKO6M8u9rNuec"
 }
