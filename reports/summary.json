@@ -147,12 +147,12 @@
     "data": [
       {
         "assets": "total",
-        "KB": "40893 KB",
+        "KB": "40929 KB",
         "MB": "40.9 MB"
       },
       {
         "assets": "unused",
-        "KB": "22001 KB",
+        "KB": "21980 KB",
         "MB": "22 MB"
       }
     ]
@@ -652,10 +652,6 @@
         "size_kb": 7.3
       },
       {
-        "path": "EFM490RectangleArea.svg",
-        "size_kb": 3.3
-      },
-      {
         "path": "EFM500SimpleShapeProducts.svg",
         "size_kb": 10.3
       },
@@ -674,10 +670,6 @@
       {
         "path": "EFM50ShapeDeck.svg",
         "size_kb": 42.9
-      },
-      {
-        "path": "EFM510FactorTrees.svg",
-        "size_kb": 17.2
       },
       {
         "path": "EFM510ProductPyramid.svg",
@@ -1230,7 +1222,13 @@
     ]
   },
   "assets_missing": {
-    "data": []
+    "data": [
+      {
+        "path": "EFM380Multiplyingcommutes.svg",
+        "count": 1,
+        "missing": true
+      }
+    ]
   },
   "asset_summary": {
     "data": [
@@ -1273,6 +1271,16 @@
         "path": "EFM30ShapePattern.svg",
         "count": 1,
         "size_kb": 5.6
+      },
+      {
+        "path": "EFM490RectangleArea.svg",
+        "count": 1,
+        "size_kb": 3.3
+      },
+      {
+        "path": "EFM510FactorTrees.svg",
+        "count": 1,
+        "size_kb": 17.2
       },
       {
         "path": "EFM70EachOfTheseIsDifferent2Example.svg",
@@ -5678,6 +5686,21 @@
         "path": "ESMIll/ESM0GlossaryDividingLine.svg",
         "count": 1,
         "size_kb": 3.2
+      },
+      {
+        "path": "ESMIll/ESM200NumberShapesEvens.svg",
+        "count": 1,
+        "size_kb": 5.2
+      },
+      {
+        "path": "ESMIll/ESM200NumberShapesOdds.svg",
+        "count": 1,
+        "size_kb": 4.6
+      },
+      {
+        "path": "ESMIll/ESM380Multiplying3Rows.svg",
+        "count": 1,
+        "size_kb": 5.4
       },
       {
         "path": "ESMIll/ESMBridgesOfKonigsbergChallenge.svg",
