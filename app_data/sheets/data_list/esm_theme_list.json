@@ -24,25 +24,13 @@
       }
     },
     {
-      "id": "NPV_C20_",
-      "strand_id": "NPV",
-      "topic_id_1": "NPV_C20_Count20",
-      "topic_id_2": "NPV_C20_PV20",
-      "topic_id_3": "NPV_C20_Comp20",
-      "name": "Counting to 20",
-      "_translations": {
-        "name": {}
-      },
-      "_translatedFields": {
-        "name": {
-          "eng": "Counting to 20"
-        }
-      }
-    },
-    {
       "id": "NPV_CPV100_",
       "strand_id": "NPV",
-      "topic_id_1": "NPV_CPV100_P",
+      "topic_id_1": "NPV_CPV100_Count20",
+      "topic_id_2": "NPV_CPV100_PV20",
+      "topic_id_3": "NPV_CPV100_Comp20",
+      "topic_id_4": "NPV_CPV100_CountPV100",
+      "topic_id_5": "NPV_CPV100_Comp100",
       "name": "Counting & Place Value to 100",
       "_translations": {
         "name": {}
@@ -50,20 +38,6 @@
       "_translatedFields": {
         "name": {
           "eng": "Counting & Place Value to 100"
-        }
-      }
-    },
-    {
-      "id": "NPV_C100_",
-      "strand_id": "NPV",
-      "topic_id_1": "NPV_C100_P",
-      "name": "Comparing to 100",
-      "_translations": {
-        "name": {}
-      },
-      "_translatedFields": {
-        "name": {
-          "eng": "Comparing to 100"
         }
       }
     },
@@ -76,13 +50,13 @@
       "topic_id_4": "NO_AS10_AT",
       "topic_id_5": "NO_AS10_ANT",
       "topic_id_6": "NO_AS10_NBFF",
-      "name": "Add & Subtract within 10",
+      "name": "Add & Sub within 10",
       "_translations": {
         "name": {}
       },
       "_translatedFields": {
         "name": {
-          "eng": "Add & Subtract within 10"
+          "eng": "Add & Sub within 10"
         }
       }
     },
@@ -92,31 +66,33 @@
       "topic_id_1": "NO_ASSD_PVto19",
       "topic_id_2": "NO_ASSD_AddFingers",
       "topic_id_3": "NO_ASSD_SubFingers",
-      "topic_id_4": "NO_ASSD_AS10",
-      "topic_id_5": "NO_ASSD_ASto10",
-      "topic_id_6": "NO_ASSD_10BA",
-      "topic_id_7": "NO_ASSD_10BS",
-      "name": "Add & Subtract – Single Digit",
+      "topic_id_4": "NO_ASSD_ASto10",
+      "topic_id_5": "NO_ASSD_AS10",
+      "topic_id_6": "NO_ASSD_10BridgeA",
+      "topic_id_7": "NO_ASSD_10BridgeS",
+      "name": "Add & Sub – Single Digit",
       "_translations": {
         "name": {}
       },
       "_translatedFields": {
         "name": {
-          "eng": "Add & Subtract – Single Digit"
+          "eng": "Add & Sub – Single Digit"
         }
       }
     },
     {
       "id": "NO_DD_",
       "strand_id": "NO",
-      "topic_id_1": "NO_DD_P",
-      "name": "Add & Subtract – Double Digit",
+      "topic_id_1": "NO_DD_AS2and1",
+      "topic_id_2": "NO_DD_AS2noRegroup",
+      "topic_id_3": "NO_DD_AS2wRegroup",
+      "name": "Add & Sub – Double Digit",
       "_translations": {
         "name": {}
       },
       "_translatedFields": {
         "name": {
-          "eng": "Add & Subtract – Double Digit"
+          "eng": "Add & Sub – Double Digit"
         }
       }
     },
