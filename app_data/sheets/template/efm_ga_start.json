@@ -118,6 +118,9 @@
           "parameter_list": {
             "style": "column"
           },
+          "style_list": [
+            "margin-top: -12px"
+          ],
           "rows": [
             {
               "type": "display_group",
@@ -298,6 +301,339 @@
       "_nested_name": "dg_types"
     },
     {
+      "type": "display_group",
+      "name": "dg_ga_levels",
+      "parameter_list": {
+        "style": "column"
+      },
+      "style_list": [
+        "margin-top: -10px"
+      ],
+      "rows": [
+        {
+          "type": "text",
+          "name": "ga_level_intro",
+          "value": "Select general levels to view.",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "dg_ga_levels.ga_level_intro"
+        },
+        {
+          "name": "desc_all",
+          "value": "All",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "dg_ga_levels.desc_all"
+        },
+        {
+          "name": "desc_00",
+          "value": "Level 00",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "dg_ga_levels.desc_00"
+        },
+        {
+          "name": "desc_0",
+          "value": "Level 0",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "dg_ga_levels.desc_0"
+        },
+        {
+          "name": "desc_1",
+          "value": "Level 1",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "dg_ga_levels.desc_1"
+        },
+        {
+          "name": "desc_2",
+          "value": "Level 2",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "dg_ga_levels.desc_2"
+        },
+        {
+          "name": "desc_3",
+          "value": "Level 3",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "dg_ga_levels.desc_3"
+        },
+        {
+          "type": "display_group",
+          "name": "dg_ga_level_groups",
+          "parameter_list": {
+            "style": "column"
+          },
+          "style_list": [
+            "margin-top: -4px"
+          ],
+          "rows": [
+            {
+              "type": "display_group",
+              "name": "dg_ga_level_groups_1",
+              "rows": [
+                {
+                  "type": "toggle_bar",
+                  "name": "checkbox_level_all",
+                  "value": true,
+                  "parameter_list": {
+                    "true_text": "@local.desc_all",
+                    "false_text": "@local.desc_all"
+                  },
+                  "_nested_name": "dg_ga_levels.dg_ga_level_groups.dg_ga_level_groups_1.checkbox_level_all",
+                  "_dynamicFields": {
+                    "parameter_list": {
+                      "true_text": [
+                        {
+                          "fullExpression": "@local.desc_all",
+                          "matchedExpression": "@local.desc_all",
+                          "type": "local",
+                          "fieldName": "desc_all"
+                        }
+                      ],
+                      "false_text": [
+                        {
+                          "fullExpression": "@local.desc_all",
+                          "matchedExpression": "@local.desc_all",
+                          "type": "local",
+                          "fieldName": "desc_all"
+                        }
+                      ]
+                    }
+                  },
+                  "_dynamicDependencies": {
+                    "@local.desc_all": [
+                      "parameter_list.true_text",
+                      "parameter_list.false_text"
+                    ]
+                  }
+                },
+                {
+                  "type": "toggle_bar",
+                  "name": "checkbox_level_00",
+                  "value": false,
+                  "parameter_list": {
+                    "true_text": "@local.desc_00",
+                    "false_text": "@local.desc_00"
+                  },
+                  "_nested_name": "dg_ga_levels.dg_ga_level_groups.dg_ga_level_groups_1.checkbox_level_00",
+                  "_dynamicFields": {
+                    "parameter_list": {
+                      "true_text": [
+                        {
+                          "fullExpression": "@local.desc_00",
+                          "matchedExpression": "@local.desc_00",
+                          "type": "local",
+                          "fieldName": "desc_00"
+                        }
+                      ],
+                      "false_text": [
+                        {
+                          "fullExpression": "@local.desc_00",
+                          "matchedExpression": "@local.desc_00",
+                          "type": "local",
+                          "fieldName": "desc_00"
+                        }
+                      ]
+                    }
+                  },
+                  "_dynamicDependencies": {
+                    "@local.desc_00": [
+                      "parameter_list.true_text",
+                      "parameter_list.false_text"
+                    ]
+                  }
+                },
+                {
+                  "type": "toggle_bar",
+                  "name": "checkbox_level_0",
+                  "value": false,
+                  "parameter_list": {
+                    "true_text": "@local.desc_0",
+                    "false_text": "@local.desc_0"
+                  },
+                  "_nested_name": "dg_ga_levels.dg_ga_level_groups.dg_ga_level_groups_1.checkbox_level_0",
+                  "_dynamicFields": {
+                    "parameter_list": {
+                      "true_text": [
+                        {
+                          "fullExpression": "@local.desc_0",
+                          "matchedExpression": "@local.desc_0",
+                          "type": "local",
+                          "fieldName": "desc_0"
+                        }
+                      ],
+                      "false_text": [
+                        {
+                          "fullExpression": "@local.desc_0",
+                          "matchedExpression": "@local.desc_0",
+                          "type": "local",
+                          "fieldName": "desc_0"
+                        }
+                      ]
+                    }
+                  },
+                  "_dynamicDependencies": {
+                    "@local.desc_0": [
+                      "parameter_list.true_text",
+                      "parameter_list.false_text"
+                    ]
+                  }
+                }
+              ],
+              "_nested_name": "dg_ga_levels.dg_ga_level_groups.dg_ga_level_groups_1"
+            },
+            {
+              "type": "display_group",
+              "name": "dg_ga_level_groups_2",
+              "rows": [
+                {
+                  "type": "toggle_bar",
+                  "name": "checkbox_level_1",
+                  "value": false,
+                  "parameter_list": {
+                    "true_text": "@local.desc_1",
+                    "false_text": "@local.desc_1"
+                  },
+                  "_nested_name": "dg_ga_levels.dg_ga_level_groups.dg_ga_level_groups_2.checkbox_level_1",
+                  "_dynamicFields": {
+                    "parameter_list": {
+                      "true_text": [
+                        {
+                          "fullExpression": "@local.desc_1",
+                          "matchedExpression": "@local.desc_1",
+                          "type": "local",
+                          "fieldName": "desc_1"
+                        }
+                      ],
+                      "false_text": [
+                        {
+                          "fullExpression": "@local.desc_1",
+                          "matchedExpression": "@local.desc_1",
+                          "type": "local",
+                          "fieldName": "desc_1"
+                        }
+                      ]
+                    }
+                  },
+                  "_dynamicDependencies": {
+                    "@local.desc_1": [
+                      "parameter_list.true_text",
+                      "parameter_list.false_text"
+                    ]
+                  }
+                },
+                {
+                  "type": "toggle_bar",
+                  "name": "checkbox_level_2",
+                  "value": false,
+                  "parameter_list": {
+                    "true_text": "@local.desc_2",
+                    "false_text": "@local.desc_2"
+                  },
+                  "_nested_name": "dg_ga_levels.dg_ga_level_groups.dg_ga_level_groups_2.checkbox_level_2",
+                  "_dynamicFields": {
+                    "parameter_list": {
+                      "true_text": [
+                        {
+                          "fullExpression": "@local.desc_2",
+                          "matchedExpression": "@local.desc_2",
+                          "type": "local",
+                          "fieldName": "desc_2"
+                        }
+                      ],
+                      "false_text": [
+                        {
+                          "fullExpression": "@local.desc_2",
+                          "matchedExpression": "@local.desc_2",
+                          "type": "local",
+                          "fieldName": "desc_2"
+                        }
+                      ]
+                    }
+                  },
+                  "_dynamicDependencies": {
+                    "@local.desc_2": [
+                      "parameter_list.true_text",
+                      "parameter_list.false_text"
+                    ]
+                  }
+                },
+                {
+                  "type": "toggle_bar",
+                  "name": "checkbox_level_3",
+                  "value": false,
+                  "parameter_list": {
+                    "true_text": "@local.desc_3",
+                    "false_text": "@local.desc_3"
+                  },
+                  "_nested_name": "dg_ga_levels.dg_ga_level_groups.dg_ga_level_groups_2.checkbox_level_3",
+                  "_dynamicFields": {
+                    "parameter_list": {
+                      "true_text": [
+                        {
+                          "fullExpression": "@local.desc_3",
+                          "matchedExpression": "@local.desc_3",
+                          "type": "local",
+                          "fieldName": "desc_3"
+                        }
+                      ],
+                      "false_text": [
+                        {
+                          "fullExpression": "@local.desc_3",
+                          "matchedExpression": "@local.desc_3",
+                          "type": "local",
+                          "fieldName": "desc_3"
+                        }
+                      ]
+                    }
+                  },
+                  "_dynamicDependencies": {
+                    "@local.desc_3": [
+                      "parameter_list.true_text",
+                      "parameter_list.false_text"
+                    ]
+                  }
+                }
+              ],
+              "_nested_name": "dg_ga_levels.dg_ga_level_groups.dg_ga_level_groups_2"
+            },
+            {
+              "type": "text",
+              "name": "blank",
+              "style_list": [
+                "flex: 1"
+              ],
+              "_nested_name": "dg_ga_levels.dg_ga_level_groups.blank"
+            }
+          ],
+          "_nested_name": "dg_ga_levels.dg_ga_level_groups"
+        },
+        {
+          "type": "display_group",
+          "name": "dg_spacer",
+          "rows": [],
+          "_nested_name": "dg_ga_levels.dg_spacer"
+        }
+      ],
+      "_nested_name": "dg_ga_levels"
+    },
+    {
       "name": "now",
       "value": "@calc(timestamp())",
       "_translations": {
@@ -468,13 +804,13 @@
               }
             },
             {
-              "name": "its_an_okay_game",
+              "name": "its_an_okay_type",
               "value": "@local.checkbox_all || @local.ok_tutoring || @local.ok_breaks || @local.ok_home",
               "_translations": {
                 "value": {}
               },
               "type": "set_variable",
-              "_nested_name": "dg_galist.activity_buttons.its_an_okay_game",
+              "_nested_name": "dg_galist.activity_buttons.its_an_okay_type",
               "_dynamicFields": {
                 "value": [
                   {
@@ -519,9 +855,372 @@
               }
             },
             {
+              "name": "ok_level_00",
+              "value": "@local.checkbox_level_00 && @item.LPK",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "dg_galist.activity_buttons.ok_level_00",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@local.checkbox_level_00 && @item.LPK",
+                    "matchedExpression": "@local.checkbox_level_00",
+                    "type": "local",
+                    "fieldName": "checkbox_level_00"
+                  },
+                  {
+                    "fullExpression": "@local.checkbox_level_00 && @item.LPK",
+                    "matchedExpression": "@item.LPK",
+                    "type": "item",
+                    "fieldName": "LPK"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.checkbox_level_00": [
+                  "value"
+                ],
+                "@item.LPK": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "ok_level_0",
+              "value": "@local.checkbox_level_0 && @item.LK",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "dg_galist.activity_buttons.ok_level_0",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@local.checkbox_level_0 && @item.LK",
+                    "matchedExpression": "@local.checkbox_level_0",
+                    "type": "local",
+                    "fieldName": "checkbox_level_0"
+                  },
+                  {
+                    "fullExpression": "@local.checkbox_level_0 && @item.LK",
+                    "matchedExpression": "@item.LK",
+                    "type": "item",
+                    "fieldName": "LK"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.checkbox_level_0": [
+                  "value"
+                ],
+                "@item.LK": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "ok_level_1",
+              "value": "@local.checkbox_level_1 && @item.L1",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "dg_galist.activity_buttons.ok_level_1",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@local.checkbox_level_1 && @item.L1",
+                    "matchedExpression": "@local.checkbox_level_1",
+                    "type": "local",
+                    "fieldName": "checkbox_level_1"
+                  },
+                  {
+                    "fullExpression": "@local.checkbox_level_1 && @item.L1",
+                    "matchedExpression": "@item.L1",
+                    "type": "item",
+                    "fieldName": "L1"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.checkbox_level_1": [
+                  "value"
+                ],
+                "@item.L1": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "ok_level_2",
+              "value": "@local.checkbox_level_2 && @item.L2",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "dg_galist.activity_buttons.ok_level_2",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@local.checkbox_level_2 && @item.L2",
+                    "matchedExpression": "@local.checkbox_level_2",
+                    "type": "local",
+                    "fieldName": "checkbox_level_2"
+                  },
+                  {
+                    "fullExpression": "@local.checkbox_level_2 && @item.L2",
+                    "matchedExpression": "@item.L2",
+                    "type": "item",
+                    "fieldName": "L2"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.checkbox_level_2": [
+                  "value"
+                ],
+                "@item.L2": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "ok_level_3",
+              "value": "@local.checkbox_level_3 && @item.L3",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "dg_galist.activity_buttons.ok_level_3",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@local.checkbox_level_3 && @item.L3",
+                    "matchedExpression": "@local.checkbox_level_3",
+                    "type": "local",
+                    "fieldName": "checkbox_level_3"
+                  },
+                  {
+                    "fullExpression": "@local.checkbox_level_3 && @item.L3",
+                    "matchedExpression": "@item.L3",
+                    "type": "item",
+                    "fieldName": "L3"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.checkbox_level_3": [
+                  "value"
+                ],
+                "@item.L3": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "its_an_okay_level",
+              "value": "@local.checkbox_level_all || @local.ok_level_00 || @local.ok_level_0 || @local.ok_level_1 || @local.ok_level_2 || @local.ok_level_3",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "dg_galist.activity_buttons.its_an_okay_level",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@local.checkbox_level_all || @local.ok_level_00 || @local.ok_level_0 || @local.ok_level_1 || @local.ok_level_2 || @local.ok_level_3",
+                    "matchedExpression": "@local.checkbox_level_all",
+                    "type": "local",
+                    "fieldName": "checkbox_level_all"
+                  },
+                  {
+                    "fullExpression": "@local.checkbox_level_all || @local.ok_level_00 || @local.ok_level_0 || @local.ok_level_1 || @local.ok_level_2 || @local.ok_level_3",
+                    "matchedExpression": "@local.ok_level_00",
+                    "type": "local",
+                    "fieldName": "ok_level_00"
+                  },
+                  {
+                    "fullExpression": "@local.checkbox_level_all || @local.ok_level_00 || @local.ok_level_0 || @local.ok_level_1 || @local.ok_level_2 || @local.ok_level_3",
+                    "matchedExpression": "@local.ok_level_0",
+                    "type": "local",
+                    "fieldName": "ok_level_0"
+                  },
+                  {
+                    "fullExpression": "@local.checkbox_level_all || @local.ok_level_00 || @local.ok_level_0 || @local.ok_level_1 || @local.ok_level_2 || @local.ok_level_3",
+                    "matchedExpression": "@local.ok_level_1",
+                    "type": "local",
+                    "fieldName": "ok_level_1"
+                  },
+                  {
+                    "fullExpression": "@local.checkbox_level_all || @local.ok_level_00 || @local.ok_level_0 || @local.ok_level_1 || @local.ok_level_2 || @local.ok_level_3",
+                    "matchedExpression": "@local.ok_level_2",
+                    "type": "local",
+                    "fieldName": "ok_level_2"
+                  },
+                  {
+                    "fullExpression": "@local.checkbox_level_all || @local.ok_level_00 || @local.ok_level_0 || @local.ok_level_1 || @local.ok_level_2 || @local.ok_level_3",
+                    "matchedExpression": "@local.ok_level_3",
+                    "type": "local",
+                    "fieldName": "ok_level_3"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.checkbox_level_all": [
+                  "value"
+                ],
+                "@local.ok_level_00": [
+                  "value"
+                ],
+                "@local.ok_level_0": [
+                  "value"
+                ],
+                "@local.ok_level_1": [
+                  "value"
+                ],
+                "@local.ok_level_2": [
+                  "value"
+                ],
+                "@local.ok_level_3": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "its_okay",
+              "value": "@local.its_an_okay_type && @local.its_an_okay_level",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "dg_galist.activity_buttons.its_okay",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@local.its_an_okay_type && @local.its_an_okay_level",
+                    "matchedExpression": "@local.its_an_okay_type",
+                    "type": "local",
+                    "fieldName": "its_an_okay_type"
+                  },
+                  {
+                    "fullExpression": "@local.its_an_okay_type && @local.its_an_okay_level",
+                    "matchedExpression": "@local.its_an_okay_level",
+                    "type": "local",
+                    "fieldName": "its_an_okay_level"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.its_an_okay_type": [
+                  "value"
+                ],
+                "@local.its_an_okay_level": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "its_an_okay_game",
+              "value": "@local.its_an_okay_type",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "dg_galist.activity_buttons.its_an_okay_game",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@local.its_an_okay_type",
+                    "matchedExpression": "@local.its_an_okay_type",
+                    "type": "local",
+                    "fieldName": "its_an_okay_type"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.its_an_okay_type": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "debug1",
+              "value": "Type OK: @local.its_an_okay_type",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "dg_galist.activity_buttons.debug1",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "Type OK: @local.its_an_okay_type",
+                    "matchedExpression": "@local.its_an_okay_type",
+                    "type": "local",
+                    "fieldName": "its_an_okay_type"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.its_an_okay_type": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "debug2",
+              "value": "Level OK: @local.its_an_okay_level",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "dg_galist.activity_buttons.debug2",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "Level OK: @local.its_an_okay_level",
+                    "matchedExpression": "@local.its_an_okay_level",
+                    "type": "local",
+                    "fieldName": "its_an_okay_level"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.its_an_okay_level": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "debug3",
+              "value": "OK: @local.its_okay",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "dg_galist.activity_buttons.debug3",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "OK: @local.its_okay",
+                    "matchedExpression": "@local.its_okay",
+                    "type": "local",
+                    "fieldName": "its_okay"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.its_okay": [
+                  "value"
+                ]
+              }
+            },
+            {
               "type": "display_group",
               "name": "dg_okay_games",
-              "condition": "@local.its_an_okay_game",
+              "condition": "@local.its_okay",
               "parameter_list": {
                 "style": "column"
               },
@@ -798,15 +1497,15 @@
               "_dynamicFields": {
                 "condition": [
                   {
-                    "fullExpression": "@local.its_an_okay_game",
-                    "matchedExpression": "@local.its_an_okay_game",
+                    "fullExpression": "@local.its_okay",
+                    "matchedExpression": "@local.its_okay",
                     "type": "local",
-                    "fieldName": "its_an_okay_game"
+                    "fieldName": "its_okay"
                   }
                 ]
               },
               "_dynamicDependencies": {
-                "@local.its_an_okay_game": [
+                "@local.its_okay": [
                   "condition"
                 ]
               }
