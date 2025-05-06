@@ -7,7 +7,7 @@
 | accordion_section | 57 |
 | button | 88 |
 | debug_toggle | 1 |
-| display_group | 265 |
+| display_group | 269 |
 | image | 33 |
 | items | 40 |
 | qr_code | 1 |
@@ -15,14 +15,14 @@
 | round_button | 9 |
 | select_text | 1 |
 | set_field | 9 |
-| set_variable | 547 |
+| set_variable | 564 |
 | simple_checkbox | 4 |
 | template | 69 |
-| text | 197 |
+| text | 198 |
 | text_area | 2 |
 | tile_component | 3 |
 | title | 48 |
-| toggle_bar | 11 |
+| toggle_bar | 17 |
 </details>
 
 <details >
@@ -51,8 +51,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 40929 KB | 40.9 MB |
-| unused | 21980 KB | 22 MB |
+| total | 41340 KB | 41.3 MB |
+| unused | 21738 KB | 21.7 MB |
 </details>
 
 <details open>
@@ -101,7 +101,6 @@ Assets that appear in app-data but do not have references within sheets
 | EFM135PatternsConnecttheDots.svg | 21.2 |
 | EFM135ShapeSoduku.svg | 30.7 |
 | EFM135ShapeSodukuExample.svg | 32.6 |
-| EFM140BagGame.svg | 14.9 |
 | EFM140IceCreamScoopStory.svg | 12.5 |
 | EFM145Estimation.svg | 34.4 |
 | EFM145GetOutofMyHouse.svg | 23.4 |
@@ -136,16 +135,12 @@ Assets that appear in app-data but do not have references within sheets
 | EFM20ColoredTiling.svg | 14.7 |
 | EFM220NumberBlobs.svg | 39.3 |
 | EFM230OrderedSteps.svg | 4.1 |
-| EFM230OrderingCards.svg | 21.7 |
 | EFM240EvenOddAndKropkiSudoku4by4.svg | 19.9 |
 | EFM240SumdokuDiffdoku.svg | 25.6 |
 | EFM270PyramidSolitaire.svg | 32.5 |
 | EFM280DotsAndBoxes.svg | 6.8 |
 | EFM280DotsAndBoxesNumbered.svg | 8.8 |
 | EFM280Tapatan.svg | 7.1 |
-| EFM290Fingers11-3.svg | 21.6 |
-| EFM290FingersFor8-3.svg | 11.8 |
-| EFM290FingersFor8Plus3.svg | 11.8 |
 | EFM300IslandHoppingCompensation.svg | 24.7 |
 | EFM300RegionSums.svg | 10.9 |
 | EFM30Socks.svg | 18 |
@@ -154,7 +149,6 @@ Assets that appear in app-data but do not have references within sheets
 | EFM310SumTriangles.svg | 15.5 |
 | EFM330IslandHoppingSkipCounting.svg | 19.9 |
 | EFM340FixIt.svg | 17.3 |
-| EFM340PairingDown.svg | 29.6 |
 | EFM350ExpandedFormFoldingPaper.svg | 11.4 |
 | EFM350IslandHoppingby1sAnd10s.svg | 15.6 |
 | EFM370CircleGraphs1To12StarOfDavid.svg | 13.5 |
@@ -162,7 +156,6 @@ Assets that appear in app-data but do not have references within sheets
 | EFM370CircleGraphs1To9Star.svg | 7.3 |
 | EFM370CircleGraphs1to6MagicCircle.svg | 19.2 |
 | EFM370CircleGraphsAll4.svg | 29 |
-| EFM380MultiplyingCommutes.svg | 5.4 |
 | EFM385CoverUp.svg | 37.3 |
 | EFM390AdditionPyramid.svg | 18 |
 | EFM390SumSquare.svg | 8 |
@@ -179,9 +172,6 @@ Assets that appear in app-data but do not have references within sheets
 | EFM450RevealingProducts.jpg | 52.1 |
 | EFM450RevealingProducts.odg | 12.1 |
 | EFM450RevealingProducts.svg | 71.8 |
-| EFM455CoverFactorsMultiples.svg | 16.4 |
-| EFM460SieveOfEratosthenes.svg | 47 |
-| EFM460SieveofEratosthenes2s3s.svg | 35.1 |
 | EFM470LeverBalance.svg | 11.3 |
 | EFM480TurningTheTables.svg | 17.4 |
 | EFM490DivideUpTheBox.svg | 7.3 |
@@ -197,7 +187,6 @@ Assets that appear in app-data but do not have references within sheets
 | EFM530Calculator4-7PlusMinus.svg | 841.1 |
 | EFM530SquaresInSquares.svg | 3.1 |
 | EFM540IslandHoppingWithProducts.svg | 21.7 |
-| EFM540ProductGame.svg | 26.5 |
 | EFM550Mobile1.svg | 6.9 |
 | EFM550Mobile2.svg | 10 |
 | EFM570CrossProducts3By3.svg | 12.9 |
@@ -336,7 +325,6 @@ Assets that have references within sheets but do not appear in app-data
 
 | path | count |
 | --- | --- |
-| EFM380Multiplyingcommutes.svg | 1 |
 </details>
 
 <details >
@@ -352,10 +340,21 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | EFM12Apples.svg | 5.3 | 1 |
 | EFM12EFMLogoNoEFM.svg | 12.8 | 1 |
 | EFM12EFMLogoNoEFMpng.png | 33.1 | 1 |
+| EFM140BagGame.svg | 14.9 | 1 |
+| EFM230OrderingCards.svg | 21.7 | 1 |
+| EFM290Fingers11-3.svg | 21.6 | 1 |
+| EFM290FingersFor8-3.svg | 11.8 | 1 |
+| EFM290FingersFor8Plus3.svg | 11.8 | 1 |
 | EFM30MugOnShelf.svg | 4.9 | 1 |
 | EFM30ShapePattern.svg | 5.6 | 1 |
+| EFM340PairingDown.svg | 29.6 | 1 |
+| EFM380MultiplyingCommutes.svg | 5.4 | 1 |
+| EFM455CoverFactorsMultiples.svg | 16.4 | 1 |
+| EFM460SieveOfEratosthenes.svg | 47 | 1 |
+| EFM460SieveofEratosthenes2s3s.svg | 35.1 | 1 |
 | EFM490RectangleArea.svg | 3.3 | 1 |
 | EFM510FactorTrees.svg | 17.2 | 1 |
+| EFM540ProductGame.svg | 26.5 | 1 |
 | EFM70EachOfTheseIsDifferent2Example.svg | 6.5 | 1 |
 | EFM70GoingInCircles.svg | 10.6 | 1 |
 | EFMStorybooks/EFM-SB-0-PageDivider.svg | 3.2 | 2 |
@@ -1312,17 +1311,25 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMGA135MakingSquaresSimple.svg | 16 | 1 |
 | ESMIll/ESMGA145In-BetweenGame.svg | 10.6 | 1 |
 | ESMIll/ESMGA90IslandHoppingConsecutiveModerate.svg | 20.3 | 1 |
+| ESMIll/ESMGAClaimTheFrame.svg | 9.8 | 1 |
+| ESMIll/ESMGACountingNeighbors.svg | 61.8 | 1 |
 | ESMIll/ESMGACuttingSymmetricShapes.svg | 65.6 | 1 |
 | ESMIll/ESMGADots and Boxes Numbered Unmarked.svg | 8 | 1 |
 | ESMIll/ESMGADots and Boxes Numbered.svg | 9.6 | 1 |
 | ESMIll/ESMGADotsandBoxesUnnumvwewsEmpty.svg | 5.2 | 1 |
 | ESMIll/ESMGADotsandBoxesUnnumvwewsExample.svg | 7.1 | 1 |
+| ESMIll/ESMGAGetClosest.svg | 5.9 | 1 |
 | ESMIll/ESMGAGetOutOfMyHouseEmpty.svg | 22.6 | 2 |
 | ESMIll/ESMGAGetOutOfMyHouseMidgame.svg | 23.6 | 2 |
+| ESMIll/ESMGAGrabbingFactors.svg | 20.7 | 1 |
+| ESMIll/ESMGAHandfuls.svg | 11.7 | 1 |
 | ESMIll/ESMGAImThinkingOfANumberNumberLineTo12.svg | 15.5 | 1 |
+| ESMIll/ESMGAMaking100.svg | 28.5 | 1 |
+| ESMIll/ESMGAPartWholeTriangles.svg | 14.5 | 1 |
 | ESMIll/ESMGASameDifferent.svg | 303.4 | 1 |
 | ESMIll/ESMGAStringNumberLine.svg | 22.1 | 1 |
 | ESMIll/ESMGAWarDoubleDigit.svg | 16.5 | 2 |
+| ESMIll/ESMGAWarMult.svg | 16.5 | 1 |
 | ESMIll/ESMGAWarSingleDigit.svg | 16 | 1 |
 | ESMIll/ESMGAWhichOneIsDifferent.svg | 5.1 | 1 |
 | ESMIll/ESMPOWACardStackingChallenge.svg | 11.9 | 1 |
