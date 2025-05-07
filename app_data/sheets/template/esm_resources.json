@@ -66,6 +66,18 @@
           "_nested_name": "dg_resource_finder.EmPtY_string"
         },
         {
+          "type": "text",
+          "name": "rf_intro",
+          "value": "The Resource Finder finds the resources associated with a group of topics.",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "flex:140"
+          ],
+          "_nested_name": "dg_resource_finder.rf_intro"
+        },
+        {
           "type": "button",
           "name": "button_resources_finder",
           "value": "Resource Finder",
@@ -97,6 +109,9 @@
             "style": "short",
             "text_align": "center"
           },
+          "style_list": [
+            "flex:100"
+          ],
           "_nested_name": "dg_resource_finder.button_resources_finder",
           "_dynamicFields": {
             "action_list": {
@@ -260,6 +275,9 @@
     {
       "type": "display_group",
       "name": "dg_pows",
+      "style_list": [
+        "margin-top: 20px"
+      ],
       "rows": [
         {
           "type": "button",

@@ -2903,7 +2903,7 @@
       "notes_block_start": 4,
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMPOWCCoinFlipInARowIntro.svg",
-      "block1_illust_max_size": "330px",
+      "block1_illust_max_size": "160px",
       "block2_type": "illust_below",
       "block2_illust": "ESMIll/ESMPOWCCoinFlipInARowChallenge.svg",
       "block2_illust_max_size": "330px",
@@ -3167,10 +3167,10 @@
       "notes_block_start": 4,
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMPOWCLastNumberStandingIntro.svg",
-      "block1_illust_max_size": "330px",
+      "block1_illust_max_size": "200px",
       "block2_type": "illust_below",
       "block2_illust": "ESMIll/ESMPOWCLastNumberStandingChallenge.svg",
-      "block2_illust_max_size": "330px",
+      "block2_illust_max_size": "240px",
       "block3_type": "all_text",
       "block4_type": "all_text",
       "name": "Parity – 3 – Last Number Standing",
@@ -3528,9 +3528,11 @@
       "puzzler": false,
       "notes_block_start": 4,
       "block1_type": "illust_below",
-      "block1_illust": "ESMIll/",
-      "block1_illust_max_size": "330px",
+      "block1_illust": "ESMIll/ESMPOWCSimpleClosedCurveInOutIntro.svg",
+      "block1_illust_max_size": "220px",
       "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWCSimpleClosedCurveInOutChallenge.svg",
+      "block2_illust_max_size": "250px",
       "block3_type": "all_text",
       "block4_type": "all_text",
       "name": "Topology – 1 – Inside and Outside",
@@ -3546,7 +3548,7 @@
           "eng": "Topology – 1 – Inside and Outside"
         },
         "block1_text": {
-          "eng": "**Introduction:** A simple closed curve is a single continuous line that does not bump into itself and has no breaks. An important characteristic of these curves is that they have an inside and an outside."
+          "eng": "**Introduction:** A **simple closed curve** is a single continuous line that does not bump into itself and has no breaks. An important characteristic of these curves is that they have an inside and an outside."
         },
         "block2_text": {
           "eng": "**The Challenge:** For points A and B, determine which is on the inside of the curve and which is outside?"
@@ -3558,7 +3560,7 @@
           "eng": "**The Challenge and Exploration:** Rather than tortuously following the paths around the curve, the key is to allow yourself to cross the curve. Each time you cross the curve you will either go from the inside to the outside, or from the outside to the inside.\n\nHence, to decide whether these points are inside or outside, start from the outside and count how many times you must cross the curve to get to one of the points. If it is an even number of times, then the point is on the outside. If it is an odd number of times, then the point is on the inside.\nCounting crossings, A is on the Outside and B is on the inside.\n\nYou will notice that, no matter which path you take from the outside to get to A, it will always take an even number of crossings to get there."
         }
       },
-      "block1_text": "**Introduction:** A simple closed curve is a single continuous line that does not bump into itself and has no breaks. An important characteristic of these curves is that they have an inside and an outside.",
+      "block1_text": "**Introduction:** A **simple closed curve** is a single continuous line that does not bump into itself and has no breaks. An important characteristic of these curves is that they have an inside and an outside.",
       "block2_text": "**The Challenge:** For points A and B, determine which is on the inside of the curve and which is outside?",
       "block3_text": "**Exploration:** Rather than tracing around this entire closed curve, can you find a simple way to test whether a point is on the inside or outside of the curve?",
       "block4_text": "**The Challenge and Exploration:** Rather than tortuously following the paths around the curve, the key is to allow yourself to cross the curve. Each time you cross the curve you will either go from the inside to the outside, or from the outside to the inside.\n\nHence, to decide whether these points are inside or outside, start from the outside and count how many times you must cross the curve to get to one of the points. If it is an even number of times, then the point is on the outside. If it is an odd number of times, then the point is on the inside.\nCounting crossings, A is on the Outside and B is on the inside.\n\nYou will notice that, no matter which path you take from the outside to get to A, it will always take an even number of crossings to get there."
