@@ -2784,6 +2784,784 @@
       "block2_text": "**The Challenge:** If you can, find a parade route that crosses each edge of this diagram exactly once. If you can’t, give a reason for why it is impossible.",
       "block3_text": "**The Challenge:** Start by translating this problem into one that has edges we need to traverse. We saw in the earlier “Parades” Puzzle of the Week that it is crucial to have no more than two nodes where an odd number of sides come in.",
       "block4_text": "The red lines represent paths that must be taken to cross each of the edges. We are looking for a parade route that will follow each of the red paths once. Unfortunately, there are four nodes that have an odd number of red paths coming into them. Therefore, it is impossible to find a route that will work!"
+    },
+    {
+      "id": "esm_pow_c_fib1bees",
+      "level": "L1",
+      "eye_opener": false,
+      "puzzler": true,
+      "notes_block_start": 3,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWCFibanocciBees.svg",
+      "block1_illust_max_size": "330px",
+      "block2_type": "all_text",
+      "block3_type": "all_text",
+      "name": "Ancestors of Bees",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Ancestors of Bees"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** A female bee’s egg can have one of two things happen. If a male bee is not involved, then the egg will turn into a male bee. If a male bee is involved, the egg will turn into a female bee.\n\nThe ancestry of a typical male bee starts with a mother and no father - it has 1 ancestor 1 generation back.  Its mother has a mother and father, so it has two grandparents - it has 2 ancestors 2 generations back. And so on. Here is the start of its ancestral tree."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** How many ancestors will a male bee have 10 generations back? How about 20 generations back?\n\n**Exploration:** Find a pattern that will help you make these calculations more easily. What does the ancestry of a female bee look like? What simplifications are we making in doing all this counting?"
+        },
+        "block3_text": {
+          "eng": "**The Challenge and Exploration:** These numbers are the Fibonacci Numbers. After doing a few generations of the bee’s ancestors, the numbers are: 1 (the male bee), 1 (the mother), 2 (the mother and father), 3, 5, 8, 13, 21, 34, 55, and 89.\n\nThe key to making this easy to calculate is the following. For a given generation, everyone of the bees will have a mother. The number of fathers is the number of mothers in that generation, and that is exactly the number of bees in the generation before the given generation. In other words, the number of bees in the next generation is equal to the number of bees in this generation plus the number of bees in the previous generation.\n\nThis is exactly the rule for finding Fibonacci Numbers. The next Fibonacci Number is always the sum of the previous two numbers.\n\nOur sequence is 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, and 10946. I have underlined every fifth number, so the tenth number is 89 and the 20th number is 10946.\n\nThe numbers for the generations of a female bee will be exactly the same, only moved forward one generation.\n\nThe simplification we are making is that we assume that no bee is involved more than once as the ancestor of a given bee."
+        }
+      },
+      "block1_text": "**Introduction:** A female bee’s egg can have one of two things happen. If a male bee is not involved, then the egg will turn into a male bee. If a male bee is involved, the egg will turn into a female bee.\n\nThe ancestry of a typical male bee starts with a mother and no father - it has 1 ancestor 1 generation back.  Its mother has a mother and father, so it has two grandparents - it has 2 ancestors 2 generations back. And so on. Here is the start of its ancestral tree.",
+      "block2_text": "**The Challenge:** How many ancestors will a male bee have 10 generations back? How about 20 generations back?\n\n**Exploration:** Find a pattern that will help you make these calculations more easily. What does the ancestry of a female bee look like? What simplifications are we making in doing all this counting?",
+      "block3_text": "**The Challenge and Exploration:** These numbers are the Fibonacci Numbers. After doing a few generations of the bee’s ancestors, the numbers are: 1 (the male bee), 1 (the mother), 2 (the mother and father), 3, 5, 8, 13, 21, 34, 55, and 89.\n\nThe key to making this easy to calculate is the following. For a given generation, everyone of the bees will have a mother. The number of fathers is the number of mothers in that generation, and that is exactly the number of bees in the generation before the given generation. In other words, the number of bees in the next generation is equal to the number of bees in this generation plus the number of bees in the previous generation.\n\nThis is exactly the rule for finding Fibonacci Numbers. The next Fibonacci Number is always the sum of the previous two numbers.\n\nOur sequence is 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, and 10946. I have underlined every fifth number, so the tenth number is 89 and the 20th number is 10946.\n\nThe numbers for the generations of a female bee will be exactly the same, only moved forward one generation.\n\nThe simplification we are making is that we assume that no bee is involved more than once as the ancestor of a given bee."
+    },
+    {
+      "id": "esm_pow_c_fib0badneighbors",
+      "level": "L1",
+      "eye_opener": false,
+      "puzzler": true,
+      "notes_block_start": 3,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWCBadNeighbors.svg",
+      "block1_illust_max_size": "380px",
+      "block2_type": "all_text",
+      "block3_type": "all_text",
+      "name": "Bad Neighbors",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Bad Neighbors"
+        },
+        "block1_text": {
+          "eng": "**The Challenge:** There are a group of people who cannot live next door to each other in houses along a street. If there are 10 houses, in how many ways can some of these people live in these houses so that no two neighboring houses have these people in them? Count having all the houses empty as one of the possibilities."
+        },
+        "block2_text": {
+          "eng": "**Exploration:** How many ways are there if there are 15 houses? Find a pattern that will help you quickly calculate how many different ways for larger numbers of houses."
+        },
+        "block3_text": {
+          "eng": "**The Challenge and Exploration:** As with so many puzzles, the best way to learn about this is by doing simple examples looking for patterns. Use E for empty and B for a bad neighbor.\n\n* 1 house - 2 ways: E or B\n* 2 houses - 3 ways: EE, BE, EB\n* 3 houses - 5 ways: EEE, BEE, EBE, EEB, BEB\n* 4 houses - 8 ways: EEEE, BEEE, EBEE, EEBE, EEEB, BEBE, BEEB, EBEB\n\nIt looks like they are the Fibonacci Numbers. Let’s find a good reason why that should be.\n\nTo find the number of ways to fill n houses, start with either an E or a B.\n\n* If you start with an E, then the next n-1 houses can be filled ignoring that first house.\n* If you start with a B, then the next house must be an E. After those two, the next n-2 houses can be filled ignoring the first two houses.\n\nTherefore, the number of ways of filling n houses equals the number of ways of filling n-1 houses plus the number of ways of filling n-2 houses. This is exactly the rule for calculating the Fibonacci Numbers. Because we start with 2 and 3, the rule will force the rest of the numbers to be the same after that.\n\nThe numbers will be: 2, 3, 5, 8, 13, 21, 34, 55, 89, 144 for the first ten."
+        }
+      },
+      "block1_text": "**The Challenge:** There are a group of people who cannot live next door to each other in houses along a street. If there are 10 houses, in how many ways can some of these people live in these houses so that no two neighboring houses have these people in them? Count having all the houses empty as one of the possibilities.",
+      "block2_text": "**Exploration:** How many ways are there if there are 15 houses? Find a pattern that will help you quickly calculate how many different ways for larger numbers of houses.",
+      "block3_text": "**The Challenge and Exploration:** As with so many puzzles, the best way to learn about this is by doing simple examples looking for patterns. Use E for empty and B for a bad neighbor.\n\n* 1 house - 2 ways: E or B\n* 2 houses - 3 ways: EE, BE, EB\n* 3 houses - 5 ways: EEE, BEE, EBE, EEB, BEB\n* 4 houses - 8 ways: EEEE, BEEE, EBEE, EEBE, EEEB, BEBE, BEEB, EBEB\n\nIt looks like they are the Fibonacci Numbers. Let’s find a good reason why that should be.\n\nTo find the number of ways to fill n houses, start with either an E or a B.\n\n* If you start with an E, then the next n-1 houses can be filled ignoring that first house.\n* If you start with a B, then the next house must be an E. After those two, the next n-2 houses can be filled ignoring the first two houses.\n\nTherefore, the number of ways of filling n houses equals the number of ways of filling n-1 houses plus the number of ways of filling n-2 houses. This is exactly the rule for calculating the Fibonacci Numbers. Because we start with 2 and 3, the rule will force the rest of the numbers to be the same after that.\n\nThe numbers will be: 2, 3, 5, 8, 13, 21, 34, 55, 89, 144 for the first ten."
+    },
+    {
+      "id": "esm_pow_c_coinflip3",
+      "level": "L1",
+      "eye_opener": true,
+      "puzzler": false,
+      "notes_block_start": 3,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWCCoinFlip10Intro.svg",
+      "block1_illust_max_size": "330px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWCCoinFlip10Challenge.svg",
+      "block2_illust_max_size": "330px",
+      "block3_type": "all_text",
+      "name": "Coin Flipping – 3",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Coin Flipping – 3"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** Ten coins are set up as shown on the left side. The first five coins are heads and the second five are tails. During one move, you are allowed to flip over any two coins."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Take the original configuration of coins and, through a series of double-flip moves, make all ten coins heads or all ten tails. Show how this can be done or describe why it is impossible."
+        },
+        "block3_text": {
+          "eng": "**The Challenge:** Consider the number of heads before any move involving two flips. There are three possibilities when flipping two coins.\n\n* The two coins were both heads up to start. After the flips, these coins will be heads down, and the number of heads up coins will be reduced by two.\n* The two coins were both heads down to start. After the flips, these coins will be heads up, and the number of  heads up coins will be increased by two.\n* One coin was heads up and the other was heads down. After the flips, the coins will be heads down and heads up, so there will be no change in the number of heads up coins.\n\nConsequently, the number of heads up coins will either increase by two, stay the same, or decrease by two. The number of heads up coins starts at five, and will always change by an even amount, so it must remain an odd number no matter what we do. Therefore, this number can never become ten or zero, and so it is impossible to have all the coins end up in the same orientation."
+        }
+      },
+      "block1_text": "**Introduction:** Ten coins are set up as shown on the left side. The first five coins are heads and the second five are tails. During one move, you are allowed to flip over any two coins.",
+      "block2_text": "**The Challenge:** Take the original configuration of coins and, through a series of double-flip moves, make all ten coins heads or all ten tails. Show how this can be done or describe why it is impossible.",
+      "block3_text": "**The Challenge:** Consider the number of heads before any move involving two flips. There are three possibilities when flipping two coins.\n\n* The two coins were both heads up to start. After the flips, these coins will be heads down, and the number of heads up coins will be reduced by two.\n* The two coins were both heads down to start. After the flips, these coins will be heads up, and the number of  heads up coins will be increased by two.\n* One coin was heads up and the other was heads down. After the flips, the coins will be heads down and heads up, so there will be no change in the number of heads up coins.\n\nConsequently, the number of heads up coins will either increase by two, stay the same, or decrease by two. The number of heads up coins starts at five, and will always change by an even amount, so it must remain an odd number no matter what we do. Therefore, this number can never become ten or zero, and so it is impossible to have all the coins end up in the same orientation."
+    },
+    {
+      "id": "esm_pow_c_coinflip4",
+      "level": "L1",
+      "eye_opener": true,
+      "puzzler": false,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWCCoinFlipInARowIntro.svg",
+      "block1_illust_max_size": "330px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWCCoinFlipInARowChallenge.svg",
+      "block2_illust_max_size": "330px",
+      "block3_type": "all_text",
+      "block4_type": "all_text",
+      "name": "Coin Flipping – 4",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Coin Flipping – 4"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** Choosing 3 coins during each turn, you can start with 5 heads and end with 5 tails."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Choosing 5 coins during each turn, start with 9 heads and end with 9 tails. What’s the fewest number of turns you need to use?"
+        },
+        "block3_text": {
+          "eng": "**Exploration:** What happens if 9 and 5 are replaced by two other numbers? Can you predict when it’s possible? Can you predict what the fewest number of turns will be?"
+        },
+        "block4_text": {
+          "eng": "**The Challenge and Exploration:** Suppose there are n coins and k flips being done for each turn. To go from all heads to all tails, there needs to be n flips plus possibly some coins flipped two extra times to make things come out evenly. The total number of flips will be n + (2 x extras).\n\nTo come out evenly, k must evenly divide n + (2 x extras). In the example in the introduction, which has n = 5 and k = 3. 3 evenly divides 5 + 2 x 2 = 9, so the first time it can possibly work is after 3 turns. Note that there are two coins that are flipped three times instead of just once.\n\nIn the Challenge, n = 9 and k = 5. The first time 5 evenly divides 9 + (2 x extras) is for 9 + 2 x 3 = 15. It will take three turns, and there will be three coins that are flipped an extra two times.\n\nIf n is odd and k is even, it will be impossible. That’s because an even number will never evenly divide an odd number plus (2 x extras), which is an odd number.\n\nNote that some care needs to be exercised in simply assuming that just because k even divides n + (2 x extras) that it will work. For example, let n = 4 and k = 3. 3 evenly divides 4 + 2 x 1 = 6. However, it is not possible to do this in two turns. It will take four turns where 3 evenly divides 4 + 2 x 4 = 12."
+        }
+      },
+      "block1_text": "**Introduction:** Choosing 3 coins during each turn, you can start with 5 heads and end with 5 tails.",
+      "block2_text": "**The Challenge:** Choosing 5 coins during each turn, start with 9 heads and end with 9 tails. What’s the fewest number of turns you need to use?",
+      "block3_text": "**Exploration:** What happens if 9 and 5 are replaced by two other numbers? Can you predict when it’s possible? Can you predict what the fewest number of turns will be?",
+      "block4_text": "**The Challenge and Exploration:** Suppose there are n coins and k flips being done for each turn. To go from all heads to all tails, there needs to be n flips plus possibly some coins flipped two extra times to make things come out evenly. The total number of flips will be n + (2 x extras).\n\nTo come out evenly, k must evenly divide n + (2 x extras). In the example in the introduction, which has n = 5 and k = 3. 3 evenly divides 5 + 2 x 2 = 9, so the first time it can possibly work is after 3 turns. Note that there are two coins that are flipped three times instead of just once.\n\nIn the Challenge, n = 9 and k = 5. The first time 5 evenly divides 9 + (2 x extras) is for 9 + 2 x 3 = 15. It will take three turns, and there will be three coins that are flipped an extra two times.\n\nIf n is odd and k is even, it will be impossible. That’s because an even number will never evenly divide an odd number plus (2 x extras), which is an odd number.\n\nNote that some care needs to be exercised in simply assuming that just because k even divides n + (2 x extras) that it will work. For example, let n = 4 and k = 3. 3 evenly divides 4 + 2 x 1 = 6. However, it is not possible to do this in two turns. It will take four turns where 3 evenly divides 4 + 2 x 4 = 12."
+    },
+    {
+      "id": "esm_pow_c_fib2steps",
+      "level": "L1",
+      "eye_opener": false,
+      "puzzler": true,
+      "notes_block_start": 3,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWCFibonacciSteps.svg",
+      "block1_illust_max_size": "330px",
+      "block2_type": "all_text",
+      "block3_type": "all_text",
+      "name": "Counting Steps",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Counting Steps"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** When climbing steps, some people like to take the steps two at a time, at least part of the time. That leads to the general question of how many different ways there are of going up steps this way.\n\n**The Challenge:** How many different ways are there of going up 10 steps where you are making some combination of single and double steps along the way (it may be all single steps or all double steps or some mixture)? How about 20 steps?"
+        },
+        "block2_text": {
+          "eng": "**Exploration:** Do you see a pattern you recognize? Can you find a shortcut that will make it easier to count all the ways of doing this?"
+        },
+        "block3_text": {
+          "eng": "**The Challenge and Exploration:** This is another visit with Fibonacci Numbers. The first few counts of how many ways there are of doing this are: 1, 2, 3, 5, and 8. After doing the bee ancestry puzzle, and then seeing the first few numbers for this one, your students should be suspicious.\n\nThe tricky part is seeing where the Fibonacci rule comes into play. Let’s look at going up ten steps as an example. You can divide the ways of doing ten steps into two buckets. In the first one is all the ways of going up nine steps and then taking a single step to get to the tenth. The other one is all the ways of going up eight steps and then take a double step to get to the tenth. Every possibility is counted this way, and nothing is counted twice.\n\nIn general, the number of ways of going up n steps will be the number of ways of going up (n - 1) steps plus the number of ways of going up (n - 2) steps. That is exactly the Fibonacci rule."
+        }
+      },
+      "block1_text": "**Introduction:** When climbing steps, some people like to take the steps two at a time, at least part of the time. That leads to the general question of how many different ways there are of going up steps this way.\n\n**The Challenge:** How many different ways are there of going up 10 steps where you are making some combination of single and double steps along the way (it may be all single steps or all double steps or some mixture)? How about 20 steps?",
+      "block2_text": "**Exploration:** Do you see a pattern you recognize? Can you find a shortcut that will make it easier to count all the ways of doing this?",
+      "block3_text": "**The Challenge and Exploration:** This is another visit with Fibonacci Numbers. The first few counts of how many ways there are of doing this are: 1, 2, 3, 5, and 8. After doing the bee ancestry puzzle, and then seeing the first few numbers for this one, your students should be suspicious.\n\nThe tricky part is seeing where the Fibonacci rule comes into play. Let’s look at going up ten steps as an example. You can divide the ways of doing ten steps into two buckets. In the first one is all the ways of going up nine steps and then taking a single step to get to the tenth. The other one is all the ways of going up eight steps and then take a double step to get to the tenth. Every possibility is counted this way, and nothing is counted twice.\n\nIn general, the number of ways of going up n steps will be the number of ways of going up (n - 1) steps plus the number of ways of going up (n - 2) steps. That is exactly the Fibonacci rule."
+    },
+    {
+      "id": "esm_pow_c_shakesataparty1",
+      "level": "L1",
+      "eye_opener": false,
+      "puzzler": true,
+      "notes_block_start": 3,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWCHandshake.svg",
+      "block1_illust_max_size": "150px",
+      "block2_type": "all_text",
+      "block3_type": "all_text",
+      "name": "Handshakes at a Party – 1",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Handshakes at a Party – 1"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** Ten people were at a party. A lot of handshaking took place. When asked how many hands each person shook, the answers were: 3, 3, 4, 4, 4, 5, 5, 5, 6, and 8.  When this was announced to the group, one person yelled out “That’s impossible!”\n\n**The Challenge:** Was that person right, did someone make a mistake in their handshake count? How do you know?"
+        },
+        "block2_text": {
+          "eng": "**Exploration:** Look further into handshake counts and come up with a short list of counts that are possible and some that are impossible."
+        },
+        "block3_text": {
+          "eng": "**The Challenge:** An interesting property of handshakes is that they are mutual - if I shake your hand, you are shaking my hand as well. This type of property can come up in other contexts, such as friendships that are mutual.\n\nBecause of this property of handshakes, if you total up the handshakes for all the people involved in an event, every handshake will be counted twice, once for each side of the handshake. Consequently, there should be an even number when all the handshakes are added up. If you add up 3, 3, 4, 4, 4, 5, 5, 5, 6, and 8, the total is 47, which is an odd number. So, a mistake must have been made!\n\n**Exploration:** From what was just discussed, if a collection of counts is going to be possible, their sum must be even. Another obvious requirement is that each individual count must be less than the total number of people (no one shakes their own hand).\n\nHowever, those two conditions are not enough. For example, consider the counts 4, 4, 4, 4, 2. Of these five people, four of them have shaken everyone else’s hand, so it is not possible for the last person to only have two handshakes. In a similar way, while 4, 4, 4, 3, 3 could happen, 4, 4, 4, 2, 2 cannot.\n\nIn “Handshakes at a Party - 2” we will see that the handshake list 7, 6, 5, 4, 3, 2, 1, 0 is impossible, despite having an even sum.\n\nThis leaves plenty of room to be explored further by the interested student."
+        }
+      },
+      "block1_text": "**Introduction:** Ten people were at a party. A lot of handshaking took place. When asked how many hands each person shook, the answers were: 3, 3, 4, 4, 4, 5, 5, 5, 6, and 8.  When this was announced to the group, one person yelled out “That’s impossible!”\n\n**The Challenge:** Was that person right, did someone make a mistake in their handshake count? How do you know?",
+      "block2_text": "**Exploration:** Look further into handshake counts and come up with a short list of counts that are possible and some that are impossible.",
+      "block3_text": "**The Challenge:** An interesting property of handshakes is that they are mutual - if I shake your hand, you are shaking my hand as well. This type of property can come up in other contexts, such as friendships that are mutual.\n\nBecause of this property of handshakes, if you total up the handshakes for all the people involved in an event, every handshake will be counted twice, once for each side of the handshake. Consequently, there should be an even number when all the handshakes are added up. If you add up 3, 3, 4, 4, 4, 5, 5, 5, 6, and 8, the total is 47, which is an odd number. So, a mistake must have been made!\n\n**Exploration:** From what was just discussed, if a collection of counts is going to be possible, their sum must be even. Another obvious requirement is that each individual count must be less than the total number of people (no one shakes their own hand).\n\nHowever, those two conditions are not enough. For example, consider the counts 4, 4, 4, 4, 2. Of these five people, four of them have shaken everyone else’s hand, so it is not possible for the last person to only have two handshakes. In a similar way, while 4, 4, 4, 3, 3 could happen, 4, 4, 4, 2, 2 cannot.\n\nIn “Handshakes at a Party - 2” we will see that the handshake list 7, 6, 5, 4, 3, 2, 1, 0 is impossible, despite having an even sum.\n\nThis leaves plenty of room to be explored further by the interested student."
+    },
+    {
+      "id": "esm_pow_c_shakesataparty2",
+      "level": "L1",
+      "eye_opener": false,
+      "puzzler": true,
+      "notes_block_start": 2,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWCHandshake.svg",
+      "block1_illust_max_size": "150px",
+      "block2_type": "all_text",
+      "name": "Handshakes at a Party – 2",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Handshakes at a Party – 2"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** Eight people were at a party. A lot of handshaking took place. When asked how many hands each person shook, they were amazed to discover that each number was different. When this was announced to the group, one person yelled out “That’s impossible!”\n\n**The Challenge:** Was that person right, did someone make a mistake in their handshake count? How do you know?"
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** No one shakes their own hand. Therefore, for eight people, the maximum number of handshakes for any one person is seven. If the eight numbers are different, the list of numbers must be exactly the numbers from 0 to 7.\n\nHowever, this cannot happen. If one person shook seven hands, then they shook every one else’s hand at the party. That means each person was involved in at least one handshake, and that rules out the possibility of 0 handshakes. It is impossible to have all eight numbers from 0 to 7!"
+        }
+      },
+      "block1_text": "**Introduction:** Eight people were at a party. A lot of handshaking took place. When asked how many hands each person shook, they were amazed to discover that each number was different. When this was announced to the group, one person yelled out “That’s impossible!”\n\n**The Challenge:** Was that person right, did someone make a mistake in their handshake count? How do you know?",
+      "block2_text": "**The Challenge:** No one shakes their own hand. Therefore, for eight people, the maximum number of handshakes for any one person is seven. If the eight numbers are different, the list of numbers must be exactly the numbers from 0 to 7.\n\nHowever, this cannot happen. If one person shook seven hands, then they shook every one else’s hand at the party. That means each person was involved in at least one handshake, and that rules out the possibility of 0 handshakes. It is impossible to have all eight numbers from 0 to 7!"
+    },
+    {
+      "id": "esm_pow_c_shakesatapartycouples",
+      "level": "L1",
+      "eye_opener": false,
+      "puzzler": true,
+      "notes_block_start": 2,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWCHandshake.svg",
+      "block1_illust_max_size": "150px",
+      "block2_type": "all_text",
+      "name": "Handshakes at a Party – Couples",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Handshakes at a Party – Couples"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** There were four married couples at a party. A lot of handshakes took place. No one shook the hand of their spouse. One person, Sam, was surprised when Sam asked the seven other people how many handshakes they made - the seven handshake counts were different!\n\n**The Challenge:** How is this possible, and how many handshakes did Sam’s spouse make?"
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** No one shook their own hand, and if they didn’t shake their spouse’s hand, then the maximum count for any person was six. If the seven counts were different, then they must exactly be the whole list of numbers from 0 to 6.\n\nConsider the person with six handshakes. They shook everyone’s hand except their spouse. Put another way, we know everyone other than that person’s spouse had at least one handshake. Therefore, the person with 0 handshakes had to be married to the person with six handshakes!\n\nIf you remove this couple and the handshakes they were involved in, you are left with three married couples, and each of these six people will have their handshake count reduced by one. We now have a new problem very similar to the original one. These three couples will have handshake counts that are exactly the list of numbers from 0 to 4 (not listing Sam’s count). For the same reasons as before, we can be sure that the person with four handshakes on this list (five handshakes originally) is married to the person with zero handshakes on this list (one handshake originally).\n\nCarrying out this logic one more time, we come to the conclusion that 6 and 0 are married, 5 and 1 are married, and 4 and 2 are married. The only remaining person had 3 handshakes, and they must be married to Sam!\n\nBy the way, Sam had three handshakes as well (Sam shook hands with 4, 5, and 6)."
+        }
+      },
+      "block1_text": "**Introduction:** There were four married couples at a party. A lot of handshakes took place. No one shook the hand of their spouse. One person, Sam, was surprised when Sam asked the seven other people how many handshakes they made - the seven handshake counts were different!\n\n**The Challenge:** How is this possible, and how many handshakes did Sam’s spouse make?",
+      "block2_text": "**The Challenge:** No one shook their own hand, and if they didn’t shake their spouse’s hand, then the maximum count for any person was six. If the seven counts were different, then they must exactly be the whole list of numbers from 0 to 6.\n\nConsider the person with six handshakes. They shook everyone’s hand except their spouse. Put another way, we know everyone other than that person’s spouse had at least one handshake. Therefore, the person with 0 handshakes had to be married to the person with six handshakes!\n\nIf you remove this couple and the handshakes they were involved in, you are left with three married couples, and each of these six people will have their handshake count reduced by one. We now have a new problem very similar to the original one. These three couples will have handshake counts that are exactly the list of numbers from 0 to 4 (not listing Sam’s count). For the same reasons as before, we can be sure that the person with four handshakes on this list (five handshakes originally) is married to the person with zero handshakes on this list (one handshake originally).\n\nCarrying out this logic one more time, we come to the conclusion that 6 and 0 are married, 5 and 1 are married, and 4 and 2 are married. The only remaining person had 3 handshakes, and they must be married to Sam!\n\nBy the way, Sam had three handshakes as well (Sam shook hands with 4, 5, and 6)."
+    },
+    {
+      "id": "esm_pow_c_parity1dominoes",
+      "level": "L1",
+      "eye_opener": false,
+      "puzzler": true,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWCParityDominoesCheckerboardsIntro.svg",
+      "block1_illust_max_size": "380px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWCParityDominoesCheckerboardsChallenge.svg",
+      "block2_illust_max_size": "380px",
+      "block3_type": "all_text",
+      "block4_type": "all_text",
+      "name": "Parity – 1 – Dominoes on Boards",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Parity – 1 – Dominoes on Boards"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** The first of these two checkerboards is easy to cover with dominoes. The second one, which has one square missing, is impossible to cover with dominoes."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Describe why one of these checkerboards is easy to cover with dominoes and the other one is impossible."
+        },
+        "block3_text": {
+          "eng": "**Exploration:** Explore which pairs of small squares you can remove from the original board and still be able to exactly cover the remaining board with dominoes."
+        },
+        "block4_text": {
+          "eng": "**The Challenge:** There are two formulas to look at for this puzzle.\n\nThe first is whether the total number of squares available is even or odd. Because a domino has an even number of squares, every time a domino is put on a board, the number of available squares is reduced by an even number. Therefore, if there were an even number of squares available before the domino, it will still be even after the domino, and if there were an odd number of squares before the domino, it will still be odd.\n\nFor the introductory examples at the top of the first page, the first example has an even number of squares, so it is numerically possible to end with 0 squares (which is an even number). The second example starts with an odd number of squares, so it is impossible for it to be covered with dominoes.\n\nThe second formula is to take the difference between the number of dark squares and the number of light ones. When a domino is put on the board, it covers a dark square and a light square, so the difference of those counts stays the same. For example, the difference is 8 - 6 = 2 before any dominoes are placed (looking at the first challenge board), and it will be 7 - 5 = 2 after placing a domino. A formula such as this, that does not change during moves in a game or puzzle, is called an invariant.\n\nBecause the difference starts at 8 - 6 = 2 for the first challenge board, it can never be completely covered by dominoes (which would bring the difference to 0 - 0 = 0).\n\nThe second board starts with a difference 7 - 7 = 0, so there is a chance that it can be covered. It is actually quite easy to cover the second board with dominoes.\n\n**Exploration:** Calculating the difference of dark and white squares tells you a lot about which boards can be done. The only difference that gives a chance for success is a difference of 0. If you were to remove four squares, it is possible to have a difference of 0 and not be able to cover the remaining squares - this happens when one of the corner squares gets isolated. However, generally speaking, if the difference is 0 you will almost always be able to cover the board with dominoes."
+        }
+      },
+      "block1_text": "**Introduction:** The first of these two checkerboards is easy to cover with dominoes. The second one, which has one square missing, is impossible to cover with dominoes.",
+      "block2_text": "**The Challenge:** Describe why one of these checkerboards is easy to cover with dominoes and the other one is impossible.",
+      "block3_text": "**Exploration:** Explore which pairs of small squares you can remove from the original board and still be able to exactly cover the remaining board with dominoes.",
+      "block4_text": "**The Challenge:** There are two formulas to look at for this puzzle.\n\nThe first is whether the total number of squares available is even or odd. Because a domino has an even number of squares, every time a domino is put on a board, the number of available squares is reduced by an even number. Therefore, if there were an even number of squares available before the domino, it will still be even after the domino, and if there were an odd number of squares before the domino, it will still be odd.\n\nFor the introductory examples at the top of the first page, the first example has an even number of squares, so it is numerically possible to end with 0 squares (which is an even number). The second example starts with an odd number of squares, so it is impossible for it to be covered with dominoes.\n\nThe second formula is to take the difference between the number of dark squares and the number of light ones. When a domino is put on the board, it covers a dark square and a light square, so the difference of those counts stays the same. For example, the difference is 8 - 6 = 2 before any dominoes are placed (looking at the first challenge board), and it will be 7 - 5 = 2 after placing a domino. A formula such as this, that does not change during moves in a game or puzzle, is called an invariant.\n\nBecause the difference starts at 8 - 6 = 2 for the first challenge board, it can never be completely covered by dominoes (which would bring the difference to 0 - 0 = 0).\n\nThe second board starts with a difference 7 - 7 = 0, so there is a chance that it can be covered. It is actually quite easy to cover the second board with dominoes.\n\n**Exploration:** Calculating the difference of dark and white squares tells you a lot about which boards can be done. The only difference that gives a chance for success is a difference of 0. If you were to remove four squares, it is possible to have a difference of 0 and not be able to cover the remaining squares - this happens when one of the corner squares gets isolated. However, generally speaking, if the difference is 0 you will almost always be able to cover the board with dominoes."
+    },
+    {
+      "id": "esm_pow_c_parity2pathsonboards",
+      "level": "L1",
+      "eye_opener": false,
+      "puzzler": true,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWCParityPathsCheckerboards.svg",
+      "block1_illust_max_size": "380px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWCParityPathsCheckerboardsBlank.svg",
+      "block2_illust_max_size": "380px",
+      "block3_type": "all_text",
+      "block4_type": "all_text",
+      "name": "Parity – 2 – Paths on Boards",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Parity – 2 – Paths on Boards"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** The first 3 by 4 checkerboard has a path that visits every square starting at the black dot. The second 3 by 5 checkerboard has no path that visits every square starting at the black dot."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** For these two checkerboards, identify which starting positions will begin paths that visit every square in the board and which ones do not. What is the difference?"
+        },
+        "block3_text": {
+          "eng": "**Exploration:** Create some other sizes of checkerboards and try various starting positions on these. Do you see any patterns for which starting positions work on each board?"
+        },
+        "block4_text": {
+          "eng": "**The Challenge and Exploration:** Trial and error can be quite successful with this puzzle and should  be encouraged. With enough time and patience, your students will figure these out. The first challenge board has a complete path starting at any square. The second challenge board has complete paths that work from each of the white squares and none of the dark squares.\n\nThat’s an interesting result.\n\nThe question you want your students to ask at this point is: Why do we see this pattern of results?\n\nLooking at the example paths in the introduction, an important observation is that the color of the squares will alternate along any path. This is because two squares that share a side will be of opposite colors. If you think of a complete path as an alternating list of all the squares of a board, this will be the key to seeing when it is impossible to have a complete path.\n\nFor example, look at the 3 by 5 grid in the introduction and in the challenge. It has 8 white squares and 7 black squares. A path that starts at a white square can alternate colors and work: WBWBWBWBWBWBWBW. However, a path that starts at a black square will be stuck: BWBWBWBWBWBWBW without any way of reaching the eighth W square.\n\nFor rectangular boards that have an even number of squares and hence the same number of white and black squares, a complete path can start anywhere. For rectangular boards that have an odd number of squares, complete paths must start in the corners or from squares that are the same color as the corners."
+        }
+      },
+      "block1_text": "**Introduction:** The first 3 by 4 checkerboard has a path that visits every square starting at the black dot. The second 3 by 5 checkerboard has no path that visits every square starting at the black dot.",
+      "block2_text": "**The Challenge:** For these two checkerboards, identify which starting positions will begin paths that visit every square in the board and which ones do not. What is the difference?",
+      "block3_text": "**Exploration:** Create some other sizes of checkerboards and try various starting positions on these. Do you see any patterns for which starting positions work on each board?",
+      "block4_text": "**The Challenge and Exploration:** Trial and error can be quite successful with this puzzle and should  be encouraged. With enough time and patience, your students will figure these out. The first challenge board has a complete path starting at any square. The second challenge board has complete paths that work from each of the white squares and none of the dark squares.\n\nThat’s an interesting result.\n\nThe question you want your students to ask at this point is: Why do we see this pattern of results?\n\nLooking at the example paths in the introduction, an important observation is that the color of the squares will alternate along any path. This is because two squares that share a side will be of opposite colors. If you think of a complete path as an alternating list of all the squares of a board, this will be the key to seeing when it is impossible to have a complete path.\n\nFor example, look at the 3 by 5 grid in the introduction and in the challenge. It has 8 white squares and 7 black squares. A path that starts at a white square can alternate colors and work: WBWBWBWBWBWBWBW. However, a path that starts at a black square will be stuck: BWBWBWBWBWBWBW without any way of reaching the eighth W square.\n\nFor rectangular boards that have an even number of squares and hence the same number of white and black squares, a complete path can start anywhere. For rectangular boards that have an odd number of squares, complete paths must start in the corners or from squares that are the same color as the corners."
+    },
+    {
+      "id": "esm_pow_c_party3lastnumber",
+      "level": "L1",
+      "eye_opener": false,
+      "puzzler": true,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWCLastNumberStandingIntro.svg",
+      "block1_illust_max_size": "330px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWCLastNumberStandingChallenge.svg",
+      "block2_illust_max_size": "330px",
+      "block3_type": "all_text",
+      "block4_type": "all_text",
+      "name": "Parity – 3 – Last Number Standing",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Parity – 3 – Last Number Standing"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** The numbers 1 to 5 are written on a board. Then pairs of numbers are selected, erased, and replaced by their difference. This continues until there is a single number remaining. In the example below, that number is 1."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** How small can that single number be? Can it be 0? Does your answer change if the numbers go from 1 to 6, or from 1 to 7?"
+        },
+        "block3_text": {
+          "eng": "**Exploration:** For a given list of numbers, such as 1 to 5, which last numbers are possible? What is the smallest and largest possible last number? When can 0 or the top number occur on the list of possibilities?"
+        },
+        "block4_text": {
+          "eng": "**The Challenge:** This is quite similar to the puzzle that asks which numbers are possible when we take the numbers from 1 to 5 and put addition or subtraction signs between each pair of numbers - for example, 1 + 2 + 3 - 4 + 5 or 1 + 2 - 3 + 4 + 5. The advantage of using this form of the puzzle is that no negative numbers will be involved.\n\nA few easy notes to start with. All differences are nonnegative, so the final answer can never be less than 0. The numbers that get created from differences are either with the original numbers or from numbers derived from those numbers. So the maximum number that can be used with a difference is the largest number, which is 5. We want to know which of the numbers from 0 to 5 are possible final answers.\n\nLook at this as an evens and odds problem. Start by counting the number of odd numbers. In the case of going from 1 to 5, that count is 3, which is itself an odd number. So, we have an odd number of odd numbers. Make a list of what happens when you take a difference: 1) If both numbers are even, the result is an even number and there is no change in the total number of odd numbers; 2) if one number is odd and the other is even, the result is an odd number and there is no change in the total number of odd numbers; and 3) if both numbers are odd numbers, then the result is an even number and the total number of odd numbers is reduced by two. In all cases, the total number of odd numbers either stays the same or is reduced by two. \n\n**Result:** If we start with an odd number of odd numbers, we will end with an odd number (1) of them. If we start with an even number of odd numbers, then we will end with an even number (0) of them.\n\nIn the case of going from 1 to 5, we started with an odd number of odd numbers, so the final answer must be odd. The final answer must be 1,3 or 5. Some quick experimenting shows that they are all possible.\n\nThe analysis is exactly the same for the numbers from 1 to 6 because there are still three odd numbers.\n\nFor the range 1 to 7, there are now an even number of odd numbers, so there will be zero odd numbers at the end and the  possible last numbers are 0, 2, 4, or 6 (which can all occur).\n\n**Exploration:** It is easy to see when 0 is possible. Start by pairing up consecutive numbers from the top and taking their differences. This gives a collection of 1’s. If there are an even number of 1’s, then you can get a 0, and if there are an odd number, you can get a 1. Not surprisingly, this is the same as finding out whether you started with an even or odd number of odd numbers. Take 1 to 7 as an example: (7 6) (5 4) (3 2) 1 => 1 1 1 1 => (1 1) (1 1) => 0 0 => 0.\n\nYou can do the same thing to see if the top number is possible. Pair up consecutive numbers starting at the top leaving out the top number. Take the differences of these pairs. You now have a list of 1’s together with the top number. Reduce the list of 1’s to either a single 0 or single 1. Take the difference of that with the top number!"
+        }
+      },
+      "block1_text": "**Introduction:** The numbers 1 to 5 are written on a board. Then pairs of numbers are selected, erased, and replaced by their difference. This continues until there is a single number remaining. In the example below, that number is 1.",
+      "block2_text": "**The Challenge:** How small can that single number be? Can it be 0? Does your answer change if the numbers go from 1 to 6, or from 1 to 7?",
+      "block3_text": "**Exploration:** For a given list of numbers, such as 1 to 5, which last numbers are possible? What is the smallest and largest possible last number? When can 0 or the top number occur on the list of possibilities?",
+      "block4_text": "**The Challenge:** This is quite similar to the puzzle that asks which numbers are possible when we take the numbers from 1 to 5 and put addition or subtraction signs between each pair of numbers - for example, 1 + 2 + 3 - 4 + 5 or 1 + 2 - 3 + 4 + 5. The advantage of using this form of the puzzle is that no negative numbers will be involved.\n\nA few easy notes to start with. All differences are nonnegative, so the final answer can never be less than 0. The numbers that get created from differences are either with the original numbers or from numbers derived from those numbers. So the maximum number that can be used with a difference is the largest number, which is 5. We want to know which of the numbers from 0 to 5 are possible final answers.\n\nLook at this as an evens and odds problem. Start by counting the number of odd numbers. In the case of going from 1 to 5, that count is 3, which is itself an odd number. So, we have an odd number of odd numbers. Make a list of what happens when you take a difference: 1) If both numbers are even, the result is an even number and there is no change in the total number of odd numbers; 2) if one number is odd and the other is even, the result is an odd number and there is no change in the total number of odd numbers; and 3) if both numbers are odd numbers, then the result is an even number and the total number of odd numbers is reduced by two. In all cases, the total number of odd numbers either stays the same or is reduced by two. \n\n**Result:** If we start with an odd number of odd numbers, we will end with an odd number (1) of them. If we start with an even number of odd numbers, then we will end with an even number (0) of them.\n\nIn the case of going from 1 to 5, we started with an odd number of odd numbers, so the final answer must be odd. The final answer must be 1,3 or 5. Some quick experimenting shows that they are all possible.\n\nThe analysis is exactly the same for the numbers from 1 to 6 because there are still three odd numbers.\n\nFor the range 1 to 7, there are now an even number of odd numbers, so there will be zero odd numbers at the end and the  possible last numbers are 0, 2, 4, or 6 (which can all occur).\n\n**Exploration:** It is easy to see when 0 is possible. Start by pairing up consecutive numbers from the top and taking their differences. This gives a collection of 1’s. If there are an even number of 1’s, then you can get a 0, and if there are an odd number, you can get a 1. Not surprisingly, this is the same as finding out whether you started with an even or odd number of odd numbers. Take 1 to 7 as an example: (7 6) (5 4) (3 2) 1 => 1 1 1 1 => (1 1) (1 1) => 0 0 => 0.\n\nYou can do the same thing to see if the top number is possible. Pair up consecutive numbers starting at the top leaving out the top number. Take the differences of these pairs. You now have a list of 1’s together with the top number. Reduce the list of 1’s to either a single 0 or single 1. Take the difference of that with the top number!"
+    },
+    {
+      "id": "esm_pow_c_parity4prisonerswithhats",
+      "level": "L1",
+      "eye_opener": false,
+      "puzzler": true,
+      "notes_block_start": 2,
+      "block1_type": "illust_below",
+      "block2_type": "all_text",
+      "name": "Parity – 4 – Prisoners with Hats",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Parity – 4 – Prisoners with Hats"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** To celebrate a special occasion, a prison offered to let some prisoners go free if they could pass a test.\n\nThe prison had a very large collection of small hats of two colors - say, black and white. On the day of the test, three prisoners were selected and lined up blindfolded facing toward the front of the line. A small colored hat was placed on each prisoner and then the blindfolds were removed. Each prisoner could see all the hats of the prisoners in front of them, but they could not see their own hat or any of the hats behind them.\n\nDuring the test, the last prisoner in line says a hat color. If that was their hat color, they are set free. Otherwise, they go back to prison. Each prisoner can hear each answer behind them before they give their own answer. No hints to other prisoners were allowed in the tone or manner that each answer was given.\n\nAll these rules were made clear to the prisoners the day before the test, and they were allowed to strategize together.\n\n**The Challenge:** Describe a strategy that guarantees the largest number of prisoners will go free.\n\n**Exploration:** How does your solution change if there are four or even five prisoners? Devise a strategy that works for any number of prisoners."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Your students will be tempted to come up with schemes that involve cheating by having the color spoken in some sort of unusual way that gives a clue to the other prisoners. This of course is not allowed. They may also be tempted to think if both hats in front of them are the same color, then their hat is likely to be the other color - it is important to point out that there is a very large supply of hats so that there will be no bias regarding running out of one type of hat.\n\nThe other thing they will be tempted to do is to rely on good luck. This puzzle specifically looks for guarantees of success and not ways of being lucky.\n\nOne common strategy suggestion is to have the first prisoner say the hat color of the person directly in front of them. Unfortunately, that strategy only guarantees that one person will go free.\n\nThe best strategy  is for the first prisoner to do the following. They count the number of black hats in front of them. If the number of black hats is even, they say “Black,” and if it is odd, they say “White.” This strategy does not guarantee that the first prisoner will go free, but there is no way to guarantee that.\n\nAfter the first prisoner’s turn, the second prisoner can figure out their hat. Suppose the first prisoner said “Black.” Then the second prisoner knows that their hat and the third prisoner’s hat are either both black or both white - by looking at the hat on the third prisoner, it is easy to know which case it is. Similarly, if the first prisoner says “white,” then the two remaining hats must be opposite colors.\n\nFinally, the third prisoner has heard the previous two hat announcements. If the first one said “Black,” then the two hats must be the same color and their hat must be the same as the second person’s hat. If the first one said “White,” then the two hats must be different colors and their hat is the opposite of the second person’s hat.\n\nThis strategy two prisoners will go free. If they're lucky, the third prisoner will go free as well.\n\n**Exploration:** For more than three prisoners, the strategy starts off exactly the same.way. Note that if the original strategy is put in terms of the hats being the same or different (instead of using even and odd), then the jump to more than three prisoners requires a major insight. The best way to explain how this will work is to have your students put on pretend hats and act out how they can figure out their hat color using ideas about even and odd numbers."
+        }
+      },
+      "block1_text": "**Introduction:** To celebrate a special occasion, a prison offered to let some prisoners go free if they could pass a test.\n\nThe prison had a very large collection of small hats of two colors - say, black and white. On the day of the test, three prisoners were selected and lined up blindfolded facing toward the front of the line. A small colored hat was placed on each prisoner and then the blindfolds were removed. Each prisoner could see all the hats of the prisoners in front of them, but they could not see their own hat or any of the hats behind them.\n\nDuring the test, the last prisoner in line says a hat color. If that was their hat color, they are set free. Otherwise, they go back to prison. Each prisoner can hear each answer behind them before they give their own answer. No hints to other prisoners were allowed in the tone or manner that each answer was given.\n\nAll these rules were made clear to the prisoners the day before the test, and they were allowed to strategize together.\n\n**The Challenge:** Describe a strategy that guarantees the largest number of prisoners will go free.\n\n**Exploration:** How does your solution change if there are four or even five prisoners? Devise a strategy that works for any number of prisoners.",
+      "block2_text": "**The Challenge:** Your students will be tempted to come up with schemes that involve cheating by having the color spoken in some sort of unusual way that gives a clue to the other prisoners. This of course is not allowed. They may also be tempted to think if both hats in front of them are the same color, then their hat is likely to be the other color - it is important to point out that there is a very large supply of hats so that there will be no bias regarding running out of one type of hat.\n\nThe other thing they will be tempted to do is to rely on good luck. This puzzle specifically looks for guarantees of success and not ways of being lucky.\n\nOne common strategy suggestion is to have the first prisoner say the hat color of the person directly in front of them. Unfortunately, that strategy only guarantees that one person will go free.\n\nThe best strategy  is for the first prisoner to do the following. They count the number of black hats in front of them. If the number of black hats is even, they say “Black,” and if it is odd, they say “White.” This strategy does not guarantee that the first prisoner will go free, but there is no way to guarantee that.\n\nAfter the first prisoner’s turn, the second prisoner can figure out their hat. Suppose the first prisoner said “Black.” Then the second prisoner knows that their hat and the third prisoner’s hat are either both black or both white - by looking at the hat on the third prisoner, it is easy to know which case it is. Similarly, if the first prisoner says “white,” then the two remaining hats must be opposite colors.\n\nFinally, the third prisoner has heard the previous two hat announcements. If the first one said “Black,” then the two hats must be the same color and their hat must be the same as the second person’s hat. If the first one said “White,” then the two hats must be different colors and their hat is the opposite of the second person’s hat.\n\nThis strategy two prisoners will go free. If they're lucky, the third prisoner will go free as well.\n\n**Exploration:** For more than three prisoners, the strategy starts off exactly the same.way. Note that if the original strategy is put in terms of the hats being the same or different (instead of using even and odd), then the jump to more than three prisoners requires a major insight. The best way to explain how this will work is to have your students put on pretend hats and act out how they can figure out their hat color using ideas about even and odd numbers."
+    },
+    {
+      "id": "esm_pow_c_parity10pathsonboards",
+      "level": "L1",
+      "eye_opener": false,
+      "puzzler": true,
+      "notes_block_start": 5,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWCParityPathsCheckerboards.svg",
+      "block1_illust_max_size": "380px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWCParityPathsCheckerboardsStarEndIntro.svg",
+      "block2_illust_max_size": "380px",
+      "block3_type": "illust_below",
+      "block3_illust": "ESMIll/ESMPOWCParityPathsCheckerboardsBlank.svg",
+      "block3_illust_max_size": "380px",
+      "block4_type": "all_text",
+      "block5_type": "illust_below",
+      "block6_type": "all_text",
+      "name": "Parity – 10 – Paths on Boards",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {},
+        "block5_text": {},
+        "block6_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Parity – 10 – Paths on Boards"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** In the Puzzle of the Week “Paths on Checkerboards - 1” we looked at when it was possible, starting at a given point, to make a path on a checkerboard that visited every square. Starting at the black dot, the first 3 by 4 checkerboard has a path and the second 3 by 5 checkerboard does not."
+        },
+        "block2_text": {
+          "eng": "For this puzzle we have both a starting and ending point, and ask the question of whether there is a path that starts at one point and visits every point exactly once on the way to ending at the other point."
+        },
+        "block3_text": {
+          "eng": "**The Challenge:** For these two checkerboards, identify which pairs of starting and ending positions have a path that links them that visits every square in the board once, and which ones do not. What is the difference?"
+        },
+        "block4_text": {
+          "eng": "**Exploration:** Create some other sizes of checkerboards and try various starting positions on these. Do you see any patterns for which starting positions work on each board?"
+        },
+        "block5_text": {
+          "eng": "**The Challenge and Exploration:** In “Paths on Checkerboards - 1” we saw that the sequence of colors on a path will alternate as one moves along the path.\n\nAs we saw in that earlier puzzle, for checkerboards with an even number of squares, such as the 3 by 4 board, we must end on the opposite color from what we started on. For checkerboards with an odd number of squares, such as the 3 by 5 board, we must begin and end on the color that is in one of the corners of the board.\n\nThat leaves the question - If we follow those rules, is that enough?\n\nOne way to analyze this question is to set the position of one of the points and see what all the endpoints are for good paths. We can exploit mirror symmetry (flipping around the middle of the board in one direction or the other) to reduce the number of possible cases to look at. Here is what we get for the two boards. The red dot is a fixed starting point, and the black dots are places with successful endpoints."
+        },
+        "block6_text": {
+          "eng": "As you can see, most positions work. For the ones that fail, it is not a matter of having trouble with alternating colors, it is a problem with getting boxed into corners. This confinement problem is even more troublesome for boards with only two rows. For four or more rows, I believe the confinement problems go away."
+        }
+      },
+      "block1_text": "**Introduction:** In the Puzzle of the Week “Paths on Checkerboards - 1” we looked at when it was possible, starting at a given point, to make a path on a checkerboard that visited every square. Starting at the black dot, the first 3 by 4 checkerboard has a path and the second 3 by 5 checkerboard does not.",
+      "block2_text": "For this puzzle we have both a starting and ending point, and ask the question of whether there is a path that starts at one point and visits every point exactly once on the way to ending at the other point.",
+      "block3_text": "**The Challenge:** For these two checkerboards, identify which pairs of starting and ending positions have a path that links them that visits every square in the board once, and which ones do not. What is the difference?",
+      "block4_text": "**Exploration:** Create some other sizes of checkerboards and try various starting positions on these. Do you see any patterns for which starting positions work on each board?",
+      "block5_text": "**The Challenge and Exploration:** In “Paths on Checkerboards - 1” we saw that the sequence of colors on a path will alternate as one moves along the path.\n\nAs we saw in that earlier puzzle, for checkerboards with an even number of squares, such as the 3 by 4 board, we must end on the opposite color from what we started on. For checkerboards with an odd number of squares, such as the 3 by 5 board, we must begin and end on the color that is in one of the corners of the board.\n\nThat leaves the question - If we follow those rules, is that enough?\n\nOne way to analyze this question is to set the position of one of the points and see what all the endpoints are for good paths. We can exploit mirror symmetry (flipping around the middle of the board in one direction or the other) to reduce the number of possible cases to look at. Here is what we get for the two boards. The red dot is a fixed starting point, and the black dots are places with successful endpoints.",
+      "block6_text": "As you can see, most positions work. For the ones that fail, it is not a matter of having trouble with alternating colors, it is a problem with getting boxed into corners. This confinement problem is even more troublesome for boards with only two rows. For four or more rows, I believe the confinement problems go away."
+    },
+    {
+      "id": "esm_pow_c_pirateswithgold1",
+      "level": "L1",
+      "eye_opener": false,
+      "puzzler": true,
+      "notes_block_start": 2,
+      "block1_type": "all_text",
+      "block2_type": "all_text",
+      "name": "Pirates with Gold – 1",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Pirates with Gold – 1"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** There are three pirates on an island, and they have a total of 12 gold coins.\n\nThe rules are:\n\n* The pirates are very smart.\n* Each pirate wants as much of the gold as possible for themselves, and does not care about the others.\n*The youngest pirate must propose a plan for splitting up the gold. If the plan is acceptable to over half of all the pirates (including the youngest), then the plan is adopted. Otherwise, the youngest pirate is forced to leave the island with no gold, and the new youngest pirate must propose a plan.\n\n**The Challenge:** What is the most gold coins the youngest pirate can get in an acceptable  plan?"
+        },
+        "block2_text": {
+          "eng": "THE CHALLENGE: This puzzle is a wonderful example of using two related problem-solving techniques - learning from examples and learning from simpler versions of the problem.\n\nLet’s work our way up to three pirates.\n\n* 1 Pirate: This is easy. The youngest pirate gets all 12 gold coins.\n* 2 Pirates: The youngest pirate gets nothing. If the youngest pirate tried to have any of the gold, the other pirate would vote against the plan, forcing the youngest to leave and thereby getting everything anyway.\n* 3 Pirates: The youngest pirate need only convince one other pirate to vote for the plan. As we saw in the two-pirate case, the second-youngest pirate will get nothing if the initial plan is rejected. So, the youngest pirate’s plan just needs to give the second-youngest pirate 1 gold coin to give the second-youngest pirate a reason to vote for the plan.\n\nGiving away 1 gold coin means the youngest pirate gets to keep 11 gold coins!\n\nIn “Pirates with Gold - 2” we will see what happens when there even more pirates."
+        }
+      },
+      "block1_text": "**Introduction:** There are three pirates on an island, and they have a total of 12 gold coins.\n\nThe rules are:\n\n* The pirates are very smart.\n* Each pirate wants as much of the gold as possible for themselves, and does not care about the others.\n*The youngest pirate must propose a plan for splitting up the gold. If the plan is acceptable to over half of all the pirates (including the youngest), then the plan is adopted. Otherwise, the youngest pirate is forced to leave the island with no gold, and the new youngest pirate must propose a plan.\n\n**The Challenge:** What is the most gold coins the youngest pirate can get in an acceptable  plan?",
+      "block2_text": "THE CHALLENGE: This puzzle is a wonderful example of using two related problem-solving techniques - learning from examples and learning from simpler versions of the problem.\n\nLet’s work our way up to three pirates.\n\n* 1 Pirate: This is easy. The youngest pirate gets all 12 gold coins.\n* 2 Pirates: The youngest pirate gets nothing. If the youngest pirate tried to have any of the gold, the other pirate would vote against the plan, forcing the youngest to leave and thereby getting everything anyway.\n* 3 Pirates: The youngest pirate need only convince one other pirate to vote for the plan. As we saw in the two-pirate case, the second-youngest pirate will get nothing if the initial plan is rejected. So, the youngest pirate’s plan just needs to give the second-youngest pirate 1 gold coin to give the second-youngest pirate a reason to vote for the plan.\n\nGiving away 1 gold coin means the youngest pirate gets to keep 11 gold coins!\n\nIn “Pirates with Gold - 2” we will see what happens when there even more pirates."
+    },
+    {
+      "id": "esm_pow_c_pirateswithgold2",
+      "level": "L1",
+      "eye_opener": false,
+      "puzzler": true,
+      "notes_block_start": 2,
+      "block1_type": "all_text",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWCPiratesWithGold2Answer.svg",
+      "block2_illust_max_size": "360px",
+      "block3_type": "all_text",
+      "name": "Pirates with Gold – 2",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Pirates with Gold – 2"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** There are five pirates on an island, and they have a total of 12 gold coins.\n\nThe rules are:\n\n* The pirates are very smart.\n* Each pirate wants as much of the gold as possible for themselves, and does not care about the others.\n*The youngest pirate must propose a plan for splitting up the gold. If the plan is acceptable to over half of all the pirates (including the youngest), then the plan is adopted. Otherwise, the youngest pirate is forced to leave the island with no gold, and the new youngest pirate must propose a plan.\n\n**The Challenge:** What is the most gold coins the youngest pirate can get in an acceptable  plan?\n\n**Exploration:** Explore what happens when there are more than five pirates."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** This puzzle provides great practice with two problem-solving techniques. The first is to learn from examples and simpler versions of the problem. The second is to use a table or other organizational scheme to arrange the data in an easy to understand way.\n\nIn “Pirates with Gold – 1” we looked at what happens when there are 1, 2, or 3 pirates. Because there are starting to be a lot of cases to look at, we’ll organize the information into a table. The table will show how many gold coins the best plan (for the youngest pirate) will give to each of the pirates. For ease of reference, we’ll name the pirates A, B, C, D, and E, in order of age, with A the youngest and E the oldest.\n\nAn X in the table means the pirate was not involved in that version of the problem."
+        },
+        "block3_text": {
+          "eng": "We already looked at the plans for the first three rows in “Pirates with Gold - 1.” To review, if E is the only pirate, then E gets all the gold. If D and E are the only pirates, then D must give all the gold to E or E won’t vote for D’s plan. If the pirates are C, D, and E, then C needs one more vote - C can get that vote by giving D more gold than D would get if D votes against C’s plan.\n\nSuppose the pirates are B, C, D, and E. B needs two other votes to get B’s plan approved. That means B must give more gold to two pirates than they would get if they reject B’s plan. The best way to do that is for B to give E one piece of gold and D two pieces of gold.\n\nFinally, suppose all five pirates are involved. A needs two other votes to get A’s plan approved. Once again, that means A must give more gold to two pirates than they would get if they reject A’s plan. This is mostly easily done by giving E two pieces of gold and C one piece of gold.\n\nThe answer to the puzzle is: The youngest pirate gets to keep 9 pieces of gold!"
+        }
+      },
+      "block1_text": "**Introduction:** There are five pirates on an island, and they have a total of 12 gold coins.\n\nThe rules are:\n\n* The pirates are very smart.\n* Each pirate wants as much of the gold as possible for themselves, and does not care about the others.\n*The youngest pirate must propose a plan for splitting up the gold. If the plan is acceptable to over half of all the pirates (including the youngest), then the plan is adopted. Otherwise, the youngest pirate is forced to leave the island with no gold, and the new youngest pirate must propose a plan.\n\n**The Challenge:** What is the most gold coins the youngest pirate can get in an acceptable  plan?\n\n**Exploration:** Explore what happens when there are more than five pirates.",
+      "block2_text": "**The Challenge:** This puzzle provides great practice with two problem-solving techniques. The first is to learn from examples and simpler versions of the problem. The second is to use a table or other organizational scheme to arrange the data in an easy to understand way.\n\nIn “Pirates with Gold – 1” we looked at what happens when there are 1, 2, or 3 pirates. Because there are starting to be a lot of cases to look at, we’ll organize the information into a table. The table will show how many gold coins the best plan (for the youngest pirate) will give to each of the pirates. For ease of reference, we’ll name the pirates A, B, C, D, and E, in order of age, with A the youngest and E the oldest.\n\nAn X in the table means the pirate was not involved in that version of the problem.",
+      "block3_text": "We already looked at the plans for the first three rows in “Pirates with Gold - 1.” To review, if E is the only pirate, then E gets all the gold. If D and E are the only pirates, then D must give all the gold to E or E won’t vote for D’s plan. If the pirates are C, D, and E, then C needs one more vote - C can get that vote by giving D more gold than D would get if D votes against C’s plan.\n\nSuppose the pirates are B, C, D, and E. B needs two other votes to get B’s plan approved. That means B must give more gold to two pirates than they would get if they reject B’s plan. The best way to do that is for B to give E one piece of gold and D two pieces of gold.\n\nFinally, suppose all five pirates are involved. A needs two other votes to get A’s plan approved. Once again, that means A must give more gold to two pirates than they would get if they reject A’s plan. This is mostly easily done by giving E two pieces of gold and C one piece of gold.\n\nThe answer to the puzzle is: The youngest pirate gets to keep 9 pieces of gold!"
+    },
+    {
+      "id": "esm_pow_c_selfdesribingnos1",
+      "level": "L1",
+      "eye_opener": false,
+      "puzzler": true,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWCSelfDescribingNumbers.svg",
+      "block1_illust_max_size": "380px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWCSelfDescribingNumbers5.svg",
+      "block2_illust_max_size": "380px",
+      "block3_type": "all_text",
+      "block4_type": "all_text",
+      "name": "Self-Describing Numbers – 1",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Self-Describing Numbers – 1"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** The number 1210 is a Self-Describing Number because each digit in order describes how many digits of that type there are - there is 1 0, 2 1’s, 1 2, and 0 3’s. SImilarly, 2020 is a Self-Describing Number because it has 2 0’s, 0 1’s, 2 2’s, and 0 3’s."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Find a Self-Describing Number that has five digits."
+        },
+        "block3_text": {
+          "eng": "**Exploration:** Why are there no Self-Describing Numbers with 1, 2, or 3 digits?"
+        },
+        "block4_text": {
+          "eng": "**The Challenge:** A playful, disorganized approach to this is fine and should be encouraged.\n\nHere are a few analytical ideas for attacking this puzzle.\n\n**Result 1:** The sum of the digits is the number of digits. The digits count the digits of each type, so the sum of the digits counts all the digits.\n\n**Result 2:** The sum of the products is the number of digits. Put another way, if you take the sum of multiplying each digit by the size of the digits it is counting, that sum must be the number of digits. This result follows from Result 1 because the sum of the products counts up all the digits involved in the number.\n\nLook at the two given examples. In 1210, the sum of the products is (1 x 0) + (2 x 1) + (1 x 2) + (0 x 3) = 4. In 2020, the sum is (2 x 0) + (0 x 1) + (2 x 2) + (0 x 3) = 4.\n\n**Result 3:** The rightmost, low-order digit, the ones digit, is 0. From Result 2, this digit must be 0 or 1 (or the product would be too large). Suppose it is 1. To avoid using variables, let’s suppose we have a 6-digit number. Then the ones place counts the number of 5’s. If there is a 5 someplace, then, by result 1, the only other non-zero digit must be a 1. But then we would have four 0’s, which is impossible.\n\n**Result 4:** The high-order digit is not 0. This must be true for this number to be considered a number.\nOkay, let’s construct some answers for 5-digit numbers.\n\nThere is a basic tension between results 1 and 2. To keep those sums the same, there must be an increase in 0’s. For example, for each 2 there must be an extra 0, for each 3 there must be two extra 0’s, for each 4 there must be three extra 0’s, and so on. That’s why most self-describing numbers have a lot of 0’s.\n\nIf the number of 0’s were 1, there would need to be nonzero numbers in every place except the far right place. But having all those nonzero numbers would necessitate having more 0’s to make Result 2 work out. So, having only one zero in numbers with more than four digits is impossible. We can call that Result 5 if you like.\n\nIf there are 2 0’s, the number is either 22100 or 21200. Of those, only 21200 works, and that is the answer!\n\nIf there are 3 0’s, the number would be 32000, which doesn’t work.\n\n**Exploration:** Let’s look at the cases individually. Remember the four results when looking at these.\n\n**1 digit:** Results 3 and 4 make this impossible.\n\n**2 digit:** The number would have to be 20,  which is not self describing.\n\n**3 digit:** The number would have to be either 300, 210, or 120. None of these is self describing."
+        }
+      },
+      "block1_text": "**Introduction:** The number 1210 is a Self-Describing Number because each digit in order describes how many digits of that type there are - there is 1 0, 2 1’s, 1 2, and 0 3’s. SImilarly, 2020 is a Self-Describing Number because it has 2 0’s, 0 1’s, 2 2’s, and 0 3’s.",
+      "block2_text": "**The Challenge:** Find a Self-Describing Number that has five digits.",
+      "block3_text": "**Exploration:** Why are there no Self-Describing Numbers with 1, 2, or 3 digits?",
+      "block4_text": "**The Challenge:** A playful, disorganized approach to this is fine and should be encouraged.\n\nHere are a few analytical ideas for attacking this puzzle.\n\n**Result 1:** The sum of the digits is the number of digits. The digits count the digits of each type, so the sum of the digits counts all the digits.\n\n**Result 2:** The sum of the products is the number of digits. Put another way, if you take the sum of multiplying each digit by the size of the digits it is counting, that sum must be the number of digits. This result follows from Result 1 because the sum of the products counts up all the digits involved in the number.\n\nLook at the two given examples. In 1210, the sum of the products is (1 x 0) + (2 x 1) + (1 x 2) + (0 x 3) = 4. In 2020, the sum is (2 x 0) + (0 x 1) + (2 x 2) + (0 x 3) = 4.\n\n**Result 3:** The rightmost, low-order digit, the ones digit, is 0. From Result 2, this digit must be 0 or 1 (or the product would be too large). Suppose it is 1. To avoid using variables, let’s suppose we have a 6-digit number. Then the ones place counts the number of 5’s. If there is a 5 someplace, then, by result 1, the only other non-zero digit must be a 1. But then we would have four 0’s, which is impossible.\n\n**Result 4:** The high-order digit is not 0. This must be true for this number to be considered a number.\nOkay, let’s construct some answers for 5-digit numbers.\n\nThere is a basic tension between results 1 and 2. To keep those sums the same, there must be an increase in 0’s. For example, for each 2 there must be an extra 0, for each 3 there must be two extra 0’s, for each 4 there must be three extra 0’s, and so on. That’s why most self-describing numbers have a lot of 0’s.\n\nIf the number of 0’s were 1, there would need to be nonzero numbers in every place except the far right place. But having all those nonzero numbers would necessitate having more 0’s to make Result 2 work out. So, having only one zero in numbers with more than four digits is impossible. We can call that Result 5 if you like.\n\nIf there are 2 0’s, the number is either 22100 or 21200. Of those, only 21200 works, and that is the answer!\n\nIf there are 3 0’s, the number would be 32000, which doesn’t work.\n\n**Exploration:** Let’s look at the cases individually. Remember the four results when looking at these.\n\n**1 digit:** Results 3 and 4 make this impossible.\n\n**2 digit:** The number would have to be 20,  which is not self describing.\n\n**3 digit:** The number would have to be either 300, 210, or 120. None of these is self describing."
+    },
+    {
+      "id": "esm_pow_c_selfdesribingnos2",
+      "level": "L1",
+      "eye_opener": false,
+      "puzzler": true,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWCSelfDescribingNumbers.svg",
+      "block1_illust_max_size": "380px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWCSelfDescribingNumbers7.svg",
+      "block2_illust_max_size": "380px",
+      "block3_type": "all_text",
+      "block4_type": "all_text",
+      "name": "Self-Describing Numbers – 2",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Self-Describing Numbers – 2"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** The number 1210 is a Self-Describing Number because each digit in order describes how many digits of that type there are - there is 1 0, 2 1’s, 1 2, and 0 3’s. SImilarly, 2020 is a Self-Describing Number because it has 2 0’s, 0 1’s, 2 2’s, and 0 3’s."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Find a Self-Describing Number that has seven digits."
+        },
+        "block3_text": {
+          "eng": "**Exploration:** Why are there no Self-Describing Numbers with 6 digits?"
+        },
+        "block4_text": {
+          "eng": "**The Challenge:** A playful, disorganized approach to this is fine and should be encouraged.\n\nHere are some useful results from the Notes on Self-Describing Numbers – 1:\n\n**Result 1:** The sum of the digits is the number of digits.\n\n**Result 2:** The sum of the products is the number of digits.\n\n**Result 3:** The rightmost, low-order digit, the ones digit, is 0.\n\n**Result 4 & 5:** The high-order digit is at least 2 for numbers with at least five digits.\n\nThere is a basic tension between results 1 and 2. To keep those sums the same, there must be an increase in 0’s. For example, for each 2 there must be an extra 0, for each 3 there must be two extra 0’s, for each 4 there must be three extra 0’s, and so on. That’s why most self-describing numbers have a lot of 0’s.\n\nSuppose the high-order digit is 2, so there are only two 0’s. For a five-digit number, that means there are three nonzero digits. In Self-Describing Numbers – 1 we found that the only solution was 21200. For a six-digit number, there would be four nonzero digits. Also, since the digits have to add up to six, that would force the number to have two 1’s and two 2’s. None of the ways of mixing two 1’s and two 2’s work. The same thing keeps happening for longer numbers that have two 0’s. This gives:\n\n**Result 6:** The high order digit is at least 3 for numbers with at least six digits.\n\nLet’s keep playing with the number of 0’s. What would be too many? Suppose the number of 0’s is within three of the total number of digits. That would leave at most two more nonzero digits. One of those would be a 1 for the large 0 count. The only other possible nonzero entry would have to be for the number of 1’s, which is not going to work out. We get yet another result:\n\n**Result 7:** For numbers with at least six digits, the number of nonzero entries must be more than 3.\n\nIf you combine results 6 and 7, you will see that there cannot be any solutions for six-digit numbers. It is surprising that this works for Self-Describing numbers that have 5 or 7 digits, but not for ones that have 6 digits.\n\nFor 7-digit numbers, results 6 and 7 together guarantee that, if there is a solution,  the number of 0’s is 3. The other entries in the number must total 4. A few quick experiments quickly leads to the answer.\n\nThe answer is 3211000!"
+        }
+      },
+      "block1_text": "**Introduction:** The number 1210 is a Self-Describing Number because each digit in order describes how many digits of that type there are - there is 1 0, 2 1’s, 1 2, and 0 3’s. SImilarly, 2020 is a Self-Describing Number because it has 2 0’s, 0 1’s, 2 2’s, and 0 3’s.",
+      "block2_text": "**The Challenge:** Find a Self-Describing Number that has seven digits.",
+      "block3_text": "**Exploration:** Why are there no Self-Describing Numbers with 6 digits?",
+      "block4_text": "**The Challenge:** A playful, disorganized approach to this is fine and should be encouraged.\n\nHere are some useful results from the Notes on Self-Describing Numbers – 1:\n\n**Result 1:** The sum of the digits is the number of digits.\n\n**Result 2:** The sum of the products is the number of digits.\n\n**Result 3:** The rightmost, low-order digit, the ones digit, is 0.\n\n**Result 4 & 5:** The high-order digit is at least 2 for numbers with at least five digits.\n\nThere is a basic tension between results 1 and 2. To keep those sums the same, there must be an increase in 0’s. For example, for each 2 there must be an extra 0, for each 3 there must be two extra 0’s, for each 4 there must be three extra 0’s, and so on. That’s why most self-describing numbers have a lot of 0’s.\n\nSuppose the high-order digit is 2, so there are only two 0’s. For a five-digit number, that means there are three nonzero digits. In Self-Describing Numbers – 1 we found that the only solution was 21200. For a six-digit number, there would be four nonzero digits. Also, since the digits have to add up to six, that would force the number to have two 1’s and two 2’s. None of the ways of mixing two 1’s and two 2’s work. The same thing keeps happening for longer numbers that have two 0’s. This gives:\n\n**Result 6:** The high order digit is at least 3 for numbers with at least six digits.\n\nLet’s keep playing with the number of 0’s. What would be too many? Suppose the number of 0’s is within three of the total number of digits. That would leave at most two more nonzero digits. One of those would be a 1 for the large 0 count. The only other possible nonzero entry would have to be for the number of 1’s, which is not going to work out. We get yet another result:\n\n**Result 7:** For numbers with at least six digits, the number of nonzero entries must be more than 3.\n\nIf you combine results 6 and 7, you will see that there cannot be any solutions for six-digit numbers. It is surprising that this works for Self-Describing numbers that have 5 or 7 digits, but not for ones that have 6 digits.\n\nFor 7-digit numbers, results 6 and 7 together guarantee that, if there is a solution,  the number of 0’s is 3. The other entries in the number must total 4. A few quick experiments quickly leads to the answer.\n\nThe answer is 3211000!"
+    },
+    {
+      "id": "esm_pow_c_selfdesribingnos3",
+      "level": "L1",
+      "eye_opener": false,
+      "puzzler": true,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWCSelfDescribingNumbers.svg",
+      "block1_illust_max_size": "380px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWCSelfDescribingNumbers10.svg",
+      "block2_illust_max_size": "380px",
+      "block3_type": "all_text",
+      "block4_type": "all_text",
+      "name": "Self-Describing Numbers – 3",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Self-Describing Numbers – 3"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** The number 1210 is a Self-Describing Number because each digit in order describes how many digits of that type there are - there is 1 0, 2 1’s, 1 2, and 0 3’s. SImilarly, 2020 is a Self-Describing Number because it has 2 0’s, 0 1’s, 2 2’s, and 0 3’s."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Find a Self-Describing Number that has ten digits."
+        },
+        "block3_text": {
+          "eng": "**Exploration:** Do you see a pattern in your answer for ten digits that will help you find other examples with a large number of digits?"
+        },
+        "block4_text": {
+          "eng": "**The Challenge:** A playful, disorganized approach to this is fine and should be encouraged.\n\nHere are some useful results from the Notes on Self-Describing Numbers – 1 and – 2:\n\n**Result 1:** The sum of the digits is the number of digits.\n\n**Result 2:** The sum of the products is the number of digits.\n\n**Result 3:** The rightmost, low-order digit, the ones digit, is 0.\n\n**Result 4 & 5:** The high-order digit is at least 2 for numbers with at least five digits.\n\n**Result 6:** The high-order digit is at least 3 for numbers with at least six digits.\n\n**Result 7:** For numbers with at least six digits, the number of nonzero entries must be more than 3.\n\nIt is probably helpful to have the answer for 7 in front of us: 3211000. Looking at this, it is tempting to think that the number of nonzero entries is four for numbers with at least six digits. From Result 7, we know that the number of nonzero entries cannot be less than four. Can it be more than four?\n\nWe immediately know two of the nonzero entries - the high order digit that gives the number of 0’s (which is a number that is at least 3), and the place that corresponds to that digit - if that place has a value greater than 1, then that causes there to be that many 0’s and that many of some other number, and things quickly spiral out of control. So, there is at least one 1. That gives us three nonzero entries. It is now impossible to have a single 1 (how would we fill in the number of 1’s), so the number of 1’s must be at least two. So we get an additional 1 corresponding to the place that has the number of 1’s.\n\nAnd that’s it. Any additional entries would once again cause a snowball effect that would cause the numbers to get too big. At last, we arrive at the answer.\n\nThe answer for 10 is 6210001000!\n\n**Exploration:** The answer for 7 was 3211000 and the answer for 10 was 6210001000. The pattern X210….01000 looks promising. Let’s look at how we can apply it.\nIt looks like, as we go up from 7, we can increase the number of 0’s by 1 each time, and put that new 0 between the two 1’s. If you check it out, it always works. Well, it works until we get to 13 with 9210000001000. After 13, the first digit becomes too large to be a single digit, but it was fun while it lasted."
+        }
+      },
+      "block1_text": "**Introduction:** The number 1210 is a Self-Describing Number because each digit in order describes how many digits of that type there are - there is 1 0, 2 1’s, 1 2, and 0 3’s. SImilarly, 2020 is a Self-Describing Number because it has 2 0’s, 0 1’s, 2 2’s, and 0 3’s.",
+      "block2_text": "**The Challenge:** Find a Self-Describing Number that has ten digits.",
+      "block3_text": "**Exploration:** Do you see a pattern in your answer for ten digits that will help you find other examples with a large number of digits?",
+      "block4_text": "**The Challenge:** A playful, disorganized approach to this is fine and should be encouraged.\n\nHere are some useful results from the Notes on Self-Describing Numbers – 1 and – 2:\n\n**Result 1:** The sum of the digits is the number of digits.\n\n**Result 2:** The sum of the products is the number of digits.\n\n**Result 3:** The rightmost, low-order digit, the ones digit, is 0.\n\n**Result 4 & 5:** The high-order digit is at least 2 for numbers with at least five digits.\n\n**Result 6:** The high-order digit is at least 3 for numbers with at least six digits.\n\n**Result 7:** For numbers with at least six digits, the number of nonzero entries must be more than 3.\n\nIt is probably helpful to have the answer for 7 in front of us: 3211000. Looking at this, it is tempting to think that the number of nonzero entries is four for numbers with at least six digits. From Result 7, we know that the number of nonzero entries cannot be less than four. Can it be more than four?\n\nWe immediately know two of the nonzero entries - the high order digit that gives the number of 0’s (which is a number that is at least 3), and the place that corresponds to that digit - if that place has a value greater than 1, then that causes there to be that many 0’s and that many of some other number, and things quickly spiral out of control. So, there is at least one 1. That gives us three nonzero entries. It is now impossible to have a single 1 (how would we fill in the number of 1’s), so the number of 1’s must be at least two. So we get an additional 1 corresponding to the place that has the number of 1’s.\n\nAnd that’s it. Any additional entries would once again cause a snowball effect that would cause the numbers to get too big. At last, we arrive at the answer.\n\nThe answer for 10 is 6210001000!\n\n**Exploration:** The answer for 7 was 3211000 and the answer for 10 was 6210001000. The pattern X210….01000 looks promising. Let’s look at how we can apply it.\nIt looks like, as we go up from 7, we can increase the number of 0’s by 1 each time, and put that new 0 between the two 1’s. If you check it out, it always works. Well, it works until we get to 13 with 9210000001000. After 13, the first digit becomes too large to be a single digit, but it was fun while it lasted."
+    },
+    {
+      "id": "esm_pow_c_fib3tiling",
+      "level": "L1",
+      "eye_opener": false,
+      "puzzler": true,
+      "notes_block_start": 3,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWCFibonacciTilingRectangles.svg",
+      "block1_illust_max_size": "380px",
+      "block2_type": "all_text",
+      "block3_type": "all_text",
+      "name": "Tiling",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Tiling"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** You have two puzzles. For a 1 by n rectangle, how many ways can you fill it with a mixture of 1 by 1 squares and 1 by 2 rectangles? For a 2 by n rectangle, how many ways can you fill it with 1 by 2 rectangles?"
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Why do these two puzzles give the same answers? What are the answers when the rectangles being filled are 10 long? How about when they are 20 long?\n\n**Exploration:** How are these two problems similar to each other and earlier puzzles? How do things change in the 1 by n puzzle if we use 1 by 1 and 1 by 3 pieces instead? How do things change in the 1 by n puzzle if we use 1 by 1, 1 by 2, and 1 by 3 pieces?"
+        },
+        "block3_text": {
+          "eng": "**The Challenge:** Seeing how to apply earlier results to part or all of a new puzzle is a powerful skill.\n\nThese two puzzles are exactly the same in nature. Vertical pieces in the 2 x n rectangle correspond to 1 by 1 pieces in the 1 x n rectangle, and horizontal pieces in the 2 x n rectangle correspond to 1 by 2 pieces in the 1 x n rectangle. So, there really is no difference between the two puzzles.\n\nAlso, the 1 x n rectangle puzzle is exactly like the steps puzzle in “Fibonacci - 2.” Going one step at a time is like putting in a 1 by 1 square, and going two steps at a time is like putting in a 1 by 2 rectangle. The two puzzles are the same, so the analysis and results are the same.\n\n**Exploration:** If we use 1 by 1 and 1 by 3 rectangles, a lot changes. Look at the first few values and consider how they are calculated. We get 1, 1, 2, 3, 4, 6, and 9 for the first few values. In general the next value is the sum of the current value and the one two steps before that. It is simple enough to calculate, but it is no longer the Fibonnaci sequence.\n\nIf we use 1 by 1, 1 by 2, and 1 by 3, things change even more dramatically. Now the first few values are given by 1, 2, 4, 7, 13, and 24. The next value in the sequence is the sum of the previous three values.\n\nSequences like this that define their next terms by a set formula involving previous terms are called recursive sequences. The Fibonacci Numbers are not the only recursive sequence, but they are probably the most famous."
+        }
+      },
+      "block1_text": "**Introduction:** You have two puzzles. For a 1 by n rectangle, how many ways can you fill it with a mixture of 1 by 1 squares and 1 by 2 rectangles? For a 2 by n rectangle, how many ways can you fill it with 1 by 2 rectangles?",
+      "block2_text": "**The Challenge:** Why do these two puzzles give the same answers? What are the answers when the rectangles being filled are 10 long? How about when they are 20 long?\n\n**Exploration:** How are these two problems similar to each other and earlier puzzles? How do things change in the 1 by n puzzle if we use 1 by 1 and 1 by 3 pieces instead? How do things change in the 1 by n puzzle if we use 1 by 1, 1 by 2, and 1 by 3 pieces?",
+      "block3_text": "**The Challenge:** Seeing how to apply earlier results to part or all of a new puzzle is a powerful skill.\n\nThese two puzzles are exactly the same in nature. Vertical pieces in the 2 x n rectangle correspond to 1 by 1 pieces in the 1 x n rectangle, and horizontal pieces in the 2 x n rectangle correspond to 1 by 2 pieces in the 1 x n rectangle. So, there really is no difference between the two puzzles.\n\nAlso, the 1 x n rectangle puzzle is exactly like the steps puzzle in “Fibonacci - 2.” Going one step at a time is like putting in a 1 by 1 square, and going two steps at a time is like putting in a 1 by 2 rectangle. The two puzzles are the same, so the analysis and results are the same.\n\n**Exploration:** If we use 1 by 1 and 1 by 3 rectangles, a lot changes. Look at the first few values and consider how they are calculated. We get 1, 1, 2, 3, 4, 6, and 9 for the first few values. In general the next value is the sum of the current value and the one two steps before that. It is simple enough to calculate, but it is no longer the Fibonnaci sequence.\n\nIf we use 1 by 1, 1 by 2, and 1 by 3, things change even more dramatically. Now the first few values are given by 1, 2, 4, 7, 13, and 24. The next value in the sequence is the sum of the previous three values.\n\nSequences like this that define their next terms by a set formula involving previous terms are called recursive sequences. The Fibonacci Numbers are not the only recursive sequence, but they are probably the most famous."
+    },
+    {
+      "id": "esm_pow_c_topology1insideoutside",
+      "level": "L1",
+      "eye_opener": true,
+      "puzzler": false,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/",
+      "block1_illust_max_size": "330px",
+      "block2_type": "illust_below",
+      "block3_type": "all_text",
+      "block4_type": "all_text",
+      "name": "Topology – 1 – Inside and Outside",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Topology – 1 – Inside and Outside"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** A simple closed curve is a single continuous line that does not bump into itself and has no breaks. An important characteristic of these curves is that they have an inside and an outside."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** For points A and B, determine which is on the inside of the curve and which is outside?"
+        },
+        "block3_text": {
+          "eng": "**Exploration:** Rather than tracing around this entire closed curve, can you find a simple way to test whether a point is on the inside or outside of the curve?"
+        },
+        "block4_text": {
+          "eng": "**The Challenge and Exploration:** Rather than tortuously following the paths around the curve, the key is to allow yourself to cross the curve. Each time you cross the curve you will either go from the inside to the outside, or from the outside to the inside.\n\nHence, to decide whether these points are inside or outside, start from the outside and count how many times you must cross the curve to get to one of the points. If it is an even number of times, then the point is on the outside. If it is an odd number of times, then the point is on the inside.\nCounting crossings, A is on the Outside and B is on the inside.\n\nYou will notice that, no matter which path you take from the outside to get to A, it will always take an even number of crossings to get there."
+        }
+      },
+      "block1_text": "**Introduction:** A simple closed curve is a single continuous line that does not bump into itself and has no breaks. An important characteristic of these curves is that they have an inside and an outside.",
+      "block2_text": "**The Challenge:** For points A and B, determine which is on the inside of the curve and which is outside?",
+      "block3_text": "**Exploration:** Rather than tracing around this entire closed curve, can you find a simple way to test whether a point is on the inside or outside of the curve?",
+      "block4_text": "**The Challenge and Exploration:** Rather than tortuously following the paths around the curve, the key is to allow yourself to cross the curve. Each time you cross the curve you will either go from the inside to the outside, or from the outside to the inside.\n\nHence, to decide whether these points are inside or outside, start from the outside and count how many times you must cross the curve to get to one of the points. If it is an even number of times, then the point is on the outside. If it is an odd number of times, then the point is on the inside.\nCounting crossings, A is on the Outside and B is on the inside.\n\nYou will notice that, no matter which path you take from the outside to get to A, it will always take an even number of crossings to get there."
     }
   ],
   "_xlsxPath": "EFM_pows_high_level_sheets.xlsx",

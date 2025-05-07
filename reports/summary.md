@@ -4,18 +4,18 @@
 | type | count |
 | --- | --- |
 | accordion | 33 |
-| accordion_section | 57 |
-| button | 88 |
+| accordion_section | 58 |
+| button | 89 |
 | debug_toggle | 1 |
-| display_group | 269 |
+| display_group | 271 |
 | image | 33 |
-| items | 40 |
+| items | 41 |
 | qr_code | 1 |
 | radio_button_grid | 1 |
 | round_button | 9 |
 | select_text | 1 |
 | set_field | 9 |
-| set_variable | 564 |
+| set_variable | 571 |
 | simple_checkbox | 4 |
 | template | 69 |
 | text | 198 |
@@ -38,10 +38,10 @@
 | emit: set_language | 1 |
 | emit: uncompleted | 58 |
 | feedback | 11 |
-| go_to | 56 |
+| go_to | 57 |
 | go_to_url | 3 |
 | reset_app | 1 |
-| set_field | 64 |
+| set_field | 66 |
 | set_local | 9 |
 | start_tour | 18 |
 </details>
@@ -51,7 +51,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 41340 KB | 41.3 MB |
+| total | 41554 KB | 41.6 MB |
 | unused | 21738 KB | 21.7 MB |
 </details>
 
@@ -325,6 +325,10 @@ Assets that have references within sheets but do not appear in app-data
 
 | path | count |
 | --- | --- |
+| ESMIll/ESMPOWCCoinFlip10Challenge.svg | 1 |
+| ESMIll/ESMPOWCCoinFlip10Intro.svg | 1 |
+| ESMIll/ESMPOWCCoinFlipInARowChallenge.svg | 1 |
+| ESMIll/ESMPOWCCoinFlipInARowIntro.svg | 1 |
 </details>
 
 <details >
@@ -1431,6 +1435,13 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMPOWCAvoidingRectanglesAnswer6.svg | 13.2 | 1 |
 | ESMIll/ESMPOWCAvoidingRectanglesEmpty4.svg | 3.7 | 1 |
 | ESMIll/ESMPOWCAvoidingRectanglesIntro.svg | 11.8 | 1 |
+| ESMIll/ESMPOWCBadNeighbors.svg | 22.1 | 1 |
+| ESMIll/ESMPOWCFibanocciBees.svg | 13.8 | 1 |
+| ESMIll/ESMPOWCFibonacciSteps.svg | 10.6 | 1 |
+| ESMIll/ESMPOWCFibonacciTilingRectangles.svg | 11.9 | 1 |
+| ESMIll/ESMPOWCHandshake.svg | 9.7 | 3 |
+| ESMIll/ESMPOWCLastNumberStandingChallenge.svg | 11.1 | 1 |
+| ESMIll/ESMPOWCLastNumberStandingIntro.svg | 24.5 | 1 |
 | ESMIll/ESMPOWCLines3Answer.svg | 3.6 | 1 |
 | ESMIll/ESMPOWCLines3Intro.svg | 5.2 | 3 |
 | ESMIll/ESMPOWCLines4Answer.svg | 4.2 | 1 |
@@ -1451,9 +1462,19 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMPOWCParades2BridgesOfKonigsbergAnswer.svg | 9.6 | 1 |
 | ESMIll/ESMPOWCParades2BridgesOfKonigsbergChallengeOld.svg | 5.8 | 1 |
 | ESMIll/ESMPOWCParades2BridgesOfKonigsbergIntro.svg | 6.9 | 1 |
+| ESMIll/ESMPOWCParityDominoesCheckerboardsChallenge.svg | 12.4 | 1 |
+| ESMIll/ESMPOWCParityDominoesCheckerboardsIntro.svg | 12.7 | 1 |
+| ESMIll/ESMPOWCParityPathsCheckerboards.svg | 9.8 | 2 |
+| ESMIll/ESMPOWCParityPathsCheckerboardsBlank.svg | 8.6 | 2 |
+| ESMIll/ESMPOWCParityPathsCheckerboardsStarEndIntro.svg | 10.1 | 1 |
 | ESMIll/ESMPOWCPathChallengeAnswer.svg | 10.2 | 1 |
 | ESMIll/ESMPOWCPathChallengeChallenge.svg | 2.8 | 1 |
 | ESMIll/ESMPOWCPathChallengeIntroRevised.svg | 4.3 | 1 |
+| ESMIll/ESMPOWCPiratesWithGold2Answer.svg | 23.1 | 1 |
+| ESMIll/ESMPOWCSelfDescribingNumbers.svg | 11.1 | 3 |
+| ESMIll/ESMPOWCSelfDescribingNumbers10.svg | 10 | 1 |
+| ESMIll/ESMPOWCSelfDescribingNumbers5.svg | 5.7 | 1 |
+| ESMIll/ESMPOWCSelfDescribingNumbers7.svg | 7.4 | 1 |
 | ESMIll/ESMPOWCSquareGrid4by4 Simple ExamplesIntro.svg | 5.1 | 1 |
 | ESMIll/ESMPOWCSquareGrid4by4Challenge.svg | 4.5 | 1 |
 | ESMIll/ESMPOWCSquareGrid5by5 Simple ExamplesIntro.svg | 7.9 | 1 |
