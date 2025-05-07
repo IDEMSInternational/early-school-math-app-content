@@ -51,7 +51,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 41554 KB | 41.6 MB |
+| total | 41692 KB | 41.7 MB |
 | unused | 21738 KB | 21.7 MB |
 </details>
 
@@ -325,10 +325,6 @@ Assets that have references within sheets but do not appear in app-data
 
 | path | count |
 | --- | --- |
-| ESMIll/ESMPOWCCoinFlip10Challenge.svg | 1 |
-| ESMIll/ESMPOWCCoinFlip10Intro.svg | 1 |
-| ESMIll/ESMPOWCCoinFlipInARowChallenge.svg | 1 |
-| ESMIll/ESMPOWCCoinFlipInARowIntro.svg | 1 |
 </details>
 
 <details >
@@ -1436,6 +1432,10 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMPOWCAvoidingRectanglesEmpty4.svg | 3.7 | 1 |
 | ESMIll/ESMPOWCAvoidingRectanglesIntro.svg | 11.8 | 1 |
 | ESMIll/ESMPOWCBadNeighbors.svg | 22.1 | 1 |
+| ESMIll/ESMPOWCCoinFlip10Challenge.svg | 34.1 | 1 |
+| ESMIll/ESMPOWCCoinFlip10Intro.svg | 41.2 | 1 |
+| ESMIll/ESMPOWCCoinFlipInARowChallenge.svg | 24.1 | 1 |
+| ESMIll/ESMPOWCCoinFlipInARowIntro.svg | 26.3 | 1 |
 | ESMIll/ESMPOWCFibanocciBees.svg | 13.8 | 1 |
 | ESMIll/ESMPOWCFibonacciSteps.svg | 10.6 | 1 |
 | ESMIll/ESMPOWCFibonacciTilingRectangles.svg | 11.9 | 1 |
@@ -1475,6 +1475,8 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMPOWCSelfDescribingNumbers10.svg | 10 | 1 |
 | ESMIll/ESMPOWCSelfDescribingNumbers5.svg | 5.7 | 1 |
 | ESMIll/ESMPOWCSelfDescribingNumbers7.svg | 7.4 | 1 |
+| ESMIll/ESMPOWCSimpleClosedCurveInOutChallenge.svg | 9 | 1 |
+| ESMIll/ESMPOWCSimpleClosedCurveInOutIntro.svg | 3.1 | 1 |
 | ESMIll/ESMPOWCSquareGrid4by4 Simple ExamplesIntro.svg | 5.1 | 1 |
 | ESMIll/ESMPOWCSquareGrid4by4Challenge.svg | 4.5 | 1 |
 | ESMIll/ESMPOWCSquareGrid5by5 Simple ExamplesIntro.svg | 7.9 | 1 |
