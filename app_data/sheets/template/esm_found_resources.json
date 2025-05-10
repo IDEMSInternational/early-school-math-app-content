@@ -1137,6 +1137,624 @@
                   "value"
                 ]
               }
+            },
+            {
+              "name": "oe_counter",
+              "value": "@local.topic_counter - @local.topic_counter",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "do_the_lookup.count_matches.oe_counter",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@local.topic_counter - @local.topic_counter",
+                    "matchedExpression": "@local.topic_counter",
+                    "type": "local",
+                    "fieldName": "topic_counter"
+                  },
+                  {
+                    "fullExpression": "@local.topic_counter - @local.topic_counter",
+                    "matchedExpression": "@local.topic_counter",
+                    "type": "local",
+                    "fieldName": "topic_counter"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.topic_counter": [
+                  "value",
+                  "value"
+                ]
+              }
+            },
+            {
+              "type": "items",
+              "name": "oe_checks",
+              "value": "@data.esm_open_ended_tasks_data_list",
+              "rows": [
+                {
+                  "name": "match1",
+                  "value": "@calc(@local.search_set.has(@item.topic_theme_1))",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "type": "set_variable",
+                  "_nested_name": "do_the_lookup.count_matches.oe_checks.match1",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_1))",
+                        "matchedExpression": "@local.search_set.has",
+                        "type": "local",
+                        "fieldName": "search_set"
+                      },
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_1))",
+                        "matchedExpression": "@item.topic_theme_1",
+                        "type": "item",
+                        "fieldName": "topic_theme_1"
+                      },
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_1))",
+                        "matchedExpression": "@calc(@local.search_set.has(@item.topic_theme_1))",
+                        "type": "calc",
+                        "fieldName": "@local.search_set.has(@item.topic_theme_1)"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@local.search_set.has": [
+                      "value"
+                    ],
+                    "@item.topic_theme_1": [
+                      "value"
+                    ],
+                    "@calc(@local.search_set.has(@item.topic_theme_1))": [
+                      "value"
+                    ]
+                  }
+                },
+                {
+                  "name": "match2",
+                  "value": "@calc(@local.search_set.has(@item.topic_theme_2))",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "type": "set_variable",
+                  "_nested_name": "do_the_lookup.count_matches.oe_checks.match2",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_2))",
+                        "matchedExpression": "@local.search_set.has",
+                        "type": "local",
+                        "fieldName": "search_set"
+                      },
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_2))",
+                        "matchedExpression": "@item.topic_theme_2",
+                        "type": "item",
+                        "fieldName": "topic_theme_2"
+                      },
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_2))",
+                        "matchedExpression": "@calc(@local.search_set.has(@item.topic_theme_2))",
+                        "type": "calc",
+                        "fieldName": "@local.search_set.has(@item.topic_theme_2)"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@local.search_set.has": [
+                      "value"
+                    ],
+                    "@item.topic_theme_2": [
+                      "value"
+                    ],
+                    "@calc(@local.search_set.has(@item.topic_theme_2))": [
+                      "value"
+                    ]
+                  }
+                },
+                {
+                  "name": "match3",
+                  "value": "@calc(@local.search_set.has(@item.topic_theme_3))",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "type": "set_variable",
+                  "_nested_name": "do_the_lookup.count_matches.oe_checks.match3",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_3))",
+                        "matchedExpression": "@local.search_set.has",
+                        "type": "local",
+                        "fieldName": "search_set"
+                      },
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_3))",
+                        "matchedExpression": "@item.topic_theme_3",
+                        "type": "item",
+                        "fieldName": "topic_theme_3"
+                      },
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_3))",
+                        "matchedExpression": "@calc(@local.search_set.has(@item.topic_theme_3))",
+                        "type": "calc",
+                        "fieldName": "@local.search_set.has(@item.topic_theme_3)"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@local.search_set.has": [
+                      "value"
+                    ],
+                    "@item.topic_theme_3": [
+                      "value"
+                    ],
+                    "@calc(@local.search_set.has(@item.topic_theme_3))": [
+                      "value"
+                    ]
+                  }
+                },
+                {
+                  "name": "match4",
+                  "value": "@calc(@local.search_set.has(@item.topic_theme_4))",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "type": "set_variable",
+                  "_nested_name": "do_the_lookup.count_matches.oe_checks.match4",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_4))",
+                        "matchedExpression": "@local.search_set.has",
+                        "type": "local",
+                        "fieldName": "search_set"
+                      },
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_4))",
+                        "matchedExpression": "@item.topic_theme_4",
+                        "type": "item",
+                        "fieldName": "topic_theme_4"
+                      },
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_4))",
+                        "matchedExpression": "@calc(@local.search_set.has(@item.topic_theme_4))",
+                        "type": "calc",
+                        "fieldName": "@local.search_set.has(@item.topic_theme_4)"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@local.search_set.has": [
+                      "value"
+                    ],
+                    "@item.topic_theme_4": [
+                      "value"
+                    ],
+                    "@calc(@local.search_set.has(@item.topic_theme_4))": [
+                      "value"
+                    ]
+                  }
+                },
+                {
+                  "name": "does_it_match",
+                  "value": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "type": "set_variable",
+                  "_nested_name": "do_the_lookup.count_matches.oe_checks.does_it_match",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                        "matchedExpression": "@local.match1",
+                        "type": "local",
+                        "fieldName": "match1"
+                      },
+                      {
+                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                        "matchedExpression": "@local.match2",
+                        "type": "local",
+                        "fieldName": "match2"
+                      },
+                      {
+                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                        "matchedExpression": "@local.match3",
+                        "type": "local",
+                        "fieldName": "match3"
+                      },
+                      {
+                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                        "matchedExpression": "@local.match4",
+                        "type": "local",
+                        "fieldName": "match4"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@local.match1": [
+                      "value"
+                    ],
+                    "@local.match2": [
+                      "value"
+                    ],
+                    "@local.match3": [
+                      "value"
+                    ],
+                    "@local.match4": [
+                      "value"
+                    ]
+                  }
+                },
+                {
+                  "name": "oe_counter",
+                  "value": "@local.oe_counter + 1",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "condition": "@local.does_it_match",
+                  "type": "set_variable",
+                  "_nested_name": "do_the_lookup.count_matches.oe_checks.oe_counter",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@local.oe_counter + 1",
+                        "matchedExpression": "@local.oe_counter",
+                        "type": "local",
+                        "fieldName": "oe_counter"
+                      }
+                    ],
+                    "condition": [
+                      {
+                        "fullExpression": "@local.does_it_match",
+                        "matchedExpression": "@local.does_it_match",
+                        "type": "local",
+                        "fieldName": "does_it_match"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@local.oe_counter": [
+                      "value"
+                    ],
+                    "@local.does_it_match": [
+                      "condition"
+                    ]
+                  }
+                }
+              ],
+              "_nested_name": "do_the_lookup.count_matches.oe_checks",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@data.esm_open_ended_tasks_data_list",
+                    "matchedExpression": "@data.esm_open_ended_tasks_data_list",
+                    "type": "data",
+                    "fieldName": "esm_open_ended_tasks_data_list"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@data.esm_open_ended_tasks_data_list": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "ps_counter",
+              "value": "@local.topic_counter - @local.topic_counter",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "do_the_lookup.count_matches.ps_counter",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@local.topic_counter - @local.topic_counter",
+                    "matchedExpression": "@local.topic_counter",
+                    "type": "local",
+                    "fieldName": "topic_counter"
+                  },
+                  {
+                    "fullExpression": "@local.topic_counter - @local.topic_counter",
+                    "matchedExpression": "@local.topic_counter",
+                    "type": "local",
+                    "fieldName": "topic_counter"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.topic_counter": [
+                  "value",
+                  "value"
+                ]
+              }
+            },
+            {
+              "type": "items",
+              "name": "ps_checks",
+              "value": "@data.esm_ps_tasks_data_list",
+              "rows": [
+                {
+                  "name": "match1",
+                  "value": "@calc(@local.search_set.has(@item.topic_theme_1))",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "type": "set_variable",
+                  "_nested_name": "do_the_lookup.count_matches.ps_checks.match1",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_1))",
+                        "matchedExpression": "@local.search_set.has",
+                        "type": "local",
+                        "fieldName": "search_set"
+                      },
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_1))",
+                        "matchedExpression": "@item.topic_theme_1",
+                        "type": "item",
+                        "fieldName": "topic_theme_1"
+                      },
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_1))",
+                        "matchedExpression": "@calc(@local.search_set.has(@item.topic_theme_1))",
+                        "type": "calc",
+                        "fieldName": "@local.search_set.has(@item.topic_theme_1)"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@local.search_set.has": [
+                      "value"
+                    ],
+                    "@item.topic_theme_1": [
+                      "value"
+                    ],
+                    "@calc(@local.search_set.has(@item.topic_theme_1))": [
+                      "value"
+                    ]
+                  }
+                },
+                {
+                  "name": "match2",
+                  "value": "@calc(@local.search_set.has(@item.topic_theme_2))",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "type": "set_variable",
+                  "_nested_name": "do_the_lookup.count_matches.ps_checks.match2",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_2))",
+                        "matchedExpression": "@local.search_set.has",
+                        "type": "local",
+                        "fieldName": "search_set"
+                      },
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_2))",
+                        "matchedExpression": "@item.topic_theme_2",
+                        "type": "item",
+                        "fieldName": "topic_theme_2"
+                      },
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_2))",
+                        "matchedExpression": "@calc(@local.search_set.has(@item.topic_theme_2))",
+                        "type": "calc",
+                        "fieldName": "@local.search_set.has(@item.topic_theme_2)"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@local.search_set.has": [
+                      "value"
+                    ],
+                    "@item.topic_theme_2": [
+                      "value"
+                    ],
+                    "@calc(@local.search_set.has(@item.topic_theme_2))": [
+                      "value"
+                    ]
+                  }
+                },
+                {
+                  "name": "match3",
+                  "value": "@calc(@local.search_set.has(@item.topic_theme_3))",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "type": "set_variable",
+                  "_nested_name": "do_the_lookup.count_matches.ps_checks.match3",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_3))",
+                        "matchedExpression": "@local.search_set.has",
+                        "type": "local",
+                        "fieldName": "search_set"
+                      },
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_3))",
+                        "matchedExpression": "@item.topic_theme_3",
+                        "type": "item",
+                        "fieldName": "topic_theme_3"
+                      },
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_3))",
+                        "matchedExpression": "@calc(@local.search_set.has(@item.topic_theme_3))",
+                        "type": "calc",
+                        "fieldName": "@local.search_set.has(@item.topic_theme_3)"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@local.search_set.has": [
+                      "value"
+                    ],
+                    "@item.topic_theme_3": [
+                      "value"
+                    ],
+                    "@calc(@local.search_set.has(@item.topic_theme_3))": [
+                      "value"
+                    ]
+                  }
+                },
+                {
+                  "name": "match4",
+                  "value": "@calc(@local.search_set.has(@item.topic_theme_4))",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "type": "set_variable",
+                  "_nested_name": "do_the_lookup.count_matches.ps_checks.match4",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_4))",
+                        "matchedExpression": "@local.search_set.has",
+                        "type": "local",
+                        "fieldName": "search_set"
+                      },
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_4))",
+                        "matchedExpression": "@item.topic_theme_4",
+                        "type": "item",
+                        "fieldName": "topic_theme_4"
+                      },
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_4))",
+                        "matchedExpression": "@calc(@local.search_set.has(@item.topic_theme_4))",
+                        "type": "calc",
+                        "fieldName": "@local.search_set.has(@item.topic_theme_4)"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@local.search_set.has": [
+                      "value"
+                    ],
+                    "@item.topic_theme_4": [
+                      "value"
+                    ],
+                    "@calc(@local.search_set.has(@item.topic_theme_4))": [
+                      "value"
+                    ]
+                  }
+                },
+                {
+                  "name": "does_it_match",
+                  "value": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "type": "set_variable",
+                  "_nested_name": "do_the_lookup.count_matches.ps_checks.does_it_match",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                        "matchedExpression": "@local.match1",
+                        "type": "local",
+                        "fieldName": "match1"
+                      },
+                      {
+                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                        "matchedExpression": "@local.match2",
+                        "type": "local",
+                        "fieldName": "match2"
+                      },
+                      {
+                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                        "matchedExpression": "@local.match3",
+                        "type": "local",
+                        "fieldName": "match3"
+                      },
+                      {
+                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                        "matchedExpression": "@local.match4",
+                        "type": "local",
+                        "fieldName": "match4"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@local.match1": [
+                      "value"
+                    ],
+                    "@local.match2": [
+                      "value"
+                    ],
+                    "@local.match3": [
+                      "value"
+                    ],
+                    "@local.match4": [
+                      "value"
+                    ]
+                  }
+                },
+                {
+                  "name": "ps_counter",
+                  "value": "@local.ps_counter + 1",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "condition": "@local.does_it_match",
+                  "type": "set_variable",
+                  "_nested_name": "do_the_lookup.count_matches.ps_checks.ps_counter",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@local.ps_counter + 1",
+                        "matchedExpression": "@local.ps_counter",
+                        "type": "local",
+                        "fieldName": "ps_counter"
+                      }
+                    ],
+                    "condition": [
+                      {
+                        "fullExpression": "@local.does_it_match",
+                        "matchedExpression": "@local.does_it_match",
+                        "type": "local",
+                        "fieldName": "does_it_match"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@local.ps_counter": [
+                      "value"
+                    ],
+                    "@local.does_it_match": [
+                      "condition"
+                    ]
+                  }
+                }
+              ],
+              "_nested_name": "do_the_lookup.count_matches.ps_checks",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@data.esm_ps_tasks_data_list",
+                    "matchedExpression": "@data.esm_ps_tasks_data_list",
+                    "type": "data",
+                    "fieldName": "esm_ps_tasks_data_list"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@data.esm_ps_tasks_data_list": [
+                  "value"
+                ]
+              }
             }
           ],
           "_nested_name": "do_the_lookup.count_matches"
@@ -2544,6 +3162,800 @@
                   },
                   "_dynamicDependencies": {
                     "@local.sb_counter": [
+                      "value"
+                    ]
+                  }
+                },
+                {
+                  "type": "accordion_section",
+                  "name": "routine_buttons",
+                  "value": "0 Routine(s)",
+                  "parameter_list": {
+                    "style": "column"
+                  },
+                  "rows": [
+                    {
+                      "type": "display_group",
+                      "name": "routine_buttons",
+                      "parameter_list": {
+                        "style": "column"
+                      },
+                      "rows": [
+                        {
+                          "name": "commentary",
+                          "value": "This section is just a placeholder for now.",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "type": "set_variable",
+                          "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.routine_buttons.routine_buttons.commentary"
+                        }
+                      ],
+                      "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.routine_buttons.routine_buttons"
+                    }
+                  ],
+                  "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.routine_buttons"
+                },
+                {
+                  "type": "accordion_section",
+                  "name": "oe_buttons",
+                  "value": "@local.oe_counter Open-Ended Task(s)",
+                  "parameter_list": {
+                    "style": "column"
+                  },
+                  "rows": [
+                    {
+                      "type": "display_group",
+                      "name": "oe_buttons",
+                      "parameter_list": {
+                        "style": "column"
+                      },
+                      "rows": [
+                        {
+                          "type": "items",
+                          "name": "oe_checks",
+                          "value": "@data.esm_open_ended_tasks_data_list",
+                          "rows": [
+                            {
+                              "name": "match1",
+                              "value": "@calc(@local.search_set.has(@item.topic_theme_1))",
+                              "_translations": {
+                                "value": {}
+                              },
+                              "type": "set_variable",
+                              "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.oe_buttons.oe_buttons.oe_checks.match1",
+                              "_dynamicFields": {
+                                "value": [
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_1))",
+                                    "matchedExpression": "@local.search_set.has",
+                                    "type": "local",
+                                    "fieldName": "search_set"
+                                  },
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_1))",
+                                    "matchedExpression": "@item.topic_theme_1",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_1"
+                                  },
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_1))",
+                                    "matchedExpression": "@calc(@local.search_set.has(@item.topic_theme_1))",
+                                    "type": "calc",
+                                    "fieldName": "@local.search_set.has(@item.topic_theme_1)"
+                                  }
+                                ]
+                              },
+                              "_dynamicDependencies": {
+                                "@local.search_set.has": [
+                                  "value"
+                                ],
+                                "@item.topic_theme_1": [
+                                  "value"
+                                ],
+                                "@calc(@local.search_set.has(@item.topic_theme_1))": [
+                                  "value"
+                                ]
+                              }
+                            },
+                            {
+                              "name": "match2",
+                              "value": "@calc(@local.search_set.has(@item.topic_theme_2))",
+                              "_translations": {
+                                "value": {}
+                              },
+                              "type": "set_variable",
+                              "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.oe_buttons.oe_buttons.oe_checks.match2",
+                              "_dynamicFields": {
+                                "value": [
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_2))",
+                                    "matchedExpression": "@local.search_set.has",
+                                    "type": "local",
+                                    "fieldName": "search_set"
+                                  },
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_2))",
+                                    "matchedExpression": "@item.topic_theme_2",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_2"
+                                  },
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_2))",
+                                    "matchedExpression": "@calc(@local.search_set.has(@item.topic_theme_2))",
+                                    "type": "calc",
+                                    "fieldName": "@local.search_set.has(@item.topic_theme_2)"
+                                  }
+                                ]
+                              },
+                              "_dynamicDependencies": {
+                                "@local.search_set.has": [
+                                  "value"
+                                ],
+                                "@item.topic_theme_2": [
+                                  "value"
+                                ],
+                                "@calc(@local.search_set.has(@item.topic_theme_2))": [
+                                  "value"
+                                ]
+                              }
+                            },
+                            {
+                              "name": "match3",
+                              "value": "@calc(@local.search_set.has(@item.topic_theme_3))",
+                              "_translations": {
+                                "value": {}
+                              },
+                              "type": "set_variable",
+                              "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.oe_buttons.oe_buttons.oe_checks.match3",
+                              "_dynamicFields": {
+                                "value": [
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_3))",
+                                    "matchedExpression": "@local.search_set.has",
+                                    "type": "local",
+                                    "fieldName": "search_set"
+                                  },
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_3))",
+                                    "matchedExpression": "@item.topic_theme_3",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_3"
+                                  },
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_3))",
+                                    "matchedExpression": "@calc(@local.search_set.has(@item.topic_theme_3))",
+                                    "type": "calc",
+                                    "fieldName": "@local.search_set.has(@item.topic_theme_3)"
+                                  }
+                                ]
+                              },
+                              "_dynamicDependencies": {
+                                "@local.search_set.has": [
+                                  "value"
+                                ],
+                                "@item.topic_theme_3": [
+                                  "value"
+                                ],
+                                "@calc(@local.search_set.has(@item.topic_theme_3))": [
+                                  "value"
+                                ]
+                              }
+                            },
+                            {
+                              "name": "match4",
+                              "value": "@calc(@local.search_set.has(@item.topic_theme_4))",
+                              "_translations": {
+                                "value": {}
+                              },
+                              "type": "set_variable",
+                              "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.oe_buttons.oe_buttons.oe_checks.match4",
+                              "_dynamicFields": {
+                                "value": [
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_4))",
+                                    "matchedExpression": "@local.search_set.has",
+                                    "type": "local",
+                                    "fieldName": "search_set"
+                                  },
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_4))",
+                                    "matchedExpression": "@item.topic_theme_4",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_4"
+                                  },
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_4))",
+                                    "matchedExpression": "@calc(@local.search_set.has(@item.topic_theme_4))",
+                                    "type": "calc",
+                                    "fieldName": "@local.search_set.has(@item.topic_theme_4)"
+                                  }
+                                ]
+                              },
+                              "_dynamicDependencies": {
+                                "@local.search_set.has": [
+                                  "value"
+                                ],
+                                "@item.topic_theme_4": [
+                                  "value"
+                                ],
+                                "@calc(@local.search_set.has(@item.topic_theme_4))": [
+                                  "value"
+                                ]
+                              }
+                            },
+                            {
+                              "name": "does_it_match",
+                              "value": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                              "_translations": {
+                                "value": {}
+                              },
+                              "type": "set_variable",
+                              "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.oe_buttons.oe_buttons.oe_checks.does_it_match",
+                              "_dynamicFields": {
+                                "value": [
+                                  {
+                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                                    "matchedExpression": "@local.match1",
+                                    "type": "local",
+                                    "fieldName": "match1"
+                                  },
+                                  {
+                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                                    "matchedExpression": "@local.match2",
+                                    "type": "local",
+                                    "fieldName": "match2"
+                                  },
+                                  {
+                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                                    "matchedExpression": "@local.match3",
+                                    "type": "local",
+                                    "fieldName": "match3"
+                                  },
+                                  {
+                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                                    "matchedExpression": "@local.match4",
+                                    "type": "local",
+                                    "fieldName": "match4"
+                                  }
+                                ]
+                              },
+                              "_dynamicDependencies": {
+                                "@local.match1": [
+                                  "value"
+                                ],
+                                "@local.match2": [
+                                  "value"
+                                ],
+                                "@local.match3": [
+                                  "value"
+                                ],
+                                "@local.match4": [
+                                  "value"
+                                ]
+                              }
+                            },
+                            {
+                              "type": "button",
+                              "name": "button_@item.id",
+                              "value": "@item.name",
+                              "_translations": {
+                                "value": {}
+                              },
+                              "action_list": [
+                                {
+                                  "trigger": "click",
+                                  "action_id": "go_to",
+                                  "args": [
+                                    "@item.id"
+                                  ],
+                                  "_raw": "click | go_to: @item.id",
+                                  "_cleaned": "click | go_to: @item.id"
+                                }
+                              ],
+                              "condition": "@local.does_it_match",
+                              "parameter_list": {
+                                "style": "short",
+                                "text_align": "center"
+                              },
+                              "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.oe_buttons.oe_buttons.oe_checks.button_@item.id",
+                              "_dynamicFields": {
+                                "name": [
+                                  {
+                                    "fullExpression": "button_@item.id",
+                                    "matchedExpression": "@item.id",
+                                    "type": "item",
+                                    "fieldName": "id"
+                                  }
+                                ],
+                                "value": [
+                                  {
+                                    "fullExpression": "@item.name",
+                                    "matchedExpression": "@item.name",
+                                    "type": "item",
+                                    "fieldName": "name"
+                                  }
+                                ],
+                                "action_list": {
+                                  "0": {
+                                    "args": {
+                                      "0": [
+                                        {
+                                          "fullExpression": "@item.id",
+                                          "matchedExpression": "@item.id",
+                                          "type": "item",
+                                          "fieldName": "id"
+                                        }
+                                      ]
+                                    },
+                                    "_raw": [
+                                      {
+                                        "fullExpression": "click | go_to: @item.id",
+                                        "matchedExpression": "@item.id",
+                                        "type": "item",
+                                        "fieldName": "id"
+                                      }
+                                    ],
+                                    "_cleaned": [
+                                      {
+                                        "fullExpression": "click | go_to: @item.id",
+                                        "matchedExpression": "@item.id",
+                                        "type": "item",
+                                        "fieldName": "id"
+                                      }
+                                    ]
+                                  }
+                                },
+                                "condition": [
+                                  {
+                                    "fullExpression": "@local.does_it_match",
+                                    "matchedExpression": "@local.does_it_match",
+                                    "type": "local",
+                                    "fieldName": "does_it_match"
+                                  }
+                                ],
+                                "_nested_name": [
+                                  {
+                                    "fullExpression": "do_the_lookup.topic_matches2.topic_accordion.oe_buttons.oe_buttons.oe_checks.button_@item.id",
+                                    "matchedExpression": "@item.id",
+                                    "type": "item",
+                                    "fieldName": "id"
+                                  }
+                                ]
+                              },
+                              "_dynamicDependencies": {
+                                "@item.id": [
+                                  "name",
+                                  "action_list.0.args.0",
+                                  "action_list.0._raw",
+                                  "action_list.0._cleaned",
+                                  "_nested_name"
+                                ],
+                                "@item.name": [
+                                  "value"
+                                ],
+                                "@local.does_it_match": [
+                                  "condition"
+                                ]
+                              }
+                            }
+                          ],
+                          "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.oe_buttons.oe_buttons.oe_checks",
+                          "_dynamicFields": {
+                            "value": [
+                              {
+                                "fullExpression": "@data.esm_open_ended_tasks_data_list",
+                                "matchedExpression": "@data.esm_open_ended_tasks_data_list",
+                                "type": "data",
+                                "fieldName": "esm_open_ended_tasks_data_list"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@data.esm_open_ended_tasks_data_list": [
+                              "value"
+                            ]
+                          }
+                        }
+                      ],
+                      "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.oe_buttons.oe_buttons"
+                    }
+                  ],
+                  "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.oe_buttons",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@local.oe_counter Open-Ended Task(s)",
+                        "matchedExpression": "@local.oe_counter",
+                        "type": "local",
+                        "fieldName": "oe_counter"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@local.oe_counter": [
+                      "value"
+                    ]
+                  }
+                },
+                {
+                  "type": "accordion_section",
+                  "name": "ps_buttons",
+                  "value": "@local.ps_counter Problem Solving Task(s)",
+                  "parameter_list": {
+                    "style": "column"
+                  },
+                  "rows": [
+                    {
+                      "type": "display_group",
+                      "name": "ps_buttons",
+                      "parameter_list": {
+                        "style": "column"
+                      },
+                      "rows": [
+                        {
+                          "type": "items",
+                          "name": "ps_checks",
+                          "value": "@data.esm_ps_tasks_data_list",
+                          "rows": [
+                            {
+                              "name": "match1",
+                              "value": "@calc(@local.search_set.has(@item.topic_theme_1))",
+                              "_translations": {
+                                "value": {}
+                              },
+                              "type": "set_variable",
+                              "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.ps_buttons.ps_buttons.ps_checks.match1",
+                              "_dynamicFields": {
+                                "value": [
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_1))",
+                                    "matchedExpression": "@local.search_set.has",
+                                    "type": "local",
+                                    "fieldName": "search_set"
+                                  },
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_1))",
+                                    "matchedExpression": "@item.topic_theme_1",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_1"
+                                  },
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_1))",
+                                    "matchedExpression": "@calc(@local.search_set.has(@item.topic_theme_1))",
+                                    "type": "calc",
+                                    "fieldName": "@local.search_set.has(@item.topic_theme_1)"
+                                  }
+                                ]
+                              },
+                              "_dynamicDependencies": {
+                                "@local.search_set.has": [
+                                  "value"
+                                ],
+                                "@item.topic_theme_1": [
+                                  "value"
+                                ],
+                                "@calc(@local.search_set.has(@item.topic_theme_1))": [
+                                  "value"
+                                ]
+                              }
+                            },
+                            {
+                              "name": "match2",
+                              "value": "@calc(@local.search_set.has(@item.topic_theme_2))",
+                              "_translations": {
+                                "value": {}
+                              },
+                              "type": "set_variable",
+                              "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.ps_buttons.ps_buttons.ps_checks.match2",
+                              "_dynamicFields": {
+                                "value": [
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_2))",
+                                    "matchedExpression": "@local.search_set.has",
+                                    "type": "local",
+                                    "fieldName": "search_set"
+                                  },
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_2))",
+                                    "matchedExpression": "@item.topic_theme_2",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_2"
+                                  },
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_2))",
+                                    "matchedExpression": "@calc(@local.search_set.has(@item.topic_theme_2))",
+                                    "type": "calc",
+                                    "fieldName": "@local.search_set.has(@item.topic_theme_2)"
+                                  }
+                                ]
+                              },
+                              "_dynamicDependencies": {
+                                "@local.search_set.has": [
+                                  "value"
+                                ],
+                                "@item.topic_theme_2": [
+                                  "value"
+                                ],
+                                "@calc(@local.search_set.has(@item.topic_theme_2))": [
+                                  "value"
+                                ]
+                              }
+                            },
+                            {
+                              "name": "match3",
+                              "value": "@calc(@local.search_set.has(@item.topic_theme_3))",
+                              "_translations": {
+                                "value": {}
+                              },
+                              "type": "set_variable",
+                              "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.ps_buttons.ps_buttons.ps_checks.match3",
+                              "_dynamicFields": {
+                                "value": [
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_3))",
+                                    "matchedExpression": "@local.search_set.has",
+                                    "type": "local",
+                                    "fieldName": "search_set"
+                                  },
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_3))",
+                                    "matchedExpression": "@item.topic_theme_3",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_3"
+                                  },
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_3))",
+                                    "matchedExpression": "@calc(@local.search_set.has(@item.topic_theme_3))",
+                                    "type": "calc",
+                                    "fieldName": "@local.search_set.has(@item.topic_theme_3)"
+                                  }
+                                ]
+                              },
+                              "_dynamicDependencies": {
+                                "@local.search_set.has": [
+                                  "value"
+                                ],
+                                "@item.topic_theme_3": [
+                                  "value"
+                                ],
+                                "@calc(@local.search_set.has(@item.topic_theme_3))": [
+                                  "value"
+                                ]
+                              }
+                            },
+                            {
+                              "name": "match4",
+                              "value": "@calc(@local.search_set.has(@item.topic_theme_4))",
+                              "_translations": {
+                                "value": {}
+                              },
+                              "type": "set_variable",
+                              "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.ps_buttons.ps_buttons.ps_checks.match4",
+                              "_dynamicFields": {
+                                "value": [
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_4))",
+                                    "matchedExpression": "@local.search_set.has",
+                                    "type": "local",
+                                    "fieldName": "search_set"
+                                  },
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_4))",
+                                    "matchedExpression": "@item.topic_theme_4",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_4"
+                                  },
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_4))",
+                                    "matchedExpression": "@calc(@local.search_set.has(@item.topic_theme_4))",
+                                    "type": "calc",
+                                    "fieldName": "@local.search_set.has(@item.topic_theme_4)"
+                                  }
+                                ]
+                              },
+                              "_dynamicDependencies": {
+                                "@local.search_set.has": [
+                                  "value"
+                                ],
+                                "@item.topic_theme_4": [
+                                  "value"
+                                ],
+                                "@calc(@local.search_set.has(@item.topic_theme_4))": [
+                                  "value"
+                                ]
+                              }
+                            },
+                            {
+                              "name": "does_it_match",
+                              "value": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                              "_translations": {
+                                "value": {}
+                              },
+                              "type": "set_variable",
+                              "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.ps_buttons.ps_buttons.ps_checks.does_it_match",
+                              "_dynamicFields": {
+                                "value": [
+                                  {
+                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                                    "matchedExpression": "@local.match1",
+                                    "type": "local",
+                                    "fieldName": "match1"
+                                  },
+                                  {
+                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                                    "matchedExpression": "@local.match2",
+                                    "type": "local",
+                                    "fieldName": "match2"
+                                  },
+                                  {
+                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                                    "matchedExpression": "@local.match3",
+                                    "type": "local",
+                                    "fieldName": "match3"
+                                  },
+                                  {
+                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                                    "matchedExpression": "@local.match4",
+                                    "type": "local",
+                                    "fieldName": "match4"
+                                  }
+                                ]
+                              },
+                              "_dynamicDependencies": {
+                                "@local.match1": [
+                                  "value"
+                                ],
+                                "@local.match2": [
+                                  "value"
+                                ],
+                                "@local.match3": [
+                                  "value"
+                                ],
+                                "@local.match4": [
+                                  "value"
+                                ]
+                              }
+                            },
+                            {
+                              "type": "button",
+                              "name": "button_@item.id",
+                              "value": "@item.name",
+                              "_translations": {
+                                "value": {}
+                              },
+                              "action_list": [
+                                {
+                                  "trigger": "click",
+                                  "action_id": "go_to",
+                                  "args": [
+                                    "@item.id"
+                                  ],
+                                  "_raw": "click | go_to: @item.id",
+                                  "_cleaned": "click | go_to: @item.id"
+                                }
+                              ],
+                              "condition": "@local.does_it_match",
+                              "parameter_list": {
+                                "style": "short",
+                                "text_align": "center"
+                              },
+                              "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.ps_buttons.ps_buttons.ps_checks.button_@item.id",
+                              "_dynamicFields": {
+                                "name": [
+                                  {
+                                    "fullExpression": "button_@item.id",
+                                    "matchedExpression": "@item.id",
+                                    "type": "item",
+                                    "fieldName": "id"
+                                  }
+                                ],
+                                "value": [
+                                  {
+                                    "fullExpression": "@item.name",
+                                    "matchedExpression": "@item.name",
+                                    "type": "item",
+                                    "fieldName": "name"
+                                  }
+                                ],
+                                "action_list": {
+                                  "0": {
+                                    "args": {
+                                      "0": [
+                                        {
+                                          "fullExpression": "@item.id",
+                                          "matchedExpression": "@item.id",
+                                          "type": "item",
+                                          "fieldName": "id"
+                                        }
+                                      ]
+                                    },
+                                    "_raw": [
+                                      {
+                                        "fullExpression": "click | go_to: @item.id",
+                                        "matchedExpression": "@item.id",
+                                        "type": "item",
+                                        "fieldName": "id"
+                                      }
+                                    ],
+                                    "_cleaned": [
+                                      {
+                                        "fullExpression": "click | go_to: @item.id",
+                                        "matchedExpression": "@item.id",
+                                        "type": "item",
+                                        "fieldName": "id"
+                                      }
+                                    ]
+                                  }
+                                },
+                                "condition": [
+                                  {
+                                    "fullExpression": "@local.does_it_match",
+                                    "matchedExpression": "@local.does_it_match",
+                                    "type": "local",
+                                    "fieldName": "does_it_match"
+                                  }
+                                ],
+                                "_nested_name": [
+                                  {
+                                    "fullExpression": "do_the_lookup.topic_matches2.topic_accordion.ps_buttons.ps_buttons.ps_checks.button_@item.id",
+                                    "matchedExpression": "@item.id",
+                                    "type": "item",
+                                    "fieldName": "id"
+                                  }
+                                ]
+                              },
+                              "_dynamicDependencies": {
+                                "@item.id": [
+                                  "name",
+                                  "action_list.0.args.0",
+                                  "action_list.0._raw",
+                                  "action_list.0._cleaned",
+                                  "_nested_name"
+                                ],
+                                "@item.name": [
+                                  "value"
+                                ],
+                                "@local.does_it_match": [
+                                  "condition"
+                                ]
+                              }
+                            }
+                          ],
+                          "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.ps_buttons.ps_buttons.ps_checks",
+                          "_dynamicFields": {
+                            "value": [
+                              {
+                                "fullExpression": "@data.esm_ps_tasks_data_list",
+                                "matchedExpression": "@data.esm_ps_tasks_data_list",
+                                "type": "data",
+                                "fieldName": "esm_ps_tasks_data_list"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@data.esm_ps_tasks_data_list": [
+                              "value"
+                            ]
+                          }
+                        }
+                      ],
+                      "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.ps_buttons.ps_buttons"
+                    }
+                  ],
+                  "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.ps_buttons",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@local.ps_counter Problem Solving Task(s)",
+                        "matchedExpression": "@local.ps_counter",
+                        "type": "local",
+                        "fieldName": "ps_counter"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@local.ps_counter": [
                       "value"
                     ]
                   }

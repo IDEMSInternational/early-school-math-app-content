@@ -3,22 +3,22 @@
 
 | type | count |
 | --- | --- |
-| accordion | 33 |
-| accordion_section | 58 |
-| button | 89 |
+| accordion | 34 |
+| accordion_section | 63 |
+| button | 92 |
 | debug_toggle | 1 |
-| display_group | 271 |
+| display_group | 278 |
 | image | 33 |
-| items | 41 |
+| items | 47 |
 | qr_code | 1 |
 | radio_button_grid | 1 |
 | round_button | 9 |
 | select_text | 1 |
 | set_field | 9 |
-| set_variable | 571 |
+| set_variable | 605 |
 | simple_checkbox | 4 |
-| template | 69 |
-| text | 198 |
+| template | 70 |
+| text | 200 |
 | text_area | 2 |
 | tile_component | 3 |
 | title | 48 |
@@ -38,10 +38,10 @@
 | emit: set_language | 1 |
 | emit: uncompleted | 58 |
 | feedback | 11 |
-| go_to | 57 |
+| go_to | 60 |
 | go_to_url | 3 |
 | reset_app | 1 |
-| set_field | 66 |
+| set_field | 68 |
 | set_local | 9 |
 | start_tour | 18 |
 </details>
@@ -51,7 +51,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 41692 KB | 41.7 MB |
+| total | 42042 KB | 42 MB |
 | unused | 21738 KB | 21.7 MB |
 </details>
 
@@ -1432,6 +1432,10 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMPOWCAvoidingRectanglesEmpty4.svg | 3.7 | 1 |
 | ESMIll/ESMPOWCAvoidingRectanglesIntro.svg | 11.8 | 1 |
 | ESMIll/ESMPOWCBadNeighbors.svg | 22.1 | 1 |
+| ESMIll/ESMPOWCBagsOfCoins.svg | 11.6 | 1 |
+| ESMIll/ESMPOWCBalanceBeam1.svg | 9.9 | 1 |
+| ESMIll/ESMPOWCBalanceBeam2.svg | 9.1 | 1 |
+| ESMIll/ESMPOWCBalanceBeamIntro.svg | 14.7 | 2 |
 | ESMIll/ESMPOWCCoinFlip10Challenge.svg | 34.1 | 1 |
 | ESMIll/ESMPOWCCoinFlip10Intro.svg | 41.2 | 1 |
 | ESMIll/ESMPOWCCoinFlipInARowChallenge.svg | 24.1 | 1 |
@@ -1439,6 +1443,10 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMPOWCFibanocciBees.svg | 13.8 | 1 |
 | ESMIll/ESMPOWCFibonacciSteps.svg | 10.6 | 1 |
 | ESMIll/ESMPOWCFibonacciTilingRectangles.svg | 11.9 | 1 |
+| ESMIll/ESMPOWCFillInTheBlanksSumOfThreeThreeDigitsBlank.svg | 4.8 | 1 |
+| ESMIll/ESMPOWCFillInTheBlanksSumOfThreeThreeDigitsIntro.svg | 19.3 | 1 |
+| ESMIll/ESMPOWCFillInTheBlanksSumOfThreeTwoDigitsBlank.svg | 4 | 1 |
+| ESMIll/ESMPOWCFillInTheBlanksSumOfThreeTwoDigitsIntro.svg | 14.4 | 1 |
 | ESMIll/ESMPOWCHandshake.svg | 9.7 | 3 |
 | ESMIll/ESMPOWCLastNumberStandingChallenge.svg | 11.1 | 1 |
 | ESMIll/ESMPOWCLastNumberStandingIntro.svg | 24.5 | 1 |
@@ -1447,6 +1455,14 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMPOWCLines4Answer.svg | 4.2 | 1 |
 | ESMIll/ESMPOWCLines5Answer1.svg | 3.8 | 1 |
 | ESMIll/ESMPOWCLines5Answer2.svg | 7.5 | 1 |
+| ESMIll/ESMPOWCMagicSquares3.svg | 9.8 | 1 |
+| ESMIll/ESMPOWCMagicSquares3Double.svg | 11.4 | 1 |
+| ESMIll/ESMPOWCMagicSquares4Answer1.svg | 13.7 | 1 |
+| ESMIll/ESMPOWCMagicSquares4Answer2.svg | 19.1 | 1 |
+| ESMIll/ESMPOWCMagicSquaresExamples1.svg | 31.6 | 2 |
+| ESMIll/ESMPOWCMagicTriangle Annotated.svg | 11.2 | 2 |
+| ESMIll/ESMPOWCMagicTriangle3 - Empty.svg | 6.8 | 1 |
+| ESMIll/ESMPOWCMagicTriangle4 - Empty.svg | 8.5 | 1 |
 | ESMIll/ESMPOWCMapColoring2CurvedIntro.svg | 10.1 | 1 |
 | ESMIll/ESMPOWCMapColoring4ColorChallenge.svg | 6 | 1 |
 | ESMIll/ESMPOWCMapColoring4ColorChallengeColored.svg | 28.2 | 1 |
@@ -1457,6 +1473,12 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMPOWCMapColoringStraightLinesChallenge.svg | 4.7 | 1 |
 | ESMIll/ESMPOWCMapColoringStraightLinesChallengeColored.svg | 33.2 | 1 |
 | ESMIll/ESMPOWCMapColoringStraightLinesIntro.svg | 6 | 1 |
+| ESMIll/ESMPOWCMysterySums1ChallengeRevised2.svg | 5.9 | 1 |
+| ESMIll/ESMPOWCOddSquareBlank.svg | 9.8 | 2 |
+| ESMIll/ESMPOWCOddSquareEvenOdd.svg | 13.8 | 2 |
+| ESMIll/ESMPOWCOddSquareEvenOddEvens.svg | 25.5 | 1 |
+| ESMIll/ESMPOWCOddSquareEvenOddExample.svg | 13.6 | 1 |
+| ESMIll/ESMPOWCOddSquareIntro.svg | 18.4 | 2 |
 | ESMIll/ESMPOWCParades1Challenge.svg | 17.5 | 1 |
 | ESMIll/ESMPOWCParades1Intro.svg | 19.7 | 1 |
 | ESMIll/ESMPOWCParades2BridgesOfKonigsbergAnswer.svg | 9.6 | 1 |
@@ -1471,6 +1493,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMPOWCPathChallengeChallenge.svg | 2.8 | 1 |
 | ESMIll/ESMPOWCPathChallengeIntroRevised.svg | 4.3 | 1 |
 | ESMIll/ESMPOWCPiratesWithGold2Answer.svg | 23.1 | 1 |
+| ESMIll/ESMPOWCPrimeSquareAnswers.svg | 53 | 1 |
 | ESMIll/ESMPOWCSelfDescribingNumbers.svg | 11.1 | 3 |
 | ESMIll/ESMPOWCSelfDescribingNumbers10.svg | 10 | 1 |
 | ESMIll/ESMPOWCSelfDescribingNumbers5.svg | 5.7 | 1 |
@@ -1484,6 +1507,8 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMPOWCSquareGrid5by5Diagonals.svg | 7.3 | 1 |
 | ESMIll/ESMPOWCTiedHandsAnswer.svg | 100.4 | 1 |
 | ESMIll/ESMPOWCTiedHandsChallenge.svg | 51.5 | 1 |
+| ESMIll/ESMPOWCTrapezoidalNumbersChallenge1.svg | 2.3 | 1 |
+| ESMIll/ESMPOWCTrapezoidalNumbersIntro.svg | 7.4 | 1 |
 | ESMIll/ESMParades1.svg | 17.5 | 1 |
 | ESMIll/ESMSplats1Color1Splat10-10.svg | 9.2 | 1 |
 | ESMIll/ESMSplats1Color1Splat5-2.svg | 7.8 | 1 |
@@ -1512,7 +1537,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | type | subtype | total |
 | --- | --- | --- |
-| data_list |  | 72 |
+| data_list |  | 73 |
 | data_list | app_config_language_list | 1 |
 | data_list | lifecycle_actions | 1 |
 | generator |  | 1 |
