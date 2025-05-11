@@ -1,0 +1,75 @@
+{
+  "flow_type": "template",
+  "flow_name": "esm_routine_displayer",
+  "status": "released",
+  "rows": [
+    {
+      "type": "display_group",
+      "name": "dg_routine_page",
+      "parameter_list": {
+        "style": "column"
+      },
+      "rows": [
+        {
+          "name": "content_ptr",
+          "value": "@fields.routine_content_ptr",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "dg_routine_page.content_ptr",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@fields.routine_content_ptr",
+                "matchedExpression": "@fields.routine_content_ptr",
+                "type": "fields",
+                "fieldName": "routine_content_ptr"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@fields.routine_content_ptr": [
+              "value"
+            ]
+          }
+        },
+        {
+          "type": "template",
+          "name": "routine_body",
+          "value": "esm_page_viewer",
+          "rows": [
+            {
+              "name": "esm_content_ptr",
+              "value": "@@local.content_ptr",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "dg_routine_page.routine_body.esm_content_ptr",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@@local.content_ptr",
+                    "matchedExpression": "@local.content_ptr",
+                    "type": "local",
+                    "fieldName": "content_ptr"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.content_ptr": [
+                  "value"
+                ]
+              }
+            }
+          ],
+          "_nested_name": "dg_routine_page.routine_body"
+        }
+      ],
+      "_nested_name": "dg_routine_page"
+    }
+  ],
+  "_xlsxPath": "EFM_routines_high_level_sheets.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1PeJ5ishcTCWUvjhflbQqKO6M8u9rNuec"
+}
