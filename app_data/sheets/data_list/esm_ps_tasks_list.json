@@ -6,7 +6,9 @@
   "rows": [
     {
       "id": "esm_ps_2_colors",
-      "type": "beginning",
+      "reference": "TM p10",
+      "type": "early_logic",
+      "math_topics": "simple drawing",
       "block1_type": "all_text",
       "name": "Two Colors",
       "_translations": {
@@ -18,71 +20,79 @@
           "eng": "Two Colors"
         },
         "block1_text": {
-          "eng": "Draw small number of lines across an oval or rectangle. Can the result always be colored with 2 colors?"
+          "eng": "**Question:** Draw a small number of lines across a rectangle. Can the result always be colored with 2 colors?\n\nStart by understanding the question. What does it mean to \"color with 2 colors\"?\n\nWhat if every node inside the rectangle has an even number of lines coming into it, can it still be colored with 2 colors?"
         }
       },
-      "block1_text": "Draw small number of lines across an oval or rectangle. Can the result always be colored with 2 colors?"
+      "block1_text": "**Question:** Draw a small number of lines across a rectangle. Can the result always be colored with 2 colors?\n\nStart by understanding the question. What does it mean to \"color with 2 colors\"?\n\nWhat if every node inside the rectangle has an even number of lines coming into it, can it still be colored with 2 colors?"
     },
     {
-      "id": "esm_ps_board_squares",
-      "type": "beginning",
+      "id": "esm_ps_nim12",
+      "reference": "None",
+      "type": "early_logic",
+      "math_topics": "logic, add/sub 1,2",
       "block1_type": "all_text",
-      "name": "Squares on a Board",
+      "name": "Nim 1-2",
       "_translations": {
         "name": {},
         "block1_text": {}
       },
       "_translatedFields": {
         "name": {
-          "eng": "Squares on a Board"
+          "eng": "Nim 1-2"
         },
         "block1_text": {
-          "eng": "How many squares in an nxn chessboard? How many rectangles on an nxm board? What about if diagonals are allowed?"
+          "eng": "**Question:** How to play the game of Nim well."
         }
       },
-      "block1_text": "How many squares in an nxn chessboard? How many rectangles on an nxm board? What about if diagonals are allowed?"
+      "block1_text": "**Question:** How to play the game of Nim well."
     },
     {
-      "id": "esm_ps_8_cubes",
-      "type": "beginning",
+      "id": "esm_ps_grid_chase",
+      "reference": "TM p148",
+      "type": "early_logic",
+      "math_topics": "logic",
       "block1_type": "all_text",
-      "name": "Eight Cubes",
+      "name": "Chasing on a Grid",
       "_translations": {
         "name": {},
         "block1_text": {}
       },
       "_translatedFields": {
         "name": {
-          "eng": "Eight Cubes"
+          "eng": "Chasing on a Grid"
         },
         "block1_text": {
-          "eng": "There are 8 cubes of the same size. Two are red, two are blue, two are green, and two are white. How many ways can these 8 cubes be put together to form a larger cube so that the larger cube has every color on its face?"
+          "eng": "**Question:** Play starts with a marker on the square on the lower left-hand corner of a chessboard. A player may make one of three moves for the marker: a) one to the right, b) one up, or c) one up and to the right. Players alternate turns. The player who moves the marker to the upper right-hand square wins. Should you decide to go first or second, and what is your winning strategy?\n\nWhat happens on an n by n board? What about an n by m board? what about a 3-dimensional grid?"
         }
       },
-      "block1_text": "There are 8 cubes of the same size. Two are red, two are blue, two are green, and two are white. How many ways can these 8 cubes be put together to form a larger cube so that the larger cube has every color on its face?"
+      "block1_text": "**Question:** Play starts with a marker on the square on the lower left-hand corner of a chessboard. A player may make one of three moves for the marker: a) one to the right, b) one up, or c) one up and to the right. Players alternate turns. The player who moves the marker to the upper right-hand square wins. Should you decide to go first or second, and what is your winning strategy?\n\nWhat happens on an n by n board? What about an n by m board? what about a 3-dimensional grid?"
     },
     {
-      "id": "esm_ps_bugs",
-      "type": "beginning",
+      "id": "esm_ps_lunch_table",
+      "reference": "TM p29",
+      "type": "early_logic",
+      "math_topics": "basic logic",
       "block1_type": "all_text",
-      "name": "Combining Bugs",
+      "name": "First and Last Names",
       "_translations": {
         "name": {},
         "block1_text": {}
       },
       "_translatedFields": {
         "name": {
-          "eng": "Combining Bugs"
+          "eng": "First and Last Names"
         },
         "block1_text": {
-          "eng": "There are beetles, lizards, and worms. The number of worms is more than the combined total of beetles and lizards. There are 12 heads and 26 legs. How many of each one are there? What if we increase the numbers a lot? What if there are lizards, beetles, and spiders?"
+          "eng": "**Question:** Five people are sitting at a round table, The first names are A, B, C, D, and E, and the last names are L, M, N, O, and P. O sits between L and M. E sits between C and N. L is between E and A. C and D are siblings. P is on B's left side and M is on B's right side. How do the first and last names match up?"
         }
       },
-      "block1_text": "There are beetles, lizards, and worms. The number of worms is more than the combined total of beetles and lizards. There are 12 heads and 26 legs. How many of each one are there? What if we increase the numbers a lot? What if there are lizards, beetles, and spiders?"
+      "block1_text": "**Question:** Five people are sitting at a round table, The first names are A, B, C, D, and E, and the last names are L, M, N, O, and P. O sits between L and M. E sits between C and N. L is between E and A. C and D are siblings. P is on B's left side and M is on B's right side. How do the first and last names match up?"
     },
     {
       "id": "esm_ps_leapfrog",
-      "type": "beginning",
+      "reference": "TM p52",
+      "type": "early_logic",
+      "math_topics": "logic",
       "block1_type": "all_text",
       "name": "Leapfrog",
       "_translations": {
@@ -94,33 +104,121 @@
           "eng": "Leapfrog"
         },
         "block1_text": {
-          "eng": "There are 11 holes in a row. There are 5 black pegs in the holes at one end and 5 white pegs in holes on the other end and one empty hole in the middle. A peg can only be moved to an empty hole or jump over another peg into an empty hole. Can the white and black pegs swap ends?"
+          "eng": "**Question:** There are 11 holes in a row. There are 5 black pegs in the holes at one end and 5 white pegs in holes on the other end and one empty hole in the middle. A peg can only be moved to an empty hole or jump over another peg into an empty hole. Can the white and black pegs swap ends?\n\nGeneralizations: many to explore"
         }
       },
-      "block1_text": "There are 11 holes in a row. There are 5 black pegs in the holes at one end and 5 white pegs in holes on the other end and one empty hole in the middle. A peg can only be moved to an empty hole or jump over another peg into an empty hole. Can the white and black pegs swap ends?"
+      "block1_text": "**Question:** There are 11 holes in a row. There are 5 black pegs in the holes at one end and 5 white pegs in holes on the other end and one empty hole in the middle. A peg can only be moved to an empty hole or jump over another peg into an empty hole. Can the white and black pegs swap ends?\n\nGeneralizations: many to explore"
     },
     {
-      "id": "esm_ps_heavy_desk",
-      "type": "beginning",
+      "id": "esm_ps_dominoes_on_board",
+      "reference": "TM p97",
+      "type": "early_logic",
+      "math_topics": "parity - even/odd; squares",
       "block1_type": "all_text",
-      "name": "A Heavy Desk",
+      "name": "Dominoes on a Chessboard",
       "_translations": {
         "name": {},
         "block1_text": {}
       },
       "_translatedFields": {
         "name": {
-          "eng": "A Heavy Desk"
+          "eng": "Dominoes on a Chessboard"
         },
         "block1_text": {
-          "eng": "A very heavy desk can only be moved by rotating it 90 degrees about one of its four corners. Is it possible to move it so that it is exactly next to its old position and still facing in the same direction?"
+          "eng": "**Question:** Suppose 2 squares are removed from opposite corners of a chessboard. Can the resulting board be exactly covered by dominoes?\n\nGeneralize: Which pairs of squares can be removed and still be able to cover the board with dominoes?"
         }
       },
-      "block1_text": "A very heavy desk can only be moved by rotating it 90 degrees about one of its four corners. Is it possible to move it so that it is exactly next to its old position and still facing in the same direction?"
+      "block1_text": "**Question:** Suppose 2 squares are removed from opposite corners of a chessboard. Can the resulting board be exactly covered by dominoes?\n\nGeneralize: Which pairs of squares can be removed and still be able to cover the board with dominoes?"
+    },
+    {
+      "id": "esm_ps_square_matches",
+      "reference": "TM p79",
+      "type": "early_count_as",
+      "math_topics": "counting; squares",
+      "block1_type": "all_text",
+      "name": "Squares with Matches",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Squares with Matches"
+        },
+        "block1_text": {
+          "eng": "**Question:** You can make a single square using four match sticks. You can make two squares in a row that share a side with seven match sticks. How many match sticks does it take to make 10 squares in a row?\n\nWorking with patterns and conjectures.\n\nGeneralize: How many match sticks to make an n by n grid of squares? How about an n by m grid?"
+        }
+      },
+      "block1_text": "**Question:** You can make a single square using four match sticks. You can make two squares in a row that share a side with seven match sticks. How many match sticks does it take to make 10 squares in a row?\n\nWorking with patterns and conjectures.\n\nGeneralize: How many match sticks to make an n by n grid of squares? How about an n by m grid?"
+    },
+    {
+      "id": "esm_ps_board_squares",
+      "reference": "TM p17 and 39",
+      "type": "early_count_as",
+      "math_topics": "squares on a grid; counting",
+      "block1_type": "all_text",
+      "name": "Chess Board Squares",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Chess Board Squares"
+        },
+        "block1_text": {
+          "eng": "**Question:** How many squares in an 8 by 8 chessboard? Somone claimed there are 204 squares. Are they right?\n\nGeneralize to squares on an n by n chessboard or an n by m chessboard.\n\nGeneralize to rectangles on an n by m chessboard."
+        }
+      },
+      "block1_text": "**Question:** How many squares in an 8 by 8 chessboard? Somone claimed there are 204 squares. Are they right?\n\nGeneralize to squares on an n by n chessboard or an n by m chessboard.\n\nGeneralize to rectangles on an n by m chessboard."
+    },
+    {
+      "id": "esm_ps_toasting_bread",
+      "reference": "TM p34",
+      "type": "early_count_as",
+      "math_topics": "basic logic and bookkeeping",
+      "block1_type": "all_text",
+      "name": "Toasting Bread",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Toasting Bread"
+        },
+        "block1_text": {
+          "eng": "3 slices of bread are to be toasted on a grill that can toast 2 slices at a time, but only on one side at a time. It takes 30 seconds to toast one side, 5 seconds to put a piece in or take a piece out, and 3 seconds to flip a piece over. What is the shortest time to toast both sides of all 3 slices?"
+        }
+      },
+      "block1_text": "3 slices of bread are to be toasted on a grill that can toast 2 slices at a time, but only on one side at a time. It takes 30 seconds to toast one side, 5 seconds to put a piece in or take a piece out, and 3 seconds to flip a piece over. What is the shortest time to toast both sides of all 3 slices?"
+    },
+    {
+      "id": "esm_ps_8_cubes",
+      "reference": "TM p33",
+      "type": "early_count_as",
+      "math_topics": "counting; symmetries",
+      "block1_type": "all_text",
+      "name": "Eight Cubes",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Eight Cubes"
+        },
+        "block1_text": {
+          "eng": "**Question:** There are 8 cubes of the same size. Two are red, two are blue, two are green, and two are white. How many ways can these 8 cubes be put together to form a larger cube so that the larger cube has every color on each face?"
+        }
+      },
+      "block1_text": "**Question:** There are 8 cubes of the same size. Two are red, two are blue, two are green, and two are white. How many ways can these 8 cubes be put together to form a larger cube so that the larger cube has every color on each face?"
     },
     {
       "id": "esm_ps_adding_to_15",
-      "type": "beginning",
+      "reference": "TM p73",
+      "type": "early_count_as",
+      "math_topics": "basic adding to 15",
       "block1_type": "all_text",
       "name": "Adding to 15",
       "_translations": {
@@ -132,10 +230,554 @@
           "eng": "Adding to 15"
         },
         "block1_text": {
-          "eng": "9 pieces of paper with the numbers 1 to 9 are placed on a table. Players take turns taking a piece of paper. The first player to get a sum of 15 using any three of their numbers wins. What is a winning strategy (if there is one)?"
+          "eng": "**Question:** 9 pieces of paper with the numbers 1 to 9 are placed on a table. Players take turns taking a piece of paper. The first player to get a sum of 15 using any three of their numbers wins. What is a winning strategy (if there is one)?"
         }
       },
-      "block1_text": "9 pieces of paper with the numbers 1 to 9 are placed on a table. Players take turns taking a piece of paper. The first player to get a sum of 15 using any three of their numbers wins. What is a winning strategy (if there is one)?"
+      "block1_text": "**Question:** 9 pieces of paper with the numbers 1 to 9 are placed on a table. Players take turns taking a piece of paper. The first player to get a sum of 15 using any three of their numbers wins. What is a winning strategy (if there is one)?"
+    },
+    {
+      "id": "esm_ps_milkcrate",
+      "reference": "TM p.164",
+      "type": "early_count_as",
+      "math_topics": "counting; evens",
+      "block1_type": "all_text",
+      "name": "Milk Bottles in Crates",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Milk Bottles in Crates"
+        },
+        "block1_text": {
+          "eng": "**Question:** You have a 6 by 6 milkcrate that can hold 36 bottles of milk. Is it possible to put 14 bottles into the crate so that each row and each column has an even number of bottles?\n\nWhat happens for other numbers of bottles or sizes of crates?"
+        }
+      },
+      "block1_text": "**Question:** You have a 6 by 6 milkcrate that can hold 36 bottles of milk. Is it possible to put 14 bottles into the crate so that each row and each column has an even number of bottles?\n\nWhat happens for other numbers of bottles or sizes of crates?"
+    },
+    {
+      "id": "esm_ps_0s_and_1s",
+      "reference": "TM p174",
+      "type": "early_count_as",
+      "math_topics": "simple adding",
+      "block1_type": "all_text",
+      "name": "0s and 1s",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "0s and 1s"
+        },
+        "block1_text": {
+          "eng": "**Question:** Write down a random sequence of 0s and 1s. Below this sequence write a 0 below each pair that is the same and a 1 below each pair that is different. Continue this process until you have just one number. What will it be?\n\nWhat happens for a circle? What happens if you use 0, 1, and 2 and an appropriate change of rules"
+        }
+      },
+      "block1_text": "**Question:** Write down a random sequence of 0s and 1s. Below this sequence write a 0 below each pair that is the same and a 1 below each pair that is different. Continue this process until you have just one number. What will it be?\n\nWhat happens for a circle? What happens if you use 0, 1, and 2 and an appropriate change of rules"
+    },
+    {
+      "id": "esm_ps_bee_ancestors",
+      "reference": "TM p84",
+      "type": "start2",
+      "math_topics": "resursive patterns; fibonacci",
+      "block1_type": "all_text",
+      "name": "Bee Ancestors",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Bee Ancestors"
+        },
+        "block1_text": {
+          "eng": "**Question:** Male bees are created from an egg from a female bee with no male bee involvement – so it only has a mother. Female bees are created from an egg that has had a male involve, so it has a mother and a father. How many ancestors 10 generations back does a male bee have? Of that tenth generation of ancestors, how many are males?"
+        }
+      },
+      "block1_text": "**Question:** Male bees are created from an egg from a female bee with no male bee involvement – so it only has a mother. Female bees are created from an egg that has had a male involve, so it has a mother and a father. How many ancestors 10 generations back does a male bee have? Of that tenth generation of ancestors, how many are males?"
+    },
+    {
+      "id": "esm_ps_bugs",
+      "reference": "TM p40",
+      "type": "start2",
+      "math_topics": "Conting; bookkeeping",
+      "block1_type": "all_text",
+      "name": "Combining Bugs",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Combining Bugs"
+        },
+        "block1_text": {
+          "eng": "**Question:** There are beetles, lizards, and worms. The number of worms is more than the combined total of beetles and lizards. There are 12 heads and 26 legs. How many of each one are there?\n\nWhat if we increase the numbers a lot?\n\nWhat if there are lizards, beetles, and spiders?"
+        }
+      },
+      "block1_text": "**Question:** There are beetles, lizards, and worms. The number of worms is more than the combined total of beetles and lizards. There are 12 heads and 26 legs. How many of each one are there?\n\nWhat if we increase the numbers a lot?\n\nWhat if there are lizards, beetles, and spiders?"
+    },
+    {
+      "id": "esm_ps_squares_in_squares",
+      "reference": "TM p85",
+      "type": "start2",
+      "math_topics": "simple geometry; patterns",
+      "block1_type": "all_text",
+      "name": "Squares in Squares",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Squares in Squares"
+        },
+        "block1_text": {
+          "eng": "**Question:** A number is called \"lovely\" if a large square can be broken into that number of smaller squares, where the smaller squares need not all have the same size. Which numbers are lovely?\n\nWhat happens if the shapes are all equilateral triangles instead of squares?\n\nIf squares are replaced by cubes it is an unsolved problem!"
+        }
+      },
+      "block1_text": "**Question:** A number is called \"lovely\" if a large square can be broken into that number of smaller squares, where the smaller squares need not all have the same size. Which numbers are lovely?\n\nWhat happens if the shapes are all equilateral triangles instead of squares?\n\nIf squares are replaced by cubes it is an unsolved problem!"
+    },
+    {
+      "id": "esm_ps_lines_for_9_dots",
+      "reference": "TM p101",
+      "type": "start2",
+      "math_topics": "logic; basic geometry",
+      "block1_type": "all_text",
+      "name": "4 Lines for 9 Dots",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "4 Lines for 9 Dots"
+        },
+        "block1_text": {
+          "eng": "**Question:** Draw four straight line segments without lifting your pencil so that the path goes through all 9 dots in a 3 by 3 grid of dots.\n\nBeware of hidden assumptions!"
+        }
+      },
+      "block1_text": "**Question:** Draw four straight line segments without lifting your pencil so that the path goes through all 9 dots in a 3 by 3 grid of dots.\n\nBeware of hidden assumptions!"
+    },
+    {
+      "id": "esm_ps_secret_numbers",
+      "reference": "TM p106",
+      "type": "start2",
+      "math_topics": "addition",
+      "block1_type": "all_text",
+      "name": "Polygons with Secret Numbers",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Polygons with Secret Numbers"
+        },
+        "block1_text": {
+          "eng": "**Question:** 3 secret numbers are placed at the corners of a triangle. For each pair of corners, the sum of the two numbers is written on the side. Find a general method for solving these puzzles.\n\nWhat happens for other polygons?"
+        }
+      },
+      "block1_text": "**Question:** 3 secret numbers are placed at the corners of a triangle. For each pair of corners, the sum of the two numbers is written on the side. Find a general method for solving these puzzles.\n\nWhat happens for other polygons?"
+    },
+    {
+      "id": "esm_ps_cake_cutting",
+      "reference": "TM p.153",
+      "type": "start2",
+      "math_topics": "counting, gcd?",
+      "block1_type": "all_text",
+      "name": "Cake Cutting",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Cake Cutting"
+        },
+        "block1_text": {
+          "eng": "**Question:** You have 30 identical pieces of cake to split equally amont 18 people. What are the fewest number of cuts you can make to do this?\n\nGeneralize to other numbers of pieces and people."
+        }
+      },
+      "block1_text": "**Question:** You have 30 identical pieces of cake to split equally amont 18 people. What are the fewest number of cuts you can make to do this?\n\nGeneralize to other numbers of pieces and people."
+    },
+    {
+      "id": "esm_ps_sieve",
+      "reference": "TM p186",
+      "type": "start3",
+      "math_topics": "skip counting, primes",
+      "block1_type": "all_text",
+      "name": "Sieve of Eratosthenes",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Sieve of Eratosthenes"
+        },
+        "block1_text": {
+          "eng": "**Question:** Lots of questions and discussions about the sieve."
+        }
+      },
+      "block1_text": "**Question:** Lots of questions and discussions about the sieve."
+    },
+    {
+      "id": "esm_ps_remainder_primes",
+      "reference": "TM p216",
+      "type": "start3",
+      "math_topics": "remainders, primes",
+      "block1_type": "all_text",
+      "name": "Remainder Primes",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Remainder Primes"
+        },
+        "block1_text": {
+          "eng": "**Question:** Consider the set S of positive numbers that have a remainder of 1 when divided by 3. The primes in this set are the numbers larger than 1 that have no nontrivial factors. Investigate these primes. What happens when you factor 100?"
+        }
+      },
+      "block1_text": "**Question:** Consider the set S of positive numbers that have a remainder of 1 when divided by 3. The primes in this set are the numbers larger than 1 that have no nontrivial factors. Investigate these primes. What happens when you factor 100?"
+    },
+    {
+      "id": "esm_ps_paper_strip",
+      "reference": "TM p3",
+      "type": "ignore",
+      "math_topics": "powers of 2",
+      "block1_type": "all_text",
+      "name": "Folding a Paper Strip",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Folding a Paper Strip"
+        },
+        "block1_text": {
+          "eng": "**Question:** Take a very long, skinny piece of paper and fold it in half length-wise so there is one crease in the middle. Repeat this two more times for a total of 3 folds. How many creases will there be? How many creases if the total number of folds is 5, or 7, or 10?"
+        }
+      },
+      "block1_text": "**Question:** Take a very long, skinny piece of paper and fold it in half length-wise so there is one crease in the middle. Repeat this two more times for a total of 3 folds. How many creases will there be? How many creases if the total number of folds is 5, or 7, or 10?"
+    },
+    {
+      "id": "esm_ps_palindromes",
+      "reference": "TM p4 and 8",
+      "type": "ignore",
+      "math_topics": "dividing by 11",
+      "block1_type": "all_text",
+      "name": "Palindromes",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Palindromes"
+        },
+        "block1_text": {
+          "eng": "**Question:** A number is a palindrome if it is the same when the order of the digits is reversed. 12321 is a palindrome, 123123 is not. Someone claims that all four-digit palindromes are divisible by 11. Are they correct?\n\nGeneralize to n-digit numbers.\n\nGeneralize to the remainder rule for 11."
+        }
+      },
+      "block1_text": "**Question:** A number is a palindrome if it is the same when the order of the digits is reversed. 12321 is a palindrome, 123123 is not. Someone claims that all four-digit palindromes are divisible by 11. Are they correct?\n\nGeneralize to n-digit numbers.\n\nGeneralize to the remainder rule for 11."
+    },
+    {
+      "id": "esm_ps_heavy_desk",
+      "reference": "TM p61 and 165",
+      "type": "ignore",
+      "block1_type": "all_text",
+      "name": "A Heavy Desk",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "A Heavy Desk"
+        },
+        "block1_text": {
+          "eng": "**Question:** A very heavy square desk can only be moved by rotating it 90 degrees about one of its four corners. Is it possible to move it so that it is exactly next to its old position and still facing in the same direction?\n\nWhat happens for other desks of different shapes? For example, a 4 foot by 2 foot desk."
+        }
+      },
+      "block1_text": "**Question:** A very heavy square desk can only be moved by rotating it 90 degrees about one of its four corners. Is it possible to move it so that it is exactly next to its old position and still facing in the same direction?\n\nWhat happens for other desks of different shapes? For example, a 4 foot by 2 foot desk."
+    },
+    {
+      "id": "esm_ps_fractional_parts",
+      "reference": "TM p31",
+      "type": "ignore",
+      "math_topics": "basic fractions",
+      "block1_type": "all_text",
+      "name": "Fractional Parts",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Fractional Parts"
+        },
+        "block1_text": {
+          "eng": "**Question:** By what fractional part is four-fourths larger than three-fourths?"
+        }
+      },
+      "block1_text": "**Question:** By what fractional part is four-fourths larger than three-fourths?"
+    },
+    {
+      "id": "esm_ps_consec_numbers",
+      "reference": "TM p62 and 165",
+      "type": "ignore",
+      "math_topics": "dividing by even and odd; sum of arithmetic series",
+      "block1_type": "all_text",
+      "name": "Consecutive Numbers",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Consecutive Numbers"
+        },
+        "block1_text": {
+          "eng": "**Question:** Which numbers can be expressed as the sum of two or more consecutive numbers? For example, 9 = 4 + 5 and 6 = 1 + 2 + 3.\n\nMaking Conjectures\n\nFor numbers that can be expressed this way, how many different ways are there to do it?"
+        }
+      },
+      "block1_text": "**Question:** Which numbers can be expressed as the sum of two or more consecutive numbers? For example, 9 = 4 + 5 and 6 = 1 + 2 + 3.\n\nMaking Conjectures\n\nFor numbers that can be expressed this way, how many different ways are there to do it?"
+    },
+    {
+      "id": "esm_ps_mixed_percentages",
+      "reference": "TM p1 and 8",
+      "type": "ignore",
+      "math_topics": "percentages as decimals; multiplying decimals",
+      "block1_type": "all_text",
+      "name": "Mixed Percentages",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Mixed Percentages"
+        },
+        "block1_text": {
+          "eng": "**Question:** You want to buy an item on sale for 20% off and there is a 15% sales tax. Is it better to put on the sales tax first and then get the sales discount, or the other way around?\n\n**Generalize:** The numbers are not important to the answer!"
+        }
+      },
+      "block1_text": "**Question:** You want to buy an item on sale for 20% off and there is a 15% sales tax. Is it better to put on the sales tax first and then get the sales discount, or the other way around?\n\n**Generalize:** The numbers are not important to the answer!"
+    },
+    {
+      "id": "esm_ps_goat_and_barn",
+      "reference": "TM p27",
+      "type": "ignore",
+      "math_topics": "areas of partial circles",
+      "block1_type": "all_text",
+      "name": "Goat and Barn",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Goat and Barn"
+        },
+        "block1_text": {
+          "eng": "**Question:** A goat is tied by a 15 foot rope to the corner of a 10 foot by 12 foot shed. There is a grassy field all around the shed. What is the area of grass that the goat can eat?\n\nGeneralize?"
+        }
+      },
+      "block1_text": "**Question:** A goat is tied by a 15 foot rope to the corner of a 10 foot by 12 foot shed. There is a grassy field all around the shed. What is the area of grass that the goat can eat?\n\nGeneralize?"
+    },
+    {
+      "id": "esm_ps_threading_pins",
+      "reference": "TM p48",
+      "type": "ignore",
+      "math_topics": "gcd; relatively prime",
+      "block1_type": "all_text",
+      "name": "Threading a Circle",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Threading a Circle"
+        },
+        "block1_text": {
+          "eng": "**Question:** There are a number of pins evenly spaced around a circle. A thread is tied from one pin to the next by skipping a certain fixed amount of pins in between. For example, it might skip two pins between each connection. The thread continues until it reaches its starting point. If there are any pins that have missed, one of those is picked as a new starting point, and the process is continued until all pins are tied to a thread. For a given number of pins and a given size of gap, how many pieces of thread will be needed?"
+        }
+      },
+      "block1_text": "**Question:** There are a number of pins evenly spaced around a circle. A thread is tied from one pin to the next by skipping a certain fixed amount of pins in between. For example, it might skip two pins between each connection. The thread continues until it reaches its starting point. If there are any pins that have missed, one of those is picked as a new starting point, and the process is continued until all pins are tied to a thread. For a given number of pins and a given size of gap, how many pieces of thread will be needed?"
+    },
+    {
+      "id": "esm_ps_square_differences",
+      "reference": "TM p72",
+      "type": "ignore",
+      "block1_type": "all_text",
+      "name": "Differences of Squares",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Differences of Squares"
+        },
+        "block1_text": {
+          "eng": "**Question:** Which numbers can be expressed as the difference of two squares? For example, 21 = 25 - 4 and 24 = 49 = 25."
+        }
+      },
+      "block1_text": "**Question:** Which numbers can be expressed as the difference of two squares? For example, 21 = 25 - 4 and 24 = 49 = 25."
+    },
+    {
+      "id": "esm_ps_circle_division",
+      "reference": "TM p75",
+      "type": "ignore",
+      "math_topics": "combinatorics",
+      "block1_type": "all_text",
+      "name": "Partitioning a Circle",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Partitioning a Circle"
+        },
+        "block1_text": {
+          "eng": "**Question:** What is the greatest number of regions n lines crossing a circle can create inside the circle?"
+        }
+      },
+      "block1_text": "**Question:** What is the greatest number of regions n lines crossing a circle can create inside the circle?"
+    },
+    {
+      "id": "esm_ps_moving_digit",
+      "reference": "TM p150",
+      "type": "ignore",
+      "math_topics": "multiplication",
+      "block1_type": "all_text",
+      "name": "Moving Digits",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Moving Digits"
+        },
+        "block1_text": {
+          "eng": "**Question:** Is it possible to find a number that when you remove its ones digit and place it at the far left in the new number, that the number is now twice as big? For example, 123 would become 312, but that is not twice as big.\n\nWhat if 2 is replaced with other multiples?"
+        }
+      },
+      "block1_text": "**Question:** Is it possible to find a number that when you remove its ones digit and place it at the far left in the new number, that the number is now twice as big? For example, 123 would become 312, but that is not twice as big.\n\nWhat if 2 is replaced with other multiples?"
+    },
+    {
+      "id": "esm_ps_diagonal_crossing",
+      "reference": "TM p151",
+      "type": "ignore",
+      "math_topics": "counting; common factors",
+      "block1_type": "all_text",
+      "name": "Diagonal Crossing",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Diagonal Crossing"
+        },
+        "block1_text": {
+          "eng": "**Question:** A diagonal is drawn across a 3 by 5 grid of squares from the upper left-hand corner to the lower right-hand corner. How many squares will it go through?\n\nGeneralize."
+        }
+      },
+      "block1_text": "**Question:** A diagonal is drawn across a 3 by 5 grid of squares from the upper left-hand corner to the lower right-hand corner. How many squares will it go through?\n\nGeneralize."
+    },
+    {
+      "id": "esm_ps_counting_divisors",
+      "reference": "TM p.167",
+      "type": "ignore",
+      "math_topics": "multiplication, divisors",
+      "block1_type": "all_text",
+      "name": "Counting Divisors",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Counting Divisors"
+        },
+        "block1_text": {
+          "eng": "**Question:** Count up all the divisors of a number including itself. Which numbers have an odd number of divisors?\n\nWhat other things can you say about divisor counts? Which kinds of numbers have 1, 2, 3, 4, or 5 divisors?"
+        }
+      },
+      "block1_text": "**Question:** Count up all the divisors of a number including itself. Which numbers have an odd number of divisors?\n\nWhat other things can you say about divisor counts? Which kinds of numbers have 1, 2, 3, 4, or 5 divisors?"
+    },
+    {
+      "id": "esm_ps_sums_of_one",
+      "reference": "TM p167",
+      "type": "ignore",
+      "math_topics": "add and multiply decimals",
+      "block1_type": "all_text",
+      "name": "Sums of One",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Sums of One"
+        },
+        "block1_text": {
+          "eng": "**Question:** Take two positive numbers whose sum is 1. Square the larger and add the smaller, and then square the smaller and they add the larger. Which way produces the larger result and why?"
+        }
+      },
+      "block1_text": "**Question:** Take two positive numbers whose sum is 1. Square the larger and add the smaller, and then square the smaller and they add the larger. Which way produces the larger result and why?"
+    },
+    {
+      "id": "esm_ps_striking_out",
+      "reference": "TM p169",
+      "type": "ignore",
+      "math_topics": "multiples, cubes",
+      "block1_type": "all_text",
+      "name": "Striking Out",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Striking Out"
+        },
+        "block1_text": {
+          "eng": "**Question:** Write down the numbers in order starting at 1. Cross out every third number starting with 3. Write down the sequence of cumulative sums. Strike out every other number from this sequence. Write down the cumulative sums and be amazed."
+        }
+      },
+      "block1_text": "**Question:** Write down the numbers in order starting at 1. Cross out every third number starting with 3. Write down the sequence of cumulative sums. Strike out every other number from this sequence. Write down the cumulative sums and be amazed."
+    },
+    {
+      "id": "esm_ps_rational_divisors",
+      "reference": "TM p187",
+      "type": "ignore",
+      "math_topics": "fractions, division",
+      "block1_type": "all_text",
+      "name": "Rational Divisors",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Rational Divisors"
+        },
+        "block1_text": {
+          "eng": "**Question:** 14/15 divides a whole number of times into 28/3. We could call 14/15 a rational divisor of 28/3. Find all the rational divisors of 28/3. Find all the rational divisors of 1/2, and then find the numbers that are rational divisors of both numbers. Can we reasonably talk about having a largest rational divisor?"
+        }
+      },
+      "block1_text": "**Question:** 14/15 divides a whole number of times into 28/3. We could call 14/15 a rational divisor of 28/3. Find all the rational divisors of 28/3. Find all the rational divisors of 1/2, and then find the numbers that are rational divisors of both numbers. Can we reasonably talk about having a largest rational divisor?"
     }
   ],
   "_xlsxPath": "EFM_rich_tasks_high_level_sheets.xlsx",

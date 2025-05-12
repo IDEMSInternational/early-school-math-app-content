@@ -65,7 +65,7 @@
         {
           "type": "text",
           "name": "help_text",
-          "value": "These examples are based on the ideas in John Mason's book Thinking Mathematically.\n\nThese will have fuller descriptions along with teaching ideas. We will also probably break them into topic areas.",
+          "value": "Many of these examples are based on the ideas in John Mason's excellent book Thinking Mathematically.",
           "_translations": {
             "value": {}
           },
@@ -89,56 +89,113 @@
           },
           "rows": [
             {
-              "type": "items",
-              "name": "ps_accordions",
-              "value": "@data.esm_ps_tasks_data_list",
+              "type": "accordion_section",
+              "name": "accord_ps_logic",
+              "value": "Early Logic - STARTED",
               "parameter_list": {
-                "filter": "@item.type==\"beginning\""
+                "text_align": "center",
+                "style": "large emphasised"
               },
               "rows": [
                 {
-                  "type": "accordion_section",
-                  "name": "accord_@item.id",
-                  "value": "@item.name",
+                  "type": "display_group",
+                  "name": "dg_ps_logic",
                   "parameter_list": {
-                    "text_align": "center",
-                    "style": "large emphasised"
+                    "style": "column"
                   },
                   "rows": [
                     {
-                      "type": "display_group",
-                      "name": "dg_@item.id",
+                      "type": "items",
+                      "name": "ps_logic",
+                      "value": "@data.esm_ps_tasks_data_list",
                       "parameter_list": {
-                        "style": "column"
+                        "filter": "@item.type==\"early_logic\""
                       },
                       "rows": [
                         {
-                          "name": "content_ptr",
-                          "value": "data.esm_ps_tasks_data_list.@item.id",
+                          "type": "button",
+                          "name": "button_@item.id",
+                          "value": "@item.name",
                           "_translations": {
                             "value": {}
                           },
-                          "type": "set_variable",
-                          "_nested_name": "dg_ps_examples.accordion_for_ps_examples.ps_accordions.accord_@item.id.dg_@item.id.content_ptr",
+                          "action_list": [
+                            {
+                              "trigger": "click",
+                              "action_id": "set_field",
+                              "args": [
+                                "ps_content_ptr",
+                                "data.esm_ps_tasks_data_list.@item.id"
+                              ],
+                              "_raw": "click | set_field:ps_content_ptr : data.esm_ps_tasks_data_list.@item.id",
+                              "_cleaned": "click | set_field:ps_content_ptr : data.esm_ps_tasks_data_list.@item.id"
+                            },
+                            {
+                              "trigger": "click",
+                              "action_id": "go_to",
+                              "args": [
+                                "esm_ps_displayer"
+                              ],
+                              "_raw": "click | go_to: esm_ps_displayer",
+                              "_cleaned": "click | go_to: esm_ps_displayer"
+                            }
+                          ],
+                          "parameter_list": {
+                            "style": "short",
+                            "text_align": "center"
+                          },
+                          "_nested_name": "dg_ps_examples.accordion_for_ps_examples.accord_ps_logic.dg_ps_logic.ps_logic.button_@item.id",
                           "_dynamicFields": {
-                            "value": [
+                            "name": [
                               {
-                                "fullExpression": "data.esm_ps_tasks_data_list.@item.id",
+                                "fullExpression": "button_@item.id",
                                 "matchedExpression": "@item.id",
                                 "type": "item",
                                 "fieldName": "id"
                               }
                             ],
+                            "value": [
+                              {
+                                "fullExpression": "@item.name",
+                                "matchedExpression": "@item.name",
+                                "type": "item",
+                                "fieldName": "name"
+                              }
+                            ],
+                            "action_list": {
+                              "0": {
+                                "args": {
+                                  "1": [
+                                    {
+                                      "fullExpression": "data.esm_ps_tasks_data_list.@item.id",
+                                      "matchedExpression": "@item.id",
+                                      "type": "item",
+                                      "fieldName": "id"
+                                    }
+                                  ]
+                                },
+                                "_raw": [
+                                  {
+                                    "fullExpression": "click | set_field:ps_content_ptr : data.esm_ps_tasks_data_list.@item.id",
+                                    "matchedExpression": "@item.id",
+                                    "type": "item",
+                                    "fieldName": "id"
+                                  }
+                                ],
+                                "_cleaned": [
+                                  {
+                                    "fullExpression": "click | set_field:ps_content_ptr : data.esm_ps_tasks_data_list.@item.id",
+                                    "matchedExpression": "@item.id",
+                                    "type": "item",
+                                    "fieldName": "id"
+                                  }
+                                ]
+                              }
+                            },
                             "_nested_name": [
                               {
-                                "fullExpression": "dg_ps_examples.accordion_for_ps_examples.ps_accordions.accord_@item.id.dg_@item.id.content_ptr",
-                                "matchedExpression": "@item.id.dg_",
-                                "type": "item",
-                                "fieldName": "id"
-                              },
-                              {
-                                "fullExpression": "dg_ps_examples.accordion_for_ps_examples.ps_accordions.accord_@item.id.dg_@item.id.content_ptr",
-                                "matchedExpression": "@item.id.content_ptr",
+                                "fullExpression": "dg_ps_examples.accordion_for_ps_examples.accord_ps_logic.dg_ps_logic.ps_logic.button_@item.id",
+                                "matchedExpression": "@item.id",
                                 "type": "item",
                                 "fieldName": "id"
                               }
@@ -146,196 +203,237 @@
                           },
                           "_dynamicDependencies": {
                             "@item.id": [
+                              "name",
+                              "action_list.0.args.1",
+                              "action_list.0._raw",
+                              "action_list.0._cleaned",
+                              "_nested_name"
+                            ],
+                            "@item.name": [
                               "value"
-                            ],
-                            "@item.id.dg_": [
-                              "_nested_name"
-                            ],
-                            "@item.id.content_ptr": [
-                              "_nested_name"
                             ]
                           }
-                        },
-                        {
-                          "type": "template",
-                          "name": "dot_talk_body_maker",
-                          "value": "esm_page_viewer",
-                          "rows": [
+                        }
+                      ],
+                      "_nested_name": "dg_ps_examples.accordion_for_ps_examples.accord_ps_logic.dg_ps_logic.ps_logic",
+                      "_dynamicFields": {
+                        "value": [
+                          {
+                            "fullExpression": "@data.esm_ps_tasks_data_list",
+                            "matchedExpression": "@data.esm_ps_tasks_data_list",
+                            "type": "data",
+                            "fieldName": "esm_ps_tasks_data_list"
+                          }
+                        ],
+                        "parameter_list": {
+                          "filter": [
                             {
-                              "name": "esm_content_ptr",
-                              "value": "@@local.content_ptr",
-                              "_translations": {
-                                "value": {}
-                              },
-                              "type": "set_variable",
-                              "_nested_name": "dg_ps_examples.accordion_for_ps_examples.ps_accordions.accord_@item.id.dg_@item.id.dot_talk_body_maker.esm_content_ptr",
-                              "_dynamicFields": {
-                                "value": [
-                                  {
-                                    "fullExpression": "@@local.content_ptr",
-                                    "matchedExpression": "@local.content_ptr",
-                                    "type": "local",
-                                    "fieldName": "content_ptr"
-                                  }
-                                ],
-                                "_nested_name": [
-                                  {
-                                    "fullExpression": "dg_ps_examples.accordion_for_ps_examples.ps_accordions.accord_@item.id.dg_@item.id.dot_talk_body_maker.esm_content_ptr",
-                                    "matchedExpression": "@item.id.dg_",
-                                    "type": "item",
-                                    "fieldName": "id"
-                                  },
-                                  {
-                                    "fullExpression": "dg_ps_examples.accordion_for_ps_examples.ps_accordions.accord_@item.id.dg_@item.id.dot_talk_body_maker.esm_content_ptr",
-                                    "matchedExpression": "@item.id.dot_talk_body_maker.esm_content_ptr",
-                                    "type": "item",
-                                    "fieldName": "id"
-                                  }
-                                ]
-                              },
-                              "_dynamicDependencies": {
-                                "@local.content_ptr": [
-                                  "value"
-                                ],
-                                "@item.id.dg_": [
-                                  "_nested_name"
-                                ],
-                                "@item.id.dot_talk_body_maker.esm_content_ptr": [
-                                  "_nested_name"
-                                ]
-                              }
+                              "fullExpression": "@item.type==\"early_logic\"",
+                              "matchedExpression": "@item.type",
+                              "type": "item",
+                              "fieldName": "type"
+                            }
+                          ]
+                        }
+                      },
+                      "_dynamicDependencies": {
+                        "@data.esm_ps_tasks_data_list": [
+                          "value"
+                        ],
+                        "@item.type": [
+                          "parameter_list.filter"
+                        ]
+                      }
+                    }
+                  ],
+                  "_nested_name": "dg_ps_examples.accordion_for_ps_examples.accord_ps_logic.dg_ps_logic"
+                }
+              ],
+              "_nested_name": "dg_ps_examples.accordion_for_ps_examples.accord_ps_logic"
+            },
+            {
+              "type": "accordion_section",
+              "name": "accord_ps_add_sub_basic",
+              "value": "Early Count, Add, Sub - NOT DONE",
+              "parameter_list": {
+                "text_align": "center",
+                "style": "large emphasised"
+              },
+              "rows": [
+                {
+                  "type": "display_group",
+                  "name": "dg_ps_add_sub_basic",
+                  "parameter_list": {
+                    "style": "column"
+                  },
+                  "rows": [
+                    {
+                      "type": "items",
+                      "name": "ps_add_sub_basic",
+                      "value": "@data.esm_ps_tasks_data_list",
+                      "parameter_list": {
+                        "filter": "@item.type==\"early_count_as\""
+                      },
+                      "rows": [
+                        {
+                          "type": "button",
+                          "name": "button_@item.id",
+                          "value": "@item.name",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "action_list": [
+                            {
+                              "trigger": "click",
+                              "action_id": "set_field",
+                              "args": [
+                                "ps_content_ptr",
+                                "data.esm_ps_tasks_data_list.@item.id"
+                              ],
+                              "_raw": "click | set_field:ps_content_ptr : data.esm_ps_tasks_data_list.@item.id",
+                              "_cleaned": "click | set_field:ps_content_ptr : data.esm_ps_tasks_data_list.@item.id"
+                            },
+                            {
+                              "trigger": "click",
+                              "action_id": "go_to",
+                              "args": [
+                                "esm_ps_displayer"
+                              ],
+                              "_raw": "click | go_to: esm_ps_displayer",
+                              "_cleaned": "click | go_to: esm_ps_displayer"
                             }
                           ],
-                          "_nested_name": "dg_ps_examples.accordion_for_ps_examples.ps_accordions.accord_@item.id.dg_@item.id.dot_talk_body_maker",
+                          "parameter_list": {
+                            "style": "short",
+                            "text_align": "center"
+                          },
+                          "_nested_name": "dg_ps_examples.accordion_for_ps_examples.accord_ps_add_sub_basic.dg_ps_add_sub_basic.ps_add_sub_basic.button_@item.id",
                           "_dynamicFields": {
-                            "_nested_name": [
+                            "name": [
                               {
-                                "fullExpression": "dg_ps_examples.accordion_for_ps_examples.ps_accordions.accord_@item.id.dg_@item.id.dot_talk_body_maker",
-                                "matchedExpression": "@item.id.dg_",
+                                "fullExpression": "button_@item.id",
+                                "matchedExpression": "@item.id",
                                 "type": "item",
                                 "fieldName": "id"
-                              },
+                              }
+                            ],
+                            "value": [
                               {
-                                "fullExpression": "dg_ps_examples.accordion_for_ps_examples.ps_accordions.accord_@item.id.dg_@item.id.dot_talk_body_maker",
-                                "matchedExpression": "@item.id.dot_talk_body_maker",
+                                "fullExpression": "@item.name",
+                                "matchedExpression": "@item.name",
+                                "type": "item",
+                                "fieldName": "name"
+                              }
+                            ],
+                            "action_list": {
+                              "0": {
+                                "args": {
+                                  "1": [
+                                    {
+                                      "fullExpression": "data.esm_ps_tasks_data_list.@item.id",
+                                      "matchedExpression": "@item.id",
+                                      "type": "item",
+                                      "fieldName": "id"
+                                    }
+                                  ]
+                                },
+                                "_raw": [
+                                  {
+                                    "fullExpression": "click | set_field:ps_content_ptr : data.esm_ps_tasks_data_list.@item.id",
+                                    "matchedExpression": "@item.id",
+                                    "type": "item",
+                                    "fieldName": "id"
+                                  }
+                                ],
+                                "_cleaned": [
+                                  {
+                                    "fullExpression": "click | set_field:ps_content_ptr : data.esm_ps_tasks_data_list.@item.id",
+                                    "matchedExpression": "@item.id",
+                                    "type": "item",
+                                    "fieldName": "id"
+                                  }
+                                ]
+                              }
+                            },
+                            "_nested_name": [
+                              {
+                                "fullExpression": "dg_ps_examples.accordion_for_ps_examples.accord_ps_add_sub_basic.dg_ps_add_sub_basic.ps_add_sub_basic.button_@item.id",
+                                "matchedExpression": "@item.id",
                                 "type": "item",
                                 "fieldName": "id"
                               }
                             ]
                           },
                           "_dynamicDependencies": {
-                            "@item.id.dg_": [
+                            "@item.id": [
+                              "name",
+                              "action_list.0.args.1",
+                              "action_list.0._raw",
+                              "action_list.0._cleaned",
                               "_nested_name"
                             ],
-                            "@item.id.dot_talk_body_maker": [
-                              "_nested_name"
+                            "@item.name": [
+                              "value"
                             ]
                           }
                         }
                       ],
-                      "_nested_name": "dg_ps_examples.accordion_for_ps_examples.ps_accordions.accord_@item.id.dg_@item.id",
+                      "_nested_name": "dg_ps_examples.accordion_for_ps_examples.accord_ps_add_sub_basic.dg_ps_add_sub_basic.ps_add_sub_basic",
                       "_dynamicFields": {
-                        "name": [
+                        "value": [
                           {
-                            "fullExpression": "dg_@item.id",
-                            "matchedExpression": "@item.id",
-                            "type": "item",
-                            "fieldName": "id"
+                            "fullExpression": "@data.esm_ps_tasks_data_list",
+                            "matchedExpression": "@data.esm_ps_tasks_data_list",
+                            "type": "data",
+                            "fieldName": "esm_ps_tasks_data_list"
                           }
                         ],
-                        "_nested_name": [
-                          {
-                            "fullExpression": "dg_ps_examples.accordion_for_ps_examples.ps_accordions.accord_@item.id.dg_@item.id",
-                            "matchedExpression": "@item.id.dg_",
-                            "type": "item",
-                            "fieldName": "id"
-                          },
-                          {
-                            "fullExpression": "dg_ps_examples.accordion_for_ps_examples.ps_accordions.accord_@item.id.dg_@item.id",
-                            "matchedExpression": "@item.id",
-                            "type": "item",
-                            "fieldName": "id"
-                          }
-                        ]
+                        "parameter_list": {
+                          "filter": [
+                            {
+                              "fullExpression": "@item.type==\"early_count_as\"",
+                              "matchedExpression": "@item.type",
+                              "type": "item",
+                              "fieldName": "type"
+                            }
+                          ]
+                        }
                       },
                       "_dynamicDependencies": {
-                        "@item.id": [
-                          "name",
-                          "_nested_name"
+                        "@data.esm_ps_tasks_data_list": [
+                          "value"
                         ],
-                        "@item.id.dg_": [
-                          "_nested_name"
+                        "@item.type": [
+                          "parameter_list.filter"
                         ]
                       }
                     }
                   ],
-                  "_nested_name": "dg_ps_examples.accordion_for_ps_examples.ps_accordions.accord_@item.id",
-                  "_dynamicFields": {
-                    "name": [
-                      {
-                        "fullExpression": "accord_@item.id",
-                        "matchedExpression": "@item.id",
-                        "type": "item",
-                        "fieldName": "id"
-                      }
-                    ],
-                    "value": [
-                      {
-                        "fullExpression": "@item.name",
-                        "matchedExpression": "@item.name",
-                        "type": "item",
-                        "fieldName": "name"
-                      }
-                    ],
-                    "_nested_name": [
-                      {
-                        "fullExpression": "dg_ps_examples.accordion_for_ps_examples.ps_accordions.accord_@item.id",
-                        "matchedExpression": "@item.id",
-                        "type": "item",
-                        "fieldName": "id"
-                      }
-                    ]
-                  },
-                  "_dynamicDependencies": {
-                    "@item.id": [
-                      "name",
-                      "_nested_name"
-                    ],
-                    "@item.name": [
-                      "value"
-                    ]
-                  }
+                  "_nested_name": "dg_ps_examples.accordion_for_ps_examples.accord_ps_add_sub_basic.dg_ps_add_sub_basic"
                 }
               ],
-              "_nested_name": "dg_ps_examples.accordion_for_ps_examples.ps_accordions",
-              "_dynamicFields": {
-                "value": [
-                  {
-                    "fullExpression": "@data.esm_ps_tasks_data_list",
-                    "matchedExpression": "@data.esm_ps_tasks_data_list",
-                    "type": "data",
-                    "fieldName": "esm_ps_tasks_data_list"
-                  }
-                ],
-                "parameter_list": {
-                  "filter": [
-                    {
-                      "fullExpression": "@item.type==\"beginning\"",
-                      "matchedExpression": "@item.type",
-                      "type": "item",
-                      "fieldName": "type"
-                    }
-                  ]
-                }
+              "_nested_name": "dg_ps_examples.accordion_for_ps_examples.accord_ps_add_sub_basic"
+            },
+            {
+              "type": "accordion_section",
+              "name": "accord_ps_mult_1digit",
+              "value": "Mult - 1-Digit - NOT DONE",
+              "parameter_list": {
+                "text_align": "center",
+                "style": "large emphasised"
               },
-              "_dynamicDependencies": {
-                "@data.esm_ps_tasks_data_list": [
-                  "value"
-                ],
-                "@item.type": [
-                  "parameter_list.filter"
-                ]
-              }
+              "rows": [
+                {
+                  "type": "display_group",
+                  "name": "dg_ps_mult_1digit",
+                  "parameter_list": {
+                    "style": "column"
+                  },
+                  "rows": [],
+                  "_nested_name": "dg_ps_examples.accordion_for_ps_examples.accord_ps_mult_1digit.dg_ps_mult_1digit"
+                }
+              ],
+              "_nested_name": "dg_ps_examples.accordion_for_ps_examples.accord_ps_mult_1digit"
             }
           ],
           "_nested_name": "dg_ps_examples.accordion_for_ps_examples"
