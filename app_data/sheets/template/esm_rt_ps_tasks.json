@@ -91,7 +91,7 @@
             {
               "type": "accordion_section",
               "name": "accord_ps_logic",
-              "value": "Early Logic - STARTED",
+              "value": "Early Logic",
               "parameter_list": {
                 "text_align": "center",
                 "style": "large emphasised"
@@ -254,7 +254,7 @@
             {
               "type": "accordion_section",
               "name": "accord_ps_add_sub_basic",
-              "value": "Early Count, Add, Sub - NOT DONE",
+              "value": "Early Count, Add, Sub – NOT DONE",
               "parameter_list": {
                 "text_align": "center",
                 "style": "large emphasised"
@@ -417,7 +417,7 @@
             {
               "type": "accordion_section",
               "name": "accord_ps_mult_1digit",
-              "value": "Mult - 1-Digit - NOT DONE",
+              "value": "Early Multiplication – NOT DONE",
               "parameter_list": {
                 "text_align": "center",
                 "style": "large emphasised"
@@ -429,7 +429,149 @@
                   "parameter_list": {
                     "style": "column"
                   },
-                  "rows": [],
+                  "rows": [
+                    {
+                      "type": "items",
+                      "name": "ps_add_sub_basic",
+                      "value": "@data.esm_ps_tasks_data_list",
+                      "parameter_list": {
+                        "filter": "@item.type==\"mult\""
+                      },
+                      "rows": [
+                        {
+                          "type": "button",
+                          "name": "button_@item.id",
+                          "value": "@item.name",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "action_list": [
+                            {
+                              "trigger": "click",
+                              "action_id": "set_field",
+                              "args": [
+                                "ps_content_ptr",
+                                "data.esm_ps_tasks_data_list.@item.id"
+                              ],
+                              "_raw": "click | set_field:ps_content_ptr : data.esm_ps_tasks_data_list.@item.id",
+                              "_cleaned": "click | set_field:ps_content_ptr : data.esm_ps_tasks_data_list.@item.id"
+                            },
+                            {
+                              "trigger": "click",
+                              "action_id": "go_to",
+                              "args": [
+                                "esm_ps_displayer"
+                              ],
+                              "_raw": "click | go_to: esm_ps_displayer",
+                              "_cleaned": "click | go_to: esm_ps_displayer"
+                            }
+                          ],
+                          "parameter_list": {
+                            "style": "short",
+                            "text_align": "center"
+                          },
+                          "_nested_name": "dg_ps_examples.accordion_for_ps_examples.accord_ps_mult_1digit.dg_ps_mult_1digit.ps_add_sub_basic.button_@item.id",
+                          "_dynamicFields": {
+                            "name": [
+                              {
+                                "fullExpression": "button_@item.id",
+                                "matchedExpression": "@item.id",
+                                "type": "item",
+                                "fieldName": "id"
+                              }
+                            ],
+                            "value": [
+                              {
+                                "fullExpression": "@item.name",
+                                "matchedExpression": "@item.name",
+                                "type": "item",
+                                "fieldName": "name"
+                              }
+                            ],
+                            "action_list": {
+                              "0": {
+                                "args": {
+                                  "1": [
+                                    {
+                                      "fullExpression": "data.esm_ps_tasks_data_list.@item.id",
+                                      "matchedExpression": "@item.id",
+                                      "type": "item",
+                                      "fieldName": "id"
+                                    }
+                                  ]
+                                },
+                                "_raw": [
+                                  {
+                                    "fullExpression": "click | set_field:ps_content_ptr : data.esm_ps_tasks_data_list.@item.id",
+                                    "matchedExpression": "@item.id",
+                                    "type": "item",
+                                    "fieldName": "id"
+                                  }
+                                ],
+                                "_cleaned": [
+                                  {
+                                    "fullExpression": "click | set_field:ps_content_ptr : data.esm_ps_tasks_data_list.@item.id",
+                                    "matchedExpression": "@item.id",
+                                    "type": "item",
+                                    "fieldName": "id"
+                                  }
+                                ]
+                              }
+                            },
+                            "_nested_name": [
+                              {
+                                "fullExpression": "dg_ps_examples.accordion_for_ps_examples.accord_ps_mult_1digit.dg_ps_mult_1digit.ps_add_sub_basic.button_@item.id",
+                                "matchedExpression": "@item.id",
+                                "type": "item",
+                                "fieldName": "id"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@item.id": [
+                              "name",
+                              "action_list.0.args.1",
+                              "action_list.0._raw",
+                              "action_list.0._cleaned",
+                              "_nested_name"
+                            ],
+                            "@item.name": [
+                              "value"
+                            ]
+                          }
+                        }
+                      ],
+                      "_nested_name": "dg_ps_examples.accordion_for_ps_examples.accord_ps_mult_1digit.dg_ps_mult_1digit.ps_add_sub_basic",
+                      "_dynamicFields": {
+                        "value": [
+                          {
+                            "fullExpression": "@data.esm_ps_tasks_data_list",
+                            "matchedExpression": "@data.esm_ps_tasks_data_list",
+                            "type": "data",
+                            "fieldName": "esm_ps_tasks_data_list"
+                          }
+                        ],
+                        "parameter_list": {
+                          "filter": [
+                            {
+                              "fullExpression": "@item.type==\"mult\"",
+                              "matchedExpression": "@item.type",
+                              "type": "item",
+                              "fieldName": "type"
+                            }
+                          ]
+                        }
+                      },
+                      "_dynamicDependencies": {
+                        "@data.esm_ps_tasks_data_list": [
+                          "value"
+                        ],
+                        "@item.type": [
+                          "parameter_list.filter"
+                        ]
+                      }
+                    }
+                  ],
                   "_nested_name": "dg_ps_examples.accordion_for_ps_examples.accord_ps_mult_1digit.dg_ps_mult_1digit"
                 }
               ],

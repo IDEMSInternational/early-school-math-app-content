@@ -5,67 +5,69 @@
   "status": "released",
   "rows": [
     {
-      "id": "esm_ps_2_colors",
-      "reference": "TM p10",
+      "id": "esm_ps_dominoes_on_board",
+      "reference": "TM p97",
       "type": "early_logic",
-      "math_topics": "simple drawing",
+      "math_topics": "parity - even/odd; squares",
       "block1_type": "all_text",
-      "name": "Two Colors",
+      "block2_type": "accord_all_text",
+      "block3_type": "accord_all_text",
+      "block4_type": "accord_all_text",
+      "block5_type": "accord_all_text",
+      "name": "Dominoes on a Chessboard",
       "_translations": {
         "name": {},
-        "block1_text": {}
+        "block1_text": {},
+        "block2_accord": {},
+        "block2_text": {},
+        "block3_accord": {},
+        "block3_text": {},
+        "block4_accord": {},
+        "block4_text": {},
+        "block5_accord": {},
+        "block5_text": {}
       },
       "_translatedFields": {
         "name": {
-          "eng": "Two Colors"
+          "eng": "Dominoes on a Chessboard"
         },
         "block1_text": {
-          "eng": "**Question:** Draw a small number of lines across a rectangle. Can the result always be colored with 2 colors?\n\nStart by understanding the question. What does it mean to \"color with 2 colors\"?\n\nWhat if every node inside the rectangle has an even number of lines coming into it, can it still be colored with 2 colors?"
-        }
-      },
-      "block1_text": "**Question:** Draw a small number of lines across a rectangle. Can the result always be colored with 2 colors?\n\nStart by understanding the question. What does it mean to \"color with 2 colors\"?\n\nWhat if every node inside the rectangle has an even number of lines coming into it, can it still be colored with 2 colors?"
-    },
-    {
-      "id": "esm_ps_nim12",
-      "reference": "None",
-      "type": "early_logic",
-      "math_topics": "logic, add/sub 1,2",
-      "block1_type": "all_text",
-      "name": "Nim 1-2",
-      "_translations": {
-        "name": {},
-        "block1_text": {}
-      },
-      "_translatedFields": {
-        "name": {
-          "eng": "Nim 1-2"
+          "eng": "**Dominoes on a Chessboard**\n\n**Question:** Suppose 2 squares are removed from opposite corners of a chessboard. Can the resulting board be exactly covered by dominoes?\n\n< put in illustration of a domino and a board with missing corners >"
         },
-        "block1_text": {
-          "eng": "**Question:** How to play the game of Nim well."
-        }
-      },
-      "block1_text": "**Question:** How to play the game of Nim well."
-    },
-    {
-      "id": "esm_ps_grid_chase",
-      "reference": "TM p148",
-      "type": "early_logic",
-      "math_topics": "logic",
-      "block1_type": "all_text",
-      "name": "Chasing on a Grid",
-      "_translations": {
-        "name": {},
-        "block1_text": {}
-      },
-      "_translatedFields": {
-        "name": {
-          "eng": "Chasing on a Grid"
+        "block2_accord": {
+          "eng": "Mull, Distill, Represent"
         },
-        "block1_text": {
-          "eng": "**Question:** Play starts with a marker on the square on the lower left-hand corner of a chessboard. A player may make one of three moves for the marker: a) one to the right, b) one up, or c) one up and to the right. Players alternate turns. The player who moves the marker to the upper right-hand square wins. Should you decide to go first or second, and what is your winning strategy?\n\nWhat happens on an n by n board? What about an n by m board? what about a 3-dimensional grid?"
+        "block2_text": {
+          "eng": "What is going on in the question? People like to rush into puzzles before really understanding what is being asked. The representation for this puzzle is natural enough.\n\nIs it important that the removed squares are in opposite corners? Is it important that it's a chessboard, or is that a misdirection? What, if anything, is the connection between dominoes and chessboards?\n\nDiscuss these questions and anything else that your students come up with."
+        },
+        "block3_accord": {
+          "eng": "Play with it!"
+        },
+        "block3_text": {
+          "eng": "**Smaller Examples:** An important problem solving technique is to try smaller examples. \n\nYou might also try removing other pairs of corners.\n\nThe 2 by 2 example is a little too small to get anything out of. Encourage your students to come up with the idea of looking at 3 by 3 and 4 by 4 boards. What can they learn from those?\n\nAny odd size, such as 3 by 3 or 5 by 5 is going to be impossible because there will be an odd number of squares. After some playing around they will probably conclude that the 4 by 4 and 8 by 8 are impossible - but why?"
+        },
+        "block4_accord": {
+          "eng": "Key Insight"
+        },
+        "block4_text": {
+          "eng": "This is a tricky puzzle because once you realize that the alternating colors of a chessboard are important, the problem becomes much easier to understand. After lots of play, and maybe coming back the next day, nudge your students to look at the light and dark squares. \n\nCount up how many light and dark squares there are on a 4 by 4 board. After a domino is placed, how many of each color are left? After a second domino is placed, how many are left. Eventually they'll see that they will be left with two of one color and zero of the other, so the puzzle is impossible."
+        },
+        "block5_accord": {
+          "eng": "Explorations"
+        },
+        "block5_text": {
+          "eng": "Develop the habit in your students of wanting to explore where a puzzle may take them.\n\nThey've seen that it's important that whatever squares are removed, you must be left with the same number of squares of each color.\n\n* What happens if we remove two corners on the same side?\n* What happens if we remove any two squares with different colors?\n* Does it matter if the board is square or not?\n* Does it always work as long as there are an even number of squares?\n\nWhat happens if we try covering with other shapes? You could look at covering with L-shaped pieces that have a total of 3 squares in them. If you remove one corner from a chessboard, can it be covered by L's?"
         }
       },
-      "block1_text": "**Question:** Play starts with a marker on the square on the lower left-hand corner of a chessboard. A player may make one of three moves for the marker: a) one to the right, b) one up, or c) one up and to the right. Players alternate turns. The player who moves the marker to the upper right-hand square wins. Should you decide to go first or second, and what is your winning strategy?\n\nWhat happens on an n by n board? What about an n by m board? what about a 3-dimensional grid?"
+      "block1_text": "**Dominoes on a Chessboard**\n\n**Question:** Suppose 2 squares are removed from opposite corners of a chessboard. Can the resulting board be exactly covered by dominoes?\n\n< put in illustration of a domino and a board with missing corners >",
+      "block2_accord": "Mull, Distill, Represent",
+      "block2_text": "What is going on in the question? People like to rush into puzzles before really understanding what is being asked. The representation for this puzzle is natural enough.\n\nIs it important that the removed squares are in opposite corners? Is it important that it's a chessboard, or is that a misdirection? What, if anything, is the connection between dominoes and chessboards?\n\nDiscuss these questions and anything else that your students come up with.",
+      "block3_accord": "Play with it!",
+      "block3_text": "**Smaller Examples:** An important problem solving technique is to try smaller examples. \n\nYou might also try removing other pairs of corners.\n\nThe 2 by 2 example is a little too small to get anything out of. Encourage your students to come up with the idea of looking at 3 by 3 and 4 by 4 boards. What can they learn from those?\n\nAny odd size, such as 3 by 3 or 5 by 5 is going to be impossible because there will be an odd number of squares. After some playing around they will probably conclude that the 4 by 4 and 8 by 8 are impossible - but why?",
+      "block4_accord": "Key Insight",
+      "block4_text": "This is a tricky puzzle because once you realize that the alternating colors of a chessboard are important, the problem becomes much easier to understand. After lots of play, and maybe coming back the next day, nudge your students to look at the light and dark squares. \n\nCount up how many light and dark squares there are on a 4 by 4 board. After a domino is placed, how many of each color are left? After a second domino is placed, how many are left. Eventually they'll see that they will be left with two of one color and zero of the other, so the puzzle is impossible.",
+      "block5_accord": "Explorations",
+      "block5_text": "Develop the habit in your students of wanting to explore where a puzzle may take them.\n\nThey've seen that it's important that whatever squares are removed, you must be left with the same number of squares of each color.\n\n* What happens if we remove two corners on the same side?\n* What happens if we remove any two squares with different colors?\n* Does it matter if the board is square or not?\n* Does it always work as long as there are an even number of squares?\n\nWhat happens if we try covering with other shapes? You could look at covering with L-shaped pieces that have a total of 3 squares in them. If you remove one corner from a chessboard, can it be covered by L's?"
     },
     {
       "id": "esm_ps_lunch_table",
@@ -73,188 +75,281 @@
       "type": "early_logic",
       "math_topics": "basic logic",
       "block1_type": "all_text",
+      "block2_type": "accord_all_text",
+      "block3_type": "accord_all_text",
+      "block4_type": "accord_all_text",
+      "block5_type": "accord_all_text",
       "name": "First and Last Names",
       "_translations": {
         "name": {},
-        "block1_text": {}
+        "block1_text": {},
+        "block2_accord": {},
+        "block2_text": {},
+        "block3_accord": {},
+        "block3_text": {},
+        "block4_accord": {},
+        "block4_text": {},
+        "block5_accord": {},
+        "block5_text": {}
       },
       "_translatedFields": {
         "name": {
           "eng": "First and Last Names"
         },
         "block1_text": {
-          "eng": "**Question:** Five people are sitting at a round table, The first names are A, B, C, D, and E, and the last names are L, M, N, O, and P. O sits between L and M. E sits between C and N. L is between E and A. C and D are siblings. P is on B's left side and M is on B's right side. How do the first and last names match up?"
+          "eng": "**First and Last Names**\n\n**Question:** Five people are sitting at a round table, The first names are A, B, C, D, and E, and the last names are L, M, N, O, and P. O sits between L and M. E sits between C and N. L is between E and A. C and D are siblings. P is on B's left side and M is on B's right side. How do the first and last names match up?"
+        },
+        "block2_accord": {
+          "eng": "Mull, Distill, Represent"
+        },
+        "block2_text": {
+          "eng": "Give your students a few minutes to comment on the puzzle and consider what is going on. Model not rushing into getting a solution.\n\nThis puzzle has too many words compared to the amount of information. Challenge your students to summarize the information as briefly and clearly as possible. They might summarize with:\n\n* A drawing of a circle with five unlabeled dots around it.\n* 1. LOM or MOL\n* 2. CEN or NEC\n* 3. ELA or ALE\n* 4. C and D are siblings\n* 5. PBM\n\nPoint out that, you may not have the solution, but it is now much easier to understand the puzzle."
+        },
+        "block3_accord": {
+          "eng": "Starting Point"
+        },
+        "block3_text": {
+          "eng": "Where can we start with this? The overlapping descriptions make a good point to grab onto. Have your students identify the overlaps: (1) and (5) overlap, and (2) and (3) overlap. Either pairing makes a good candidate. Let's start with (1) and (5) – we'll see (2) and (3) together in the next step.\n\n(5) is the only one with left and right information, so let's use it. When we combine (1) and (5), we have two options:\n\na) MOL extends PBM to give PBMOL, which fills up the table.\nb) LOM covers PBM, so L = P and O = B. However, it's impossible for L = P because they are both last names.\n\nWe're off to a great start. We know the people sitting around the table are in the order PBMOL. \n\nGive your students a chance to finish from here on their own. If not, continue to the next step."
+        },
+        "block4_accord": {
+          "eng": "Next Steps"
+        },
+        "block4_text": {
+          "eng": "We've established that the people are sitting around the table in the order PBMOL. Rule (2) does not have any letters in common with this, so let's look at rule (3). As before there are two possibilities.\n\na) If it is ELA, then E = O and A = P\nb) If it is ALE, the A = O and E = P\n\nHmm... Both of those look possible. Sometimes ideas don't immediately work out, and that's important for your students to see.\n\nLet's try combining (2) and (3). (2) says that E is next to C and N. (3) tells us that L is next to E, so L must be C or N. L and N are last names, so L must be connected with C, and one of the people is CL! \n\nCombining (2) and (3), this also says that the correct order is NE(CL)A or A(CL)EN. However, the first of those has a last name conflict with PBMOL (N and M would be the same), so it must be A(CL)EN. \n\nThis forces A to be with O, E to be with P, and N to be with B. Which only leaves D to be with M.\n\nThe final answer is AO, BN, CL, DM, and EP."
+        },
+        "block5_accord": {
+          "eng": "Review"
+        },
+        "block5_text": {
+          "eng": "Taking the time to review a solution is an important habit for students. Sometimes they will find mistakes. Other times they may see easier ways to do things.\n\nHave them briefly summarize the important steps in the solution. They will probably leave it out, so you will almost certainly need to remind them that summarizing the information at the beginning in such an easy to look at way made it much easier to work on the problem.\n\nIn a collection of 5 bits of information, it was important for them to find the pairs of information that could be used together.\n\nWould the solution have changed if statement (5) had merely said that P was between B and M? How was it helpful to know that C and D are siblings?"
         }
       },
-      "block1_text": "**Question:** Five people are sitting at a round table, The first names are A, B, C, D, and E, and the last names are L, M, N, O, and P. O sits between L and M. E sits between C and N. L is between E and A. C and D are siblings. P is on B's left side and M is on B's right side. How do the first and last names match up?"
+      "block1_text": "**First and Last Names**\n\n**Question:** Five people are sitting at a round table, The first names are A, B, C, D, and E, and the last names are L, M, N, O, and P. O sits between L and M. E sits between C and N. L is between E and A. C and D are siblings. P is on B's left side and M is on B's right side. How do the first and last names match up?",
+      "block2_accord": "Mull, Distill, Represent",
+      "block2_text": "Give your students a few minutes to comment on the puzzle and consider what is going on. Model not rushing into getting a solution.\n\nThis puzzle has too many words compared to the amount of information. Challenge your students to summarize the information as briefly and clearly as possible. They might summarize with:\n\n* A drawing of a circle with five unlabeled dots around it.\n* 1. LOM or MOL\n* 2. CEN or NEC\n* 3. ELA or ALE\n* 4. C and D are siblings\n* 5. PBM\n\nPoint out that, you may not have the solution, but it is now much easier to understand the puzzle.",
+      "block3_accord": "Starting Point",
+      "block3_text": "Where can we start with this? The overlapping descriptions make a good point to grab onto. Have your students identify the overlaps: (1) and (5) overlap, and (2) and (3) overlap. Either pairing makes a good candidate. Let's start with (1) and (5) – we'll see (2) and (3) together in the next step.\n\n(5) is the only one with left and right information, so let's use it. When we combine (1) and (5), we have two options:\n\na) MOL extends PBM to give PBMOL, which fills up the table.\nb) LOM covers PBM, so L = P and O = B. However, it's impossible for L = P because they are both last names.\n\nWe're off to a great start. We know the people sitting around the table are in the order PBMOL. \n\nGive your students a chance to finish from here on their own. If not, continue to the next step.",
+      "block4_accord": "Next Steps",
+      "block4_text": "We've established that the people are sitting around the table in the order PBMOL. Rule (2) does not have any letters in common with this, so let's look at rule (3). As before there are two possibilities.\n\na) If it is ELA, then E = O and A = P\nb) If it is ALE, the A = O and E = P\n\nHmm... Both of those look possible. Sometimes ideas don't immediately work out, and that's important for your students to see.\n\nLet's try combining (2) and (3). (2) says that E is next to C and N. (3) tells us that L is next to E, so L must be C or N. L and N are last names, so L must be connected with C, and one of the people is CL! \n\nCombining (2) and (3), this also says that the correct order is NE(CL)A or A(CL)EN. However, the first of those has a last name conflict with PBMOL (N and M would be the same), so it must be A(CL)EN. \n\nThis forces A to be with O, E to be with P, and N to be with B. Which only leaves D to be with M.\n\nThe final answer is AO, BN, CL, DM, and EP.",
+      "block5_accord": "Review",
+      "block5_text": "Taking the time to review a solution is an important habit for students. Sometimes they will find mistakes. Other times they may see easier ways to do things.\n\nHave them briefly summarize the important steps in the solution. They will probably leave it out, so you will almost certainly need to remind them that summarizing the information at the beginning in such an easy to look at way made it much easier to work on the problem.\n\nIn a collection of 5 bits of information, it was important for them to find the pairs of information that could be used together.\n\nWould the solution have changed if statement (5) had merely said that P was between B and M? How was it helpful to know that C and D are siblings?"
     },
     {
-      "id": "esm_ps_leapfrog",
-      "reference": "TM p52",
+      "id": "esm_ps_2_colors",
+      "reference": "TM p10",
+      "type": "early_logic",
+      "math_topics": "simple drawing",
+      "block1_type": "all_text",
+      "block2_type": "accord_all_text",
+      "block3_type": "accord_all_text",
+      "block4_type": "accord_all_text",
+      "block5_type": "accord_all_text",
+      "block6_type": "accord_all_text",
+      "name": "Map Coloring",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_accord": {},
+        "block2_text": {},
+        "block3_accord": {},
+        "block3_text": {},
+        "block4_accord": {},
+        "block4_text": {},
+        "block5_accord": {},
+        "block5_text": {},
+        "block6_accord": {},
+        "block6_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Map Coloring"
+        },
+        "block1_text": {
+          "eng": "**Map Coloring**\n\n**Question:** Draw a small number of lines across an oval. What is the minimum number of colors needed to color this map?\n\n< put in illustration from the POWs for this >"
+        },
+        "block2_accord": {
+          "eng": "Mull, Distill, Represent"
+        },
+        "block2_text": {
+          "eng": "Read the directions carefully and then pause. What needs to be understood here? \n\n* Are the lines straight lines, or does that matter? Let's assume it doesn't matter and revisit this if we need to.\n* What does it mean to color a picture with two colors? If two regions share part of a side, they must have different colors or they would blend together. If two regions just share a corner, must they have different colors – let's assume they don't.\n\nThe representation of this puzzle is simple enough – make a drawing and see what is needed to color it with two colors."
+        },
+        "block3_accord": {
+          "eng": "Play with it!"
+        },
+        "block3_text": {
+          "eng": "Do some simple examples of the puzzle and learn from them.\n\n* 1 line. Color the two sides of the line different colors.\n* 2 lines. Alternate colors around the intersection point\n* 3 lines . ..."
+        },
+        "block4_accord": {
+          "eng": "Patterns"
+        },
+        "block4_text": {
+          "eng": "There are two patterns for coloring that your students may come up with.\n\n1) Each time a line is added, flip all the colors on one side of the line. This is guaranteed to work and is very simple. Challenge your students to carefully explain why this works.\n\n2) Start at eny node and alternate colors for the regions that have that node as a corner. There will be an even number of regions for any node, so this start can always be done. After that, pick some node that is a corner of a region that has already been colored – alternate colors around that node starting with the regions that have already been done. It is less obvious that this strategy will work, but it does."
+        },
+        "block5_accord": {
+          "eng": "Review"
+        },
+        "block5_text": {
+          "eng": "State the strategy for being able to 2-color a map. Why were using lines critical to making your strategy work? - Is it that they have two sides, or is something more subtle going on? A circle has two sides, so would it work as well as a line?\n\nHow did you arrive at your method? Was it a systematic approach, or did you get lucky?"
+        },
+        "block6_accord": {
+          "eng": "Explorations"
+        },
+        "block6_text": {
+          "eng": "Some directions that can be gone in:\n\n* Given coloring strategy (2), any map where every node has an even number of edges coming into it is 2-colorable.\n* Why does having a node with an odd number of edges force there to be at least 3 colors?\n* What is a simple map that forces the use of four colors?\n* What happens for other surfaces such as a cylinder or a sphere?"
+        }
+      },
+      "block1_text": "**Map Coloring**\n\n**Question:** Draw a small number of lines across an oval. What is the minimum number of colors needed to color this map?\n\n< put in illustration from the POWs for this >",
+      "block2_accord": "Mull, Distill, Represent",
+      "block2_text": "Read the directions carefully and then pause. What needs to be understood here? \n\n* Are the lines straight lines, or does that matter? Let's assume it doesn't matter and revisit this if we need to.\n* What does it mean to color a picture with two colors? If two regions share part of a side, they must have different colors or they would blend together. If two regions just share a corner, must they have different colors – let's assume they don't.\n\nThe representation of this puzzle is simple enough – make a drawing and see what is needed to color it with two colors.",
+      "block3_accord": "Play with it!",
+      "block3_text": "Do some simple examples of the puzzle and learn from them.\n\n* 1 line. Color the two sides of the line different colors.\n* 2 lines. Alternate colors around the intersection point\n* 3 lines . ...",
+      "block4_accord": "Patterns",
+      "block4_text": "There are two patterns for coloring that your students may come up with.\n\n1) Each time a line is added, flip all the colors on one side of the line. This is guaranteed to work and is very simple. Challenge your students to carefully explain why this works.\n\n2) Start at eny node and alternate colors for the regions that have that node as a corner. There will be an even number of regions for any node, so this start can always be done. After that, pick some node that is a corner of a region that has already been colored – alternate colors around that node starting with the regions that have already been done. It is less obvious that this strategy will work, but it does.",
+      "block5_accord": "Review",
+      "block5_text": "State the strategy for being able to 2-color a map. Why were using lines critical to making your strategy work? - Is it that they have two sides, or is something more subtle going on? A circle has two sides, so would it work as well as a line?\n\nHow did you arrive at your method? Was it a systematic approach, or did you get lucky?",
+      "block6_accord": "Explorations",
+      "block6_text": "Some directions that can be gone in:\n\n* Given coloring strategy (2), any map where every node has an even number of edges coming into it is 2-colorable.\n* Why does having a node with an odd number of edges force there to be at least 3 colors?\n* What is a simple map that forces the use of four colors?\n* What happens for other surfaces such as a cylinder or a sphere?"
+    },
+    {
+      "id": "esm_ps_nim12",
+      "reference": "None",
+      "type": "early_logic",
+      "math_topics": "logic, add/sub 1,2",
+      "block1_type": "all_text",
+      "block2_type": "accord_all_text",
+      "block3_type": "accord_all_text",
+      "block4_type": "accord_all_text",
+      "block5_type": "accord_all_text",
+      "block6_type": "accord_all_text",
+      "name": "Nim 1-2",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_accord": {},
+        "block2_text": {},
+        "block3_accord": {},
+        "block3_text": {},
+        "block4_accord": {},
+        "block4_text": {},
+        "block5_accord": {},
+        "block5_text": {},
+        "block6_accord": {},
+        "block6_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Nim 1-2"
+        },
+        "block1_text": {
+          "eng": "**Nim 1-2**\n\n**Question:** This version of Nim is begun by having 10 tokens in a starting pile. On a turn, a player removes 1 or 2 tokens from the pile and puts them to the side. The person who takes the last token wins. What is the winning strategy for this game? If you have a choice, should you play first or second?\n\nThe teacher is a Nim expert – can any of the students defeat the Nim expert?"
+        },
+        "block2_accord": {
+          "eng": "Mull, Distill, Represent"
+        },
+        "block2_text": {
+          "eng": "You can play this with a pile of tokens, you can play it with paper and pencil, or if you have confident students you can play it orally. Pair up your students and have them play a few rounds with each other to gain some experience.\n\nWhat if anything is important about 1, 2, and 10 in this puzzle? How should you decide who goes first?"
+        },
+        "block3_accord": {
+          "eng": "Do Simpler Versions"
+        },
+        "block3_text": {
+          "eng": "10 is too big a number to see the game strategy, so this is a great puzzle for learning from simpler versions of the puzzle. This is one of the most important Problem Solving Strategies, so make a big point of using it.\n\nWhat is the simplest useful version? Your students will suggest starting at 5, or maybe starting at 3. Urge them to start as low as is useful, which in this case is 1. The smallest case usually goes quickly, and often things can be learned from it.\n\nIf it is your turn and the number is _, will you win?\n\n* 1. Yes. You remove 1 thing.\n* 2. Yes. You remove 2 things.\n* 3. No. Whether you remove 1 or 2, you put the other player in a position to win!\n* 4. Yes. You can remove 1 thing and put the other player in a losing position.\n* 5. Yes. Remove 2 things.\n* 6. No.\n* 7. ....\n\nWe could have played many games starting at 10 and not figured this out. By doing this sequence of simpler versions, we have completely figured out the game in a few minutes. The pattern is:\n\nWin, Win, Lose, Win, Win, Lose, Win, Win, Lose, Win.\n\nSo, if you start at 10 you should want to go first and you will remove 1 thing.\n\nA point to make to your students is that by keeping our table of results orderly it was much easier to see the pattern. Too often, good experimental work is wasted due to poor record keeping and chaotic note taking."
+        },
+        "block4_accord": {
+          "eng": "Why Does it Work?"
+        },
+        "block4_text": {
+          "eng": "We have a winning strategy. The next thing you want your students to do is question why that works. As in all of mathematics, if you can possibly help it you don't want to have to use a tool you don't understand. Plus, it can be fun to figure out and it may give you insights for doing further puzzles.\n\nThe pattern repeats in groups of 3. What is special about 3? Well, 1 + 2 = 3. No matter which number your opponent chooses, you can always pick the other number and have the two numbers add up to 3."
+        },
+        "block5_accord": {
+          "eng": "Review"
+        },
+        "block5_text": {
+          "eng": "How did your students go about solving this puzzle? Can they carefully give a full explanation of how to solve it?\n\nWhy is looking at simpler versions of a puzzle so often a powerful tool for solving a puzzle?"
+        },
+        "block6_accord": {
+          "eng": "Explorations"
+        },
+        "block6_text": {
+          "eng": "There are many Nim variations out there, and you can probably make up some new ones of your own. The next Rich Task is an example of a two-dimensional version of Nim. Most Nim games can be analyzed in a way similar to what we did with this one.\n\nHere are a few ideas for variations:\n\n* The player forced to take the last piece loses.\n* Use the numbers 1, 2, and 3, instead of just 1 and 2.\n* Use the numbers 1, 2, and 4.\n* The next player can always take up to twice the number of the previous play.\n* The player can take away any divisor of the current number."
+        }
+      },
+      "block1_text": "**Nim 1-2**\n\n**Question:** This version of Nim is begun by having 10 tokens in a starting pile. On a turn, a player removes 1 or 2 tokens from the pile and puts them to the side. The person who takes the last token wins. What is the winning strategy for this game? If you have a choice, should you play first or second?\n\nThe teacher is a Nim expert – can any of the students defeat the Nim expert?",
+      "block2_accord": "Mull, Distill, Represent",
+      "block2_text": "You can play this with a pile of tokens, you can play it with paper and pencil, or if you have confident students you can play it orally. Pair up your students and have them play a few rounds with each other to gain some experience.\n\nWhat if anything is important about 1, 2, and 10 in this puzzle? How should you decide who goes first?",
+      "block3_accord": "Do Simpler Versions",
+      "block3_text": "10 is too big a number to see the game strategy, so this is a great puzzle for learning from simpler versions of the puzzle. This is one of the most important Problem Solving Strategies, so make a big point of using it.\n\nWhat is the simplest useful version? Your students will suggest starting at 5, or maybe starting at 3. Urge them to start as low as is useful, which in this case is 1. The smallest case usually goes quickly, and often things can be learned from it.\n\nIf it is your turn and the number is _, will you win?\n\n* 1. Yes. You remove 1 thing.\n* 2. Yes. You remove 2 things.\n* 3. No. Whether you remove 1 or 2, you put the other player in a position to win!\n* 4. Yes. You can remove 1 thing and put the other player in a losing position.\n* 5. Yes. Remove 2 things.\n* 6. No.\n* 7. ....\n\nWe could have played many games starting at 10 and not figured this out. By doing this sequence of simpler versions, we have completely figured out the game in a few minutes. The pattern is:\n\nWin, Win, Lose, Win, Win, Lose, Win, Win, Lose, Win.\n\nSo, if you start at 10 you should want to go first and you will remove 1 thing.\n\nA point to make to your students is that by keeping our table of results orderly it was much easier to see the pattern. Too often, good experimental work is wasted due to poor record keeping and chaotic note taking.",
+      "block4_accord": "Why Does it Work?",
+      "block4_text": "We have a winning strategy. The next thing you want your students to do is question why that works. As in all of mathematics, if you can possibly help it you don't want to have to use a tool you don't understand. Plus, it can be fun to figure out and it may give you insights for doing further puzzles.\n\nThe pattern repeats in groups of 3. What is special about 3? Well, 1 + 2 = 3. No matter which number your opponent chooses, you can always pick the other number and have the two numbers add up to 3.",
+      "block5_accord": "Review",
+      "block5_text": "How did your students go about solving this puzzle? Can they carefully give a full explanation of how to solve it?\n\nWhy is looking at simpler versions of a puzzle so often a powerful tool for solving a puzzle?",
+      "block6_accord": "Explorations",
+      "block6_text": "There are many Nim variations out there, and you can probably make up some new ones of your own. The next Rich Task is an example of a two-dimensional version of Nim. Most Nim games can be analyzed in a way similar to what we did with this one.\n\nHere are a few ideas for variations:\n\n* The player forced to take the last piece loses.\n* Use the numbers 1, 2, and 3, instead of just 1 and 2.\n* Use the numbers 1, 2, and 4.\n* The next player can always take up to twice the number of the previous play.\n* The player can take away any divisor of the current number."
+    },
+    {
+      "id": "esm_ps_grid_chase",
+      "reference": "TM p148",
       "type": "early_logic",
       "math_topics": "logic",
       "block1_type": "all_text",
-      "name": "Leapfrog",
+      "block2_type": "accord_all_text",
+      "block3_type": "accord_all_text",
+      "block4_type": "accord_all_text",
+      "block5_type": "accord_all_text",
+      "name": "Nim – Chasing on a Grid",
       "_translations": {
         "name": {},
-        "block1_text": {}
+        "block1_text": {},
+        "block2_accord": {},
+        "block2_text": {},
+        "block3_accord": {},
+        "block3_text": {},
+        "block4_accord": {},
+        "block4_text": {},
+        "block5_accord": {},
+        "block5_text": {}
       },
       "_translatedFields": {
         "name": {
-          "eng": "Leapfrog"
+          "eng": "Nim – Chasing on a Grid"
         },
         "block1_text": {
-          "eng": "**Question:** There are 11 holes in a row. There are 5 black pegs in the holes at one end and 5 white pegs in holes on the other end and one empty hole in the middle. A peg can only be moved to an empty hole or jump over another peg into an empty hole. Can the white and black pegs swap ends?\n\nGeneralizations: many to explore"
-        }
-      },
-      "block1_text": "**Question:** There are 11 holes in a row. There are 5 black pegs in the holes at one end and 5 white pegs in holes on the other end and one empty hole in the middle. A peg can only be moved to an empty hole or jump over another peg into an empty hole. Can the white and black pegs swap ends?\n\nGeneralizations: many to explore"
-    },
-    {
-      "id": "esm_ps_dominoes_on_board",
-      "reference": "TM p97",
-      "type": "early_logic",
-      "math_topics": "parity - even/odd; squares",
-      "block1_type": "all_text",
-      "name": "Dominoes on a Chessboard",
-      "_translations": {
-        "name": {},
-        "block1_text": {}
-      },
-      "_translatedFields": {
-        "name": {
-          "eng": "Dominoes on a Chessboard"
+          "eng": "**Nim – Chasing on a Grid**\n\n**Question:** Play starts with a marker on the square on the lower left-hand corner of a chessboard. During any move, a player may make one of three moves for the marker:\n\n* one square to the right\n* one square up\n* one square up and also to the right\n\nPlayers alternate turns. The player who moves the marker to the upper right-hand square wins. \n\nShould you decide to go first or second, and what is your winning strategy?"
         },
-        "block1_text": {
-          "eng": "**Question:** Suppose 2 squares are removed from opposite corners of a chessboard. Can the resulting board be exactly covered by dominoes?\n\nGeneralize: Which pairs of squares can be removed and still be able to cover the board with dominoes?"
-        }
-      },
-      "block1_text": "**Question:** Suppose 2 squares are removed from opposite corners of a chessboard. Can the resulting board be exactly covered by dominoes?\n\nGeneralize: Which pairs of squares can be removed and still be able to cover the board with dominoes?"
-    },
-    {
-      "id": "esm_ps_square_matches",
-      "reference": "TM p79",
-      "type": "early_count_as",
-      "math_topics": "counting; squares",
-      "block1_type": "all_text",
-      "name": "Squares with Matches",
-      "_translations": {
-        "name": {},
-        "block1_text": {}
-      },
-      "_translatedFields": {
-        "name": {
-          "eng": "Squares with Matches"
+        "block2_accord": {
+          "eng": "Mull, Distill, Represent"
         },
-        "block1_text": {
-          "eng": "**Question:** You can make a single square using four match sticks. You can make two squares in a row that share a side with seven match sticks. How many match sticks does it take to make 10 squares in a row?\n\nWorking with patterns and conjectures.\n\nGeneralize: How many match sticks to make an n by n grid of squares? How about an n by m grid?"
-        }
-      },
-      "block1_text": "**Question:** You can make a single square using four match sticks. You can make two squares in a row that share a side with seven match sticks. How many match sticks does it take to make 10 squares in a row?\n\nWorking with patterns and conjectures.\n\nGeneralize: How many match sticks to make an n by n grid of squares? How about an n by m grid?"
-    },
-    {
-      "id": "esm_ps_board_squares",
-      "reference": "TM p17 and 39",
-      "type": "early_count_as",
-      "math_topics": "squares on a grid; counting",
-      "block1_type": "all_text",
-      "name": "Chess Board Squares",
-      "_translations": {
-        "name": {},
-        "block1_text": {}
-      },
-      "_translatedFields": {
-        "name": {
-          "eng": "Chess Board Squares"
+        "block2_text": {
+          "eng": "Representing the game is pretty obvious. Have your students play a game or two on a smaller board, perhaps a 3 by 3 board. Discuss any initial strategies and understandings that they think of."
         },
-        "block1_text": {
-          "eng": "**Question:** How many squares in an 8 by 8 chessboard? Somone claimed there are 204 squares. Are they right?\n\nGeneralize to squares on an n by n chessboard or an n by m chessboard.\n\nGeneralize to rectangles on an n by m chessboard."
-        }
-      },
-      "block1_text": "**Question:** How many squares in an 8 by 8 chessboard? Somone claimed there are 204 squares. Are they right?\n\nGeneralize to squares on an n by n chessboard or an n by m chessboard.\n\nGeneralize to rectangles on an n by m chessboard."
-    },
-    {
-      "id": "esm_ps_toasting_bread",
-      "reference": "TM p34",
-      "type": "early_count_as",
-      "math_topics": "basic logic and bookkeeping",
-      "block1_type": "all_text",
-      "name": "Toasting Bread",
-      "_translations": {
-        "name": {},
-        "block1_text": {}
-      },
-      "_translatedFields": {
-        "name": {
-          "eng": "Toasting Bread"
+        "block3_accord": {
+          "eng": "Do Simpler Versions"
         },
-        "block1_text": {
-          "eng": "3 slices of bread are to be toasted on a grill that can toast 2 slices at a time, but only on one side at a time. It takes 30 seconds to toast one side, 5 seconds to put a piece in or take a piece out, and 3 seconds to flip a piece over. What is the shortest time to toast both sides of all 3 slices?"
-        }
-      },
-      "block1_text": "3 slices of bread are to be toasted on a grill that can toast 2 slices at a time, but only on one side at a time. It takes 30 seconds to toast one side, 5 seconds to put a piece in or take a piece out, and 3 seconds to flip a piece over. What is the shortest time to toast both sides of all 3 slices?"
-    },
-    {
-      "id": "esm_ps_8_cubes",
-      "reference": "TM p33",
-      "type": "early_count_as",
-      "math_topics": "counting; symmetries",
-      "block1_type": "all_text",
-      "name": "Eight Cubes",
-      "_translations": {
-        "name": {},
-        "block1_text": {}
-      },
-      "_translatedFields": {
-        "name": {
-          "eng": "Eight Cubes"
+        "block3_text": {
+          "eng": "For this game, and for the Nim 1-2 game, you can think of practicing on smaller versions of the game or, equivalently, you can work backward from the end of the game.\n\nSuggest this to your students and see how much of an analysis they can come up with. Here are some boards showing the upper right-hand portion of a bigger board. X marks the ending spot, W marks a spot you win from if it's your move, and L marks a spot you lose from if it's your move. The progression of boards shows the progression of reasoning.\n\nW X\nW W\n\nL W X\nW W W\nL W L\n\nW L W X\nW W W W\nW L W L\nW W W W\n\nWhat are the patterns you see? Every other row or column is all W's, so it's good to be there if it's your move. The L's and W's alternate in the other rows and columns. The losing positions are the ones that are both an even number of rows and an even number of columns away from the endpoint – all other positions are winning positions.\n\nFor an 8 by 8 board, you want to move first and always put your opponent into one of those losing positions."
         },
-        "block1_text": {
-          "eng": "**Question:** There are 8 cubes of the same size. Two are red, two are blue, two are green, and two are white. How many ways can these 8 cubes be put together to form a larger cube so that the larger cube has every color on each face?"
-        }
-      },
-      "block1_text": "**Question:** There are 8 cubes of the same size. Two are red, two are blue, two are green, and two are white. How many ways can these 8 cubes be put together to form a larger cube so that the larger cube has every color on each face?"
-    },
-    {
-      "id": "esm_ps_adding_to_15",
-      "reference": "TM p73",
-      "type": "early_count_as",
-      "math_topics": "basic adding to 15",
-      "block1_type": "all_text",
-      "name": "Adding to 15",
-      "_translations": {
-        "name": {},
-        "block1_text": {}
-      },
-      "_translatedFields": {
-        "name": {
-          "eng": "Adding to 15"
+        "block4_accord": {
+          "eng": "Review"
         },
-        "block1_text": {
-          "eng": "**Question:** 9 pieces of paper with the numbers 1 to 9 are placed on a table. Players take turns taking a piece of paper. The first player to get a sum of 15 using any three of their numbers wins. What is a winning strategy (if there is one)?"
-        }
-      },
-      "block1_text": "**Question:** 9 pieces of paper with the numbers 1 to 9 are placed on a table. Players take turns taking a piece of paper. The first player to get a sum of 15 using any three of their numbers wins. What is a winning strategy (if there is one)?"
-    },
-    {
-      "id": "esm_ps_milkcrate",
-      "reference": "TM p.164",
-      "type": "early_count_as",
-      "math_topics": "counting; evens",
-      "block1_type": "all_text",
-      "name": "Milk Bottles in Crates",
-      "_translations": {
-        "name": {},
-        "block1_text": {}
-      },
-      "_translatedFields": {
-        "name": {
-          "eng": "Milk Bottles in Crates"
+        "block4_text": {
+          "eng": "Have your students carefully describe the winning strategy.\n\nAs with Nim 1-2, impress upon them how difficult it would hae been to find that strategy if they had just played a lot of games, but how easy it was to work backwards from the answer."
         },
-        "block1_text": {
-          "eng": "**Question:** You have a 6 by 6 milkcrate that can hold 36 bottles of milk. Is it possible to put 14 bottles into the crate so that each row and each column has an even number of bottles?\n\nWhat happens for other numbers of bottles or sizes of crates?"
+        "block5_accord": {
+          "eng": "Explorations"
+        },
+        "block5_text": {
+          "eng": "As with many Nim games, there are lots of variations that can be fun to explore.\n\nAsk your students to come up with some of these variations, and ask them which ones they want to investigate and become masters of.\n\n* What happens if you lose if you end up in the upper right-hand corner?\n* What happens on larger and smaller square boards?\n* What happens on rectangular boards of any size?\n* What would happen if you played this in a 3-dimensional 8 by 8 by 8 grid?"
         }
       },
-      "block1_text": "**Question:** You have a 6 by 6 milkcrate that can hold 36 bottles of milk. Is it possible to put 14 bottles into the crate so that each row and each column has an even number of bottles?\n\nWhat happens for other numbers of bottles or sizes of crates?"
+      "block1_text": "**Nim – Chasing on a Grid**\n\n**Question:** Play starts with a marker on the square on the lower left-hand corner of a chessboard. During any move, a player may make one of three moves for the marker:\n\n* one square to the right\n* one square up\n* one square up and also to the right\n\nPlayers alternate turns. The player who moves the marker to the upper right-hand square wins. \n\nShould you decide to go first or second, and what is your winning strategy?",
+      "block2_accord": "Mull, Distill, Represent",
+      "block2_text": "Representing the game is pretty obvious. Have your students play a game or two on a smaller board, perhaps a 3 by 3 board. Discuss any initial strategies and understandings that they think of.",
+      "block3_accord": "Do Simpler Versions",
+      "block3_text": "For this game, and for the Nim 1-2 game, you can think of practicing on smaller versions of the game or, equivalently, you can work backward from the end of the game.\n\nSuggest this to your students and see how much of an analysis they can come up with. Here are some boards showing the upper right-hand portion of a bigger board. X marks the ending spot, W marks a spot you win from if it's your move, and L marks a spot you lose from if it's your move. The progression of boards shows the progression of reasoning.\n\nW X\nW W\n\nL W X\nW W W\nL W L\n\nW L W X\nW W W W\nW L W L\nW W W W\n\nWhat are the patterns you see? Every other row or column is all W's, so it's good to be there if it's your move. The L's and W's alternate in the other rows and columns. The losing positions are the ones that are both an even number of rows and an even number of columns away from the endpoint – all other positions are winning positions.\n\nFor an 8 by 8 board, you want to move first and always put your opponent into one of those losing positions.",
+      "block4_accord": "Review",
+      "block4_text": "Have your students carefully describe the winning strategy.\n\nAs with Nim 1-2, impress upon them how difficult it would hae been to find that strategy if they had just played a lot of games, but how easy it was to work backwards from the answer.",
+      "block5_accord": "Explorations",
+      "block5_text": "As with many Nim games, there are lots of variations that can be fun to explore.\n\nAsk your students to come up with some of these variations, and ask them which ones they want to investigate and become masters of.\n\n* What happens if you lose if you end up in the upper right-hand corner?\n* What happens on larger and smaller square boards?\n* What happens on rectangular boards of any size?\n* What would happen if you played this in a 3-dimensional 8 by 8 by 8 grid?"
     },
     {
       "id": "esm_ps_0s_and_1s",
@@ -278,9 +373,135 @@
       "block1_text": "**Question:** Write down a random sequence of 0s and 1s. Below this sequence write a 0 below each pair that is the same and a 1 below each pair that is different. Continue this process until you have just one number. What will it be?\n\nWhat happens for a circle? What happens if you use 0, 1, and 2 and an appropriate change of rules"
     },
     {
+      "id": "esm_ps_adding_to_15",
+      "reference": "TM p73",
+      "type": "early_count_as",
+      "math_topics": "basic adding to 15",
+      "block1_type": "all_text",
+      "name": "Adding to 15",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Adding to 15"
+        },
+        "block1_text": {
+          "eng": "**Question:** 9 pieces of paper with the numbers 1 to 9 are placed on a table. Players take turns taking a piece of paper. The first player to get a sum of 15 using any three of their numbers wins. What is a winning strategy (if there is one)?"
+        }
+      },
+      "block1_text": "**Question:** 9 pieces of paper with the numbers 1 to 9 are placed on a table. Players take turns taking a piece of paper. The first player to get a sum of 15 using any three of their numbers wins. What is a winning strategy (if there is one)?"
+    },
+    {
+      "id": "esm_ps_board_squares",
+      "reference": "TM p17 and 39",
+      "type": "early_count_as",
+      "math_topics": "squares on a grid; counting",
+      "block1_type": "all_text",
+      "name": "Chess Board Squares",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Chess Board Squares"
+        },
+        "block1_text": {
+          "eng": "**Question:** How many squares in an 8 by 8 chessboard? Somone claimed there are 204 squares. Are they right?\n\nGeneralize to squares on an n by n chessboard or an n by m chessboard.\n\nGeneralize to rectangles on an n by m chessboard."
+        }
+      },
+      "block1_text": "**Question:** How many squares in an 8 by 8 chessboard? Somone claimed there are 204 squares. Are they right?\n\nGeneralize to squares on an n by n chessboard or an n by m chessboard.\n\nGeneralize to rectangles on an n by m chessboard."
+    },
+    {
+      "id": "esm_ps_8_cubes",
+      "reference": "TM p33",
+      "type": "early_count_as",
+      "math_topics": "counting; symmetries",
+      "block1_type": "all_text",
+      "name": "Eight Cubes",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Eight Cubes"
+        },
+        "block1_text": {
+          "eng": "**Question:** There are 8 cubes of the same size. Two are red, two are blue, two are green, and two are white. How many ways can these 8 cubes be put together to form a larger cube so that the larger cube has every color on each face?"
+        }
+      },
+      "block1_text": "**Question:** There are 8 cubes of the same size. Two are red, two are blue, two are green, and two are white. How many ways can these 8 cubes be put together to form a larger cube so that the larger cube has every color on each face?"
+    },
+    {
+      "id": "esm_ps_milkcrate",
+      "reference": "TM p.164",
+      "type": "early_count_as",
+      "math_topics": "counting; evens",
+      "block1_type": "all_text",
+      "name": "Milk Bottles in Crates",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Milk Bottles in Crates"
+        },
+        "block1_text": {
+          "eng": "**Question:** You have a 6 by 6 milkcrate that can hold 36 bottles of milk. Is it possible to put 14 bottles into the crate so that each row and each column has an even number of bottles?\n\nWhat happens for other numbers of bottles or sizes of crates?"
+        }
+      },
+      "block1_text": "**Question:** You have a 6 by 6 milkcrate that can hold 36 bottles of milk. Is it possible to put 14 bottles into the crate so that each row and each column has an even number of bottles?\n\nWhat happens for other numbers of bottles or sizes of crates?"
+    },
+    {
+      "id": "esm_ps_square_matches",
+      "reference": "TM p79",
+      "type": "early_count_as",
+      "math_topics": "counting; squares",
+      "block1_type": "all_text",
+      "name": "Squares with Matches",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Squares with Matches"
+        },
+        "block1_text": {
+          "eng": "**Question:** You can make a single square using four match sticks. You can make two squares in a row that share a side with seven match sticks. How many match sticks does it take to make 10 squares in a row?\n\nWorking with patterns and conjectures.\n\nGeneralize: How many match sticks to make an n by n grid of squares? How about an n by m grid?"
+        }
+      },
+      "block1_text": "**Question:** You can make a single square using four match sticks. You can make two squares in a row that share a side with seven match sticks. How many match sticks does it take to make 10 squares in a row?\n\nWorking with patterns and conjectures.\n\nGeneralize: How many match sticks to make an n by n grid of squares? How about an n by m grid?"
+    },
+    {
+      "id": "esm_ps_lines_for_9_dots",
+      "reference": "TM p101",
+      "type": "mult",
+      "math_topics": "logic; basic geometry",
+      "block1_type": "all_text",
+      "name": "4 Lines for 9 Dots",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "4 Lines for 9 Dots"
+        },
+        "block1_text": {
+          "eng": "**Question:** Draw four straight line segments without lifting your pencil so that the path goes through all 9 dots in a 3 by 3 grid of dots.\n\nBeware of hidden assumptions!"
+        }
+      },
+      "block1_text": "**Question:** Draw four straight line segments without lifting your pencil so that the path goes through all 9 dots in a 3 by 3 grid of dots.\n\nBeware of hidden assumptions!"
+    },
+    {
       "id": "esm_ps_bee_ancestors",
       "reference": "TM p84",
-      "type": "start2",
+      "type": "mult",
       "math_topics": "resursive patterns; fibonacci",
       "block1_type": "all_text",
       "name": "Bee Ancestors",
@@ -301,7 +522,7 @@
     {
       "id": "esm_ps_bugs",
       "reference": "TM p40",
-      "type": "start2",
+      "type": "mult",
       "math_topics": "Conting; bookkeeping",
       "block1_type": "all_text",
       "name": "Combining Bugs",
@@ -320,51 +541,73 @@
       "block1_text": "**Question:** There are beetles, lizards, and worms. The number of worms is more than the combined total of beetles and lizards. There are 12 heads and 26 legs. How many of each one are there?\n\nWhat if we increase the numbers a lot?\n\nWhat if there are lizards, beetles, and spiders?"
     },
     {
-      "id": "esm_ps_squares_in_squares",
-      "reference": "TM p85",
-      "type": "start2",
-      "math_topics": "simple geometry; patterns",
+      "id": "esm_ps_paper_strip",
+      "reference": "TM p3",
+      "type": "mult",
+      "math_topics": "powers of 2",
       "block1_type": "all_text",
-      "name": "Squares in Squares",
+      "name": "Folding a Paper Strip",
       "_translations": {
         "name": {},
         "block1_text": {}
       },
       "_translatedFields": {
         "name": {
-          "eng": "Squares in Squares"
+          "eng": "Folding a Paper Strip"
         },
         "block1_text": {
-          "eng": "**Question:** A number is called \"lovely\" if a large square can be broken into that number of smaller squares, where the smaller squares need not all have the same size. Which numbers are lovely?\n\nWhat happens if the shapes are all equilateral triangles instead of squares?\n\nIf squares are replaced by cubes it is an unsolved problem!"
+          "eng": "**Question:** Take a very long, skinny piece of paper and fold it in half length-wise so there is one crease in the middle. Repeat this two more times for a total of 3 folds. How many creases will there be? How many creases if the total number of folds is 5, or 7, or 10?"
         }
       },
-      "block1_text": "**Question:** A number is called \"lovely\" if a large square can be broken into that number of smaller squares, where the smaller squares need not all have the same size. Which numbers are lovely?\n\nWhat happens if the shapes are all equilateral triangles instead of squares?\n\nIf squares are replaced by cubes it is an unsolved problem!"
+      "block1_text": "**Question:** Take a very long, skinny piece of paper and fold it in half length-wise so there is one crease in the middle. Repeat this two more times for a total of 3 folds. How many creases will there be? How many creases if the total number of folds is 5, or 7, or 10?"
     },
     {
-      "id": "esm_ps_lines_for_9_dots",
-      "reference": "TM p101",
-      "type": "start2",
-      "math_topics": "logic; basic geometry",
+      "id": "esm_ps_leapfrog",
+      "reference": "TM p52",
+      "type": "mult",
+      "math_topics": "logic",
       "block1_type": "all_text",
-      "name": "4 Lines for 9 Dots",
+      "block2_type": "accord_all_text",
+      "block3_type": "accord_all_text",
+      "name": "Leapfrog",
       "_translations": {
         "name": {},
-        "block1_text": {}
+        "block1_text": {},
+        "block2_accord": {},
+        "block2_text": {},
+        "block3_accord": {},
+        "block3_text": {}
       },
       "_translatedFields": {
         "name": {
-          "eng": "4 Lines for 9 Dots"
+          "eng": "Leapfrog"
         },
         "block1_text": {
-          "eng": "**Question:** Draw four straight line segments without lifting your pencil so that the path goes through all 9 dots in a 3 by 3 grid of dots.\n\nBeware of hidden assumptions!"
+          "eng": "**Question:** There are 11 holes in a row. There are 5 black pegs in the holes at one end and 5 white pegs in holes on the other end and one empty hole in the middle. A peg can only be moved to an empty hole or jump over another peg into an empty hole. Can the white and black pegs swap ends?"
+        },
+        "block2_accord": {
+          "eng": "Mull, Distill, Represent"
+        },
+        "block2_text": {
+          "eng": "Start with a useful representation. While you can write Bs and Ws on a piece of paper, you won't have to erase anything if you use coins, tokens, or some other moveable pieces.\n\nIs it clear what the rules are? Is it okay to move backwards? Do you think you can do it without any backwards moves? Is it okay to jump over your own piece?\n\nWhat are some associated questions that spring to mind? What happens when there are groups of 1, 2, 3, or 4 pegs? Do there have to be the same number of pegs on both sides? What is the minimum number of moves to make the swap? Sometimes adding an additional consideration, such as the minimum number of moves, can actually focus your attention in interesting ways and make the answer easier to come by."
+        },
+        "block3_accord": {
+          "eng": "Smaller Versions"
+        },
+        "block3_text": {
+          "eng": "Get your students to suggest working on smaller versions of the puzzle. Do these smaller versions will be wasted if they don't keep good notes, so insist that they keep track of their successes and maybe some of their failures.\n\nB _ W\n_ B W\nW B _\nW _ B\n3 moves\n\nB B _ W W\nB _ B W W\nB W B _ W\nB W B W _ or B W _ B W\nB W _ W B or         _ W B B W    W _ B B W  W B _ B W   W B W B _ W B W _ B  \n_ W B W B\nW _ B W B\nW W B _ B\nW W _ B B"
         }
       },
-      "block1_text": "**Question:** Draw four straight line segments without lifting your pencil so that the path goes through all 9 dots in a 3 by 3 grid of dots.\n\nBeware of hidden assumptions!"
+      "block1_text": "**Question:** There are 11 holes in a row. There are 5 black pegs in the holes at one end and 5 white pegs in holes on the other end and one empty hole in the middle. A peg can only be moved to an empty hole or jump over another peg into an empty hole. Can the white and black pegs swap ends?",
+      "block2_accord": "Mull, Distill, Represent",
+      "block2_text": "Start with a useful representation. While you can write Bs and Ws on a piece of paper, you won't have to erase anything if you use coins, tokens, or some other moveable pieces.\n\nIs it clear what the rules are? Is it okay to move backwards? Do you think you can do it without any backwards moves? Is it okay to jump over your own piece?\n\nWhat are some associated questions that spring to mind? What happens when there are groups of 1, 2, 3, or 4 pegs? Do there have to be the same number of pegs on both sides? What is the minimum number of moves to make the swap? Sometimes adding an additional consideration, such as the minimum number of moves, can actually focus your attention in interesting ways and make the answer easier to come by.",
+      "block3_accord": "Smaller Versions",
+      "block3_text": "Get your students to suggest working on smaller versions of the puzzle. Do these smaller versions will be wasted if they don't keep good notes, so insist that they keep track of their successes and maybe some of their failures.\n\nB _ W\n_ B W\nW B _\nW _ B\n3 moves\n\nB B _ W W\nB _ B W W\nB W B _ W\nB W B W _ or B W _ B W\nB W _ W B or         _ W B B W    W _ B B W  W B _ B W   W B W B _ W B W _ B  \n_ W B W B\nW _ B W B\nW W B _ B\nW W _ B B"
     },
     {
       "id": "esm_ps_secret_numbers",
       "reference": "TM p106",
-      "type": "start2",
+      "type": "mult",
       "math_topics": "addition",
       "block1_type": "all_text",
       "name": "Polygons with Secret Numbers",
@@ -383,9 +626,51 @@
       "block1_text": "**Question:** 3 secret numbers are placed at the corners of a triangle. For each pair of corners, the sum of the two numbers is written on the side. Find a general method for solving these puzzles.\n\nWhat happens for other polygons?"
     },
     {
+      "id": "esm_ps_squares_in_squares",
+      "reference": "TM p85",
+      "type": "mult",
+      "math_topics": "simple geometry; patterns",
+      "block1_type": "all_text",
+      "name": "Squares in Squares",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Squares in Squares"
+        },
+        "block1_text": {
+          "eng": "**Question:** A number is called \"lovely\" if a large square can be broken into that number of smaller squares, where the smaller squares need not all have the same size. Which numbers are lovely?\n\nWhat happens if the shapes are all equilateral triangles instead of squares?\n\nIf squares are replaced by cubes it is an unsolved problem!"
+        }
+      },
+      "block1_text": "**Question:** A number is called \"lovely\" if a large square can be broken into that number of smaller squares, where the smaller squares need not all have the same size. Which numbers are lovely?\n\nWhat happens if the shapes are all equilateral triangles instead of squares?\n\nIf squares are replaced by cubes it is an unsolved problem!"
+    },
+    {
+      "id": "esm_ps_toasting_bread",
+      "reference": "TM p34",
+      "type": "mult",
+      "math_topics": "basic logic and bookkeeping",
+      "block1_type": "all_text",
+      "name": "Toasting Bread",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Toasting Bread"
+        },
+        "block1_text": {
+          "eng": "3 slices of bread are to be toasted on a grill that can toast 2 slices at a time, but only on one side at a time. It takes 30 seconds to toast one side, 5 seconds to put a piece in or take a piece out, and 3 seconds to flip a piece over. What is the shortest time to toast both sides of all 3 slices?"
+        }
+      },
+      "block1_text": "3 slices of bread are to be toasted on a grill that can toast 2 slices at a time, but only on one side at a time. It takes 30 seconds to toast one side, 5 seconds to put a piece in or take a piece out, and 3 seconds to flip a piece over. What is the shortest time to toast both sides of all 3 slices?"
+    },
+    {
       "id": "esm_ps_cake_cutting",
       "reference": "TM p.153",
-      "type": "start2",
+      "type": "ignore",
       "math_topics": "counting, gcd?",
       "block1_type": "all_text",
       "name": "Cake Cutting",
@@ -406,7 +691,7 @@
     {
       "id": "esm_ps_sieve",
       "reference": "TM p186",
-      "type": "start3",
+      "type": "ignore",
       "math_topics": "skip counting, primes",
       "block1_type": "all_text",
       "name": "Sieve of Eratosthenes",
@@ -427,7 +712,7 @@
     {
       "id": "esm_ps_remainder_primes",
       "reference": "TM p216",
-      "type": "start3",
+      "type": "ignore",
       "math_topics": "remainders, primes",
       "block1_type": "all_text",
       "name": "Remainder Primes",
@@ -444,27 +729,6 @@
         }
       },
       "block1_text": "**Question:** Consider the set S of positive numbers that have a remainder of 1 when divided by 3. The primes in this set are the numbers larger than 1 that have no nontrivial factors. Investigate these primes. What happens when you factor 100?"
-    },
-    {
-      "id": "esm_ps_paper_strip",
-      "reference": "TM p3",
-      "type": "ignore",
-      "math_topics": "powers of 2",
-      "block1_type": "all_text",
-      "name": "Folding a Paper Strip",
-      "_translations": {
-        "name": {},
-        "block1_text": {}
-      },
-      "_translatedFields": {
-        "name": {
-          "eng": "Folding a Paper Strip"
-        },
-        "block1_text": {
-          "eng": "**Question:** Take a very long, skinny piece of paper and fold it in half length-wise so there is one crease in the middle. Repeat this two more times for a total of 3 folds. How many creases will there be? How many creases if the total number of folds is 5, or 7, or 10?"
-        }
-      },
-      "block1_text": "**Question:** Take a very long, skinny piece of paper and fold it in half length-wise so there is one crease in the middle. Repeat this two more times for a total of 3 folds. How many creases will there be? How many creases if the total number of folds is 5, or 7, or 10?"
     },
     {
       "id": "esm_ps_palindromes",
