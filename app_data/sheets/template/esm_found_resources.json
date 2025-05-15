@@ -4349,12 +4349,22 @@
                               "action_list": [
                                 {
                                   "trigger": "click",
+                                  "action_id": "set_field",
+                                  "args": [
+                                    "oe_content_ptr",
+                                    "data.esm_open_ended_tasks_data_list.@item.id"
+                                  ],
+                                  "_raw": "click | set_field:oe_content_ptr : data.esm_open_ended_tasks_data_list.@item.id",
+                                  "_cleaned": "click | set_field:oe_content_ptr : data.esm_open_ended_tasks_data_list.@item.id"
+                                },
+                                {
+                                  "trigger": "click",
                                   "action_id": "go_to",
                                   "args": [
-                                    "@item.id"
+                                    "esm_oe_displayer"
                                   ],
-                                  "_raw": "click | go_to: @item.id",
-                                  "_cleaned": "click | go_to: @item.id"
+                                  "_raw": "click | go_to: esm_oe_displayer",
+                                  "_cleaned": "click | go_to: esm_oe_displayer"
                                 }
                               ],
                               "condition": "@local.does_it_match",
@@ -4383,9 +4393,9 @@
                                 "action_list": {
                                   "0": {
                                     "args": {
-                                      "0": [
+                                      "1": [
                                         {
-                                          "fullExpression": "@item.id",
+                                          "fullExpression": "data.esm_open_ended_tasks_data_list.@item.id",
                                           "matchedExpression": "@item.id",
                                           "type": "item",
                                           "fieldName": "id"
@@ -4394,7 +4404,7 @@
                                     },
                                     "_raw": [
                                       {
-                                        "fullExpression": "click | go_to: @item.id",
+                                        "fullExpression": "click | set_field:oe_content_ptr : data.esm_open_ended_tasks_data_list.@item.id",
                                         "matchedExpression": "@item.id",
                                         "type": "item",
                                         "fieldName": "id"
@@ -4402,7 +4412,7 @@
                                     ],
                                     "_cleaned": [
                                       {
-                                        "fullExpression": "click | go_to: @item.id",
+                                        "fullExpression": "click | set_field:oe_content_ptr : data.esm_open_ended_tasks_data_list.@item.id",
                                         "matchedExpression": "@item.id",
                                         "type": "item",
                                         "fieldName": "id"
@@ -4430,7 +4440,7 @@
                               "_dynamicDependencies": {
                                 "@item.id": [
                                   "name",
-                                  "action_list.0.args.0",
+                                  "action_list.0.args.1",
                                   "action_list.0._raw",
                                   "action_list.0._cleaned",
                                   "_nested_name"
@@ -4731,12 +4741,22 @@
                               "action_list": [
                                 {
                                   "trigger": "click",
+                                  "action_id": "set_field",
+                                  "args": [
+                                    "ps_content_ptr",
+                                    "data.esm_ps_tasks_data_list.@item.id"
+                                  ],
+                                  "_raw": "click | set_field:ps_content_ptr : data.esm_ps_tasks_data_list.@item.id",
+                                  "_cleaned": "click | set_field:ps_content_ptr : data.esm_ps_tasks_data_list.@item.id"
+                                },
+                                {
+                                  "trigger": "click",
                                   "action_id": "go_to",
                                   "args": [
-                                    "@item.id"
+                                    "esm_ps_displayer"
                                   ],
-                                  "_raw": "click | go_to: @item.id",
-                                  "_cleaned": "click | go_to: @item.id"
+                                  "_raw": "click | go_to: esm_ps_displayer",
+                                  "_cleaned": "click | go_to: esm_ps_displayer"
                                 }
                               ],
                               "condition": "@local.does_it_match",
@@ -4765,9 +4785,9 @@
                                 "action_list": {
                                   "0": {
                                     "args": {
-                                      "0": [
+                                      "1": [
                                         {
-                                          "fullExpression": "@item.id",
+                                          "fullExpression": "data.esm_ps_tasks_data_list.@item.id",
                                           "matchedExpression": "@item.id",
                                           "type": "item",
                                           "fieldName": "id"
@@ -4776,7 +4796,7 @@
                                     },
                                     "_raw": [
                                       {
-                                        "fullExpression": "click | go_to: @item.id",
+                                        "fullExpression": "click | set_field:ps_content_ptr : data.esm_ps_tasks_data_list.@item.id",
                                         "matchedExpression": "@item.id",
                                         "type": "item",
                                         "fieldName": "id"
@@ -4784,7 +4804,7 @@
                                     ],
                                     "_cleaned": [
                                       {
-                                        "fullExpression": "click | go_to: @item.id",
+                                        "fullExpression": "click | set_field:ps_content_ptr : data.esm_ps_tasks_data_list.@item.id",
                                         "matchedExpression": "@item.id",
                                         "type": "item",
                                         "fieldName": "id"
@@ -4812,7 +4832,7 @@
                               "_dynamicDependencies": {
                                 "@item.id": [
                                   "name",
-                                  "action_list.0.args.0",
+                                  "action_list.0.args.1",
                                   "action_list.0._raw",
                                   "action_list.0._cleaned",
                                   "_nested_name"
