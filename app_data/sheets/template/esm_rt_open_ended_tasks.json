@@ -32,7 +32,7 @@
         {
           "type": "text",
           "name": "help_text",
-          "value": "These are tasks that invite playing around. They are questions and puzzles that are not narrowly focused and do not necessarily have a small set of answers The point is to invite exploration and play, and then for students to look for interesting new places to take the inquiry to.\n\nWe will probably use several tasks from Peter Liljedahl's book Mathematics Tasks for the Thinking Classroom for K-3 that has 50 tasks with detailed suggestions for each one. Some will also be ideas from Mike F's Open-Ended Math Tasks notebook.\n\nEach of these that we decide to use will need a full discussion. Perhaps some of the more interesting What do you Notice and What do you Wonder tasks could go in here?\n\n**Shapes and Properties**\n* Which of These is Not Like the Others\n* Some of the EFM puzzles about shapes and multiple pieces\n\n**Counting**\n* Dot Talks\n* EFM puzzles for consecutive numbers\n\n**Adding and Subtracting**\nThese are brief descriptions put in an accordion format. Each one will have a much longer description with ideas for how to teach them.",
+          "value": "These are tasks that invite playing around. They are questions and puzzles that are not narrowly focused and do not necessarily have a small set of answers The point is to invite exploration and play, and then for students to look for interesting new places to take the inquiry to.\n\nWe have used several tasks from Peter Liljedahl's book Mathematics Tasks for the Thinking Classroom for K-3 and from Mike Fitchett's Open-Ended Math Tasks notebook.\n\n[[Perhaps use some of the more interesting What do you Notice and What do you Wonder tasks could go in here? Also use \"Which of These is Not Like the Others\" and \"Dot Talks.\" Need to handle the overlap with the Routines section.]]",
           "_translations": {
             "value": {}
           },
@@ -43,69 +43,126 @@
     },
     {
       "type": "display_group",
-      "name": "dg_ps_examples",
+      "name": "dg_oe_examples",
       "parameter_list": {
         "style": "column"
       },
       "rows": [
         {
           "type": "accordion",
-          "name": "accordion_for_ps_examples",
+          "name": "accordion_for_oe_examples",
           "parameter_list": {
             "open_multiple": "TRUE"
           },
           "rows": [
             {
-              "type": "items",
-              "name": "ps_accordions",
-              "value": "@data.esm_open_ended_tasks_data_list",
+              "type": "accordion_section",
+              "name": "accord_oe_counting",
+              "value": "Early Counting – NOT DONE",
               "parameter_list": {
-                "filter": "@item.type==\"add_subtract\""
+                "text_align": "center",
+                "style": "large emphasised"
               },
               "rows": [
                 {
-                  "type": "accordion_section",
-                  "name": "accord_@item.id",
-                  "value": "@item.name",
+                  "type": "display_group",
+                  "name": "dg_oe_counting",
                   "parameter_list": {
-                    "text_align": "center",
-                    "style": "large emphasised"
+                    "style": "column"
                   },
                   "rows": [
                     {
-                      "type": "display_group",
-                      "name": "dg_@item.id",
+                      "type": "items",
+                      "name": "oe_counting",
+                      "value": "@data.esm_open_ended_tasks_data_list",
                       "parameter_list": {
-                        "style": "column"
+                        "filter": "@item.type==\"counting\""
                       },
                       "rows": [
                         {
-                          "name": "content_ptr",
-                          "value": "data.esm_open_ended_tasks_data_list.@item.id",
+                          "type": "button",
+                          "name": "button_@item.id",
+                          "value": "@item.name",
                           "_translations": {
                             "value": {}
                           },
-                          "type": "set_variable",
-                          "_nested_name": "dg_ps_examples.accordion_for_ps_examples.ps_accordions.accord_@item.id.dg_@item.id.content_ptr",
+                          "action_list": [
+                            {
+                              "trigger": "click",
+                              "action_id": "set_field",
+                              "args": [
+                                "oe_content_ptr",
+                                "data.esm_open_ended_tasks_data_list.@item.id"
+                              ],
+                              "_raw": "click | set_field:oe_content_ptr : data.esm_open_ended_tasks_data_list.@item.id",
+                              "_cleaned": "click | set_field:oe_content_ptr : data.esm_open_ended_tasks_data_list.@item.id"
+                            },
+                            {
+                              "trigger": "click",
+                              "action_id": "go_to",
+                              "args": [
+                                "esm_oe_displayer"
+                              ],
+                              "_raw": "click | go_to: esm_oe_displayer",
+                              "_cleaned": "click | go_to: esm_oe_displayer"
+                            }
+                          ],
+                          "parameter_list": {
+                            "style": "short",
+                            "text_align": "center"
+                          },
+                          "_nested_name": "dg_oe_examples.accordion_for_oe_examples.accord_oe_counting.dg_oe_counting.oe_counting.button_@item.id",
                           "_dynamicFields": {
-                            "value": [
+                            "name": [
                               {
-                                "fullExpression": "data.esm_open_ended_tasks_data_list.@item.id",
+                                "fullExpression": "button_@item.id",
                                 "matchedExpression": "@item.id",
                                 "type": "item",
                                 "fieldName": "id"
                               }
                             ],
+                            "value": [
+                              {
+                                "fullExpression": "@item.name",
+                                "matchedExpression": "@item.name",
+                                "type": "item",
+                                "fieldName": "name"
+                              }
+                            ],
+                            "action_list": {
+                              "0": {
+                                "args": {
+                                  "1": [
+                                    {
+                                      "fullExpression": "data.esm_open_ended_tasks_data_list.@item.id",
+                                      "matchedExpression": "@item.id",
+                                      "type": "item",
+                                      "fieldName": "id"
+                                    }
+                                  ]
+                                },
+                                "_raw": [
+                                  {
+                                    "fullExpression": "click | set_field:oe_content_ptr : data.esm_open_ended_tasks_data_list.@item.id",
+                                    "matchedExpression": "@item.id",
+                                    "type": "item",
+                                    "fieldName": "id"
+                                  }
+                                ],
+                                "_cleaned": [
+                                  {
+                                    "fullExpression": "click | set_field:oe_content_ptr : data.esm_open_ended_tasks_data_list.@item.id",
+                                    "matchedExpression": "@item.id",
+                                    "type": "item",
+                                    "fieldName": "id"
+                                  }
+                                ]
+                              }
+                            },
                             "_nested_name": [
                               {
-                                "fullExpression": "dg_ps_examples.accordion_for_ps_examples.ps_accordions.accord_@item.id.dg_@item.id.content_ptr",
-                                "matchedExpression": "@item.id.dg_",
-                                "type": "item",
-                                "fieldName": "id"
-                              },
-                              {
-                                "fullExpression": "dg_ps_examples.accordion_for_ps_examples.ps_accordions.accord_@item.id.dg_@item.id.content_ptr",
-                                "matchedExpression": "@item.id.content_ptr",
+                                "fullExpression": "dg_oe_examples.accordion_for_oe_examples.accord_oe_counting.dg_oe_counting.oe_counting.button_@item.id",
+                                "matchedExpression": "@item.id",
                                 "type": "item",
                                 "fieldName": "id"
                               }
@@ -113,202 +170,222 @@
                           },
                           "_dynamicDependencies": {
                             "@item.id": [
+                              "name",
+                              "action_list.0.args.1",
+                              "action_list.0._raw",
+                              "action_list.0._cleaned",
+                              "_nested_name"
+                            ],
+                            "@item.name": [
                               "value"
-                            ],
-                            "@item.id.dg_": [
-                              "_nested_name"
-                            ],
-                            "@item.id.content_ptr": [
-                              "_nested_name"
                             ]
                           }
-                        },
-                        {
-                          "type": "template",
-                          "name": "dot_talk_body_maker",
-                          "value": "esm_page_viewer",
-                          "rows": [
+                        }
+                      ],
+                      "_nested_name": "dg_oe_examples.accordion_for_oe_examples.accord_oe_counting.dg_oe_counting.oe_counting",
+                      "_dynamicFields": {
+                        "value": [
+                          {
+                            "fullExpression": "@data.esm_open_ended_tasks_data_list",
+                            "matchedExpression": "@data.esm_open_ended_tasks_data_list",
+                            "type": "data",
+                            "fieldName": "esm_open_ended_tasks_data_list"
+                          }
+                        ],
+                        "parameter_list": {
+                          "filter": [
                             {
-                              "name": "esm_content_ptr",
-                              "value": "@@local.content_ptr",
-                              "_translations": {
-                                "value": {}
-                              },
-                              "type": "set_variable",
-                              "_nested_name": "dg_ps_examples.accordion_for_ps_examples.ps_accordions.accord_@item.id.dg_@item.id.dot_talk_body_maker.esm_content_ptr",
-                              "_dynamicFields": {
-                                "value": [
-                                  {
-                                    "fullExpression": "@@local.content_ptr",
-                                    "matchedExpression": "@local.content_ptr",
-                                    "type": "local",
-                                    "fieldName": "content_ptr"
-                                  }
-                                ],
-                                "_nested_name": [
-                                  {
-                                    "fullExpression": "dg_ps_examples.accordion_for_ps_examples.ps_accordions.accord_@item.id.dg_@item.id.dot_talk_body_maker.esm_content_ptr",
-                                    "matchedExpression": "@item.id.dg_",
-                                    "type": "item",
-                                    "fieldName": "id"
-                                  },
-                                  {
-                                    "fullExpression": "dg_ps_examples.accordion_for_ps_examples.ps_accordions.accord_@item.id.dg_@item.id.dot_talk_body_maker.esm_content_ptr",
-                                    "matchedExpression": "@item.id.dot_talk_body_maker.esm_content_ptr",
-                                    "type": "item",
-                                    "fieldName": "id"
-                                  }
-                                ]
-                              },
-                              "_dynamicDependencies": {
-                                "@local.content_ptr": [
-                                  "value"
-                                ],
-                                "@item.id.dg_": [
-                                  "_nested_name"
-                                ],
-                                "@item.id.dot_talk_body_maker.esm_content_ptr": [
-                                  "_nested_name"
-                                ]
-                              }
+                              "fullExpression": "@item.type==\"counting\"",
+                              "matchedExpression": "@item.type",
+                              "type": "item",
+                              "fieldName": "type"
+                            }
+                          ]
+                        }
+                      },
+                      "_dynamicDependencies": {
+                        "@data.esm_open_ended_tasks_data_list": [
+                          "value"
+                        ],
+                        "@item.type": [
+                          "parameter_list.filter"
+                        ]
+                      }
+                    }
+                  ],
+                  "_nested_name": "dg_oe_examples.accordion_for_oe_examples.accord_oe_counting.dg_oe_counting"
+                }
+              ],
+              "_nested_name": "dg_oe_examples.accordion_for_oe_examples.accord_oe_counting"
+            },
+            {
+              "type": "accordion_section",
+              "name": "accord_oe_logic",
+              "value": "Early Add Sub – NOT DONE",
+              "parameter_list": {
+                "text_align": "center",
+                "style": "large emphasised"
+              },
+              "rows": [
+                {
+                  "type": "display_group",
+                  "name": "dg_oe_logic",
+                  "parameter_list": {
+                    "style": "column"
+                  },
+                  "rows": [
+                    {
+                      "type": "items",
+                      "name": "oe_logic",
+                      "value": "@data.esm_open_ended_tasks_data_list",
+                      "parameter_list": {
+                        "filter": "@item.type==\"add_subtract\""
+                      },
+                      "rows": [
+                        {
+                          "type": "button",
+                          "name": "button_@item.id",
+                          "value": "@item.name",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "action_list": [
+                            {
+                              "trigger": "click",
+                              "action_id": "set_field",
+                              "args": [
+                                "oe_content_ptr",
+                                "data.esm_open_ended_tasks_data_list.@item.id"
+                              ],
+                              "_raw": "click | set_field:oe_content_ptr : data.esm_open_ended_tasks_data_list.@item.id",
+                              "_cleaned": "click | set_field:oe_content_ptr : data.esm_open_ended_tasks_data_list.@item.id"
+                            },
+                            {
+                              "trigger": "click",
+                              "action_id": "go_to",
+                              "args": [
+                                "esm_oe_displayer"
+                              ],
+                              "_raw": "click | go_to: esm_oe_displayer",
+                              "_cleaned": "click | go_to: esm_oe_displayer"
                             }
                           ],
-                          "_nested_name": "dg_ps_examples.accordion_for_ps_examples.ps_accordions.accord_@item.id.dg_@item.id.dot_talk_body_maker",
+                          "parameter_list": {
+                            "style": "short",
+                            "text_align": "center"
+                          },
+                          "_nested_name": "dg_oe_examples.accordion_for_oe_examples.accord_oe_logic.dg_oe_logic.oe_logic.button_@item.id",
                           "_dynamicFields": {
-                            "_nested_name": [
+                            "name": [
                               {
-                                "fullExpression": "dg_ps_examples.accordion_for_ps_examples.ps_accordions.accord_@item.id.dg_@item.id.dot_talk_body_maker",
-                                "matchedExpression": "@item.id.dg_",
+                                "fullExpression": "button_@item.id",
+                                "matchedExpression": "@item.id",
                                 "type": "item",
                                 "fieldName": "id"
-                              },
+                              }
+                            ],
+                            "value": [
                               {
-                                "fullExpression": "dg_ps_examples.accordion_for_ps_examples.ps_accordions.accord_@item.id.dg_@item.id.dot_talk_body_maker",
-                                "matchedExpression": "@item.id.dot_talk_body_maker",
+                                "fullExpression": "@item.name",
+                                "matchedExpression": "@item.name",
+                                "type": "item",
+                                "fieldName": "name"
+                              }
+                            ],
+                            "action_list": {
+                              "0": {
+                                "args": {
+                                  "1": [
+                                    {
+                                      "fullExpression": "data.esm_open_ended_tasks_data_list.@item.id",
+                                      "matchedExpression": "@item.id",
+                                      "type": "item",
+                                      "fieldName": "id"
+                                    }
+                                  ]
+                                },
+                                "_raw": [
+                                  {
+                                    "fullExpression": "click | set_field:oe_content_ptr : data.esm_open_ended_tasks_data_list.@item.id",
+                                    "matchedExpression": "@item.id",
+                                    "type": "item",
+                                    "fieldName": "id"
+                                  }
+                                ],
+                                "_cleaned": [
+                                  {
+                                    "fullExpression": "click | set_field:oe_content_ptr : data.esm_open_ended_tasks_data_list.@item.id",
+                                    "matchedExpression": "@item.id",
+                                    "type": "item",
+                                    "fieldName": "id"
+                                  }
+                                ]
+                              }
+                            },
+                            "_nested_name": [
+                              {
+                                "fullExpression": "dg_oe_examples.accordion_for_oe_examples.accord_oe_logic.dg_oe_logic.oe_logic.button_@item.id",
+                                "matchedExpression": "@item.id",
                                 "type": "item",
                                 "fieldName": "id"
                               }
                             ]
                           },
                           "_dynamicDependencies": {
-                            "@item.id.dg_": [
+                            "@item.id": [
+                              "name",
+                              "action_list.0.args.1",
+                              "action_list.0._raw",
+                              "action_list.0._cleaned",
                               "_nested_name"
                             ],
-                            "@item.id.dot_talk_body_maker": [
-                              "_nested_name"
+                            "@item.name": [
+                              "value"
                             ]
                           }
                         }
                       ],
-                      "_nested_name": "dg_ps_examples.accordion_for_ps_examples.ps_accordions.accord_@item.id.dg_@item.id",
+                      "_nested_name": "dg_oe_examples.accordion_for_oe_examples.accord_oe_logic.dg_oe_logic.oe_logic",
                       "_dynamicFields": {
-                        "name": [
+                        "value": [
                           {
-                            "fullExpression": "dg_@item.id",
-                            "matchedExpression": "@item.id",
-                            "type": "item",
-                            "fieldName": "id"
+                            "fullExpression": "@data.esm_open_ended_tasks_data_list",
+                            "matchedExpression": "@data.esm_open_ended_tasks_data_list",
+                            "type": "data",
+                            "fieldName": "esm_open_ended_tasks_data_list"
                           }
                         ],
-                        "_nested_name": [
-                          {
-                            "fullExpression": "dg_ps_examples.accordion_for_ps_examples.ps_accordions.accord_@item.id.dg_@item.id",
-                            "matchedExpression": "@item.id.dg_",
-                            "type": "item",
-                            "fieldName": "id"
-                          },
-                          {
-                            "fullExpression": "dg_ps_examples.accordion_for_ps_examples.ps_accordions.accord_@item.id.dg_@item.id",
-                            "matchedExpression": "@item.id",
-                            "type": "item",
-                            "fieldName": "id"
-                          }
-                        ]
+                        "parameter_list": {
+                          "filter": [
+                            {
+                              "fullExpression": "@item.type==\"add_subtract\"",
+                              "matchedExpression": "@item.type",
+                              "type": "item",
+                              "fieldName": "type"
+                            }
+                          ]
+                        }
                       },
                       "_dynamicDependencies": {
-                        "@item.id": [
-                          "name",
-                          "_nested_name"
+                        "@data.esm_open_ended_tasks_data_list": [
+                          "value"
                         ],
-                        "@item.id.dg_": [
-                          "_nested_name"
+                        "@item.type": [
+                          "parameter_list.filter"
                         ]
                       }
                     }
                   ],
-                  "_nested_name": "dg_ps_examples.accordion_for_ps_examples.ps_accordions.accord_@item.id",
-                  "_dynamicFields": {
-                    "name": [
-                      {
-                        "fullExpression": "accord_@item.id",
-                        "matchedExpression": "@item.id",
-                        "type": "item",
-                        "fieldName": "id"
-                      }
-                    ],
-                    "value": [
-                      {
-                        "fullExpression": "@item.name",
-                        "matchedExpression": "@item.name",
-                        "type": "item",
-                        "fieldName": "name"
-                      }
-                    ],
-                    "_nested_name": [
-                      {
-                        "fullExpression": "dg_ps_examples.accordion_for_ps_examples.ps_accordions.accord_@item.id",
-                        "matchedExpression": "@item.id",
-                        "type": "item",
-                        "fieldName": "id"
-                      }
-                    ]
-                  },
-                  "_dynamicDependencies": {
-                    "@item.id": [
-                      "name",
-                      "_nested_name"
-                    ],
-                    "@item.name": [
-                      "value"
-                    ]
-                  }
+                  "_nested_name": "dg_oe_examples.accordion_for_oe_examples.accord_oe_logic.dg_oe_logic"
                 }
               ],
-              "_nested_name": "dg_ps_examples.accordion_for_ps_examples.ps_accordions",
-              "_dynamicFields": {
-                "value": [
-                  {
-                    "fullExpression": "@data.esm_open_ended_tasks_data_list",
-                    "matchedExpression": "@data.esm_open_ended_tasks_data_list",
-                    "type": "data",
-                    "fieldName": "esm_open_ended_tasks_data_list"
-                  }
-                ],
-                "parameter_list": {
-                  "filter": [
-                    {
-                      "fullExpression": "@item.type==\"add_subtract\"",
-                      "matchedExpression": "@item.type",
-                      "type": "item",
-                      "fieldName": "type"
-                    }
-                  ]
-                }
-              },
-              "_dynamicDependencies": {
-                "@data.esm_open_ended_tasks_data_list": [
-                  "value"
-                ],
-                "@item.type": [
-                  "parameter_list.filter"
-                ]
-              }
+              "_nested_name": "dg_oe_examples.accordion_for_oe_examples.accord_oe_logic"
             }
           ],
-          "_nested_name": "dg_ps_examples.accordion_for_ps_examples"
+          "_nested_name": "dg_oe_examples.accordion_for_oe_examples"
         }
       ],
-      "_nested_name": "dg_ps_examples"
+      "_nested_name": "dg_oe_examples"
     },
     {
       "type": "display_group",

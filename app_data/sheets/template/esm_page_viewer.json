@@ -1164,6 +1164,689 @@
           "value"
         ]
       }
+    },
+    {
+      "name": "Comments_a",
+      "value": "Put \"Glossary\" buttons at bottom of page",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "Comments_a"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_set_up_glossary",
+      "parameter_list": {
+        "style": "column"
+      },
+      "rows": [
+        {
+          "name": "glossary_count_ptr",
+          "value": "local.esm_content_ptr.glossary_count",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "dg_set_up_glossary.glossary_count_ptr"
+        },
+        {
+          "name": "glossary_word_1_ptr",
+          "value": "local.esm_content_ptr.glossary_1",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "dg_set_up_glossary.glossary_word_1_ptr"
+        },
+        {
+          "name": "glossary_word_2_ptr",
+          "value": "local.esm_content_ptr.glossary_2",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "dg_set_up_glossary.glossary_word_2_ptr"
+        },
+        {
+          "name": "glossary_word_3_ptr",
+          "value": "local.esm_content_ptr.glossary_3",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "dg_set_up_glossary.glossary_word_3_ptr"
+        },
+        {
+          "type": "text",
+          "name": "blank_line1",
+          "_nested_name": "dg_set_up_glossary.blank_line1"
+        },
+        {
+          "type": "text",
+          "name": "blank_line2",
+          "_nested_name": "dg_set_up_glossary.blank_line2"
+        },
+        {
+          "type": "button",
+          "name": "button_glossary",
+          "value": "Glossary",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "set_field",
+              "args": [
+                "glossary_words_count",
+                "@@local.glossary_count_ptr"
+              ],
+              "_raw": "click | set_field:glossary_words_count : @@local.glossary_count_ptr",
+              "_cleaned": "click | set_field:glossary_words_count : @@local.glossary_count_ptr"
+            },
+            {
+              "trigger": "click",
+              "action_id": "set_field",
+              "args": [
+                "glossary_word_1",
+                "@@local.glossary_word_1_ptr"
+              ],
+              "_raw": "click | set_field:glossary_word_1 : @@local.glossary_word_1_ptr",
+              "_cleaned": "click | set_field:glossary_word_1 : @@local.glossary_word_1_ptr"
+            },
+            {
+              "trigger": "click",
+              "action_id": "set_field",
+              "args": [
+                "glossary_word_2",
+                "@@local.glossary_word_2_ptr"
+              ],
+              "_raw": "click | set_field:glossary_word_2 : @@local.glossary_word_2_ptr",
+              "_cleaned": "click | set_field:glossary_word_2 : @@local.glossary_word_2_ptr"
+            },
+            {
+              "trigger": "click",
+              "action_id": "set_field",
+              "args": [
+                "glossary_word_3",
+                "@@local.glossary_word_3_ptr"
+              ],
+              "_raw": "click | set_field:glossary_word_3 : @@local.glossary_word_3_ptr",
+              "_cleaned": "click | set_field:glossary_word_3 : @@local.glossary_word_3_ptr"
+            },
+            {
+              "trigger": "click",
+              "action_id": "go_to",
+              "args": [
+                "efm_gloss_start"
+              ],
+              "_raw": "click | go_to: efm_gloss_start",
+              "_cleaned": "click | go_to: efm_gloss_start"
+            }
+          ],
+          "parameter_list": {
+            "style": "short",
+            "text_align": "center"
+          },
+          "_nested_name": "dg_set_up_glossary.button_glossary",
+          "_dynamicFields": {
+            "action_list": {
+              "0": {
+                "args": {
+                  "1": [
+                    {
+                      "fullExpression": "@@local.glossary_count_ptr",
+                      "matchedExpression": "@local.glossary_count_ptr",
+                      "type": "local",
+                      "fieldName": "glossary_count_ptr"
+                    }
+                  ]
+                },
+                "_raw": [
+                  {
+                    "fullExpression": "click | set_field:glossary_words_count : @@local.glossary_count_ptr",
+                    "matchedExpression": "@local.glossary_count_ptr",
+                    "type": "local",
+                    "fieldName": "glossary_count_ptr"
+                  }
+                ],
+                "_cleaned": [
+                  {
+                    "fullExpression": "click | set_field:glossary_words_count : @@local.glossary_count_ptr",
+                    "matchedExpression": "@local.glossary_count_ptr",
+                    "type": "local",
+                    "fieldName": "glossary_count_ptr"
+                  }
+                ]
+              },
+              "1": {
+                "args": {
+                  "1": [
+                    {
+                      "fullExpression": "@@local.glossary_word_1_ptr",
+                      "matchedExpression": "@local.glossary_word_1_ptr",
+                      "type": "local",
+                      "fieldName": "glossary_word_1_ptr"
+                    }
+                  ]
+                },
+                "_raw": [
+                  {
+                    "fullExpression": "click | set_field:glossary_word_1 : @@local.glossary_word_1_ptr",
+                    "matchedExpression": "@local.glossary_word_1_ptr",
+                    "type": "local",
+                    "fieldName": "glossary_word_1_ptr"
+                  }
+                ],
+                "_cleaned": [
+                  {
+                    "fullExpression": "click | set_field:glossary_word_1 : @@local.glossary_word_1_ptr",
+                    "matchedExpression": "@local.glossary_word_1_ptr",
+                    "type": "local",
+                    "fieldName": "glossary_word_1_ptr"
+                  }
+                ]
+              },
+              "2": {
+                "args": {
+                  "1": [
+                    {
+                      "fullExpression": "@@local.glossary_word_2_ptr",
+                      "matchedExpression": "@local.glossary_word_2_ptr",
+                      "type": "local",
+                      "fieldName": "glossary_word_2_ptr"
+                    }
+                  ]
+                },
+                "_raw": [
+                  {
+                    "fullExpression": "click | set_field:glossary_word_2 : @@local.glossary_word_2_ptr",
+                    "matchedExpression": "@local.glossary_word_2_ptr",
+                    "type": "local",
+                    "fieldName": "glossary_word_2_ptr"
+                  }
+                ],
+                "_cleaned": [
+                  {
+                    "fullExpression": "click | set_field:glossary_word_2 : @@local.glossary_word_2_ptr",
+                    "matchedExpression": "@local.glossary_word_2_ptr",
+                    "type": "local",
+                    "fieldName": "glossary_word_2_ptr"
+                  }
+                ]
+              },
+              "3": {
+                "args": {
+                  "1": [
+                    {
+                      "fullExpression": "@@local.glossary_word_3_ptr",
+                      "matchedExpression": "@local.glossary_word_3_ptr",
+                      "type": "local",
+                      "fieldName": "glossary_word_3_ptr"
+                    }
+                  ]
+                },
+                "_raw": [
+                  {
+                    "fullExpression": "click | set_field:glossary_word_3 : @@local.glossary_word_3_ptr",
+                    "matchedExpression": "@local.glossary_word_3_ptr",
+                    "type": "local",
+                    "fieldName": "glossary_word_3_ptr"
+                  }
+                ],
+                "_cleaned": [
+                  {
+                    "fullExpression": "click | set_field:glossary_word_3 : @@local.glossary_word_3_ptr",
+                    "matchedExpression": "@local.glossary_word_3_ptr",
+                    "type": "local",
+                    "fieldName": "glossary_word_3_ptr"
+                  }
+                ]
+              }
+            }
+          },
+          "_dynamicDependencies": {
+            "@local.glossary_count_ptr": [
+              "action_list.0.args.1",
+              "action_list.0._raw",
+              "action_list.0._cleaned"
+            ],
+            "@local.glossary_word_1_ptr": [
+              "action_list.1.args.1",
+              "action_list.1._raw",
+              "action_list.1._cleaned"
+            ],
+            "@local.glossary_word_2_ptr": [
+              "action_list.2.args.1",
+              "action_list.2._raw",
+              "action_list.2._cleaned"
+            ],
+            "@local.glossary_word_3_ptr": [
+              "action_list.3.args.1",
+              "action_list.3._raw",
+              "action_list.3._cleaned"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "dg_set_up_glossary"
+    },
+    {
+      "name": "Commnts_b",
+      "value": "Put \"Related Topics\" accordian if they exist",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "Commnts_b"
+    },
+    {
+      "name": "topic1_ptr",
+      "value": "local.esm_content_ptr.topic_theme_1",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "topic1_ptr"
+    },
+    {
+      "name": "topic1",
+      "value": "@@local.topic1_ptr",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "topic1",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@@local.topic1_ptr",
+            "matchedExpression": "@local.topic1_ptr",
+            "type": "local",
+            "fieldName": "topic1_ptr"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.topic1_ptr": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "display_group",
+      "condition": "@local.topic1",
+      "parameter_list": {
+        "style": "column"
+      },
+      "rows": [
+        {
+          "type": "accordion",
+          "name": "accordion_related_topics",
+          "parameter_list": {
+            "open_multiple": "TRUE"
+          },
+          "rows": [
+            {
+              "type": "accordion_section",
+              "name": "required_topics_block",
+              "value": "Related Topics",
+              "rows": [
+                {
+                  "type": "display_group",
+                  "name": "related_topics_content",
+                  "parameter_list": {
+                    "style": "column"
+                  },
+                  "rows": [
+                    {
+                      "name": "topic_theme_base_chars",
+                      "value": "topic_theme_",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "type": "set_variable",
+                      "_nested_name": "display_group_21.accordion_related_topics.required_topics_block.related_topics_content.topic_theme_base_chars"
+                    },
+                    {
+                      "type": "items",
+                      "name": "run_through_previous_topics",
+                      "value": "@data.efm_num_list_one_to_ten",
+                      "rows": [
+                        {
+                          "name": "topic_theme_chars",
+                          "value": "@local.topic_theme_base_chars@item.number",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "type": "set_variable",
+                          "_nested_name": "display_group_21.accordion_related_topics.required_topics_block.related_topics_content.run_through_previous_topics.topic_theme_chars",
+                          "_dynamicFields": {
+                            "value": [
+                              {
+                                "fullExpression": "@local.topic_theme_base_chars@item.number",
+                                "matchedExpression": "@local.topic_theme_base_chars",
+                                "type": "local",
+                                "fieldName": "topic_theme_base_chars"
+                              },
+                              {
+                                "fullExpression": "@local.topic_theme_base_chars@item.number",
+                                "matchedExpression": "@item.number",
+                                "type": "item",
+                                "fieldName": "number"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@local.topic_theme_base_chars": [
+                              "value"
+                            ],
+                            "@item.number": [
+                              "value"
+                            ]
+                          }
+                        },
+                        {
+                          "name": "theme_ptr",
+                          "value": "local.esm_content_ptr.@local.topic_theme_chars",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "type": "set_variable",
+                          "_nested_name": "display_group_21.accordion_related_topics.required_topics_block.related_topics_content.run_through_previous_topics.theme_ptr",
+                          "_dynamicFields": {
+                            "value": [
+                              {
+                                "fullExpression": "local.esm_content_ptr.@local.topic_theme_chars",
+                                "matchedExpression": "@local.topic_theme_chars",
+                                "type": "local",
+                                "fieldName": "topic_theme_chars"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@local.topic_theme_chars": [
+                              "value"
+                            ]
+                          }
+                        },
+                        {
+                          "name": "topic_theme",
+                          "value": "@@local.theme_ptr",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "type": "set_variable",
+                          "_nested_name": "display_group_21.accordion_related_topics.required_topics_block.related_topics_content.run_through_previous_topics.topic_theme",
+                          "_dynamicFields": {
+                            "value": [
+                              {
+                                "fullExpression": "@@local.theme_ptr",
+                                "matchedExpression": "@local.theme_ptr",
+                                "type": "local",
+                                "fieldName": "theme_ptr"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@local.theme_ptr": [
+                              "value"
+                            ]
+                          }
+                        },
+                        {
+                          "name": "topic_row",
+                          "value": "data.esm_topics.@local.topic_theme",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "condition": "@local.topic_theme",
+                          "type": "set_variable",
+                          "_nested_name": "display_group_21.accordion_related_topics.required_topics_block.related_topics_content.run_through_previous_topics.topic_row",
+                          "_dynamicFields": {
+                            "value": [
+                              {
+                                "fullExpression": "data.esm_topics.@local.topic_theme",
+                                "matchedExpression": "@local.topic_theme",
+                                "type": "local",
+                                "fieldName": "topic_theme"
+                              }
+                            ],
+                            "condition": [
+                              {
+                                "fullExpression": "@local.topic_theme",
+                                "matchedExpression": "@local.topic_theme",
+                                "type": "local",
+                                "fieldName": "topic_theme"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@local.topic_theme": [
+                              "value",
+                              "condition"
+                            ]
+                          }
+                        },
+                        {
+                          "name": "topic_row_ptr",
+                          "value": "@@local.topic_row",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "type": "set_variable",
+                          "_nested_name": "display_group_21.accordion_related_topics.required_topics_block.related_topics_content.run_through_previous_topics.topic_row_ptr",
+                          "_dynamicFields": {
+                            "value": [
+                              {
+                                "fullExpression": "@@local.topic_row",
+                                "matchedExpression": "@local.topic_row",
+                                "type": "local",
+                                "fieldName": "topic_row"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@local.topic_row": [
+                              "value"
+                            ]
+                          }
+                        },
+                        {
+                          "name": "topic_name",
+                          "value": "@local.topic_row_ptr.name",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "type": "set_variable",
+                          "_nested_name": "display_group_21.accordion_related_topics.required_topics_block.related_topics_content.run_through_previous_topics.topic_name",
+                          "_dynamicFields": {
+                            "value": [
+                              {
+                                "fullExpression": "@local.topic_row_ptr.name",
+                                "matchedExpression": "@local.topic_row_ptr.name",
+                                "type": "local",
+                                "fieldName": "topic_row_ptr"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@local.topic_row_ptr.name": [
+                              "value"
+                            ]
+                          }
+                        },
+                        {
+                          "type": "button",
+                          "name": "button_list_@item.number",
+                          "value": "@local.topic_name",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "action_list": [
+                            {
+                              "trigger": "click",
+                              "action_id": "set_field",
+                              "args": [
+                                "current_topic",
+                                "@local.topic_row"
+                              ],
+                              "_raw": "click | set_field:current_topic:@local.topic_row",
+                              "_cleaned": "click | set_field:current_topic:@local.topic_row"
+                            },
+                            {
+                              "trigger": "click",
+                              "action_id": "go_to",
+                              "args": [
+                                "esm_topic_template"
+                              ],
+                              "_raw": "click | go_to: esm_topic_template",
+                              "_cleaned": "click | go_to: esm_topic_template"
+                            },
+                            {
+                              "trigger": "click",
+                              "action_id": "emit",
+                              "args": [
+                                "force_reload"
+                              ],
+                              "_raw": "click | emit:force_reload",
+                              "_cleaned": "click | emit:force_reload"
+                            }
+                          ],
+                          "condition": "@local.topic_theme",
+                          "parameter_list": {
+                            "style": "short",
+                            "text_align": "center"
+                          },
+                          "_nested_name": "display_group_21.accordion_related_topics.required_topics_block.related_topics_content.run_through_previous_topics.button_list_@item.number",
+                          "_dynamicFields": {
+                            "name": [
+                              {
+                                "fullExpression": "button_list_@item.number",
+                                "matchedExpression": "@item.number",
+                                "type": "item",
+                                "fieldName": "number"
+                              }
+                            ],
+                            "value": [
+                              {
+                                "fullExpression": "@local.topic_name",
+                                "matchedExpression": "@local.topic_name",
+                                "type": "local",
+                                "fieldName": "topic_name"
+                              }
+                            ],
+                            "action_list": {
+                              "0": {
+                                "args": {
+                                  "1": [
+                                    {
+                                      "fullExpression": "@local.topic_row",
+                                      "matchedExpression": "@local.topic_row",
+                                      "type": "local",
+                                      "fieldName": "topic_row"
+                                    }
+                                  ]
+                                },
+                                "_raw": [
+                                  {
+                                    "fullExpression": "click | set_field:current_topic:@local.topic_row",
+                                    "matchedExpression": "@local.topic_row",
+                                    "type": "local",
+                                    "fieldName": "topic_row"
+                                  }
+                                ],
+                                "_cleaned": [
+                                  {
+                                    "fullExpression": "click | set_field:current_topic:@local.topic_row",
+                                    "matchedExpression": "@local.topic_row",
+                                    "type": "local",
+                                    "fieldName": "topic_row"
+                                  }
+                                ]
+                              }
+                            },
+                            "condition": [
+                              {
+                                "fullExpression": "@local.topic_theme",
+                                "matchedExpression": "@local.topic_theme",
+                                "type": "local",
+                                "fieldName": "topic_theme"
+                              }
+                            ],
+                            "_nested_name": [
+                              {
+                                "fullExpression": "display_group_21.accordion_related_topics.required_topics_block.related_topics_content.run_through_previous_topics.button_list_@item.number",
+                                "matchedExpression": "@item.number",
+                                "type": "item",
+                                "fieldName": "number"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@item.number": [
+                              "name",
+                              "_nested_name"
+                            ],
+                            "@local.topic_name": [
+                              "value"
+                            ],
+                            "@local.topic_row": [
+                              "action_list.0.args.1",
+                              "action_list.0._raw",
+                              "action_list.0._cleaned"
+                            ],
+                            "@local.topic_theme": [
+                              "condition"
+                            ]
+                          }
+                        }
+                      ],
+                      "_nested_name": "display_group_21.accordion_related_topics.required_topics_block.related_topics_content.run_through_previous_topics",
+                      "_dynamicFields": {
+                        "value": [
+                          {
+                            "fullExpression": "@data.efm_num_list_one_to_ten",
+                            "matchedExpression": "@data.efm_num_list_one_to_ten",
+                            "type": "data",
+                            "fieldName": "efm_num_list_one_to_ten"
+                          }
+                        ]
+                      },
+                      "_dynamicDependencies": {
+                        "@data.efm_num_list_one_to_ten": [
+                          "value"
+                        ]
+                      }
+                    }
+                  ],
+                  "_nested_name": "display_group_21.accordion_related_topics.required_topics_block.related_topics_content"
+                }
+              ],
+              "_nested_name": "display_group_21.accordion_related_topics.required_topics_block"
+            }
+          ],
+          "_nested_name": "display_group_21.accordion_related_topics"
+        }
+      ],
+      "name": "display_group_21",
+      "_nested_name": "display_group_21",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@local.topic1",
+            "matchedExpression": "@local.topic1",
+            "type": "local",
+            "fieldName": "topic1"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.topic1": [
+          "condition"
+        ]
+      }
     }
   ],
   "_xlsxPath": "EFM_routines_high_level_sheets.xlsx",
