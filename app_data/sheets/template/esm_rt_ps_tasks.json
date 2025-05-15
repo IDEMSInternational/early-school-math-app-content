@@ -32,7 +32,7 @@
         {
           "type": "text",
           "name": "ps_intro",
-          "value": "Use these examples to talk about and practice problem solving techniques and strategies. See the Problem Solving Overview for general ideas about problem solving.",
+          "value": "Use these activities to talk about and practice problem solving techniques and strategies. See the Problem Solving Overview for general ideas about problem solving.",
           "_translations": {
             "value": {}
           },
@@ -63,9 +63,148 @@
           "_nested_name": "dg_info.button_problem_solving"
         },
         {
+          "type": "display_group",
+          "name": "dg_ps_puzzles_games",
+          "parameter_list": {
+            "style": "column"
+          },
+          "rows": [
+            {
+              "type": "text",
+              "name": "intro_to_puzzles_games",
+              "value": "Much of the material from the puzzles section and the Games section lends itself to being Open-Ended tasks, and here are some notes on doing that.",
+              "_translations": {
+                "value": {}
+              },
+              "_nested_name": "dg_info.dg_ps_puzzles_games.intro_to_puzzles_games"
+            },
+            {
+              "type": "accordion",
+              "name": "accordion_for_ps_examples",
+              "parameter_list": {
+                "open_multiple": "TRUE"
+              },
+              "rows": [
+                {
+                  "type": "accordion_section",
+                  "name": "accord_ps_puzzles",
+                  "value": "Puzzles",
+                  "parameter_list": {
+                    "text_align": "center",
+                    "style": "large emphasised"
+                  },
+                  "rows": [
+                    {
+                      "type": "display_group",
+                      "name": "dg_ps_puzzles",
+                      "parameter_list": {
+                        "style": "column"
+                      },
+                      "rows": [
+                        {
+                          "type": "text",
+                          "name": "intro_ps_puzzles_1",
+                          "value": "Many of the EFM math puzzles provide excellent rich tasks. Look for interesting observations and new directions to explore along the road to solving a puzzle. Each EFM puzzle comes with ideas for further exploration. Encourage your students to see each puzzle as the beginning of a mathematical journey.\n\nIn the Puzzles section, the puzzles are separated into Eye Openers and Puzzlers. One or two Eye-Openers are generally shorter activities, though they can be made longer by having group work and deeper discussions. Puzzlers may take more than one lesson, and they naturally lend themselves to much exploration.\n\nGo to the Puzzles section to find puzzles on any topic.",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "_nested_name": "dg_info.dg_ps_puzzles_games.accordion_for_ps_examples.accord_ps_puzzles.dg_ps_puzzles.intro_ps_puzzles_1"
+                        },
+                        {
+                          "type": "button",
+                          "name": "button_oe_pows",
+                          "value": "Puzzles",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "action_list": [
+                            {
+                              "trigger": "click",
+                              "action_id": "go_to",
+                              "args": [
+                                "efm_pow_start"
+                              ],
+                              "_raw": "click | go_to: efm_pow_start",
+                              "_cleaned": "click | go_to: efm_pow_start"
+                            }
+                          ],
+                          "parameter_list": {
+                            "style": "short",
+                            "text_align": "center"
+                          },
+                          "_nested_name": "dg_info.dg_ps_puzzles_games.accordion_for_ps_examples.accord_ps_puzzles.dg_ps_puzzles.button_oe_pows"
+                        }
+                      ],
+                      "_nested_name": "dg_info.dg_ps_puzzles_games.accordion_for_ps_examples.accord_ps_puzzles.dg_ps_puzzles"
+                    }
+                  ],
+                  "_nested_name": "dg_info.dg_ps_puzzles_games.accordion_for_ps_examples.accord_ps_puzzles"
+                },
+                {
+                  "type": "accordion_section",
+                  "name": "accord_ps_games",
+                  "value": "Games",
+                  "parameter_list": {
+                    "text_align": "center",
+                    "style": "large emphasised"
+                  },
+                  "rows": [
+                    {
+                      "type": "display_group",
+                      "name": "dg_ps_games",
+                      "parameter_list": {
+                        "style": "column"
+                      },
+                      "rows": [
+                        {
+                          "type": "text",
+                          "name": "intro_ps_games_1",
+                          "value": "Games where players have choices that change the game outcome are natural rich tasks. They invite students to problem solve to figure out ways to win. Developing strategies for playing against a perfect opponent means creating your own puzzle and attempting to solve it.\n\nAs an example, the game of Nim 1-2 is one of the Problem Solving tasks discussed and analyzed in this section.",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "_nested_name": "dg_info.dg_ps_puzzles_games.accordion_for_ps_examples.accord_ps_games.dg_ps_games.intro_ps_games_1"
+                        },
+                        {
+                          "type": "button",
+                          "name": "button_ps_gas",
+                          "value": "Games",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "action_list": [
+                            {
+                              "trigger": "click",
+                              "action_id": "go_to",
+                              "args": [
+                                "efm_ga_start"
+                              ],
+                              "_raw": "click | go_to: efm_ga_start",
+                              "_cleaned": "click | go_to: efm_ga_start"
+                            }
+                          ],
+                          "parameter_list": {
+                            "style": "short",
+                            "text_align": "center"
+                          },
+                          "_nested_name": "dg_info.dg_ps_puzzles_games.accordion_for_ps_examples.accord_ps_games.dg_ps_games.button_ps_gas"
+                        }
+                      ],
+                      "_nested_name": "dg_info.dg_ps_puzzles_games.accordion_for_ps_examples.accord_ps_games.dg_ps_games"
+                    }
+                  ],
+                  "_nested_name": "dg_info.dg_ps_puzzles_games.accordion_for_ps_examples.accord_ps_games"
+                }
+              ],
+              "_nested_name": "dg_info.dg_ps_puzzles_games.accordion_for_ps_examples"
+            }
+          ],
+          "_nested_name": "dg_info.dg_ps_puzzles_games"
+        },
+        {
           "type": "text",
           "name": "help_text",
-          "value": "Many of these examples are based on the ideas and examples in John Mason's excellent book Thinking Mathematically.",
+          "value": "Many of these examples are based on the material in John Mason's excellent book Thinking Mathematically.",
           "_translations": {
             "value": {}
           },

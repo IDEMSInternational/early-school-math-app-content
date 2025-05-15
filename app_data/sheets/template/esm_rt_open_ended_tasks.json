@@ -31,12 +31,151 @@
       "rows": [
         {
           "type": "text",
-          "name": "help_text",
-          "value": "These are tasks that invite playing around. They are questions and puzzles that are not narrowly focused and do not necessarily have a small set of answers The point is to invite exploration and play, and then for students to look for interesting new places to take the inquiry to.\n\nWe have used several tasks from Peter Liljedahl's book Mathematics Tasks for the Thinking Classroom for K-3 and from Mike Fitchett's Open-Ended Math Tasks notebook.\n\n[[Perhaps use some of the more interesting What do you Notice and What do you Wonder tasks could go in here? Also use \"Which of These is Not Like the Others\" and \"Dot Talks.\" Need to handle the overlap with the Routines section.]]",
+          "name": "oe_intro_text_1",
+          "value": "These are tasks that invite playing around. They are questions and puzzles that are not narrowly focused and do not necessarily have a small set of answers The point is to invite exploration and play, and then for students to look for interesting new places to take the inquiry to.\n\nMuch of the material from the Routines section and the Puzzles section lends itself to being Open-Ended tasks, and here are some notes on doing that.",
           "_translations": {
             "value": {}
           },
-          "_nested_name": "dg_info.help_text"
+          "_nested_name": "dg_info.oe_intro_text_1"
+        },
+        {
+          "type": "display_group",
+          "name": "dg_oe_routines_puzzles",
+          "parameter_list": {
+            "style": "column"
+          },
+          "rows": [
+            {
+              "type": "accordion",
+              "name": "accordion_for_oe_examples",
+              "parameter_list": {
+                "open_multiple": "TRUE"
+              },
+              "rows": [
+                {
+                  "type": "accordion_section",
+                  "name": "accord_oe_routines",
+                  "value": "Groups of Routines",
+                  "parameter_list": {
+                    "text_align": "center",
+                    "style": "large emphasised"
+                  },
+                  "rows": [
+                    {
+                      "type": "display_group",
+                      "name": "dg_oe_routines",
+                      "parameter_list": {
+                        "style": "column"
+                      },
+                      "rows": [
+                        {
+                          "type": "text",
+                          "name": "intro_oe_routines_1",
+                          "value": "Routines are intended to be 2 to 10 minute activities. However, they can be grouped to create open-ended explorations and good discussions of various topics. For example, a progression of Dot Cards can be used to emphasize a particular topic about quantities, subitizing, and unitizing.\n\nGo to the Routines section to find routines on any topic.",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "_nested_name": "dg_info.dg_oe_routines_puzzles.accordion_for_oe_examples.accord_oe_routines.dg_oe_routines.intro_oe_routines_1"
+                        },
+                        {
+                          "type": "button",
+                          "name": "button_routines",
+                          "value": "Routines",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "action_list": [
+                            {
+                              "trigger": "click",
+                              "action_id": "go_to",
+                              "args": [
+                                "efm_routines_start"
+                              ],
+                              "_raw": "click | go_to: efm_routines_start",
+                              "_cleaned": "click | go_to: efm_routines_start"
+                            }
+                          ],
+                          "parameter_list": {
+                            "style": "short",
+                            "text_align": "center"
+                          },
+                          "_nested_name": "dg_info.dg_oe_routines_puzzles.accordion_for_oe_examples.accord_oe_routines.dg_oe_routines.button_routines"
+                        }
+                      ],
+                      "_nested_name": "dg_info.dg_oe_routines_puzzles.accordion_for_oe_examples.accord_oe_routines.dg_oe_routines"
+                    }
+                  ],
+                  "_nested_name": "dg_info.dg_oe_routines_puzzles.accordion_for_oe_examples.accord_oe_routines"
+                },
+                {
+                  "type": "accordion_section",
+                  "name": "accord_oe_puzzles",
+                  "value": "Puzzles",
+                  "parameter_list": {
+                    "text_align": "center",
+                    "style": "large emphasised"
+                  },
+                  "rows": [
+                    {
+                      "type": "display_group",
+                      "name": "dg_oe_puzzles",
+                      "parameter_list": {
+                        "style": "column"
+                      },
+                      "rows": [
+                        {
+                          "type": "text",
+                          "name": "intro_oe_puzzles_1",
+                          "value": "Many of the EFM math puzzles provide excellent rich tasks. Look for interesting observations and new directions to explore along the road to solving a puzzle. Each EFM puzzle comes with ideas for further exploration. Encourage your students to see each puzzle as the beginning of a mathematical journey.\n\nIn the Puzzles section, the puzzles are separated into Eye Openers and Puzzlers. One or two Eye-Openers are generally shorter activities, though they can be made longer by having group work and deeper discussions. Puzzlers may take more than one lesson, and they naturally lend themselves to much exploration.\n\nGo to the Puzzles section to find puzzles on any topic.",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "_nested_name": "dg_info.dg_oe_routines_puzzles.accordion_for_oe_examples.accord_oe_puzzles.dg_oe_puzzles.intro_oe_puzzles_1"
+                        },
+                        {
+                          "type": "button",
+                          "name": "button_oe_pows",
+                          "value": "Puzzles",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "action_list": [
+                            {
+                              "trigger": "click",
+                              "action_id": "go_to",
+                              "args": [
+                                "efm_pow_start"
+                              ],
+                              "_raw": "click | go_to: efm_pow_start",
+                              "_cleaned": "click | go_to: efm_pow_start"
+                            }
+                          ],
+                          "parameter_list": {
+                            "style": "short",
+                            "text_align": "center"
+                          },
+                          "_nested_name": "dg_info.dg_oe_routines_puzzles.accordion_for_oe_examples.accord_oe_puzzles.dg_oe_puzzles.button_oe_pows"
+                        }
+                      ],
+                      "_nested_name": "dg_info.dg_oe_routines_puzzles.accordion_for_oe_examples.accord_oe_puzzles.dg_oe_puzzles"
+                    }
+                  ],
+                  "_nested_name": "dg_info.dg_oe_routines_puzzles.accordion_for_oe_examples.accord_oe_puzzles"
+                }
+              ],
+              "_nested_name": "dg_info.dg_oe_routines_puzzles.accordion_for_oe_examples"
+            }
+          ],
+          "_nested_name": "dg_info.dg_oe_routines_puzzles"
+        },
+        {
+          "type": "text",
+          "name": "oe_intro_text_2",
+          "value": "We have used several Thinking Tasks from Peter Liljedahl's books on Thinking Classrooms and from Mike Fitchett's Open-Ended Math Tasks notebook.",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "dg_info.oe_intro_text_2"
         }
       ],
       "_nested_name": "dg_info"
@@ -58,7 +197,7 @@
             {
               "type": "accordion_section",
               "name": "accord_oe_counting",
-              "value": "Early Counting – NOT DONE",
+              "value": "Counting",
               "parameter_list": {
                 "text_align": "center",
                 "style": "large emphasised"

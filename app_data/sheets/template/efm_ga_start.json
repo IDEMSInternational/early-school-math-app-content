@@ -51,6 +51,57 @@
     },
     {
       "type": "display_group",
+      "name": "dg_games_advice",
+      "parameter_list": {
+        "style": "column"
+      },
+      "rows": [
+        {
+          "type": "accordion",
+          "name": "accordion_for_games_advice",
+          "parameter_list": {
+            "open_multiple": "TRUE"
+          },
+          "rows": [
+            {
+              "type": "accordion_section",
+              "name": "accord_games_advice",
+              "value": "Games Advice",
+              "parameter_list": {
+                "text_align": "center",
+                "style": "large emphasised"
+              },
+              "rows": [
+                {
+                  "type": "display_group",
+                  "name": "dg_advice_accord",
+                  "parameter_list": {
+                    "style": "column"
+                  },
+                  "rows": [
+                    {
+                      "type": "text",
+                      "name": "games_advice_text",
+                      "value": "Games where players have choices that change the game outcome are natural problem solving environments. Developing strategies for playing against a perfect opponent means creating your own puzzle and attempting to solve it.\n\nGames that have an element of chance are great levelers. Without randomness, poorer players may consistently lose and get overly discouraged thereby losing interest.\n\nMath games with no choices, such as the game of War, can give fun ways for students to practice math skills, but their lack of problem solving limits their mathematical value.\n\nBeware providing games with artificial gamification. These teach students that math needs extrinsic rewards to be interesting. Strive to make the math be the reward.",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "_nested_name": "dg_games_advice.accordion_for_games_advice.accord_games_advice.dg_advice_accord.games_advice_text"
+                    }
+                  ],
+                  "_nested_name": "dg_games_advice.accordion_for_games_advice.accord_games_advice.dg_advice_accord"
+                }
+              ],
+              "_nested_name": "dg_games_advice.accordion_for_games_advice.accord_games_advice"
+            }
+          ],
+          "_nested_name": "dg_games_advice.accordion_for_games_advice"
+        }
+      ],
+      "_nested_name": "dg_games_advice"
+    },
+    {
+      "type": "display_group",
       "name": "dg_info",
       "rows": [
         {
