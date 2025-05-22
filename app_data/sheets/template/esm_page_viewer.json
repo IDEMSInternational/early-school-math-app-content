@@ -1177,6 +1177,7 @@
     {
       "type": "display_group",
       "name": "dg_set_up_glossary",
+      "condition": "!@local.esm_content_ptr.dont_use_glossary_button",
       "parameter_list": {
         "style": "column"
       },
@@ -1430,7 +1431,22 @@
           }
         }
       ],
-      "_nested_name": "dg_set_up_glossary"
+      "_nested_name": "dg_set_up_glossary",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "!@local.esm_content_ptr.dont_use_glossary_button",
+            "matchedExpression": "!@local.esm_content_ptr.dont_use_glossary_button",
+            "type": "local",
+            "fieldName": "esm_content_ptr"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "!@local.esm_content_ptr.dont_use_glossary_button": [
+          "condition"
+        ]
+      }
     },
     {
       "name": "Commnts_b",

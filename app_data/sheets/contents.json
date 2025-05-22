@@ -804,14 +804,24 @@
       "flow_name": "esm_gloss_list",
       "data_list_name": "esm_glossary",
       "_xlsxPath": "EFM_glossary_high_level_sheets.xlsx",
-      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1PeJ5ishcTCWUvjhflbQqKO6M8u9rNuec"
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1PeJ5ishcTCWUvjhflbQqKO6M8u9rNuec",
+      "_metadata": {
+        "dont_use_glossary_button": {
+          "type": "boolean"
+        }
+      }
     },
     "esm_intro_starts_egs_list": {
       "flow_type": "data_list",
       "flow_name": "esm_intro_starts_egs_list",
       "data_list_name": "esm_intro_starts_egs_data_list",
       "_xlsxPath": "EFM_high_level_sheets.xlsx",
-      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1PeJ5ishcTCWUvjhflbQqKO6M8u9rNuec"
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1PeJ5ishcTCWUvjhflbQqKO6M8u9rNuec",
+      "_metadata": {
+        "dont_use_glossary_button": {
+          "type": "boolean"
+        }
+      }
     },
     "esm_open_ended_tasks_list": {
       "flow_type": "data_list",
@@ -1375,6 +1385,12 @@
       "flow_type": "template",
       "flow_name": "esm_found_resources",
       "_xlsxPath": "EFM_resources_level_sheets.xlsx",
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1PeJ5ishcTCWUvjhflbQqKO6M8u9rNuec"
+    },
+    "esm_glossary_entry_display": {
+      "flow_type": "template",
+      "flow_name": "esm_glossary_entry_display",
+      "_xlsxPath": "EFM_glossary_high_level_sheets.xlsx",
       "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1PeJ5ishcTCWUvjhflbQqKO6M8u9rNuec"
     },
     "esm_intro_start_start": {
