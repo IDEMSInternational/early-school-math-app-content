@@ -4,36 +4,17 @@
   "status": "released",
   "rows": [
     {
+      "name": "content_ptr",
+      "type": "set_variable",
+      "_nested_name": "content_ptr"
+    },
+    {
       "type": "display_group",
       "name": "dg_glossary_page",
       "parameter_list": {
         "style": "column"
       },
       "rows": [
-        {
-          "name": "content_ptr",
-          "value": "@fields.glossary_content_ptr",
-          "_translations": {
-            "value": {}
-          },
-          "type": "set_variable",
-          "_nested_name": "dg_glossary_page.content_ptr",
-          "_dynamicFields": {
-            "value": [
-              {
-                "fullExpression": "@fields.glossary_content_ptr",
-                "matchedExpression": "@fields.glossary_content_ptr",
-                "type": "fields",
-                "fieldName": "glossary_content_ptr"
-              }
-            ]
-          },
-          "_dynamicDependencies": {
-            "@fields.glossary_content_ptr": [
-              "value"
-            ]
-          }
-        },
         {
           "type": "template",
           "name": "glossary_body",

@@ -6,6 +6,8 @@
   "rows": [
     {
       "id": "esm_glossary_1",
+      "topic_theme_1": "Geom_Shape_DS",
+      "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "phrase": "acute angle",
@@ -25,6 +27,8 @@
     },
     {
       "id": "esm_glossary_2",
+      "topic_theme_1": "Geom_Shape_DS",
+      "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
@@ -50,6 +54,8 @@
     },
     {
       "id": "esm_glossary_3",
+      "topic_theme_1": "Geom_Shape_DS",
+      "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
@@ -100,6 +106,8 @@
     },
     {
       "id": "esm_glossary_5",
+      "topic_theme_1": "Geom_Shape_DS",
+      "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
@@ -144,14 +152,14 @@
     },
     {
       "id": "esm_glossary_7",
+      "topic_theme_1": "Geom_Shape_DS",
+      "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
-      "block2_type": "all_text",
       "phrase": "circle",
       "_translations": {
         "phrase": {},
-        "block1_text": {},
-        "block2_text": {}
+        "block1_text": {}
       },
       "_translatedFields": {
         "phrase": {
@@ -159,38 +167,50 @@
         },
         "block1_text": {
           "eng": "A circle is the set of all points in a plane that are the same distance from a point called its **center**. The distance is called the **radius** of the circle."
-        },
-        "block2_text": {
-          "eng": "Example: draw a pretty picture."
         }
       },
-      "block1_text": "A circle is the set of all points in a plane that are the same distance from a point called its **center**. The distance is called the **radius** of the circle.",
-      "block2_text": "Example: draw a pretty picture."
+      "block1_text": "A circle is the set of all points in a plane that are the same distance from a point called its **center**. The distance is called the **radius** of the circle."
     },
     {
       "id": "esm_glossary_8",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
-      "block2_type": "all_text",
+      "block2_type": "accord_all_text",
+      "block3_type": "accord_all_text",
       "phrase": "compensation",
       "_translations": {
         "phrase": {},
         "block1_text": {},
-        "block2_text": {}
+        "block2_accord": {},
+        "block2_text": {},
+        "block3_accord": {},
+        "block3_text": {}
       },
       "_translatedFields": {
         "phrase": {
           "eng": "compensation"
         },
         "block1_text": {
-          "eng": "Compensation can be used to make some addition or subtraction calculations easier.\n\nFor addition, a simpler problem is created by taking away a portion of one number and adding it to the other. For example, 6 + 9 can be turned into (6 – 1) + (9 + 1) = 5 + 10, which is a much easier problem.\n\nFor subtraction, a simpler problem is created by adding or taking away the same amount from both numbers. This maintains the distance between the two numbers. For example, 15 – 9 can be turned into 16 – 10. Similarly, 12 – 7 can be turned into 10 – 5 (which is easier as the number bonds for 10 are learned early)."
+          "eng": "Compensation can be used to make some addition or subtraction calculations easier."
+        },
+        "block2_accord": {
+          "eng": "Addition with Compensation"
         },
         "block2_text": {
-          "eng": "Example: draw a pretty picture."
+          "eng": "For addition, a simpler problem is created by taking away a portion of one number and adding it to the other. \n\nFor example, 6 + 9 can be turned into the much easier problem\n(6 – 1) + (9 + 1) = 5 + 10, which is a much easier problem."
+        },
+        "block3_accord": {
+          "eng": "Subtraction with Compensation"
+        },
+        "block3_text": {
+          "eng": "For subtraction, a simpler problem is created by adding or taking away the same amount from both numbers. This maintains the distance between the two numbers. \n\nFor example, 15 – 9 can be turned into 16 – 10 by adding 1 to both numbers.\n\nSimilarly, 12 – 7 can be turned into 10 – 5 by subtracting 2 from both numbers. This latter problem is typically easier as the number bonds for 10 are learned early."
         }
       },
-      "block1_text": "Compensation can be used to make some addition or subtraction calculations easier.\n\nFor addition, a simpler problem is created by taking away a portion of one number and adding it to the other. For example, 6 + 9 can be turned into (6 – 1) + (9 + 1) = 5 + 10, which is a much easier problem.\n\nFor subtraction, a simpler problem is created by adding or taking away the same amount from both numbers. This maintains the distance between the two numbers. For example, 15 – 9 can be turned into 16 – 10. Similarly, 12 – 7 can be turned into 10 – 5 (which is easier as the number bonds for 10 are learned early).",
-      "block2_text": "Example: draw a pretty picture."
+      "block1_text": "Compensation can be used to make some addition or subtraction calculations easier.",
+      "block2_accord": "Addition with Compensation",
+      "block2_text": "For addition, a simpler problem is created by taking away a portion of one number and adding it to the other. \n\nFor example, 6 + 9 can be turned into the much easier problem\n(6 – 1) + (9 + 1) = 5 + 10, which is a much easier problem.",
+      "block3_accord": "Subtraction with Compensation",
+      "block3_text": "For subtraction, a simpler problem is created by adding or taking away the same amount from both numbers. This maintains the distance between the two numbers. \n\nFor example, 15 – 9 can be turned into 16 – 10 by adding 1 to both numbers.\n\nSimilarly, 12 – 7 can be turned into 10 – 5 by subtracting 2 from both numbers. This latter problem is typically easier as the number bonds for 10 are learned early."
     },
     {
       "id": "esm_glossary_9",
@@ -233,39 +253,57 @@
           "eng": "counting on"
         },
         "block1_text": {
-          "eng": "Counting on is a way of counting a group of objects by treating a partion of them as one unit whose size is already known.\n\nFor example, suppose you have 3 objects and 4 objects. You could use counting on for the seven objects by starting at 3 for the 3 known objects, and then counting \"4, 5, 6, 7\" pointing one at a time at the 4 objects.\n\nBeing able to treat a group of objects as a unit is called unitizing, and it is an important developmental step."
+          "eng": "**Counting on** is a way of counting a group of objects by treating a portion of them as one unit whose size is already known.\n\n**Example:** Suppose you have 3 objects and 4 objects. You could use counting on for the seven objects by starting at 3 for the 3 known objects, and then counting \"4, 5, 6, 7\" pointing one at a time at the other 4 objects. You could also start with the 4 objects and count \"5, 6, 7\" while counting the remaining 3 objects. Children should learn the strategy that it saves time to start counting on using the larger group of objects first.\n\nBeing able to treat a group of objects as a unit is called **unitizing,** and it is an important developmental step."
         },
         "block2_text": {
           "eng": "Example: draw a pretty picture."
         }
       },
-      "block1_text": "Counting on is a way of counting a group of objects by treating a partion of them as one unit whose size is already known.\n\nFor example, suppose you have 3 objects and 4 objects. You could use counting on for the seven objects by starting at 3 for the 3 known objects, and then counting \"4, 5, 6, 7\" pointing one at a time at the 4 objects.\n\nBeing able to treat a group of objects as a unit is called unitizing, and it is an important developmental step.",
+      "block1_text": "**Counting on** is a way of counting a group of objects by treating a portion of them as one unit whose size is already known.\n\n**Example:** Suppose you have 3 objects and 4 objects. You could use counting on for the seven objects by starting at 3 for the 3 known objects, and then counting \"4, 5, 6, 7\" pointing one at a time at the other 4 objects. You could also start with the 4 objects and count \"5, 6, 7\" while counting the remaining 3 objects. Children should learn the strategy that it saves time to start counting on using the larger group of objects first.\n\nBeing able to treat a group of objects as a unit is called **unitizing,** and it is an important developmental step.",
       "block2_text": "Example: draw a pretty picture."
     },
     {
       "id": "esm_glossary_11",
+      "topic_theme_1": "FMT_RWC_DRP",
+      "topic_theme_2": "FMT_RWC_DRV",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
-      "block2_type": "all_text",
+      "block2_type": "accord_all_text",
+      "block3_type": "accord_all_text",
       "phrase": "dialogic reading",
       "_translations": {
         "phrase": {},
         "block1_text": {},
-        "block2_text": {}
+        "block2_accord": {},
+        "block2_text": {},
+        "block3_accord": {},
+        "block3_text": {}
       },
       "_translatedFields": {
         "phrase": {
           "eng": "dialogic reading"
         },
         "block1_text": {
-          "eng": "When reading a story to someone, having a dialog or discussion with them about the story as you read each page is called dialogic reading. The kind of dialog that is appropriate is dependent on the listener's developmental level.\n\n**For preverbal children:**\n\nIf the child does not understand your words yet, use \"Point and Describe\" and do not expect a response.\n\nIf the child does understand some of what you are saying, use \"Point, Describe, and Ask.\" The responses to your questions may be for the child to point or otherwise indicate an answer.\n\n**For verbal children:**\n\nContinue to do \"Point, Describe, and Ask.\" This kind of reading can be broken into three levels.\n\n1. Simple questions. Ask simple questions referring to the current page, such as \"Is the ball red?\" or \"Where is the cat?\"\n2. More open-ended questions. Ask more complex questions such as \"What is the bird doing?\" or \"Do you think that was fair?\" Expand on the child's response to create further questions and discussion ideas. These questions will still be focused on the current page of the story.\n3. More sophisticated questions. These questions may discuss the narrative of the story, such as what has happened so far or what will happen next, or they may relate back to the child’s life or world, such as \"Do you like it when it rains?\" Also, ask questions about a character’s inner life, such as what the character is feeling and have they ever felt like that. At this level, there should be much more give and take, and the child should be encouraged to put questions of their own into the dialogue."
+          "eng": "When reading a story to someone, having a dialog or discussion with them about the story as you read each page is called dialogic reading. The kind of dialog that is appropriate is dependent on the listener's developmental level."
+        },
+        "block2_accord": {
+          "eng": "Preverbal Children"
         },
         "block2_text": {
-          "eng": "Example: draw a pretty picture."
+          "eng": "If the child does not understand your words yet, use \"Point and Describe\" and do not expect a response.\n\nIf the child does understand some of what you are saying, use \"Point, Describe, and Ask.\" The responses to your questions may be for the child to point or otherwise indicate an answer."
+        },
+        "block3_accord": {
+          "eng": "Verbal Children"
+        },
+        "block3_text": {
+          "eng": "Continue to do \"Point, Describe, and Ask.\" This kind of reading can be broken into three levels.\n\n1. Simple questions. Ask simple questions referring to the current page, such as \"Is the ball red?\" or \"Where is the cat?\"\n2. More open-ended questions. Ask more complex questions such as \"What is the bird doing?\" or \"Do you think that was fair?\" Expand on the child's response to create further questions and discussion ideas. These questions will still be focused on the current page of the story.\n3. More sophisticated questions. These questions may discuss the narrative of the story, such as what has happened so far or what will happen next, or they may relate back to the child’s life or world, such as \"Do you like it when it rains?\" Also, ask questions about a character’s inner life, such as what the character is feeling and have they ever felt like that. At this level, there should be much more give and take, and the child should be encouraged to put questions of their own into the dialogue."
         }
       },
-      "block1_text": "When reading a story to someone, having a dialog or discussion with them about the story as you read each page is called dialogic reading. The kind of dialog that is appropriate is dependent on the listener's developmental level.\n\n**For preverbal children:**\n\nIf the child does not understand your words yet, use \"Point and Describe\" and do not expect a response.\n\nIf the child does understand some of what you are saying, use \"Point, Describe, and Ask.\" The responses to your questions may be for the child to point or otherwise indicate an answer.\n\n**For verbal children:**\n\nContinue to do \"Point, Describe, and Ask.\" This kind of reading can be broken into three levels.\n\n1. Simple questions. Ask simple questions referring to the current page, such as \"Is the ball red?\" or \"Where is the cat?\"\n2. More open-ended questions. Ask more complex questions such as \"What is the bird doing?\" or \"Do you think that was fair?\" Expand on the child's response to create further questions and discussion ideas. These questions will still be focused on the current page of the story.\n3. More sophisticated questions. These questions may discuss the narrative of the story, such as what has happened so far or what will happen next, or they may relate back to the child’s life or world, such as \"Do you like it when it rains?\" Also, ask questions about a character’s inner life, such as what the character is feeling and have they ever felt like that. At this level, there should be much more give and take, and the child should be encouraged to put questions of their own into the dialogue.",
-      "block2_text": "Example: draw a pretty picture."
+      "block1_text": "When reading a story to someone, having a dialog or discussion with them about the story as you read each page is called dialogic reading. The kind of dialog that is appropriate is dependent on the listener's developmental level.",
+      "block2_accord": "Preverbal Children",
+      "block2_text": "If the child does not understand your words yet, use \"Point and Describe\" and do not expect a response.\n\nIf the child does understand some of what you are saying, use \"Point, Describe, and Ask.\" The responses to your questions may be for the child to point or otherwise indicate an answer.",
+      "block3_accord": "Verbal Children",
+      "block3_text": "Continue to do \"Point, Describe, and Ask.\" This kind of reading can be broken into three levels.\n\n1. Simple questions. Ask simple questions referring to the current page, such as \"Is the ball red?\" or \"Where is the cat?\"\n2. More open-ended questions. Ask more complex questions such as \"What is the bird doing?\" or \"Do you think that was fair?\" Expand on the child's response to create further questions and discussion ideas. These questions will still be focused on the current page of the story.\n3. More sophisticated questions. These questions may discuss the narrative of the story, such as what has happened so far or what will happen next, or they may relate back to the child’s life or world, such as \"Do you like it when it rains?\" Also, ask questions about a character’s inner life, such as what the character is feeling and have they ever felt like that. At this level, there should be much more give and take, and the child should be encouraged to put questions of their own into the dialogue."
     },
     {
       "id": "esm_glossary_12",
@@ -294,6 +332,8 @@
     },
     {
       "id": "esm_glossary_13",
+      "topic_theme_1": "Geom_Shape_DS",
+      "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
@@ -331,10 +371,10 @@
           "eng": "equal sign"
         },
         "block1_text": {
-          "eng": "An equal sign \"=\" is used to indicate that two expressions have the same value. For example, 2 x 3 = 4 + 2 asserts that the expression on the left side of the equal sign, 2 x 3, has the same value as the expression on the right side of the equal sign, 4 + 2.\n\nSome believe that an equal sign indicates that a value is beiing produced by one side of the equation, as in 4 + 2 = 6. This is not the case. The equal sign has no preferred side to it. Also, some people believe that one of the two sides of an equal sign should be a solitary number. This also need not be the case, and it is important to not leave children with this impression.\n\nSee also the entries for \"equation\" and \"expression.\""
+          "eng": "An equal sign \"=\" is used to indicate that two expressions have the same value. For example, 2 x 3 = 4 + 2 asserts that the expression on the left side of the equal sign, 2 x 3, has the same value as the expression on the right side of the equal sign, 4 + 2.\n\n**False Beliefs:** Some believe that an equal sign indicates that a value is beiing produced by one side of the equation, as in 4 + 2 = 6. This is not the case. The equal sign has no preferred side to it. Also, some people believe that one of the two sides of an equal sign should be a solitary number. This also need not be the case, and it is important to not leave children with this impression.\n\nSee also the entries for \"equation\" and \"expression.\""
         }
       },
-      "block1_text": "An equal sign \"=\" is used to indicate that two expressions have the same value. For example, 2 x 3 = 4 + 2 asserts that the expression on the left side of the equal sign, 2 x 3, has the same value as the expression on the right side of the equal sign, 4 + 2.\n\nSome believe that an equal sign indicates that a value is beiing produced by one side of the equation, as in 4 + 2 = 6. This is not the case. The equal sign has no preferred side to it. Also, some people believe that one of the two sides of an equal sign should be a solitary number. This also need not be the case, and it is important to not leave children with this impression.\n\nSee also the entries for \"equation\" and \"expression.\""
+      "block1_text": "An equal sign \"=\" is used to indicate that two expressions have the same value. For example, 2 x 3 = 4 + 2 asserts that the expression on the left side of the equal sign, 2 x 3, has the same value as the expression on the right side of the equal sign, 4 + 2.\n\n**False Beliefs:** Some believe that an equal sign indicates that a value is beiing produced by one side of the equation, as in 4 + 2 = 6. This is not the case. The equal sign has no preferred side to it. Also, some people believe that one of the two sides of an equal sign should be a solitary number. This also need not be the case, and it is important to not leave children with this impression.\n\nSee also the entries for \"equation\" and \"expression.\""
     },
     {
       "id": "esm_glossary_15",
@@ -482,6 +522,8 @@
     },
     {
       "id": "esm_glossary_21",
+      "topic_theme_1": "Geom_Shape_DS",
+      "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
@@ -521,13 +563,13 @@
           "eng": "fact family"
         },
         "block1_text": {
-          "eng": "A fact family is a group of four related calculations involving the structural connection between three numbers and two operations.\n\nFor example, using the connection between addition and subtraction, 2 + 4 = 6; 4 + 2 = 6; 6 - 2 = 4; and 6 - 4 = 2 form a fact family\n\nSimilarly, using the connection between multiplication and division, 2 x 4 = 8; 4 x 2 = 8; 8 / 2 = 4; and 8 / 4 = 2 form a fact family.."
+          "eng": "A fact family is a group of four related calculations involving the structural connection between three numbers and two operations. Fact families make clear the interdepence between two operations, and they also make the learning of the associated math facts more efficient.\n\n**Example – Add Sub:** Use the connection between addition and subtraction to form this family of four facts: 2 + 4 = 6; 4 + 2 = 6; 6 - 2 = 4; and 6 - 4 = 2.\n\n**Example – Mult Div:** Use the connection between multiplication and division to form this family of four facts: 2 x 4 = 8; 4 x 2 = 8; 8 / 2 = 4; and 8 / 4 = 2."
         },
         "block2_text": {
           "eng": "Example: draw a pretty picture."
         }
       },
-      "block1_text": "A fact family is a group of four related calculations involving the structural connection between three numbers and two operations.\n\nFor example, using the connection between addition and subtraction, 2 + 4 = 6; 4 + 2 = 6; 6 - 2 = 4; and 6 - 4 = 2 form a fact family\n\nSimilarly, using the connection between multiplication and division, 2 x 4 = 8; 4 x 2 = 8; 8 / 2 = 4; and 8 / 4 = 2 form a fact family..",
+      "block1_text": "A fact family is a group of four related calculations involving the structural connection between three numbers and two operations. Fact families make clear the interdepence between two operations, and they also make the learning of the associated math facts more efficient.\n\n**Example – Add Sub:** Use the connection between addition and subtraction to form this family of four facts: 2 + 4 = 6; 4 + 2 = 6; 6 - 2 = 4; and 6 - 4 = 2.\n\n**Example – Mult Div:** Use the connection between multiplication and division to form this family of four facts: 2 x 4 = 8; 4 x 2 = 8; 8 / 2 = 4; and 8 / 4 = 2.",
       "block2_text": "Example: draw a pretty picture."
     },
     {
@@ -582,6 +624,8 @@
     },
     {
       "id": "esm_glossary_25",
+      "topic_theme_1": "Geom_Shape_DS",
+      "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
@@ -607,6 +651,8 @@
     },
     {
       "id": "esm_glossary_26",
+      "topic_theme_1": "Geom_Shape_DS",
+      "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
@@ -707,6 +753,8 @@
     },
     {
       "id": "esm_glossary_30",
+      "topic_theme_1": "Geom_Shape_DS",
+      "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
@@ -721,17 +769,19 @@
           "eng": "line"
         },
         "block1_text": {
-          "eng": "A line is a one-dimensional straight object that extends infinitely in both directions. It can be thought of as an infinitely long straight wire that has no thickness."
+          "eng": "A line is a one-dimensional straight geometric object that extends infinitely in both directions. It can be thought of as an infinitely long straight wire that has no thickness."
         },
         "block2_text": {
           "eng": "Example: draw a pretty picture."
         }
       },
-      "block1_text": "A line is a one-dimensional straight object that extends infinitely in both directions. It can be thought of as an infinitely long straight wire that has no thickness.",
+      "block1_text": "A line is a one-dimensional straight geometric object that extends infinitely in both directions. It can be thought of as an infinitely long straight wire that has no thickness.",
       "block2_text": "Example: draw a pretty picture."
     },
     {
       "id": "esm_glossary_31",
+      "topic_theme_1": "Geom_Shape_DS",
+      "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
@@ -746,17 +796,19 @@
           "eng": "line of symmetry"
         },
         "block1_text": {
-          "eng": "There are several forms of symmetry – the symmetry referred to here is called **mirror symmetry.** A line of symmetry is a line superimposed on a flat image so that one side of the line is the reflection of the other side.\n\nA picture of a human face will usually have a line of symmetry through the nose and chin. Some figures have many lines of symmetry. For example, a square has four lines of symmetry – two through pairs of opposite corners and two through pairs of midpoints of opposite sides."
+          "eng": "There are several forms of symmetry. The symmetry referred to here is called **mirror symmetry.** A line of symmetry is a line superimposed on a flat image so that one side of the line is the reflection of the other side.\n\nA picture of a human face will usually have a line of symmetry through the nose and chin. Some figures have many lines of symmetry. For example, a square has four lines of symmetry – two through pairs of opposite corners and two through pairs of midpoints of opposite sides."
         },
         "block2_text": {
-          "eng": "Example: draw a pretty picture."
+          "eng": "Example: draw a pretty picture - face with line of symmetry and square with 4 lines of symmetry."
         }
       },
-      "block1_text": "There are several forms of symmetry – the symmetry referred to here is called **mirror symmetry.** A line of symmetry is a line superimposed on a flat image so that one side of the line is the reflection of the other side.\n\nA picture of a human face will usually have a line of symmetry through the nose and chin. Some figures have many lines of symmetry. For example, a square has four lines of symmetry – two through pairs of opposite corners and two through pairs of midpoints of opposite sides.",
-      "block2_text": "Example: draw a pretty picture."
+      "block1_text": "There are several forms of symmetry. The symmetry referred to here is called **mirror symmetry.** A line of symmetry is a line superimposed on a flat image so that one side of the line is the reflection of the other side.\n\nA picture of a human face will usually have a line of symmetry through the nose and chin. Some figures have many lines of symmetry. For example, a square has four lines of symmetry – two through pairs of opposite corners and two through pairs of midpoints of opposite sides.",
+      "block2_text": "Example: draw a pretty picture - face with line of symmetry and square with 4 lines of symmetry."
     },
     {
       "id": "esm_glossary_32",
+      "topic_theme_1": "Geom_Shape_DS",
+      "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
@@ -859,26 +911,20 @@
       "id": "esm_glossary_36",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
-      "block2_type": "all_text",
       "phrase": "number bond",
       "_translations": {
         "phrase": {},
-        "block1_text": {},
-        "block2_text": {}
+        "block1_text": {}
       },
       "_translatedFields": {
         "phrase": {
           "eng": "number bond"
         },
         "block1_text": {
-          "eng": "The number bonds for a number are all the pairs of numbers that add up to it. For example, the number bonds for 7 are 0 + 7, 1 + 6, 2 + 5, and 3 + 4."
-        },
-        "block2_text": {
-          "eng": "Example: draw a pretty picture."
+          "eng": "The number bonds for a number are all the pairs of whole numbers that add up to it.\n\n**Example:** The number bonds for 7 are 0 + 7, 1 + 6, 2 + 5, and 3 + 4."
         }
       },
-      "block1_text": "The number bonds for a number are all the pairs of numbers that add up to it. For example, the number bonds for 7 are 0 + 7, 1 + 6, 2 + 5, and 3 + 4.",
-      "block2_text": "Example: draw a pretty picture."
+      "block1_text": "The number bonds for a number are all the pairs of whole numbers that add up to it.\n\n**Example:** The number bonds for 7 are 0 + 7, 1 + 6, 2 + 5, and 3 + 4."
     },
     {
       "id": "esm_glossary_37",
@@ -896,13 +942,13 @@
           "eng": "number line"
         },
         "block1_text": {
-          "eng": "A number line in the early years is a ray with evenly-spaced and labeled tic marks, with the labels starting at 0 and increasing in value as they move to the right. As the sophistication of the students increases, fractions can be added to the number line. When negative numbers are included, they are put to the left side of 0."
+          "eng": "A number line in the early years is a ray with evenly-spaced and labeled tic marks, with the labels starting at 0 and increasing in value as they move to the right. \n\nAs the sophistication of the students increases, fractions can be added to the number line. When negative numbers are included, they are put to the left side of 0."
         },
         "block2_text": {
           "eng": "Example: draw a pretty picture."
         }
       },
-      "block1_text": "A number line in the early years is a ray with evenly-spaced and labeled tic marks, with the labels starting at 0 and increasing in value as they move to the right. As the sophistication of the students increases, fractions can be added to the number line. When negative numbers are included, they are put to the left side of 0.",
+      "block1_text": "A number line in the early years is a ray with evenly-spaced and labeled tic marks, with the labels starting at 0 and increasing in value as they move to the right. \n\nAs the sophistication of the students increases, fractions can be added to the number line. When negative numbers are included, they are put to the left side of 0.",
       "block2_text": "Example: draw a pretty picture."
     },
     {
@@ -982,6 +1028,8 @@
     },
     {
       "id": "esm_glossary_41",
+      "topic_theme_1": "Geom_Shape_DS",
+      "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "phrase": "obtuse angle",
@@ -1001,6 +1049,8 @@
     },
     {
       "id": "esm_glossary_42",
+      "topic_theme_1": "Geom_Shape_DS",
+      "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
@@ -1040,17 +1090,19 @@
           "eng": "odd number"
         },
         "block1_text": {
-          "eng": "An odd number is an integer that has a remainder of 1 when divided by 2. It is an integer that cannot be split into two equal integer parts.\n\nFor positive whole numbers, odd numbers are quantities of objects that cannot be shared evenly between between two groups."
+          "eng": "An odd number is an integer that has a remainder of 1 when divided by 2. It is an integer that cannot be split into two equal integer parts.\n\nFor positive whole numbers, odd numbers are quantities of objects that cannot be shared evenly between between two groups without splitting some of the objects into fractional parts."
         },
         "block2_text": {
           "eng": "Example: draw a pretty picture."
         }
       },
-      "block1_text": "An odd number is an integer that has a remainder of 1 when divided by 2. It is an integer that cannot be split into two equal integer parts.\n\nFor positive whole numbers, odd numbers are quantities of objects that cannot be shared evenly between between two groups.",
+      "block1_text": "An odd number is an integer that has a remainder of 1 when divided by 2. It is an integer that cannot be split into two equal integer parts.\n\nFor positive whole numbers, odd numbers are quantities of objects that cannot be shared evenly between between two groups without splitting some of the objects into fractional parts.",
       "block2_text": "Example: draw a pretty picture."
     },
     {
       "id": "esm_glossary_44",
+      "topic_theme_1": "Geom_Shape_DS",
+      "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
@@ -1065,39 +1117,88 @@
           "eng": "octagon"
         },
         "block1_text": {
-          "eng": "A octagon is an eight-sided polygon. It is also a polygon with eight angles."
+          "eng": "An octagon is an eight-sided polygon. It is also a polygon with eight angles."
         },
         "block2_text": {
           "eng": "Example: draw a pretty picture."
         }
       },
-      "block1_text": "A octagon is an eight-sided polygon. It is also a polygon with eight angles.",
+      "block1_text": "An octagon is an eight-sided polygon. It is also a polygon with eight angles.",
       "block2_text": "Example: draw a pretty picture."
     },
     {
       "id": "esm_glossary_45",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
-      "block2_type": "all_text",
+      "block2_type": "accord_all_text",
+      "block3_type": "accord_all_text",
+      "block4_type": "accord_all_text",
+      "block5_type": "accord_all_text",
+      "block6_type": "accord_all_text",
       "phrase": "order of operations",
       "_translations": {
         "phrase": {},
         "block1_text": {},
-        "block2_text": {}
+        "block2_accord": {},
+        "block2_text": {},
+        "block3_accord": {},
+        "block3_text": {},
+        "block4_accord": {},
+        "block4_text": {},
+        "block5_accord": {},
+        "block5_text": {},
+        "block6_accord": {},
+        "block6_text": {}
       },
       "_translatedFields": {
         "phrase": {
           "eng": "order of operations"
         },
         "block1_text": {
-          "eng": "Order of operations refers to the order in which terms should be combined in order to evaluate a mathematical expression. In English, the expression PEMDAS is used to help students remember this order, though it should be renamed GEMDAS. The letters stand for: P = parentheses, G = grouping symbols in general, E = exponents, M = multiplication, D = division, A = addition, and S = subtraction.\n\nGrouping symbols, such as parentheses or square brackets, are given highest priority. The expression inside a grouping symbol is always evaluated first. For example, (2 + 3) x 4 = 5 x 4 = 20. \n\nExponent expressions are performed next. For example, 3 + 2<sup>4</sup> = 3 + 16 = 19. Similarly, 2<sup>4</sup> + 3 = 16 + 3 = 19. This is more useful to keep in mind when carets are used to denote exponentiation. For example 2^4+3 is 16 + 3 = 19 and not 2^(4 + 3) = 128. \n\nA common point of confusion occurs when writing and evaluating an exponent expression with a negative base. Because of PEMDAS, if you want to write -2 raised to the fourth power, you must write it as (-2)<sup>4</sup> = 16, and not as -2<sup>4</sup>, which would be -16.\n\nAnother difficulty can occur when there are two levels of exponents, such as in 2<sup>3<sup>2</sup></sup>. Because there are two expenents, the left to right rule says that this is (2<sup>3</sup>)<sup>2</sup> = 8<sup>2</sup> = 64. If carets are used instead to write it as 2^3^2, the applicability of the left to right rule becomes more obvious.\n\nMultiplication and division are performed next. They are given equal priority (despite their relative positions in PEMDAS). When consecutive operations of equal priority are encountered, they are performed left to right. For example, 6 / 2 x 3 is equal to (6 / 2) x 3 = 9 and not equal to 6 / (2 x 3) = 1.\n\nAddition and subtraction are performed last (including the opposite symbol \"-\"). These are given equal priority as well. Similar to mutiplication and division, when a string of consecutive additions and subtractions are encountered, they are evaluated from left to right. For example, 10 - 3 + 2 is (10 - 3) + 2 = 9 and not 10 - (3 + 2) = 5.\n\nPEMDAS misleads some students into thinking muliplication has higher priority than division, and addition has higher priority than subtraction.. As described above, multiplication and division should be given equal priority, and addition and subtraction should also be given equal priority."
+          "eng": "Order of operations refers to the order in which terms should be combined in order to evaluate a mathematical expression.\n\nIn English, the expression PEMDAS is used to help students remember this order, though it should be renamed GEMDAS. The letters stand for:\n* P = parentheses\n* G = grouping symbols in general\n* E = exponents\n* M = multiplication\n* D = division\n* A = addition\n* S = subtraction.\n\n**Example:** Put in an example."
+        },
+        "block2_accord": {
+          "eng": "Grouping Symbols"
         },
         "block2_text": {
-          "eng": "Example: draw a pretty picture."
+          "eng": "Grouping symbols, such as parentheses or square brackets, are given highest priority. The expression inside a grouping symbol is always evaluated first.\n\nFor example, (2 + 3) x 4 = 5 x 4 = 20.\n\nGrouping also occurs when writing fractions with horizontal bars, and when using functional notation such as f(2 + 3)."
+        },
+        "block3_accord": {
+          "eng": "Exponents"
+        },
+        "block3_text": {
+          "eng": "Exponent expressions are performed next. For example, 3 + 2<sup>4</sup> = 3 + 16 = 19. Similarly, 2<sup>4</sup> + 3 = 16 + 3 = 19. This is more useful to keep in mind when carets are used to denote exponentiation. For example 2^4+3 is 16 + 3 = 19 and not 2^(4 + 3) = 128. \n\nA common point of confusion occurs when writing and evaluating an exponent expression with a negative base. Because of PEMDAS, if you want to write -2 raised to the fourth power, you must write it as (-2)<sup>4</sup> = 16, and not as -2<sup>4</sup>, which would be -16.\n\nAnother difficulty can occur when there are two levels of exponents, such as in 2<sup>3<sup>2</sup></sup>. Because there are two expenents, the left to right rule says that this is (2<sup>3</sup>)<sup>2</sup> = 8<sup>2</sup> = 64. If carets are used instead to write it as 2^3^2, the applicability of the left to right rule becomes more obvious."
+        },
+        "block4_accord": {
+          "eng": "Multiplication and Division"
+        },
+        "block4_text": {
+          "eng": "Multiplication and division are performed next. They are given equal priority (despite their relative positions in PEMDAS). When consecutive operations of equal priority are encountered, they are performed left to right. For example, 6 / 2 x 3 is equal to (6 / 2) x 3 = 9 and not equal to 6 / (2 x 3) = 1."
+        },
+        "block5_accord": {
+          "eng": "Addition and Subtraction"
+        },
+        "block5_text": {
+          "eng": "Addition and subtraction are performed last (including the opposite symbol \"-\"). These are given equal priority as well. Similar to mutiplication and division, when a string of consecutive additions and subtractions are encountered, they are evaluated from left to right. For example, 10 - 3 + 2 is (10 - 3) + 2 = 9 and not 10 - (3 + 2) = 5."
+        },
+        "block6_accord": {
+          "eng": "PEMDAS Mistakes"
+        },
+        "block6_text": {
+          "eng": "PEMDAS misleads some people into thinking muliplication has higher priority than division, and addition has higher priority than subtraction.. As described above, multiplication and division should be given equal priority, and addition and subtraction should also be given equal priority."
         }
       },
-      "block1_text": "Order of operations refers to the order in which terms should be combined in order to evaluate a mathematical expression. In English, the expression PEMDAS is used to help students remember this order, though it should be renamed GEMDAS. The letters stand for: P = parentheses, G = grouping symbols in general, E = exponents, M = multiplication, D = division, A = addition, and S = subtraction.\n\nGrouping symbols, such as parentheses or square brackets, are given highest priority. The expression inside a grouping symbol is always evaluated first. For example, (2 + 3) x 4 = 5 x 4 = 20. \n\nExponent expressions are performed next. For example, 3 + 2<sup>4</sup> = 3 + 16 = 19. Similarly, 2<sup>4</sup> + 3 = 16 + 3 = 19. This is more useful to keep in mind when carets are used to denote exponentiation. For example 2^4+3 is 16 + 3 = 19 and not 2^(4 + 3) = 128. \n\nA common point of confusion occurs when writing and evaluating an exponent expression with a negative base. Because of PEMDAS, if you want to write -2 raised to the fourth power, you must write it as (-2)<sup>4</sup> = 16, and not as -2<sup>4</sup>, which would be -16.\n\nAnother difficulty can occur when there are two levels of exponents, such as in 2<sup>3<sup>2</sup></sup>. Because there are two expenents, the left to right rule says that this is (2<sup>3</sup>)<sup>2</sup> = 8<sup>2</sup> = 64. If carets are used instead to write it as 2^3^2, the applicability of the left to right rule becomes more obvious.\n\nMultiplication and division are performed next. They are given equal priority (despite their relative positions in PEMDAS). When consecutive operations of equal priority are encountered, they are performed left to right. For example, 6 / 2 x 3 is equal to (6 / 2) x 3 = 9 and not equal to 6 / (2 x 3) = 1.\n\nAddition and subtraction are performed last (including the opposite symbol \"-\"). These are given equal priority as well. Similar to mutiplication and division, when a string of consecutive additions and subtractions are encountered, they are evaluated from left to right. For example, 10 - 3 + 2 is (10 - 3) + 2 = 9 and not 10 - (3 + 2) = 5.\n\nPEMDAS misleads some students into thinking muliplication has higher priority than division, and addition has higher priority than subtraction.. As described above, multiplication and division should be given equal priority, and addition and subtraction should also be given equal priority.",
-      "block2_text": "Example: draw a pretty picture."
+      "block1_text": "Order of operations refers to the order in which terms should be combined in order to evaluate a mathematical expression.\n\nIn English, the expression PEMDAS is used to help students remember this order, though it should be renamed GEMDAS. The letters stand for:\n* P = parentheses\n* G = grouping symbols in general\n* E = exponents\n* M = multiplication\n* D = division\n* A = addition\n* S = subtraction.\n\n**Example:** Put in an example.",
+      "block2_accord": "Grouping Symbols",
+      "block2_text": "Grouping symbols, such as parentheses or square brackets, are given highest priority. The expression inside a grouping symbol is always evaluated first.\n\nFor example, (2 + 3) x 4 = 5 x 4 = 20.\n\nGrouping also occurs when writing fractions with horizontal bars, and when using functional notation such as f(2 + 3).",
+      "block3_accord": "Exponents",
+      "block3_text": "Exponent expressions are performed next. For example, 3 + 2<sup>4</sup> = 3 + 16 = 19. Similarly, 2<sup>4</sup> + 3 = 16 + 3 = 19. This is more useful to keep in mind when carets are used to denote exponentiation. For example 2^4+3 is 16 + 3 = 19 and not 2^(4 + 3) = 128. \n\nA common point of confusion occurs when writing and evaluating an exponent expression with a negative base. Because of PEMDAS, if you want to write -2 raised to the fourth power, you must write it as (-2)<sup>4</sup> = 16, and not as -2<sup>4</sup>, which would be -16.\n\nAnother difficulty can occur when there are two levels of exponents, such as in 2<sup>3<sup>2</sup></sup>. Because there are two expenents, the left to right rule says that this is (2<sup>3</sup>)<sup>2</sup> = 8<sup>2</sup> = 64. If carets are used instead to write it as 2^3^2, the applicability of the left to right rule becomes more obvious.",
+      "block4_accord": "Multiplication and Division",
+      "block4_text": "Multiplication and division are performed next. They are given equal priority (despite their relative positions in PEMDAS). When consecutive operations of equal priority are encountered, they are performed left to right. For example, 6 / 2 x 3 is equal to (6 / 2) x 3 = 9 and not equal to 6 / (2 x 3) = 1.",
+      "block5_accord": "Addition and Subtraction",
+      "block5_text": "Addition and subtraction are performed last (including the opposite symbol \"-\"). These are given equal priority as well. Similar to mutiplication and division, when a string of consecutive additions and subtractions are encountered, they are evaluated from left to right. For example, 10 - 3 + 2 is (10 - 3) + 2 = 9 and not 10 - (3 + 2) = 5.",
+      "block6_accord": "PEMDAS Mistakes",
+      "block6_text": "PEMDAS misleads some people into thinking muliplication has higher priority than division, and addition has higher priority than subtraction.. As described above, multiplication and division should be given equal priority, and addition and subtraction should also be given equal priority."
     },
     {
       "id": "esm_glossary_46",
@@ -1126,6 +1227,8 @@
     },
     {
       "id": "esm_glossary_47",
+      "topic_theme_1": "Geom_Shape_DS",
+      "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
@@ -1151,6 +1254,8 @@
     },
     {
       "id": "esm_glossary_48",
+      "topic_theme_1": "Geom_Shape_DS",
+      "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
@@ -1209,17 +1314,19 @@
           "eng": "part-whole"
         },
         "block1_text": {
-          "eng": "Breaking a whole larger collection into a group of smaller parts is an important developmental step and it is an essentail step in learning beginning addition and subtraction. Seeiing a small group as a unit is called **unitiziing.**\n\nFor example, seeing 7 things as being made up of two parts (or units) will help in understanding counting on, number bonds, addition, subtraction, and fact families. Going further, seeing 7 as being made up of the parts 3 and 4, which can be treated as individual units, will help greatly with understanding that 3 + 4 = 7, 4 + 3 = 7, 7 - 3 = 4, and 7 - 3 = 4 make up a fact family."
+          "eng": "Breaking a whole larger collection into a group of smaller parts is an important developmental step. It is an essentail step in learning beginning addition and subtraction. Seeiing a small group as a unit is called **unitiziing.**\n\n**Example:** Seeing 7 things as being made up of two parts (or units) will help in understanding counting on, number bonds, addition, subtraction, and fact families. Going further, seeing 7 as being made up of the parts 3 and 4, which can be treated as individual units, will help greatly with understanding that 3 + 4 = 7, 4 + 3 = 7, 7 - 3 = 4, and 7 - 3 = 4 make up a fact family."
         },
         "block2_text": {
           "eng": "Example: draw a pretty picture."
         }
       },
-      "block1_text": "Breaking a whole larger collection into a group of smaller parts is an important developmental step and it is an essentail step in learning beginning addition and subtraction. Seeiing a small group as a unit is called **unitiziing.**\n\nFor example, seeing 7 things as being made up of two parts (or units) will help in understanding counting on, number bonds, addition, subtraction, and fact families. Going further, seeing 7 as being made up of the parts 3 and 4, which can be treated as individual units, will help greatly with understanding that 3 + 4 = 7, 4 + 3 = 7, 7 - 3 = 4, and 7 - 3 = 4 make up a fact family.",
+      "block1_text": "Breaking a whole larger collection into a group of smaller parts is an important developmental step. It is an essentail step in learning beginning addition and subtraction. Seeiing a small group as a unit is called **unitiziing.**\n\n**Example:** Seeing 7 things as being made up of two parts (or units) will help in understanding counting on, number bonds, addition, subtraction, and fact families. Going further, seeing 7 as being made up of the parts 3 and 4, which can be treated as individual units, will help greatly with understanding that 3 + 4 = 7, 4 + 3 = 7, 7 - 3 = 4, and 7 - 3 = 4 make up a fact family.",
       "block2_text": "Example: draw a pretty picture."
     },
     {
       "id": "esm_glossary_51",
+      "topic_theme_1": "Geom_Pat_Intro",
+      "topic_theme_2": "Geom_Pat_MSP",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
@@ -1264,6 +1371,8 @@
     },
     {
       "id": "esm_glossary_53",
+      "topic_theme_1": "Geom_Shape_DS",
+      "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
@@ -1289,6 +1398,8 @@
     },
     {
       "id": "esm_glossary_54",
+      "topic_theme_1": "Geom_Shape_DS",
+      "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
@@ -1339,6 +1450,8 @@
     },
     {
       "id": "esm_glossary_56",
+      "topic_theme_1": "Geom_Shape_DS",
+      "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
@@ -1364,6 +1477,8 @@
     },
     {
       "id": "esm_glossary_57",
+      "topic_theme_1": "Geom_Shape_DS",
+      "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
@@ -1389,6 +1504,8 @@
     },
     {
       "id": "esm_glossary_58",
+      "topic_theme_1": "Geom_Shape_DS",
+      "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
@@ -1414,6 +1531,8 @@
     },
     {
       "id": "esm_glossary_59",
+      "topic_theme_1": "Geom_Shape_DS",
+      "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
@@ -1439,6 +1558,8 @@
     },
     {
       "id": "esm_glossary_60",
+      "topic_theme_1": "Geom_Shape_DS",
+      "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
@@ -1464,6 +1585,8 @@
     },
     {
       "id": "esm_glossary_61",
+      "topic_theme_1": "Geom_Shape_DS",
+      "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
@@ -1533,6 +1656,8 @@
     },
     {
       "id": "esm_glossary_64",
+      "topic_theme_1": "Geom_Shape_DS",
+      "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
@@ -1558,6 +1683,8 @@
     },
     {
       "id": "esm_glossary_65",
+      "topic_theme_1": "Geom_Shape_DS",
+      "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
@@ -1583,6 +1710,8 @@
     },
     {
       "id": "esm_glossary_66",
+      "topic_theme_1": "Geom_Shape_DS",
+      "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
@@ -1608,6 +1737,8 @@
     },
     {
       "id": "esm_glossary_67",
+      "topic_theme_1": "Geom_Shape_DS",
+      "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
@@ -1633,6 +1764,8 @@
     },
     {
       "id": "esm_glossary_68",
+      "topic_theme_1": "Geom_Shape_DS",
+      "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
@@ -1658,6 +1791,8 @@
     },
     {
       "id": "esm_glossary_69",
+      "topic_theme_1": "Geom_Shape_DS",
+      "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
@@ -1683,6 +1818,8 @@
     },
     {
       "id": "esm_glossary_70",
+      "topic_theme_1": "Geom_Pat_Intro",
+      "topic_theme_2": "Geom_Pat_MSP",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "phrase": "repeating pattern",
@@ -1702,6 +1839,8 @@
     },
     {
       "id": "esm_glossary_71",
+      "topic_theme_1": "Geom_Shape_DS",
+      "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "phrase": "right angle",
@@ -1721,6 +1860,8 @@
     },
     {
       "id": "esm_glossary_72",
+      "topic_theme_1": "Geom_Shape_DS",
+      "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
@@ -1746,6 +1887,8 @@
     },
     {
       "id": "esm_glossary_73",
+      "topic_theme_1": "Geom_Shape_DS",
+      "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
@@ -1771,6 +1914,8 @@
     },
     {
       "id": "esm_glossary_74",
+      "topic_theme_1": "Geom_Shape_DS",
+      "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
@@ -1796,6 +1941,7 @@
     },
     {
       "id": "esm_glossary_75",
+      "topic_theme_1": "NPV_QC10_Sub10",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
@@ -1896,6 +2042,8 @@
     },
     {
       "id": "esm_glossary_79",
+      "topic_theme_1": "Geom_Shape_DS",
+      "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
@@ -1946,6 +2094,8 @@
     },
     {
       "id": "esm_glossary_81",
+      "topic_theme_1": "Geom_Shape_DS",
+      "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
@@ -1971,6 +2121,8 @@
     },
     {
       "id": "esm_glossary_82",
+      "topic_theme_1": "Geom_Shape_DS",
+      "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
@@ -1996,6 +2148,8 @@
     },
     {
       "id": "esm_glossary_83",
+      "topic_theme_1": "Geom_Shape_DS",
+      "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
@@ -2021,6 +2175,7 @@
     },
     {
       "id": "esm_glossary_84",
+      "topic_theme_1": "NPV_QC10_Sub10",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
@@ -2071,6 +2226,8 @@
     },
     {
       "id": "esm_glossary_86",
+      "topic_theme_1": "Geom_Shape_DS",
+      "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
@@ -2096,6 +2253,8 @@
     },
     {
       "id": "esm_glossary_87",
+      "topic_theme_1": "Geom_Shape_DS",
+      "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
