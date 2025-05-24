@@ -43,13 +43,13 @@
           "eng": "acute triangle"
         },
         "block1_text": {
-          "eng": "An acute triangle is a triangle with three acute angles."
+          "eng": "An acute triangle is a triangle with three acute angles, that is, all its angles are less than 90 degrees."
         },
         "block2_text": {
           "eng": "Examples: draw a picture of an acute triangle"
         }
       },
-      "block1_text": "An acute triangle is a triangle with three acute angles.",
+      "block1_text": "An acute triangle is a triangle with three acute angles, that is, all its angles are less than 90 degrees.",
       "block2_text": "Examples: draw a picture of an acute triangle"
     },
     {
@@ -81,6 +81,8 @@
     },
     {
       "id": "esm_glossary_4",
+      "topic_theme_1": "Geom_Shape_DS",
+      "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
@@ -95,13 +97,13 @@
           "eng": "angle measure"
         },
         "block1_text": {
-          "eng": "This measure is the size of an angle, usually measured in degrees in the earlier school years. 90 degrees is the size of an angle formed at the corner of most pieces of paper."
+          "eng": "This measure is the size of an angle, usually measured in degrees in the earlier school years. 90 degrees is the size of an angle formed at the corner of most pieces of paper. 180 degrees is the measure of a straight angle, and 360 degrees is the measure of one full turn."
         },
         "block2_text": {
           "eng": "Example: draw pictures of a 90 degree and a 20 degree angle, with the size of the angle indicated"
         }
       },
-      "block1_text": "This measure is the size of an angle, usually measured in degrees in the earlier school years. 90 degrees is the size of an angle formed at the corner of most pieces of paper.",
+      "block1_text": "This measure is the size of an angle, usually measured in degrees in the earlier school years. 90 degrees is the size of an angle formed at the corner of most pieces of paper. 180 degrees is the measure of a straight angle, and 360 degrees is the measure of one full turn.",
       "block2_text": "Example: draw pictures of a 90 degree and a 20 degree angle, with the size of the angle indicated"
     },
     {
@@ -428,6 +430,11 @@
     },
     {
       "id": "esm_glossary_17",
+      "topic_theme_1": "NO_NT_EvenOdd",
+      "topic_theme_2": "NO_AS10_AT",
+      "topic_theme_3": "NO_AS10_ANT",
+      "topic_theme_4": "NO_MSD_Doubling",
+      "topic_theme_5": "NO_MSD_Skipping",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
@@ -1076,6 +1083,11 @@
     },
     {
       "id": "esm_glossary_43",
+      "topic_theme_1": "NO_NT_EvenOdd",
+      "topic_theme_2": "NO_AS10_AT",
+      "topic_theme_3": "NO_AS10_ANT",
+      "topic_theme_4": "NO_MSD_Doubling",
+      "topic_theme_5": "NO_MSD_Skipping",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
@@ -1425,6 +1437,8 @@
     },
     {
       "id": "esm_glossary_55",
+      "topic_theme_1": "NPV_CPV100_PV20",
+      "topic_theme_2": "NPV_CPV100_CountPV100",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
@@ -1631,6 +1645,8 @@
     },
     {
       "id": "esm_glossary_63",
+      "topic_theme_1": "NO_AS10_AComm",
+      "topic_theme_2": "NO_MSD_MultCommutes",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
@@ -2042,6 +2058,25 @@
     },
     {
       "id": "esm_glossary_79",
+      "dont_use_glossary_button": true,
+      "block1_type": "all_text",
+      "phrase": "tessellation",
+      "_translations": {
+        "phrase": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "phrase": {
+          "eng": "tessellation"
+        },
+        "block1_text": {
+          "eng": "See \"tiling.\""
+        }
+      },
+      "block1_text": "See \"tiling.\""
+    },
+    {
+      "id": "esm_glossary_80",
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
@@ -2068,7 +2103,7 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "esm_glossary_80",
+      "id": "esm_glossary_81",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
@@ -2093,7 +2128,7 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "esm_glossary_81",
+      "id": "esm_glossary_82",
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
@@ -2120,7 +2155,7 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "esm_glossary_82",
+      "id": "esm_glossary_83",
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
@@ -2137,17 +2172,17 @@
           "eng": "triangles - types"
         },
         "block1_text": {
-          "eng": "Triangles are usually described in terms of their side lengths or their angle measures.\n\nSide lengths:\n1. **Equilateral** – All three side lengths are the same. This also forces all angles to be 60 degrees. It is also a **regular triangle.**\n2. **Isosceles** – Two side lengths are the same. This also forces two angles to be the same.\n3. **Scalene** – No two side lengths are the same. This also forces that no two angles are the same.\n\nAngle measures:\n1. **Obtuse** – One angle is larger than 90 degrees (obtuse).\n2. **Right** – One angle is equal to 90 degrees.\n3. **Acute** – All three angles are less than 90 degrees (acute).\n4. Two angles the same – This is an isosceles triangle with two equal sides.\n5. **Equiangular** – All three angles are 60 degrees. It is also **equilateral** and **regular.**"
+          "eng": "Triangles are usually described in terms of their side lengths or their angle measures.\n\nSide lengths:\n1. **Equilateral** – All three side lengths are the same. This also forces all angles to be 60 degrees. It is also a **regular triangle.**\n2. **Isosceles** – Two side lengths are the same. This also forces two angles to be the same.\n3. **Scalene** – No two side lengths are the same. This also forces that no two angles are the same.\n\nAngle measures:\n1. **Obtuse** – One angle is larger than 90 degrees (obtuse).\n2. **Right** – One angle is equal to 90 degrees.\n3. **Acute** – All three angles are less than 90 degrees (acute).\n4. Two angles the same – This is an isosceles triangle with two equal sides.\n5. **Equiangular** – All three angles are 60 degrees. It is also **equilateral** and **regular.**\n\nA regular triangle is one that is both equangular and equilateral (which is what a regular polygon is for any number of sides). A triangle has three equal angles if and only if it has three equal sides. So, for triangles, being regular, equiangular, and equilateral are all the same.\n\nA triangle has two equal angles if and only if it has two equal sides. Thus, an isosceles triangle could be defined as one that has two equal angles. However, given the name we use (which is a translation of \"two equal sides\"), the two equal sides definition is more natural."
         },
         "block2_text": {
           "eng": "Example: draw a pretty picture."
         }
       },
-      "block1_text": "Triangles are usually described in terms of their side lengths or their angle measures.\n\nSide lengths:\n1. **Equilateral** – All three side lengths are the same. This also forces all angles to be 60 degrees. It is also a **regular triangle.**\n2. **Isosceles** – Two side lengths are the same. This also forces two angles to be the same.\n3. **Scalene** – No two side lengths are the same. This also forces that no two angles are the same.\n\nAngle measures:\n1. **Obtuse** – One angle is larger than 90 degrees (obtuse).\n2. **Right** – One angle is equal to 90 degrees.\n3. **Acute** – All three angles are less than 90 degrees (acute).\n4. Two angles the same – This is an isosceles triangle with two equal sides.\n5. **Equiangular** – All three angles are 60 degrees. It is also **equilateral** and **regular.**",
+      "block1_text": "Triangles are usually described in terms of their side lengths or their angle measures.\n\nSide lengths:\n1. **Equilateral** – All three side lengths are the same. This also forces all angles to be 60 degrees. It is also a **regular triangle.**\n2. **Isosceles** – Two side lengths are the same. This also forces two angles to be the same.\n3. **Scalene** – No two side lengths are the same. This also forces that no two angles are the same.\n\nAngle measures:\n1. **Obtuse** – One angle is larger than 90 degrees (obtuse).\n2. **Right** – One angle is equal to 90 degrees.\n3. **Acute** – All three angles are less than 90 degrees (acute).\n4. Two angles the same – This is an isosceles triangle with two equal sides.\n5. **Equiangular** – All three angles are 60 degrees. It is also **equilateral** and **regular.**\n\nA regular triangle is one that is both equangular and equilateral (which is what a regular polygon is for any number of sides). A triangle has three equal angles if and only if it has three equal sides. So, for triangles, being regular, equiangular, and equilateral are all the same.\n\nA triangle has two equal angles if and only if it has two equal sides. Thus, an isosceles triangle could be defined as one that has two equal angles. However, given the name we use (which is a translation of \"two equal sides\"), the two equal sides definition is more natural.",
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "esm_glossary_83",
+      "id": "esm_glossary_84",
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
@@ -2174,7 +2209,7 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "esm_glossary_84",
+      "id": "esm_glossary_85",
       "topic_theme_1": "NPV_QC10_Sub10",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
@@ -2200,7 +2235,7 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "esm_glossary_85",
+      "id": "esm_glossary_86",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
@@ -2225,7 +2260,7 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "esm_glossary_86",
+      "id": "esm_glossary_87",
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
@@ -2252,7 +2287,7 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "esm_glossary_87",
+      "id": "esm_glossary_88",
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
@@ -2279,7 +2314,7 @@
       "block2_text": "Example: draw a pretty picture."
     },
     {
-      "id": "esm_glossary_88",
+      "id": "esm_glossary_89",
       "dont_use_glossary_button": true,
       "block1_type": "all_text",
       "block2_type": "all_text",
