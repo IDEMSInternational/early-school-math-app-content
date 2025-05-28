@@ -59,7 +59,7 @@
         {
           "type": "text",
           "name": "help_text",
-          "value": "Rich tasks are flexible and encourage exploration. They typically accomodate all students by having low floors and high ceilings.",
+          "value": "Rich tasks are deeper dives into material.  They are flexible and encourage exploration. They typically accomodate all students by having low floors and high ceilings.",
           "_translations": {
             "value": {}
           },
@@ -167,30 +167,6 @@
             "text_align": "center"
           },
           "_nested_name": "dg_info.button_ps_tasks"
-        },
-        {
-          "type": "button",
-          "name": "button_problem_solving",
-          "value": "Problem Solving Overview",
-          "_translations": {
-            "value": {}
-          },
-          "action_list": [
-            {
-              "trigger": "click",
-              "action_id": "go_to",
-              "args": [
-                "esm_rt_problem_solving"
-              ],
-              "_raw": "click | go_to: esm_rt_problem_solving",
-              "_cleaned": "click | go_to: esm_rt_problem_solving"
-            }
-          ],
-          "parameter_list": {
-            "style": "short",
-            "text_align": "center"
-          },
-          "_nested_name": "dg_info.button_problem_solving"
         }
       ],
       "_nested_name": "dg_info"
