@@ -287,7 +287,7 @@
       "glossary_1": "subitizing",
       "glossary_2": "unitizing",
       "glossary_3": "counting on",
-      "block1_type": "all_illust",
+      "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMDotsDouble1Plus1.svg",
       "block1_illust_max_size": "270px",
       "block2_type": "illust_below",
@@ -316,7 +316,7 @@
           "eng": "Small Doubles Plus 1"
         },
         "block1_text": {
-          "eng": "<center>1 + 1 + 1 = 3</center>"
+          "eng": "<br><center>1 + 1 + 1 = 3</center>"
         },
         "block2_text": {
           "eng": "<br><center>2 + 2 + 1 = 5</center>"
@@ -331,7 +331,7 @@
           "eng": "<br><center>5 + 5 + 1 = 11</center>"
         }
       },
-      "block1_text": "<center>1 + 1 + 1 = 3</center>",
+      "block1_text": "<br><center>1 + 1 + 1 = 3</center>",
       "block2_text": "<br><center>2 + 2 + 1 = 5</center>",
       "block3_text": "<br><center>3 + 3 + 1 = 7</center>",
       "block4_text": "<br><center>4 + 4 + 1 = 9</center>",
@@ -433,63 +433,118 @@
       "type": "structured",
       "topic_theme_1": "NO_AS10_AT",
       "glossary_count": 0,
-      "block1_type": "all_illust",
+      "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMDotsDoubles5.svg",
       "block1_illust_max_size": "270px",
-      "block2_type": "all_illust",
+      "block2_type": "illust_below",
       "block2_illust": "ESMIll/ESMDotsDoubles6.svg",
       "block2_illust_max_size": "290px",
-      "block3_type": "all_illust",
+      "block3_type": "illust_below",
       "block3_illust": "ESMIll/ESMDotsDoubles7.svg",
       "block3_illust_max_size": "270px",
-      "block4_type": "all_illust",
+      "block4_type": "illust_below",
       "block4_illust": "ESMIll/ESMDotsDoubles8.svg",
       "block4_illust_max_size": "270px",
-      "block5_type": "all_illust",
+      "block5_type": "illust_below",
       "block5_illust": "ESMIll/ESMDotsDoubles9.svg",
       "block5_illust_max_size": "270px",
-      "block6_type": "all_illust",
+      "block6_type": "illust_below",
       "block6_illust": "ESMIll/ESMDotsDoubles10.svg",
       "block6_illust_max_size": "270px",
       "name": "Larger Doubles to 20",
       "_translations": {
-        "name": {}
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {},
+        "block5_text": {},
+        "block6_text": {}
       },
       "_translatedFields": {
         "name": {
           "eng": "Larger Doubles to 20"
+        },
+        "block1_text": {
+          "eng": "<br><center>5 + 5 = 10</center>"
+        },
+        "block2_text": {
+          "eng": "<br><center>6 + 6 = 12 or (4 + 2) + (4 + 2) = 12</center>\n<center>or 2 + 8 + 2 = 12</center>"
+        },
+        "block3_text": {
+          "eng": "<br><center>7 + 7 = 14 or (5 + 2) + (5 + 2) = 14</center>\n<center>or (6 + 1) + (6 + 1) = 14</center>"
+        },
+        "block4_text": {
+          "eng": "<br><center>8 + 8 = 16 or (4 + 4) + (4 + 4) = 16</center>\n<center>or (5 + 3) + (5 + 3) = 16</center>"
+        },
+        "block5_text": {
+          "eng": "<br><center>9 + 9 = 18 or (5 + 4) + (5 + 4) = 18</center>\n<center>or (2 + 5 + 2) + (2 + 5 + 2) = 18</center>"
+        },
+        "block6_text": {
+          "eng": "<br><center>10 + 10 = 20 or (5 + 5) + (5 + 5) = 20</center>"
         }
-      }
+      },
+      "block1_text": "<br><center>5 + 5 = 10</center>",
+      "block2_text": "<br><center>6 + 6 = 12 or (4 + 2) + (4 + 2) = 12</center>\n<center>or 2 + 8 + 2 = 12</center>",
+      "block3_text": "<br><center>7 + 7 = 14 or (5 + 2) + (5 + 2) = 14</center>\n<center>or (6 + 1) + (6 + 1) = 14</center>",
+      "block4_text": "<br><center>8 + 8 = 16 or (4 + 4) + (4 + 4) = 16</center>\n<center>or (5 + 3) + (5 + 3) = 16</center>",
+      "block5_text": "<br><center>9 + 9 = 18 or (5 + 4) + (5 + 4) = 18</center>\n<center>or (2 + 5 + 2) + (2 + 5 + 2) = 18</center>",
+      "block6_text": "<br><center>10 + 10 = 20 or (5 + 5) + (5 + 5) = 20</center>"
     },
     {
       "id": "esm_dt_one_or_two_more_10_to_20",
       "type": "structured",
       "topic_theme_1": "NO_AS10_AS1and2",
       "glossary_count": 0,
-      "block1_type": "all_illust",
+      "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMDots10And1or2-11-13.svg",
       "block1_illust_max_size": "270px",
-      "block2_type": "all_illust",
+      "block2_type": "illust_below",
       "block2_illust": "ESMIll/ESMDots10And1or2-12-14.svg",
       "block2_illust_max_size": "270px",
-      "block3_type": "all_illust",
+      "block3_type": "illust_below",
       "block3_illust": "ESMIll/ESMDots10And1or2-15-16.svg",
       "block3_illust_max_size": "270px",
-      "block4_type": "all_illust",
+      "block4_type": "illust_below",
       "block4_illust": "ESMIll/ESMDots10And1or2-13-18.svg",
       "block4_illust_max_size": "270px",
-      "block5_type": "all_illust",
+      "block5_type": "illust_below",
       "block5_illust": "ESMIll/ESMDots10And1or2-17-19.svg",
       "block5_illust_max_size": "270px",
       "name": "10 to 20 Plus 1 or 2",
       "_translations": {
-        "name": {}
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {},
+        "block5_text": {}
       },
       "_translatedFields": {
         "name": {
           "eng": "10 to 20 Plus 1 or 2"
+        },
+        "block1_text": {
+          "eng": "<br><center>11 + 2 = 13; and 13 + 1 = 14</center>"
+        },
+        "block2_text": {
+          "eng": "<br><center>12 + 1 = 13; and 14 + 2 = 16</center>"
+        },
+        "block3_text": {
+          "eng": "<br><center>15 + 1 = 16; and 16 + 2 = 18</center>"
+        },
+        "block4_text": {
+          "eng": "<br><center>13 + 2 = 15; and 18 + 1 = 19</center>"
+        },
+        "block5_text": {
+          "eng": "<br><center>17 + 2 = 19; and 19 + 1 = 20</center>"
         }
-      }
+      },
+      "block1_text": "<br><center>11 + 2 = 13; and 13 + 1 = 14</center>",
+      "block2_text": "<br><center>12 + 1 = 13; and 14 + 2 = 16</center>",
+      "block3_text": "<br><center>15 + 1 = 16; and 16 + 2 = 18</center>",
+      "block4_text": "<br><center>13 + 2 = 15; and 18 + 1 = 19</center>",
+      "block5_text": "<br><center>17 + 2 = 19; and 19 + 1 = 20</center>"
     },
     {
       "id": "esm_dt_making_10s_addition_strategy",
@@ -499,47 +554,92 @@
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMDotsMaking10-9-6.svg",
       "block1_illust_max_size": "300px",
-      "block2_type": "all_illust",
+      "block2_type": "illust_below",
       "block2_illust": "ESMIll/ESMDotsMaking10-9-8.svg",
       "block2_illust_max_size": "300px",
-      "block3_type": "all_illust",
+      "block3_type": "illust_below",
       "block3_illust": "ESMIll/ESMDotsMaking10-9-4.svg",
       "block3_illust_max_size": "300px",
-      "block4_type": "all_illust",
+      "block4_type": "illust_below",
       "block4_illust": "ESMIll/ESMDotsMaking10-8-7.svg",
       "block4_illust_max_size": "300px",
-      "block5_type": "all_illust",
+      "block5_type": "illust_below",
       "block5_illust": "ESMIll/ESMDotsMaking10-8-6.svg",
       "block5_illust_max_size": "300px",
-      "block6_type": "all_illust",
+      "block6_type": "illust_below",
       "block6_illust": "ESMIll/ESMDotsMaking10-8-3.svg",
       "block6_illust_max_size": "300px",
-      "block7_type": "all_illust",
+      "block7_type": "illust_below",
       "block7_illust": "ESMIll/ESMDotsMaking10-7-6.svg",
       "block7_illust_max_size": "300px",
-      "block8_type": "all_illust",
+      "block8_type": "illust_below",
       "block8_illust": "ESMIll/ESMDotsMaking10-7-5.svg",
       "block8_illust_max_size": "300px",
-      "block9_type": "all_illust",
+      "block9_type": "illust_below",
       "block9_illust": "ESMIll/ESMDotsMaking10-6-5.svg",
       "block9_illust_max_size": "300px",
-      "block10_type": "all_illust",
+      "block10_type": "illust_below",
       "block10_illust": "ESMIll/ESMDotsMaking10-6-4.svg",
       "block10_illust_max_size": "300px",
       "name": "Making 10s – Addition Strategy",
       "_translations": {
         "name": {},
-        "block1_text": {}
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {},
+        "block5_text": {},
+        "block6_text": {},
+        "block7_text": {},
+        "block8_text": {},
+        "block9_text": {},
+        "block10_text": {}
       },
       "_translatedFields": {
         "name": {
           "eng": "Making 10s – Addition Strategy"
         },
         "block1_text": {
-          "eng": "These use ten frames to take a calculation, such as 9 + 6, and use \"Making 10s\" to turn it into 10 + 5."
+          "eng": "These use ten frames to take a calculation, such as 9 + 6, and use \"Making 10s\" to turn it into 10 + 5.\n\n<center>9 + 6 → 10 + 5 = 15</center>"
+        },
+        "block2_text": {
+          "eng": "<br><center>9 + 8 → 10 + 7 = 17</center>"
+        },
+        "block3_text": {
+          "eng": "<br><center>9 + 4 → 10 + 3 = 13</center>"
+        },
+        "block4_text": {
+          "eng": "<br><center>8 + 7 → 10 + 5 = 15</center>"
+        },
+        "block5_text": {
+          "eng": "<br><center>8 + 6 → 10 + 4 = 14</center>"
+        },
+        "block6_text": {
+          "eng": "<br><center>8 + 3 → 10 + 1 = 11</center>"
+        },
+        "block7_text": {
+          "eng": "<br><center>7 + 6 → 10 + 3 = 13</center>"
+        },
+        "block8_text": {
+          "eng": "<br><center>7 + 5 → 10 + 2 = 12</center>"
+        },
+        "block9_text": {
+          "eng": "<br><center>6 + 5 → 10 + 1 = 11</center>"
+        },
+        "block10_text": {
+          "eng": "<br><center>6 + 4 → 10 + 0 = 10</center>"
         }
       },
-      "block1_text": "These use ten frames to take a calculation, such as 9 + 6, and use \"Making 10s\" to turn it into 10 + 5."
+      "block1_text": "These use ten frames to take a calculation, such as 9 + 6, and use \"Making 10s\" to turn it into 10 + 5.\n\n<center>9 + 6 → 10 + 5 = 15</center>",
+      "block2_text": "<br><center>9 + 8 → 10 + 7 = 17</center>",
+      "block3_text": "<br><center>9 + 4 → 10 + 3 = 13</center>",
+      "block4_text": "<br><center>8 + 7 → 10 + 5 = 15</center>",
+      "block5_text": "<br><center>8 + 6 → 10 + 4 = 14</center>",
+      "block6_text": "<br><center>8 + 3 → 10 + 1 = 11</center>",
+      "block7_text": "<br><center>7 + 6 → 10 + 3 = 13</center>",
+      "block8_text": "<br><center>7 + 5 → 10 + 2 = 12</center>",
+      "block9_text": "<br><center>6 + 5 → 10 + 1 = 11</center>",
+      "block10_text": "<br><center>6 + 4 → 10 + 0 = 10</center>"
     }
   ],
   "_xlsxPath": "EFM_routines_high_level_sheets.xlsx",

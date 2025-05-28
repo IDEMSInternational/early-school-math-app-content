@@ -10,33 +10,63 @@
       "topic_theme_2": "NPV_QC10_Sub10",
       "topic_theme_3": "NO_ASSD_ASto10",
       "topic_theme_4": "NO_AS10_NBFF",
-      "block1_type": "all_illust",
+      "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMSplats1Color1Splat5-2.svg",
       "block1_illust_max_size": "350px",
-      "block2_type": "all_illust",
+      "block2_type": "illust_below",
       "block2_illust": "ESMIll/ESMSplats1Color1Splat6-1.svg",
       "block2_illust_max_size": "350px",
-      "block3_type": "all_illust",
+      "block3_type": "illust_below",
       "block3_illust": "ESMIll/ESMSplats1Color1Splat8-3.svg",
       "block3_illust_max_size": "350px",
-      "block4_type": "all_illust",
+      "block4_type": "illust_below",
       "block4_illust": "ESMIll/ESMSplats1Color1Splat8-0.svg",
       "block4_illust_max_size": "350px",
-      "block5_type": "all_illust",
+      "block5_type": "illust_below",
       "block5_illust": "ESMIll/ESMSplats1Color1Splat9-5.svg",
       "block5_illust_max_size": "350px",
-      "block6_type": "all_illust",
+      "block6_type": "illust_below",
       "block6_illust": "ESMIll/ESMSplats1Color1Splat10-10.svg",
       "block6_illust_max_size": "350px",
       "name": "Single Splats",
       "_translations": {
-        "name": {}
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {},
+        "block5_text": {},
+        "block6_text": {}
       },
       "_translatedFields": {
         "name": {
           "eng": "Single Splats"
+        },
+        "block1_text": {
+          "eng": "<br><center>2 + ? = 5</center>"
+        },
+        "block2_text": {
+          "eng": "<br><center>1 + ? = 6</center>"
+        },
+        "block3_text": {
+          "eng": "<br><center>3 + ? = 8</center>"
+        },
+        "block4_text": {
+          "eng": "<br><center>0 + ? = 8</center>"
+        },
+        "block5_text": {
+          "eng": "<br><center>5 + ? = 9</center>"
+        },
+        "block6_text": {
+          "eng": "<br><center>10 + ? = 10</center>"
         }
-      }
+      },
+      "block1_text": "<br><center>2 + ? = 5</center>",
+      "block2_text": "<br><center>1 + ? = 6</center>",
+      "block3_text": "<br><center>3 + ? = 8</center>",
+      "block4_text": "<br><center>0 + ? = 8</center>",
+      "block5_text": "<br><center>5 + ? = 9</center>",
+      "block6_text": "<br><center>10 + ? = 10</center>"
     },
     {
       "id": "esm_splats_combos_for_5_to_10",
@@ -62,10 +92,10 @@
           "eng": "Combinations of 5 to 10"
         },
         "block1_text": {
-          "eng": "Do several Splats in a row with the same number of dots to emphasize the different combinations that make that number. Use familiar dot arrangements that allow for quick subitizing of the dots."
+          "eng": "Do several Splats in a row with the same total number of dots to emphasize the different combinations that make that number. Use familiar dot arrangements that allow for quick subitizing of the dots."
         }
       },
-      "block1_text": "Do several Splats in a row with the same number of dots to emphasize the different combinations that make that number. Use familiar dot arrangements that allow for quick subitizing of the dots."
+      "block1_text": "Do several Splats in a row with the same total number of dots to emphasize the different combinations that make that number. Use familiar dot arrangements that allow for quick subitizing of the dots."
     },
     {
       "id": "esm_splats_double_same",
@@ -76,35 +106,60 @@
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMSplats1Color2-3Splat6-4.svg",
       "block1_illust_max_size": "350px",
-      "block2_type": "all_illust",
+      "block2_type": "illust_below",
       "block2_illust": "ESMIll/ESMSplats1Color2-3Splat7-1.svg",
       "block2_illust_max_size": "350px",
-      "block3_type": "all_illust",
+      "block3_type": "illust_below",
       "block3_illust": "ESMIll/ESMSplats1Color2-3Splat9-5.svg",
       "block3_illust_max_size": "350px",
-      "block4_type": "all_illust",
+      "block4_type": "illust_below",
       "block4_illust": "ESMIll/ESMSplats1Color2-3Splat12-6.svg",
       "block4_illust_max_size": "350px",
-      "block5_type": "all_illust",
+      "block5_type": "illust_below",
       "block5_illust": "ESMIll/ESMSplats1Color2-3Splat9-3.svg",
       "block5_illust_max_size": "350px",
-      "block6_type": "all_illust",
+      "block6_type": "illust_below",
       "block6_illust": "ESMIll/ESMSplats1Color2-3Splat14-5.svg",
       "block6_illust_max_size": "350px",
       "name": "2-3 Splats with Same Color",
       "_translations": {
         "name": {},
-        "block1_text": {}
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {},
+        "block5_text": {},
+        "block6_text": {}
       },
       "_translatedFields": {
         "name": {
           "eng": "2-3 Splats with Same Color"
         },
         "block1_text": {
-          "eng": "Splats with the same color have the same number of dots hidden beneath them."
+          "eng": "Splats with the same color have the same number of dots hidden beneath them.\n\n<center>4 + ? = 6; then A + A = 2</center>"
+        },
+        "block2_text": {
+          "eng": "<br><center>1 + ? = 7; then A + A = 6</center>"
+        },
+        "block3_text": {
+          "eng": "<br><center>5 + ? = 9; then A + A = 4</center>"
+        },
+        "block4_text": {
+          "eng": "<br><center>6 + ? = 12; then A + A = 6</center>"
+        },
+        "block5_text": {
+          "eng": "<br><center>3 + ? = 9; then A + A + A = 6</center>"
+        },
+        "block6_text": {
+          "eng": "<br><center>5 + ? = 14;  then A + A + A = 9</center>"
         }
       },
-      "block1_text": "Splats with the same color have the same number of dots hidden beneath them."
+      "block1_text": "Splats with the same color have the same number of dots hidden beneath them.\n\n<center>4 + ? = 6; then A + A = 2</center>",
+      "block2_text": "<br><center>1 + ? = 7; then A + A = 6</center>",
+      "block3_text": "<br><center>5 + ? = 9; then A + A = 4</center>",
+      "block4_text": "<br><center>6 + ? = 12; then A + A = 6</center>",
+      "block5_text": "<br><center>3 + ? = 9; then A + A + A = 6</center>",
+      "block6_text": "<br><center>5 + ? = 14;  then A + A + A = 9</center>"
     },
     {
       "id": "esm_splats_double_different",
@@ -115,33 +170,52 @@
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMSplats2Color2-3Splat5-1.svg",
       "block1_illust_max_size": "350px",
-      "block2_type": "all_illust",
+      "block2_type": "illust_below",
       "block2_illust": "ESMIll/ESMSplats2Color2-3Splat6-3.svg",
       "block2_illust_max_size": "350px",
-      "block3_type": "all_illust",
+      "block3_type": "illust_below",
       "block3_illust": "ESMIll/ESMSplats2Color2-3Splat7-2.svg",
       "block3_illust_max_size": "350px",
-      "block4_type": "all_illust",
+      "block4_type": "illust_below",
       "block4_illust": "ESMIll/ESMSplats2Color2-3Splat9-1.svg",
       "block4_illust_max_size": "350px",
-      "block5_type": "all_illust",
+      "block5_type": "illust_below",
       "block5_illust": "ESMIll/ESMSplats2Color2-3Splat10-3.svg",
       "block5_illust_max_size": "350px",
-      "block6_illust_max_size": "350px",
       "name": "2 Splats with DIfferent Colors",
       "_translations": {
         "name": {},
-        "block1_text": {}
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {},
+        "block5_text": {}
       },
       "_translatedFields": {
         "name": {
           "eng": "2 Splats with DIfferent Colors"
         },
         "block1_text": {
-          "eng": "Splats with different colors have different numbers of dots hidden beneath them."
+          "eng": "Splats with different colors have different numbers of dots hidden beneath them. Remember that there may be more than one answer.\n\n<center>1 + ? = 5; then A + B = 4</center>"
+        },
+        "block2_text": {
+          "eng": "<br><center>3 + ? = 6; then A + B = 3</center>"
+        },
+        "block3_text": {
+          "eng": "<br><center>2 + ? = 7; then A + B = 5</center>"
+        },
+        "block4_text": {
+          "eng": "<br><center>1 + ? = 9; then A + B = 8</center>"
+        },
+        "block5_text": {
+          "eng": "<br><center>3 + ? = 10; then A + B = 7</center>"
         }
       },
-      "block1_text": "Splats with different colors have different numbers of dots hidden beneath them."
+      "block1_text": "Splats with different colors have different numbers of dots hidden beneath them. Remember that there may be more than one answer.\n\n<center>1 + ? = 5; then A + B = 4</center>",
+      "block2_text": "<br><center>3 + ? = 6; then A + B = 3</center>",
+      "block3_text": "<br><center>2 + ? = 7; then A + B = 5</center>",
+      "block4_text": "<br><center>1 + ? = 9; then A + B = 8</center>",
+      "block5_text": "<br><center>3 + ? = 10; then A + B = 7</center>"
     }
   ],
   "_xlsxPath": "EFM_routines_high_level_sheets.xlsx",

@@ -29,7 +29,7 @@
         {
           "type": "text",
           "name": "help_text",
-          "value": "There are three basic forms for demonstrating number sequences in a class. For any of these, you should start the numbers at 0 and have the numbers increase from left to right. The activity and the maturity of your students will dictate which of these options feels most appropriate.\n* A sequence of number cards. These can be propped up on a table or ledge, or they can be paper clipped on a string. Having an individual card for each number allows for more natural association with number cards you may be using for demonstration purposes, and it also allows them to be moved around or left out (for activities like \"put these in order\" or \"which one is missing.\"\n* A line with numbered tick marks, which is the traditional number line, but it is a little bit more abstract than the first option.\n* A path of numbers on the ground, which is called a number path.\n\n< put in illustrations for each of the three options >",
+          "value": "There are three forms for demonstrating number sequences in a class. Start the numbers at 0 and have the numbers increase from left to right. The activity and the maturity of your students will dictate which of these options feels most appropriate.\n* **Sequence of numbered cards** These can be propped up on a table or ledge, or be paper clipped on a string. Having an individual card for each number allows for more natural association with numbered cards you may be using for demonstration purposes. It also allows them to be moved around or left out (for activities like \"put these in order\" or \"which one is missing.\"\n* **Number Line** This is a line with numbered tick marks. It is a little bit more abstract than the first option.\n* **Number Path** A path of sequenced numbers on the ground.\n\n< put in illustrations for each of the three options >",
           "_translations": {
             "value": {}
           },
@@ -41,6 +41,268 @@
         }
       ],
       "_nested_name": "dg_info"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_num_line_talks",
+      "parameter_list": {
+        "style": "column"
+      },
+      "rows": [
+        {
+          "type": "text",
+          "name": "intro_text",
+          "value": "The number line talks are broken into levels of increasing mathematical skills.",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "dg_num_line_talks.intro_text"
+        },
+        {
+          "type": "accordion",
+          "name": "accordion_for_num_line_groups",
+          "parameter_list": {
+            "open_multiple": "TRUE"
+          },
+          "rows": [
+            {
+              "type": "items",
+              "name": "number_line_accordions",
+              "value": "@data.esm_num_line_data_list",
+              "rows": [
+                {
+                  "type": "accordion_section",
+                  "name": "accord_@item.id",
+                  "value": "@item.name",
+                  "parameter_list": {
+                    "text_align": "center",
+                    "style": "large emphasised"
+                  },
+                  "rows": [
+                    {
+                      "type": "display_group",
+                      "name": "dg_@item.id",
+                      "parameter_list": {
+                        "style": "column"
+                      },
+                      "rows": [
+                        {
+                          "name": "content_ptr",
+                          "value": "data.esm_num_line_data_list.@item.id",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "type": "set_variable",
+                          "_nested_name": "dg_num_line_talks.accordion_for_num_line_groups.number_line_accordions.accord_@item.id.dg_@item.id.content_ptr",
+                          "_dynamicFields": {
+                            "value": [
+                              {
+                                "fullExpression": "data.esm_num_line_data_list.@item.id",
+                                "matchedExpression": "@item.id",
+                                "type": "item",
+                                "fieldName": "id"
+                              }
+                            ],
+                            "_nested_name": [
+                              {
+                                "fullExpression": "dg_num_line_talks.accordion_for_num_line_groups.number_line_accordions.accord_@item.id.dg_@item.id.content_ptr",
+                                "matchedExpression": "@item.id.dg_",
+                                "type": "item",
+                                "fieldName": "id"
+                              },
+                              {
+                                "fullExpression": "dg_num_line_talks.accordion_for_num_line_groups.number_line_accordions.accord_@item.id.dg_@item.id.content_ptr",
+                                "matchedExpression": "@item.id.content_ptr",
+                                "type": "item",
+                                "fieldName": "id"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@item.id": [
+                              "value"
+                            ],
+                            "@item.id.dg_": [
+                              "_nested_name"
+                            ],
+                            "@item.id.content_ptr": [
+                              "_nested_name"
+                            ]
+                          }
+                        },
+                        {
+                          "type": "template",
+                          "name": "number_line_body_maker",
+                          "value": "esm_page_viewer",
+                          "rows": [
+                            {
+                              "name": "esm_content_ptr",
+                              "value": "@@local.content_ptr",
+                              "_translations": {
+                                "value": {}
+                              },
+                              "type": "set_variable",
+                              "_nested_name": "dg_num_line_talks.accordion_for_num_line_groups.number_line_accordions.accord_@item.id.dg_@item.id.number_line_body_maker.esm_content_ptr",
+                              "_dynamicFields": {
+                                "value": [
+                                  {
+                                    "fullExpression": "@@local.content_ptr",
+                                    "matchedExpression": "@local.content_ptr",
+                                    "type": "local",
+                                    "fieldName": "content_ptr"
+                                  }
+                                ],
+                                "_nested_name": [
+                                  {
+                                    "fullExpression": "dg_num_line_talks.accordion_for_num_line_groups.number_line_accordions.accord_@item.id.dg_@item.id.number_line_body_maker.esm_content_ptr",
+                                    "matchedExpression": "@item.id.dg_",
+                                    "type": "item",
+                                    "fieldName": "id"
+                                  },
+                                  {
+                                    "fullExpression": "dg_num_line_talks.accordion_for_num_line_groups.number_line_accordions.accord_@item.id.dg_@item.id.number_line_body_maker.esm_content_ptr",
+                                    "matchedExpression": "@item.id.number_line_body_maker.esm_content_ptr",
+                                    "type": "item",
+                                    "fieldName": "id"
+                                  }
+                                ]
+                              },
+                              "_dynamicDependencies": {
+                                "@local.content_ptr": [
+                                  "value"
+                                ],
+                                "@item.id.dg_": [
+                                  "_nested_name"
+                                ],
+                                "@item.id.number_line_body_maker.esm_content_ptr": [
+                                  "_nested_name"
+                                ]
+                              }
+                            }
+                          ],
+                          "_nested_name": "dg_num_line_talks.accordion_for_num_line_groups.number_line_accordions.accord_@item.id.dg_@item.id.number_line_body_maker",
+                          "_dynamicFields": {
+                            "_nested_name": [
+                              {
+                                "fullExpression": "dg_num_line_talks.accordion_for_num_line_groups.number_line_accordions.accord_@item.id.dg_@item.id.number_line_body_maker",
+                                "matchedExpression": "@item.id.dg_",
+                                "type": "item",
+                                "fieldName": "id"
+                              },
+                              {
+                                "fullExpression": "dg_num_line_talks.accordion_for_num_line_groups.number_line_accordions.accord_@item.id.dg_@item.id.number_line_body_maker",
+                                "matchedExpression": "@item.id.number_line_body_maker",
+                                "type": "item",
+                                "fieldName": "id"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@item.id.dg_": [
+                              "_nested_name"
+                            ],
+                            "@item.id.number_line_body_maker": [
+                              "_nested_name"
+                            ]
+                          }
+                        }
+                      ],
+                      "_nested_name": "dg_num_line_talks.accordion_for_num_line_groups.number_line_accordions.accord_@item.id.dg_@item.id",
+                      "_dynamicFields": {
+                        "name": [
+                          {
+                            "fullExpression": "dg_@item.id",
+                            "matchedExpression": "@item.id",
+                            "type": "item",
+                            "fieldName": "id"
+                          }
+                        ],
+                        "_nested_name": [
+                          {
+                            "fullExpression": "dg_num_line_talks.accordion_for_num_line_groups.number_line_accordions.accord_@item.id.dg_@item.id",
+                            "matchedExpression": "@item.id.dg_",
+                            "type": "item",
+                            "fieldName": "id"
+                          },
+                          {
+                            "fullExpression": "dg_num_line_talks.accordion_for_num_line_groups.number_line_accordions.accord_@item.id.dg_@item.id",
+                            "matchedExpression": "@item.id",
+                            "type": "item",
+                            "fieldName": "id"
+                          }
+                        ]
+                      },
+                      "_dynamicDependencies": {
+                        "@item.id": [
+                          "name",
+                          "_nested_name"
+                        ],
+                        "@item.id.dg_": [
+                          "_nested_name"
+                        ]
+                      }
+                    }
+                  ],
+                  "_nested_name": "dg_num_line_talks.accordion_for_num_line_groups.number_line_accordions.accord_@item.id",
+                  "_dynamicFields": {
+                    "name": [
+                      {
+                        "fullExpression": "accord_@item.id",
+                        "matchedExpression": "@item.id",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ],
+                    "value": [
+                      {
+                        "fullExpression": "@item.name",
+                        "matchedExpression": "@item.name",
+                        "type": "item",
+                        "fieldName": "name"
+                      }
+                    ],
+                    "_nested_name": [
+                      {
+                        "fullExpression": "dg_num_line_talks.accordion_for_num_line_groups.number_line_accordions.accord_@item.id",
+                        "matchedExpression": "@item.id",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@item.id": [
+                      "name",
+                      "_nested_name"
+                    ],
+                    "@item.name": [
+                      "value"
+                    ]
+                  }
+                }
+              ],
+              "_nested_name": "dg_num_line_talks.accordion_for_num_line_groups.number_line_accordions",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@data.esm_num_line_data_list",
+                    "matchedExpression": "@data.esm_num_line_data_list",
+                    "type": "data",
+                    "fieldName": "esm_num_line_data_list"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@data.esm_num_line_data_list": [
+                  "value"
+                ]
+              }
+            }
+          ],
+          "_nested_name": "dg_num_line_talks.accordion_for_num_line_groups"
+        }
+      ],
+      "_nested_name": "dg_num_line_talks"
     },
     {
       "type": "display_group",
