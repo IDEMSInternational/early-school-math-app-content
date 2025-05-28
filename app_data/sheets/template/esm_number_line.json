@@ -25,11 +25,14 @@
     {
       "type": "display_group",
       "name": "dg_info",
+      "parameter_list": {
+        "style": "column"
+      },
       "rows": [
         {
           "type": "text",
-          "name": "help_text",
-          "value": "There are three forms for demonstrating number sequences in a class. Start the numbers at 0 and have the numbers increase from left to right. The activity and the maturity of your students will dictate which of these options feels most appropriate.\n* **Sequence of numbered cards** These can be propped up on a table or ledge, or be paper clipped on a string. Having an individual card for each number allows for more natural association with numbered cards you may be using for demonstration purposes. It also allows them to be moved around or left out (for activities like \"put these in order\" or \"which one is missing.\"\n* **Number Line** This is a line with numbered tick marks. It is a little bit more abstract than the first option.\n* **Number Path** A path of sequenced numbers on the ground.\n\n< put in illustrations for each of the three options >",
+          "name": "intro_text",
+          "value": "There are three ways for presenting number sequences to a class. Always start the numbers at 0 and have the numbers increase from left to right.",
           "_translations": {
             "value": {}
           },
@@ -37,7 +40,132 @@
             "icon_src": "help",
             "style": "navigation"
           },
-          "_nested_name": "dg_info.help_text"
+          "_nested_name": "dg_info.intro_text"
+        },
+        {
+          "type": "display_group",
+          "name": "dg_nl_types",
+          "parameter_list": {
+            "style": "column"
+          },
+          "rows": [
+            {
+              "type": "accordion",
+              "name": "accordion_for_nl_types",
+              "parameter_list": {
+                "open_multiple": "TRUE"
+              },
+              "rows": [
+                {
+                  "type": "accordion_section",
+                  "name": "accord_numbered_cards",
+                  "value": "Numbered Cards in a Row",
+                  "parameter_list": {
+                    "text_align": "center",
+                    "style": "large emphasised"
+                  },
+                  "rows": [
+                    {
+                      "type": "display_group",
+                      "name": "dg_numbered_cards",
+                      "parameter_list": {
+                        "style": "column"
+                      },
+                      "rows": [
+                        {
+                          "type": "text",
+                          "name": "numbered_cards_text",
+                          "value": "Prop up numbered cards on a table or ledge, or paper-clip them to a string. Having an individual card for each number allows for more natural association with numbered cards you may be using for demonstration purposes. It also allows them to be moved around or left out (for activities like \"put these in order\" or \"which one is missing.\"\n\n< put in an illustration of this >",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "parameter_list": {
+                            "icon_src": "help",
+                            "style": "navigation"
+                          },
+                          "_nested_name": "dg_info.dg_nl_types.accordion_for_nl_types.accord_numbered_cards.dg_numbered_cards.numbered_cards_text"
+                        }
+                      ],
+                      "_nested_name": "dg_info.dg_nl_types.accordion_for_nl_types.accord_numbered_cards.dg_numbered_cards"
+                    }
+                  ],
+                  "_nested_name": "dg_info.dg_nl_types.accordion_for_nl_types.accord_numbered_cards"
+                },
+                {
+                  "type": "accordion_section",
+                  "name": "accord_number_path",
+                  "value": "Number Path",
+                  "parameter_list": {
+                    "text_align": "center",
+                    "style": "large emphasised"
+                  },
+                  "rows": [
+                    {
+                      "type": "display_group",
+                      "name": "dg_number_path_accord",
+                      "parameter_list": {
+                        "style": "column"
+                      },
+                      "rows": [
+                        {
+                          "type": "text",
+                          "name": "number_path_text",
+                          "value": "This is a path of sequenced numbers on the ground. Students can walk on these to get a physical connection with the numbers and their order.\n\n< put in an illustration of this >",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "parameter_list": {
+                            "icon_src": "help",
+                            "style": "navigation"
+                          },
+                          "_nested_name": "dg_info.dg_nl_types.accordion_for_nl_types.accord_number_path.dg_number_path_accord.number_path_text"
+                        }
+                      ],
+                      "_nested_name": "dg_info.dg_nl_types.accordion_for_nl_types.accord_number_path.dg_number_path_accord"
+                    }
+                  ],
+                  "_nested_name": "dg_info.dg_nl_types.accordion_for_nl_types.accord_number_path"
+                },
+                {
+                  "type": "accordion_section",
+                  "name": "accord_number_line",
+                  "value": "Number Line",
+                  "parameter_list": {
+                    "text_align": "center",
+                    "style": "large emphasised"
+                  },
+                  "rows": [
+                    {
+                      "type": "display_group",
+                      "name": "dg_number_line_accord",
+                      "parameter_list": {
+                        "style": "column"
+                      },
+                      "rows": [
+                        {
+                          "type": "text",
+                          "name": "number_line_text",
+                          "value": "For young children not ready for negative numbers, this is a portion of a line with an endpoint on the left side for 0. It has numbered tick marks extending to the right.\n\nIt is a more abstract representation than the other two already described. It is also a more powerful and versatile representation that is essential for modeling larger numbers and numbers with fractional parts.\n\n< put in an illustration of this >",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "parameter_list": {
+                            "icon_src": "help",
+                            "style": "navigation"
+                          },
+                          "_nested_name": "dg_info.dg_nl_types.accordion_for_nl_types.accord_number_line.dg_number_line_accord.number_line_text"
+                        }
+                      ],
+                      "_nested_name": "dg_info.dg_nl_types.accordion_for_nl_types.accord_number_line.dg_number_line_accord"
+                    }
+                  ],
+                  "_nested_name": "dg_info.dg_nl_types.accordion_for_nl_types.accord_number_line"
+                }
+              ],
+              "_nested_name": "dg_info.dg_nl_types.accordion_for_nl_types"
+            }
+          ],
+          "_nested_name": "dg_info.dg_nl_types"
         }
       ],
       "_nested_name": "dg_info"
@@ -52,7 +180,7 @@
         {
           "type": "text",
           "name": "intro_text",
-          "value": "The number line talks are broken into levels of increasing mathematical skills.",
+          "value": "There are three stages associated with many of these tasks. \n* Hold numbered cards or write numbers directly on or above the number line.\n* Move away from the number line but still have it visible nearby. \n* Do the activity without the number line being visible.\n\nThe following talks are broken into levels of increasing mathematical skills.",
           "_translations": {
             "value": {}
           },
