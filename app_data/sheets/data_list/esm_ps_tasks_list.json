@@ -17,11 +17,14 @@
       "glossary_1": "even number",
       "glossary_2": "odd number",
       "glossary_3": "shapes 2d",
-      "block1_type": "all_text",
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPSParityDominoesCheckerboards.svg",
+      "block1_illust_max_size": "200px",
       "block2_type": "accord_all_text",
       "block3_type": "accord_all_text",
       "block4_type": "accord_all_text",
       "block5_type": "accord_all_text",
+      "block6_type": "accord_all_text",
       "name": "Dominoes on a Chessboard",
       "_translations": {
         "name": {},
@@ -33,14 +36,16 @@
         "block4_accord": {},
         "block4_text": {},
         "block5_accord": {},
-        "block5_text": {}
+        "block5_text": {},
+        "block6_accord": {},
+        "block6_text": {}
       },
       "_translatedFields": {
         "name": {
           "eng": "Dominoes on a Chessboard"
         },
         "block1_text": {
-          "eng": "**Dominoes on a Chessboard**\n\n**Question:** Suppose 2 squares are removed from opposite corners of a chessboard. Can the resulting board be exactly covered by dominoes?\n\n< put in illustration of a domino and a board with missing corners >"
+          "eng": "**Dominoes on a Chessboard**\n\n**Question:** Suppose 2 squares are removed from opposite corners of a chessboard. Can the resulting board be exactly covered by dominoes?"
         },
         "block2_accord": {
           "eng": "Mull, Distill, Represent"
@@ -61,21 +66,29 @@
           "eng": "This is a tricky puzzle because once you realize that the alternating colors of a chessboard are important, the problem becomes much easier to understand. After lots of play, and maybe coming back the next day, nudge your students to look at the light and dark squares. \n\nCount up how many light and dark squares there are on a 4 by 4 board. After a domino is placed, how many of each color are left? After a second domino is placed, how many are left. Eventually they'll see that they will be left with two of one color and zero of the other, so the puzzle is impossible."
         },
         "block5_accord": {
-          "eng": "Explorations"
+          "eng": "Review"
         },
         "block5_text": {
+          "eng": "This is an interesting puzzle to review. \n\n* At what point did each student realize why it works?\n* Did they get there by different paths, or were they all the same? \n* Is there a general method that they can learn from this puzzle that they can apply to other puzzles?"
+        },
+        "block6_accord": {
+          "eng": "Explorations"
+        },
+        "block6_text": {
           "eng": "Develop the habit in your students of wanting to explore where a puzzle may take them.\n\nThey've seen that it's important that whatever squares are removed, you must be left with the same number of squares of each color.\n\n* What happens if we remove two corners on the same side?\n* What happens if we remove any two squares with different colors?\n* Does it matter if the board is square or not?\n* Does it always work as long as there are an even number of squares?\n\nWhat happens if we try covering with other shapes? You could look at covering with L-shaped pieces that have a total of 3 squares in them. If you remove one corner from a chessboard, can it be covered by L's?"
         }
       },
-      "block1_text": "**Dominoes on a Chessboard**\n\n**Question:** Suppose 2 squares are removed from opposite corners of a chessboard. Can the resulting board be exactly covered by dominoes?\n\n< put in illustration of a domino and a board with missing corners >",
+      "block1_text": "**Dominoes on a Chessboard**\n\n**Question:** Suppose 2 squares are removed from opposite corners of a chessboard. Can the resulting board be exactly covered by dominoes?",
       "block2_accord": "Mull, Distill, Represent",
       "block2_text": "What is going on in the question? People like to rush into puzzles before really understanding what is being asked. \n\nThe representation for this puzzle is natural enough.\n\nIs it important that the removed squares are in opposite corners? Is it important that it's a chessboard, or is that a misdirection? What, if anything, is the connection between dominoes and chessboards?\n\nDiscuss these questions and anything else that your students come up with.",
       "block3_accord": "Play with it!",
       "block3_text": "**Smaller Examples:** An important problem solving technique is to try smaller examples or smaller versions of the puzzle.\n\nYou might also try removing other pairs of corners and see what happens.\n\nThe 2 by 2 example is a little too small to get anything useful out of. Encourage your students to come up with the idea (on their own) of looking at 3 by 3 and 4 by 4 boards. What can they learn from those?\n\nAny odd size, such as 3 by 3 or 5 by 5 is going to be impossible because there will be an odd number of squares. After some playing around, your students will probably conclude that the 4 by 4, 6 by 6, and 8 by 8 are impossible - but why?",
       "block4_accord": "Key Insight",
       "block4_text": "This is a tricky puzzle because once you realize that the alternating colors of a chessboard are important, the problem becomes much easier to understand. After lots of play, and maybe coming back the next day, nudge your students to look at the light and dark squares. \n\nCount up how many light and dark squares there are on a 4 by 4 board. After a domino is placed, how many of each color are left? After a second domino is placed, how many are left. Eventually they'll see that they will be left with two of one color and zero of the other, so the puzzle is impossible.",
-      "block5_accord": "Explorations",
-      "block5_text": "Develop the habit in your students of wanting to explore where a puzzle may take them.\n\nThey've seen that it's important that whatever squares are removed, you must be left with the same number of squares of each color.\n\n* What happens if we remove two corners on the same side?\n* What happens if we remove any two squares with different colors?\n* Does it matter if the board is square or not?\n* Does it always work as long as there are an even number of squares?\n\nWhat happens if we try covering with other shapes? You could look at covering with L-shaped pieces that have a total of 3 squares in them. If you remove one corner from a chessboard, can it be covered by L's?"
+      "block5_accord": "Review",
+      "block5_text": "This is an interesting puzzle to review. \n\n* At what point did each student realize why it works?\n* Did they get there by different paths, or were they all the same? \n* Is there a general method that they can learn from this puzzle that they can apply to other puzzles?",
+      "block6_accord": "Explorations",
+      "block6_text": "Develop the habit in your students of wanting to explore where a puzzle may take them.\n\nThey've seen that it's important that whatever squares are removed, you must be left with the same number of squares of each color.\n\n* What happens if we remove two corners on the same side?\n* What happens if we remove any two squares with different colors?\n* Does it matter if the board is square or not?\n* Does it always work as long as there are an even number of squares?\n\nWhat happens if we try covering with other shapes? You could look at covering with L-shaped pieces that have a total of 3 squares in them. If you remove one corner from a chessboard, can it be covered by L's?"
     },
     {
       "id": "esm_ps_lunch_table",
@@ -88,6 +101,7 @@
       "block3_type": "accord_all_text",
       "block4_type": "accord_all_text",
       "block5_type": "accord_all_text",
+      "block6_type": "accord_all_text",
       "name": "First and Last Names",
       "_translations": {
         "name": {},
@@ -99,7 +113,9 @@
         "block4_accord": {},
         "block4_text": {},
         "block5_accord": {},
-        "block5_text": {}
+        "block5_text": {},
+        "block6_accord": {},
+        "block6_text": {}
       },
       "_translatedFields": {
         "name": {
@@ -131,6 +147,12 @@
         },
         "block5_text": {
           "eng": "Have your students briefly summarize the important steps in the solution. They will probably leave it out, so you will almost certainly need to remind them that summarizing the information at the beginning in such an easy to look at way made it much easier to work on the problem.\n\nIn a collection of 5 bits of information, it was important for them to find the pairs of information that could be used together.\n\nWould the solution have changed if statement (5) had merely said that P was between B and M? How was it helpful to know that C and D are siblings?"
+        },
+        "block6_accord": {
+          "eng": "Explorations"
+        },
+        "block6_text": {
+          "eng": "Students can make similar puzzles of this type."
         }
       },
       "block1_text": "**First and Last Names**\n\n**Question:** Five people are sitting at a round table, The first names are A, B, C, D, and E, and the last names are L, M, N, O, and P. O sits between L and M. E sits between C and N. L is between E and A. C and D are siblings. P is on B's left side and M is on B's right side. How do the first and last names match up?",
@@ -141,7 +163,9 @@
       "block4_accord": "Next Steps",
       "block4_text": "We've established that they are sitting around the table in the order PBMOL. Rule (2) does not have any letters in common with this, so let's look at rule (3). As before there are two possibilities.\n\na) If it is ELA, then E = O and A = P\nb) If it is ALE, the A = O and E = P\n\nHmm... Both of those look possible. Sometimes ideas don't immediately work out, and that's okay and it's important for your students to see.\n\nLet's try combining (2) and (3). (2) says that E is next to C and N. (3) tells us that L is next to E, so L must be C or N. L and N are last names, so L must be connected with C, and one of the people is CL! \n\nCombining (2) and (3), this also says that the correct order is NE(CL)A or A(CL)EN. However, the first of those has a last name conflict with PBMOL (N and M would be the same), so it must be A(CL)EN. \n\nThis forces A to be with O, E to be with P, and N to be with B. Which only leaves D to be with M.\n\nThe final answer is AO, BN, CL, DM, and EP.",
       "block5_accord": "Review",
-      "block5_text": "Have your students briefly summarize the important steps in the solution. They will probably leave it out, so you will almost certainly need to remind them that summarizing the information at the beginning in such an easy to look at way made it much easier to work on the problem.\n\nIn a collection of 5 bits of information, it was important for them to find the pairs of information that could be used together.\n\nWould the solution have changed if statement (5) had merely said that P was between B and M? How was it helpful to know that C and D are siblings?"
+      "block5_text": "Have your students briefly summarize the important steps in the solution. They will probably leave it out, so you will almost certainly need to remind them that summarizing the information at the beginning in such an easy to look at way made it much easier to work on the problem.\n\nIn a collection of 5 bits of information, it was important for them to find the pairs of information that could be used together.\n\nWould the solution have changed if statement (5) had merely said that P was between B and M? How was it helpful to know that C and D are siblings?",
+      "block6_accord": "Explorations",
+      "block6_text": "Students can make similar puzzles of this type."
     },
     {
       "id": "esm_ps_2_colors",
