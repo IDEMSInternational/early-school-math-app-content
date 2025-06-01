@@ -51,7 +51,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 42205 KB | 42.2 MB |
+| total | 42230 KB | 42.2 MB |
 | unused | 21738 KB | 21.7 MB |
 </details>
 
@@ -1461,7 +1461,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMPOWCLines5Answer2.svg | 7.5 | 1 |
 | ESMIll/ESMPOWCMagicSquares3.svg | 9.8 | 1 |
 | ESMIll/ESMPOWCMagicSquares3Double.svg | 11.4 | 1 |
-| ESMIll/ESMPOWCMagicSquares4Answer1.svg | 13.7 | 1 |
+| ESMIll/ESMPOWCMagicSquares4Answer1.svg | 13.7 | 2 |
 | ESMIll/ESMPOWCMagicSquares4Answer2.svg | 19.1 | 1 |
 | ESMIll/ESMPOWCMagicSquaresExamples1.svg | 31.6 | 2 |
 | ESMIll/ESMPOWCMagicTriangle Annotated.svg | 11.2 | 2 |
@@ -1474,10 +1474,12 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMPOWCMapColoringCurvedChallenge.svg | 5.6 | 1 |
 | ESMIll/ESMPOWCMapColoringCurvedChallengeColored.svg | 37.5 | 1 |
 | ESMIll/ESMPOWCMapColoringSimple4.svg | 5.2 | 1 |
-| ESMIll/ESMPOWCMapColoringStraightLinesChallenge.svg | 4.7 | 1 |
-| ESMIll/ESMPOWCMapColoringStraightLinesChallengeColored.svg | 33.2 | 1 |
-| ESMIll/ESMPOWCMapColoringStraightLinesIntro.svg | 6 | 1 |
+| ESMIll/ESMPOWCMapColoringStraightLinesChallenge.svg | 4.7 | 2 |
+| ESMIll/ESMPOWCMapColoringStraightLinesChallengeColored.svg | 33.2 | 2 |
+| ESMIll/ESMPOWCMapColoringStraightLinesIntro.svg | 6 | 2 |
 | ESMIll/ESMPOWCMysterySums1ChallengeRevised2.svg | 5.9 | 1 |
+| ESMIll/ESMPOWCNimDiagonalAnswer.svg | 12.8 | 1 |
+| ESMIll/ESMPOWCNimDiagonalIntro.svg | 6.5 | 1 |
 | ESMIll/ESMPOWCOddSquareBlank.svg | 9.8 | 2 |
 | ESMIll/ESMPOWCOddSquareEvenOdd.svg | 13.8 | 2 |
 | ESMIll/ESMPOWCOddSquareEvenOddEvens.svg | 25.5 | 1 |
@@ -1513,6 +1515,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMPOWCTiedHandsChallenge.svg | 51.5 | 1 |
 | ESMIll/ESMPOWCTrapezoidalNumbersChallenge1.svg | 2.3 | 1 |
 | ESMIll/ESMPOWCTrapezoidalNumbersIntro.svg | 7.4 | 1 |
+| ESMIll/ESMPS4by4ChessboardEmpty.svg | 6.4 | 1 |
 | ESMIll/ESMPSParityDominoesCheckerboards.svg | 12.5 | 1 |
 | ESMIll/ESMParades1.svg | 17.5 | 1 |
 | ESMIll/ESMSplats1Color1Splat10-10.svg | 9.2 | 1 |
