@@ -51,7 +51,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 42230 KB | 42.2 MB |
+| total | 42252 KB | 42.3 MB |
 | unused | 21738 KB | 21.7 MB |
 </details>
 
@@ -1444,7 +1444,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMPOWCCoinFlip10Intro.svg | 41.2 | 1 |
 | ESMIll/ESMPOWCCoinFlipInARowChallenge.svg | 24.1 | 1 |
 | ESMIll/ESMPOWCCoinFlipInARowIntro.svg | 26.3 | 1 |
-| ESMIll/ESMPOWCFibanocciBees.svg | 13.8 | 1 |
+| ESMIll/ESMPOWCFibanocciBees.svg | 13.8 | 2 |
 | ESMIll/ESMPOWCFibonacciSteps.svg | 10.6 | 1 |
 | ESMIll/ESMPOWCFibonacciTilingRectangles.svg | 11.9 | 1 |
 | ESMIll/ESMPOWCFillInTheBlanksSumOfThreeThreeDigitsBlank.svg | 4.8 | 1 |
@@ -1516,7 +1516,10 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMPOWCTrapezoidalNumbersChallenge1.svg | 2.3 | 1 |
 | ESMIll/ESMPOWCTrapezoidalNumbersIntro.svg | 7.4 | 1 |
 | ESMIll/ESMPS4by4ChessboardEmpty.svg | 6.4 | 1 |
+| ESMIll/ESMPSEightCubesIntro.svg | 5.5 | 1 |
+| ESMIll/ESMPSEightCubesSixFaces.svg | 10.2 | 1 |
 | ESMIll/ESMPSParityDominoesCheckerboards.svg | 12.5 | 1 |
+| ESMIll/ESMPSSquaresWithMatchsticks.svg | 5.4 | 1 |
 | ESMIll/ESMParades1.svg | 17.5 | 1 |
 | ESMIll/ESMSplats1Color1Splat10-10.svg | 9.2 | 1 |
 | ESMIll/ESMSplats1Color1Splat5-2.svg | 7.8 | 1 |
