@@ -177,10 +177,16 @@
       "topic_theme_3": "Geom_Shape_CompDecomp",
       "topic_theme_4": "NO_NT_EvenOdd",
       "glossary_count": 0,
-      "block1_type": "all_text",
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWCMapColoringStraightLinesChallenge.svg",
+      "block1_illust_max_size": "220px",
       "block2_type": "accord_all_text",
-      "block3_type": "accord_all_text",
-      "block4_type": "accord_all_text",
+      "block3_type": "accord_illust_below",
+      "block3_illust": "ESMIll/ESMPOWCMapColoringStraightLinesIntro.svg",
+      "block3_illust_max_size": "260px",
+      "block4_type": "accord_illust_below",
+      "block4_illust": "ESMIll/ESMPOWCMapColoringStraightLinesChallengeColored.svg",
+      "block4_illust_max_size": "300px",
       "block5_type": "accord_all_text",
       "block6_type": "accord_all_text",
       "name": "Map Coloring",
@@ -203,7 +209,7 @@
           "eng": "Map Coloring"
         },
         "block1_text": {
-          "eng": "**Map Coloring**\n\n**Question:** Draw a small number of lines across an oval. What is the minimum number of colors needed to color this map?\n\n< put in illustration from the POWs for this >"
+          "eng": "**Map Coloring**\n\n**Question:** Draw a small number of lines across an oval. What is the minimum number of colors needed to color this map?"
         },
         "block2_accord": {
           "eng": "Mull, Distill, Represent"
@@ -221,7 +227,7 @@
           "eng": "Patterns"
         },
         "block4_text": {
-          "eng": "There are two patterns for coloring that your students may come up with.\n\n1) Each time a line is added, flip all the colors on one side of the line. This is guaranteed to work and is very simple. Challenge your students to carefully explain why this works.\n\n2) Start at eny node and alternate colors for the regions that have that node as a corner. There will be an even number of regions for any node, so this start can always be done. After that, pick some node that is a corner of a region that has already been colored – alternate colors around that node starting with the regions that have already been done. It is less obvious that this strategy will work, but it does."
+          "eng": "There are two patterns for coloring that your students may come up with.\n\n1) Each time a line is added, flip all the colors on one side of the line. This is guaranteed to work and is very simple. Challenge your students to carefully explain why this works. This method is illustrated below.\n\n2) Start at any node and alternate colors for the regions that have that node as a corner. There will be an even number of regions for any node, so this start can always be done. After that, pick some node that is a corner of a region that has already been colored – alternate colors around that node starting with the regions that have already been done. It is less obvious that this strategy will work, but it does."
         },
         "block5_accord": {
           "eng": "Review"
@@ -233,20 +239,20 @@
           "eng": "Explorations"
         },
         "block6_text": {
-          "eng": "Some directions that can be gone in:\n\n* Given coloring strategy (2), any map where every node has an even number of edges coming into it is 2-colorable.\n* Why does having a node with an odd number of edges force there to be at least 3 colors?\n* What is a simple map that forces the use of four colors?\n* What happens for other surfaces such as a cylinder or a sphere?"
+          "eng": "Some directions that can be gone in:\n\n* Given coloring strategy (2), any map where every node has an even number of edges coming into it is 2-colorable.\n* Why does having a node with an odd number of edges force there to be at least 3 colors?\n* What is a simple map that forces the use of four colors?\n* What happens for maps on other surfaces, such as on a cylinder or a sphere?"
         }
       },
-      "block1_text": "**Map Coloring**\n\n**Question:** Draw a small number of lines across an oval. What is the minimum number of colors needed to color this map?\n\n< put in illustration from the POWs for this >",
+      "block1_text": "**Map Coloring**\n\n**Question:** Draw a small number of lines across an oval. What is the minimum number of colors needed to color this map?",
       "block2_accord": "Mull, Distill, Represent",
       "block2_text": "Read the directions carefully and then pause. What needs to be understood here? \n\n* Are the lines straight lines, or does that matter? Let's assume it doesn't matter and revisit this if we need to.\n* What does it mean to color a picture with two colors? If two regions share part of a side, they must have different colors or they would blend together. If two regions just share a corner, must they have different colors – let's assume they don't.\n\nThe representation of this puzzle is simple enough – make a drawing and see what is needed to color it with two colors.",
       "block3_accord": "Play with it!",
       "block3_text": "Do some simple examples of the puzzle and learn from them.\n\n* 1 line. Color the two sides of the line different colors.\n* 2 lines. Alternate colors around the intersection point\n* 3 lines . ...",
       "block4_accord": "Patterns",
-      "block4_text": "There are two patterns for coloring that your students may come up with.\n\n1) Each time a line is added, flip all the colors on one side of the line. This is guaranteed to work and is very simple. Challenge your students to carefully explain why this works.\n\n2) Start at eny node and alternate colors for the regions that have that node as a corner. There will be an even number of regions for any node, so this start can always be done. After that, pick some node that is a corner of a region that has already been colored – alternate colors around that node starting with the regions that have already been done. It is less obvious that this strategy will work, but it does.",
+      "block4_text": "There are two patterns for coloring that your students may come up with.\n\n1) Each time a line is added, flip all the colors on one side of the line. This is guaranteed to work and is very simple. Challenge your students to carefully explain why this works. This method is illustrated below.\n\n2) Start at any node and alternate colors for the regions that have that node as a corner. There will be an even number of regions for any node, so this start can always be done. After that, pick some node that is a corner of a region that has already been colored – alternate colors around that node starting with the regions that have already been done. It is less obvious that this strategy will work, but it does.",
       "block5_accord": "Review",
       "block5_text": "State the strategy for being able to 2-color a map. Why were using lines critical to making your strategy work? - Is it that they have two sides, or is something more subtle going on? A circle has two sides, so would it work as well as a line?\n\nHow did you arrive at your method? Was it a systematic approach, or did you get lucky?",
       "block6_accord": "Explorations",
-      "block6_text": "Some directions that can be gone in:\n\n* Given coloring strategy (2), any map where every node has an even number of edges coming into it is 2-colorable.\n* Why does having a node with an odd number of edges force there to be at least 3 colors?\n* What is a simple map that forces the use of four colors?\n* What happens for other surfaces such as a cylinder or a sphere?"
+      "block6_text": "Some directions that can be gone in:\n\n* Given coloring strategy (2), any map where every node has an even number of edges coming into it is 2-colorable.\n* Why does having a node with an odd number of edges force there to be at least 3 colors?\n* What is a simple map that forces the use of four colors?\n* What happens for maps on other surfaces, such as on a cylinder or a sphere?"
     },
     {
       "id": "esm_ps_nim12",
@@ -286,7 +292,7 @@
           "eng": "Nim 1-2"
         },
         "block1_text": {
-          "eng": "**Nim 1-2**\n\n**Question:** This version of Nim is begun by having 10 tokens in a starting pile. On a turn, a player removes 1 or 2 tokens from the pile and puts them to the side. The person who takes the last token wins. What is the winning strategy for this game? If you have a choice, should you play first or second?\n\nThe teacher is a Nim expert – can any of the students defeat the Nim expert?"
+          "eng": "**Nim 1-2**\n\n**Question:** This version of Nim is begun by having 10 tokens in a starting pile. On a turn, a player removes 1 or 2 tokens from the pile and puts them to the side. The person who takes the last token wins. What is the winning strategy for this game? If you have a choice, should you play first or second?\n\nThe teacher can declare that they are the Nim expert. Challenge the students to defeat the Nim expert?"
         },
         "block2_accord": {
           "eng": "Mull, Distill, Represent"
@@ -304,7 +310,7 @@
           "eng": "Do Simpler Versions"
         },
         "block4_text": {
-          "eng": "10 is too big a number to see the game strategy, so this is a great puzzle for learning from simpler versions of the puzzle. This is one of the most important Problem Solving Strategies, so make a big point of using it.\n\nWhat is the simplest useful version? Your students will suggest starting at 5, or maybe starting at 3. Urge them to start as low as is useful, which in this case is 1. The smallest case usually goes quickly, and often things can be learned from it.\n\nIf it is your turn and the number is _, will you win?\n\n* 1. Yes. You remove 1 thing.\n* 2. Yes. You remove 2 things.\n* 3. No. Whether you remove 1 or 2, you put the other player in a position to win!\n* 4. Yes. You can remove 1 thing and put the other player in a losing position.\n* 5. Yes. Remove 2 things.\n* 6. No.\n* 7. ....\n\nWe could have played many games starting at 10 and not figured this out. By doing this sequence of simpler versions, we have completely figured out the game in a few minutes. The pattern is:\n\nWin, Win, Lose, Win, Win, Lose, Win, Win, Lose, Win.\n\nSo, if you start at 10 you should want to go first and you will remove 1 thing.\n\nA point to make to your students is that by keeping our table of results orderly it was much easier to see the pattern. Too often, good experimental work is wasted due to poor record keeping and chaotic note taking."
+          "eng": "10 is too big a number to see the game strategy, so this is a great puzzle for learning from simpler versions of the puzzle. This is one of the most important Problem Solving Strategies, so make a big point of using it.\n\nWhat is the simplest useful version? Your students will suggest starting at 5, or maybe starting at 3. Urge them to start as low as is useful, which in this case is 1. The smallest case usually goes quickly, and often things can be learned from it.\n\nIf it is your turn and the number is _, will you win?\n\n* 1. Yes. You remove 1 thing.\n* 2. Yes. You remove 2 things.\n* 3. No. Whether you remove 1 or 2, you put the other player in a position to win!\n* 4. Yes. You can remove 1 thing and put the other player in a losing position.\n* 5. Yes. Remove 2 things.\n* 6. No.\n* 7. ....\n\nWe could have played many games starting at 10 and not figured this out. By doing this sequence of simpler versions, we have completely figured out the game in a few minutes. The pattern is:\n\nWin, Win, Lose, Win, Win, Lose, Win, Win, Lose, Win.\n\nSo, if you start at 10 you should want to go first and you will remove 1 thing so as to put your opponent in a losing position.\n\nA point to make to your students is that by keeping our table of results orderly it was much easier to see the pattern. Too often, good experimental work is wasted due to poor record keeping and chaotic note taking."
         },
         "block5_accord": {
           "eng": "Why Does it Work?"
@@ -325,13 +331,13 @@
           "eng": "There are many Nim variations out there, and you can probably make up some new ones of your own. The next Rich Task is an example of a two-dimensional version of Nim. Most Nim games can be analyzed in a way similar to what we did with this one.\n\nHere are a few ideas for variations:\n\n* We could use different starting numbers.\n* The player forced to take the last piece loses.\n* Use the numbers 1, 2, and 3, instead of just 1 and 2.\n* Use the numbers 1, 2, and 4.\n* We could use fractional numbers – for example, 1/2, 1, and 1 1/2.\n* Instead of subtracting down to 0, we could add up to a target number\n* The next player can always take up to twice the number of the previous play.\n* The player can take away any divisor of the current number."
         }
       },
-      "block1_text": "**Nim 1-2**\n\n**Question:** This version of Nim is begun by having 10 tokens in a starting pile. On a turn, a player removes 1 or 2 tokens from the pile and puts them to the side. The person who takes the last token wins. What is the winning strategy for this game? If you have a choice, should you play first or second?\n\nThe teacher is a Nim expert – can any of the students defeat the Nim expert?",
+      "block1_text": "**Nim 1-2**\n\n**Question:** This version of Nim is begun by having 10 tokens in a starting pile. On a turn, a player removes 1 or 2 tokens from the pile and puts them to the side. The person who takes the last token wins. What is the winning strategy for this game? If you have a choice, should you play first or second?\n\nThe teacher can declare that they are the Nim expert. Challenge the students to defeat the Nim expert?",
       "block2_accord": "Mull, Distill, Represent",
       "block2_text": "You can play this with a pile of tokens, you can play it with paper and pencil, or if you have confident students you can play it orally. Pair up your students and have them play a few rounds with each other to gain some experience.\n\nWhat if anything is important about 1, 2, and 10 in this puzzle? How should you decide who goes first?",
       "block3_accord": "Make Conjectures",
       "block3_text": "Ask your students when they can tell they are going to win or lose. Ask them to make conjectures about which numbers will be \"winning numbers\" - numbers that if it's their turn they are going to win.\n\nCollect the conjectures and then test them out. For example, a conjecture might be:\n\n**Conjecture:** The winning numbers are the odd numbers.\n\nAsk them how you can verify or deny that each conjecture is correct. If a conjecture seems correct, how can they explain why it works?\n\nIf no one has a good conjecture, use simpler versions of the problem to find a good conjecture.",
       "block4_accord": "Do Simpler Versions",
-      "block4_text": "10 is too big a number to see the game strategy, so this is a great puzzle for learning from simpler versions of the puzzle. This is one of the most important Problem Solving Strategies, so make a big point of using it.\n\nWhat is the simplest useful version? Your students will suggest starting at 5, or maybe starting at 3. Urge them to start as low as is useful, which in this case is 1. The smallest case usually goes quickly, and often things can be learned from it.\n\nIf it is your turn and the number is _, will you win?\n\n* 1. Yes. You remove 1 thing.\n* 2. Yes. You remove 2 things.\n* 3. No. Whether you remove 1 or 2, you put the other player in a position to win!\n* 4. Yes. You can remove 1 thing and put the other player in a losing position.\n* 5. Yes. Remove 2 things.\n* 6. No.\n* 7. ....\n\nWe could have played many games starting at 10 and not figured this out. By doing this sequence of simpler versions, we have completely figured out the game in a few minutes. The pattern is:\n\nWin, Win, Lose, Win, Win, Lose, Win, Win, Lose, Win.\n\nSo, if you start at 10 you should want to go first and you will remove 1 thing.\n\nA point to make to your students is that by keeping our table of results orderly it was much easier to see the pattern. Too often, good experimental work is wasted due to poor record keeping and chaotic note taking.",
+      "block4_text": "10 is too big a number to see the game strategy, so this is a great puzzle for learning from simpler versions of the puzzle. This is one of the most important Problem Solving Strategies, so make a big point of using it.\n\nWhat is the simplest useful version? Your students will suggest starting at 5, or maybe starting at 3. Urge them to start as low as is useful, which in this case is 1. The smallest case usually goes quickly, and often things can be learned from it.\n\nIf it is your turn and the number is _, will you win?\n\n* 1. Yes. You remove 1 thing.\n* 2. Yes. You remove 2 things.\n* 3. No. Whether you remove 1 or 2, you put the other player in a position to win!\n* 4. Yes. You can remove 1 thing and put the other player in a losing position.\n* 5. Yes. Remove 2 things.\n* 6. No.\n* 7. ....\n\nWe could have played many games starting at 10 and not figured this out. By doing this sequence of simpler versions, we have completely figured out the game in a few minutes. The pattern is:\n\nWin, Win, Lose, Win, Win, Lose, Win, Win, Lose, Win.\n\nSo, if you start at 10 you should want to go first and you will remove 1 thing so as to put your opponent in a losing position.\n\nA point to make to your students is that by keeping our table of results orderly it was much easier to see the pattern. Too often, good experimental work is wasted due to poor record keeping and chaotic note taking.",
       "block5_accord": "Why Does it Work?",
       "block5_text": "We have a winning strategy. The next thing you want your students to do is question why that works. As in all of mathematics, if you can possibly help it you don't want to have to use a tool you don't understand. Plus, it can be fun to figure out and it may give you insights for doing further puzzles.\n\nThe pattern repeats in groups of 3. What is special about 3? Well, 1 + 2 = 3. No matter which number your opponent chooses, you can always pick the other number and have the two numbers add up to 3.",
       "block6_accord": "Review",
@@ -349,9 +355,13 @@
       "topic_theme_3": "Geom_Pat_Intro",
       "topic_theme_4": "NO_NT_EvenOdd",
       "glossary_count": 0,
-      "block1_type": "all_text",
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWCNimDiagonalIntro.svg",
+      "block1_illust_max_size": "140px",
       "block2_type": "accord_all_text",
-      "block3_type": "accord_all_text",
+      "block3_type": "accord_illust_below",
+      "block3_illust": "ESMIll/ESMPOWCNimDiagonalAnswer.svg",
+      "block3_illust_max_size": "140px",
       "block4_type": "accord_all_text",
       "block5_type": "accord_all_text",
       "name": "Nim – Chasing on a Grid",
@@ -372,7 +382,7 @@
           "eng": "Nim – Chasing on a Grid"
         },
         "block1_text": {
-          "eng": "**Nim – Chasing on a Grid**\n\n**Question:** Play starts with a marker on the square on the lower left-hand corner of a chessboard. During any move, a player may make one of three moves for the marker:\n\n* one square to the right\n* one square up\n* one square up and also to the right\n\nPlayers alternate turns. The player who moves the marker to the upper right-hand square wins. \n\nShould you decide to go first or second, and what is your winning strategy?\n\n< put in an illustration of a board with something going on in upper corner >"
+          "eng": "**Nim – Chasing on a Grid**\n\n**Question:** Play starts with a marker on the square on the lower left-hand corner of a chessboard. During any move, a player may make one of three moves for the marker:\n\n* one square to the right\n* one square up\n* one square up and also to the right\n\nPlayers alternate turns. The player who moves the marker to the upper right-hand square wins. \n\nShould you decide to go first or second, and what is your winning strategy?"
         },
         "block2_accord": {
           "eng": "Mull, Distill, Represent"
@@ -384,7 +394,7 @@
           "eng": "Do Simpler Versions"
         },
         "block3_text": {
-          "eng": "For this game, and for the Nim 1-2 game, you can think of practicing on smaller versions of the game or, equivalently, you can work backward from the end of the game.\n\nSuggest this to your students and see how much of an analysis they can come up with. Here are some boards showing the upper right-hand portion of a bigger board. X marks the ending spot, W marks a spot you win from if it's your move, and L marks a spot you lose from if it's your move. The progression of boards shows the progression of reasoning.\n\nW X\nW W\n\nL W X\nW W W\nL W L\n\nW L W X\nW W W W\nW L W L\nW W W W\n\nWhat are the patterns you see? Every other row or column is all W's, so it's good to be there if it's your move. The L's and W's alternate in the other rows and columns. The losing positions are the ones that are both an even number of rows and an even number of columns away from the endpoint – all other positions are winning positions.\n\nFor an 8 by 8 board, you want to move first and always put your opponent into one of those losing positions."
+          "eng": "For this game, and for the Nim 1-2 game, you can think of practicing on smaller versions of the game or, equivalently, you can work backward from the end of the game.\n\nSuggest this to your students and see how much of an analysis they can come up with on their own. Here is the result of starting at the end of the game in the upper right-hand corner and working backward. W marks a spot you win from if it's your move, and L marks a spot you lose from if it's your move.\n\nWhat are the patterns you see? Every other row or column is all W's, so it's good to be there if it's your move. The L's and W's alternate in the other rows and columns. The losing positions are the ones that are both an even number of rows and an even number of columns away from the endpoint – all other positions are winning positions.\n\nFor an 8 by 8 board, you want to move first and always put your opponent into one of those losing positions."
         },
         "block4_accord": {
           "eng": "Review"
@@ -399,11 +409,11 @@
           "eng": "As with many Nim games, there are lots of variations that can be fun to explore.\n\nAsk your students to come up with some of these variations, and ask them which ones they want to investigate and become masters of.\n\n* What happens if you lose if you end up in the upper right-hand corner?\n* What happens on larger and smaller square boards?\n* What happens on rectangular boards of any size?\n* What would happen if you played this in a 3-dimensional 8 by 8 by 8 grid?"
         }
       },
-      "block1_text": "**Nim – Chasing on a Grid**\n\n**Question:** Play starts with a marker on the square on the lower left-hand corner of a chessboard. During any move, a player may make one of three moves for the marker:\n\n* one square to the right\n* one square up\n* one square up and also to the right\n\nPlayers alternate turns. The player who moves the marker to the upper right-hand square wins. \n\nShould you decide to go first or second, and what is your winning strategy?\n\n< put in an illustration of a board with something going on in upper corner >",
+      "block1_text": "**Nim – Chasing on a Grid**\n\n**Question:** Play starts with a marker on the square on the lower left-hand corner of a chessboard. During any move, a player may make one of three moves for the marker:\n\n* one square to the right\n* one square up\n* one square up and also to the right\n\nPlayers alternate turns. The player who moves the marker to the upper right-hand square wins. \n\nShould you decide to go first or second, and what is your winning strategy?",
       "block2_accord": "Mull, Distill, Represent",
       "block2_text": "Representing the game is pretty obvious. Have your students play a game or two on a smaller board, perhaps a 3 by 3 board. Discuss any initial strategies and understandings that they think of.",
       "block3_accord": "Do Simpler Versions",
-      "block3_text": "For this game, and for the Nim 1-2 game, you can think of practicing on smaller versions of the game or, equivalently, you can work backward from the end of the game.\n\nSuggest this to your students and see how much of an analysis they can come up with. Here are some boards showing the upper right-hand portion of a bigger board. X marks the ending spot, W marks a spot you win from if it's your move, and L marks a spot you lose from if it's your move. The progression of boards shows the progression of reasoning.\n\nW X\nW W\n\nL W X\nW W W\nL W L\n\nW L W X\nW W W W\nW L W L\nW W W W\n\nWhat are the patterns you see? Every other row or column is all W's, so it's good to be there if it's your move. The L's and W's alternate in the other rows and columns. The losing positions are the ones that are both an even number of rows and an even number of columns away from the endpoint – all other positions are winning positions.\n\nFor an 8 by 8 board, you want to move first and always put your opponent into one of those losing positions.",
+      "block3_text": "For this game, and for the Nim 1-2 game, you can think of practicing on smaller versions of the game or, equivalently, you can work backward from the end of the game.\n\nSuggest this to your students and see how much of an analysis they can come up with on their own. Here is the result of starting at the end of the game in the upper right-hand corner and working backward. W marks a spot you win from if it's your move, and L marks a spot you lose from if it's your move.\n\nWhat are the patterns you see? Every other row or column is all W's, so it's good to be there if it's your move. The L's and W's alternate in the other rows and columns. The losing positions are the ones that are both an even number of rows and an even number of columns away from the endpoint – all other positions are winning positions.\n\nFor an 8 by 8 board, you want to move first and always put your opponent into one of those losing positions.",
       "block4_accord": "Review",
       "block4_text": "Have your students carefully describe the winning strategy.\n\nAs with Nim 1-2, impress upon them how difficult it would hae been to find that strategy if they had just played a lot of games, but how easy it was to work backwards from the answer.",
       "block5_accord": "Explorations",
@@ -419,7 +429,9 @@
       "glossary_count": 0,
       "block1_type": "all_text",
       "block2_type": "accord_all_text",
-      "block3_type": "accord_all_text",
+      "block3_type": "accord_illust_below",
+      "block3_illust": "ESMIll/ESMPOWCMagicSquares4Answer1.svg",
+      "block3_illust_max_size": "140px",
       "block4_type": "accord_all_text",
       "block5_type": "accord_all_text",
       "block6_type": "accord_all_text",
@@ -449,13 +461,13 @@
           "eng": "Mull, Distill, Represent"
         },
         "block2_text": {
-          "eng": "The rules are simple enough. Have your students play a few rounds to get a feel for the game.\n\nWhat is special about using exactly three numbers? It may remind them of getting three in a row for tic-tac-toe, and for good reason (as it turns out).\n\nWhat is special about adding up to 15 with three numbers from 1 to 9? Have your students make a list of all the possibilities (there are surprisingly few):\n\n9 + 1 + 5\n9 + 2 + 4\n8 + 1 + 6\n8 + 2 + 5\n8 + 3 + 4\n7 + 2 + 6\n7 + 3 + 5\n6 + 4 + 5\n\n5 is involved in four of the sums, so it looks like 5 is a good number to get. 2, 4, 6, and 8 are each involved in three of the sums, so those look like good second choices. 1, 3, 7 and 9 are each involved in only two of the sums. At this point, I'm not sure how much that helps, but I do know I'm becoming more familiar with the puzzle."
+          "eng": "The rules are simple enough. Have your students play a few rounds to get a feel for the game.\n\nWhat is special about using exactly three numbers? It may remind them of getting three in a row for tic-tac-toe, and for good reason (as it turns out).\n\nWhat is special about adding up to 15 with three numbers from 1 to 9? Have your students make a list of all the possibilities (there are surprisingly few):\n\n* 9 + 1 + 5\n* 9 + 2 + 4\n* 8 + 1 + 6\n* 8 + 2 + 5\n* 8 + 3 + 4\n* 7 + 2 + 6\n* 7 + 3 + 5\n* 6 + 4 + 5\n\n5 is involved in four of the sums, so it looks like 5 is a good number to get. 2, 4, 6, and 8 are each involved in three of the sums, so those look like good second choices. 1, 3, 7 and 9 are each involved in only two of the sums. At this point, I'm not sure how much that helps, but I do know I'm becoming more familiar with the puzzle."
         },
         "block3_accord": {
           "eng": "What's Next?"
         },
         "block3_text": {
-          "eng": "We are temporarily stuck! ... and that's okay. This is the fun part that can take some imagination, or cleverness, or stubborness, or some luck.\n\nWe have often used the strategy of looking at examples or simpler versions of a problem, but that doesn't seem to be useful here.\n\nLooking at the 8 ways of getting 15 seemed useful, and we got some interesting information about the individual numbers from doing it. Let's see what else we can do with these 8 equations. If I pick a number, I am going to be interested in seeing how equations overlap so it will be hard for my opponent to block me.\n\nIf I have 5, I can do 5 + 1 + 9; 5 + 2 + 8; 5 + 3 + 7; 5 + 4 + 6.\nSuppose I have 5 and 1, and the other player takes the 9 to block. \nNow I can take the 6 and I have two ways to win – either 5 + 6 + 4 or 1 + 6 + 8.\n\nThis is starting to feel a lot like tic-tac-toe. 5 feels like it is the powerful central square with four ways to get 3-in-a-row from it.\n\nThe corners in tic-tac-toe are involved in three straight lines, so let's put 2, 4, 6, and 8 in the corners.\n\nIf your students have seen magic squares, they should be getting excited now.\n\nIf we put 1 to 9 in a magic square, the rows, columns, and diagonals give us the 8 equations for getting 15:\n\n< illustration with this magic square \n2 9 4\n7 5 3\n6 1 8\n>"
+          "eng": "We are temporarily stuck! ... and that's okay. This is the fun part that can take some imagination, or cleverness, or stubborness, or some luck.\n\nWe have often used the strategy of looking at examples or simpler versions of a problem, but that doesn't seem to be useful here.\n\nLooking at the 8 ways of getting 15 seemed useful, and we got some interesting information about the individual numbers from doing it. Let's see what else we can do with these 8 equations. If I pick a number, I am going to be interested in seeing how equations overlap so it will be hard for my opponent to block me.\n\nIf I have 5, I can do 5 + 1 + 9; 5 + 2 + 8; 5 + 3 + 7; 5 + 4 + 6.\nSuppose I have 5 and 1, and the other player takes the 9 to block. \nNow I can take the 6 and I have two ways to win – either 5 + 6 + 4 or 1 + 6 + 8.\n\nThis is starting to feel a lot like tic-tac-toe. 5 feels like it is the powerful central square with four ways to get 3-in-a-row from it.\n\nThe corners in tic-tac-toe are involved in three straight lines, so let's put 2, 4, 6, and 8 in the corners.\n\nIf your students have seen magic squares, they should be getting excited now.\n\nIf we put 1 to 9 in a magic square, the rows, columns, and diagonals give us the 8 expressions for getting 15:"
         },
         "block4_accord": {
           "eng": "Related Problems"
@@ -478,9 +490,9 @@
       },
       "block1_text": "**Adding to 15**\n\n**Question:** 9 pieces of paper with the numbers 1 to 9 are placed on a table. Players take turns taking a piece of paper. The first player to get a sum of 15 using any three of their numbers wins. What is a winning strategy (if there is one)?",
       "block2_accord": "Mull, Distill, Represent",
-      "block2_text": "The rules are simple enough. Have your students play a few rounds to get a feel for the game.\n\nWhat is special about using exactly three numbers? It may remind them of getting three in a row for tic-tac-toe, and for good reason (as it turns out).\n\nWhat is special about adding up to 15 with three numbers from 1 to 9? Have your students make a list of all the possibilities (there are surprisingly few):\n\n9 + 1 + 5\n9 + 2 + 4\n8 + 1 + 6\n8 + 2 + 5\n8 + 3 + 4\n7 + 2 + 6\n7 + 3 + 5\n6 + 4 + 5\n\n5 is involved in four of the sums, so it looks like 5 is a good number to get. 2, 4, 6, and 8 are each involved in three of the sums, so those look like good second choices. 1, 3, 7 and 9 are each involved in only two of the sums. At this point, I'm not sure how much that helps, but I do know I'm becoming more familiar with the puzzle.",
+      "block2_text": "The rules are simple enough. Have your students play a few rounds to get a feel for the game.\n\nWhat is special about using exactly three numbers? It may remind them of getting three in a row for tic-tac-toe, and for good reason (as it turns out).\n\nWhat is special about adding up to 15 with three numbers from 1 to 9? Have your students make a list of all the possibilities (there are surprisingly few):\n\n* 9 + 1 + 5\n* 9 + 2 + 4\n* 8 + 1 + 6\n* 8 + 2 + 5\n* 8 + 3 + 4\n* 7 + 2 + 6\n* 7 + 3 + 5\n* 6 + 4 + 5\n\n5 is involved in four of the sums, so it looks like 5 is a good number to get. 2, 4, 6, and 8 are each involved in three of the sums, so those look like good second choices. 1, 3, 7 and 9 are each involved in only two of the sums. At this point, I'm not sure how much that helps, but I do know I'm becoming more familiar with the puzzle.",
       "block3_accord": "What's Next?",
-      "block3_text": "We are temporarily stuck! ... and that's okay. This is the fun part that can take some imagination, or cleverness, or stubborness, or some luck.\n\nWe have often used the strategy of looking at examples or simpler versions of a problem, but that doesn't seem to be useful here.\n\nLooking at the 8 ways of getting 15 seemed useful, and we got some interesting information about the individual numbers from doing it. Let's see what else we can do with these 8 equations. If I pick a number, I am going to be interested in seeing how equations overlap so it will be hard for my opponent to block me.\n\nIf I have 5, I can do 5 + 1 + 9; 5 + 2 + 8; 5 + 3 + 7; 5 + 4 + 6.\nSuppose I have 5 and 1, and the other player takes the 9 to block. \nNow I can take the 6 and I have two ways to win – either 5 + 6 + 4 or 1 + 6 + 8.\n\nThis is starting to feel a lot like tic-tac-toe. 5 feels like it is the powerful central square with four ways to get 3-in-a-row from it.\n\nThe corners in tic-tac-toe are involved in three straight lines, so let's put 2, 4, 6, and 8 in the corners.\n\nIf your students have seen magic squares, they should be getting excited now.\n\nIf we put 1 to 9 in a magic square, the rows, columns, and diagonals give us the 8 equations for getting 15:\n\n< illustration with this magic square \n2 9 4\n7 5 3\n6 1 8\n>",
+      "block3_text": "We are temporarily stuck! ... and that's okay. This is the fun part that can take some imagination, or cleverness, or stubborness, or some luck.\n\nWe have often used the strategy of looking at examples or simpler versions of a problem, but that doesn't seem to be useful here.\n\nLooking at the 8 ways of getting 15 seemed useful, and we got some interesting information about the individual numbers from doing it. Let's see what else we can do with these 8 equations. If I pick a number, I am going to be interested in seeing how equations overlap so it will be hard for my opponent to block me.\n\nIf I have 5, I can do 5 + 1 + 9; 5 + 2 + 8; 5 + 3 + 7; 5 + 4 + 6.\nSuppose I have 5 and 1, and the other player takes the 9 to block. \nNow I can take the 6 and I have two ways to win – either 5 + 6 + 4 or 1 + 6 + 8.\n\nThis is starting to feel a lot like tic-tac-toe. 5 feels like it is the powerful central square with four ways to get 3-in-a-row from it.\n\nThe corners in tic-tac-toe are involved in three straight lines, so let's put 2, 4, 6, and 8 in the corners.\n\nIf your students have seen magic squares, they should be getting excited now.\n\nIf we put 1 to 9 in a magic square, the rows, columns, and diagonals give us the 8 expressions for getting 15:",
       "block4_accord": "Related Problems",
       "block4_text": "We can now connect this game to playing tic-tac-toe on a 1 the 9 magic square! The two games are exactly the same, they just look different.\n\nAnytime you can connect two problems, you can save yourself a lot of work and possibly increase understandings.\n\nAn example of this is the Nim 1-2 game seen in a different Problem Solving task. Once you learn how to play the version where you start at 10 and subtract your way down to 0, you can apply that to play the game where you start at 0 and add your way up to 10. You can make this connection by thinking of two piles – one that starts at 10 and the other starts at 0. Everytime you subtract 1 or 2 from the 10 pile, you can add that same amount to the 0 pile. The 10 pile will reach 0 at the same time that the 0 pile reaches 10. The two games are exactly the same.",
       "block5_accord": "Review",
@@ -496,7 +508,9 @@
       "topic_theme_1": "Geom_Shape_SN2D3D",
       "topic_theme_2": "Geom_Shape_CompDecomp",
       "glossary_count": 0,
-      "block1_type": "all_text",
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPS4by4ChessboardEmpty.svg",
+      "block1_illust_max_size": "140px",
       "block2_type": "accord_all_text",
       "block3_type": "accord_all_text",
       "block4_type": "accord_all_text",
@@ -519,7 +533,7 @@
           "eng": "Chess Board Squares"
         },
         "block1_text": {
-          "eng": "**Chess Board Squares**\n\n**Question:** How many squares in a 4 by 4 board (small chess board)?\n\n< put in an illustration >"
+          "eng": "**Chess Board Squares**\n\n**Question:** How many squares in a 4 by 4 board (small chess board)?"
         },
         "block2_accord": {
           "eng": "Mull, Distill, Represent"
@@ -546,7 +560,7 @@
           "eng": "See which new questions or directions your students can come up with. It is much better to follow their lead than to give them this list of ideas. However, here are some possibilities:\n\n* What happens for bigger square boards? It turns out there is a tidy formula for summing up square numbers, but that is too advanced for the early grades.\n* What happens for rectangular boards?\n* What if you change the question to count all rectangles instead of squares? How many of those will there be?"
         }
       },
-      "block1_text": "**Chess Board Squares**\n\n**Question:** How many squares in a 4 by 4 board (small chess board)?\n\n< put in an illustration >",
+      "block1_text": "**Chess Board Squares**\n\n**Question:** How many squares in a 4 by 4 board (small chess board)?",
       "block2_accord": "Mull, Distill, Represent",
       "block2_text": "This is a puzzle where it is very important to have a good understanding of what is being asked.\n\nAsk your students what they think the answer is and why. Some may say 16, because there are 16 little squares on the board. Somone might say 17, because there are 16 plus one more for the whole board. Eventually, you want them to understand that squares of all sizes are allowed.\n\nThere is also the question of whether diagonal squares that use the vertex points are allowed. Tell them that's another puzzle.\n\nStress the importance of always starting off with a clear understanding of the puzzle before spending time using incorrect understandings.",
       "block3_accord": "Organized Counting",
@@ -627,7 +641,7 @@
           "eng": "Explorations"
         },
         "block7_text": {
-          "eng": "What could we change in this puzzle? \n* We could look at using 2 colors that must alternate on each face. \n* We could look at 3 colors used on a 3 by 3 cube.\n* We could look at 9 colors used on a 3 by 3 cube. \n\nWhat other variations can you and your students come up with? Which ones are interesting enough to pursue?"
+          "eng": "What could we change in this puzzle? \n* Use 2 colors that must alternate on each face of a 2 by 2 cube.\n* Use 3 colors on a 3 by 3 cube.\n* Use 9 colors on one just one face of a 3 by 3 cube.\n* Use 9 colors on a 3 by 3 cube. \n* Use 4 colors on a tetrahedron.\n\nWhat other variations can you and your students come up with? Which ones are interesting enough to pursue?"
         }
       },
       "block1_text": "**Eight Cubes**\n\n**Question:** There are 8 cubes of the same size. Two are red, two are blue, two are green, and two are white. How many ways can these 8 cubes be put together to form a larger cube so that the larger cube has every color on each face?\n\n< illustration of two cubes - one that is good and one that is bad >",
@@ -642,7 +656,7 @@
       "block6_accord": "Review",
       "block6_text": "How did we get to the answer, and what was it?\n\nWe started by understanding the problem deeply and deciding what it meant for two cubes to be the same. We described a partial solution – we solved what the bottom face of the cube must look like. We then played with the cube until we discovered the key insight that one face completely determines the rest of the cube. We used this insight to show that there are really just two cubes possible.\n\nOne aspect of a review is to ask the question: Now that we have an answer, is there a better way to arrive at the answer that is easier to understand or somehow cleaner? For this problem, given that there are only two solutions, is there a way to arrive more directly at those two solutions?",
       "block7_accord": "Explorations",
-      "block7_text": "What could we change in this puzzle? \n* We could look at using 2 colors that must alternate on each face. \n* We could look at 3 colors used on a 3 by 3 cube.\n* We could look at 9 colors used on a 3 by 3 cube. \n\nWhat other variations can you and your students come up with? Which ones are interesting enough to pursue?"
+      "block7_text": "What could we change in this puzzle? \n* Use 2 colors that must alternate on each face of a 2 by 2 cube.\n* Use 3 colors on a 3 by 3 cube.\n* Use 9 colors on one just one face of a 3 by 3 cube.\n* Use 9 colors on a 3 by 3 cube. \n* Use 4 colors on a tetrahedron.\n\nWhat other variations can you and your students come up with? Which ones are interesting enough to pursue?"
     },
     {
       "id": "esm_ps_milkcrate",
