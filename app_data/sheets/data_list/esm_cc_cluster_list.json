@@ -1,0 +1,567 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "esm_cc_cluster_list",
+  "data_list_name": "esm_cc_clusters",
+  "status": "released",
+  "rows": [
+    {
+      "id": "CC_FMT_EAA_",
+      "strand_id": "FMT",
+      "topic_id_1": "FMT_EAA_EandO",
+      "topic_id_2": "FMT_EAA_FMTinH",
+      "topic_id_3": "FMT_EAA_FMTOA",
+      "topic_id_4": "FMT_EAA_FMTDC",
+      "topic_id_5": "FMT_EAA_FMTC",
+      "topic_id_6": "FMT_EAA_FMTPDA",
+      "name": "Early, Anytime, & Anywhere",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Early, Anytime, & Anywhere"
+        }
+      }
+    },
+    {
+      "id": "CC_FMT_RWC_",
+      "strand_id": "FMT",
+      "topic_id_1": "FMT_RWC_DRP",
+      "topic_id_2": "FMT_RWC_DRV",
+      "name": "Reading with Children",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Reading with Children"
+        }
+      }
+    },
+    {
+      "id": "CC_CC_K_NNS_",
+      "strand_id": "CC_CC",
+      "topic_id_1": "NPV_QC10_CMQ10",
+      "topic_id_2": "NPV_QC10_WN10",
+      "name": "K – Num. Names & Sequence",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "K – Num. Names & Sequence"
+        }
+      }
+    },
+    {
+      "id": "CC_CC_K_CQS_",
+      "strand_id": "CC_CC",
+      "topic_id_1": "NPV_QC10_QC",
+      "topic_id_2": "NPV_QC10_Sub10",
+      "topic_id_3": "NPV_CPV100_Count20",
+      "name": "K – Count Quantity Size",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "K – Count Quantity Size"
+        }
+      }
+    },
+    {
+      "id": "CC_CC_K_CN_",
+      "strand_id": "CC_CC",
+      "topic_id_1": "NPV_QC10_Comp10",
+      "topic_id_2": "NPV_QC10_Ordinals",
+      "topic_id_3": "NPV_CPV100_Comp100",
+      "name": "K – Compare Numbers",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "K – Compare Numbers"
+        }
+      }
+    },
+    {
+      "id": "CC_OA_K_NAS_",
+      "strand_id": "CC_OA",
+      "topic_id_1": "NO_AS10_QAS",
+      "name": "K – Nature of Add & Subtract",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "K – Nature of Add & Subtract"
+        }
+      }
+    },
+    {
+      "id": "CC_OA_1_ASP_",
+      "strand_id": "CC_OA",
+      "name": "1 – Add & Sub in Problems",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "1 – Add & Sub in Problems"
+        }
+      }
+    },
+    {
+      "id": "CC_OA_1_RAS_",
+      "strand_id": "CC_OA",
+      "topic_id_1": "NO_AS10_AComm",
+      "topic_id_2": "NO_AS10_NBFF",
+      "name": "1 – Relate Add <=> Sub",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "1 – Relate Add <=> Sub"
+        }
+      }
+    },
+    {
+      "id": "CC_OA_1_ASW20_",
+      "strand_id": "CC_OA",
+      "topic_id_1": "NO_AS10_AS1and2",
+      "topic_id_2": "NO_AS10_ASto5",
+      "topic_id_3": "NO_AS10_AT",
+      "topic_id_4": "NO_AS10_ANT",
+      "topic_id_5": "NO_ASSD_AddFingers",
+      "topic_id_6": "NO_ASSD_SubFingers",
+      "topic_id_7": "NO_ASSD_ASto10",
+      "topic_id_8": "NO_ASSD_AS10",
+      "name": "1 – Add & Subtract Within 20",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "1 – Add & Subtract Within 20"
+        }
+      }
+    },
+    {
+      "id": "CC_OA_1_ASE_",
+      "strand_id": "CC_OA",
+      "name": "1 – Add & Subtract Equations",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "1 – Add & Subtract Equations"
+        }
+      }
+    },
+    {
+      "id": "CC_OA_2_ASP_",
+      "strand_id": "CC_OA",
+      "name": "2 – Add & Sub in Problems",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "2 – Add & Sub in Problems"
+        }
+      }
+    },
+    {
+      "id": "CC_OA_2_ASW20_",
+      "strand_id": "CC_OA",
+      "topic_id_1": "NO_ASSD_10BridgeA",
+      "topic_id_2": "NO_ASSD_10BridgeS",
+      "topic_id_3": "NO_ASSD_SD_Add_Sub",
+      "name": "2 – Add & Subtract Within 20",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "2 – Add & Subtract Within 20"
+        }
+      }
+    },
+    {
+      "id": "CC_OA_2_EGM_",
+      "strand_id": "CC_OA",
+      "topic_id_1": "NO_MSD_MultRep",
+      "name": "2 – Equal Groups => Mult.",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "2 – Equal Groups => Mult."
+        }
+      }
+    },
+    {
+      "id": "CC_OA_3_MDP_",
+      "strand_id": "CC_OA",
+      "name": "3 – Mult & Div in Problems",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "3 – Mult & Div in Problems"
+        }
+      }
+    },
+    {
+      "id": "CC_OA_3_RMD_",
+      "strand_id": "CC_OA",
+      "name": "3 – Relate Mult <=> Div",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "3 – Relate Mult <=> Div"
+        }
+      }
+    },
+    {
+      "id": "CC_OA_3_MD100_",
+      "strand_id": "CC_OA",
+      "topic_id_1": "NO_MSD_Doubling",
+      "topic_id_2": "NO_MSD_MultCommutes",
+      "topic_id_3": "NO_MSD_Skipping",
+      "topic_id_4": "NO_MSD_AllSingles",
+      "name": "3 – Mult & Div within 100",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "3 – Mult & Div within 100"
+        }
+      }
+    },
+    {
+      "id": "CC_OA_NT_",
+      "strand_id": "CC_OA",
+      "topic_id_1": "NO_NT_EvenOdd",
+      "topic_id_2": "NO_NT_PowExp",
+      "topic_id_3": "NO_NT_Primes",
+      "topic_id_4": "NO_NT_Sieve",
+      "topic_id_5": "NO_NT_PrimeFactoring",
+      "name": "Number Theory",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Number Theory"
+        }
+      }
+    },
+    {
+      "id": "CC_NBT_K_PV19_",
+      "strand_id": "CC_NBT",
+      "topic_id_1": "NPV_CPV100_PV20",
+      "name": "K – Place Value: 11 - 19",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "K – Place Value: 11 - 19"
+        }
+      }
+    },
+    {
+      "id": "CC_NBT_1_ExC_",
+      "strand_id": "CC_NBT",
+      "name": "1 – Extend Counting",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "1 – Extend Counting"
+        }
+      }
+    },
+    {
+      "id": "CC_NBT_1_UPV_",
+      "strand_id": "CC_NBT",
+      "topic_id_1": "NPV_CPV100_Comp20",
+      "name": "1 – Understand Place Value",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "1 – Understand Place Value"
+        }
+      }
+    },
+    {
+      "id": "CC_NBT_1_ASPV_",
+      "strand_id": "CC_NBT",
+      "topic_id_1": "NO_ASSD_PVto19",
+      "topic_id_2": "NO_DD_AS2and1",
+      "topic_id_3": "NO_DD_AS2noRegroup",
+      "topic_id_4": "NO_DD_AS2wRegroup",
+      "name": "1 – Place Value in Add & Sub",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "1 – Place Value in Add & Sub"
+        }
+      }
+    },
+    {
+      "id": "CC_NBT_2_UPV_",
+      "strand_id": "CC_NBT",
+      "topic_id_1": "NPV_CPV100_CountPV100",
+      "name": "2 – Understand Place Value",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "2 – Understand Place Value"
+        }
+      }
+    },
+    {
+      "id": "CC_NBT_2_ASPV_",
+      "strand_id": "CC_NBT",
+      "name": "2 – Place Value in Add & Sub",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "2 – Place Value in Add & Sub"
+        }
+      }
+    },
+    {
+      "id": "CC_NF_3_UFN_",
+      "strand_id": "CC_NF",
+      "topic_id_1": "FEP_EPW_NEP",
+      "topic_id_2": "FEP_EPS_NEP",
+      "name": "Fractions as Numbers",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Fractions as Numbers"
+        }
+      }
+    },
+    {
+      "id": "CC_MD_K_DCM_",
+      "strand_id": "CC_MD",
+      "topic_id_1": "Meas_Dist_CL",
+      "topic_id_2": "Meas_Wt_CW",
+      "topic_id_3": "Meas_Vol_CV",
+      "name": "K – Describe & Compare Meas.",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "K – Describe & Compare Meas."
+        }
+      }
+    },
+    {
+      "id": "CC_MD_K_CCO_",
+      "strand_id": "CC_MD",
+      "topic_id_1": "Data_CO_P",
+      "name": "K – Classify & Count Objects",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "K – Classify & Count Objects"
+        }
+      }
+    },
+    {
+      "id": "CC_MD_1_ML_",
+      "strand_id": "CC_MD",
+      "topic_id_1": "Meas_Dist_MLNS",
+      "name": "1 – Measure Lengths",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "1 – Measure Lengths"
+        }
+      }
+    },
+    {
+      "id": "CC_MD_1_MWV_",
+      "strand_id": "CC_MD",
+      "topic_id_1": "Meas_Wt_MWNS",
+      "topic_id_2": "Meas_Vol_CVNS",
+      "name": "1 – Measure Weight & Volume",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "1 – Measure Weight & Volume"
+        }
+      }
+    },
+    {
+      "id": "CC_MD_1_TWT_",
+      "strand_id": "CC_MD",
+      "topic_id_1": "Meas_Time_PofD",
+      "topic_id_2": "Meas_Time_Cal",
+      "topic_id_3": "Meas_Time_TTH",
+      "name": "1 – Tell & Write Time",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "1 – Tell & Write Time"
+        }
+      }
+    },
+    {
+      "id": "CC_MD_1_RID_",
+      "strand_id": "CC_MD",
+      "topic_id_1": "Data_Rep_P",
+      "topic_id_2": "Data_Graph_P",
+      "topic_id_3": "Data_Anal_P",
+      "name": "1 – Represent & Interpret Data",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "1 – Represent & Interpret Data"
+        }
+      }
+    },
+    {
+      "id": "CC_MD_2_ML_",
+      "strand_id": "CC_MD",
+      "topic_id_1": "Meas_Dist_MLS",
+      "name": "2 – Measure Lengths",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "2 – Measure Lengths"
+        }
+      }
+    },
+    {
+      "id": "CC_MD_2_MWV_",
+      "strand_id": "CC_MD",
+      "topic_id_1": "Meas_Wt_MWS",
+      "topic_id_2": "Meas_Vol_CVS",
+      "name": "2 – Measure Weight & Volume",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "2 – Measure Weight & Volume"
+        }
+      }
+    },
+    {
+      "id": "CC_G_K_Pat_",
+      "strand_id": "CC_G",
+      "topic_id_1": "Geom_Pat_Intro",
+      "topic_id_2": "Geom_Pat_MSP",
+      "name": "K – Patterns",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "K – Patterns"
+        }
+      }
+    },
+    {
+      "id": "CC_G_K_IDS_",
+      "strand_id": "CC_G",
+      "topic_id_1": "Geom_OP_PG",
+      "topic_id_2": "Geom_OP_SD",
+      "topic_id_3": "Geom_Shape_DS",
+      "topic_id_4": "Geom_Shape_SN2D3D",
+      "topic_id_5": "Geom_Shape_CompSort",
+      "name": "K – Identify & Describe Shapes",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "K – Identify & Describe Shapes"
+        }
+      }
+    },
+    {
+      "id": "CC_G_K_WWS_",
+      "strand_id": "CC_G",
+      "topic_id_1": "Geom_Shape_2Dof3DS",
+      "topic_id_2": "Geom_Shape_CompDecomp",
+      "name": "K – Work with Shapes",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "K – Work with Shapes"
+        }
+      }
+    },
+    {
+      "id": "CC_G_1_RWS_",
+      "strand_id": "CC_G",
+      "topic_id_1": "FEP_EPW_MEPS",
+      "topic_id_2": "FEP_EPS_MEPS",
+      "name": "1 – Reason with Shapes",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "1 – Reason with Shapes"
+        }
+      }
+    },
+    {
+      "id": "CC_G_2_RWS_",
+      "strand_id": "CC_G",
+      "name": "2 – Reason with Shapes",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "2 – Reason with Shapes"
+        }
+      }
+    }
+  ],
+  "_xlsxPath": "EFM_topics_high_level_sheets.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1PeJ5ishcTCWUvjhflbQqKO6M8u9rNuec"
+}
