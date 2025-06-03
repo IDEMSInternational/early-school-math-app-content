@@ -51,19 +51,609 @@
     },
     {
       "type": "display_group",
-      "name": "dg_alert",
+      "name": "dg_view",
+      "condition": false,
+      "parameter_list": {
+        "style": "column"
+      },
       "rows": [
         {
-          "type": "text",
-          "name": "txt_alert",
-          "value": "**Alert:** Titles that are struck out are not in the current release.",
+          "name": "radio_description_1",
+          "value": "Individually",
           "_translations": {
             "value": {}
           },
-          "_nested_name": "dg_alert.txt_alert"
+          "type": "set_variable",
+          "_nested_name": "dg_view.radio_description_1"
+        },
+        {
+          "name": "radio_description_2",
+          "value": "By topic",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "dg_view.radio_description_2"
+        },
+        {
+          "name": "answer_list",
+          "value": [
+            {
+              "name": "individually",
+              "text": "@local.radio_description_1"
+            },
+            {
+              "name": "by_topic",
+              "text": "@local.radio_description_2"
+            }
+          ],
+          "type": "set_variable",
+          "_nested_name": "dg_view.answer_list",
+          "_dynamicFields": {
+            "value": {
+              "0": {
+                "text": [
+                  {
+                    "fullExpression": "@local.radio_description_1",
+                    "matchedExpression": "@local.radio_description_1",
+                    "type": "local",
+                    "fieldName": "radio_description_1"
+                  }
+                ]
+              },
+              "1": {
+                "text": [
+                  {
+                    "fullExpression": "@local.radio_description_2",
+                    "matchedExpression": "@local.radio_description_2",
+                    "type": "local",
+                    "fieldName": "radio_description_2"
+                  }
+                ]
+              }
+            }
+          },
+          "_dynamicDependencies": {
+            "@local.radio_description_1": [
+              "value.0.text"
+            ],
+            "@local.radio_description_2": [
+              "value.1.text"
+            ]
+          }
+        },
+        {
+          "name": "listing_style",
+          "value": "by_topic",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "dg_view.listing_style"
+        },
+        {
+          "type": "radio_group",
+          "name": "radio_group",
+          "value": "@local.listing_style",
+          "_translations": {
+            "value": {}
+          },
+          "condition": "changed | set_local: listing_style: @local.radio_group",
+          "parameter_list": {
+            "answer_list": "@local.answer_list",
+            "options_per_row": "2"
+          },
+          "_nested_name": "dg_view.radio_group",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@local.listing_style",
+                "matchedExpression": "@local.listing_style",
+                "type": "local",
+                "fieldName": "listing_style"
+              }
+            ],
+            "condition": [
+              {
+                "fullExpression": "changed | set_local: listing_style: @local.radio_group",
+                "matchedExpression": "@local.radio_group",
+                "type": "local",
+                "fieldName": "radio_group"
+              }
+            ],
+            "parameter_list": {
+              "answer_list": [
+                {
+                  "fullExpression": "@local.answer_list",
+                  "matchedExpression": "@local.answer_list",
+                  "type": "local",
+                  "fieldName": "answer_list"
+                }
+              ]
+            }
+          },
+          "_dynamicDependencies": {
+            "@local.listing_style": [
+              "value"
+            ],
+            "@local.radio_group": [
+              "condition"
+            ],
+            "@local.answer_list": [
+              "parameter_list.answer_list"
+            ]
+          }
+        },
+        {
+          "name": "template_name",
+          "value": "efm_chapter_acts_@local.listing_style",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "dg_view.template_name",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "efm_chapter_acts_@local.listing_style",
+                "matchedExpression": "@local.listing_style",
+                "type": "local",
+                "fieldName": "listing_style"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.listing_style": [
+              "value"
+            ]
+          }
         }
       ],
-      "_nested_name": "dg_alert"
+      "_nested_name": "dg_view"
+    },
+    {
+      "type": "text",
+      "name": "dbggg",
+      "value": "TN: @local.template_name",
+      "_translations": {
+        "value": {}
+      },
+      "condition": false,
+      "_nested_name": "dbggg",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "TN: @local.template_name",
+            "matchedExpression": "@local.template_name",
+            "type": "local",
+            "fieldName": "template_name"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.template_name": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "display_group",
+      "name": "dg_select_standard",
+      "parameter_list": {
+        "style": "column"
+      },
+      "rows": [
+        {
+          "type": "text",
+          "name": "standards_select",
+          "value": "Select a standard:",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "dg_select_standard.standards_select"
+        },
+        {
+          "name": "radio_description_1",
+          "value": "Early School Math",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "dg_select_standard.radio_description_1"
+        },
+        {
+          "name": "radio_description_2",
+          "value": "US Common Core",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "dg_select_standard.radio_description_2"
+        },
+        {
+          "name": "answer_list",
+          "value": [
+            {
+              "name": "ESM",
+              "text": "@local.radio_description_1"
+            },
+            {
+              "name": "USCC",
+              "text": "@local.radio_description_2"
+            }
+          ],
+          "type": "set_variable",
+          "_nested_name": "dg_select_standard.answer_list",
+          "_dynamicFields": {
+            "value": {
+              "0": {
+                "text": [
+                  {
+                    "fullExpression": "@local.radio_description_1",
+                    "matchedExpression": "@local.radio_description_1",
+                    "type": "local",
+                    "fieldName": "radio_description_1"
+                  }
+                ]
+              },
+              "1": {
+                "text": [
+                  {
+                    "fullExpression": "@local.radio_description_2",
+                    "matchedExpression": "@local.radio_description_2",
+                    "type": "local",
+                    "fieldName": "radio_description_2"
+                  }
+                ]
+              }
+            }
+          },
+          "_dynamicDependencies": {
+            "@local.radio_description_1": [
+              "value.0.text"
+            ],
+            "@local.radio_description_2": [
+              "value.1.text"
+            ]
+          }
+        },
+        {
+          "name": "standard",
+          "value": "USCC",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "dg_select_standard.standard"
+        },
+        {
+          "type": "radio_group",
+          "name": "radio_group",
+          "value": "@local.standard",
+          "_translations": {
+            "value": {}
+          },
+          "condition": "changed | set_local: standard: @local.radio_group",
+          "parameter_list": {
+            "answer_list": "@local.answer_list",
+            "options_per_row": "2"
+          },
+          "_nested_name": "dg_select_standard.radio_group",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@local.standard",
+                "matchedExpression": "@local.standard",
+                "type": "local",
+                "fieldName": "standard"
+              }
+            ],
+            "condition": [
+              {
+                "fullExpression": "changed | set_local: standard: @local.radio_group",
+                "matchedExpression": "@local.radio_group",
+                "type": "local",
+                "fieldName": "radio_group"
+              }
+            ],
+            "parameter_list": {
+              "answer_list": [
+                {
+                  "fullExpression": "@local.answer_list",
+                  "matchedExpression": "@local.answer_list",
+                  "type": "local",
+                  "fieldName": "answer_list"
+                }
+              ]
+            }
+          },
+          "_dynamicDependencies": {
+            "@local.standard": [
+              "value"
+            ],
+            "@local.radio_group": [
+              "condition"
+            ],
+            "@local.answer_list": [
+              "parameter_list.answer_list"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "name": "deeebug",
+          "value": "Standard: @local.standard",
+          "_translations": {
+            "value": {}
+          },
+          "condition": false,
+          "_nested_name": "dg_select_standard.deeebug",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "Standard: @local.standard",
+                "matchedExpression": "@local.standard",
+                "type": "local",
+                "fieldName": "standard"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.standard": [
+              "value"
+            ]
+          }
+        },
+        {
+          "type": "set_field",
+          "name": "curriculum_standard",
+          "value": "Early School Math",
+          "_translations": {
+            "value": {}
+          },
+          "condition": "@local.standard == \"ESM\"",
+          "_nested_name": "dg_select_standard.curriculum_standard",
+          "_dynamicFields": {
+            "condition": [
+              {
+                "fullExpression": "@local.standard == \"ESM\"",
+                "matchedExpression": "@local.standard",
+                "type": "local",
+                "fieldName": "standard"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.standard": [
+              "condition"
+            ]
+          }
+        },
+        {
+          "type": "set_field",
+          "name": "top_standards_level",
+          "value": "data.esm_strands",
+          "_translations": {
+            "value": {}
+          },
+          "condition": "@local.standard == \"ESM\"",
+          "_nested_name": "dg_select_standard.top_standards_level",
+          "_dynamicFields": {
+            "condition": [
+              {
+                "fullExpression": "@local.standard == \"ESM\"",
+                "matchedExpression": "@local.standard",
+                "type": "local",
+                "fieldName": "standard"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.standard": [
+              "condition"
+            ]
+          }
+        },
+        {
+          "type": "set_field",
+          "name": "middle_standards_level",
+          "value": "data.esm_themes",
+          "_translations": {
+            "value": {}
+          },
+          "condition": "@local.standard == \"ESM\"",
+          "_nested_name": "dg_select_standard.middle_standards_level",
+          "_dynamicFields": {
+            "condition": [
+              {
+                "fullExpression": "@local.standard == \"ESM\"",
+                "matchedExpression": "@local.standard",
+                "type": "local",
+                "fieldName": "standard"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.standard": [
+              "condition"
+            ]
+          }
+        },
+        {
+          "type": "set_field",
+          "name": "curriculum_standard",
+          "value": "US Common Core",
+          "_translations": {
+            "value": {}
+          },
+          "condition": "@local.standard == \"USCC\"",
+          "_nested_name": "dg_select_standard.curriculum_standard",
+          "_dynamicFields": {
+            "condition": [
+              {
+                "fullExpression": "@local.standard == \"USCC\"",
+                "matchedExpression": "@local.standard",
+                "type": "local",
+                "fieldName": "standard"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.standard": [
+              "condition"
+            ]
+          }
+        },
+        {
+          "type": "set_field",
+          "name": "top_standards_level",
+          "value": "data.esm_cc_domains",
+          "_translations": {
+            "value": {}
+          },
+          "condition": "@local.standard == \"USCC\"",
+          "_nested_name": "dg_select_standard.top_standards_level",
+          "_dynamicFields": {
+            "condition": [
+              {
+                "fullExpression": "@local.standard == \"USCC\"",
+                "matchedExpression": "@local.standard",
+                "type": "local",
+                "fieldName": "standard"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.standard": [
+              "condition"
+            ]
+          }
+        },
+        {
+          "type": "set_field",
+          "name": "middle_standards_level",
+          "value": "data.esm_cc_clusters",
+          "_translations": {
+            "value": {}
+          },
+          "condition": "@local.standard == \"USCC\"",
+          "_nested_name": "dg_select_standard.middle_standards_level",
+          "_dynamicFields": {
+            "condition": [
+              {
+                "fullExpression": "@local.standard == \"USCC\"",
+                "matchedExpression": "@local.standard",
+                "type": "local",
+                "fieldName": "standard"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.standard": [
+              "condition"
+            ]
+          }
+        },
+        {
+          "name": "top_standards_level",
+          "value": "@fields.top_standards_level",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "dg_select_standard.top_standards_level",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@fields.top_standards_level",
+                "matchedExpression": "@fields.top_standards_level",
+                "type": "fields",
+                "fieldName": "top_standards_level"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@fields.top_standards_level": [
+              "value"
+            ]
+          }
+        },
+        {
+          "name": "middle_standards_level",
+          "value": "@fields.middle_standards_level",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "dg_select_standard.middle_standards_level",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@fields.middle_standards_level",
+                "matchedExpression": "@fields.middle_standards_level",
+                "type": "fields",
+                "fieldName": "middle_standards_level"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@fields.middle_standards_level": [
+              "value"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "name": "ddebug",
+          "value": "TSL: @local.top_standards_level",
+          "_translations": {
+            "value": {}
+          },
+          "condition": false,
+          "_nested_name": "dg_select_standard.ddebug",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "TSL: @local.top_standards_level",
+                "matchedExpression": "@local.top_standards_level",
+                "type": "local",
+                "fieldName": "top_standards_level"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.top_standards_level": [
+              "value"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "name": "ddebugg",
+          "value": "MSL: @local.middle_standards_level",
+          "_translations": {
+            "value": {}
+          },
+          "condition": false,
+          "_nested_name": "dg_select_standard.ddebugg",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "MSL: @local.middle_standards_level",
+                "matchedExpression": "@local.middle_standards_level",
+                "type": "local",
+                "fieldName": "middle_standards_level"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.middle_standards_level": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "dg_select_standard"
     },
     {
       "name": "now",
@@ -108,15 +698,15 @@
       "rows": [
         {
           "type": "accordion",
-          "name": "accordion_strands",
+          "name": "accordion_top_level",
           "parameter_list": {
             "open_multiple": "TRUE"
           },
           "rows": [
             {
               "type": "items",
-              "name": "strand_acoords",
-              "value": "@data.esm_strands",
+              "name": "top_level_acoords",
+              "value": "@@local.top_standards_level",
               "rows": [
                 {
                   "type": "accordion_section",
@@ -131,17 +721,23 @@
                       },
                       "rows": [
                         {
-                          "name": "strand_ptr",
-                          "value": "data.esm_strands.@item.id",
+                          "name": "top_level_ptr",
+                          "value": "@local.top_standards_level.@item.id",
                           "_translations": {
                             "value": {}
                           },
                           "type": "set_variable",
-                          "_nested_name": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.strand_ptr",
+                          "_nested_name": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.top_level_ptr",
                           "_dynamicFields": {
                             "value": [
                               {
-                                "fullExpression": "data.esm_strands.@item.id",
+                                "fullExpression": "@local.top_standards_level.@item.id",
+                                "matchedExpression": "@local.top_standards_level",
+                                "type": "local",
+                                "fieldName": "top_standards_level"
+                              },
+                              {
+                                "fullExpression": "@local.top_standards_level.@item.id",
                                 "matchedExpression": "@item.id",
                                 "type": "item",
                                 "fieldName": "id"
@@ -149,98 +745,101 @@
                             ],
                             "_nested_name": [
                               {
-                                "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.strand_ptr",
+                                "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.top_level_ptr",
                                 "matchedExpression": "@item.id.dg_",
                                 "type": "item",
                                 "fieldName": "id"
                               },
                               {
-                                "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.strand_ptr",
-                                "matchedExpression": "@item.id.strand_ptr",
+                                "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.top_level_ptr",
+                                "matchedExpression": "@item.id.top_level_ptr",
                                 "type": "item",
                                 "fieldName": "id"
                               }
                             ]
                           },
                           "_dynamicDependencies": {
+                            "@local.top_standards_level": [
+                              "value"
+                            ],
                             "@item.id": [
                               "value"
                             ],
                             "@item.id.dg_": [
                               "_nested_name"
                             ],
-                            "@item.id.strand_ptr": [
+                            "@item.id.top_level_ptr": [
                               "_nested_name"
                             ]
                           }
                         },
                         {
-                          "name": "strand_entries",
-                          "value": "@@local.strand_ptr",
+                          "name": "top_level_entries",
+                          "value": "@@local.top_level_ptr",
                           "_translations": {
                             "value": {}
                           },
                           "type": "set_variable",
-                          "_nested_name": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.strand_entries",
+                          "_nested_name": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.top_level_entries",
                           "_dynamicFields": {
                             "value": [
                               {
-                                "fullExpression": "@@local.strand_ptr",
-                                "matchedExpression": "@local.strand_ptr",
+                                "fullExpression": "@@local.top_level_ptr",
+                                "matchedExpression": "@local.top_level_ptr",
                                 "type": "local",
-                                "fieldName": "strand_ptr"
+                                "fieldName": "top_level_ptr"
                               }
                             ],
                             "_nested_name": [
                               {
-                                "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.strand_entries",
+                                "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.top_level_entries",
                                 "matchedExpression": "@item.id.dg_",
                                 "type": "item",
                                 "fieldName": "id"
                               },
                               {
-                                "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.strand_entries",
-                                "matchedExpression": "@item.id.strand_entries",
+                                "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.top_level_entries",
+                                "matchedExpression": "@item.id.top_level_entries",
                                 "type": "item",
                                 "fieldName": "id"
                               }
                             ]
                           },
                           "_dynamicDependencies": {
-                            "@local.strand_ptr": [
+                            "@local.top_level_ptr": [
                               "value"
                             ],
                             "@item.id.dg_": [
                               "_nested_name"
                             ],
-                            "@item.id.strand_entries": [
+                            "@item.id.top_level_entries": [
                               "_nested_name"
                             ]
                           }
                         },
                         {
                           "type": "accordion",
-                          "name": "accordion_themes",
+                          "name": "accordion_middle_level",
                           "parameter_list": {
                             "open_multiple": "TRUE"
                           },
                           "rows": [
                             {
                               "type": "items",
-                              "name": "strand_theme_accords",
-                              "value": "@data.efm_num_list_one_to_ten",
+                              "name": "middle_level_accords",
+                              "value": "@data.num_list_one_to_twenty",
                               "parameter_list": {
                                 "style": "column"
                               },
                               "rows": [
                                 {
-                                  "name": "theme_index",
+                                  "name": "middle_level_index",
                                   "value": "theme_id_@item.number",
                                   "_translations": {
                                     "value": {}
                                   },
                                   "type": "set_variable",
-                                  "_nested_name": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.theme_index",
+                                  "_nested_name": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.middle_level_index",
                                   "_dynamicFields": {
                                     "value": [
                                       {
@@ -252,14 +851,14 @@
                                     ],
                                     "_nested_name": [
                                       {
-                                        "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.theme_index",
+                                        "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.middle_level_index",
                                         "matchedExpression": "@item.id.dg_",
                                         "type": "item",
                                         "fieldName": "id"
                                       },
                                       {
-                                        "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.theme_index",
-                                        "matchedExpression": "@item.id.accordion_themes.strand_theme_accords.theme_index",
+                                        "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.middle_level_index",
+                                        "matchedExpression": "@item.id.accordion_middle_level.middle_level_accords.middle_level_index",
                                         "type": "item",
                                         "fieldName": "id"
                                       }
@@ -272,217 +871,226 @@
                                     "@item.id.dg_": [
                                       "_nested_name"
                                     ],
-                                    "@item.id.accordion_themes.strand_theme_accords.theme_index": [
+                                    "@item.id.accordion_middle_level.middle_level_accords.middle_level_index": [
                                       "_nested_name"
                                     ]
                                   }
                                 },
                                 {
-                                  "name": "theme_id_ptr",
-                                  "value": "local.strand_entries.@local.theme_index",
+                                  "name": "middle_level_id_ptr",
+                                  "value": "local.top_level_entries.@local.middle_level_index",
                                   "_translations": {
                                     "value": {}
                                   },
                                   "type": "set_variable",
-                                  "_nested_name": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.theme_id_ptr",
+                                  "_nested_name": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.middle_level_id_ptr",
                                   "_dynamicFields": {
                                     "value": [
                                       {
-                                        "fullExpression": "local.strand_entries.@local.theme_index",
-                                        "matchedExpression": "@local.theme_index",
+                                        "fullExpression": "local.top_level_entries.@local.middle_level_index",
+                                        "matchedExpression": "@local.middle_level_index",
                                         "type": "local",
-                                        "fieldName": "theme_index"
+                                        "fieldName": "middle_level_index"
                                       }
                                     ],
                                     "_nested_name": [
                                       {
-                                        "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.theme_id_ptr",
+                                        "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.middle_level_id_ptr",
                                         "matchedExpression": "@item.id.dg_",
                                         "type": "item",
                                         "fieldName": "id"
                                       },
                                       {
-                                        "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.theme_id_ptr",
-                                        "matchedExpression": "@item.id.accordion_themes.strand_theme_accords.theme_id_ptr",
+                                        "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.middle_level_id_ptr",
+                                        "matchedExpression": "@item.id.accordion_middle_level.middle_level_accords.middle_level_id_ptr",
                                         "type": "item",
                                         "fieldName": "id"
                                       }
                                     ]
                                   },
                                   "_dynamicDependencies": {
-                                    "@local.theme_index": [
+                                    "@local.middle_level_index": [
                                       "value"
                                     ],
                                     "@item.id.dg_": [
                                       "_nested_name"
                                     ],
-                                    "@item.id.accordion_themes.strand_theme_accords.theme_id_ptr": [
+                                    "@item.id.accordion_middle_level.middle_level_accords.middle_level_id_ptr": [
                                       "_nested_name"
                                     ]
                                   }
                                 },
                                 {
-                                  "name": "theme_id",
-                                  "value": "@@local.theme_id_ptr",
+                                  "name": "middle_level_id",
+                                  "value": "@@local.middle_level_id_ptr",
                                   "_translations": {
                                     "value": {}
                                   },
-                                  "condition": "@@local.theme_id_ptr",
+                                  "condition": "@@local.middle_level_id_ptr",
                                   "type": "set_variable",
-                                  "_nested_name": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.theme_id",
+                                  "_nested_name": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.middle_level_id",
                                   "_dynamicFields": {
                                     "value": [
                                       {
-                                        "fullExpression": "@@local.theme_id_ptr",
-                                        "matchedExpression": "@local.theme_id_ptr",
+                                        "fullExpression": "@@local.middle_level_id_ptr",
+                                        "matchedExpression": "@local.middle_level_id_ptr",
                                         "type": "local",
-                                        "fieldName": "theme_id_ptr"
+                                        "fieldName": "middle_level_id_ptr"
                                       }
                                     ],
                                     "condition": [
                                       {
-                                        "fullExpression": "@@local.theme_id_ptr",
-                                        "matchedExpression": "@local.theme_id_ptr",
+                                        "fullExpression": "@@local.middle_level_id_ptr",
+                                        "matchedExpression": "@local.middle_level_id_ptr",
                                         "type": "local",
-                                        "fieldName": "theme_id_ptr"
+                                        "fieldName": "middle_level_id_ptr"
                                       }
                                     ],
                                     "_nested_name": [
                                       {
-                                        "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.theme_id",
+                                        "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.middle_level_id",
                                         "matchedExpression": "@item.id.dg_",
                                         "type": "item",
                                         "fieldName": "id"
                                       },
                                       {
-                                        "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.theme_id",
-                                        "matchedExpression": "@item.id.accordion_themes.strand_theme_accords.theme_id",
+                                        "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.middle_level_id",
+                                        "matchedExpression": "@item.id.accordion_middle_level.middle_level_accords.middle_level_id",
                                         "type": "item",
                                         "fieldName": "id"
                                       }
                                     ]
                                   },
                                   "_dynamicDependencies": {
-                                    "@local.theme_id_ptr": [
+                                    "@local.middle_level_id_ptr": [
                                       "value",
                                       "condition"
                                     ],
                                     "@item.id.dg_": [
                                       "_nested_name"
                                     ],
-                                    "@item.id.accordion_themes.strand_theme_accords.theme_id": [
+                                    "@item.id.accordion_middle_level.middle_level_accords.middle_level_id": [
                                       "_nested_name"
                                     ]
                                   }
                                 },
                                 {
-                                  "name": "theme_ptr",
-                                  "value": "data.esm_themes.@local.theme_id",
+                                  "name": "middle_level_ptr",
+                                  "value": "@local.middle_standards_level.@local.middle_level_id",
                                   "_translations": {
                                     "value": {}
                                   },
-                                  "condition": "@@local.theme_id_ptr",
+                                  "condition": "@@local.middle_level_id_ptr",
                                   "type": "set_variable",
-                                  "_nested_name": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.theme_ptr",
+                                  "_nested_name": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.middle_level_ptr",
                                   "_dynamicFields": {
                                     "value": [
                                       {
-                                        "fullExpression": "data.esm_themes.@local.theme_id",
-                                        "matchedExpression": "@local.theme_id",
+                                        "fullExpression": "@local.middle_standards_level.@local.middle_level_id",
+                                        "matchedExpression": "@local.middle_standards_level",
                                         "type": "local",
-                                        "fieldName": "theme_id"
+                                        "fieldName": "middle_standards_level"
+                                      },
+                                      {
+                                        "fullExpression": "@local.middle_standards_level.@local.middle_level_id",
+                                        "matchedExpression": "@local.middle_level_id",
+                                        "type": "local",
+                                        "fieldName": "middle_level_id"
                                       }
                                     ],
                                     "condition": [
                                       {
-                                        "fullExpression": "@@local.theme_id_ptr",
-                                        "matchedExpression": "@local.theme_id_ptr",
+                                        "fullExpression": "@@local.middle_level_id_ptr",
+                                        "matchedExpression": "@local.middle_level_id_ptr",
                                         "type": "local",
-                                        "fieldName": "theme_id_ptr"
+                                        "fieldName": "middle_level_id_ptr"
                                       }
                                     ],
                                     "_nested_name": [
                                       {
-                                        "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.theme_ptr",
+                                        "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.middle_level_ptr",
                                         "matchedExpression": "@item.id.dg_",
                                         "type": "item",
                                         "fieldName": "id"
                                       },
                                       {
-                                        "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.theme_ptr",
-                                        "matchedExpression": "@item.id.accordion_themes.strand_theme_accords.theme_ptr",
+                                        "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.middle_level_ptr",
+                                        "matchedExpression": "@item.id.accordion_middle_level.middle_level_accords.middle_level_ptr",
                                         "type": "item",
                                         "fieldName": "id"
                                       }
                                     ]
                                   },
                                   "_dynamicDependencies": {
-                                    "@local.theme_id": [
+                                    "@local.middle_standards_level": [
                                       "value"
                                     ],
-                                    "@local.theme_id_ptr": [
+                                    "@local.middle_level_id": [
+                                      "value"
+                                    ],
+                                    "@local.middle_level_id_ptr": [
                                       "condition"
                                     ],
                                     "@item.id.dg_": [
                                       "_nested_name"
                                     ],
-                                    "@item.id.accordion_themes.strand_theme_accords.theme_ptr": [
+                                    "@item.id.accordion_middle_level.middle_level_accords.middle_level_ptr": [
                                       "_nested_name"
                                     ]
                                   }
                                 },
                                 {
-                                  "name": "theme_entries",
-                                  "value": "@@local.theme_ptr",
+                                  "name": "middle_level_entries",
+                                  "value": "@@local.middle_level_ptr",
                                   "_translations": {
                                     "value": {}
                                   },
-                                  "condition": "@@local.theme_id_ptr",
+                                  "condition": "@@local.middle_level_id_ptr",
                                   "type": "set_variable",
-                                  "_nested_name": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.theme_entries",
+                                  "_nested_name": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.middle_level_entries",
                                   "_dynamicFields": {
                                     "value": [
                                       {
-                                        "fullExpression": "@@local.theme_ptr",
-                                        "matchedExpression": "@local.theme_ptr",
+                                        "fullExpression": "@@local.middle_level_ptr",
+                                        "matchedExpression": "@local.middle_level_ptr",
                                         "type": "local",
-                                        "fieldName": "theme_ptr"
+                                        "fieldName": "middle_level_ptr"
                                       }
                                     ],
                                     "condition": [
                                       {
-                                        "fullExpression": "@@local.theme_id_ptr",
-                                        "matchedExpression": "@local.theme_id_ptr",
+                                        "fullExpression": "@@local.middle_level_id_ptr",
+                                        "matchedExpression": "@local.middle_level_id_ptr",
                                         "type": "local",
-                                        "fieldName": "theme_id_ptr"
+                                        "fieldName": "middle_level_id_ptr"
                                       }
                                     ],
                                     "_nested_name": [
                                       {
-                                        "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.theme_entries",
+                                        "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.middle_level_entries",
                                         "matchedExpression": "@item.id.dg_",
                                         "type": "item",
                                         "fieldName": "id"
                                       },
                                       {
-                                        "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.theme_entries",
-                                        "matchedExpression": "@item.id.accordion_themes.strand_theme_accords.theme_entries",
+                                        "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.middle_level_entries",
+                                        "matchedExpression": "@item.id.accordion_middle_level.middle_level_accords.middle_level_entries",
                                         "type": "item",
                                         "fieldName": "id"
                                       }
                                     ]
                                   },
                                   "_dynamicDependencies": {
-                                    "@local.theme_ptr": [
+                                    "@local.middle_level_ptr": [
                                       "value"
                                     ],
-                                    "@local.theme_id_ptr": [
+                                    "@local.middle_level_id_ptr": [
                                       "condition"
                                     ],
                                     "@item.id.dg_": [
                                       "_nested_name"
                                     ],
-                                    "@item.id.accordion_themes.strand_theme_accords.theme_entries": [
+                                    "@item.id.accordion_middle_level.middle_level_accords.middle_level_entries": [
                                       "_nested_name"
                                     ]
                                   }
@@ -490,8 +1098,8 @@
                                 {
                                   "type": "accordion_section",
                                   "name": "block2_@item.id",
-                                  "value": "@local.theme_entries.name",
-                                  "condition": "@@local.theme_id_ptr",
+                                  "value": "@local.middle_level_entries.name",
+                                  "condition": "@@local.middle_level_id_ptr",
                                   "rows": [
                                     {
                                       "type": "display_group",
@@ -502,8 +1110,8 @@
                                       "rows": [
                                         {
                                           "type": "items",
-                                          "name": "theme_topic_accords",
-                                          "value": "@data.efm_num_list_one_to_ten",
+                                          "name": "topic_accords",
+                                          "value": "@data.num_list_one_to_twenty",
                                           "parameter_list": {
                                             "style": "column"
                                           },
@@ -515,7 +1123,7 @@
                                                 "value": {}
                                               },
                                               "type": "set_variable",
-                                              "_nested_name": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_index",
+                                              "_nested_name": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.topic_index",
                                               "_dynamicFields": {
                                                 "value": [
                                                   {
@@ -527,26 +1135,26 @@
                                                 ],
                                                 "_nested_name": [
                                                   {
-                                                    "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_index",
+                                                    "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.topic_index",
                                                     "matchedExpression": "@item.id.dg_",
                                                     "type": "item",
                                                     "fieldName": "id"
                                                   },
                                                   {
-                                                    "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_index",
-                                                    "matchedExpression": "@item.id.accordion_themes.strand_theme_accords.block2_",
+                                                    "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.topic_index",
+                                                    "matchedExpression": "@item.id.accordion_middle_level.middle_level_accords.block2_",
                                                     "type": "item",
                                                     "fieldName": "id"
                                                   },
                                                   {
-                                                    "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_index",
+                                                    "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.topic_index",
                                                     "matchedExpression": "@item.id.dgg_",
                                                     "type": "item",
                                                     "fieldName": "id"
                                                   },
                                                   {
-                                                    "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_index",
-                                                    "matchedExpression": "@item.id.theme_topic_accords.topic_index",
+                                                    "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.topic_index",
+                                                    "matchedExpression": "@item.id.topic_accords.topic_index",
                                                     "type": "item",
                                                     "fieldName": "id"
                                                   }
@@ -559,29 +1167,29 @@
                                                 "@item.id.dg_": [
                                                   "_nested_name"
                                                 ],
-                                                "@item.id.accordion_themes.strand_theme_accords.block2_": [
+                                                "@item.id.accordion_middle_level.middle_level_accords.block2_": [
                                                   "_nested_name"
                                                 ],
                                                 "@item.id.dgg_": [
                                                   "_nested_name"
                                                 ],
-                                                "@item.id.theme_topic_accords.topic_index": [
+                                                "@item.id.topic_accords.topic_index": [
                                                   "_nested_name"
                                                 ]
                                               }
                                             },
                                             {
                                               "name": "topic_id_ptr",
-                                              "value": "local.theme_entries.@local.topic_index",
+                                              "value": "local.middle_level_entries.@local.topic_index",
                                               "_translations": {
                                                 "value": {}
                                               },
                                               "type": "set_variable",
-                                              "_nested_name": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_id_ptr",
+                                              "_nested_name": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.topic_id_ptr",
                                               "_dynamicFields": {
                                                 "value": [
                                                   {
-                                                    "fullExpression": "local.theme_entries.@local.topic_index",
+                                                    "fullExpression": "local.middle_level_entries.@local.topic_index",
                                                     "matchedExpression": "@local.topic_index",
                                                     "type": "local",
                                                     "fieldName": "topic_index"
@@ -589,26 +1197,26 @@
                                                 ],
                                                 "_nested_name": [
                                                   {
-                                                    "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_id_ptr",
+                                                    "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.topic_id_ptr",
                                                     "matchedExpression": "@item.id.dg_",
                                                     "type": "item",
                                                     "fieldName": "id"
                                                   },
                                                   {
-                                                    "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_id_ptr",
-                                                    "matchedExpression": "@item.id.accordion_themes.strand_theme_accords.block2_",
+                                                    "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.topic_id_ptr",
+                                                    "matchedExpression": "@item.id.accordion_middle_level.middle_level_accords.block2_",
                                                     "type": "item",
                                                     "fieldName": "id"
                                                   },
                                                   {
-                                                    "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_id_ptr",
+                                                    "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.topic_id_ptr",
                                                     "matchedExpression": "@item.id.dgg_",
                                                     "type": "item",
                                                     "fieldName": "id"
                                                   },
                                                   {
-                                                    "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_id_ptr",
-                                                    "matchedExpression": "@item.id.theme_topic_accords.topic_id_ptr",
+                                                    "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.topic_id_ptr",
+                                                    "matchedExpression": "@item.id.topic_accords.topic_id_ptr",
                                                     "type": "item",
                                                     "fieldName": "id"
                                                   }
@@ -621,13 +1229,13 @@
                                                 "@item.id.dg_": [
                                                   "_nested_name"
                                                 ],
-                                                "@item.id.accordion_themes.strand_theme_accords.block2_": [
+                                                "@item.id.accordion_middle_level.middle_level_accords.block2_": [
                                                   "_nested_name"
                                                 ],
                                                 "@item.id.dgg_": [
                                                   "_nested_name"
                                                 ],
-                                                "@item.id.theme_topic_accords.topic_id_ptr": [
+                                                "@item.id.topic_accords.topic_id_ptr": [
                                                   "_nested_name"
                                                 ]
                                               }
@@ -640,7 +1248,7 @@
                                               },
                                               "condition": "@@local.topic_id_ptr",
                                               "type": "set_variable",
-                                              "_nested_name": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_id",
+                                              "_nested_name": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.topic_id",
                                               "_dynamicFields": {
                                                 "value": [
                                                   {
@@ -660,26 +1268,26 @@
                                                 ],
                                                 "_nested_name": [
                                                   {
-                                                    "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_id",
+                                                    "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.topic_id",
                                                     "matchedExpression": "@item.id.dg_",
                                                     "type": "item",
                                                     "fieldName": "id"
                                                   },
                                                   {
-                                                    "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_id",
-                                                    "matchedExpression": "@item.id.accordion_themes.strand_theme_accords.block2_",
+                                                    "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.topic_id",
+                                                    "matchedExpression": "@item.id.accordion_middle_level.middle_level_accords.block2_",
                                                     "type": "item",
                                                     "fieldName": "id"
                                                   },
                                                   {
-                                                    "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_id",
+                                                    "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.topic_id",
                                                     "matchedExpression": "@item.id.dgg_",
                                                     "type": "item",
                                                     "fieldName": "id"
                                                   },
                                                   {
-                                                    "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_id",
-                                                    "matchedExpression": "@item.id.theme_topic_accords.topic_id",
+                                                    "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.topic_id",
+                                                    "matchedExpression": "@item.id.topic_accords.topic_id",
                                                     "type": "item",
                                                     "fieldName": "id"
                                                   }
@@ -693,13 +1301,13 @@
                                                 "@item.id.dg_": [
                                                   "_nested_name"
                                                 ],
-                                                "@item.id.accordion_themes.strand_theme_accords.block2_": [
+                                                "@item.id.accordion_middle_level.middle_level_accords.block2_": [
                                                   "_nested_name"
                                                 ],
                                                 "@item.id.dgg_": [
                                                   "_nested_name"
                                                 ],
-                                                "@item.id.theme_topic_accords.topic_id": [
+                                                "@item.id.topic_accords.topic_id": [
                                                   "_nested_name"
                                                 ]
                                               }
@@ -712,7 +1320,7 @@
                                               },
                                               "condition": "@@local.topic_id_ptr",
                                               "type": "set_variable",
-                                              "_nested_name": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_ptr",
+                                              "_nested_name": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.topic_ptr",
                                               "_dynamicFields": {
                                                 "value": [
                                                   {
@@ -732,26 +1340,26 @@
                                                 ],
                                                 "_nested_name": [
                                                   {
-                                                    "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_ptr",
+                                                    "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.topic_ptr",
                                                     "matchedExpression": "@item.id.dg_",
                                                     "type": "item",
                                                     "fieldName": "id"
                                                   },
                                                   {
-                                                    "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_ptr",
-                                                    "matchedExpression": "@item.id.accordion_themes.strand_theme_accords.block2_",
+                                                    "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.topic_ptr",
+                                                    "matchedExpression": "@item.id.accordion_middle_level.middle_level_accords.block2_",
                                                     "type": "item",
                                                     "fieldName": "id"
                                                   },
                                                   {
-                                                    "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_ptr",
+                                                    "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.topic_ptr",
                                                     "matchedExpression": "@item.id.dgg_",
                                                     "type": "item",
                                                     "fieldName": "id"
                                                   },
                                                   {
-                                                    "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_ptr",
-                                                    "matchedExpression": "@item.id.theme_topic_accords.topic_ptr",
+                                                    "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.topic_ptr",
+                                                    "matchedExpression": "@item.id.topic_accords.topic_ptr",
                                                     "type": "item",
                                                     "fieldName": "id"
                                                   }
@@ -767,13 +1375,13 @@
                                                 "@item.id.dg_": [
                                                   "_nested_name"
                                                 ],
-                                                "@item.id.accordion_themes.strand_theme_accords.block2_": [
+                                                "@item.id.accordion_middle_level.middle_level_accords.block2_": [
                                                   "_nested_name"
                                                 ],
                                                 "@item.id.dgg_": [
                                                   "_nested_name"
                                                 ],
-                                                "@item.id.theme_topic_accords.topic_ptr": [
+                                                "@item.id.topic_accords.topic_ptr": [
                                                   "_nested_name"
                                                 ]
                                               }
@@ -786,7 +1394,7 @@
                                               },
                                               "condition": "@@local.topic_id_ptr",
                                               "type": "set_variable",
-                                              "_nested_name": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_entries",
+                                              "_nested_name": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.topic_entries",
                                               "_dynamicFields": {
                                                 "value": [
                                                   {
@@ -806,26 +1414,26 @@
                                                 ],
                                                 "_nested_name": [
                                                   {
-                                                    "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_entries",
+                                                    "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.topic_entries",
                                                     "matchedExpression": "@item.id.dg_",
                                                     "type": "item",
                                                     "fieldName": "id"
                                                   },
                                                   {
-                                                    "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_entries",
-                                                    "matchedExpression": "@item.id.accordion_themes.strand_theme_accords.block2_",
+                                                    "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.topic_entries",
+                                                    "matchedExpression": "@item.id.accordion_middle_level.middle_level_accords.block2_",
                                                     "type": "item",
                                                     "fieldName": "id"
                                                   },
                                                   {
-                                                    "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_entries",
+                                                    "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.topic_entries",
                                                     "matchedExpression": "@item.id.dgg_",
                                                     "type": "item",
                                                     "fieldName": "id"
                                                   },
                                                   {
-                                                    "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.topic_entries",
-                                                    "matchedExpression": "@item.id.theme_topic_accords.topic_entries",
+                                                    "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.topic_entries",
+                                                    "matchedExpression": "@item.id.topic_accords.topic_entries",
                                                     "type": "item",
                                                     "fieldName": "id"
                                                   }
@@ -841,13 +1449,13 @@
                                                 "@item.id.dg_": [
                                                   "_nested_name"
                                                 ],
-                                                "@item.id.accordion_themes.strand_theme_accords.block2_": [
+                                                "@item.id.accordion_middle_level.middle_level_accords.block2_": [
                                                   "_nested_name"
                                                 ],
                                                 "@item.id.dgg_": [
                                                   "_nested_name"
                                                 ],
-                                                "@item.id.theme_topic_accords.topic_entries": [
+                                                "@item.id.topic_accords.topic_entries": [
                                                   "_nested_name"
                                                 ]
                                               }
@@ -868,7 +1476,7 @@
                                                   },
                                                   "exclude_from_translation": true,
                                                   "type": "set_variable",
-                                                  "_nested_name": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id.click_history_field_name",
+                                                  "_nested_name": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.dggg_@item_id.click_history_field_name",
                                                   "_dynamicFields": {
                                                     "value": [
                                                       {
@@ -886,26 +1494,26 @@
                                                     ],
                                                     "_nested_name": [
                                                       {
-                                                        "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id.click_history_field_name",
+                                                        "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.dggg_@item_id.click_history_field_name",
                                                         "matchedExpression": "@item.id.dg_",
                                                         "type": "item",
                                                         "fieldName": "id"
                                                       },
                                                       {
-                                                        "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id.click_history_field_name",
-                                                        "matchedExpression": "@item.id.accordion_themes.strand_theme_accords.block2_",
+                                                        "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.dggg_@item_id.click_history_field_name",
+                                                        "matchedExpression": "@item.id.accordion_middle_level.middle_level_accords.block2_",
                                                         "type": "item",
                                                         "fieldName": "id"
                                                       },
                                                       {
-                                                        "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id.click_history_field_name",
+                                                        "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.dggg_@item_id.click_history_field_name",
                                                         "matchedExpression": "@item.id.dgg_",
                                                         "type": "item",
                                                         "fieldName": "id"
                                                       },
                                                       {
-                                                        "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id.click_history_field_name",
-                                                        "matchedExpression": "@item.id.theme_topic_accords.dggg_",
+                                                        "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.dggg_@item_id.click_history_field_name",
+                                                        "matchedExpression": "@item.id.topic_accords.dggg_",
                                                         "type": "item",
                                                         "fieldName": "id"
                                                       }
@@ -921,13 +1529,13 @@
                                                     "@item.id.dg_": [
                                                       "_nested_name"
                                                     ],
-                                                    "@item.id.accordion_themes.strand_theme_accords.block2_": [
+                                                    "@item.id.accordion_middle_level.middle_level_accords.block2_": [
                                                       "_nested_name"
                                                     ],
                                                     "@item.id.dgg_": [
                                                       "_nested_name"
                                                     ],
-                                                    "@item.id.theme_topic_accords.dggg_": [
+                                                    "@item.id.topic_accords.dggg_": [
                                                       "_nested_name"
                                                     ]
                                                   }
@@ -941,7 +1549,7 @@
                                                   "condition": "!!(@fields.@local.click_history_field_name)",
                                                   "exclude_from_translation": true,
                                                   "type": "set_variable",
-                                                  "_nested_name": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id.topics_click_history",
+                                                  "_nested_name": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.dggg_@item_id.topics_click_history",
                                                   "_dynamicFields": {
                                                     "value": [
                                                       {
@@ -967,26 +1575,26 @@
                                                     ],
                                                     "_nested_name": [
                                                       {
-                                                        "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id.topics_click_history",
+                                                        "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.dggg_@item_id.topics_click_history",
                                                         "matchedExpression": "@item.id.dg_",
                                                         "type": "item",
                                                         "fieldName": "id"
                                                       },
                                                       {
-                                                        "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id.topics_click_history",
-                                                        "matchedExpression": "@item.id.accordion_themes.strand_theme_accords.block2_",
+                                                        "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.dggg_@item_id.topics_click_history",
+                                                        "matchedExpression": "@item.id.accordion_middle_level.middle_level_accords.block2_",
                                                         "type": "item",
                                                         "fieldName": "id"
                                                       },
                                                       {
-                                                        "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id.topics_click_history",
+                                                        "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.dggg_@item_id.topics_click_history",
                                                         "matchedExpression": "@item.id.dgg_",
                                                         "type": "item",
                                                         "fieldName": "id"
                                                       },
                                                       {
-                                                        "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id.topics_click_history",
-                                                        "matchedExpression": "@item.id.theme_topic_accords.dggg_",
+                                                        "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.dggg_@item_id.topics_click_history",
+                                                        "matchedExpression": "@item.id.topic_accords.dggg_",
                                                         "type": "item",
                                                         "fieldName": "id"
                                                       }
@@ -1003,13 +1611,13 @@
                                                     "@item.id.dg_": [
                                                       "_nested_name"
                                                     ],
-                                                    "@item.id.accordion_themes.strand_theme_accords.block2_": [
+                                                    "@item.id.accordion_middle_level.middle_level_accords.block2_": [
                                                       "_nested_name"
                                                     ],
                                                     "@item.id.dgg_": [
                                                       "_nested_name"
                                                     ],
-                                                    "@item.id.theme_topic_accords.dggg_": [
+                                                    "@item.id.topic_accords.dggg_": [
                                                       "_nested_name"
                                                     ]
                                                   }
@@ -1023,7 +1631,7 @@
                                                   "condition": "!(@fields.@local.click_history_field_name)",
                                                   "exclude_from_translation": true,
                                                   "type": "set_variable",
-                                                  "_nested_name": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id.topics_click_history",
+                                                  "_nested_name": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.dggg_@item_id.topics_click_history",
                                                   "_dynamicFields": {
                                                     "value": [
                                                       {
@@ -1043,26 +1651,26 @@
                                                     ],
                                                     "_nested_name": [
                                                       {
-                                                        "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id.topics_click_history",
+                                                        "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.dggg_@item_id.topics_click_history",
                                                         "matchedExpression": "@item.id.dg_",
                                                         "type": "item",
                                                         "fieldName": "id"
                                                       },
                                                       {
-                                                        "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id.topics_click_history",
-                                                        "matchedExpression": "@item.id.accordion_themes.strand_theme_accords.block2_",
+                                                        "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.dggg_@item_id.topics_click_history",
+                                                        "matchedExpression": "@item.id.accordion_middle_level.middle_level_accords.block2_",
                                                         "type": "item",
                                                         "fieldName": "id"
                                                       },
                                                       {
-                                                        "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id.topics_click_history",
+                                                        "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.dggg_@item_id.topics_click_history",
                                                         "matchedExpression": "@item.id.dgg_",
                                                         "type": "item",
                                                         "fieldName": "id"
                                                       },
                                                       {
-                                                        "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id.topics_click_history",
-                                                        "matchedExpression": "@item.id.theme_topic_accords.dggg_",
+                                                        "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.dggg_@item_id.topics_click_history",
+                                                        "matchedExpression": "@item.id.topic_accords.dggg_",
                                                         "type": "item",
                                                         "fieldName": "id"
                                                       }
@@ -1078,13 +1686,13 @@
                                                     "@item.id.dg_": [
                                                       "_nested_name"
                                                     ],
-                                                    "@item.id.accordion_themes.strand_theme_accords.block2_": [
+                                                    "@item.id.accordion_middle_level.middle_level_accords.block2_": [
                                                       "_nested_name"
                                                     ],
                                                     "@item.id.dgg_": [
                                                       "_nested_name"
                                                     ],
-                                                    "@item.id.theme_topic_accords.dggg_": [
+                                                    "@item.id.topic_accords.dggg_": [
                                                       "_nested_name"
                                                     ]
                                                   }
@@ -1131,7 +1739,7 @@
                                                     "style": "short",
                                                     "text_align": "center"
                                                   },
-                                                  "_nested_name": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id.button_topic",
+                                                  "_nested_name": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.dggg_@item_id.button_topic",
                                                   "_dynamicFields": {
                                                     "value": [
                                                       {
@@ -1221,26 +1829,26 @@
                                                     },
                                                     "_nested_name": [
                                                       {
-                                                        "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id.button_topic",
+                                                        "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.dggg_@item_id.button_topic",
                                                         "matchedExpression": "@item.id.dg_",
                                                         "type": "item",
                                                         "fieldName": "id"
                                                       },
                                                       {
-                                                        "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id.button_topic",
-                                                        "matchedExpression": "@item.id.accordion_themes.strand_theme_accords.block2_",
+                                                        "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.dggg_@item_id.button_topic",
+                                                        "matchedExpression": "@item.id.accordion_middle_level.middle_level_accords.block2_",
                                                         "type": "item",
                                                         "fieldName": "id"
                                                       },
                                                       {
-                                                        "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id.button_topic",
+                                                        "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.dggg_@item_id.button_topic",
                                                         "matchedExpression": "@item.id.dgg_",
                                                         "type": "item",
                                                         "fieldName": "id"
                                                       },
                                                       {
-                                                        "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id.button_topic",
-                                                        "matchedExpression": "@item.id.theme_topic_accords.dggg_",
+                                                        "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.dggg_@item_id.button_topic",
+                                                        "matchedExpression": "@item.id.topic_accords.dggg_",
                                                         "type": "item",
                                                         "fieldName": "id"
                                                       }
@@ -1268,19 +1876,19 @@
                                                     "@item.id.dg_": [
                                                       "_nested_name"
                                                     ],
-                                                    "@item.id.accordion_themes.strand_theme_accords.block2_": [
+                                                    "@item.id.accordion_middle_level.middle_level_accords.block2_": [
                                                       "_nested_name"
                                                     ],
                                                     "@item.id.dgg_": [
                                                       "_nested_name"
                                                     ],
-                                                    "@item.id.theme_topic_accords.dggg_": [
+                                                    "@item.id.topic_accords.dggg_": [
                                                       "_nested_name"
                                                     ]
                                                   }
                                                 }
                                               ],
-                                              "_nested_name": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id",
+                                              "_nested_name": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.dggg_@item_id",
                                               "_dynamicFields": {
                                                 "condition": [
                                                   {
@@ -1292,26 +1900,26 @@
                                                 ],
                                                 "_nested_name": [
                                                   {
-                                                    "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id",
+                                                    "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.dggg_@item_id",
                                                     "matchedExpression": "@item.id.dg_",
                                                     "type": "item",
                                                     "fieldName": "id"
                                                   },
                                                   {
-                                                    "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id",
-                                                    "matchedExpression": "@item.id.accordion_themes.strand_theme_accords.block2_",
+                                                    "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.dggg_@item_id",
+                                                    "matchedExpression": "@item.id.accordion_middle_level.middle_level_accords.block2_",
                                                     "type": "item",
                                                     "fieldName": "id"
                                                   },
                                                   {
-                                                    "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id",
+                                                    "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.dggg_@item_id",
                                                     "matchedExpression": "@item.id.dgg_",
                                                     "type": "item",
                                                     "fieldName": "id"
                                                   },
                                                   {
-                                                    "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords.dggg_@item_id",
-                                                    "matchedExpression": "@item.id.theme_topic_accords.dggg_",
+                                                    "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords.dggg_@item_id",
+                                                    "matchedExpression": "@item.id.topic_accords.dggg_",
                                                     "type": "item",
                                                     "fieldName": "id"
                                                   }
@@ -1324,75 +1932,75 @@
                                                 "@item.id.dg_": [
                                                   "_nested_name"
                                                 ],
-                                                "@item.id.accordion_themes.strand_theme_accords.block2_": [
+                                                "@item.id.accordion_middle_level.middle_level_accords.block2_": [
                                                   "_nested_name"
                                                 ],
                                                 "@item.id.dgg_": [
                                                   "_nested_name"
                                                 ],
-                                                "@item.id.theme_topic_accords.dggg_": [
+                                                "@item.id.topic_accords.dggg_": [
                                                   "_nested_name"
                                                 ]
                                               }
                                             }
                                           ],
-                                          "_nested_name": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords",
+                                          "_nested_name": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords",
                                           "_dynamicFields": {
                                             "value": [
                                               {
-                                                "fullExpression": "@data.efm_num_list_one_to_ten",
-                                                "matchedExpression": "@data.efm_num_list_one_to_ten",
+                                                "fullExpression": "@data.num_list_one_to_twenty",
+                                                "matchedExpression": "@data.num_list_one_to_twenty",
                                                 "type": "data",
-                                                "fieldName": "efm_num_list_one_to_ten"
+                                                "fieldName": "num_list_one_to_twenty"
                                               }
                                             ],
                                             "_nested_name": [
                                               {
-                                                "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords",
+                                                "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords",
                                                 "matchedExpression": "@item.id.dg_",
                                                 "type": "item",
                                                 "fieldName": "id"
                                               },
                                               {
-                                                "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords",
-                                                "matchedExpression": "@item.id.accordion_themes.strand_theme_accords.block2_",
+                                                "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords",
+                                                "matchedExpression": "@item.id.accordion_middle_level.middle_level_accords.block2_",
                                                 "type": "item",
                                                 "fieldName": "id"
                                               },
                                               {
-                                                "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords",
+                                                "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords",
                                                 "matchedExpression": "@item.id.dgg_",
                                                 "type": "item",
                                                 "fieldName": "id"
                                               },
                                               {
-                                                "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id.theme_topic_accords",
-                                                "matchedExpression": "@item.id.theme_topic_accords",
+                                                "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id.topic_accords",
+                                                "matchedExpression": "@item.id.topic_accords",
                                                 "type": "item",
                                                 "fieldName": "id"
                                               }
                                             ]
                                           },
                                           "_dynamicDependencies": {
-                                            "@data.efm_num_list_one_to_ten": [
+                                            "@data.num_list_one_to_twenty": [
                                               "value"
                                             ],
                                             "@item.id.dg_": [
                                               "_nested_name"
                                             ],
-                                            "@item.id.accordion_themes.strand_theme_accords.block2_": [
+                                            "@item.id.accordion_middle_level.middle_level_accords.block2_": [
                                               "_nested_name"
                                             ],
                                             "@item.id.dgg_": [
                                               "_nested_name"
                                             ],
-                                            "@item.id.theme_topic_accords": [
+                                            "@item.id.topic_accords": [
                                               "_nested_name"
                                             ]
                                           }
                                         }
                                       ],
-                                      "_nested_name": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id",
+                                      "_nested_name": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id",
                                       "_dynamicFields": {
                                         "name": [
                                           {
@@ -1404,25 +2012,25 @@
                                         ],
                                         "_nested_name": [
                                           {
-                                            "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id",
+                                            "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id",
                                             "matchedExpression": "@item.id.dg_",
                                             "type": "item",
                                             "fieldName": "id"
                                           },
                                           {
-                                            "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id",
-                                            "matchedExpression": "@item.id.accordion_themes.strand_theme_accords.block2_",
+                                            "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id",
+                                            "matchedExpression": "@item.id.accordion_middle_level.middle_level_accords.block2_",
                                             "type": "item",
                                             "fieldName": "id"
                                           },
                                           {
-                                            "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id",
+                                            "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id",
                                             "matchedExpression": "@item.id.dgg_",
                                             "type": "item",
                                             "fieldName": "id"
                                           },
                                           {
-                                            "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id.dgg_@item.id",
+                                            "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id.dgg_@item.id",
                                             "matchedExpression": "@item.id",
                                             "type": "item",
                                             "fieldName": "id"
@@ -1437,7 +2045,7 @@
                                         "@item.id.dg_": [
                                           "_nested_name"
                                         ],
-                                        "@item.id.accordion_themes.strand_theme_accords.block2_": [
+                                        "@item.id.accordion_middle_level.middle_level_accords.block2_": [
                                           "_nested_name"
                                         ],
                                         "@item.id.dgg_": [
@@ -1446,7 +2054,7 @@
                                       }
                                     }
                                   ],
-                                  "_nested_name": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id",
+                                  "_nested_name": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id",
                                   "_dynamicFields": {
                                     "name": [
                                       {
@@ -1458,35 +2066,35 @@
                                     ],
                                     "value": [
                                       {
-                                        "fullExpression": "@local.theme_entries.name",
-                                        "matchedExpression": "@local.theme_entries.name",
+                                        "fullExpression": "@local.middle_level_entries.name",
+                                        "matchedExpression": "@local.middle_level_entries.name",
                                         "type": "local",
-                                        "fieldName": "theme_entries"
+                                        "fieldName": "middle_level_entries"
                                       }
                                     ],
                                     "condition": [
                                       {
-                                        "fullExpression": "@@local.theme_id_ptr",
-                                        "matchedExpression": "@local.theme_id_ptr",
+                                        "fullExpression": "@@local.middle_level_id_ptr",
+                                        "matchedExpression": "@local.middle_level_id_ptr",
                                         "type": "local",
-                                        "fieldName": "theme_id_ptr"
+                                        "fieldName": "middle_level_id_ptr"
                                       }
                                     ],
                                     "_nested_name": [
                                       {
-                                        "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id",
+                                        "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id",
                                         "matchedExpression": "@item.id.dg_",
                                         "type": "item",
                                         "fieldName": "id"
                                       },
                                       {
-                                        "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id",
-                                        "matchedExpression": "@item.id.accordion_themes.strand_theme_accords.block2_",
+                                        "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id",
+                                        "matchedExpression": "@item.id.accordion_middle_level.middle_level_accords.block2_",
                                         "type": "item",
                                         "fieldName": "id"
                                       },
                                       {
-                                        "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords.block2_@item.id",
+                                        "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords.block2_@item.id",
                                         "matchedExpression": "@item.id",
                                         "type": "item",
                                         "fieldName": "id"
@@ -1498,71 +2106,71 @@
                                       "name",
                                       "_nested_name"
                                     ],
-                                    "@local.theme_entries.name": [
+                                    "@local.middle_level_entries.name": [
                                       "value"
                                     ],
-                                    "@local.theme_id_ptr": [
+                                    "@local.middle_level_id_ptr": [
                                       "condition"
                                     ],
                                     "@item.id.dg_": [
                                       "_nested_name"
                                     ],
-                                    "@item.id.accordion_themes.strand_theme_accords.block2_": [
+                                    "@item.id.accordion_middle_level.middle_level_accords.block2_": [
                                       "_nested_name"
                                     ]
                                   }
                                 }
                               ],
-                              "_nested_name": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords",
+                              "_nested_name": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords",
                               "_dynamicFields": {
                                 "value": [
                                   {
-                                    "fullExpression": "@data.efm_num_list_one_to_ten",
-                                    "matchedExpression": "@data.efm_num_list_one_to_ten",
+                                    "fullExpression": "@data.num_list_one_to_twenty",
+                                    "matchedExpression": "@data.num_list_one_to_twenty",
                                     "type": "data",
-                                    "fieldName": "efm_num_list_one_to_ten"
+                                    "fieldName": "num_list_one_to_twenty"
                                   }
                                 ],
                                 "_nested_name": [
                                   {
-                                    "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords",
+                                    "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords",
                                     "matchedExpression": "@item.id.dg_",
                                     "type": "item",
                                     "fieldName": "id"
                                   },
                                   {
-                                    "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes.strand_theme_accords",
-                                    "matchedExpression": "@item.id.accordion_themes.strand_theme_accords",
+                                    "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level.middle_level_accords",
+                                    "matchedExpression": "@item.id.accordion_middle_level.middle_level_accords",
                                     "type": "item",
                                     "fieldName": "id"
                                   }
                                 ]
                               },
                               "_dynamicDependencies": {
-                                "@data.efm_num_list_one_to_ten": [
+                                "@data.num_list_one_to_twenty": [
                                   "value"
                                 ],
                                 "@item.id.dg_": [
                                   "_nested_name"
                                 ],
-                                "@item.id.accordion_themes.strand_theme_accords": [
+                                "@item.id.accordion_middle_level.middle_level_accords": [
                                   "_nested_name"
                                 ]
                               }
                             }
                           ],
-                          "_nested_name": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes",
+                          "_nested_name": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level",
                           "_dynamicFields": {
                             "_nested_name": [
                               {
-                                "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes",
+                                "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level",
                                 "matchedExpression": "@item.id.dg_",
                                 "type": "item",
                                 "fieldName": "id"
                               },
                               {
-                                "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id.accordion_themes",
-                                "matchedExpression": "@item.id.accordion_themes",
+                                "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level",
+                                "matchedExpression": "@item.id.accordion_middle_level",
                                 "type": "item",
                                 "fieldName": "id"
                               }
@@ -1572,13 +2180,13 @@
                             "@item.id.dg_": [
                               "_nested_name"
                             ],
-                            "@item.id.accordion_themes": [
+                            "@item.id.accordion_middle_level": [
                               "_nested_name"
                             ]
                           }
                         }
                       ],
-                      "_nested_name": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id",
+                      "_nested_name": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id",
                       "_dynamicFields": {
                         "name": [
                           {
@@ -1590,13 +2198,13 @@
                         ],
                         "_nested_name": [
                           {
-                            "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id",
+                            "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id",
                             "matchedExpression": "@item.id.dg_",
                             "type": "item",
                             "fieldName": "id"
                           },
                           {
-                            "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id.dg_@item.id",
+                            "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id",
                             "matchedExpression": "@item.id",
                             "type": "item",
                             "fieldName": "id"
@@ -1614,7 +2222,7 @@
                       }
                     }
                   ],
-                  "_nested_name": "display_group_8.accordion_strands.strand_acoords.block2_@item.id",
+                  "_nested_name": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id",
                   "_dynamicFields": {
                     "name": [
                       {
@@ -1634,7 +2242,7 @@
                     ],
                     "_nested_name": [
                       {
-                        "fullExpression": "display_group_8.accordion_strands.strand_acoords.block2_@item.id",
+                        "fullExpression": "display_group_11.accordion_top_level.top_level_acoords.block2_@item.id",
                         "matchedExpression": "@item.id",
                         "type": "item",
                         "fieldName": "id"
@@ -1652,29 +2260,29 @@
                   }
                 }
               ],
-              "_nested_name": "display_group_8.accordion_strands.strand_acoords",
+              "_nested_name": "display_group_11.accordion_top_level.top_level_acoords",
               "_dynamicFields": {
                 "value": [
                   {
-                    "fullExpression": "@data.esm_strands",
-                    "matchedExpression": "@data.esm_strands",
-                    "type": "data",
-                    "fieldName": "esm_strands"
+                    "fullExpression": "@@local.top_standards_level",
+                    "matchedExpression": "@local.top_standards_level",
+                    "type": "local",
+                    "fieldName": "top_standards_level"
                   }
                 ]
               },
               "_dynamicDependencies": {
-                "@data.esm_strands": [
+                "@local.top_standards_level": [
                   "value"
                 ]
               }
             }
           ],
-          "_nested_name": "display_group_8.accordion_strands"
+          "_nested_name": "display_group_11.accordion_top_level"
         }
       ],
-      "name": "display_group_8",
-      "_nested_name": "display_group_8"
+      "name": "display_group_11",
+      "_nested_name": "display_group_11"
     }
   ],
   "_xlsxPath": "EFM_topics_high_level_sheets.xlsx",

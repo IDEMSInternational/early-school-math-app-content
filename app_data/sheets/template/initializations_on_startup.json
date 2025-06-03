@@ -26,6 +26,33 @@
       "name": "see_games_home",
       "value": true,
       "_nested_name": "see_games_home"
+    },
+    {
+      "type": "set_field",
+      "name": "curriculum_standard",
+      "value": "Early School Math",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "curriculum_standard"
+    },
+    {
+      "type": "set_field",
+      "name": "top_standards_level",
+      "value": "data.esm_strands",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "top_standards_level"
+    },
+    {
+      "type": "set_field",
+      "name": "middle_standards_level",
+      "value": "data.esm_themes",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "middle_standards_level"
     }
   ],
   "_xlsxPath": "EFM_high_level_sheets.xlsx",

@@ -51,7 +51,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 42252 KB | 42.3 MB |
+| total | 42261 KB | 42.3 MB |
 | unused | 21738 KB | 21.7 MB |
 </details>
 
@@ -1540,6 +1540,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMSplats2Color2-3Splat9-1.svg | 10.9 | 1 |
 | ESMIll/ESMSplatsCombos5.svg | 6.7 | 1 |
 | ESMIll/ESMSumGroups10.svg | 47.3 | 1 |
+| ESMIll/ESMTopicObjectProperties.svg | 9.5 | 1 |
 | ESMIll/ESMTreasureMap2.svg | 13.7 | 1 |
 </details>
 
@@ -1548,7 +1549,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | type | subtype | total |
 | --- | --- | --- |
-| data_list |  | 76 |
+| data_list |  | 78 |
 | data_list | app_config_language_list | 1 |
 | data_list | lifecycle_actions | 1 |
 | generator |  | 1 |
