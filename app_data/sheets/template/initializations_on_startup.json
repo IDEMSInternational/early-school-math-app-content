@@ -29,30 +29,21 @@
     },
     {
       "type": "set_field",
-      "name": "curriculum_standard",
+      "name": "curriculum_standard_name",
       "value": "Early School Math",
       "_translations": {
         "value": {}
       },
-      "_nested_name": "curriculum_standard"
+      "_nested_name": "curriculum_standard_name"
     },
     {
       "type": "set_field",
-      "name": "top_standards_level",
-      "value": "data.esm_strands",
+      "name": "curriculum_standard_abbrev",
+      "value": "ESM",
       "_translations": {
         "value": {}
       },
-      "_nested_name": "top_standards_level"
-    },
-    {
-      "type": "set_field",
-      "name": "middle_standards_level",
-      "value": "data.esm_themes",
-      "_translations": {
-        "value": {}
-      },
-      "_nested_name": "middle_standards_level"
+      "_nested_name": "curriculum_standard_abbrev"
     }
   ],
   "_xlsxPath": "EFM_high_level_sheets.xlsx",
