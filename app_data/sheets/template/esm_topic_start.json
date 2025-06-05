@@ -59,7 +59,7 @@
         {
           "type": "text",
           "name": "view_select",
-          "value": "**Current Topics View:** @fields.curriculum_standard_name\n\nClick a button to change the Topics View",
+          "value": "**Current Topics View:** @fields.curriculum_standard_name\n\nUse these buttons to change the view",
           "_translations": {
             "value": {}
           },
@@ -67,7 +67,7 @@
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "**Current Topics View:** @fields.curriculum_standard_name\n\nClick a button to change the Topics View",
+                "fullExpression": "**Current Topics View:** @fields.curriculum_standard_name\n\nUse these buttons to change the view",
                 "matchedExpression": "@fields.curriculum_standard_name",
                 "type": "fields",
                 "fieldName": "curriculum_standard_name"
