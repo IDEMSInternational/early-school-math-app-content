@@ -5,20 +5,20 @@
 | --- | --- |
 | accordion | 40 |
 | accordion_section | 76 |
-| button | 101 |
+| button | 104 |
 | debug_toggle | 1 |
-| display_group | 299 |
+| display_group | 301 |
 | image | 34 |
 | items | 58 |
 | qr_code | 1 |
 | radio_button_grid | 1 |
 | round_button | 9 |
 | select_text | 1 |
-| set_field | 10 |
-| set_variable | 669 |
+| set_field | 18 |
+| set_variable | 673 |
 | simple_checkbox | 4 |
 | template | 76 |
-| text | 212 |
+| text | 213 |
 | text_area | 2 |
 | tile_component | 3 |
 | title | 46 |
@@ -32,16 +32,16 @@
 | --- | --- |
 | app_update | 1 |
 | emit: completed | 58 |
-| emit: force_reload | 10 |
+| emit: force_reload | 12 |
 | emit: force_reprocess | 4 |
 | emit: server_sync | 1 |
 | emit: set_language | 1 |
 | emit: uncompleted | 58 |
 | feedback | 11 |
-| go_to | 69 |
+| go_to | 70 |
 | go_to_url | 3 |
 | reset_app | 1 |
-| set_field | 87 |
+| set_field | 91 |
 | set_local | 9 |
 | start_tour | 18 |
 </details>
@@ -51,8 +51,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 42261 KB | 42.3 MB |
-| unused | 21738 KB | 21.7 MB |
+| total | 42393 KB | 42.4 MB |
+| unused | 21695 KB | 21.7 MB |
 </details>
 
 <details open>
@@ -143,7 +143,6 @@ Assets that appear in app-data but do not have references within sheets
 | EFM280Tapatan.svg | 7.1 |
 | EFM300IslandHoppingCompensation.svg | 24.7 |
 | EFM300RegionSums.svg | 10.9 |
-| EFM30Socks.svg | 18 |
 | EFM310DiffTriangles.svg | 14.9 |
 | EFM310PanBalanceWithWeights4s7sOneSide.svg | 2699.7 |
 | EFM310SumTriangles.svg | 15.5 |
@@ -199,7 +198,6 @@ Assets that appear in app-data but do not have references within sheets
 | EFM70EachOfTheseIsDifferentExample.svg | 4.7 |
 | EFM70Fork.svg | 7.6 |
 | EFM70ForkGold.svg | 9.9 |
-| EFM70ForkSpoonGold.svg | 14.9 |
 | EFM70Spoon.svg | 5.2 |
 | EFM70SpoonGold.svg | 6.4 |
 | EFM70WhichOneIsDifferent.svg | 4.9 |
@@ -207,7 +205,6 @@ Assets that appear in app-data but do not have references within sheets
 | EFM90HouseConnecttheDots2.svg | 8.5 |
 | EFM90IslandHoppingConsecutive.svg | 20.8 |
 | EFM90StringNumberLine.svg | 22 |
-| EFM95ColoredShapesonFloor.svg | 10.2 |
 | EFM95Kirigami.svg | 12.2 |
 | EFMBM135CirclesofDots.svg | 71 |
 | EFMBM135ConnecttheDotsBanana.svg | 9.1 |
@@ -337,7 +334,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | EFM105BingoWithCards.svg | 27.7 | 1 |
 | EFM10PairLookingAway.svg | 23.6 | 1 |
 | EFM10PairReadingOnBench.svg | 33.7 | 1 |
-| EFM12Apples.svg | 5.3 | 1 |
+| EFM12Apples.svg | 5.3 | 2 |
 | EFM12EFMLogoNoEFM.svg | 12.8 | 1 |
 | EFM12EFMLogoNoEFMpng.png | 33.1 | 1 |
 | EFM140BagGame.svg | 14.9 | 1 |
@@ -347,6 +344,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | EFM290FingersFor8Plus3.svg | 11.8 | 1 |
 | EFM30MugOnShelf.svg | 4.9 | 1 |
 | EFM30ShapePattern.svg | 5.6 | 1 |
+| EFM30Socks.svg | 18 | 1 |
 | EFM340PairingDown.svg | 29.6 | 1 |
 | EFM380MultiplyingCommutes.svg | 5.4 | 1 |
 | EFM455CoverFactorsMultiples.svg | 16.4 | 1 |
@@ -356,7 +354,9 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | EFM510FactorTrees.svg | 17.2 | 1 |
 | EFM540ProductGame.svg | 26.5 | 1 |
 | EFM70EachOfTheseIsDifferent2Example.svg | 6.5 | 1 |
+| EFM70ForkSpoonGold.svg | 14.9 | 1 |
 | EFM70GoingInCircles.svg | 10.6 | 1 |
+| EFM95ColoredShapesonFloor.svg | 10.2 | 1 |
 | EFMStorybooks/EFM-SB-0-PageDivider.svg | 3.2 | 2 |
 | EFMStorybooks/EFM-SB-AD-1.jpg | 21.9 | 1 |
 | EFMStorybooks/EFM-SB-AD-10.jpg | 12.7 | 1 |
@@ -1518,6 +1518,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMPS4by4ChessboardEmpty.svg | 6.4 | 1 |
 | ESMIll/ESMPSEightCubesIntro.svg | 5.5 | 1 |
 | ESMIll/ESMPSEightCubesSixFaces.svg | 10.2 | 1 |
+| ESMIll/ESMPSMilkCrate.svg | 7.2 | 1 |
 | ESMIll/ESMPSParityDominoesCheckerboards.svg | 12.5 | 1 |
 | ESMIll/ESMPSSquaresWithMatchsticks.svg | 5.4 | 1 |
 | ESMIll/ESMParades1.svg | 17.5 | 1 |
@@ -1540,7 +1541,13 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMSplats2Color2-3Splat9-1.svg | 10.9 | 1 |
 | ESMIll/ESMSplatsCombos5.svg | 6.7 | 1 |
 | ESMIll/ESMSumGroups10.svg | 47.3 | 1 |
+| ESMIll/ESMTopicNumberPathsLines.svg | 53.5 | 1 |
 | ESMIll/ESMTopicObjectProperties.svg | 9.5 | 1 |
+| ESMIll/ESMTopicSub1-5.svg | 7.1 | 1 |
+| ESMIll/ESMTopicSub35.svg | 3.7 | 1 |
+| ESMIll/ESMTopicSubFiveFrame.svg | 4 | 1 |
+| ESMIll/ESMTopicSubPlus1-2.svg | 5.3 | 2 |
+| ESMIll/ESMTopicSubTenFrame.svg | 8.3 | 1 |
 | ESMIll/ESMTreasureMap2.svg | 13.7 | 1 |
 </details>
 
@@ -1549,7 +1556,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | type | subtype | total |
 | --- | --- | --- |
-| data_list |  | 78 |
+| data_list |  | 79 |
 | data_list | app_config_language_list | 1 |
 | data_list | lifecycle_actions | 1 |
 | generator |  | 1 |

@@ -58,7 +58,6 @@
       "strand_id": "CC_CC",
       "topic_id_1": "NPV_QC10_QC",
       "topic_id_2": "NPV_QC10_Sub10",
-      "topic_id_3": "NPV_CPV100_Count20",
       "name": "K – Count Quantity Size",
       "_translations": {
         "name": {}
@@ -74,7 +73,6 @@
       "strand_id": "CC_CC",
       "topic_id_1": "NPV_QC10_Comp10",
       "topic_id_2": "NPV_QC10_Ordinals",
-      "topic_id_3": "NPV_CPV100_Comp100",
       "name": "K – Compare Numbers",
       "_translations": {
         "name": {}
@@ -139,6 +137,9 @@
       "topic_id_6": "NO_ASSD_SubFingers",
       "topic_id_7": "NO_ASSD_ASto10",
       "topic_id_8": "NO_ASSD_AS10",
+      "topic_id_9": "NO_ASSD_10BridgeA",
+      "topic_id_10": "NO_ASSD_10BridgeS",
+      "topic_id_11": "NO_ASSD_SD_Add_Sub",
       "name": "1 – Add & Subtract Within 20",
       "_translations": {
         "name": {}
@@ -224,6 +225,7 @@
     {
       "id": "CC_OA_3_RMD_",
       "strand_id": "CC_OA",
+      "topic_id_1": "NO_MSD_MultCommutes",
       "name": "3 – Relate Mult <=> Div",
       "_translations": {
         "name": {}
@@ -238,9 +240,8 @@
       "id": "CC_OA_3_MD100_",
       "strand_id": "CC_OA",
       "topic_id_1": "NO_MSD_Doubling",
-      "topic_id_2": "NO_MSD_MultCommutes",
-      "topic_id_3": "NO_MSD_Skipping",
-      "topic_id_4": "NO_MSD_AllSingles",
+      "topic_id_2": "NO_MSD_Skipping",
+      "topic_id_3": "NO_MSD_AllSingles",
       "name": "3 – Mult & Div within 100",
       "_translations": {
         "name": {}
@@ -313,7 +314,10 @@
     {
       "id": "CC_NBT_1_UPV_",
       "strand_id": "CC_NBT",
-      "topic_id_1": "NPV_CPV100_Comp20",
+      "topic_id_1": "NPV_CPV100_Count20",
+      "topic_id_2": "NPV_CPV100_Comp20",
+      "topic_id_3": "NPV_CPV100_Comp100",
+      "topic_id_4": "NPV_CPV100_CountPV100",
       "name": "1 – Understand Place Value",
       "_translations": {
         "name": {}
@@ -344,7 +348,6 @@
     {
       "id": "CC_NBT_2_UPV_",
       "strand_id": "CC_NBT",
-      "topic_id_1": "NPV_CPV100_CountPV100",
       "name": "2 – Understand Place Value",
       "_translations": {
         "name": {}
