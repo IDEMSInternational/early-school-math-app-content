@@ -670,7 +670,7 @@
               "style_list": [
                 "max-width: @@local.block_illustration_max_width"
               ],
-              "_nested_name": "run_through_body_sections.display_group_11.display_illust",
+              "_nested_name": "run_through_body_sections.display_group_11_@item.id.display_illust",
               "_dynamicFields": {
                 "value": [
                   {
@@ -689,7 +689,15 @@
                       "fieldName": "block_illustration_max_width"
                     }
                   ]
-                }
+                },
+                "_nested_name": [
+                  {
+                    "fullExpression": "run_through_body_sections.display_group_11_@item.id.display_illust",
+                    "matchedExpression": "@item.id.display_illust",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ]
               },
               "_dynamicDependencies": {
                 "@local.block_illustration": [
@@ -697,12 +705,15 @@
                 ],
                 "@local.block_illustration_max_width": [
                   "style_list.0"
+                ],
+                "@item.id.display_illust": [
+                  "_nested_name"
                 ]
               }
             }
           ],
-          "name": "display_group_11",
-          "_nested_name": "run_through_body_sections.display_group_11",
+          "name": "display_group_11_@item.id",
+          "_nested_name": "run_through_body_sections.display_group_11_@item.id",
           "_dynamicFields": {
             "condition": [
               {
@@ -721,7 +732,23 @@
                   "fieldName": "paragraph_space"
                 }
               ]
-            }
+            },
+            "name": [
+              {
+                "fullExpression": "display_group_11_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "run_through_body_sections.display_group_11_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
           },
           "_dynamicDependencies": {
             "@local.block_type": [
@@ -729,6 +756,10 @@
             ],
             "@local.paragraph_space": [
               "style_list.0"
+            ],
+            "@item.id": [
+              "name",
+              "_nested_name"
             ]
           }
         },
