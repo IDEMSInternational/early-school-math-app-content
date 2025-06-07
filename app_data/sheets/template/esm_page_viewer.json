@@ -99,6 +99,593 @@
       "_nested_name": "paragraph_space"
     },
     {
+      "name": "topic1_ptr",
+      "value": "local.esm_content_ptr.topic_theme_1",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "topic1_ptr"
+    },
+    {
+      "name": "topic1",
+      "value": "@@local.topic1_ptr",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "topic1",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@@local.topic1_ptr",
+            "matchedExpression": "@local.topic1_ptr",
+            "type": "local",
+            "fieldName": "topic1_ptr"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.topic1_ptr": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "ccssm_should_be_seen",
+      "value": "@fields.curriculum_standard_abbrev == \"CCSSM\"",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "ccssm_should_be_seen",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@fields.curriculum_standard_abbrev == \"CCSSM\"",
+            "matchedExpression": "@fields.curriculum_standard_abbrev",
+            "type": "fields",
+            "fieldName": "curriculum_standard_abbrev"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.curriculum_standard_abbrev": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "display_ccssm_standards",
+      "value": "@local.topic1 && @local.ccssm_should_be_seen",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "display_ccssm_standards",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.topic1 && @local.ccssm_should_be_seen",
+            "matchedExpression": "@local.topic1",
+            "type": "local",
+            "fieldName": "topic1"
+          },
+          {
+            "fullExpression": "@local.topic1 && @local.ccssm_should_be_seen",
+            "matchedExpression": "@local.ccssm_should_be_seen",
+            "type": "local",
+            "fieldName": "ccssm_should_be_seen"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.topic1": [
+          "value"
+        ],
+        "@local.ccssm_should_be_seen": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "display_group",
+      "condition": "@local.display_ccssm_standards",
+      "parameter_list": {
+        "style": "column"
+      },
+      "rows": [
+        {
+          "name": "topic_theme_base_chars",
+          "value": "topic_theme_",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "display_group_17.topic_theme_base_chars"
+        },
+        {
+          "name": "standards_set",
+          "value": "@calc(new Set())",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "display_group_17.standards_set",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@calc(new Set())",
+                "matchedExpression": "@calc(new Set())",
+                "type": "calc",
+                "fieldName": "new Set()"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@calc(new Set())": [
+              "value"
+            ]
+          }
+        },
+        {
+          "name": "added_something",
+          "value": false,
+          "type": "set_variable",
+          "_nested_name": "display_group_17.added_something"
+        },
+        {
+          "type": "items",
+          "name": "run_through_topics",
+          "value": "@data.efm_num_list_one_to_ten",
+          "rows": [
+            {
+              "name": "topic_theme_chars",
+              "value": "@local.topic_theme_base_chars@item.number",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "display_group_17.run_through_topics.topic_theme_chars",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@local.topic_theme_base_chars@item.number",
+                    "matchedExpression": "@local.topic_theme_base_chars",
+                    "type": "local",
+                    "fieldName": "topic_theme_base_chars"
+                  },
+                  {
+                    "fullExpression": "@local.topic_theme_base_chars@item.number",
+                    "matchedExpression": "@item.number",
+                    "type": "item",
+                    "fieldName": "number"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.topic_theme_base_chars": [
+                  "value"
+                ],
+                "@item.number": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "theme_ptr",
+              "value": "local.esm_content_ptr.@local.topic_theme_chars",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "display_group_17.run_through_topics.theme_ptr",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "local.esm_content_ptr.@local.topic_theme_chars",
+                    "matchedExpression": "@local.topic_theme_chars",
+                    "type": "local",
+                    "fieldName": "topic_theme_chars"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.topic_theme_chars": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "topic_theme",
+              "value": "@@local.theme_ptr",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "display_group_17.run_through_topics.topic_theme",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@@local.theme_ptr",
+                    "matchedExpression": "@local.theme_ptr",
+                    "type": "local",
+                    "fieldName": "theme_ptr"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.theme_ptr": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "topic_row",
+              "value": "data.esm_topics.@local.topic_theme",
+              "_translations": {
+                "value": {}
+              },
+              "condition": "@local.topic_theme",
+              "type": "set_variable",
+              "_nested_name": "display_group_17.run_through_topics.topic_row",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "data.esm_topics.@local.topic_theme",
+                    "matchedExpression": "@local.topic_theme",
+                    "type": "local",
+                    "fieldName": "topic_theme"
+                  }
+                ],
+                "condition": [
+                  {
+                    "fullExpression": "@local.topic_theme",
+                    "matchedExpression": "@local.topic_theme",
+                    "type": "local",
+                    "fieldName": "topic_theme"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.topic_theme": [
+                  "value",
+                  "condition"
+                ]
+              }
+            },
+            {
+              "name": "topic_row_ptr",
+              "value": "@@local.topic_row",
+              "_translations": {
+                "value": {}
+              },
+              "condition": "@local.topic_theme",
+              "type": "set_variable",
+              "_nested_name": "display_group_17.run_through_topics.topic_row_ptr",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@@local.topic_row",
+                    "matchedExpression": "@local.topic_row",
+                    "type": "local",
+                    "fieldName": "topic_row"
+                  }
+                ],
+                "condition": [
+                  {
+                    "fullExpression": "@local.topic_theme",
+                    "matchedExpression": "@local.topic_theme",
+                    "type": "local",
+                    "fieldName": "topic_theme"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.topic_row": [
+                  "value"
+                ],
+                "@local.topic_theme": [
+                  "condition"
+                ]
+              }
+            },
+            {
+              "name": "topic_ccssm",
+              "value": "@local.topic_row_ptr.ccssm_standards",
+              "_translations": {
+                "value": {}
+              },
+              "condition": "@local.topic_theme",
+              "type": "set_variable",
+              "_nested_name": "display_group_17.run_through_topics.topic_ccssm",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@local.topic_row_ptr.ccssm_standards",
+                    "matchedExpression": "@local.topic_row_ptr.ccssm_standards",
+                    "type": "local",
+                    "fieldName": "topic_row_ptr"
+                  }
+                ],
+                "condition": [
+                  {
+                    "fullExpression": "@local.topic_theme",
+                    "matchedExpression": "@local.topic_theme",
+                    "type": "local",
+                    "fieldName": "topic_theme"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.topic_row_ptr.ccssm_standards": [
+                  "value"
+                ],
+                "@local.topic_theme": [
+                  "condition"
+                ]
+              }
+            },
+            {
+              "name": "added_something",
+              "value": true,
+              "condition": "@local.topic_theme && @local.topic_ccssm",
+              "type": "set_variable",
+              "_nested_name": "display_group_17.run_through_topics.added_something",
+              "_dynamicFields": {
+                "condition": [
+                  {
+                    "fullExpression": "@local.topic_theme && @local.topic_ccssm",
+                    "matchedExpression": "@local.topic_theme",
+                    "type": "local",
+                    "fieldName": "topic_theme"
+                  },
+                  {
+                    "fullExpression": "@local.topic_theme && @local.topic_ccssm",
+                    "matchedExpression": "@local.topic_ccssm",
+                    "type": "local",
+                    "fieldName": "topic_ccssm"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.topic_theme": [
+                  "condition"
+                ],
+                "@local.topic_ccssm": [
+                  "condition"
+                ]
+              }
+            },
+            {
+              "name": "value_ignored",
+              "value": "@calc(@local.standards_set.add(@local.topic_ccssm))",
+              "_translations": {
+                "value": {}
+              },
+              "condition": "@local.topic_theme && @local.topic_ccssm",
+              "type": "set_variable",
+              "_nested_name": "display_group_17.run_through_topics.value_ignored",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@calc(@local.standards_set.add(@local.topic_ccssm))",
+                    "matchedExpression": "@local.standards_set.add",
+                    "type": "local",
+                    "fieldName": "standards_set"
+                  },
+                  {
+                    "fullExpression": "@calc(@local.standards_set.add(@local.topic_ccssm))",
+                    "matchedExpression": "@local.topic_ccssm",
+                    "type": "local",
+                    "fieldName": "topic_ccssm"
+                  },
+                  {
+                    "fullExpression": "@calc(@local.standards_set.add(@local.topic_ccssm))",
+                    "matchedExpression": "@calc(@local.standards_set.add(@local.topic_ccssm))",
+                    "type": "calc",
+                    "fieldName": "@local.standards_set.add(@local.topic_ccssm)"
+                  }
+                ],
+                "condition": [
+                  {
+                    "fullExpression": "@local.topic_theme && @local.topic_ccssm",
+                    "matchedExpression": "@local.topic_theme",
+                    "type": "local",
+                    "fieldName": "topic_theme"
+                  },
+                  {
+                    "fullExpression": "@local.topic_theme && @local.topic_ccssm",
+                    "matchedExpression": "@local.topic_ccssm",
+                    "type": "local",
+                    "fieldName": "topic_ccssm"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.standards_set.add": [
+                  "value"
+                ],
+                "@local.topic_ccssm": [
+                  "value",
+                  "condition"
+                ],
+                "@calc(@local.standards_set.add(@local.topic_ccssm))": [
+                  "value"
+                ],
+                "@local.topic_theme": [
+                  "condition"
+                ]
+              }
+            },
+            {
+              "type": "text",
+              "name": "debugg",
+              "value": "Topic CCSSM: @local.topic_ccssm",
+              "_translations": {
+                "value": {}
+              },
+              "condition": false,
+              "_nested_name": "display_group_17.run_through_topics.debugg",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "Topic CCSSM: @local.topic_ccssm",
+                    "matchedExpression": "@local.topic_ccssm",
+                    "type": "local",
+                    "fieldName": "topic_ccssm"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.topic_ccssm": [
+                  "value"
+                ]
+              }
+            }
+          ],
+          "_nested_name": "display_group_17.run_through_topics",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@data.efm_num_list_one_to_ten",
+                "matchedExpression": "@data.efm_num_list_one_to_ten",
+                "type": "data",
+                "fieldName": "efm_num_list_one_to_ten"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@data.efm_num_list_one_to_ten": [
+              "value"
+            ]
+          }
+        },
+        {
+          "name": "standards_string",
+          "value": "@calc(Array.from(@local.standards_set))",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "display_group_17.standards_string",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@calc(Array.from(@local.standards_set))",
+                "matchedExpression": "@local.standards_set",
+                "type": "local",
+                "fieldName": "standards_set"
+              },
+              {
+                "fullExpression": "@calc(Array.from(@local.standards_set))",
+                "matchedExpression": "@calc(Array.from(@local.standards_set))",
+                "type": "calc",
+                "fieldName": "Array.from(@local.standards_set)"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.standards_set": [
+              "value"
+            ],
+            "@calc(Array.from(@local.standards_set))": [
+              "value"
+            ]
+          }
+        },
+        {
+          "name": "output",
+          "value": "CCSSM:@local.standards_string",
+          "_translations": {
+            "value": {}
+          },
+          "condition": "@local.added_something",
+          "type": "set_variable",
+          "_nested_name": "display_group_17.output",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "CCSSM:@local.standards_string",
+                "matchedExpression": "@local.standards_string",
+                "type": "local",
+                "fieldName": "standards_string"
+              }
+            ],
+            "condition": [
+              {
+                "fullExpression": "@local.added_something",
+                "matchedExpression": "@local.added_something",
+                "type": "local",
+                "fieldName": "added_something"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.standards_string": [
+              "value"
+            ],
+            "@local.added_something": [
+              "condition"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "name": "print_it",
+          "value": "@local.output",
+          "_translations": {
+            "value": {}
+          },
+          "condition": "@local.added_something",
+          "_nested_name": "display_group_17.print_it",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@local.output",
+                "matchedExpression": "@local.output",
+                "type": "local",
+                "fieldName": "output"
+              }
+            ],
+            "condition": [
+              {
+                "fullExpression": "@local.added_something",
+                "matchedExpression": "@local.added_something",
+                "type": "local",
+                "fieldName": "added_something"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.output": [
+              "value"
+            ],
+            "@local.added_something": [
+              "condition"
+            ]
+          }
+        }
+      ],
+      "name": "display_group_17",
+      "_nested_name": "display_group_17",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@local.display_ccssm_standards",
+            "matchedExpression": "@local.display_ccssm_standards",
+            "type": "local",
+            "fieldName": "display_ccssm_standards"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.display_ccssm_standards": [
+          "condition"
+        ]
+      }
+    },
+    {
       "type": "items",
       "name": "run_through_body_sections",
       "value": "@data.efm_num_list_one_to_ten",
@@ -1710,7 +2297,7 @@
                         "value": {}
                       },
                       "type": "set_variable",
-                      "_nested_name": "display_group_21.accordion_related_topics.required_topics_block.related_topics_content.topic_theme_base_chars"
+                      "_nested_name": "display_group_27.accordion_related_topics.required_topics_block.related_topics_content.topic_theme_base_chars"
                     },
                     {
                       "type": "items",
@@ -1724,7 +2311,7 @@
                             "value": {}
                           },
                           "type": "set_variable",
-                          "_nested_name": "display_group_21.accordion_related_topics.required_topics_block.related_topics_content.run_through_previous_topics.topic_theme_chars",
+                          "_nested_name": "display_group_27.accordion_related_topics.required_topics_block.related_topics_content.run_through_previous_topics.topic_theme_chars",
                           "_dynamicFields": {
                             "value": [
                               {
@@ -1757,7 +2344,7 @@
                             "value": {}
                           },
                           "type": "set_variable",
-                          "_nested_name": "display_group_21.accordion_related_topics.required_topics_block.related_topics_content.run_through_previous_topics.theme_ptr",
+                          "_nested_name": "display_group_27.accordion_related_topics.required_topics_block.related_topics_content.run_through_previous_topics.theme_ptr",
                           "_dynamicFields": {
                             "value": [
                               {
@@ -1781,7 +2368,7 @@
                             "value": {}
                           },
                           "type": "set_variable",
-                          "_nested_name": "display_group_21.accordion_related_topics.required_topics_block.related_topics_content.run_through_previous_topics.topic_theme",
+                          "_nested_name": "display_group_27.accordion_related_topics.required_topics_block.related_topics_content.run_through_previous_topics.topic_theme",
                           "_dynamicFields": {
                             "value": [
                               {
@@ -1806,7 +2393,7 @@
                           },
                           "condition": "@local.topic_theme",
                           "type": "set_variable",
-                          "_nested_name": "display_group_21.accordion_related_topics.required_topics_block.related_topics_content.run_through_previous_topics.topic_row",
+                          "_nested_name": "display_group_27.accordion_related_topics.required_topics_block.related_topics_content.run_through_previous_topics.topic_row",
                           "_dynamicFields": {
                             "value": [
                               {
@@ -1839,7 +2426,7 @@
                             "value": {}
                           },
                           "type": "set_variable",
-                          "_nested_name": "display_group_21.accordion_related_topics.required_topics_block.related_topics_content.run_through_previous_topics.topic_row_ptr",
+                          "_nested_name": "display_group_27.accordion_related_topics.required_topics_block.related_topics_content.run_through_previous_topics.topic_row_ptr",
                           "_dynamicFields": {
                             "value": [
                               {
@@ -1863,7 +2450,7 @@
                             "value": {}
                           },
                           "type": "set_variable",
-                          "_nested_name": "display_group_21.accordion_related_topics.required_topics_block.related_topics_content.run_through_previous_topics.topic_name",
+                          "_nested_name": "display_group_27.accordion_related_topics.required_topics_block.related_topics_content.run_through_previous_topics.topic_name",
                           "_dynamicFields": {
                             "value": [
                               {
@@ -1922,7 +2509,7 @@
                             "style": "short",
                             "text_align": "center"
                           },
-                          "_nested_name": "display_group_21.accordion_related_topics.required_topics_block.related_topics_content.run_through_previous_topics.button_list_@item.number",
+                          "_nested_name": "display_group_27.accordion_related_topics.required_topics_block.related_topics_content.run_through_previous_topics.button_list_@item.number",
                           "_dynamicFields": {
                             "name": [
                               {
@@ -1980,7 +2567,7 @@
                             ],
                             "_nested_name": [
                               {
-                                "fullExpression": "display_group_21.accordion_related_topics.required_topics_block.related_topics_content.run_through_previous_topics.button_list_@item.number",
+                                "fullExpression": "display_group_27.accordion_related_topics.required_topics_block.related_topics_content.run_through_previous_topics.button_list_@item.number",
                                 "matchedExpression": "@item.number",
                                 "type": "item",
                                 "fieldName": "number"
@@ -2006,7 +2593,7 @@
                           }
                         }
                       ],
-                      "_nested_name": "display_group_21.accordion_related_topics.required_topics_block.related_topics_content.run_through_previous_topics",
+                      "_nested_name": "display_group_27.accordion_related_topics.required_topics_block.related_topics_content.run_through_previous_topics",
                       "_dynamicFields": {
                         "value": [
                           {
@@ -2024,17 +2611,17 @@
                       }
                     }
                   ],
-                  "_nested_name": "display_group_21.accordion_related_topics.required_topics_block.related_topics_content"
+                  "_nested_name": "display_group_27.accordion_related_topics.required_topics_block.related_topics_content"
                 }
               ],
-              "_nested_name": "display_group_21.accordion_related_topics.required_topics_block"
+              "_nested_name": "display_group_27.accordion_related_topics.required_topics_block"
             }
           ],
-          "_nested_name": "display_group_21.accordion_related_topics"
+          "_nested_name": "display_group_27.accordion_related_topics"
         }
       ],
-      "name": "display_group_21",
-      "_nested_name": "display_group_21",
+      "name": "display_group_27",
+      "_nested_name": "display_group_27",
       "_dynamicFields": {
         "condition": [
           {
