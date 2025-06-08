@@ -190,6 +190,39 @@
       }
     },
     {
+      "type": "template",
+      "name": "display_standards",
+      "value": "esm_standards_viewer",
+      "rows": [
+        {
+          "name": "esm_content_ptr",
+          "value": "@local.efm_pow_ptr",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": true,
+          "type": "set_variable",
+          "_nested_name": "display_standards.esm_content_ptr",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@local.efm_pow_ptr",
+                "matchedExpression": "@local.efm_pow_ptr",
+                "type": "local",
+                "fieldName": "efm_pow_ptr"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.efm_pow_ptr": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "display_standards"
+    },
+    {
       "type": "items",
       "name": "run_through_body_sections",
       "value": "@data.efm_num_list_one_to_ten",
@@ -1866,10 +1899,52 @@
       }
     },
     {
+      "name": "Commnts_b",
+      "value": "Put \"Related Topics\" accordian if they exist",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "Commnts_b"
+    },
+    {
+      "type": "template",
+      "name": "display_related_topics",
+      "value": "esm_related_topics_viewer",
+      "rows": [
+        {
+          "name": "esm_content_ptr",
+          "value": "@local.efm_pow_ptr",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": true,
+          "type": "set_variable",
+          "_nested_name": "display_related_topics.esm_content_ptr",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@local.efm_pow_ptr",
+                "matchedExpression": "@local.efm_pow_ptr",
+                "type": "local",
+                "fieldName": "efm_pow_ptr"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.efm_pow_ptr": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "display_related_topics"
+    },
+    {
       "type": "display_group",
       "name": "fake_space_maker2",
       "style_list": [
-        "margin_top: 8px"
+        "margin-top: 8px"
       ],
       "rows": [
         {
