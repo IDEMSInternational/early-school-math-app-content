@@ -9,78 +9,6 @@
       "_nested_name": "esm_content_ptr"
     },
     {
-      "name": "block_chars",
-      "value": "block",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "block_chars"
-    },
-    {
-      "name": "chars_type",
-      "value": "_type",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "chars_type"
-    },
-    {
-      "name": "chars_accord",
-      "value": "_accord",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "chars_accord"
-    },
-    {
-      "name": "chars_text",
-      "value": "_text",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "chars_text"
-    },
-    {
-      "name": "chars_illust",
-      "value": "_illust",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "chars_illust"
-    },
-    {
-      "name": "chars_illust_flex",
-      "value": "_illust_flex",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "chars_illust_flex"
-    },
-    {
-      "name": "chars_illust_max_width",
-      "value": "_illust_max_size",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "chars_illust_max_width"
-    },
-    {
-      "name": "chars_id",
-      "value": "id",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "chars_id"
-    },
-    {
       "name": "remove_paragraph_space",
       "value": "margin-top: -5px",
       "_translations": {
@@ -205,7 +133,7 @@
             "value": {}
           },
           "type": "set_variable",
-          "_nested_name": "display_group_17.topic_theme_base_chars"
+          "_nested_name": "display_group_9.topic_theme_base_chars"
         },
         {
           "name": "standards_set",
@@ -214,7 +142,7 @@
             "value": {}
           },
           "type": "set_variable",
-          "_nested_name": "display_group_17.standards_set",
+          "_nested_name": "display_group_9.standards_set",
           "_dynamicFields": {
             "value": [
               {
@@ -235,7 +163,7 @@
           "name": "added_something",
           "value": false,
           "type": "set_variable",
-          "_nested_name": "display_group_17.added_something"
+          "_nested_name": "display_group_9.added_something"
         },
         {
           "type": "items",
@@ -249,7 +177,7 @@
                 "value": {}
               },
               "type": "set_variable",
-              "_nested_name": "display_group_17.run_through_topics.topic_theme_chars",
+              "_nested_name": "display_group_9.run_through_topics.topic_theme_chars",
               "_dynamicFields": {
                 "value": [
                   {
@@ -282,7 +210,7 @@
                 "value": {}
               },
               "type": "set_variable",
-              "_nested_name": "display_group_17.run_through_topics.theme_ptr",
+              "_nested_name": "display_group_9.run_through_topics.theme_ptr",
               "_dynamicFields": {
                 "value": [
                   {
@@ -306,7 +234,7 @@
                 "value": {}
               },
               "type": "set_variable",
-              "_nested_name": "display_group_17.run_through_topics.topic_theme",
+              "_nested_name": "display_group_9.run_through_topics.topic_theme",
               "_dynamicFields": {
                 "value": [
                   {
@@ -335,7 +263,7 @@
                     "value": {}
                   },
                   "type": "set_variable",
-                  "_nested_name": "display_group_17.run_through_topics.process_topic.topic_row",
+                  "_nested_name": "display_group_9.run_through_topics.process_topic.topic_row",
                   "_dynamicFields": {
                     "value": [
                       {
@@ -359,7 +287,7 @@
                     "value": {}
                   },
                   "type": "set_variable",
-                  "_nested_name": "display_group_17.run_through_topics.process_topic.topic_row_ptr",
+                  "_nested_name": "display_group_9.run_through_topics.process_topic.topic_row_ptr",
                   "_dynamicFields": {
                     "value": [
                       {
@@ -383,7 +311,7 @@
                     "value": {}
                   },
                   "type": "set_variable",
-                  "_nested_name": "display_group_17.run_through_topics.process_topic.topic_ccssm",
+                  "_nested_name": "display_group_9.run_through_topics.process_topic.topic_ccssm",
                   "_dynamicFields": {
                     "value": [
                       {
@@ -409,7 +337,7 @@
                       "name": "added_something",
                       "value": true,
                       "type": "set_variable",
-                      "_nested_name": "display_group_17.run_through_topics.process_topic.process_ccssm.added_something"
+                      "_nested_name": "display_group_9.run_through_topics.process_topic.process_ccssm.added_something"
                     },
                     {
                       "name": "ccssm_array",
@@ -418,7 +346,7 @@
                         "value": {}
                       },
                       "type": "set_variable",
-                      "_nested_name": "display_group_17.run_through_topics.process_topic.process_ccssm.ccssm_array",
+                      "_nested_name": "display_group_9.run_through_topics.process_topic.process_ccssm.ccssm_array",
                       "_dynamicFields": {
                         "value": [
                           {
@@ -451,7 +379,7 @@
                         "value": {}
                       },
                       "type": "set_variable",
-                      "_nested_name": "display_group_17.run_through_topics.process_topic.process_ccssm.ccssm_set",
+                      "_nested_name": "display_group_9.run_through_topics.process_topic.process_ccssm.ccssm_set",
                       "_dynamicFields": {
                         "value": [
                           {
@@ -485,7 +413,7 @@
                         "value": {}
                       },
                       "condition": false,
-                      "_nested_name": "display_group_17.run_through_topics.process_topic.process_ccssm.deeebug",
+                      "_nested_name": "display_group_9.run_through_topics.process_topic.process_ccssm.deeebug",
                       "_dynamicFields": {
                         "value": [
                           {
@@ -509,7 +437,7 @@
                         "value": {}
                       },
                       "type": "set_variable",
-                      "_nested_name": "display_group_17.run_through_topics.process_topic.process_ccssm.standards_set",
+                      "_nested_name": "display_group_9.run_through_topics.process_topic.process_ccssm.standards_set",
                       "_dynamicFields": {
                         "value": [
                           {
@@ -552,7 +480,7 @@
                         "value": {}
                       },
                       "condition": false,
-                      "_nested_name": "display_group_17.run_through_topics.process_topic.process_ccssm.debugg",
+                      "_nested_name": "display_group_9.run_through_topics.process_topic.process_ccssm.debugg",
                       "_dynamicFields": {
                         "value": [
                           {
@@ -570,7 +498,7 @@
                       }
                     }
                   ],
-                  "_nested_name": "display_group_17.run_through_topics.process_topic.process_ccssm",
+                  "_nested_name": "display_group_9.run_through_topics.process_topic.process_ccssm",
                   "_dynamicFields": {
                     "condition": [
                       {
@@ -588,7 +516,7 @@
                   }
                 }
               ],
-              "_nested_name": "display_group_17.run_through_topics.process_topic",
+              "_nested_name": "display_group_9.run_through_topics.process_topic",
               "_dynamicFields": {
                 "condition": [
                   {
@@ -606,7 +534,7 @@
               }
             }
           ],
-          "_nested_name": "display_group_17.run_through_topics",
+          "_nested_name": "display_group_9.run_through_topics",
           "_dynamicFields": {
             "value": [
               {
@@ -631,7 +559,7 @@
           },
           "condition": "@local.added_something",
           "type": "set_variable",
-          "_nested_name": "display_group_17.standards_array",
+          "_nested_name": "display_group_9.standards_array",
           "_dynamicFields": {
             "value": [
               {
@@ -676,7 +604,7 @@
           },
           "condition": "@local.added_something",
           "type": "set_variable",
-          "_nested_name": "display_group_17.value_ignored",
+          "_nested_name": "display_group_9.value_ignored",
           "_dynamicFields": {
             "value": [
               {
@@ -721,7 +649,7 @@
           },
           "condition": "@local.added_something",
           "type": "set_variable",
-          "_nested_name": "display_group_17.standards_string",
+          "_nested_name": "display_group_9.standards_string",
           "_dynamicFields": {
             "value": [
               {
@@ -766,7 +694,7 @@
             "value": {}
           },
           "condition": "@local.added_something",
-          "_nested_name": "display_group_17.output",
+          "_nested_name": "display_group_9.output",
           "_dynamicFields": {
             "value": [
               {
@@ -795,8 +723,8 @@
           }
         }
       ],
-      "name": "display_group_17",
-      "_nested_name": "display_group_17",
+      "name": "display_group_9",
+      "_nested_name": "display_group_9",
       "_dynamicFields": {
         "condition": [
           {

@@ -282,6 +282,41 @@
       }
     },
     {
+      "type": "template",
+      "name": "display_standards",
+      "value": "esm_standards_viewer",
+      "style_list": [
+        "margin-top: -50px"
+      ],
+      "rows": [
+        {
+          "name": "esm_content_ptr",
+          "value": "@local.book_entry",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "display_standards.esm_content_ptr",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@local.book_entry",
+                "matchedExpression": "@local.book_entry",
+                "type": "local",
+                "fieldName": "book_entry"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.book_entry": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "display_standards"
+    },
+    {
       "type": "image",
       "name": "page_end",
       "value": "@local.page_divider",
