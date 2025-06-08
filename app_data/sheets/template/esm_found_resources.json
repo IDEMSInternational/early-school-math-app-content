@@ -416,8 +416,92 @@
                   }
                 },
                 {
+                  "name": "match5",
+                  "value": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "type": "set_variable",
+                  "_nested_name": "do_the_lookup.count_matches.pow_checks.match5",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                        "matchedExpression": "@local.search_set.has",
+                        "type": "local",
+                        "fieldName": "search_set"
+                      },
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                        "matchedExpression": "@item.topic_theme_5",
+                        "type": "item",
+                        "fieldName": "topic_theme_5"
+                      },
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                        "matchedExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                        "type": "calc",
+                        "fieldName": "@local.search_set.has(@item.topic_theme_5)"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@local.search_set.has": [
+                      "value"
+                    ],
+                    "@item.topic_theme_5": [
+                      "value"
+                    ],
+                    "@calc(@local.search_set.has(@item.topic_theme_5))": [
+                      "value"
+                    ]
+                  }
+                },
+                {
+                  "name": "match6",
+                  "value": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "type": "set_variable",
+                  "_nested_name": "do_the_lookup.count_matches.pow_checks.match6",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                        "matchedExpression": "@local.search_set.has",
+                        "type": "local",
+                        "fieldName": "search_set"
+                      },
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                        "matchedExpression": "@item.topic_theme_6",
+                        "type": "item",
+                        "fieldName": "topic_theme_6"
+                      },
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                        "matchedExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                        "type": "calc",
+                        "fieldName": "@local.search_set.has(@item.topic_theme_6)"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@local.search_set.has": [
+                      "value"
+                    ],
+                    "@item.topic_theme_6": [
+                      "value"
+                    ],
+                    "@calc(@local.search_set.has(@item.topic_theme_6))": [
+                      "value"
+                    ]
+                  }
+                },
+                {
                   "name": "does_it_match",
-                  "value": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                  "value": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                   "_translations": {
                     "value": {}
                   },
@@ -426,28 +510,40 @@
                   "_dynamicFields": {
                     "value": [
                       {
-                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                         "matchedExpression": "@local.match1",
                         "type": "local",
                         "fieldName": "match1"
                       },
                       {
-                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                         "matchedExpression": "@local.match2",
                         "type": "local",
                         "fieldName": "match2"
                       },
                       {
-                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                         "matchedExpression": "@local.match3",
                         "type": "local",
                         "fieldName": "match3"
                       },
                       {
-                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                         "matchedExpression": "@local.match4",
                         "type": "local",
                         "fieldName": "match4"
+                      },
+                      {
+                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
+                        "matchedExpression": "@local.match5",
+                        "type": "local",
+                        "fieldName": "match5"
+                      },
+                      {
+                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
+                        "matchedExpression": "@local.match6",
+                        "type": "local",
+                        "fieldName": "match6"
                       }
                     ]
                   },
@@ -462,6 +558,12 @@
                       "value"
                     ],
                     "@local.match4": [
+                      "value"
+                    ],
+                    "@local.match5": [
+                      "value"
+                    ],
+                    "@local.match6": [
                       "value"
                     ]
                   }
@@ -725,8 +827,92 @@
                   }
                 },
                 {
+                  "name": "match5",
+                  "value": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "type": "set_variable",
+                  "_nested_name": "do_the_lookup.count_matches.gas_checks.match5",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                        "matchedExpression": "@local.search_set.has",
+                        "type": "local",
+                        "fieldName": "search_set"
+                      },
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                        "matchedExpression": "@item.topic_theme_5",
+                        "type": "item",
+                        "fieldName": "topic_theme_5"
+                      },
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                        "matchedExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                        "type": "calc",
+                        "fieldName": "@local.search_set.has(@item.topic_theme_5)"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@local.search_set.has": [
+                      "value"
+                    ],
+                    "@item.topic_theme_5": [
+                      "value"
+                    ],
+                    "@calc(@local.search_set.has(@item.topic_theme_5))": [
+                      "value"
+                    ]
+                  }
+                },
+                {
+                  "name": "match6",
+                  "value": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "type": "set_variable",
+                  "_nested_name": "do_the_lookup.count_matches.gas_checks.match6",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                        "matchedExpression": "@local.search_set.has",
+                        "type": "local",
+                        "fieldName": "search_set"
+                      },
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                        "matchedExpression": "@item.topic_theme_6",
+                        "type": "item",
+                        "fieldName": "topic_theme_6"
+                      },
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                        "matchedExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                        "type": "calc",
+                        "fieldName": "@local.search_set.has(@item.topic_theme_6)"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@local.search_set.has": [
+                      "value"
+                    ],
+                    "@item.topic_theme_6": [
+                      "value"
+                    ],
+                    "@calc(@local.search_set.has(@item.topic_theme_6))": [
+                      "value"
+                    ]
+                  }
+                },
+                {
                   "name": "does_it_match",
-                  "value": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                  "value": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                   "_translations": {
                     "value": {}
                   },
@@ -735,28 +921,40 @@
                   "_dynamicFields": {
                     "value": [
                       {
-                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                         "matchedExpression": "@local.match1",
                         "type": "local",
                         "fieldName": "match1"
                       },
                       {
-                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                         "matchedExpression": "@local.match2",
                         "type": "local",
                         "fieldName": "match2"
                       },
                       {
-                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                         "matchedExpression": "@local.match3",
                         "type": "local",
                         "fieldName": "match3"
                       },
                       {
-                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                         "matchedExpression": "@local.match4",
                         "type": "local",
                         "fieldName": "match4"
+                      },
+                      {
+                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
+                        "matchedExpression": "@local.match5",
+                        "type": "local",
+                        "fieldName": "match5"
+                      },
+                      {
+                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
+                        "matchedExpression": "@local.match6",
+                        "type": "local",
+                        "fieldName": "match6"
                       }
                     ]
                   },
@@ -771,6 +969,12 @@
                       "value"
                     ],
                     "@local.match4": [
+                      "value"
+                    ],
+                    "@local.match5": [
+                      "value"
+                    ],
+                    "@local.match6": [
                       "value"
                     ]
                   }
@@ -1034,8 +1238,92 @@
                   }
                 },
                 {
+                  "name": "match5",
+                  "value": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "type": "set_variable",
+                  "_nested_name": "do_the_lookup.count_matches.sb_checks.match5",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                        "matchedExpression": "@local.search_set.has",
+                        "type": "local",
+                        "fieldName": "search_set"
+                      },
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                        "matchedExpression": "@item.topic_theme_5",
+                        "type": "item",
+                        "fieldName": "topic_theme_5"
+                      },
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                        "matchedExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                        "type": "calc",
+                        "fieldName": "@local.search_set.has(@item.topic_theme_5)"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@local.search_set.has": [
+                      "value"
+                    ],
+                    "@item.topic_theme_5": [
+                      "value"
+                    ],
+                    "@calc(@local.search_set.has(@item.topic_theme_5))": [
+                      "value"
+                    ]
+                  }
+                },
+                {
+                  "name": "match6",
+                  "value": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "type": "set_variable",
+                  "_nested_name": "do_the_lookup.count_matches.sb_checks.match6",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                        "matchedExpression": "@local.search_set.has",
+                        "type": "local",
+                        "fieldName": "search_set"
+                      },
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                        "matchedExpression": "@item.topic_theme_6",
+                        "type": "item",
+                        "fieldName": "topic_theme_6"
+                      },
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                        "matchedExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                        "type": "calc",
+                        "fieldName": "@local.search_set.has(@item.topic_theme_6)"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@local.search_set.has": [
+                      "value"
+                    ],
+                    "@item.topic_theme_6": [
+                      "value"
+                    ],
+                    "@calc(@local.search_set.has(@item.topic_theme_6))": [
+                      "value"
+                    ]
+                  }
+                },
+                {
                   "name": "does_it_match",
-                  "value": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                  "value": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                   "_translations": {
                     "value": {}
                   },
@@ -1044,28 +1332,40 @@
                   "_dynamicFields": {
                     "value": [
                       {
-                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                         "matchedExpression": "@local.match1",
                         "type": "local",
                         "fieldName": "match1"
                       },
                       {
-                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                         "matchedExpression": "@local.match2",
                         "type": "local",
                         "fieldName": "match2"
                       },
                       {
-                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                         "matchedExpression": "@local.match3",
                         "type": "local",
                         "fieldName": "match3"
                       },
                       {
-                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                         "matchedExpression": "@local.match4",
                         "type": "local",
                         "fieldName": "match4"
+                      },
+                      {
+                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
+                        "matchedExpression": "@local.match5",
+                        "type": "local",
+                        "fieldName": "match5"
+                      },
+                      {
+                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
+                        "matchedExpression": "@local.match6",
+                        "type": "local",
+                        "fieldName": "match6"
                       }
                     ]
                   },
@@ -1080,6 +1380,12 @@
                       "value"
                     ],
                     "@local.match4": [
+                      "value"
+                    ],
+                    "@local.match5": [
+                      "value"
+                    ],
+                    "@local.match6": [
                       "value"
                     ]
                   }
@@ -1396,8 +1702,92 @@
                       }
                     },
                     {
+                      "name": "match5",
+                      "value": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "type": "set_variable",
+                      "_nested_name": "do_the_lookup.count_matches.routine_checks.individual_routine_checks.match5",
+                      "_dynamicFields": {
+                        "value": [
+                          {
+                            "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                            "matchedExpression": "@local.search_set.has",
+                            "type": "local",
+                            "fieldName": "search_set"
+                          },
+                          {
+                            "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                            "matchedExpression": "@item.topic_theme_5",
+                            "type": "item",
+                            "fieldName": "topic_theme_5"
+                          },
+                          {
+                            "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                            "matchedExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                            "type": "calc",
+                            "fieldName": "@local.search_set.has(@item.topic_theme_5)"
+                          }
+                        ]
+                      },
+                      "_dynamicDependencies": {
+                        "@local.search_set.has": [
+                          "value"
+                        ],
+                        "@item.topic_theme_5": [
+                          "value"
+                        ],
+                        "@calc(@local.search_set.has(@item.topic_theme_5))": [
+                          "value"
+                        ]
+                      }
+                    },
+                    {
+                      "name": "match6",
+                      "value": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "type": "set_variable",
+                      "_nested_name": "do_the_lookup.count_matches.routine_checks.individual_routine_checks.match6",
+                      "_dynamicFields": {
+                        "value": [
+                          {
+                            "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                            "matchedExpression": "@local.search_set.has",
+                            "type": "local",
+                            "fieldName": "search_set"
+                          },
+                          {
+                            "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                            "matchedExpression": "@item.topic_theme_6",
+                            "type": "item",
+                            "fieldName": "topic_theme_6"
+                          },
+                          {
+                            "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                            "matchedExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                            "type": "calc",
+                            "fieldName": "@local.search_set.has(@item.topic_theme_6)"
+                          }
+                        ]
+                      },
+                      "_dynamicDependencies": {
+                        "@local.search_set.has": [
+                          "value"
+                        ],
+                        "@item.topic_theme_6": [
+                          "value"
+                        ],
+                        "@calc(@local.search_set.has(@item.topic_theme_6))": [
+                          "value"
+                        ]
+                      }
+                    },
+                    {
                       "name": "does_it_match",
-                      "value": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                      "value": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                       "_translations": {
                         "value": {}
                       },
@@ -1406,28 +1796,40 @@
                       "_dynamicFields": {
                         "value": [
                           {
-                            "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                            "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                             "matchedExpression": "@local.match1",
                             "type": "local",
                             "fieldName": "match1"
                           },
                           {
-                            "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                            "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                             "matchedExpression": "@local.match2",
                             "type": "local",
                             "fieldName": "match2"
                           },
                           {
-                            "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                            "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                             "matchedExpression": "@local.match3",
                             "type": "local",
                             "fieldName": "match3"
                           },
                           {
-                            "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                            "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                             "matchedExpression": "@local.match4",
                             "type": "local",
                             "fieldName": "match4"
+                          },
+                          {
+                            "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
+                            "matchedExpression": "@local.match5",
+                            "type": "local",
+                            "fieldName": "match5"
+                          },
+                          {
+                            "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
+                            "matchedExpression": "@local.match6",
+                            "type": "local",
+                            "fieldName": "match6"
                           }
                         ]
                       },
@@ -1442,6 +1844,12 @@
                           "value"
                         ],
                         "@local.match4": [
+                          "value"
+                        ],
+                        "@local.match5": [
+                          "value"
+                        ],
+                        "@local.match6": [
                           "value"
                         ]
                       }
@@ -1723,8 +2131,92 @@
                   }
                 },
                 {
+                  "name": "match5",
+                  "value": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "type": "set_variable",
+                  "_nested_name": "do_the_lookup.count_matches.oe_checks.match5",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                        "matchedExpression": "@local.search_set.has",
+                        "type": "local",
+                        "fieldName": "search_set"
+                      },
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                        "matchedExpression": "@item.topic_theme_5",
+                        "type": "item",
+                        "fieldName": "topic_theme_5"
+                      },
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                        "matchedExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                        "type": "calc",
+                        "fieldName": "@local.search_set.has(@item.topic_theme_5)"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@local.search_set.has": [
+                      "value"
+                    ],
+                    "@item.topic_theme_5": [
+                      "value"
+                    ],
+                    "@calc(@local.search_set.has(@item.topic_theme_5))": [
+                      "value"
+                    ]
+                  }
+                },
+                {
+                  "name": "match6",
+                  "value": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "type": "set_variable",
+                  "_nested_name": "do_the_lookup.count_matches.oe_checks.match6",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                        "matchedExpression": "@local.search_set.has",
+                        "type": "local",
+                        "fieldName": "search_set"
+                      },
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                        "matchedExpression": "@item.topic_theme_6",
+                        "type": "item",
+                        "fieldName": "topic_theme_6"
+                      },
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                        "matchedExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                        "type": "calc",
+                        "fieldName": "@local.search_set.has(@item.topic_theme_6)"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@local.search_set.has": [
+                      "value"
+                    ],
+                    "@item.topic_theme_6": [
+                      "value"
+                    ],
+                    "@calc(@local.search_set.has(@item.topic_theme_6))": [
+                      "value"
+                    ]
+                  }
+                },
+                {
                   "name": "does_it_match",
-                  "value": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                  "value": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                   "_translations": {
                     "value": {}
                   },
@@ -1733,28 +2225,40 @@
                   "_dynamicFields": {
                     "value": [
                       {
-                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                         "matchedExpression": "@local.match1",
                         "type": "local",
                         "fieldName": "match1"
                       },
                       {
-                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                         "matchedExpression": "@local.match2",
                         "type": "local",
                         "fieldName": "match2"
                       },
                       {
-                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                         "matchedExpression": "@local.match3",
                         "type": "local",
                         "fieldName": "match3"
                       },
                       {
-                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                         "matchedExpression": "@local.match4",
                         "type": "local",
                         "fieldName": "match4"
+                      },
+                      {
+                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
+                        "matchedExpression": "@local.match5",
+                        "type": "local",
+                        "fieldName": "match5"
+                      },
+                      {
+                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
+                        "matchedExpression": "@local.match6",
+                        "type": "local",
+                        "fieldName": "match6"
                       }
                     ]
                   },
@@ -1769,6 +2273,12 @@
                       "value"
                     ],
                     "@local.match4": [
+                      "value"
+                    ],
+                    "@local.match5": [
+                      "value"
+                    ],
+                    "@local.match6": [
                       "value"
                     ]
                   }
@@ -2032,8 +2542,92 @@
                   }
                 },
                 {
+                  "name": "match5",
+                  "value": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "type": "set_variable",
+                  "_nested_name": "do_the_lookup.count_matches.ps_checks.match5",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                        "matchedExpression": "@local.search_set.has",
+                        "type": "local",
+                        "fieldName": "search_set"
+                      },
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                        "matchedExpression": "@item.topic_theme_5",
+                        "type": "item",
+                        "fieldName": "topic_theme_5"
+                      },
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                        "matchedExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                        "type": "calc",
+                        "fieldName": "@local.search_set.has(@item.topic_theme_5)"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@local.search_set.has": [
+                      "value"
+                    ],
+                    "@item.topic_theme_5": [
+                      "value"
+                    ],
+                    "@calc(@local.search_set.has(@item.topic_theme_5))": [
+                      "value"
+                    ]
+                  }
+                },
+                {
+                  "name": "match6",
+                  "value": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "type": "set_variable",
+                  "_nested_name": "do_the_lookup.count_matches.ps_checks.match6",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                        "matchedExpression": "@local.search_set.has",
+                        "type": "local",
+                        "fieldName": "search_set"
+                      },
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                        "matchedExpression": "@item.topic_theme_6",
+                        "type": "item",
+                        "fieldName": "topic_theme_6"
+                      },
+                      {
+                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                        "matchedExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                        "type": "calc",
+                        "fieldName": "@local.search_set.has(@item.topic_theme_6)"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@local.search_set.has": [
+                      "value"
+                    ],
+                    "@item.topic_theme_6": [
+                      "value"
+                    ],
+                    "@calc(@local.search_set.has(@item.topic_theme_6))": [
+                      "value"
+                    ]
+                  }
+                },
+                {
                   "name": "does_it_match",
-                  "value": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                  "value": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                   "_translations": {
                     "value": {}
                   },
@@ -2042,28 +2636,40 @@
                   "_dynamicFields": {
                     "value": [
                       {
-                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                         "matchedExpression": "@local.match1",
                         "type": "local",
                         "fieldName": "match1"
                       },
                       {
-                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                         "matchedExpression": "@local.match2",
                         "type": "local",
                         "fieldName": "match2"
                       },
                       {
-                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                         "matchedExpression": "@local.match3",
                         "type": "local",
                         "fieldName": "match3"
                       },
                       {
-                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                         "matchedExpression": "@local.match4",
                         "type": "local",
                         "fieldName": "match4"
+                      },
+                      {
+                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
+                        "matchedExpression": "@local.match5",
+                        "type": "local",
+                        "fieldName": "match5"
+                      },
+                      {
+                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
+                        "matchedExpression": "@local.match6",
+                        "type": "local",
+                        "fieldName": "match6"
                       }
                     ]
                   },
@@ -2078,6 +2684,12 @@
                       "value"
                     ],
                     "@local.match4": [
+                      "value"
+                    ],
+                    "@local.match5": [
+                      "value"
+                    ],
+                    "@local.match6": [
                       "value"
                     ]
                   }
@@ -2569,8 +3181,92 @@
                               }
                             },
                             {
+                              "name": "match5",
+                              "value": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                              "_translations": {
+                                "value": {}
+                              },
+                              "type": "set_variable",
+                              "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.pow_buttons.pow_buttons.pow_checks.match5",
+                              "_dynamicFields": {
+                                "value": [
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                                    "matchedExpression": "@local.search_set.has",
+                                    "type": "local",
+                                    "fieldName": "search_set"
+                                  },
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                                    "matchedExpression": "@item.topic_theme_5",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_5"
+                                  },
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                                    "matchedExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                                    "type": "calc",
+                                    "fieldName": "@local.search_set.has(@item.topic_theme_5)"
+                                  }
+                                ]
+                              },
+                              "_dynamicDependencies": {
+                                "@local.search_set.has": [
+                                  "value"
+                                ],
+                                "@item.topic_theme_5": [
+                                  "value"
+                                ],
+                                "@calc(@local.search_set.has(@item.topic_theme_5))": [
+                                  "value"
+                                ]
+                              }
+                            },
+                            {
+                              "name": "match6",
+                              "value": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                              "_translations": {
+                                "value": {}
+                              },
+                              "type": "set_variable",
+                              "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.pow_buttons.pow_buttons.pow_checks.match6",
+                              "_dynamicFields": {
+                                "value": [
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                                    "matchedExpression": "@local.search_set.has",
+                                    "type": "local",
+                                    "fieldName": "search_set"
+                                  },
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                                    "matchedExpression": "@item.topic_theme_6",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_6"
+                                  },
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                                    "matchedExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                                    "type": "calc",
+                                    "fieldName": "@local.search_set.has(@item.topic_theme_6)"
+                                  }
+                                ]
+                              },
+                              "_dynamicDependencies": {
+                                "@local.search_set.has": [
+                                  "value"
+                                ],
+                                "@item.topic_theme_6": [
+                                  "value"
+                                ],
+                                "@calc(@local.search_set.has(@item.topic_theme_6))": [
+                                  "value"
+                                ]
+                              }
+                            },
+                            {
                               "name": "does_it_match",
-                              "value": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                              "value": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                               "_translations": {
                                 "value": {}
                               },
@@ -2579,28 +3275,40 @@
                               "_dynamicFields": {
                                 "value": [
                                   {
-                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                                     "matchedExpression": "@local.match1",
                                     "type": "local",
                                     "fieldName": "match1"
                                   },
                                   {
-                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                                     "matchedExpression": "@local.match2",
                                     "type": "local",
                                     "fieldName": "match2"
                                   },
                                   {
-                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                                     "matchedExpression": "@local.match3",
                                     "type": "local",
                                     "fieldName": "match3"
                                   },
                                   {
-                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                                     "matchedExpression": "@local.match4",
                                     "type": "local",
                                     "fieldName": "match4"
+                                  },
+                                  {
+                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
+                                    "matchedExpression": "@local.match5",
+                                    "type": "local",
+                                    "fieldName": "match5"
+                                  },
+                                  {
+                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
+                                    "matchedExpression": "@local.match6",
+                                    "type": "local",
+                                    "fieldName": "match6"
                                   }
                                 ]
                               },
@@ -2615,6 +3323,12 @@
                                   "value"
                                 ],
                                 "@local.match4": [
+                                  "value"
+                                ],
+                                "@local.match5": [
+                                  "value"
+                                ],
+                                "@local.match6": [
                                   "value"
                                 ]
                               }
@@ -2961,8 +3675,92 @@
                               }
                             },
                             {
+                              "name": "match5",
+                              "value": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                              "_translations": {
+                                "value": {}
+                              },
+                              "type": "set_variable",
+                              "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.gas_buttons.gas_buttons.gas_checks.match5",
+                              "_dynamicFields": {
+                                "value": [
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                                    "matchedExpression": "@local.search_set.has",
+                                    "type": "local",
+                                    "fieldName": "search_set"
+                                  },
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                                    "matchedExpression": "@item.topic_theme_5",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_5"
+                                  },
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                                    "matchedExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                                    "type": "calc",
+                                    "fieldName": "@local.search_set.has(@item.topic_theme_5)"
+                                  }
+                                ]
+                              },
+                              "_dynamicDependencies": {
+                                "@local.search_set.has": [
+                                  "value"
+                                ],
+                                "@item.topic_theme_5": [
+                                  "value"
+                                ],
+                                "@calc(@local.search_set.has(@item.topic_theme_5))": [
+                                  "value"
+                                ]
+                              }
+                            },
+                            {
+                              "name": "match6",
+                              "value": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                              "_translations": {
+                                "value": {}
+                              },
+                              "type": "set_variable",
+                              "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.gas_buttons.gas_buttons.gas_checks.match6",
+                              "_dynamicFields": {
+                                "value": [
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                                    "matchedExpression": "@local.search_set.has",
+                                    "type": "local",
+                                    "fieldName": "search_set"
+                                  },
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                                    "matchedExpression": "@item.topic_theme_6",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_6"
+                                  },
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                                    "matchedExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                                    "type": "calc",
+                                    "fieldName": "@local.search_set.has(@item.topic_theme_6)"
+                                  }
+                                ]
+                              },
+                              "_dynamicDependencies": {
+                                "@local.search_set.has": [
+                                  "value"
+                                ],
+                                "@item.topic_theme_6": [
+                                  "value"
+                                ],
+                                "@calc(@local.search_set.has(@item.topic_theme_6))": [
+                                  "value"
+                                ]
+                              }
+                            },
+                            {
                               "name": "does_it_match",
-                              "value": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                              "value": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                               "_translations": {
                                 "value": {}
                               },
@@ -2971,28 +3769,40 @@
                               "_dynamicFields": {
                                 "value": [
                                   {
-                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                                     "matchedExpression": "@local.match1",
                                     "type": "local",
                                     "fieldName": "match1"
                                   },
                                   {
-                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                                     "matchedExpression": "@local.match2",
                                     "type": "local",
                                     "fieldName": "match2"
                                   },
                                   {
-                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                                     "matchedExpression": "@local.match3",
                                     "type": "local",
                                     "fieldName": "match3"
                                   },
                                   {
-                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                                     "matchedExpression": "@local.match4",
                                     "type": "local",
                                     "fieldName": "match4"
+                                  },
+                                  {
+                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
+                                    "matchedExpression": "@local.match5",
+                                    "type": "local",
+                                    "fieldName": "match5"
+                                  },
+                                  {
+                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
+                                    "matchedExpression": "@local.match6",
+                                    "type": "local",
+                                    "fieldName": "match6"
                                   }
                                 ]
                               },
@@ -3007,6 +3817,12 @@
                                   "value"
                                 ],
                                 "@local.match4": [
+                                  "value"
+                                ],
+                                "@local.match5": [
+                                  "value"
+                                ],
+                                "@local.match6": [
                                   "value"
                                 ]
                               }
@@ -3353,8 +4169,92 @@
                               }
                             },
                             {
+                              "name": "match5",
+                              "value": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                              "_translations": {
+                                "value": {}
+                              },
+                              "type": "set_variable",
+                              "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.sb_buttons.sb_buttons.sb_checks.match5",
+                              "_dynamicFields": {
+                                "value": [
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                                    "matchedExpression": "@local.search_set.has",
+                                    "type": "local",
+                                    "fieldName": "search_set"
+                                  },
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                                    "matchedExpression": "@item.topic_theme_5",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_5"
+                                  },
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                                    "matchedExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                                    "type": "calc",
+                                    "fieldName": "@local.search_set.has(@item.topic_theme_5)"
+                                  }
+                                ]
+                              },
+                              "_dynamicDependencies": {
+                                "@local.search_set.has": [
+                                  "value"
+                                ],
+                                "@item.topic_theme_5": [
+                                  "value"
+                                ],
+                                "@calc(@local.search_set.has(@item.topic_theme_5))": [
+                                  "value"
+                                ]
+                              }
+                            },
+                            {
+                              "name": "match6",
+                              "value": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                              "_translations": {
+                                "value": {}
+                              },
+                              "type": "set_variable",
+                              "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.sb_buttons.sb_buttons.sb_checks.match6",
+                              "_dynamicFields": {
+                                "value": [
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                                    "matchedExpression": "@local.search_set.has",
+                                    "type": "local",
+                                    "fieldName": "search_set"
+                                  },
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                                    "matchedExpression": "@item.topic_theme_6",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_6"
+                                  },
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                                    "matchedExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                                    "type": "calc",
+                                    "fieldName": "@local.search_set.has(@item.topic_theme_6)"
+                                  }
+                                ]
+                              },
+                              "_dynamicDependencies": {
+                                "@local.search_set.has": [
+                                  "value"
+                                ],
+                                "@item.topic_theme_6": [
+                                  "value"
+                                ],
+                                "@calc(@local.search_set.has(@item.topic_theme_6))": [
+                                  "value"
+                                ]
+                              }
+                            },
+                            {
                               "name": "does_it_match",
-                              "value": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                              "value": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                               "_translations": {
                                 "value": {}
                               },
@@ -3363,28 +4263,40 @@
                               "_dynamicFields": {
                                 "value": [
                                   {
-                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                                     "matchedExpression": "@local.match1",
                                     "type": "local",
                                     "fieldName": "match1"
                                   },
                                   {
-                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                                     "matchedExpression": "@local.match2",
                                     "type": "local",
                                     "fieldName": "match2"
                                   },
                                   {
-                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                                     "matchedExpression": "@local.match3",
                                     "type": "local",
                                     "fieldName": "match3"
                                   },
                                   {
-                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                                     "matchedExpression": "@local.match4",
                                     "type": "local",
                                     "fieldName": "match4"
+                                  },
+                                  {
+                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
+                                    "matchedExpression": "@local.match5",
+                                    "type": "local",
+                                    "fieldName": "match5"
+                                  },
+                                  {
+                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
+                                    "matchedExpression": "@local.match6",
+                                    "type": "local",
+                                    "fieldName": "match6"
                                   }
                                 ]
                               },
@@ -3399,6 +4311,12 @@
                                   "value"
                                 ],
                                 "@local.match4": [
+                                  "value"
+                                ],
+                                "@local.match5": [
+                                  "value"
+                                ],
+                                "@local.match6": [
                                   "value"
                                 ]
                               }
@@ -3788,8 +4706,92 @@
                                   }
                                 },
                                 {
+                                  "name": "match5",
+                                  "value": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                                  "_translations": {
+                                    "value": {}
+                                  },
+                                  "type": "set_variable",
+                                  "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.routines_buttons.routine_buttons.routine_checks.individual_routine_checks.match5",
+                                  "_dynamicFields": {
+                                    "value": [
+                                      {
+                                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                                        "matchedExpression": "@local.search_set.has",
+                                        "type": "local",
+                                        "fieldName": "search_set"
+                                      },
+                                      {
+                                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                                        "matchedExpression": "@item.topic_theme_5",
+                                        "type": "item",
+                                        "fieldName": "topic_theme_5"
+                                      },
+                                      {
+                                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                                        "matchedExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                                        "type": "calc",
+                                        "fieldName": "@local.search_set.has(@item.topic_theme_5)"
+                                      }
+                                    ]
+                                  },
+                                  "_dynamicDependencies": {
+                                    "@local.search_set.has": [
+                                      "value"
+                                    ],
+                                    "@item.topic_theme_5": [
+                                      "value"
+                                    ],
+                                    "@calc(@local.search_set.has(@item.topic_theme_5))": [
+                                      "value"
+                                    ]
+                                  }
+                                },
+                                {
+                                  "name": "match6",
+                                  "value": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                                  "_translations": {
+                                    "value": {}
+                                  },
+                                  "type": "set_variable",
+                                  "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.routines_buttons.routine_buttons.routine_checks.individual_routine_checks.match6",
+                                  "_dynamicFields": {
+                                    "value": [
+                                      {
+                                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                                        "matchedExpression": "@local.search_set.has",
+                                        "type": "local",
+                                        "fieldName": "search_set"
+                                      },
+                                      {
+                                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                                        "matchedExpression": "@item.topic_theme_6",
+                                        "type": "item",
+                                        "fieldName": "topic_theme_6"
+                                      },
+                                      {
+                                        "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                                        "matchedExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                                        "type": "calc",
+                                        "fieldName": "@local.search_set.has(@item.topic_theme_6)"
+                                      }
+                                    ]
+                                  },
+                                  "_dynamicDependencies": {
+                                    "@local.search_set.has": [
+                                      "value"
+                                    ],
+                                    "@item.topic_theme_6": [
+                                      "value"
+                                    ],
+                                    "@calc(@local.search_set.has(@item.topic_theme_6))": [
+                                      "value"
+                                    ]
+                                  }
+                                },
+                                {
                                   "name": "does_it_match",
-                                  "value": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                                  "value": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                                   "_translations": {
                                     "value": {}
                                   },
@@ -3798,28 +4800,40 @@
                                   "_dynamicFields": {
                                     "value": [
                                       {
-                                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                                         "matchedExpression": "@local.match1",
                                         "type": "local",
                                         "fieldName": "match1"
                                       },
                                       {
-                                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                                         "matchedExpression": "@local.match2",
                                         "type": "local",
                                         "fieldName": "match2"
                                       },
                                       {
-                                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                                         "matchedExpression": "@local.match3",
                                         "type": "local",
                                         "fieldName": "match3"
                                       },
                                       {
-                                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                                         "matchedExpression": "@local.match4",
                                         "type": "local",
                                         "fieldName": "match4"
+                                      },
+                                      {
+                                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
+                                        "matchedExpression": "@local.match5",
+                                        "type": "local",
+                                        "fieldName": "match5"
+                                      },
+                                      {
+                                        "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
+                                        "matchedExpression": "@local.match6",
+                                        "type": "local",
+                                        "fieldName": "match6"
                                       }
                                     ]
                                   },
@@ -3834,6 +4848,12 @@
                                       "value"
                                     ],
                                     "@local.match4": [
+                                      "value"
+                                    ],
+                                    "@local.match5": [
+                                      "value"
+                                    ],
+                                    "@local.match6": [
                                       "value"
                                     ]
                                   }
@@ -4289,8 +5309,92 @@
                               }
                             },
                             {
+                              "name": "match5",
+                              "value": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                              "_translations": {
+                                "value": {}
+                              },
+                              "type": "set_variable",
+                              "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.oe_buttons.oe_buttons.oe_checks.match5",
+                              "_dynamicFields": {
+                                "value": [
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                                    "matchedExpression": "@local.search_set.has",
+                                    "type": "local",
+                                    "fieldName": "search_set"
+                                  },
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                                    "matchedExpression": "@item.topic_theme_5",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_5"
+                                  },
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                                    "matchedExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                                    "type": "calc",
+                                    "fieldName": "@local.search_set.has(@item.topic_theme_5)"
+                                  }
+                                ]
+                              },
+                              "_dynamicDependencies": {
+                                "@local.search_set.has": [
+                                  "value"
+                                ],
+                                "@item.topic_theme_5": [
+                                  "value"
+                                ],
+                                "@calc(@local.search_set.has(@item.topic_theme_5))": [
+                                  "value"
+                                ]
+                              }
+                            },
+                            {
+                              "name": "match6",
+                              "value": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                              "_translations": {
+                                "value": {}
+                              },
+                              "type": "set_variable",
+                              "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.oe_buttons.oe_buttons.oe_checks.match6",
+                              "_dynamicFields": {
+                                "value": [
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                                    "matchedExpression": "@local.search_set.has",
+                                    "type": "local",
+                                    "fieldName": "search_set"
+                                  },
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                                    "matchedExpression": "@item.topic_theme_6",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_6"
+                                  },
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                                    "matchedExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                                    "type": "calc",
+                                    "fieldName": "@local.search_set.has(@item.topic_theme_6)"
+                                  }
+                                ]
+                              },
+                              "_dynamicDependencies": {
+                                "@local.search_set.has": [
+                                  "value"
+                                ],
+                                "@item.topic_theme_6": [
+                                  "value"
+                                ],
+                                "@calc(@local.search_set.has(@item.topic_theme_6))": [
+                                  "value"
+                                ]
+                              }
+                            },
+                            {
                               "name": "does_it_match",
-                              "value": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                              "value": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                               "_translations": {
                                 "value": {}
                               },
@@ -4299,28 +5403,40 @@
                               "_dynamicFields": {
                                 "value": [
                                   {
-                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                                     "matchedExpression": "@local.match1",
                                     "type": "local",
                                     "fieldName": "match1"
                                   },
                                   {
-                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                                     "matchedExpression": "@local.match2",
                                     "type": "local",
                                     "fieldName": "match2"
                                   },
                                   {
-                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                                     "matchedExpression": "@local.match3",
                                     "type": "local",
                                     "fieldName": "match3"
                                   },
                                   {
-                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                                     "matchedExpression": "@local.match4",
                                     "type": "local",
                                     "fieldName": "match4"
+                                  },
+                                  {
+                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
+                                    "matchedExpression": "@local.match5",
+                                    "type": "local",
+                                    "fieldName": "match5"
+                                  },
+                                  {
+                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
+                                    "matchedExpression": "@local.match6",
+                                    "type": "local",
+                                    "fieldName": "match6"
                                   }
                                 ]
                               },
@@ -4335,6 +5451,12 @@
                                   "value"
                                 ],
                                 "@local.match4": [
+                                  "value"
+                                ],
+                                "@local.match5": [
+                                  "value"
+                                ],
+                                "@local.match6": [
                                   "value"
                                 ]
                               }
@@ -4681,8 +5803,92 @@
                               }
                             },
                             {
+                              "name": "match5",
+                              "value": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                              "_translations": {
+                                "value": {}
+                              },
+                              "type": "set_variable",
+                              "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.ps_buttons.ps_buttons.ps_checks.match5",
+                              "_dynamicFields": {
+                                "value": [
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                                    "matchedExpression": "@local.search_set.has",
+                                    "type": "local",
+                                    "fieldName": "search_set"
+                                  },
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                                    "matchedExpression": "@item.topic_theme_5",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_5"
+                                  },
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                                    "matchedExpression": "@calc(@local.search_set.has(@item.topic_theme_5))",
+                                    "type": "calc",
+                                    "fieldName": "@local.search_set.has(@item.topic_theme_5)"
+                                  }
+                                ]
+                              },
+                              "_dynamicDependencies": {
+                                "@local.search_set.has": [
+                                  "value"
+                                ],
+                                "@item.topic_theme_5": [
+                                  "value"
+                                ],
+                                "@calc(@local.search_set.has(@item.topic_theme_5))": [
+                                  "value"
+                                ]
+                              }
+                            },
+                            {
+                              "name": "match6",
+                              "value": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                              "_translations": {
+                                "value": {}
+                              },
+                              "type": "set_variable",
+                              "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.ps_buttons.ps_buttons.ps_checks.match6",
+                              "_dynamicFields": {
+                                "value": [
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                                    "matchedExpression": "@local.search_set.has",
+                                    "type": "local",
+                                    "fieldName": "search_set"
+                                  },
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                                    "matchedExpression": "@item.topic_theme_6",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_6"
+                                  },
+                                  {
+                                    "fullExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                                    "matchedExpression": "@calc(@local.search_set.has(@item.topic_theme_6))",
+                                    "type": "calc",
+                                    "fieldName": "@local.search_set.has(@item.topic_theme_6)"
+                                  }
+                                ]
+                              },
+                              "_dynamicDependencies": {
+                                "@local.search_set.has": [
+                                  "value"
+                                ],
+                                "@item.topic_theme_6": [
+                                  "value"
+                                ],
+                                "@calc(@local.search_set.has(@item.topic_theme_6))": [
+                                  "value"
+                                ]
+                              }
+                            },
+                            {
                               "name": "does_it_match",
-                              "value": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                              "value": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                               "_translations": {
                                 "value": {}
                               },
@@ -4691,28 +5897,40 @@
                               "_dynamicFields": {
                                 "value": [
                                   {
-                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                                     "matchedExpression": "@local.match1",
                                     "type": "local",
                                     "fieldName": "match1"
                                   },
                                   {
-                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                                     "matchedExpression": "@local.match2",
                                     "type": "local",
                                     "fieldName": "match2"
                                   },
                                   {
-                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                                     "matchedExpression": "@local.match3",
                                     "type": "local",
                                     "fieldName": "match3"
                                   },
                                   {
-                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4",
+                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
                                     "matchedExpression": "@local.match4",
                                     "type": "local",
                                     "fieldName": "match4"
+                                  },
+                                  {
+                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
+                                    "matchedExpression": "@local.match5",
+                                    "type": "local",
+                                    "fieldName": "match5"
+                                  },
+                                  {
+                                    "fullExpression": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6",
+                                    "matchedExpression": "@local.match6",
+                                    "type": "local",
+                                    "fieldName": "match6"
                                   }
                                 ]
                               },
@@ -4727,6 +5945,12 @@
                                   "value"
                                 ],
                                 "@local.match4": [
+                                  "value"
+                                ],
+                                "@local.match5": [
+                                  "value"
+                                ],
+                                "@local.match6": [
                                   "value"
                                 ]
                               }

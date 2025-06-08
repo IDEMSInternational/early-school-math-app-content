@@ -9,96 +9,6 @@
       "_nested_name": "esm_content_ptr"
     },
     {
-      "name": "block_chars",
-      "value": "block",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "block_chars"
-    },
-    {
-      "name": "chars_type",
-      "value": "_type",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "chars_type"
-    },
-    {
-      "name": "chars_accord",
-      "value": "_accord",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "chars_accord"
-    },
-    {
-      "name": "chars_text",
-      "value": "_text",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "chars_text"
-    },
-    {
-      "name": "chars_illust",
-      "value": "_illust",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "chars_illust"
-    },
-    {
-      "name": "chars_illust_flex",
-      "value": "_illust_flex",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "chars_illust_flex"
-    },
-    {
-      "name": "chars_illust_max_width",
-      "value": "_illust_max_size",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "chars_illust_max_width"
-    },
-    {
-      "name": "chars_id",
-      "value": "id",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "chars_id"
-    },
-    {
-      "name": "remove_paragraph_space",
-      "value": "margin-top: -5px",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "remove_paragraph_space"
-    },
-    {
-      "name": "paragraph_space",
-      "value": "margin-top: 0px",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "paragraph_space"
-    },
-    {
       "name": "Commnts_b",
       "value": "Put \"Related Topics\" accordian if they exist",
       "_translations": {
@@ -173,7 +83,7 @@
                         "value": {}
                       },
                       "type": "set_variable",
-                      "_nested_name": "display_group_16.accordion_related_topics.required_topics_block.related_topics_content.topic_theme_base_chars"
+                      "_nested_name": "display_group_6.accordion_related_topics.required_topics_block.related_topics_content.topic_theme_base_chars"
                     },
                     {
                       "type": "items",
@@ -187,7 +97,7 @@
                             "value": {}
                           },
                           "type": "set_variable",
-                          "_nested_name": "display_group_16.accordion_related_topics.required_topics_block.related_topics_content.run_through_previous_topics.topic_theme_chars",
+                          "_nested_name": "display_group_6.accordion_related_topics.required_topics_block.related_topics_content.run_through_previous_topics.topic_theme_chars",
                           "_dynamicFields": {
                             "value": [
                               {
@@ -220,7 +130,7 @@
                             "value": {}
                           },
                           "type": "set_variable",
-                          "_nested_name": "display_group_16.accordion_related_topics.required_topics_block.related_topics_content.run_through_previous_topics.theme_ptr",
+                          "_nested_name": "display_group_6.accordion_related_topics.required_topics_block.related_topics_content.run_through_previous_topics.theme_ptr",
                           "_dynamicFields": {
                             "value": [
                               {
@@ -244,7 +154,7 @@
                             "value": {}
                           },
                           "type": "set_variable",
-                          "_nested_name": "display_group_16.accordion_related_topics.required_topics_block.related_topics_content.run_through_previous_topics.topic_theme",
+                          "_nested_name": "display_group_6.accordion_related_topics.required_topics_block.related_topics_content.run_through_previous_topics.topic_theme",
                           "_dynamicFields": {
                             "value": [
                               {
@@ -269,7 +179,7 @@
                           },
                           "condition": "@local.topic_theme",
                           "type": "set_variable",
-                          "_nested_name": "display_group_16.accordion_related_topics.required_topics_block.related_topics_content.run_through_previous_topics.topic_row",
+                          "_nested_name": "display_group_6.accordion_related_topics.required_topics_block.related_topics_content.run_through_previous_topics.topic_row",
                           "_dynamicFields": {
                             "value": [
                               {
@@ -302,7 +212,7 @@
                             "value": {}
                           },
                           "type": "set_variable",
-                          "_nested_name": "display_group_16.accordion_related_topics.required_topics_block.related_topics_content.run_through_previous_topics.topic_row_ptr",
+                          "_nested_name": "display_group_6.accordion_related_topics.required_topics_block.related_topics_content.run_through_previous_topics.topic_row_ptr",
                           "_dynamicFields": {
                             "value": [
                               {
@@ -326,7 +236,7 @@
                             "value": {}
                           },
                           "type": "set_variable",
-                          "_nested_name": "display_group_16.accordion_related_topics.required_topics_block.related_topics_content.run_through_previous_topics.topic_name",
+                          "_nested_name": "display_group_6.accordion_related_topics.required_topics_block.related_topics_content.run_through_previous_topics.topic_name",
                           "_dynamicFields": {
                             "value": [
                               {
@@ -385,7 +295,7 @@
                             "style": "short",
                             "text_align": "center"
                           },
-                          "_nested_name": "display_group_16.accordion_related_topics.required_topics_block.related_topics_content.run_through_previous_topics.button_list_@item.number",
+                          "_nested_name": "display_group_6.accordion_related_topics.required_topics_block.related_topics_content.run_through_previous_topics.button_list_@item.number",
                           "_dynamicFields": {
                             "name": [
                               {
@@ -443,7 +353,7 @@
                             ],
                             "_nested_name": [
                               {
-                                "fullExpression": "display_group_16.accordion_related_topics.required_topics_block.related_topics_content.run_through_previous_topics.button_list_@item.number",
+                                "fullExpression": "display_group_6.accordion_related_topics.required_topics_block.related_topics_content.run_through_previous_topics.button_list_@item.number",
                                 "matchedExpression": "@item.number",
                                 "type": "item",
                                 "fieldName": "number"
@@ -469,7 +379,7 @@
                           }
                         }
                       ],
-                      "_nested_name": "display_group_16.accordion_related_topics.required_topics_block.related_topics_content.run_through_previous_topics",
+                      "_nested_name": "display_group_6.accordion_related_topics.required_topics_block.related_topics_content.run_through_previous_topics",
                       "_dynamicFields": {
                         "value": [
                           {
@@ -487,17 +397,17 @@
                       }
                     }
                   ],
-                  "_nested_name": "display_group_16.accordion_related_topics.required_topics_block.related_topics_content"
+                  "_nested_name": "display_group_6.accordion_related_topics.required_topics_block.related_topics_content"
                 }
               ],
-              "_nested_name": "display_group_16.accordion_related_topics.required_topics_block"
+              "_nested_name": "display_group_6.accordion_related_topics.required_topics_block"
             }
           ],
-          "_nested_name": "display_group_16.accordion_related_topics"
+          "_nested_name": "display_group_6.accordion_related_topics"
         }
       ],
-      "name": "display_group_16",
-      "_nested_name": "display_group_16",
+      "name": "display_group_6",
+      "_nested_name": "display_group_6",
       "_dynamicFields": {
         "condition": [
           {
