@@ -100,6 +100,42 @@
       "_nested_name": "paragraph_space"
     },
     {
+      "type": "template",
+      "name": "display_standards",
+      "value": "esm_standards_viewer",
+      "style_list": [
+        "margin-top: -6px"
+      ],
+      "rows": [
+        {
+          "name": "esm_content_ptr",
+          "value": "@local.efm_ga_ptr",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": true,
+          "type": "set_variable",
+          "_nested_name": "display_standards.esm_content_ptr",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@local.efm_ga_ptr",
+                "matchedExpression": "@local.efm_ga_ptr",
+                "type": "local",
+                "fieldName": "efm_ga_ptr"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.efm_ga_ptr": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "display_standards"
+    },
+    {
       "type": "items",
       "name": "run_through_body_sections",
       "value": "@data.efm_num_list_one_to_ten",
@@ -2093,6 +2129,39 @@
           "value"
         ]
       }
+    },
+    {
+      "type": "template",
+      "name": "display_related_topics",
+      "value": "esm_related_topics_viewer",
+      "rows": [
+        {
+          "name": "esm_content_ptr",
+          "value": "@local.efm_ga_ptr",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": true,
+          "type": "set_variable",
+          "_nested_name": "display_related_topics.esm_content_ptr",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@local.efm_ga_ptr",
+                "matchedExpression": "@local.efm_ga_ptr",
+                "type": "local",
+                "fieldName": "efm_ga_ptr"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.efm_ga_ptr": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "display_related_topics"
     },
     {
       "type": "display_group",

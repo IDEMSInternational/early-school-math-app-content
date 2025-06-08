@@ -1,0 +1,543 @@
+{
+  "flow_type": "template",
+  "flow_name": "esm_glossary_viewer",
+  "status": "released",
+  "rows": [
+    {
+      "name": "esm_content_ptr",
+      "type": "set_variable",
+      "_nested_name": "esm_content_ptr"
+    },
+    {
+      "name": "block_chars",
+      "value": "block",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "block_chars"
+    },
+    {
+      "name": "chars_type",
+      "value": "_type",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "chars_type"
+    },
+    {
+      "name": "chars_accord",
+      "value": "_accord",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "chars_accord"
+    },
+    {
+      "name": "chars_text",
+      "value": "_text",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "chars_text"
+    },
+    {
+      "name": "chars_illust",
+      "value": "_illust",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "chars_illust"
+    },
+    {
+      "name": "chars_illust_flex",
+      "value": "_illust_flex",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "chars_illust_flex"
+    },
+    {
+      "name": "chars_illust_max_width",
+      "value": "_illust_max_size",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "chars_illust_max_width"
+    },
+    {
+      "name": "chars_id",
+      "value": "id",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "chars_id"
+    },
+    {
+      "name": "remove_paragraph_space",
+      "value": "margin-top: -5px",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "remove_paragraph_space"
+    },
+    {
+      "name": "paragraph_space",
+      "value": "margin-top: 0px",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "paragraph_space"
+    },
+    {
+      "name": "Comments_a",
+      "value": "Put \"Glossary\" buttons at bottom of page",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "Comments_a"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_set_up_glossary",
+      "condition": "!@local.esm_content_ptr.dont_use_glossary_button",
+      "parameter_list": {
+        "style": "column"
+      },
+      "rows": [
+        {
+          "name": "glossary_count_ptr",
+          "value": "local.esm_content_ptr.glossary_count",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "dg_set_up_glossary.glossary_count_ptr"
+        },
+        {
+          "name": "glossary_word_1_ptr",
+          "value": "local.esm_content_ptr.glossary_1",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "dg_set_up_glossary.glossary_word_1_ptr"
+        },
+        {
+          "name": "glossary_word_2_ptr",
+          "value": "local.esm_content_ptr.glossary_2",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "dg_set_up_glossary.glossary_word_2_ptr"
+        },
+        {
+          "name": "glossary_word_3_ptr",
+          "value": "local.esm_content_ptr.glossary_3",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "dg_set_up_glossary.glossary_word_3_ptr"
+        },
+        {
+          "name": "glossary_word_4_ptr",
+          "value": "local.esm_content_ptr.glossary_4",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "dg_set_up_glossary.glossary_word_4_ptr"
+        },
+        {
+          "name": "glossary_word_5_ptr",
+          "value": "local.esm_content_ptr.glossary_5",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "dg_set_up_glossary.glossary_word_5_ptr"
+        },
+        {
+          "name": "glossary_word_6_ptr",
+          "value": "local.esm_content_ptr.glossary_6",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "dg_set_up_glossary.glossary_word_6_ptr"
+        },
+        {
+          "type": "text",
+          "name": "blank_line1",
+          "_nested_name": "dg_set_up_glossary.blank_line1"
+        },
+        {
+          "type": "text",
+          "name": "blank_line2",
+          "_nested_name": "dg_set_up_glossary.blank_line2"
+        },
+        {
+          "type": "button",
+          "name": "button_glossary",
+          "value": "Glossary",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "set_field",
+              "args": [
+                "glossary_words_count",
+                "@@local.glossary_count_ptr"
+              ],
+              "_raw": "click | set_field:glossary_words_count : @@local.glossary_count_ptr",
+              "_cleaned": "click | set_field:glossary_words_count : @@local.glossary_count_ptr"
+            },
+            {
+              "trigger": "click",
+              "action_id": "set_field",
+              "args": [
+                "glossary_word_1",
+                "@@local.glossary_word_1_ptr"
+              ],
+              "_raw": "click | set_field:glossary_word_1 : @@local.glossary_word_1_ptr",
+              "_cleaned": "click | set_field:glossary_word_1 : @@local.glossary_word_1_ptr"
+            },
+            {
+              "trigger": "click",
+              "action_id": "set_field",
+              "args": [
+                "glossary_word_2",
+                "@@local.glossary_word_2_ptr"
+              ],
+              "_raw": "click | set_field:glossary_word_2 : @@local.glossary_word_2_ptr",
+              "_cleaned": "click | set_field:glossary_word_2 : @@local.glossary_word_2_ptr"
+            },
+            {
+              "trigger": "click",
+              "action_id": "set_field",
+              "args": [
+                "glossary_word_3",
+                "@@local.glossary_word_3_ptr"
+              ],
+              "_raw": "click | set_field:glossary_word_3 : @@local.glossary_word_3_ptr",
+              "_cleaned": "click | set_field:glossary_word_3 : @@local.glossary_word_3_ptr"
+            },
+            {
+              "trigger": "click",
+              "action_id": "set_field",
+              "args": [
+                "glossary_word_4",
+                "@@local.glossary_word_4_ptr"
+              ],
+              "_raw": "click | set_field:glossary_word_4 : @@local.glossary_word_4_ptr",
+              "_cleaned": "click | set_field:glossary_word_4 : @@local.glossary_word_4_ptr"
+            },
+            {
+              "trigger": "click",
+              "action_id": "set_field",
+              "args": [
+                "glossary_word_5",
+                "@@local.glossary_word_5_ptr"
+              ],
+              "_raw": "click | set_field:glossary_word_5 : @@local.glossary_word_5_ptr",
+              "_cleaned": "click | set_field:glossary_word_5 : @@local.glossary_word_5_ptr"
+            },
+            {
+              "trigger": "click",
+              "action_id": "set_field",
+              "args": [
+                "glossary_word_6",
+                "@@local.glossary_word_6_ptr"
+              ],
+              "_raw": "click | set_field:glossary_word_6 : @@local.glossary_word_6_ptr",
+              "_cleaned": "click | set_field:glossary_word_6 : @@local.glossary_word_6_ptr"
+            },
+            {
+              "trigger": "click",
+              "action_id": "go_to",
+              "args": [
+                "efm_gloss_start"
+              ],
+              "_raw": "click | go_to: efm_gloss_start",
+              "_cleaned": "click | go_to: efm_gloss_start"
+            }
+          ],
+          "parameter_list": {
+            "style": "short",
+            "text_align": "center"
+          },
+          "_nested_name": "dg_set_up_glossary.button_glossary",
+          "_dynamicFields": {
+            "action_list": {
+              "0": {
+                "args": {
+                  "1": [
+                    {
+                      "fullExpression": "@@local.glossary_count_ptr",
+                      "matchedExpression": "@local.glossary_count_ptr",
+                      "type": "local",
+                      "fieldName": "glossary_count_ptr"
+                    }
+                  ]
+                },
+                "_raw": [
+                  {
+                    "fullExpression": "click | set_field:glossary_words_count : @@local.glossary_count_ptr",
+                    "matchedExpression": "@local.glossary_count_ptr",
+                    "type": "local",
+                    "fieldName": "glossary_count_ptr"
+                  }
+                ],
+                "_cleaned": [
+                  {
+                    "fullExpression": "click | set_field:glossary_words_count : @@local.glossary_count_ptr",
+                    "matchedExpression": "@local.glossary_count_ptr",
+                    "type": "local",
+                    "fieldName": "glossary_count_ptr"
+                  }
+                ]
+              },
+              "1": {
+                "args": {
+                  "1": [
+                    {
+                      "fullExpression": "@@local.glossary_word_1_ptr",
+                      "matchedExpression": "@local.glossary_word_1_ptr",
+                      "type": "local",
+                      "fieldName": "glossary_word_1_ptr"
+                    }
+                  ]
+                },
+                "_raw": [
+                  {
+                    "fullExpression": "click | set_field:glossary_word_1 : @@local.glossary_word_1_ptr",
+                    "matchedExpression": "@local.glossary_word_1_ptr",
+                    "type": "local",
+                    "fieldName": "glossary_word_1_ptr"
+                  }
+                ],
+                "_cleaned": [
+                  {
+                    "fullExpression": "click | set_field:glossary_word_1 : @@local.glossary_word_1_ptr",
+                    "matchedExpression": "@local.glossary_word_1_ptr",
+                    "type": "local",
+                    "fieldName": "glossary_word_1_ptr"
+                  }
+                ]
+              },
+              "2": {
+                "args": {
+                  "1": [
+                    {
+                      "fullExpression": "@@local.glossary_word_2_ptr",
+                      "matchedExpression": "@local.glossary_word_2_ptr",
+                      "type": "local",
+                      "fieldName": "glossary_word_2_ptr"
+                    }
+                  ]
+                },
+                "_raw": [
+                  {
+                    "fullExpression": "click | set_field:glossary_word_2 : @@local.glossary_word_2_ptr",
+                    "matchedExpression": "@local.glossary_word_2_ptr",
+                    "type": "local",
+                    "fieldName": "glossary_word_2_ptr"
+                  }
+                ],
+                "_cleaned": [
+                  {
+                    "fullExpression": "click | set_field:glossary_word_2 : @@local.glossary_word_2_ptr",
+                    "matchedExpression": "@local.glossary_word_2_ptr",
+                    "type": "local",
+                    "fieldName": "glossary_word_2_ptr"
+                  }
+                ]
+              },
+              "3": {
+                "args": {
+                  "1": [
+                    {
+                      "fullExpression": "@@local.glossary_word_3_ptr",
+                      "matchedExpression": "@local.glossary_word_3_ptr",
+                      "type": "local",
+                      "fieldName": "glossary_word_3_ptr"
+                    }
+                  ]
+                },
+                "_raw": [
+                  {
+                    "fullExpression": "click | set_field:glossary_word_3 : @@local.glossary_word_3_ptr",
+                    "matchedExpression": "@local.glossary_word_3_ptr",
+                    "type": "local",
+                    "fieldName": "glossary_word_3_ptr"
+                  }
+                ],
+                "_cleaned": [
+                  {
+                    "fullExpression": "click | set_field:glossary_word_3 : @@local.glossary_word_3_ptr",
+                    "matchedExpression": "@local.glossary_word_3_ptr",
+                    "type": "local",
+                    "fieldName": "glossary_word_3_ptr"
+                  }
+                ]
+              },
+              "4": {
+                "args": {
+                  "1": [
+                    {
+                      "fullExpression": "@@local.glossary_word_4_ptr",
+                      "matchedExpression": "@local.glossary_word_4_ptr",
+                      "type": "local",
+                      "fieldName": "glossary_word_4_ptr"
+                    }
+                  ]
+                },
+                "_raw": [
+                  {
+                    "fullExpression": "click | set_field:glossary_word_4 : @@local.glossary_word_4_ptr",
+                    "matchedExpression": "@local.glossary_word_4_ptr",
+                    "type": "local",
+                    "fieldName": "glossary_word_4_ptr"
+                  }
+                ],
+                "_cleaned": [
+                  {
+                    "fullExpression": "click | set_field:glossary_word_4 : @@local.glossary_word_4_ptr",
+                    "matchedExpression": "@local.glossary_word_4_ptr",
+                    "type": "local",
+                    "fieldName": "glossary_word_4_ptr"
+                  }
+                ]
+              },
+              "5": {
+                "args": {
+                  "1": [
+                    {
+                      "fullExpression": "@@local.glossary_word_5_ptr",
+                      "matchedExpression": "@local.glossary_word_5_ptr",
+                      "type": "local",
+                      "fieldName": "glossary_word_5_ptr"
+                    }
+                  ]
+                },
+                "_raw": [
+                  {
+                    "fullExpression": "click | set_field:glossary_word_5 : @@local.glossary_word_5_ptr",
+                    "matchedExpression": "@local.glossary_word_5_ptr",
+                    "type": "local",
+                    "fieldName": "glossary_word_5_ptr"
+                  }
+                ],
+                "_cleaned": [
+                  {
+                    "fullExpression": "click | set_field:glossary_word_5 : @@local.glossary_word_5_ptr",
+                    "matchedExpression": "@local.glossary_word_5_ptr",
+                    "type": "local",
+                    "fieldName": "glossary_word_5_ptr"
+                  }
+                ]
+              },
+              "6": {
+                "args": {
+                  "1": [
+                    {
+                      "fullExpression": "@@local.glossary_word_6_ptr",
+                      "matchedExpression": "@local.glossary_word_6_ptr",
+                      "type": "local",
+                      "fieldName": "glossary_word_6_ptr"
+                    }
+                  ]
+                },
+                "_raw": [
+                  {
+                    "fullExpression": "click | set_field:glossary_word_6 : @@local.glossary_word_6_ptr",
+                    "matchedExpression": "@local.glossary_word_6_ptr",
+                    "type": "local",
+                    "fieldName": "glossary_word_6_ptr"
+                  }
+                ],
+                "_cleaned": [
+                  {
+                    "fullExpression": "click | set_field:glossary_word_6 : @@local.glossary_word_6_ptr",
+                    "matchedExpression": "@local.glossary_word_6_ptr",
+                    "type": "local",
+                    "fieldName": "glossary_word_6_ptr"
+                  }
+                ]
+              }
+            }
+          },
+          "_dynamicDependencies": {
+            "@local.glossary_count_ptr": [
+              "action_list.0.args.1",
+              "action_list.0._raw",
+              "action_list.0._cleaned"
+            ],
+            "@local.glossary_word_1_ptr": [
+              "action_list.1.args.1",
+              "action_list.1._raw",
+              "action_list.1._cleaned"
+            ],
+            "@local.glossary_word_2_ptr": [
+              "action_list.2.args.1",
+              "action_list.2._raw",
+              "action_list.2._cleaned"
+            ],
+            "@local.glossary_word_3_ptr": [
+              "action_list.3.args.1",
+              "action_list.3._raw",
+              "action_list.3._cleaned"
+            ],
+            "@local.glossary_word_4_ptr": [
+              "action_list.4.args.1",
+              "action_list.4._raw",
+              "action_list.4._cleaned"
+            ],
+            "@local.glossary_word_5_ptr": [
+              "action_list.5.args.1",
+              "action_list.5._raw",
+              "action_list.5._cleaned"
+            ],
+            "@local.glossary_word_6_ptr": [
+              "action_list.6.args.1",
+              "action_list.6._raw",
+              "action_list.6._cleaned"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "dg_set_up_glossary",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "!@local.esm_content_ptr.dont_use_glossary_button",
+            "matchedExpression": "!@local.esm_content_ptr.dont_use_glossary_button",
+            "type": "local",
+            "fieldName": "esm_content_ptr"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "!@local.esm_content_ptr.dont_use_glossary_button": [
+          "condition"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "EFM_routines_high_level_sheets.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1PeJ5ishcTCWUvjhflbQqKO6M8u9rNuec"
+}
