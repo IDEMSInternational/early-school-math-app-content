@@ -22,9 +22,42 @@
       "_nested_name": "comment"
     },
     {
-      "name": "passed_search_array",
+      "name": "passed_search_string",
       "type": "set_variable",
-      "_nested_name": "passed_search_array"
+      "_nested_name": "passed_search_string"
+    },
+    {
+      "name": "passed_search_array",
+      "value": "@calc(@local.passed_search_string.split(\",\"))",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "passed_search_array",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(@local.passed_search_string.split(\",\"))",
+            "matchedExpression": "@local.passed_search_string.split",
+            "type": "local",
+            "fieldName": "passed_search_string"
+          },
+          {
+            "fullExpression": "@calc(@local.passed_search_string.split(\",\"))",
+            "matchedExpression": "@calc(@local.passed_search_string.split(\",\"))",
+            "type": "calc",
+            "fieldName": "@local.passed_search_string.split(\",\")"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.passed_search_string.split": [
+          "value"
+        ],
+        "@calc(@local.passed_search_string.split(\",\"))": [
+          "value"
+        ]
+      }
     },
     {
       "name": "search_set",
