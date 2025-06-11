@@ -197,7 +197,7 @@
             {
               "type": "accordion_section",
               "name": "accord_oe_counting",
-              "value": "Counting",
+              "value": "Early Logic and Counting",
               "parameter_list": {
                 "text_align": "center",
                 "style": "large emphasised"
@@ -215,7 +215,7 @@
                       "name": "oe_counting",
                       "value": "@data.esm_open_ended_tasks_data_list",
                       "parameter_list": {
-                        "filter": "@item.type==\"counting\""
+                        "filter": "@item.type==\"early_logic_counting\""
                       },
                       "rows": [
                         {
@@ -334,7 +334,7 @@
                         "parameter_list": {
                           "filter": [
                             {
-                              "fullExpression": "@item.type==\"counting\"",
+                              "fullExpression": "@item.type==\"early_logic_counting\"",
                               "matchedExpression": "@item.type",
                               "type": "item",
                               "fieldName": "type"
@@ -360,7 +360,7 @@
             {
               "type": "accordion_section",
               "name": "accord_oe_logic",
-              "value": "Early Add Sub – NOT DONE",
+              "value": "Count, Add, Subtract",
               "parameter_list": {
                 "text_align": "center",
                 "style": "large emphasised"
@@ -378,7 +378,7 @@
                       "name": "oe_logic",
                       "value": "@data.esm_open_ended_tasks_data_list",
                       "parameter_list": {
-                        "filter": "@item.type==\"add_subtract\""
+                        "filter": "@item.type==\"medium_counting_add_sub\""
                       },
                       "rows": [
                         {
@@ -497,7 +497,7 @@
                         "parameter_list": {
                           "filter": [
                             {
-                              "fullExpression": "@item.type==\"add_subtract\"",
+                              "fullExpression": "@item.type==\"medium_counting_add_sub\"",
                               "matchedExpression": "@item.type",
                               "type": "item",
                               "fieldName": "type"

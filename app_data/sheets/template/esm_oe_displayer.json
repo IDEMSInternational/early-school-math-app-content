@@ -68,6 +68,21 @@
         }
       ],
       "_nested_name": "dg_oe_page"
+    },
+    {
+      "type": "display_group",
+      "name": "fake_space_maker2",
+      "style_list": [
+        "margin-top: 25px"
+      ],
+      "rows": [
+        {
+          "type": "text",
+          "name": "fakeit",
+          "_nested_name": "fake_space_maker2.fakeit"
+        }
+      ],
+      "_nested_name": "fake_space_maker2"
     }
   ],
   "_xlsxPath": "EFM_rich_tasks_high_level_sheets.xlsx",
