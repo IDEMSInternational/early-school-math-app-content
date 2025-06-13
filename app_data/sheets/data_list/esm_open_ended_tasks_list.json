@@ -228,8 +228,9 @@
       "topic_theme_2": "NPV_QC10_WN10",
       "topic_theme_3": "Geom_Shape_SN2D3D",
       "topic_theme_4": "Geom_Pat_Intro",
-      "glossary_count": 1,
+      "glossary_count": 2,
       "glossary_1": "hexagon",
+      "glossary_2": "tiling",
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMOENumberingHexagonIntro.svg",
       "block1_illust_max_size": "200px",
@@ -306,7 +307,9 @@
       "topic_theme_3": "NPV_QC10_WN10",
       "topic_theme_4": "Geom_Shape_SN2D3D",
       "topic_theme_5": "Geom_Pat_Intro",
-      "glossary_count": 0,
+      "glossary_count": 2,
+      "glossary_1": "square",
+      "glossary_2": "tiling",
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMPOWAConsecutiveNumbersChallenge2.svg",
       "block1_illust_max_size": "180px",
@@ -386,96 +389,282 @@
       "id": "esm_oe_tc_task_6",
       "reference": "TCK5 p249 Task 24",
       "type": "medium_counting_add_sub",
-      "glossary_count": 0,
-      "block1_type": "all_text",
+      "math_topics": "part-whole for numbers, adding single-digit numbers",
+      "topic_theme_1": "NPV_QC10_QC",
+      "topic_theme_2": "NO_ASSD_ASto10",
+      "topic_theme_3": "NO_ASSD_SD_Add_Sub",
+      "topic_theme_4": "NO_AS10_NBFF",
+      "glossary_count": 1,
+      "glossary_1": "part-whole",
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMOEPartsofaNumberIntro.svg",
+      "block1_illust_max_size": "330px",
+      "block2_type": "accord_all_text",
+      "block3_type": "accord_all_text",
+      "block4_type": "accord_all_text",
       "name": "Parts of a Number",
       "_translations": {
         "name": {},
-        "block1_text": {}
+        "block1_text": {},
+        "block2_accord": {},
+        "block2_text": {},
+        "block3_accord": {},
+        "block3_text": {},
+        "block4_accord": {},
+        "block4_text": {}
       },
       "_translatedFields": {
         "name": {
           "eng": "Parts of a Number"
         },
         "block1_text": {
-          "eng": "Write this."
+          "eng": "**Parts of a Number**\n\nYou have some pieces of red and blue candy (pick a fun candy to talk about). This task practices putting groups together or pulling them apart.\n\n1. The first task asks for total numbers when two (or three) groups are combined. This task warms your students up for the second and third tasks.\n2. This task asks the student to decompose a larger group into two smaller groups. You can add restrictions on the smaller group, such as one of them must be larger than the other.\n3. This is the same as the second task, only now the students are asked to decompose into three smaller groups.\n\nUse whatever large group size is appropriate for the math skills you want your students to practice."
+        },
+        "block2_accord": {
+          "eng": "Putting Together"
+        },
+        "block2_text": {
+          "eng": "Tell your students that you have some red and blue candies, and then ask how many pieces of candy you have altogether.\n\nWrite the full color names at first, but gradually transition to using just the first letter. This is another step in helping your students adjust to symbolic representations.\n\n**Examples:**\n* 3 Red and 2 Blue\n* 4 Red and 1 Blue\n* 5 Red and 5 Blue\n* 3 R and 6 B\n* 1 R and 7 B\n\nIf this is going well, say you bought some more candy that has pieces that are red, blue, and green. Ask for totals again.\n\n**Examples:**\n* 3 R, 2B, 3 G\n* 1 R, 5B, 2 G"
+        },
+        "block3_accord": {
+          "eng": "Making 2 Groups"
+        },
+        "block3_text": {
+          "eng": "This is a decomposing task. Tell your students you have a total number of candies and you are wondering how that total can be created using red and blue candies. As your students get better at it, start putting in requirements on how the counts for the red and blue relate.\n\nIt will probably help your students, especially at first, if you draw a picture of the full collection of candies, perhaps in a line, and ask them how to break it into two parts.\n\nFor the groups of students who can do this easily, ask them to come up with more than one answer.\n\n**Examples:**\n* 5 candies\n* 8 candies\n* 6 with there bing more Red than Blue\n* 7: Red < Blue\n* 10: R = B\n* 9: R < B (discuss why R = B is impossible, if you like)"
+        },
+        "block4_accord": {
+          "eng": "Making 3 Groups"
+        },
+        "block4_text": {
+          "eng": "This is the same as the last task, only now you have red, blue, and green pieces of candy.\n\n**Examples:**\n* 4 total\n* 5: R > B, B = G (discuss if R > B > G is possible)\n* 7: R < B, B > G\n* 9: R = B = G\n* 10: R = 1, B > G\n* 10: B = 5, R < G"
         }
       },
-      "block1_text": "Write this."
+      "block1_text": "**Parts of a Number**\n\nYou have some pieces of red and blue candy (pick a fun candy to talk about). This task practices putting groups together or pulling them apart.\n\n1. The first task asks for total numbers when two (or three) groups are combined. This task warms your students up for the second and third tasks.\n2. This task asks the student to decompose a larger group into two smaller groups. You can add restrictions on the smaller group, such as one of them must be larger than the other.\n3. This is the same as the second task, only now the students are asked to decompose into three smaller groups.\n\nUse whatever large group size is appropriate for the math skills you want your students to practice.",
+      "block2_accord": "Putting Together",
+      "block2_text": "Tell your students that you have some red and blue candies, and then ask how many pieces of candy you have altogether.\n\nWrite the full color names at first, but gradually transition to using just the first letter. This is another step in helping your students adjust to symbolic representations.\n\n**Examples:**\n* 3 Red and 2 Blue\n* 4 Red and 1 Blue\n* 5 Red and 5 Blue\n* 3 R and 6 B\n* 1 R and 7 B\n\nIf this is going well, say you bought some more candy that has pieces that are red, blue, and green. Ask for totals again.\n\n**Examples:**\n* 3 R, 2B, 3 G\n* 1 R, 5B, 2 G",
+      "block3_accord": "Making 2 Groups",
+      "block3_text": "This is a decomposing task. Tell your students you have a total number of candies and you are wondering how that total can be created using red and blue candies. As your students get better at it, start putting in requirements on how the counts for the red and blue relate.\n\nIt will probably help your students, especially at first, if you draw a picture of the full collection of candies, perhaps in a line, and ask them how to break it into two parts.\n\nFor the groups of students who can do this easily, ask them to come up with more than one answer.\n\n**Examples:**\n* 5 candies\n* 8 candies\n* 6 with there bing more Red than Blue\n* 7: Red < Blue\n* 10: R = B\n* 9: R < B (discuss why R = B is impossible, if you like)",
+      "block4_accord": "Making 3 Groups",
+      "block4_text": "This is the same as the last task, only now you have red, blue, and green pieces of candy.\n\n**Examples:**\n* 4 total\n* 5: R > B, B = G (discuss if R > B > G is possible)\n* 7: R < B, B > G\n* 9: R = B = G\n* 10: R = 1, B > G\n* 10: B = 5, R < G"
     },
     {
       "id": "esm_oe_tc_task_7",
       "reference": "TCK5 p253 Task 25",
       "type": "medium_counting_add_sub",
-      "glossary_count": 0,
-      "block1_type": "all_text",
-      "name": "Which One Has More",
+      "math_topics": "comparing, taking a difference",
+      "topic_theme_1": "NPV_QC10_QC",
+      "topic_theme_2": "NPV_CPV100_Count20",
+      "topic_theme_3": "NPV_QC10_Comp10",
+      "topic_theme_4": "NPV_CPV100_Comp20",
+      "glossary_count": 1,
+      "glossary_1": "difference",
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMOEComparingDotsIntro.svg",
+      "block1_illust_max_size": "240px",
+      "block2_type": "accord_illust_below",
+      "block2_illust": "ESMIll/ESMOEComparingDotsClouds.svg",
+      "block2_illust_max_size": "240px",
+      "block3_type": "accord_all_text",
+      "block4_type": "accord_all_text",
+      "name": "Which Is More?",
       "_translations": {
         "name": {},
-        "block1_text": {}
+        "block1_text": {},
+        "block2_accord": {},
+        "block2_text": {},
+        "block3_accord": {},
+        "block3_text": {},
+        "block4_accord": {},
+        "block4_text": {}
       },
       "_translatedFields": {
         "name": {
-          "eng": "Which One Has More"
+          "eng": "Which Is More?"
         },
         "block1_text": {
-          "eng": "Write this."
+          "eng": "**Which is More?**\n\nThe task is to compare the sizes of two or three groups, and later on two or three numbers. For the first two tasks, use pictures of dots or other items you have pictures of. Alternatively, use physical objects if you have a lot of them.\n\nYou may want to start off the first two tasks with images of objects in a row so your students can put one row above the other to help compare the sizes. Transition to clouds of objects as your students are able to do more abstract comparisons.\n\n1. At first, use images of two groups and ask which group has more.\n2. Using two images of groups, ask which group has more and what is the difference between the sizes of the two groups. \n3. This is the same as the second task, only now use numbers instead of images of objects."
+        },
+        "block2_accord": {
+          "eng": "Which has More?"
+        },
+        "block2_text": {
+          "eng": "Use cards with images of two groups of objects and ask which group has more. You can also ask which group has less.\n\nSets of Dot Cards, Dot Plates, or Ten Frame Cards work well for this task.\n\nAs your students get good at this, use three groups and ask which group has the most and which has the least."
+        },
+        "block3_accord": {
+          "eng": "How Much More?"
+        },
+        "block3_text": {
+          "eng": "This is similar to the first task. With a pair of cards with groups of figures drawn on them, once the students have identified which group has more objects, ask what the difference is between the sizes of the two groups. \n\nAs before, you can transition to three images and ask which group has the most, which group has the least, and what the difference is between the two sets."
+        },
+        "block4_accord": {
+          "eng": "Use Numbers"
+        },
+        "block4_text": {
+          "eng": "This is the same as the second task, only now you will use numbers instead of images of objects.\n\n**Examples:**\n* 2 or 3\n* 5 or 3\n* 6 or 9\n* 10 or 9\n* 5 or 2 or 7\n* 3 or 7 or 9\n* 11 or 13 or 6"
         }
       },
-      "block1_text": "Write this."
+      "block1_text": "**Which is More?**\n\nThe task is to compare the sizes of two or three groups, and later on two or three numbers. For the first two tasks, use pictures of dots or other items you have pictures of. Alternatively, use physical objects if you have a lot of them.\n\nYou may want to start off the first two tasks with images of objects in a row so your students can put one row above the other to help compare the sizes. Transition to clouds of objects as your students are able to do more abstract comparisons.\n\n1. At first, use images of two groups and ask which group has more.\n2. Using two images of groups, ask which group has more and what is the difference between the sizes of the two groups. \n3. This is the same as the second task, only now use numbers instead of images of objects.",
+      "block2_accord": "Which has More?",
+      "block2_text": "Use cards with images of two groups of objects and ask which group has more. You can also ask which group has less.\n\nSets of Dot Cards, Dot Plates, or Ten Frame Cards work well for this task.\n\nAs your students get good at this, use three groups and ask which group has the most and which has the least.",
+      "block3_accord": "How Much More?",
+      "block3_text": "This is similar to the first task. With a pair of cards with groups of figures drawn on them, once the students have identified which group has more objects, ask what the difference is between the sizes of the two groups. \n\nAs before, you can transition to three images and ask which group has the most, which group has the least, and what the difference is between the two sets.",
+      "block4_accord": "Use Numbers",
+      "block4_text": "This is the same as the second task, only now you will use numbers instead of images of objects.\n\n**Examples:**\n* 2 or 3\n* 5 or 3\n* 6 or 9\n* 10 or 9\n* 5 or 2 or 7\n* 3 or 7 or 9\n* 11 or 13 or 6"
     },
     {
       "id": "esm_oe_tc_task_8",
       "reference": "TCK5 p260 Task 26",
       "type": "medium_counting_add_sub",
-      "glossary_count": 0,
-      "block1_type": "all_text",
+      "math_topics": "quantities and counting to 20",
+      "topic_theme_1": "NPV_QC10_QC",
+      "topic_theme_2": "NPV_QC10_CMQ10",
+      "topic_theme_3": "NPV_CPV100_Count20",
+      "glossary_count": 2,
+      "glossary_1": "difference",
+      "glossary_2": "ten frame",
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMOEFindingAmountsIntro.svg",
+      "block1_illust_max_size": "240px",
+      "block2_type": "accord_illust_below",
+      "block2_illust": "ESMIll/ESMDotsRandom3.svg",
+      "block2_illust_max_size": "240px",
+      "block3_type": "accord_all_text",
+      "block4_type": "accord_illust_below",
+      "block4_illust": "ESMIll/ESMOEFindingAmountsNeedMore.svg",
+      "block4_illust_max_size": "330px",
       "name": "Finding Amounts",
       "_translations": {
         "name": {},
-        "block1_text": {}
+        "block1_text": {},
+        "block2_accord": {},
+        "block2_text": {},
+        "block3_accord": {},
+        "block3_text": {},
+        "block4_accord": {},
+        "block4_text": {}
       },
       "_translatedFields": {
         "name": {
           "eng": "Finding Amounts"
         },
         "block1_text": {
-          "eng": "Write this."
+          "eng": "**Finding Amounts**\n\nSome of the quantities should be shown using ten frames. This will provide practice with using those frames and will give a good connection to the Using Ten Frames for Addition and Subtraction task.\n\n1. Count the dots or items that make up a set.\n2. Give a total, such as \"8 circles,\" and have your students draw this quantity.\n3. Show a collection of things and ask how many more are needed to reach a target number.\n\nThis task lends itself naturally to extension activities involving addition or subtraction."
+        },
+        "block2_accord": {
+          "eng": "Counting a Set"
+        },
+        "block2_text": {
+          "eng": "This is a task for practicing the basics of counting a collection of objects. Use Dot Cards, Dot Plates, or Ten Frame Cards. You can also use collections of objects if you have enough.\n\nThe Dot Card and Splat! routines are also a good source for practicing counting a collection of objects."
+        },
+        "block3_accord": {
+          "eng": "Make a Group for a Size"
+        },
+        "block3_text": {
+          "eng": "Give your students a quantity to represent. You can either give them just a number, or you can specify a quantity of a particular image.\n\n**Example Target Sizes:**\n* 4\n* 6\n* 11\n* 5 triangles\n* 8 rectangles\n* 9 circles\n* 10 stars"
+        },
+        "block4_accord": {
+          "eng": "How Many More?"
+        },
+        "block4_text": {
+          "eng": "In this task, you supply an image of a collection of objects and a target number. The challenge for your students is to add objects so that the total number of objects is equal to the target number. This can also be done with physical objects if you have them available.\n\n\nFor the illustrated examples below, the target number is 14."
         }
       },
-      "block1_text": "Write this."
+      "block1_text": "**Finding Amounts**\n\nSome of the quantities should be shown using ten frames. This will provide practice with using those frames and will give a good connection to the Using Ten Frames for Addition and Subtraction task.\n\n1. Count the dots or items that make up a set.\n2. Give a total, such as \"8 circles,\" and have your students draw this quantity.\n3. Show a collection of things and ask how many more are needed to reach a target number.\n\nThis task lends itself naturally to extension activities involving addition or subtraction.",
+      "block2_accord": "Counting a Set",
+      "block2_text": "This is a task for practicing the basics of counting a collection of objects. Use Dot Cards, Dot Plates, or Ten Frame Cards. You can also use collections of objects if you have enough.\n\nThe Dot Card and Splat! routines are also a good source for practicing counting a collection of objects.",
+      "block3_accord": "Make a Group for a Size",
+      "block3_text": "Give your students a quantity to represent. You can either give them just a number, or you can specify a quantity of a particular image.\n\n**Example Target Sizes:**\n* 4\n* 6\n* 11\n* 5 triangles\n* 8 rectangles\n* 9 circles\n* 10 stars",
+      "block4_accord": "How Many More?",
+      "block4_text": "In this task, you supply an image of a collection of objects and a target number. The challenge for your students is to add objects so that the total number of objects is equal to the target number. This can also be done with physical objects if you have them available.\n\n\nFor the illustrated examples below, the target number is 14."
     },
     {
       "id": "esm_oe_tc_task_9",
       "reference": "TCK5 p266 Task 27",
       "type": "medium_counting_add_sub",
-      "glossary_count": 0,
-      "block1_type": "all_text",
+      "math_topics": "add and subtract 2-digit numbers",
+      "topic_theme_1": "NPV_CPV100_PV20",
+      "topic_theme_2": "NPV_CPV100_CountPV100",
+      "topic_theme_3": "NO_ASSD_PVto19",
+      "topic_theme_4": "NO_ASSD_SD_Add_Sub",
+      "topic_theme_5": "NO_DD_AS2and1",
+      "topic_theme_6": "NO_DD_AS2wRegroup",
+      "glossary_count": 1,
+      "glossary_1": "ten frame",
+      "glossary_2": "counting on",
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMOETenFramesIntro.svg",
+      "block1_illust_max_size": "240px",
+      "block2_type": "accord_illust_below",
+      "block2_illust": "ESMIll/ESMOETenFrames1TenFrame.svg",
+      "block2_illust_max_size": "330px",
+      "block3_type": "accord_illust_below",
+      "block3_illust": "ESMIll/ESMOETenFrames2TenFrames.svg",
+      "block3_illust_max_size": "330px",
+      "block4_type": "accord_illust_below",
+      "block4_illust": "ESMIll/ESMOETenFrames3TenFrames.svg",
+      "block4_illust_max_size": "330px",
       "name": "Using Ten Frames for + & –",
       "_translations": {
         "name": {},
-        "block1_text": {}
+        "block1_text": {},
+        "block2_accord": {},
+        "block2_text": {},
+        "block3_accord": {},
+        "block3_text": {},
+        "block4_accord": {},
+        "block4_text": {}
       },
       "_translatedFields": {
         "name": {
           "eng": "Using Ten Frames for + & –"
         },
         "block1_text": {
-          "eng": "Write this."
+          "eng": "**Using Ten Frames for Addition and Subtraction**\n\nStart by drawing an empty ten frame and asking your students why it is called a \"ten frame.\"\n\nAll three tasks use ten frames to hold the result of an addition or subtraction. If you do not have laminated ten frames to work with, you may want to use physical markers. Otherwise, your students are going to spend a lot of time with erasing and you will be making a lot of new ten frames for them to use.\n\n1. Add and subtract with 1 ten frame.\n2. Add and subtract with 2 ten frames.\n3. Add and subtract with 3 ten frames."
+        },
+        "block2_accord": {
+          "eng": "One Ten Frame"
+        },
+        "block2_text": {
+          "eng": "For these, all the numbers are ten or less. If addition is used, the sum should be ten or less.\n\nThe ten frames are used as holders of the dots, and they make it easier to see the value of the result.\n\n* Addition – Put in the dots for the first number and then count out the additional dots for the second number. Point out the similarity to doing Counting On.\n* Subtraction – Put in the dots for the first number and then remove the number of dots that are being taken away.\n\n**Examples:**\n* 2 + 3\n* 3 + 6\n* 4 + 6\n* 2 + 8\n* 7 + 2\n* 7 - 1\n* 6 - 4\n* 8 - 5\n* 9 - 3\n* 10 - 3"
+        },
+        "block3_accord": {
+          "eng": "Two Ten Frames"
+        },
+        "block3_text": {
+          "eng": "This is the same task as the one ten frame task, only now the numbers involved can go up to 20.\n\n**Examples:**\n* 8 + 4\n* 9 + 2\n* 6 + 9\n* 11 + 5\n* 14 + 3\n* 13 - 7\n* 16 - 4\n* 18 - 10\n* 19 - 7\n* 20 - 5"
+        },
+        "block4_accord": {
+          "eng": "Three Ten Frames"
+        },
+        "block4_text": {
+          "eng": "This is the same task as the one ten frame task, only now the numbers involved can go up to 20.\n\n**Examples:**\n* 20 + 8\n* 23 + 5\n* 17 + 6\n* 12 + 17\n* 14 + 14\n* 25 - 3\n* 30 - 7\n* 28 - 9\n* 27 - 13\n* 26 - 18\n* 30 - 17"
         }
       },
-      "block1_text": "Write this."
+      "block1_text": "**Using Ten Frames for Addition and Subtraction**\n\nStart by drawing an empty ten frame and asking your students why it is called a \"ten frame.\"\n\nAll three tasks use ten frames to hold the result of an addition or subtraction. If you do not have laminated ten frames to work with, you may want to use physical markers. Otherwise, your students are going to spend a lot of time with erasing and you will be making a lot of new ten frames for them to use.\n\n1. Add and subtract with 1 ten frame.\n2. Add and subtract with 2 ten frames.\n3. Add and subtract with 3 ten frames.",
+      "block2_accord": "One Ten Frame",
+      "block2_text": "For these, all the numbers are ten or less. If addition is used, the sum should be ten or less.\n\nThe ten frames are used as holders of the dots, and they make it easier to see the value of the result.\n\n* Addition – Put in the dots for the first number and then count out the additional dots for the second number. Point out the similarity to doing Counting On.\n* Subtraction – Put in the dots for the first number and then remove the number of dots that are being taken away.\n\n**Examples:**\n* 2 + 3\n* 3 + 6\n* 4 + 6\n* 2 + 8\n* 7 + 2\n* 7 - 1\n* 6 - 4\n* 8 - 5\n* 9 - 3\n* 10 - 3",
+      "block3_accord": "Two Ten Frames",
+      "block3_text": "This is the same task as the one ten frame task, only now the numbers involved can go up to 20.\n\n**Examples:**\n* 8 + 4\n* 9 + 2\n* 6 + 9\n* 11 + 5\n* 14 + 3\n* 13 - 7\n* 16 - 4\n* 18 - 10\n* 19 - 7\n* 20 - 5",
+      "block4_accord": "Three Ten Frames",
+      "block4_text": "This is the same task as the one ten frame task, only now the numbers involved can go up to 20.\n\n**Examples:**\n* 20 + 8\n* 23 + 5\n* 17 + 6\n* 12 + 17\n* 14 + 14\n* 25 - 3\n* 30 - 7\n* 28 - 9\n* 27 - 13\n* 26 - 18\n* 30 - 17"
     },
     {
       "id": "esm_oe_tc_task_10",
       "reference": "TCK5 p143 Task 8",
       "type": "medium_counting_add_sub",
       "math_topics": "adding numbers less than 10.",
+      "topic_theme_1": "NPV_QC10_QC",
+      "topic_theme_2": "NO_ASSD_ASto10",
+      "topic_theme_3": "NO_ASSD_SD_Add_Sub",
       "glossary_count": 0,
-      "block1_type": "all_text",
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMOEMagicV.svg",
+      "block1_illust_max_size": "180px",
       "block2_type": "accord_all_text",
       "block3_type": "accord_all_text",
-      "block4_type": "accord_all_text",
+      "block4_type": "accord_illust_below",
+      "block4_illust": "ESMIll/ESMOEMagicVVariations.svg",
+      "block4_illust_max_size": "330px",
       "name": "Magic Vs",
       "_translations": {
         "name": {},
@@ -492,7 +681,7 @@
           "eng": "Magic Vs"
         },
         "block1_text": {
-          "eng": "**Magic Vs**\n\n**The Challenge:** Put the numbers from 1 to 5 in circles along the sides of a V so that the numbers on the two sides of the V have the same sum.\n\nTell them you were given a quick answer by someone, but your not sure it's right. It is: 3 - 1 - 2 - 4 - 5. Have your students discover that the left side adds up to 6, but the right side adds up to 11. Ask them to find real solutions for you and also to see if they can find more than one."
+          "eng": "**Magic Vs**\n\n**The Challenge:** Put the numbers from 1 to 5 in circles along the sides of a V so that the numbers on the two sides of the V have the same sum.\n\nSay you were given a quick answer by someone, but your not sure it's right. It is: 3 - 1 - 2 - 4 - 5. Have your students discover that the left side adds up to 6, but the right side adds up to 11. Ask them to find a real solution for you and to see if they can find more than one."
         },
         "block2_accord": {
           "eng": "Make it Easier"
@@ -510,24 +699,25 @@
           "eng": "Variations"
         },
         "block4_text": {
-          "eng": "* Use the numbers 3, 4, 5, 6, 7. Have them look for commonalities with 1, 2, 3, 4, 5 and make some theories. Then have them try their theory on 2, 3, 4, 5, 6.\n* Can they find all the solutions for 1-5? How do they know?\n* Use 1-7 on a 7 circle V\n* Use 1-9 on a 9 circle V"
+          "eng": "* Use the numbers 3, 4, 5, 6, 7. Have them look for commonalities with 1, 2, 3, 4, 5 and make some theories. Then have them try their theory on 2, 3, 4, 5, 6.\n* Can they find all the solutions for 1-5? How do they know?\n* Use 1-7 on a 7 circle V\n* Use 1-9 on a 9 circle V\n* Use 1-6 on a triangle (see below)\n* Use 1-5 on a + sign (see below)"
         }
       },
-      "block1_text": "**Magic Vs**\n\n**The Challenge:** Put the numbers from 1 to 5 in circles along the sides of a V so that the numbers on the two sides of the V have the same sum.\n\nTell them you were given a quick answer by someone, but your not sure it's right. It is: 3 - 1 - 2 - 4 - 5. Have your students discover that the left side adds up to 6, but the right side adds up to 11. Ask them to find real solutions for you and also to see if they can find more than one.",
+      "block1_text": "**Magic Vs**\n\n**The Challenge:** Put the numbers from 1 to 5 in circles along the sides of a V so that the numbers on the two sides of the V have the same sum.\n\nSay you were given a quick answer by someone, but your not sure it's right. It is: 3 - 1 - 2 - 4 - 5. Have your students discover that the left side adds up to 6, but the right side adds up to 11. Ask them to find a real solution for you and to see if they can find more than one.",
       "block2_accord": "Make it Easier",
       "block2_text": "If you have groups that are having trouble getting started, here are some options for making it easier:\n\n* For groups having trouble adding, use smaller numbers such as 1, 2, 2, 2, 3. Alternatively, use just three numbers in a smaller V, such as 1, 2, 2.\n* Another boost is to put a number at the bottom of the V to get them started. Putting a 1, 3, or 5 there will be a big help.\n* Another help that doesn't make it quite so simple to finish is to put a number in the upper right or left.",
       "block3_accord": "Strategies",
       "block3_text": "Have them come up with rules of thumb for how to do this and then discuss them.\n\nShow the teacher how to determine whether to put odd or even numbers at the bottom of the V. One way is to add up the numbers - if it is an odd sum, the bottom number is odd; or it should be even for an even number. That's because the remaining numbers must match up. You can even draw a pretty picture with the numbers in a row and show that the balancing brackets around the middle add up to the same amount - e.g. 1 + 2 + 3 + 4 + 5 -> 1 + 5 and 2 + 4 balance around the 3.",
       "block4_accord": "Variations",
-      "block4_text": "* Use the numbers 3, 4, 5, 6, 7. Have them look for commonalities with 1, 2, 3, 4, 5 and make some theories. Then have them try their theory on 2, 3, 4, 5, 6.\n* Can they find all the solutions for 1-5? How do they know?\n* Use 1-7 on a 7 circle V\n* Use 1-9 on a 9 circle V"
+      "block4_text": "* Use the numbers 3, 4, 5, 6, 7. Have them look for commonalities with 1, 2, 3, 4, 5 and make some theories. Then have them try their theory on 2, 3, 4, 5, 6.\n* Can they find all the solutions for 1-5? How do they know?\n* Use 1-7 on a 7 circle V\n* Use 1-9 on a 9 circle V\n* Use 1-6 on a triangle (see below)\n* Use 1-5 on a + sign (see below)"
     },
     {
       "id": "esm_oe_tc_task_11",
       "reference": "TCK5 p124 Task 4",
       "type": "medium_counting_add_sub",
-      "math_topics": "counting, permutations",
+      "math_topics": "organized counting, permutations",
       "topic_theme_1": "NPV_QC10_QC",
       "topic_theme_2": "NPV_CPV100_Count20",
+      "topic_theme_3": "NO_ASSD_SD_Add_Sub",
       "glossary_count": 0,
       "block1_type": "all_text",
       "block2_type": "accord_all_text",
@@ -618,65 +808,230 @@
       "reference": "TCK5 p166 Task 11",
       "type": "medium_counting_add_sub",
       "math_topics": "adding, subtracting, number bonds",
-      "glossary_count": 0,
+      "topic_theme_1": "Geom_Pat_Intro",
+      "topic_theme_2": "NPV_QC10_QC",
+      "topic_theme_3": "NO_AS10_NBFF",
+      "topic_theme_4": "NO_ASSD_ASto10",
+      "glossary_count": 3,
+      "glossary_1": "even number",
+      "glossary_2": "odd number",
+      "glossary_3": "part-whole",
       "block1_type": "all_text",
-      "name": "Filling Blanks",
+      "block2_type": "accord_all_text",
+      "block3_type": "accord_all_text",
+      "block4_type": "accord_all_text",
+      "block5_type": "accord_all_text",
+      "block6_type": "accord_all_text",
+      "block7_type": "accord_all_text",
+      "block8_type": "accord_all_text",
+      "name": "Filling the Blanks",
       "_translations": {
         "name": {},
-        "block1_text": {}
+        "block1_text": {},
+        "block2_accord": {},
+        "block2_text": {},
+        "block3_accord": {},
+        "block3_text": {},
+        "block4_accord": {},
+        "block4_text": {},
+        "block5_accord": {},
+        "block5_text": {},
+        "block6_accord": {},
+        "block6_text": {},
+        "block7_accord": {},
+        "block7_text": {},
+        "block8_accord": {},
+        "block8_text": {}
       },
       "_translatedFields": {
         "name": {
-          "eng": "Filling Blanks"
+          "eng": "Filling the Blanks"
         },
         "block1_text": {
-          "eng": "Talk about filling one blank, such as __ + 4 = 10 or 3 + __ = 9. These have a single correct answer. What about __ + __ = 8? How many ways can we fill in those two blanks in pairs? Do this for several numbers on the right side.\n\nThe students will need to decide whether they want to include 0. Someone may ask about fractions. Also, do rearrangements count as different answers?\n\nPut particular emphasis on 10 as it's so useful.\n\nIf your students count the number of solutions of __ + __ = X, they should be able to spot a pattern. Can they explain it?\n\nWhat about three numbers? __ + __ + __ = 7? Find all the ways. Do you count 1 + 2 + 4 as different from 2 + 4 + 1?\n\nWhat about mixes __ + __ = __ - __ using the numbers 1 to 6 at most once?"
+          "eng": "**Filling the Blanks**\n\nDiscuss what happens when you have one blank to fill, as in __ + 4 = 10 or 3 + __ = 9. These have a single correct answer. What about __ + __ = 6? How many ways can we fill in those two blanks in pairs? \n\nPlay with this a little with small examples:\n* __ + __ = 3\n* __ + __ = 4\n* __ + __ = 5\n\nThere are several rules that may come up, but if they don't you should bring them up.\n* Which numbers can be used? - They must be whole numbers, but is 0 allowed?\n* Is 1 + 3 = 4 considered a different solution than 3 + 1 = 4?\n\nThis turns into 4 different tasks depending on the combination of rules you pick. For each of these tasks, you can ask how many ways something can be solved, and you can turn it around and ask which equation has a stated number of solutions.\n\nThis task is great for making tables of results and showing the value of them.\n\nPut particular emphasis on 10 as it's so useful for learning how to add and subtract."
+        },
+        "block2_accord": {
+          "eng": "Part-Whole"
+        },
+        "block2_text": {
+          "eng": "You can also look at this task as a part-whole task. Anytime you have a solution of * __ + __ = 5, you are breaking the whole of 5 into two parts. How many ways can you do this? You can draw five items in a row and show how you can split them anywhere you like.\n\nFor example, if you look at x x x x x, then this can be:\n* x | x x x x for 1 + 4 = 5\n* x x | x x x for 2 + 3 = 5\n* x x x | x x for 3 + 2 = 5\n* x x x x | x for 4 + 1 = 5\n\nThis point of view can make it very simple to count up the number of possibilities."
+        },
+        "block3_accord": {
+          "eng": "No 0s, 1 + 3 and 3 + 1 are Different"
+        },
+        "block3_text": {
+          "eng": "**Examples:**\n* __ + __ = 3. This has 2 solutions: 1 + 2 = 3 and 2 + 1 = 3.\n* __ + __ = 4. This has 3 solutions: 1 + 3 = 4, 2 + 2 = 4, and 3 + 1 = 4.\n* __ + __ = 5. This has 4 solutions.\n\nThe general answer is clear. __ + __ = N has N - 1 answers.\n\nOnce a pattern is discovered, see if your students can explain why it works. They may discover that they can start with any number between 1 and N-1 and get one solution for each number.\n\nIf their tables are not orderly, it may be harder for them to see this pattern. This is a good moment to emphasize how much work can be saved by keeping things in order.\n\nWorking now in the other direction, if you ask which equation __ + __ = N has 15 solutions, with a bit of thought that should get N is 16. Pretty cool."
+        },
+        "block4_accord": {
+          "eng": "0s Okay, 1 + 3 and 3 + 1 are Different"
+        },
+        "block4_text": {
+          "eng": "**Examples:**\n* __ + __ = 3. This has 4 solutions: 0 + 3 = 3, 1 + 2 = 3, 2 + 1 = 3, and 3 + 0 = 3.\n* __ + __ = 4. This has 5 solutions: 0 + 4 = 4, 1 + 3 = 4, 2 + 2 = 4, 3 + 1 = 4, and 4 + 0 = 4.\n* __ + __ = 5. This has 6 solutions.\n\nThe general answer is clear. __ + __ = N has N + 1 answers.\n\nOnce a pattern is discovered, see if your students can explain why it works. They may discover that they can start with any number between 0 and N and get one solution for each number. Alternatively, they may realize they have two additional solutions using 0, so the answer is 2 more than in the last task.\n\nWorking now in the other direction, if you ask which equation __ + __ = N has 15 solutions, with a bit of thought that should get N is 14."
+        },
+        "block5_accord": {
+          "eng": "No 0s, 1 + 3 and 3 + 1 are Same"
+        },
+        "block5_text": {
+          "eng": "**Examples:**\n* __ + __ = 2. This has 1 solution: 1 + 1 = 2.\n* __ + __ = 3. This has 1 solution: 1 + 2 = 3.\n* __ + __ = 4. This has 2 solutions: 1 + 3 = 4 and 2 + 2 = 4.\n* __ + __ = 5. This has 2 solutions. 1 + 4 = 5 and 2 + 3 = 5.\n* __ + __ = 6. This has 3 solutions. 1 + 5 = 6, 2 + 4 = 6, and 3 + 3 = 6.\n* __ + __ = 7. This has 3 solutions. 1 + 6 = 7, 2 + 5 = 7, and 3 + 4 = 7.\n\nSo, understanding the answer for __ + __ = N depends on whether N is even or odd. If N is even, then the answer is half of N. If N + 1 is odd, then the answer is half of N again.\n\nThis is a natural environment for exploring the difference between even and odd numbers. Consider 6. Looking at this as a part-whole problem, you can put the divider in any of three places: x | x x x x x, x x | x x x, or x x x | x x x. Once you get to the middle, it starts repeating. Something similar happens for 7.\n\nNotice that a given number of solutions can come from two possible equations. For example, 3 solutions can occur in __ + __ = 2 x 3 and also in __ + __ = 2 x 3 + 1."
+        },
+        "block6_accord": {
+          "eng": "0s Okay, 1 + 3 and 3 + 1 are Same"
+        },
+        "block6_text": {
+          "eng": "Including 0s simply increases the number of solutions by 1 from the previous task where 0s were excluded."
+        },
+        "block7_accord": {
+          "eng": "3 Blanks"
+        },
+        "block7_text": {
+          "eng": "You students can explore what happens with three numbers? __ + __ + __ = 7? Find all the ways of doing it. \n\nAs before, you'll have to decide whether or not to include 0. Also, is 1 + 2 + 4 different from 2 + 4 + 1?\n\nCounting these is much more complicated than just having two blanks, but fun and interesting patterns can emerge."
+        },
+        "block8_accord": {
+          "eng": "Variations"
+        },
+        "block8_text": {
+          "eng": "Other uses of blank slots can lead to interesting questions. Some of these are explored in the Puzzles section.\n\nFor example, what about mixes? How many ways can you solve __ + __ = __ – __ using the numbers 1 to 6 at most once?"
         }
       },
-      "block1_text": "Talk about filling one blank, such as __ + 4 = 10 or 3 + __ = 9. These have a single correct answer. What about __ + __ = 8? How many ways can we fill in those two blanks in pairs? Do this for several numbers on the right side.\n\nThe students will need to decide whether they want to include 0. Someone may ask about fractions. Also, do rearrangements count as different answers?\n\nPut particular emphasis on 10 as it's so useful.\n\nIf your students count the number of solutions of __ + __ = X, they should be able to spot a pattern. Can they explain it?\n\nWhat about three numbers? __ + __ + __ = 7? Find all the ways. Do you count 1 + 2 + 4 as different from 2 + 4 + 1?\n\nWhat about mixes __ + __ = __ - __ using the numbers 1 to 6 at most once?"
+      "block1_text": "**Filling the Blanks**\n\nDiscuss what happens when you have one blank to fill, as in __ + 4 = 10 or 3 + __ = 9. These have a single correct answer. What about __ + __ = 6? How many ways can we fill in those two blanks in pairs? \n\nPlay with this a little with small examples:\n* __ + __ = 3\n* __ + __ = 4\n* __ + __ = 5\n\nThere are several rules that may come up, but if they don't you should bring them up.\n* Which numbers can be used? - They must be whole numbers, but is 0 allowed?\n* Is 1 + 3 = 4 considered a different solution than 3 + 1 = 4?\n\nThis turns into 4 different tasks depending on the combination of rules you pick. For each of these tasks, you can ask how many ways something can be solved, and you can turn it around and ask which equation has a stated number of solutions.\n\nThis task is great for making tables of results and showing the value of them.\n\nPut particular emphasis on 10 as it's so useful for learning how to add and subtract.",
+      "block2_accord": "Part-Whole",
+      "block2_text": "You can also look at this task as a part-whole task. Anytime you have a solution of * __ + __ = 5, you are breaking the whole of 5 into two parts. How many ways can you do this? You can draw five items in a row and show how you can split them anywhere you like.\n\nFor example, if you look at x x x x x, then this can be:\n* x | x x x x for 1 + 4 = 5\n* x x | x x x for 2 + 3 = 5\n* x x x | x x for 3 + 2 = 5\n* x x x x | x for 4 + 1 = 5\n\nThis point of view can make it very simple to count up the number of possibilities.",
+      "block3_accord": "No 0s, 1 + 3 and 3 + 1 are Different",
+      "block3_text": "**Examples:**\n* __ + __ = 3. This has 2 solutions: 1 + 2 = 3 and 2 + 1 = 3.\n* __ + __ = 4. This has 3 solutions: 1 + 3 = 4, 2 + 2 = 4, and 3 + 1 = 4.\n* __ + __ = 5. This has 4 solutions.\n\nThe general answer is clear. __ + __ = N has N - 1 answers.\n\nOnce a pattern is discovered, see if your students can explain why it works. They may discover that they can start with any number between 1 and N-1 and get one solution for each number.\n\nIf their tables are not orderly, it may be harder for them to see this pattern. This is a good moment to emphasize how much work can be saved by keeping things in order.\n\nWorking now in the other direction, if you ask which equation __ + __ = N has 15 solutions, with a bit of thought that should get N is 16. Pretty cool.",
+      "block4_accord": "0s Okay, 1 + 3 and 3 + 1 are Different",
+      "block4_text": "**Examples:**\n* __ + __ = 3. This has 4 solutions: 0 + 3 = 3, 1 + 2 = 3, 2 + 1 = 3, and 3 + 0 = 3.\n* __ + __ = 4. This has 5 solutions: 0 + 4 = 4, 1 + 3 = 4, 2 + 2 = 4, 3 + 1 = 4, and 4 + 0 = 4.\n* __ + __ = 5. This has 6 solutions.\n\nThe general answer is clear. __ + __ = N has N + 1 answers.\n\nOnce a pattern is discovered, see if your students can explain why it works. They may discover that they can start with any number between 0 and N and get one solution for each number. Alternatively, they may realize they have two additional solutions using 0, so the answer is 2 more than in the last task.\n\nWorking now in the other direction, if you ask which equation __ + __ = N has 15 solutions, with a bit of thought that should get N is 14.",
+      "block5_accord": "No 0s, 1 + 3 and 3 + 1 are Same",
+      "block5_text": "**Examples:**\n* __ + __ = 2. This has 1 solution: 1 + 1 = 2.\n* __ + __ = 3. This has 1 solution: 1 + 2 = 3.\n* __ + __ = 4. This has 2 solutions: 1 + 3 = 4 and 2 + 2 = 4.\n* __ + __ = 5. This has 2 solutions. 1 + 4 = 5 and 2 + 3 = 5.\n* __ + __ = 6. This has 3 solutions. 1 + 5 = 6, 2 + 4 = 6, and 3 + 3 = 6.\n* __ + __ = 7. This has 3 solutions. 1 + 6 = 7, 2 + 5 = 7, and 3 + 4 = 7.\n\nSo, understanding the answer for __ + __ = N depends on whether N is even or odd. If N is even, then the answer is half of N. If N + 1 is odd, then the answer is half of N again.\n\nThis is a natural environment for exploring the difference between even and odd numbers. Consider 6. Looking at this as a part-whole problem, you can put the divider in any of three places: x | x x x x x, x x | x x x, or x x x | x x x. Once you get to the middle, it starts repeating. Something similar happens for 7.\n\nNotice that a given number of solutions can come from two possible equations. For example, 3 solutions can occur in __ + __ = 2 x 3 and also in __ + __ = 2 x 3 + 1.",
+      "block6_accord": "0s Okay, 1 + 3 and 3 + 1 are Same",
+      "block6_text": "Including 0s simply increases the number of solutions by 1 from the previous task where 0s were excluded.",
+      "block7_accord": "3 Blanks",
+      "block7_text": "You students can explore what happens with three numbers? __ + __ + __ = 7? Find all the ways of doing it. \n\nAs before, you'll have to decide whether or not to include 0. Also, is 1 + 2 + 4 different from 2 + 4 + 1?\n\nCounting these is much more complicated than just having two blanks, but fun and interesting patterns can emerge.",
+      "block8_accord": "Variations",
+      "block8_text": "Other uses of blank slots can lead to interesting questions. Some of these are explored in the Puzzles section.\n\nFor example, what about mixes? How many ways can you solve __ + __ = __ – __ using the numbers 1 to 6 at most once?"
     },
     {
       "id": "esm_oe_tc_task_13",
       "reference": "TCK5 p245 Task 23",
       "type": "medium_counting_add_sub",
       "math_topics": "repeating number patterns, counting, skip counting",
-      "glossary_count": 0,
+      "topic_theme_1": "Geom_Pat_Intro",
+      "topic_theme_2": "NO_DD_AS2and1",
+      "topic_theme_3": "NO_MSD_Skipping",
+      "glossary_count": 2,
+      "glossary_1": "skip counting",
+      "glossary_2": "pattern",
       "block1_type": "all_text",
-      "name": "Medium Number Patterns",
+      "block2_type": "accord_all_text",
+      "block3_type": "accord_all_text",
+      "block4_type": "accord_all_text",
+      "name": "Skipping Along",
       "_translations": {
         "name": {},
-        "block1_text": {}
+        "block1_text": {},
+        "block2_accord": {},
+        "block2_text": {},
+        "block3_accord": {},
+        "block3_text": {},
+        "block4_accord": {},
+        "block4_text": {}
       },
       "_translatedFields": {
         "name": {
-          "eng": "Medium Number Patterns"
+          "eng": "Skipping Along"
         },
         "block1_text": {
-          "eng": "Playing around with number patterns"
+          "eng": "**Skipping Along**\n\nThis task explores skipping counting patterns, going forward and backward. This practice is helpful in developing the four basic operations as well as number sense. Use the range of numbers and skip sizes appropriate for your students.\n\nThis task is broken up into these parts:\n\n1. Increasing skip counting patterns\n2. Decreaasing skip counting patterns\n3. Mixed skip counting patterns"
+        },
+        "block2_accord": {
+          "eng": "Skipping Forward"
+        },
+        "block2_text": {
+          "eng": "Start at any number and skip by any amount. Skipping by 2s is a good way to warm up to this.\n\nWhat are the next numbers and what is the rule?\n\n**Examples:**\n* 2 4 6\n* 1 3 5\n* 9 11 13\n* 12 14 16\n* 9 12 15\n* 17 20 23\n* 7 11 15\n* 22 29 36\n* 14 24 34"
+        },
+        "block3_accord": {
+          "eng": "Skipping Backward"
+        },
+        "block3_text": {
+          "eng": "In discovering the pattern for decreasing sequences, your students may need some help to get started: \"If we add the same amount to create increasing sequences, what do we do to create descreasing ones?\"\n\nWhat are the next numbers and what is the rule?\n\n**Examples:**\n* 20 18 16\n* 37 35 33\n* 14 12 10\n* 27 24 21\n* 22 18 14\n* 33 28 23\n* 44 38 32\n* 52 43 34\n* 77 67 57"
+        },
+        "block4_accord": {
+          "eng": "Skipping Back and Forth"
+        },
+        "block4_text": {
+          "eng": "These patterns can be thought of at least two ways (perhaps your students will find others).\n\nChallenge them to find what the 10th term in the sequence is.\n\nConsider: 15, 19, 16, 20, 17\n1. Add 4, subtract 3 - repeat.\n2. Two patterns intertwined – 15, 16, 17 interspersed with 19, 20, 21\n\nAs another example, consider: 21, 17, 13, 23, 19\n1. Subtract 4, subtract 4, add 10 - repeat.\n2. Three patterns intertwined – 21, 23, 25, ..., 17, 19, 21, ..., and 13, 15, 17, ...\n\nThere is room for lots of variations and many interpretations."
         }
       },
-      "block1_text": "Playing around with number patterns"
+      "block1_text": "**Skipping Along**\n\nThis task explores skipping counting patterns, going forward and backward. This practice is helpful in developing the four basic operations as well as number sense. Use the range of numbers and skip sizes appropriate for your students.\n\nThis task is broken up into these parts:\n\n1. Increasing skip counting patterns\n2. Decreaasing skip counting patterns\n3. Mixed skip counting patterns",
+      "block2_accord": "Skipping Forward",
+      "block2_text": "Start at any number and skip by any amount. Skipping by 2s is a good way to warm up to this.\n\nWhat are the next numbers and what is the rule?\n\n**Examples:**\n* 2 4 6\n* 1 3 5\n* 9 11 13\n* 12 14 16\n* 9 12 15\n* 17 20 23\n* 7 11 15\n* 22 29 36\n* 14 24 34",
+      "block3_accord": "Skipping Backward",
+      "block3_text": "In discovering the pattern for decreasing sequences, your students may need some help to get started: \"If we add the same amount to create increasing sequences, what do we do to create descreasing ones?\"\n\nWhat are the next numbers and what is the rule?\n\n**Examples:**\n* 20 18 16\n* 37 35 33\n* 14 12 10\n* 27 24 21\n* 22 18 14\n* 33 28 23\n* 44 38 32\n* 52 43 34\n* 77 67 57",
+      "block4_accord": "Skipping Back and Forth",
+      "block4_text": "These patterns can be thought of at least two ways (perhaps your students will find others).\n\nChallenge them to find what the 10th term in the sequence is.\n\nConsider: 15, 19, 16, 20, 17\n1. Add 4, subtract 3 - repeat.\n2. Two patterns intertwined – 15, 16, 17 interspersed with 19, 20, 21\n\nAs another example, consider: 21, 17, 13, 23, 19\n1. Subtract 4, subtract 4, add 10 - repeat.\n2. Three patterns intertwined – 21, 23, 25, ..., 17, 19, 21, ..., and 13, 15, 17, ...\n\nThere is room for lots of variations and many interpretations."
     },
     {
       "id": "esm_oe_tc_task_14",
       "reference": "TCK5 p269 Task 28",
       "type": "medium_counting_add_sub",
+      "math_topics": "2-digit place value representations",
+      "topic_theme_1": "NPV_CPV100_CountPV100",
       "glossary_count": 0,
-      "block1_type": "all_text",
-      "name": "Ten Frames to 100",
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMOETensAndOnesIntro.svg",
+      "block1_illust_max_size": "110px",
+      "block2_type": "accord_illust_below",
+      "block2_illust": "ESMIll/ESMOETensAndOnes27.svg",
+      "block2_illust_max_size": "140px",
+      "block3_type": "accord_illust_below",
+      "block3_illust": "ESMIll/ESMOETensAndOnes3-12.svg",
+      "block3_illust_max_size": "180px",
+      "block4_type": "accord_illust_below",
+      "block4_illust": "ESMIll/ESMOETensAndOnes65.svg",
+      "block4_illust_max_size": "360px",
+      "name": "Tens and Ones",
       "_translations": {
         "name": {},
-        "block1_text": {}
+        "block1_text": {},
+        "block2_accord": {},
+        "block2_text": {},
+        "block3_accord": {},
+        "block3_text": {},
+        "block4_accord": {},
+        "block4_text": {}
       },
       "_translatedFields": {
         "name": {
-          "eng": "Ten Frames to 100"
+          "eng": "Tens and Ones"
         },
         "block1_text": {
-          "eng": "Write this."
+          "eng": "**Tens and Ones**\n\nUse some materials that you have lots of that can represent tens and ones. Ten frames, base 10 blocks (blocks you can put in bundles of ten), or anything such as sticks that can be put in bundles of ten.\n\nUse these materials to represent two-digit quantities or numerals as a number of tens and ones. \n\n1. Take a two-digit number and represent it as tens and ones.\n2. Regrouping - take some number of tens, add more than ten ones, and then clean it up.\n3. Take a two-digit number and find multiple representations of it as some number of tens and ones."
+        },
+        "block2_accord": {
+          "eng": "Tens and Ones Place Value"
+        },
+        "block2_text": {
+          "eng": "Take a two-digit number and represent it as tens and ones, where the representation uses less than ten ones. Use your materials for bundles of ten to represent each number and then draw a labeled picture of the quantity. The drawing will use long bars of 10 and single squares of 1.\n\n**Examples:**\n* 13\n* 18\n* 27\n* 33\n* 39\n* 40\n* 51\n* 64\n* 75\n* 82\n* 96\n\nHere is a drawing for 27."
+        },
+        "block3_accord": {
+          "eng": "Regrouping"
+        },
+        "block3_text": {
+          "eng": "Take some number of tens, add more than ten ones, and then clean it up.\n\nStart off by having your students draw a representation of the amount and then calculate what number has been made. After this becomes comfortable, have them calculate the number without drawing.\n\n**Examples:**\n* 1 ten and 5 ones\n* 3 tens and 12 ones\n* 16 ones and 3 tens\n* 6 ones and 4 tens\n* 7 tens and 24 ones\n* 4 tens and 13 ones\n* 27 ones and 1 ten\n* 19 ones and 2 tens\n\nHere is the drawing for 3 tens and 12 ones. They should identify that 10 of the ones can be grouped into another ten, so this is the number 4 tens and 2 ones, which is 42."
+        },
+        "block4_accord": {
+          "eng": "Creative Regrouping"
+        },
+        "block4_text": {
+          "eng": "Take a two-digit number and find multiple representations of it as some number of tens and ones.\n\nHave your students draw each of these quantities.\n\n**Examples:**\n* 17 using only one blocks\n* 36 using 3 ten blocks. 36 using 2 ten blocks.\n* 65 using more than 5 one blocks\n* 30 using some one blocks\n* 73 using less than 6 ten blocks\n* 74 using more one blocks than ten blocks\n\nHere is some drawings for 65 using more than 5 one blocks. They should notice that the different representations listed here differ by groups of 10 one blocks."
         }
       },
-      "block1_text": "Write this."
+      "block1_text": "**Tens and Ones**\n\nUse some materials that you have lots of that can represent tens and ones. Ten frames, base 10 blocks (blocks you can put in bundles of ten), or anything such as sticks that can be put in bundles of ten.\n\nUse these materials to represent two-digit quantities or numerals as a number of tens and ones. \n\n1. Take a two-digit number and represent it as tens and ones.\n2. Regrouping - take some number of tens, add more than ten ones, and then clean it up.\n3. Take a two-digit number and find multiple representations of it as some number of tens and ones.",
+      "block2_accord": "Tens and Ones Place Value",
+      "block2_text": "Take a two-digit number and represent it as tens and ones, where the representation uses less than ten ones. Use your materials for bundles of ten to represent each number and then draw a labeled picture of the quantity. The drawing will use long bars of 10 and single squares of 1.\n\n**Examples:**\n* 13\n* 18\n* 27\n* 33\n* 39\n* 40\n* 51\n* 64\n* 75\n* 82\n* 96\n\nHere is a drawing for 27.",
+      "block3_accord": "Regrouping",
+      "block3_text": "Take some number of tens, add more than ten ones, and then clean it up.\n\nStart off by having your students draw a representation of the amount and then calculate what number has been made. After this becomes comfortable, have them calculate the number without drawing.\n\n**Examples:**\n* 1 ten and 5 ones\n* 3 tens and 12 ones\n* 16 ones and 3 tens\n* 6 ones and 4 tens\n* 7 tens and 24 ones\n* 4 tens and 13 ones\n* 27 ones and 1 ten\n* 19 ones and 2 tens\n\nHere is the drawing for 3 tens and 12 ones. They should identify that 10 of the ones can be grouped into another ten, so this is the number 4 tens and 2 ones, which is 42.",
+      "block4_accord": "Creative Regrouping",
+      "block4_text": "Take a two-digit number and find multiple representations of it as some number of tens and ones.\n\nHave your students draw each of these quantities.\n\n**Examples:**\n* 17 using only one blocks\n* 36 using 3 ten blocks. 36 using 2 ten blocks.\n* 65 using more than 5 one blocks\n* 30 using some one blocks\n* 73 using less than 6 ten blocks\n* 74 using more one blocks than ten blocks\n\nHere is some drawings for 65 using more than 5 one blocks. They should notice that the different representations listed here differ by groups of 10 one blocks."
     },
     {
       "id": "esm_oe_tc_task_15",
@@ -688,7 +1043,9 @@
       "topic_theme_3": "NO_MSD_AllSingles",
       "topic_theme_4": "NO_MSD_Doubling",
       "glossary_count": 0,
-      "block1_type": "all_text",
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMOECountingScoops.svg",
+      "block1_illust_max_size": "250px",
       "name": "Counting Scoops",
       "_translations": {
         "name": {},
@@ -699,10 +1056,10 @@
           "eng": "Counting Scoops"
         },
         "block1_text": {
-          "eng": "**Counting Scoops**\n\nYou are given a number of scoops, and then asked to divide them evenly among two people. This is extended to odd numbers of scoops and then more than two people."
+          "eng": "**Counting Scoops**\n\n**The Challenge:** You have some scoops of ice cream. Divide them evenly among two or three people, if you can.\n\nWhen breaking amounts into equal-sized pieces, your students may want to use rows of equal numbers.\n\nAlso, skip counting will be very useful. If the scoops are put into equal rows, skip counting counts up the columns in that presentation.\n\n1. Ask students how many scoops they started with if two people are given three scoops each. How many would it be if three people are given 3 scoops each?\n2. Ask students to split 6 or 8 scoops evenly between two people.\n3. Ask students to split larger amounts, such as 12, 14, or 16 scoops, evenly between two people.\n4. Ask students to split 9 or 12 scoops among 3 people.\n5. Ask students to split 9, 10, or 11 scoops evenly among 2 people. When can they do it and how can they tell?\n6. Ask students to split 9, 10, or 11 scoops evenly among 3 people. When can they do it and how can they tell?"
         }
       },
-      "block1_text": "**Counting Scoops**\n\nYou are given a number of scoops, and then asked to divide them evenly among two people. This is extended to odd numbers of scoops and then more than two people."
+      "block1_text": "**Counting Scoops**\n\n**The Challenge:** You have some scoops of ice cream. Divide them evenly among two or three people, if you can.\n\nWhen breaking amounts into equal-sized pieces, your students may want to use rows of equal numbers.\n\nAlso, skip counting will be very useful. If the scoops are put into equal rows, skip counting counts up the columns in that presentation.\n\n1. Ask students how many scoops they started with if two people are given three scoops each. How many would it be if three people are given 3 scoops each?\n2. Ask students to split 6 or 8 scoops evenly between two people.\n3. Ask students to split larger amounts, such as 12, 14, or 16 scoops, evenly between two people.\n4. Ask students to split 9 or 12 scoops among 3 people.\n5. Ask students to split 9, 10, or 11 scoops evenly among 2 people. When can they do it and how can they tell?\n6. Ask students to split 9, 10, or 11 scoops evenly among 3 people. When can they do it and how can they tell?"
     },
     {
       "id": "esm_oe_tc_task_16",
