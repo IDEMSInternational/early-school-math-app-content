@@ -51,7 +51,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 42524 KB | 42.5 MB |
+| total | 42719 KB | 42.7 MB |
 | unused | 21695 KB | 21.7 MB |
 </details>
 
@@ -322,7 +322,6 @@ Assets that have references within sheets but do not appear in app-data
 
 | path | count |
 | --- | --- |
-| ESMIll/EFM30ShapePattern.svg | 1 |
 </details>
 
 <details >
@@ -344,7 +343,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | EFM290FingersFor8-3.svg | 11.8 | 1 |
 | EFM290FingersFor8Plus3.svg | 11.8 | 1 |
 | EFM30MugOnShelf.svg | 4.9 | 1 |
-| EFM30ShapePattern.svg | 5.6 | 1 |
+| EFM30ShapePattern.svg | 5.6 | 2 |
 | EFM30Socks.svg | 18 | 1 |
 | EFM340PairingDown.svg | 29.6 | 1 |
 | EFM380MultiplyingCommutes.svg | 5.4 | 1 |
@@ -1302,7 +1301,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMDotsMaking10-9-8.svg | 20.2 | 1 |
 | ESMIll/ESMDotsRandom1.svg | 9.9 | 1 |
 | ESMIll/ESMDotsRandom2.svg | 10.4 | 1 |
-| ESMIll/ESMDotsRandom3.svg | 10.1 | 1 |
+| ESMIll/ESMDotsRandom3.svg | 10.1 | 2 |
 | ESMIll/ESMDotsRandom4.svg | 9.7 | 1 |
 | ESMIll/ESMDotsRandom5.svg | 11.4 | 1 |
 | ESMIll/ESMGA105GoFish.svg | 17 | 2 |
@@ -1336,11 +1335,27 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMOEColoringShapesExample1.svg | 7.4 | 1 |
 | ESMIll/ESMOEColoringShapesExample2.svg | 7.3 | 1 |
 | ESMIll/ESMOEColoringShapesIntro.svg | 10.4 | 1 |
+| ESMIll/ESMOEComparingDotsClouds.svg | 3.5 | 1 |
+| ESMIll/ESMOEComparingDotsIntro.svg | 3.5 | 1 |
 | ESMIll/ESMOEConsecutiveNumbersEasy.svg | 6.5 | 1 |
+| ESMIll/ESMOECountingScoops.svg | 12.8 | 1 |
+| ESMIll/ESMOEFindingAmountsIntro.svg | 7.3 | 1 |
+| ESMIll/ESMOEFindingAmountsNeedMore.svg | 9.9 | 1 |
+| ESMIll/ESMOEMagicV.svg | 6.7 | 1 |
+| ESMIll/ESMOEMagicVVariations.svg | 9.8 | 1 |
 | ESMIll/ESMOENumberingHexagonIntro.svg | 57.9 | 1 |
 | ESMIll/ESMOENumberingHexagonLargerGrid.svg | 58.7 | 1 |
 | ESMIll/ESMOENumberingHexagonStuck.svg | 59.3 | 1 |
+| ESMIll/ESMOEPartsofaNumberIntro.svg | 4.1 | 1 |
 | ESMIll/ESMOERaceTables.svg | 26.7 | 1 |
+| ESMIll/ESMOETenFrames1TenFrame.svg | 19.4 | 1 |
+| ESMIll/ESMOETenFrames2TenFrames.svg | 26.5 | 1 |
+| ESMIll/ESMOETenFrames3TenFrames.svg | 46.2 | 1 |
+| ESMIll/ESMOETenFramesIntro.svg | 5.9 | 1 |
+| ESMIll/ESMOETensAndOnes27.svg | 5.1 | 1 |
+| ESMIll/ESMOETensAndOnes3-12.svg | 5.2 | 1 |
+| ESMIll/ESMOETensAndOnes65.svg | 25.5 | 1 |
+| ESMIll/ESMOETensAndOnesIntro.svg | 4.1 | 1 |
 | ESMIll/ESMPOWACardStackingChallenge.svg | 11.9 | 1 |
 | ESMIll/ESMPOWACardStackingIntro.svg | 19 | 1 |
 | ESMIll/ESMPOWACoinFlipFirstMoves1.svg | 5403.6 | 2 |
