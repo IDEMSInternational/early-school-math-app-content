@@ -51,8 +51,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 42719 KB | 42.7 MB |
-| unused | 21695 KB | 21.7 MB |
+| total | 42835 KB | 42.8 MB |
+| unused | 21702 KB | 21.7 MB |
 </details>
 
 <details open>
@@ -306,8 +306,10 @@ Assets that appear in app-data but do not have references within sheets
 | EFMStorybooks/EFM-SB-KAHN-20.jpg | 3.5 |
 | EFMStorybooks/EFM-SB-SSMILE-8.jpg | 3.5 |
 | EFMStorybooks/EFM-SB-TFHH-2.jpg | 10.6 |
+| ESMIll/ESMDots4-5.svg | 4 |
 | ESMIll/ESMPOWACoinFlipStart2.svg | 11626.6 |
 | ESMIll/ESMPOWCAvoidingRectanglesAnswer4.svg | 7.5 |
+| ESMIll/ESMTopicComparingLinesofDots.svg | 3.3 |
 | android/icon-background.png | 7 |
 | android/icon-foreground.png | 53.9 |
 | android/icon.png | 75.2 |
@@ -1253,6 +1255,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMDots10AndMore17-18.svg | 17.6 | 1 |
 | ESMIll/ESMDots10AndMore19-20.svg | 18.4 | 1 |
 | ESMIll/ESMDots1Plus1.svg | 4.6 | 1 |
+| ESMIll/ESMDots2-3.svg | 6 | 1 |
 | ESMIll/ESMDots2And2.svg | 3.5 | 1 |
 | ESMIll/ESMDots2Plus1.svg | 3.3 | 1 |
 | ESMIll/ESMDots2Plus2.svg | 5.5 | 1 |
@@ -1260,10 +1263,11 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMDots3And2.svg | 3.8 | 1 |
 | ESMIll/ESMDots3Plus1.svg | 3.5 | 1 |
 | ESMIll/ESMDots3Plus3.svg | 6.6 | 1 |
-| ESMIll/ESMDots4-5.svg | 4 | 1 |
+| ESMIll/ESMDots4-4.svg | 5.2 | 1 |
 | ESMIll/ESMDots4And2.svg | 4.3 | 1 |
 | ESMIll/ESMDots4Plus1.svg | 4 | 1 |
 | ESMIll/ESMDots4Plus4.svg | 7.9 | 1 |
+| ESMIll/ESMDots5-5.svg | 5.6 | 1 |
 | ESMIll/ESMDots5And2.svg | 4.7 | 1 |
 | ESMIll/ESMDots5Plus1.svg | 4.3 | 1 |
 | ESMIll/ESMDots5Plus5.svg | 9 | 1 |
@@ -1304,6 +1308,8 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMDotsRandom3.svg | 10.1 | 2 |
 | ESMIll/ESMDotsRandom4.svg | 9.7 | 1 |
 | ESMIll/ESMDotsRandom5.svg | 11.4 | 1 |
+| ESMIll/ESMDotsRandom6.svg | 9.5 | 1 |
+| ESMIll/ESMDotsRandom7.svg | 9.2 | 1 |
 | ESMIll/ESMGA105GoFish.svg | 17 | 2 |
 | ESMIll/ESMGA105MemoryChallenge.svg | 11.2 | 1 |
 | ESMIll/ESMGA125NumberLineBattleship.svg | 31.3 | 1 |
@@ -1352,6 +1358,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMOETenFrames2TenFrames.svg | 26.5 | 1 |
 | ESMIll/ESMOETenFrames3TenFrames.svg | 46.2 | 1 |
 | ESMIll/ESMOETenFramesIntro.svg | 5.9 | 1 |
+| ESMIll/ESMOETensAndOnes17.svg | 6.8 | 1 |
 | ESMIll/ESMOETensAndOnes27.svg | 5.1 | 1 |
 | ESMIll/ESMOETensAndOnes3-12.svg | 5.2 | 1 |
 | ESMIll/ESMOETensAndOnes65.svg | 25.5 | 1 |
@@ -1561,8 +1568,16 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMSplats2Color2-3Splat6-3.svg | 9.9 | 1 |
 | ESMIll/ESMSplats2Color2-3Splat7-2.svg | 10.3 | 1 |
 | ESMIll/ESMSplats2Color2-3Splat9-1.svg | 10.9 | 1 |
+| ESMIll/ESMSplatsCombos10-1.2.svg | 9.4 | 1 |
+| ESMIll/ESMSplatsCombos10-3.6.svg | 9.4 | 1 |
+| ESMIll/ESMSplatsCombos10-4.5.svg | 9.4 | 1 |
 | ESMIll/ESMSplatsCombos5.svg | 6.7 | 1 |
+| ESMIll/ESMSplatsCombos7-1.2.svg | 8 | 1 |
+| ESMIll/ESMSplatsCombos7-4.5.svg | 8 | 1 |
 | ESMIll/ESMSumGroups10.svg | 47.3 | 1 |
+| ESMIll/ESMTopicCompareTo20.12.17.svg | 14 | 1 |
+| ESMIll/ESMTopicComparingLinesofDots3.5.svg | 3.3 | 1 |
+| ESMIll/ESMTopicComparingLinesofDotsDiffSizes.svg | 2.4 | 2 |
 | ESMIll/ESMTopicNumberPathsLines.svg | 53.5 | 1 |
 | ESMIll/ESMTopicObjectProperties.svg | 9.5 | 1 |
 | ESMIll/ESMTopicSub1-5.svg | 7.1 | 1 |
@@ -1570,6 +1585,8 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMTopicSubFiveFrame.svg | 4 | 1 |
 | ESMIll/ESMTopicSubPlus1-2.svg | 5.3 | 2 |
 | ESMIll/ESMTopicSubTenFrame.svg | 8.3 | 1 |
+| ESMIll/ESMTopicTenFrameIntro.svg | 8.5 | 1 |
+| ESMIll/ESMTopicWritingNumeralsBackwards.svg | 5.2 | 1 |
 | ESMIll/ESMTreasureMap2.svg | 13.7 | 1 |
 </details>
 
