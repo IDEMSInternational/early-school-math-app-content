@@ -51,8 +51,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 42835 KB | 42.8 MB |
-| unused | 21702 KB | 21.7 MB |
+| total | 43063 KB | 43.1 MB |
+| unused | 21659 KB | 21.7 MB |
 </details>
 
 <details open>
@@ -120,7 +120,6 @@ Assets that appear in app-data but do not have references within sheets
 | EFM180SimpleShapeSums.svg | 10.3 |
 | EFM190NumberCardsto20.svg | 96.4 |
 | EFM200NumberShapes.svg | 6.7 |
-| EFM200NumberShapesAddingEvensOdds.svg | 21.4 |
 | EFM200NumberShapesEvensOdds.svg | 12.2 |
 | EFM200NumberShapesTrapezoidal.svg | 6.6 |
 | EFM200SimTriangle.svg | 5 |
@@ -204,7 +203,6 @@ Assets that appear in app-data but do not have references within sheets
 | EFM90HouseConnecttheDots.svg | 9.2 |
 | EFM90HouseConnecttheDots2.svg | 8.5 |
 | EFM90IslandHoppingConsecutive.svg | 20.8 |
-| EFM90StringNumberLine.svg | 22 |
 | EFM95Kirigami.svg | 12.2 |
 | EFMBM135CirclesofDots.svg | 71 |
 | EFMBM135ConnecttheDotsBanana.svg | 9.1 |
@@ -340,6 +338,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | EFM12EFMLogoNoEFM.svg | 12.8 | 1 |
 | EFM12EFMLogoNoEFMpng.png | 33.1 | 1 |
 | EFM140BagGame.svg | 14.9 | 1 |
+| EFM200NumberShapesAddingEvensOdds.svg | 21.4 | 1 |
 | EFM230OrderingCards.svg | 21.7 | 1 |
 | EFM290Fingers11-3.svg | 21.6 | 1 |
 | EFM290FingersFor8-3.svg | 11.8 | 1 |
@@ -358,6 +357,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | EFM70EachOfTheseIsDifferent2Example.svg | 6.5 | 1 |
 | EFM70ForkSpoonGold.svg | 14.9 | 1 |
 | EFM70GoingInCircles.svg | 10.6 | 1 |
+| EFM90StringNumberLine.svg | 22 | 1 |
 | EFM95ColoredShapesonFloor.svg | 10.2 | 1 |
 | EFMStorybooks/EFM-SB-0-PageDivider.svg | 3.2 | 2 |
 | EFMStorybooks/EFM-SB-AD-1.jpg | 21.9 | 1 |
@@ -1575,11 +1575,33 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMSplatsCombos7-1.2.svg | 8 | 1 |
 | ESMIll/ESMSplatsCombos7-4.5.svg | 8 | 1 |
 | ESMIll/ESMSumGroups10.svg | 47.3 | 1 |
+| ESMIll/ESMTopic10AsBridgeSub13-7.svg | 15.2 | 1 |
+| ESMIll/ESMTopic10BridgeForAdd8+7As8To10To15.svg | 8.5 | 1 |
+| ESMIll/ESMTopic10BridgeForAddCompensation8+7To10+5 2TenFrame.svg | 13.3 | 1 |
+| ESMIll/ESMTopic10BridgeForAddCompensation8+7To10+5.svg | 10.7 | 1 |
+| ESMIll/ESMTopic10BridgeForSub12-7As12To10To5.svg | 6.8 | 1 |
+| ESMIll/ESMTopic10BridgeForSubCompensation13-8To15-10.svg | 10.6 | 1 |
+| ESMIll/ESMTopicAS12NumberLine.svg | 18.9 | 1 |
+| ESMIll/ESMTopicASWithin5TenFrame.svg | 3.6 | 1 |
+| ESMIll/ESMTopicAddCommutes.svg | 3.3 | 1 |
+| ESMIll/ESMTopicCompareTo10047.44.svg | 11.7 | 1 |
 | ESMIll/ESMTopicCompareTo20.12.17.svg | 14 | 1 |
 | ESMIll/ESMTopicComparingLinesofDots3.5.svg | 3.3 | 1 |
 | ESMIll/ESMTopicComparingLinesofDotsDiffSizes.svg | 2.4 | 2 |
+| ESMIll/ESMTopicDoubles.svg | 6.6 | 1 |
+| ESMIll/ESMTopicEvensOdds.svg | 8.8 | 1 |
+| ESMIll/ESMTopicMult3BagsOf4.svg | 7.6 | 1 |
+| ESMIll/ESMTopicNearDoubles3+3+1.svg | 6.7 | 1 |
+| ESMIll/ESMTopicNearDoubles4+4-1.svg | 6.8 | 1 |
+| ESMIll/ESMTopicNumberBonds2.4.svg | 3.5 | 1 |
+| ESMIll/ESMTopicNumberBondsTenFrames.svg | 4.6 | 1 |
 | ESMIll/ESMTopicNumberPathsLines.svg | 53.5 | 1 |
 | ESMIll/ESMTopicObjectProperties.svg | 9.5 | 1 |
+| ESMIll/ESMTopicPVto19.svg | 14.7 | 1 |
+| ESMIll/ESMTopicQAS3and2.svg | 7 | 1 |
+| ESMIll/ESMTopicQASCountingOn3and2.svg | 3.8 | 1 |
+| ESMIll/ESMTopicQASDifference5-2.svg | 4.7 | 1 |
+| ESMIll/ESMTopicQASTakeAway5-2.svg | 7.1 | 1 |
 | ESMIll/ESMTopicSub1-5.svg | 7.1 | 1 |
 | ESMIll/ESMTopicSub35.svg | 3.7 | 1 |
 | ESMIll/ESMTopicSubFiveFrame.svg | 4 | 1 |
