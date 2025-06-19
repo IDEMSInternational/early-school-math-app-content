@@ -51,7 +51,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 43063 KB | 43.1 MB |
+| total | 43236 KB | 43.2 MB |
 | unused | 21659 KB | 21.7 MB |
 </details>
 
@@ -1581,15 +1581,27 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMTopic10BridgeForAddCompensation8+7To10+5.svg | 10.7 | 1 |
 | ESMIll/ESMTopic10BridgeForSub12-7As12To10To5.svg | 6.8 | 1 |
 | ESMIll/ESMTopic10BridgeForSubCompensation13-8To15-10.svg | 10.6 | 1 |
+| ESMIll/ESMTopic3FlatShapes.svg | 6 | 1 |
+| ESMIll/ESMTopic4SidedShapes.svg | 7 | 1 |
 | ESMIll/ESMTopicAS12NumberLine.svg | 18.9 | 1 |
+| ESMIll/ESMTopicAS2No35Add12.svg | 13 | 1 |
+| ESMIll/ESMTopicAS2No59-24.svg | 15.5 | 1 |
+| ESMIll/ESMTopicAS2With24-18.svg | 19.8 | 1 |
+| ESMIll/ESMTopicAS2With25Add17.svg | 18.5 | 1 |
+| ESMIll/ESMTopicAS2and132Sub8.svg | 19.4 | 1 |
+| ESMIll/ESMTopicAS2and136And7.svg | 19.3 | 1 |
 | ESMIll/ESMTopicASWithin5TenFrame.svg | 3.6 | 1 |
 | ESMIll/ESMTopicAddCommutes.svg | 3.3 | 1 |
+| ESMIll/ESMTopicCompDecompBreakingUp.svg | 25.3 | 1 |
+| ESMIll/ESMTopicCompDecompEqualPieces.svg | 6.2 | 1 |
 | ESMIll/ESMTopicCompareTo10047.44.svg | 11.7 | 1 |
 | ESMIll/ESMTopicCompareTo20.12.17.svg | 14 | 1 |
 | ESMIll/ESMTopicComparingLinesofDots3.5.svg | 3.3 | 1 |
 | ESMIll/ESMTopicComparingLinesofDotsDiffSizes.svg | 2.4 | 2 |
+| ESMIll/ESMTopicCounting.svg | 4.9 | 1 |
 | ESMIll/ESMTopicDoubles.svg | 6.6 | 1 |
 | ESMIll/ESMTopicEvensOdds.svg | 8.8 | 1 |
+| ESMIll/ESMTopicFlatShapes.svg | 12.5 | 1 |
 | ESMIll/ESMTopicMult3BagsOf4.svg | 7.6 | 1 |
 | ESMIll/ESMTopicNearDoubles3+3+1.svg | 6.7 | 1 |
 | ESMIll/ESMTopicNearDoubles4+4-1.svg | 6.8 | 1 |
@@ -1602,6 +1614,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMTopicQASCountingOn3and2.svg | 3.8 | 1 |
 | ESMIll/ESMTopicQASDifference5-2.svg | 4.7 | 1 |
 | ESMIll/ESMTopicQASTakeAway5-2.svg | 7.1 | 1 |
+| ESMIll/ESMTopicRectangleSquare.svg | 5.4 | 1 |
 | ESMIll/ESMTopicSub1-5.svg | 7.1 | 1 |
 | ESMIll/ESMTopicSub35.svg | 3.7 | 1 |
 | ESMIll/ESMTopicSubFiveFrame.svg | 4 | 1 |
