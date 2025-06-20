@@ -192,6 +192,15 @@
       "_nested_name": "dg_all_or_some"
     },
     {
+      "name": "comment_a",
+      "value": "If glossar words are in fields, then only use them",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "comment_a"
+    },
+    {
       "type": "display_group",
       "name": "dg_glossary_block_some",
       "condition": "!@local.checkbox_see_all_phrases",
@@ -759,6 +768,15 @@
       }
     },
     {
+      "name": "commont_b",
+      "value": "dispaly all glossary entries",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "commont_b"
+    },
+    {
       "type": "display_group",
       "name": "dg_glossary_block_all",
       "condition": "@local.checkbox_see_all_phrases",
@@ -792,7 +810,7 @@
                     "value": {}
                   },
                   "style_list": [
-                    "margin-top: -10px",
+                    "margin-top: -4px",
                     "color: red"
                   ],
                   "_nested_name": "dg_glossary_block_all.word_list.dg_glossary_entry.title_phrase",
@@ -846,18 +864,6 @@
                     }
                   ],
                   "_nested_name": "dg_glossary_block_all.word_list.dg_glossary_entry.glossary_entry_creator"
-                },
-                {
-                  "type": "image",
-                  "name": "glossary_line",
-                  "value": "ESMIll/ESM0GlossaryDividingLine.svg",
-                  "_translations": {
-                    "value": {}
-                  },
-                  "style_list": [
-                    "margin-top: 4px"
-                  ],
-                  "_nested_name": "dg_glossary_block_all.word_list.dg_glossary_entry.glossary_line"
                 }
               ],
               "_nested_name": "dg_glossary_block_all.word_list.dg_glossary_entry"
@@ -902,6 +908,19 @@
       "type": "display_group",
       "name": "fake_group",
       "rows": [
+        {
+          "type": "image",
+          "name": "glossary_line",
+          "value": "ESMIll/ESM0GlossaryDividingLine.svg",
+          "_translations": {
+            "value": {}
+          },
+          "condition": false,
+          "style_list": [
+            "margin-top: 4px"
+          ],
+          "_nested_name": "fake_group.glossary_line"
+        },
         {
           "type": "text",
           "name": "spacer",
