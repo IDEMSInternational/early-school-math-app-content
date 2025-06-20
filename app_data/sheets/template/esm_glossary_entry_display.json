@@ -9,46 +9,36 @@
       "_nested_name": "content_ptr"
     },
     {
-      "type": "display_group",
-      "name": "dg_glossary_page",
-      "parameter_list": {
-        "style": "column"
-      },
+      "type": "template",
+      "name": "glossary_body",
+      "value": "esm_page_viewer",
       "rows": [
         {
-          "type": "template",
-          "name": "glossary_body",
-          "value": "esm_page_viewer",
-          "rows": [
-            {
-              "name": "esm_content_ptr",
-              "value": "@@local.content_ptr",
-              "_translations": {
-                "value": {}
-              },
-              "type": "set_variable",
-              "_nested_name": "dg_glossary_page.glossary_body.esm_content_ptr",
-              "_dynamicFields": {
-                "value": [
-                  {
-                    "fullExpression": "@@local.content_ptr",
-                    "matchedExpression": "@local.content_ptr",
-                    "type": "local",
-                    "fieldName": "content_ptr"
-                  }
-                ]
-              },
-              "_dynamicDependencies": {
-                "@local.content_ptr": [
-                  "value"
-                ]
+          "name": "esm_content_ptr",
+          "value": "@@local.content_ptr",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "glossary_body.esm_content_ptr",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@@local.content_ptr",
+                "matchedExpression": "@local.content_ptr",
+                "type": "local",
+                "fieldName": "content_ptr"
               }
-            }
-          ],
-          "_nested_name": "dg_glossary_page.glossary_body"
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.content_ptr": [
+              "value"
+            ]
+          }
         }
       ],
-      "_nested_name": "dg_glossary_page"
+      "_nested_name": "glossary_body"
     }
   ],
   "_xlsxPath": "EFM_glossary_high_level_sheets.xlsx",

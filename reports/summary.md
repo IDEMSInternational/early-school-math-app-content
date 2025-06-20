@@ -7,7 +7,7 @@
 | accordion_section | 77 |
 | button | 104 |
 | debug_toggle | 1 |
-| display_group | 305 |
+| display_group | 304 |
 | image | 34 |
 | items | 60 |
 | qr_code | 1 |
@@ -15,7 +15,7 @@
 | round_button | 9 |
 | select_text | 1 |
 | set_field | 25 |
-| set_variable | 728 |
+| set_variable | 730 |
 | simple_checkbox | 4 |
 | template | 84 |
 | text | 217 |
@@ -51,8 +51,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 43236 KB | 43.2 MB |
-| unused | 21659 KB | 21.7 MB |
+| total | 43399 KB | 43.4 MB |
+| unused | 21632 KB | 21.6 MB |
 </details>
 
 <details open>
@@ -102,7 +102,6 @@ Assets that appear in app-data but do not have references within sheets
 | EFM135ShapeSoduku.svg | 30.7 |
 | EFM135ShapeSodukuExample.svg | 32.6 |
 | EFM140IceCreamScoopStory.svg | 12.5 |
-| EFM145Estimation.svg | 34.4 |
 | EFM145GetOutofMyHouse.svg | 23.4 |
 | EFM145InBetweenGame.svg | 10.5 |
 | EFM150GreaterThanSudoku4by4.svg | 41.5 |
@@ -305,6 +304,7 @@ Assets that appear in app-data but do not have references within sheets
 | EFMStorybooks/EFM-SB-SSMILE-8.jpg | 3.5 |
 | EFMStorybooks/EFM-SB-TFHH-2.jpg | 10.6 |
 | ESMIll/ESMDots4-5.svg | 4 |
+| ESMIll/ESMGLossQuadrilateral.svg | 7 |
 | ESMIll/ESMPOWACoinFlipStart2.svg | 11626.6 |
 | ESMIll/ESMPOWCAvoidingRectanglesAnswer4.svg | 7.5 |
 | ESMIll/ESMTopicComparingLinesofDots.svg | 3.3 |
@@ -322,6 +322,7 @@ Assets that have references within sheets but do not appear in app-data
 
 | path | count |
 | --- | --- |
+| ESMIll/ESMGLossESMGLossQuadrilateral.svg | 1 |
 </details>
 
 <details >
@@ -338,6 +339,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | EFM12EFMLogoNoEFM.svg | 12.8 | 1 |
 | EFM12EFMLogoNoEFMpng.png | 33.1 | 1 |
 | EFM140BagGame.svg | 14.9 | 1 |
+| EFM145Estimation.svg | 34.4 | 1 |
 | EFM200NumberShapesAddingEvensOdds.svg | 21.4 | 1 |
 | EFM230OrderingCards.svg | 21.7 | 1 |
 | EFM290Fingers11-3.svg | 21.6 | 1 |
@@ -347,11 +349,11 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | EFM30ShapePattern.svg | 5.6 | 2 |
 | EFM30Socks.svg | 18 | 1 |
 | EFM340PairingDown.svg | 29.6 | 1 |
-| EFM380MultiplyingCommutes.svg | 5.4 | 1 |
+| EFM380MultiplyingCommutes.svg | 5.4 | 3 |
 | EFM455CoverFactorsMultiples.svg | 16.4 | 1 |
 | EFM460SieveOfEratosthenes.svg | 47 | 1 |
 | EFM460SieveofEratosthenes2s3s.svg | 35.1 | 1 |
-| EFM490RectangleArea.svg | 3.3 | 1 |
+| EFM490RectangleArea.svg | 3.3 | 2 |
 | EFM510FactorTrees.svg | 17.2 | 1 |
 | EFM540ProductGame.svg | 26.5 | 1 |
 | EFM70EachOfTheseIsDifferent2Example.svg | 6.5 | 1 |
@@ -1338,6 +1340,20 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMGAWarMult.svg | 16.5 | 1 |
 | ESMIll/ESMGAWarSingleDigit.svg | 16 | 1 |
 | ESMIll/ESMGAWhichOneIsDifferent.svg | 5.1 | 1 |
+| ESMIll/ESMGLoss3Angles.svg | 15.9 | 1 |
+| ESMIll/ESMGLoss3typesOfAngles.svg | 16.9 | 1 |
+| ESMIll/ESMGLoss45.90.180Angles.svg | 15.9 | 1 |
+| ESMIll/ESMGLossAcuteTriangles.svg | 5.6 | 1 |
+| ESMIll/ESMGLossChords.svg | 8.9 | 1 |
+| ESMIll/ESMGLossHexagons.svg | 9.7 | 1 |
+| ESMIll/ESMGLossKite.svg | 4.9 | 1 |
+| ESMIll/ESMGLossOctagons.svg | 9.7 | 1 |
+| ESMIll/ESMGLossParallelogram.svg | 5.9 | 1 |
+| ESMIll/ESMGLossPentagon.svg | 9.6 | 1 |
+| ESMIll/ESMGLossRadius.svg | 8.9 | 2 |
+| ESMIll/ESMGLossRectangle.svg | 5.4 | 1 |
+| ESMIll/ESMGLossRhombus.svg | 5.4 | 1 |
+| ESMIll/ESMGLossRightTriangle.svg | 6.1 | 1 |
 | ESMIll/ESMOEColoringShapesExample1.svg | 7.4 | 1 |
 | ESMIll/ESMOEColoringShapesExample2.svg | 7.3 | 1 |
 | ESMIll/ESMOEColoringShapesIntro.svg | 10.4 | 1 |
@@ -1591,7 +1607,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMTopicAS2and132Sub8.svg | 19.4 | 1 |
 | ESMIll/ESMTopicAS2and136And7.svg | 19.3 | 1 |
 | ESMIll/ESMTopicASWithin5TenFrame.svg | 3.6 | 1 |
-| ESMIll/ESMTopicAddCommutes.svg | 3.3 | 1 |
+| ESMIll/ESMTopicAddCommutes.svg | 3.3 | 2 |
 | ESMIll/ESMTopicCompDecompBreakingUp.svg | 25.3 | 1 |
 | ESMIll/ESMTopicCompDecompEqualPieces.svg | 6.2 | 1 |
 | ESMIll/ESMTopicCompareTo10047.44.svg | 11.7 | 1 |
@@ -1600,7 +1616,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMTopicComparingLinesofDotsDiffSizes.svg | 2.4 | 2 |
 | ESMIll/ESMTopicCounting.svg | 4.9 | 1 |
 | ESMIll/ESMTopicDoubles.svg | 6.6 | 1 |
-| ESMIll/ESMTopicEvensOdds.svg | 8.8 | 1 |
+| ESMIll/ESMTopicEvensOdds.svg | 8.8 | 4 |
 | ESMIll/ESMTopicFlatShapes.svg | 12.5 | 1 |
 | ESMIll/ESMTopicMult3BagsOf4.svg | 7.6 | 1 |
 | ESMIll/ESMTopicNearDoubles3+3+1.svg | 6.7 | 1 |
@@ -1611,7 +1627,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMTopicObjectProperties.svg | 9.5 | 1 |
 | ESMIll/ESMTopicPVto19.svg | 14.7 | 1 |
 | ESMIll/ESMTopicQAS3and2.svg | 7 | 1 |
-| ESMIll/ESMTopicQASCountingOn3and2.svg | 3.8 | 1 |
+| ESMIll/ESMTopicQASCountingOn3and2.svg | 3.8 | 2 |
 | ESMIll/ESMTopicQASDifference5-2.svg | 4.7 | 1 |
 | ESMIll/ESMTopicQASTakeAway5-2.svg | 7.1 | 1 |
 | ESMIll/ESMTopicRectangleSquare.svg | 5.4 | 1 |
