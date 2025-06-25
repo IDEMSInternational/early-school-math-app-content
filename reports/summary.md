@@ -14,7 +14,7 @@
 | radio_button_grid | 1 |
 | round_button | 9 |
 | select_text | 1 |
-| set_field | 25 |
+| set_field | 28 |
 | set_variable | 730 |
 | simple_checkbox | 4 |
 | template | 84 |
@@ -51,8 +51,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 43628 KB | 43.6 MB |
-| unused | 21572 KB | 21.6 MB |
+| total | 43760 KB | 43.8 MB |
+| unused | 21605 KB | 21.6 MB |
 </details>
 
 <details open>
@@ -89,6 +89,7 @@ Assets that appear in app-data but do not have references within sheets
 | EFM125ImThinkingofaNumberAll.svg | 43.8 |
 | EFM125NumberLineBattleship.svg | 34.4 |
 | EFM12CautioinSign.svg | 1.8 |
+| EFM12EFMLogoNoEFMpng.png | 33.1 |
 | EFM12StopSign.svg | 2.3 |
 | EFM12TrafficSignal.svg | 3.6 |
 | EFM12TriangleSign.svg | 2.3 |
@@ -331,7 +332,6 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | EFM10PairReadingOnBench.svg | 33.7 | 1 |
 | EFM12Apples.svg | 5.3 | 2 |
 | EFM12EFMLogoNoEFM.svg | 12.8 | 1 |
-| EFM12EFMLogoNoEFMpng.png | 33.1 | 1 |
 | EFM140BagGame.svg | 14.9 | 1 |
 | EFM145Estimation.svg | 34.4 | 1 |
 | EFM200NumberShapesAddingEvensOdds.svg | 21.4 | 1 |
@@ -1655,6 +1655,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMTopicTenFrameIntro.svg | 8.5 | 1 |
 | ESMIll/ESMTopicWritingNumeralsBackwards.svg | 5.2 | 1 |
 | ESMIll/ESMTreasureMap2.svg | 13.7 | 1 |
+| ESMLogo.png | 165.2 | 1 |
 </details>
 
 <details >
@@ -1662,7 +1663,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | type | subtype | total |
 | --- | --- | --- |
-| data_list |  | 79 |
+| data_list |  | 81 |
 | data_list | app_config_language_list | 1 |
 | data_list | lifecycle_actions | 1 |
 | generator |  | 1 |

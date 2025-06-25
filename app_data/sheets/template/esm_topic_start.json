@@ -423,6 +423,81 @@
               "condition"
             ]
           }
+        },
+        {
+          "type": "set_field",
+          "name": "curriculum_standard_name",
+          "value": "Texas Essential Knowledge & Skills",
+          "_translations": {
+            "value": {}
+          },
+          "condition": "@fields.curriculum_standard_abbrev == \"TEKS\"",
+          "_nested_name": "dg_select_view_new.curriculum_standard_name",
+          "_dynamicFields": {
+            "condition": [
+              {
+                "fullExpression": "@fields.curriculum_standard_abbrev == \"TEKS\"",
+                "matchedExpression": "@fields.curriculum_standard_abbrev",
+                "type": "fields",
+                "fieldName": "curriculum_standard_abbrev"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@fields.curriculum_standard_abbrev": [
+              "condition"
+            ]
+          }
+        },
+        {
+          "type": "set_field",
+          "name": "top_standards_level",
+          "value": "data.esm_teks_strands",
+          "_translations": {
+            "value": {}
+          },
+          "condition": "@fields.curriculum_standard_abbrev == \"TEKS\"",
+          "_nested_name": "dg_select_view_new.top_standards_level",
+          "_dynamicFields": {
+            "condition": [
+              {
+                "fullExpression": "@fields.curriculum_standard_abbrev == \"TEKS\"",
+                "matchedExpression": "@fields.curriculum_standard_abbrev",
+                "type": "fields",
+                "fieldName": "curriculum_standard_abbrev"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@fields.curriculum_standard_abbrev": [
+              "condition"
+            ]
+          }
+        },
+        {
+          "type": "set_field",
+          "name": "middle_standards_level",
+          "value": "data.esm_teks_skills",
+          "_translations": {
+            "value": {}
+          },
+          "condition": "@fields.curriculum_standard_abbrev == \"TEKS\"",
+          "_nested_name": "dg_select_view_new.middle_standards_level",
+          "_dynamicFields": {
+            "condition": [
+              {
+                "fullExpression": "@fields.curriculum_standard_abbrev == \"TEKS\"",
+                "matchedExpression": "@fields.curriculum_standard_abbrev",
+                "type": "fields",
+                "fieldName": "curriculum_standard_abbrev"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@fields.curriculum_standard_abbrev": [
+              "condition"
+            ]
+          }
         }
       ],
       "_nested_name": "dg_select_view_new"
