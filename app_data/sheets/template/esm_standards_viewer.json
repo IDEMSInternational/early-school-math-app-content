@@ -60,15 +60,25 @@
       }
     },
     {
-      "name": "ccssm_should_be_seen",
-      "value": "@fields.curriculum_standard_abbrev == \"CCSSM\"",
+      "name": "standard_chars",
+      "value": "NONE",
       "_translations": {
         "value": {}
       },
       "type": "set_variable",
-      "_nested_name": "ccssm_should_be_seen",
+      "_nested_name": "standard_chars"
+    },
+    {
+      "name": "standard_chars",
+      "value": "ccssm_standards",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "@fields.curriculum_standard_abbrev == \"CCSSM\"",
+      "type": "set_variable",
+      "_nested_name": "standard_chars",
       "_dynamicFields": {
-        "value": [
+        "condition": [
           {
             "fullExpression": "@fields.curriculum_standard_abbrev == \"CCSSM\"",
             "matchedExpression": "@fields.curriculum_standard_abbrev",
@@ -79,31 +89,80 @@
       },
       "_dynamicDependencies": {
         "@fields.curriculum_standard_abbrev": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "name": "standard_chars",
+      "value": "teks_standards",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "@fields.curriculum_standard_abbrev == \"TEKS\"",
+      "type": "set_variable",
+      "_nested_name": "standard_chars",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@fields.curriculum_standard_abbrev == \"TEKS\"",
+            "matchedExpression": "@fields.curriculum_standard_abbrev",
+            "type": "fields",
+            "fieldName": "curriculum_standard_abbrev"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.curriculum_standard_abbrev": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "name": "viewable_standard_not_seen",
+      "value": "@local.standard_chars == \"NONE\"",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "viewable_standard_not_seen",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.standard_chars == \"NONE\"",
+            "matchedExpression": "@local.standard_chars",
+            "type": "local",
+            "fieldName": "standard_chars"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.standard_chars": [
           "value"
         ]
       }
     },
     {
-      "name": "display_ccssm_standards",
-      "value": "@local.topic1 && @local.ccssm_should_be_seen",
+      "name": "display_standard",
+      "value": "@local.topic1 && !@local.viewable_standard_not_seen",
       "_translations": {
         "value": {}
       },
       "type": "set_variable",
-      "_nested_name": "display_ccssm_standards",
+      "_nested_name": "display_standard",
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@local.topic1 && @local.ccssm_should_be_seen",
+            "fullExpression": "@local.topic1 && !@local.viewable_standard_not_seen",
             "matchedExpression": "@local.topic1",
             "type": "local",
             "fieldName": "topic1"
           },
           {
-            "fullExpression": "@local.topic1 && @local.ccssm_should_be_seen",
-            "matchedExpression": "@local.ccssm_should_be_seen",
+            "fullExpression": "@local.topic1 && !@local.viewable_standard_not_seen",
+            "matchedExpression": "!@local.viewable_standard_not_seen",
             "type": "local",
-            "fieldName": "ccssm_should_be_seen"
+            "fieldName": "viewable_standard_not_seen"
           }
         ]
       },
@@ -111,14 +170,15 @@
         "@local.topic1": [
           "value"
         ],
-        "@local.ccssm_should_be_seen": [
+        "!@local.viewable_standard_not_seen": [
           "value"
         ]
       }
     },
     {
       "type": "display_group",
-      "condition": "@local.display_ccssm_standards",
+      "name": "dg_all_standard_steps",
+      "condition": "@local.display_standard",
       "parameter_list": {
         "style": "column"
       },
@@ -133,7 +193,7 @@
             "value": {}
           },
           "type": "set_variable",
-          "_nested_name": "display_group_9.topic_theme_base_chars"
+          "_nested_name": "dg_all_standard_steps.topic_theme_base_chars"
         },
         {
           "name": "standards_set",
@@ -142,7 +202,7 @@
             "value": {}
           },
           "type": "set_variable",
-          "_nested_name": "display_group_9.standards_set",
+          "_nested_name": "dg_all_standard_steps.standards_set",
           "_dynamicFields": {
             "value": [
               {
@@ -163,11 +223,11 @@
           "name": "added_something",
           "value": false,
           "type": "set_variable",
-          "_nested_name": "display_group_9.added_something"
+          "_nested_name": "dg_all_standard_steps.added_something"
         },
         {
           "type": "items",
-          "name": "run_through_topics",
+          "name": "run_through_topics_a",
           "value": "@data.efm_num_list_one_to_ten",
           "rows": [
             {
@@ -177,7 +237,7 @@
                 "value": {}
               },
               "type": "set_variable",
-              "_nested_name": "display_group_9.run_through_topics.topic_theme_chars",
+              "_nested_name": "dg_all_standard_steps.run_through_topics_a.topic_theme_chars",
               "_dynamicFields": {
                 "value": [
                   {
@@ -210,7 +270,7 @@
                 "value": {}
               },
               "type": "set_variable",
-              "_nested_name": "display_group_9.run_through_topics.theme_ptr",
+              "_nested_name": "dg_all_standard_steps.run_through_topics_a.theme_ptr",
               "_dynamicFields": {
                 "value": [
                   {
@@ -234,7 +294,7 @@
                 "value": {}
               },
               "type": "set_variable",
-              "_nested_name": "display_group_9.run_through_topics.topic_theme",
+              "_nested_name": "dg_all_standard_steps.run_through_topics_a.topic_theme",
               "_dynamicFields": {
                 "value": [
                   {
@@ -253,7 +313,7 @@
             },
             {
               "type": "display_group",
-              "name": "process_topic",
+              "name": "dg_process_topic",
               "condition": "@local.topic_theme",
               "rows": [
                 {
@@ -263,7 +323,7 @@
                     "value": {}
                   },
                   "type": "set_variable",
-                  "_nested_name": "display_group_9.run_through_topics.process_topic.topic_row",
+                  "_nested_name": "dg_all_standard_steps.run_through_topics_a.dg_process_topic.topic_row",
                   "_dynamicFields": {
                     "value": [
                       {
@@ -281,126 +341,111 @@
                   }
                 },
                 {
-                  "name": "topic_row_ptr",
-                  "value": "@@local.topic_row",
+                  "name": "topic_standards",
+                  "value": "@@local.topic_row.@local.standard_chars",
                   "_translations": {
                     "value": {}
                   },
                   "type": "set_variable",
-                  "_nested_name": "display_group_9.run_through_topics.process_topic.topic_row_ptr",
+                  "_nested_name": "dg_all_standard_steps.run_through_topics_a.dg_process_topic.topic_standards",
                   "_dynamicFields": {
                     "value": [
                       {
-                        "fullExpression": "@@local.topic_row",
+                        "fullExpression": "@@local.topic_row.@local.standard_chars",
                         "matchedExpression": "@local.topic_row",
                         "type": "local",
                         "fieldName": "topic_row"
+                      },
+                      {
+                        "fullExpression": "@@local.topic_row.@local.standard_chars",
+                        "matchedExpression": "@local.standard_chars",
+                        "type": "local",
+                        "fieldName": "standard_chars"
                       }
                     ]
                   },
                   "_dynamicDependencies": {
                     "@local.topic_row": [
                       "value"
-                    ]
-                  }
-                },
-                {
-                  "name": "topic_ccssm",
-                  "value": "@local.topic_row_ptr.ccssm_standards",
-                  "_translations": {
-                    "value": {}
-                  },
-                  "type": "set_variable",
-                  "_nested_name": "display_group_9.run_through_topics.process_topic.topic_ccssm",
-                  "_dynamicFields": {
-                    "value": [
-                      {
-                        "fullExpression": "@local.topic_row_ptr.ccssm_standards",
-                        "matchedExpression": "@local.topic_row_ptr.ccssm_standards",
-                        "type": "local",
-                        "fieldName": "topic_row_ptr"
-                      }
-                    ]
-                  },
-                  "_dynamicDependencies": {
-                    "@local.topic_row_ptr.ccssm_standards": [
+                    ],
+                    "@local.standard_chars": [
                       "value"
                     ]
                   }
                 },
                 {
                   "type": "display_group",
-                  "name": "process_ccssm",
-                  "condition": "@local.topic_ccssm",
+                  "name": "process_teks",
+                  "condition": "@local.topic_standards",
                   "rows": [
                     {
                       "name": "added_something",
                       "value": true,
                       "type": "set_variable",
-                      "_nested_name": "display_group_9.run_through_topics.process_topic.process_ccssm.added_something"
+                      "_nested_name": "dg_all_standard_steps.run_through_topics_a.dg_process_topic.process_teks.added_something"
                     },
                     {
-                      "name": "ccssm_array",
-                      "value": "@calc(@local.topic_ccssm.split(\",\"))",
+                      "name": "this_standards_array",
+                      "value": "@calc(@local.topic_standards.split(\",\"))",
                       "_translations": {
                         "value": {}
                       },
                       "type": "set_variable",
-                      "_nested_name": "display_group_9.run_through_topics.process_topic.process_ccssm.ccssm_array",
+                      "_nested_name": "dg_all_standard_steps.run_through_topics_a.dg_process_topic.process_teks.this_standards_array",
                       "_dynamicFields": {
                         "value": [
                           {
-                            "fullExpression": "@calc(@local.topic_ccssm.split(\",\"))",
-                            "matchedExpression": "@local.topic_ccssm.split",
+                            "fullExpression": "@calc(@local.topic_standards.split(\",\"))",
+                            "matchedExpression": "@local.topic_standards.split",
                             "type": "local",
-                            "fieldName": "topic_ccssm"
+                            "fieldName": "topic_standards"
                           },
                           {
-                            "fullExpression": "@calc(@local.topic_ccssm.split(\",\"))",
-                            "matchedExpression": "@calc(@local.topic_ccssm.split(\",\"))",
+                            "fullExpression": "@calc(@local.topic_standards.split(\",\"))",
+                            "matchedExpression": "@calc(@local.topic_standards.split(\",\"))",
                             "type": "calc",
-                            "fieldName": "@local.topic_ccssm.split(\",\")"
+                            "fieldName": "@local.topic_standards.split(\",\")"
                           }
                         ]
                       },
                       "_dynamicDependencies": {
-                        "@local.topic_ccssm.split": [
+                        "@local.topic_standards.split": [
                           "value"
                         ],
-                        "@calc(@local.topic_ccssm.split(\",\"))": [
+                        "@calc(@local.topic_standards.split(\",\"))": [
                           "value"
                         ]
                       }
                     },
                     {
-                      "name": "ccssm_set",
-                      "value": "@calc(new Set(@local.ccssm_array))",
+                      "name": "this_standards_set",
+                      "value": "@calc(new Set(@local.this_standards_array))",
                       "_translations": {
                         "value": {}
                       },
                       "type": "set_variable",
-                      "_nested_name": "display_group_9.run_through_topics.process_topic.process_ccssm.ccssm_set",
+                      "_nested_name": "dg_all_standard_steps.run_through_topics_a.dg_process_topic.process_teks.this_standards_set",
                       "_dynamicFields": {
                         "value": [
                           {
-                            "fullExpression": "@calc(new Set(@local.ccssm_array))",
-                            "matchedExpression": "@local.ccssm_array",
+                            "fullExpression": "@calc(new Set(@local.this_standards_array))",
+                            "matchedExpression": "@local.this_standards_array",
                             "type": "local",
-                            "fieldName": "ccssm_array"
+                            "fieldName": "this_standards_array"
                           },
                           {
-                            "fullExpression": "@calc(new Set(@local.ccssm_array))",
-                            "matchedExpression": "@calc(new Set(@local.ccssm_array))",
+                            "fullExpression": "@calc(new Set(@local.this_standards_array))",
+                            "matchedExpression": "@calc(new Set(@local.this_standards_array))",
                             "type": "calc",
-                            "fieldName": "new Set(@local.ccssm_array)"
+                            "fieldName": "new Set(@local.this_standards_array)"
                           }
                         ]
                       },
                       "_dynamicDependencies": {
-                        "@local.ccssm_array": [
+                        "@local.this_standards_array": [
                           "value"
                         ],
-                        "@calc(new Set(@local.ccssm_array))": [
+                        "@calc(new Set(@local.this_standards_array))": [
                           "value"
                         ]
                       }
@@ -408,55 +453,64 @@
                     {
                       "type": "text",
                       "name": "deeebug",
-                      "value": "CCSSM Array: @local.ccssm_array",
+                      "value": "@fields.curriculum_standard_abbrev Array: @local.this_standards_array",
                       "_translations": {
                         "value": {}
                       },
                       "condition": false,
-                      "_nested_name": "display_group_9.run_through_topics.process_topic.process_ccssm.deeebug",
+                      "_nested_name": "dg_all_standard_steps.run_through_topics_a.dg_process_topic.process_teks.deeebug",
                       "_dynamicFields": {
                         "value": [
                           {
-                            "fullExpression": "CCSSM Array: @local.ccssm_array",
-                            "matchedExpression": "@local.ccssm_array",
+                            "fullExpression": "@fields.curriculum_standard_abbrev Array: @local.this_standards_array",
+                            "matchedExpression": "@fields.curriculum_standard_abbrev",
+                            "type": "fields",
+                            "fieldName": "curriculum_standard_abbrev"
+                          },
+                          {
+                            "fullExpression": "@fields.curriculum_standard_abbrev Array: @local.this_standards_array",
+                            "matchedExpression": "@local.this_standards_array",
                             "type": "local",
-                            "fieldName": "ccssm_array"
+                            "fieldName": "this_standards_array"
                           }
                         ]
                       },
                       "_dynamicDependencies": {
-                        "@local.ccssm_array": [
+                        "@fields.curriculum_standard_abbrev": [
+                          "value"
+                        ],
+                        "@local.this_standards_array": [
                           "value"
                         ]
                       }
                     },
                     {
                       "name": "standards_set",
-                      "value": "@calc(@local.standards_set.union(@local.ccssm_set))",
+                      "value": "@calc(@local.standards_set.union(@local.this_standards_set))",
                       "_translations": {
                         "value": {}
                       },
                       "type": "set_variable",
-                      "_nested_name": "display_group_9.run_through_topics.process_topic.process_ccssm.standards_set",
+                      "_nested_name": "dg_all_standard_steps.run_through_topics_a.dg_process_topic.process_teks.standards_set",
                       "_dynamicFields": {
                         "value": [
                           {
-                            "fullExpression": "@calc(@local.standards_set.union(@local.ccssm_set))",
+                            "fullExpression": "@calc(@local.standards_set.union(@local.this_standards_set))",
                             "matchedExpression": "@local.standards_set.union",
                             "type": "local",
                             "fieldName": "standards_set"
                           },
                           {
-                            "fullExpression": "@calc(@local.standards_set.union(@local.ccssm_set))",
-                            "matchedExpression": "@local.ccssm_set",
+                            "fullExpression": "@calc(@local.standards_set.union(@local.this_standards_set))",
+                            "matchedExpression": "@local.this_standards_set",
                             "type": "local",
-                            "fieldName": "ccssm_set"
+                            "fieldName": "this_standards_set"
                           },
                           {
-                            "fullExpression": "@calc(@local.standards_set.union(@local.ccssm_set))",
-                            "matchedExpression": "@calc(@local.standards_set.union(@local.ccssm_set))",
+                            "fullExpression": "@calc(@local.standards_set.union(@local.this_standards_set))",
+                            "matchedExpression": "@calc(@local.standards_set.union(@local.this_standards_set))",
                             "type": "calc",
-                            "fieldName": "@local.standards_set.union(@local.ccssm_set)"
+                            "fieldName": "@local.standards_set.union(@local.this_standards_set)"
                           }
                         ]
                       },
@@ -464,10 +518,10 @@
                         "@local.standards_set.union": [
                           "value"
                         ],
-                        "@local.ccssm_set": [
+                        "@local.this_standards_set": [
                           "value"
                         ],
-                        "@calc(@local.standards_set.union(@local.ccssm_set))": [
+                        "@calc(@local.standards_set.union(@local.this_standards_set))": [
                           "value"
                         ]
                       }
@@ -475,48 +529,57 @@
                     {
                       "type": "text",
                       "name": "debugg",
-                      "value": "Topic CCSSM: @local.topic_ccssm",
+                      "value": "Topic @fields.curriculum_standard_abbrev: @local.topic_standards",
                       "_translations": {
                         "value": {}
                       },
                       "condition": false,
-                      "_nested_name": "display_group_9.run_through_topics.process_topic.process_ccssm.debugg",
+                      "_nested_name": "dg_all_standard_steps.run_through_topics_a.dg_process_topic.process_teks.debugg",
                       "_dynamicFields": {
                         "value": [
                           {
-                            "fullExpression": "Topic CCSSM: @local.topic_ccssm",
-                            "matchedExpression": "@local.topic_ccssm",
+                            "fullExpression": "Topic @fields.curriculum_standard_abbrev: @local.topic_standards",
+                            "matchedExpression": "@fields.curriculum_standard_abbrev",
+                            "type": "fields",
+                            "fieldName": "curriculum_standard_abbrev"
+                          },
+                          {
+                            "fullExpression": "Topic @fields.curriculum_standard_abbrev: @local.topic_standards",
+                            "matchedExpression": "@local.topic_standards",
                             "type": "local",
-                            "fieldName": "topic_ccssm"
+                            "fieldName": "topic_standards"
                           }
                         ]
                       },
                       "_dynamicDependencies": {
-                        "@local.topic_ccssm": [
+                        "@fields.curriculum_standard_abbrev": [
+                          "value"
+                        ],
+                        "@local.topic_standards": [
                           "value"
                         ]
                       }
                     }
                   ],
-                  "_nested_name": "display_group_9.run_through_topics.process_topic.process_ccssm",
+                  "_nested_name": "dg_all_standard_steps.run_through_topics_a.dg_process_topic.process_teks",
                   "_dynamicFields": {
                     "condition": [
                       {
-                        "fullExpression": "@local.topic_ccssm",
-                        "matchedExpression": "@local.topic_ccssm",
+                        "fullExpression": "@local.topic_standards",
+                        "matchedExpression": "@local.topic_standards",
                         "type": "local",
-                        "fieldName": "topic_ccssm"
+                        "fieldName": "topic_standards"
                       }
                     ]
                   },
                   "_dynamicDependencies": {
-                    "@local.topic_ccssm": [
+                    "@local.topic_standards": [
                       "condition"
                     ]
                   }
                 }
               ],
-              "_nested_name": "display_group_9.run_through_topics.process_topic",
+              "_nested_name": "dg_all_standard_steps.run_through_topics_a.dg_process_topic",
               "_dynamicFields": {
                 "condition": [
                   {
@@ -534,7 +597,7 @@
               }
             }
           ],
-          "_nested_name": "display_group_9.run_through_topics",
+          "_nested_name": "dg_all_standard_steps.run_through_topics_a",
           "_dynamicFields": {
             "value": [
               {
@@ -559,7 +622,7 @@
           },
           "condition": "@local.added_something",
           "type": "set_variable",
-          "_nested_name": "display_group_9.standards_array",
+          "_nested_name": "dg_all_standard_steps.standards_array",
           "_dynamicFields": {
             "value": [
               {
@@ -604,7 +667,7 @@
           },
           "condition": "@local.added_something",
           "type": "set_variable",
-          "_nested_name": "display_group_9.value_ignored",
+          "_nested_name": "dg_all_standard_steps.value_ignored",
           "_dynamicFields": {
             "value": [
               {
@@ -649,7 +712,7 @@
           },
           "condition": "@local.added_something",
           "type": "set_variable",
-          "_nested_name": "display_group_9.standards_string",
+          "_nested_name": "dg_all_standard_steps.standards_string",
           "_dynamicFields": {
             "value": [
               {
@@ -689,16 +752,22 @@
         {
           "type": "text",
           "name": "output",
-          "value": "CCSSM: @local.standards_string",
+          "value": "@fields.curriculum_standard_abbrev: @local.standards_string",
           "_translations": {
             "value": {}
           },
           "condition": "@local.added_something",
-          "_nested_name": "display_group_9.output",
+          "_nested_name": "dg_all_standard_steps.output",
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "CCSSM: @local.standards_string",
+                "fullExpression": "@fields.curriculum_standard_abbrev: @local.standards_string",
+                "matchedExpression": "@fields.curriculum_standard_abbrev",
+                "type": "fields",
+                "fieldName": "curriculum_standard_abbrev"
+              },
+              {
+                "fullExpression": "@fields.curriculum_standard_abbrev: @local.standards_string",
                 "matchedExpression": "@local.standards_string",
                 "type": "local",
                 "fieldName": "standards_string"
@@ -714,6 +783,9 @@
             ]
           },
           "_dynamicDependencies": {
+            "@fields.curriculum_standard_abbrev": [
+              "value"
+            ],
             "@local.standards_string": [
               "value"
             ],
@@ -723,20 +795,19 @@
           }
         }
       ],
-      "name": "display_group_9",
-      "_nested_name": "display_group_9",
+      "_nested_name": "dg_all_standard_steps",
       "_dynamicFields": {
         "condition": [
           {
-            "fullExpression": "@local.display_ccssm_standards",
-            "matchedExpression": "@local.display_ccssm_standards",
+            "fullExpression": "@local.display_standard",
+            "matchedExpression": "@local.display_standard",
             "type": "local",
-            "fieldName": "display_ccssm_standards"
+            "fieldName": "display_standard"
           }
         ]
       },
       "_dynamicDependencies": {
-        "@local.display_ccssm_standards": [
+        "@local.display_standard": [
           "condition"
         ]
       }
