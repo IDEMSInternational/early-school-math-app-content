@@ -1,6 +1,6 @@
 {
   "flow_type": "template",
-  "flow_name": "esm_choral_counting",
+  "flow_name": "esm_choral_counting_begin",
   "status": "released",
   "rows": [
     {
@@ -10,7 +10,7 @@
         {
           "type": "title",
           "name": "spacer",
-          "value": "Choral Counting",
+          "value": "Choral Counting – Beginning",
           "_translations": {
             "value": {}
           },
@@ -29,7 +29,7 @@
         {
           "type": "text",
           "name": "help_text",
-          "value": "In choral counting, count together as a group or individually in sequence around a circle. \n\nCounting on, skip counting, counting down, estimate and then count.\n\nCount 5 things. Start from 0 sometimes.\n\nCount 7 things where 2 of them are in a special pile. First count all of them. Second time Count On starting at 2 for the pile of 2.",
+          "value": "In choral counting, the teacher leads students counting aloud together as a group or individually in sequence around a circle. The teacher may record the number on a board as each number is called aloud.\n\nThis begins with the teacher deciding on a skip count amount, a direction forward or backward to count in, a number to start on, and optionally a number to end on.\n\nThe counting can be abstract without reference to any objects, or you may have some objects to work with and count. \n\nThis can be done by counting a group of objects. If the objects are lined up in 2s or 3s, then the counting may progress by skip counting them. \n\nCounting on, skip counting, counting down, estimate and then count.\n\nCount 5 things. Start from 0 sometimes.\n\nCount 7 things where 2 of them are in a special pile. First count all of them. Second time Count On starting at 2 for the pile of 2.\n\nChoral Counting is an activity in which the teacher leads children in counting aloud together by a given number. As the class calls out each number the teacher records the count on the board, pausing the count at strategic moments. To begin, the teacher decides on a number for the students to skip count by, whether to count forwards or backwards, and what number to start and end the count on. Different numbers lend themselves well to surfacing different mathematical ideas. The goal of this activity is not just to practice rote counting, but to engage children in reasoning, predicting, and justifying. To do this, teachers record the count so that patterns within the numbers are readily noticeable and pause during the count to ask questions like, “What do you think will come next? How do you know?”",
           "_translations": {
             "value": {}
           },
@@ -298,6 +298,9 @@
     {
       "type": "display_group",
       "name": "fake_group",
+      "style_list": [
+        "margin-top: 40px"
+      ],
       "rows": [
         {
           "type": "text",
@@ -308,6 +311,6 @@
       "_nested_name": "fake_group"
     }
   ],
-  "_xlsxPath": "EFM_routines_high_level_sheets.xlsx",
+  "_xlsxPath": "ESM_routines_high_level_sheets.xlsx",
   "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1PeJ5ishcTCWUvjhflbQqKO6M8u9rNuec"
 }
