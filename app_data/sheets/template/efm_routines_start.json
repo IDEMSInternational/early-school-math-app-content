@@ -10,7 +10,7 @@
         {
           "type": "title",
           "name": "spacer",
-          "value": "Routines",
+          "value": "Instructional Routines",
           "_translations": {
             "value": {}
           },
@@ -59,7 +59,7 @@
         {
           "type": "text",
           "name": "Intro_text",
-          "value": "These groups of 1 to 10-minute routines develop a particular skill such as subitizing or working on a number line.",
+          "value": "Routines that are used repeatedly, and are structured and predictable create an environment where you and your students know what to expect. They allow everyone to focus on the math content and not on the format. These routines are designed to allow all students to be part of the interaction and discussion.\n\nThese groups of 1 to 10-minute routines develop a particular type of skill, such as subitizing or working on a number line.",
           "_translations": {
             "value": {}
           },
@@ -111,6 +111,30 @@
                         "text_align": "center"
                       },
                       "_nested_name": "dg_info.accordion_for_routines.level_shapes.dg_routinelist_shapes.button_shapes_properties"
+                    },
+                    {
+                      "type": "button",
+                      "name": "button_sims_diffs",
+                      "value": "Similarities and Differences",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "action_list": [
+                        {
+                          "trigger": "click",
+                          "action_id": "go_to",
+                          "args": [
+                            "esm_similarities_differences"
+                          ],
+                          "_raw": "click | go_to: esm_similarities_differences",
+                          "_cleaned": "click | go_to: esm_similarities_differences"
+                        }
+                      ],
+                      "parameter_list": {
+                        "style": "short",
+                        "text_align": "center"
+                      },
+                      "_nested_name": "dg_info.accordion_for_routines.level_shapes.dg_routinelist_shapes.button_sims_diffs"
                     },
                     {
                       "type": "button",
@@ -233,7 +257,7 @@
                     {
                       "type": "button",
                       "name": "button_number_line",
-                      "value": "Number Line Tasks",
+                      "value": "Number Paths – Number Lines",
                       "_translations": {
                         "value": {}
                       },
@@ -257,7 +281,7 @@
                     {
                       "type": "button",
                       "name": "button_choral_counting",
-                      "value": "Choral Counting",
+                      "value": "Choral Counting - Beginning",
                       "_translations": {
                         "value": {}
                       },
@@ -266,10 +290,10 @@
                           "trigger": "click",
                           "action_id": "go_to",
                           "args": [
-                            "esm_choral_counting"
+                            "esm_choral_counting_begin"
                           ],
-                          "_raw": "click | go_to: esm_choral_counting",
-                          "_cleaned": "click | go_to: esm_choral_counting"
+                          "_raw": "click | go_to: esm_choral_counting_begin",
+                          "_cleaned": "click | go_to: esm_choral_counting_begin"
                         }
                       ],
                       "parameter_list": {
@@ -350,32 +374,8 @@
                     },
                     {
                       "type": "button",
-                      "name": "button_short_games",
-                      "value": "Short Games",
-                      "_translations": {
-                        "value": {}
-                      },
-                      "action_list": [
-                        {
-                          "trigger": "click",
-                          "action_id": "go_to",
-                          "args": [
-                            "esm_short_games"
-                          ],
-                          "_raw": "click | go_to: esm_short_games",
-                          "_cleaned": "click | go_to: esm_short_games"
-                        }
-                      ],
-                      "parameter_list": {
-                        "style": "short",
-                        "text_align": "center"
-                      },
-                      "_nested_name": "dg_info.accordion_for_routines.level_misc.dg_routinelist_misc.button_short_games"
-                    },
-                    {
-                      "type": "button",
                       "name": "button_target_number",
-                      "value": "Target Number",
+                      "value": "Target No. – No. of the Day",
                       "_translations": {
                         "value": {}
                       },
@@ -395,30 +395,6 @@
                         "text_align": "center"
                       },
                       "_nested_name": "dg_info.accordion_for_routines.level_misc.dg_routinelist_misc.button_target_number"
-                    },
-                    {
-                      "type": "button",
-                      "name": "button_equality_concept",
-                      "value": "Equality Concept",
-                      "_translations": {
-                        "value": {}
-                      },
-                      "action_list": [
-                        {
-                          "trigger": "click",
-                          "action_id": "go_to",
-                          "args": [
-                            "esm_equality_concept"
-                          ],
-                          "_raw": "click | go_to: esm_equality_concept",
-                          "_cleaned": "click | go_to: esm_equality_concept"
-                        }
-                      ],
-                      "parameter_list": {
-                        "style": "short",
-                        "text_align": "center"
-                      },
-                      "_nested_name": "dg_info.accordion_for_routines.level_misc.dg_routinelist_misc.button_equality_concept"
                     },
                     {
                       "type": "button",
@@ -446,6 +422,30 @@
                     },
                     {
                       "type": "button",
+                      "name": "button_problem_strings",
+                      "value": "Problem Strings",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "action_list": [
+                        {
+                          "trigger": "click",
+                          "action_id": "go_to",
+                          "args": [
+                            "esm_problem_strings"
+                          ],
+                          "_raw": "click | go_to: esm_problem_strings",
+                          "_cleaned": "click | go_to: esm_problem_strings"
+                        }
+                      ],
+                      "parameter_list": {
+                        "style": "short",
+                        "text_align": "center"
+                      },
+                      "_nested_name": "dg_info.accordion_for_routines.level_misc.dg_routinelist_misc.button_problem_strings"
+                    },
+                    {
+                      "type": "button",
                       "name": "button_problem_sort",
                       "value": "Problem Sort",
                       "_translations": {
@@ -467,6 +467,30 @@
                         "text_align": "center"
                       },
                       "_nested_name": "dg_info.accordion_for_routines.level_misc.dg_routinelist_misc.button_problem_sort"
+                    },
+                    {
+                      "type": "button",
+                      "name": "button_equality_concept",
+                      "value": "Equality Concept",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "action_list": [
+                        {
+                          "trigger": "click",
+                          "action_id": "go_to",
+                          "args": [
+                            "esm_equality_concept"
+                          ],
+                          "_raw": "click | go_to: esm_equality_concept",
+                          "_cleaned": "click | go_to: esm_equality_concept"
+                        }
+                      ],
+                      "parameter_list": {
+                        "style": "short",
+                        "text_align": "center"
+                      },
+                      "_nested_name": "dg_info.accordion_for_routines.level_misc.dg_routinelist_misc.button_equality_concept"
                     },
                     {
                       "type": "button",
@@ -515,6 +539,30 @@
                         "text_align": "center"
                       },
                       "_nested_name": "dg_info.accordion_for_routines.level_misc.dg_routinelist_misc.button_fluency_practice"
+                    },
+                    {
+                      "type": "button",
+                      "name": "button_short_games",
+                      "value": "Short Games - Small Add Sub",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "action_list": [
+                        {
+                          "trigger": "click",
+                          "action_id": "go_to",
+                          "args": [
+                            "esm_short_games_small_add_sub"
+                          ],
+                          "_raw": "click | go_to: esm_short_games_small_add_sub",
+                          "_cleaned": "click | go_to: esm_short_games_small_add_sub"
+                        }
+                      ],
+                      "parameter_list": {
+                        "style": "short",
+                        "text_align": "center"
+                      },
+                      "_nested_name": "dg_info.accordion_for_routines.level_misc.dg_routinelist_misc.button_short_games"
                     }
                   ],
                   "_nested_name": "dg_info.accordion_for_routines.level_misc.dg_routinelist_misc"
@@ -531,6 +579,9 @@
     {
       "type": "display_group",
       "name": "fake_group",
+      "style_list": [
+        "margin-top: 40px"
+      ],
       "rows": [
         {
           "type": "text",
@@ -541,6 +592,6 @@
       "_nested_name": "fake_group"
     }
   ],
-  "_xlsxPath": "EFM_routines_high_level_sheets.xlsx",
+  "_xlsxPath": "ESM_routines_high_level_sheets.xlsx",
   "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1PeJ5ishcTCWUvjhflbQqKO6M8u9rNuec"
 }
