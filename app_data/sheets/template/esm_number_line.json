@@ -24,58 +24,54 @@
     },
     {
       "type": "display_group",
-      "name": "dg_info",
+      "name": "dg_advice",
       "parameter_list": {
         "style": "column"
       },
       "rows": [
         {
           "type": "text",
-          "name": "intro_text",
-          "value": "There are three ways for presenting number sequences to a class. Always start the numbers at 0 and have the numbers increase from left to right.",
+          "name": "number_line_intro",
+          "value": "Use number paths and number lines to make the connections between numbers more concrete for beginning learners. These paths and liines make a great visual and mental representation for seeing how the numbers fit together.",
           "_translations": {
             "value": {}
           },
-          "parameter_list": {
-            "icon_src": "help",
-            "style": "navigation"
-          },
-          "_nested_name": "dg_info.intro_text"
+          "_nested_name": "dg_advice.number_line_intro"
         },
         {
-          "type": "display_group",
-          "name": "dg_nl_types",
+          "type": "accordion",
+          "name": "accordion_for_dot_talk_categories",
           "parameter_list": {
-            "style": "column"
+            "open_multiple": "TRUE"
           },
           "rows": [
             {
-              "type": "accordion",
-              "name": "accordion_for_nl_types",
+              "type": "accordion_section",
+              "name": "accord_advice",
+              "value": "Teaching Ideas & Directions",
               "parameter_list": {
-                "open_multiple": "TRUE"
+                "text_align": "center",
+                "style": "large emphasised"
               },
               "rows": [
                 {
-                  "type": "accordion_section",
-                  "name": "accord_numbered_cards",
-                  "value": "Numbered Cards in a Row",
+                  "type": "display_group",
+                  "name": "dg_advice_accord",
                   "parameter_list": {
-                    "text_align": "center",
-                    "style": "large emphasised"
+                    "style": "column"
                   },
                   "rows": [
                     {
                       "type": "display_group",
-                      "name": "dg_numbered_cards",
+                      "name": "dg_info",
                       "parameter_list": {
                         "style": "column"
                       },
                       "rows": [
                         {
                           "type": "text",
-                          "name": "numbered_cards_text",
-                          "value": "Prop up numbered cards on a table or ledge, or paper-clip them to a string. Having an individual card for each number allows for more natural association with numbered cards you may be using for demonstration purposes. It also allows them to be moved around or left out (for activities like \"put these in order\" or \"which one is missing.\"\n\n< put in an illustration of this >",
+                          "name": "intro_text",
+                          "value": "There are three ways for presenting these number sequences to a class. Always start the numbers at 0 and have the numbers increase from left to right. The fourth way given here, the 100 chart, is a more advanced representation, and it will be useful as your students progress to larger number ranges.",
                           "_translations": {
                             "value": {}
                           },
@@ -83,92 +79,262 @@
                             "icon_src": "help",
                             "style": "navigation"
                           },
-                          "_nested_name": "dg_info.dg_nl_types.accordion_for_nl_types.accord_numbered_cards.dg_numbered_cards.numbered_cards_text"
-                        }
-                      ],
-                      "_nested_name": "dg_info.dg_nl_types.accordion_for_nl_types.accord_numbered_cards.dg_numbered_cards"
-                    }
-                  ],
-                  "_nested_name": "dg_info.dg_nl_types.accordion_for_nl_types.accord_numbered_cards"
-                },
-                {
-                  "type": "accordion_section",
-                  "name": "accord_number_path",
-                  "value": "Number Path",
-                  "parameter_list": {
-                    "text_align": "center",
-                    "style": "large emphasised"
-                  },
-                  "rows": [
-                    {
-                      "type": "display_group",
-                      "name": "dg_number_path_accord",
-                      "parameter_list": {
-                        "style": "column"
-                      },
-                      "rows": [
+                          "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.dg_info.intro_text"
+                        },
                         {
-                          "type": "text",
-                          "name": "number_path_text",
-                          "value": "This is a path of sequenced numbers on the ground. Students can walk on these to get a physical connection with the numbers and their order.\n\n< put in an illustration of this >",
-                          "_translations": {
-                            "value": {}
-                          },
+                          "type": "display_group",
+                          "name": "dg_nl_types",
                           "parameter_list": {
-                            "icon_src": "help",
-                            "style": "navigation"
+                            "style": "column"
                           },
-                          "_nested_name": "dg_info.dg_nl_types.accordion_for_nl_types.accord_number_path.dg_number_path_accord.number_path_text"
+                          "rows": [
+                            {
+                              "type": "accordion",
+                              "name": "accordion_for_nl_types",
+                              "parameter_list": {
+                                "open_multiple": "TRUE"
+                              },
+                              "rows": [
+                                {
+                                  "type": "accordion_section",
+                                  "name": "accord_numbered_cards",
+                                  "value": "Numbered Cards in a Row",
+                                  "parameter_list": {
+                                    "text_align": "center",
+                                    "style": "large emphasised"
+                                  },
+                                  "rows": [
+                                    {
+                                      "type": "display_group",
+                                      "name": "dg_numbered_cards",
+                                      "parameter_list": {
+                                        "style": "column"
+                                      },
+                                      "rows": [
+                                        {
+                                          "type": "text",
+                                          "name": "numbered_cards_text",
+                                          "value": "Prop up numbered cards on a table or ledge, or paper-clip them to a string. Having an individual card for each number allows for more natural association with numbered cards you may be using for demonstration purposes. It also allows them to be moved around or left out (for activities like \"put these in order\" or \"which one is missing.\"",
+                                          "_translations": {
+                                            "value": {}
+                                          },
+                                          "parameter_list": {
+                                            "icon_src": "help",
+                                            "style": "navigation"
+                                          },
+                                          "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types.accord_numbered_cards.dg_numbered_cards.numbered_cards_text"
+                                        },
+                                        {
+                                          "type": "image",
+                                          "name": "number_cards_on_a_string",
+                                          "value": "ESMIll/ESMRoutineStringNumberLineFrom0.svg",
+                                          "_translations": {
+                                            "value": {}
+                                          },
+                                          "style_list": [
+                                            "max-width: 260px"
+                                          ],
+                                          "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types.accord_numbered_cards.dg_numbered_cards.number_cards_on_a_string"
+                                        }
+                                      ],
+                                      "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types.accord_numbered_cards.dg_numbered_cards"
+                                    }
+                                  ],
+                                  "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types.accord_numbered_cards"
+                                },
+                                {
+                                  "type": "accordion_section",
+                                  "name": "accord_number_path",
+                                  "value": "Number Path",
+                                  "parameter_list": {
+                                    "text_align": "center",
+                                    "style": "large emphasised"
+                                  },
+                                  "rows": [
+                                    {
+                                      "type": "display_group",
+                                      "name": "dg_number_path_accord",
+                                      "parameter_list": {
+                                        "style": "column"
+                                      },
+                                      "rows": [
+                                        {
+                                          "type": "text",
+                                          "name": "number_path_text",
+                                          "value": "This is a path of sequenced numbers on the ground. Students can walk on these to get a physical connection with the numbers and their order.",
+                                          "_translations": {
+                                            "value": {}
+                                          },
+                                          "parameter_list": {
+                                            "icon_src": "help",
+                                            "style": "navigation"
+                                          },
+                                          "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types.accord_number_path.dg_number_path_accord.number_path_text"
+                                        },
+                                        {
+                                          "type": "image",
+                                          "name": "number_line_to_12",
+                                          "value": "ESMIll/ESMGlossNumberPath.svg",
+                                          "_translations": {
+                                            "value": {}
+                                          },
+                                          "style_list": [
+                                            "max-width: 260px"
+                                          ],
+                                          "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types.accord_number_path.dg_number_path_accord.number_line_to_12"
+                                        }
+                                      ],
+                                      "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types.accord_number_path.dg_number_path_accord"
+                                    }
+                                  ],
+                                  "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types.accord_number_path"
+                                },
+                                {
+                                  "type": "accordion_section",
+                                  "name": "accord_number_line",
+                                  "value": "Number Line",
+                                  "parameter_list": {
+                                    "text_align": "center",
+                                    "style": "large emphasised"
+                                  },
+                                  "rows": [
+                                    {
+                                      "type": "display_group",
+                                      "name": "dg_number_line_accord",
+                                      "parameter_list": {
+                                        "style": "column"
+                                      },
+                                      "rows": [
+                                        {
+                                          "type": "text",
+                                          "name": "number_line_text",
+                                          "value": "For young children not ready for negative numbers, this is a portion of a line with an endpoint on the left side for 0. It has numbered tick marks extending to the right.\n\nIt is a more abstract representation than the other two already described. It is also a more powerful and versatile representation that is essential for modeling larger numbers and numbers with fractional parts.",
+                                          "_translations": {
+                                            "value": {}
+                                          },
+                                          "parameter_list": {
+                                            "icon_src": "help",
+                                            "style": "navigation"
+                                          },
+                                          "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types.accord_number_line.dg_number_line_accord.number_line_text"
+                                        },
+                                        {
+                                          "type": "image",
+                                          "name": "number_line_to_12",
+                                          "value": "ESMIll/ESMRoutineNumberLineTo12.svg",
+                                          "_translations": {
+                                            "value": {}
+                                          },
+                                          "style_list": [
+                                            "max-width: 260px"
+                                          ],
+                                          "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types.accord_number_line.dg_number_line_accord.number_line_to_12"
+                                        }
+                                      ],
+                                      "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types.accord_number_line.dg_number_line_accord"
+                                    }
+                                  ],
+                                  "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types.accord_number_line"
+                                },
+                                {
+                                  "type": "accordion_section",
+                                  "name": "accord_100_chart",
+                                  "value": "100 Chart",
+                                  "parameter_list": {
+                                    "text_align": "center",
+                                    "style": "large emphasised"
+                                  },
+                                  "rows": [
+                                    {
+                                      "type": "display_group",
+                                      "name": "dg_100_chart",
+                                      "parameter_list": {
+                                        "style": "column"
+                                      },
+                                      "rows": [
+                                        {
+                                          "type": "text",
+                                          "name": "chart_text",
+                                          "value": "As your students begin to work with larger number ranges, you will probably want to start making use of 100 chart. These are 10 by 10 charts of the numbers from 1 to 100 or 0 to 99. Your students should be confident with number paths and number lines before using these.",
+                                          "_translations": {
+                                            "value": {}
+                                          },
+                                          "parameter_list": {
+                                            "icon_src": "help",
+                                            "style": "navigation"
+                                          },
+                                          "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types.accord_100_chart.dg_100_chart.chart_text"
+                                        }
+                                      ],
+                                      "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types.accord_100_chart.dg_100_chart"
+                                    }
+                                  ],
+                                  "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types.accord_100_chart"
+                                }
+                              ],
+                              "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types"
+                            }
+                          ],
+                          "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.dg_info.dg_nl_types"
                         }
                       ],
-                      "_nested_name": "dg_info.dg_nl_types.accordion_for_nl_types.accord_number_path.dg_number_path_accord"
-                    }
-                  ],
-                  "_nested_name": "dg_info.dg_nl_types.accordion_for_nl_types.accord_number_path"
-                },
-                {
-                  "type": "accordion_section",
-                  "name": "accord_number_line",
-                  "value": "Number Line",
-                  "parameter_list": {
-                    "text_align": "center",
-                    "style": "large emphasised"
-                  },
-                  "rows": [
+                      "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.dg_info"
+                    },
                     {
-                      "type": "display_group",
-                      "name": "dg_number_line_accord",
-                      "parameter_list": {
-                        "style": "column"
+                      "type": "text",
+                      "name": "text_three_stages",
+                      "value": "There are three stages associated with many of these tasks. \n* Hold numbered cards or write numbers directly on or above the number path.\n* Move away from the number path but still have it visible nearby. \n* Do the activity without the number path being visible.",
+                      "_translations": {
+                        "value": {}
                       },
-                      "rows": [
-                        {
-                          "type": "text",
-                          "name": "number_line_text",
-                          "value": "For young children not ready for negative numbers, this is a portion of a line with an endpoint on the left side for 0. It has numbered tick marks extending to the right.\n\nIt is a more abstract representation than the other two already described. It is also a more powerful and versatile representation that is essential for modeling larger numbers and numbers with fractional parts.\n\n< put in an illustration of this >",
-                          "_translations": {
-                            "value": {}
-                          },
-                          "parameter_list": {
-                            "icon_src": "help",
-                            "style": "navigation"
-                          },
-                          "_nested_name": "dg_info.dg_nl_types.accordion_for_nl_types.accord_number_line.dg_number_line_accord.number_line_text"
-                        }
-                      ],
-                      "_nested_name": "dg_info.dg_nl_types.accordion_for_nl_types.accord_number_line.dg_number_line_accord"
+                      "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.text_three_stages"
                     }
                   ],
-                  "_nested_name": "dg_info.dg_nl_types.accordion_for_nl_types.accord_number_line"
+                  "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord"
                 }
               ],
-              "_nested_name": "dg_info.dg_nl_types.accordion_for_nl_types"
+              "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice"
+            },
+            {
+              "type": "accordion_section",
+              "name": "accord_topics",
+              "value": "Topics & Goals",
+              "parameter_list": {
+                "text_align": "center",
+                "style": "large emphasised"
+              },
+              "rows": [
+                {
+                  "type": "display_group",
+                  "name": "dg_topics_accord",
+                  "parameter_list": {
+                    "style": "column"
+                  },
+                  "rows": [
+                    {
+                      "type": "text",
+                      "name": "topics_text",
+                      "value": "The goal of using number paths and number lines is to ground the numerical skills being learned with the meaning of the numbers. It serves no purpose to have your students memorize a collection of mathematical facts if they do not know what they are talking about.\n\nAlso, the beginning skills of counting, order, adding and subtracting small numbers are better learned if they are learned visual and tactile ways.\n\nDoing lots of work with number paths and number liines also helps reinforce the size and spacing of the numbers.",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "parameter_list": {
+                        "icon_src": "help",
+                        "style": "navigation"
+                      },
+                      "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_topics.dg_topics_accord.topics_text"
+                    }
+                  ],
+                  "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_topics.dg_topics_accord"
+                }
+              ],
+              "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_topics"
             }
           ],
-          "_nested_name": "dg_info.dg_nl_types"
+          "_nested_name": "dg_advice.accordion_for_dot_talk_categories"
         }
       ],
-      "_nested_name": "dg_info"
+      "_nested_name": "dg_advice"
     },
     {
       "type": "display_group",
@@ -180,7 +346,7 @@
         {
           "type": "text",
           "name": "intro_text",
-          "value": "There are three stages associated with many of these tasks. \n* Hold numbered cards or write numbers directly on or above the number line.\n* Move away from the number line but still have it visible nearby. \n* Do the activity without the number line being visible.\n\nThe following talks are broken into levels of increasing mathematical skills.",
+          "value": "The following routines are separated by the mathematical skills being developed.",
           "_translations": {
             "value": {}
           },
