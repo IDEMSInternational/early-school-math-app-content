@@ -3,25 +3,25 @@
 
 | type | count |
 | --- | --- |
-| accordion | 41 |
-| accordion_section | 77 |
-| button | 104 |
+| accordion | 55 |
+| accordion_section | 104 |
+| button | 106 |
 | debug_toggle | 1 |
-| display_group | 304 |
-| image | 34 |
-| items | 60 |
+| display_group | 349 |
+| image | 37 |
+| items | 62 |
 | qr_code | 1 |
 | radio_button_grid | 1 |
 | round_button | 9 |
 | select_text | 1 |
 | set_field | 28 |
-| set_variable | 730 |
+| set_variable | 736 |
 | simple_checkbox | 4 |
-| template | 84 |
-| text | 217 |
+| template | 86 |
+| text | 249 |
 | text_area | 2 |
 | tile_component | 3 |
-| title | 49 |
+| title | 50 |
 | toggle_bar | 16 |
 </details>
 
@@ -38,7 +38,7 @@
 | emit: set_language | 1 |
 | emit: uncompleted | 58 |
 | feedback | 11 |
-| go_to | 70 |
+| go_to | 72 |
 | go_to_url | 3 |
 | reset_app | 1 |
 | set_field | 91 |
@@ -51,7 +51,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 43760 KB | 43.8 MB |
+| total | 43811 KB | 43.8 MB |
 | unused | 21605 KB | 21.6 MB |
 </details>
 
@@ -1282,6 +1282,9 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMDotsCombosOf10-3-7.svg | 9.2 | 1 |
 | ESMIll/ESMDotsCombosOf10-4-6.svg | 9.2 | 1 |
 | ESMIll/ESMDotsCombosOf10-5-10.svg | 10.1 | 1 |
+| ESMIll/ESMDotsCompare1or2More.svg | 4.7 | 2 |
+| ESMIll/ESMDotsCompareMedium.svg | 6.1 | 2 |
+| ESMIll/ESMDotsCompareSimple.svg | 4.4 | 2 |
 | ESMIll/ESMDotsDouble1Plus1.svg | 4.9 | 1 |
 | ESMIll/ESMDotsDouble2Plus1.svg | 5.9 | 1 |
 | ESMIll/ESMDotsDouble3Plus1.svg | 6.8 | 1 |
@@ -1366,7 +1369,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMGLossTriangles.svg | 6.3 | 2 |
 | ESMIll/ESMGlossCompensation.svg | 19.6 | 1 |
 | ESMIll/ESMGlossFactFamilyTriangle.svg | 5.5 | 1 |
-| ESMIll/ESMGlossNumberPath.svg | 11.2 | 1 |
+| ESMIll/ESMGlossNumberPath.svg | 11.2 | 2 |
 | ESMIll/ESMGlossTenFrame.svg | 7.5 | 1 |
 | ESMIll/ESMGlossTriangularNumbers.svg | 8 | 1 |
 | ESMIll/ESMGlossUnitize.svg | 12.3 | 1 |
@@ -1583,6 +1586,8 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMPSSquaresWithMatchsticksCounting.svg | 25.9 | 1 |
 | ESMIll/ESMPSSquaresWithMatchsticksNewPatterns.svg | 20.9 | 1 |
 | ESMIll/ESMParades1.svg | 17.5 | 1 |
+| ESMIll/ESMRoutineNumberLineTo12.svg | 12.1 | 1 |
+| ESMIll/ESMRoutineStringNumberLineFrom0.svg | 23.9 | 1 |
 | ESMIll/ESMSplats1Color1Splat10-10.svg | 9.2 | 1 |
 | ESMIll/ESMSplats1Color1Splat5-2.svg | 7.8 | 1 |
 | ESMIll/ESMSplats1Color1Splat6-1.svg | 7.9 | 1 |
@@ -1663,12 +1668,12 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | type | subtype | total |
 | --- | --- | --- |
-| data_list |  | 81 |
+| data_list |  | 86 |
 | data_list | app_config_language_list | 1 |
 | data_list | lifecycle_actions | 1 |
 | generator |  | 1 |
 | global |  | 2 |
-| template |  | 58 |
+| template |  | 59 |
 | template | generated | 58 |
 | tour |  | 10 |
 </details>

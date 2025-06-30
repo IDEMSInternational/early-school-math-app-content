@@ -29,7 +29,7 @@
         {
           "type": "text",
           "name": "help_text",
-          "value": "This is essentially duplicated by the these same games under Short Math Games. I'm leaving this out of the Routines for now.\n\n\nThese activities provide practice with analyzing properties of objects.\n\n**Similar and Different** – Two items are given and the students are challenged to find ways in which the items are similar and ways in which they are different. A similar activity is to pick one item and ask the students to find other items that are similar to it (and why) or different from it (and why). Here are a few examples:\n\n* Picture of Fork and Spoon\n* Picture of Square and Non-Square Rectangle\n* Bird and 4-legged animal\n* Fish and \n\n**Which One Doesn't Belong** (also called \"Who Is the Spy?\") – These two activities are very similar. Four items are given. The challenge is to find a property shared by three of the items but not shared by the fourth. In the Spy version, for each item make a list of ways that the item fits into the crowd and ways that it doesn't. The Spy is the one that has the most differences.\n\nThis is often played with four pictures of objects. \n\n* tree, bird, fish, rock\n\nHowever, it can also be played with a set of four numbers. Here are some examples of groups of four numbers.\n\n* 2, 4, 5, 8 – 5 is the only odd number.\n* 3, 0, 2, 10 – 0 is the only non-positive number, 3 is the only odd number, 10, is the only 2-digit number – sometimes there is more than one answer!\n\n**Each of These is Not Like the Others** – This is similar to Which One Doesn't Belong. The difference is now your students are challenged to find properties that cause each of the four items not to belong.",
+          "value": "These routines provide practice with working with properties of objects. Look for differences and similarities in small groups of 2 to 6 objects, pictures, or numbers.\n\nMany of these routines are duplicated by games in the Short Math Games section.",
           "_translations": {
             "value": {}
           },
@@ -41,6 +41,374 @@
         }
       ],
       "_nested_name": "dg_info"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_advice",
+      "parameter_list": {
+        "style": "column"
+      },
+      "rows": [
+        {
+          "type": "accordion",
+          "name": "accordion_for_dot_talk_categories",
+          "parameter_list": {
+            "open_multiple": "TRUE"
+          },
+          "rows": [
+            {
+              "type": "accordion_section",
+              "name": "accord_advice",
+              "value": "Teaching Ideas & Directions",
+              "parameter_list": {
+                "text_align": "center",
+                "style": "large emphasised"
+              },
+              "rows": [
+                {
+                  "type": "display_group",
+                  "name": "dg_advice_accord",
+                  "parameter_list": {
+                    "style": "column"
+                  },
+                  "rows": [
+                    {
+                      "type": "text",
+                      "name": "advice_text",
+                      "value": "These routines can be used for any properties that you feel need emphasizing for your students.\n\n**Very young students:** These routines can be used to build up their vocabulary and an appreciation that objects can be seen in multiple ways depending on the characteristics you want to focus on.\n\n**Slightly older students:** These provide an opportuntiy for developing their eyes and searching through the properties they are familiar with. If you have (tree, bird, fish, rock), it is not immediately obvious which property to use, so your students will be thinking through all the things they know about these things. This is more interesting and leads to better understandings that simply asking which of these things are alive.\n\n**Even older students:** Asking numerical questions gives your students a chance to think about what they know about a group of numbers. For example, if you have (1, 4, 9, 13), is the unusual one 4 for being the only even number, or the 13 for being the only two-digit number, or the 13 for being the only non-square? This provides ideas to discover, explore, and discuss!",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "parameter_list": {
+                        "icon_src": "help",
+                        "style": "navigation"
+                      },
+                      "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.advice_text"
+                    }
+                  ],
+                  "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord"
+                }
+              ],
+              "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice"
+            },
+            {
+              "type": "accordion_section",
+              "name": "accord_topics",
+              "value": "Topics & Goals",
+              "parameter_list": {
+                "text_align": "center",
+                "style": "large emphasised"
+              },
+              "rows": [
+                {
+                  "type": "display_group",
+                  "name": "dg_topics_accord",
+                  "parameter_list": {
+                    "style": "column"
+                  },
+                  "rows": [
+                    {
+                      "type": "text",
+                      "name": "topics_text",
+                      "value": "Object properties is where mathematics starts. It lays the foundation for all the mathematics to come.\n\nSimply memorizng properties leads to a very shallow relationship with them. Interacting more deeply with properties by looking for similarities and differences will lead to a better understanding of them. Asking a student to describe a square is a start; however, if you ask them to find similarities and differences bewtween a square and a triangle you immediatey go more deeply into the material and develop richer understandings.\n\nThis interaction with properties also gives your students a chance to work on their observational and discussion skills.",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "parameter_list": {
+                        "icon_src": "help",
+                        "style": "navigation"
+                      },
+                      "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_topics.dg_topics_accord.topics_text"
+                    }
+                  ],
+                  "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_topics.dg_topics_accord"
+                }
+              ],
+              "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_topics"
+            }
+          ],
+          "_nested_name": "dg_advice.accordion_for_dot_talk_categories"
+        }
+      ],
+      "_nested_name": "dg_advice"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_all_dot_talks",
+      "parameter_list": {
+        "style": "column"
+      },
+      "rows": [
+        {
+          "type": "text",
+          "name": "example__intro",
+          "value": "These routines all practice using object properties by looking for similarities and differences.",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "dg_all_dot_talks.example__intro"
+        },
+        {
+          "type": "accordion",
+          "name": "accordion_for_dot_talk_categories",
+          "parameter_list": {
+            "open_multiple": "TRUE"
+          },
+          "rows": [
+            {
+              "type": "items",
+              "name": "dot_talk_accordions",
+              "value": "@data.esm_similarity_diffs_data_list",
+              "parameter_list": {
+                "filter": "@item.type==\"beginning\""
+              },
+              "rows": [
+                {
+                  "type": "accordion_section",
+                  "name": "accord_@item.id",
+                  "value": "@item.name",
+                  "parameter_list": {
+                    "text_align": "center",
+                    "style": "large emphasised"
+                  },
+                  "rows": [
+                    {
+                      "type": "display_group",
+                      "name": "dg_@item.id",
+                      "parameter_list": {
+                        "style": "column"
+                      },
+                      "rows": [
+                        {
+                          "name": "content_ptr",
+                          "value": "data.esm_similarity_diffs_data_list.@item.id",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "type": "set_variable",
+                          "_nested_name": "dg_all_dot_talks.accordion_for_dot_talk_categories.dot_talk_accordions.accord_@item.id.dg_@item.id.content_ptr",
+                          "_dynamicFields": {
+                            "value": [
+                              {
+                                "fullExpression": "data.esm_similarity_diffs_data_list.@item.id",
+                                "matchedExpression": "@item.id",
+                                "type": "item",
+                                "fieldName": "id"
+                              }
+                            ],
+                            "_nested_name": [
+                              {
+                                "fullExpression": "dg_all_dot_talks.accordion_for_dot_talk_categories.dot_talk_accordions.accord_@item.id.dg_@item.id.content_ptr",
+                                "matchedExpression": "@item.id.dg_",
+                                "type": "item",
+                                "fieldName": "id"
+                              },
+                              {
+                                "fullExpression": "dg_all_dot_talks.accordion_for_dot_talk_categories.dot_talk_accordions.accord_@item.id.dg_@item.id.content_ptr",
+                                "matchedExpression": "@item.id.content_ptr",
+                                "type": "item",
+                                "fieldName": "id"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@item.id": [
+                              "value"
+                            ],
+                            "@item.id.dg_": [
+                              "_nested_name"
+                            ],
+                            "@item.id.content_ptr": [
+                              "_nested_name"
+                            ]
+                          }
+                        },
+                        {
+                          "type": "template",
+                          "name": "dot_talk_body_maker",
+                          "value": "esm_page_viewer",
+                          "rows": [
+                            {
+                              "name": "esm_content_ptr",
+                              "value": "@@local.content_ptr",
+                              "_translations": {
+                                "value": {}
+                              },
+                              "type": "set_variable",
+                              "_nested_name": "dg_all_dot_talks.accordion_for_dot_talk_categories.dot_talk_accordions.accord_@item.id.dg_@item.id.dot_talk_body_maker.esm_content_ptr",
+                              "_dynamicFields": {
+                                "value": [
+                                  {
+                                    "fullExpression": "@@local.content_ptr",
+                                    "matchedExpression": "@local.content_ptr",
+                                    "type": "local",
+                                    "fieldName": "content_ptr"
+                                  }
+                                ],
+                                "_nested_name": [
+                                  {
+                                    "fullExpression": "dg_all_dot_talks.accordion_for_dot_talk_categories.dot_talk_accordions.accord_@item.id.dg_@item.id.dot_talk_body_maker.esm_content_ptr",
+                                    "matchedExpression": "@item.id.dg_",
+                                    "type": "item",
+                                    "fieldName": "id"
+                                  },
+                                  {
+                                    "fullExpression": "dg_all_dot_talks.accordion_for_dot_talk_categories.dot_talk_accordions.accord_@item.id.dg_@item.id.dot_talk_body_maker.esm_content_ptr",
+                                    "matchedExpression": "@item.id.dot_talk_body_maker.esm_content_ptr",
+                                    "type": "item",
+                                    "fieldName": "id"
+                                  }
+                                ]
+                              },
+                              "_dynamicDependencies": {
+                                "@local.content_ptr": [
+                                  "value"
+                                ],
+                                "@item.id.dg_": [
+                                  "_nested_name"
+                                ],
+                                "@item.id.dot_talk_body_maker.esm_content_ptr": [
+                                  "_nested_name"
+                                ]
+                              }
+                            }
+                          ],
+                          "_nested_name": "dg_all_dot_talks.accordion_for_dot_talk_categories.dot_talk_accordions.accord_@item.id.dg_@item.id.dot_talk_body_maker",
+                          "_dynamicFields": {
+                            "_nested_name": [
+                              {
+                                "fullExpression": "dg_all_dot_talks.accordion_for_dot_talk_categories.dot_talk_accordions.accord_@item.id.dg_@item.id.dot_talk_body_maker",
+                                "matchedExpression": "@item.id.dg_",
+                                "type": "item",
+                                "fieldName": "id"
+                              },
+                              {
+                                "fullExpression": "dg_all_dot_talks.accordion_for_dot_talk_categories.dot_talk_accordions.accord_@item.id.dg_@item.id.dot_talk_body_maker",
+                                "matchedExpression": "@item.id.dot_talk_body_maker",
+                                "type": "item",
+                                "fieldName": "id"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@item.id.dg_": [
+                              "_nested_name"
+                            ],
+                            "@item.id.dot_talk_body_maker": [
+                              "_nested_name"
+                            ]
+                          }
+                        }
+                      ],
+                      "_nested_name": "dg_all_dot_talks.accordion_for_dot_talk_categories.dot_talk_accordions.accord_@item.id.dg_@item.id",
+                      "_dynamicFields": {
+                        "name": [
+                          {
+                            "fullExpression": "dg_@item.id",
+                            "matchedExpression": "@item.id",
+                            "type": "item",
+                            "fieldName": "id"
+                          }
+                        ],
+                        "_nested_name": [
+                          {
+                            "fullExpression": "dg_all_dot_talks.accordion_for_dot_talk_categories.dot_talk_accordions.accord_@item.id.dg_@item.id",
+                            "matchedExpression": "@item.id.dg_",
+                            "type": "item",
+                            "fieldName": "id"
+                          },
+                          {
+                            "fullExpression": "dg_all_dot_talks.accordion_for_dot_talk_categories.dot_talk_accordions.accord_@item.id.dg_@item.id",
+                            "matchedExpression": "@item.id",
+                            "type": "item",
+                            "fieldName": "id"
+                          }
+                        ]
+                      },
+                      "_dynamicDependencies": {
+                        "@item.id": [
+                          "name",
+                          "_nested_name"
+                        ],
+                        "@item.id.dg_": [
+                          "_nested_name"
+                        ]
+                      }
+                    }
+                  ],
+                  "_nested_name": "dg_all_dot_talks.accordion_for_dot_talk_categories.dot_talk_accordions.accord_@item.id",
+                  "_dynamicFields": {
+                    "name": [
+                      {
+                        "fullExpression": "accord_@item.id",
+                        "matchedExpression": "@item.id",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ],
+                    "value": [
+                      {
+                        "fullExpression": "@item.name",
+                        "matchedExpression": "@item.name",
+                        "type": "item",
+                        "fieldName": "name"
+                      }
+                    ],
+                    "_nested_name": [
+                      {
+                        "fullExpression": "dg_all_dot_talks.accordion_for_dot_talk_categories.dot_talk_accordions.accord_@item.id",
+                        "matchedExpression": "@item.id",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@item.id": [
+                      "name",
+                      "_nested_name"
+                    ],
+                    "@item.name": [
+                      "value"
+                    ]
+                  }
+                }
+              ],
+              "_nested_name": "dg_all_dot_talks.accordion_for_dot_talk_categories.dot_talk_accordions",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@data.esm_similarity_diffs_data_list",
+                    "matchedExpression": "@data.esm_similarity_diffs_data_list",
+                    "type": "data",
+                    "fieldName": "esm_similarity_diffs_data_list"
+                  }
+                ],
+                "parameter_list": {
+                  "filter": [
+                    {
+                      "fullExpression": "@item.type==\"beginning\"",
+                      "matchedExpression": "@item.type",
+                      "type": "item",
+                      "fieldName": "type"
+                    }
+                  ]
+                }
+              },
+              "_dynamicDependencies": {
+                "@data.esm_similarity_diffs_data_list": [
+                  "value"
+                ],
+                "@item.type": [
+                  "parameter_list.filter"
+                ]
+              }
+            }
+          ],
+          "_nested_name": "dg_all_dot_talks.accordion_for_dot_talk_categories"
+        }
+      ],
+      "_nested_name": "dg_all_dot_talks"
     },
     {
       "type": "display_group",
