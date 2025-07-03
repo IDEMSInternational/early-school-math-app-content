@@ -40,11 +40,46 @@
         },
         {
           "type": "accordion",
-          "name": "accordion_for_dot_talk_categories",
+          "name": "accordion_for_intro",
           "parameter_list": {
             "open_multiple": "TRUE"
           },
           "rows": [
+            {
+              "type": "accordion_section",
+              "name": "accord_topics",
+              "value": "Topics & Goals",
+              "parameter_list": {
+                "text_align": "center",
+                "style": "large emphasised"
+              },
+              "rows": [
+                {
+                  "type": "display_group",
+                  "name": "dg_topics_accord",
+                  "parameter_list": {
+                    "style": "column"
+                  },
+                  "rows": [
+                    {
+                      "type": "text",
+                      "name": "topics_text",
+                      "value": "The goal of using number paths and number lines is to ground the numerical skills being learned with the meaning of the numbers. It serves no purpose to have your students memorize a collection of mathematical facts if they do not know what they are talking about.\n\nAlso, the beginning skills of counting, order, adding and subtracting small numbers are better learned if they are learned in visual and tactile ways.\n\nDoing lots of work with number paths and number liines also helps reinforce the size and spacing of the numbers.",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "parameter_list": {
+                        "icon_src": "help",
+                        "style": "navigation"
+                      },
+                      "_nested_name": "dg_advice.accordion_for_intro.accord_topics.dg_topics_accord.topics_text"
+                    }
+                  ],
+                  "_nested_name": "dg_advice.accordion_for_intro.accord_topics.dg_topics_accord"
+                }
+              ],
+              "_nested_name": "dg_advice.accordion_for_intro.accord_topics"
+            },
             {
               "type": "accordion_section",
               "name": "accord_advice",
@@ -79,7 +114,7 @@
                             "icon_src": "help",
                             "style": "navigation"
                           },
-                          "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.dg_info.intro_text"
+                          "_nested_name": "dg_advice.accordion_for_intro.accord_advice.dg_advice_accord.dg_info.intro_text"
                         },
                         {
                           "type": "display_group",
@@ -122,7 +157,7 @@
                                             "icon_src": "help",
                                             "style": "navigation"
                                           },
-                                          "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types.accord_numbered_cards.dg_numbered_cards.numbered_cards_text"
+                                          "_nested_name": "dg_advice.accordion_for_intro.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types.accord_numbered_cards.dg_numbered_cards.numbered_cards_text"
                                         },
                                         {
                                           "type": "image",
@@ -132,15 +167,15 @@
                                             "value": {}
                                           },
                                           "style_list": [
-                                            "max-width: 260px"
+                                            "max-width: 300px"
                                           ],
-                                          "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types.accord_numbered_cards.dg_numbered_cards.number_cards_on_a_string"
+                                          "_nested_name": "dg_advice.accordion_for_intro.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types.accord_numbered_cards.dg_numbered_cards.number_cards_on_a_string"
                                         }
                                       ],
-                                      "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types.accord_numbered_cards.dg_numbered_cards"
+                                      "_nested_name": "dg_advice.accordion_for_intro.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types.accord_numbered_cards.dg_numbered_cards"
                                     }
                                   ],
-                                  "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types.accord_numbered_cards"
+                                  "_nested_name": "dg_advice.accordion_for_intro.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types.accord_numbered_cards"
                                 },
                                 {
                                   "type": "accordion_section",
@@ -169,7 +204,7 @@
                                             "icon_src": "help",
                                             "style": "navigation"
                                           },
-                                          "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types.accord_number_path.dg_number_path_accord.number_path_text"
+                                          "_nested_name": "dg_advice.accordion_for_intro.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types.accord_number_path.dg_number_path_accord.number_path_text"
                                         },
                                         {
                                           "type": "image",
@@ -179,15 +214,15 @@
                                             "value": {}
                                           },
                                           "style_list": [
-                                            "max-width: 260px"
+                                            "max-width: 300px"
                                           ],
-                                          "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types.accord_number_path.dg_number_path_accord.number_line_to_12"
+                                          "_nested_name": "dg_advice.accordion_for_intro.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types.accord_number_path.dg_number_path_accord.number_line_to_12"
                                         }
                                       ],
-                                      "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types.accord_number_path.dg_number_path_accord"
+                                      "_nested_name": "dg_advice.accordion_for_intro.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types.accord_number_path.dg_number_path_accord"
                                     }
                                   ],
-                                  "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types.accord_number_path"
+                                  "_nested_name": "dg_advice.accordion_for_intro.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types.accord_number_path"
                                 },
                                 {
                                   "type": "accordion_section",
@@ -216,7 +251,7 @@
                                             "icon_src": "help",
                                             "style": "navigation"
                                           },
-                                          "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types.accord_number_line.dg_number_line_accord.number_line_text"
+                                          "_nested_name": "dg_advice.accordion_for_intro.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types.accord_number_line.dg_number_line_accord.number_line_text"
                                         },
                                         {
                                           "type": "image",
@@ -226,15 +261,15 @@
                                             "value": {}
                                           },
                                           "style_list": [
-                                            "max-width: 260px"
+                                            "max-width: 300px"
                                           ],
-                                          "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types.accord_number_line.dg_number_line_accord.number_line_to_12"
+                                          "_nested_name": "dg_advice.accordion_for_intro.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types.accord_number_line.dg_number_line_accord.number_line_to_12"
                                         }
                                       ],
-                                      "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types.accord_number_line.dg_number_line_accord"
+                                      "_nested_name": "dg_advice.accordion_for_intro.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types.accord_number_line.dg_number_line_accord"
                                     }
                                   ],
-                                  "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types.accord_number_line"
+                                  "_nested_name": "dg_advice.accordion_for_intro.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types.accord_number_line"
                                 },
                                 {
                                   "type": "accordion_section",
@@ -263,22 +298,22 @@
                                             "icon_src": "help",
                                             "style": "navigation"
                                           },
-                                          "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types.accord_100_chart.dg_100_chart.chart_text"
+                                          "_nested_name": "dg_advice.accordion_for_intro.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types.accord_100_chart.dg_100_chart.chart_text"
                                         }
                                       ],
-                                      "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types.accord_100_chart.dg_100_chart"
+                                      "_nested_name": "dg_advice.accordion_for_intro.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types.accord_100_chart.dg_100_chart"
                                     }
                                   ],
-                                  "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types.accord_100_chart"
+                                  "_nested_name": "dg_advice.accordion_for_intro.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types.accord_100_chart"
                                 }
                               ],
-                              "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types"
+                              "_nested_name": "dg_advice.accordion_for_intro.accord_advice.dg_advice_accord.dg_info.dg_nl_types.accordion_for_nl_types"
                             }
                           ],
-                          "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.dg_info.dg_nl_types"
+                          "_nested_name": "dg_advice.accordion_for_intro.accord_advice.dg_advice_accord.dg_info.dg_nl_types"
                         }
                       ],
-                      "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.dg_info"
+                      "_nested_name": "dg_advice.accordion_for_intro.accord_advice.dg_advice_accord.dg_info"
                     },
                     {
                       "type": "text",
@@ -287,51 +322,16 @@
                       "_translations": {
                         "value": {}
                       },
-                      "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.text_three_stages"
+                      "_nested_name": "dg_advice.accordion_for_intro.accord_advice.dg_advice_accord.text_three_stages"
                     }
                   ],
-                  "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord"
+                  "_nested_name": "dg_advice.accordion_for_intro.accord_advice.dg_advice_accord"
                 }
               ],
-              "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice"
-            },
-            {
-              "type": "accordion_section",
-              "name": "accord_topics",
-              "value": "Topics & Goals",
-              "parameter_list": {
-                "text_align": "center",
-                "style": "large emphasised"
-              },
-              "rows": [
-                {
-                  "type": "display_group",
-                  "name": "dg_topics_accord",
-                  "parameter_list": {
-                    "style": "column"
-                  },
-                  "rows": [
-                    {
-                      "type": "text",
-                      "name": "topics_text",
-                      "value": "The goal of using number paths and number lines is to ground the numerical skills being learned with the meaning of the numbers. It serves no purpose to have your students memorize a collection of mathematical facts if they do not know what they are talking about.\n\nAlso, the beginning skills of counting, order, adding and subtracting small numbers are better learned if they are learned visual and tactile ways.\n\nDoing lots of work with number paths and number liines also helps reinforce the size and spacing of the numbers.",
-                      "_translations": {
-                        "value": {}
-                      },
-                      "parameter_list": {
-                        "icon_src": "help",
-                        "style": "navigation"
-                      },
-                      "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_topics.dg_topics_accord.topics_text"
-                    }
-                  ],
-                  "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_topics.dg_topics_accord"
-                }
-              ],
-              "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_topics"
+              "_nested_name": "dg_advice.accordion_for_intro.accord_advice"
             }
           ],
-          "_nested_name": "dg_advice.accordion_for_dot_talk_categories"
+          "_nested_name": "dg_advice.accordion_for_intro"
         }
       ],
       "_nested_name": "dg_advice"

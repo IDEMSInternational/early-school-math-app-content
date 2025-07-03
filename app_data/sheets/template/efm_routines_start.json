@@ -138,30 +138,6 @@
                     },
                     {
                       "type": "button",
-                      "name": "button_pattern_block_challenges",
-                      "value": "Pattern Block Challenges",
-                      "_translations": {
-                        "value": {}
-                      },
-                      "action_list": [
-                        {
-                          "trigger": "click",
-                          "action_id": "go_to",
-                          "args": [
-                            "esm_pattern_block_challenges"
-                          ],
-                          "_raw": "click | go_to: esm_pattern_block_challenges",
-                          "_cleaned": "click | go_to: esm_pattern_block_challenges"
-                        }
-                      ],
-                      "parameter_list": {
-                        "style": "short",
-                        "text_align": "center"
-                      },
-                      "_nested_name": "dg_info.accordion_for_routines.level_shapes.dg_routinelist_shapes.button_pattern_block_challenges"
-                    },
-                    {
-                      "type": "button",
                       "name": "button_short_games_properties",
                       "value": "Short Games – Properties",
                       "_translations": {
@@ -183,6 +159,30 @@
                         "text_align": "center"
                       },
                       "_nested_name": "dg_info.accordion_for_routines.level_shapes.dg_routinelist_shapes.button_short_games_properties"
+                    },
+                    {
+                      "type": "button",
+                      "name": "button_pattern_block_challenges",
+                      "value": "~~Pattern Block Challenges~~",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "action_list": [
+                        {
+                          "trigger": "click",
+                          "action_id": "go_to",
+                          "args": [
+                            "esm_pattern_block_challenges"
+                          ],
+                          "_raw": "click | go_to: esm_pattern_block_challenges",
+                          "_cleaned": "click | go_to: esm_pattern_block_challenges"
+                        }
+                      ],
+                      "parameter_list": {
+                        "style": "short",
+                        "text_align": "center"
+                      },
+                      "_nested_name": "dg_info.accordion_for_routines.level_shapes.dg_routinelist_shapes.button_pattern_block_challenges"
                     }
                   ],
                   "_nested_name": "dg_info.accordion_for_routines.level_shapes.dg_routinelist_shapes"
@@ -470,8 +470,32 @@
                     },
                     {
                       "type": "button",
+                      "name": "button_short_games",
+                      "value": "Short Games – Small Add Sub",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "action_list": [
+                        {
+                          "trigger": "click",
+                          "action_id": "go_to",
+                          "args": [
+                            "esm_short_games_small_add_sub"
+                          ],
+                          "_raw": "click | go_to: esm_short_games_small_add_sub",
+                          "_cleaned": "click | go_to: esm_short_games_small_add_sub"
+                        }
+                      ],
+                      "parameter_list": {
+                        "style": "short",
+                        "text_align": "center"
+                      },
+                      "_nested_name": "dg_info.accordion_for_routines.level_misc.dg_routinelist_misc.button_short_games"
+                    },
+                    {
+                      "type": "button",
                       "name": "button_equality_concept",
-                      "value": "Equality Concept",
+                      "value": "~~Equality Concept~~",
                       "_translations": {
                         "value": {}
                       },
@@ -495,7 +519,7 @@
                     {
                       "type": "button",
                       "name": "button_number_patterns",
-                      "value": "Number Patterns",
+                      "value": "~~Number Patterns~~",
                       "_translations": {
                         "value": {}
                       },
@@ -519,7 +543,7 @@
                     {
                       "type": "button",
                       "name": "button_fluency_practice",
-                      "value": "Fluency Practice",
+                      "value": "~~Fluency Practice~~",
                       "_translations": {
                         "value": {}
                       },
@@ -539,30 +563,6 @@
                         "text_align": "center"
                       },
                       "_nested_name": "dg_info.accordion_for_routines.level_misc.dg_routinelist_misc.button_fluency_practice"
-                    },
-                    {
-                      "type": "button",
-                      "name": "button_short_games",
-                      "value": "Short Games - Small Add Sub",
-                      "_translations": {
-                        "value": {}
-                      },
-                      "action_list": [
-                        {
-                          "trigger": "click",
-                          "action_id": "go_to",
-                          "args": [
-                            "esm_short_games_small_add_sub"
-                          ],
-                          "_raw": "click | go_to: esm_short_games_small_add_sub",
-                          "_cleaned": "click | go_to: esm_short_games_small_add_sub"
-                        }
-                      ],
-                      "parameter_list": {
-                        "style": "short",
-                        "text_align": "center"
-                      },
-                      "_nested_name": "dg_info.accordion_for_routines.level_misc.dg_routinelist_misc.button_short_games"
                     }
                   ],
                   "_nested_name": "dg_info.accordion_for_routines.level_misc.dg_routinelist_misc"

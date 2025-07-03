@@ -29,7 +29,7 @@
         {
           "type": "text",
           "name": "help_text",
-          "value": "Find ways to create the same value on two sides of an equal sign. This might be just text.",
+          "value": "THIS NEEDS TO BE WRITTEN\n\nFind ways to create the same value on two sides of an equal sign. This might be just text.",
           "_translations": {
             "value": {}
           },
@@ -45,53 +45,17 @@
     {
       "type": "display_group",
       "name": "dg_advice",
-      "condition": false,
       "parameter_list": {
         "style": "column"
       },
       "rows": [
         {
           "type": "accordion",
-          "name": "accordion_for_dot_talk_categories",
+          "name": "accordion_for_intro",
           "parameter_list": {
             "open_multiple": "TRUE"
           },
           "rows": [
-            {
-              "type": "accordion_section",
-              "name": "accord_advice",
-              "value": "Teaching Ideas & Directions",
-              "parameter_list": {
-                "text_align": "center",
-                "style": "large emphasised"
-              },
-              "rows": [
-                {
-                  "type": "display_group",
-                  "name": "dg_advice_accord",
-                  "parameter_list": {
-                    "style": "column"
-                  },
-                  "rows": [
-                    {
-                      "type": "text",
-                      "name": "advice_text",
-                      "value": "**Subitizing** is",
-                      "_translations": {
-                        "value": {}
-                      },
-                      "parameter_list": {
-                        "icon_src": "help",
-                        "style": "navigation"
-                      },
-                      "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.advice_text"
-                    }
-                  ],
-                  "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord"
-                }
-              ],
-              "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice"
-            },
             {
               "type": "accordion_section",
               "name": "accord_topics",
@@ -111,7 +75,7 @@
                     {
                       "type": "text",
                       "name": "topics_text",
-                      "value": "This",
+                      "value": "Write this",
                       "_translations": {
                         "value": {}
                       },
@@ -119,16 +83,51 @@
                         "icon_src": "help",
                         "style": "navigation"
                       },
-                      "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_topics.dg_topics_accord.topics_text"
+                      "_nested_name": "dg_advice.accordion_for_intro.accord_topics.dg_topics_accord.topics_text"
                     }
                   ],
-                  "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_topics.dg_topics_accord"
+                  "_nested_name": "dg_advice.accordion_for_intro.accord_topics.dg_topics_accord"
                 }
               ],
-              "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_topics"
+              "_nested_name": "dg_advice.accordion_for_intro.accord_topics"
+            },
+            {
+              "type": "accordion_section",
+              "name": "accord_advice",
+              "value": "Teaching Ideas & Directions",
+              "parameter_list": {
+                "text_align": "center",
+                "style": "large emphasised"
+              },
+              "rows": [
+                {
+                  "type": "display_group",
+                  "name": "dg_advice_accord",
+                  "parameter_list": {
+                    "style": "column"
+                  },
+                  "rows": [
+                    {
+                      "type": "text",
+                      "name": "advice_text",
+                      "value": "Write this",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "parameter_list": {
+                        "icon_src": "help",
+                        "style": "navigation"
+                      },
+                      "_nested_name": "dg_advice.accordion_for_intro.accord_advice.dg_advice_accord.advice_text"
+                    }
+                  ],
+                  "_nested_name": "dg_advice.accordion_for_intro.accord_advice.dg_advice_accord"
+                }
+              ],
+              "_nested_name": "dg_advice.accordion_for_intro.accord_advice"
             }
           ],
-          "_nested_name": "dg_advice.accordion_for_dot_talk_categories"
+          "_nested_name": "dg_advice.accordion_for_intro"
         }
       ],
       "_nested_name": "dg_advice"

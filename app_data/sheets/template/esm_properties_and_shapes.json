@@ -29,7 +29,7 @@
         {
           "type": "text",
           "name": "help_text",
-          "value": "These talks introduce students to properties of objects, and to shapes in particular. You will introduce your students to the basic 2D and 3D shapes - circle, triangle, square, rectangle, pentagon, hexagon, octagon, ball, box, and cylinder. You may choose to add other shapes to this list, such as oval, semi-circle, right triangle, kite, parallelogram, trapezoid (trapezium), and pyramid.\n\nSome of these tasks overlap with some of the Short Math Games - e.g. Same and Different, Which One Doesn't Belong.",
+          "value": "These talks introduce students to properties of general objects, and to shapes in particular. Iintroduce your students to the basic 2D and 3D shapes.",
           "_translations": {
             "value": {}
           },
@@ -51,11 +51,46 @@
       "rows": [
         {
           "type": "accordion",
-          "name": "accordion_for_dot_talk_categories",
+          "name": "accordion_for_intro",
           "parameter_list": {
             "open_multiple": "TRUE"
           },
           "rows": [
+            {
+              "type": "accordion_section",
+              "name": "accord_topics",
+              "value": "Topics & Goals",
+              "parameter_list": {
+                "text_align": "center",
+                "style": "large emphasised"
+              },
+              "rows": [
+                {
+                  "type": "display_group",
+                  "name": "dg_topics_accord",
+                  "parameter_list": {
+                    "style": "column"
+                  },
+                  "rows": [
+                    {
+                      "type": "text",
+                      "name": "topics_text",
+                      "value": "These tasks are not only mathematically valuable, they introduce these young students to voicing their mathematical ideas collaboratively. Almost all these tasks involve the students observing a situation, and then voicing and comparing their ideas about it. Students are taught that images and visualization is an important part of mathematics, along with the more numerical aspects of the discipline.\n\nIintroduce your students to the basic 2D and 3D shapes – circle, triangle, square, rectangle, pentagon, hexagon, octagon, ball, box, and cylinder. You may add other shapes to this list, such as oval, semi-circle, right triangle, kite, parallelogram, trapezoid (trapezium), and pyramid.\n\nSome of these tasks overlap with some of the Short Math Games - e.g. Same and Different, Which One Doesn't Belong.",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "parameter_list": {
+                        "icon_src": "help",
+                        "style": "navigation"
+                      },
+                      "_nested_name": "dg_advice.accordion_for_intro.accord_topics.dg_topics_accord.topics_text"
+                    }
+                  ],
+                  "_nested_name": "dg_advice.accordion_for_intro.accord_topics.dg_topics_accord"
+                }
+              ],
+              "_nested_name": "dg_advice.accordion_for_intro.accord_topics"
+            },
             {
               "type": "accordion_section",
               "name": "accord_advice",
@@ -83,51 +118,16 @@
                         "icon_src": "help",
                         "style": "navigation"
                       },
-                      "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.advice_text"
+                      "_nested_name": "dg_advice.accordion_for_intro.accord_advice.dg_advice_accord.advice_text"
                     }
                   ],
-                  "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord"
+                  "_nested_name": "dg_advice.accordion_for_intro.accord_advice.dg_advice_accord"
                 }
               ],
-              "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice"
-            },
-            {
-              "type": "accordion_section",
-              "name": "accord_topics",
-              "value": "Topics & Goals",
-              "parameter_list": {
-                "text_align": "center",
-                "style": "large emphasised"
-              },
-              "rows": [
-                {
-                  "type": "display_group",
-                  "name": "dg_topics_accord",
-                  "parameter_list": {
-                    "style": "column"
-                  },
-                  "rows": [
-                    {
-                      "type": "text",
-                      "name": "topics_text",
-                      "value": "These tasks are not only mathematically valuable, they also introduce these young students to voicing their mathematical ideas collaboratively. Almost all these tasks involve the students observing a situation, and then voicing and comparing their ideas about it. Students are taught that images and visualization is an important part of mathematics, along with the more numerical aspects of the discipline.",
-                      "_translations": {
-                        "value": {}
-                      },
-                      "parameter_list": {
-                        "icon_src": "help",
-                        "style": "navigation"
-                      },
-                      "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_topics.dg_topics_accord.topics_text"
-                    }
-                  ],
-                  "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_topics.dg_topics_accord"
-                }
-              ],
-              "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_topics"
+              "_nested_name": "dg_advice.accordion_for_intro.accord_advice"
             }
           ],
-          "_nested_name": "dg_advice.accordion_for_dot_talk_categories"
+          "_nested_name": "dg_advice.accordion_for_intro"
         }
       ],
       "_nested_name": "dg_advice"

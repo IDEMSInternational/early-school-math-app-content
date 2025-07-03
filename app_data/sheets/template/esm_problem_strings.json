@@ -29,7 +29,7 @@
         {
           "type": "text",
           "name": "help_text",
-          "value": "Problem Strings",
+          "value": "A Problem String is a carefully crafted sequence of related mental arithemetic problems that encourage students to discover mathematical relationships and practice effective strategies for understanding and working those problems. Different approaches discovered by students are celebrated and compared in this routine. Similar to most routines, these also provide a great platform for students to practice presenting and discussing mathematical ideas.",
           "_translations": {
             "value": {}
           },
@@ -45,53 +45,17 @@
     {
       "type": "display_group",
       "name": "dg_advice",
-      "condition": false,
       "parameter_list": {
         "style": "column"
       },
       "rows": [
         {
           "type": "accordion",
-          "name": "accordion_for_dot_talk_categories",
+          "name": "accordion_for_intro",
           "parameter_list": {
             "open_multiple": "TRUE"
           },
           "rows": [
-            {
-              "type": "accordion_section",
-              "name": "accord_advice",
-              "value": "Teaching Ideas & Directions",
-              "parameter_list": {
-                "text_align": "center",
-                "style": "large emphasised"
-              },
-              "rows": [
-                {
-                  "type": "display_group",
-                  "name": "dg_advice_accord",
-                  "parameter_list": {
-                    "style": "column"
-                  },
-                  "rows": [
-                    {
-                      "type": "text",
-                      "name": "advice_text",
-                      "value": "**Subitizing** is",
-                      "_translations": {
-                        "value": {}
-                      },
-                      "parameter_list": {
-                        "icon_src": "help",
-                        "style": "navigation"
-                      },
-                      "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.advice_text"
-                    }
-                  ],
-                  "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord"
-                }
-              ],
-              "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice"
-            },
             {
               "type": "accordion_section",
               "name": "accord_topics",
@@ -111,7 +75,7 @@
                     {
                       "type": "text",
                       "name": "topics_text",
-                      "value": "This",
+                      "value": "Each Problem String targets a general type of mental arithmetic calculation. Encourage play with the different possible strategies that yours students come up with. Have a lively discussion of the pros and cons of the various methods proposed by the studetns. This approach allows your students to survey the set of techniques they have at hand, and to extend their set as powerful methods are suggested by other students. The teacher directs the conversation and makes notes on the board highlighting significant connections and relationships described by the students.",
                       "_translations": {
                         "value": {}
                       },
@@ -119,19 +83,316 @@
                         "icon_src": "help",
                         "style": "navigation"
                       },
-                      "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_topics.dg_topics_accord.topics_text"
+                      "_nested_name": "dg_advice.accordion_for_intro.accord_topics.dg_topics_accord.topics_text"
                     }
                   ],
-                  "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_topics.dg_topics_accord"
+                  "_nested_name": "dg_advice.accordion_for_intro.accord_topics.dg_topics_accord"
                 }
               ],
-              "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_topics"
+              "_nested_name": "dg_advice.accordion_for_intro.accord_topics"
+            },
+            {
+              "type": "accordion_section",
+              "name": "accord_advice",
+              "value": "Teaching Ideas & Directions",
+              "parameter_list": {
+                "text_align": "center",
+                "style": "large emphasised"
+              },
+              "rows": [
+                {
+                  "type": "display_group",
+                  "name": "dg_advice_accord",
+                  "parameter_list": {
+                    "style": "column"
+                  },
+                  "rows": [
+                    {
+                      "type": "text",
+                      "name": "advice_text",
+                      "value": "**Problem Strings** use a string of problems in an open-ended way, allowing for exploration and discovery by students on their own of interesting methods and approaches. In contrast, **Number Strings** engage children in mentally solving a string of related equations all of which highlight a single computation strategy or method targeted in advance by the teacher.\n\nTypically a group of strategies are involved in a Problem String. Be flexible about accepting which strategies your students propose and gravitate toward. Present a sequence of expressions or equations that encourage students to practice some general type of calculation. For example, problems might involve compensation ideas and fact families.\n\nAfter introducing the task, give students the first problem and engage in a conversation about how they solved it, highlighting efficient strategies and how the strategies work. Record these ideas on the board. The teacher then poses another problem in the sequence and repeats the process, usually offering three to five problems in a session. At the end of the activity, the teacher synthesizes the methods students found helpful and the mathematical goal of the lesson.",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "parameter_list": {
+                        "icon_src": "help",
+                        "style": "navigation"
+                      },
+                      "_nested_name": "dg_advice.accordion_for_intro.accord_advice.dg_advice_accord.advice_text"
+                    }
+                  ],
+                  "_nested_name": "dg_advice.accordion_for_intro.accord_advice.dg_advice_accord"
+                }
+              ],
+              "_nested_name": "dg_advice.accordion_for_intro.accord_advice"
             }
           ],
-          "_nested_name": "dg_advice.accordion_for_dot_talk_categories"
+          "_nested_name": "dg_advice.accordion_for_intro"
         }
       ],
       "_nested_name": "dg_advice"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_prob_string_talks",
+      "parameter_list": {
+        "style": "column"
+      },
+      "rows": [
+        {
+          "type": "text",
+          "name": "intro_text",
+          "value": "In each sequence of problems, earlier problems may be helpful to do subsequent problems. Prompt students to discuss the various connections between the problems in a string.",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "dg_prob_string_talks.intro_text"
+        },
+        {
+          "type": "accordion",
+          "name": "accordion_for_prob_string_groups",
+          "parameter_list": {
+            "open_multiple": "TRUE"
+          },
+          "rows": [
+            {
+              "type": "items",
+              "name": "problem_string_accordions",
+              "value": "@data.esm_problem_strings_data_list",
+              "rows": [
+                {
+                  "type": "accordion_section",
+                  "name": "accord_@item.id",
+                  "value": "@item.name",
+                  "parameter_list": {
+                    "text_align": "center",
+                    "style": "large emphasised"
+                  },
+                  "rows": [
+                    {
+                      "type": "display_group",
+                      "name": "dg_@item.id",
+                      "parameter_list": {
+                        "style": "column"
+                      },
+                      "rows": [
+                        {
+                          "name": "content_ptr",
+                          "value": "data.esm_problem_strings_data_list.@item.id",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "type": "set_variable",
+                          "_nested_name": "dg_prob_string_talks.accordion_for_prob_string_groups.problem_string_accordions.accord_@item.id.dg_@item.id.content_ptr",
+                          "_dynamicFields": {
+                            "value": [
+                              {
+                                "fullExpression": "data.esm_problem_strings_data_list.@item.id",
+                                "matchedExpression": "@item.id",
+                                "type": "item",
+                                "fieldName": "id"
+                              }
+                            ],
+                            "_nested_name": [
+                              {
+                                "fullExpression": "dg_prob_string_talks.accordion_for_prob_string_groups.problem_string_accordions.accord_@item.id.dg_@item.id.content_ptr",
+                                "matchedExpression": "@item.id.dg_",
+                                "type": "item",
+                                "fieldName": "id"
+                              },
+                              {
+                                "fullExpression": "dg_prob_string_talks.accordion_for_prob_string_groups.problem_string_accordions.accord_@item.id.dg_@item.id.content_ptr",
+                                "matchedExpression": "@item.id.content_ptr",
+                                "type": "item",
+                                "fieldName": "id"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@item.id": [
+                              "value"
+                            ],
+                            "@item.id.dg_": [
+                              "_nested_name"
+                            ],
+                            "@item.id.content_ptr": [
+                              "_nested_name"
+                            ]
+                          }
+                        },
+                        {
+                          "type": "template",
+                          "name": "problem_string_body_maker",
+                          "value": "esm_page_viewer",
+                          "rows": [
+                            {
+                              "name": "esm_content_ptr",
+                              "value": "@@local.content_ptr",
+                              "_translations": {
+                                "value": {}
+                              },
+                              "type": "set_variable",
+                              "_nested_name": "dg_prob_string_talks.accordion_for_prob_string_groups.problem_string_accordions.accord_@item.id.dg_@item.id.problem_string_body_maker.esm_content_ptr",
+                              "_dynamicFields": {
+                                "value": [
+                                  {
+                                    "fullExpression": "@@local.content_ptr",
+                                    "matchedExpression": "@local.content_ptr",
+                                    "type": "local",
+                                    "fieldName": "content_ptr"
+                                  }
+                                ],
+                                "_nested_name": [
+                                  {
+                                    "fullExpression": "dg_prob_string_talks.accordion_for_prob_string_groups.problem_string_accordions.accord_@item.id.dg_@item.id.problem_string_body_maker.esm_content_ptr",
+                                    "matchedExpression": "@item.id.dg_",
+                                    "type": "item",
+                                    "fieldName": "id"
+                                  },
+                                  {
+                                    "fullExpression": "dg_prob_string_talks.accordion_for_prob_string_groups.problem_string_accordions.accord_@item.id.dg_@item.id.problem_string_body_maker.esm_content_ptr",
+                                    "matchedExpression": "@item.id.problem_string_body_maker.esm_content_ptr",
+                                    "type": "item",
+                                    "fieldName": "id"
+                                  }
+                                ]
+                              },
+                              "_dynamicDependencies": {
+                                "@local.content_ptr": [
+                                  "value"
+                                ],
+                                "@item.id.dg_": [
+                                  "_nested_name"
+                                ],
+                                "@item.id.problem_string_body_maker.esm_content_ptr": [
+                                  "_nested_name"
+                                ]
+                              }
+                            }
+                          ],
+                          "_nested_name": "dg_prob_string_talks.accordion_for_prob_string_groups.problem_string_accordions.accord_@item.id.dg_@item.id.problem_string_body_maker",
+                          "_dynamicFields": {
+                            "_nested_name": [
+                              {
+                                "fullExpression": "dg_prob_string_talks.accordion_for_prob_string_groups.problem_string_accordions.accord_@item.id.dg_@item.id.problem_string_body_maker",
+                                "matchedExpression": "@item.id.dg_",
+                                "type": "item",
+                                "fieldName": "id"
+                              },
+                              {
+                                "fullExpression": "dg_prob_string_talks.accordion_for_prob_string_groups.problem_string_accordions.accord_@item.id.dg_@item.id.problem_string_body_maker",
+                                "matchedExpression": "@item.id.problem_string_body_maker",
+                                "type": "item",
+                                "fieldName": "id"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@item.id.dg_": [
+                              "_nested_name"
+                            ],
+                            "@item.id.problem_string_body_maker": [
+                              "_nested_name"
+                            ]
+                          }
+                        }
+                      ],
+                      "_nested_name": "dg_prob_string_talks.accordion_for_prob_string_groups.problem_string_accordions.accord_@item.id.dg_@item.id",
+                      "_dynamicFields": {
+                        "name": [
+                          {
+                            "fullExpression": "dg_@item.id",
+                            "matchedExpression": "@item.id",
+                            "type": "item",
+                            "fieldName": "id"
+                          }
+                        ],
+                        "_nested_name": [
+                          {
+                            "fullExpression": "dg_prob_string_talks.accordion_for_prob_string_groups.problem_string_accordions.accord_@item.id.dg_@item.id",
+                            "matchedExpression": "@item.id.dg_",
+                            "type": "item",
+                            "fieldName": "id"
+                          },
+                          {
+                            "fullExpression": "dg_prob_string_talks.accordion_for_prob_string_groups.problem_string_accordions.accord_@item.id.dg_@item.id",
+                            "matchedExpression": "@item.id",
+                            "type": "item",
+                            "fieldName": "id"
+                          }
+                        ]
+                      },
+                      "_dynamicDependencies": {
+                        "@item.id": [
+                          "name",
+                          "_nested_name"
+                        ],
+                        "@item.id.dg_": [
+                          "_nested_name"
+                        ]
+                      }
+                    }
+                  ],
+                  "_nested_name": "dg_prob_string_talks.accordion_for_prob_string_groups.problem_string_accordions.accord_@item.id",
+                  "_dynamicFields": {
+                    "name": [
+                      {
+                        "fullExpression": "accord_@item.id",
+                        "matchedExpression": "@item.id",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ],
+                    "value": [
+                      {
+                        "fullExpression": "@item.name",
+                        "matchedExpression": "@item.name",
+                        "type": "item",
+                        "fieldName": "name"
+                      }
+                    ],
+                    "_nested_name": [
+                      {
+                        "fullExpression": "dg_prob_string_talks.accordion_for_prob_string_groups.problem_string_accordions.accord_@item.id",
+                        "matchedExpression": "@item.id",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@item.id": [
+                      "name",
+                      "_nested_name"
+                    ],
+                    "@item.name": [
+                      "value"
+                    ]
+                  }
+                }
+              ],
+              "_nested_name": "dg_prob_string_talks.accordion_for_prob_string_groups.problem_string_accordions",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@data.esm_problem_strings_data_list",
+                    "matchedExpression": "@data.esm_problem_strings_data_list",
+                    "type": "data",
+                    "fieldName": "esm_problem_strings_data_list"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@data.esm_problem_strings_data_list": [
+                  "value"
+                ]
+              }
+            }
+          ],
+          "_nested_name": "dg_prob_string_talks.accordion_for_prob_string_groups"
+        }
+      ],
+      "_nested_name": "dg_prob_string_talks"
     },
     {
       "type": "display_group",

@@ -29,7 +29,7 @@
         {
           "type": "text",
           "name": "help_text",
-          "value": "Number Strings engages children in mentally solving a “string” of related equations. This task is designed to highlight efficient computation strategies and develop understanding of properties of operations. In this activity, teachers present a sequence of equations that encourage students to notice a particular mathematical concept or make use of a particular strategy. After introducing the task, the teacher gives students the first problem and then engages students in a conversation about how they solved it, highlighting efficient strategies and how the strategies work. These ideas are recorded on the board, sometimes with an accompanying representation. The teacher then poses another problem and repeats the process, usually offering three to five problems in a session. At the end of the activity, the teacher synthesizes the strategies that students found helpful and the mathematical goal of the lesson.\n\n\nIn each sequence, earlier problems may be helpful to do subsequent problems. Prompt students to discuss the various connections between the problems in a string.\n\n**Doubles**\n\n* 1 + 1; 2 + 2; 3 + 3; 4 + 4\n* 1 + 1; 2 + 2; 4 + 4; 6 + 6\n\n**Addition Adjust by 1 & Near Doubles**\n\n* 4 + 4; 4 + 5; 4 + 6; 5 + 5\n* 5 + 7; 6 + 6; 6 + 7; 6 + 8\n* 9 + 6; 10 + 5; 10 + 6; 8 + 6\n\n**Subtraction Adjust by 1**\n\n* 8 - 4; 9 - 5; 9 - 4; 10 - 5\n\n**Subtraction with Compensation**\n\n* 13 - 8; 15 - 10; 16 - 11; 11 - 6\n\n**10 as a Bridge in Addition**\n\n* 5 + 8; 6 + 9; 6 + 8; 4 + 9\n\n**10 as a Bridge in Subtraction**\n\n* 15 - 10; 10 - 8; 15 - 8; 15 - 9\n\n**Add – Subtract Fact Families**\n\n* 5 + 7; 6 + 7; 12 - 7; 13 - 7",
+          "value": "A Number String is a sequence of computation problems that encourage mental calculations designed to reinforce a specific arithmetic skill. Similar to most routines, they also provide a great platform for students to practice presenting and discussing mathematical ideas.",
           "_translations": {
             "value": {}
           },
@@ -45,53 +45,17 @@
     {
       "type": "display_group",
       "name": "dg_advice",
-      "condition": false,
       "parameter_list": {
         "style": "column"
       },
       "rows": [
         {
           "type": "accordion",
-          "name": "accordion_for_dot_talk_categories",
+          "name": "accordion_for_intro",
           "parameter_list": {
             "open_multiple": "TRUE"
           },
           "rows": [
-            {
-              "type": "accordion_section",
-              "name": "accord_advice",
-              "value": "Teaching Ideas & Directions",
-              "parameter_list": {
-                "text_align": "center",
-                "style": "large emphasised"
-              },
-              "rows": [
-                {
-                  "type": "display_group",
-                  "name": "dg_advice_accord",
-                  "parameter_list": {
-                    "style": "column"
-                  },
-                  "rows": [
-                    {
-                      "type": "text",
-                      "name": "advice_text",
-                      "value": "**Subitizing** is",
-                      "_translations": {
-                        "value": {}
-                      },
-                      "parameter_list": {
-                        "icon_src": "help",
-                        "style": "navigation"
-                      },
-                      "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.advice_text"
-                    }
-                  ],
-                  "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord"
-                }
-              ],
-              "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice"
-            },
             {
               "type": "accordion_section",
               "name": "accord_topics",
@@ -111,7 +75,7 @@
                     {
                       "type": "text",
                       "name": "topics_text",
-                      "value": "This",
+                      "value": "Number strings are used to reinforce any strategy or method of basic arithmetic. Similar to most routines, they also provide a great platform for students to practice presenting and discussing mathematical ideas.",
                       "_translations": {
                         "value": {}
                       },
@@ -119,19 +83,316 @@
                         "icon_src": "help",
                         "style": "navigation"
                       },
-                      "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_topics.dg_topics_accord.topics_text"
+                      "_nested_name": "dg_advice.accordion_for_intro.accord_topics.dg_topics_accord.topics_text"
                     }
                   ],
-                  "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_topics.dg_topics_accord"
+                  "_nested_name": "dg_advice.accordion_for_intro.accord_topics.dg_topics_accord"
                 }
               ],
-              "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_topics"
+              "_nested_name": "dg_advice.accordion_for_intro.accord_topics"
+            },
+            {
+              "type": "accordion_section",
+              "name": "accord_advice",
+              "value": "Teaching Ideas & Directions",
+              "parameter_list": {
+                "text_align": "center",
+                "style": "large emphasised"
+              },
+              "rows": [
+                {
+                  "type": "display_group",
+                  "name": "dg_advice_accord",
+                  "parameter_list": {
+                    "style": "column"
+                  },
+                  "rows": [
+                    {
+                      "type": "text",
+                      "name": "advice_text",
+                      "value": "**Number Strings** engage children in mentally solving a string of related equations. Each task is designed to highlight a single computation strategy or method and develop understanding of properties of operations. In contrast, **Problem Strings** use a string of problems in a more open-ended way, allowing for more exploration and discovery on their own of interesting methods and approaches.\n\nDetermined a goal strategy or method for the students to practice. Present a sequence of expressions or equations that encourage students to notice / discover that goal method and practice it. After introducing the task, give students the first problem and engage in a conversation about how they solved it, highlighting efficient strategies and how the strategies work. Record these ideas on the board. The teacher then poses another problem in the sequence and repeats the process, usually offering three to five problems in a session. At the end of the activity, the teacher synthesizes the methods students found helpful and the mathematical goal of the lesson.",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "parameter_list": {
+                        "icon_src": "help",
+                        "style": "navigation"
+                      },
+                      "_nested_name": "dg_advice.accordion_for_intro.accord_advice.dg_advice_accord.advice_text"
+                    }
+                  ],
+                  "_nested_name": "dg_advice.accordion_for_intro.accord_advice.dg_advice_accord"
+                }
+              ],
+              "_nested_name": "dg_advice.accordion_for_intro.accord_advice"
             }
           ],
-          "_nested_name": "dg_advice.accordion_for_dot_talk_categories"
+          "_nested_name": "dg_advice.accordion_for_intro"
         }
       ],
       "_nested_name": "dg_advice"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_num_string_talks",
+      "parameter_list": {
+        "style": "column"
+      },
+      "rows": [
+        {
+          "type": "text",
+          "name": "intro_text",
+          "value": "In each sequence of problems, earlier problems may be helpful to do subsequent problems. Prompt students to discuss the various connections between the problems in a string.",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "dg_num_string_talks.intro_text"
+        },
+        {
+          "type": "accordion",
+          "name": "accordion_for_num_string_groups",
+          "parameter_list": {
+            "open_multiple": "TRUE"
+          },
+          "rows": [
+            {
+              "type": "items",
+              "name": "number_string_accordions",
+              "value": "@data.esm_number_strings_data_list",
+              "rows": [
+                {
+                  "type": "accordion_section",
+                  "name": "accord_@item.id",
+                  "value": "@item.name",
+                  "parameter_list": {
+                    "text_align": "center",
+                    "style": "large emphasised"
+                  },
+                  "rows": [
+                    {
+                      "type": "display_group",
+                      "name": "dg_@item.id",
+                      "parameter_list": {
+                        "style": "column"
+                      },
+                      "rows": [
+                        {
+                          "name": "content_ptr",
+                          "value": "data.esm_number_strings_data_list.@item.id",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "type": "set_variable",
+                          "_nested_name": "dg_num_string_talks.accordion_for_num_string_groups.number_string_accordions.accord_@item.id.dg_@item.id.content_ptr",
+                          "_dynamicFields": {
+                            "value": [
+                              {
+                                "fullExpression": "data.esm_number_strings_data_list.@item.id",
+                                "matchedExpression": "@item.id",
+                                "type": "item",
+                                "fieldName": "id"
+                              }
+                            ],
+                            "_nested_name": [
+                              {
+                                "fullExpression": "dg_num_string_talks.accordion_for_num_string_groups.number_string_accordions.accord_@item.id.dg_@item.id.content_ptr",
+                                "matchedExpression": "@item.id.dg_",
+                                "type": "item",
+                                "fieldName": "id"
+                              },
+                              {
+                                "fullExpression": "dg_num_string_talks.accordion_for_num_string_groups.number_string_accordions.accord_@item.id.dg_@item.id.content_ptr",
+                                "matchedExpression": "@item.id.content_ptr",
+                                "type": "item",
+                                "fieldName": "id"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@item.id": [
+                              "value"
+                            ],
+                            "@item.id.dg_": [
+                              "_nested_name"
+                            ],
+                            "@item.id.content_ptr": [
+                              "_nested_name"
+                            ]
+                          }
+                        },
+                        {
+                          "type": "template",
+                          "name": "number_string_body_maker",
+                          "value": "esm_page_viewer",
+                          "rows": [
+                            {
+                              "name": "esm_content_ptr",
+                              "value": "@@local.content_ptr",
+                              "_translations": {
+                                "value": {}
+                              },
+                              "type": "set_variable",
+                              "_nested_name": "dg_num_string_talks.accordion_for_num_string_groups.number_string_accordions.accord_@item.id.dg_@item.id.number_string_body_maker.esm_content_ptr",
+                              "_dynamicFields": {
+                                "value": [
+                                  {
+                                    "fullExpression": "@@local.content_ptr",
+                                    "matchedExpression": "@local.content_ptr",
+                                    "type": "local",
+                                    "fieldName": "content_ptr"
+                                  }
+                                ],
+                                "_nested_name": [
+                                  {
+                                    "fullExpression": "dg_num_string_talks.accordion_for_num_string_groups.number_string_accordions.accord_@item.id.dg_@item.id.number_string_body_maker.esm_content_ptr",
+                                    "matchedExpression": "@item.id.dg_",
+                                    "type": "item",
+                                    "fieldName": "id"
+                                  },
+                                  {
+                                    "fullExpression": "dg_num_string_talks.accordion_for_num_string_groups.number_string_accordions.accord_@item.id.dg_@item.id.number_string_body_maker.esm_content_ptr",
+                                    "matchedExpression": "@item.id.number_string_body_maker.esm_content_ptr",
+                                    "type": "item",
+                                    "fieldName": "id"
+                                  }
+                                ]
+                              },
+                              "_dynamicDependencies": {
+                                "@local.content_ptr": [
+                                  "value"
+                                ],
+                                "@item.id.dg_": [
+                                  "_nested_name"
+                                ],
+                                "@item.id.number_string_body_maker.esm_content_ptr": [
+                                  "_nested_name"
+                                ]
+                              }
+                            }
+                          ],
+                          "_nested_name": "dg_num_string_talks.accordion_for_num_string_groups.number_string_accordions.accord_@item.id.dg_@item.id.number_string_body_maker",
+                          "_dynamicFields": {
+                            "_nested_name": [
+                              {
+                                "fullExpression": "dg_num_string_talks.accordion_for_num_string_groups.number_string_accordions.accord_@item.id.dg_@item.id.number_string_body_maker",
+                                "matchedExpression": "@item.id.dg_",
+                                "type": "item",
+                                "fieldName": "id"
+                              },
+                              {
+                                "fullExpression": "dg_num_string_talks.accordion_for_num_string_groups.number_string_accordions.accord_@item.id.dg_@item.id.number_string_body_maker",
+                                "matchedExpression": "@item.id.number_string_body_maker",
+                                "type": "item",
+                                "fieldName": "id"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@item.id.dg_": [
+                              "_nested_name"
+                            ],
+                            "@item.id.number_string_body_maker": [
+                              "_nested_name"
+                            ]
+                          }
+                        }
+                      ],
+                      "_nested_name": "dg_num_string_talks.accordion_for_num_string_groups.number_string_accordions.accord_@item.id.dg_@item.id",
+                      "_dynamicFields": {
+                        "name": [
+                          {
+                            "fullExpression": "dg_@item.id",
+                            "matchedExpression": "@item.id",
+                            "type": "item",
+                            "fieldName": "id"
+                          }
+                        ],
+                        "_nested_name": [
+                          {
+                            "fullExpression": "dg_num_string_talks.accordion_for_num_string_groups.number_string_accordions.accord_@item.id.dg_@item.id",
+                            "matchedExpression": "@item.id.dg_",
+                            "type": "item",
+                            "fieldName": "id"
+                          },
+                          {
+                            "fullExpression": "dg_num_string_talks.accordion_for_num_string_groups.number_string_accordions.accord_@item.id.dg_@item.id",
+                            "matchedExpression": "@item.id",
+                            "type": "item",
+                            "fieldName": "id"
+                          }
+                        ]
+                      },
+                      "_dynamicDependencies": {
+                        "@item.id": [
+                          "name",
+                          "_nested_name"
+                        ],
+                        "@item.id.dg_": [
+                          "_nested_name"
+                        ]
+                      }
+                    }
+                  ],
+                  "_nested_name": "dg_num_string_talks.accordion_for_num_string_groups.number_string_accordions.accord_@item.id",
+                  "_dynamicFields": {
+                    "name": [
+                      {
+                        "fullExpression": "accord_@item.id",
+                        "matchedExpression": "@item.id",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ],
+                    "value": [
+                      {
+                        "fullExpression": "@item.name",
+                        "matchedExpression": "@item.name",
+                        "type": "item",
+                        "fieldName": "name"
+                      }
+                    ],
+                    "_nested_name": [
+                      {
+                        "fullExpression": "dg_num_string_talks.accordion_for_num_string_groups.number_string_accordions.accord_@item.id",
+                        "matchedExpression": "@item.id",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@item.id": [
+                      "name",
+                      "_nested_name"
+                    ],
+                    "@item.name": [
+                      "value"
+                    ]
+                  }
+                }
+              ],
+              "_nested_name": "dg_num_string_talks.accordion_for_num_string_groups.number_string_accordions",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@data.esm_number_strings_data_list",
+                    "matchedExpression": "@data.esm_number_strings_data_list",
+                    "type": "data",
+                    "fieldName": "esm_number_strings_data_list"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@data.esm_number_strings_data_list": [
+                  "value"
+                ]
+              }
+            }
+          ],
+          "_nested_name": "dg_num_string_talks.accordion_for_num_string_groups"
+        }
+      ],
+      "_nested_name": "dg_num_string_talks"
     },
     {
       "type": "display_group",

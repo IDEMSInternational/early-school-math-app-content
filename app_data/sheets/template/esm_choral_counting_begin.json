@@ -51,46 +51,11 @@
       "rows": [
         {
           "type": "accordion",
-          "name": "accordion_for_dot_talk_categories",
+          "name": "accordion_for_intro",
           "parameter_list": {
             "open_multiple": "TRUE"
           },
           "rows": [
-            {
-              "type": "accordion_section",
-              "name": "accord_advice",
-              "value": "Teaching Ideas & Directions",
-              "parameter_list": {
-                "text_align": "center",
-                "style": "large emphasised"
-              },
-              "rows": [
-                {
-                  "type": "display_group",
-                  "name": "dg_advice_accord",
-                  "parameter_list": {
-                    "style": "column"
-                  },
-                  "rows": [
-                    {
-                      "type": "text",
-                      "name": "advice_text",
-                      "value": "There are quite a few modes that choral counting can be done in.\n* Number Path / Line or 100 Number Chart.\n* Group of Objects\n* Count the Students - Line up the students in 1s, 2s, or whatever the skip count is. Count them as they walk through a doorway or any special place. Have a few walk through first and start with that number, if you don't want to start at 0.\n* Count abstractly. As your students get better at this, do the counting sometimes without reference to anything.\n\nWhen counting a group of objects, ask the students to first estimate how many there are and write that estimate on the board. Line up the objects in 2s, 3s, or whatever you like to practice skip counting by that many.\n\nDon't always start or end at 0. When skip counting, don't always start at a multiple of the skip amount. When counting things, sometimes count a set of them and put that group in a special pile to start with. For example, if you are counting 15 pebbles by 2s, sometimes start by counting out 5 of them and put them in a pile. Then count the remaining ones by starting at 5 – 5, 7, 9, 11, 13, 15.\n\nCounting down is just as important as up, so please give it equal time.",
-                      "_translations": {
-                        "value": {}
-                      },
-                      "parameter_list": {
-                        "icon_src": "help",
-                        "style": "navigation"
-                      },
-                      "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.advice_text"
-                    }
-                  ],
-                  "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord"
-                }
-              ],
-              "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice"
-            },
             {
               "type": "accordion_section",
               "name": "accord_topics",
@@ -118,16 +83,51 @@
                         "icon_src": "help",
                         "style": "navigation"
                       },
-                      "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_topics.dg_topics_accord.topics_text"
+                      "_nested_name": "dg_advice.accordion_for_intro.accord_topics.dg_topics_accord.topics_text"
                     }
                   ],
-                  "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_topics.dg_topics_accord"
+                  "_nested_name": "dg_advice.accordion_for_intro.accord_topics.dg_topics_accord"
                 }
               ],
-              "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_topics"
+              "_nested_name": "dg_advice.accordion_for_intro.accord_topics"
+            },
+            {
+              "type": "accordion_section",
+              "name": "accord_advice",
+              "value": "Teaching Ideas & Directions",
+              "parameter_list": {
+                "text_align": "center",
+                "style": "large emphasised"
+              },
+              "rows": [
+                {
+                  "type": "display_group",
+                  "name": "dg_advice_accord",
+                  "parameter_list": {
+                    "style": "column"
+                  },
+                  "rows": [
+                    {
+                      "type": "text",
+                      "name": "advice_text",
+                      "value": "There are quite a few modes that choral counting can be done in.\n* Use a Number Path / Number Line or 100 Number Chart.\n* Use a Group of Objects\n* Count the Students - Line up the students in 1s, 2s, or whatever the skip count is. Count them as they walk through a doorway or any special place. Have a few walk through first and start with that number, if you don't want to start at 0.\n* Count abstractly. As your students get better at this, do the counting sometimes without reference to anything.\n\nWhen counting a group of objects, ask the students to first estimate how many there are and write that estimate on the board. Line up the objects in 2s, 3s, or whatever you like to practice skip counting by that many.\n\nDon't always start or end at 0. When skip counting, don't always start at a multiple of the skip amount. When counting things, sometimes count a set of them and put that group in a special pile to start with. For example, if you are counting 15 pebbles by 2s, sometimes start by counting out 5 of them and put them in a pile. Then count the remaining ones by starting at 5 – 5, 7, 9, 11, 13, 15.\n\nCounting down is just as important as up, so please give it equal time.",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "parameter_list": {
+                        "icon_src": "help",
+                        "style": "navigation"
+                      },
+                      "_nested_name": "dg_advice.accordion_for_intro.accord_advice.dg_advice_accord.advice_text"
+                    }
+                  ],
+                  "_nested_name": "dg_advice.accordion_for_intro.accord_advice.dg_advice_accord"
+                }
+              ],
+              "_nested_name": "dg_advice.accordion_for_intro.accord_advice"
             }
           ],
-          "_nested_name": "dg_advice.accordion_for_dot_talk_categories"
+          "_nested_name": "dg_advice.accordion_for_intro"
         }
       ],
       "_nested_name": "dg_advice"
