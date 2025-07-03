@@ -29,7 +29,7 @@
         {
           "type": "text",
           "name": "help_text",
-          "value": "I'm not sure what will go here.",
+          "value": "THIS NEEDS TO BE WRITTEN",
           "_translations": {
             "value": {}
           },
@@ -45,14 +45,13 @@
     {
       "type": "display_group",
       "name": "dg_advice",
-      "condition": false,
       "parameter_list": {
         "style": "column"
       },
       "rows": [
         {
           "type": "accordion",
-          "name": "accordion_for_dot_talk_categories",
+          "name": "accordion_for_intro",
           "parameter_list": {
             "open_multiple": "TRUE"
           },
@@ -76,7 +75,7 @@
                     {
                       "type": "text",
                       "name": "advice_text",
-                      "value": "**Subitizing** is",
+                      "value": "Write this",
                       "_translations": {
                         "value": {}
                       },
@@ -84,13 +83,13 @@
                         "icon_src": "help",
                         "style": "navigation"
                       },
-                      "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.advice_text"
+                      "_nested_name": "dg_advice.accordion_for_intro.accord_advice.dg_advice_accord.advice_text"
                     }
                   ],
-                  "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord"
+                  "_nested_name": "dg_advice.accordion_for_intro.accord_advice.dg_advice_accord"
                 }
               ],
-              "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice"
+              "_nested_name": "dg_advice.accordion_for_intro.accord_advice"
             },
             {
               "type": "accordion_section",
@@ -111,7 +110,7 @@
                     {
                       "type": "text",
                       "name": "topics_text",
-                      "value": "This",
+                      "value": "Write this",
                       "_translations": {
                         "value": {}
                       },
@@ -119,16 +118,16 @@
                         "icon_src": "help",
                         "style": "navigation"
                       },
-                      "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_topics.dg_topics_accord.topics_text"
+                      "_nested_name": "dg_advice.accordion_for_intro.accord_topics.dg_topics_accord.topics_text"
                     }
                   ],
-                  "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_topics.dg_topics_accord"
+                  "_nested_name": "dg_advice.accordion_for_intro.accord_topics.dg_topics_accord"
                 }
               ],
-              "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_topics"
+              "_nested_name": "dg_advice.accordion_for_intro.accord_topics"
             }
           ],
-          "_nested_name": "dg_advice.accordion_for_dot_talk_categories"
+          "_nested_name": "dg_advice.accordion_for_intro"
         }
       ],
       "_nested_name": "dg_advice"

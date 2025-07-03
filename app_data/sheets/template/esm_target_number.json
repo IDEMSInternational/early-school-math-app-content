@@ -29,7 +29,7 @@
         {
           "type": "text",
           "name": "help_text",
-          "value": "Have a number (or quantity) of the day. See how many ways the number can be created. Add restrictions to the ways allowed to guide the practice to use current skills being developed.\n\nThis might be just text.",
+          "value": "Have a number (or quantity) of the day. See how many ways the number can be created. Add restrictions to the ways allowed to guide the practice to use current skills being developed.",
           "_translations": {
             "value": {}
           },
@@ -45,53 +45,17 @@
     {
       "type": "display_group",
       "name": "dg_advice",
-      "condition": false,
       "parameter_list": {
         "style": "column"
       },
       "rows": [
         {
           "type": "accordion",
-          "name": "accordion_for_dot_talk_categories",
+          "name": "accordion_for_intro",
           "parameter_list": {
             "open_multiple": "TRUE"
           },
           "rows": [
-            {
-              "type": "accordion_section",
-              "name": "accord_advice",
-              "value": "Teaching Ideas & Directions",
-              "parameter_list": {
-                "text_align": "center",
-                "style": "large emphasised"
-              },
-              "rows": [
-                {
-                  "type": "display_group",
-                  "name": "dg_advice_accord",
-                  "parameter_list": {
-                    "style": "column"
-                  },
-                  "rows": [
-                    {
-                      "type": "text",
-                      "name": "advice_text",
-                      "value": "**Subitizing** is",
-                      "_translations": {
-                        "value": {}
-                      },
-                      "parameter_list": {
-                        "icon_src": "help",
-                        "style": "navigation"
-                      },
-                      "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.advice_text"
-                    }
-                  ],
-                  "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord"
-                }
-              ],
-              "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice"
-            },
             {
               "type": "accordion_section",
               "name": "accord_topics",
@@ -111,7 +75,7 @@
                     {
                       "type": "text",
                       "name": "topics_text",
-                      "value": "This",
+                      "value": "This routine can be used to practice any skill involving quantities, numbers, and operations. This is meant to be a playful activity that lets your students play with possibilities and new skills. You may even find your students coming up with new ways to create the number throughout the day.",
                       "_translations": {
                         "value": {}
                       },
@@ -119,19 +83,316 @@
                         "icon_src": "help",
                         "style": "navigation"
                       },
-                      "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_topics.dg_topics_accord.topics_text"
+                      "_nested_name": "dg_advice.accordion_for_intro.accord_topics.dg_topics_accord.topics_text"
                     }
                   ],
-                  "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_topics.dg_topics_accord"
+                  "_nested_name": "dg_advice.accordion_for_intro.accord_topics.dg_topics_accord"
                 }
               ],
-              "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_topics"
+              "_nested_name": "dg_advice.accordion_for_intro.accord_topics"
+            },
+            {
+              "type": "accordion_section",
+              "name": "accord_advice",
+              "value": "Teaching Ideas & Directions",
+              "parameter_list": {
+                "text_align": "center",
+                "style": "large emphasised"
+              },
+              "rows": [
+                {
+                  "type": "display_group",
+                  "name": "dg_advice_accord",
+                  "parameter_list": {
+                    "style": "column"
+                  },
+                  "rows": [
+                    {
+                      "type": "text",
+                      "name": "advice_text",
+                      "value": "The teacher chooses a number. This will depend on the skill levels of your students. It might be a random number, a day of the month, the ones digit of the day of the month, the number of days in the school year so far, or any other way of creating a variety of numbers in a fun way for your students.\n\nAnnounce the number to your students. Give them a minute or two of silence to think of different ways of creating the number. Have them write some of them down if that is appropriate. After the quiet time, have them share their favorite ways and keep track of them on the board. For example, if the number is 5, they might come up with:\n* 2 + 3\n* 4 + 1\n* 6 - 1\n* 2 + 2 + 1\n* 2 + 7 - 4\n\nAs your students develop more sophisticated skills, restrict the ways your students are allowed to make the number. If you choose carefully, you can get them to practice with the current skills being worked on in class.",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "parameter_list": {
+                        "icon_src": "help",
+                        "style": "navigation"
+                      },
+                      "_nested_name": "dg_advice.accordion_for_intro.accord_advice.dg_advice_accord.advice_text"
+                    }
+                  ],
+                  "_nested_name": "dg_advice.accordion_for_intro.accord_advice.dg_advice_accord"
+                }
+              ],
+              "_nested_name": "dg_advice.accordion_for_intro.accord_advice"
             }
           ],
-          "_nested_name": "dg_advice.accordion_for_dot_talk_categories"
+          "_nested_name": "dg_advice.accordion_for_intro"
         }
       ],
       "_nested_name": "dg_advice"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_target_num_talks",
+      "parameter_list": {
+        "style": "column"
+      },
+      "rows": [
+        {
+          "type": "text",
+          "name": "intro_text",
+          "value": "These are some ideas for varying the number of the day routine.",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "dg_target_num_talks.intro_text"
+        },
+        {
+          "type": "accordion",
+          "name": "accordion_for_target_num_groups",
+          "parameter_list": {
+            "open_multiple": "TRUE"
+          },
+          "rows": [
+            {
+              "type": "items",
+              "name": "target_num_accordions",
+              "value": "@data.esm_target_number_data_list",
+              "rows": [
+                {
+                  "type": "accordion_section",
+                  "name": "accord_@item.id",
+                  "value": "@item.name",
+                  "parameter_list": {
+                    "text_align": "center",
+                    "style": "large emphasised"
+                  },
+                  "rows": [
+                    {
+                      "type": "display_group",
+                      "name": "dg_@item.id",
+                      "parameter_list": {
+                        "style": "column"
+                      },
+                      "rows": [
+                        {
+                          "name": "content_ptr",
+                          "value": "data.esm_target_number_data_list.@item.id",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "type": "set_variable",
+                          "_nested_name": "dg_target_num_talks.accordion_for_target_num_groups.target_num_accordions.accord_@item.id.dg_@item.id.content_ptr",
+                          "_dynamicFields": {
+                            "value": [
+                              {
+                                "fullExpression": "data.esm_target_number_data_list.@item.id",
+                                "matchedExpression": "@item.id",
+                                "type": "item",
+                                "fieldName": "id"
+                              }
+                            ],
+                            "_nested_name": [
+                              {
+                                "fullExpression": "dg_target_num_talks.accordion_for_target_num_groups.target_num_accordions.accord_@item.id.dg_@item.id.content_ptr",
+                                "matchedExpression": "@item.id.dg_",
+                                "type": "item",
+                                "fieldName": "id"
+                              },
+                              {
+                                "fullExpression": "dg_target_num_talks.accordion_for_target_num_groups.target_num_accordions.accord_@item.id.dg_@item.id.content_ptr",
+                                "matchedExpression": "@item.id.content_ptr",
+                                "type": "item",
+                                "fieldName": "id"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@item.id": [
+                              "value"
+                            ],
+                            "@item.id.dg_": [
+                              "_nested_name"
+                            ],
+                            "@item.id.content_ptr": [
+                              "_nested_name"
+                            ]
+                          }
+                        },
+                        {
+                          "type": "template",
+                          "name": "target_num_body_maker",
+                          "value": "esm_page_viewer",
+                          "rows": [
+                            {
+                              "name": "esm_content_ptr",
+                              "value": "@@local.content_ptr",
+                              "_translations": {
+                                "value": {}
+                              },
+                              "type": "set_variable",
+                              "_nested_name": "dg_target_num_talks.accordion_for_target_num_groups.target_num_accordions.accord_@item.id.dg_@item.id.target_num_body_maker.esm_content_ptr",
+                              "_dynamicFields": {
+                                "value": [
+                                  {
+                                    "fullExpression": "@@local.content_ptr",
+                                    "matchedExpression": "@local.content_ptr",
+                                    "type": "local",
+                                    "fieldName": "content_ptr"
+                                  }
+                                ],
+                                "_nested_name": [
+                                  {
+                                    "fullExpression": "dg_target_num_talks.accordion_for_target_num_groups.target_num_accordions.accord_@item.id.dg_@item.id.target_num_body_maker.esm_content_ptr",
+                                    "matchedExpression": "@item.id.dg_",
+                                    "type": "item",
+                                    "fieldName": "id"
+                                  },
+                                  {
+                                    "fullExpression": "dg_target_num_talks.accordion_for_target_num_groups.target_num_accordions.accord_@item.id.dg_@item.id.target_num_body_maker.esm_content_ptr",
+                                    "matchedExpression": "@item.id.target_num_body_maker.esm_content_ptr",
+                                    "type": "item",
+                                    "fieldName": "id"
+                                  }
+                                ]
+                              },
+                              "_dynamicDependencies": {
+                                "@local.content_ptr": [
+                                  "value"
+                                ],
+                                "@item.id.dg_": [
+                                  "_nested_name"
+                                ],
+                                "@item.id.target_num_body_maker.esm_content_ptr": [
+                                  "_nested_name"
+                                ]
+                              }
+                            }
+                          ],
+                          "_nested_name": "dg_target_num_talks.accordion_for_target_num_groups.target_num_accordions.accord_@item.id.dg_@item.id.target_num_body_maker",
+                          "_dynamicFields": {
+                            "_nested_name": [
+                              {
+                                "fullExpression": "dg_target_num_talks.accordion_for_target_num_groups.target_num_accordions.accord_@item.id.dg_@item.id.target_num_body_maker",
+                                "matchedExpression": "@item.id.dg_",
+                                "type": "item",
+                                "fieldName": "id"
+                              },
+                              {
+                                "fullExpression": "dg_target_num_talks.accordion_for_target_num_groups.target_num_accordions.accord_@item.id.dg_@item.id.target_num_body_maker",
+                                "matchedExpression": "@item.id.target_num_body_maker",
+                                "type": "item",
+                                "fieldName": "id"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@item.id.dg_": [
+                              "_nested_name"
+                            ],
+                            "@item.id.target_num_body_maker": [
+                              "_nested_name"
+                            ]
+                          }
+                        }
+                      ],
+                      "_nested_name": "dg_target_num_talks.accordion_for_target_num_groups.target_num_accordions.accord_@item.id.dg_@item.id",
+                      "_dynamicFields": {
+                        "name": [
+                          {
+                            "fullExpression": "dg_@item.id",
+                            "matchedExpression": "@item.id",
+                            "type": "item",
+                            "fieldName": "id"
+                          }
+                        ],
+                        "_nested_name": [
+                          {
+                            "fullExpression": "dg_target_num_talks.accordion_for_target_num_groups.target_num_accordions.accord_@item.id.dg_@item.id",
+                            "matchedExpression": "@item.id.dg_",
+                            "type": "item",
+                            "fieldName": "id"
+                          },
+                          {
+                            "fullExpression": "dg_target_num_talks.accordion_for_target_num_groups.target_num_accordions.accord_@item.id.dg_@item.id",
+                            "matchedExpression": "@item.id",
+                            "type": "item",
+                            "fieldName": "id"
+                          }
+                        ]
+                      },
+                      "_dynamicDependencies": {
+                        "@item.id": [
+                          "name",
+                          "_nested_name"
+                        ],
+                        "@item.id.dg_": [
+                          "_nested_name"
+                        ]
+                      }
+                    }
+                  ],
+                  "_nested_name": "dg_target_num_talks.accordion_for_target_num_groups.target_num_accordions.accord_@item.id",
+                  "_dynamicFields": {
+                    "name": [
+                      {
+                        "fullExpression": "accord_@item.id",
+                        "matchedExpression": "@item.id",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ],
+                    "value": [
+                      {
+                        "fullExpression": "@item.name",
+                        "matchedExpression": "@item.name",
+                        "type": "item",
+                        "fieldName": "name"
+                      }
+                    ],
+                    "_nested_name": [
+                      {
+                        "fullExpression": "dg_target_num_talks.accordion_for_target_num_groups.target_num_accordions.accord_@item.id",
+                        "matchedExpression": "@item.id",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@item.id": [
+                      "name",
+                      "_nested_name"
+                    ],
+                    "@item.name": [
+                      "value"
+                    ]
+                  }
+                }
+              ],
+              "_nested_name": "dg_target_num_talks.accordion_for_target_num_groups.target_num_accordions",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@data.esm_target_number_data_list",
+                    "matchedExpression": "@data.esm_target_number_data_list",
+                    "type": "data",
+                    "fieldName": "esm_target_number_data_list"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@data.esm_target_number_data_list": [
+                  "value"
+                ]
+              }
+            }
+          ],
+          "_nested_name": "dg_target_num_talks.accordion_for_target_num_groups"
+        }
+      ],
+      "_nested_name": "dg_target_num_talks"
     },
     {
       "type": "display_group",

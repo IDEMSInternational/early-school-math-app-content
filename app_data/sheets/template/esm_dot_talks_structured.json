@@ -51,46 +51,11 @@
       "rows": [
         {
           "type": "accordion",
-          "name": "accordion_for_dot_talk_categories",
+          "name": "accordion_for_intro",
           "parameter_list": {
             "open_multiple": "TRUE"
           },
           "rows": [
-            {
-              "type": "accordion_section",
-              "name": "accord_advice",
-              "value": "Teaching Ideas & Observations",
-              "parameter_list": {
-                "text_align": "center",
-                "style": "large emphasised"
-              },
-              "rows": [
-                {
-                  "type": "display_group",
-                  "name": "dg_advice_accord",
-                  "parameter_list": {
-                    "style": "column"
-                  },
-                  "rows": [
-                    {
-                      "type": "text",
-                      "name": "advice_text",
-                      "value": "**Subitizing** is the ability to \"instantly\" see the size of small groups. It builds quantity recognition and saves time while counting. Recognizing small groups also starts unitizing those groups. \n\n**Unitizing** is seeing a group of items as a single new kind of thing. It is an important developmental step and may take time. Unitizing groups of 10 is central to understanding place value. Unitizing also helps with Counting On and beginning addition.\n\nA good alternative to dot cards is dot plates. Use paper plates with dots drawn on them or with cut out dots placed on them.",
-                      "_translations": {
-                        "value": {}
-                      },
-                      "parameter_list": {
-                        "icon_src": "help",
-                        "style": "navigation"
-                      },
-                      "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord.advice_text"
-                    }
-                  ],
-                  "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice.dg_advice_accord"
-                }
-              ],
-              "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_advice"
-            },
             {
               "type": "accordion_section",
               "name": "accord_topics",
@@ -110,7 +75,7 @@
                     {
                       "type": "text",
                       "name": "topics_text",
-                      "value": "This drop down would describe how this fits into teaching goals. For example, how this helps with Counting, Counting On, Addition, and Subtraction. We need to figure out how this relates to \"Directions and Observations.\"",
+                      "value": "There are two major ideas that dot talks help develop:\n\n**Subitizing** is the ability to \"instantly\" see the size of small groups. It builds quantity recognition and saves time while counting. Recognizing small groups also starts unitizing those groups. \n\n**Unitizing** is seeing a group of items as a single new kind of thing. It is an important developmental step and may take time. Unitizing groups of 10 is central to understanding place value. Unitizing also helps with Counting On and beginning addition.\n\nIn addition, dot talks help with learning Counting, Counting On, Addition, Subtraction, Part-whole relationship, and Fact Families.",
                       "_translations": {
                         "value": {}
                       },
@@ -118,16 +83,51 @@
                         "icon_src": "help",
                         "style": "navigation"
                       },
-                      "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_topics.dg_topics_accord.topics_text"
+                      "_nested_name": "dg_advice.accordion_for_intro.accord_topics.dg_topics_accord.topics_text"
                     }
                   ],
-                  "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_topics.dg_topics_accord"
+                  "_nested_name": "dg_advice.accordion_for_intro.accord_topics.dg_topics_accord"
                 }
               ],
-              "_nested_name": "dg_advice.accordion_for_dot_talk_categories.accord_topics"
+              "_nested_name": "dg_advice.accordion_for_intro.accord_topics"
+            },
+            {
+              "type": "accordion_section",
+              "name": "accord_advice",
+              "value": "Teaching Ideas & Observations",
+              "parameter_list": {
+                "text_align": "center",
+                "style": "large emphasised"
+              },
+              "rows": [
+                {
+                  "type": "display_group",
+                  "name": "dg_advice_accord",
+                  "parameter_list": {
+                    "style": "column"
+                  },
+                  "rows": [
+                    {
+                      "type": "text",
+                      "name": "advice_text",
+                      "value": "**Learning Sequence**\n* Initially, allow time for the students to count the dots and gain a feeling for the quantities. They won't need to do as much of that as they did for beginning Dot Talks.\n* After the students have a feel for the quantities, continue working on subitizing the groups of dots on the cards. Do this by showing a card for 1 or 2 seconds and then hiding it – long enough to see the dots but not long enough to count them out – and then ask questions such as \"How many dots are there?\" \"How do you know?\" and \"Did you recognize any groups of dots?\"\n* At first, your students will want to describe a card as having \"two and one and two more.\" This is fine to start with, but eventually you want them to instantly recognize the full amount.\n* Continue to build up the visual vocabulary of your students. Not only do immediately recognize 1 to 5 dot patterns, now they can recognize combinations of those including doubles.\n* As your students get consistent with recognizing amounts of dots, start representing what's going on for the dot cards with numerals. If done gradually, the use of numerals, equal signs, addition and subtraction symbols will be empowering and help them move forward.\n\n**Cards and Plates:** An alternative to dot cards is dot plates. Use paper plates with dots drawn on them or with cut out dots placed on them.",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "parameter_list": {
+                        "icon_src": "help",
+                        "style": "navigation"
+                      },
+                      "_nested_name": "dg_advice.accordion_for_intro.accord_advice.dg_advice_accord.advice_text"
+                    }
+                  ],
+                  "_nested_name": "dg_advice.accordion_for_intro.accord_advice.dg_advice_accord"
+                }
+              ],
+              "_nested_name": "dg_advice.accordion_for_intro.accord_advice"
             }
           ],
-          "_nested_name": "dg_advice.accordion_for_dot_talk_categories"
+          "_nested_name": "dg_advice.accordion_for_intro"
         }
       ],
       "_nested_name": "dg_advice"
