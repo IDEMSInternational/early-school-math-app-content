@@ -1209,6 +1209,188 @@
               "style_list.0"
             ]
           }
+        },
+        {
+          "type": "display_group",
+          "condition": "@@local.block_type == \"button\"",
+          "parameter_list": {
+            "style": "column"
+          },
+          "style_list": [
+            "@local.paragraph_space"
+          ],
+          "rows": [
+            {
+              "name": "paragraph_space",
+              "value": "@local.remove_paragraph_space",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "run_through_body_sections.display_group_15_@item.id.paragraph_space",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@local.remove_paragraph_space",
+                    "matchedExpression": "@local.remove_paragraph_space",
+                    "type": "local",
+                    "fieldName": "remove_paragraph_space"
+                  }
+                ],
+                "_nested_name": [
+                  {
+                    "fullExpression": "run_through_body_sections.display_group_15_@item.id.paragraph_space",
+                    "matchedExpression": "@item.id.paragraph_space",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.remove_paragraph_space": [
+                  "value"
+                ],
+                "@item.id.paragraph_space": [
+                  "_nested_name"
+                ]
+              }
+            },
+            {
+              "type": "button",
+              "name": "display_button",
+              "value": "@@local.accordion_label",
+              "_translations": {
+                "value": {}
+              },
+              "action_list": [
+                {
+                  "trigger": "click",
+                  "action_id": "go_to",
+                  "args": [
+                    "@@local.block_text"
+                  ],
+                  "_raw": "click | go_to: @@local.block_text",
+                  "_cleaned": "click | go_to: @@local.block_text"
+                }
+              ],
+              "parameter_list": {
+                "style": "short",
+                "text_align": "center"
+              },
+              "_nested_name": "run_through_body_sections.display_group_15_@item.id.display_button",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@@local.accordion_label",
+                    "matchedExpression": "@local.accordion_label",
+                    "type": "local",
+                    "fieldName": "accordion_label"
+                  }
+                ],
+                "action_list": {
+                  "0": {
+                    "args": {
+                      "0": [
+                        {
+                          "fullExpression": "@@local.block_text",
+                          "matchedExpression": "@local.block_text",
+                          "type": "local",
+                          "fieldName": "block_text"
+                        }
+                      ]
+                    },
+                    "_raw": [
+                      {
+                        "fullExpression": "click | go_to: @@local.block_text",
+                        "matchedExpression": "@local.block_text",
+                        "type": "local",
+                        "fieldName": "block_text"
+                      }
+                    ],
+                    "_cleaned": [
+                      {
+                        "fullExpression": "click | go_to: @@local.block_text",
+                        "matchedExpression": "@local.block_text",
+                        "type": "local",
+                        "fieldName": "block_text"
+                      }
+                    ]
+                  }
+                },
+                "_nested_name": [
+                  {
+                    "fullExpression": "run_through_body_sections.display_group_15_@item.id.display_button",
+                    "matchedExpression": "@item.id.display_button",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.accordion_label": [
+                  "value"
+                ],
+                "@local.block_text": [
+                  "action_list.0.args.0",
+                  "action_list.0._raw",
+                  "action_list.0._cleaned"
+                ],
+                "@item.id.display_button": [
+                  "_nested_name"
+                ]
+              }
+            }
+          ],
+          "name": "display_group_15_@item.id",
+          "_nested_name": "run_through_body_sections.display_group_15_@item.id",
+          "_dynamicFields": {
+            "condition": [
+              {
+                "fullExpression": "@@local.block_type == \"button\"",
+                "matchedExpression": "@local.block_type",
+                "type": "local",
+                "fieldName": "block_type"
+              }
+            ],
+            "style_list": {
+              "0": [
+                {
+                  "fullExpression": "@local.paragraph_space",
+                  "matchedExpression": "@local.paragraph_space",
+                  "type": "local",
+                  "fieldName": "paragraph_space"
+                }
+              ]
+            },
+            "name": [
+              {
+                "fullExpression": "display_group_15_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "run_through_body_sections.display_group_15_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.block_type": [
+              "condition"
+            ],
+            "@local.paragraph_space": [
+              "style_list.0"
+            ],
+            "@item.id": [
+              "name",
+              "_nested_name"
+            ]
+          }
         }
       ],
       "_nested_name": "run_through_body_sections",
