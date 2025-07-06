@@ -5,24 +5,44 @@
   "status": "released",
   "rows": [
     {
-      "id": "esm_routine_prob_sort_first",
+      "id": "esm_routine_prob_sort_1",
       "type": "beginning",
       "glossary_count": 0,
       "block1_type": "all_text",
-      "name": "First Problem String",
+      "name": "Early Add",
       "_translations": {
         "name": {},
         "block1_text": {}
       },
       "_translatedFields": {
         "name": {
-          "eng": "First Problem String"
+          "eng": "Early Add"
         },
         "block1_text": {
-          "eng": "* 2 + 3; 2 + 1; 2 + 6; 2 + 9\n* 8 - 5; 6 - 4; 9 - 4; 12 - 7"
+          "eng": "* 2 + 3; 2 + 1; 2 + 6; 2 + 12<br>these are \"2 more\" if switched\n* 3 + 2; 3 + 3; 3 + 4; 3 + 8; 3 + 12<br>Counting On for 3 + 12 is a bit much, but it is easy if it is seen as 12 + 3\n* 5 + 2: 5 + 5; 6 + 5; 5 + 9; 5 + 14<br>adding 5 by Counting On can be easy\n* 4 + 3; 14 + 3; 3 + 2; 13 + 2; 13 + 12<br>adding 10\n* 3 + 3; 6 + 6; 13 + 13; 16 + 16; 23 + 23<br>doubling & 10s"
         }
       },
-      "block1_text": "* 2 + 3; 2 + 1; 2 + 6; 2 + 9\n* 8 - 5; 6 - 4; 9 - 4; 12 - 7"
+      "block1_text": "* 2 + 3; 2 + 1; 2 + 6; 2 + 12<br>these are \"2 more\" if switched\n* 3 + 2; 3 + 3; 3 + 4; 3 + 8; 3 + 12<br>Counting On for 3 + 12 is a bit much, but it is easy if it is seen as 12 + 3\n* 5 + 2: 5 + 5; 6 + 5; 5 + 9; 5 + 14<br>adding 5 by Counting On can be easy\n* 4 + 3; 14 + 3; 3 + 2; 13 + 2; 13 + 12<br>adding 10\n* 3 + 3; 6 + 6; 13 + 13; 16 + 16; 23 + 23<br>doubling & 10s"
+    },
+    {
+      "id": "esm_routine_prob_sort_2",
+      "type": "beginning",
+      "glossary_count": 0,
+      "block1_type": "all_text",
+      "name": "Early Subtract",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Early Subtract"
+        },
+        "block1_text": {
+          "eng": "* 7 - 5; 6 - 4; 9 - 4; 12 - 7<br>the last two can be done as 10 - 5 using compensation\n* 8 - 7; 9 - 6; 10 - 5; 11 - 4; 12 - 3<br>each changes by 1 – result changes by 2\n* 8 - 5; 9 - 2; 18 - 5; 18 - 15; 19 - 2<br>adjusting by 10s\n* 7 - 3; 17 - 3; 17 - 13; 27 - 13; 27 - 23<br>adjusting by 10s"
+        }
+      },
+      "block1_text": "* 7 - 5; 6 - 4; 9 - 4; 12 - 7<br>the last two can be done as 10 - 5 using compensation\n* 8 - 7; 9 - 6; 10 - 5; 11 - 4; 12 - 3<br>each changes by 1 – result changes by 2\n* 8 - 5; 9 - 2; 18 - 5; 18 - 15; 19 - 2<br>adjusting by 10s\n* 7 - 3; 17 - 3; 17 - 13; 27 - 13; 27 - 23<br>adjusting by 10s"
     }
   ],
   "_xlsxPath": "ESM_routines_high_level_sheets.xlsx",

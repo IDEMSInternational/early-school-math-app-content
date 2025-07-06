@@ -29,7 +29,7 @@
         {
           "type": "text",
           "name": "help_text",
-          "value": "Give a group of problems for your students to sort from easiest to hardest. Discuss the methods they use to do the problems and where in the sequence the students stop being able to do the problems in their heads and why. This points the way to skills to work on in the near future.",
+          "value": "Give a group of four to six problems for your students to sort from easiest to hardest. Discuss the methods they use to do the problems and where in the sequence the students stop being able to do the problems in their heads and why.",
           "_translations": {
             "value": {}
           },
@@ -75,7 +75,7 @@
                     {
                       "type": "text",
                       "name": "topics_text",
-                      "value": "In doing this routine, students become more aware of the calculational stretegies they are using. You and they also learn about their limitations and where new strategies would be useful. In addition to generating interesting and fun discussions, it also promotes introspection in your students.",
+                      "value": "In doing this routine, students become more aware of the stretegies they use. You and they also learn about their limitations and where new strategies would be useful. In addition to generating interesting and fun discussions, it also promotes introspection in your students.",
                       "_translations": {
                         "value": {}
                       },
@@ -110,7 +110,7 @@
                     {
                       "type": "text",
                       "name": "advice_text",
-                      "value": "Present three to six mental calculation problems that are increasingly difficult. Mix them up so it is not obvious at first which problems will be hardest. Students then discuss and rank these from easiest to hardest. Next, students solve the problems and compare their methods and answers.",
+                      "value": "Present four to six mental math problems that are increasingly difficult. Mix them up so it is not obvious at first which problems will be hardest. After a minute of quiet inspection, students discuss and rank these from easiest to hardest. Next, students solve the problems and compare their methods and answers.\n\nKnowing which problems your students have trouble with points the way to skills to work on or introduce in the near future.",
                       "_translations": {
                         "value": {}
                       },
@@ -142,7 +142,7 @@
         {
           "type": "text",
           "name": "intro_text",
-          "value": "Here are sequences of problems to sort, grouped by the skills they practice.",
+          "value": "Here are sequences of problems to sort, solve, and discuss.",
           "_translations": {
             "value": {}
           },
@@ -178,7 +178,7 @@
                       "rows": [
                         {
                           "name": "content_ptr",
-                          "value": "data.esm_problem_sort_data_list@item.id",
+                          "value": "data.esm_problem_sort_data_list.@item.id",
                           "_translations": {
                             "value": {}
                           },
@@ -187,7 +187,7 @@
                           "_dynamicFields": {
                             "value": [
                               {
-                                "fullExpression": "data.esm_problem_sort_data_list@item.id",
+                                "fullExpression": "data.esm_problem_sort_data_list.@item.id",
                                 "matchedExpression": "@item.id",
                                 "type": "item",
                                 "fieldName": "id"
