@@ -4,6 +4,55 @@
   "status": "released",
   "rows": [
     {
+      "name": "topic_theme_base_chars",
+      "value": "topic_theme_",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "topic_theme_base_chars"
+    },
+    {
+      "name": "standards_set",
+      "value": "@calc(new Set())",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "standards_set",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(new Set())",
+            "matchedExpression": "@calc(new Set())",
+            "type": "calc",
+            "fieldName": "new Set()"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@calc(new Set())": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "standards_array",
+      "type": "set_variable",
+      "_nested_name": "standards_array"
+    },
+    {
+      "name": "standards_string",
+      "type": "set_variable",
+      "_nested_name": "standards_string"
+    },
+    {
+      "name": "added_something",
+      "value": false,
+      "type": "set_variable",
+      "_nested_name": "added_something"
+    },
+    {
       "name": "esm_content_ptr",
       "type": "set_variable",
       "_nested_name": "esm_content_ptr"
@@ -119,6 +168,31 @@
       }
     },
     {
+      "name": "standard_chars",
+      "value": "ac9m_standards",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "@fields.curriculum_standard_abbrev == \"AC9M\"",
+      "type": "set_variable",
+      "_nested_name": "standard_chars",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@fields.curriculum_standard_abbrev == \"AC9M\"",
+            "matchedExpression": "@fields.curriculum_standard_abbrev",
+            "type": "fields",
+            "fieldName": "curriculum_standard_abbrev"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.curriculum_standard_abbrev": [
+          "condition"
+        ]
+      }
+    },
+    {
       "name": "viewable_standard_not_seen",
       "value": "@local.standard_chars == \"NONE\"",
       "_translations": {
@@ -186,45 +260,6 @@
         "margin-top: -10px"
       ],
       "rows": [
-        {
-          "name": "topic_theme_base_chars",
-          "value": "topic_theme_",
-          "_translations": {
-            "value": {}
-          },
-          "type": "set_variable",
-          "_nested_name": "dg_all_standard_steps.topic_theme_base_chars"
-        },
-        {
-          "name": "standards_set",
-          "value": "@calc(new Set())",
-          "_translations": {
-            "value": {}
-          },
-          "type": "set_variable",
-          "_nested_name": "dg_all_standard_steps.standards_set",
-          "_dynamicFields": {
-            "value": [
-              {
-                "fullExpression": "@calc(new Set())",
-                "matchedExpression": "@calc(new Set())",
-                "type": "calc",
-                "fieldName": "new Set()"
-              }
-            ]
-          },
-          "_dynamicDependencies": {
-            "@calc(new Set())": [
-              "value"
-            ]
-          }
-        },
-        {
-          "name": "added_something",
-          "value": false,
-          "type": "set_variable",
-          "_nested_name": "dg_all_standard_steps.added_something"
-        },
         {
           "type": "items",
           "name": "run_through_topics_a",
@@ -377,6 +412,9 @@
                   "type": "display_group",
                   "name": "process_teks",
                   "condition": "@local.topic_standards",
+                  "parameter_list": {
+                    "style": "column"
+                  },
                   "rows": [
                     {
                       "name": "added_something",
@@ -527,6 +565,39 @@
                       }
                     },
                     {
+                      "name": "standards_array",
+                      "value": "@calc(Array.from(@local.standards_set))",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "type": "set_variable",
+                      "_nested_name": "dg_all_standard_steps.run_through_topics_a.dg_process_topic.process_teks.standards_array",
+                      "_dynamicFields": {
+                        "value": [
+                          {
+                            "fullExpression": "@calc(Array.from(@local.standards_set))",
+                            "matchedExpression": "@local.standards_set",
+                            "type": "local",
+                            "fieldName": "standards_set"
+                          },
+                          {
+                            "fullExpression": "@calc(Array.from(@local.standards_set))",
+                            "matchedExpression": "@calc(Array.from(@local.standards_set))",
+                            "type": "calc",
+                            "fieldName": "Array.from(@local.standards_set)"
+                          }
+                        ]
+                      },
+                      "_dynamicDependencies": {
+                        "@local.standards_set": [
+                          "value"
+                        ],
+                        "@calc(Array.from(@local.standards_set))": [
+                          "value"
+                        ]
+                      }
+                    },
+                    {
                       "type": "text",
                       "name": "debugg",
                       "value": "Topic @fields.curriculum_standard_abbrev: @local.topic_standards",
@@ -556,6 +627,65 @@
                           "value"
                         ],
                         "@local.topic_standards": [
+                          "value"
+                        ]
+                      }
+                    },
+                    {
+                      "name": "temp_standards_array",
+                      "value": "@calc(Array.from(@local.standards_set))",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "condition": false,
+                      "type": "set_variable",
+                      "_nested_name": "dg_all_standard_steps.run_through_topics_a.dg_process_topic.process_teks.temp_standards_array",
+                      "_dynamicFields": {
+                        "value": [
+                          {
+                            "fullExpression": "@calc(Array.from(@local.standards_set))",
+                            "matchedExpression": "@local.standards_set",
+                            "type": "local",
+                            "fieldName": "standards_set"
+                          },
+                          {
+                            "fullExpression": "@calc(Array.from(@local.standards_set))",
+                            "matchedExpression": "@calc(Array.from(@local.standards_set))",
+                            "type": "calc",
+                            "fieldName": "Array.from(@local.standards_set)"
+                          }
+                        ]
+                      },
+                      "_dynamicDependencies": {
+                        "@local.standards_set": [
+                          "value"
+                        ],
+                        "@calc(Array.from(@local.standards_set))": [
+                          "value"
+                        ]
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "name": "debug_output",
+                      "value": "Debug: @local.temp_standards_array",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "condition": false,
+                      "_nested_name": "dg_all_standard_steps.run_through_topics_a.dg_process_topic.process_teks.debug_output",
+                      "_dynamicFields": {
+                        "value": [
+                          {
+                            "fullExpression": "Debug: @local.temp_standards_array",
+                            "matchedExpression": "@local.temp_standards_array",
+                            "type": "local",
+                            "fieldName": "temp_standards_array"
+                          }
+                        ]
+                      },
+                      "_dynamicDependencies": {
+                        "@local.temp_standards_array": [
                           "value"
                         ]
                       }
@@ -615,144 +745,9 @@
           }
         },
         {
-          "name": "standards_array",
-          "value": "@calc(Array.from(@local.standards_set))",
-          "_translations": {
-            "value": {}
-          },
-          "condition": "@local.added_something",
-          "type": "set_variable",
-          "_nested_name": "dg_all_standard_steps.standards_array",
-          "_dynamicFields": {
-            "value": [
-              {
-                "fullExpression": "@calc(Array.from(@local.standards_set))",
-                "matchedExpression": "@local.standards_set",
-                "type": "local",
-                "fieldName": "standards_set"
-              },
-              {
-                "fullExpression": "@calc(Array.from(@local.standards_set))",
-                "matchedExpression": "@calc(Array.from(@local.standards_set))",
-                "type": "calc",
-                "fieldName": "Array.from(@local.standards_set)"
-              }
-            ],
-            "condition": [
-              {
-                "fullExpression": "@local.added_something",
-                "matchedExpression": "@local.added_something",
-                "type": "local",
-                "fieldName": "added_something"
-              }
-            ]
-          },
-          "_dynamicDependencies": {
-            "@local.standards_set": [
-              "value"
-            ],
-            "@calc(Array.from(@local.standards_set))": [
-              "value"
-            ],
-            "@local.added_something": [
-              "condition"
-            ]
-          }
-        },
-        {
-          "name": "value_ignored",
-          "value": "@calc(@local.standards_array.sort())",
-          "_translations": {
-            "value": {}
-          },
-          "condition": "@local.added_something",
-          "type": "set_variable",
-          "_nested_name": "dg_all_standard_steps.value_ignored",
-          "_dynamicFields": {
-            "value": [
-              {
-                "fullExpression": "@calc(@local.standards_array.sort())",
-                "matchedExpression": "@local.standards_array.sort",
-                "type": "local",
-                "fieldName": "standards_array"
-              },
-              {
-                "fullExpression": "@calc(@local.standards_array.sort())",
-                "matchedExpression": "@calc(@local.standards_array.sort())",
-                "type": "calc",
-                "fieldName": "@local.standards_array.sort()"
-              }
-            ],
-            "condition": [
-              {
-                "fullExpression": "@local.added_something",
-                "matchedExpression": "@local.added_something",
-                "type": "local",
-                "fieldName": "added_something"
-              }
-            ]
-          },
-          "_dynamicDependencies": {
-            "@local.standards_array.sort": [
-              "value"
-            ],
-            "@calc(@local.standards_array.sort())": [
-              "value"
-            ],
-            "@local.added_something": [
-              "condition"
-            ]
-          }
-        },
-        {
-          "name": "standards_string",
-          "value": "@calc(@local.standards_array.join(', '))",
-          "_translations": {
-            "value": {}
-          },
-          "condition": "@local.added_something",
-          "type": "set_variable",
-          "_nested_name": "dg_all_standard_steps.standards_string",
-          "_dynamicFields": {
-            "value": [
-              {
-                "fullExpression": "@calc(@local.standards_array.join(', '))",
-                "matchedExpression": "@local.standards_array.join",
-                "type": "local",
-                "fieldName": "standards_array"
-              },
-              {
-                "fullExpression": "@calc(@local.standards_array.join(', '))",
-                "matchedExpression": "@calc(@local.standards_array.join(', '))",
-                "type": "calc",
-                "fieldName": "@local.standards_array.join(', ')"
-              }
-            ],
-            "condition": [
-              {
-                "fullExpression": "@local.added_something",
-                "matchedExpression": "@local.added_something",
-                "type": "local",
-                "fieldName": "added_something"
-              }
-            ]
-          },
-          "_dynamicDependencies": {
-            "@local.standards_array.join": [
-              "value"
-            ],
-            "@calc(@local.standards_array.join(', '))": [
-              "value"
-            ],
-            "@local.added_something": [
-              "condition"
-            ]
-          }
-        },
-        {
           "type": "text",
           "name": "output",
-          "value": "@fields.curriculum_standard_abbrev: @local.standards_string",
+          "value": "@fields.curriculum_standard_abbrev: @local.standards_array",
           "_translations": {
             "value": {}
           },
@@ -761,16 +756,16 @@
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "@fields.curriculum_standard_abbrev: @local.standards_string",
+                "fullExpression": "@fields.curriculum_standard_abbrev: @local.standards_array",
                 "matchedExpression": "@fields.curriculum_standard_abbrev",
                 "type": "fields",
                 "fieldName": "curriculum_standard_abbrev"
               },
               {
-                "fullExpression": "@fields.curriculum_standard_abbrev: @local.standards_string",
-                "matchedExpression": "@local.standards_string",
+                "fullExpression": "@fields.curriculum_standard_abbrev: @local.standards_array",
+                "matchedExpression": "@local.standards_array",
                 "type": "local",
-                "fieldName": "standards_string"
+                "fieldName": "standards_array"
               }
             ],
             "condition": [
@@ -786,7 +781,7 @@
             "@fields.curriculum_standard_abbrev": [
               "value"
             ],
-            "@local.standards_string": [
+            "@local.standards_array": [
               "value"
             ],
             "@local.added_something": [

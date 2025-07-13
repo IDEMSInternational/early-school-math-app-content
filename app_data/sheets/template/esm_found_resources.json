@@ -4,6 +4,15 @@
   "status": "released",
   "rows": [
     {
+      "name": "comment2",
+      "value": "Make accordians of buttons to list resources that relate",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "comment2"
+    },
+    {
       "name": "comment",
       "value": "If button is pushed,then display resource informations.",
       "_translations": {
@@ -2783,15 +2792,6 @@
             }
           ],
           "_nested_name": "do_the_lookup.count_matches"
-        },
-        {
-          "name": "comment2",
-          "value": "Make accordians of buttons to list resources that relate",
-          "_translations": {
-            "value": {}
-          },
-          "type": "set_variable",
-          "_nested_name": "do_the_lookup.comment2"
         },
         {
           "type": "display_group",

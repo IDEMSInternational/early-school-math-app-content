@@ -4,6 +4,15 @@
   "status": "released",
   "rows": [
     {
+      "name": "EmPtY_string",
+      "value": "EmPtY",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "EmPtY_string"
+    },
+    {
       "type": "display_group",
       "name": "top_of_page",
       "rows": [
@@ -56,15 +65,6 @@
         "margin-top: 1px"
       ],
       "rows": [
-        {
-          "name": "EmPtY_string",
-          "value": "EmPtY",
-          "_translations": {
-            "value": {}
-          },
-          "type": "set_variable",
-          "_nested_name": "dg_resource_finder.EmPtY_string"
-        },
         {
           "type": "text",
           "name": "rf_intro",

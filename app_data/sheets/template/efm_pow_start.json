@@ -4,6 +4,24 @@
   "status": "released",
   "rows": [
     {
+      "name": "description_0",
+      "value": "Eye Opener",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "description_0"
+    },
+    {
+      "name": "description_1",
+      "value": "Puzzler",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "description_1"
+    },
+    {
       "type": "display_group",
       "name": "dg_top_of_page",
       "rows": [
@@ -76,24 +94,6 @@
         "style": "column"
       },
       "rows": [
-        {
-          "name": "description_0",
-          "value": "Eye Opener",
-          "_translations": {
-            "value": {}
-          },
-          "type": "set_variable",
-          "_nested_name": "dg_types.description_0"
-        },
-        {
-          "name": "description_1",
-          "value": "Puzzler",
-          "_translations": {
-            "value": {}
-          },
-          "type": "set_variable",
-          "_nested_name": "dg_types.description_1"
-        },
         {
           "type": "display_group",
           "name": "dg_puzzle_types",

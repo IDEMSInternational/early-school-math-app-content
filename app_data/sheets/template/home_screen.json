@@ -1158,6 +1158,392 @@
       ],
       "rows": [
         {
+          "type": "display_group",
+          "name": "dg_testing_group",
+          "condition": false,
+          "parameter_list": {
+            "style": "column"
+          },
+          "rows": [
+            {
+              "name": "test_string",
+              "value": "aa,bb,dd,cc,ee,de,ed",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "fake_group.dg_testing_group.test_string"
+            },
+            {
+              "type": "text",
+              "name": "deebugg_string",
+              "value": "String: @local.test_string",
+              "_translations": {
+                "value": {}
+              },
+              "_nested_name": "fake_group.dg_testing_group.deebugg_string",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "String: @local.test_string",
+                    "matchedExpression": "@local.test_string",
+                    "type": "local",
+                    "fieldName": "test_string"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.test_string": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "test_array1",
+              "value": "@calc(@local.test_string.split(\",\"))",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "fake_group.dg_testing_group.test_array1",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@calc(@local.test_string.split(\",\"))",
+                    "matchedExpression": "@local.test_string.split",
+                    "type": "local",
+                    "fieldName": "test_string"
+                  },
+                  {
+                    "fullExpression": "@calc(@local.test_string.split(\",\"))",
+                    "matchedExpression": "@calc(@local.test_string.split(\",\"))",
+                    "type": "calc",
+                    "fieldName": "@local.test_string.split(\",\")"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.test_string.split": [
+                  "value"
+                ],
+                "@calc(@local.test_string.split(\",\"))": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "type": "text",
+              "name": "deeeebug1",
+              "value": "Array1: @local.test_array1",
+              "_translations": {
+                "value": {}
+              },
+              "_nested_name": "fake_group.dg_testing_group.deeeebug1",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "Array1: @local.test_array1",
+                    "matchedExpression": "@local.test_array1",
+                    "type": "local",
+                    "fieldName": "test_array1"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.test_array1": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "test_set",
+              "value": "@calc(new Set(@local.test_array1))",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "fake_group.dg_testing_group.test_set",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@calc(new Set(@local.test_array1))",
+                    "matchedExpression": "@local.test_array1",
+                    "type": "local",
+                    "fieldName": "test_array1"
+                  },
+                  {
+                    "fullExpression": "@calc(new Set(@local.test_array1))",
+                    "matchedExpression": "@calc(new Set(@local.test_array1))",
+                    "type": "calc",
+                    "fieldName": "new Set(@local.test_array1)"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.test_array1": [
+                  "value"
+                ],
+                "@calc(new Set(@local.test_array1))": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "test_array2",
+              "value": "@calc(Array.from(@local.test_set))",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "fake_group.dg_testing_group.test_array2",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@calc(Array.from(@local.test_set))",
+                    "matchedExpression": "@local.test_set",
+                    "type": "local",
+                    "fieldName": "test_set"
+                  },
+                  {
+                    "fullExpression": "@calc(Array.from(@local.test_set))",
+                    "matchedExpression": "@calc(Array.from(@local.test_set))",
+                    "type": "calc",
+                    "fieldName": "Array.from(@local.test_set)"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.test_set": [
+                  "value"
+                ],
+                "@calc(Array.from(@local.test_set))": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "type": "text",
+              "name": "deeeebug2",
+              "value": "Array2: @local.test_array2",
+              "_translations": {
+                "value": {}
+              },
+              "_nested_name": "fake_group.dg_testing_group.deeeebug2",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "Array2: @local.test_array2",
+                    "matchedExpression": "@local.test_array2",
+                    "type": "local",
+                    "fieldName": "test_array2"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.test_array2": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "test_array_sort",
+              "value": "@calc(@local.test_array1.sort())",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "fake_group.dg_testing_group.test_array_sort",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@calc(@local.test_array1.sort())",
+                    "matchedExpression": "@local.test_array1.sort",
+                    "type": "local",
+                    "fieldName": "test_array1"
+                  },
+                  {
+                    "fullExpression": "@calc(@local.test_array1.sort())",
+                    "matchedExpression": "@calc(@local.test_array1.sort())",
+                    "type": "calc",
+                    "fieldName": "@local.test_array1.sort()"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.test_array1.sort": [
+                  "value"
+                ],
+                "@calc(@local.test_array1.sort())": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "type": "text",
+              "name": "deeeebug_sorted",
+              "value": "Array1 Sorted: @local.test_array1",
+              "_translations": {
+                "value": {}
+              },
+              "_nested_name": "fake_group.dg_testing_group.deeeebug_sorted",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "Array1 Sorted: @local.test_array1",
+                    "matchedExpression": "@local.test_array1",
+                    "type": "local",
+                    "fieldName": "test_array1"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.test_array1": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "type": "text",
+              "name": "deeeebug_sort",
+              "value": "Array Sorted: @local.test_array_sort",
+              "_translations": {
+                "value": {}
+              },
+              "_nested_name": "fake_group.dg_testing_group.deeeebug_sort",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "Array Sorted: @local.test_array_sort",
+                    "matchedExpression": "@local.test_array_sort",
+                    "type": "local",
+                    "fieldName": "test_array_sort"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.test_array_sort": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "test_string2",
+              "value": "@calc(@local.test_array1.join(', '))",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "fake_group.dg_testing_group.test_string2",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@calc(@local.test_array1.join(', '))",
+                    "matchedExpression": "@local.test_array1.join",
+                    "type": "local",
+                    "fieldName": "test_array1"
+                  },
+                  {
+                    "fullExpression": "@calc(@local.test_array1.join(', '))",
+                    "matchedExpression": "@calc(@local.test_array1.join(', '))",
+                    "type": "calc",
+                    "fieldName": "@local.test_array1.join(', ')"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.test_array1.join": [
+                  "value"
+                ],
+                "@calc(@local.test_array1.join(', '))": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "type": "text",
+              "name": "deebug_string",
+              "value": "String: @local.test_string2",
+              "_translations": {
+                "value": {}
+              },
+              "_nested_name": "fake_group.dg_testing_group.deebug_string",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "String: @local.test_string2",
+                    "matchedExpression": "@local.test_string2",
+                    "type": "local",
+                    "fieldName": "test_string2"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.test_string2": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "test_string3",
+              "value": "@calc(@local.test_array2.join(', '))",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "fake_group.dg_testing_group.test_string3",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@calc(@local.test_array2.join(', '))",
+                    "matchedExpression": "@local.test_array2.join",
+                    "type": "local",
+                    "fieldName": "test_array2"
+                  },
+                  {
+                    "fullExpression": "@calc(@local.test_array2.join(', '))",
+                    "matchedExpression": "@calc(@local.test_array2.join(', '))",
+                    "type": "calc",
+                    "fieldName": "@local.test_array2.join(', ')"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.test_array2.join": [
+                  "value"
+                ],
+                "@calc(@local.test_array2.join(', '))": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "type": "text",
+              "name": "deebug_string",
+              "value": "String: @local.test_string3",
+              "_translations": {
+                "value": {}
+              },
+              "_nested_name": "fake_group.dg_testing_group.deebug_string",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "String: @local.test_string3",
+                    "matchedExpression": "@local.test_string3",
+                    "type": "local",
+                    "fieldName": "test_string3"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.test_string3": [
+                  "value"
+                ]
+              }
+            }
+          ],
+          "_nested_name": "fake_group.dg_testing_group"
+        },
+        {
           "type": "text",
           "name": "spacer",
           "_nested_name": "fake_group.spacer"
