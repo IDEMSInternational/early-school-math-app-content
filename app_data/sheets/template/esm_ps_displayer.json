@@ -4,36 +4,36 @@
   "status": "released",
   "rows": [
     {
+      "name": "content_ptr",
+      "value": "@fields.ps_content_ptr",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "content_ptr",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@fields.ps_content_ptr",
+            "matchedExpression": "@fields.ps_content_ptr",
+            "type": "fields",
+            "fieldName": "ps_content_ptr"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.ps_content_ptr": [
+          "value"
+        ]
+      }
+    },
+    {
       "type": "display_group",
       "name": "dg_ps_page",
       "parameter_list": {
         "style": "column"
       },
       "rows": [
-        {
-          "name": "content_ptr",
-          "value": "@fields.ps_content_ptr",
-          "_translations": {
-            "value": {}
-          },
-          "type": "set_variable",
-          "_nested_name": "dg_ps_page.content_ptr",
-          "_dynamicFields": {
-            "value": [
-              {
-                "fullExpression": "@fields.ps_content_ptr",
-                "matchedExpression": "@fields.ps_content_ptr",
-                "type": "fields",
-                "fieldName": "ps_content_ptr"
-              }
-            ]
-          },
-          "_dynamicDependencies": {
-            "@fields.ps_content_ptr": [
-              "value"
-            ]
-          }
-        },
         {
           "type": "template",
           "name": "ps_body",

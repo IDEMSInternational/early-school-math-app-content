@@ -427,7 +427,7 @@
         {
           "type": "set_field",
           "name": "curriculum_standard_name",
-          "value": "Texas Essential Knowledge & Skills",
+          "value": "Texas Ess. Knowledge & Skills",
           "_translations": {
             "value": {}
           },
@@ -487,6 +487,81 @@
             "condition": [
               {
                 "fullExpression": "@fields.curriculum_standard_abbrev == \"TEKS\"",
+                "matchedExpression": "@fields.curriculum_standard_abbrev",
+                "type": "fields",
+                "fieldName": "curriculum_standard_abbrev"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@fields.curriculum_standard_abbrev": [
+              "condition"
+            ]
+          }
+        },
+        {
+          "type": "set_field",
+          "name": "curriculum_standard_name",
+          "value": "Australian Cur. Vers. 9.0 Math",
+          "_translations": {
+            "value": {}
+          },
+          "condition": "@fields.curriculum_standard_abbrev == \"AC9M\"",
+          "_nested_name": "dg_select_view_new.curriculum_standard_name",
+          "_dynamicFields": {
+            "condition": [
+              {
+                "fullExpression": "@fields.curriculum_standard_abbrev == \"AC9M\"",
+                "matchedExpression": "@fields.curriculum_standard_abbrev",
+                "type": "fields",
+                "fieldName": "curriculum_standard_abbrev"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@fields.curriculum_standard_abbrev": [
+              "condition"
+            ]
+          }
+        },
+        {
+          "type": "set_field",
+          "name": "top_standards_level",
+          "value": "data.esm_ac9m_strands",
+          "_translations": {
+            "value": {}
+          },
+          "condition": "@fields.curriculum_standard_abbrev == \"AC9M\"",
+          "_nested_name": "dg_select_view_new.top_standards_level",
+          "_dynamicFields": {
+            "condition": [
+              {
+                "fullExpression": "@fields.curriculum_standard_abbrev == \"AC9M\"",
+                "matchedExpression": "@fields.curriculum_standard_abbrev",
+                "type": "fields",
+                "fieldName": "curriculum_standard_abbrev"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@fields.curriculum_standard_abbrev": [
+              "condition"
+            ]
+          }
+        },
+        {
+          "type": "set_field",
+          "name": "middle_standards_level",
+          "value": "data.esm_ac9m_substrands",
+          "_translations": {
+            "value": {}
+          },
+          "condition": "@fields.curriculum_standard_abbrev == \"AC9M\"",
+          "_nested_name": "dg_select_view_new.middle_standards_level",
+          "_dynamicFields": {
+            "condition": [
+              {
+                "fullExpression": "@fields.curriculum_standard_abbrev == \"AC9M\"",
                 "matchedExpression": "@fields.curriculum_standard_abbrev",
                 "type": "fields",
                 "fieldName": "curriculum_standard_abbrev"

@@ -4,6 +4,96 @@
   "status": "released",
   "rows": [
     {
+      "name": "description_0",
+      "value": "All",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "description_0"
+    },
+    {
+      "name": "description_1",
+      "value": "Tutoring",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "description_1"
+    },
+    {
+      "name": "description_2",
+      "value": "Breaks",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "description_2"
+    },
+    {
+      "name": "description_3",
+      "value": "Home",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "description_3"
+    },
+    {
+      "name": "desc_all",
+      "value": "All",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "desc_all"
+    },
+    {
+      "name": "desc_00",
+      "value": "Level 00",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "desc_00"
+    },
+    {
+      "name": "desc_0",
+      "value": "Level 0",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "desc_0"
+    },
+    {
+      "name": "desc_1",
+      "value": "Level 1",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "desc_1"
+    },
+    {
+      "name": "desc_2",
+      "value": "Level 2",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "desc_2"
+    },
+    {
+      "name": "desc_3",
+      "value": "Level 3",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "desc_3"
+    },
+    {
       "type": "display_group",
       "name": "dg_top_of_page",
       "rows": [
@@ -127,42 +217,6 @@
         "style": "column"
       },
       "rows": [
-        {
-          "name": "description_0",
-          "value": "All",
-          "_translations": {
-            "value": {}
-          },
-          "type": "set_variable",
-          "_nested_name": "dg_types.description_0"
-        },
-        {
-          "name": "description_1",
-          "value": "Tutoring",
-          "_translations": {
-            "value": {}
-          },
-          "type": "set_variable",
-          "_nested_name": "dg_types.description_1"
-        },
-        {
-          "name": "description_2",
-          "value": "Breaks",
-          "_translations": {
-            "value": {}
-          },
-          "type": "set_variable",
-          "_nested_name": "dg_types.description_2"
-        },
-        {
-          "name": "description_3",
-          "value": "Home",
-          "_translations": {
-            "value": {}
-          },
-          "type": "set_variable",
-          "_nested_name": "dg_types.description_3"
-        },
         {
           "type": "display_group",
           "name": "dg_game_types",
@@ -369,60 +423,6 @@
             "value": {}
           },
           "_nested_name": "dg_ga_levels.ga_level_intro"
-        },
-        {
-          "name": "desc_all",
-          "value": "All",
-          "_translations": {
-            "value": {}
-          },
-          "type": "set_variable",
-          "_nested_name": "dg_ga_levels.desc_all"
-        },
-        {
-          "name": "desc_00",
-          "value": "Level 00",
-          "_translations": {
-            "value": {}
-          },
-          "type": "set_variable",
-          "_nested_name": "dg_ga_levels.desc_00"
-        },
-        {
-          "name": "desc_0",
-          "value": "Level 0",
-          "_translations": {
-            "value": {}
-          },
-          "type": "set_variable",
-          "_nested_name": "dg_ga_levels.desc_0"
-        },
-        {
-          "name": "desc_1",
-          "value": "Level 1",
-          "_translations": {
-            "value": {}
-          },
-          "type": "set_variable",
-          "_nested_name": "dg_ga_levels.desc_1"
-        },
-        {
-          "name": "desc_2",
-          "value": "Level 2",
-          "_translations": {
-            "value": {}
-          },
-          "type": "set_variable",
-          "_nested_name": "dg_ga_levels.desc_2"
-        },
-        {
-          "name": "desc_3",
-          "value": "Level 3",
-          "_translations": {
-            "value": {}
-          },
-          "type": "set_variable",
-          "_nested_name": "dg_ga_levels.desc_3"
         },
         {
           "type": "display_group",

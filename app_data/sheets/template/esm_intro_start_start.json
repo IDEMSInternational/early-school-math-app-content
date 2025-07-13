@@ -4,6 +4,15 @@
   "status": "released",
   "rows": [
     {
+      "name": "no_message",
+      "value": "fake",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "no_message"
+    },
+    {
       "type": "display_group",
       "name": "dg_help",
       "parameter_list": {
@@ -347,17 +356,7 @@
       "style_list": [
         "margin-top: 30px"
       ],
-      "rows": [
-        {
-          "name": "no_message",
-          "value": "fake",
-          "_translations": {
-            "value": {}
-          },
-          "type": "set_variable",
-          "_nested_name": "dg_create_spae.no_message"
-        }
-      ],
+      "rows": [],
       "_nested_name": "dg_create_spae"
     }
   ],
