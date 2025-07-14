@@ -10,7 +10,18 @@
         "title": {},
         "message_text": {}
       },
-      "message_text": "Enjoy reading and playing with math together! The best way to learn and experience math is in a social and playful way. Early Family Math has created four kinds of materials for your family to enjoy together.",
+      "message_text": "This app is meant to be a mentor and a source of resources for teachers of early mathematics. The Introduction will tell you all you need to know to get started.",
+      "route": "template/home_screen"
+    },
+    {
+      "type": "step",
+      "title": "Introduction",
+      "_translations": {
+        "title": {},
+        "message_text": {}
+      },
+      "message_text": "Go to the Instroduction to learn all about this app and see some examples of how to use it.",
+      "template_component_name": "dg_intro_start",
       "route": "template/home_screen"
     },
     {
@@ -20,7 +31,7 @@
         "title": {},
         "message_text": {}
       },
-      "message_text": "This is a collection of significant topics in the teaching of early mathematics.",
+      "message_text": "This is a collection of math topics in the teaching of early mathematics. This collection is the center of everything in the app. There are extensive links between the topics and the resources in this app.",
       "template_component_name": "dg_topics",
       "route": "template/home_screen"
     },
@@ -31,7 +42,7 @@
         "title": {},
         "message_text": {}
       },
-      "message_text": "These are collections of teaching materals useful in teaching the various topics.",
+      "message_text": "These are collections of teaching tasks and lessons.",
       "template_component_name": "dg_resources",
       "route": "template/home_screen"
     },

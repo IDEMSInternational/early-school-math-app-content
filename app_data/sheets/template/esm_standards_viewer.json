@@ -4,49 +4,6 @@
   "status": "released",
   "rows": [
     {
-      "name": "topic_theme_base_chars",
-      "value": "topic_theme_",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "topic_theme_base_chars"
-    },
-    {
-      "name": "standards_set",
-      "value": "@calc(new Set())",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "standards_set",
-      "_dynamicFields": {
-        "value": [
-          {
-            "fullExpression": "@calc(new Set())",
-            "matchedExpression": "@calc(new Set())",
-            "type": "calc",
-            "fieldName": "new Set()"
-          }
-        ]
-      },
-      "_dynamicDependencies": {
-        "@calc(new Set())": [
-          "value"
-        ]
-      }
-    },
-    {
-      "name": "standards_array",
-      "type": "set_variable",
-      "_nested_name": "standards_array"
-    },
-    {
-      "name": "standards_string",
-      "type": "set_variable",
-      "_nested_name": "standards_string"
-    },
-    {
       "name": "added_something",
       "value": false,
       "type": "set_variable",
@@ -193,6 +150,15 @@
       }
     },
     {
+      "name": "topic_theme_base_chars",
+      "value": "topic_theme_",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "topic_theme_base_chars"
+    },
+    {
       "name": "viewable_standard_not_seen",
       "value": "@local.standard_chars == \"NONE\"",
       "_translations": {
@@ -248,6 +214,40 @@
           "value"
         ]
       }
+    },
+    {
+      "name": "standards_set",
+      "value": "@calc(new Set())",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "standards_set",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(new Set())",
+            "matchedExpression": "@calc(new Set())",
+            "type": "calc",
+            "fieldName": "new Set()"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@calc(new Set())": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "standards_array",
+      "type": "set_variable",
+      "_nested_name": "standards_array"
+    },
+    {
+      "name": "standards_string",
+      "type": "set_variable",
+      "_nested_name": "standards_string"
     },
     {
       "type": "display_group",
@@ -632,60 +632,92 @@
                       }
                     },
                     {
-                      "name": "temp_standards_array",
-                      "value": "@calc(Array.from(@local.standards_set))",
+                      "name": "standards_array",
+                      "value": "@calc(@local.standards_array.sort())",
                       "_translations": {
                         "value": {}
                       },
-                      "condition": false,
                       "type": "set_variable",
-                      "_nested_name": "dg_all_standard_steps.run_through_topics_a.dg_process_topic.process_teks.temp_standards_array",
+                      "_nested_name": "dg_all_standard_steps.run_through_topics_a.dg_process_topic.process_teks.standards_array",
                       "_dynamicFields": {
                         "value": [
                           {
-                            "fullExpression": "@calc(Array.from(@local.standards_set))",
-                            "matchedExpression": "@local.standards_set",
+                            "fullExpression": "@calc(@local.standards_array.sort())",
+                            "matchedExpression": "@local.standards_array.sort",
                             "type": "local",
-                            "fieldName": "standards_set"
+                            "fieldName": "standards_array"
                           },
                           {
-                            "fullExpression": "@calc(Array.from(@local.standards_set))",
-                            "matchedExpression": "@calc(Array.from(@local.standards_set))",
+                            "fullExpression": "@calc(@local.standards_array.sort())",
+                            "matchedExpression": "@calc(@local.standards_array.sort())",
                             "type": "calc",
-                            "fieldName": "Array.from(@local.standards_set)"
+                            "fieldName": "@local.standards_array.sort()"
                           }
                         ]
                       },
                       "_dynamicDependencies": {
-                        "@local.standards_set": [
+                        "@local.standards_array.sort": [
                           "value"
                         ],
-                        "@calc(Array.from(@local.standards_set))": [
+                        "@calc(@local.standards_array.sort())": [
+                          "value"
+                        ]
+                      }
+                    },
+                    {
+                      "name": "standards_string",
+                      "value": "@calc(@local.standards_array.join(', '))",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "type": "set_variable",
+                      "_nested_name": "dg_all_standard_steps.run_through_topics_a.dg_process_topic.process_teks.standards_string",
+                      "_dynamicFields": {
+                        "value": [
+                          {
+                            "fullExpression": "@calc(@local.standards_array.join(', '))",
+                            "matchedExpression": "@local.standards_array.join",
+                            "type": "local",
+                            "fieldName": "standards_array"
+                          },
+                          {
+                            "fullExpression": "@calc(@local.standards_array.join(', '))",
+                            "matchedExpression": "@calc(@local.standards_array.join(', '))",
+                            "type": "calc",
+                            "fieldName": "@local.standards_array.join(', ')"
+                          }
+                        ]
+                      },
+                      "_dynamicDependencies": {
+                        "@local.standards_array.join": [
+                          "value"
+                        ],
+                        "@calc(@local.standards_array.join(', '))": [
                           "value"
                         ]
                       }
                     },
                     {
                       "type": "text",
-                      "name": "debug_output",
-                      "value": "Debug: @local.temp_standards_array",
+                      "name": "deebug_string",
+                      "value": "String: @local.standards_string",
                       "_translations": {
                         "value": {}
                       },
                       "condition": false,
-                      "_nested_name": "dg_all_standard_steps.run_through_topics_a.dg_process_topic.process_teks.debug_output",
+                      "_nested_name": "dg_all_standard_steps.run_through_topics_a.dg_process_topic.process_teks.deebug_string",
                       "_dynamicFields": {
                         "value": [
                           {
-                            "fullExpression": "Debug: @local.temp_standards_array",
-                            "matchedExpression": "@local.temp_standards_array",
+                            "fullExpression": "String: @local.standards_string",
+                            "matchedExpression": "@local.standards_string",
                             "type": "local",
-                            "fieldName": "temp_standards_array"
+                            "fieldName": "standards_string"
                           }
                         ]
                       },
                       "_dynamicDependencies": {
-                        "@local.temp_standards_array": [
+                        "@local.standards_string": [
                           "value"
                         ]
                       }
@@ -751,7 +783,7 @@
           "_translations": {
             "value": {}
           },
-          "condition": "@local.added_something",
+          "condition": false,
           "_nested_name": "dg_all_standard_steps.output",
           "_dynamicFields": {
             "value": [
@@ -767,6 +799,40 @@
                 "type": "local",
                 "fieldName": "standards_array"
               }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@fields.curriculum_standard_abbrev": [
+              "value"
+            ],
+            "@local.standards_array": [
+              "value"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "name": "output2",
+          "value": "@fields.curriculum_standard_abbrev: @local.standards_string",
+          "_translations": {
+            "value": {}
+          },
+          "condition": "@local.added_something",
+          "_nested_name": "dg_all_standard_steps.output2",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@fields.curriculum_standard_abbrev: @local.standards_string",
+                "matchedExpression": "@fields.curriculum_standard_abbrev",
+                "type": "fields",
+                "fieldName": "curriculum_standard_abbrev"
+              },
+              {
+                "fullExpression": "@fields.curriculum_standard_abbrev: @local.standards_string",
+                "matchedExpression": "@local.standards_string",
+                "type": "local",
+                "fieldName": "standards_string"
+              }
             ],
             "condition": [
               {
@@ -781,7 +847,7 @@
             "@fields.curriculum_standard_abbrev": [
               "value"
             ],
-            "@local.standards_array": [
+            "@local.standards_string": [
               "value"
             ],
             "@local.added_something": [

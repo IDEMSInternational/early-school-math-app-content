@@ -14,20 +14,57 @@
     },
     {
       "type": "display_group",
-      "name": "dg_help",
-      "parameter_list": {
-        "style": "column"
-      },
+      "name": "dg_top_of_page",
       "rows": [
         {
           "type": "title",
-          "name": "greeting",
+          "name": "spacer",
           "value": "Welcome!",
           "_translations": {
             "value": {}
           },
-          "_nested_name": "dg_help.greeting"
+          "style_list": [
+            "flex:1"
+          ],
+          "_nested_name": "dg_top_of_page.spacer"
         },
+        {
+          "type": "display_group",
+          "name": "dg_help",
+          "rows": [
+            {
+              "type": "round_button",
+              "name": "help_button",
+              "action_list": [
+                {
+                  "trigger": "click",
+                  "action_id": "start_tour",
+                  "args": [
+                    "esm_intro_start_tour"
+                  ],
+                  "_raw": "click | start_tour: esm_intro_start_tour",
+                  "_cleaned": "click | start_tour: esm_intro_start_tour"
+                }
+              ],
+              "parameter_list": {
+                "icon_src": "help",
+                "style": "navigation"
+              },
+              "_nested_name": "dg_top_of_page.dg_help.help_button"
+            }
+          ],
+          "_nested_name": "dg_top_of_page.dg_help"
+        }
+      ],
+      "_nested_name": "dg_top_of_page"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_intro",
+      "parameter_list": {
+        "style": "column"
+      },
+      "rows": [
         {
           "type": "text",
           "name": "greeting_message",
@@ -38,7 +75,7 @@
           "style_list": [
             "margin-top: -4px"
           ],
-          "_nested_name": "dg_help.greeting_message"
+          "_nested_name": "dg_intro.greeting_message"
         },
         {
           "type": "title",
@@ -47,7 +84,7 @@
           "_translations": {
             "value": {}
           },
-          "_nested_name": "dg_help.intro"
+          "_nested_name": "dg_intro.intro"
         },
         {
           "type": "text",
@@ -59,7 +96,7 @@
           "style_list": [
             "margin-top: -4px"
           ],
-          "_nested_name": "dg_help.intro_text"
+          "_nested_name": "dg_intro.intro_text"
         },
         {
           "type": "text",
@@ -71,10 +108,10 @@
           "style_list": [
             "margin-top: -4px"
           ],
-          "_nested_name": "dg_help.intro_text"
+          "_nested_name": "dg_intro.intro_text"
         }
       ],
-      "_nested_name": "dg_help"
+      "_nested_name": "dg_intro"
     },
     {
       "type": "display_group",
