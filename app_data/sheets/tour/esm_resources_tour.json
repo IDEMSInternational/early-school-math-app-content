@@ -20,8 +20,30 @@
         "title": {},
         "message_text": {}
       },
-      "message_text": "This tool will find all the resources associated with a topic.",
+      "message_text": "The Resource Finder creates lists of all the resources associated with a group of topics.",
       "template_component_name": "dg_resource_finder",
+      "route": "template/esm_resources"
+    },
+    {
+      "type": "step",
+      "title": "Instructional Routines",
+      "_translations": {
+        "title": {},
+        "message_text": {}
+      },
+      "message_text": "These routines have 1 to 10-minute tasks to do with your class. Some are meant to be embedded in lessons and some are for breaks.",
+      "template_component_name": "dg_routines",
+      "route": "template/esm_resources"
+    },
+    {
+      "type": "step",
+      "title": "Rich Tasks",
+      "_translations": {
+        "title": {},
+        "message_text": {}
+      },
+      "message_text": "These are 1 to 3 lesson tasks that go into topics or problems in more depth.",
+      "template_component_name": "dg_rich_tasks",
       "route": "template/esm_resources"
     },
     {
@@ -42,7 +64,7 @@
         "title": {},
         "message_text": {}
       },
-      "message_text": "These are math games.",
+      "message_text": "These are math games to be played in the classroom.",
       "template_component_name": "dg_gas",
       "route": "template/esm_resources"
     },
@@ -53,30 +75,8 @@
         "title": {},
         "message_text": {}
       },
-      "message_text": "These storybooks are for an adult to read to a child. They have math comments and guiding questions on every page. Help your child grow mathematically and create strong associations of math with the happy, cozy experience of reading together!",
+      "message_text": "These storybooks are for an adult to read to a child. They have math comments and guiding questions on every page.",
       "template_component_name": "dg_storybooks",
-      "route": "template/esm_resources"
-    },
-    {
-      "type": "step",
-      "title": "Routines",
-      "_translations": {
-        "title": {},
-        "message_text": {}
-      },
-      "message_text": "This has 1 to 10-minute routines to do with your class. It has math talks, fluency tasks, and things like Which One Doesn't Belong?",
-      "template_component_name": "dg_routines",
-      "route": "template/esm_resources"
-    },
-    {
-      "type": "step",
-      "title": "Rich Tasks",
-      "_translations": {
-        "title": {},
-        "message_text": {}
-      },
-      "message_text": "This has 20-minute to multi-class tasks that allow more depth with multiple facets.",
-      "template_component_name": "dg_rich_tasks",
       "route": "template/esm_resources"
     },
     {
