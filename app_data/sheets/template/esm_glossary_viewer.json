@@ -4,69 +4,6 @@
   "status": "released",
   "rows": [
     {
-      "name": "glossary_count_ptr",
-      "value": "local.esm_content_ptr.glossary_count",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "glossary_count_ptr"
-    },
-    {
-      "name": "glossary_word_1_ptr",
-      "value": "local.esm_content_ptr.glossary_1",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "glossary_word_1_ptr"
-    },
-    {
-      "name": "glossary_word_2_ptr",
-      "value": "local.esm_content_ptr.glossary_2",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "glossary_word_2_ptr"
-    },
-    {
-      "name": "glossary_word_3_ptr",
-      "value": "local.esm_content_ptr.glossary_3",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "glossary_word_3_ptr"
-    },
-    {
-      "name": "glossary_word_4_ptr",
-      "value": "local.esm_content_ptr.glossary_4",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "glossary_word_4_ptr"
-    },
-    {
-      "name": "glossary_word_5_ptr",
-      "value": "local.esm_content_ptr.glossary_5",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "glossary_word_5_ptr"
-    },
-    {
-      "name": "glossary_word_6_ptr",
-      "value": "local.esm_content_ptr.glossary_6",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "glossary_word_6_ptr"
-    },
-    {
       "name": "esm_content_ptr",
       "type": "set_variable",
       "_nested_name": "esm_content_ptr"
@@ -169,6 +106,69 @@
       },
       "type": "set_variable",
       "_nested_name": "Comments_a"
+    },
+    {
+      "name": "glossary_count_ptr",
+      "value": "local.esm_content_ptr.glossary_count",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "glossary_count_ptr"
+    },
+    {
+      "name": "glossary_word_1_ptr",
+      "value": "local.esm_content_ptr.glossary_1",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "glossary_word_1_ptr"
+    },
+    {
+      "name": "glossary_word_2_ptr",
+      "value": "local.esm_content_ptr.glossary_2",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "glossary_word_2_ptr"
+    },
+    {
+      "name": "glossary_word_3_ptr",
+      "value": "local.esm_content_ptr.glossary_3",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "glossary_word_3_ptr"
+    },
+    {
+      "name": "glossary_word_4_ptr",
+      "value": "local.esm_content_ptr.glossary_4",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "glossary_word_4_ptr"
+    },
+    {
+      "name": "glossary_word_5_ptr",
+      "value": "local.esm_content_ptr.glossary_5",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "glossary_word_5_ptr"
+    },
+    {
+      "name": "glossary_word_6_ptr",
+      "value": "local.esm_content_ptr.glossary_6",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "glossary_word_6_ptr"
     },
     {
       "type": "display_group",

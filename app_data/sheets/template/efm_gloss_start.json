@@ -4,6 +4,72 @@
   "status": "released",
   "rows": [
     {
+      "type": "display_group",
+      "name": "dg_top_of_page",
+      "rows": [
+        {
+          "type": "title",
+          "name": "spacer",
+          "value": "Glossary",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "flex:1"
+          ],
+          "_nested_name": "dg_top_of_page.spacer"
+        },
+        {
+          "type": "display_group",
+          "name": "dg_help",
+          "rows": [
+            {
+              "type": "round_button",
+              "name": "help_button",
+              "action_list": [
+                {
+                  "trigger": "click",
+                  "action_id": "start_tour",
+                  "args": [
+                    "esm_glossary_tour"
+                  ],
+                  "_raw": "click | start_tour: esm_glossary_tour",
+                  "_cleaned": "click | start_tour: esm_glossary_tour"
+                }
+              ],
+              "parameter_list": {
+                "icon_src": "help",
+                "style": "navigation"
+              },
+              "_nested_name": "dg_top_of_page.dg_help.help_button"
+            }
+          ],
+          "_nested_name": "dg_top_of_page.dg_help"
+        }
+      ],
+      "_nested_name": "dg_top_of_page"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_info",
+      "rows": [
+        {
+          "type": "text",
+          "name": "Intro_text",
+          "value": "When arriving from a topic, you will see the glossary words associated with that topic, if any have been specified.",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "icon_src": "help",
+            "style": "navigation"
+          },
+          "_nested_name": "dg_info.Intro_text"
+        }
+      ],
+      "_nested_name": "dg_info"
+    },
+    {
       "name": "phrase_count",
       "value": "@fields.glossary_words_count",
       "_translations": {
@@ -60,6 +126,146 @@
       "condition": false,
       "type": "set_variable",
       "_nested_name": "description_1"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_all_or_some",
+      "rows": [
+        {
+          "type": "set_field",
+          "name": "glossary_words_count",
+          "value": "@fields.glossary_words_count - @fields.glossary_words_count",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "dg_all_or_some.glossary_words_count",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@fields.glossary_words_count - @fields.glossary_words_count",
+                "matchedExpression": "@fields.glossary_words_count",
+                "type": "fields",
+                "fieldName": "glossary_words_count"
+              },
+              {
+                "fullExpression": "@fields.glossary_words_count - @fields.glossary_words_count",
+                "matchedExpression": "@fields.glossary_words_count",
+                "type": "fields",
+                "fieldName": "glossary_words_count"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@fields.glossary_words_count": [
+              "value",
+              "value"
+            ]
+          }
+        },
+        {
+          "type": "button",
+          "name": "see_all_button",
+          "value": "See All Phrases",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "set_local",
+              "args": [
+                "see_all_phrases",
+                true
+              ],
+              "_raw": "click | set_local:see_all_phrases:TRUE",
+              "_cleaned": "click | set_local:see_all_phrases:TRUE"
+            },
+            {
+              "trigger": "click",
+              "action_id": "emit",
+              "args": [
+                "force_reload"
+              ],
+              "_raw": "click | emit:force_reload",
+              "_cleaned": "click | emit:force_reload"
+            }
+          ],
+          "parameter_list": {
+            "style": "short",
+            "text_align": "center"
+          },
+          "_nested_name": "dg_all_or_some.see_all_button"
+        },
+        {
+          "type": "toggle_bar",
+          "name": "checkbox_see_all_phrases",
+          "value": "@local.see_all_phrases",
+          "_translations": {
+            "value": {}
+          },
+          "condition": false,
+          "parameter_list": {
+            "true_text": "@local.description_1",
+            "false_text": "@local.description_1"
+          },
+          "_nested_name": "dg_all_or_some.checkbox_see_all_phrases",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@local.see_all_phrases",
+                "matchedExpression": "@local.see_all_phrases",
+                "type": "local",
+                "fieldName": "see_all_phrases"
+              }
+            ],
+            "parameter_list": {
+              "true_text": [
+                {
+                  "fullExpression": "@local.description_1",
+                  "matchedExpression": "@local.description_1",
+                  "type": "local",
+                  "fieldName": "description_1"
+                }
+              ],
+              "false_text": [
+                {
+                  "fullExpression": "@local.description_1",
+                  "matchedExpression": "@local.description_1",
+                  "type": "local",
+                  "fieldName": "description_1"
+                }
+              ]
+            }
+          },
+          "_dynamicDependencies": {
+            "@local.see_all_phrases": [
+              "value"
+            ],
+            "@local.description_1": [
+              "parameter_list.true_text",
+              "parameter_list.false_text"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "name": "spacer",
+          "style_list": [
+            "flex: 1"
+          ],
+          "_nested_name": "dg_all_or_some.spacer"
+        }
+      ],
+      "_nested_name": "dg_all_or_some"
+    },
+    {
+      "name": "comment_a",
+      "value": "If glossar words are in fields, then only use them",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "comment_a"
     },
     {
       "name": "gloss_word_1",
@@ -204,212 +410,6 @@
           "value"
         ]
       }
-    },
-    {
-      "type": "display_group",
-      "name": "dg_top_of_page",
-      "rows": [
-        {
-          "type": "title",
-          "name": "spacer",
-          "value": "Glossary",
-          "_translations": {
-            "value": {}
-          },
-          "style_list": [
-            "flex:1"
-          ],
-          "_nested_name": "dg_top_of_page.spacer"
-        },
-        {
-          "type": "display_group",
-          "name": "dg_help",
-          "rows": [
-            {
-              "type": "round_button",
-              "name": "help_button",
-              "action_list": [
-                {
-                  "trigger": "click",
-                  "action_id": "start_tour",
-                  "args": [
-                    "esm_glossary_tour"
-                  ],
-                  "_raw": "click | start_tour: esm_glossary_tour",
-                  "_cleaned": "click | start_tour: esm_glossary_tour"
-                }
-              ],
-              "parameter_list": {
-                "icon_src": "help",
-                "style": "navigation"
-              },
-              "_nested_name": "dg_top_of_page.dg_help.help_button"
-            }
-          ],
-          "_nested_name": "dg_top_of_page.dg_help"
-        }
-      ],
-      "_nested_name": "dg_top_of_page"
-    },
-    {
-      "type": "display_group",
-      "name": "dg_info",
-      "rows": [
-        {
-          "type": "text",
-          "name": "Intro_text",
-          "value": "When arriving from a topic, you will see the glossary words associated with that topic, if any have been specified.",
-          "_translations": {
-            "value": {}
-          },
-          "parameter_list": {
-            "icon_src": "help",
-            "style": "navigation"
-          },
-          "_nested_name": "dg_info.Intro_text"
-        }
-      ],
-      "_nested_name": "dg_info"
-    },
-    {
-      "type": "display_group",
-      "name": "dg_all_or_some",
-      "rows": [
-        {
-          "type": "set_field",
-          "name": "glossary_words_count",
-          "value": "@fields.glossary_words_count - @fields.glossary_words_count",
-          "_translations": {
-            "value": {}
-          },
-          "_nested_name": "dg_all_or_some.glossary_words_count",
-          "_dynamicFields": {
-            "value": [
-              {
-                "fullExpression": "@fields.glossary_words_count - @fields.glossary_words_count",
-                "matchedExpression": "@fields.glossary_words_count",
-                "type": "fields",
-                "fieldName": "glossary_words_count"
-              },
-              {
-                "fullExpression": "@fields.glossary_words_count - @fields.glossary_words_count",
-                "matchedExpression": "@fields.glossary_words_count",
-                "type": "fields",
-                "fieldName": "glossary_words_count"
-              }
-            ]
-          },
-          "_dynamicDependencies": {
-            "@fields.glossary_words_count": [
-              "value",
-              "value"
-            ]
-          }
-        },
-        {
-          "type": "button",
-          "name": "see_all_button",
-          "value": "See All Phrases",
-          "_translations": {
-            "value": {}
-          },
-          "action_list": [
-            {
-              "trigger": "click",
-              "action_id": "set_local",
-              "args": [
-                "see_all_phrases",
-                true
-              ],
-              "_raw": "click | set_local:see_all_phrases:TRUE",
-              "_cleaned": "click | set_local:see_all_phrases:TRUE"
-            },
-            {
-              "trigger": "click",
-              "action_id": "emit",
-              "args": [
-                "force_reload"
-              ],
-              "_raw": "click | emit:force_reload",
-              "_cleaned": "click | emit:force_reload"
-            }
-          ],
-          "parameter_list": {
-            "style": "short",
-            "text_align": "center"
-          },
-          "_nested_name": "dg_all_or_some.see_all_button"
-        },
-        {
-          "type": "toggle_bar",
-          "name": "checkbox_see_all_phrases",
-          "value": "@local.see_all_phrases",
-          "_translations": {
-            "value": {}
-          },
-          "condition": false,
-          "parameter_list": {
-            "true_text": "@local.description_1",
-            "false_text": "@local.description_1"
-          },
-          "_nested_name": "dg_all_or_some.checkbox_see_all_phrases",
-          "_dynamicFields": {
-            "value": [
-              {
-                "fullExpression": "@local.see_all_phrases",
-                "matchedExpression": "@local.see_all_phrases",
-                "type": "local",
-                "fieldName": "see_all_phrases"
-              }
-            ],
-            "parameter_list": {
-              "true_text": [
-                {
-                  "fullExpression": "@local.description_1",
-                  "matchedExpression": "@local.description_1",
-                  "type": "local",
-                  "fieldName": "description_1"
-                }
-              ],
-              "false_text": [
-                {
-                  "fullExpression": "@local.description_1",
-                  "matchedExpression": "@local.description_1",
-                  "type": "local",
-                  "fieldName": "description_1"
-                }
-              ]
-            }
-          },
-          "_dynamicDependencies": {
-            "@local.see_all_phrases": [
-              "value"
-            ],
-            "@local.description_1": [
-              "parameter_list.true_text",
-              "parameter_list.false_text"
-            ]
-          }
-        },
-        {
-          "type": "text",
-          "name": "spacer",
-          "style_list": [
-            "flex: 1"
-          ],
-          "_nested_name": "dg_all_or_some.spacer"
-        }
-      ],
-      "_nested_name": "dg_all_or_some"
-    },
-    {
-      "name": "comment_a",
-      "value": "If glossar words are in fields, then only use them",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "comment_a"
     },
     {
       "type": "display_group",

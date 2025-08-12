@@ -4,96 +4,6 @@
   "status": "released",
   "rows": [
     {
-      "name": "EmPtY_string",
-      "value": "EmPtY",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "EmPtY_string"
-    },
-    {
-      "name": "array_from_string",
-      "value": "@calc(@fields.topics_search_set.split(\",\"))",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "array_from_string",
-      "_dynamicFields": {
-        "value": [
-          {
-            "fullExpression": "@calc(@fields.topics_search_set.split(\",\"))",
-            "matchedExpression": "@fields.topics_search_set.split",
-            "type": "fields",
-            "fieldName": "topics_search_set"
-          },
-          {
-            "fullExpression": "@calc(@fields.topics_search_set.split(\",\"))",
-            "matchedExpression": "@calc(@fields.topics_search_set.split(\",\"))",
-            "type": "calc",
-            "fieldName": "@fields.topics_search_set.split(\",\")"
-          }
-        ]
-      },
-      "_dynamicDependencies": {
-        "@fields.topics_search_set.split": [
-          "value"
-        ],
-        "@calc(@fields.topics_search_set.split(\",\"))": [
-          "value"
-        ]
-      }
-    },
-    {
-      "name": "search_set",
-      "value": "@calc(new Set(@local.array_from_string))",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "search_set",
-      "_dynamicFields": {
-        "value": [
-          {
-            "fullExpression": "@calc(new Set(@local.array_from_string))",
-            "matchedExpression": "@local.array_from_string",
-            "type": "local",
-            "fieldName": "array_from_string"
-          },
-          {
-            "fullExpression": "@calc(new Set(@local.array_from_string))",
-            "matchedExpression": "@calc(new Set(@local.array_from_string))",
-            "type": "calc",
-            "fieldName": "new Set(@local.array_from_string)"
-          }
-        ]
-      },
-      "_dynamicDependencies": {
-        "@local.array_from_string": [
-          "value"
-        ],
-        "@calc(new Set(@local.array_from_string))": [
-          "value"
-        ]
-      }
-    },
-    {
-      "name": "display_the_results",
-      "value": true,
-      "type": "set_variable",
-      "_nested_name": "display_the_results"
-    },
-    {
-      "name": "comment",
-      "value": "If button is pushed,then display resource information",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "comment"
-    },
-    {
       "type": "display_group",
       "name": "top_of_page",
       "rows": [
@@ -117,6 +27,15 @@
       },
       "type": "set_variable",
       "_nested_name": "comment"
+    },
+    {
+      "name": "EmPtY_string",
+      "value": "EmPtY",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "EmPtY_string"
     },
     {
       "type": "display_group",
@@ -1974,6 +1893,72 @@
       "_nested_name": "comment"
     },
     {
+      "name": "array_from_string",
+      "value": "@calc(@fields.topics_search_set.split(\",\"))",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "array_from_string",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(@fields.topics_search_set.split(\",\"))",
+            "matchedExpression": "@fields.topics_search_set.split",
+            "type": "fields",
+            "fieldName": "topics_search_set"
+          },
+          {
+            "fullExpression": "@calc(@fields.topics_search_set.split(\",\"))",
+            "matchedExpression": "@calc(@fields.topics_search_set.split(\",\"))",
+            "type": "calc",
+            "fieldName": "@fields.topics_search_set.split(\",\")"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.topics_search_set.split": [
+          "value"
+        ],
+        "@calc(@fields.topics_search_set.split(\",\"))": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "search_set",
+      "value": "@calc(new Set(@local.array_from_string))",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "search_set",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(new Set(@local.array_from_string))",
+            "matchedExpression": "@local.array_from_string",
+            "type": "local",
+            "fieldName": "array_from_string"
+          },
+          {
+            "fullExpression": "@calc(new Set(@local.array_from_string))",
+            "matchedExpression": "@calc(new Set(@local.array_from_string))",
+            "type": "calc",
+            "fieldName": "new Set(@local.array_from_string)"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.array_from_string": [
+          "value"
+        ],
+        "@calc(new Set(@local.array_from_string))": [
+          "value"
+        ]
+      }
+    },
+    {
       "type": "display_group",
       "name": "testing_range",
       "parameter_list": {
@@ -2229,6 +2214,21 @@
         }
       ],
       "_nested_name": "testing_range"
+    },
+    {
+      "name": "display_the_results",
+      "value": true,
+      "type": "set_variable",
+      "_nested_name": "display_the_results"
+    },
+    {
+      "name": "comment",
+      "value": "If button is pushed,then display resource information",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "comment"
     },
     {
       "type": "display_group",
