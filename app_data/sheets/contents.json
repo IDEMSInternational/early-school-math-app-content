@@ -841,6 +841,18 @@
         }
       }
     },
+    "esm_equality_concept_list": {
+      "flow_type": "data_list",
+      "flow_name": "esm_equality_concept_list",
+      "data_list_name": "esm_equality_concept_data_list",
+      "_xlsxPath": "ESM_routines_high_level_sheets.xlsx",
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1PeJ5ishcTCWUvjhflbQqKO6M8u9rNuec",
+      "_metadata": {
+        "glossary_count": {
+          "type": "number"
+        }
+      }
+    },
     "esm_gloss_list": {
       "flow_type": "data_list",
       "flow_name": "esm_gloss_list",
@@ -850,6 +862,18 @@
       "_metadata": {
         "dont_use_glossary_button": {
           "type": "boolean"
+        }
+      }
+    },
+    "esm_i_have_list": {
+      "flow_type": "data_list",
+      "flow_name": "esm_i_have_list",
+      "data_list_name": "esm_i_have_data_list",
+      "_xlsxPath": "ESM_routines_high_level_sheets.xlsx",
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1PeJ5ishcTCWUvjhflbQqKO6M8u9rNuec",
+      "_metadata": {
+        "glossary_count": {
+          "type": "number"
         }
       }
     },
@@ -1538,6 +1562,12 @@
       "flow_type": "template",
       "flow_name": "esm_glossary_viewer",
       "_xlsxPath": "ESM_routines_viewer.xlsx",
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1PeJ5ishcTCWUvjhflbQqKO6M8u9rNuec"
+    },
+    "esm_i_have": {
+      "flow_type": "template",
+      "flow_name": "esm_i_have",
+      "_xlsxPath": "ESM_routines_high_level_sheets.xlsx",
       "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1PeJ5ishcTCWUvjhflbQqKO6M8u9rNuec"
     },
     "esm_intro_start_start": {

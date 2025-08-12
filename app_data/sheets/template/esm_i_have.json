@@ -1,6 +1,6 @@
 {
   "flow_type": "template",
-  "flow_name": "esm_intro_start_start",
+  "flow_name": "esm_i_have",
   "status": "released",
   "rows": [
     {
@@ -10,7 +10,7 @@
         {
           "type": "title",
           "name": "spacer",
-          "value": "Welcome!",
+          "value": "I Have ... I WIsh I Had ...",
           "_translations": {
             "value": {}
           },
@@ -18,131 +18,147 @@
             "flex:1"
           ],
           "_nested_name": "dg_top_of_page.spacer"
-        },
-        {
-          "type": "display_group",
-          "name": "dg_help",
-          "rows": [
-            {
-              "type": "round_button",
-              "name": "help_button",
-              "action_list": [
-                {
-                  "trigger": "click",
-                  "action_id": "start_tour",
-                  "args": [
-                    "esm_intro_start_tour"
-                  ],
-                  "_raw": "click | start_tour: esm_intro_start_tour",
-                  "_cleaned": "click | start_tour: esm_intro_start_tour"
-                }
-              ],
-              "parameter_list": {
-                "icon_src": "help",
-                "style": "navigation"
-              },
-              "_nested_name": "dg_top_of_page.dg_help.help_button"
-            }
-          ],
-          "_nested_name": "dg_top_of_page.dg_help"
         }
       ],
       "_nested_name": "dg_top_of_page"
     },
     {
       "type": "display_group",
-      "name": "dg_intro",
-      "parameter_list": {
-        "style": "column"
-      },
+      "name": "dg_info",
       "rows": [
         {
           "type": "text",
-          "name": "greeting_message",
-          "value": "We hope you enjoy this app by Early Family Math. Please send feedback to Chris@EarlyFamilyMath.org.",
+          "name": "help_text",
+          "value": "The routines\n* I have ... I wish I had ...\n* I have ... I only need ...\n\ndevelop ideas of quantity, order, difference, adding, and subtracting.",
           "_translations": {
             "value": {}
           },
-          "style_list": [
-            "margin-top: -4px"
-          ],
-          "_nested_name": "dg_intro.greeting_message"
-        },
-        {
-          "type": "title",
-          "name": "intro",
-          "value": "Introduction",
-          "_translations": {
-            "value": {}
+          "parameter_list": {
+            "icon_src": "help",
+            "style": "navigation"
           },
-          "_nested_name": "dg_intro.intro"
-        },
-        {
-          "type": "text",
-          "name": "intro_text",
-          "value": "This app has two entry points on the home page.",
-          "_translations": {
-            "value": {}
-          },
-          "style_list": [
-            "margin-top: -4px"
-          ],
-          "_nested_name": "dg_intro.intro_text"
-        },
-        {
-          "type": "text",
-          "name": "intro_text",
-          "value": "**1. Topics**\n\nThis is a hierarchical list of math subjects. Each topic has a discussion with links to a Glossary and a Resource Finder. This is also the place where you choose the standard to use for viewing topics throughout the app.\n\n**2. Resources**\n* **Resource Finder** – Lists resources for a topic or group of topics\n* **Instructional Routines** – Groups of 1-10-minute tasks\n* **Rich Tasks** – 1-3-lesson activities going more deeply into a topic\n* **Puzzles**\n* **Games**\n* **Storybooks**\n* **Glossary** – Definitions and explanations of math terminology",
-          "_translations": {
-            "value": {}
-          },
-          "style_list": [
-            "margin-top: -4px"
-          ],
-          "_nested_name": "dg_intro.intro_text"
+          "_nested_name": "dg_info.help_text"
         }
       ],
-      "_nested_name": "dg_intro"
+      "_nested_name": "dg_info"
     },
     {
       "type": "display_group",
-      "name": "intro_start_examples",
+      "name": "dg_advice",
       "parameter_list": {
         "style": "column"
       },
       "rows": [
         {
-          "type": "title",
-          "name": "examples__intro",
-          "value": "Example Experiences",
-          "_translations": {
-            "value": {}
+          "type": "accordion",
+          "name": "accordion_for_intro",
+          "parameter_list": {
+            "open_multiple": "TRUE"
           },
-          "_nested_name": "intro_start_examples.examples__intro"
-        },
+          "rows": [
+            {
+              "type": "accordion_section",
+              "name": "accord_topics",
+              "value": "Topics & Goals",
+              "parameter_list": {
+                "text_align": "center",
+                "style": "large emphasised"
+              },
+              "rows": [
+                {
+                  "type": "display_group",
+                  "name": "dg_topics_accord",
+                  "parameter_list": {
+                    "style": "column"
+                  },
+                  "rows": [
+                    {
+                      "type": "text",
+                      "name": "topics_text",
+                      "value": "Write this",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "parameter_list": {
+                        "icon_src": "help",
+                        "style": "navigation"
+                      },
+                      "_nested_name": "dg_advice.accordion_for_intro.accord_topics.dg_topics_accord.topics_text"
+                    }
+                  ],
+                  "_nested_name": "dg_advice.accordion_for_intro.accord_topics.dg_topics_accord"
+                }
+              ],
+              "_nested_name": "dg_advice.accordion_for_intro.accord_topics"
+            },
+            {
+              "type": "accordion_section",
+              "name": "accord_advice",
+              "value": "Teaching Ideas & Directions",
+              "parameter_list": {
+                "text_align": "center",
+                "style": "large emphasised"
+              },
+              "rows": [
+                {
+                  "type": "display_group",
+                  "name": "dg_advice_accord",
+                  "parameter_list": {
+                    "style": "column"
+                  },
+                  "rows": [
+                    {
+                      "type": "text",
+                      "name": "advice_text",
+                      "value": "Write this",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "parameter_list": {
+                        "icon_src": "help",
+                        "style": "navigation"
+                      },
+                      "_nested_name": "dg_advice.accordion_for_intro.accord_advice.dg_advice_accord.advice_text"
+                    }
+                  ],
+                  "_nested_name": "dg_advice.accordion_for_intro.accord_advice.dg_advice_accord"
+                }
+              ],
+              "_nested_name": "dg_advice.accordion_for_intro.accord_advice"
+            }
+          ],
+          "_nested_name": "dg_advice.accordion_for_intro"
+        }
+      ],
+      "_nested_name": "dg_advice"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_i_have_talks",
+      "parameter_list": {
+        "style": "column"
+      },
+      "rows": [
         {
           "type": "text",
-          "name": "examples__intro",
-          "value": "These introduce many of this app's capabilities.",
+          "name": "intro_2_text",
+          "value": "Write this",
           "_translations": {
             "value": {}
           },
-          "style_list": [
-            "margin-top: -4px"
-          ],
-          "_nested_name": "intro_start_examples.examples__intro"
+          "_nested_name": "dg_i_have_talks.intro_2_text"
         },
         {
           "type": "accordion",
-          "name": "accord_intro_start_egs",
+          "name": "accordion_for_i_have_groups",
           "parameter_list": {
             "open_multiple": "TRUE"
           },
           "rows": [
             {
               "type": "items",
-              "name": "dot_talk_accordions",
-              "value": "@data.esm_intro_starts_egs_data_list",
+              "name": "i_have_accordions",
+              "value": "@data.esm_i_have_data_list",
               "rows": [
                 {
                   "type": "accordion_section",
@@ -162,16 +178,16 @@
                       "rows": [
                         {
                           "name": "content_ptr",
-                          "value": "data.esm_intro_starts_egs_data_list.@item.id",
+                          "value": "data.esm_i_have_data_list.@item.id",
                           "_translations": {
                             "value": {}
                           },
                           "type": "set_variable",
-                          "_nested_name": "intro_start_examples.accord_intro_start_egs.dot_talk_accordions.accord_@item.id.dg_@item.id.content_ptr",
+                          "_nested_name": "dg_i_have_talks.accordion_for_i_have_groups.i_have_accordions.accord_@item.id.dg_@item.id.content_ptr",
                           "_dynamicFields": {
                             "value": [
                               {
-                                "fullExpression": "data.esm_intro_starts_egs_data_list.@item.id",
+                                "fullExpression": "data.esm_i_have_data_list.@item.id",
                                 "matchedExpression": "@item.id",
                                 "type": "item",
                                 "fieldName": "id"
@@ -179,13 +195,13 @@
                             ],
                             "_nested_name": [
                               {
-                                "fullExpression": "intro_start_examples.accord_intro_start_egs.dot_talk_accordions.accord_@item.id.dg_@item.id.content_ptr",
+                                "fullExpression": "dg_i_have_talks.accordion_for_i_have_groups.i_have_accordions.accord_@item.id.dg_@item.id.content_ptr",
                                 "matchedExpression": "@item.id.dg_",
                                 "type": "item",
                                 "fieldName": "id"
                               },
                               {
-                                "fullExpression": "intro_start_examples.accord_intro_start_egs.dot_talk_accordions.accord_@item.id.dg_@item.id.content_ptr",
+                                "fullExpression": "dg_i_have_talks.accordion_for_i_have_groups.i_have_accordions.accord_@item.id.dg_@item.id.content_ptr",
                                 "matchedExpression": "@item.id.content_ptr",
                                 "type": "item",
                                 "fieldName": "id"
@@ -206,7 +222,7 @@
                         },
                         {
                           "type": "template",
-                          "name": "example_body_maker",
+                          "name": "equality_concept_body_maker",
                           "value": "esm_page_viewer",
                           "rows": [
                             {
@@ -216,7 +232,7 @@
                                 "value": {}
                               },
                               "type": "set_variable",
-                              "_nested_name": "intro_start_examples.accord_intro_start_egs.dot_talk_accordions.accord_@item.id.dg_@item.id.example_body_maker.esm_content_ptr",
+                              "_nested_name": "dg_i_have_talks.accordion_for_i_have_groups.i_have_accordions.accord_@item.id.dg_@item.id.equality_concept_body_maker.esm_content_ptr",
                               "_dynamicFields": {
                                 "value": [
                                   {
@@ -228,14 +244,14 @@
                                 ],
                                 "_nested_name": [
                                   {
-                                    "fullExpression": "intro_start_examples.accord_intro_start_egs.dot_talk_accordions.accord_@item.id.dg_@item.id.example_body_maker.esm_content_ptr",
+                                    "fullExpression": "dg_i_have_talks.accordion_for_i_have_groups.i_have_accordions.accord_@item.id.dg_@item.id.equality_concept_body_maker.esm_content_ptr",
                                     "matchedExpression": "@item.id.dg_",
                                     "type": "item",
                                     "fieldName": "id"
                                   },
                                   {
-                                    "fullExpression": "intro_start_examples.accord_intro_start_egs.dot_talk_accordions.accord_@item.id.dg_@item.id.example_body_maker.esm_content_ptr",
-                                    "matchedExpression": "@item.id.example_body_maker.esm_content_ptr",
+                                    "fullExpression": "dg_i_have_talks.accordion_for_i_have_groups.i_have_accordions.accord_@item.id.dg_@item.id.equality_concept_body_maker.esm_content_ptr",
+                                    "matchedExpression": "@item.id.equality_concept_body_maker.esm_content_ptr",
                                     "type": "item",
                                     "fieldName": "id"
                                   }
@@ -248,24 +264,24 @@
                                 "@item.id.dg_": [
                                   "_nested_name"
                                 ],
-                                "@item.id.example_body_maker.esm_content_ptr": [
+                                "@item.id.equality_concept_body_maker.esm_content_ptr": [
                                   "_nested_name"
                                 ]
                               }
                             }
                           ],
-                          "_nested_name": "intro_start_examples.accord_intro_start_egs.dot_talk_accordions.accord_@item.id.dg_@item.id.example_body_maker",
+                          "_nested_name": "dg_i_have_talks.accordion_for_i_have_groups.i_have_accordions.accord_@item.id.dg_@item.id.equality_concept_body_maker",
                           "_dynamicFields": {
                             "_nested_name": [
                               {
-                                "fullExpression": "intro_start_examples.accord_intro_start_egs.dot_talk_accordions.accord_@item.id.dg_@item.id.example_body_maker",
+                                "fullExpression": "dg_i_have_talks.accordion_for_i_have_groups.i_have_accordions.accord_@item.id.dg_@item.id.equality_concept_body_maker",
                                 "matchedExpression": "@item.id.dg_",
                                 "type": "item",
                                 "fieldName": "id"
                               },
                               {
-                                "fullExpression": "intro_start_examples.accord_intro_start_egs.dot_talk_accordions.accord_@item.id.dg_@item.id.example_body_maker",
-                                "matchedExpression": "@item.id.example_body_maker",
+                                "fullExpression": "dg_i_have_talks.accordion_for_i_have_groups.i_have_accordions.accord_@item.id.dg_@item.id.equality_concept_body_maker",
+                                "matchedExpression": "@item.id.equality_concept_body_maker",
                                 "type": "item",
                                 "fieldName": "id"
                               }
@@ -275,13 +291,13 @@
                             "@item.id.dg_": [
                               "_nested_name"
                             ],
-                            "@item.id.example_body_maker": [
+                            "@item.id.equality_concept_body_maker": [
                               "_nested_name"
                             ]
                           }
                         }
                       ],
-                      "_nested_name": "intro_start_examples.accord_intro_start_egs.dot_talk_accordions.accord_@item.id.dg_@item.id",
+                      "_nested_name": "dg_i_have_talks.accordion_for_i_have_groups.i_have_accordions.accord_@item.id.dg_@item.id",
                       "_dynamicFields": {
                         "name": [
                           {
@@ -293,13 +309,13 @@
                         ],
                         "_nested_name": [
                           {
-                            "fullExpression": "intro_start_examples.accord_intro_start_egs.dot_talk_accordions.accord_@item.id.dg_@item.id",
+                            "fullExpression": "dg_i_have_talks.accordion_for_i_have_groups.i_have_accordions.accord_@item.id.dg_@item.id",
                             "matchedExpression": "@item.id.dg_",
                             "type": "item",
                             "fieldName": "id"
                           },
                           {
-                            "fullExpression": "intro_start_examples.accord_intro_start_egs.dot_talk_accordions.accord_@item.id.dg_@item.id",
+                            "fullExpression": "dg_i_have_talks.accordion_for_i_have_groups.i_have_accordions.accord_@item.id.dg_@item.id",
                             "matchedExpression": "@item.id",
                             "type": "item",
                             "fieldName": "id"
@@ -317,7 +333,7 @@
                       }
                     }
                   ],
-                  "_nested_name": "intro_start_examples.accord_intro_start_egs.dot_talk_accordions.accord_@item.id",
+                  "_nested_name": "dg_i_have_talks.accordion_for_i_have_groups.i_have_accordions.accord_@item.id",
                   "_dynamicFields": {
                     "name": [
                       {
@@ -337,7 +353,7 @@
                     ],
                     "_nested_name": [
                       {
-                        "fullExpression": "intro_start_examples.accord_intro_start_egs.dot_talk_accordions.accord_@item.id",
+                        "fullExpression": "dg_i_have_talks.accordion_for_i_have_groups.i_have_accordions.accord_@item.id",
                         "matchedExpression": "@item.id",
                         "type": "item",
                         "fieldName": "id"
@@ -355,48 +371,45 @@
                   }
                 }
               ],
-              "_nested_name": "intro_start_examples.accord_intro_start_egs.dot_talk_accordions",
+              "_nested_name": "dg_i_have_talks.accordion_for_i_have_groups.i_have_accordions",
               "_dynamicFields": {
                 "value": [
                   {
-                    "fullExpression": "@data.esm_intro_starts_egs_data_list",
-                    "matchedExpression": "@data.esm_intro_starts_egs_data_list",
+                    "fullExpression": "@data.esm_i_have_data_list",
+                    "matchedExpression": "@data.esm_i_have_data_list",
                     "type": "data",
-                    "fieldName": "esm_intro_starts_egs_data_list"
+                    "fieldName": "esm_i_have_data_list"
                   }
                 ]
               },
               "_dynamicDependencies": {
-                "@data.esm_intro_starts_egs_data_list": [
+                "@data.esm_i_have_data_list": [
                   "value"
                 ]
               }
             }
           ],
-          "_nested_name": "intro_start_examples.accord_intro_start_egs"
+          "_nested_name": "dg_i_have_talks.accordion_for_i_have_groups"
         }
       ],
-      "_nested_name": "intro_start_examples"
-    },
-    {
-      "name": "no_message",
-      "value": "fake",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "no_message"
+      "_nested_name": "dg_i_have_talks"
     },
     {
       "type": "display_group",
-      "name": "dg_create_spae",
+      "name": "fake_group",
       "style_list": [
-        "margin-top: 30px"
+        "margin-top: 40px"
       ],
-      "rows": [],
-      "_nested_name": "dg_create_spae"
+      "rows": [
+        {
+          "type": "text",
+          "name": "spacer",
+          "_nested_name": "fake_group.spacer"
+        }
+      ],
+      "_nested_name": "fake_group"
     }
   ],
-  "_xlsxPath": "ESM_start_here_sheets.xlsx",
+  "_xlsxPath": "ESM_routines_high_level_sheets.xlsx",
   "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1PeJ5ishcTCWUvjhflbQqKO6M8u9rNuec"
 }

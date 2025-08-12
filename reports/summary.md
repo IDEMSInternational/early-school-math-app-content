@@ -3,25 +3,25 @@
 
 | type | count |
 | --- | --- |
-| accordion | 58 |
-| accordion_section | 106 |
-| button | 105 |
+| accordion | 61 |
+| accordion_section | 110 |
+| button | 108 |
 | debug_toggle | 1 |
-| display_group | 351 |
+| display_group | 365 |
 | image | 37 |
-| items | 66 |
+| items | 68 |
 | qr_code | 1 |
 | radio_button_grid | 1 |
-| round_button | 9 |
+| round_button | 10 |
 | select_text | 1 |
-| set_field | 28 |
-| set_variable | 744 |
+| set_field | 38 |
+| set_variable | 759 |
 | simple_checkbox | 4 |
-| template | 90 |
-| text | 249 |
+| template | 92 |
+| text | 264 |
 | text_area | 2 |
 | tile_component | 3 |
-| title | 49 |
+| title | 50 |
 | toggle_bar | 16 |
 </details>
 
@@ -32,18 +32,18 @@
 | --- | --- |
 | app_update | 1 |
 | emit: completed | 58 |
-| emit: force_reload | 13 |
+| emit: force_reload | 14 |
 | emit: force_reprocess | 4 |
 | emit: server_sync | 1 |
 | emit: set_language | 1 |
 | emit: uncompleted | 58 |
 | feedback | 11 |
-| go_to | 71 |
+| go_to | 73 |
 | go_to_url | 3 |
 | reset_app | 1 |
 | set_field | 91 |
-| set_local | 5 |
-| start_tour | 18 |
+| set_local | 6 |
+| start_tour | 19 |
 </details>
 
 <details open>
@@ -1595,7 +1595,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMRoutWhosTheSpy.svg | 4.3 | 1 |
 | ESMIll/ESMRoutWhosTheSpyNumbers.svg | 4.4 | 1 |
 | ESMIll/ESMRoutineNumberLineTo12.svg | 12.1 | 1 |
-| ESMIll/ESMRoutineStringNumberLineFrom0.svg | 23.9 | 1 |
+| ESMIll/ESMRoutineStringNumberLineFrom0.svg | 23.9 | 2 |
 | ESMIll/ESMSplats1Color1Splat10-10.svg | 9.2 | 1 |
 | ESMIll/ESMSplats1Color1Splat5-2.svg | 7.8 | 1 |
 | ESMIll/ESMSplats1Color1Splat6-1.svg | 7.9 | 1 |
@@ -1676,12 +1676,12 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | type | subtype | total |
 | --- | --- | --- |
-| data_list |  | 87 |
+| data_list |  | 91 |
 | data_list | app_config_language_list | 1 |
 | data_list | lifecycle_actions | 1 |
 | generator |  | 1 |
 | global |  | 2 |
-| template |  | 58 |
+| template |  | 59 |
 | template | generated | 58 |
 | tour |  | 10 |
 </details>

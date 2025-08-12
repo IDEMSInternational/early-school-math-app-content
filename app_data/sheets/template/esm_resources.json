@@ -4,15 +4,6 @@
   "status": "released",
   "rows": [
     {
-      "name": "EmPtY_string",
-      "value": "EmPtY",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "EmPtY_string"
-    },
-    {
       "type": "display_group",
       "name": "top_of_page",
       "rows": [
@@ -57,6 +48,15 @@
         }
       ],
       "_nested_name": "top_of_page"
+    },
+    {
+      "name": "EmPtY_string",
+      "value": "EmPtY",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "EmPtY_string"
     },
     {
       "type": "display_group",

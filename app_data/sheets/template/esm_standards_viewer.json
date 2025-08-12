@@ -4,12 +4,6 @@
   "status": "released",
   "rows": [
     {
-      "name": "added_something",
-      "value": false,
-      "type": "set_variable",
-      "_nested_name": "added_something"
-    },
-    {
       "name": "esm_content_ptr",
       "type": "set_variable",
       "_nested_name": "esm_content_ptr"
@@ -248,6 +242,12 @@
       "name": "standards_string",
       "type": "set_variable",
       "_nested_name": "standards_string"
+    },
+    {
+      "name": "added_something",
+      "value": false,
+      "type": "set_variable",
+      "_nested_name": "added_something"
     },
     {
       "type": "display_group",

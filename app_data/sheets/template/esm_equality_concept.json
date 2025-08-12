@@ -29,7 +29,7 @@
         {
           "type": "text",
           "name": "help_text",
-          "value": "THIS NEEDS TO BE WRITTEN\n\nFind ways to create the same value on two sides of an equal sign. This might be just text.",
+          "value": "These routines develop the idea of equality for a child.",
           "_translations": {
             "value": {}
           },
@@ -131,6 +131,268 @@
         }
       ],
       "_nested_name": "dg_advice"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_equality_concept_talks",
+      "parameter_list": {
+        "style": "column"
+      },
+      "rows": [
+        {
+          "type": "text",
+          "name": "intro_2_text",
+          "value": "Write this",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "dg_equality_concept_talks.intro_2_text"
+        },
+        {
+          "type": "accordion",
+          "name": "accordion_for_equality_concept_groups",
+          "parameter_list": {
+            "open_multiple": "TRUE"
+          },
+          "rows": [
+            {
+              "type": "items",
+              "name": "equality_concept_accordions",
+              "value": "@data.esm_equality_concept_data_list",
+              "rows": [
+                {
+                  "type": "accordion_section",
+                  "name": "accord_@item.id",
+                  "value": "@item.name",
+                  "parameter_list": {
+                    "text_align": "center",
+                    "style": "large emphasised"
+                  },
+                  "rows": [
+                    {
+                      "type": "display_group",
+                      "name": "dg_@item.id",
+                      "parameter_list": {
+                        "style": "column"
+                      },
+                      "rows": [
+                        {
+                          "name": "content_ptr",
+                          "value": "data.esm_equality_concept_data_list.@item.id",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "type": "set_variable",
+                          "_nested_name": "dg_equality_concept_talks.accordion_for_equality_concept_groups.equality_concept_accordions.accord_@item.id.dg_@item.id.content_ptr",
+                          "_dynamicFields": {
+                            "value": [
+                              {
+                                "fullExpression": "data.esm_equality_concept_data_list.@item.id",
+                                "matchedExpression": "@item.id",
+                                "type": "item",
+                                "fieldName": "id"
+                              }
+                            ],
+                            "_nested_name": [
+                              {
+                                "fullExpression": "dg_equality_concept_talks.accordion_for_equality_concept_groups.equality_concept_accordions.accord_@item.id.dg_@item.id.content_ptr",
+                                "matchedExpression": "@item.id.dg_",
+                                "type": "item",
+                                "fieldName": "id"
+                              },
+                              {
+                                "fullExpression": "dg_equality_concept_talks.accordion_for_equality_concept_groups.equality_concept_accordions.accord_@item.id.dg_@item.id.content_ptr",
+                                "matchedExpression": "@item.id.content_ptr",
+                                "type": "item",
+                                "fieldName": "id"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@item.id": [
+                              "value"
+                            ],
+                            "@item.id.dg_": [
+                              "_nested_name"
+                            ],
+                            "@item.id.content_ptr": [
+                              "_nested_name"
+                            ]
+                          }
+                        },
+                        {
+                          "type": "template",
+                          "name": "equality_concept_body_maker",
+                          "value": "esm_page_viewer",
+                          "rows": [
+                            {
+                              "name": "esm_content_ptr",
+                              "value": "@@local.content_ptr",
+                              "_translations": {
+                                "value": {}
+                              },
+                              "type": "set_variable",
+                              "_nested_name": "dg_equality_concept_talks.accordion_for_equality_concept_groups.equality_concept_accordions.accord_@item.id.dg_@item.id.equality_concept_body_maker.esm_content_ptr",
+                              "_dynamicFields": {
+                                "value": [
+                                  {
+                                    "fullExpression": "@@local.content_ptr",
+                                    "matchedExpression": "@local.content_ptr",
+                                    "type": "local",
+                                    "fieldName": "content_ptr"
+                                  }
+                                ],
+                                "_nested_name": [
+                                  {
+                                    "fullExpression": "dg_equality_concept_talks.accordion_for_equality_concept_groups.equality_concept_accordions.accord_@item.id.dg_@item.id.equality_concept_body_maker.esm_content_ptr",
+                                    "matchedExpression": "@item.id.dg_",
+                                    "type": "item",
+                                    "fieldName": "id"
+                                  },
+                                  {
+                                    "fullExpression": "dg_equality_concept_talks.accordion_for_equality_concept_groups.equality_concept_accordions.accord_@item.id.dg_@item.id.equality_concept_body_maker.esm_content_ptr",
+                                    "matchedExpression": "@item.id.equality_concept_body_maker.esm_content_ptr",
+                                    "type": "item",
+                                    "fieldName": "id"
+                                  }
+                                ]
+                              },
+                              "_dynamicDependencies": {
+                                "@local.content_ptr": [
+                                  "value"
+                                ],
+                                "@item.id.dg_": [
+                                  "_nested_name"
+                                ],
+                                "@item.id.equality_concept_body_maker.esm_content_ptr": [
+                                  "_nested_name"
+                                ]
+                              }
+                            }
+                          ],
+                          "_nested_name": "dg_equality_concept_talks.accordion_for_equality_concept_groups.equality_concept_accordions.accord_@item.id.dg_@item.id.equality_concept_body_maker",
+                          "_dynamicFields": {
+                            "_nested_name": [
+                              {
+                                "fullExpression": "dg_equality_concept_talks.accordion_for_equality_concept_groups.equality_concept_accordions.accord_@item.id.dg_@item.id.equality_concept_body_maker",
+                                "matchedExpression": "@item.id.dg_",
+                                "type": "item",
+                                "fieldName": "id"
+                              },
+                              {
+                                "fullExpression": "dg_equality_concept_talks.accordion_for_equality_concept_groups.equality_concept_accordions.accord_@item.id.dg_@item.id.equality_concept_body_maker",
+                                "matchedExpression": "@item.id.equality_concept_body_maker",
+                                "type": "item",
+                                "fieldName": "id"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@item.id.dg_": [
+                              "_nested_name"
+                            ],
+                            "@item.id.equality_concept_body_maker": [
+                              "_nested_name"
+                            ]
+                          }
+                        }
+                      ],
+                      "_nested_name": "dg_equality_concept_talks.accordion_for_equality_concept_groups.equality_concept_accordions.accord_@item.id.dg_@item.id",
+                      "_dynamicFields": {
+                        "name": [
+                          {
+                            "fullExpression": "dg_@item.id",
+                            "matchedExpression": "@item.id",
+                            "type": "item",
+                            "fieldName": "id"
+                          }
+                        ],
+                        "_nested_name": [
+                          {
+                            "fullExpression": "dg_equality_concept_talks.accordion_for_equality_concept_groups.equality_concept_accordions.accord_@item.id.dg_@item.id",
+                            "matchedExpression": "@item.id.dg_",
+                            "type": "item",
+                            "fieldName": "id"
+                          },
+                          {
+                            "fullExpression": "dg_equality_concept_talks.accordion_for_equality_concept_groups.equality_concept_accordions.accord_@item.id.dg_@item.id",
+                            "matchedExpression": "@item.id",
+                            "type": "item",
+                            "fieldName": "id"
+                          }
+                        ]
+                      },
+                      "_dynamicDependencies": {
+                        "@item.id": [
+                          "name",
+                          "_nested_name"
+                        ],
+                        "@item.id.dg_": [
+                          "_nested_name"
+                        ]
+                      }
+                    }
+                  ],
+                  "_nested_name": "dg_equality_concept_talks.accordion_for_equality_concept_groups.equality_concept_accordions.accord_@item.id",
+                  "_dynamicFields": {
+                    "name": [
+                      {
+                        "fullExpression": "accord_@item.id",
+                        "matchedExpression": "@item.id",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ],
+                    "value": [
+                      {
+                        "fullExpression": "@item.name",
+                        "matchedExpression": "@item.name",
+                        "type": "item",
+                        "fieldName": "name"
+                      }
+                    ],
+                    "_nested_name": [
+                      {
+                        "fullExpression": "dg_equality_concept_talks.accordion_for_equality_concept_groups.equality_concept_accordions.accord_@item.id",
+                        "matchedExpression": "@item.id",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@item.id": [
+                      "name",
+                      "_nested_name"
+                    ],
+                    "@item.name": [
+                      "value"
+                    ]
+                  }
+                }
+              ],
+              "_nested_name": "dg_equality_concept_talks.accordion_for_equality_concept_groups.equality_concept_accordions",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@data.esm_equality_concept_data_list",
+                    "matchedExpression": "@data.esm_equality_concept_data_list",
+                    "type": "data",
+                    "fieldName": "esm_equality_concept_data_list"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@data.esm_equality_concept_data_list": [
+                  "value"
+                ]
+              }
+            }
+          ],
+          "_nested_name": "dg_equality_concept_talks.accordion_for_equality_concept_groups"
+        }
+      ],
+      "_nested_name": "dg_equality_concept_talks"
     },
     {
       "type": "display_group",
