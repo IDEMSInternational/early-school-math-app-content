@@ -51,7 +51,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 43862 KB | 43.9 MB |
+| total | 43867 KB | 43.9 MB |
 | unused | 21605 KB | 21.6 MB |
 </details>
 
@@ -1380,6 +1380,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMOEComparingDotsClouds.svg | 3.5 | 1 |
 | ESMIll/ESMOEComparingDotsIntro.svg | 3.5 | 1 |
 | ESMIll/ESMOEConsecutiveNumbersEasy.svg | 6.5 | 1 |
+| ESMIll/ESMOEConsecutiveNumbersHarderExamples.svg | 5.1 | 1 |
 | ESMIll/ESMOECountingScoops.svg | 12.8 | 1 |
 | ESMIll/ESMOEFindingAmountsIntro.svg | 7.3 | 1 |
 | ESMIll/ESMOEFindingAmountsNeedMore.svg | 9.9 | 1 |
