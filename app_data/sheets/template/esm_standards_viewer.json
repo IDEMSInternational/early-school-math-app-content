@@ -144,6 +144,31 @@
       }
     },
     {
+      "name": "standard_chars",
+      "value": "uk20_standards",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "@fields.curriculum_standard_abbrev == \"UK20\"",
+      "type": "set_variable",
+      "_nested_name": "standard_chars",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@fields.curriculum_standard_abbrev == \"UK20\"",
+            "matchedExpression": "@fields.curriculum_standard_abbrev",
+            "type": "fields",
+            "fieldName": "curriculum_standard_abbrev"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.curriculum_standard_abbrev": [
+          "condition"
+        ]
+      }
+    },
+    {
       "name": "topic_theme_base_chars",
       "value": "topic_theme_",
       "_translations": {
