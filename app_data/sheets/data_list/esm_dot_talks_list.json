@@ -469,7 +469,7 @@
       "topic_theme_3": "NPV_CPV100_Count20",
       "topic_theme_4": "NPV_CPV100_PV20",
       "glossary_count": 0,
-      "block1_type": "all_illust",
+      "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMDots10AndMore11-12.svg",
       "block1_illust_max_size": "270px",
       "block2_type": "all_illust",
@@ -486,13 +486,18 @@
       "block5_illust_max_size": "270px",
       "name": "10 and Some More",
       "_translations": {
-        "name": {}
+        "name": {},
+        "block1_text": {}
       },
       "_translatedFields": {
         "name": {
           "eng": "10 and Some More"
+        },
+        "block1_text": {
+          "eng": "Use two ten frames to show the quantities from 11 to 20. Usually you will have one of the ten frames completely filled in."
         }
-      }
+      },
+      "block1_text": "Use two ten frames to show the quantities from 11 to 20. Usually you will have one of the ten frames completely filled in."
     },
     {
       "id": "esm_dt_larger_doubles_to_20",
@@ -593,7 +598,7 @@
           "eng": "10 to 20 Plus 1 or 2"
         },
         "block1_text": {
-          "eng": "<br><center>11 + 2 = 13; and 13 + 1 = 14</center>"
+          "eng": "WIth practice, your students will realize that the filled-in ten frame makes little difference to calculating the answer.\n\n<br><center>11 + 2 = 13; and 13 + 1 = 14</center>"
         },
         "block2_text": {
           "eng": "<br><center>12 + 1 = 13; and 14 + 2 = 16</center>"
@@ -608,7 +613,7 @@
           "eng": "<br><center>17 + 2 = 19; and 19 + 1 = 20</center>"
         }
       },
-      "block1_text": "<br><center>11 + 2 = 13; and 13 + 1 = 14</center>",
+      "block1_text": "WIth practice, your students will realize that the filled-in ten frame makes little difference to calculating the answer.\n\n<br><center>11 + 2 = 13; and 13 + 1 = 14</center>",
       "block2_text": "<br><center>12 + 1 = 13; and 14 + 2 = 16</center>",
       "block3_text": "<br><center>15 + 1 = 16; and 16 + 2 = 18</center>",
       "block4_text": "<br><center>13 + 2 = 15; and 18 + 1 = 19</center>",
@@ -669,7 +674,7 @@
           "eng": "Making 10s – Addition Strategy"
         },
         "block1_text": {
-          "eng": "These use ten frames to take a calculation, such as 9 + 6, and use \"Making 10s\" to turn it into 10 + 5.\n\n<center>9 + 6 ⇒ 10 + 5 = 15</center>"
+          "eng": "These use ten frames to take a calculation, such as 9 + 6, and use \"Making 10s\" to turn it into 10 + 5. These are examples of using \"compensation\" to create a simpler problem by taking away an amount from one number to give it to the other number to make it 10.\n\n<center>9 + 6 ⇒ 10 + 5 = 15</center>"
         },
         "block2_text": {
           "eng": "<br><center>9 + 8 ⇒ 10 + 7 = 17</center>"
@@ -699,7 +704,7 @@
           "eng": "<br><center>6 + 4 ⇒ 10 + 0 = 10</center>"
         }
       },
-      "block1_text": "These use ten frames to take a calculation, such as 9 + 6, and use \"Making 10s\" to turn it into 10 + 5.\n\n<center>9 + 6 ⇒ 10 + 5 = 15</center>",
+      "block1_text": "These use ten frames to take a calculation, such as 9 + 6, and use \"Making 10s\" to turn it into 10 + 5. These are examples of using \"compensation\" to create a simpler problem by taking away an amount from one number to give it to the other number to make it 10.\n\n<center>9 + 6 ⇒ 10 + 5 = 15</center>",
       "block2_text": "<br><center>9 + 8 ⇒ 10 + 7 = 17</center>",
       "block3_text": "<br><center>9 + 4 ⇒ 10 + 3 = 13</center>",
       "block4_text": "<br><center>8 + 7 ⇒ 10 + 5 = 15</center>",
@@ -737,7 +742,7 @@
           "eng": "Which Is More?"
         },
         "block1_text": {
-          "eng": "Take two of your dot talk images, put them next to eacher, and then ask how their quantities compare. Use just two so that direct comparisons can be made.\n\nYou might ask:\n* Which one has more?\n* Which one has less?\n* Do they have the same amount?\n\nWhen they give their answer, ask them how they know. If your students are ready for it, ask them to tell you how many more or less it is when the amounts are not the same. After discussing each answer, compare the different methods your students come up with.\n\nStart with simple comparisons where it is obvious that one picture can be made from the other by adding a few dots. This will help your students adopt and develop this strategy for when the comparisons are not as simple.\n\nFor example, in these images it is clear that they are the same except for the extra single dot in middle of the second image."
+          "eng": "Take two of your dot talk images, put them next to eacher, and then ask how their quantities compare. Use just two so that direct comparisons can be made.\n\nYou might ask:\n* Which one has more?\n* Which one has less?\n* Do they have the same amount?\n\n**How and Why** When they give their answer, ask them how they know. If your students are ready for it, ask them to tell you how many more or less it is when the amounts are not the same. After discussing each answer, compare the different methods your students come up with.\n\n**Start Simply** Start with simple comparisons where it is obvious that one picture can be made from the other by adding a few dots. This will help your students adopt and develop this strategy for when the comparisons are not as simple.\n\n**Examples:** in these images it is clear that they are the same except for the extra single dot in middle of the second image."
         },
         "block2_text": {
           "eng": "In these next images, they both show five dots set off from an additional 1 or 2 dots. This can give your students ideas for how to make the comparison without counting, though counting is fine too."
@@ -746,7 +751,7 @@
           "eng": "In these two images, what they have in common is a little less obvious. So it forms a good stepping stone to images that may not have anything in common."
         }
       },
-      "block1_text": "Take two of your dot talk images, put them next to eacher, and then ask how their quantities compare. Use just two so that direct comparisons can be made.\n\nYou might ask:\n* Which one has more?\n* Which one has less?\n* Do they have the same amount?\n\nWhen they give their answer, ask them how they know. If your students are ready for it, ask them to tell you how many more or less it is when the amounts are not the same. After discussing each answer, compare the different methods your students come up with.\n\nStart with simple comparisons where it is obvious that one picture can be made from the other by adding a few dots. This will help your students adopt and develop this strategy for when the comparisons are not as simple.\n\nFor example, in these images it is clear that they are the same except for the extra single dot in middle of the second image.",
+      "block1_text": "Take two of your dot talk images, put them next to eacher, and then ask how their quantities compare. Use just two so that direct comparisons can be made.\n\nYou might ask:\n* Which one has more?\n* Which one has less?\n* Do they have the same amount?\n\n**How and Why** When they give their answer, ask them how they know. If your students are ready for it, ask them to tell you how many more or less it is when the amounts are not the same. After discussing each answer, compare the different methods your students come up with.\n\n**Start Simply** Start with simple comparisons where it is obvious that one picture can be made from the other by adding a few dots. This will help your students adopt and develop this strategy for when the comparisons are not as simple.\n\n**Examples:** in these images it is clear that they are the same except for the extra single dot in middle of the second image.",
       "block2_text": "In these next images, they both show five dots set off from an additional 1 or 2 dots. This can give your students ideas for how to make the comparison without counting, though counting is fine too.",
       "block3_text": "In these two images, what they have in common is a little less obvious. So it forms a good stepping stone to images that may not have anything in common."
     }
