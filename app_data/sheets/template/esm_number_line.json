@@ -32,11 +32,24 @@
         {
           "type": "text",
           "name": "number_line_intro",
-          "value": "Number paths and number lines make the relationships between numbers more concrete and visible for beginning learners. These paths and liines make a great visual and mental representation for seeing how the numbers fit together.",
+          "value": "Number paths and number lines make the relationships between numbers more concrete and visible for beginning learners. These paths and lines make a great visual and mental representation for seeing how the numbers fit together.",
           "_translations": {
             "value": {}
           },
           "_nested_name": "dg_advice.number_line_intro"
+        },
+        {
+          "type": "image",
+          "name": "paths_and_line",
+          "value": "ESMIll/ESMTopicNumberPathsLines.svg",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "margin-top: -5px",
+            "max-width: 350px"
+          ],
+          "_nested_name": "dg_advice.paths_and_line"
         },
         {
           "type": "accordion",
@@ -64,7 +77,7 @@
                     {
                       "type": "text",
                       "name": "topics_text",
-                      "value": "The goal of using number paths and number lines is to ground the numerical skills being learned with the meaning of the numbers. It serves no purpose to have your students memorize a collection of mathematical facts if they do not know what they are talking about.\n\nAlso, the beginning skills of counting, order, adding and subtracting small numbers are better learned if they are learned in visual and tactile ways.\n\nDoing lots of work with number paths and number liines also helps reinforce the size and spacing of the numbers.",
+                      "value": "**Keep Grounded** The goal of using number paths and number lines is to ground the numerical skills being learned with the meaning of the numbers. It serves no purpose to have your students memorize a collection of mathematical facts if they do not know what they are talking about.\n\nThe beginning skills of counting, order, adding and subtracting with small numbers are better learned in visual and tactile ways. Working with number paths and number liines reinforces the size and spacing of the numbers.",
                       "_translations": {
                         "value": {}
                       },
@@ -106,7 +119,7 @@
                         {
                           "type": "text",
                           "name": "intro_text",
-                          "value": "There are three ways for presenting these number sequences to a class. The cards, paths, and lines should have numbers that increase from left to right. While number lines should always start at 0 (until negative numbers are encountered), the cards and paths should either start at 0 or 1. \n\n**Starting at 0:** Starting cards or a path at 0 matches up with the number lines your students will be seeing later on. It allows one to stand on or start at 0, and then count forward from there. It also forms a more natural transition to Counting On - if a student is used to starting at 0 and counting forward, then that is consistent with adding 3 + 2 by starting on the 3 and counting on \"4, 5.\"\n\n**Starting at 1:** If objects being counted are put directly above the number path cards, starting at 1 allows a student to see and experience a 1-1 correspondance of the objects with the cards of the number path.\n\n**100 Chart:** A 100 chart is a fourth organized way of showing the numbers to your students; however, the wrapping around of the number line is a bit more abstract. It will be useful as your students progress to larger number ranges.",
+                          "value": "The numbers on cards, paths, and lines should increase from left to right. While number lines should always start at 0 (until negative numbers are encountered), the cards and paths should either start at 0 or 1. \n\n**Starting at 0:** Starting cards or a path at 0 matches up with the number lines your students will be seeing later on. It allows one to stand on or start at 0, and then count forward from there. It also forms a more natural transition to Counting On - if a student is used to starting at 0 and counting forward, then that is consistent with adding 3 + 2 by starting on the 3 and counting on \"4, 5.\"\n\n**Starting at 1:** If objects being counted are put directly above the number path cards, starting at 1 allows a student to see and experience a 1-1 correspondance of the objects with the cards of the number path.\n\n**100 Chart:** A 100 chart is an additional organized way of showing the numbers to your students; however, the wrapping around of the number line is a bit more abstract. It will be useful as your students progress to larger number ranges, but avoid using these charts too early. For example, adding and subtracting 10 on a 100 chart is very convenient, but if you are not careful to set up place value first, your students will use it as a mindless, meaningless tool.",
                           "_translations": {
                             "value": {}
                           },

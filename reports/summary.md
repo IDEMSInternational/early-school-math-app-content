@@ -14,8 +14,8 @@
 | radio_button_grid | 1 |
 | round_button | 10 |
 | select_text | 1 |
-| set_field | 38 |
-| set_variable | 759 |
+| set_field | 44 |
+| set_variable | 761 |
 | simple_checkbox | 4 |
 | template | 92 |
 | text | 264 |
@@ -51,7 +51,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 43867 KB | 43.9 MB |
+| total | 44037 KB | 44 MB |
 | unused | 21605 KB | 21.6 MB |
 </details>
 
@@ -354,6 +354,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | EFM50NumberLine.svg | 21.7 | 1 |
 | EFM510FactorTrees.svg | 17.2 | 1 |
 | EFM540ProductGame.svg | 26.5 | 1 |
+| EFM70EachOfThese-Furniture.svg | 170.4 | 1 |
 | EFM70EachOfTheseIsDifferent2Example.svg | 6.5 | 1 |
 | EFM70ForkSpoonGold.svg | 14.9 | 2 |
 | EFM70GoingInCircles.svg | 10.6 | 3 |
@@ -1678,7 +1679,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | type | subtype | total |
 | --- | --- | --- |
-| data_list |  | 91 |
+| data_list |  | 93 |
 | data_list | app_config_language_list | 1 |
 | data_list | lifecycle_actions | 1 |
 | generator |  | 1 |
