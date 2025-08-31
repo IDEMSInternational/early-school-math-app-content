@@ -171,6 +171,67 @@
       "_nested_name": "glossary_word_6_ptr"
     },
     {
+      "name": "button_label",
+      "value": "@local.esm_content_ptr.glossary_label",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "!!@local.esm_content_ptr.glossary_label",
+      "type": "set_variable",
+      "_nested_name": "button_label",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.esm_content_ptr.glossary_label",
+            "matchedExpression": "@local.esm_content_ptr.glossary_label",
+            "type": "local",
+            "fieldName": "esm_content_ptr"
+          }
+        ],
+        "condition": [
+          {
+            "fullExpression": "!!@local.esm_content_ptr.glossary_label",
+            "matchedExpression": "!@local.esm_content_ptr.glossary_label",
+            "type": "local",
+            "fieldName": "esm_content_ptr"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.esm_content_ptr.glossary_label": [
+          "value"
+        ],
+        "!@local.esm_content_ptr.glossary_label": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "name": "button_label",
+      "value": "Glossary",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "!@local.esm_content_ptr.glossary_label",
+      "type": "set_variable",
+      "_nested_name": "button_label",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "!@local.esm_content_ptr.glossary_label",
+            "matchedExpression": "!@local.esm_content_ptr.glossary_label",
+            "type": "local",
+            "fieldName": "esm_content_ptr"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "!@local.esm_content_ptr.glossary_label": [
+          "condition"
+        ]
+      }
+    },
+    {
       "type": "display_group",
       "name": "dg_set_up_glossary",
       "condition": "!@local.esm_content_ptr.dont_use_glossary_button",
@@ -191,7 +252,7 @@
         {
           "type": "button",
           "name": "button_glossary",
-          "value": "Glossary",
+          "value": "@local.button_label",
           "_translations": {
             "value": {}
           },
@@ -282,6 +343,14 @@
           },
           "_nested_name": "dg_set_up_glossary.button_glossary",
           "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@local.button_label",
+                "matchedExpression": "@local.button_label",
+                "type": "local",
+                "fieldName": "button_label"
+              }
+            ],
             "action_list": {
               "0": {
                 "args": {
@@ -482,6 +551,9 @@
             }
           },
           "_dynamicDependencies": {
+            "@local.button_label": [
+              "value"
+            ],
             "@local.glossary_count_ptr": [
               "action_list.0.args.1",
               "action_list.0._raw",
