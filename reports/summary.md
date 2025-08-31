@@ -8,14 +8,14 @@
 | button | 108 |
 | debug_toggle | 1 |
 | display_group | 365 |
-| image | 37 |
+| image | 38 |
 | items | 68 |
 | qr_code | 1 |
 | radio_button_grid | 1 |
 | round_button | 10 |
 | select_text | 1 |
 | set_field | 44 |
-| set_variable | 761 |
+| set_variable | 763 |
 | simple_checkbox | 4 |
 | template | 92 |
 | text | 264 |
@@ -51,8 +51,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 44037 KB | 44 MB |
-| unused | 21605 KB | 21.6 MB |
+| total | 44091 KB | 44.1 MB |
+| unused | 21613 KB | 21.6 MB |
 </details>
 
 <details open>
@@ -300,6 +300,8 @@ Assets that appear in app-data but do not have references within sheets
 | EFMStorybooks/EFM-SB-KAHN-20.jpg | 3.5 |
 | EFMStorybooks/EFM-SB-SSMILE-8.jpg | 3.5 |
 | EFMStorybooks/EFM-SB-TFHH-2.jpg | 10.6 |
+| ESMIll/ESM3dBox.svg | 4.9 |
+| ESMIll/ESM3dSphere.svg | 3.6 |
 | ESMIll/ESMDots4-5.svg | 4 |
 | ESMIll/ESMPOWACoinFlipStart2.svg | 11626.6 |
 | ESMIll/ESMPOWCAvoidingRectanglesAnswer4.svg | 7.5 |
@@ -1242,6 +1244,14 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESM200NumberShapesEvens.svg | 5.2 | 1 |
 | ESMIll/ESM200NumberShapesOdds.svg | 4.6 | 1 |
 | ESMIll/ESM380Multiplying3Rows.svg | 5.4 | 1 |
+| ESMIll/ESM3dBoxCube.svg | 7.3 | 2 |
+| ESMIll/ESM3dCone.svg | 4.8 | 2 |
+| ESMIll/ESM3dCube.svg | 3.9 | 1 |
+| ESMIll/ESM3dCylinder.svg | 4.8 | 1 |
+| ESMIll/ESM3dPrisms.svg | 6.5 | 2 |
+| ESMIll/ESM3dPyramids.svg | 5.4 | 3 |
+| ESMIll/ESM3dPyramidsPrisms.svg | 10.4 | 1 |
+| ESMIll/ESM3dSpherecylinder.svg | 6.9 | 2 |
 | ESMIll/ESMBridgesOfKonigsbergChallenge.svg | 19.9 | 1 |
 | ESMIll/ESMDots1-2.svg | 2.8 | 1 |
 | ESMIll/ESMDots10-10.svg | 8.6 | 1 |
@@ -1357,6 +1367,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMGLossOctagons.svg | 9.7 | 1 |
 | ESMIll/ESMGLossParallelogram.svg | 5.9 | 1 |
 | ESMIll/ESMGLossPentagon.svg | 9.6 | 1 |
+| ESMIll/ESMGLossPerimeterCirclePolygon.svg | 4 | 1 |
 | ESMIll/ESMGLossQuadrilateral.svg | 7 | 2 |
 | ESMIll/ESMGLossRadius.svg | 8.9 | 2 |
 | ESMIll/ESMGLossRectangle.svg | 5.4 | 1 |
@@ -1655,7 +1666,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMTopicNearDoubles4+4-1.svg | 6.8 | 1 |
 | ESMIll/ESMTopicNumberBonds2.4.svg | 3.5 | 1 |
 | ESMIll/ESMTopicNumberBondsTenFrames.svg | 4.6 | 1 |
-| ESMIll/ESMTopicNumberPathsLines.svg | 53.5 | 1 |
+| ESMIll/ESMTopicNumberPathsLines.svg | 53.5 | 2 |
 | ESMIll/ESMTopicObjectProperties.svg | 9.5 | 2 |
 | ESMIll/ESMTopicPVto19.svg | 14.7 | 1 |
 | ESMIll/ESMTopicQAS3and2.svg | 7 | 1 |

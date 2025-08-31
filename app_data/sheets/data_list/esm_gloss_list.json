@@ -5,30 +5,11 @@
   "status": "released",
   "rows": [
     {
-      "id": "esm_glossary_1",
-      "topic_theme_1": "NPV_CPV100_CountPV100",
-      "dont_use_glossary_button": true,
-      "block1_type": "all_text",
-      "phrase": "100 chart",
-      "_translations": {
-        "phrase": {},
-        "block1_text": {}
-      },
-      "_translatedFields": {
-        "phrase": {
-          "eng": "100 chart"
-        },
-        "block1_text": {
-          "eng": "These charts are 10 by 10 arrays of numbers in order. Typically, they can either go from 1 to 100 or from 0 to 99."
-        }
-      },
-      "block1_text": "These charts are 10 by 10 arrays of numbers in order. Typically, they can either go from 1 to 100 or from 0 to 99."
-    },
-    {
       "id": "esm_glossary_2",
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMGLossAcuteAngle.svg",
       "block1_illust_max_size": "140px",
@@ -58,6 +39,7 @@
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMGLossAcuteTriangles.svg",
       "block1_illust_max_size": "240px",
@@ -87,6 +69,7 @@
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMGLoss3typesOfAngles.svg",
       "block1_illust_max_size": "350px",
@@ -110,6 +93,7 @@
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMGLoss45.90.180Angles.svg",
       "block1_illust_max_size": "350px",
@@ -133,6 +117,7 @@
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMGLoss3Angles.svg",
       "block1_illust_max_size": "350px",
@@ -156,6 +141,7 @@
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "illust_below",
       "block1_illust": "EFM490RectangleArea.svg",
       "block1_illust_max_size": "120px",
@@ -183,6 +169,7 @@
     {
       "id": "esm_glossary_8",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "illust_below",
       "block1_illust": "EFM380MultiplyingCommutes.svg",
       "block1_illust_max_size": "150px",
@@ -204,6 +191,7 @@
     {
       "id": "esm_glossary_9",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "associative property",
       "_translations": {
@@ -222,7 +210,10 @@
     },
     {
       "id": "esm_glossary_10",
-      "dont_use_glossary_button": true,
+      "dont_use_glossary_button": false,
+      "glossary_label": "See: volume",
+      "glossary_count": 1,
+      "glossary_1": "volume",
       "block1_type": "all_text",
       "phrase": "capacity",
       "_translations": {
@@ -234,14 +225,15 @@
           "eng": "capacity"
         },
         "block1_text": {
-          "eng": "This is the amount that a three-dimensional container can hold.\n\nSee also: **volume.**"
+          "eng": "This is the amount of space insde a three-dimensional figure or container."
         }
       },
-      "block1_text": "This is the amount that a three-dimensional container can hold.\n\nSee also: **volume.**"
+      "block1_text": "This is the amount of space insde a three-dimensional figure or container."
     },
     {
       "id": "esm_glossary_11",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "cardinal number",
       "_translations": {
@@ -262,16 +254,17 @@
       "id": "esm_glossary_12",
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
-      "dont_use_glossary_button": true,
+      "dont_use_glossary_button": false,
+      "glossary_label": "See: shapes 2d",
+      "glossary_count": 1,
+      "glossary_1": "shapes 2d",
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMGLossChords.svg",
       "block1_illust_max_size": "120px",
-      "block2_type": "all_text",
       "phrase": "chord",
       "_translations": {
         "phrase": {},
-        "block1_text": {},
-        "block2_text": {}
+        "block1_text": {}
       },
       "_translatedFields": {
         "phrase": {
@@ -279,19 +272,18 @@
         },
         "block1_text": {
           "eng": "A chord is a line segment whose endpoints lie on a circle. The circle illustrated below is shown with two chords. The chord that goes through the center of the circle is called a diameter."
-        },
-        "block2_text": {
-          "eng": "See also **shapes – 2d.**"
         }
       },
-      "block1_text": "A chord is a line segment whose endpoints lie on a circle. The circle illustrated below is shown with two chords. The chord that goes through the center of the circle is called a diameter.",
-      "block2_text": "See also **shapes – 2d.**"
+      "block1_text": "A chord is a line segment whose endpoints lie on a circle. The circle illustrated below is shown with two chords. The chord that goes through the center of the circle is called a diameter."
     },
     {
       "id": "esm_glossary_13",
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
-      "dont_use_glossary_button": true,
+      "dont_use_glossary_button": false,
+      "glossary_label": "See: shapes 2d",
+      "glossary_count": 1,
+      "glossary_1": "shapes 2d",
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMGLossRadius.svg",
       "block1_illust_max_size": "120px",
@@ -310,17 +302,18 @@
           "eng": "A circle is the set of all points in a plane that are the same distance from a point called its **center**. That distance is called the **radius** of the circle."
         },
         "block2_text": {
-          "eng": "This meaning of \"radius,\" which refers to a number, can be confused with the other meaning, which refers to a geometric object (a line segment from the center to a point on the circle). However, this is rarely a problem in that the first meaning is a number whereas the second is a geometric object.\n\nSome people incorrectly refer to the region inside the circle as being part of the circle.\n\nSee also **shapes – 2d.**"
+          "eng": "This meaning of \"radius,\" which refers to a number, can be confused with the other meaning, which refers to a geometric object (a line segment from the center to a point on the circle). However, this is rarely a problem in that the first meaning is a number whereas the second is a geometric object.\n\nSome people incorrectly refer to the region inside the circle as being part of the circle."
         }
       },
       "block1_text": "A circle is the set of all points in a plane that are the same distance from a point called its **center**. That distance is called the **radius** of the circle.",
-      "block2_text": "This meaning of \"radius,\" which refers to a number, can be confused with the other meaning, which refers to a geometric object (a line segment from the center to a point on the circle). However, this is rarely a problem in that the first meaning is a number whereas the second is a geometric object.\n\nSome people incorrectly refer to the region inside the circle as being part of the circle.\n\nSee also **shapes – 2d.**"
+      "block2_text": "This meaning of \"radius,\" which refers to a number, can be confused with the other meaning, which refers to a geometric object (a line segment from the center to a point on the circle). However, this is rarely a problem in that the first meaning is a number whereas the second is a geometric object.\n\nSome people incorrectly refer to the region inside the circle as being part of the circle."
     },
     {
       "id": "esm_glossary_14",
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "circumference",
       "_translations": {
@@ -340,6 +333,7 @@
     {
       "id": "esm_glossary_15",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "common factor or divisor",
       "_translations": {
@@ -359,6 +353,7 @@
     {
       "id": "esm_glossary_16",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "common multiple",
       "_translations": {
@@ -380,6 +375,7 @@
       "topic_theme_1": "NO_AS10_AComm",
       "topic_theme_2": "NO_MSD_MultCommutes",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMTopicAddCommutes.svg",
       "block1_illust_max_size": "180px",
@@ -417,6 +413,7 @@
       "topic_theme_1": "NO_ASSD_10BridgeA",
       "topic_theme_2": "NO_ASSD_10BridgeS",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMGlossCompensation.svg",
       "block1_illust_max_size": "350px",
@@ -461,6 +458,7 @@
       "id": "esm_glossary_19",
       "topic_theme_1": "NO_NT_Primes",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "composite number",
       "_translations": {
@@ -481,8 +479,13 @@
       "id": "esm_glossary_20",
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
-      "dont_use_glossary_button": true,
-      "block1_type": "all_text",
+      "dont_use_glossary_button": false,
+      "glossary_label": "See: shapes 3d",
+      "glossary_count": 1,
+      "glossary_1": "shapes 3d",
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESM3dCone.svg",
+      "block1_illust_max_size": "150px",
       "phrase": "cone",
       "_translations": {
         "phrase": {},
@@ -493,16 +496,17 @@
           "eng": "cone"
         },
         "block1_text": {
-          "eng": "See **shapes – 3d.**"
+          "eng": "Cones have a circular base with sides that come up to a point, its vertex."
         }
       },
-      "block1_text": "See **shapes – 3d.**"
+      "block1_text": "Cones have a circular base with sides that come up to a point, its vertex."
     },
     {
       "id": "esm_glossary_21",
       "topic_theme_1": "NPV_QC10_QC",
       "topic_theme_2": "NPV_QC10_CMQ10",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "illust_below",
       "block1_illust": "EFM90StringNumberLine.svg",
       "block1_illust_max_size": "300px",
@@ -530,6 +534,7 @@
     {
       "id": "esm_glossary_22",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMTopicQASCountingOn3and2.svg",
       "block1_illust_max_size": "200px",
@@ -558,8 +563,13 @@
       "id": "esm_glossary_23",
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
-      "dont_use_glossary_button": true,
-      "block1_type": "all_text",
+      "dont_use_glossary_button": false,
+      "glossary_label": "See: shapes 3d",
+      "glossary_count": 1,
+      "glossary_1": "shapes 3d",
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESM3dCylinder.svg",
+      "block1_illust_max_size": "150px",
       "phrase": "cylinder",
       "_translations": {
         "phrase": {},
@@ -570,16 +580,19 @@
           "eng": "cylinder"
         },
         "block1_text": {
-          "eng": "See **shapes – 3d.**"
+          "eng": "Cylinders share many characteristics with prisms. Cylinders have two bases that are identical parallel circles, and all cross sections parallel to a base are identical circles. The same is true for prisms, except that their bases are polygons."
         }
       },
-      "block1_text": "See **shapes – 3d.**"
+      "block1_text": "Cylinders share many characteristics with prisms. Cylinders have two bases that are identical parallel circles, and all cross sections parallel to a base are identical circles. The same is true for prisms, except that their bases are polygons."
     },
     {
       "id": "esm_glossary_24",
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
-      "dont_use_glossary_button": true,
+      "dont_use_glossary_button": false,
+      "glossary_label": "See: angle Measure",
+      "glossary_count": 1,
+      "glossary_1": "angle measure",
       "block1_type": "all_text",
       "phrase": "degree",
       "_translations": {
@@ -591,16 +604,17 @@
           "eng": "degree"
         },
         "block1_text": {
-          "eng": "See **angle measure.**"
+          "eng": "For young children, the size of an angle is measured in degrees. There are 360 degrees in one complete, full turn. A right angle has 90 degrees."
         }
       },
-      "block1_text": "See **angle measure.**"
+      "block1_text": "For young children, the size of an angle is measured in degrees. There are 360 degrees in one complete, full turn. A right angle has 90 degrees."
     },
     {
       "id": "esm_glossary_25",
       "topic_theme_1": "FMT_RWC_DRP",
       "topic_theme_2": "FMT_RWC_DRV",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "block2_type": "accord_all_text",
       "block3_type": "accord_all_text",
@@ -643,7 +657,10 @@
       "id": "esm_glossary_26",
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
-      "dont_use_glossary_button": true,
+      "dont_use_glossary_button": false,
+      "glossary_label": "See: shapes 2d",
+      "glossary_count": 1,
+      "glossary_1": "shapes 2d",
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMGLossChords.svg",
       "block1_illust_max_size": "120px",
@@ -662,15 +679,16 @@
           "eng": "Diameter, similar to radius, has two meanings. It can refer to the geometric object which is a line segment that goes through the center of a circle and whose endpoints lie on the circle. It can also refer to the length of that line segment.\n\nHere is a circle with two chords drawn in. Only the chord that goes through the center of the circle is a diameter."
         },
         "block2_text": {
-          "eng": "The diameter of a circle is twice as long as its radius.\n\nSee also **shapes – 2d.**"
+          "eng": "The diameter of a circle is twice as long as its radius."
         }
       },
       "block1_text": "Diameter, similar to radius, has two meanings. It can refer to the geometric object which is a line segment that goes through the center of a circle and whose endpoints lie on the circle. It can also refer to the length of that line segment.\n\nHere is a circle with two chords drawn in. Only the chord that goes through the center of the circle is a diameter.",
-      "block2_text": "The diameter of a circle is twice as long as its radius.\n\nSee also **shapes – 2d.**"
+      "block2_text": "The diameter of a circle is twice as long as its radius."
     },
     {
       "id": "esm_glossary_27",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "difference",
       "_translations": {
@@ -690,6 +708,7 @@
     {
       "id": "esm_glossary_28",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "distributive property",
       "_translations": {
@@ -709,6 +728,7 @@
     {
       "id": "esm_glossary_29",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMTopicEvensOdds.svg",
       "block1_illust_max_size": "200px",
@@ -732,6 +752,7 @@
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "edge",
       "_translations": {
@@ -750,7 +771,11 @@
     },
     {
       "id": "esm_glossary_31",
-      "dont_use_glossary_button": true,
+      "dont_use_glossary_button": false,
+      "glossary_label": "See: equation, expresion",
+      "glossary_count": 2,
+      "glossary_1": "equation",
+      "glossary_2": "expression",
       "block1_type": "all_text",
       "phrase": "equal sign",
       "_translations": {
@@ -762,14 +787,15 @@
           "eng": "equal sign"
         },
         "block1_text": {
-          "eng": "An equal sign \"=\" is used to indicate that two expressions have the same value. For example, 2 x 3 = 4 + 2 asserts that the expression on the left side of the equal sign, 2 x 3, has the same value as the expression on the right side of the equal sign, 4 + 2.\n\n**False Beliefs:** Some believe that an equal sign indicates that a value is beiing produced by one side of the equation, as in 4 + 2 = 6. This is not the case. The equal sign has no preferred side to it. Also, some people believe that one of the two sides of an equal sign should be a solitary number. This also need not be the case, and it is important to not leave children with this impression.\n\nSee also the entries for \"equation\" and \"expression.\""
+          "eng": "An equal sign \"=\" is used to indicate that two expressions have the same value. For example, 2 x 3 = 4 + 2 asserts that the expression on the left side of the equal sign, 2 x 3, has the same value as the expression on the right side of the equal sign, 4 + 2.\n\n**False Beliefs:** Some believe that an equal sign indicates that a value is beiing produced by one side of the equation, as in 4 + 2 = 6. This is not the case. The equal sign has no preferred side to it. Also, some people believe that one of the two sides of an equal sign should be a solitary number. This also need not be the case, and it is important to not leave children with this impression."
         }
       },
-      "block1_text": "An equal sign \"=\" is used to indicate that two expressions have the same value. For example, 2 x 3 = 4 + 2 asserts that the expression on the left side of the equal sign, 2 x 3, has the same value as the expression on the right side of the equal sign, 4 + 2.\n\n**False Beliefs:** Some believe that an equal sign indicates that a value is beiing produced by one side of the equation, as in 4 + 2 = 6. This is not the case. The equal sign has no preferred side to it. Also, some people believe that one of the two sides of an equal sign should be a solitary number. This also need not be the case, and it is important to not leave children with this impression.\n\nSee also the entries for \"equation\" and \"expression.\""
+      "block1_text": "An equal sign \"=\" is used to indicate that two expressions have the same value. For example, 2 x 3 = 4 + 2 asserts that the expression on the left side of the equal sign, 2 x 3, has the same value as the expression on the right side of the equal sign, 4 + 2.\n\n**False Beliefs:** Some believe that an equal sign indicates that a value is beiing produced by one side of the equation, as in 4 + 2 = 6. This is not the case. The equal sign has no preferred side to it. Also, some people believe that one of the two sides of an equal sign should be a solitary number. This also need not be the case, and it is important to not leave children with this impression."
     },
     {
       "id": "esm_glossary_32",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "equally likely outcomes",
       "_translations": {
@@ -789,6 +815,7 @@
     {
       "id": "esm_glossary_33",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "equation",
       "_translations": {
@@ -808,6 +835,7 @@
     {
       "id": "esm_glossary_34",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "illust_below",
       "block1_illust": "EFM145Estimation.svg",
       "block1_illust_max_size": "200px",
@@ -840,6 +868,7 @@
       "topic_theme_4": "NO_MSD_Doubling",
       "topic_theme_5": "NO_MSD_Skipping",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMTopicEvensOdds.svg",
       "block1_illust_max_size": "200px",
@@ -853,16 +882,17 @@
           "eng": "even number"
         },
         "block1_text": {
-          "eng": "An even number is an integer that can be evenly divided by 2. When it is divided by 2, the remainder is 0. It is also an integer that can be split into two equal integer parts.\n\nFor positive whole numbers, even numbers are quantities of objects that can be shared evenly between two groups without the need for fractional parts."
+          "eng": "An even number is an integer that can be evenly divided by 2. When it is divided by 2, the remainder is 0. It is also an integer that can be split into two equal integer parts.\n\nFor positive whole numbers, even numbers are quantities of objects that can be shared evenly between two groups without the need for fractional parts.\n\nIn the first two examples illustrated below, the 6 and 10 dots are even numbers that are represented by two equal rows of dots. The second two examples have odd numbers of 5 and 9 dots which cannot be represented by two equal rows of dots."
         }
       },
-      "block1_text": "An even number is an integer that can be evenly divided by 2. When it is divided by 2, the remainder is 0. It is also an integer that can be split into two equal integer parts.\n\nFor positive whole numbers, even numbers are quantities of objects that can be shared evenly between two groups without the need for fractional parts."
+      "block1_text": "An even number is an integer that can be evenly divided by 2. When it is divided by 2, the remainder is 0. It is also an integer that can be split into two equal integer parts.\n\nFor positive whole numbers, even numbers are quantities of objects that can be shared evenly between two groups without the need for fractional parts.\n\nIn the first two examples illustrated below, the 6 and 10 dots are even numbers that are represented by two equal rows of dots. The second two examples have odd numbers of 5 and 9 dots which cannot be represented by two equal rows of dots."
     },
     {
       "id": "esm_glossary_36",
       "topic_theme_1": "NPV_CPV100_PV20",
       "topic_theme_2": "NPV_CPV100_CountPV100",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "expanded form",
       "_translations": {
@@ -884,6 +914,7 @@
       "topic_theme_1": "NPV_CPV100_PV20",
       "topic_theme_2": "NPV_CPV100_CountPV100",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "expanded notation",
       "_translations": {
@@ -904,6 +935,7 @@
       "id": "esm_glossary_38",
       "topic_theme_1": "NO_NT_PowExp",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "exponent",
       "_translations": {
@@ -923,6 +955,7 @@
     {
       "id": "esm_glossary_39",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "expression",
       "_translations": {
@@ -944,7 +977,10 @@
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
-      "block1_type": "all_text",
+      "glossary_count": 0,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESM3dCube.svg",
+      "block1_illust_max_size": "150px",
       "phrase": "face",
       "_translations": {
         "phrase": {},
@@ -955,15 +991,19 @@
           "eng": "face"
         },
         "block1_text": {
-          "eng": "A face of a polyhedron is one of the polygons that makes up the surface of that polyhedron. For example, the faces of a cube are six squares."
+          "eng": "A face of a polyhedron is one of the polygons that makes up the surface of that polyhedron. For example, the faces of a cube are six identical squares."
         }
       },
-      "block1_text": "A face of a polyhedron is one of the polygons that makes up the surface of that polyhedron. For example, the faces of a cube are six squares."
+      "block1_text": "A face of a polyhedron is one of the polygons that makes up the surface of that polyhedron. For example, the faces of a cube are six identical squares."
     },
     {
       "id": "esm_glossary_41",
       "topic_theme_1": "NO_AS10_NBFF",
-      "dont_use_glossary_button": true,
+      "dont_use_glossary_button": false,
+      "glossary_label": "See: number bonds, part-whole",
+      "glossary_count": 2,
+      "glossary_1": "number bonds",
+      "glossary_2": "part-whole",
       "block1_type": "all_text",
       "block2_type": "accord_illust_below",
       "block2_illust": "ESMIll/ESMGlossFactFamilyTriangle.svg",
@@ -980,7 +1020,7 @@
           "eng": "fact family"
         },
         "block1_text": {
-          "eng": "A fact family is a group of four related calculations involving the structural connection between three numbers and two operations. Fact families make clear the interdepence between two operations, and they also make the learning of the associated math facts more efficient.\n\n**Example – Add Subtract:** Use the connection between addition and subtraction to form this family of four facts: 2 + 4 = 6; 4 + 2 = 6; 6 - 2 = 4; and 6 - 4 = 2.\n\n**Example – Multiply Divide:** Use the connection between multiplication and division to form this family of four facts: 2 x 4 = 8; 4 x 2 = 8; 8 / 2 = 4; and 8 / 4 = 2."
+          "eng": "A fact family is a group of four related calculations involving the structural connection between three numbers and two operations. Fact families make clear the interdepence between two operations, and they also make the learning of the associated math facts more efficient.\n\nFact families for addition and subtraction are strongly tied to understanding number bonds and the part-whole relationships.\n\n**Example – Add Subtract:** Use the connection between addition and subtraction to form this family of four facts: 2 + 4 = 6; 4 + 2 = 6; 6 - 2 = 4; and 6 - 4 = 2.\n\n**Example – Multiply Divide:** Use the connection between multiplication and division to form this family of four facts: 2 x 4 = 8; 4 x 2 = 8; 8 / 2 = 4; and 8 / 4 = 2."
         },
         "block2_accord": {
           "eng": "Fact Family Triangles"
@@ -989,13 +1029,14 @@
           "eng": "Make triangles for fact families. These are great for demonstrating how the facts in a fact family are connected.\n\nThe illustration shows the fact family for 3 + 5 = 8; 5 + 3 = 8; 8 - 5 = 3; and 8 - 3 = 5 along the edges of the triangle."
         }
       },
-      "block1_text": "A fact family is a group of four related calculations involving the structural connection between three numbers and two operations. Fact families make clear the interdepence between two operations, and they also make the learning of the associated math facts more efficient.\n\n**Example – Add Subtract:** Use the connection between addition and subtraction to form this family of four facts: 2 + 4 = 6; 4 + 2 = 6; 6 - 2 = 4; and 6 - 4 = 2.\n\n**Example – Multiply Divide:** Use the connection between multiplication and division to form this family of four facts: 2 x 4 = 8; 4 x 2 = 8; 8 / 2 = 4; and 8 / 4 = 2.",
+      "block1_text": "A fact family is a group of four related calculations involving the structural connection between three numbers and two operations. Fact families make clear the interdepence between two operations, and they also make the learning of the associated math facts more efficient.\n\nFact families for addition and subtraction are strongly tied to understanding number bonds and the part-whole relationships.\n\n**Example – Add Subtract:** Use the connection between addition and subtraction to form this family of four facts: 2 + 4 = 6; 4 + 2 = 6; 6 - 2 = 4; and 6 - 4 = 2.\n\n**Example – Multiply Divide:** Use the connection between multiplication and division to form this family of four facts: 2 x 4 = 8; 4 x 2 = 8; 8 / 2 = 4; and 8 / 4 = 2.",
       "block2_accord": "Fact Family Triangles",
       "block2_text": "Make triangles for fact families. These are great for demonstrating how the facts in a fact family are connected.\n\nThe illustration shows the fact family for 3 + 5 = 8; 5 + 3 = 8; 8 - 5 = 3; and 8 - 3 = 5 along the edges of the triangle."
     },
     {
       "id": "esm_glossary_42",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "factor",
       "_translations": {
@@ -1015,6 +1056,7 @@
     {
       "id": "esm_glossary_43",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "graphs – types",
       "_translations": {
@@ -1034,6 +1076,7 @@
     {
       "id": "esm_glossary_44",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "grouping",
       "_translations": {
@@ -1054,16 +1097,17 @@
       "id": "esm_glossary_45",
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
-      "dont_use_glossary_button": true,
+      "dont_use_glossary_button": false,
+      "glossary_label": "See: shapes 2d",
+      "glossary_count": 1,
+      "glossary_1": "shapes 2d",
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMGLossHexagons.svg",
       "block1_illust_max_size": "150px",
-      "block2_type": "all_text",
       "phrase": "hexagon",
       "_translations": {
         "phrase": {},
-        "block1_text": {},
-        "block2_text": {}
+        "block1_text": {}
       },
       "_translatedFields": {
         "phrase": {
@@ -1071,17 +1115,14 @@
         },
         "block1_text": {
           "eng": "A hexagon is a six-sided polygon. It is also a polygon with six angles.\n\nThe green hexagon on the left has six equal sides and six equal angles. It is called a **regular hexagon.** The brown hexagon on the right is not regular."
-        },
-        "block2_text": {
-          "eng": "See also: **shapes – 2d.**"
         }
       },
-      "block1_text": "A hexagon is a six-sided polygon. It is also a polygon with six angles.\n\nThe green hexagon on the left has six equal sides and six equal angles. It is called a **regular hexagon.** The brown hexagon on the right is not regular.",
-      "block2_text": "See also: **shapes – 2d.**"
+      "block1_text": "A hexagon is a six-sided polygon. It is also a polygon with six angles.\n\nThe green hexagon on the left has six equal sides and six equal angles. It is called a **regular hexagon.** The brown hexagon on the right is not regular."
     },
     {
       "id": "esm_glossary_46",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "histogram",
       "_translations": {
@@ -1103,6 +1144,7 @@
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMGLossLinesAndSegments.svg",
       "block1_illust_max_size": "220px",
@@ -1126,6 +1168,7 @@
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMGLossRightTriangle.svg",
       "block1_illust_max_size": "250px",
@@ -1146,7 +1189,9 @@
     },
     {
       "id": "esm_glossary_49",
+      "topic_theme_1": "NPV_CPV100_CountPV100",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "hundred chart",
       "_translations": {
@@ -1166,6 +1211,7 @@
     {
       "id": "esm_glossary_50",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "inequality",
       "_translations": {
@@ -1184,7 +1230,10 @@
     },
     {
       "id": "esm_glossary_51",
-      "dont_use_glossary_button": true,
+      "dont_use_glossary_button": false,
+      "glossary_label": "See: numbers – types",
+      "glossary_count": 1,
+      "glossary_1": "numbers – types",
       "block1_type": "all_text",
       "phrase": "integer",
       "_translations": {
@@ -1196,14 +1245,15 @@
           "eng": "integer"
         },
         "block1_text": {
-          "eng": "The integers are the numbers ... -3, -2, -1, 0, 1, 2, 3, ... .\n\nSee also **numbers – types.**"
+          "eng": "The integers are the numbers ... -3, -2, -1, 0, 1, 2, 3, ... ."
         }
       },
-      "block1_text": "The integers are the numbers ... -3, -2, -1, 0, 1, 2, 3, ... .\n\nSee also **numbers – types.**"
+      "block1_text": "The integers are the numbers ... -3, -2, -1, 0, 1, 2, 3, ... ."
     },
     {
       "id": "esm_glossary_52",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "irrational number",
       "_translations": {
@@ -1224,16 +1274,17 @@
       "id": "esm_glossary_53",
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
-      "dont_use_glossary_button": true,
+      "dont_use_glossary_button": false,
+      "glossary_label": "See: shapes 2d",
+      "glossary_count": 1,
+      "glossary_1": "shapes 2d",
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMGLossKite.svg",
       "block1_illust_max_size": "200px",
-      "block2_type": "all_text",
       "phrase": "kite",
       "_translations": {
         "phrase": {},
-        "block1_text": {},
-        "block2_text": {}
+        "block1_text": {}
       },
       "_translatedFields": {
         "phrase": {
@@ -1241,28 +1292,25 @@
         },
         "block1_text": {
           "eng": "A kite is a 4-sided polygon that has two pairs of adjacent equal sides. It is also convex, like the blue figure on the left. The red figure on the right is called a dart because it is concave (it has an indentation)."
-        },
-        "block2_text": {
-          "eng": "See also **shapes – 2d.**"
         }
       },
-      "block1_text": "A kite is a 4-sided polygon that has two pairs of adjacent equal sides. It is also convex, like the blue figure on the left. The red figure on the right is called a dart because it is concave (it has an indentation).",
-      "block2_text": "See also **shapes – 2d.**"
+      "block1_text": "A kite is a 4-sided polygon that has two pairs of adjacent equal sides. It is also convex, like the blue figure on the left. The red figure on the right is called a dart because it is concave (it has an indentation)."
     },
     {
       "id": "esm_glossary_54",
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
-      "dont_use_glossary_button": true,
+      "dont_use_glossary_button": false,
+      "glossary_label": "See: shapes 2d",
+      "glossary_count": 1,
+      "glossary_1": "shapes 2d",
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMGLossLinesAndSegments.svg",
       "block1_illust_max_size": "220px",
-      "block2_type": "all_text",
       "phrase": "line",
       "_translations": {
         "phrase": {},
-        "block1_text": {},
-        "block2_text": {}
+        "block1_text": {}
       },
       "_translatedFields": {
         "phrase": {
@@ -1270,19 +1318,16 @@
         },
         "block1_text": {
           "eng": "A line is a one-dimensional straight geometric object that extends infinitely in both directions. It can be thought of as an infinitely long straight wire that has no thickness.\n\nThere are three lines in this illustration – lines AB, CD, and EF. Note that if you only want to look at the parts of the lines between the red points, there are three line segments on those three lines – line segments AB, CD, and EF."
-        },
-        "block2_text": {
-          "eng": "See also **shapes – 2d.**"
         }
       },
-      "block1_text": "A line is a one-dimensional straight geometric object that extends infinitely in both directions. It can be thought of as an infinitely long straight wire that has no thickness.\n\nThere are three lines in this illustration – lines AB, CD, and EF. Note that if you only want to look at the parts of the lines between the red points, there are three line segments on those three lines – line segments AB, CD, and EF.",
-      "block2_text": "See also **shapes – 2d.**"
+      "block1_text": "A line is a one-dimensional straight geometric object that extends infinitely in both directions. It can be thought of as an infinitely long straight wire that has no thickness.\n\nThere are three lines in this illustration – lines AB, CD, and EF. Note that if you only want to look at the parts of the lines between the red points, there are three line segments on those three lines – line segments AB, CD, and EF."
     },
     {
       "id": "esm_glossary_55",
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "illust_below",
       "block1_illust": "EFM200SymmetricArt.svg",
       "block1_illust_max_size": "330px",
@@ -1305,16 +1350,17 @@
       "id": "esm_glossary_56",
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
-      "dont_use_glossary_button": true,
+      "dont_use_glossary_button": false,
+      "glossary_label": "See: shapes 2d",
+      "glossary_count": 1,
+      "glossary_1": "shapes 2d",
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMGLossLinesSegmentsRays.svg",
       "block1_illust_max_size": "300px",
-      "block2_type": "all_text",
       "phrase": "line segment",
       "_translations": {
         "phrase": {},
-        "block1_text": {},
-        "block2_text": {}
+        "block1_text": {}
       },
       "_translatedFields": {
         "phrase": {
@@ -1322,17 +1368,14 @@
         },
         "block1_text": {
           "eng": "A line segment is a finite, connected portion of a line. It is the portion of a line that has two specified points as its endpoints.\n\nThe edges of a polygon are examples of line segments.\n\nThere are two line segments in this illustration. There is AC, the line segment between A and C. There is also the part of the line AB that goes only between A and B, and that is the line segment AB."
-        },
-        "block2_text": {
-          "eng": "See also: **shapes – 2d.**"
         }
       },
-      "block1_text": "A line segment is a finite, connected portion of a line. It is the portion of a line that has two specified points as its endpoints.\n\nThe edges of a polygon are examples of line segments.\n\nThere are two line segments in this illustration. There is AC, the line segment between A and C. There is also the part of the line AB that goes only between A and B, and that is the line segment AB.",
-      "block2_text": "See also: **shapes – 2d.**"
+      "block1_text": "A line segment is a finite, connected portion of a line. It is the portion of a line that has two specified points as its endpoints.\n\nThe edges of a polygon are examples of line segments.\n\nThere are two line segments in this illustration. There is AC, the line segment between A and C. There is also the part of the line AB that goes only between A and B, and that is the line segment AB."
     },
     {
       "id": "esm_glossary_57",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "making tens",
       "_translations": {
@@ -1353,6 +1396,7 @@
       "id": "esm_glossary_58",
       "topic_theme_1": "FMT_EAA_EandO",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "math talk",
       "_translations": {
@@ -1371,7 +1415,10 @@
     },
     {
       "id": "esm_glossary_59",
-      "dont_use_glossary_button": true,
+      "dont_use_glossary_button": false,
+      "glossary_label": "See: numbers – types",
+      "glossary_count": 1,
+      "glossary_1": "numbers – types",
       "block1_type": "all_text",
       "phrase": "natural number",
       "_translations": {
@@ -1383,14 +1430,17 @@
           "eng": "natural number"
         },
         "block1_text": {
-          "eng": "These are the counting numbers, also described as positive integers. Confusingly, 0 is sometimes included in the natural numbers.\n\nSee also: **numbers – types.**"
+          "eng": "These are the counting numbers, also described as positive integers. Confusingly, 0 is sometimes included in the natural numbers."
         }
       },
-      "block1_text": "These are the counting numbers, also described as positive integers. Confusingly, 0 is sometimes included in the natural numbers.\n\nSee also: **numbers – types.**"
+      "block1_text": "These are the counting numbers, also described as positive integers. Confusingly, 0 is sometimes included in the natural numbers."
     },
     {
       "id": "esm_glossary_60",
-      "dont_use_glossary_button": true,
+      "dont_use_glossary_button": false,
+      "glossary_label": "See: numbers – types",
+      "glossary_count": 1,
+      "glossary_1": "numbers – types",
       "block1_type": "all_text",
       "phrase": "negative number",
       "_translations": {
@@ -1402,14 +1452,17 @@
           "eng": "negative number"
         },
         "block1_text": {
-          "eng": "A negative number is a number that is less than 0. On a number line, negative numbers appear to the left of 0.\n\nSee also: **numbers – types.**"
+          "eng": "A negative number is a number that is less than 0. On a number line, negative numbers appear to the left of 0."
         }
       },
-      "block1_text": "A negative number is a number that is less than 0. On a number line, negative numbers appear to the left of 0.\n\nSee also: **numbers – types.**"
+      "block1_text": "A negative number is a number that is less than 0. On a number line, negative numbers appear to the left of 0."
     },
     {
       "id": "esm_glossary_61",
-      "dont_use_glossary_button": true,
+      "dont_use_glossary_button": false,
+      "glossary_label": "See: numbers – types",
+      "glossary_count": 1,
+      "glossary_1": "numbers – types",
       "block1_type": "all_text",
       "phrase": "non-negative number",
       "_translations": {
@@ -1421,34 +1474,39 @@
           "eng": "non-negative number"
         },
         "block1_text": {
-          "eng": "A non-negative number is a number that is not negative. It is a number that is greater than or equal to 0.\n\nSee also: **numbers – types.**"
+          "eng": "A non-negative number is a number that is not negative. It is a number that is greater than or equal to 0."
         }
       },
-      "block1_text": "A non-negative number is a number that is not negative. It is a number that is greater than or equal to 0.\n\nSee also: **numbers – types.**"
+      "block1_text": "A non-negative number is a number that is not negative. It is a number that is greater than or equal to 0."
     },
     {
       "id": "esm_glossary_62",
       "topic_theme_1": "NO_AS10_NBFF",
-      "dont_use_glossary_button": true,
+      "dont_use_glossary_button": false,
+      "glossary_label": "See: part-whole, fact family",
+      "glossary_count": 2,
+      "glossary_1": "part-whole",
+      "glossary_2": "fact family",
       "block1_type": "all_text",
-      "phrase": "number bond",
+      "phrase": "number bonds",
       "_translations": {
         "phrase": {},
         "block1_text": {}
       },
       "_translatedFields": {
         "phrase": {
-          "eng": "number bond"
+          "eng": "number bonds"
         },
         "block1_text": {
-          "eng": "The number bonds for a number are all the pairs of whole numbers that add up to it.\n\n**Example:** The number bonds for 7 are 0 + 7, 1 + 6, 2 + 5, and 3 + 4.\n\nTen frames have many uses. One of them is to emphasize the number bonds for 10, which are particularly useful number bonds to learn."
+          "eng": "The number bonds for a number are all the pairs of whole numbers that add up to it.\n\n**Example:** The number bonds for 7 are 0 + 7, 1 + 6, 2 + 5, and 3 + 4.\n\n**Part-Whole and Fact Families:** Comfort and familiarity with number bonds is strongly tied to fact families and the part-whole relationships.\n\nTen frames have many uses. One of them is to emphasize the number bonds for 10, which are particularly useful number bonds to learn."
         }
       },
-      "block1_text": "The number bonds for a number are all the pairs of whole numbers that add up to it.\n\n**Example:** The number bonds for 7 are 0 + 7, 1 + 6, 2 + 5, and 3 + 4.\n\nTen frames have many uses. One of them is to emphasize the number bonds for 10, which are particularly useful number bonds to learn."
+      "block1_text": "The number bonds for a number are all the pairs of whole numbers that add up to it.\n\n**Example:** The number bonds for 7 are 0 + 7, 1 + 6, 2 + 5, and 3 + 4.\n\n**Part-Whole and Fact Families:** Comfort and familiarity with number bonds is strongly tied to fact families and the part-whole relationships.\n\nTen frames have many uses. One of them is to emphasize the number bonds for 10, which are particularly useful number bonds to learn."
     },
     {
       "id": "esm_glossary_63",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "illust_below",
       "block1_illust": "EFM50NumberLine.svg",
       "block1_illust_max_size": "400px",
@@ -1470,6 +1528,7 @@
     {
       "id": "esm_glossary_64",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMRoutineStringNumberLineFrom0.svg",
       "block1_illust_max_size": "330px",
@@ -1505,25 +1564,82 @@
     {
       "id": "esm_glossary_65",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
+      "block2_type": "accord_all_text",
+      "block3_type": "accord_all_text",
+      "block4_type": "accord_all_text",
+      "block5_type": "accord_all_text",
+      "block6_type": "accord_all_text",
       "phrase": "numbers – types",
       "_translations": {
         "phrase": {},
-        "block1_text": {}
+        "block1_text": {},
+        "block2_accord": {},
+        "block2_text": {},
+        "block3_accord": {},
+        "block3_text": {},
+        "block4_accord": {},
+        "block4_text": {},
+        "block5_accord": {},
+        "block5_text": {},
+        "block6_accord": {},
+        "block6_text": {}
       },
       "_translatedFields": {
         "phrase": {
           "eng": "numbers – types"
         },
         "block1_text": {
-          "eng": "Write this entry.\n\nGive an overview of whole numbers, counting numbers, natural numbers, and integers. \nPositive numbers, negative numbers, non-negative numbers, and nonpositive numbers. \nInclude ordinal and cardinal numbers.\n\nPerhaps include rational numbers, fractions, and decimals. \n\nInclude unit, prime, and composite numbers.\n\nMaybe include even and odd numbers.\n\nProbably include rational, irrational, and real numbers."
+          "eng": "**Categories and Characteristics:** There are a great many categories of numbers, and various ways of separating numbers by characteristics they have."
+        },
+        "block2_accord": {
+          "eng": "Integers"
+        },
+        "block2_text": {
+          "eng": "Integers are all the numbers with no fractional part. Briefly, they can be thought of as ... -3, -2, -1, 0, 1, 2, 3, ... .Within the integers are various groups of numbers that are frequently referred to (sometimes with more than one meaning):\n* whole numbers – some people use this to refer to all integers, while others us this to refer to only the non-negative integers\n* counting numbers – these are the numbers you count with starting at 1, so they are the positive integers\n* natural numbers – these are the positive integers, though some people include 0\n* positive numbers – these are the integers greater than 0\n* negative numbers – these are the integers less than 0\n* non-negative numbers – these are the integers greater than or equal to 0; they are the positive integers together with 0\n* non-positive numbers – these are the integers less than or equal to 0; they are the negative integers together with 0"
+        },
+        "block3_accord": {
+          "eng": "Rational Numbers"
+        },
+        "block3_text": {
+          "eng": "These are all numbers whose value can be represented by the division of two integers. That is, all numbers of the form a / b where a and b are integers and b is not 0. The following categories all refer to the rational numbers and only differ in the form they are written in:\n* fractions – these are all numbers of the form a / b where a and b are integers and b is not 0\n* proper fractions – these are fractions of the form a / b where a is smaller in magnitude than b\n* improper fractions – these are any fractions that are not in proper form.\n* mixed numbers – these are written in the form N a / b, where N, a, and b are integers, and a and b are positive with a < b.\n* repeating decimals – these are decimal numbers whose decimal part eventually repeats forever"
+        },
+        "block4_accord": {
+          "eng": "Real Numbers"
+        },
+        "block4_text": {
+          "eng": "These are all numbers that can be expressed as a decimal number, whether repeating or not repeating.\n* rational numbers – these are the same as the repeating decimals, which are decimal numbers whose decimal part repeats forever\n* irrational numbers – these are decimals that do not have a repeating pattern; they are also the decimal numbers that do not have rational values. Some examples of irrational numbers are the square root of 2 and pi.\n* repeating decimals – these are the same as the rational numbers; some people exclude from this category numbers that eventually end entirely in 0s.\n* terminating decimals – these are the decimals that eventually end entirely in 0s; some people do not consider these repeating decimals."
+        },
+        "block5_accord": {
+          "eng": "Characteristics"
+        },
+        "block5_text": {
+          "eng": "In addition to the categories above, there are also groups of integers that have important characteristics. Some examples of this are:\n* unit – this is the number 1\n* prime – for integers greater than 1, a prime is any number that when it is written as a productive of integers a x b, one of the integers must be 1. It is important to note that 1 is not a prime.\n* composite – any integer greater than 1 that is not a prime is called a composite. Any composite number can be written uniquely (up to reordering) as a product of primes\n* even – this is a number evenly divisible by 2; it can be split into two equal integer parts\n* odd – this is a number that has a remainder of 1 when divided by 2; it cannot be split into two equal integer parts\n* triangular numbers – these are the numbers 1, 3, 6, 10, 15, ... ; they are the number of dots in triangular arrangements of dots"
+        },
+        "block6_accord": {
+          "eng": "Ordinal and Cardinal"
+        },
+        "block6_text": {
+          "eng": "A **cardinal number** is the count or size of a collection. This is in contrast to an **ordinal number,** which describes the relative position in the collection. Whole numbers are cardinal numbers. Ordinal numbers are things such as \"first,\" \"second,\" \"third,\" and \"last.\""
         }
       },
-      "block1_text": "Write this entry.\n\nGive an overview of whole numbers, counting numbers, natural numbers, and integers. \nPositive numbers, negative numbers, non-negative numbers, and nonpositive numbers. \nInclude ordinal and cardinal numbers.\n\nPerhaps include rational numbers, fractions, and decimals. \n\nInclude unit, prime, and composite numbers.\n\nMaybe include even and odd numbers.\n\nProbably include rational, irrational, and real numbers."
+      "block1_text": "**Categories and Characteristics:** There are a great many categories of numbers, and various ways of separating numbers by characteristics they have.",
+      "block2_accord": "Integers",
+      "block2_text": "Integers are all the numbers with no fractional part. Briefly, they can be thought of as ... -3, -2, -1, 0, 1, 2, 3, ... .Within the integers are various groups of numbers that are frequently referred to (sometimes with more than one meaning):\n* whole numbers – some people use this to refer to all integers, while others us this to refer to only the non-negative integers\n* counting numbers – these are the numbers you count with starting at 1, so they are the positive integers\n* natural numbers – these are the positive integers, though some people include 0\n* positive numbers – these are the integers greater than 0\n* negative numbers – these are the integers less than 0\n* non-negative numbers – these are the integers greater than or equal to 0; they are the positive integers together with 0\n* non-positive numbers – these are the integers less than or equal to 0; they are the negative integers together with 0",
+      "block3_accord": "Rational Numbers",
+      "block3_text": "These are all numbers whose value can be represented by the division of two integers. That is, all numbers of the form a / b where a and b are integers and b is not 0. The following categories all refer to the rational numbers and only differ in the form they are written in:\n* fractions – these are all numbers of the form a / b where a and b are integers and b is not 0\n* proper fractions – these are fractions of the form a / b where a is smaller in magnitude than b\n* improper fractions – these are any fractions that are not in proper form.\n* mixed numbers – these are written in the form N a / b, where N, a, and b are integers, and a and b are positive with a < b.\n* repeating decimals – these are decimal numbers whose decimal part eventually repeats forever",
+      "block4_accord": "Real Numbers",
+      "block4_text": "These are all numbers that can be expressed as a decimal number, whether repeating or not repeating.\n* rational numbers – these are the same as the repeating decimals, which are decimal numbers whose decimal part repeats forever\n* irrational numbers – these are decimals that do not have a repeating pattern; they are also the decimal numbers that do not have rational values. Some examples of irrational numbers are the square root of 2 and pi.\n* repeating decimals – these are the same as the rational numbers; some people exclude from this category numbers that eventually end entirely in 0s.\n* terminating decimals – these are the decimals that eventually end entirely in 0s; some people do not consider these repeating decimals.",
+      "block5_accord": "Characteristics",
+      "block5_text": "In addition to the categories above, there are also groups of integers that have important characteristics. Some examples of this are:\n* unit – this is the number 1\n* prime – for integers greater than 1, a prime is any number that when it is written as a productive of integers a x b, one of the integers must be 1. It is important to note that 1 is not a prime.\n* composite – any integer greater than 1 that is not a prime is called a composite. Any composite number can be written uniquely (up to reordering) as a product of primes\n* even – this is a number evenly divisible by 2; it can be split into two equal integer parts\n* odd – this is a number that has a remainder of 1 when divided by 2; it cannot be split into two equal integer parts\n* triangular numbers – these are the numbers 1, 3, 6, 10, 15, ... ; they are the number of dots in triangular arrangements of dots",
+      "block6_accord": "Ordinal and Cardinal",
+      "block6_text": "A **cardinal number** is the count or size of a collection. This is in contrast to an **ordinal number,** which describes the relative position in the collection. Whole numbers are cardinal numbers. Ordinal numbers are things such as \"first,\" \"second,\" \"third,\" and \"last.\""
     },
     {
       "id": "esm_glossary_66",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "numeral",
       "_translations": {
@@ -1543,6 +1659,7 @@
     {
       "id": "esm_glossary_67",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "numerical expression",
       "_translations": {
@@ -1554,16 +1671,17 @@
           "eng": "numerical expression"
         },
         "block1_text": {
-          "eng": "A numerical expression is a representation of a quantity in numeric form. This representation may involve numbers, or operations. An example is: 42, x, (413 + 82) / 17. Another description of a numerical expression is that it is an expression that does not contain any variables."
+          "eng": "A numerical expression is a representation of a quantity in numeric form. This representation may involve both numbers and operations. Another description of a numerical expression is an expression that does not have any variables.\n\n**Examples:** \n* 42\n* (413 + 82) / 17"
         }
       },
-      "block1_text": "A numerical expression is a representation of a quantity in numeric form. This representation may involve numbers, or operations. An example is: 42, x, (413 + 82) / 17. Another description of a numerical expression is that it is an expression that does not contain any variables."
+      "block1_text": "A numerical expression is a representation of a quantity in numeric form. This representation may involve both numbers and operations. Another description of a numerical expression is an expression that does not have any variables.\n\n**Examples:** \n* 42\n* (413 + 82) / 17"
     },
     {
       "id": "esm_glossary_68",
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMGLossObtuseAngle.svg",
       "block1_illust_max_size": "150px",
@@ -1593,6 +1711,7 @@
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMGLossObtuseTriangle.svg",
       "block1_illust_max_size": "260px",
@@ -1621,16 +1740,17 @@
       "id": "esm_glossary_70",
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
-      "dont_use_glossary_button": true,
+      "dont_use_glossary_button": false,
+      "glossary_label": "See: shapes 2d",
+      "glossary_count": 1,
+      "glossary_1": "shapes 2d",
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMGLossOctagons.svg",
       "block1_illust_max_size": "200px",
-      "block2_type": "all_text",
       "phrase": "octagon",
       "_translations": {
         "phrase": {},
-        "block1_text": {},
-        "block2_text": {}
+        "block1_text": {}
       },
       "_translatedFields": {
         "phrase": {
@@ -1638,13 +1758,9 @@
         },
         "block1_text": {
           "eng": "An octagon is an eight-sided polygon. It is also a polygon with eight angles.\n\nThe red octagon on the left below has 8 equal sides and 8 equal angles, so it is a regular octagon – it is shaped like a stop sign. THe blue octagon on the right is not a regular octagon."
-        },
-        "block2_text": {
-          "eng": "See also: **shapes – 2d.**"
         }
       },
-      "block1_text": "An octagon is an eight-sided polygon. It is also a polygon with eight angles.\n\nThe red octagon on the left below has 8 equal sides and 8 equal angles, so it is a regular octagon – it is shaped like a stop sign. THe blue octagon on the right is not a regular octagon.",
-      "block2_text": "See also: **shapes – 2d.**"
+      "block1_text": "An octagon is an eight-sided polygon. It is also a polygon with eight angles.\n\nThe red octagon on the left below has 8 equal sides and 8 equal angles, so it is a regular octagon – it is shaped like a stop sign. THe blue octagon on the right is not a regular octagon."
     },
     {
       "id": "esm_glossary_71",
@@ -1654,6 +1770,7 @@
       "topic_theme_4": "NO_MSD_Doubling",
       "topic_theme_5": "NO_MSD_Skipping",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMTopicEvensOdds.svg",
       "block1_illust_max_size": "200px",
@@ -1667,16 +1784,17 @@
           "eng": "odd number"
         },
         "block1_text": {
-          "eng": "An odd number is an integer that has a remainder of 1 when divided by 2. It is an integer that cannot be split into two equal integer parts.\n\nFor positive whole numbers, odd numbers are quantities of objects that cannot be shared evenly between between two groups without splitting some of the objects into fractional parts."
+          "eng": "An odd number is an integer that has a remainder of 1 when divided by 2. It is an integer that cannot be split into two equal integer parts.\n\nFor positive whole numbers, odd numbers are quantities of objects that cannot be shared evenly between between two groups without splitting some of the objects into fractional parts.\n\nIn the first two examples illustrated below, the 6 and 10 dots are even numbers that are represented by two equal rows of dots. The second two examples have odd numbers of 5 and 9 dots which cannot be represented by two equal rows of dots."
         }
       },
-      "block1_text": "An odd number is an integer that has a remainder of 1 when divided by 2. It is an integer that cannot be split into two equal integer parts.\n\nFor positive whole numbers, odd numbers are quantities of objects that cannot be shared evenly between between two groups without splitting some of the objects into fractional parts."
+      "block1_text": "An odd number is an integer that has a remainder of 1 when divided by 2. It is an integer that cannot be split into two equal integer parts.\n\nFor positive whole numbers, odd numbers are quantities of objects that cannot be shared evenly between between two groups without splitting some of the objects into fractional parts.\n\nIn the first two examples illustrated below, the 6 and 10 dots are even numbers that are represented by two equal rows of dots. The second two examples have odd numbers of 5 and 9 dots which cannot be represented by two equal rows of dots."
     },
     {
       "id": "esm_glossary_72",
       "topic_theme_1": "NO_AS10_AComm",
       "topic_theme_2": "NO_MSD_MultCommutes",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "operations – properties",
       "_translations": {
@@ -1696,6 +1814,7 @@
     {
       "id": "esm_glossary_73",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "block2_type": "accord_all_text",
       "block3_type": "accord_all_text",
@@ -1769,7 +1888,10 @@
     },
     {
       "id": "esm_glossary_74",
-      "dont_use_glossary_button": true,
+      "dont_use_glossary_button": false,
+      "glossary_label": "See: numbers – types",
+      "glossary_count": 1,
+      "glossary_1": "numbers – types",
       "block1_type": "all_text",
       "phrase": "ordinal number",
       "_translations": {
@@ -1781,16 +1903,17 @@
           "eng": "ordinal number"
         },
         "block1_text": {
-          "eng": "A **cardinal number** is the count or size of a collection. This is in contrast to an **ordinal number,** which describes the relative position. \n\n**Example:** You might have the second in a collection of four objects - four is the cardinal number and second is the ordinal number.\n\nSee also: **numbers – types.**"
+          "eng": "A **cardinal number** is the count or size of a collection. This is in contrast to an **ordinal number,** which describes the relative position. \n\n**Example:** You might have the second in a collection of four objects - four is the cardinal number and second is the ordinal number."
         }
       },
-      "block1_text": "A **cardinal number** is the count or size of a collection. This is in contrast to an **ordinal number,** which describes the relative position. \n\n**Example:** You might have the second in a collection of four objects - four is the cardinal number and second is the ordinal number.\n\nSee also: **numbers – types.**"
+      "block1_text": "A **cardinal number** is the count or size of a collection. This is in contrast to an **ordinal number,** which describes the relative position. \n\n**Example:** You might have the second in a collection of four objects - four is the cardinal number and second is the ordinal number."
     },
     {
       "id": "esm_glossary_75",
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMGLossLinesAndSegments.svg",
       "block1_illust_max_size": "220px",
@@ -1813,16 +1936,17 @@
       "id": "esm_glossary_76",
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
-      "dont_use_glossary_button": true,
+      "dont_use_glossary_button": false,
+      "glossary_label": "See: shapes 2d",
+      "glossary_count": 1,
+      "glossary_1": "shapes 2d",
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMGLossParallelogram.svg",
       "block1_illust_max_size": "360px",
-      "block2_type": "all_text",
       "phrase": "parallelogram",
       "_translations": {
         "phrase": {},
-        "block1_text": {},
-        "block2_text": {}
+        "block1_text": {}
       },
       "_translatedFields": {
         "phrase": {
@@ -1830,17 +1954,14 @@
         },
         "block1_text": {
           "eng": "A parallelogram is a quadrilateral with two pairs of parallel sides. Squares, rectangles, and rhombuses are all quadrilaterals that are also parallelograms."
-        },
-        "block2_text": {
-          "eng": "See also: **shapes – 2d.**"
         }
       },
-      "block1_text": "A parallelogram is a quadrilateral with two pairs of parallel sides. Squares, rectangles, and rhombuses are all quadrilaterals that are also parallelograms.",
-      "block2_text": "See also: **shapes – 2d.**"
+      "block1_text": "A parallelogram is a quadrilateral with two pairs of parallel sides. Squares, rectangles, and rhombuses are all quadrilaterals that are also parallelograms."
     },
     {
       "id": "esm_glossary_77",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "parentheses, brackets, grouping",
       "_translations": {
@@ -1859,7 +1980,12 @@
     },
     {
       "id": "esm_glossary_78",
-      "dont_use_glossary_button": true,
+      "topic_theme_1": "NO_AS10_NBFF",
+      "dont_use_glossary_button": false,
+      "glossary_label": "See: number bonds, fact family",
+      "glossary_count": 2,
+      "glossary_1": "number bonds",
+      "glossary_2": "fact family",
       "block1_type": "all_text",
       "phrase": "part-whole",
       "_translations": {
@@ -1881,6 +2007,7 @@
       "topic_theme_1": "Geom_Pat_Intro",
       "topic_theme_2": "Geom_Pat_MSP",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "illust_below",
       "block1_illust": "EFM30ShapePattern.svg",
       "block1_illust_max_size": "300px",
@@ -1908,6 +2035,7 @@
     {
       "id": "esm_glossary_80",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "PEMDAS",
       "_translations": {
@@ -1928,16 +2056,17 @@
       "id": "esm_glossary_81",
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
-      "dont_use_glossary_button": true,
+      "dont_use_glossary_button": false,
+      "glossary_label": "See: shapes 2d",
+      "glossary_count": 1,
+      "glossary_1": "shapes 2d",
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMGLossPentagon.svg",
       "block1_illust_max_size": "250px",
-      "block2_type": "all_text",
       "phrase": "pentagon",
       "_translations": {
         "phrase": {},
-        "block1_text": {},
-        "block2_text": {}
+        "block1_text": {}
       },
       "_translatedFields": {
         "phrase": {
@@ -1945,40 +2074,46 @@
         },
         "block1_text": {
           "eng": "A pentagon is a five-sided polygon. It is also a polygon with five angles. All the sides are equal on the red pentagon on the left, it is a regular polygon. The blue pentagon on the right is not a regular pentagon."
-        },
-        "block2_text": {
-          "eng": "See also **shapes – 2d.**"
         }
       },
-      "block1_text": "A pentagon is a five-sided polygon. It is also a polygon with five angles. All the sides are equal on the red pentagon on the left, it is a regular polygon. The blue pentagon on the right is not a regular pentagon.",
-      "block2_text": "See also **shapes – 2d.**"
+      "block1_text": "A pentagon is a five-sided polygon. It is also a polygon with five angles. All the sides are equal on the red pentagon on the left, it is a regular polygon. The blue pentagon on the right is not a regular pentagon."
     },
     {
       "id": "esm_glossary_82",
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
-      "block1_type": "all_text",
+      "glossary_count": 0,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMGLossPerimeterCirclePolygon.svg",
+      "block1_illust_max_size": "300px",
+      "block2_type": "all_text",
       "phrase": "perimeter",
       "_translations": {
         "phrase": {},
-        "block1_text": {}
+        "block1_text": {},
+        "block2_text": {}
       },
       "_translatedFields": {
         "phrase": {
           "eng": "perimeter"
         },
         "block1_text": {
-          "eng": "The perimeter of a closed figure in the plane is the length of its boundary. The perimeter of a circle is its circumference. The perimeter of a polygon is the sum of the lengths of its sides."
+          "eng": "The perimeter of a closed figure in the plane is the length of its boundary. It is the total distance around a shape.\n\n**Circles:** The perimeter of a circle is its circumference. The circumference is equal to two times pi times the radius. It is also equal to pi times the diameter. In the circle below, the circumference is 6 pi."
+        },
+        "block2_text": {
+          "eng": "**Polygons:** The perimeter of a polygon is the sum of the lengths of its sides. For a regular n-sided polygon (all of whose sides are equal), the perimeter is n times the length of one side. The perimeter of the right triangle pictured above is 6 + 8 + 10 = 24."
         }
       },
-      "block1_text": "The perimeter of a closed figure in the plane is the length of its boundary. The perimeter of a circle is its circumference. The perimeter of a polygon is the sum of the lengths of its sides."
+      "block1_text": "The perimeter of a closed figure in the plane is the length of its boundary. It is the total distance around a shape.\n\n**Circles:** The perimeter of a circle is its circumference. The circumference is equal to two times pi times the radius. It is also equal to pi times the diameter. In the circle below, the circumference is 6 pi.",
+      "block2_text": "**Polygons:** The perimeter of a polygon is the sum of the lengths of its sides. For a regular n-sided polygon (all of whose sides are equal), the perimeter is n times the length of one side. The perimeter of the right triangle pictured above is 6 + 8 + 10 = 24."
     },
     {
       "id": "esm_glossary_83",
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMGLossLinesAndSegments.svg",
       "block1_illust_max_size": "220px",
@@ -2002,6 +2137,7 @@
       "topic_theme_1": "NPV_CPV100_PV20",
       "topic_theme_2": "NPV_CPV100_CountPV100",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "place value",
       "_translations": {
@@ -2023,6 +2159,7 @@
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "plane",
       "_translations": {
@@ -2044,6 +2181,7 @@
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "plane figure",
       "_translations": {
@@ -2065,6 +2203,7 @@
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "point",
       "_translations": {
@@ -2086,6 +2225,7 @@
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "polygon",
       "_translations": {
@@ -2097,16 +2237,17 @@
           "eng": "polygon"
         },
         "block1_text": {
-          "eng": "A polygon is a plane figure made up of a collection of straight sides (edges). The sides only intersect at their endpoints and each endpoint connects exactly two sides. This collection of sides creates a closed figure, which is the polygon."
+          "eng": "A polygon is a plane figure made up of a collection of straight sides (edges). The sides only intersect at their endpoints and each endpoint connects exactly two sides. This collection of sides is connected and creates a single closed figure, which is the polygon."
         }
       },
-      "block1_text": "A polygon is a plane figure made up of a collection of straight sides (edges). The sides only intersect at their endpoints and each endpoint connects exactly two sides. This collection of sides creates a closed figure, which is the polygon."
+      "block1_text": "A polygon is a plane figure made up of a collection of straight sides (edges). The sides only intersect at their endpoints and each endpoint connects exactly two sides. This collection of sides is connected and creates a single closed figure, which is the polygon."
     },
     {
       "id": "esm_glossary_89",
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "polygons – types",
       "_translations": {
@@ -2127,8 +2268,13 @@
       "id": "esm_glossary_90",
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
-      "dont_use_glossary_button": true,
-      "block1_type": "all_text",
+      "dont_use_glossary_button": false,
+      "glossary_label": "See: shapes 3d",
+      "glossary_count": 1,
+      "glossary_1": "shapes 3d",
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESM3dPyramidsPrisms.svg",
+      "block1_illust_max_size": "330px",
       "phrase": "polyhedron",
       "_translations": {
         "phrase": {},
@@ -2139,14 +2285,17 @@
           "eng": "polyhedron"
         },
         "block1_text": {
-          "eng": "A polyhedron is a three-dimensional figure made up of a collection of polygons. The edges of the polygons are connected to exactly two polygons. These polygons form a closed figure, which is the polyhedron."
+          "eng": "A polyhedron is a three-dimensional figure made up of a collection of polygons. The edges of the polygons are connected to exactly two polygons. These polygons form a closed figure, which is the polyhedron.\n\n**Examples:** There are many examples of polyhedra. Here are a few.\n* pyramids – tetrahedron (triangular pyramid); square pyramid; pyramids with other polygons for bases\n* prisms – boxes; cubes; triangular prisms; prisms with other polygons for bases\n* octahedron – 8 sides all of which are regular triangles\n* dodecahedron – 12 sides all of which are regular pentagons\n* icosahedron – 20 sides all of which are regular triangles\n\n**Platonic Solids:** There are five polyhedra that whose sides are all the same regular polygon. They are: tetrahedron, cube, octahedron, dodecahedron, and icosohedron.\n\nHere are some illustrations of pyramids and prisms:"
         }
       },
-      "block1_text": "A polyhedron is a three-dimensional figure made up of a collection of polygons. The edges of the polygons are connected to exactly two polygons. These polygons form a closed figure, which is the polyhedron."
+      "block1_text": "A polyhedron is a three-dimensional figure made up of a collection of polygons. The edges of the polygons are connected to exactly two polygons. These polygons form a closed figure, which is the polyhedron.\n\n**Examples:** There are many examples of polyhedra. Here are a few.\n* pyramids – tetrahedron (triangular pyramid); square pyramid; pyramids with other polygons for bases\n* prisms – boxes; cubes; triangular prisms; prisms with other polygons for bases\n* octahedron – 8 sides all of which are regular triangles\n* dodecahedron – 12 sides all of which are regular pentagons\n* icosahedron – 20 sides all of which are regular triangles\n\n**Platonic Solids:** There are five polyhedra that whose sides are all the same regular polygon. They are: tetrahedron, cube, octahedron, dodecahedron, and icosohedron.\n\nHere are some illustrations of pyramids and prisms:"
     },
     {
       "id": "esm_glossary_91",
-      "dont_use_glossary_button": true,
+      "dont_use_glossary_button": false,
+      "glossary_label": "See: numbers – types",
+      "glossary_count": 1,
+      "glossary_1": "numbers – types",
       "block1_type": "all_text",
       "phrase": "positive number",
       "_translations": {
@@ -2158,15 +2307,16 @@
           "eng": "positive number"
         },
         "block1_text": {
-          "eng": "A positive number is a number greater than 0. On a number line, positive numbers are to the right of 0.\n\nSee also **numbers – types.**"
+          "eng": "A positive number is a number greater than 0. On a number line, positive numbers are to the right of 0."
         }
       },
-      "block1_text": "A positive number is a number greater than 0. On a number line, positive numbers are to the right of 0.\n\nSee also **numbers – types.**"
+      "block1_text": "A positive number is a number greater than 0. On a number line, positive numbers are to the right of 0."
     },
     {
       "id": "esm_glossary_92",
       "topic_theme_1": "NO_NT_PowExp",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "power",
       "_translations": {
@@ -2186,7 +2336,10 @@
     {
       "id": "esm_glossary_93",
       "topic_theme_1": "NO_NT_Primes",
-      "dont_use_glossary_button": true,
+      "dont_use_glossary_button": false,
+      "glossary_label": "See: numbers – types",
+      "glossary_count": 1,
+      "glossary_1": "numbers – types",
       "block1_type": "all_text",
       "phrase": "prime number",
       "_translations": {
@@ -2198,36 +2351,48 @@
           "eng": "prime number"
         },
         "block1_text": {
-          "eng": "Positive prime numbers are the numbers larger than 1 that are onlly divisible by 1 and themselves. The primes less than 20 are: 2, 3, 5, 7, 11, 13, 17, and 19.\n\nSee **numbers – types.**"
+          "eng": "Positive prime numbers are the numbers larger than 1 that are onlly divisible by 1 and themselves. The primes less than 20 are: 2, 3, 5, 7, 11, 13, 17, and 19."
         }
       },
-      "block1_text": "Positive prime numbers are the numbers larger than 1 that are onlly divisible by 1 and themselves. The primes less than 20 are: 2, 3, 5, 7, 11, 13, 17, and 19.\n\nSee **numbers – types.**"
+      "block1_text": "Positive prime numbers are the numbers larger than 1 that are onlly divisible by 1 and themselves. The primes less than 20 are: 2, 3, 5, 7, 11, 13, 17, and 19."
     },
     {
       "id": "esm_glossary_94",
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
-      "dont_use_glossary_button": true,
-      "block1_type": "all_text",
+      "dont_use_glossary_button": false,
+      "glossary_label": "See: shapes 3d",
+      "glossary_count": 1,
+      "glossary_1": "shapes 3d",
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESM3dPrisms.svg",
+      "block1_illust_max_size": "360px",
+      "block2_type": "all_text",
       "phrase": "prism",
       "_translations": {
         "phrase": {},
-        "block1_text": {}
+        "block1_text": {},
+        "block2_text": {}
       },
       "_translatedFields": {
         "phrase": {
           "eng": "prism"
         },
         "block1_text": {
-          "eng": "A prism is a 3-dimenstional figure that has two parallel and identical faces called bases. All of its other faces are parallelograms.\n\nA right prism is a prism where all of its sides that are not bases are rectangles.\n\nPrisms are often named after the shape of their bases. For example, a right rectangular prism is another name for a box. A triangular prism is one that has bases that are triangles.\n\nThough similar, a cylinder is not considered to be a prism.\n\nSee also **shapes – 3d.**"
+          "eng": "A prism is a 3-dimenstional figure that has two parallel and identical faces called bases. All of its other faces are parallelograms.\n\nA right prism is a prism where all of its sides that are not bases are rectangles. Most prisms are right prisms, so the word \"right\" is often omitted."
+        },
+        "block2_text": {
+          "eng": "Prisms are often named after the shape of their bases. For example, a right rectangular prism is another name for a box. A triangular prism is one that has bases that are triangles.\n\nThough they have similarities, cylinders are not considered to be prisms."
         }
       },
-      "block1_text": "A prism is a 3-dimenstional figure that has two parallel and identical faces called bases. All of its other faces are parallelograms.\n\nA right prism is a prism where all of its sides that are not bases are rectangles.\n\nPrisms are often named after the shape of their bases. For example, a right rectangular prism is another name for a box. A triangular prism is one that has bases that are triangles.\n\nThough similar, a cylinder is not considered to be a prism.\n\nSee also **shapes – 3d.**"
+      "block1_text": "A prism is a 3-dimenstional figure that has two parallel and identical faces called bases. All of its other faces are parallelograms.\n\nA right prism is a prism where all of its sides that are not bases are rectangles. Most prisms are right prisms, so the word \"right\" is often omitted.",
+      "block2_text": "Prisms are often named after the shape of their bases. For example, a right rectangular prism is another name for a box. A triangular prism is one that has bases that are triangles.\n\nThough they have similarities, cylinders are not considered to be prisms."
     },
     {
       "id": "esm_glossary_95",
       "topic_theme_1": "NO_MSD_AllSingles",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "product",
       "_translations": {
@@ -2249,6 +2414,7 @@
       "topic_theme_1": "NO_AS10_AComm",
       "topic_theme_2": "NO_MSD_MultCommutes",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "properties of operations",
       "_translations": {
@@ -2269,8 +2435,13 @@
       "id": "esm_glossary_97",
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
-      "dont_use_glossary_button": true,
-      "block1_type": "all_text",
+      "dont_use_glossary_button": false,
+      "glossary_label": "See: shapes 3d",
+      "glossary_count": 1,
+      "glossary_1": "shapes 3d",
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESM3dPyramids.svg",
+      "block1_illust_max_size": "330px",
       "phrase": "pyramid",
       "_translations": {
         "phrase": {},
@@ -2281,25 +2452,27 @@
           "eng": "pyramid"
         },
         "block1_text": {
-          "eng": "A pyramid is a polyhedron with a polygonal base and sides which are triangles that all meet at a single point called its vertex. Pyramids are named after their base. For example, the pyramids in Egypt are square-based pyramids.\n\nSee also **shapes – 3d.**"
+          "eng": "A pyramid is a polyhedron with a polygonal base and sides which are triangles that all meet at a single point called its vertex. Pyramids are named after their base. For example, the pyramids in Egypt are square-based pyramids.\n\nPictured below are a square pyramid and a triangular pyramid."
         }
       },
-      "block1_text": "A pyramid is a polyhedron with a polygonal base and sides which are triangles that all meet at a single point called its vertex. Pyramids are named after their base. For example, the pyramids in Egypt are square-based pyramids.\n\nSee also **shapes – 3d.**"
+      "block1_text": "A pyramid is a polyhedron with a polygonal base and sides which are triangles that all meet at a single point called its vertex. Pyramids are named after their base. For example, the pyramids in Egypt are square-based pyramids.\n\nPictured below are a square pyramid and a triangular pyramid."
     },
     {
       "id": "esm_glossary_98",
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
-      "dont_use_glossary_button": true,
+      "dont_use_glossary_button": false,
+      "glossary_label": "See: shapes 2d, quadrilaterals – types",
+      "glossary_count": 2,
+      "glossary_1": "shapes 2d",
+      "glossary_2": "quadrilaterals – types",
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMGLossQuadrilateral.svg",
       "block1_illust_max_size": "340px",
-      "block2_type": "all_text",
       "phrase": "quadrilateral",
       "_translations": {
         "phrase": {},
-        "block1_text": {},
-        "block2_text": {}
+        "block1_text": {}
       },
       "_translatedFields": {
         "phrase": {
@@ -2307,28 +2480,25 @@
         },
         "block1_text": {
           "eng": "A quadrilateral is a four-sided polygon. It is also a polygon with four angles."
-        },
-        "block2_text": {
-          "eng": "See also **shapes – 2d** and **quadrilaterals – types.**"
         }
       },
-      "block1_text": "A quadrilateral is a four-sided polygon. It is also a polygon with four angles.",
-      "block2_text": "See also **shapes – 2d** and **quadrilaterals – types.**"
+      "block1_text": "A quadrilateral is a four-sided polygon. It is also a polygon with four angles."
     },
     {
       "id": "esm_glossary_99",
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
-      "dont_use_glossary_button": true,
+      "dont_use_glossary_button": false,
+      "glossary_label": "See: shapes 2d",
+      "glossary_count": 1,
+      "glossary_1": "shapes 2d",
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMGLossQuadrilateral.svg",
       "block1_illust_max_size": "340px",
-      "block2_type": "all_text",
       "phrase": "quadrilaterals – types",
       "_translations": {
         "phrase": {},
-        "block1_text": {},
-        "block2_text": {}
+        "block1_text": {}
       },
       "_translatedFields": {
         "phrase": {
@@ -2336,17 +2506,14 @@
         },
         "block1_text": {
           "eng": "There are many types of quadrilaterals.\n\n* **square** – it is equiangular and equilateral; it is a regular quadrilateral\n* **rectangle** – It is equiangular, and all the angles are 90 degrees\n* **rhombus** – it is equilateral; all the sides are the same length\n* **parallelogram** – it has two pairs of parallel sides\n* **trapezoid** or **trapezium** – it has exactly one pair of parallel sides\n* **kite** – it has two pairs of adjacent, equal sides, and all its angles are less than 180 degrees (though some people do not add this angle restriction)\n* **dart** – it has two pairs of adjacent, equal sides, and one of its angles is greater than 180 degrees.\n\nA square is always a rectangle. A rectangle is always a parallelogram. A rhombus is always a parallelogram.\n\nThere are also many theorems about characteristics of their diagonals and how to calculate their areas."
-        },
-        "block2_text": {
-          "eng": "See also **shapes – 2d.**"
         }
       },
-      "block1_text": "There are many types of quadrilaterals.\n\n* **square** – it is equiangular and equilateral; it is a regular quadrilateral\n* **rectangle** – It is equiangular, and all the angles are 90 degrees\n* **rhombus** – it is equilateral; all the sides are the same length\n* **parallelogram** – it has two pairs of parallel sides\n* **trapezoid** or **trapezium** – it has exactly one pair of parallel sides\n* **kite** – it has two pairs of adjacent, equal sides, and all its angles are less than 180 degrees (though some people do not add this angle restriction)\n* **dart** – it has two pairs of adjacent, equal sides, and one of its angles is greater than 180 degrees.\n\nA square is always a rectangle. A rectangle is always a parallelogram. A rhombus is always a parallelogram.\n\nThere are also many theorems about characteristics of their diagonals and how to calculate their areas.",
-      "block2_text": "See also **shapes – 2d.**"
+      "block1_text": "There are many types of quadrilaterals.\n\n* **square** – it is equiangular and equilateral; it is a regular quadrilateral\n* **rectangle** – It is equiangular, and all the angles are 90 degrees\n* **rhombus** – it is equilateral; all the sides are the same length\n* **parallelogram** – it has two pairs of parallel sides\n* **trapezoid** or **trapezium** – it has exactly one pair of parallel sides\n* **kite** – it has two pairs of adjacent, equal sides, and all its angles are less than 180 degrees (though some people do not add this angle restriction)\n* **dart** – it has two pairs of adjacent, equal sides, and one of its angles is greater than 180 degrees.\n\nA square is always a rectangle. A rectangle is always a parallelogram. A rhombus is always a parallelogram.\n\nThere are also many theorems about characteristics of their diagonals and how to calculate their areas."
     },
     {
       "id": "esm_glossary_100",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "quotient",
       "_translations": {
@@ -2367,7 +2534,10 @@
       "id": "esm_glossary_101",
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
-      "dont_use_glossary_button": true,
+      "dont_use_glossary_button": false,
+      "glossary_label": "See: shapes 2d",
+      "glossary_count": 1,
+      "glossary_1": "shapes 2d",
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMGLossRadius.svg",
       "block1_illust_max_size": "120px",
@@ -2386,15 +2556,18 @@
           "eng": "This word has two interpretations.\n\nWhen it refers to a geometric figure, it is the name of a line segment that goes between the center of a circle and a point on the circle. Here is a circle with two radii drawn in."
         },
         "block2_text": {
-          "eng": "When it refers to a length, it is the length of any radius of a circle. This is well defined because any radius of a given circle has the same length.\n\nThe two interpretations are rarely confused because one is a number and the other is a geometric figure.\n\nThe plural of radius is radii.See also **shapes – 2d.**"
+          "eng": "When it refers to a length, it is the length of any radius of a circle. This is well defined because any radius of a given circle has the same length.\n\nThe two interpretations are rarely confused because one is a number and the other is a geometric figure.\n\nThe plural of radius is radii."
         }
       },
       "block1_text": "This word has two interpretations.\n\nWhen it refers to a geometric figure, it is the name of a line segment that goes between the center of a circle and a point on the circle. Here is a circle with two radii drawn in.",
-      "block2_text": "When it refers to a length, it is the length of any radius of a circle. This is well defined because any radius of a given circle has the same length.\n\nThe two interpretations are rarely confused because one is a number and the other is a geometric figure.\n\nThe plural of radius is radii.See also **shapes – 2d.**"
+      "block2_text": "When it refers to a length, it is the length of any radius of a circle. This is well defined because any radius of a given circle has the same length.\n\nThe two interpretations are rarely confused because one is a number and the other is a geometric figure.\n\nThe plural of radius is radii."
     },
     {
       "id": "esm_glossary_102",
-      "dont_use_glossary_button": true,
+      "dont_use_glossary_button": false,
+      "glossary_label": "See: numbers – types",
+      "glossary_count": 1,
+      "glossary_1": "numbers – types",
       "block1_type": "all_text",
       "phrase": "rational numbers",
       "_translations": {
@@ -2406,25 +2579,26 @@
           "eng": "rational numbers"
         },
         "block1_text": {
-          "eng": "The rational numbers are all fractions made up of one integer divided by another non-zero integer.\n\nSee also **numbers – types.**"
+          "eng": "The rational numbers are all fractions made up of one integer divided by another non-zero integer."
         }
       },
-      "block1_text": "The rational numbers are all fractions made up of one integer divided by another non-zero integer.\n\nSee also **numbers – types.**"
+      "block1_text": "The rational numbers are all fractions made up of one integer divided by another non-zero integer."
     },
     {
       "id": "esm_glossary_103",
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
-      "dont_use_glossary_button": true,
+      "dont_use_glossary_button": false,
+      "glossary_label": "See: shapes 2d",
+      "glossary_count": 1,
+      "glossary_1": "shapes 2d",
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMGLossLinesSegmentsRays.svg",
       "block1_illust_max_size": "300px",
-      "block2_type": "all_text",
       "phrase": "ray",
       "_translations": {
         "phrase": {},
-        "block1_text": {},
-        "block2_text": {}
+        "block1_text": {}
       },
       "_translatedFields": {
         "phrase": {
@@ -2432,19 +2606,18 @@
         },
         "block1_text": {
           "eng": "A ray is a portion of a line that begins at one point on the line, the endpoint of the ray, and continues infinitely along the line in one of the two possible directions.\n\nThere are several rays in this illustration. There is the ray AC. There are also rays AB and BA that are part of the line AB."
-        },
-        "block2_text": {
-          "eng": "See also **shapes – 2d.**"
         }
       },
-      "block1_text": "A ray is a portion of a line that begins at one point on the line, the endpoint of the ray, and continues infinitely along the line in one of the two possible directions.\n\nThere are several rays in this illustration. There is the ray AC. There are also rays AB and BA that are part of the line AB.",
-      "block2_text": "See also **shapes – 2d.**"
+      "block1_text": "A ray is a portion of a line that begins at one point on the line, the endpoint of the ray, and continues infinitely along the line in one of the two possible directions.\n\nThere are several rays in this illustration. There is the ray AC. There are also rays AB and BA that are part of the line AB."
     },
     {
       "id": "esm_glossary_104",
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
-      "dont_use_glossary_button": true,
+      "dont_use_glossary_button": false,
+      "glossary_label": "See: shapes 2d",
+      "glossary_count": 1,
+      "glossary_1": "shapes 2d",
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMGLossRectangle.svg",
       "block1_illust_max_size": "250px",
@@ -2463,16 +2636,17 @@
           "eng": "Rectangles are four-sided polygons with four equal angles. Note that all squares are rectangles. Also, a rectangle with four equal sides is a square."
         },
         "block2_text": {
-          "eng": "Although not part of the definition, some properties of rectangles that follow from the definition are:\n1. The angles are all 90 degree angles (like the angles at the corners of a piece of paper)\n2. The opposite sides are parallel (they are parallelograms).\n3. The opposite sides have the same length.\n4. The diagonals have the same length.\n\nSee also **shapes – 2d.**"
+          "eng": "Although not part of the definition, some properties of rectangles that follow from the definition are:\n1. The angles are all 90 degree angles (like the angles at the corners of a piece of paper)\n2. The opposite sides are parallel (they are parallelograms).\n3. The opposite sides have the same length.\n4. The diagonals have the same length."
         }
       },
       "block1_text": "Rectangles are four-sided polygons with four equal angles. Note that all squares are rectangles. Also, a rectangle with four equal sides is a square.",
-      "block2_text": "Although not part of the definition, some properties of rectangles that follow from the definition are:\n1. The angles are all 90 degree angles (like the angles at the corners of a piece of paper)\n2. The opposite sides are parallel (they are parallelograms).\n3. The opposite sides have the same length.\n4. The diagonals have the same length.\n\nSee also **shapes – 2d.**"
+      "block2_text": "Although not part of the definition, some properties of rectangles that follow from the definition are:\n1. The angles are all 90 degree angles (like the angles at the corners of a piece of paper)\n2. The opposite sides are parallel (they are parallelograms).\n3. The opposite sides have the same length.\n4. The diagonals have the same length."
     },
     {
       "id": "esm_glossary_105",
       "topic_theme_1": "Geom_Shape_DS",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "illust_below",
       "block1_illust": "EFM200SymmetricArt.svg",
       "block1_illust_max_size": "330px",
@@ -2495,16 +2669,17 @@
       "id": "esm_glossary_106",
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
-      "dont_use_glossary_button": true,
+      "dont_use_glossary_button": false,
+      "glossary_label": "See: shapes 2d",
+      "glossary_count": 1,
+      "glossary_1": "shapes 2d",
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMGLossRegularPolygons.svg",
       "block1_illust_max_size": "240px",
-      "block2_type": "all_text",
       "phrase": "regular polygon",
       "_translations": {
         "phrase": {},
-        "block1_text": {},
-        "block2_text": {}
+        "block1_text": {}
       },
       "_translatedFields": {
         "phrase": {
@@ -2512,19 +2687,16 @@
         },
         "block1_text": {
           "eng": "A regular polygon is one whose sides all have the same length and whose angles all have the same measure. A square is an example of a regular 4-sided polygon."
-        },
-        "block2_text": {
-          "eng": "See also **shapes – 2d.**"
         }
       },
-      "block1_text": "A regular polygon is one whose sides all have the same length and whose angles all have the same measure. A square is an example of a regular 4-sided polygon.",
-      "block2_text": "See also **shapes – 2d.**"
+      "block1_text": "A regular polygon is one whose sides all have the same length and whose angles all have the same measure. A square is an example of a regular 4-sided polygon."
     },
     {
       "id": "esm_glossary_107",
       "topic_theme_1": "Geom_Pat_Intro",
       "topic_theme_2": "Geom_Pat_MSP",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "illust_below",
       "block1_illust": "EFM30ShapePattern.svg",
       "block1_illust_max_size": "300px",
@@ -2553,16 +2725,17 @@
       "id": "esm_glossary_108",
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
-      "dont_use_glossary_button": true,
+      "dont_use_glossary_button": false,
+      "glossary_label": "See: shapes 2d",
+      "glossary_count": 1,
+      "glossary_1": "shapes 2d",
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMGLossRhombus.svg",
       "block1_illust_max_size": "250px",
-      "block2_type": "all_text",
       "phrase": "rhombus",
       "_translations": {
         "phrase": {},
-        "block1_text": {},
-        "block2_text": {}
+        "block1_text": {}
       },
       "_translatedFields": {
         "phrase": {
@@ -2570,19 +2743,16 @@
         },
         "block1_text": {
           "eng": "A rhombus is a quadrilateral with four equal sides. It can also be called an equilateral quadrilateral. A rhombus is always a parallelogram. A rhombus with right angles is a square."
-        },
-        "block2_text": {
-          "eng": "See also **shapes – 2d.**"
         }
       },
-      "block1_text": "A rhombus is a quadrilateral with four equal sides. It can also be called an equilateral quadrilateral. A rhombus is always a parallelogram. A rhombus with right angles is a square.",
-      "block2_text": "See also **shapes – 2d.**"
+      "block1_text": "A rhombus is a quadrilateral with four equal sides. It can also be called an equilateral quadrilateral. A rhombus is always a parallelogram. A rhombus with right angles is a square."
     },
     {
       "id": "esm_glossary_109",
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMGLossRightAngle.svg",
       "block1_illust_max_size": "100px",
@@ -2612,6 +2782,7 @@
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMGLossRightTriangle.svg",
       "block1_illust_max_size": "250px",
@@ -2640,16 +2811,18 @@
       "id": "esm_glossary_111",
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
-      "dont_use_glossary_button": true,
+      "dont_use_glossary_button": false,
+      "glossary_label": "See: shapes 2d, triangles – types",
+      "glossary_count": 2,
+      "glossary_1": "shapes 2d",
+      "glossary_2": "triangles – types",
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMGLossScaleneTriangle.svg",
       "block1_illust_max_size": "300px",
-      "block2_type": "all_text",
       "phrase": "scalene triangle",
       "_translations": {
         "phrase": {},
-        "block1_text": {},
-        "block2_text": {}
+        "block1_text": {}
       },
       "_translatedFields": {
         "phrase": {
@@ -2657,19 +2830,16 @@
         },
         "block1_text": {
           "eng": "A scalene triangle is a triangle that has sides with three different lengths."
-        },
-        "block2_text": {
-          "eng": "See also **shapes – 2d** and **triangles – types.**"
         }
       },
-      "block1_text": "A scalene triangle is a triangle that has sides with three different lengths.",
-      "block2_text": "See also **shapes – 2d** and **triangles – types.**"
+      "block1_text": "A scalene triangle is a triangle that has sides with three different lengths."
     },
     {
       "id": "esm_glossary_112",
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "shapes 2d",
       "_translations": {
@@ -2690,27 +2860,63 @@
       "id": "esm_glossary_113",
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
-      "dont_use_glossary_button": true,
-      "block1_type": "all_text",
+      "dont_use_glossary_button": false,
+      "glossary_label": "See: volume",
+      "glossary_count": 1,
+      "glossary_1": "volume",
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESM3dSpherecylinder.svg",
+      "block1_illust_max_size": "300px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESM3dBoxCube.svg",
+      "block2_illust_max_size": "300px",
+      "block3_type": "illust_below",
+      "block3_illust": "ESMIll/ESM3dPyramids.svg",
+      "block3_illust_max_size": "300px",
+      "block4_type": "illust_below",
+      "block4_illust": "ESMIll/ESM3dCone.svg",
+      "block4_illust_max_size": "140px",
+      "block5_type": "all_text",
       "phrase": "shapes 3d",
       "_translations": {
         "phrase": {},
-        "block1_text": {}
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {},
+        "block5_text": {}
       },
       "_translatedFields": {
         "phrase": {
           "eng": "shapes 3d"
         },
         "block1_text": {
-          "eng": "These are the basic 3d shapes:\n\n* **Ball** (**Sphere**)\n* **Cylinder** (round tube with end caps)\n* **Box** (**Cube**)\n* **Pyramid** – triangle or square base\n* **Cone**\n\nThe outside surface of a 3-dimensional shape is made up of 2-dimensional shapes.\n\n* Ball / Sphere. This has one curved surface. If you were to cut the surface along its \"equator\" you would have two cups which you could flatten down to be two discs.\n* Cylinder. Its ends are two discs. If you cut its curved surface with a straight cut from top to bottom it would be a rectangle.\n* Box. This has 6 faces that are rectangles. \n* Triangular Pyramid. This has 4 faces that are triangles.\n* Square Pyramid. This has 4 faces that are triangles and one face that is a square.\n* Cone. This has a circle on the bottom. If you slit the curved surface from the point to the bottom you would have a portion of a disc."
+          "eng": "These are the basic 3-dimenstional shapes:\n\n* **Ball** (**Sphere**) and **Cylinder** (round tube with end caps)"
+        },
+        "block2_text": {
+          "eng": "* **Box** and **Cube**"
+        },
+        "block3_text": {
+          "eng": "* **Pyramids** – triangular, square, and others"
+        },
+        "block4_text": {
+          "eng": "* **Cone**"
+        },
+        "block5_text": {
+          "eng": "The **surface** of a 3-dimensional shape is made up of 2-dimensional shapes.\n\n* Ball / Sphere. This has one curved surface. If you were to cut the surface along its \"equator\" you would have two cups which you could flatten down to be two discs.\n* Cylinder. Its ends are two discs. If you cut its curved surface with a straight cut from top to bottom it would be a rectangle.\n* Box. This has 6 faces that are rectangles. \n* Triangular Pyramid. This has 4 faces that are triangles.\n* Square Pyramid. This has 4 faces that are triangles and one face that is a square.\n* Cone. This has a circle on the bottom. If you slit the curved surface from the point to the bottom you would have a portion of a disc."
         }
       },
-      "block1_text": "These are the basic 3d shapes:\n\n* **Ball** (**Sphere**)\n* **Cylinder** (round tube with end caps)\n* **Box** (**Cube**)\n* **Pyramid** – triangle or square base\n* **Cone**\n\nThe outside surface of a 3-dimensional shape is made up of 2-dimensional shapes.\n\n* Ball / Sphere. This has one curved surface. If you were to cut the surface along its \"equator\" you would have two cups which you could flatten down to be two discs.\n* Cylinder. Its ends are two discs. If you cut its curved surface with a straight cut from top to bottom it would be a rectangle.\n* Box. This has 6 faces that are rectangles. \n* Triangular Pyramid. This has 4 faces that are triangles.\n* Square Pyramid. This has 4 faces that are triangles and one face that is a square.\n* Cone. This has a circle on the bottom. If you slit the curved surface from the point to the bottom you would have a portion of a disc."
+      "block1_text": "These are the basic 3-dimenstional shapes:\n\n* **Ball** (**Sphere**) and **Cylinder** (round tube with end caps)",
+      "block2_text": "* **Box** and **Cube**",
+      "block3_text": "* **Pyramids** – triangular, square, and others",
+      "block4_text": "* **Cone**",
+      "block5_text": "The **surface** of a 3-dimensional shape is made up of 2-dimensional shapes.\n\n* Ball / Sphere. This has one curved surface. If you were to cut the surface along its \"equator\" you would have two cups which you could flatten down to be two discs.\n* Cylinder. Its ends are two discs. If you cut its curved surface with a straight cut from top to bottom it would be a rectangle.\n* Box. This has 6 faces that are rectangles. \n* Triangular Pyramid. This has 4 faces that are triangles.\n* Square Pyramid. This has 4 faces that are triangles and one face that is a square.\n* Cone. This has a circle on the bottom. If you slit the curved surface from the point to the bottom you would have a portion of a disc."
     },
     {
       "id": "esm_glossary_114",
       "topic_theme_1": "Geom_Shape_DS",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "illust_below",
       "block1_illust": "EFM200SimilarStars.svg",
       "block1_illust_max_size": "300px",
@@ -2733,6 +2939,7 @@
       "id": "esm_glossary_115",
       "topic_theme_1": "NO_MSD_Skipping",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "skip counting",
       "_translations": {
@@ -2754,7 +2961,10 @@
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
       "topic_theme_3": "NO_NT_PowExp",
-      "dont_use_glossary_button": true,
+      "dont_use_glossary_button": false,
+      "glossary_label": "See: shapes 2d",
+      "glossary_count": 1,
+      "glossary_1": "shapes 2d",
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMGLossSquare.svg",
       "block1_illust_max_size": "100px",
@@ -2773,16 +2983,17 @@
           "eng": "There are two mathematical meanings of **square.**\n\nIn geometry, a square is a quadrilateral with four equal sides and four equal angles. It is an equiangular and equilateral quadrilateral."
         },
         "block2_text": {
-          "eng": "See also **shapes – 2d.**\n\nFor numbers, a square is a number produced by multipyling a number times itself. 1, 4, 9, and 16 are square numbers.. The name “square” comes from these numbers being the area of a square. For example, 16 is the square of 4, and it is the area of a 4 by 4 square."
+          "eng": "For numbers, a square is a number produced by multipyling a number times itself. 1, 4, 9, and 16 are square numbers.. The name “square” comes from these numbers being the area of a square. For example, 16 is the square of 4, and it is the area of a 4 by 4 square."
         }
       },
       "block1_text": "There are two mathematical meanings of **square.**\n\nIn geometry, a square is a quadrilateral with four equal sides and four equal angles. It is an equiangular and equilateral quadrilateral.",
-      "block2_text": "See also **shapes – 2d.**\n\nFor numbers, a square is a number produced by multipyling a number times itself. 1, 4, 9, and 16 are square numbers.. The name “square” comes from these numbers being the area of a square. For example, 16 is the square of 4, and it is the area of a 4 by 4 square."
+      "block2_text": "For numbers, a square is a number produced by multipyling a number times itself. 1, 4, 9, and 16 are square numbers.. The name “square” comes from these numbers being the area of a square. For example, 16 is the square of 4, and it is the area of a 4 by 4 square."
     },
     {
       "id": "esm_glossary_117",
       "topic_theme_1": "NPV_QC10_Sub10",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMTopicSub35.svg",
       "block1_illust_max_size": "250px",
@@ -2810,6 +3021,7 @@
     {
       "id": "esm_glossary_118",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "sum",
       "_translations": {
@@ -2830,6 +3042,7 @@
       "id": "esm_glossary_119",
       "topic_theme_1": "Geom_Shape_DS",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "illust_below",
       "block1_illust": "EFM200SymmetricArt.svg",
       "block1_illust_max_size": "330px",
@@ -2857,6 +3070,7 @@
     {
       "id": "esm_glossary_120",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "take away",
       "_translations": {
@@ -2876,6 +3090,7 @@
     {
       "id": "esm_glossary_121",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMGlossTenFrame.svg",
       "block1_illust_max_size": "200px",
@@ -2899,6 +3114,7 @@
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "tessellation",
       "_translations": {
@@ -2920,6 +3136,7 @@
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "three-dimensional",
       "_translations": {
@@ -2941,6 +3158,7 @@
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "illust_below",
       "block1_illust": "EFM20ColoredTiling.svg",
       "block1_illust_max_size": "200px",
@@ -2969,16 +3187,17 @@
       "id": "esm_glossary_125",
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
-      "dont_use_glossary_button": true,
+      "dont_use_glossary_button": false,
+      "glossary_label": "See: shapes 2d",
+      "glossary_count": 1,
+      "glossary_1": "shapes 2d",
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMGLossTrapezoid.svg",
       "block1_illust_max_size": "350px",
-      "block2_type": "all_text",
       "phrase": "trapezoid",
       "_translations": {
         "phrase": {},
-        "block1_text": {},
-        "block2_text": {}
+        "block1_text": {}
       },
       "_translatedFields": {
         "phrase": {
@@ -2986,19 +3205,16 @@
         },
         "block1_text": {
           "eng": "A trapezoid is a quadrilateral with exactly one pair of parallel sides. It is also called a **trapezium.**"
-        },
-        "block2_text": {
-          "eng": "See also **shapes – 2d.**"
         }
       },
-      "block1_text": "A trapezoid is a quadrilateral with exactly one pair of parallel sides. It is also called a **trapezium.**",
-      "block2_text": "See also **shapes – 2d.**"
+      "block1_text": "A trapezoid is a quadrilateral with exactly one pair of parallel sides. It is also called a **trapezium.**"
     },
     {
       "id": "esm_glossary_126",
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "trapezium",
       "_translations": {
@@ -3019,16 +3235,18 @@
       "id": "esm_glossary_127",
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
-      "dont_use_glossary_button": true,
+      "dont_use_glossary_button": false,
+      "glossary_label": "See: shapes 2d, triangles – types",
+      "glossary_count": 2,
+      "glossary_1": "shapes 2d",
+      "glossary_2": "triangles – types",
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMGLossTriangles.svg",
       "block1_illust_max_size": "360px",
-      "block2_type": "all_text",
       "phrase": "triangle",
       "_translations": {
         "phrase": {},
-        "block1_text": {},
-        "block2_text": {}
+        "block1_text": {}
       },
       "_translatedFields": {
         "phrase": {
@@ -3036,28 +3254,25 @@
         },
         "block1_text": {
           "eng": "A triangle is a three-sided polygon. It is also a polygon with three angles."
-        },
-        "block2_text": {
-          "eng": "See also **shapes – 2d** and **triangles – types.**"
         }
       },
-      "block1_text": "A triangle is a three-sided polygon. It is also a polygon with three angles.",
-      "block2_text": "See also **shapes – 2d** and **triangles – types.**"
+      "block1_text": "A triangle is a three-sided polygon. It is also a polygon with three angles."
     },
     {
       "id": "esm_glossary_128",
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
-      "dont_use_glossary_button": true,
+      "dont_use_glossary_button": false,
+      "glossary_label": "See: shapes 2d",
+      "glossary_count": 1,
+      "glossary_1": "shapes 2d",
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMGLossTriangles.svg",
       "block1_illust_max_size": "360px",
-      "block2_type": "all_text",
       "phrase": "triangles – types",
       "_translations": {
         "phrase": {},
-        "block1_text": {},
-        "block2_text": {}
+        "block1_text": {}
       },
       "_translatedFields": {
         "phrase": {
@@ -3065,17 +3280,14 @@
         },
         "block1_text": {
           "eng": "Triangles are usually described in terms of their side lengths or their angle measures.\n\nSide lengths:\n1. **Equilateral** – All three side lengths are the same. This also forces all angles to be 60 degrees. It is also a **regular triangle.**\n2. **Isosceles** – Two side lengths are the same. This also forces two angles to be the same.\n3. **Scalene** – No two side lengths are the same. This also forces that no two angles are the same.\n\nAngle measures:\n1. **Obtuse** – One angle is larger than 90 degrees (obtuse).\n2. **Right** – One angle is equal to 90 degrees.\n3. **Acute** – All three angles are less than 90 degrees (acute).\n4. Two angles the same – This is an isosceles triangle with two equal sides.\n5. **Equiangular** – All three angles are 60 degrees. It is also **equilateral** and **regular.**\n\nA regular triangle is one that is both equangular and equilateral (which is what a regular polygon is for any number of sides). A triangle has three equal angles if and only if it has three equal sides. So, for triangles, being regular, equiangular, and equilateral are all the same.\n\nA triangle has two equal angles if and only if it has two equal sides. Thus, an isosceles triangle could be defined as one that has two equal angles. However, given the name we use (which is a translation of \"two equal sides\"), the two equal sides definition is more natural."
-        },
-        "block2_text": {
-          "eng": "See also **shapes – 2d.**"
         }
       },
-      "block1_text": "Triangles are usually described in terms of their side lengths or their angle measures.\n\nSide lengths:\n1. **Equilateral** – All three side lengths are the same. This also forces all angles to be 60 degrees. It is also a **regular triangle.**\n2. **Isosceles** – Two side lengths are the same. This also forces two angles to be the same.\n3. **Scalene** – No two side lengths are the same. This also forces that no two angles are the same.\n\nAngle measures:\n1. **Obtuse** – One angle is larger than 90 degrees (obtuse).\n2. **Right** – One angle is equal to 90 degrees.\n3. **Acute** – All three angles are less than 90 degrees (acute).\n4. Two angles the same – This is an isosceles triangle with two equal sides.\n5. **Equiangular** – All three angles are 60 degrees. It is also **equilateral** and **regular.**\n\nA regular triangle is one that is both equangular and equilateral (which is what a regular polygon is for any number of sides). A triangle has three equal angles if and only if it has three equal sides. So, for triangles, being regular, equiangular, and equilateral are all the same.\n\nA triangle has two equal angles if and only if it has two equal sides. Thus, an isosceles triangle could be defined as one that has two equal angles. However, given the name we use (which is a translation of \"two equal sides\"), the two equal sides definition is more natural.",
-      "block2_text": "See also **shapes – 2d.**"
+      "block1_text": "Triangles are usually described in terms of their side lengths or their angle measures.\n\nSide lengths:\n1. **Equilateral** – All three side lengths are the same. This also forces all angles to be 60 degrees. It is also a **regular triangle.**\n2. **Isosceles** – Two side lengths are the same. This also forces two angles to be the same.\n3. **Scalene** – No two side lengths are the same. This also forces that no two angles are the same.\n\nAngle measures:\n1. **Obtuse** – One angle is larger than 90 degrees (obtuse).\n2. **Right** – One angle is equal to 90 degrees.\n3. **Acute** – All three angles are less than 90 degrees (acute).\n4. Two angles the same – This is an isosceles triangle with two equal sides.\n5. **Equiangular** – All three angles are 60 degrees. It is also **equilateral** and **regular.**\n\nA regular triangle is one that is both equangular and equilateral (which is what a regular polygon is for any number of sides). A triangle has three equal angles if and only if it has three equal sides. So, for triangles, being regular, equiangular, and equilateral are all the same.\n\nA triangle has two equal angles if and only if it has two equal sides. Thus, an isosceles triangle could be defined as one that has two equal angles. However, given the name we use (which is a translation of \"two equal sides\"), the two equal sides definition is more natural."
     },
     {
       "id": "esm_glossary_129",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMGlossTriangularNumbers.svg",
       "block1_illust_max_size": "350px",
@@ -3099,6 +3311,7 @@
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "two-dimensional",
       "_translations": {
@@ -3119,6 +3332,7 @@
       "id": "esm_glossary_131",
       "topic_theme_1": "NO_NT_Primes",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "unit",
       "_translations": {
@@ -3139,6 +3353,7 @@
       "id": "esm_glossary_132",
       "topic_theme_1": "NPV_QC10_Sub10",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMGlossUnitize.svg",
       "block1_illust_max_size": "240px",
@@ -3160,6 +3375,7 @@
     {
       "id": "esm_glossary_133",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "Venn diagram",
       "_translations": {
@@ -3181,6 +3397,7 @@
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "all_text",
       "phrase": "vertex",
       "_translations": {
@@ -3202,6 +3419,7 @@
       "topic_theme_1": "Geom_Shape_DS",
       "topic_theme_2": "Geom_Shape_SN2D3D",
       "dont_use_glossary_button": true,
+      "glossary_count": 0,
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMGLossLinesAndSegments.svg",
       "block1_illust_max_size": "220px",
@@ -3223,26 +3441,58 @@
     {
       "id": "esm_glossary_136",
       "topic_theme_1": "Geom_Shape_DS",
-      "dont_use_glossary_button": true,
-      "block1_type": "all_text",
+      "dont_use_glossary_button": false,
+      "glossary_label": "See: shapes 3d",
+      "glossary_count": 1,
+      "glossary_1": "shapes 3d",
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESM3dSpherecylinder.svg",
+      "block1_illust_max_size": "300px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESM3dBoxCube.svg",
+      "block2_illust_max_size": "360px",
+      "block3_type": "illust_below",
+      "block3_illust": "ESMIll/ESM3dPrisms.svg",
+      "block3_illust_max_size": "360px",
+      "block4_type": "illust_below",
+      "block4_illust": "ESMIll/ESM3dPyramids.svg",
+      "block4_illust_max_size": "300px",
       "phrase": "volume",
       "_translations": {
         "phrase": {},
-        "block1_text": {}
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
       },
       "_translatedFields": {
         "phrase": {
           "eng": "volume"
         },
         "block1_text": {
-          "eng": "The volume of a 3-dimensional object is a measure of the space enclosed by the object.\n\n**Examples**\n* Sphere – The volume is the product of 4/3 times the cube of its radius.\n* Box – The volume is the lenght times the height times the width.\n* Prism – The volume is the area of the base time the height (the distance between the bases).\n* Cylinder – The volume is the area of the base time the height (the distance between the bases)."
+          "eng": "The volume of a 3-dimensional object is the measure of the space enclosed by the object.\n\n**Examples**\n* Sphere – The volume is the product of 4/3 times the cube of its radius.\n* Cylinder – The volume is the area of the base times the height (the distance between the bases)."
+        },
+        "block2_text": {
+          "eng": "* Box – The volume is the length times the height times the width.\n* Cube – The volume is the cube of the length of a side"
+        },
+        "block3_text": {
+          "eng": "* Prism – The volume is the area of the base times the height (the distance between the bases)."
+        },
+        "block4_text": {
+          "eng": "* Pyramid – The volume is 1/3 times the height times the area of the base."
         }
       },
-      "block1_text": "The volume of a 3-dimensional object is a measure of the space enclosed by the object.\n\n**Examples**\n* Sphere – The volume is the product of 4/3 times the cube of its radius.\n* Box – The volume is the lenght times the height times the width.\n* Prism – The volume is the area of the base time the height (the distance between the bases).\n* Cylinder – The volume is the area of the base time the height (the distance between the bases)."
+      "block1_text": "The volume of a 3-dimensional object is the measure of the space enclosed by the object.\n\n**Examples**\n* Sphere – The volume is the product of 4/3 times the cube of its radius.\n* Cylinder – The volume is the area of the base times the height (the distance between the bases).",
+      "block2_text": "* Box – The volume is the length times the height times the width.\n* Cube – The volume is the cube of the length of a side",
+      "block3_text": "* Prism – The volume is the area of the base times the height (the distance between the bases).",
+      "block4_text": "* Pyramid – The volume is 1/3 times the height times the area of the base."
     },
     {
       "id": "esm_glossary_137",
-      "dont_use_glossary_button": true,
+      "dont_use_glossary_button": false,
+      "glossary_label": "See: numbers – types",
+      "glossary_count": 1,
+      "glossary_1": "numbers – types",
       "block1_type": "all_text",
       "phrase": "whole number",
       "_translations": {
@@ -3254,10 +3504,10 @@
           "eng": "whole number"
         },
         "block1_text": {
-          "eng": "Confusingly, some people consider whole numbers to be all the integers, and others feel these numbers should not include the negative integers. The first group justifies their definition by saying that whole numbers are all numbers with no fractional part.\n\nSee also: **numbers – types.**"
+          "eng": "Confusingly, some people consider whole numbers to be all the integers, and others feel these numbers should not include the negative integers. The first group justifies their definition by saying that whole numbers are all numbers with no fractional part."
         }
       },
-      "block1_text": "Confusingly, some people consider whole numbers to be all the integers, and others feel these numbers should not include the negative integers. The first group justifies their definition by saying that whole numbers are all numbers with no fractional part.\n\nSee also: **numbers – types.**"
+      "block1_text": "Confusingly, some people consider whole numbers to be all the integers, and others feel these numbers should not include the negative integers. The first group justifies their definition by saying that whole numbers are all numbers with no fractional part."
     }
   ],
   "_xlsxPath": "ESM_glossary_high_level_sheets.xlsx",
@@ -3265,6 +3515,9 @@
   "_metadata": {
     "dont_use_glossary_button": {
       "type": "boolean"
+    },
+    "glossary_count": {
+      "type": "number"
     }
   }
 }
