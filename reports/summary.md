@@ -51,8 +51,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 44091 KB | 44.1 MB |
-| unused | 21613 KB | 21.6 MB |
+| total | 44352 KB | 44.4 MB |
+| unused | 21605 KB | 21.6 MB |
 </details>
 
 <details open>
@@ -300,8 +300,6 @@ Assets that appear in app-data but do not have references within sheets
 | EFMStorybooks/EFM-SB-KAHN-20.jpg | 3.5 |
 | EFMStorybooks/EFM-SB-SSMILE-8.jpg | 3.5 |
 | EFMStorybooks/EFM-SB-TFHH-2.jpg | 10.6 |
-| ESMIll/ESM3dBox.svg | 4.9 |
-| ESMIll/ESM3dSphere.svg | 3.6 |
 | ESMIll/ESMDots4-5.svg | 4 |
 | ESMIll/ESMPOWACoinFlipStart2.svg | 11626.6 |
 | ESMIll/ESMPOWCAvoidingRectanglesAnswer4.svg | 7.5 |
@@ -330,8 +328,8 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | path | size_kb | count |
 | --- | --- | --- |
 | EFM105BingoWithCards.svg | 27.7 | 1 |
-| EFM10PairLookingAway.svg | 23.6 | 1 |
-| EFM10PairReadingOnBench.svg | 33.7 | 1 |
+| EFM10PairLookingAway.svg | 23.6 | 2 |
+| EFM10PairReadingOnBench.svg | 33.7 | 2 |
 | EFM12Apples.svg | 5.3 | 2 |
 | EFM12EFMLogoNoEFM.svg | 12.8 | 1 |
 | EFM140BagGame.svg | 14.9 | 1 |
@@ -344,7 +342,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | EFM290Fingers11-3.svg | 21.6 | 1 |
 | EFM290FingersFor8-3.svg | 11.8 | 1 |
 | EFM290FingersFor8Plus3.svg | 11.8 | 1 |
-| EFM30MugOnShelf.svg | 4.9 | 2 |
+| EFM30MugOnShelf.svg | 4.9 | 3 |
 | EFM30ShapePattern.svg | 5.6 | 4 |
 | EFM30Socks.svg | 18 | 1 |
 | EFM340PairingDown.svg | 29.6 | 1 |
@@ -359,7 +357,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | EFM70EachOfThese-Furniture.svg | 170.4 | 1 |
 | EFM70EachOfTheseIsDifferent2Example.svg | 6.5 | 1 |
 | EFM70ForkSpoonGold.svg | 14.9 | 2 |
-| EFM70GoingInCircles.svg | 10.6 | 3 |
+| EFM70GoingInCircles.svg | 10.6 | 4 |
 | EFM90StringNumberLine.svg | 22 | 2 |
 | EFM95ColoredShapesonFloor.svg | 10.2 | 1 |
 | EFMStorybooks/EFM-SB-0-PageDivider.svg | 3.2 | 2 |
@@ -1240,17 +1238,21 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/EFM105BackAndForth24Move0.svg | 20.1 | 1 |
 | ESMIll/EFM105BackAndForth24Move1.svg | 21.1 | 1 |
 | ESMIll/EFM105BackAndForth24MoveIntro.svg | 19.4 | 1 |
+| ESMIll/EFMGloss0100Chart.svg | 163.4 | 2 |
 | ESMIll/ESM0GlossaryDividingLine.svg | 3.2 | 2 |
 | ESMIll/ESM200NumberShapesEvens.svg | 5.2 | 1 |
 | ESMIll/ESM200NumberShapesOdds.svg | 4.6 | 1 |
 | ESMIll/ESM380Multiplying3Rows.svg | 5.4 | 1 |
+| ESMIll/ESM3dBox.svg | 4.9 | 1 |
 | ESMIll/ESM3dBoxCube.svg | 7.3 | 2 |
-| ESMIll/ESM3dCone.svg | 4.8 | 2 |
+| ESMIll/ESM3dCone.svg | 4.8 | 3 |
 | ESMIll/ESM3dCube.svg | 3.9 | 1 |
-| ESMIll/ESM3dCylinder.svg | 4.8 | 1 |
+| ESMIll/ESM3dCylinder.svg | 4.8 | 2 |
 | ESMIll/ESM3dPrisms.svg | 6.5 | 2 |
-| ESMIll/ESM3dPyramids.svg | 5.4 | 3 |
+| ESMIll/ESM3dPyramids.svg | 5.4 | 4 |
 | ESMIll/ESM3dPyramidsPrisms.svg | 10.4 | 1 |
+| ESMIll/ESM3dShapesTopics.svg | 20.5 | 1 |
+| ESMIll/ESM3dSphere.svg | 3.6 | 1 |
 | ESMIll/ESM3dSpherecylinder.svg | 6.9 | 2 |
 | ESMIll/ESMBridgesOfKonigsbergChallenge.svg | 19.9 | 1 |
 | ESMIll/ESMDots1-2.svg | 2.8 | 1 |
@@ -1352,6 +1354,13 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMGAWarMult.svg | 16.5 | 1 |
 | ESMIll/ESMGAWarSingleDigit.svg | 16 | 1 |
 | ESMIll/ESMGAWhichOneIsDifferent.svg | 5.1 | 1 |
+| ESMIll/ESMGLoss0AreaCircleRectangle.svg | 10.2 | 1 |
+| ESMIll/ESMGLoss0AreaTriangles.svg | 10.9 | 1 |
+| ESMIll/ESMGLoss0Circle.svg | 8.3 | 1 |
+| ESMIll/ESMGLoss0ParallelogramTrapezoidKite.svg | 12.4 | 1 |
+| ESMIll/ESMGLoss0PolygonsQuadrilaterals.svg | 5.7 | 2 |
+| ESMIll/ESMGLoss0PolygonsTriangles.svg | 10 | 2 |
+| ESMIll/ESMGLoss0PolysPentHexSeptOct.svg | 11.3 | 2 |
 | ESMIll/ESMGLoss3Angles.svg | 15.9 | 1 |
 | ESMIll/ESMGLoss3typesOfAngles.svg | 16.9 | 1 |
 | ESMIll/ESMGLoss45.90.180Angles.svg | 15.9 | 1 |
@@ -1371,7 +1380,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMGLossQuadrilateral.svg | 7 | 2 |
 | ESMIll/ESMGLossRadius.svg | 8.9 | 2 |
 | ESMIll/ESMGLossRectangle.svg | 5.4 | 1 |
-| ESMIll/ESMGLossRegularPolygons.svg | 12.8 | 2 |
+| ESMIll/ESMGLossRegularPolygons.svg | 12.8 | 3 |
 | ESMIll/ESMGLossRhombus.svg | 5.4 | 1 |
 | ESMIll/ESMGLossRightAngle.svg | 13.3 | 1 |
 | ESMIll/ESMGLossRightTriangle.svg | 6.1 | 2 |
