@@ -491,6 +491,14 @@
           "name": "dg_qc_group1",
           "rows": [
             {
+              "type": "text",
+              "name": "spacer",
+              "style_list": [
+                "flex: 1"
+              ],
+              "_nested_name": "dg_top_of_page.dg_qc_group1.spacer"
+            },
+            {
               "type": "button",
               "name": "button_qc_group1_1",
               "value": "Quantities",
@@ -521,6 +529,9 @@
               "parameter_list": {
                 "variant": "card"
               },
+              "style_list": [
+                "flex: 4"
+              ],
               "_nested_name": "dg_top_of_page.dg_qc_group1.button_qc_group1_1"
             },
             {
@@ -562,7 +573,18 @@
               "parameter_list": {
                 "variant": "card"
               },
+              "style_list": [
+                "flex:4"
+              ],
               "_nested_name": "dg_top_of_page.dg_qc_group1.button_qc_group1_2"
+            },
+            {
+              "type": "text",
+              "name": "spacer",
+              "style_list": [
+                "flex: 1"
+              ],
+              "_nested_name": "dg_top_of_page.dg_qc_group1.spacer"
             }
           ],
           "_nested_name": "dg_top_of_page.dg_qc_group1"
@@ -587,6 +609,14 @@
             "margin-top: -3px"
           ],
           "rows": [
+            {
+              "type": "text",
+              "name": "spacer",
+              "style_list": [
+                "flex: 1"
+              ],
+              "_nested_name": "dg_top_of_page.dg_qc_group2.spacer"
+            },
             {
               "type": "button",
               "name": "button_qc_group2_1",
@@ -618,6 +648,9 @@
               "parameter_list": {
                 "variant": "card"
               },
+              "style_list": [
+                "flex: 4"
+              ],
               "_nested_name": "dg_top_of_page.dg_qc_group2.button_qc_group2_1"
             },
             {
@@ -659,7 +692,18 @@
               "parameter_list": {
                 "variant": "card"
               },
+              "style_list": [
+                "flex:4"
+              ],
               "_nested_name": "dg_top_of_page.dg_qc_group2.button_qc_group2_2"
+            },
+            {
+              "type": "text",
+              "name": "spacer",
+              "style_list": [
+                "flex: 1"
+              ],
+              "_nested_name": "dg_top_of_page.dg_qc_group2.spacer"
             }
           ],
           "_nested_name": "dg_top_of_page.dg_qc_group2"
@@ -685,9 +729,17 @@
           ],
           "rows": [
             {
+              "type": "text",
+              "name": "spacer",
+              "style_list": [
+                "flex: 1"
+              ],
+              "_nested_name": "dg_top_of_page.dg_qc_group3.spacer"
+            },
+            {
               "type": "button",
               "name": "button_qc_group3_1",
-              "value": "...,3,2,1,0",
+              "value": "Counting Down",
               "_translations": {
                 "value": {}
               },
@@ -697,10 +749,10 @@
                   "action_id": "set_field",
                   "args": [
                     "current_topic",
-                    "data.esm_topics.Geom_Shape_CompDecomp"
+                    "data.esm_topics.NPV_QC10_QC"
                   ],
-                  "_raw": "click | set_field:current_topic: data.esm_topics.Geom_Shape_CompDecomp",
-                  "_cleaned": "click | set_field:current_topic: data.esm_topics.Geom_Shape_CompDecomp"
+                  "_raw": "click | set_field:current_topic: data.esm_topics.NPV_QC10_QC",
+                  "_cleaned": "click | set_field:current_topic: data.esm_topics.NPV_QC10_QC"
                 },
                 {
                   "trigger": "click",
@@ -715,6 +767,9 @@
               "parameter_list": {
                 "variant": "card"
               },
+              "style_list": [
+                "flex: 4"
+              ],
               "_nested_name": "dg_top_of_page.dg_qc_group3.button_qc_group3_1"
             },
             {
@@ -728,7 +783,7 @@
             {
               "type": "button",
               "name": "button_qc_group3_2",
-              "value": "3,4,5,...",
+              "value": "Counting On",
               "_translations": {
                 "value": {}
               },
@@ -756,7 +811,18 @@
               "parameter_list": {
                 "variant": "card"
               },
+              "style_list": [
+                "flex:4"
+              ],
               "_nested_name": "dg_top_of_page.dg_qc_group3.button_qc_group3_2"
+            },
+            {
+              "type": "text",
+              "name": "spacer",
+              "style_list": [
+                "flex: 1"
+              ],
+              "_nested_name": "dg_top_of_page.dg_qc_group3.spacer"
             }
           ],
           "_nested_name": "dg_top_of_page.dg_qc_group3"
@@ -782,9 +848,17 @@
           ],
           "rows": [
             {
+              "type": "text",
+              "name": "spacer",
+              "style_list": [
+                "flex: 1"
+              ],
+              "_nested_name": "dg_top_of_page.dg_qc_group4.spacer"
+            },
+            {
               "type": "button",
               "name": "button_qc_group4_1",
-              "value": "2,4,6,...",
+              "value": "Count by 2s",
               "_translations": {
                 "value": {}
               },
@@ -794,10 +868,10 @@
                   "action_id": "set_field",
                   "args": [
                     "current_topic",
-                    "data.esm_topics.Geom_Shape_CompDecomp"
+                    "data.esm_topics.NO_MSD_Skipping"
                   ],
-                  "_raw": "click | set_field:current_topic: data.esm_topics.Geom_Shape_CompDecomp",
-                  "_cleaned": "click | set_field:current_topic: data.esm_topics.Geom_Shape_CompDecomp"
+                  "_raw": "click | set_field:current_topic: data.esm_topics.NO_MSD_Skipping",
+                  "_cleaned": "click | set_field:current_topic: data.esm_topics.NO_MSD_Skipping"
                 },
                 {
                   "trigger": "click",
@@ -812,6 +886,9 @@
               "parameter_list": {
                 "variant": "card"
               },
+              "style_list": [
+                "flex: 4"
+              ],
               "_nested_name": "dg_top_of_page.dg_qc_group4.button_qc_group4_1"
             },
             {
@@ -825,7 +902,7 @@
             {
               "type": "button",
               "name": "button_qc_group4_2",
-              "value": "Ten Frames",
+              "value": "Ten Bundles",
               "_translations": {
                 "value": {}
               },
@@ -853,7 +930,18 @@
               "parameter_list": {
                 "variant": "card"
               },
+              "style_list": [
+                "flex:4"
+              ],
               "_nested_name": "dg_top_of_page.dg_qc_group4.button_qc_group4_2"
+            },
+            {
+              "type": "text",
+              "name": "spacer",
+              "style_list": [
+                "flex: 1"
+              ],
+              "_nested_name": "dg_top_of_page.dg_qc_group4.spacer"
             }
           ],
           "_nested_name": "dg_top_of_page.dg_qc_group4"
@@ -947,7 +1035,7 @@
             {
               "type": "text",
               "name": "text_group0_1",
-              "value": "Quantities & Counting Pathway",
+              "value": "< Quantities & Counting Pathway >",
               "_translations": {
                 "value": {}
               },
@@ -1188,6 +1276,14 @@
           ],
           "rows": [
             {
+              "type": "text",
+              "name": "spacer",
+              "style_list": [
+                "flex: 1"
+              ],
+              "_nested_name": "dg_top_of_page.dg_sas_group3.spacer"
+            },
+            {
               "type": "button",
               "name": "button_sas_group3_1",
               "value": "a+a±1",
@@ -1241,10 +1337,10 @@
                   "action_id": "set_field",
                   "args": [
                     "current_topic",
-                    "data.esm_topics.NO_AS10_AS1and2"
+                    "data.esm_topics.NO_AS10_NBFF"
                   ],
-                  "_raw": "click | set_field:current_topic: data.esm_topics.NO_AS10_AS1and2",
-                  "_cleaned": "click | set_field:current_topic: data.esm_topics.NO_AS10_AS1and2"
+                  "_raw": "click | set_field:current_topic: data.esm_topics.NO_AS10_NBFF",
+                  "_cleaned": "click | set_field:current_topic: data.esm_topics.NO_AS10_NBFF"
                 },
                 {
                   "trigger": "click",
@@ -1260,22 +1356,30 @@
                 "variant": "card"
               },
               "_nested_name": "dg_top_of_page.dg_sas_group3.button_sas_group3_2"
+            },
+            {
+              "type": "text",
+              "name": "spacer",
+              "style_list": [
+                "flex: 1"
+              ],
+              "_nested_name": "dg_top_of_page.dg_sas_group3.spacer"
             }
           ],
           "_nested_name": "dg_top_of_page.dg_sas_group3"
         },
         {
           "type": "image",
-          "name": "arrows3",
-          "value": "ESMIll/ESMLPArrows3.svg",
+          "name": "arrows2",
+          "value": "ESMIll/ESMLPArrows2.svg",
           "_translations": {
             "value": {}
           },
           "style_list": [
-            "max-width: 90px",
+            "max-width: 70px",
             "margin-top: 0px"
           ],
-          "_nested_name": "dg_top_of_page.arrows3"
+          "_nested_name": "dg_top_of_page.arrows2"
         },
         {
           "type": "display_group",
@@ -1284,6 +1388,14 @@
             "margin-top: -3px"
           ],
           "rows": [
+            {
+              "type": "text",
+              "name": "spacer",
+              "style_list": [
+                "flex: 1"
+              ],
+              "_nested_name": "dg_top_of_page.dg_sas_group4.spacer"
+            },
             {
               "type": "button",
               "name": "button_sas_group4_1",
@@ -1297,10 +1409,10 @@
                   "action_id": "set_field",
                   "args": [
                     "current_topic",
-                    "data.esm_topics.NO_AS10_AS1and2"
+                    "data.esm_topics.NO_ASSD_ASto10"
                   ],
-                  "_raw": "click | set_field:current_topic: data.esm_topics.NO_AS10_AS1and2",
-                  "_cleaned": "click | set_field:current_topic: data.esm_topics.NO_AS10_AS1and2"
+                  "_raw": "click | set_field:current_topic: data.esm_topics.NO_ASSD_ASto10",
+                  "_cleaned": "click | set_field:current_topic: data.esm_topics.NO_ASSD_ASto10"
                 },
                 {
                   "trigger": "click",
@@ -1315,10 +1427,15 @@
               "parameter_list": {
                 "variant": "card"
               },
+              "_nested_name": "dg_top_of_page.dg_sas_group4.button_sas_group4_1"
+            },
+            {
+              "type": "text",
+              "name": "spacer",
               "style_list": [
                 "flex: 1"
               ],
-              "_nested_name": "dg_top_of_page.dg_sas_group4.button_sas_group4_1"
+              "_nested_name": "dg_top_of_page.dg_sas_group4.spacer"
             },
             {
               "type": "button",
@@ -1333,10 +1450,10 @@
                   "action_id": "set_field",
                   "args": [
                     "current_topic",
-                    "data.esm_topics.NO_AS10_AS1and2"
+                    "data.esm_topics.NO_AS10_NBFF"
                   ],
-                  "_raw": "click | set_field:current_topic: data.esm_topics.NO_AS10_AS1and2",
-                  "_cleaned": "click | set_field:current_topic: data.esm_topics.NO_AS10_AS1and2"
+                  "_raw": "click | set_field:current_topic: data.esm_topics.NO_AS10_NBFF",
+                  "_cleaned": "click | set_field:current_topic: data.esm_topics.NO_AS10_NBFF"
                 },
                 {
                   "trigger": "click",
@@ -1351,46 +1468,15 @@
               "parameter_list": {
                 "variant": "card"
               },
-              "style_list": [
-                "flex: 1"
-              ],
               "_nested_name": "dg_top_of_page.dg_sas_group4.button_sas_group4_2"
             },
             {
-              "type": "button",
-              "name": "button_sas_group4_3",
-              "value": "Fact Families",
-              "_translations": {
-                "value": {}
-              },
-              "action_list": [
-                {
-                  "trigger": "click",
-                  "action_id": "set_field",
-                  "args": [
-                    "current_topic",
-                    "data.esm_topics.NO_AS10_AS1and2"
-                  ],
-                  "_raw": "click | set_field:current_topic: data.esm_topics.NO_AS10_AS1and2",
-                  "_cleaned": "click | set_field:current_topic: data.esm_topics.NO_AS10_AS1and2"
-                },
-                {
-                  "trigger": "click",
-                  "action_id": "go_to",
-                  "args": [
-                    "esm_topic_template"
-                  ],
-                  "_raw": "click | go_to: esm_topic_template",
-                  "_cleaned": "click | go_to: esm_topic_template"
-                }
-              ],
-              "parameter_list": {
-                "variant": "card"
-              },
+              "type": "text",
+              "name": "spacer",
               "style_list": [
                 "flex: 1"
               ],
-              "_nested_name": "dg_top_of_page.dg_sas_group4.button_sas_group4_3"
+              "_nested_name": "dg_top_of_page.dg_sas_group4.spacer"
             }
           ],
           "_nested_name": "dg_top_of_page.dg_sas_group4"
@@ -1415,6 +1501,14 @@
             "margin-top: -3px"
           ],
           "rows": [
+            {
+              "type": "text",
+              "name": "spacer",
+              "style_list": [
+                "flex: 1"
+              ],
+              "_nested_name": "dg_top_of_page.dg_sas_group5.spacer"
+            },
             {
               "type": "button",
               "name": "button_sas_group5_1",
@@ -1447,9 +1541,17 @@
                 "variant": "card"
               },
               "style_list": [
-                "flex: 1"
+                "flex: 4"
               ],
               "_nested_name": "dg_top_of_page.dg_sas_group5.button_sas_group5_1"
+            },
+            {
+              "type": "text",
+              "name": "spacer",
+              "style_list": [
+                "flex: 1"
+              ],
+              "_nested_name": "dg_top_of_page.dg_sas_group5.spacer"
             },
             {
               "type": "button",
@@ -1464,10 +1566,10 @@
                   "action_id": "set_field",
                   "args": [
                     "current_topic",
-                    "data.esm_topics.NO_AS10_AS1and2"
+                    "data.esm_topics.NO_ASSD_PVto19"
                   ],
-                  "_raw": "click | set_field:current_topic: data.esm_topics.NO_AS10_AS1and2",
-                  "_cleaned": "click | set_field:current_topic: data.esm_topics.NO_AS10_AS1and2"
+                  "_raw": "click | set_field:current_topic: data.esm_topics.NO_ASSD_PVto19",
+                  "_cleaned": "click | set_field:current_topic: data.esm_topics.NO_ASSD_PVto19"
                 },
                 {
                   "trigger": "click",
@@ -1483,9 +1585,17 @@
                 "variant": "card"
               },
               "style_list": [
-                "flex: 1"
+                "flex:4"
               ],
               "_nested_name": "dg_top_of_page.dg_sas_group5.button_sas_group5_2"
+            },
+            {
+              "type": "text",
+              "name": "spacer",
+              "style_list": [
+                "flex: 1"
+              ],
+              "_nested_name": "dg_top_of_page.dg_sas_group5.spacer"
             }
           ],
           "_nested_name": "dg_top_of_page.dg_sas_group5"
@@ -1510,6 +1620,14 @@
             "margin-top: -3px"
           ],
           "rows": [
+            {
+              "type": "text",
+              "name": "spacer",
+              "style_list": [
+                "flex: 1"
+              ],
+              "_nested_name": "dg_top_of_page.dg_sas_group6.spacer"
+            },
             {
               "type": "button",
               "name": "button_sas_group6_1",
@@ -1542,9 +1660,17 @@
                 "variant": "card"
               },
               "style_list": [
-                "flex: 1"
+                "flex: 4"
               ],
               "_nested_name": "dg_top_of_page.dg_sas_group6.button_sas_group6_1"
+            },
+            {
+              "type": "text",
+              "name": "spacer",
+              "style_list": [
+                "flex: 1"
+              ],
+              "_nested_name": "dg_top_of_page.dg_sas_group6.spacer"
             },
             {
               "type": "button",
@@ -1578,9 +1704,17 @@
                 "variant": "card"
               },
               "style_list": [
-                "flex: 1"
+                "flex:4"
               ],
               "_nested_name": "dg_top_of_page.dg_sas_group6.button_sas_group6_2"
+            },
+            {
+              "type": "text",
+              "name": "spacer",
+              "style_list": [
+                "flex: 1"
+              ],
+              "_nested_name": "dg_top_of_page.dg_sas_group6.spacer"
             }
           ],
           "_nested_name": "dg_top_of_page.dg_sas_group6"
@@ -1594,7 +1728,7 @@
           },
           "style_list": [
             "max-width: 30px",
-            "margin-top: -15px"
+            "margin-top: -2px"
           ],
           "_nested_name": "dg_top_of_page.arrows1"
         },
@@ -1605,6 +1739,14 @@
             "margin-top: -3px"
           ],
           "rows": [
+            {
+              "type": "text",
+              "name": "spacer",
+              "style_list": [
+                "flex: 1"
+              ],
+              "_nested_name": "dg_top_of_page.dg_sas_group7.spacer"
+            },
             {
               "type": "button",
               "name": "button_sas_group7_1",
@@ -1618,10 +1760,10 @@
                   "action_id": "set_field",
                   "args": [
                     "current_topic",
-                    "data.esm_topics.NO_ASSD_10BridgeA"
+                    "data.esm_topics.NO_ASSD_SD_Add_Sub"
                   ],
-                  "_raw": "click | set_field:current_topic: data.esm_topics.NO_ASSD_10BridgeA",
-                  "_cleaned": "click | set_field:current_topic: data.esm_topics.NO_ASSD_10BridgeA"
+                  "_raw": "click | set_field:current_topic: data.esm_topics.NO_ASSD_SD_Add_Sub",
+                  "_cleaned": "click | set_field:current_topic: data.esm_topics.NO_ASSD_SD_Add_Sub"
                 },
                 {
                   "trigger": "click",
@@ -1636,10 +1778,15 @@
               "parameter_list": {
                 "variant": "card"
               },
+              "_nested_name": "dg_top_of_page.dg_sas_group7.button_sas_group7_1"
+            },
+            {
+              "type": "text",
+              "name": "spacer",
               "style_list": [
                 "flex: 1"
               ],
-              "_nested_name": "dg_top_of_page.dg_sas_group7.button_sas_group7_1"
+              "_nested_name": "dg_top_of_page.dg_sas_group7.spacer"
             }
           ],
           "_nested_name": "dg_top_of_page.dg_sas_group7"
@@ -1729,12 +1876,22 @@
               "action_list": [
                 {
                   "trigger": "click",
+                  "action_id": "set_field",
+                  "args": [
+                    "current_topic",
+                    "data.esm_topics.NO_MSD_Doubling"
+                  ],
+                  "_raw": "click | set_field:current_topic: data.esm_topics.NO_MSD_Doubling",
+                  "_cleaned": "click | set_field:current_topic: data.esm_topics.NO_MSD_Doubling"
+                },
+                {
+                  "trigger": "click",
                   "action_id": "go_to",
                   "args": [
-                    "esm_topic_start"
+                    "esm_topic_template"
                   ],
-                  "_raw": "click | go_to: esm_topic_start",
-                  "_cleaned": "click | go_to: esm_topic_start"
+                  "_raw": "click | go_to: esm_topic_template",
+                  "_cleaned": "click | go_to: esm_topic_template"
                 }
               ],
               "parameter_list": {
@@ -1755,12 +1912,22 @@
               "action_list": [
                 {
                   "trigger": "click",
+                  "action_id": "set_field",
+                  "args": [
+                    "current_topic",
+                    "data.esm_topics.NO_MSD_Skipping"
+                  ],
+                  "_raw": "click | set_field:current_topic: data.esm_topics.NO_MSD_Skipping",
+                  "_cleaned": "click | set_field:current_topic: data.esm_topics.NO_MSD_Skipping"
+                },
+                {
+                  "trigger": "click",
                   "action_id": "go_to",
                   "args": [
-                    "esm_topic_start"
+                    "esm_topic_template"
                   ],
-                  "_raw": "click | go_to: esm_topic_start",
-                  "_cleaned": "click | go_to: esm_topic_start"
+                  "_raw": "click | go_to: esm_topic_template",
+                  "_cleaned": "click | go_to: esm_topic_template"
                 }
               ],
               "parameter_list": {
@@ -1781,12 +1948,22 @@
               "action_list": [
                 {
                   "trigger": "click",
+                  "action_id": "set_field",
+                  "args": [
+                    "current_topic",
+                    "data.esm_topics.NO_MSD_MultRep"
+                  ],
+                  "_raw": "click | set_field:current_topic: data.esm_topics.NO_MSD_MultRep",
+                  "_cleaned": "click | set_field:current_topic: data.esm_topics.NO_MSD_MultRep"
+                },
+                {
+                  "trigger": "click",
                   "action_id": "go_to",
                   "args": [
-                    "esm_topic_start"
+                    "esm_topic_template"
                   ],
-                  "_raw": "click | go_to: esm_topic_start",
-                  "_cleaned": "click | go_to: esm_topic_start"
+                  "_raw": "click | go_to: esm_topic_template",
+                  "_cleaned": "click | go_to: esm_topic_template"
                 }
               ],
               "parameter_list": {
@@ -1830,12 +2007,22 @@
               "action_list": [
                 {
                   "trigger": "click",
+                  "action_id": "set_field",
+                  "args": [
+                    "current_topic",
+                    "data.esm_topics.NO_MSD_AllSingles"
+                  ],
+                  "_raw": "click | set_field:current_topic: data.esm_topics.NO_MSD_AllSingles",
+                  "_cleaned": "click | set_field:current_topic: data.esm_topics.NO_MSD_AllSingles"
+                },
+                {
+                  "trigger": "click",
                   "action_id": "go_to",
                   "args": [
-                    "esm_topic_start"
+                    "esm_topic_template"
                   ],
-                  "_raw": "click | go_to: esm_topic_start",
-                  "_cleaned": "click | go_to: esm_topic_start"
+                  "_raw": "click | go_to: esm_topic_template",
+                  "_cleaned": "click | go_to: esm_topic_template"
                 }
               ],
               "parameter_list": {
@@ -1856,12 +2043,22 @@
               "action_list": [
                 {
                   "trigger": "click",
+                  "action_id": "set_field",
+                  "args": [
+                    "current_topic",
+                    "data.esm_topics.NO_MSD_MultCommutes"
+                  ],
+                  "_raw": "click | set_field:current_topic: data.esm_topics.NO_MSD_MultCommutes",
+                  "_cleaned": "click | set_field:current_topic: data.esm_topics.NO_MSD_MultCommutes"
+                },
+                {
+                  "trigger": "click",
                   "action_id": "go_to",
                   "args": [
-                    "esm_topic_start"
+                    "esm_topic_template"
                   ],
-                  "_raw": "click | go_to: esm_topic_start",
-                  "_cleaned": "click | go_to: esm_topic_start"
+                  "_raw": "click | go_to: esm_topic_template",
+                  "_cleaned": "click | go_to: esm_topic_template"
                 }
               ],
               "parameter_list": {
@@ -1882,12 +2079,22 @@
               "action_list": [
                 {
                   "trigger": "click",
+                  "action_id": "set_field",
+                  "args": [
+                    "current_topic",
+                    "data.esm_topics.NO_MSD_AllSingles"
+                  ],
+                  "_raw": "click | set_field:current_topic: data.esm_topics.NO_MSD_AllSingles",
+                  "_cleaned": "click | set_field:current_topic: data.esm_topics.NO_MSD_AllSingles"
+                },
+                {
+                  "trigger": "click",
                   "action_id": "go_to",
                   "args": [
-                    "esm_topic_start"
+                    "esm_topic_template"
                   ],
-                  "_raw": "click | go_to: esm_topic_start",
-                  "_cleaned": "click | go_to: esm_topic_start"
+                  "_raw": "click | go_to: esm_topic_template",
+                  "_cleaned": "click | go_to: esm_topic_template"
                 }
               ],
               "parameter_list": {
@@ -1903,16 +2110,16 @@
         },
         {
           "type": "image",
-          "name": "arrows3",
-          "value": "ESMIll/ESMLPArrows3.svg",
+          "name": "arrows2",
+          "value": "ESMIll/ESMLPArrows2.svg",
           "_translations": {
             "value": {}
           },
           "style_list": [
-            "max-width: 90px",
+            "max-width: 70px",
             "margin-top: 0px"
           ],
-          "_nested_name": "dg_top_of_page.arrows3"
+          "_nested_name": "dg_top_of_page.arrows2"
         },
         {
           "type": "display_group",
@@ -1921,6 +2128,14 @@
             "margin-top: -3px"
           ],
           "rows": [
+            {
+              "type": "text",
+              "name": "spacer",
+              "style_list": [
+                "flex: 1"
+              ],
+              "_nested_name": "dg_top_of_page.dg_smd_group3.spacer"
+            },
             {
               "type": "button",
               "name": "button_sas_group3_1",
@@ -1931,21 +2146,39 @@
               "action_list": [
                 {
                   "trigger": "click",
+                  "action_id": "set_field",
+                  "args": [
+                    "current_topic",
+                    "data.esm_topics.NO_MSD_AllSingles"
+                  ],
+                  "_raw": "click | set_field:current_topic: data.esm_topics.NO_MSD_AllSingles",
+                  "_cleaned": "click | set_field:current_topic: data.esm_topics.NO_MSD_AllSingles"
+                },
+                {
+                  "trigger": "click",
                   "action_id": "go_to",
                   "args": [
-                    "esm_topic_start"
+                    "esm_topic_template"
                   ],
-                  "_raw": "click | go_to: esm_topic_start",
-                  "_cleaned": "click | go_to: esm_topic_start"
+                  "_raw": "click | go_to: esm_topic_template",
+                  "_cleaned": "click | go_to: esm_topic_template"
                 }
               ],
               "parameter_list": {
                 "variant": "card"
               },
               "style_list": [
-                "flex: 1"
+                "flex: 4"
               ],
               "_nested_name": "dg_top_of_page.dg_smd_group3.button_sas_group3_1"
+            },
+            {
+              "type": "text",
+              "name": "spacer",
+              "style_list": [
+                "flex: 1"
+              ],
+              "_nested_name": "dg_top_of_page.dg_smd_group3.spacer"
             },
             {
               "type": "button",
@@ -1957,47 +2190,111 @@
               "action_list": [
                 {
                   "trigger": "click",
+                  "action_id": "set_field",
+                  "args": [
+                    "current_topic",
+                    "data.esm_topics.NO_MSD_AllSingles"
+                  ],
+                  "_raw": "click | set_field:current_topic: data.esm_topics.NO_MSD_AllSingles",
+                  "_cleaned": "click | set_field:current_topic: data.esm_topics.NO_MSD_AllSingles"
+                },
+                {
+                  "trigger": "click",
                   "action_id": "go_to",
                   "args": [
-                    "esm_topic_start"
+                    "esm_topic_template"
                   ],
-                  "_raw": "click | go_to: esm_topic_start",
-                  "_cleaned": "click | go_to: esm_topic_start"
+                  "_raw": "click | go_to: esm_topic_template",
+                  "_cleaned": "click | go_to: esm_topic_template"
                 }
               ],
               "parameter_list": {
                 "variant": "card"
               },
               "style_list": [
-                "flex: 1"
+                "flex:4"
               ],
               "_nested_name": "dg_top_of_page.dg_smd_group3.button_sas_group3_2"
             },
             {
+              "type": "text",
+              "name": "spacer",
+              "style_list": [
+                "flex: 1"
+              ],
+              "_nested_name": "dg_top_of_page.dg_smd_group3.spacer"
+            }
+          ],
+          "_nested_name": "dg_top_of_page.dg_smd_group3"
+        },
+        {
+          "type": "image",
+          "name": "arrows1",
+          "value": "ESMIll/ESMLPArrows1.svg",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "max-width: 30px",
+            "margin-top: -2px"
+          ],
+          "_nested_name": "dg_top_of_page.arrows1"
+        },
+        {
+          "type": "display_group",
+          "name": "dg_smd_group3",
+          "style_list": [
+            "margin-top: -3px"
+          ],
+          "rows": [
+            {
+              "type": "text",
+              "name": "spacer",
+              "style_list": [
+                "flex: 1"
+              ],
+              "_nested_name": "dg_top_of_page.dg_smd_group3.spacer"
+            },
+            {
               "type": "button",
-              "name": "button_sas_group3_3",
-              "value": "axa±a",
+              "name": "button_sas_group3_1",
+              "value": "axb < 100",
               "_translations": {
                 "value": {}
               },
               "action_list": [
                 {
                   "trigger": "click",
+                  "action_id": "set_field",
+                  "args": [
+                    "current_topic",
+                    "data.esm_topics.NO_MSD_AllSingles"
+                  ],
+                  "_raw": "click | set_field:current_topic: data.esm_topics.NO_MSD_AllSingles",
+                  "_cleaned": "click | set_field:current_topic: data.esm_topics.NO_MSD_AllSingles"
+                },
+                {
+                  "trigger": "click",
                   "action_id": "go_to",
                   "args": [
-                    "esm_topic_start"
+                    "esm_topic_template"
                   ],
-                  "_raw": "click | go_to: esm_topic_start",
-                  "_cleaned": "click | go_to: esm_topic_start"
+                  "_raw": "click | go_to: esm_topic_template",
+                  "_cleaned": "click | go_to: esm_topic_template"
                 }
               ],
               "parameter_list": {
                 "variant": "card"
               },
+              "_nested_name": "dg_top_of_page.dg_smd_group3.button_sas_group3_1"
+            },
+            {
+              "type": "text",
+              "name": "spacer",
               "style_list": [
                 "flex: 1"
               ],
-              "_nested_name": "dg_top_of_page.dg_smd_group3.button_sas_group3_3"
+              "_nested_name": "dg_top_of_page.dg_smd_group3.spacer"
             }
           ],
           "_nested_name": "dg_top_of_page.dg_smd_group3"
@@ -2021,6 +2318,6 @@
       "_nested_name": "fake_group"
     }
   ],
-  "_xlsxPath": "ESM_topics_high_level_sheets.xlsx",
+  "_xlsxPath": "ESM_topics_esm.xlsx",
   "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1PeJ5ishcTCWUvjhflbQqKO6M8u9rNuec"
 }
