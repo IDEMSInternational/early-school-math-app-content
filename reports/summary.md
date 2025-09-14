@@ -5,10 +5,10 @@
 | --- | --- |
 | accordion | 65 |
 | accordion_section | 114 |
-| button | 148 |
+| button | 149 |
 | debug_toggle | 1 |
-| display_group | 398 |
-| image | 45 |
+| display_group | 400 |
+| image | 61 |
 | items | 68 |
 | qr_code | 1 |
 | radio_button_grid | 1 |
@@ -18,7 +18,7 @@
 | set_variable | 763 |
 | simple_checkbox | 4 |
 | template | 92 |
-| text | 286 |
+| text | 307 |
 | text_area | 2 |
 | tile_component | 3 |
 | title | 52 |
@@ -38,10 +38,10 @@
 | emit: set_language | 1 |
 | emit: uncompleted | 58 |
 | feedback | 11 |
-| go_to | 113 |
+| go_to | 114 |
 | go_to_url | 3 |
 | reset_app | 1 |
-| set_field | 91 |
+| set_field | 130 |
 | set_local | 6 |
 | start_tour | 19 |
 </details>
@@ -51,8 +51,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 44365 KB | 44.4 MB |
-| unused | 21631 KB | 21.6 MB |
+| total | 44480 KB | 44.5 MB |
+| unused | 21605 KB | 21.6 MB |
 </details>
 
 <details open>
@@ -301,8 +301,6 @@ Assets that appear in app-data but do not have references within sheets
 | EFMStorybooks/EFM-SB-SSMILE-8.jpg | 3.5 |
 | EFMStorybooks/EFM-SB-TFHH-2.jpg | 10.6 |
 | ESMIll/ESMDots4-5.svg | 4 |
-| ESMIll/ESMLPArrows1.svg | 12.6 |
-| ESMIll/ESMLPArrows3.svg | 13.3 |
 | ESMIll/ESMPOWACoinFlipStart2.svg | 11626.6 |
 | ESMIll/ESMPOWCAvoidingRectanglesAnswer4.svg | 7.5 |
 | ESMIll/ESMTopicComparingLinesofDots.svg | 3.3 |
@@ -1396,7 +1394,11 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMGlossTenFrame.svg | 7.5 | 1 |
 | ESMIll/ESMGlossTriangularNumbers.svg | 8 | 1 |
 | ESMIll/ESMGlossUnitize.svg | 12.3 | 1 |
-| ESMIll/ESMLPArrows2.svg | 13 | 1 |
+| ESMIll/ESMGridPlus.svg | 44.5 | 1 |
+| ESMIll/ESMGridTimes.svg | 44.5 | 1 |
+| ESMIll/ESMLPArrows1.svg | 12.6 | 3 |
+| ESMIll/ESMLPArrows2.svg | 13 | 8 |
+| ESMIll/ESMLPArrows3.svg | 13.3 | 4 |
 | ESMIll/ESMOEColoringShapesExample1.svg | 7.4 | 1 |
 | ESMIll/ESMOEColoringShapesExample2.svg | 7.3 | 1 |
 | ESMIll/ESMOEColoringShapesIntro.svg | 10.4 | 1 |
