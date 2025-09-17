@@ -57,7 +57,7 @@
                         {
                           "type": "text",
                           "name": "info_reading_math_talk",
-                          "value": "Reading and other forms of dialog with children should start long before they can speak, and continue well into the elementary school years.\n\n**Dialogic Reading – Preverbal**\n\n**Dialogic Reading – Verbal**\n\n\n**Math Talk – Early and Often**\n\n**Math Talk – At Home**\n\n**Math Talk – Out and About**\n\n**Math Talk – Describe and Compare**\n\n**Math Talk – Counting**\n\n**Math Talk – Point, Describe, and Compare**",
+                          "value": "Reading and other forms of verbal interaction with children should start long before they can speak. Early exposure to words and ideas will lead to understanding.\n\n**Dialogic Reading – Preverbal** Dialogic reading occurs when you read with a child and discuss each page of the story as you go along. It deepens the experience of the story and provides opportunities for exploring concepts and vocabulary involved in the story. With a preverbal child, the discussion is one-sided, but important all the same. Point to and describe elements of the pictures and the story. As the child starts understanding your words, you can ask for nonverbal responses such as pointing at elements of the page.\n\n**Math Talk – Early and Often** Talking with a child about the mathematics that is always all around them is essential to their early mathematical development. Point to and describe all the math you see. As the child develops, point to, describe, and ask about things around them. Dialogic reading is an important form of Math Talk.\n\n**Math Talk – Describe and Compare** Looking at and describing properties of objects is a part of the foundations of mathematics. Compare objects by talking about how their properties differ. These comparisons will deepen the child's understanding of the properties.\n\n**Math Talk – At Home, Math Talk – Out and About** As you go about your lives in the home and out and about in the rest of the world, look for mathematical things to discuss together.\n\n**Dialogic Reading – Verbal, Math Talk – Point, Describe, and Ask** As a child becomes verbal, it opens up possibilities for much more interesting discussions. You can now point to things and ask about them, and your child can start asking questions too. Follow up and build on your child's questions and ideas, but be sure to keep them at an appropriate developemental level.\n\n**Math Talk – Counting** There is a great deal going on as a child begins to learn to count and understand quantities. Counting in front of your child and, later on, with your child, is important aspect of their learning to count. Mix in counting downwards and also mix in starting or ending at 0 sometimes.",
                           "_translations": {
                             "value": {}
                           },
@@ -119,7 +119,7 @@
                 "variant": "card"
               },
               "style_list": [
-                "flex: 4"
+                "flex: 5"
               ],
               "_nested_name": "dg_top_of_page.dg_rmt_group1.button_rmt_group1_1"
             },
@@ -134,7 +134,7 @@
             {
               "type": "button",
               "name": "button_rmt_group1_2",
-              "value": "Reading Verbal",
+              "value": "MT – Early",
               "_translations": {
                 "value": {}
               },
@@ -144,10 +144,10 @@
                   "action_id": "set_field",
                   "args": [
                     "current_topic",
-                    "data.esm_topics.FMT_RWC_DRV"
+                    "data.esm_topics.FMT_EAA_EandO"
                   ],
-                  "_raw": "click | set_field:current_topic: data.esm_topics.FMT_RWC_DRV",
-                  "_cleaned": "click | set_field:current_topic: data.esm_topics.FMT_RWC_DRV"
+                  "_raw": "click | set_field:current_topic: data.esm_topics.FMT_EAA_EandO",
+                  "_cleaned": "click | set_field:current_topic: data.esm_topics.FMT_EAA_EandO"
                 },
                 {
                   "trigger": "click",
@@ -163,7 +163,7 @@
                 "variant": "card"
               },
               "style_list": [
-                "flex:4"
+                "flex: 5"
               ],
               "_nested_name": "dg_top_of_page.dg_rmt_group1.button_rmt_group1_2"
             },
@@ -201,7 +201,7 @@
             {
               "type": "button",
               "name": "button_rmt_group2_1",
-              "value": "MT – Always",
+              "value": "MT – Describe",
               "_translations": {
                 "value": {}
               },
@@ -211,10 +211,10 @@
                   "action_id": "set_field",
                   "args": [
                     "current_topic",
-                    "data.esm_topics.FMT_EAA_EandO"
+                    "data.esm_topics.FMT_EAA_FMTDC"
                   ],
-                  "_raw": "click | set_field:current_topic: data.esm_topics.FMT_EAA_EandO",
-                  "_cleaned": "click | set_field:current_topic: data.esm_topics.FMT_EAA_EandO"
+                  "_raw": "click | set_field:current_topic: data.esm_topics.FMT_EAA_FMTDC",
+                  "_cleaned": "click | set_field:current_topic: data.esm_topics.FMT_EAA_FMTDC"
                 },
                 {
                   "trigger": "click",
@@ -229,6 +229,9 @@
               "parameter_list": {
                 "variant": "card"
               },
+              "style_list": [
+                "flex:1"
+              ],
               "_nested_name": "dg_top_of_page.dg_rmt_group2.button_rmt_group2_1"
             },
             {
@@ -262,6 +265,9 @@
               "parameter_list": {
                 "variant": "card"
               },
+              "style_list": [
+                "flex:1"
+              ],
               "_nested_name": "dg_top_of_page.dg_rmt_group2.button_rmt_group2_2"
             },
             {
@@ -295,6 +301,9 @@
               "parameter_list": {
                 "variant": "card"
               },
+              "style_list": [
+                "flex:1"
+              ],
               "_nested_name": "dg_top_of_page.dg_rmt_group2.button_rmt_group2_3"
             }
           ],
@@ -323,7 +332,7 @@
             {
               "type": "button",
               "name": "button_rmt_group3_1",
-              "value": "MT – Describe",
+              "value": "Reading Verbal",
               "_translations": {
                 "value": {}
               },
@@ -333,10 +342,10 @@
                   "action_id": "set_field",
                   "args": [
                     "current_topic",
-                    "data.esm_topics.FMT_EAA_FMTDC"
+                    "data.esm_topics.FMT_RWC_DRV"
                   ],
-                  "_raw": "click | set_field:current_topic: data.esm_topics.FMT_EAA_FMTDC",
-                  "_cleaned": "click | set_field:current_topic: data.esm_topics.FMT_EAA_FMTDC"
+                  "_raw": "click | set_field:current_topic: data.esm_topics.FMT_RWC_DRV",
+                  "_cleaned": "click | set_field:current_topic: data.esm_topics.FMT_RWC_DRV"
                 },
                 {
                   "trigger": "click",
@@ -351,45 +360,15 @@
               "parameter_list": {
                 "variant": "card"
               },
+              "style_list": [
+                "flex:1"
+              ],
               "_nested_name": "dg_top_of_page.dg_rmt_group3.button_rmt_group3_1"
             },
             {
               "type": "button",
               "name": "button_rmt_group3_2",
-              "value": "MT – Counting",
-              "_translations": {
-                "value": {}
-              },
-              "action_list": [
-                {
-                  "trigger": "click",
-                  "action_id": "set_field",
-                  "args": [
-                    "current_topic",
-                    "data.esm_topics.FMT_EAA_FMTC"
-                  ],
-                  "_raw": "click | set_field:current_topic: data.esm_topics.FMT_EAA_FMTC",
-                  "_cleaned": "click | set_field:current_topic: data.esm_topics.FMT_EAA_FMTC"
-                },
-                {
-                  "trigger": "click",
-                  "action_id": "go_to",
-                  "args": [
-                    "esm_topic_template"
-                  ],
-                  "_raw": "click | go_to: esm_topic_template",
-                  "_cleaned": "click | go_to: esm_topic_template"
-                }
-              ],
-              "parameter_list": {
-                "variant": "card"
-              },
-              "_nested_name": "dg_top_of_page.dg_rmt_group3.button_rmt_group3_2"
-            },
-            {
-              "type": "button",
-              "name": "button_rmt_group3_3",
-              "value": "MT – Point",
+              "value": "MT – Ask",
               "_translations": {
                 "value": {}
               },
@@ -417,6 +396,45 @@
               "parameter_list": {
                 "variant": "card"
               },
+              "style_list": [
+                "flex:1"
+              ],
+              "_nested_name": "dg_top_of_page.dg_rmt_group3.button_rmt_group3_2"
+            },
+            {
+              "type": "button",
+              "name": "button_rmt_group3_3",
+              "value": "MT – Count",
+              "_translations": {
+                "value": {}
+              },
+              "action_list": [
+                {
+                  "trigger": "click",
+                  "action_id": "set_field",
+                  "args": [
+                    "current_topic",
+                    "data.esm_topics.FMT_EAA_FMTC"
+                  ],
+                  "_raw": "click | set_field:current_topic: data.esm_topics.FMT_EAA_FMTC",
+                  "_cleaned": "click | set_field:current_topic: data.esm_topics.FMT_EAA_FMTC"
+                },
+                {
+                  "trigger": "click",
+                  "action_id": "go_to",
+                  "args": [
+                    "esm_topic_template"
+                  ],
+                  "_raw": "click | go_to: esm_topic_template",
+                  "_cleaned": "click | go_to: esm_topic_template"
+                }
+              ],
+              "parameter_list": {
+                "variant": "card"
+              },
+              "style_list": [
+                "flex:1"
+              ],
               "_nested_name": "dg_top_of_page.dg_rmt_group3.button_rmt_group3_3"
             }
           ],
