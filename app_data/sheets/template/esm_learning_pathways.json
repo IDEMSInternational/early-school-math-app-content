@@ -30,9 +30,429 @@
         },
         {
           "type": "display_group",
-          "name": "dg_accord_props_geom",
+          "name": "dg_accord_reading_math_talk",
           "style_list": [
             "margin-top: 5px"
+          ],
+          "rows": [
+            {
+              "type": "accordion",
+              "name": "accordion_reading_math_talk",
+              "parameter_list": {
+                "open_multiple": "TRUE"
+              },
+              "rows": [
+                {
+                  "type": "accordion_section",
+                  "name": "accord_reading_math_talk",
+                  "value": "Reading & Math Talk",
+                  "rows": [
+                    {
+                      "type": "display_group",
+                      "name": "dg_reading_math_talk",
+                      "parameter_list": {
+                        "style": "column"
+                      },
+                      "rows": [
+                        {
+                          "type": "text",
+                          "name": "info_reading_math_talk",
+                          "value": "Reading and other forms of dialog with children should start long before they can speak, and continue well into the elementary school years.\n\n**Dialogic Reading – Preverbal**\n\n**Dialogic Reading – Verbal**\n\n\n**Math Talk – Early and Often**\n\n**Math Talk – At Home**\n\n**Math Talk – Out and About**\n\n**Math Talk – Describe and Compare**\n\n**Math Talk – Counting**\n\n**Math Talk – Point, Describe, and Compare**",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "_nested_name": "dg_top_of_page.dg_accord_reading_math_talk.accordion_reading_math_talk.accord_reading_math_talk.dg_reading_math_talk.info_reading_math_talk"
+                        }
+                      ],
+                      "_nested_name": "dg_top_of_page.dg_accord_reading_math_talk.accordion_reading_math_talk.accord_reading_math_talk.dg_reading_math_talk"
+                    }
+                  ],
+                  "_nested_name": "dg_top_of_page.dg_accord_reading_math_talk.accordion_reading_math_talk.accord_reading_math_talk"
+                }
+              ],
+              "_nested_name": "dg_top_of_page.dg_accord_reading_math_talk.accordion_reading_math_talk"
+            }
+          ],
+          "_nested_name": "dg_top_of_page.dg_accord_reading_math_talk"
+        },
+        {
+          "type": "display_group",
+          "name": "dg_rmt_group1",
+          "rows": [
+            {
+              "type": "text",
+              "name": "spacer",
+              "style_list": [
+                "flex: 1"
+              ],
+              "_nested_name": "dg_top_of_page.dg_rmt_group1.spacer"
+            },
+            {
+              "type": "button",
+              "name": "button_rmt_group1_1",
+              "value": "Reading Preverbal",
+              "_translations": {
+                "value": {}
+              },
+              "action_list": [
+                {
+                  "trigger": "click",
+                  "action_id": "set_field",
+                  "args": [
+                    "current_topic",
+                    "data.esm_topics.FMT_RWC_DRP"
+                  ],
+                  "_raw": "click | set_field:current_topic: data.esm_topics.FMT_RWC_DRP",
+                  "_cleaned": "click | set_field:current_topic: data.esm_topics.FMT_RWC_DRP"
+                },
+                {
+                  "trigger": "click",
+                  "action_id": "go_to",
+                  "args": [
+                    "esm_topic_template"
+                  ],
+                  "_raw": "click | go_to: esm_topic_template",
+                  "_cleaned": "click | go_to: esm_topic_template"
+                }
+              ],
+              "parameter_list": {
+                "variant": "card"
+              },
+              "style_list": [
+                "flex: 4"
+              ],
+              "_nested_name": "dg_top_of_page.dg_rmt_group1.button_rmt_group1_1"
+            },
+            {
+              "type": "text",
+              "name": "spacer",
+              "style_list": [
+                "flex: 1"
+              ],
+              "_nested_name": "dg_top_of_page.dg_rmt_group1.spacer"
+            },
+            {
+              "type": "button",
+              "name": "button_rmt_group1_2",
+              "value": "Reading Verbal",
+              "_translations": {
+                "value": {}
+              },
+              "action_list": [
+                {
+                  "trigger": "click",
+                  "action_id": "set_field",
+                  "args": [
+                    "current_topic",
+                    "data.esm_topics.FMT_RWC_DRV"
+                  ],
+                  "_raw": "click | set_field:current_topic: data.esm_topics.FMT_RWC_DRV",
+                  "_cleaned": "click | set_field:current_topic: data.esm_topics.FMT_RWC_DRV"
+                },
+                {
+                  "trigger": "click",
+                  "action_id": "go_to",
+                  "args": [
+                    "esm_topic_template"
+                  ],
+                  "_raw": "click | go_to: esm_topic_template",
+                  "_cleaned": "click | go_to: esm_topic_template"
+                }
+              ],
+              "parameter_list": {
+                "variant": "card"
+              },
+              "style_list": [
+                "flex:4"
+              ],
+              "_nested_name": "dg_top_of_page.dg_rmt_group1.button_rmt_group1_2"
+            },
+            {
+              "type": "text",
+              "name": "spacer",
+              "style_list": [
+                "flex: 1"
+              ],
+              "_nested_name": "dg_top_of_page.dg_rmt_group1.spacer"
+            }
+          ],
+          "_nested_name": "dg_top_of_page.dg_rmt_group1"
+        },
+        {
+          "type": "image",
+          "name": "arrows3",
+          "value": "ESMIll/ESMLPArrows3.svg",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "max-width: 90px",
+            "margin-top: 0px"
+          ],
+          "_nested_name": "dg_top_of_page.arrows3"
+        },
+        {
+          "type": "display_group",
+          "name": "dg_rmt_group2",
+          "style_list": [
+            "margin-top: -3px"
+          ],
+          "rows": [
+            {
+              "type": "button",
+              "name": "button_rmt_group2_1",
+              "value": "MT – Always",
+              "_translations": {
+                "value": {}
+              },
+              "action_list": [
+                {
+                  "trigger": "click",
+                  "action_id": "set_field",
+                  "args": [
+                    "current_topic",
+                    "data.esm_topics.FMT_EAA_EandO"
+                  ],
+                  "_raw": "click | set_field:current_topic: data.esm_topics.FMT_EAA_EandO",
+                  "_cleaned": "click | set_field:current_topic: data.esm_topics.FMT_EAA_EandO"
+                },
+                {
+                  "trigger": "click",
+                  "action_id": "go_to",
+                  "args": [
+                    "esm_topic_template"
+                  ],
+                  "_raw": "click | go_to: esm_topic_template",
+                  "_cleaned": "click | go_to: esm_topic_template"
+                }
+              ],
+              "parameter_list": {
+                "variant": "card"
+              },
+              "_nested_name": "dg_top_of_page.dg_rmt_group2.button_rmt_group2_1"
+            },
+            {
+              "type": "button",
+              "name": "button_rmt_group2_2",
+              "value": "MT – Home",
+              "_translations": {
+                "value": {}
+              },
+              "action_list": [
+                {
+                  "trigger": "click",
+                  "action_id": "set_field",
+                  "args": [
+                    "current_topic",
+                    "data.esm_topics.FMT_EAA_FMTinH"
+                  ],
+                  "_raw": "click | set_field:current_topic: data.esm_topics.FMT_EAA_FMTinH",
+                  "_cleaned": "click | set_field:current_topic: data.esm_topics.FMT_EAA_FMTinH"
+                },
+                {
+                  "trigger": "click",
+                  "action_id": "go_to",
+                  "args": [
+                    "esm_topic_template"
+                  ],
+                  "_raw": "click | go_to: esm_topic_template",
+                  "_cleaned": "click | go_to: esm_topic_template"
+                }
+              ],
+              "parameter_list": {
+                "variant": "card"
+              },
+              "_nested_name": "dg_top_of_page.dg_rmt_group2.button_rmt_group2_2"
+            },
+            {
+              "type": "button",
+              "name": "button_rmt_group2_3",
+              "value": "MT – Outside",
+              "_translations": {
+                "value": {}
+              },
+              "action_list": [
+                {
+                  "trigger": "click",
+                  "action_id": "set_field",
+                  "args": [
+                    "current_topic",
+                    "data.esm_topics.FMT_EAA_FMTOA"
+                  ],
+                  "_raw": "click | set_field:current_topic: data.esm_topics.FMT_EAA_FMTOA",
+                  "_cleaned": "click | set_field:current_topic: data.esm_topics.FMT_EAA_FMTOA"
+                },
+                {
+                  "trigger": "click",
+                  "action_id": "go_to",
+                  "args": [
+                    "esm_topic_template"
+                  ],
+                  "_raw": "click | go_to: esm_topic_template",
+                  "_cleaned": "click | go_to: esm_topic_template"
+                }
+              ],
+              "parameter_list": {
+                "variant": "card"
+              },
+              "_nested_name": "dg_top_of_page.dg_rmt_group2.button_rmt_group2_3"
+            }
+          ],
+          "_nested_name": "dg_top_of_page.dg_rmt_group2"
+        },
+        {
+          "type": "image",
+          "name": "arrows3",
+          "value": "ESMIll/ESMLPArrows3.svg",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "max-width: 90px",
+            "margin-top: 0px"
+          ],
+          "_nested_name": "dg_top_of_page.arrows3"
+        },
+        {
+          "type": "display_group",
+          "name": "dg_rmt_group3",
+          "style_list": [
+            "margin-top: -3px"
+          ],
+          "rows": [
+            {
+              "type": "button",
+              "name": "button_rmt_group3_1",
+              "value": "MT – Describe",
+              "_translations": {
+                "value": {}
+              },
+              "action_list": [
+                {
+                  "trigger": "click",
+                  "action_id": "set_field",
+                  "args": [
+                    "current_topic",
+                    "data.esm_topics.FMT_EAA_FMTDC"
+                  ],
+                  "_raw": "click | set_field:current_topic: data.esm_topics.FMT_EAA_FMTDC",
+                  "_cleaned": "click | set_field:current_topic: data.esm_topics.FMT_EAA_FMTDC"
+                },
+                {
+                  "trigger": "click",
+                  "action_id": "go_to",
+                  "args": [
+                    "esm_topic_template"
+                  ],
+                  "_raw": "click | go_to: esm_topic_template",
+                  "_cleaned": "click | go_to: esm_topic_template"
+                }
+              ],
+              "parameter_list": {
+                "variant": "card"
+              },
+              "_nested_name": "dg_top_of_page.dg_rmt_group3.button_rmt_group3_1"
+            },
+            {
+              "type": "button",
+              "name": "button_rmt_group3_2",
+              "value": "MT – Counting",
+              "_translations": {
+                "value": {}
+              },
+              "action_list": [
+                {
+                  "trigger": "click",
+                  "action_id": "set_field",
+                  "args": [
+                    "current_topic",
+                    "data.esm_topics.FMT_EAA_FMTC"
+                  ],
+                  "_raw": "click | set_field:current_topic: data.esm_topics.FMT_EAA_FMTC",
+                  "_cleaned": "click | set_field:current_topic: data.esm_topics.FMT_EAA_FMTC"
+                },
+                {
+                  "trigger": "click",
+                  "action_id": "go_to",
+                  "args": [
+                    "esm_topic_template"
+                  ],
+                  "_raw": "click | go_to: esm_topic_template",
+                  "_cleaned": "click | go_to: esm_topic_template"
+                }
+              ],
+              "parameter_list": {
+                "variant": "card"
+              },
+              "_nested_name": "dg_top_of_page.dg_rmt_group3.button_rmt_group3_2"
+            },
+            {
+              "type": "button",
+              "name": "button_rmt_group3_3",
+              "value": "MT – Point",
+              "_translations": {
+                "value": {}
+              },
+              "action_list": [
+                {
+                  "trigger": "click",
+                  "action_id": "set_field",
+                  "args": [
+                    "current_topic",
+                    "data.esm_topics.FMT_EAA_FMTPDA"
+                  ],
+                  "_raw": "click | set_field:current_topic: data.esm_topics.FMT_EAA_FMTPDA",
+                  "_cleaned": "click | set_field:current_topic: data.esm_topics.FMT_EAA_FMTPDA"
+                },
+                {
+                  "trigger": "click",
+                  "action_id": "go_to",
+                  "args": [
+                    "esm_topic_template"
+                  ],
+                  "_raw": "click | go_to: esm_topic_template",
+                  "_cleaned": "click | go_to: esm_topic_template"
+                }
+              ],
+              "parameter_list": {
+                "variant": "card"
+              },
+              "_nested_name": "dg_top_of_page.dg_rmt_group3.button_rmt_group3_3"
+            }
+          ],
+          "_nested_name": "dg_top_of_page.dg_rmt_group3"
+        },
+        {
+          "type": "image",
+          "name": "dividing_line_pg1",
+          "value": "ESMIll/ESM0GlossaryDividingLine.svg",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "max-width: 400px",
+            "margin-top: 30px"
+          ],
+          "_nested_name": "dg_top_of_page.dividing_line_pg1"
+        },
+        {
+          "type": "image",
+          "name": "dividing_line_pg2",
+          "value": "ESMIll/ESM0GlossaryDividingLine.svg",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "max-width: 400px",
+            "margin-top: -10px"
+          ],
+          "_nested_name": "dg_top_of_page.dividing_line_pg2"
+        },
+        {
+          "type": "display_group",
+          "name": "dg_accord_props_geom",
+          "style_list": [
+            "margin-top: 15px"
           ],
           "rows": [
             {
