@@ -3,12 +3,12 @@
 
 | type | count |
 | --- | --- |
-| accordion | 65 |
-| accordion_section | 114 |
-| button | 149 |
+| accordion | 69 |
+| accordion_section | 124 |
+| button | 169 |
 | debug_toggle | 1 |
-| display_group | 400 |
-| image | 61 |
+| display_group | 427 |
+| image | 66 |
 | items | 68 |
 | qr_code | 1 |
 | radio_button_grid | 1 |
@@ -18,7 +18,7 @@
 | set_variable | 763 |
 | simple_checkbox | 4 |
 | template | 92 |
-| text | 307 |
+| text | 340 |
 | text_area | 2 |
 | tile_component | 3 |
 | title | 52 |
@@ -38,10 +38,10 @@
 | emit: set_language | 1 |
 | emit: uncompleted | 58 |
 | feedback | 11 |
-| go_to | 114 |
+| go_to | 134 |
 | go_to_url | 3 |
 | reset_app | 1 |
-| set_field | 130 |
+| set_field | 150 |
 | set_local | 6 |
 | start_tour | 19 |
 </details>
@@ -51,7 +51,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 44480 KB | 44.5 MB |
+| total | 44469 KB | 44.5 MB |
 | unused | 21605 KB | 21.6 MB |
 </details>
 
@@ -1239,7 +1239,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/EFM105BackAndForth24Move1.svg | 21.1 | 1 |
 | ESMIll/EFM105BackAndForth24MoveIntro.svg | 19.4 | 1 |
 | ESMIll/EFMGloss0100Chart.svg | 163.4 | 2 |
-| ESMIll/ESM0GlossaryDividingLine.svg | 3.2 | 8 |
+| ESMIll/ESM0GlossaryDividingLine.svg | 3.2 | 2 |
 | ESMIll/ESM200NumberShapesEvens.svg | 5.2 | 1 |
 | ESMIll/ESM200NumberShapesOdds.svg | 4.6 | 1 |
 | ESMIll/ESM380Multiplying3Rows.svg | 5.4 | 1 |
@@ -1394,11 +1394,11 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMGlossTenFrame.svg | 7.5 | 1 |
 | ESMIll/ESMGlossTriangularNumbers.svg | 8 | 1 |
 | ESMIll/ESMGlossUnitize.svg | 12.3 | 1 |
-| ESMIll/ESMGridPlus.svg | 44.5 | 1 |
-| ESMIll/ESMGridTimes.svg | 44.5 | 1 |
-| ESMIll/ESMLPArrows1.svg | 12.6 | 3 |
-| ESMIll/ESMLPArrows2.svg | 13 | 8 |
-| ESMIll/ESMLPArrows3.svg | 13.3 | 4 |
+| ESMIll/ESMGridPlus.svg | 38.8 | 1 |
+| ESMIll/ESMGridTimes.svg | 38.8 | 1 |
+| ESMIll/ESMLPArrows1.svg | 12.6 | 8 |
+| ESMIll/ESMLPArrows2.svg | 13 | 12 |
+| ESMIll/ESMLPArrows3.svg | 13.3 | 6 |
 | ESMIll/ESMOEColoringShapesExample1.svg | 7.4 | 1 |
 | ESMIll/ESMOEColoringShapesExample2.svg | 7.3 | 1 |
 | ESMIll/ESMOEColoringShapesIntro.svg | 10.4 | 1 |
