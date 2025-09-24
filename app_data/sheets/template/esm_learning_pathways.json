@@ -3541,7 +3541,7 @@
                                     {
                                       "type": "text",
                                       "name": "info_single_div",
-                                      "value": "**The topics for this pathway have not been written.**\n\n**Division Model** As with subtraction, division can be thought of in at least two ways. If you have 20 things and want to put them in piles of 5, you can ask how many piles there will be. Or, if you want to make 5 equal piles, you can ask how big the piles will be. The idea of sharing is an example of the second interpretation – you want to share equally among a certain number of people. \n\n**Sharing** This is a wonderful source of problems that children can relate to. Sharing a quantity equally among two people is an early and powerfuly way of learning dividing by 2 and taking halves. This naturally leads to more complicated sharing as your children's skills develop.\n\n**Skip Counting** As will be discussed in the \"Guess and Revise\" method, skip counting is a useful resource for finding division results after an initial estimate.\n\n**Division Techniques** There are two kinds of division problems – those with or without a remainder. When there is a no remainder, understanding fact families will help. Where there is a remainder, the techniques are a bit less automatic.\n\n**Fact Faimilies for x and ÷** Use the multiplication models to make the relationship between multiplication and division concrete. For example, if 3 x 5 is well known to a child, then the fact family for 3 x 5 = 15 will help with the related facts: 5 x 3 = 15, 15 ÷ 3 = 5, and 15 ÷ 5 = 3.\n\n**Guess & Revise for Division with Remainders** There is no way to memorize all these math facts. Being good at skip counting helps a lot with these.\n\nFor example, to calculate 27 ÷ 4 encourage your students to do the following:\n* Make an initial guess. Perhaps 5 in this example.\n* Check the guess and see if it is too high or too low.  5 x 4 = 20 is 7 too low, so we'll need one more 4.\n* Revise the guess and check again.",
+                                      "value": "**The topics for this pathway have not been written.**\n\n**Equal Parts for Shapes and Sets** Splitting up shapes and sets of objects into equal-size pieces is a good introduction to fractions and division. It also gives lots of practice for understanding the model for division.\n\n**Sharing** This is a story version of breaking a set into equal parts. It is a wonderful source of problems that children can relate to. Sharing a quantity equally among two people is an early and powerfuly way of learning dividing by 2 and taking halves. This naturally leads to more complicated sharing as your children's skills develop.\n\n**Division Model** As with subtraction, division can be thought of in at least two ways. If you have 20 things and want to put them in piles of 5, you can ask how many piles there will be. Or, if you want to make 5 equal piles, you can ask how big the piles will be. The idea of sharing is an example of the second interpretation – you want to share equally among a certain number of people. \n\n**Skip Counting** As will be discussed in the \"Guess and Revise\" method, skip counting is a useful resource for finding division results after an initial estimate.\n\n**Division Techniques** There are two kinds of division problems – those with or without a remainder. When there is a no remainder, understanding fact families will help. Where there is a remainder, the techniques are a bit less automatic.\n\n**Fact Faimilies for x and ÷** Use the multiplication models to make the relationship between multiplication and division concrete. For example, if 3 x 5 is well known to a child, then the fact family for 3 x 5 = 15 will help with the related facts: 5 x 3 = 15, 15 ÷ 3 = 5, and 15 ÷ 5 = 3.\n\n**Guess & Revise for Division with Remainders** There is no way to memorize all these math facts. Being good at skip counting helps a lot with these.\n\nFor example, to calculate 27 ÷ 4 encourage your students to do the following:\n* Make an initial guess. Perhaps 5 in this example.\n* Check the guess and see if it is too high or too low.  5 x 4 = 20 is 7 too low, so we'll need one more 4.\n* Revise the guess and check again.",
                                       "_translations": {
                                         "value": {}
                                       },
@@ -3596,16 +3596,16 @@
                     },
                     {
                       "type": "image",
-                      "name": "arrows3",
-                      "value": "ESMIll/ESMLPArrows3.svg",
+                      "name": "arrows2",
+                      "value": "ESMIll/ESMLPArrows2.svg",
                       "_translations": {
                         "value": {}
                       },
                       "style_list": [
-                        "max-width: 90px",
+                        "max-width: 70px",
                         "margin-top: -15px"
                       ],
-                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_mult_div.dg_accord_sd_pathway.arrows3"
+                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_mult_div.dg_accord_sd_pathway.arrows2"
                     },
                     {
                       "type": "display_group",
@@ -3617,6 +3617,95 @@
                         {
                           "type": "button",
                           "name": "button_sd_group1_1",
+                          "value": "Equal Parts - Shapes",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "action_list": [
+                            {
+                              "trigger": "click",
+                              "action_id": "set_field",
+                              "args": [
+                                "current_topic",
+                                "data.esm_topics.FEP_EP_NMEP_Shapes"
+                              ],
+                              "_raw": "click | set_field:current_topic: data.esm_topics.FEP_EP_NMEP_Shapes",
+                              "_cleaned": "click | set_field:current_topic: data.esm_topics.FEP_EP_NMEP_Shapes"
+                            },
+                            {
+                              "trigger": "click",
+                              "action_id": "go_to",
+                              "args": [
+                                "esm_topic_template"
+                              ],
+                              "_raw": "click | go_to: esm_topic_template",
+                              "_cleaned": "click | go_to: esm_topic_template"
+                            }
+                          ],
+                          "parameter_list": {
+                            "variant": "card"
+                          },
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_mult_div.dg_accord_sd_pathway.dg_sd_group1.button_sd_group1_1"
+                        },
+                        {
+                          "type": "button",
+                          "name": "button_sd_group1_2",
+                          "value": "Equal Parts - Sets",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "action_list": [
+                            {
+                              "trigger": "click",
+                              "action_id": "set_field",
+                              "args": [
+                                "current_topic",
+                                "data.esm_topics.FEP_EP_NMEP_Sets"
+                              ],
+                              "_raw": "click | set_field:current_topic: data.esm_topics.FEP_EP_NMEP_Sets",
+                              "_cleaned": "click | set_field:current_topic: data.esm_topics.FEP_EP_NMEP_Sets"
+                            },
+                            {
+                              "trigger": "click",
+                              "action_id": "go_to",
+                              "args": [
+                                "esm_topic_template"
+                              ],
+                              "_raw": "click | go_to: esm_topic_template",
+                              "_cleaned": "click | go_to: esm_topic_template"
+                            }
+                          ],
+                          "parameter_list": {
+                            "variant": "card"
+                          },
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_mult_div.dg_accord_sd_pathway.dg_sd_group1.button_sd_group1_2"
+                        }
+                      ],
+                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_mult_div.dg_accord_sd_pathway.dg_sd_group1"
+                    },
+                    {
+                      "type": "image",
+                      "name": "arrows2",
+                      "value": "ESMIll/ESMLPArrows2.svg",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "style_list": [
+                        "max-width: 70px",
+                        "margin-top: 0px"
+                      ],
+                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_mult_div.dg_accord_sd_pathway.arrows2"
+                    },
+                    {
+                      "type": "display_group",
+                      "name": "dg_sd_group2",
+                      "style_list": [
+                        "margin-top: -3px"
+                      ],
+                      "rows": [
+                        {
+                          "type": "button",
+                          "name": "button_sd_group2_1",
                           "value": "Division Model",
                           "_translations": {
                             "value": {}
@@ -3648,47 +3737,11 @@
                           "style_list": [
                             "flex: 3"
                           ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_mult_div.dg_accord_sd_pathway.dg_sd_group1.button_sd_group1_1"
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_mult_div.dg_accord_sd_pathway.dg_sd_group2.button_sd_group2_1"
                         },
                         {
                           "type": "button",
-                          "name": "button_sd_group1_2",
-                          "value": "Share",
-                          "_translations": {
-                            "value": {}
-                          },
-                          "action_list": [
-                            {
-                              "trigger": "click",
-                              "action_id": "set_field",
-                              "args": [
-                                "current_topic",
-                                "data.esm_topics.NO_MSD_Skipping"
-                              ],
-                              "_raw": "click | set_field:current_topic: data.esm_topics.NO_MSD_Skipping",
-                              "_cleaned": "click | set_field:current_topic: data.esm_topics.NO_MSD_Skipping"
-                            },
-                            {
-                              "trigger": "click",
-                              "action_id": "go_to",
-                              "args": [
-                                "esm_topic_template"
-                              ],
-                              "_raw": "click | go_to: esm_topic_template",
-                              "_cleaned": "click | go_to: esm_topic_template"
-                            }
-                          ],
-                          "parameter_list": {
-                            "variant": "card"
-                          },
-                          "style_list": [
-                            "flex: 3"
-                          ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_mult_div.dg_accord_sd_pathway.dg_sd_group1.button_sd_group1_2"
-                        },
-                        {
-                          "type": "button",
-                          "name": "button_sd_group1_3",
+                          "name": "button_sd_group2_2",
                           "value": "Skip Count",
                           "_translations": {
                             "value": {}
@@ -3720,10 +3773,10 @@
                           "style_list": [
                             "flex: 3"
                           ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_mult_div.dg_accord_sd_pathway.dg_sd_group1.button_sd_group1_3"
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_mult_div.dg_accord_sd_pathway.dg_sd_group2.button_sd_group2_2"
                         }
                       ],
-                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_mult_div.dg_accord_sd_pathway.dg_sd_group1"
+                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_mult_div.dg_accord_sd_pathway.dg_sd_group2"
                     },
                     {
                       "type": "image",
