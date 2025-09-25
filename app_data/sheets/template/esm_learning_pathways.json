@@ -1423,19 +1423,19 @@
             },
             {
               "type": "accordion_section",
-              "name": "accord_sd_add",
-              "value": "Single-digit Addition",
+              "name": "accord_aw10",
+              "value": "Addition Within 10",
               "rows": [
                 {
                   "type": "display_group",
-                  "name": "dg_accord_sa_pathway",
+                  "name": "dg_accord_aw10_pathway",
                   "parameter_list": {
                     "style": "column"
                   },
                   "rows": [
                     {
                       "type": "display_group",
-                      "name": "dg_accord_single_add",
+                      "name": "dg_accord_aw10",
                       "parameter_list": {
                         "style": "column"
                       },
@@ -1445,14 +1445,14 @@
                       "rows": [
                         {
                           "type": "accordion",
-                          "name": "accordion_single_add",
+                          "name": "accordion_aw10",
                           "parameter_list": {
                             "open_multiple": "TRUE"
                           },
                           "rows": [
                             {
                               "type": "accordion_section",
-                              "name": "accord_single_add",
+                              "name": "accord_aw10",
                               "value": "Overview",
                               "parameter_list": {
                                 "text_align": "center"
@@ -1460,97 +1460,35 @@
                               "rows": [
                                 {
                                   "type": "display_group",
-                                  "name": "dg_single_add",
+                                  "name": "dg_aw10",
                                   "parameter_list": {
                                     "style": "column"
                                   },
                                   "rows": [
                                     {
                                       "type": "text",
-                                      "name": "info_single_add_1",
-                                      "value": "**Prerequisite: Quantities and Counting Pathway** Complete this earlier pathway at least through basic counting up and down, and perhaps Counting On.",
+                                      "name": "info_aw10_1",
+                                      "value": "**Prerequisite: Quantities and Counting Pathway** Complete this earlier pathway at least through basic counting up and down, and perhaps Counting On.\n\n**Adding Order – Addition Commutes** Children do not need to learn the words \"commutes\" and \"commutativity.\" However, they should learn that the order addition is done in does not change the result. It is useful in many ways, one of which is saving time in calculations: 2 + 9 is easier to do as 2 more than 9 than as 9 more than 2. It is so natural to children that it almost does not need to be taught.\n\n**Add 1 and 2** Exploit the connection with counting up and Counting On to establish these facts. Adding 1 is going to the next number on a number path (\"1 more\"), and adding 2 is going two numbers along the number path (\"2 more\").\n\n**Doubles** Children enjoy learning and practicing doubles. Start with small doubles whose sum is less than or equal to 10. The small doubles are naturally worked with in a vertical ten frame. You can also discuss even and odd numbers at this point.\n\n**Near Doubles** Think of 4 + 5 as 4 + 4 plus one more. This is the start of making new problems understandable in terms of older problems. Using Near Doubles is an optional method that may not work well with all students.\n\n**Combinations of 10** Combinations that add up to 10 are extremely useful for addition and subtraction. Ten frames make these easy to see.\n\n**Misc. Sums to 10** There are a surprisingly small number of addition facts not covered by earlier strategies. List them out and be surprised! This points out the importance of your students mastering those techniques and ideas.\n\nIf you leave out facts covered by \"Add 1 and 2,\" \"Doubles,\" \"Combinations of 10,\" and \"Adding Order\" you are left with the following very short list. These remaining facts can either be learned separately, or as near doubles and \"3 more.\"\n* 3 + 4\n* 3 + 5\n* 3 + 6\n* 4 + 5\n\n**All Facts Within 10** At this point all the adding facts within 10 have been mastered.",
                                       "_translations": {
                                         "value": {}
                                       },
-                                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_accord_single_add.accordion_single_add.accord_single_add.dg_single_add.info_single_add_1"
-                                    },
-                                    {
-                                      "type": "text",
-                                      "name": "info_single_add_2",
-                                      "value": "**Part 1: Sums Within 10**",
-                                      "_translations": {
-                                        "value": {}
-                                      },
-                                      "style_list": [
-                                        "color: red",
-                                        "margin-top: -8px"
-                                      ],
-                                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_accord_single_add.accordion_single_add.accord_single_add.dg_single_add.info_single_add_2"
-                                    },
-                                    {
-                                      "type": "text",
-                                      "name": "info_single_add_3",
-                                      "value": "**Add 1 and 2** Exploit the connection with counting up and down to establish these facts. Adding 1 is going to the next number on a number path (\"1 more\"), and adding 2 is going two numbers along the number path (\"2 more\").\n\n**Changing Order – Addition Commutes** Children do not need to learn the words \"commutes\" and \"commutativity.\" However, they should learn that the order addition is done in does not change the result. It is useful in many ways, one of which is saving time in calculations: 2 + 9 is easier to do as 2 more than 9 than as 9 more than 2.\n\n**Doubles** Children enjoy learning and practicing doubles. Start with small doubles whose sum is less than or equal to 10. The small doubles are naturally worked with in a vertical ten frame. You can also discuss even and odd numbers at this point.\n\n**Near Doubles** Think of 4 + 5 as 4 + 4 plus one more. This is the start of making new problems understandable in terms of older problems.\n\n**Combinations of 10** Combinations that add up to 10 are extremely useful for addition and subtraction. Ten frames make these easy to see.\n\n**Misc. sums to 10** There are a small number of addition facts not covered by earlier strategies. One way to cover most of them is to get used to doing \"3 more.\" Another way is to simply memorize the 2 or 3 missing ones on their own (probably just 3 + 5 and 3 + 6).\n\n**All Facts Within 10** At this point all the adding facts within 10 have been mastered.",
-                                      "_translations": {
-                                        "value": {}
-                                      },
-                                      "style_list": [
-                                        "margin-top: -8px"
-                                      ],
-                                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_accord_single_add.accordion_single_add.accord_single_add.dg_single_add.info_single_add_3"
-                                    },
-                                    {
-                                      "type": "text",
-                                      "name": "info_single_add_4",
-                                      "value": "**Part 2: Sums between 10 and 20**",
-                                      "_translations": {
-                                        "value": {}
-                                      },
-                                      "style_list": [
-                                        "color: red",
-                                        "margin-top: -8px"
-                                      ],
-                                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_accord_single_add.accordion_single_add.accord_single_add.dg_single_add.info_single_add_4"
-                                    },
-                                    {
-                                      "type": "text",
-                                      "name": "info_single_add_5",
-                                      "value": "**Adding 10 and Place Value to 19** While mastering place value up to 19, it is natural to practice adding 10 to single-digit numbers and subtracting 10 from numbers between 10 and 19. Understand that all the numbers from 10 to 19 can be thought of as a bundle of 10 plus some more.\n\n**Making a 10 – Use 10 as a Bridge for Adding** For sums larger than 10, use 10 as an intermediate stopping point.\n\nConsider 7 + 6 for example. 7 + 3 is 10, so rewrite this as 7 + 6 = (7 + 3) + 3 = 10 + 3 = 13. This is closely tied to the idea of compensation for addition, where we can change an addition problem by adding to one number the same amount we subtract from the other number. In this case, 3 was added to the 7 and subtracted from the 6 to change 7 + 6 into 10 + 3 (we made a 10).\n\n**Mastery Steps** The table below shows one possible series of steps for mastering the addition facts.\n\n* Grey – Adding 1, 2\n* Blue – Doubles\n* Pink – Near Doubles\n* Peach – Sums of 10\n* Green – Adding 10\n* Yellow – Make a 10 – Using 10 as a Bridge\n* Brown – Memorize separately or use nearby facts mastered already.",
-                                      "_translations": {
-                                        "value": {}
-                                      },
-                                      "style_list": [
-                                        "margin-top: -8px"
-                                      ],
-                                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_accord_single_add.accordion_single_add.accord_single_add.dg_single_add.info_single_add_5"
-                                    },
-                                    {
-                                      "type": "image",
-                                      "name": "addition_table",
-                                      "value": "ESMIll/ESMGridPlus.svg",
-                                      "_translations": {
-                                        "value": {}
-                                      },
-                                      "style_list": [
-                                        "max-width: 320px"
-                                      ],
-                                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_accord_single_add.accordion_single_add.accord_single_add.dg_single_add.addition_table"
+                                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway.dg_accord_aw10.accordion_aw10.accord_aw10.dg_aw10.info_aw10_1"
                                     }
                                   ],
-                                  "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_accord_single_add.accordion_single_add.accord_single_add.dg_single_add"
+                                  "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway.dg_accord_aw10.accordion_aw10.accord_aw10.dg_aw10"
                                 }
                               ],
-                              "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_accord_single_add.accordion_single_add.accord_single_add"
+                              "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway.dg_accord_aw10.accordion_aw10.accord_aw10"
                             }
                           ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_accord_single_add.accordion_single_add"
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway.dg_accord_aw10.accordion_aw10"
                         }
                       ],
-                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_accord_single_add"
+                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway.dg_accord_aw10"
                     },
                     {
                       "type": "display_group",
-                      "name": "dg_sa_group0",
+                      "name": "dg_aw10_group0",
                       "style_list": [
                         "margin-top: 5px"
                       ],
@@ -1561,16 +1499,16 @@
                           "style_list": [
                             "flex: 1"
                           ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_sa_group0.blank"
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway.dg_aw10_group0.blank"
                         },
                         {
                           "type": "text",
-                          "name": "text_sa_group0_1",
-                          "value": "Before starting this pathway, do the Quantities & Counting Pathway through counting up and down, and maybe Counting On.",
+                          "name": "text_aw10_group0_1",
+                          "value": "Do the Quantities & Counting pathway through counting up and down, and maybe Counting On, before starting this pathway.",
                           "_translations": {
                             "value": {}
                           },
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_sa_group0.text_sa_group0_1"
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway.dg_aw10_group0.text_aw10_group0_1"
                         },
                         {
                           "type": "text",
@@ -1578,10 +1516,10 @@
                           "style_list": [
                             "flex: 1"
                           ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_sa_group0.blank"
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway.dg_aw10_group0.blank"
                         }
                       ],
-                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_sa_group0"
+                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway.dg_aw10_group0"
                     },
                     {
                       "type": "image",
@@ -1594,11 +1532,11 @@
                         "max-width: 30px",
                         "margin-top: -15px"
                       ],
-                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.arrows1"
+                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway.arrows1"
                     },
                     {
                       "type": "display_group",
-                      "name": "dg_sa_group1",
+                      "name": "dg_aw10_group1",
                       "style_list": [
                         "margin-top: -3px"
                       ],
@@ -1609,11 +1547,83 @@
                           "style_list": [
                             "flex: 1"
                           ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_sa_group1.blank"
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway.dg_aw10_group1.blank"
                         },
                         {
                           "type": "button",
-                          "name": "button_sa_group1_1",
+                          "name": "button_aw10_group1_1",
+                          "value": "Adding Order",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "action_list": [
+                            {
+                              "trigger": "click",
+                              "action_id": "set_field",
+                              "args": [
+                                "current_topic",
+                                "data.esm_topics.NO_AS10_AS1and2"
+                              ],
+                              "_raw": "click | set_field:current_topic: data.esm_topics.NO_AS10_AS1and2",
+                              "_cleaned": "click | set_field:current_topic: data.esm_topics.NO_AS10_AS1and2"
+                            },
+                            {
+                              "trigger": "click",
+                              "action_id": "go_to",
+                              "args": [
+                                "esm_topic_template"
+                              ],
+                              "_raw": "click | go_to: esm_topic_template",
+                              "_cleaned": "click | go_to: esm_topic_template"
+                            }
+                          ],
+                          "parameter_list": {
+                            "variant": "card"
+                          },
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway.dg_aw10_group1.button_aw10_group1_1"
+                        },
+                        {
+                          "type": "text",
+                          "name": "blank",
+                          "style_list": [
+                            "flex: 1"
+                          ],
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway.dg_aw10_group1.blank"
+                        }
+                      ],
+                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway.dg_aw10_group1"
+                    },
+                    {
+                      "type": "image",
+                      "name": "arrows1",
+                      "value": "ESMIll/ESMLPArrows1.svg",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "style_list": [
+                        "max-width: 30px",
+                        "margin-top: -15px"
+                      ],
+                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway.arrows1"
+                    },
+                    {
+                      "type": "display_group",
+                      "name": "dg_aw10_group2",
+                      "style_list": [
+                        "margin-top: -3px"
+                      ],
+                      "rows": [
+                        {
+                          "type": "text",
+                          "name": "blank",
+                          "style_list": [
+                            "flex: 1"
+                          ],
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway.dg_aw10_group2.blank"
+                        },
+                        {
+                          "type": "button",
+                          "name": "button_aw10_group2_1",
                           "value": "1 or 2 More",
                           "_translations": {
                             "value": {}
@@ -1642,7 +1652,7 @@
                           "parameter_list": {
                             "variant": "card"
                           },
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_sa_group1.button_sa_group1_1"
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway.dg_aw10_group2.button_aw10_group2_1"
                         },
                         {
                           "type": "text",
@@ -1650,10 +1660,10 @@
                           "style_list": [
                             "flex: 1"
                           ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_sa_group1.blank"
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway.dg_aw10_group2.blank"
                         }
                       ],
-                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_sa_group1"
+                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway.dg_aw10_group2"
                     },
                     {
                       "type": "image",
@@ -1666,11 +1676,11 @@
                         "max-width: 70px",
                         "margin-top: 0px"
                       ],
-                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.arrows2"
+                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway.arrows2"
                     },
                     {
                       "type": "display_group",
-                      "name": "dg_sa_group2",
+                      "name": "dg_aw10_group3",
                       "style_list": [
                         "margin-top: -3px"
                       ],
@@ -1681,11 +1691,11 @@
                           "style_list": [
                             "flex: 1"
                           ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_sa_group2.spacer"
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway.dg_aw10_group3.spacer"
                         },
                         {
                           "type": "button",
-                          "name": "button_sa_group2_1",
+                          "name": "button_aw10_group3_1",
                           "value": "Small Doubles",
                           "_translations": {
                             "value": {}
@@ -1715,9 +1725,9 @@
                             "variant": "card"
                           },
                           "style_list": [
-                            "flex: 4"
+                            "flex: 10"
                           ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_sa_group2.button_sa_group2_1"
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway.dg_aw10_group3.button_aw10_group3_1"
                         },
                         {
                           "type": "text",
@@ -1725,114 +1735,11 @@
                           "style_list": [
                             "flex: 1"
                           ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_sa_group2.spacer"
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway.dg_aw10_group3.spacer"
                         },
                         {
                           "type": "button",
-                          "name": "button_sa_group2_2",
-                          "value": "Change Order",
-                          "_translations": {
-                            "value": {}
-                          },
-                          "action_list": [
-                            {
-                              "trigger": "click",
-                              "action_id": "set_field",
-                              "args": [
-                                "current_topic",
-                                "data.esm_topics.NO_AS10_AComm"
-                              ],
-                              "_raw": "click | set_field:current_topic: data.esm_topics.NO_AS10_AComm",
-                              "_cleaned": "click | set_field:current_topic: data.esm_topics.NO_AS10_AComm"
-                            },
-                            {
-                              "trigger": "click",
-                              "action_id": "go_to",
-                              "args": [
-                                "esm_topic_template"
-                              ],
-                              "_raw": "click | go_to: esm_topic_template",
-                              "_cleaned": "click | go_to: esm_topic_template"
-                            }
-                          ],
-                          "parameter_list": {
-                            "variant": "card"
-                          },
-                          "style_list": [
-                            "flex:4"
-                          ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_sa_group2.button_sa_group2_2"
-                        },
-                        {
-                          "type": "text",
-                          "name": "spacer",
-                          "style_list": [
-                            "flex: 1"
-                          ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_sa_group2.spacer"
-                        }
-                      ],
-                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_sa_group2"
-                    },
-                    {
-                      "type": "image",
-                      "name": "arrows3",
-                      "value": "ESMIll/ESMLPArrows3.svg",
-                      "_translations": {
-                        "value": {}
-                      },
-                      "style_list": [
-                        "max-width: 90px",
-                        "margin-top: 0px"
-                      ],
-                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.arrows3"
-                    },
-                    {
-                      "type": "display_group",
-                      "name": "dg_sa_group3",
-                      "style_list": [
-                        "margin-top: -3px"
-                      ],
-                      "rows": [
-                        {
-                          "type": "button",
-                          "name": "button_sa_group3_1",
-                          "value": "Near Doubles",
-                          "_translations": {
-                            "value": {}
-                          },
-                          "action_list": [
-                            {
-                              "trigger": "click",
-                              "action_id": "set_field",
-                              "args": [
-                                "current_topic",
-                                "data.esm_topics.NO_AS10_ANT"
-                              ],
-                              "_raw": "click | set_field:current_topic: data.esm_topics.NO_AS10_ANT",
-                              "_cleaned": "click | set_field:current_topic: data.esm_topics.NO_AS10_ANT"
-                            },
-                            {
-                              "trigger": "click",
-                              "action_id": "go_to",
-                              "args": [
-                                "esm_topic_template"
-                              ],
-                              "_raw": "click | go_to: esm_topic_template",
-                              "_cleaned": "click | go_to: esm_topic_template"
-                            }
-                          ],
-                          "parameter_list": {
-                            "variant": "card"
-                          },
-                          "style_list": [
-                            "flex: 4"
-                          ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_sa_group3.button_sa_group3_1"
-                        },
-                        {
-                          "type": "button",
-                          "name": "button_sa_group3_2",
+                          "name": "button_aw10_group3_2",
                           "value": "Sums of 10",
                           "_translations": {
                             "value": {}
@@ -1862,109 +1769,9 @@
                             "variant": "card"
                           },
                           "style_list": [
-                            "flex:4"
+                            "flex:10"
                           ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_sa_group3.button_sa_group3_2"
-                        },
-                        {
-                          "type": "button",
-                          "name": "button_sa_group3_3",
-                          "value": "Misc Sums to 10",
-                          "_translations": {
-                            "value": {}
-                          },
-                          "action_list": [
-                            {
-                              "trigger": "click",
-                              "action_id": "set_field",
-                              "args": [
-                                "current_topic",
-                                "data.esm_topics.NO_ASSD_ASto10"
-                              ],
-                              "_raw": "click | set_field:current_topic: data.esm_topics.NO_ASSD_ASto10",
-                              "_cleaned": "click | set_field:current_topic: data.esm_topics.NO_ASSD_ASto10"
-                            },
-                            {
-                              "trigger": "click",
-                              "action_id": "go_to",
-                              "args": [
-                                "esm_topic_template"
-                              ],
-                              "_raw": "click | go_to: esm_topic_template",
-                              "_cleaned": "click | go_to: esm_topic_template"
-                            }
-                          ],
-                          "parameter_list": {
-                            "variant": "card"
-                          },
-                          "style_list": [
-                            "flex:4"
-                          ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_sa_group3.button_sa_group3_3"
-                        }
-                      ],
-                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_sa_group3"
-                    },
-                    {
-                      "type": "image",
-                      "name": "arrows1",
-                      "value": "ESMIll/ESMLPArrows1.svg",
-                      "_translations": {
-                        "value": {}
-                      },
-                      "style_list": [
-                        "max-width: 30px",
-                        "margin-top: -2px"
-                      ],
-                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.arrows1"
-                    },
-                    {
-                      "type": "display_group",
-                      "name": "dg_sa_group4",
-                      "style_list": [
-                        "margin-top: -3px"
-                      ],
-                      "rows": [
-                        {
-                          "type": "text",
-                          "name": "spacer",
-                          "style_list": [
-                            "flex: 1"
-                          ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_sa_group4.spacer"
-                        },
-                        {
-                          "type": "button",
-                          "name": "button_sa_group4_1",
-                          "value": "Within 10",
-                          "_translations": {
-                            "value": {}
-                          },
-                          "action_list": [
-                            {
-                              "trigger": "click",
-                              "action_id": "set_field",
-                              "args": [
-                                "current_topic",
-                                "data.esm_topics.NO_ASSD_ASto10"
-                              ],
-                              "_raw": "click | set_field:current_topic: data.esm_topics.NO_ASSD_ASto10",
-                              "_cleaned": "click | set_field:current_topic: data.esm_topics.NO_ASSD_ASto10"
-                            },
-                            {
-                              "trigger": "click",
-                              "action_id": "go_to",
-                              "args": [
-                                "esm_topic_template"
-                              ],
-                              "_raw": "click | go_to: esm_topic_template",
-                              "_cleaned": "click | go_to: esm_topic_template"
-                            }
-                          ],
-                          "parameter_list": {
-                            "variant": "card"
-                          },
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_sa_group4.button_sa_group4_1"
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway.dg_aw10_group3.button_aw10_group3_2"
                         },
                         {
                           "type": "text",
@@ -1972,10 +1779,10 @@
                           "style_list": [
                             "flex: 1"
                           ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_sa_group4.spacer"
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway.dg_aw10_group3.spacer"
                         }
                       ],
-                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_sa_group4"
+                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway.dg_aw10_group3"
                     },
                     {
                       "type": "image",
@@ -1988,11 +1795,11 @@
                         "max-width: 70px",
                         "margin-top: 0px"
                       ],
-                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.arrows2"
+                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway.arrows2"
                     },
                     {
                       "type": "display_group",
-                      "name": "dg_sa_group5",
+                      "name": "dg_aw10_group4",
                       "style_list": [
                         "margin-top: -3px"
                       ],
@@ -2003,11 +1810,300 @@
                           "style_list": [
                             "flex: 1"
                           ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_sa_group5.spacer"
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway.dg_aw10_group4.spacer"
                         },
                         {
                           "type": "button",
-                          "name": "button_sa_group5_1",
+                          "name": "button_aw10_group4_1",
+                          "value": "Near Doubles",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "action_list": [
+                            {
+                              "trigger": "click",
+                              "action_id": "set_field",
+                              "args": [
+                                "current_topic",
+                                "data.esm_topics.NO_AS10_ANT"
+                              ],
+                              "_raw": "click | set_field:current_topic: data.esm_topics.NO_AS10_ANT",
+                              "_cleaned": "click | set_field:current_topic: data.esm_topics.NO_AS10_ANT"
+                            },
+                            {
+                              "trigger": "click",
+                              "action_id": "go_to",
+                              "args": [
+                                "esm_topic_template"
+                              ],
+                              "_raw": "click | go_to: esm_topic_template",
+                              "_cleaned": "click | go_to: esm_topic_template"
+                            }
+                          ],
+                          "parameter_list": {
+                            "variant": "card"
+                          },
+                          "style_list": [
+                            "flex: 10"
+                          ],
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway.dg_aw10_group4.button_aw10_group4_1"
+                        },
+                        {
+                          "type": "button",
+                          "name": "button_aw10_group4_2",
+                          "value": "Misc Sums\nto 10",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "action_list": [
+                            {
+                              "trigger": "click",
+                              "action_id": "set_field",
+                              "args": [
+                                "current_topic",
+                                "data.esm_topics.NO_ASSD_ASto10"
+                              ],
+                              "_raw": "click | set_field:current_topic: data.esm_topics.NO_ASSD_ASto10",
+                              "_cleaned": "click | set_field:current_topic: data.esm_topics.NO_ASSD_ASto10"
+                            },
+                            {
+                              "trigger": "click",
+                              "action_id": "go_to",
+                              "args": [
+                                "esm_topic_template"
+                              ],
+                              "_raw": "click | go_to: esm_topic_template",
+                              "_cleaned": "click | go_to: esm_topic_template"
+                            }
+                          ],
+                          "parameter_list": {
+                            "variant": "card"
+                          },
+                          "style_list": [
+                            "flex:20"
+                          ],
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway.dg_aw10_group4.button_aw10_group4_2"
+                        },
+                        {
+                          "type": "text",
+                          "name": "spacer",
+                          "style_list": [
+                            "flex: 1"
+                          ],
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway.dg_aw10_group4.spacer"
+                        }
+                      ],
+                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway.dg_aw10_group4"
+                    },
+                    {
+                      "type": "image",
+                      "name": "arrows1",
+                      "value": "ESMIll/ESMLPArrows1.svg",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "style_list": [
+                        "max-width: 30px",
+                        "margin-top: -2px"
+                      ],
+                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway.arrows1"
+                    },
+                    {
+                      "type": "display_group",
+                      "name": "dg_aw10_group5",
+                      "style_list": [
+                        "margin-top: -3px"
+                      ],
+                      "rows": [
+                        {
+                          "type": "text",
+                          "name": "spacer",
+                          "style_list": [
+                            "flex: 1"
+                          ],
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway.dg_aw10_group5.spacer"
+                        },
+                        {
+                          "type": "button",
+                          "name": "button_aw10_group5_1",
+                          "value": "Adding Within 10",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "action_list": [
+                            {
+                              "trigger": "click",
+                              "action_id": "set_field",
+                              "args": [
+                                "current_topic",
+                                "data.esm_topics.NO_ASSD_ASto10"
+                              ],
+                              "_raw": "click | set_field:current_topic: data.esm_topics.NO_ASSD_ASto10",
+                              "_cleaned": "click | set_field:current_topic: data.esm_topics.NO_ASSD_ASto10"
+                            },
+                            {
+                              "trigger": "click",
+                              "action_id": "go_to",
+                              "args": [
+                                "esm_topic_template"
+                              ],
+                              "_raw": "click | go_to: esm_topic_template",
+                              "_cleaned": "click | go_to: esm_topic_template"
+                            }
+                          ],
+                          "parameter_list": {
+                            "variant": "card"
+                          },
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway.dg_aw10_group5.button_aw10_group5_1"
+                        },
+                        {
+                          "type": "text",
+                          "name": "spacer",
+                          "style_list": [
+                            "flex: 1"
+                          ],
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway.dg_aw10_group5.spacer"
+                        }
+                      ],
+                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway.dg_aw10_group5"
+                    }
+                  ],
+                  "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway"
+                }
+              ],
+              "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10"
+            },
+            {
+              "type": "accordion_section",
+              "name": "accord_aw20",
+              "value": "Addition Within 20",
+              "rows": [
+                {
+                  "type": "display_group",
+                  "name": "dg_accord_aw20_pathway",
+                  "parameter_list": {
+                    "style": "column"
+                  },
+                  "rows": [
+                    {
+                      "type": "display_group",
+                      "name": "dg_accord_aw20",
+                      "parameter_list": {
+                        "style": "column"
+                      },
+                      "style_list": [
+                        "margin-top: 15px"
+                      ],
+                      "rows": [
+                        {
+                          "type": "accordion",
+                          "name": "accordion_aw20",
+                          "parameter_list": {
+                            "open_multiple": "TRUE"
+                          },
+                          "rows": [
+                            {
+                              "type": "accordion_section",
+                              "name": "accord_aw20",
+                              "value": "Overview",
+                              "parameter_list": {
+                                "text_align": "center"
+                              },
+                              "rows": [
+                                {
+                                  "type": "display_group",
+                                  "name": "dg_aw20",
+                                  "parameter_list": {
+                                    "style": "column"
+                                  },
+                                  "rows": [
+                                    {
+                                      "type": "text",
+                                      "name": "info_aw20_1",
+                                      "value": "**Prerequisite:** Do the Addition Within 10 pathway before starting this pathway.\n\n**Adding 10 and Place Value to 19** While mastering place value up to 19, it is natural to practice adding 10 to single-digit numbers and subtracting 10 from numbers between 10 and 19. Understand that all the numbers from 10 to 19 can be thought of as a bundle of 10 plus some more.\n\n**Making a 10 – Use 10 as a Bridge for Adding** For sums larger than 10, use 10 as an intermediate stopping point.\n\n**Example** Consider 7 + 6 . 7 + 3 is 10, so rewrite this as 7 + 6 = (7 + 3) + 3 = 10 + 3 = 13. This is closely tied to the idea of compensation for addition, where we can change an addition problem by adding to one number the same amount we subtract from the other number. In this case, 3 was added to the 7 and subtracted from the 6 to change 7 + 6 into 10 + 3 (we made a 10).\n\n**Addition Within 20** After finishing this pathway and the previous pathway of Addition Within 10, your students have now mastered all single-digit addition facts!",
+                                      "_translations": {
+                                        "value": {}
+                                      },
+                                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw20.dg_accord_aw20_pathway.dg_accord_aw20.accordion_aw20.accord_aw20.dg_aw20.info_aw20_1"
+                                    }
+                                  ],
+                                  "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw20.dg_accord_aw20_pathway.dg_accord_aw20.accordion_aw20.accord_aw20.dg_aw20"
+                                }
+                              ],
+                              "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw20.dg_accord_aw20_pathway.dg_accord_aw20.accordion_aw20.accord_aw20"
+                            }
+                          ],
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw20.dg_accord_aw20_pathway.dg_accord_aw20.accordion_aw20"
+                        }
+                      ],
+                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw20.dg_accord_aw20_pathway.dg_accord_aw20"
+                    },
+                    {
+                      "type": "display_group",
+                      "name": "dg_aw20_group0",
+                      "style_list": [
+                        "margin-top: 5px"
+                      ],
+                      "rows": [
+                        {
+                          "type": "text",
+                          "name": "blank",
+                          "style_list": [
+                            "flex: 1"
+                          ],
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw20.dg_accord_aw20_pathway.dg_aw20_group0.blank"
+                        },
+                        {
+                          "type": "text",
+                          "name": "text_aw20_group0_1",
+                          "value": "Do the Addition Within 10 pathway first before starting this pathway.",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw20.dg_accord_aw20_pathway.dg_aw20_group0.text_aw20_group0_1"
+                        },
+                        {
+                          "type": "text",
+                          "name": "blank",
+                          "style_list": [
+                            "flex: 1"
+                          ],
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw20.dg_accord_aw20_pathway.dg_aw20_group0.blank"
+                        }
+                      ],
+                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw20.dg_accord_aw20_pathway.dg_aw20_group0"
+                    },
+                    {
+                      "type": "image",
+                      "name": "arrows2",
+                      "value": "ESMIll/ESMLPArrows2.svg",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "style_list": [
+                        "max-width: 70px",
+                        "margin-top: -15px"
+                      ],
+                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw20.dg_accord_aw20_pathway.arrows2"
+                    },
+                    {
+                      "type": "display_group",
+                      "name": "dg_aw20_group1",
+                      "style_list": [
+                        "margin-top: -3px"
+                      ],
+                      "rows": [
+                        {
+                          "type": "text",
+                          "name": "spacer",
+                          "style_list": [
+                            "flex: 1"
+                          ],
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw20.dg_accord_aw20_pathway.dg_aw20_group1.spacer"
+                        },
+                        {
+                          "type": "button",
+                          "name": "button_aw20_group1_1",
                           "value": "Adding 10",
                           "_translations": {
                             "value": {}
@@ -2039,7 +2135,7 @@
                           "style_list": [
                             "flex: 4"
                           ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_sa_group5.button_sa_group5_1"
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw20.dg_accord_aw20_pathway.dg_aw20_group1.button_aw20_group1_1"
                         },
                         {
                           "type": "text",
@@ -2047,11 +2143,11 @@
                           "style_list": [
                             "flex: 1"
                           ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_sa_group5.spacer"
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw20.dg_accord_aw20_pathway.dg_aw20_group1.spacer"
                         },
                         {
                           "type": "button",
-                          "name": "button_sa_group5_2",
+                          "name": "button_aw20_group1_2",
                           "value": "Place Value",
                           "_translations": {
                             "value": {}
@@ -2083,7 +2179,7 @@
                           "style_list": [
                             "flex:4"
                           ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_sa_group5.button_sa_group5_2"
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw20.dg_accord_aw20_pathway.dg_aw20_group1.button_aw20_group1_2"
                         },
                         {
                           "type": "text",
@@ -2091,10 +2187,10 @@
                           "style_list": [
                             "flex: 1"
                           ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_sa_group5.spacer"
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw20.dg_accord_aw20_pathway.dg_aw20_group1.spacer"
                         }
                       ],
-                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_sa_group5"
+                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw20.dg_accord_aw20_pathway.dg_aw20_group1"
                     },
                     {
                       "type": "image",
@@ -2107,11 +2203,11 @@
                         "max-width: 70px",
                         "margin-top: 0px"
                       ],
-                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.arrows2"
+                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw20.dg_accord_aw20_pathway.arrows2"
                     },
                     {
                       "type": "display_group",
-                      "name": "dg_sa_group6",
+                      "name": "dg_aw20_group2",
                       "style_list": [
                         "margin-top: -3px"
                       ],
@@ -2122,11 +2218,11 @@
                           "style_list": [
                             "flex: 1"
                           ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_sa_group6.spacer"
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw20.dg_accord_aw20_pathway.dg_aw20_group2.spacer"
                         },
                         {
                           "type": "button",
-                          "name": "button_sa_group6_1",
+                          "name": "button_aw20_group2_1",
                           "value": "Large Doubles",
                           "_translations": {
                             "value": {}
@@ -2158,7 +2254,7 @@
                           "style_list": [
                             "flex: 8"
                           ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_sa_group6.button_sa_group6_1"
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw20.dg_accord_aw20_pathway.dg_aw20_group2.button_aw20_group2_1"
                         },
                         {
                           "type": "text",
@@ -2166,11 +2262,11 @@
                           "style_list": [
                             "flex: 1"
                           ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_sa_group6.spacer"
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw20.dg_accord_aw20_pathway.dg_aw20_group2.spacer"
                         },
                         {
                           "type": "button",
-                          "name": "button_sa_group6_2",
+                          "name": "button_aw20_group2_2",
                           "value": "Making a 10",
                           "_translations": {
                             "value": {}
@@ -2202,7 +2298,7 @@
                           "style_list": [
                             "flex: 8"
                           ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_sa_group6.button_sa_group6_2"
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw20.dg_accord_aw20_pathway.dg_aw20_group2.button_aw20_group2_2"
                         },
                         {
                           "type": "text",
@@ -2210,10 +2306,10 @@
                           "style_list": [
                             "flex: 1"
                           ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_sa_group6.spacer"
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw20.dg_accord_aw20_pathway.dg_aw20_group2.spacer"
                         }
                       ],
-                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_sa_group6"
+                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw20.dg_accord_aw20_pathway.dg_aw20_group2"
                     },
                     {
                       "type": "image",
@@ -2226,11 +2322,11 @@
                         "max-width: 30px",
                         "margin-top: -2px"
                       ],
-                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.arrows1"
+                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw20.dg_accord_aw20_pathway.arrows1"
                     },
                     {
                       "type": "display_group",
-                      "name": "dg_sa_group7",
+                      "name": "dg_aw20_group3",
                       "style_list": [
                         "margin-top: -3px"
                       ],
@@ -2241,12 +2337,12 @@
                           "style_list": [
                             "flex: 1"
                           ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_sa_group7.spacer"
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw20.dg_accord_aw20_pathway.dg_aw20_group3.spacer"
                         },
                         {
                           "type": "button",
-                          "name": "button_sa_group7_1",
-                          "value": "Within 20",
+                          "name": "button_aw20_group3_1",
+                          "value": "Adding Within 20",
                           "_translations": {
                             "value": {}
                           },
@@ -2274,7 +2370,7 @@
                           "parameter_list": {
                             "variant": "card"
                           },
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_sa_group7.button_sa_group7_1"
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw20.dg_accord_aw20_pathway.dg_aw20_group3.button_aw20_group3_1"
                         },
                         {
                           "type": "text",
@@ -2282,32 +2378,32 @@
                           "style_list": [
                             "flex: 1"
                           ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_sa_group7.spacer"
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw20.dg_accord_aw20_pathway.dg_aw20_group3.spacer"
                         }
                       ],
-                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway.dg_sa_group7"
+                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw20.dg_accord_aw20_pathway.dg_aw20_group3"
                     }
                   ],
-                  "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add.dg_accord_sa_pathway"
+                  "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw20.dg_accord_aw20_pathway"
                 }
               ],
-              "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_add"
+              "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw20"
             },
             {
               "type": "accordion_section",
-              "name": "accord_sd_sub",
-              "value": "Single-digit Subtraction",
+              "name": "accord_sw10",
+              "value": "Subtraction Within 10",
               "rows": [
                 {
                   "type": "display_group",
-                  "name": "dg_accord_ss_pathway",
+                  "name": "dg_accord_sw10_pathway",
                   "parameter_list": {
                     "style": "column"
                   },
                   "rows": [
                     {
                       "type": "display_group",
-                      "name": "dg_accord_single_sub",
+                      "name": "dg_accord_sw10",
                       "parameter_list": {
                         "style": "column"
                       },
@@ -2317,14 +2413,14 @@
                       "rows": [
                         {
                           "type": "accordion",
-                          "name": "accordion_single_sub",
+                          "name": "accordion_sw10",
                           "parameter_list": {
                             "open_multiple": "TRUE"
                           },
                           "rows": [
                             {
                               "type": "accordion_section",
-                              "name": "accord_single_sub",
+                              "name": "accord_sw10",
                               "value": "Overview",
                               "parameter_list": {
                                 "text_align": "center"
@@ -2332,85 +2428,35 @@
                               "rows": [
                                 {
                                   "type": "display_group",
-                                  "name": "dg_single_sub",
+                                  "name": "dg_sw10",
                                   "parameter_list": {
                                     "style": "column"
                                   },
                                   "rows": [
                                     {
                                       "type": "text",
-                                      "name": "info_single_sub_1",
-                                      "value": "**Addition Pathway First** Almost all of this pathway should be done after first mastering the steps in the Single-Digit Addtion Pathway up to \"Within 10.\" The only exceptions are doing the steps \"1 or 2 Less\" and \"1 or 2 Apart,\" which can be done anytime.",
+                                      "name": "info_sw10_1",
+                                      "value": "**Prerequisite:* Do the Addition Within 10 pathway first before starting this pathway. The only exceptions are doing the steps \"1 or 2 Less\" and \"1 or 2 Apart,\" which can be done anytime. In particular, the \"1 or 2 Less\" step should probably be done at the same time as the \"1 or 2 More\" step.\n\n**Take Away & Difference** Subtraction can be modeled as difference or take away, and adopting the right mental model can make a problem much easier. For example, 5  – 1 is much easier to do as taking 1 away from 5, whereas 5 – 4 is much easier to do as finding the difference between 5 and 4.\n\n**Subtract 1 and 2** Use \"take away\" and exploit the connection with counting down to establish these facts. Adding 1 is going to the next number on a number path, subtracting 1 goes to the previous number.\n\n**1 or 2 Apart** Use \"difference\" to subtract by finding how far apart two numbers are, perhaps on a number path. For example, to do 8 – 6, it is much easier to see that their difference is 2 than it is to take 6 awa y from 8.\n\n**Part Part / Whole and Fact Families** This method can be used to do any subtraction facts that are related to addition facts that have already been mastered. A number can be deconstructed into two parts that make up the whole number. This creates an important connection between addition and subtraction. For example, the family of math facts for 3 + 7 = 10 includes 7 + 3 = 10, 10 – 3 = 7, and 10 – 7 = 3. \n\n**Surprisingly Few Left** If you remove the subtractions that subtract 1 or 2, or that are 1 or 2 apart, and you assume a student can apply fact families for doubles and sums of 10, then you are left with:\n* 7 – 3\n* 7 – 4\n* 8 – 3\n* 8 – 5\n* 9 – 3\n* 9 – 4\n* 9 – 5\n* 9 – 6\n\nThese eight subtraction facts come from the four fact families for: 3 + 4 = 7; 3 + 5 = 8; 3 + 6 = 9, and 4 + 5 = 9.These four can be given special attention to finish things off.\n\n**All Facts Within 10** At this point all the adding and subtracting facts within 10 have been mastered!",
                                       "_translations": {
                                         "value": {}
                                       },
-                                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_sub.dg_accord_ss_pathway.dg_accord_single_sub.accordion_single_sub.accord_single_sub.dg_single_sub.info_single_sub_1"
-                                    },
-                                    {
-                                      "type": "text",
-                                      "name": "info_single_sub_2",
-                                      "value": "**Part 1 – Subtracting Within 10**",
-                                      "_translations": {
-                                        "value": {}
-                                      },
-                                      "style_list": [
-                                        "color: red",
-                                        "margin-top: -8px"
-                                      ],
-                                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_sub.dg_accord_ss_pathway.dg_accord_single_sub.accordion_single_sub.accord_single_sub.dg_single_sub.info_single_sub_2"
-                                    },
-                                    {
-                                      "type": "text",
-                                      "name": "info_single_sub_3",
-                                      "value": "**Subtract 1 and 2** Exploit the connection with counting up and down to establish these facts. Adding 1 is going to the next number on a number path, subtracting 1 goes to the previous number, and so on. Similarly, subtracting two numbers that are 1 or 2 apart can be done looking at a number path and seeing how far apart the two numbers are.\n\n**Subtraction Models** Subtraction can be modeled as difference or take away, and adopting the right mental model can make a problem much easier. For example, 5  – 1 is much easier to do as taking 1 away from 5, whereas 5 – 4 is much easier to do as finding the difference between 5 and 4.\n\n**Part / Whole and Fact Families** A number can be deconstructed into two parts that make up the whole. This creates an important connection between addition and subtraction. For example, the family of math facts for 3 + 6 = 9 includes 6 + 3 = 9, 9 – 3 = 6, and 9 – 6 = 3. \n\n**All Facts Within 10** At this point all the adding and subtracting facts within 10 have been mastered. The only exceptions might be 3 + 5 and 3 + 6, and those can be mastered on their own.",
-                                      "_translations": {
-                                        "value": {}
-                                      },
-                                      "style_list": [
-                                        "margin-top: -8px"
-                                      ],
-                                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_sub.dg_accord_ss_pathway.dg_accord_single_sub.accordion_single_sub.accord_single_sub.dg_single_sub.info_single_sub_3"
-                                    },
-                                    {
-                                      "type": "text",
-                                      "name": "info_single_sub_4",
-                                      "value": "**Part 2 – Subtracting from numbers between 10 and 20**",
-                                      "_translations": {
-                                        "value": {}
-                                      },
-                                      "style_list": [
-                                        "color: red",
-                                        "margin-top: -8px"
-                                      ],
-                                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_sub.dg_accord_ss_pathway.dg_accord_single_sub.accordion_single_sub.accord_single_sub.dg_single_sub.info_single_sub_4"
-                                    },
-                                    {
-                                      "type": "text",
-                                      "name": "info_single_sub_5",
-                                      "value": "**Place Value up to 19** Understand that the numbers from 10 to 19 can be thought of as a bundle of 10 plus some more.\n\n**Subtract 10** While mastering place value up to 19, it is natural to practice adding 10 to single-digit numbers and subtracting 10 from numbers between 10 and 19.\n\n**10 as a Bridge for Subtracting** Use 10 as an intermediate point for subtraction. To find the difference between 12 and 5, find the difference between12 and 10 (2) and add it to the difference between 10 and 5 (5). 12 - 5 = (12 - 10) + (10 - 5) = 2 + 5 = 7. \n\nCompensation for subtraction is done by adding or subtracting the same amount from both numbers to create a simpler problem involving 10. By subtracting 2 from both numbers 12 - 5 becomes 10 - 3. By adding 5 to both numbers 12 - 5 becomes 17 - 10.",
-                                      "_translations": {
-                                        "value": {}
-                                      },
-                                      "style_list": [
-                                        "margin-top: -8px"
-                                      ],
-                                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_sub.dg_accord_ss_pathway.dg_accord_single_sub.accordion_single_sub.accord_single_sub.dg_single_sub.info_single_sub_5"
+                                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw10.dg_accord_sw10_pathway.dg_accord_sw10.accordion_sw10.accord_sw10.dg_sw10.info_sw10_1"
                                     }
                                   ],
-                                  "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_sub.dg_accord_ss_pathway.dg_accord_single_sub.accordion_single_sub.accord_single_sub.dg_single_sub"
+                                  "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw10.dg_accord_sw10_pathway.dg_accord_sw10.accordion_sw10.accord_sw10.dg_sw10"
                                 }
                               ],
-                              "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_sub.dg_accord_ss_pathway.dg_accord_single_sub.accordion_single_sub.accord_single_sub"
+                              "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw10.dg_accord_sw10_pathway.dg_accord_sw10.accordion_sw10.accord_sw10"
                             }
                           ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_sub.dg_accord_ss_pathway.dg_accord_single_sub.accordion_single_sub"
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw10.dg_accord_sw10_pathway.dg_accord_sw10.accordion_sw10"
                         }
                       ],
-                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_sub.dg_accord_ss_pathway.dg_accord_single_sub"
+                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw10.dg_accord_sw10_pathway.dg_accord_sw10"
                     },
                     {
                       "type": "display_group",
-                      "name": "dg_ss_group0",
+                      "name": "dg_sw10_group0",
                       "style_list": [
                         "margin-top: 5px"
                       ],
@@ -2421,16 +2467,16 @@
                           "style_list": [
                             "flex: 1"
                           ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_sub.dg_accord_ss_pathway.dg_ss_group0.blank"
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw10.dg_accord_sw10_pathway.dg_sw10_group0.blank"
                         },
                         {
                           "type": "text",
-                          "name": "text_ss_group0_1",
-                          "value": "Before starting this pathway, do the Single-Digit Addition Pathway through \"Within 10.\"",
+                          "name": "text_sw10_group0_1",
+                          "value": "Do the Addition Within 10 pathway before starting this pathway, with the exception that 1 or 2 Less should be done at the same time as 1 or 2 More.",
                           "_translations": {
                             "value": {}
                           },
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_sub.dg_accord_ss_pathway.dg_ss_group0.text_ss_group0_1"
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw10.dg_accord_sw10_pathway.dg_sw10_group0.text_sw10_group0_1"
                         },
                         {
                           "type": "text",
@@ -2438,10 +2484,10 @@
                           "style_list": [
                             "flex: 1"
                           ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_sub.dg_accord_ss_pathway.dg_ss_group0.blank"
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw10.dg_accord_sw10_pathway.dg_sw10_group0.blank"
                         }
                       ],
-                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_sub.dg_accord_ss_pathway.dg_ss_group0"
+                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw10.dg_accord_sw10_pathway.dg_sw10_group0"
                     },
                     {
                       "type": "image",
@@ -2454,11 +2500,108 @@
                         "max-width: 70px",
                         "margin-top: -15px"
                       ],
-                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_sub.dg_accord_ss_pathway.arrows2"
+                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw10.dg_accord_sw10_pathway.arrows2"
                     },
                     {
                       "type": "display_group",
-                      "name": "dg_ss_group1",
+                      "name": "dg_sw10_group1",
+                      "style_list": [
+                        "margin-top: -3px"
+                      ],
+                      "rows": [
+                        {
+                          "type": "button",
+                          "name": "button_sw10_group1_1",
+                          "value": "Take Away & Difference",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "action_list": [
+                            {
+                              "trigger": "click",
+                              "action_id": "set_field",
+                              "args": [
+                                "current_topic",
+                                "data.esm_topics.NO_AS10_QAS"
+                              ],
+                              "_raw": "click | set_field:current_topic: data.esm_topics.NO_AS10_QAS",
+                              "_cleaned": "click | set_field:current_topic: data.esm_topics.NO_AS10_QAS"
+                            },
+                            {
+                              "trigger": "click",
+                              "action_id": "go_to",
+                              "args": [
+                                "esm_topic_template"
+                              ],
+                              "_raw": "click | go_to: esm_topic_template",
+                              "_cleaned": "click | go_to: esm_topic_template"
+                            }
+                          ],
+                          "parameter_list": {
+                            "variant": "card"
+                          },
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw10.dg_accord_sw10_pathway.dg_sw10_group1.button_sw10_group1_1"
+                        },
+                        {
+                          "type": "text",
+                          "name": "spacer",
+                          "style_list": [
+                            "flex: 1"
+                          ],
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw10.dg_accord_sw10_pathway.dg_sw10_group1.spacer"
+                        },
+                        {
+                          "type": "button",
+                          "name": "button_sw10_group1_2",
+                          "value": "Part Part / Whole",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "action_list": [
+                            {
+                              "trigger": "click",
+                              "action_id": "set_field",
+                              "args": [
+                                "current_topic",
+                                "data.esm_topics.NO_AS10_NBFF"
+                              ],
+                              "_raw": "click | set_field:current_topic: data.esm_topics.NO_AS10_NBFF",
+                              "_cleaned": "click | set_field:current_topic: data.esm_topics.NO_AS10_NBFF"
+                            },
+                            {
+                              "trigger": "click",
+                              "action_id": "go_to",
+                              "args": [
+                                "esm_topic_template"
+                              ],
+                              "_raw": "click | go_to: esm_topic_template",
+                              "_cleaned": "click | go_to: esm_topic_template"
+                            }
+                          ],
+                          "parameter_list": {
+                            "variant": "card"
+                          },
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw10.dg_accord_sw10_pathway.dg_sw10_group1.button_sw10_group1_2"
+                        }
+                      ],
+                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw10.dg_accord_sw10_pathway.dg_sw10_group1"
+                    },
+                    {
+                      "type": "image",
+                      "name": "arrows2",
+                      "value": "ESMIll/ESMLPArrows2.svg",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "style_list": [
+                        "max-width: 70px",
+                        "margin-top: 0px"
+                      ],
+                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw10.dg_accord_sw10_pathway.arrows2"
+                    },
+                    {
+                      "type": "display_group",
+                      "name": "dg_sw10_group2",
                       "style_list": [
                         "margin-top: -3px"
                       ],
@@ -2469,11 +2612,11 @@
                           "style_list": [
                             "flex: 10"
                           ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_sub.dg_accord_ss_pathway.dg_ss_group1.blank"
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw10.dg_accord_sw10_pathway.dg_sw10_group2.blank"
                         },
                         {
                           "type": "button",
-                          "name": "button_ss_group1_1",
+                          "name": "button_sw10_group2_1",
                           "value": "1 or 2 Less",
                           "_translations": {
                             "value": {}
@@ -2505,7 +2648,7 @@
                           "style_list": [
                             "flex: 200"
                           ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_sub.dg_accord_ss_pathway.dg_ss_group1.button_ss_group1_1"
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw10.dg_accord_sw10_pathway.dg_sw10_group2.button_sw10_group2_1"
                         },
                         {
                           "type": "text",
@@ -2513,11 +2656,11 @@
                           "style_list": [
                             "flex: 10"
                           ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_sub.dg_accord_ss_pathway.dg_ss_group1.blank"
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw10.dg_accord_sw10_pathway.dg_sw10_group2.blank"
                         },
                         {
                           "type": "button",
-                          "name": "button_ss_group1_2",
+                          "name": "button_sw10_group2_2",
                           "value": "1 or 2 Apart",
                           "_translations": {
                             "value": {}
@@ -2549,7 +2692,7 @@
                           "style_list": [
                             "flex: 200"
                           ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_sub.dg_accord_ss_pathway.dg_ss_group1.button_ss_group1_2"
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw10.dg_accord_sw10_pathway.dg_sw10_group2.button_sw10_group2_2"
                         },
                         {
                           "type": "text",
@@ -2557,129 +2700,10 @@
                           "style_list": [
                             "flex: 10"
                           ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_sub.dg_accord_ss_pathway.dg_ss_group1.blank"
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw10.dg_accord_sw10_pathway.dg_sw10_group2.blank"
                         }
                       ],
-                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_sub.dg_accord_ss_pathway.dg_ss_group1"
-                    },
-                    {
-                      "type": "image",
-                      "name": "arrows2",
-                      "value": "ESMIll/ESMLPArrows2.svg",
-                      "_translations": {
-                        "value": {}
-                      },
-                      "style_list": [
-                        "max-width: 70px",
-                        "margin-top: 0px"
-                      ],
-                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_sub.dg_accord_ss_pathway.arrows2"
-                    },
-                    {
-                      "type": "display_group",
-                      "name": "dg_sas_group2",
-                      "style_list": [
-                        "margin-top: -3px"
-                      ],
-                      "rows": [
-                        {
-                          "type": "text",
-                          "name": "spacer",
-                          "style_list": [
-                            "flex: 10"
-                          ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_sub.dg_accord_ss_pathway.dg_sas_group2.spacer"
-                        },
-                        {
-                          "type": "button",
-                          "name": "button_ss_group2_1",
-                          "value": "Subtract Models",
-                          "_translations": {
-                            "value": {}
-                          },
-                          "action_list": [
-                            {
-                              "trigger": "click",
-                              "action_id": "set_field",
-                              "args": [
-                                "current_topic",
-                                "data.esm_topics.NO_AS10_QAS"
-                              ],
-                              "_raw": "click | set_field:current_topic: data.esm_topics.NO_AS10_QAS",
-                              "_cleaned": "click | set_field:current_topic: data.esm_topics.NO_AS10_QAS"
-                            },
-                            {
-                              "trigger": "click",
-                              "action_id": "go_to",
-                              "args": [
-                                "esm_topic_template"
-                              ],
-                              "_raw": "click | go_to: esm_topic_template",
-                              "_cleaned": "click | go_to: esm_topic_template"
-                            }
-                          ],
-                          "parameter_list": {
-                            "variant": "card"
-                          },
-                          "style_list": [
-                            "flex: 20"
-                          ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_sub.dg_accord_ss_pathway.dg_sas_group2.button_ss_group2_1"
-                        },
-                        {
-                          "type": "text",
-                          "name": "spacer",
-                          "style_list": [
-                            "flex: 10"
-                          ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_sub.dg_accord_ss_pathway.dg_sas_group2.spacer"
-                        },
-                        {
-                          "type": "button",
-                          "name": "button_ss_group4_2",
-                          "value": "Part / Whole",
-                          "_translations": {
-                            "value": {}
-                          },
-                          "action_list": [
-                            {
-                              "trigger": "click",
-                              "action_id": "set_field",
-                              "args": [
-                                "current_topic",
-                                "data.esm_topics.NO_AS10_NBFF"
-                              ],
-                              "_raw": "click | set_field:current_topic: data.esm_topics.NO_AS10_NBFF",
-                              "_cleaned": "click | set_field:current_topic: data.esm_topics.NO_AS10_NBFF"
-                            },
-                            {
-                              "trigger": "click",
-                              "action_id": "go_to",
-                              "args": [
-                                "esm_topic_template"
-                              ],
-                              "_raw": "click | go_to: esm_topic_template",
-                              "_cleaned": "click | go_to: esm_topic_template"
-                            }
-                          ],
-                          "parameter_list": {
-                            "variant": "card"
-                          },
-                          "style_list": [
-                            "flex: 20"
-                          ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_sub.dg_accord_ss_pathway.dg_sas_group2.button_ss_group4_2"
-                        },
-                        {
-                          "type": "text",
-                          "name": "spacer",
-                          "style_list": [
-                            "flex: 10"
-                          ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_sub.dg_accord_ss_pathway.dg_sas_group2.spacer"
-                        }
-                      ],
-                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_sub.dg_accord_ss_pathway.dg_sas_group2"
+                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw10.dg_accord_sw10_pathway.dg_sw10_group2"
                     },
                     {
                       "type": "image",
@@ -2692,11 +2716,11 @@
                         "max-width: 30px",
                         "margin-top: 0px"
                       ],
-                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_sub.dg_accord_ss_pathway.arrows1"
+                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw10.dg_accord_sw10_pathway.arrows1"
                     },
                     {
                       "type": "display_group",
-                      "name": "dg_ss_group4",
+                      "name": "dg_sw10_group3",
                       "style_list": [
                         "margin-top: -3px"
                       ],
@@ -2707,12 +2731,12 @@
                           "style_list": [
                             "flex: 1"
                           ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_sub.dg_accord_ss_pathway.dg_ss_group4.spacer"
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw10.dg_accord_sw10_pathway.dg_sw10_group3.spacer"
                         },
                         {
                           "type": "button",
-                          "name": "button_ss_group4_1",
-                          "value": "Within 10",
+                          "name": "button_ss_group3_1",
+                          "value": "Subtraction Within 10",
                           "_translations": {
                             "value": {}
                           },
@@ -2740,7 +2764,10 @@
                           "parameter_list": {
                             "variant": "card"
                           },
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_sub.dg_accord_ss_pathway.dg_ss_group4.button_ss_group4_1"
+                          "style_list": [
+                            "flex: 3"
+                          ],
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw10.dg_accord_sw10_pathway.dg_sw10_group3.button_ss_group3_1"
                         },
                         {
                           "type": "text",
@@ -2748,10 +2775,116 @@
                           "style_list": [
                             "flex: 1"
                           ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_sub.dg_accord_ss_pathway.dg_ss_group4.spacer"
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw10.dg_accord_sw10_pathway.dg_sw10_group3.spacer"
                         }
                       ],
-                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_sub.dg_accord_ss_pathway.dg_ss_group4"
+                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw10.dg_accord_sw10_pathway.dg_sw10_group3"
+                    }
+                  ],
+                  "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw10.dg_accord_sw10_pathway"
+                }
+              ],
+              "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw10"
+            },
+            {
+              "type": "accordion_section",
+              "name": "accord_sw20",
+              "value": "Subtraction Within 20",
+              "rows": [
+                {
+                  "type": "display_group",
+                  "name": "dg_accord_sw20_pathway",
+                  "parameter_list": {
+                    "style": "column"
+                  },
+                  "rows": [
+                    {
+                      "type": "display_group",
+                      "name": "dg_accord_sw20",
+                      "parameter_list": {
+                        "style": "column"
+                      },
+                      "style_list": [
+                        "margin-top: 15px"
+                      ],
+                      "rows": [
+                        {
+                          "type": "accordion",
+                          "name": "accordion_sw20",
+                          "parameter_list": {
+                            "open_multiple": "TRUE"
+                          },
+                          "rows": [
+                            {
+                              "type": "accordion_section",
+                              "name": "accord_sw20",
+                              "value": "Overview",
+                              "parameter_list": {
+                                "text_align": "center"
+                              },
+                              "rows": [
+                                {
+                                  "type": "display_group",
+                                  "name": "dg_sw20",
+                                  "parameter_list": {
+                                    "style": "column"
+                                  },
+                                  "rows": [
+                                    {
+                                      "type": "text",
+                                      "name": "info_sw20_1",
+                                      "value": "**Prerequisite:** Do the Subtraction Within 10 and Addition Within 10 pathways first.\n\n**Place Value up to 19** Understand that the numbers from 10 to 19 can be thought of as a bundle of 10 plus some more.\n\n**Subtract 10** While mastering place value up to 19, it is natural to practice adding 10 to single-digit numbers and subtracting 10 from numbers between 10 and 19.\n\n**10 as a Bridge for Subtracting** Use 10 as an intermediate point for subtraction. For example, to find the difference between 12 and 5, find the difference between12 and 10 (2) and to it the difference between 10 and 5 (5). 12 - 5 = (12 - 10) + (10 - 5) = 2 + 5 = 7. \n\nCompensation for subtraction is done by adding or subtracting the same amount from both numbers to create a simpler problem involving 10. By subtracting 2 from both numbers 12 - 5 becomes 10 - 3. By adding 5 to both numbers 12 - 5 becomes 17 - 10.\n\n**All Subtractions Within 20** All the subtractions from numbers between 10 and 20 can be done with this small collection of methods. At this point, all adding and subtracting facts within 20 are done!",
+                                      "_translations": {
+                                        "value": {}
+                                      },
+                                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw20.dg_accord_sw20_pathway.dg_accord_sw20.accordion_sw20.accord_sw20.dg_sw20.info_sw20_1"
+                                    }
+                                  ],
+                                  "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw20.dg_accord_sw20_pathway.dg_accord_sw20.accordion_sw20.accord_sw20.dg_sw20"
+                                }
+                              ],
+                              "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw20.dg_accord_sw20_pathway.dg_accord_sw20.accordion_sw20.accord_sw20"
+                            }
+                          ],
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw20.dg_accord_sw20_pathway.dg_accord_sw20.accordion_sw20"
+                        }
+                      ],
+                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw20.dg_accord_sw20_pathway.dg_accord_sw20"
+                    },
+                    {
+                      "type": "display_group",
+                      "name": "dg_sw20_group0",
+                      "style_list": [
+                        "margin-top: 5px"
+                      ],
+                      "rows": [
+                        {
+                          "type": "text",
+                          "name": "blank",
+                          "style_list": [
+                            "flex: 1"
+                          ],
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw20.dg_accord_sw20_pathway.dg_sw20_group0.blank"
+                        },
+                        {
+                          "type": "text",
+                          "name": "text_sw20_group0_1",
+                          "value": "Do the Subtraction Within 10 and Addition Within 10 pathways first before starting this pathway.",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw20.dg_accord_sw20_pathway.dg_sw20_group0.text_sw20_group0_1"
+                        },
+                        {
+                          "type": "text",
+                          "name": "blank",
+                          "style_list": [
+                            "flex: 1"
+                          ],
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw20.dg_accord_sw20_pathway.dg_sw20_group0.blank"
+                        }
+                      ],
+                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw20.dg_accord_sw20_pathway.dg_sw20_group0"
                     },
                     {
                       "type": "image",
@@ -2762,20 +2895,20 @@
                       },
                       "style_list": [
                         "max-width: 90px",
-                        "margin-top: 0px"
+                        "margin-top: -15px"
                       ],
-                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_sub.dg_accord_ss_pathway.arrows3"
+                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw20.dg_accord_sw20_pathway.arrows3"
                     },
                     {
                       "type": "display_group",
-                      "name": "dg_ss_group5",
+                      "name": "dg_sw20_group1",
                       "style_list": [
                         "margin-top: -3px"
                       ],
                       "rows": [
                         {
                           "type": "button",
-                          "name": "button_ss_group5_1",
+                          "name": "button_sw20_group1_1",
                           "value": "Subtract 10",
                           "_translations": {
                             "value": {}
@@ -2807,11 +2940,11 @@
                           "style_list": [
                             "flex: 10"
                           ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_sub.dg_accord_ss_pathway.dg_ss_group5.button_ss_group5_1"
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw20.dg_accord_sw20_pathway.dg_sw20_group1.button_sw20_group1_1"
                         },
                         {
                           "type": "button",
-                          "name": "button_ss_group5_2",
+                          "name": "button_sw20_group1_2",
                           "value": "Place Value",
                           "_translations": {
                             "value": {}
@@ -2843,11 +2976,11 @@
                           "style_list": [
                             "flex:8"
                           ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_sub.dg_accord_ss_pathway.dg_ss_group5.button_ss_group5_2"
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw20.dg_accord_sw20_pathway.dg_sw20_group1.button_sw20_group1_2"
                         },
                         {
                           "type": "button",
-                          "name": "button_ss_group6_1",
+                          "name": "button_sw20_group1_3",
                           "value": "10 as Bridge",
                           "_translations": {
                             "value": {}
@@ -2879,10 +3012,10 @@
                           "style_list": [
                             "flex: 10"
                           ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_sub.dg_accord_ss_pathway.dg_ss_group5.button_ss_group6_1"
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw20.dg_accord_sw20_pathway.dg_sw20_group1.button_sw20_group1_3"
                         }
                       ],
-                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_sub.dg_accord_ss_pathway.dg_ss_group5"
+                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw20.dg_accord_sw20_pathway.dg_sw20_group1"
                     },
                     {
                       "type": "image",
@@ -2895,11 +3028,11 @@
                         "max-width: 30px",
                         "margin-top: -2px"
                       ],
-                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_sub.dg_accord_ss_pathway.arrows1"
+                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw20.dg_accord_sw20_pathway.arrows1"
                     },
                     {
                       "type": "display_group",
-                      "name": "dg_ss_group7",
+                      "name": "dg_sw20_group2",
                       "style_list": [
                         "margin-top: -3px"
                       ],
@@ -2910,12 +3043,12 @@
                           "style_list": [
                             "flex: 1"
                           ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_sub.dg_accord_ss_pathway.dg_ss_group7.spacer"
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw20.dg_accord_sw20_pathway.dg_sw20_group2.spacer"
                         },
                         {
                           "type": "button",
-                          "name": "button_ss_group7_1",
-                          "value": "Within 20",
+                          "name": "button_sw20_group2_1",
+                          "value": "Subtraction Within 20",
                           "_translations": {
                             "value": {}
                           },
@@ -2943,7 +3076,10 @@
                           "parameter_list": {
                             "variant": "card"
                           },
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_sub.dg_accord_ss_pathway.dg_ss_group7.button_ss_group7_1"
+                          "style_list": [
+                            "flex: 3"
+                          ],
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw20.dg_accord_sw20_pathway.dg_sw20_group2.button_sw20_group2_1"
                         },
                         {
                           "type": "text",
@@ -2951,16 +3087,16 @@
                           "style_list": [
                             "flex: 1"
                           ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_sub.dg_accord_ss_pathway.dg_ss_group7.spacer"
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw20.dg_accord_sw20_pathway.dg_sw20_group2.spacer"
                         }
                       ],
-                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_sub.dg_accord_ss_pathway.dg_ss_group7"
+                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw20.dg_accord_sw20_pathway.dg_sw20_group2"
                     }
                   ],
-                  "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_sub.dg_accord_ss_pathway"
+                  "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw20.dg_accord_sw20_pathway"
                 }
               ],
-              "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_sub"
+              "_nested_name": "dg_top_of_page.accordion_pathways.accord_sw20"
             },
             {
               "type": "accordion_section",
@@ -3009,23 +3145,11 @@
                                     {
                                       "type": "text",
                                       "name": "info_single_mult",
-                                      "value": "**Multiplying by 2, 10, and 5**\n* **Multiplying by 2 – Doubling** Addition doubles are a natural way to introduce multiplication. When adding a number to itself it is easy to describe it as twice the number or two of the number.\n* **Multiplying by 10 – Place Value** Once the number names are learned, multiples of 10 are easy to do and will help with understanding place value.\n* **Multiplying by 5 – Even Multiples** Calculate even multiples of 5 as half as big a multiple of 10. For example, 6 x 5 is 3 x 10.\n* **Multiplying by 5 – Odd Multiples** Once the even multiples of 5 are mastered, calculate odd multiples as one more 5 than the last even multiple. For example, 7 x 5 is 6 x 5 plus 5.\n\n**Multiplication Models** Use representations with equal piles or arrays with equal rows. The array model makes it easy to discuss why multiplication is commutative.\n\n**Skip Counting** As with doubles, the natural place to start this is with skip sizes of 2. Quickly branch out to skips of 10 and 5. After familiarity is gained, skip count upward and downward. With a little more practice, start skip counting from numbers other than multiples of the skip amount. Skip counting is useful for multiplication and division, and it is also great practice for addition and subtraction. A child who is confident with skip counting can use it initially for multiplication, but it should eventually give way to mastering the facts so that they are automatic.\n\n**Multiplication Commutes** Your students do not need to know this vocabulary, but it is important for them to know that the order of multiplication makes no difference. For example, 6 x 3 gives the same result as 3 x 6. This will save them learning about half of the multiplication facts.\n\n**Squares** These are usually enjoyed in the same way that doubles are enjoyed for addition.\n\n**Combining Methods** These three strategies use the same idea. For all of them, you calculate a new multiple by adding together two multiples you already know.\n* **Doubling** This can be used for multiplying by 4, 6, and 8. As an example, 6 x 7 can be calculated as 3 x 7 plus 3 x 7 = 21 + 21 = 42. This doubling does require some experience with 2-digit addition.\n* **One More or One Less** One More can be used for multiplying by 3 and 6, and One Less can be used for multiplying by 4 and 9. An example of One More is calculating 3 x 7 as 2 x 7 and adding one more 7. An example of One Less is calculating 9 x 7 as starting with 10 x 7 and taking away one 7. You can also use One More or Less to calculate Near Squares such as 6 x 7 (one more 6 than 6 x 6, or one less 7 than 7 x 7).\n* **Misc. Combinations** You can choose to combine other multiples. Multiples of 5 can be handy for this. For example, 7 x 8 is 5 x 8 plus 2 x 8 which is 40 + 16 = 56.\n\n**Mastery Steps** The table below shows one possible series of steps for mastering the multiplication facts.\n* Grey – Multiplying by 1 and 2\n* Yellow – Multiplying by 5 and 10\n* Blue – Squares\n* Tan – One More or One Less – multiplying by 3, 4, 6, 9\n* Brown – Do 7 x 8 as 5 x 8 + 2 x 8",
+                                      "value": "**Multiplication Models** Multiplication involves some number of equal-sized groups. Use representations of this with equal piles or with arrays with equal rows. The array model makes it easy to discuss why multiplication is commutative.\n\n**Skip Counting** As with doubles for additioin, the natural place to start skipping is with skip sizes of 2. Quickly branch out to skips of 10 and 5. After familiarity is gained, skip count upward and downward. With a little more practice, start skip counting from numbers other than multiples of the skip amount. Skip counting is useful for multiplication and division, and it is also great practice for addition and subtraction. A child who is confident with skip counting can use it initially for multiplication, but it should quickly give way to mastering the facts so that they are automatic.\n\n**Multiplication Commutes** Your students do not need to know this vocabulary, but it is important for them to know that the order of multiplication makes no difference. For example, 6 x 3 gives the same result as 3 x 6. This will save them learning approximatelly half of the multiplication facts.\n\n**Multiplying by 2, 10, and 5**\n* **Multiplying by 2 – Doubling** Addition doubles are a natural way to introduce multiplication. When adding a number to itself it is easy to describe it as twice the number or two of the number.\n* **Multiplying by 10 – Place Value** Once the number names are learned, multiples of 10 are easy to do and will help with understanding place value.\n* **Multiplying by 5 – Even Multiples** Calculate even multiples of 5 as half as big a multiple of 10. For example, 6 x 5 is 3 x 10.\n* **Multiplying by 5 – Odd Multiples** Once the even multiples of 5 are mastered, calculate odd multiples as one more 5 than the last even multiple. For example, 7 x 5 is 6 x 5 plus 5.\n\n**Squares** These are usually enjoyed in the same way that doubles are enjoyed for addition.\n\n**Combining Methods** These three strategies use the same idea. For all of them, you calculate a new multiple by adding or subtracting together two multiples you already know. This method does usually require some skill with adding and subtracting 2-digit numbers.\n* **Doubling** Used for multiplying by 4, 6, and 8. For example: 6 x 7 is 3 x 7 plus 3 x 7 = 21 + 21 = 42.\n* **One Group More or One Group Less** Use One More for multiplying by 3 and 6, and One Less for multiplying by 4 and 9. Examples, 3 x 7 is 2 x 7 + 1 x 7, and 9 x 7 is 10 x 7 – 1 x 7. You can also use this idea to calculate Near Squares such as 6 x 7 (one more 6 than 6 x 6, or one less 7 than 7 x 7).\n* **Misc. Combinations** You can choose to combine other multiples. Multiples of 5 can be handy for this. For example, 7 x 8 is 5 x 8 + 2 x 8.\n* **Focus on 1, 2, 5, 10** It may organize your thinking to view all these combinations as being based on knowing the multiples of 1, 2, 5, and 10. Once you know these, they can be combined to create all the rest.",
                                       "_translations": {
                                         "value": {}
                                       },
                                       "_nested_name": "dg_top_of_page.accordion_pathways.accord_sm_mult.dg_accord_sm_pathway.dg_accord_single_mult.accordion_single_mult.accord_single_mult.dg_single_mult.info_single_mult"
-                                    },
-                                    {
-                                      "type": "image",
-                                      "name": "multiplication_table",
-                                      "value": "ESMIll/ESMGridTimes.svg",
-                                      "_translations": {
-                                        "value": {}
-                                      },
-                                      "style_list": [
-                                        "max-width: 320px"
-                                      ],
-                                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sm_mult.dg_accord_sm_pathway.dg_accord_single_mult.accordion_single_mult.accord_single_mult.dg_single_mult.multiplication_table"
                                     }
                                   ],
                                   "_nested_name": "dg_top_of_page.accordion_pathways.accord_sm_mult.dg_accord_sm_pathway.dg_accord_single_mult.accordion_single_mult.accord_single_mult.dg_single_mult"
@@ -3046,75 +3170,6 @@
                         {
                           "type": "button",
                           "name": "button_sm_group1_1",
-                          "value": "Times 2",
-                          "_translations": {
-                            "value": {}
-                          },
-                          "action_list": [
-                            {
-                              "trigger": "click",
-                              "action_id": "set_field",
-                              "args": [
-                                "current_topic",
-                                "data.esm_topics.NO_MSD_Doubling"
-                              ],
-                              "_raw": "click | set_field:current_topic: data.esm_topics.NO_MSD_Doubling",
-                              "_cleaned": "click | set_field:current_topic: data.esm_topics.NO_MSD_Doubling"
-                            },
-                            {
-                              "trigger": "click",
-                              "action_id": "go_to",
-                              "args": [
-                                "esm_topic_template"
-                              ],
-                              "_raw": "click | go_to: esm_topic_template",
-                              "_cleaned": "click | go_to: esm_topic_template"
-                            }
-                          ],
-                          "parameter_list": {
-                            "variant": "card"
-                          },
-                          "style_list": [
-                            "flex: 3"
-                          ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sm_mult.dg_accord_sm_pathway.dg_sm_group1.button_sm_group1_1"
-                        },
-                        {
-                          "type": "button",
-                          "name": "button_sm_group1_2",
-                          "value": "Times 10 & 5",
-                          "_translations": {
-                            "value": {}
-                          },
-                          "action_list": [
-                            {
-                              "trigger": "click",
-                              "action_id": "set_field",
-                              "args": [
-                                "current_topic",
-                                "data.esm_topics.NO_MSD_Mult_5_10"
-                              ],
-                              "_raw": "click | set_field:current_topic: data.esm_topics.NO_MSD_Mult_5_10",
-                              "_cleaned": "click | set_field:current_topic: data.esm_topics.NO_MSD_Mult_5_10"
-                            },
-                            {
-                              "trigger": "click",
-                              "action_id": "go_to",
-                              "args": [
-                                "esm_topic_template"
-                              ],
-                              "_raw": "click | go_to: esm_topic_template",
-                              "_cleaned": "click | go_to: esm_topic_template"
-                            }
-                          ],
-                          "parameter_list": {
-                            "variant": "card"
-                          },
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sm_mult.dg_accord_sm_pathway.dg_sm_group1.button_sm_group1_2"
-                        },
-                        {
-                          "type": "button",
-                          "name": "button_sm_group1_3",
                           "value": "Mult. Model",
                           "_translations": {
                             "value": {}
@@ -3146,34 +3201,47 @@
                           "style_list": [
                             "flex: 3"
                           ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sm_mult.dg_accord_sm_pathway.dg_sm_group1.button_sm_group1_3"
-                        }
-                      ],
-                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sm_mult.dg_accord_sm_pathway.dg_sm_group1"
-                    },
-                    {
-                      "type": "image",
-                      "name": "arrows3",
-                      "value": "ESMIll/ESMLPArrows3.svg",
-                      "_translations": {
-                        "value": {}
-                      },
-                      "style_list": [
-                        "max-width: 90px",
-                        "margin-top: 0px"
-                      ],
-                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sm_mult.dg_accord_sm_pathway.arrows3"
-                    },
-                    {
-                      "type": "display_group",
-                      "name": "dg_sm_group2",
-                      "style_list": [
-                        "margin-top: -3px"
-                      ],
-                      "rows": [
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sm_mult.dg_accord_sm_pathway.dg_sm_group1.button_sm_group1_1"
+                        },
                         {
                           "type": "button",
                           "name": "button_sm_group1_2",
+                          "value": "Mult. Order",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "action_list": [
+                            {
+                              "trigger": "click",
+                              "action_id": "set_field",
+                              "args": [
+                                "current_topic",
+                                "data.esm_topics.NO_MSD_MultCommutes"
+                              ],
+                              "_raw": "click | set_field:current_topic: data.esm_topics.NO_MSD_MultCommutes",
+                              "_cleaned": "click | set_field:current_topic: data.esm_topics.NO_MSD_MultCommutes"
+                            },
+                            {
+                              "trigger": "click",
+                              "action_id": "go_to",
+                              "args": [
+                                "esm_topic_template"
+                              ],
+                              "_raw": "click | go_to: esm_topic_template",
+                              "_cleaned": "click | go_to: esm_topic_template"
+                            }
+                          ],
+                          "parameter_list": {
+                            "variant": "card"
+                          },
+                          "style_list": [
+                            "flex: 1"
+                          ],
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sm_mult.dg_accord_sm_pathway.dg_sm_group1.button_sm_group1_2"
+                        },
+                        {
+                          "type": "button",
+                          "name": "button_sm_group1_3",
                           "value": "Skip Count",
                           "_translations": {
                             "value": {}
@@ -3205,12 +3273,35 @@
                           "style_list": [
                             "flex: 1"
                           ],
-                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sm_mult.dg_accord_sm_pathway.dg_sm_group2.button_sm_group1_2"
-                        },
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sm_mult.dg_accord_sm_pathway.dg_sm_group1.button_sm_group1_3"
+                        }
+                      ],
+                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sm_mult.dg_accord_sm_pathway.dg_sm_group1"
+                    },
+                    {
+                      "type": "image",
+                      "name": "arrows3",
+                      "value": "ESMIll/ESMLPArrows3.svg",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "style_list": [
+                        "max-width: 90px",
+                        "margin-top: 0px"
+                      ],
+                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_sm_mult.dg_accord_sm_pathway.arrows3"
+                    },
+                    {
+                      "type": "display_group",
+                      "name": "dg_sm_group2",
+                      "style_list": [
+                        "margin-top: -3px"
+                      ],
+                      "rows": [
                         {
                           "type": "button",
-                          "name": "button_sm_group2_2",
-                          "value": "Change Order",
+                          "name": "button_sm_group2_1",
+                          "value": "2 Times",
                           "_translations": {
                             "value": {}
                           },
@@ -3220,10 +3311,10 @@
                               "action_id": "set_field",
                               "args": [
                                 "current_topic",
-                                "data.esm_topics.NO_MSD_MultCommutes"
+                                "data.esm_topics.NO_MSD_Doubling"
                               ],
-                              "_raw": "click | set_field:current_topic: data.esm_topics.NO_MSD_MultCommutes",
-                              "_cleaned": "click | set_field:current_topic: data.esm_topics.NO_MSD_MultCommutes"
+                              "_raw": "click | set_field:current_topic: data.esm_topics.NO_MSD_Doubling",
+                              "_cleaned": "click | set_field:current_topic: data.esm_topics.NO_MSD_Doubling"
                             },
                             {
                               "trigger": "click",
@@ -3238,9 +3329,39 @@
                           "parameter_list": {
                             "variant": "card"
                           },
-                          "style_list": [
-                            "flex: 1"
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sm_mult.dg_accord_sm_pathway.dg_sm_group2.button_sm_group2_1"
+                        },
+                        {
+                          "type": "button",
+                          "name": "button_sm_group2_2",
+                          "value": "Times 10, 5",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "action_list": [
+                            {
+                              "trigger": "click",
+                              "action_id": "set_field",
+                              "args": [
+                                "current_topic",
+                                "data.esm_topics.NO_MSD_Mult_5_10"
+                              ],
+                              "_raw": "click | set_field:current_topic: data.esm_topics.NO_MSD_Mult_5_10",
+                              "_cleaned": "click | set_field:current_topic: data.esm_topics.NO_MSD_Mult_5_10"
+                            },
+                            {
+                              "trigger": "click",
+                              "action_id": "go_to",
+                              "args": [
+                                "esm_topic_template"
+                              ],
+                              "_raw": "click | go_to: esm_topic_template",
+                              "_cleaned": "click | go_to: esm_topic_template"
+                            }
                           ],
+                          "parameter_list": {
+                            "variant": "card"
+                          },
                           "_nested_name": "dg_top_of_page.accordion_pathways.accord_sm_mult.dg_accord_sm_pathway.dg_sm_group2.button_sm_group2_2"
                         },
                         {
@@ -3274,9 +3395,6 @@
                           "parameter_list": {
                             "variant": "card"
                           },
-                          "style_list": [
-                            "flex: 1"
-                          ],
                           "_nested_name": "dg_top_of_page.accordion_pathways.accord_sm_mult.dg_accord_sm_pathway.dg_sm_group2.button_sm_group2_3"
                         }
                       ],
@@ -3334,14 +3452,14 @@
                             "variant": "card"
                           },
                           "style_list": [
-                            "flex: 10"
+                            "flex: 1"
                           ],
                           "_nested_name": "dg_top_of_page.accordion_pathways.accord_sm_mult.dg_accord_sm_pathway.dg_sm_group3.button_sm_group3_1"
                         },
                         {
                           "type": "button",
                           "name": "button_sm_group3_2",
-                          "value": "1 More 1 Less",
+                          "value": "1 group\nmore\nor less",
                           "_translations": {
                             "value": {}
                           },
@@ -3370,7 +3488,7 @@
                             "variant": "card"
                           },
                           "style_list": [
-                            "flex: 16"
+                            "flex: 2"
                           ],
                           "_nested_name": "dg_top_of_page.accordion_pathways.accord_sm_mult.dg_accord_sm_pathway.dg_sm_group3.button_sm_group3_2"
                         },
@@ -3406,7 +3524,7 @@
                             "variant": "card"
                           },
                           "style_list": [
-                            "flex: 10"
+                            "flex: 1"
                           ],
                           "_nested_name": "dg_top_of_page.accordion_pathways.accord_sm_mult.dg_accord_sm_pathway.dg_sm_group3.button_sm_group3_3"
                         }
@@ -3541,7 +3659,7 @@
                                     {
                                       "type": "text",
                                       "name": "info_single_div",
-                                      "value": "**The topics for this pathway have not been written.**\n\n**Equal Parts for Shapes and Sets** Splitting up shapes and sets of objects into equal-size pieces is a good introduction to fractions and division. It also gives lots of practice for understanding the model for division.\n\n**Sharing** This is a story version of breaking a set into equal parts. It is a wonderful source of problems that children can relate to. Sharing a quantity equally among two people is an early and powerfuly way of learning dividing by 2 and taking halves. This naturally leads to more complicated sharing as your children's skills develop.\n\n**Division Model** As with subtraction, division can be thought of in at least two ways. If you have 20 things and want to put them in piles of 5, you can ask how many piles there will be. Or, if you want to make 5 equal piles, you can ask how big the piles will be. The idea of sharing is an example of the second interpretation – you want to share equally among a certain number of people. \n\n**Skip Counting** As will be discussed in the \"Guess and Revise\" method, skip counting is a useful resource for finding division results after an initial estimate.\n\n**Division Techniques** There are two kinds of division problems – those with or without a remainder. When there is a no remainder, understanding fact families will help. Where there is a remainder, the techniques are a bit less automatic.\n\n**Fact Faimilies for x and ÷** Use the multiplication models to make the relationship between multiplication and division concrete. For example, if 3 x 5 is well known to a child, then the fact family for 3 x 5 = 15 will help with the related facts: 5 x 3 = 15, 15 ÷ 3 = 5, and 15 ÷ 5 = 3.\n\n**Guess & Revise for Division with Remainders** There is no way to memorize all these math facts. Being good at skip counting helps a lot with these.\n\nFor example, to calculate 27 ÷ 4 encourage your students to do the following:\n* Make an initial guess. Perhaps 5 in this example.\n* Check the guess and see if it is too high or too low.  5 x 4 = 20 is 7 too low, so we'll need one more 4.\n* Revise the guess and check again.",
+                                      "value": "**The topics for this pathway have not been written yet.**\n\n**Equal Parts for Shapes and Sets** Splitting up shapes and sets of objects into equal-size pieces is a good introduction to fractions and division. It also gives lots of practice for understanding the model for division.\n\n**Equal Parts – Sharing Quantities** Sharing situations are a wonderful source of problems that children can relate to. Sharing a quantity equally among two people is an early and powerfuly way of learning dividing by 2 and taking halves. This naturally leads to more complicated sharing as your children's skills develop.\n\n**Division Models** As with subtraction, division can be thought of in at least two ways. If you have 20 things and want to put them in piles of 5, you can ask how many piles there will be. Or, if you want to make 5 equal piles, you can ask how big the piles will be. The idea of sharing is an example of the second interpretation – you want to share equally among a certain number of people. \n\n**Skip Counting** As will be discussed in the \"Guess and Revise\" method, skip counting is a useful resource for finding division results after an initial estimate. It is not intended as a tool to do division all on its own.\n\n**Division Models** There are two kinds of division problems – those with or without a remainder. When there is a no remainder, understanding fact families and knowing the multiplication facts will make quick work of the problems. Where there is a remainder, the techniques are a bit less automatic.\n\n**Fact Faimilies for x and ÷** Use the multiplication models to make the relationship between multiplication and division concrete. For example, if 3 x 5 is well known to a child, then the fact family for 3 x 5 = 15 will help with the related facts: 5 x 3 = 15, 15 ÷ 3 = 5, and 15 ÷ 5 = 3.\n\n**Guess & Revise for Division with Remainders** There is no way to memorize all these math facts. Being good at skip counting helps a lot with these. The number 5 is often a good initial guess to start from – it is in the middle of 1-digit numbers and it is easy to calculate the multiples of it.\n\nFor example, to calculate 27 ÷ 4 encourage your students to do the following:\n* Make an initial guess. Perhaps 5 in this example.\n* Check the guess and see if it is too high or too low.  5 x 4 = 20 is 7 too low, so we'll need one more 4.\n* Revise the guess and check again.\n\nWith practice, their initial guesses will grow increasingly accurate.\n\n**All Single-Digit Division** Using these methods for dividing with and without remainders, your students will now be able to master (with practice) all single-digit division problems!",
                                       "_translations": {
                                         "value": {}
                                       },
@@ -3577,7 +3695,7 @@
                         {
                           "type": "text",
                           "name": "text_sd_group0_1",
-                          "value": "Before starting this pathway, do the Single-Digit Multiplication Pathway.",
+                          "value": "Before starting this pathway, do the Single-Digit Multiplication pathway.",
                           "_translations": {
                             "value": {}
                           },
@@ -3650,7 +3768,7 @@
                         {
                           "type": "button",
                           "name": "button_sd_group1_2",
-                          "value": "Equal Parts - Sets",
+                          "value": "Equal Parts - Sharing",
                           "_translations": {
                             "value": {}
                           },
@@ -3704,6 +3822,14 @@
                       ],
                       "rows": [
                         {
+                          "style_list": [
+                            "flex: 1"
+                          ],
+                          "type": "set_variable",
+                          "name": "set_variable_1",
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_mult_div.dg_accord_sd_pathway.dg_sd_group2.set_variable_1"
+                        },
+                        {
                           "type": "button",
                           "name": "button_sd_group2_1",
                           "value": "Division Model",
@@ -3740,6 +3866,14 @@
                           "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_mult_div.dg_accord_sd_pathway.dg_sd_group2.button_sd_group2_1"
                         },
                         {
+                          "style_list": [
+                            "flex: 1"
+                          ],
+                          "type": "set_variable",
+                          "name": "set_variable_3",
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_mult_div.dg_accord_sd_pathway.dg_sd_group2.set_variable_3"
+                        },
+                        {
                           "type": "button",
                           "name": "button_sd_group2_2",
                           "value": "Skip Count",
@@ -3774,6 +3908,14 @@
                             "flex: 3"
                           ],
                           "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_mult_div.dg_accord_sd_pathway.dg_sd_group2.button_sd_group2_2"
+                        },
+                        {
+                          "style_list": [
+                            "flex: 2"
+                          ],
+                          "type": "set_variable",
+                          "name": "set_variable_5",
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_mult_div.dg_accord_sd_pathway.dg_sd_group2.set_variable_5"
                         }
                       ],
                       "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_mult_div.dg_accord_sd_pathway.dg_sd_group2"
@@ -3802,7 +3944,7 @@
                           "type": "text",
                           "name": "spacer",
                           "style_list": [
-                            "flex: 2"
+                            "flex: 1"
                           ],
                           "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_mult_div.dg_accord_sd_pathway.dg_sd_group4.spacer"
                         },
@@ -3956,6 +4098,9 @@
                           "parameter_list": {
                             "variant": "card"
                           },
+                          "style_list": [
+                            "flex: 3"
+                          ],
                           "_nested_name": "dg_top_of_page.accordion_pathways.accord_sd_mult_div.dg_accord_sd_pathway.dg_sd_group5.button_sd_group5_1"
                         },
                         {
