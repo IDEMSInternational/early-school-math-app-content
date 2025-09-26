@@ -3,12 +3,12 @@
 
 | type | count |
 | --- | --- |
-| accordion | 69 |
-| accordion_section | 124 |
-| button | 169 |
+| accordion | 71 |
+| accordion_section | 128 |
+| button | 172 |
 | debug_toggle | 1 |
-| display_group | 427 |
-| image | 66 |
+| display_group | 436 |
+| image | 65 |
 | items | 68 |
 | qr_code | 1 |
 | radio_button_grid | 1 |
@@ -18,7 +18,7 @@
 | set_variable | 763 |
 | simple_checkbox | 4 |
 | template | 92 |
-| text | 340 |
+| text | 350 |
 | text_area | 2 |
 | tile_component | 3 |
 | title | 52 |
@@ -38,10 +38,10 @@
 | emit: set_language | 1 |
 | emit: uncompleted | 58 |
 | feedback | 11 |
-| go_to | 134 |
+| go_to | 137 |
 | go_to_url | 3 |
 | reset_app | 1 |
-| set_field | 150 |
+| set_field | 153 |
 | set_local | 6 |
 | start_tour | 19 |
 </details>
@@ -51,8 +51,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 44469 KB | 44.5 MB |
-| unused | 21605 KB | 21.6 MB |
+| total | 44400 KB | 44.4 MB |
+| unused | 21683 KB | 21.7 MB |
 </details>
 
 <details open>
@@ -301,6 +301,8 @@ Assets that appear in app-data but do not have references within sheets
 | EFMStorybooks/EFM-SB-SSMILE-8.jpg | 3.5 |
 | EFMStorybooks/EFM-SB-TFHH-2.jpg | 10.6 |
 | ESMIll/ESMDots4-5.svg | 4 |
+| ESMIll/ESMGridPlus.svg | 38.8 |
+| ESMIll/ESMGridTimes.svg | 38.8 |
 | ESMIll/ESMPOWACoinFlipStart2.svg | 11626.6 |
 | ESMIll/ESMPOWCAvoidingRectanglesAnswer4.svg | 7.5 |
 | ESMIll/ESMTopicComparingLinesofDots.svg | 3.3 |
@@ -1394,10 +1396,8 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMGlossTenFrame.svg | 7.5 | 1 |
 | ESMIll/ESMGlossTriangularNumbers.svg | 8 | 1 |
 | ESMIll/ESMGlossUnitize.svg | 12.3 | 1 |
-| ESMIll/ESMGridPlus.svg | 38.8 | 1 |
-| ESMIll/ESMGridTimes.svg | 38.8 | 1 |
 | ESMIll/ESMLPArrows1.svg | 12.6 | 8 |
-| ESMIll/ESMLPArrows2.svg | 13 | 12 |
+| ESMIll/ESMLPArrows2.svg | 13 | 13 |
 | ESMIll/ESMLPArrows3.svg | 13.3 | 6 |
 | ESMIll/ESMOEColoringShapesExample1.svg | 7.4 | 1 |
 | ESMIll/ESMOEColoringShapesExample2.svg | 7.3 | 1 |
@@ -1666,13 +1666,14 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMTopicASWithin5TenFrame.svg | 3.6 | 1 |
 | ESMIll/ESMTopicAddCommutes.svg | 3.3 | 2 |
 | ESMIll/ESMTopicCompDecompBreakingUp.svg | 25.3 | 1 |
-| ESMIll/ESMTopicCompDecompEqualPieces.svg | 6.2 | 1 |
+| ESMIll/ESMTopicCompDecompEqualPieces.svg | 6.2 | 2 |
 | ESMIll/ESMTopicCompareTo10047.44.svg | 11.7 | 1 |
 | ESMIll/ESMTopicCompareTo20.12.17.svg | 14 | 1 |
 | ESMIll/ESMTopicComparingLinesofDots3.5.svg | 3.3 | 1 |
 | ESMIll/ESMTopicComparingLinesofDotsDiffSizes.svg | 2.4 | 2 |
 | ESMIll/ESMTopicCounting.svg | 4.9 | 1 |
 | ESMIll/ESMTopicDoubles.svg | 6.6 | 1 |
+| ESMIll/ESMTopicEqualParts.svg | 8.8 | 1 |
 | ESMIll/ESMTopicEvensOdds.svg | 8.8 | 4 |
 | ESMIll/ESMTopicFlatShapes.svg | 12.5 | 2 |
 | ESMIll/ESMTopicMult3BagsOf4.svg | 7.6 | 1 |
