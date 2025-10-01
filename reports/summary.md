@@ -5,7 +5,7 @@
 | --- | --- |
 | accordion | 71 |
 | accordion_section | 128 |
-| button | 172 |
+| button | 173 |
 | debug_toggle | 1 |
 | display_group | 436 |
 | image | 65 |
@@ -18,7 +18,7 @@
 | set_variable | 763 |
 | simple_checkbox | 4 |
 | template | 92 |
-| text | 350 |
+| text | 345 |
 | text_area | 2 |
 | tile_component | 3 |
 | title | 52 |
@@ -38,10 +38,10 @@
 | emit: set_language | 1 |
 | emit: uncompleted | 58 |
 | feedback | 11 |
-| go_to | 137 |
+| go_to | 138 |
 | go_to_url | 3 |
 | reset_app | 1 |
-| set_field | 153 |
+| set_field | 154 |
 | set_local | 6 |
 | start_tour | 19 |
 </details>
@@ -51,7 +51,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 44400 KB | 44.4 MB |
+| total | 44408 KB | 44.4 MB |
 | unused | 21683 KB | 21.7 MB |
 </details>
 
@@ -1397,8 +1397,8 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMGlossTriangularNumbers.svg | 8 | 1 |
 | ESMIll/ESMGlossUnitize.svg | 12.3 | 1 |
 | ESMIll/ESMLPArrows1.svg | 12.6 | 8 |
-| ESMIll/ESMLPArrows2.svg | 13 | 13 |
-| ESMIll/ESMLPArrows3.svg | 13.3 | 6 |
+| ESMIll/ESMLPArrows2.svg | 13 | 12 |
+| ESMIll/ESMLPArrows3.svg | 13.3 | 7 |
 | ESMIll/ESMOEColoringShapesExample1.svg | 7.4 | 1 |
 | ESMIll/ESMOEColoringShapesExample2.svg | 7.3 | 1 |
 | ESMIll/ESMOEColoringShapesIntro.svg | 10.4 | 1 |
@@ -1672,9 +1672,10 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMTopicComparingLinesofDots3.5.svg | 3.3 | 1 |
 | ESMIll/ESMTopicComparingLinesofDotsDiffSizes.svg | 2.4 | 2 |
 | ESMIll/ESMTopicCounting.svg | 4.9 | 1 |
+| ESMIll/ESMTopicDistributiveProperty.svg | 7.5 | 1 |
 | ESMIll/ESMTopicDoubles.svg | 6.6 | 1 |
 | ESMIll/ESMTopicEqualParts.svg | 8.8 | 1 |
-| ESMIll/ESMTopicEvensOdds.svg | 8.8 | 4 |
+| ESMIll/ESMTopicEvensOdds.svg | 8.8 | 5 |
 | ESMIll/ESMTopicFlatShapes.svg | 12.5 | 2 |
 | ESMIll/ESMTopicMult3BagsOf4.svg | 7.6 | 1 |
 | ESMIll/ESMTopicNearDoubles3+3+1.svg | 6.7 | 1 |
