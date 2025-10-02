@@ -1468,7 +1468,7 @@
                                     {
                                       "type": "text",
                                       "name": "info_aw10_1",
-                                      "value": "**Prerequisite: Quantities and Counting Pathway** Complete this earlier pathway at least through basic counting up and down, and perhaps Counting On.\n\n**Adding Order – Addition Commutes** Children do not need to learn the words \"commutes\" and \"commutativity.\" However, they should learn that the order addition is done in does not change the result. It is useful in many ways, one of which is saving time in calculations: 2 + 9 is easier to do as 2 more than 9 than as 9 more than 2. It is so natural to children that it almost does not need to be taught.\n\n**Add 1 and 2** Exploit the connection with counting up and Counting On to establish these facts. Adding 1 is going to the next number on a number path (\"1 more\"), and adding 2 is going two numbers along the number path (\"2 more\").\n\n**Doubles** Children enjoy learning and practicing doubles. Start with small doubles whose sum is less than or equal to 10. The small doubles are naturally worked with in a vertical ten frame. You can also discuss even and odd numbers at this point.\n\n**Near Doubles** Think of 4 + 5 as 4 + 4 plus one more. This is the start of making new problems understandable in terms of older problems. Using Near Doubles is an optional method that may not work well with all students.\n\n**Combinations of 10** Combinations that add up to 10 are extremely useful for addition and subtraction. Ten frames make these easy to see.\n\n**Misc. Sums to 10** There are a surprisingly small number of addition facts not covered by earlier strategies. List them out and be surprised! This points out the importance of your students mastering those techniques and ideas.\n\nIf you leave out facts covered by \"Add 1 and 2,\" \"Doubles,\" \"Combinations of 10,\" and \"Adding Order\" you are left with the following very short list. These remaining facts can either be learned separately, or as near doubles and \"3 more.\"\n* 3 + 4\n* 3 + 5\n* 3 + 6\n* 4 + 5\n\n**All Facts Within 10** At this point all the adding facts within 10 have been mastered.\n\n**What Comes Next:** The pathways of Addition within 20 and Subtraction Within 10 follow directly from this pathway. You can do those two pathways in either order or even at the same time.",
+                                      "value": "**Prerequisite: Quantities and Counting Pathway** Complete this earlier pathway at least through basic counting up and down, and perhaps Counting On.\n\n**Adding Order – Addition Commutes** Children do not need to learn the words \"commutes\" and \"commutativity.\" However, they should learn that the order addition is done in does not change the result. It is useful in many ways, one of which is saving time in calculations: 2 + 9 is easier to do as 2 more than 9 than as 9 more than 2. It is so natural to children that it almost does not need to be taught.\n\n**Counting On** This was introduced and covered in the Quantities and Counting pathway, but it is important to realize this is the main tool your students have, beyond simply counting everything together, for adding as they enter this pathway. It leads very naturally to the Adding 1 and 2 step.\n\n**Add 1 and 2** Exploit the connection with counting up and Counting On to establish these facts. Adding 1 is going to the next number on a number path (\"1 more\"), and adding 2 is going two numbers along the number path (\"2 more\").\n\n**Doubles** Children enjoy learning and practicing doubles. Start with small doubles whose sum is less than or equal to 10. The small doubles are naturally worked with in a vertical ten frame. You can also discuss even and odd numbers at this point.\n\n**Near Doubles** Think of 4 + 5 as 4 + 4 plus one more. This is the start of making new problems understandable in terms of older problems. Using Near Doubles is an optional method that may not work well with all students.\n\n**Combinations of 10** Combinations that add up to 10 are extremely useful for addition and subtraction. Ten frames make these easy to see.\n\n**Misc. Sums to 10** There are a surprisingly small number of addition facts not covered by earlier strategies. List them out and be surprised! This points out the importance of your students mastering those techniques and ideas.\n\nIf you leave out facts covered by \"Add 1 and 2,\" \"Doubles,\" \"Combinations of 10,\" and \"Adding Order\" you are left with the following very short list. These remaining facts can either be learned separately, or as near doubles and \"3 more.\"\n* 3 + 4\n* 3 + 5\n* 3 + 6\n* 4 + 5\n\n**All Facts Within 10** At this point all the adding facts within 10 have been mastered.\n\n**What Comes Next:** The pathways of Addition within 20 and Subtraction Within 10 follow directly from this pathway. You can do those two pathways in either order or even at the same time.",
                                       "_translations": {
                                         "value": {}
                                       },
@@ -1523,16 +1523,16 @@
                     },
                     {
                       "type": "image",
-                      "name": "arrows1",
-                      "value": "ESMIll/ESMLPArrows1.svg",
+                      "name": "arrows2",
+                      "value": "ESMIll/ESMLPArrows2.svg",
                       "_translations": {
                         "value": {}
                       },
                       "style_list": [
-                        "max-width: 30px",
+                        "max-width: 70px",
                         "margin-top: -15px"
                       ],
-                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway.arrows1"
+                      "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway.arrows2"
                     },
                     {
                       "type": "display_group",
@@ -1580,7 +1580,54 @@
                           "parameter_list": {
                             "variant": "card"
                           },
+                          "style_list": [
+                            "flex: 4"
+                          ],
                           "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway.dg_aw10_group1.button_aw10_group1_1"
+                        },
+                        {
+                          "type": "text",
+                          "name": "blank",
+                          "style_list": [
+                            "flex: 1"
+                          ],
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway.dg_aw10_group1.blank"
+                        },
+                        {
+                          "type": "button",
+                          "name": "button_qc_group3_2",
+                          "value": "Counting On",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "action_list": [
+                            {
+                              "trigger": "click",
+                              "action_id": "set_field",
+                              "args": [
+                                "current_topic",
+                                "data.esm_topics.NO_AS10_QAS"
+                              ],
+                              "_raw": "click | set_field:current_topic: data.esm_topics.NO_AS10_QAS",
+                              "_cleaned": "click | set_field:current_topic: data.esm_topics.NO_AS10_QAS"
+                            },
+                            {
+                              "trigger": "click",
+                              "action_id": "go_to",
+                              "args": [
+                                "esm_topic_template"
+                              ],
+                              "_raw": "click | go_to: esm_topic_template",
+                              "_cleaned": "click | go_to: esm_topic_template"
+                            }
+                          ],
+                          "parameter_list": {
+                            "variant": "card"
+                          },
+                          "style_list": [
+                            "flex:4"
+                          ],
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway.dg_aw10_group1.button_qc_group3_2"
                         },
                         {
                           "type": "text",
@@ -1725,7 +1772,7 @@
                             "variant": "card"
                           },
                           "style_list": [
-                            "flex: 10"
+                            "flex: 4"
                           ],
                           "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway.dg_aw10_group3.button_aw10_group3_1"
                         },
@@ -1769,7 +1816,7 @@
                             "variant": "card"
                           },
                           "style_list": [
-                            "flex:10"
+                            "flex:4"
                           ],
                           "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway.dg_aw10_group3.button_aw10_group3_2"
                         },
@@ -1844,9 +1891,17 @@
                             "variant": "card"
                           },
                           "style_list": [
-                            "flex: 10"
+                            "flex: 4"
                           ],
                           "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway.dg_aw10_group4.button_aw10_group4_1"
+                        },
+                        {
+                          "style_list": [
+                            "flex: 1"
+                          ],
+                          "type": "set_variable",
+                          "name": "set_variable_3",
+                          "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway.dg_aw10_group4.set_variable_3"
                         },
                         {
                           "type": "button",
@@ -1880,7 +1935,7 @@
                             "variant": "card"
                           },
                           "style_list": [
-                            "flex:20"
+                            "flex:4"
                           ],
                           "_nested_name": "dg_top_of_page.accordion_pathways.accord_aw10.dg_accord_aw10_pathway.dg_aw10_group4.button_aw10_group4_2"
                         },
