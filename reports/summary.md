@@ -5,7 +5,7 @@
 | --- | --- |
 | accordion | 71 |
 | accordion_section | 128 |
-| button | 173 |
+| button | 174 |
 | debug_toggle | 1 |
 | display_group | 436 |
 | image | 65 |
@@ -18,7 +18,7 @@
 | set_variable | 763 |
 | simple_checkbox | 4 |
 | template | 92 |
-| text | 345 |
+| text | 346 |
 | text_area | 2 |
 | tile_component | 3 |
 | title | 52 |
@@ -38,10 +38,10 @@
 | emit: set_language | 1 |
 | emit: uncompleted | 58 |
 | feedback | 11 |
-| go_to | 138 |
+| go_to | 139 |
 | go_to_url | 3 |
 | reset_app | 1 |
-| set_field | 154 |
+| set_field | 155 |
 | set_local | 6 |
 | start_tour | 19 |
 </details>
@@ -1396,8 +1396,8 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMGlossTenFrame.svg | 7.5 | 1 |
 | ESMIll/ESMGlossTriangularNumbers.svg | 8 | 1 |
 | ESMIll/ESMGlossUnitize.svg | 12.3 | 1 |
-| ESMIll/ESMLPArrows1.svg | 12.6 | 8 |
-| ESMIll/ESMLPArrows2.svg | 13 | 12 |
+| ESMIll/ESMLPArrows1.svg | 12.6 | 7 |
+| ESMIll/ESMLPArrows2.svg | 13 | 13 |
 | ESMIll/ESMLPArrows3.svg | 13.3 | 7 |
 | ESMIll/ESMOEColoringShapesExample1.svg | 7.4 | 1 |
 | ESMIll/ESMOEColoringShapesExample2.svg | 7.3 | 1 |
