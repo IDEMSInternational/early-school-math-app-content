@@ -1562,10 +1562,10 @@
                               "action_id": "set_field",
                               "args": [
                                 "current_topic",
-                                "data.esm_topics.NO_AS10_AS1and2"
+                                "data.esm_topics.NO_AS10_AComm"
                               ],
-                              "_raw": "click | set_field:current_topic: data.esm_topics.NO_AS10_AS1and2",
-                              "_cleaned": "click | set_field:current_topic: data.esm_topics.NO_AS10_AS1and2"
+                              "_raw": "click | set_field:current_topic: data.esm_topics.NO_AS10_AComm",
+                              "_cleaned": "click | set_field:current_topic: data.esm_topics.NO_AS10_AComm"
                             },
                             {
                               "trigger": "click",
@@ -3478,7 +3478,7 @@
                         {
                           "type": "button",
                           "name": "button_sm_group3_1",
-                          "value": "Double",
+                          "value": "Using Doubles",
                           "_translations": {
                             "value": {}
                           },
@@ -3514,7 +3514,7 @@
                         {
                           "type": "button",
                           "name": "button_sm_group3_2",
-                          "value": "1 group\nmore\nor less",
+                          "value": "One group more or less",
                           "_translations": {
                             "value": {}
                           },
@@ -3543,7 +3543,7 @@
                             "variant": "card"
                           },
                           "style_list": [
-                            "flex: 2"
+                            "flex: 3"
                           ],
                           "_nested_name": "dg_top_of_page.accordion_pathways.accord_sm_mult.dg_accord_sm_pathway.dg_sm_group3.button_sm_group3_2"
                         },
