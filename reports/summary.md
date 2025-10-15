@@ -15,7 +15,7 @@
 | round_button | 10 |
 | select_text | 1 |
 | set_field | 44 |
-| set_variable | 763 |
+| set_variable | 764 |
 | simple_checkbox | 4 |
 | template | 92 |
 | text | 346 |
@@ -51,7 +51,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 44408 KB | 44.4 MB |
+| total | 44421 KB | 44.4 MB |
 | unused | 21683 KB | 21.7 MB |
 </details>
 
@@ -1692,8 +1692,9 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMTopicRectangleSquare.svg | 5.4 | 1 |
 | ESMIll/ESMTopicSub1-5.svg | 7.1 | 1 |
 | ESMIll/ESMTopicSub35.svg | 3.7 | 2 |
+| ESMIll/ESMTopicSub456Plus1-2.svg | 12.9 | 1 |
 | ESMIll/ESMTopicSubFiveFrame.svg | 4 | 1 |
-| ESMIll/ESMTopicSubPlus1-2.svg | 5.3 | 2 |
+| ESMIll/ESMTopicSubPlus1-2.svg | 5.3 | 1 |
 | ESMIll/ESMTopicSubTenFrame.svg | 8.3 | 1 |
 | ESMIll/ESMTopicTenFrameIntro.svg | 8.5 | 1 |
 | ESMIll/ESMTopicWritingNumeralsBackwards.svg | 5.2 | 1 |
