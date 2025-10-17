@@ -51,7 +51,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 44421 KB | 44.4 MB |
+| total | 44467 KB | 44.5 MB |
 | unused | 21683 KB | 21.7 MB |
 </details>
 
@@ -1673,6 +1673,8 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMTopicComparingLinesofDotsDiffSizes.svg | 2.4 | 2 |
 | ESMIll/ESMTopicCounting.svg | 4.9 | 1 |
 | ESMIll/ESMTopicDistributiveProperty.svg | 7.5 | 1 |
+| ESMIll/ESMTopicDivisionEqualParts.svg | 28.2 | 1 |
+| ESMIll/ESMTopicDivisionNotation.svg | 18.2 | 1 |
 | ESMIll/ESMTopicDoubles.svg | 6.6 | 1 |
 | ESMIll/ESMTopicEqualParts.svg | 8.8 | 1 |
 | ESMIll/ESMTopicEvensOdds.svg | 8.8 | 5 |
