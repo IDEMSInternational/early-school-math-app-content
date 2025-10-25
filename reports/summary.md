@@ -3,11 +3,11 @@
 
 | type | count |
 | --- | --- |
-| accordion | 71 |
-| accordion_section | 128 |
+| accordion | 72 |
+| accordion_section | 131 |
 | button | 174 |
 | debug_toggle | 1 |
-| display_group | 436 |
+| display_group | 433 |
 | image | 65 |
 | items | 68 |
 | qr_code | 1 |
@@ -15,14 +15,14 @@
 | round_button | 10 |
 | select_text | 1 |
 | set_field | 44 |
-| set_variable | 764 |
+| set_variable | 747 |
 | simple_checkbox | 4 |
 | template | 92 |
-| text | 346 |
+| text | 341 |
 | text_area | 2 |
 | tile_component | 3 |
 | title | 52 |
-| toggle_bar | 16 |
+| toggle_bar | 13 |
 </details>
 
 <details >
@@ -41,7 +41,7 @@
 | go_to | 139 |
 | go_to_url | 3 |
 | reset_app | 1 |
-| set_field | 155 |
+| set_field | 152 |
 | set_local | 6 |
 | start_tour | 19 |
 </details>
@@ -51,8 +51,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 44467 KB | 44.5 MB |
-| unused | 21683 KB | 21.7 MB |
+| total | 44458 KB | 44.5 MB |
+| unused | 21848 KB | 21.8 MB |
 </details>
 
 <details open>
@@ -306,6 +306,7 @@ Assets that appear in app-data but do not have references within sheets
 | ESMIll/ESMPOWACoinFlipStart2.svg | 11626.6 |
 | ESMIll/ESMPOWCAvoidingRectanglesAnswer4.svg | 7.5 |
 | ESMIll/ESMTopicComparingLinesofDots.svg | 3.3 |
+| ESMLogo OLD.png | 165.2 |
 | android/icon-background.png | 7 |
 | android/icon-foreground.png | 53.9 |
 | android/icon.png | 75.2 |
@@ -1701,7 +1702,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMTopicTenFrameIntro.svg | 8.5 | 1 |
 | ESMIll/ESMTopicWritingNumeralsBackwards.svg | 5.2 | 1 |
 | ESMIll/ESMTreasureMap2.svg | 13.7 | 1 |
-| ESMLogo.png | 165.2 | 1 |
+| ESMLogo.png | 155.8 | 1 |
 </details>
 
 <details >
