@@ -51,8 +51,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 44458 KB | 44.5 MB |
-| unused | 21848 KB | 21.8 MB |
+| total | 44721 KB | 44.7 MB |
+| unused | 21858 KB | 21.9 MB |
 </details>
 
 <details open>
@@ -304,6 +304,8 @@ Assets that appear in app-data but do not have references within sheets
 | ESMIll/ESMGridPlus.svg | 38.8 |
 | ESMIll/ESMGridTimes.svg | 38.8 |
 | ESMIll/ESMPOWACoinFlipStart2.svg | 11626.6 |
+| ESMIll/ESMPOWBSujikoBlank2by3.svg | 4 |
+| ESMIll/ESMPOWBSujikoBlank3by3.svg | 5.9 |
 | ESMIll/ESMPOWCAvoidingRectanglesAnswer4.svg | 7.5 |
 | ESMIll/ESMTopicComparingLinesofDots.svg | 3.3 |
 | ESMLogo OLD.png | 165.2 |
@@ -1451,7 +1453,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMPOWALines3by3Answer.svg | 5.1 | 1 |
 | ESMIll/ESMPOWALines3by3Blank.svg | 3.3 | 1 |
 | ESMIll/ESMPOWALines3by3Example.svg | 4.5 | 1 |
-| ESMIll/ESMPOWAPanBalanceWithCoins.svg | 4378.5 | 2 |
+| ESMIll/ESMPOWAPanBalanceWithCoins.svg | 4378.5 | 4 |
 | ESMIll/ESMPOWAPatternBlocksHexagons1.svg | 448.8 | 1 |
 | ESMIll/ESMPOWAPatternBlocksHexagonsIntro.svg | 69.9 | 1 |
 | ESMIll/ESMPOWAPatternBlocksTrianglesAnswer.svg | 27.3 | 1 |
@@ -1487,11 +1489,18 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMPOWATreasureMap1Challenge.svg | 13.5 | 1 |
 | ESMIll/ESMPOWATreasureMap2Challenge.svg | 14 | 1 |
 | ESMIll/ESMPOWATreasureMapIntro.svg | 64.2 | 2 |
+| ESMIll/ESMPOWBAvoidingRectangles1Answer.svg | 5.4 | 1 |
+| ESMIll/ESMPOWBAvoidingRectangles1Empty.svg | 2.8 | 1 |
+| ESMIll/ESMPOWBAvoidingRectanglesIntro.svg | 11.8 | 1 |
+| ESMIll/ESMPOWBAvoidingTrianglesAnswer.svg | 14.8 | 1 |
+| ESMIll/ESMPOWBAvoidingTrianglesChallenge.svg | 5.1 | 1 |
+| ESMIll/ESMPOWBAvoidingTrianglesIntro.svg | 6 | 1 |
 | ESMIll/ESMPOWBDiffPyramid10Challenge.svg | 6.7 | 1 |
 | ESMIll/ESMPOWBDiffPyramid62Solutions.svg | 21.5 | 1 |
 | ESMIll/ESMPOWBDiffPyramid6Challenge.svg | 4.1 | 1 |
 | ESMIll/ESMPOWBDiffPyramid6Intro.svg | 6.8 | 3 |
 | ESMIll/ESMPOWBDiffPyramid6Solutions.svg | 41.4 | 1 |
+| ESMIll/ESMPOWBEggDrop.svg | 14.3 | 2 |
 | ESMIll/ESMPOWBEqualNumberSums3.svg | 2.5 | 1 |
 | ESMIll/ESMPOWBEqualNumberSums3Answers.svg | 22.3 | 1 |
 | ESMIll/ESMPOWBEqualNumberSums4.svg | 2.7 | 1 |
@@ -1517,6 +1526,26 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMPOWBFindingthePieces5Answers.svg | 6.6 | 1 |
 | ESMIll/ESMPOWBFindingthePieces5Challenge.svg | 2.2 | 1 |
 | ESMIll/ESMPOWBFindingthePieces5Intro.svg | 4.5 | 1 |
+| ESMIll/ESMPOWBLadybugs2Challenge.svg | 4.7 | 1 |
+| ESMIll/ESMPOWBLadybugsIntro.svg | 7 | 1 |
+| ESMIll/ESMPOWBMagicFlowers1.svg | 6.5 | 1 |
+| ESMIll/ESMPOWBMagicFlowers2.svg | 7.4 | 1 |
+| ESMIll/ESMPOWBMagicFlowersIntro.svg | 16.6 | 2 |
+| ESMIll/ESMPOWBMagicPlusesChallenge.svg | 4.8 | 1 |
+| ESMIll/ESMPOWBMagicPlusesIntro.svg | 4.8 | 1 |
+| ESMIll/ESMPOWBMagicSquares1.svg | 11.9 | 1 |
+| ESMIll/ESMPOWBMagicSquares1Answer.svg | 13.7 | 1 |
+| ESMIll/ESMPOWBMagicSquares2.svg | 11.5 | 1 |
+| ESMIll/ESMPOWBMagicSquares2Answer.svg | 13.7 | 1 |
+| ESMIll/ESMPOWBMagicSquaresExamples1.svg | 31.6 | 2 |
+| ESMIll/ESMPOWBSquareSums1.svg | 5 | 1 |
+| ESMIll/ESMPOWBSquareSumsFilled.svg | 11.8 | 1 |
+| ESMIll/ESMPOWBSujikoBlank2by3Example.svg | 8.5 | 1 |
+| ESMIll/ESMPOWBSujikoBlank2by3Filled.svg | 7.5 | 1 |
+| ESMIll/ESMPOWBSujikoBlank2by3Partial.svg | 5 | 1 |
+| ESMIll/ESMPOWBSujikoFilled1.svg | 13.5 | 2 |
+| ESMIll/ESMPOWBSujikoPartial1.svg | 9 | 1 |
+| ESMIll/ESMPOWBSujikoPartial2.svg | 8.6 | 1 |
 | ESMIll/ESMPOWBSumPyramid1Challenge.svg | 3.6 | 1 |
 | ESMIll/ESMPOWBSumPyramid2Challenge.svg | 4.9 | 1 |
 | ESMIll/ESMPOWBSumPyramid3Challenge.svg | 5.3 | 1 |

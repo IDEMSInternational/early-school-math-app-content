@@ -228,13 +228,13 @@
       "topic_id_1": "Meas_Dist_CL",
       "topic_id_2": "Meas_Dist_MLNS",
       "topic_id_3": "Meas_Dist_MLS",
-      "name": "Distance",
+      "name": "Length",
       "_translations": {
         "name": {}
       },
       "_translatedFields": {
         "name": {
-          "eng": "Distance"
+          "eng": "Length"
         }
       }
     },
@@ -244,13 +244,13 @@
       "topic_id_1": "Meas_Wt_CW",
       "topic_id_2": "Meas_Wt_MWNS",
       "topic_id_3": "Meas_Wt_MWS",
-      "name": "Weight",
+      "name": "Mass (Weight)",
       "_translations": {
         "name": {}
       },
       "_translatedFields": {
         "name": {
-          "eng": "Weight"
+          "eng": "Mass (Weight)"
         }
       }
     },
@@ -260,13 +260,27 @@
       "topic_id_1": "Meas_Vol_CV",
       "topic_id_2": "Meas_Vol_CVNS",
       "topic_id_3": "Meas_Vol_CVS",
-      "name": "Volume",
+      "name": "Volume / Capacity",
       "_translations": {
         "name": {}
       },
       "_translatedFields": {
         "name": {
-          "eng": "Volume"
+          "eng": "Volume / Capacity"
+        }
+      }
+    },
+    {
+      "id": "Meas_Area_",
+      "strand_id": "Meas",
+      "topic_id_1": "Meas_Area_CA",
+      "name": "Area",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Area"
         }
       }
     },
