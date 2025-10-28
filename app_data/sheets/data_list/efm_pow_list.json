@@ -619,14 +619,270 @@
       "block5_text": "**More Examples:** As in the original puzzles, the place to start is with the largest numbers – 10's, 9's, and 8's, and with the corners and edges."
     },
     {
+      "id": "esm_pow_b_ladybugs_1",
+      "level": "A",
+      "eye_opener": true,
+      "puzzler": false,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWBLadybugsIntro.svg",
+      "block1_illust_max_size": "240px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWBLadybugs2Challenge.svg",
+      "block2_illust_max_size": "240px",
+      "block3_type": "all_text",
+      "block4_type": "all_text",
+      "name": "Ladybugs That Don't Add Up – 1",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Ladybugs That Don't Add Up – 1"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** Numbered ladybugs are landing on two leaves. The rule is: the number of dots of two ladybugs on a leaf cannot add up to the number of dots on another ladybug on that leaf. The leaf on the left is fine, but the leaf on the right has 2 + 4 = 6."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Starting at 1 and counting up, how high can you go putting the numbered ladybugs on two leaves while following the rule for both leaves?"
+        },
+        "block3_text": {
+          "eng": "**Exploration:** How do things change if you use only even numbers? How do things change if you use only odd numbers? What are other groups of interesting numbers to look at?"
+        },
+        "block4_text": {
+          "eng": "**The Challenge:** This puzzle is all about experimenting, exploring, and keeping organized.\n\nOne general observation is that it is always safe to put all the numbers together between a number and twice that number. For example, one answer to this puzzle is (1 2) - (3 4 5 6). Powers of 2 are also safe to put together, for example (1 2 4 8) - (3 5 6 7) is an improvement.\n\nTo do this thoroughly and exhaustively requires being organized. There are five possibilities for how to place the numbers 1 to 4.\n\n* (1 2 4) - (3): 5 and 6 have to go in the second group and then 8 in the first group. (1 2 4 8) - (3 5 6). 7 has to go in the second group, and then we are stuck.(1 2 4 8) - (3 5 6 7).\n* (1 2) - (3 4): 7 must go in the first group (1 2 7) - (3 4). After that we must put 5 and 6 in the second group. (1 2 7) - (3 4 5 6). We are stuck.\n* (1 3) - (2 4): 6 must go in the first group, and then 5 in the second. (1 3 6) - (2 4 5). We are stuck.\n* (1 4) - (2 3): We are stuck - there is nowhere for 5.\n* (1) - (2 3 4): 5 must go in the first group, and then we are stuck. (1 5) - (2 3 4).\n\nThe winner is (1 2 4 8) - (3 5 6 7)!\n\n**Exploration:** Conveniently, working with even numbers on this problem is exactly the same as working with the original numbers, only everything is doubled. So, the best answer is: (2 4 8 16) - (6 10 12 14).\n\nStrangely enough, working with odd numbers is even easier! We can put all the odd numbers on one leaf and have no problem! The sum of two odd numbers is always an even number.\n\nPrime numbers are tempting, but they are almost as easy as the odd numbers.\n\nFibonacci numbers are interesting, but your students may not know about those. Look at 1, 2, 3, 5, 8, 13, 21, 34, and so on. Any two neighboring numbers add up to the next. However, they grow quickly enough that there are no further problems. So, you can alternate leaves and not have a problem: (1 3 8 21 …) - (2 5 13 34 …)."
+        }
+      },
+      "block1_text": "**Introduction:** Numbered ladybugs are landing on two leaves. The rule is: the number of dots of two ladybugs on a leaf cannot add up to the number of dots on another ladybug on that leaf. The leaf on the left is fine, but the leaf on the right has 2 + 4 = 6.",
+      "block2_text": "**The Challenge:** Starting at 1 and counting up, how high can you go putting the numbered ladybugs on two leaves while following the rule for both leaves?",
+      "block3_text": "**Exploration:** How do things change if you use only even numbers? How do things change if you use only odd numbers? What are other groups of interesting numbers to look at?",
+      "block4_text": "**The Challenge:** This puzzle is all about experimenting, exploring, and keeping organized.\n\nOne general observation is that it is always safe to put all the numbers together between a number and twice that number. For example, one answer to this puzzle is (1 2) - (3 4 5 6). Powers of 2 are also safe to put together, for example (1 2 4 8) - (3 5 6 7) is an improvement.\n\nTo do this thoroughly and exhaustively requires being organized. There are five possibilities for how to place the numbers 1 to 4.\n\n* (1 2 4) - (3): 5 and 6 have to go in the second group and then 8 in the first group. (1 2 4 8) - (3 5 6). 7 has to go in the second group, and then we are stuck.(1 2 4 8) - (3 5 6 7).\n* (1 2) - (3 4): 7 must go in the first group (1 2 7) - (3 4). After that we must put 5 and 6 in the second group. (1 2 7) - (3 4 5 6). We are stuck.\n* (1 3) - (2 4): 6 must go in the first group, and then 5 in the second. (1 3 6) - (2 4 5). We are stuck.\n* (1 4) - (2 3): We are stuck - there is nowhere for 5.\n* (1) - (2 3 4): 5 must go in the first group, and then we are stuck. (1 5) - (2 3 4).\n\nThe winner is (1 2 4 8) - (3 5 6 7)!\n\n**Exploration:** Conveniently, working with even numbers on this problem is exactly the same as working with the original numbers, only everything is doubled. So, the best answer is: (2 4 8 16) - (6 10 12 14).\n\nStrangely enough, working with odd numbers is even easier! We can put all the odd numbers on one leaf and have no problem! The sum of two odd numbers is always an even number.\n\nPrime numbers are tempting, but they are almost as easy as the odd numbers.\n\nFibonacci numbers are interesting, but your students may not know about those. Look at 1, 2, 3, 5, 8, 13, 21, 34, and so on. Any two neighboring numbers add up to the next. However, they grow quickly enough that there are no further problems. So, you can alternate leaves and not have a problem: (1 3 8 21 …) - (2 5 13 34 …)."
+    },
+    {
+      "id": "esm_pow_b_magic_flowers_1",
+      "level": "A",
+      "eye_opener": true,
+      "puzzler": false,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWBMagicFlowersIntro.svg",
+      "block1_illust_max_size": "350px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWBMagicFlowers1.svg",
+      "block2_illust_max_size": "180px",
+      "block3_type": "all_text",
+      "block4_type": "all_text",
+      "name": "Magic Flowers – 1",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Magic Flowers – 1"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** The sums in a Magic Flower are the same for all straight lines. These Magic Flowers use numbers from 1 to 5."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:**  Use the numbers from 1 to 7 to make Magic Flowers."
+        },
+        "block3_text": {
+          "eng": "**Exploration:** Play around with what happens with Magic Flowers with more than three lines."
+        },
+        "block4_text": {
+          "eng": "**The Challenge:** Use this puzzle after the Magic Pluses puzzle.\n\nThis, like many of these Puzzles of the Week, can be attacked by playing around with the numbers until a solution is found. Don’t be tempted to think that a more structured approach is better for your students – a great deal will be learned about the mathematics involved and about problem solving by tenaciously working through many examples. Finding a solution, by any method, is always a wonderful reward.\n\nMost of these “equal sum” puzzles can be attacked by adding up some of the straight lines. In the case of this puzzle, add up the three directions - this will include all the numbers once, plus the central circle’s number two extra times. The sum of 1 to 7 is 28. So, the sum of the three lines is 28 + 2x1, 28 + 2x2, 28 + 2x3, 28 + 2x4, 28 + 2x5, 28 + 2x6, or 28 + 2x7. Of those, only 30 = 28 + 2x1, 36 = 28 + 2x4, and 42 = 28 + 2x7 are divisible by 3. Dividing them by 3 tells us that the common sums are either 10 = 30 / 3, 12 = 30 / 3, or 14 = 30 / 3.\n\nLet’s look at those three cases.\n\n**Common Sum of 10:** The central circle will be 1. Making a sum of 10 with a 1 in the center means the other two numbers add up to 9. So, the three directions are: (2 1 7) - (3 1 6) - (4 1 5).\n\n**Common Sum of 12:** The central circle will be 4. Making a sum of 12 with a 4 in the center means the other two numbers add up to 8. So, the three directions are: (1 4 7) - (2 4 6) - (3 4 5).\n\n**Common Sum of 14:** The central circle will be 7. Making a sum of 14 with a 7 in the center means the other two numbers add up to 7. So, the three directions are (1 7 6) - (2 7 5) - (3 7 4).\n\n**Exploration:** Look at the Notes page for Magic Flowers - 2."
+        }
+      },
+      "block1_text": "**Introduction:** The sums in a Magic Flower are the same for all straight lines. These Magic Flowers use numbers from 1 to 5.",
+      "block2_text": "**The Challenge:**  Use the numbers from 1 to 7 to make Magic Flowers.",
+      "block3_text": "**Exploration:** Play around with what happens with Magic Flowers with more than three lines.",
+      "block4_text": "**The Challenge:** Use this puzzle after the Magic Pluses puzzle.\n\nThis, like many of these Puzzles of the Week, can be attacked by playing around with the numbers until a solution is found. Don’t be tempted to think that a more structured approach is better for your students – a great deal will be learned about the mathematics involved and about problem solving by tenaciously working through many examples. Finding a solution, by any method, is always a wonderful reward.\n\nMost of these “equal sum” puzzles can be attacked by adding up some of the straight lines. In the case of this puzzle, add up the three directions - this will include all the numbers once, plus the central circle’s number two extra times. The sum of 1 to 7 is 28. So, the sum of the three lines is 28 + 2x1, 28 + 2x2, 28 + 2x3, 28 + 2x4, 28 + 2x5, 28 + 2x6, or 28 + 2x7. Of those, only 30 = 28 + 2x1, 36 = 28 + 2x4, and 42 = 28 + 2x7 are divisible by 3. Dividing them by 3 tells us that the common sums are either 10 = 30 / 3, 12 = 30 / 3, or 14 = 30 / 3.\n\nLet’s look at those three cases.\n\n**Common Sum of 10:** The central circle will be 1. Making a sum of 10 with a 1 in the center means the other two numbers add up to 9. So, the three directions are: (2 1 7) - (3 1 6) - (4 1 5).\n\n**Common Sum of 12:** The central circle will be 4. Making a sum of 12 with a 4 in the center means the other two numbers add up to 8. So, the three directions are: (1 4 7) - (2 4 6) - (3 4 5).\n\n**Common Sum of 14:** The central circle will be 7. Making a sum of 14 with a 7 in the center means the other two numbers add up to 7. So, the three directions are (1 7 6) - (2 7 5) - (3 7 4).\n\n**Exploration:** Look at the Notes page for Magic Flowers - 2."
+    },
+    {
+      "id": "esm_pow_b_magic_flowers_2",
+      "level": "A",
+      "eye_opener": true,
+      "puzzler": false,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWBMagicFlowersIntro.svg",
+      "block1_illust_max_size": "350px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWBMagicFlowers2.svg",
+      "block2_illust_max_size": "180px",
+      "block3_type": "all_text",
+      "block4_type": "all_text",
+      "name": "Magic Flowers – 2",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Magic Flowers – 2"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** The sums in a Magic Flower are the same for all straight lines. These Magic Flowers use numbers from 1 to 5."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:**  Use the numbers from 1 to 9 to make Magic Flowers."
+        },
+        "block3_text": {
+          "eng": "**Exploration:** Looking at the solutions for Magic Flowers 1 and 2, what do you expect the solutions to be for Magic Flowers with even more lines?"
+        },
+        "block4_text": {
+          "eng": "**The Challenge:** This, like many of these Puzzles of the Week, can be attacked by playing around with the numbers until a solution is found. Don’t be tempted to think that a more structured approach is better for your students – a great deal will be learned about the mathematics involved and about problem solving by tenaciously working through many examples. Finding a solution, by any method, is always a wonderful reward.\n\nMost of these “equal sum” puzzles can be attacked by adding up some of the straight lines. In the case of this puzzle, add up the four directions - this will include all the numbers once, plus the central circle’s number three extra times. The sum of 1 to 9 is 45. So, the possible sums of the three lines are 45 + 3x1 through 45 + 3x9. Of those, only 48 = 45 + 3x1, 60 = 45 + 3x5, and 72 = 45 + 3x9 are divisible by 4. Dividing them by 4 tells us that the common sums are either 12 = 48 / 4, 15 = 60 / 4, or 18 = 72 / 4.\n\nLet’s look at those three cases.\n\n**Common Sum of 12:** The central circle will be 1. Making a sum of 12 with a 1 in the center means the other two numbers add up to 11. So, the four directions are: (2 1 9) - (3 1 8) - (4 1 7) - (5 1 6).\n\n**Common Sum of 15:** The central circle will be 5. Making a sum of 15 with a 5 in the center means the other two numbers add up to 10. So, the four directions are: (1 5 9) - (2 5 8) - (3 5 7) - (4 5 6).\n\n**Common Sum of 18:** The central circle will be 9. Making a sum of 18 with a 9 in the center means the other two numbers add up to 9. So, the four directions are (1 9 8) - (2 9 7) - (3 9 6) - (4 9 5).\n\n**Exploration:** For numbers that go from 1 to 2n-1, the central circle has either 1, n, or 2n-1. The sums will be 2n+2 = 1 + 2 + 2n-1, 3n = 1 + n + 2n-1, and 4n-2 = 1 + 2n-2 + 2n-1."
+        }
+      },
+      "block1_text": "**Introduction:** The sums in a Magic Flower are the same for all straight lines. These Magic Flowers use numbers from 1 to 5.",
+      "block2_text": "**The Challenge:**  Use the numbers from 1 to 9 to make Magic Flowers.",
+      "block3_text": "**Exploration:** Looking at the solutions for Magic Flowers 1 and 2, what do you expect the solutions to be for Magic Flowers with even more lines?",
+      "block4_text": "**The Challenge:** This, like many of these Puzzles of the Week, can be attacked by playing around with the numbers until a solution is found. Don’t be tempted to think that a more structured approach is better for your students – a great deal will be learned about the mathematics involved and about problem solving by tenaciously working through many examples. Finding a solution, by any method, is always a wonderful reward.\n\nMost of these “equal sum” puzzles can be attacked by adding up some of the straight lines. In the case of this puzzle, add up the four directions - this will include all the numbers once, plus the central circle’s number three extra times. The sum of 1 to 9 is 45. So, the possible sums of the three lines are 45 + 3x1 through 45 + 3x9. Of those, only 48 = 45 + 3x1, 60 = 45 + 3x5, and 72 = 45 + 3x9 are divisible by 4. Dividing them by 4 tells us that the common sums are either 12 = 48 / 4, 15 = 60 / 4, or 18 = 72 / 4.\n\nLet’s look at those three cases.\n\n**Common Sum of 12:** The central circle will be 1. Making a sum of 12 with a 1 in the center means the other two numbers add up to 11. So, the four directions are: (2 1 9) - (3 1 8) - (4 1 7) - (5 1 6).\n\n**Common Sum of 15:** The central circle will be 5. Making a sum of 15 with a 5 in the center means the other two numbers add up to 10. So, the four directions are: (1 5 9) - (2 5 8) - (3 5 7) - (4 5 6).\n\n**Common Sum of 18:** The central circle will be 9. Making a sum of 18 with a 9 in the center means the other two numbers add up to 9. So, the four directions are (1 9 8) - (2 9 7) - (3 9 6) - (4 9 5).\n\n**Exploration:** For numbers that go from 1 to 2n-1, the central circle has either 1, n, or 2n-1. The sums will be 2n+2 = 1 + 2 + 2n-1, 3n = 1 + n + 2n-1, and 4n-2 = 1 + 2n-2 + 2n-1."
+    },
+    {
+      "id": "esm_pow_b_magic_pluses",
+      "level": "A",
+      "eye_opener": true,
+      "puzzler": false,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWBMagicPlusesIntro.svg",
+      "block1_illust_max_size": "140px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWBMagicPlusesChallenge.svg",
+      "block2_illust_max_size": "220px",
+      "block3_type": "all_text",
+      "block4_type": "all_text",
+      "name": "Magic Pluses",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Magic Pluses"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** A Magic Plus is a plus sign with all the sums the same. This one uses the numbers from 1 to 4."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:**  Make a Magic Plus with the numbers from 1 to 8."
+        },
+        "block3_text": {
+          "eng": "**Exploration:** What happens if you use 1 to 12 with three crossing lines of four circles? Play around with other configurations of circles."
+        },
+        "block4_text": {
+          "eng": "**The Challenge:** Use this as the first “equal sum” puzzle. The Magic Flowers puzzles are slightly harder than this one.\n\nThis, like many of these Puzzles of the Week, can be attacked by playing around with the numbers until a solution is found. Don’t be tempted to think that a more structured approach is better for your students – a great deal will be learned about the mathematics involved and about problem solving by tenaciously working through many examples. Finding a solution, by any method, is always a wonderful reward.\n\nTo approach this in a more structured way, start by calculating what the sums must be. The sum of the numbers from 1 to 8 is 36. Breaking this into two equal groups will mean each group has a sum of 18. At this point, there are lots of ways to do this and they all work. If you take any group of numbers that adds up to 18, the remaining numbers will as well.\n\nThe solutions are:\n* (1 2 7 8) - (3 4 5 6)\n* (1 3 6 8) - (2 4 5 7)\n* (1 4 5 8) - (2 3 6 7)\n* (1 4 6 7) - (2 3 5 8)\n\n**Exploration:** The analysis for using 1 to 12 is the same as before. The sum of 1 to 12 is 78. Breaking that into three equal parts gives a sum of 26 in each direction. There are a lot of solutions. Here are a few:\n* (1 2 11 12) - (3 4 9 10) - (5 6 7 8)\n* (1 2 11 12) - (3 5 8 10) - (4 6 7 9)\n* (1 3 10 12) - (2 5 8 11) - (4 6 7 9)"
+        }
+      },
+      "block1_text": "**Introduction:** A Magic Plus is a plus sign with all the sums the same. This one uses the numbers from 1 to 4.",
+      "block2_text": "**The Challenge:**  Make a Magic Plus with the numbers from 1 to 8.",
+      "block3_text": "**Exploration:** What happens if you use 1 to 12 with three crossing lines of four circles? Play around with other configurations of circles.",
+      "block4_text": "**The Challenge:** Use this as the first “equal sum” puzzle. The Magic Flowers puzzles are slightly harder than this one.\n\nThis, like many of these Puzzles of the Week, can be attacked by playing around with the numbers until a solution is found. Don’t be tempted to think that a more structured approach is better for your students – a great deal will be learned about the mathematics involved and about problem solving by tenaciously working through many examples. Finding a solution, by any method, is always a wonderful reward.\n\nTo approach this in a more structured way, start by calculating what the sums must be. The sum of the numbers from 1 to 8 is 36. Breaking this into two equal groups will mean each group has a sum of 18. At this point, there are lots of ways to do this and they all work. If you take any group of numbers that adds up to 18, the remaining numbers will as well.\n\nThe solutions are:\n* (1 2 7 8) - (3 4 5 6)\n* (1 3 6 8) - (2 4 5 7)\n* (1 4 5 8) - (2 3 6 7)\n* (1 4 6 7) - (2 3 5 8)\n\n**Exploration:** The analysis for using 1 to 12 is the same as before. The sum of 1 to 12 is 78. Breaking that into three equal parts gives a sum of 26 in each direction. There are a lot of solutions. Here are a few:\n* (1 2 11 12) - (3 4 9 10) - (5 6 7 8)\n* (1 2 11 12) - (3 5 8 10) - (4 6 7 9)\n* (1 3 10 12) - (2 5 8 11) - (4 6 7 9)"
+    },
+    {
+      "id": "esm_pow_b_magic_squares_1",
+      "level": "A",
+      "eye_opener": true,
+      "puzzler": false,
+      "notes_block_start": 3,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWBMagicSquaresExamples1.svg",
+      "block1_illust_max_size": "350px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWBMagicSquares1.svg",
+      "block2_illust_max_size": "160px",
+      "block3_type": "illust_below",
+      "block3_illust": "ESMIll/ESMPOWBMagicSquares1Answer.svg",
+      "block3_illust_max_size": "160px",
+      "name": "Magic Squares – 1",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Magic Squares – 1"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** In a **Magic Square,** all the rows, columns and diagonals add up to the same number. This first square is not a Magic Square. The second one is a Magic Square with a constant sum of 12."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Use each of the numbers 3, 5, 6, and 9 once to complete this Magic Square."
+        },
+        "block3_text": {
+          "eng": "**The Challenge:** This is meant to be an introductory warmup puzzle for Magic Squares, so it doesn’t require much careful analysis. This, like many of these Puzzles of the Week, can be attacked by playing around with the numbers until a solution is found. Don’t be tempted to think that a more structured approach is better for your students – a great deal will be learned about the mathematics involved and about problem solving by tenaciously working through many examples. Finding a solution, by any method, is always a wonderful reward.\n\nLooking at the upper right corner, we know that the common sum is equal to that corner plus 9 more (looking at its row and its column). Considering the diagonal the upper right corner is on, we know that the other two entries on that diagonal add up to 9. So the central square must be 5.\n\nIf the central square is 5, then we have a diagonal of (8 5 2), whose sum is 15. Now we’ve got the common sum.\n\nIn the bottom row, 15 = 4 + (middle square) + 2 tells us the middle square of the bottom row is 9. We can continue in this way now that we know the common sum.\n\nThe final solution (by rows) is: (8 1 6) (3 5 7) (4 9 2)."
+        }
+      },
+      "block1_text": "**Introduction:** In a **Magic Square,** all the rows, columns and diagonals add up to the same number. This first square is not a Magic Square. The second one is a Magic Square with a constant sum of 12.",
+      "block2_text": "**The Challenge:** Use each of the numbers 3, 5, 6, and 9 once to complete this Magic Square.",
+      "block3_text": "**The Challenge:** This is meant to be an introductory warmup puzzle for Magic Squares, so it doesn’t require much careful analysis. This, like many of these Puzzles of the Week, can be attacked by playing around with the numbers until a solution is found. Don’t be tempted to think that a more structured approach is better for your students – a great deal will be learned about the mathematics involved and about problem solving by tenaciously working through many examples. Finding a solution, by any method, is always a wonderful reward.\n\nLooking at the upper right corner, we know that the common sum is equal to that corner plus 9 more (looking at its row and its column). Considering the diagonal the upper right corner is on, we know that the other two entries on that diagonal add up to 9. So the central square must be 5.\n\nIf the central square is 5, then we have a diagonal of (8 5 2), whose sum is 15. Now we’ve got the common sum.\n\nIn the bottom row, 15 = 4 + (middle square) + 2 tells us the middle square of the bottom row is 9. We can continue in this way now that we know the common sum.\n\nThe final solution (by rows) is: (8 1 6) (3 5 7) (4 9 2)."
+    },
+    {
+      "id": "esm_pow_b_magic_squares_2",
+      "level": "A",
+      "eye_opener": true,
+      "puzzler": false,
+      "notes_block_start": 3,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWBMagicSquaresExamples1.svg",
+      "block1_illust_max_size": "350px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWBMagicSquares2.svg",
+      "block2_illust_max_size": "160px",
+      "block3_type": "illust_below",
+      "block3_illust": "ESMIll/ESMPOWBMagicSquares2Answer.svg",
+      "block3_illust_max_size": "160px",
+      "name": "Magic Squares – 2",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Magic Squares – 2"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** In a **Magic Square,** all the rows, columns and diagonals add up to the same number. This first square is not a Magic Square. The second one is a Magic Square with a constant sum of 12."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Use each of the numbers 1, 2, 4, 7, and 8 once to complete this Magic Square."
+        },
+        "block3_text": {
+          "eng": "**The Challenge:** This is meant to be an intermediate warmup puzzle for Magic Squares, so it doesn’t require much careful analysis. This, like many of these Puzzles of the Week, can be attacked by playing around with the numbers until a solution is found. Don’t be tempted to think that a more structured approach is better for your students – a great deal will be learned about the mathematics involved and about problem solving by tenaciously working through many examples. Finding a solution, by any method, is always a wonderful reward.\n\nThe simplest way to start analyzing this puzzle is to find the common sum. Each row adds up to the common sum. Also, the three rows contain the numbers from 1 to 9 and add up to three times the common sum. Therefore, three times the common sum is 45 (the sum of 1 to 9), so the common sum is 15.\n\nAfter that, start with the lines that already have two numbers and fill in the missing numbers to make them all add up to 15.\n\nThe final solution (by rows) is: (2 9 4) (7 5 3) (6 1 8)."
+        }
+      },
+      "block1_text": "**Introduction:** In a **Magic Square,** all the rows, columns and diagonals add up to the same number. This first square is not a Magic Square. The second one is a Magic Square with a constant sum of 12.",
+      "block2_text": "**The Challenge:** Use each of the numbers 1, 2, 4, 7, and 8 once to complete this Magic Square.",
+      "block3_text": "**The Challenge:** This is meant to be an intermediate warmup puzzle for Magic Squares, so it doesn’t require much careful analysis. This, like many of these Puzzles of the Week, can be attacked by playing around with the numbers until a solution is found. Don’t be tempted to think that a more structured approach is better for your students – a great deal will be learned about the mathematics involved and about problem solving by tenaciously working through many examples. Finding a solution, by any method, is always a wonderful reward.\n\nThe simplest way to start analyzing this puzzle is to find the common sum. Each row adds up to the common sum. Also, the three rows contain the numbers from 1 to 9 and add up to three times the common sum. Therefore, three times the common sum is 45 (the sum of 1 to 9), so the common sum is 15.\n\nAfter that, start with the lines that already have two numbers and fill in the missing numbers to make them all add up to 15.\n\nThe final solution (by rows) is: (2 9 4) (7 5 3) (6 1 8)."
+    },
+    {
       "id": "esm_pow_a_pan_balance_1",
       "level": "A",
       "topic_theme_1": "NPV_QC10_QC",
       "topic_theme_2": "NPV_QC10_CMQ10",
       "topic_theme_3": "NPV_QC10_Comp10",
       "topic_theme_4": "PS_SWP_MPS",
-      "eye_opener": false,
-      "puzzler": true,
+      "eye_opener": true,
+      "puzzler": false,
       "notes_block_start": 3,
       "block1_type": "illust_below",
       "block1_illust": "ESMIll/ESMPOWAPanBalanceWithCoins.svg",
@@ -793,6 +1049,50 @@
       "block4_text": "Dealing with a blue hat makes the Stacking Hats puzzle much trickier! If you look at the results below, you’ll notice some clear patterns. However, I’ll just describe what happens with different numbers of hats and leave it at that.\n\nA couple general thoughts first. Because it is not legal to move a stack into an empty position, and the Blue hat must be moved away from its initial position so that it will be on top, it is never possible to have the final stack end up where the Blue hat started. To save work, I will only consider Blue hat positions for the positions on the left side - the other positions can be easily analyzed by taking mirror images of the left side positions.\n\nThe shorthand I will use is BL for Blue, BR for Brown, Y for yes, and N for no. For example, (BL BR BR) - (N Y N) means that when there are three hats ordered Blue - Brown - Blue, it is possible to have a stack of all three hats with the Blue hat on top only ending in the middle position.\n\n1 Hat: (BL) - (Y)\n2 Hats: (BL BR) - (N Y)\n3 Hats: (BL BR BR) - (N Y N); (BR BL BR) - (Y N Y)\n4 Hats: (BL BR BR BR) - (N Y N Y); (BR BL BR BR) - (Y N Y Y)\n5 Hats: (BL BR BR BR BR) - (N Y N Y Y); (BR BL BR BR BR) - (Y N Y Y Y); (BR BR BL BR BR) - (Y Y N Y Y)\n6 Hats: (BL BR BR BR BR BR) - (N Y N Y Y Y); (BR BL BR BR BR BR) - (Y N Y Y Y Y); \n(BR BR BL BR BR BR) - (Y Y N Y Y Y)\n7 Hats: (BL BR BR BR BR BR BR) - (N Y N Y Y Y Y); (BR BL BR BR BR BR BR) - (Y N Y Y Y Y Y); \n(BR BR BL BR BR BR BR) - (Y Y N Y Y Y Y); (BR BR BR BL BR BR BR) - (Y Y Y N Y Y Y)\n\nAllowing stacks of hats to jump into empty spots makes it possible to almost always succeed. I have put in lower case y’s for the new places that are possible.\n\n1 Hat: (BL) - (Y)\n2 Hats: (BL BR) - (N Y)\n3 Hats: (BL BR BR) - (y Y y); (BR BL BR) - (Y N Y)\n4 Hats: (BL BR BR BR) - (y Y y Y); (BR BL BR BR) - (Y y Y Y)\n5 Hats: (BL BR BR BR BR) - (y Y y Y Y); (BR BL BR BR BR) - (Y y Y Y Y); (BR BR BL BR BR) - (Y Y y Y Y)\n6 Hats: (BL BR BR BR BR BR) - (y Y y Y Y Y); (BR BL BR BR BR BR) - (Y y Y Y Y Y); \n(BR BR BL BR BR BR) - (Y Y y Y Y Y)\n7 Hats: (BL BR BR BR BR BR BR) - (y Y y Y Y Y Y); (BR BL BR BR BR BR BR) - (Y y Y Y Y Y Y); \n(BR BR BL BR BR BR BR) - (Y Y y Y Y Y Y); (BR BR BR BL BR BR BR) - (Y Y Y y Y Y Y)"
     },
     {
+      "id": "esm_pow_b_square_sums_1",
+      "level": "A",
+      "eye_opener": true,
+      "puzzler": false,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWBSquareSumsFilled.svg",
+      "block1_illust_max_size": "350px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWBSquareSums1.svg",
+      "block2_illust_max_size": "200px",
+      "block3_type": "all_text",
+      "block4_type": "all_text",
+      "name": "Square Sums – 1",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Square Sums – 1"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** The rows and columns add up to the numbers on the outside of this 2 by 2 square."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Using the numbers from 1 to 7, solve for the missing numbers in this square."
+        },
+        "block3_text": {
+          "eng": "**Exploration:** Make a Square Sum challenge for someone else."
+        },
+        "block4_text": {
+          "eng": "**The Challenge:** Using the smallest and largest numbers helps to narrow down the possibilities.\n\nThe only two numbers that add up to 12 are 5 and 7, so they must go along the bottom row.\n\nThe only two numbers that add up to 3 are 1 and 2, so they must go along the top row.\n\nThe only way to get 6 using 5, 7, 1, and 2 is to add 5 and 1, so they must be in the rightmost column.\n\nAt this point, we have the solution:\n(7 5 12) (2 1 3) (9 6 +).\n\n**Exploration:** It is easy to make these puzzles. Start by putting four numbers on the inside, find their sums, and then create the puzzle leaving out the four numbers on the inside.\n\nWhile creating puzzles that way is easy, they aren’t always the most fun to solve. To increase the fun, add some restrictions. For example, say that each number is used at most once. Also, restrict the possible numbers by saying they are in a range or that they all have some characteristic, such as all being odd."
+        }
+      },
+      "block1_text": "**Introduction:** The rows and columns add up to the numbers on the outside of this 2 by 2 square.",
+      "block2_text": "**The Challenge:** Using the numbers from 1 to 7, solve for the missing numbers in this square.",
+      "block3_text": "**Exploration:** Make a Square Sum challenge for someone else.",
+      "block4_text": "**The Challenge:** Using the smallest and largest numbers helps to narrow down the possibilities.\n\nThe only two numbers that add up to 12 are 5 and 7, so they must go along the bottom row.\n\nThe only two numbers that add up to 3 are 1 and 2, so they must go along the top row.\n\nThe only way to get 6 using 5, 7, 1, and 2 is to add 5 and 1, so they must be in the rightmost column.\n\nAt this point, we have the solution:\n(7 5 12) (2 1 3) (9 6 +).\n\n**Exploration:** It is easy to make these puzzles. Start by putting four numbers on the inside, find their sums, and then create the puzzle leaving out the four numbers on the inside.\n\nWhile creating puzzles that way is easy, they aren’t always the most fun to solve. To increase the fun, add some restrictions. For example, say that each number is used at most once. Also, restrict the possible numbers by saying they are in a range or that they all have some characteristic, such as all being odd."
+    },
+    {
       "id": "esm_pow_a_treasure_map_1",
       "level": "A",
       "topic_theme_1": "NPV_QC10_QC",
@@ -883,6 +1183,104 @@
       "block2_text": "**The Challenge:** Find a route from the **Start** to the **$$** in this new treasure map.",
       "block3_text": "**Exploration:** Make treasure maps for others to solve. Can you make them with only one route to the treasure?",
       "block4_text": "**The Challenge:** These puzzles are fun for children to play around with. They can be particularly fun if you make a big map on the ground (perhaps chalk or painter’s tape) that they can walk through as they try to discover the secret route to the treasure.\n\nBeyond playing around and practicing with small numbers, these can give excellent practice with an important problem-solving technique. Namely, working forwards from the beginning and backwards from the end. These puzzles are simple enough that this technique is not essential, but it becomes extremely valuable for larger puzzles that are 5 by 5, 6 by 6, or larger.\n\nLabel the columns, from left to right, A, B, C, and D. Label the rows, from top to bottom, 1, 2, 3, and 4. The player starts at square A1 and wants to end up at D4.\n\nMoving forwards from A1, the first move will either be to A4 or D1. A4 can go to A3 or B4. A3 bounces back and forth with D3, so it leads nowhere. B4 goes to B1. D1 can either go to C1 or D2. So, we want to connect up with either B1, C1, or D2.\n\nMoving backwards from D4, there is only one way to get to D4 and that is from C4. The only way to get to C4 is from C2. The only way to get to C2 is from A2. And the only way to get to A2 is from D2. At last we have a connection! Notice that, for this puzzle, working backwards was much easier because there weren’t any choices so there were fewer possibilities to consider.\nThe answer is: A1 => D1 => D2 => A2 => C2 => C4 => D4."
+    },
+    {
+      "id": "esm_pow_b_avoiding_rectangles_1",
+      "level": "S1",
+      "eye_opener": false,
+      "puzzler": true,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWBAvoidingRectanglesIntro.svg",
+      "block1_illust_max_size": "280px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWBAvoidingRectangles1Empty.svg",
+      "block2_illust_max_size": "180px",
+      "block3_type": "all_text",
+      "block4_type": "illust_below",
+      "block4_illust": "ESMIll/ESMPOWBAvoidingRectangles1Answer.svg",
+      "block4_illust_max_size": "200px",
+      "block5_type": "all_text",
+      "name": "Avoiding Rectangles – 1",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {},
+        "block5_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Avoiding Rectangles – 1"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** The X’s in a grid can become the corners of rectangles with horizontal and vertical sides. The X’s in this first grid form two rectangles. However, the goal is to avoid creating rectangles. The X’s in the second grid are placed to avoid forming any rectangles."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Place as many X’s as you can in this 3 by 3 grid and avoid creating any rectangles."
+        },
+        "block3_text": {
+          "eng": "**Exploration:**  Look at other rectangular grids with 1, 2, or 3 rows. Do you see any patterns in your answers?"
+        },
+        "block4_text": {
+          "eng": "**The Challenge & Exploration:**  Suppose the grid has m rows and n columns. The easiest first approach is to put n X’s in the top row and m X’s in the leftmost column. This will give you (m + n - 1) X’s, and it does not produce any rectangles.\n\nThis approach does give the best answer when there are 1 or 2 rows (or columns).\n\nHere is the best answer for a 3 by 3 grid. It has 6 X’s. In terms of m and n, this has m + n X’s."
+        },
+        "block5_text": {
+          "eng": "If we want to extend this to 3 by n grids, we can simply put a single X in each new column. For grids with 3 rows, we will have 3 + n X’s. \n\nWe will explore this further in Avoiding Rectangles - 2."
+        }
+      },
+      "block1_text": "**Introduction:** The X’s in a grid can become the corners of rectangles with horizontal and vertical sides. The X’s in this first grid form two rectangles. However, the goal is to avoid creating rectangles. The X’s in the second grid are placed to avoid forming any rectangles.",
+      "block2_text": "**The Challenge:** Place as many X’s as you can in this 3 by 3 grid and avoid creating any rectangles.",
+      "block3_text": "**Exploration:**  Look at other rectangular grids with 1, 2, or 3 rows. Do you see any patterns in your answers?",
+      "block4_text": "**The Challenge & Exploration:**  Suppose the grid has m rows and n columns. The easiest first approach is to put n X’s in the top row and m X’s in the leftmost column. This will give you (m + n - 1) X’s, and it does not produce any rectangles.\n\nThis approach does give the best answer when there are 1 or 2 rows (or columns).\n\nHere is the best answer for a 3 by 3 grid. It has 6 X’s. In terms of m and n, this has m + n X’s.",
+      "block5_text": "If we want to extend this to 3 by n grids, we can simply put a single X in each new column. For grids with 3 rows, we will have 3 + n X’s. \n\nWe will explore this further in Avoiding Rectangles - 2."
+    },
+    {
+      "id": "esm_pow_b_avoiding_triangles",
+      "level": "S1",
+      "eye_opener": false,
+      "puzzler": true,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWBAvoidingTrianglesIntro.svg",
+      "block1_illust_max_size": "320px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWBAvoidingTrianglesChallenge.svg",
+      "block2_illust_max_size": "180px",
+      "block3_type": "all_text",
+      "block4_type": "illust_below",
+      "block4_illust": "ESMIll/ESMPOWBAvoidingTrianglesAnswer.svg",
+      "block4_illust_max_size": "300px",
+      "name": "Avoiding Triangles",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Avoiding Triangles"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** A **regular triangle** is a triangle with equal sides and equal angles. In this first pyramid, two regular triangles have been made using the dots. In the second pyramid, enough dots have been crossed out that it is impossible to find three dots that form a regular triangle."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** What is the fewest number of dots you can remove from this pyramid so that there are no equilateral triangles of any size or orientation formed by the dots?"
+        },
+        "block3_text": {
+          "eng": "**Exploration:**  Can you cross out fewer dots than the introductory example to solve the six-dot pyramid? Do you see a pattern of solutions that would suggest solutions for larger pyramids?"
+        },
+        "block4_text": {
+          "eng": "**The Challenge & Exploration:**   I feel comfortable that the solutions for 6-dot and 10-dot pyramids offered below are as good as possible. The designs offered are simple to understand and seem to produce a pattern of solutions.\n\nFor pyramids with 15 or more dots, it is not at all obvious that this pattern will continue to be the best possible way of doing it. Please let us know if you find any improvements."
+        }
+      },
+      "block1_text": "**Introduction:** A **regular triangle** is a triangle with equal sides and equal angles. In this first pyramid, two regular triangles have been made using the dots. In the second pyramid, enough dots have been crossed out that it is impossible to find three dots that form a regular triangle.",
+      "block2_text": "**The Challenge:** What is the fewest number of dots you can remove from this pyramid so that there are no equilateral triangles of any size or orientation formed by the dots?",
+      "block3_text": "**Exploration:**  Can you cross out fewer dots than the introductory example to solve the six-dot pyramid? Do you see a pattern of solutions that would suggest solutions for larger pyramids?",
+      "block4_text": "**The Challenge & Exploration:**   I feel comfortable that the solutions for 6-dot and 10-dot pyramids offered below are as good as possible. The designs offered are simple to understand and seem to produce a pattern of solutions.\n\nFor pyramids with 15 or more dots, it is not at all obvious that this pattern will continue to be the best possible way of doing it. Please let us know if you find any improvements."
     },
     {
       "id": "esm_pow_a_each_of_these_1",
@@ -2023,6 +2421,156 @@
       "block5_text": "**The Challenge:** As with the other Fill in the Blanks puzzles, a child can just play with this and eventually arrive at the answers. That exploration involves a lot of good experiences, and there is no reason to avoid it.\n\nIf you want to be more systematic, the first question is: What is the common sum for these pairs of numbers? The five pairs have the same sum, and when we add them all up we get the same thing as adding the numbers up from 0 to 9. The sum from 0 to 9 is 45, so when we divide that by 5 we get 9 - the sum for each pair must be 9. Once that is established, the rest is simple:\n\n0 + 9 = 1 + 8 = 2 + 7 = 3 + 6 = 4 + 5.\n\n**Exploration:** The first step is to see whether the sum of the range of numbers can be broken into that many equal pieces. Also, note that it makes no difference whether we start at 0 or 1, so we’ll just look at starting at 0.\n\n**0 to 7 using 4 pairs:** The sum of the numbers from 0 to 7 is 28. Dividing 28 into 4 pairs gives a sum of 7 for each pair.\n\nThis is simple enough: 7 = 0 + 7 = 1 + 6 = 2 + 5 = 3 + 4.\n\n**0 to 2n - 1 using n pairs:** After looking at 0 to 7 and 0 to 9, the pattern is clear: write n as the n possible sums.\n\n**0 to 8 using 3 triplets:** The sum from 0 to 8 is 36. Dividing 36 into 3 triplets gives a sum of 12 for each triplet. The triplets will be largely driven by the three largest numbers (6, 7, 8), no two of which can be in a triplet together. This produces triplets (8, 0, 4), (7, 2, 3), and (6, 1, 5). This could also be done as (8, 1, 3), (7, 0, 5), and (6, 2, 4).\n\n**0 to 9 using 2 groups of 5:** The sum from 0 to 9 is 45. 45 cannot be divided evenly into two equal groups!\n\nThe very interested child may want to go exploring further to see more examples of when this works and when it doesn’t. What fun!"
     },
     {
+      "id": "esm_pow_b_parentheses_1",
+      "level": "B",
+      "eye_opener": true,
+      "puzzler": false,
+      "notes_block_start": 100,
+      "block1_type": "all_text",
+      "name": "Parentheses – 1",
+      "_translations": {
+        "name": {},
+        "block1_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Parentheses – 1"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** Where you choose to put parentheses can change the value of an expression.\n\n**Example:** 5 – 3 + 1 can become either\n* 5 – (3 + 1) = 1\n* (5 – 3) + 1 = 3.\n\n**The Challenge:**: Find the places to put parentheses in this expression to make its value 6.\n\n**10 – 3 – 5 – 2 + 8 – 4**\n\n**Exploration:** Make some of these puzzles for others. Have you found any examples where you can put in the parentheses in two different ways and still get the right answer?"
+        }
+      },
+      "block1_text": "**Introduction:** Where you choose to put parentheses can change the value of an expression.\n\n**Example:** 5 – 3 + 1 can become either\n* 5 – (3 + 1) = 1\n* (5 – 3) + 1 = 3.\n\n**The Challenge:**: Find the places to put parentheses in this expression to make its value 6.\n\n**10 – 3 – 5 – 2 + 8 – 4**\n\n**Exploration:** Make some of these puzzles for others. Have you found any examples where you can put in the parentheses in two different ways and still get the right answer?"
+    },
+    {
+      "id": "esm_sukiko_1",
+      "level": "B",
+      "eye_opener": true,
+      "puzzler": false,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWBSujikoBlank2by3Example.svg",
+      "block1_illust_max_size": "360px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWBSujikoBlank2by3Partial.svg",
+      "block2_illust_max_size": "200px",
+      "block3_type": "all_text",
+      "block4_type": "illust_below",
+      "block4_illust": "ESMIll/ESMPOWBSujikoBlank2by3Filled.svg",
+      "block4_illust_max_size": "200px",
+      "block5_type": "all_text",
+      "name": "Sujiko – 1",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {},
+        "block5_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Sujiko – 1"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** In this small 2 by 3 Sujiko puzzle, use each of the numbers from 1 to 6 once in the six squares. The number in each circle must be the sum of the four squares that surround it."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Fill in this Sujiko puzzle."
+        },
+        "block3_text": {
+          "eng": "**Exploration:** How many different answers can you find?"
+        },
+        "block4_text": {
+          "eng": "**The Challenge & Exploration:** Each column of numbers - the 2 and 6, the 1 and 3, and the 4 and 5 - can be reversed in the answer given below. This produces a collection of 2 x 2 x 2 = 8 possible answers, one of which is shown below."
+        },
+        "block5_text": {
+          "eng": "The 1 and 3 must be in the middle column. Call the middle numbers A and B. Add things up in two ways. The sum of all the entries in the two 2 by 2 squares is 12 + 13 = 25. On the other hand, that sum is all six numbers (1 to 6) with the middle column counted twice - that is, the sum is 1 + 2 + 3 + 4 + 5 + 6 + A + B = 21 + A + B. This means 25 = 21 + A + B, or 4 = A + B. This forces A and B to be 1 and 3.\n\nWith the middle column being 1 and 3, that forces the sum of the two entries in the right column to be 9. We can only get 9 as 4 + 5 or 3 + 6, but the 3 is already used. Therefore the rightmost column is 4 and 5.\n\nThere are only two numbers, 2 and 6, remaining for the leftmost column, and they work."
+        }
+      },
+      "block1_text": "**Introduction:** In this small 2 by 3 Sujiko puzzle, use each of the numbers from 1 to 6 once in the six squares. The number in each circle must be the sum of the four squares that surround it.",
+      "block2_text": "**The Challenge:** Fill in this Sujiko puzzle.",
+      "block3_text": "**Exploration:** How many different answers can you find?",
+      "block4_text": "**The Challenge & Exploration:** Each column of numbers - the 2 and 6, the 1 and 3, and the 4 and 5 - can be reversed in the answer given below. This produces a collection of 2 x 2 x 2 = 8 possible answers, one of which is shown below.",
+      "block5_text": "The 1 and 3 must be in the middle column. Call the middle numbers A and B. Add things up in two ways. The sum of all the entries in the two 2 by 2 squares is 12 + 13 = 25. On the other hand, that sum is all six numbers (1 to 6) with the middle column counted twice - that is, the sum is 1 + 2 + 3 + 4 + 5 + 6 + A + B = 21 + A + B. This means 25 = 21 + A + B, or 4 = A + B. This forces A and B to be 1 and 3.\n\nWith the middle column being 1 and 3, that forces the sum of the two entries in the right column to be 9. We can only get 9 as 4 + 5 or 3 + 6, but the 3 is already used. Therefore the rightmost column is 4 and 5.\n\nThere are only two numbers, 2 and 6, remaining for the leftmost column, and they work."
+    },
+    {
+      "id": "esm_sukiko_2",
+      "level": "B",
+      "eye_opener": true,
+      "puzzler": false,
+      "notes_block_start": 3,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWBSujikoFilled1.svg",
+      "block1_illust_max_size": "360px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWBSujikoPartial1.svg",
+      "block2_illust_max_size": "200px",
+      "block3_type": "all_text",
+      "name": "Sujiko – 2",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Sujiko – 2"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** In a Sujiko puzzle, use each of the numbers from 1 to 9 once in the nine squares. The number in each circle must be the sum of the four squares that surround it."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Fill in this Sujiko puzzle with the numbers 1, 3, 5, 6, 7, and 9."
+        },
+        "block3_text": {
+          "eng": "**The Challenge:** The upper right 2 by 2 corner has three of the four squares filled in, so that is the place to start. The three squares filled in, (2 8 4), add up to 14. To make the sum of the four squares equal to 17 (in the circle), we need the central square to be 17 - 14 = 3.\n\nThe smallest and largest numbers are often good places to start. For the bottom right 2 by 2 corner, the two numbers we have, (3 4), plus the two missing numbers must add up to 22. So, the missing two numbers on the right side of the bottom row add up to 15. We can get 15 as the sum of 6 + 9 or 7 + 8. However, the 8 is not available, so they must be 6 + 9.\n\nLet’s look at the bottom left 2 by 2 corner. On the right side of that corner we will either have 3 + 6 or 3 + 9. If it were 3 + 6, we would need two more numbers that add up to 9 and those are not available. So it must be 3 + 9. The remaining two numbers in that bottom left corner must add up to 6, and the only possible way to do that is with 1 + 5.\n\nThe only unused number at this point is the 7, so it must go in the upper left corner.\n\nThree of the four numbers in the upper left 2 by 2 corner are (7 2 3), so the remaining number must be 1.\n\nAt this point we have the complete solution! Here it is row by row:\n\n(7 2 8)\n(1 3 4)\n(5 9 6)"
+        }
+      },
+      "block1_text": "**Introduction:** In a Sujiko puzzle, use each of the numbers from 1 to 9 once in the nine squares. The number in each circle must be the sum of the four squares that surround it.",
+      "block2_text": "**The Challenge:** Fill in this Sujiko puzzle with the numbers 1, 3, 5, 6, 7, and 9.",
+      "block3_text": "**The Challenge:** The upper right 2 by 2 corner has three of the four squares filled in, so that is the place to start. The three squares filled in, (2 8 4), add up to 14. To make the sum of the four squares equal to 17 (in the circle), we need the central square to be 17 - 14 = 3.\n\nThe smallest and largest numbers are often good places to start. For the bottom right 2 by 2 corner, the two numbers we have, (3 4), plus the two missing numbers must add up to 22. So, the missing two numbers on the right side of the bottom row add up to 15. We can get 15 as the sum of 6 + 9 or 7 + 8. However, the 8 is not available, so they must be 6 + 9.\n\nLet’s look at the bottom left 2 by 2 corner. On the right side of that corner we will either have 3 + 6 or 3 + 9. If it were 3 + 6, we would need two more numbers that add up to 9 and those are not available. So it must be 3 + 9. The remaining two numbers in that bottom left corner must add up to 6, and the only possible way to do that is with 1 + 5.\n\nThe only unused number at this point is the 7, so it must go in the upper left corner.\n\nThree of the four numbers in the upper left 2 by 2 corner are (7 2 3), so the remaining number must be 1.\n\nAt this point we have the complete solution! Here it is row by row:\n\n(7 2 8)\n(1 3 4)\n(5 9 6)"
+    },
+    {
+      "id": "esm_sukiko_3",
+      "level": "B",
+      "eye_opener": true,
+      "puzzler": false,
+      "notes_block_start": 3,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWBSujikoFilled1.svg",
+      "block1_illust_max_size": "360px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWBSujikoPartial2.svg",
+      "block2_illust_max_size": "200px",
+      "block3_type": "all_text",
+      "name": "Sujiko – 3",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Sujiko – 3"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** In a Sujiko puzzle, use each of the numbers from 1 to 9 once in the nine squares. The number in each circle must be the sum of the four squares that surround it."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Fill in this Sujiko puzzle with the numbers 1, 2, 3, 4, 6, 8, and 9."
+        },
+        "block3_text": {
+          "eng": "**The Challenge:** When solving a puzzle, look for its weak points, its easiest points of entry.\n\nFor this puzzle, the 28 in the circle is quite a big number and seems a good place to start. The three missing numbers in the bottom right 2 by 2 corner must add up to 28. The only way to get 28 from the list of numbers we have is to use 6, 8, and 9. So, we know those three numbers must be in that bottom right corner (and nowhere else).\n\nLooking at the upper right 2 by 2 corner, 3 and 4 are the largest remaining numbers, so the central square must be 8 or 9. This means that the two numbers on the right side of the upper row are (3 4) when 8 is in the middle, or (2 4) when 9 is in the middle.\n\n**Suppose the central square is 8.** This means the right side of the upper row is (3 4).\n\nLooking at the bottom left 2 by 2 corner, the two squares shared with the bottom right 2 by 2 corner are (8 6) or (8 9). However, (8 9) makes it impossible to get a sum of 23 in the bottom left 2 by 2 corner. Therefore, it must be (8 6), and so the bottom left corner must be 2.\n\nThe only unused value is 1, which must go in the upper left corner. That makes the sum of the upper left corner either 1 + 3 + 7 + 8 = 19 or 1 + 4 + 7 + 8 = 20. The latter of the two is a solution!\n\n**Suppose the central square is 9.** This means the right side of the upper row is (2 4).\n\nLooking at the bottom left 2 by 2 corner, the two squares shared with the bottom right 2 by 2 corner are (9 6) or (9 8). However, (9 8) makes it impossible to get a sum of 23 in the bottom left 2 by 2 corner. Therefore, it must be (8 6), and so the bottom left corner must be 1.\n\nThe only unused value is 3, which must go in the upper left corner. That makes the sum of the upper left corner either 3 + 2 + 7 + 9 = 21 or 3 + 4 + 7 + 9 = 23, neither of which work!\n\nTherefore, the only solution is given by (showing triplets as rows):\n\n(1 4 3)\n(7 8 5)\n(2 6 9)"
+        }
+      },
+      "block1_text": "**Introduction:** In a Sujiko puzzle, use each of the numbers from 1 to 9 once in the nine squares. The number in each circle must be the sum of the four squares that surround it.",
+      "block2_text": "**The Challenge:** Fill in this Sujiko puzzle with the numbers 1, 2, 3, 4, 6, 8, and 9.",
+      "block3_text": "**The Challenge:** When solving a puzzle, look for its weak points, its easiest points of entry.\n\nFor this puzzle, the 28 in the circle is quite a big number and seems a good place to start. The three missing numbers in the bottom right 2 by 2 corner must add up to 28. The only way to get 28 from the list of numbers we have is to use 6, 8, and 9. So, we know those three numbers must be in that bottom right corner (and nowhere else).\n\nLooking at the upper right 2 by 2 corner, 3 and 4 are the largest remaining numbers, so the central square must be 8 or 9. This means that the two numbers on the right side of the upper row are (3 4) when 8 is in the middle, or (2 4) when 9 is in the middle.\n\n**Suppose the central square is 8.** This means the right side of the upper row is (3 4).\n\nLooking at the bottom left 2 by 2 corner, the two squares shared with the bottom right 2 by 2 corner are (8 6) or (8 9). However, (8 9) makes it impossible to get a sum of 23 in the bottom left 2 by 2 corner. Therefore, it must be (8 6), and so the bottom left corner must be 2.\n\nThe only unused value is 1, which must go in the upper left corner. That makes the sum of the upper left corner either 1 + 3 + 7 + 8 = 19 or 1 + 4 + 7 + 8 = 20. The latter of the two is a solution!\n\n**Suppose the central square is 9.** This means the right side of the upper row is (2 4).\n\nLooking at the bottom left 2 by 2 corner, the two squares shared with the bottom right 2 by 2 corner are (9 6) or (9 8). However, (9 8) makes it impossible to get a sum of 23 in the bottom left 2 by 2 corner. Therefore, it must be (8 6), and so the bottom left corner must be 1.\n\nThe only unused value is 3, which must go in the upper left corner. That makes the sum of the upper left corner either 3 + 2 + 7 + 9 = 21 or 3 + 4 + 7 + 9 = 23, neither of which work!\n\nTherefore, the only solution is given by (showing triplets as rows):\n\n(1 4 3)\n(7 8 5)\n(2 6 9)"
+    },
+    {
       "id": "esm_pow_b_sum_pyramids_1",
       "level": "B",
       "topic_theme_1": "NO_ASSD_ASto10",
@@ -3080,6 +3628,78 @@
       "block3_text": "**The Challenge and Exploration:** This is another visit with Fibonacci Numbers. The first few counts of how many ways there are of doing this are: 1, 2, 3, 5, and 8. After doing the bee ancestry puzzle, and then seeing the first few numbers for this one, your students should be suspicious.\n\nThe tricky part is seeing where the Fibonacci rule comes into play. Let’s look at going up ten steps as an example. You can divide the ways of doing ten steps into two buckets. In the first one is all the ways of going up nine steps and then taking a single step to get to the tenth. The other one is all the ways of going up eight steps and then take a double step to get to the tenth. Every possibility is counted this way, and nothing is counted twice.\n\nIn general, the number of ways of going up n steps will be the number of ways of going up (n - 1) steps plus the number of ways of going up (n - 2) steps. That is exactly the Fibonacci rule."
     },
     {
+      "id": "esm_pow_b_egg_drop_10",
+      "level": "L1",
+      "eye_opener": false,
+      "puzzler": true,
+      "notes_block_start": 3,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWBEggDrop.svg",
+      "block1_illust_max_size": "180px",
+      "block2_type": "all_text",
+      "block3_type": "all_text",
+      "name": "Egg Drop to 10",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Egg Drop to 10"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** There is a new type of single-egg container to test. You are given a container, two eggs, and access to a ten-story building. You want to see how high up you can drop an egg in one of these containers and not have the egg break.\n\nYou could simply drop an egg from each floor, starting with the first floor, and see where the egg breaks for the first time. However, if the containers are really good, that would mean ten egg drops. How can you find out how good the container is with fewer drops?"
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Find a method that uses the fewest total number of drops, no matter how good or bad this new container is, to discover the highest floor in this ten-story building you can safely drop an egg from.\n\n**Exploration:** How would your strategy change if you had three eggs to work with?"
+        },
+        "block3_text": {
+          "eng": "**The Challenge and Exploration:** The first possible solution is to split the problem in half and drop the first egg from the fifth floor. In the worst case, when the container works all the way up to the tenth floor, there would only be six drops.\n\nAn improvement to that solution is to split it into multiple first steps - say the 3rd and 6th floor. However, that still creates a worst case of 6 drops. Using 4th and 8th floors improves it to five drops.\n\nFive drops is as good as it gets with two eggs.\n\nWith three eggs, we could first do drops at the 4th and 8th floors. Then, as appropriate, next drops at 2nd and 6th floors. That would reduce the total number of drops to four drops in the worst case."
+        }
+      },
+      "block1_text": "**Introduction:** There is a new type of single-egg container to test. You are given a container, two eggs, and access to a ten-story building. You want to see how high up you can drop an egg in one of these containers and not have the egg break.\n\nYou could simply drop an egg from each floor, starting with the first floor, and see where the egg breaks for the first time. However, if the containers are really good, that would mean ten egg drops. How can you find out how good the container is with fewer drops?",
+      "block2_text": "**The Challenge:** Find a method that uses the fewest total number of drops, no matter how good or bad this new container is, to discover the highest floor in this ten-story building you can safely drop an egg from.\n\n**Exploration:** How would your strategy change if you had three eggs to work with?",
+      "block3_text": "**The Challenge and Exploration:** The first possible solution is to split the problem in half and drop the first egg from the fifth floor. In the worst case, when the container works all the way up to the tenth floor, there would only be six drops.\n\nAn improvement to that solution is to split it into multiple first steps - say the 3rd and 6th floor. However, that still creates a worst case of 6 drops. Using 4th and 8th floors improves it to five drops.\n\nFive drops is as good as it gets with two eggs.\n\nWith three eggs, we could first do drops at the 4th and 8th floors. Then, as appropriate, next drops at 2nd and 6th floors. That would reduce the total number of drops to four drops in the worst case."
+    },
+    {
+      "id": "esm_pow_b_egg_drop_100",
+      "level": "L1",
+      "eye_opener": false,
+      "puzzler": true,
+      "notes_block_start": 3,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWBEggDrop.svg",
+      "block1_illust_max_size": "180px",
+      "block2_type": "all_text",
+      "block3_type": "all_text",
+      "name": "Egg Drop to 100",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Egg Drop to 100"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** There is a new type of single-egg container to test. You are given a container, two eggs, and access to a one hundred-story building. You want to see how high up you can drop an egg in one of these containers and not have the egg break.\n\nYou could simply drop an egg from each floor, starting with the first floor, and see where the egg breaks for the first time. However, if the containers are really good, that would mean one hundred egg drops. How can you find out how good the container is with fewer drops?"
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Find a method that uses the fewest total number of drops, no matter how good or bad this new container is, to discover the highest floor in this one hundred-story building you can safely drop an egg from.\n\n**Exploration:** How would your strategy change if you had three eggs to work with?"
+        },
+        "block3_text": {
+          "eng": "**The Challenge:**  In “Egg Drop – 1” we saw that using evenly spaced floors for the first round of tests reduced the total number of drops.\n\nFor example, if the first round involved dropping from multiples of ten, then the worst case would require 19 drops – 9 up to the 90th floor, and then single floor skips up to the 100th floor.\n\nThe big improvement comes from deciding to use variable-sized steps during the first phase. If you space them evenly, then by the time you have gotten near the top, you have all the tests to get up there and then a bunch of single-step tests after that. The key is to reduce the step size by one after each test during the first phase.\n\nWhile you can figure out the first step size mathematically, it is easy enough to do by trial and error. If you start with a step size of 12 and decrease it by 1 each time, you will have steps of size 12 + 11 + 10 + …. + 1 = 78, and you will not get to the top. You need to start with a step size of 14 to make it. Now, the worst case is 14 drops, which is a big improvement!\n\n**Exploration:**  Using three eggs gets tricky. Each time you add a new egg, you want to take advantage of knowing the best way to use the earlier collection of eggs. For example, when using two eggs, you know that after the first egg fails you will be testing in single steps.\n\nDoing 3 eggs rigorously takes an unreasonable amount of math for an elementary school student. However, we can substitute some trial and error and still get the answer reasonably quickly.\n\nLet’s start by knowing these sums (called triangular numbers): 1 + 2 = 3, 1 + 2 + 3 = 6, 1 + 2 + 3 + 4 = 10, 1 + 2 + 3 + 4 + 5 = 15, 1 + 2 + 3 + 4 + 5 + 6 = 21, 1 + 2 + 3 + 4 + 5 + 6 + 7 = 28, and 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 = 36. We want to use these sums to guide our choices of initial tests. For example, if we start with28, and then use 28 + 21 = 49, and then go to 28 + 21 + 15 = 64, and so on, we won’t quite get to the top.\n\nSo, our first set of tests should be at 36, 36 + 28 = 64, 36 + 28 + 21 = 85, 36 + 28 + 21 + 15 = 100. That is, we will test at floors 36, 64, and 85. No matter how those tests go, the worst case scenario is that we will need 9 tests!"
+        }
+      },
+      "block1_text": "**Introduction:** There is a new type of single-egg container to test. You are given a container, two eggs, and access to a one hundred-story building. You want to see how high up you can drop an egg in one of these containers and not have the egg break.\n\nYou could simply drop an egg from each floor, starting with the first floor, and see where the egg breaks for the first time. However, if the containers are really good, that would mean one hundred egg drops. How can you find out how good the container is with fewer drops?",
+      "block2_text": "**The Challenge:** Find a method that uses the fewest total number of drops, no matter how good or bad this new container is, to discover the highest floor in this one hundred-story building you can safely drop an egg from.\n\n**Exploration:** How would your strategy change if you had three eggs to work with?",
+      "block3_text": "**The Challenge:**  In “Egg Drop – 1” we saw that using evenly spaced floors for the first round of tests reduced the total number of drops.\n\nFor example, if the first round involved dropping from multiples of ten, then the worst case would require 19 drops – 9 up to the 90th floor, and then single floor skips up to the 100th floor.\n\nThe big improvement comes from deciding to use variable-sized steps during the first phase. If you space them evenly, then by the time you have gotten near the top, you have all the tests to get up there and then a bunch of single-step tests after that. The key is to reduce the step size by one after each test during the first phase.\n\nWhile you can figure out the first step size mathematically, it is easy enough to do by trial and error. If you start with a step size of 12 and decrease it by 1 each time, you will have steps of size 12 + 11 + 10 + …. + 1 = 78, and you will not get to the top. You need to start with a step size of 14 to make it. Now, the worst case is 14 drops, which is a big improvement!\n\n**Exploration:**  Using three eggs gets tricky. Each time you add a new egg, you want to take advantage of knowing the best way to use the earlier collection of eggs. For example, when using two eggs, you know that after the first egg fails you will be testing in single steps.\n\nDoing 3 eggs rigorously takes an unreasonable amount of math for an elementary school student. However, we can substitute some trial and error and still get the answer reasonably quickly.\n\nLet’s start by knowing these sums (called triangular numbers): 1 + 2 = 3, 1 + 2 + 3 = 6, 1 + 2 + 3 + 4 = 10, 1 + 2 + 3 + 4 + 5 = 15, 1 + 2 + 3 + 4 + 5 + 6 = 21, 1 + 2 + 3 + 4 + 5 + 6 + 7 = 28, and 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 = 36. We want to use these sums to guide our choices of initial tests. For example, if we start with28, and then use 28 + 21 = 49, and then go to 28 + 21 + 15 = 64, and so on, we won’t quite get to the top.\n\nSo, our first set of tests should be at 36, 36 + 28 = 64, 36 + 28 + 21 = 85, 36 + 28 + 21 + 15 = 100. That is, we will test at floors 36, 64, and 85. No matter how those tests go, the worst case scenario is that we will need 9 tests!"
+    },
+    {
       "id": "esm_pow_c_shakesataparty1",
       "level": "L1",
       "topic_theme_1": "NO_NT_EvenOdd",
@@ -3180,6 +3800,78 @@
       },
       "block1_text": "**Introduction:** There were four married couples at a party. A lot of handshakes took place. No one shook the hand of their spouse. One person, Sam, was surprised when Sam asked the seven other people how many handshakes they made - the seven handshake counts were different!\n\n**The Challenge:** How is this possible, and how many handshakes did Sam’s spouse make?",
       "block2_text": "**The Challenge:** No one shook their own hand, and if they didn’t shake their spouse’s hand, then the maximum count for any person was six. If the seven counts were different, then they must exactly be the whole list of numbers from 0 to 6.\n\nConsider the person with six handshakes. They shook everyone’s hand except their spouse. Put another way, we know everyone other than that person’s spouse had at least one handshake. Therefore, the person with 0 handshakes had to be married to the person with six handshakes!\n\nIf you remove this couple and the handshakes they were involved in, you are left with three married couples, and each of these six people will have their handshake count reduced by one. We now have a new problem very similar to the original one. These three couples will have handshake counts that are exactly the list of numbers from 0 to 4 (not listing Sam’s count). For the same reasons as before, we can be sure that the person with four handshakes on this list (five handshakes originally) is married to the person with zero handshakes on this list (one handshake originally).\n\nCarrying out this logic one more time, we come to the conclusion that 6 and 0 are married, 5 and 1 are married, and 4 and 2 are married. The only remaining person had 3 handshakes, and they must be married to Sam!\n\nBy the way, Sam had three handshakes as well (Sam shook hands with 4, 5, and 6)."
+    },
+    {
+      "id": "esm_pow_b_pan_balance_3",
+      "level": "L1",
+      "eye_opener": false,
+      "puzzler": true,
+      "notes_block_start": 3,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWAPanBalanceWithCoins.svg",
+      "block1_illust_max_size": "240px",
+      "block2_type": "all_text",
+      "block3_type": "all_text",
+      "name": "Pan Balance – 3",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Pan Balance – 3"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** A pan balance tells you when its two sides are carrying the same amount of weight or whether one side is heavier than the other.\n\n**The Challenge:**  You have 25 coins. All the coins but one weigh the same amount. The remaining coin is a counterfeit and is just a tiny bit lighter or heavier (you don’t know which). Using just two weighings, determine whether the counterfeit is lighter or heavier."
+        },
+        "block2_text": {
+          "eng": "**Exploration:** How does your strategy change if you start with a different number of coins? Is two weighings always enough? Is the strategy different for different numbers?"
+        },
+        "block3_text": {
+          "eng": "**The Challenge:** Start by forming two groups of coins of equal size 7 (8 will also work). Weigh these two groups against each other.\n\nIf the two groups balance, then the counterfeit must be in the remaining group of coins that has size 11. Put together any group of 11 coins from the first two groups and weigh those against the remaining coins.\n \nIf the two groups do not balance, then all the remaining coins must be normal. Pick any 7 of the remaining coins and weigh them against either of the two original groups. If they balance, then the counterfeit was in the other group. If they don’t balance, then the counterfeit was in that group from the original two groups. Either way, you will then know whether it was lighter or heavier. \n\n**Exploration:** This approach will always work. Start by forming two groups of equal size x. Suppose this leaves out y coins. To be able to follow the procedure described above, x + x must be at least as big as y (in case the two groups balance), and y must be at least as big as x (in case they don’t balance). This is easily achieved for any number other than five coins by letting x be the original number of coins divided by four and rounding up if it doesn’t divide evenly.\n\nSurprisingly, I believe that five coins requires three weighings!"
+        }
+      },
+      "block1_text": "**Introduction:** A pan balance tells you when its two sides are carrying the same amount of weight or whether one side is heavier than the other.\n\n**The Challenge:**  You have 25 coins. All the coins but one weigh the same amount. The remaining coin is a counterfeit and is just a tiny bit lighter or heavier (you don’t know which). Using just two weighings, determine whether the counterfeit is lighter or heavier.",
+      "block2_text": "**Exploration:** How does your strategy change if you start with a different number of coins? Is two weighings always enough? Is the strategy different for different numbers?",
+      "block3_text": "**The Challenge:** Start by forming two groups of coins of equal size 7 (8 will also work). Weigh these two groups against each other.\n\nIf the two groups balance, then the counterfeit must be in the remaining group of coins that has size 11. Put together any group of 11 coins from the first two groups and weigh those against the remaining coins.\n \nIf the two groups do not balance, then all the remaining coins must be normal. Pick any 7 of the remaining coins and weigh them against either of the two original groups. If they balance, then the counterfeit was in the other group. If they don’t balance, then the counterfeit was in that group from the original two groups. Either way, you will then know whether it was lighter or heavier. \n\n**Exploration:** This approach will always work. Start by forming two groups of equal size x. Suppose this leaves out y coins. To be able to follow the procedure described above, x + x must be at least as big as y (in case the two groups balance), and y must be at least as big as x (in case they don’t balance). This is easily achieved for any number other than five coins by letting x be the original number of coins divided by four and rounding up if it doesn’t divide evenly.\n\nSurprisingly, I believe that five coins requires three weighings!"
+    },
+    {
+      "id": "esm_pow_b_pan_balance_4",
+      "level": "L1",
+      "eye_opener": false,
+      "puzzler": true,
+      "notes_block_start": 3,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWAPanBalanceWithCoins.svg",
+      "block1_illust_max_size": "240px",
+      "block2_type": "all_text",
+      "block3_type": "all_text",
+      "name": "Pan Balance – 4",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Pan Balance – 4"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** A pan balance tells you when its two sides are carrying the same amount of weight or whether one side is heavier than the other.\n\n**The Challenge:**  You have 6 coins. Four of the coins weigh the same amount, and the remaining two coins are counterfeits. Identify the two counterfeits and their weight types using just three weighings."
+        },
+        "block2_text": {
+          "eng": "**Exploration:** Investigate what happens to your method if there are more normal coins."
+        },
+        "block3_text": {
+          "eng": "**The Challenge:** Start by forming two groups of three coins and weigh these two groups against each other.\n\nIf they balance, then there must be one light coin in each group. For each group of three, do the following. Weigh two of the coins in the group of three - if they balance, the remaining coin is the light one; if they don’t balance, the lighter coin is the light one.\n\nIf they don’t balance, then both light coins must be in the lighter group of three. Weigh two of the lighter group coins against each other - if they balance, they are both lighter coins; if they don’t balance, then the lighter one and the remaining coin are the two lighter coins.\n\n**Exploration:** This method is dependent on having groups of three. So, for more than six coins we will need more than two weighings."
+        }
+      },
+      "block1_text": "**Introduction:** A pan balance tells you when its two sides are carrying the same amount of weight or whether one side is heavier than the other.\n\n**The Challenge:**  You have 6 coins. Four of the coins weigh the same amount, and the remaining two coins are counterfeits. Identify the two counterfeits and their weight types using just three weighings.",
+      "block2_text": "**Exploration:** Investigate what happens to your method if there are more normal coins.",
+      "block3_text": "**The Challenge:** Start by forming two groups of three coins and weigh these two groups against each other.\n\nIf they balance, then there must be one light coin in each group. For each group of three, do the following. Weigh two of the coins in the group of three - if they balance, the remaining coin is the light one; if they don’t balance, the lighter coin is the light one.\n\nIf they don’t balance, then both light coins must be in the lighter group of three. Weigh two of the lighter group coins against each other - if they balance, they are both lighter coins; if they don’t balance, then the lighter one and the remaining coin are the two lighter coins.\n\n**Exploration:** This method is dependent on having groups of three. So, for more than six coins we will need more than two weighings."
     },
     {
       "id": "esm_pow_c_parity1dominoes",
