@@ -91,6 +91,54 @@
       "_nested_name": "dg_image"
     },
     {
+      "type": "text",
+      "name": "debbuggg",
+      "value": "Current Topics View: @fields.curriculum_standard_name",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "debbuggg",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Current Topics View: @fields.curriculum_standard_name",
+            "matchedExpression": "@fields.curriculum_standard_name",
+            "type": "fields",
+            "fieldName": "curriculum_standard_name"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.curriculum_standard_name": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "debuggggggg",
+      "value": "Standard abbreviation: @fields.curriculum_standard_abbrev",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "debuggggggg",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Standard abbreviation: @fields.curriculum_standard_abbrev",
+            "matchedExpression": "@fields.curriculum_standard_abbrev",
+            "type": "fields",
+            "fieldName": "curriculum_standard_abbrev"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.curriculum_standard_abbrev": [
+          "value"
+        ]
+      }
+    },
+    {
       "name": "now",
       "value": "@calc(timestamp())",
       "_translations": {
