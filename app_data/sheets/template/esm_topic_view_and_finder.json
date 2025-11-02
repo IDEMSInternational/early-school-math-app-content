@@ -52,6 +52,30 @@
               "value"
             ]
           }
+        },
+        {
+          "type": "text",
+          "name": "debuggggggg",
+          "value": "Standard abbreviation: @fields.curriculum_standard_abbrev",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "view_intro.debuggggggg",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "Standard abbreviation: @fields.curriculum_standard_abbrev",
+                "matchedExpression": "@fields.curriculum_standard_abbrev",
+                "type": "fields",
+                "fieldName": "curriculum_standard_abbrev"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@fields.curriculum_standard_abbrev": [
+              "value"
+            ]
+          }
         }
       ],
       "_nested_name": "view_intro"
