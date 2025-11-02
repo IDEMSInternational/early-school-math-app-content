@@ -7,6 +7,7 @@
     {
       "id": "FMT_EAA_",
       "strand_id": "FMT",
+      "count": 6,
       "topic_id_1": "FMT_EAA_EandO",
       "topic_id_2": "FMT_EAA_FMTinH",
       "topic_id_3": "FMT_EAA_FMTOA",
@@ -26,6 +27,7 @@
     {
       "id": "FMT_RWC_",
       "strand_id": "FMT",
+      "count": 2,
       "topic_id_1": "FMT_RWC_DRP",
       "topic_id_2": "FMT_RWC_DRV",
       "name": "Reading with Children",
@@ -41,6 +43,7 @@
     {
       "id": "NPV_QC10_",
       "strand_id": "NPV",
+      "count": 6,
       "topic_id_1": "NPV_QC10_QC",
       "topic_id_2": "NPV_QC10_CMQ10",
       "topic_id_3": "NPV_QC10_Sub10",
@@ -60,6 +63,7 @@
     {
       "id": "NPV_CPV100_",
       "strand_id": "NPV",
+      "count": 5,
       "topic_id_1": "NPV_CPV100_Count20",
       "topic_id_2": "NPV_CPV100_PV20",
       "topic_id_3": "NPV_CPV100_Comp20",
@@ -78,6 +82,7 @@
     {
       "id": "NO_AS10_",
       "strand_id": "NO",
+      "count": 7,
       "topic_id_1": "NO_AS10_QAS",
       "topic_id_2": "NO_AS10_AS1and2",
       "topic_id_3": "NO_AS10_ASto5",
@@ -98,6 +103,7 @@
     {
       "id": "NO_ASSD_",
       "strand_id": "NO",
+      "count": 8,
       "topic_id_1": "NO_ASSD_PVto19",
       "topic_id_2": "NO_ASSD_AddFingers",
       "topic_id_3": "NO_ASSD_SubFingers",
@@ -119,6 +125,7 @@
     {
       "id": "NO_DD_",
       "strand_id": "NO",
+      "count": 3,
       "topic_id_1": "NO_DD_AS2and1",
       "topic_id_2": "NO_DD_AS2noRegroup",
       "topic_id_3": "NO_DD_AS2wRegroup",
@@ -135,6 +142,7 @@
     {
       "id": "NO_MSD_",
       "strand_id": "NO",
+      "count": 7,
       "topic_id_1": "NO_MSD_Doubling",
       "topic_id_2": "NO_MSD_Mult_5_10",
       "topic_id_3": "NO_MSD_MultRep",
@@ -155,6 +163,7 @@
     {
       "id": "NO_DSD_",
       "strand_id": "NO",
+      "count": 6,
       "topic_id_1": "NO_DSD_Models",
       "topic_id_2": "NO_DSD_Zero",
       "topic_id_3": "NO_DSD_Without_Rem",
@@ -174,6 +183,7 @@
     {
       "id": "FEP_EP_",
       "strand_id": "NO",
+      "count": 2,
       "topic_id_1": "FEP_EP_NMEP_Shapes",
       "topic_id_2": "FEP_EP_NMEP_Sets",
       "name": "Fractions – Equal Parts",
@@ -189,6 +199,7 @@
     {
       "id": "NO_NT_",
       "strand_id": "NO",
+      "count": 5,
       "topic_id_1": "NO_NT_EvenOdd",
       "topic_id_2": "NO_NT_PowExp",
       "topic_id_3": "NO_NT_Primes",
@@ -207,6 +218,7 @@
     {
       "id": "PS_SWP_",
       "strand_id": "PS",
+      "count": 5,
       "topic_id_1": "PS_SWP_EASP",
       "topic_id_2": "PS_SWP_EASE",
       "topic_id_3": "PS_SWP_ASP",
@@ -223,70 +235,28 @@
       }
     },
     {
-      "id": "Meas_Dist_",
+      "id": "Meas_Early_",
       "strand_id": "Meas",
-      "topic_id_1": "Meas_Dist_CL",
-      "topic_id_2": "Meas_Dist_MLNS",
-      "topic_id_3": "Meas_Dist_MLS",
-      "name": "Length",
+      "count": 5,
+      "topic_id_1": "Meas_Early_Overview",
+      "topic_id_2": "Meas_Early_Direct",
+      "topic_id_3": "Meas_Early_Indirect",
+      "topic_id_4": "Meas_Early_Nonstandard",
+      "topic_id_5": "Meas_Early_Standard",
+      "name": "Early Measuring",
       "_translations": {
         "name": {}
       },
       "_translatedFields": {
         "name": {
-          "eng": "Length"
-        }
-      }
-    },
-    {
-      "id": "Meas_Wt_",
-      "strand_id": "Meas",
-      "topic_id_1": "Meas_Wt_CW",
-      "topic_id_2": "Meas_Wt_MWNS",
-      "topic_id_3": "Meas_Wt_MWS",
-      "name": "Mass (Weight)",
-      "_translations": {
-        "name": {}
-      },
-      "_translatedFields": {
-        "name": {
-          "eng": "Mass (Weight)"
-        }
-      }
-    },
-    {
-      "id": "Meas_Vol_",
-      "strand_id": "Meas",
-      "topic_id_1": "Meas_Vol_CV",
-      "topic_id_2": "Meas_Vol_CVNS",
-      "topic_id_3": "Meas_Vol_CVS",
-      "name": "Volume / Capacity",
-      "_translations": {
-        "name": {}
-      },
-      "_translatedFields": {
-        "name": {
-          "eng": "Volume / Capacity"
-        }
-      }
-    },
-    {
-      "id": "Meas_Area_",
-      "strand_id": "Meas",
-      "topic_id_1": "Meas_Area_CA",
-      "name": "Area",
-      "_translations": {
-        "name": {}
-      },
-      "_translatedFields": {
-        "name": {
-          "eng": "Area"
+          "eng": "Early Measuring"
         }
       }
     },
     {
       "id": "Meas_Time_",
       "strand_id": "Meas",
+      "count": 3,
       "topic_id_1": "Meas_Time_PofD",
       "topic_id_2": "Meas_Time_Cal",
       "topic_id_3": "Meas_Time_TTH",
@@ -303,6 +273,7 @@
     {
       "id": "Meas_Money_",
       "strand_id": "Meas",
+      "count": 1,
       "topic_id_1": "Meas_Money_Money",
       "name": "Money",
       "_translations": {
@@ -317,6 +288,7 @@
     {
       "id": "Geom_OP_",
       "strand_id": "Geom",
+      "count": 2,
       "topic_id_1": "Geom_OP_PG",
       "topic_id_2": "Geom_OP_SD",
       "name": "Object Properties",
@@ -332,6 +304,7 @@
     {
       "id": "Geom_Pat_",
       "strand_id": "Geom",
+      "count": 2,
       "topic_id_1": "Geom_Pat_Intro",
       "topic_id_2": "Geom_Pat_MSP",
       "name": "Patterns",
@@ -347,6 +320,7 @@
     {
       "id": "Geom_Shape_",
       "strand_id": "Geom",
+      "count": 5,
       "topic_id_1": "Geom_Shape_DS",
       "topic_id_2": "Geom_Shape_SN2D3D",
       "topic_id_3": "Geom_Shape_CompSort",
@@ -365,6 +339,7 @@
     {
       "id": "Data_CO_",
       "strand_id": "Data",
+      "count": 1,
       "topic_id_1": "Data_CO_P",
       "name": "Collecting and Organizing",
       "_translations": {
@@ -379,6 +354,7 @@
     {
       "id": "Data_Rep_",
       "strand_id": "Data",
+      "count": 1,
       "topic_id_1": "Data_Rep_P",
       "name": "Representing",
       "_translations": {
@@ -393,6 +369,7 @@
     {
       "id": "Data_Graph_",
       "strand_id": "Data",
+      "count": 1,
       "topic_id_1": "Data_Graph_P",
       "name": "Graphing",
       "_translations": {
@@ -407,6 +384,7 @@
     {
       "id": "Data_Anal_",
       "strand_id": "Data",
+      "count": 1,
       "topic_id_1": "Data_Anal_P",
       "name": "Analyzing",
       "_translations": {
@@ -421,6 +399,7 @@
     {
       "id": "BandA_B_",
       "strand_id": "BandA",
+      "count": 1,
       "topic_id_1": "BandA_B_B",
       "name": "Behaviors",
       "_translations": {
@@ -435,6 +414,7 @@
     {
       "id": "BandA_A_",
       "strand_id": "BandA",
+      "count": 1,
       "topic_id_1": "BandA_A_A",
       "name": "Attitudes",
       "_translations": {
@@ -448,5 +428,10 @@
     }
   ],
   "_xlsxPath": "ESM_topics_esm.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1PeJ5ishcTCWUvjhflbQqKO6M8u9rNuec"
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1PeJ5ishcTCWUvjhflbQqKO6M8u9rNuec",
+  "_metadata": {
+    "count": {
+      "type": "number"
+    }
+  }
 }

@@ -117,8 +117,7 @@
             "topics_search_set",
             "IGNORE"
           ],
-          "_raw": "click | set_field:topics_search_set: IGNORE",
-          "_cleaned": "click | set_field:topics_search_set: IGNORE"
+          "_raw": "click | set_field:topics_search_set: IGNORE"
         },
         {
           "trigger": "click",
@@ -126,8 +125,7 @@
           "args": [
             "force_reload"
           ],
-          "_raw": "click | emit: force_reload",
-          "_cleaned": "click | emit: force_reload"
+          "_raw": "click | emit: force_reload"
         }
       ],
       "parameter_list": {
@@ -512,6 +510,76 @@
       }
     },
     {
+      "name": "comma_char",
+      "value": ",",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "comma_char"
+    },
+    {
+      "name": "zero",
+      "value": 0,
+      "type": "set_variable",
+      "_nested_name": "zero"
+    },
+    {
+      "name": "countem",
+      "value": "@local.zero - @local.zero",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "countem",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.zero - @local.zero",
+            "matchedExpression": "@local.zero",
+            "type": "local",
+            "fieldName": "zero"
+          },
+          {
+            "fullExpression": "@local.zero - @local.zero",
+            "matchedExpression": "@local.zero",
+            "type": "local",
+            "fieldName": "zero"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.zero": [
+          "value",
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "debugggg",
+      "value": "Countem value: @local.countem",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "debugggg",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Countem value: @local.countem",
+            "matchedExpression": "@local.countem",
+            "type": "local",
+            "fieldName": "countem"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.countem": [
+          "value"
+        ]
+      }
+    },
+    {
       "type": "display_group",
       "parameter_list": {
         "style": "column"
@@ -653,7 +721,7 @@
                               "name": "middle_level_accords_@item_id",
                               "value": "@data.num_list_one_to_twenty",
                               "parameter_list": {
-                                "style": "column"
+                                "limit": "@item.count"
                               },
                               "rows": [
                                 {
@@ -937,7 +1005,7 @@
                                           "name": "topic_accords_@ocal.middle_level_id",
                                           "value": "@data.num_list_one_to_twenty",
                                           "parameter_list": {
-                                            "style": "column"
+                                            "limit": "@local.middle_level_entries.count"
                                           },
                                           "rows": [
                                             {
@@ -1293,48 +1361,59 @@
                                               },
                                               "rows": [
                                                 {
-                                                  "name": "comma_char",
-                                                  "value": ",",
+                                                  "name": "countem",
+                                                  "value": "@local.countem + 1",
                                                   "_translations": {
                                                     "value": {}
                                                   },
                                                   "type": "set_variable",
-                                                  "_nested_name": "display_group_25.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level_@item_id.middle_level_accords_@item_id.@local.middle_level_entries.name.dg_@local.middle_level_entries.name.topic_accords_@ocal.middle_level_id.dg_@local.topic_entries.name.comma_char",
+                                                  "_nested_name": "display_group_25.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level_@item_id.middle_level_accords_@item_id.@local.middle_level_entries.name.dg_@local.middle_level_entries.name.topic_accords_@ocal.middle_level_id.dg_@local.topic_entries.name.countem",
                                                   "_dynamicFields": {
+                                                    "value": [
+                                                      {
+                                                        "fullExpression": "@local.countem + 1",
+                                                        "matchedExpression": "@local.countem",
+                                                        "type": "local",
+                                                        "fieldName": "countem"
+                                                      }
+                                                    ],
                                                     "_nested_name": [
                                                       {
-                                                        "fullExpression": "display_group_25.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level_@item_id.middle_level_accords_@item_id.@local.middle_level_entries.name.dg_@local.middle_level_entries.name.topic_accords_@ocal.middle_level_id.dg_@local.topic_entries.name.comma_char",
+                                                        "fullExpression": "display_group_25.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level_@item_id.middle_level_accords_@item_id.@local.middle_level_entries.name.dg_@local.middle_level_entries.name.topic_accords_@ocal.middle_level_id.dg_@local.topic_entries.name.countem",
                                                         "matchedExpression": "@item.id.dg_",
                                                         "type": "item",
                                                         "fieldName": "id"
                                                       },
                                                       {
-                                                        "fullExpression": "display_group_25.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level_@item_id.middle_level_accords_@item_id.@local.middle_level_entries.name.dg_@local.middle_level_entries.name.topic_accords_@ocal.middle_level_id.dg_@local.topic_entries.name.comma_char",
+                                                        "fullExpression": "display_group_25.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level_@item_id.middle_level_accords_@item_id.@local.middle_level_entries.name.dg_@local.middle_level_entries.name.topic_accords_@ocal.middle_level_id.dg_@local.topic_entries.name.countem",
                                                         "matchedExpression": "@item.id.accordion_middle_level_",
                                                         "type": "item",
                                                         "fieldName": "id"
                                                       },
                                                       {
-                                                        "fullExpression": "display_group_25.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level_@item_id.middle_level_accords_@item_id.@local.middle_level_entries.name.dg_@local.middle_level_entries.name.topic_accords_@ocal.middle_level_id.dg_@local.topic_entries.name.comma_char",
+                                                        "fullExpression": "display_group_25.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level_@item_id.middle_level_accords_@item_id.@local.middle_level_entries.name.dg_@local.middle_level_entries.name.topic_accords_@ocal.middle_level_id.dg_@local.topic_entries.name.countem",
                                                         "matchedExpression": "@local.middle_level_entries.name.dg_",
                                                         "type": "local",
                                                         "fieldName": "middle_level_entries"
                                                       },
                                                       {
-                                                        "fullExpression": "display_group_25.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level_@item_id.middle_level_accords_@item_id.@local.middle_level_entries.name.dg_@local.middle_level_entries.name.topic_accords_@ocal.middle_level_id.dg_@local.topic_entries.name.comma_char",
+                                                        "fullExpression": "display_group_25.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level_@item_id.middle_level_accords_@item_id.@local.middle_level_entries.name.dg_@local.middle_level_entries.name.topic_accords_@ocal.middle_level_id.dg_@local.topic_entries.name.countem",
                                                         "matchedExpression": "@local.middle_level_entries.name.topic_accords_",
                                                         "type": "local",
                                                         "fieldName": "middle_level_entries"
                                                       },
                                                       {
-                                                        "fullExpression": "display_group_25.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level_@item_id.middle_level_accords_@item_id.@local.middle_level_entries.name.dg_@local.middle_level_entries.name.topic_accords_@ocal.middle_level_id.dg_@local.topic_entries.name.comma_char",
-                                                        "matchedExpression": "@local.topic_entries.name.comma_char",
+                                                        "fullExpression": "display_group_25.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level_@item_id.middle_level_accords_@item_id.@local.middle_level_entries.name.dg_@local.middle_level_entries.name.topic_accords_@ocal.middle_level_id.dg_@local.topic_entries.name.countem",
+                                                        "matchedExpression": "@local.topic_entries.name.countem",
                                                         "type": "local",
                                                         "fieldName": "topic_entries"
                                                       }
                                                     ]
                                                   },
                                                   "_dynamicDependencies": {
+                                                    "@local.countem": [
+                                                      "value"
+                                                    ],
                                                     "@item.id.dg_": [
                                                       "_nested_name"
                                                     ],
@@ -1347,7 +1426,7 @@
                                                     "@local.middle_level_entries.name.topic_accords_": [
                                                       "_nested_name"
                                                     ],
-                                                    "@local.topic_entries.name.comma_char": [
+                                                    "@local.topic_entries.name.countem": [
                                                       "_nested_name"
                                                     ]
                                                   }
@@ -1367,19 +1446,10 @@
                                                         "topics_search_set",
                                                         "@fields.topics_search_set@local.comma_char@local.topic_id"
                                                       ],
-                                                      "_raw": "click | set_field:topics_search_set: @fields.topics_search_set@local.comma_char@local.topic_id",
-                                                      "_cleaned": "click | set_field:topics_search_set: @fields.topics_search_set@local.comma_char@local.topic_id"
-                                                    },
-                                                    {
-                                                      "trigger": "click",
-                                                      "action_id": "emit",
-                                                      "args": [
-                                                        "force_reload"
-                                                      ],
-                                                      "_raw": "click | emit: force_reload",
-                                                      "_cleaned": "click | emit: force_reload"
+                                                      "_raw": "click | set_field:topics_search_set: @fields.topics_search_set@local.comma_char@local.topic_id"
                                                     }
                                                   ],
+                                                  "condition": "@@local.topic_id_ptr",
                                                   "parameter_list": {
                                                     "style": "short",
                                                     "text_align": "center"
@@ -1445,29 +1515,17 @@
                                                             "type": "local",
                                                             "fieldName": "topic_id"
                                                           }
-                                                        ],
-                                                        "_cleaned": [
-                                                          {
-                                                            "fullExpression": "click | set_field:topics_search_set: @fields.topics_search_set@local.comma_char@local.topic_id",
-                                                            "matchedExpression": "@fields.topics_search_set",
-                                                            "type": "fields",
-                                                            "fieldName": "topics_search_set"
-                                                          },
-                                                          {
-                                                            "fullExpression": "click | set_field:topics_search_set: @fields.topics_search_set@local.comma_char@local.topic_id",
-                                                            "matchedExpression": "@local.comma_char",
-                                                            "type": "local",
-                                                            "fieldName": "comma_char"
-                                                          },
-                                                          {
-                                                            "fullExpression": "click | set_field:topics_search_set: @fields.topics_search_set@local.comma_char@local.topic_id",
-                                                            "matchedExpression": "@local.topic_id",
-                                                            "type": "local",
-                                                            "fieldName": "topic_id"
-                                                          }
                                                         ]
                                                       }
                                                     },
+                                                    "condition": [
+                                                      {
+                                                        "fullExpression": "@@local.topic_id_ptr",
+                                                        "matchedExpression": "@local.topic_id_ptr",
+                                                        "type": "local",
+                                                        "fieldName": "topic_id_ptr"
+                                                      }
+                                                    ],
                                                     "_nested_name": [
                                                       {
                                                         "fullExpression": "display_group_25.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level_@item_id.middle_level_accords_@item_id.@local.middle_level_entries.name.dg_@local.middle_level_entries.name.topic_accords_@ocal.middle_level_id.dg_@local.topic_entries.name.button_@local.topic_entries.name",
@@ -1515,18 +1573,18 @@
                                                     ],
                                                     "@fields.topics_search_set": [
                                                       "action_list.0.args.1",
-                                                      "action_list.0._raw",
-                                                      "action_list.0._cleaned"
+                                                      "action_list.0._raw"
                                                     ],
                                                     "@local.comma_char": [
                                                       "action_list.0.args.1",
-                                                      "action_list.0._raw",
-                                                      "action_list.0._cleaned"
+                                                      "action_list.0._raw"
                                                     ],
                                                     "@local.topic_id": [
                                                       "action_list.0.args.1",
-                                                      "action_list.0._raw",
-                                                      "action_list.0._cleaned"
+                                                      "action_list.0._raw"
+                                                    ],
+                                                    "@local.topic_id_ptr": [
+                                                      "condition"
                                                     ],
                                                     "@item.id.dg_": [
                                                       "_nested_name"
@@ -1630,6 +1688,16 @@
                                                 "fieldName": "num_list_one_to_twenty"
                                               }
                                             ],
+                                            "parameter_list": {
+                                              "limit": [
+                                                {
+                                                  "fullExpression": "@local.middle_level_entries.count",
+                                                  "matchedExpression": "@local.middle_level_entries.count",
+                                                  "type": "local",
+                                                  "fieldName": "middle_level_entries"
+                                                }
+                                              ]
+                                            },
                                             "_nested_name": [
                                               {
                                                 "fullExpression": "display_group_25.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level_@item_id.middle_level_accords_@item_id.@local.middle_level_entries.name.dg_@local.middle_level_entries.name.topic_accords_@ocal.middle_level_id",
@@ -1660,6 +1728,9 @@
                                           "_dynamicDependencies": {
                                             "@data.num_list_one_to_twenty": [
                                               "value"
+                                            ],
+                                            "@local.middle_level_entries.count": [
+                                              "parameter_list.limit"
                                             ],
                                             "@item.id.dg_": [
                                               "_nested_name"
@@ -1805,6 +1876,16 @@
                                     "fieldName": "num_list_one_to_twenty"
                                   }
                                 ],
+                                "parameter_list": {
+                                  "limit": [
+                                    {
+                                      "fullExpression": "@item.count",
+                                      "matchedExpression": "@item.count",
+                                      "type": "item",
+                                      "fieldName": "count"
+                                    }
+                                  ]
+                                },
                                 "_nested_name": [
                                   {
                                     "fullExpression": "display_group_25.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level_@item_id.middle_level_accords_@item_id",
@@ -1823,6 +1904,9 @@
                               "_dynamicDependencies": {
                                 "@data.num_list_one_to_twenty": [
                                   "value"
+                                ],
+                                "@item.count": [
+                                  "parameter_list.limit"
                                 ],
                                 "@item.id.dg_": [
                                   "_nested_name"
@@ -2292,7 +2376,7 @@
     },
     {
       "name": "display_the_results",
-      "value": true,
+      "value": false,
       "type": "set_variable",
       "_nested_name": "display_the_results"
     },
@@ -2326,11 +2410,10 @@
                 "display_the_results",
                 "!@local.display_the_results"
               ],
-              "_raw": "click | set_local : display_the_results: !@local.display_the_results",
-              "_cleaned": "click | set_local : display_the_results: !@local.display_the_results"
+              "_raw": "click | set_local : display_the_results: !@local.display_the_results"
             }
           ],
-          "condition": false,
+          "condition": "!@local.display_the_results",
           "parameter_list": {
             "style": "short",
             "text_align": "center"
@@ -2356,8 +2439,64 @@
                     "type": "local",
                     "fieldName": "display_the_results"
                   }
-                ],
-                "_cleaned": [
+                ]
+              }
+            },
+            "condition": [
+              {
+                "fullExpression": "!@local.display_the_results",
+                "matchedExpression": "!@local.display_the_results",
+                "type": "local",
+                "fieldName": "display_the_results"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "!@local.display_the_results": [
+              "action_list.0.args.1",
+              "action_list.0._raw",
+              "condition"
+            ]
+          }
+        },
+        {
+          "type": "button",
+          "name": "display_results_button",
+          "value": "Hide Resource Lists",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "set_local",
+              "args": [
+                "display_the_results",
+                "!@local.display_the_results"
+              ],
+              "_raw": "click | set_local : display_the_results: !@local.display_the_results"
+            }
+          ],
+          "condition": "@local.display_the_results",
+          "parameter_list": {
+            "style": "short",
+            "text_align": "center"
+          },
+          "_nested_name": "display_group_30.display_results_button",
+          "_dynamicFields": {
+            "action_list": {
+              "0": {
+                "args": {
+                  "1": [
+                    {
+                      "fullExpression": "!@local.display_the_results",
+                      "matchedExpression": "!@local.display_the_results",
+                      "type": "local",
+                      "fieldName": "display_the_results"
+                    }
+                  ]
+                },
+                "_raw": [
                   {
                     "fullExpression": "click | set_local : display_the_results: !@local.display_the_results",
                     "matchedExpression": "!@local.display_the_results",
@@ -2366,13 +2505,23 @@
                   }
                 ]
               }
-            }
+            },
+            "condition": [
+              {
+                "fullExpression": "@local.display_the_results",
+                "matchedExpression": "@local.display_the_results",
+                "type": "local",
+                "fieldName": "display_the_results"
+              }
+            ]
           },
           "_dynamicDependencies": {
             "!@local.display_the_results": [
               "action_list.0.args.1",
-              "action_list.0._raw",
-              "action_list.0._cleaned"
+              "action_list.0._raw"
+            ],
+            "@local.display_the_results": [
+              "condition"
             ]
           }
         },
