@@ -391,8 +391,7 @@
                 "current_topic",
                 "@local.prev_topic"
               ],
-              "_raw": "click | set_field:current_topic:@local.prev_topic",
-              "_cleaned": "click | set_field:current_topic:@local.prev_topic"
+              "_raw": "click | set_field:current_topic:@local.prev_topic"
             },
             {
               "trigger": "click",
@@ -400,8 +399,7 @@
               "args": [
                 "force_reload"
               ],
-              "_raw": "click | emit:force_reload",
-              "_cleaned": "click | emit:force_reload"
+              "_raw": "click | emit:force_reload"
             }
           ],
           "condition": "@local.prev_topic",
@@ -434,14 +432,6 @@
                     "type": "local",
                     "fieldName": "prev_topic"
                   }
-                ],
-                "_cleaned": [
-                  {
-                    "fullExpression": "click | set_field:current_topic:@local.prev_topic",
-                    "matchedExpression": "@local.prev_topic",
-                    "type": "local",
-                    "fieldName": "prev_topic"
-                  }
                 ]
               }
             },
@@ -458,7 +448,6 @@
             "@local.prev_topic": [
               "action_list.0.args.1",
               "action_list.0._raw",
-              "action_list.0._cleaned",
               "condition"
             ]
           }
@@ -533,8 +522,7 @@
                 "current_topic",
                 "@local.next_topic"
               ],
-              "_raw": "click | set_field:current_topic:@local.next_topic",
-              "_cleaned": "click | set_field:current_topic:@local.next_topic"
+              "_raw": "click | set_field:current_topic:@local.next_topic"
             },
             {
               "trigger": "click",
@@ -542,8 +530,7 @@
               "args": [
                 "force_reload"
               ],
-              "_raw": "click | emit:force_reload",
-              "_cleaned": "click | emit:force_reload"
+              "_raw": "click | emit:force_reload"
             }
           ],
           "condition": "@local.next_topic",
@@ -576,14 +563,6 @@
                     "type": "local",
                     "fieldName": "next_topic"
                   }
-                ],
-                "_cleaned": [
-                  {
-                    "fullExpression": "click | set_field:current_topic:@local.next_topic",
-                    "matchedExpression": "@local.next_topic",
-                    "type": "local",
-                    "fieldName": "next_topic"
-                  }
                 ]
               }
             },
@@ -600,7 +579,6 @@
             "@local.next_topic": [
               "action_list.0.args.1",
               "action_list.0._raw",
-              "action_list.0._cleaned",
               "condition"
             ]
           }

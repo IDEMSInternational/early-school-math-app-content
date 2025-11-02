@@ -52,8 +52,7 @@
               "args": [
                 "esm_rt_problem_solving"
               ],
-              "_raw": "click | go_to: esm_rt_problem_solving",
-              "_cleaned": "click | go_to: esm_rt_problem_solving"
+              "_raw": "click | go_to: esm_rt_problem_solving"
             }
           ],
           "parameter_list": {
@@ -184,8 +183,7 @@
                               "args": [
                                 "efm_pow_start"
                               ],
-                              "_raw": "click | go_to: efm_pow_start",
-                              "_cleaned": "click | go_to: efm_pow_start"
+                              "_raw": "click | go_to: efm_pow_start"
                             }
                           ],
                           "parameter_list": {
@@ -239,8 +237,7 @@
                               "args": [
                                 "efm_ga_start"
                               ],
-                              "_raw": "click | go_to: efm_ga_start",
-                              "_cleaned": "click | go_to: efm_ga_start"
+                              "_raw": "click | go_to: efm_ga_start"
                             }
                           ],
                           "parameter_list": {
@@ -326,8 +323,7 @@
                                 "ps_content_ptr",
                                 "data.esm_ps_tasks_data_list.@item.id"
                               ],
-                              "_raw": "click | set_field:ps_content_ptr : data.esm_ps_tasks_data_list.@item.id",
-                              "_cleaned": "click | set_field:ps_content_ptr : data.esm_ps_tasks_data_list.@item.id"
+                              "_raw": "click | set_field:ps_content_ptr : data.esm_ps_tasks_data_list.@item.id"
                             },
                             {
                               "trigger": "click",
@@ -335,8 +331,7 @@
                               "args": [
                                 "esm_ps_displayer"
                               ],
-                              "_raw": "click | go_to: esm_ps_displayer",
-                              "_cleaned": "click | go_to: esm_ps_displayer"
+                              "_raw": "click | go_to: esm_ps_displayer"
                             }
                           ],
                           "parameter_list": {
@@ -380,14 +375,6 @@
                                     "type": "item",
                                     "fieldName": "id"
                                   }
-                                ],
-                                "_cleaned": [
-                                  {
-                                    "fullExpression": "click | set_field:ps_content_ptr : data.esm_ps_tasks_data_list.@item.id",
-                                    "matchedExpression": "@item.id",
-                                    "type": "item",
-                                    "fieldName": "id"
-                                  }
                                 ]
                               }
                             },
@@ -405,7 +392,6 @@
                               "name",
                               "action_list.0.args.1",
                               "action_list.0._raw",
-                              "action_list.0._cleaned",
                               "_nested_name"
                             ],
                             "@item.name": [
@@ -489,8 +475,7 @@
                                 "ps_content_ptr",
                                 "data.esm_ps_tasks_data_list.@item.id"
                               ],
-                              "_raw": "click | set_field:ps_content_ptr : data.esm_ps_tasks_data_list.@item.id",
-                              "_cleaned": "click | set_field:ps_content_ptr : data.esm_ps_tasks_data_list.@item.id"
+                              "_raw": "click | set_field:ps_content_ptr : data.esm_ps_tasks_data_list.@item.id"
                             },
                             {
                               "trigger": "click",
@@ -498,8 +483,7 @@
                               "args": [
                                 "esm_ps_displayer"
                               ],
-                              "_raw": "click | go_to: esm_ps_displayer",
-                              "_cleaned": "click | go_to: esm_ps_displayer"
+                              "_raw": "click | go_to: esm_ps_displayer"
                             }
                           ],
                           "parameter_list": {
@@ -543,14 +527,6 @@
                                     "type": "item",
                                     "fieldName": "id"
                                   }
-                                ],
-                                "_cleaned": [
-                                  {
-                                    "fullExpression": "click | set_field:ps_content_ptr : data.esm_ps_tasks_data_list.@item.id",
-                                    "matchedExpression": "@item.id",
-                                    "type": "item",
-                                    "fieldName": "id"
-                                  }
                                 ]
                               }
                             },
@@ -568,7 +544,6 @@
                               "name",
                               "action_list.0.args.1",
                               "action_list.0._raw",
-                              "action_list.0._cleaned",
                               "_nested_name"
                             ],
                             "@item.name": [
@@ -660,8 +635,7 @@
                                     "ps_content_ptr",
                                     "data.esm_ps_tasks_data_list.@item.id"
                                   ],
-                                  "_raw": "click | set_field:ps_content_ptr : data.esm_ps_tasks_data_list.@item.id",
-                                  "_cleaned": "click | set_field:ps_content_ptr : data.esm_ps_tasks_data_list.@item.id"
+                                  "_raw": "click | set_field:ps_content_ptr : data.esm_ps_tasks_data_list.@item.id"
                                 },
                                 {
                                   "trigger": "click",
@@ -669,8 +643,7 @@
                                   "args": [
                                     "esm_ps_displayer"
                                   ],
-                                  "_raw": "click | go_to: esm_ps_displayer",
-                                  "_cleaned": "click | go_to: esm_ps_displayer"
+                                  "_raw": "click | go_to: esm_ps_displayer"
                                 }
                               ],
                               "parameter_list": {
@@ -714,14 +687,6 @@
                                         "type": "item",
                                         "fieldName": "id"
                                       }
-                                    ],
-                                    "_cleaned": [
-                                      {
-                                        "fullExpression": "click | set_field:ps_content_ptr : data.esm_ps_tasks_data_list.@item.id",
-                                        "matchedExpression": "@item.id",
-                                        "type": "item",
-                                        "fieldName": "id"
-                                      }
                                     ]
                                   }
                                 },
@@ -739,7 +704,6 @@
                                   "name",
                                   "action_list.0.args.1",
                                   "action_list.0._raw",
-                                  "action_list.0._cleaned",
                                   "_nested_name"
                                 ],
                                 "@item.name": [

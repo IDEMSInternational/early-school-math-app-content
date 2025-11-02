@@ -264,8 +264,7 @@
                 "glossary_words_count",
                 "@@local.glossary_count_ptr"
               ],
-              "_raw": "click | set_field:glossary_words_count : @@local.glossary_count_ptr",
-              "_cleaned": "click | set_field:glossary_words_count : @@local.glossary_count_ptr"
+              "_raw": "click | set_field:glossary_words_count : @@local.glossary_count_ptr"
             },
             {
               "trigger": "click",
@@ -274,8 +273,7 @@
                 "glossary_word_1",
                 "@@local.glossary_word_1_ptr"
               ],
-              "_raw": "click | set_field:glossary_word_1 : @@local.glossary_word_1_ptr",
-              "_cleaned": "click | set_field:glossary_word_1 : @@local.glossary_word_1_ptr"
+              "_raw": "click | set_field:glossary_word_1 : @@local.glossary_word_1_ptr"
             },
             {
               "trigger": "click",
@@ -284,8 +282,7 @@
                 "glossary_word_2",
                 "@@local.glossary_word_2_ptr"
               ],
-              "_raw": "click | set_field:glossary_word_2 : @@local.glossary_word_2_ptr",
-              "_cleaned": "click | set_field:glossary_word_2 : @@local.glossary_word_2_ptr"
+              "_raw": "click | set_field:glossary_word_2 : @@local.glossary_word_2_ptr"
             },
             {
               "trigger": "click",
@@ -294,8 +291,7 @@
                 "glossary_word_3",
                 "@@local.glossary_word_3_ptr"
               ],
-              "_raw": "click | set_field:glossary_word_3 : @@local.glossary_word_3_ptr",
-              "_cleaned": "click | set_field:glossary_word_3 : @@local.glossary_word_3_ptr"
+              "_raw": "click | set_field:glossary_word_3 : @@local.glossary_word_3_ptr"
             },
             {
               "trigger": "click",
@@ -304,8 +300,7 @@
                 "glossary_word_4",
                 "@@local.glossary_word_4_ptr"
               ],
-              "_raw": "click | set_field:glossary_word_4 : @@local.glossary_word_4_ptr",
-              "_cleaned": "click | set_field:glossary_word_4 : @@local.glossary_word_4_ptr"
+              "_raw": "click | set_field:glossary_word_4 : @@local.glossary_word_4_ptr"
             },
             {
               "trigger": "click",
@@ -314,8 +309,7 @@
                 "glossary_word_5",
                 "@@local.glossary_word_5_ptr"
               ],
-              "_raw": "click | set_field:glossary_word_5 : @@local.glossary_word_5_ptr",
-              "_cleaned": "click | set_field:glossary_word_5 : @@local.glossary_word_5_ptr"
+              "_raw": "click | set_field:glossary_word_5 : @@local.glossary_word_5_ptr"
             },
             {
               "trigger": "click",
@@ -324,8 +318,7 @@
                 "glossary_word_6",
                 "@@local.glossary_word_6_ptr"
               ],
-              "_raw": "click | set_field:glossary_word_6 : @@local.glossary_word_6_ptr",
-              "_cleaned": "click | set_field:glossary_word_6 : @@local.glossary_word_6_ptr"
+              "_raw": "click | set_field:glossary_word_6 : @@local.glossary_word_6_ptr"
             },
             {
               "trigger": "click",
@@ -333,8 +326,7 @@
               "args": [
                 "efm_gloss_start"
               ],
-              "_raw": "click | go_to: efm_gloss_start",
-              "_cleaned": "click | go_to: efm_gloss_start"
+              "_raw": "click | go_to: efm_gloss_start"
             }
           ],
           "parameter_list": {
@@ -370,14 +362,6 @@
                     "type": "local",
                     "fieldName": "glossary_count_ptr"
                   }
-                ],
-                "_cleaned": [
-                  {
-                    "fullExpression": "click | set_field:glossary_words_count : @@local.glossary_count_ptr",
-                    "matchedExpression": "@local.glossary_count_ptr",
-                    "type": "local",
-                    "fieldName": "glossary_count_ptr"
-                  }
                 ]
               },
               "1": {
@@ -392,14 +376,6 @@
                   ]
                 },
                 "_raw": [
-                  {
-                    "fullExpression": "click | set_field:glossary_word_1 : @@local.glossary_word_1_ptr",
-                    "matchedExpression": "@local.glossary_word_1_ptr",
-                    "type": "local",
-                    "fieldName": "glossary_word_1_ptr"
-                  }
-                ],
-                "_cleaned": [
                   {
                     "fullExpression": "click | set_field:glossary_word_1 : @@local.glossary_word_1_ptr",
                     "matchedExpression": "@local.glossary_word_1_ptr",
@@ -426,14 +402,6 @@
                     "type": "local",
                     "fieldName": "glossary_word_2_ptr"
                   }
-                ],
-                "_cleaned": [
-                  {
-                    "fullExpression": "click | set_field:glossary_word_2 : @@local.glossary_word_2_ptr",
-                    "matchedExpression": "@local.glossary_word_2_ptr",
-                    "type": "local",
-                    "fieldName": "glossary_word_2_ptr"
-                  }
                 ]
               },
               "3": {
@@ -448,14 +416,6 @@
                   ]
                 },
                 "_raw": [
-                  {
-                    "fullExpression": "click | set_field:glossary_word_3 : @@local.glossary_word_3_ptr",
-                    "matchedExpression": "@local.glossary_word_3_ptr",
-                    "type": "local",
-                    "fieldName": "glossary_word_3_ptr"
-                  }
-                ],
-                "_cleaned": [
                   {
                     "fullExpression": "click | set_field:glossary_word_3 : @@local.glossary_word_3_ptr",
                     "matchedExpression": "@local.glossary_word_3_ptr",
@@ -482,14 +442,6 @@
                     "type": "local",
                     "fieldName": "glossary_word_4_ptr"
                   }
-                ],
-                "_cleaned": [
-                  {
-                    "fullExpression": "click | set_field:glossary_word_4 : @@local.glossary_word_4_ptr",
-                    "matchedExpression": "@local.glossary_word_4_ptr",
-                    "type": "local",
-                    "fieldName": "glossary_word_4_ptr"
-                  }
                 ]
               },
               "5": {
@@ -504,14 +456,6 @@
                   ]
                 },
                 "_raw": [
-                  {
-                    "fullExpression": "click | set_field:glossary_word_5 : @@local.glossary_word_5_ptr",
-                    "matchedExpression": "@local.glossary_word_5_ptr",
-                    "type": "local",
-                    "fieldName": "glossary_word_5_ptr"
-                  }
-                ],
-                "_cleaned": [
                   {
                     "fullExpression": "click | set_field:glossary_word_5 : @@local.glossary_word_5_ptr",
                     "matchedExpression": "@local.glossary_word_5_ptr",
@@ -538,14 +482,6 @@
                     "type": "local",
                     "fieldName": "glossary_word_6_ptr"
                   }
-                ],
-                "_cleaned": [
-                  {
-                    "fullExpression": "click | set_field:glossary_word_6 : @@local.glossary_word_6_ptr",
-                    "matchedExpression": "@local.glossary_word_6_ptr",
-                    "type": "local",
-                    "fieldName": "glossary_word_6_ptr"
-                  }
                 ]
               }
             }
@@ -556,38 +492,31 @@
             ],
             "@local.glossary_count_ptr": [
               "action_list.0.args.1",
-              "action_list.0._raw",
-              "action_list.0._cleaned"
+              "action_list.0._raw"
             ],
             "@local.glossary_word_1_ptr": [
               "action_list.1.args.1",
-              "action_list.1._raw",
-              "action_list.1._cleaned"
+              "action_list.1._raw"
             ],
             "@local.glossary_word_2_ptr": [
               "action_list.2.args.1",
-              "action_list.2._raw",
-              "action_list.2._cleaned"
+              "action_list.2._raw"
             ],
             "@local.glossary_word_3_ptr": [
               "action_list.3.args.1",
-              "action_list.3._raw",
-              "action_list.3._cleaned"
+              "action_list.3._raw"
             ],
             "@local.glossary_word_4_ptr": [
               "action_list.4.args.1",
-              "action_list.4._raw",
-              "action_list.4._cleaned"
+              "action_list.4._raw"
             ],
             "@local.glossary_word_5_ptr": [
               "action_list.5.args.1",
-              "action_list.5._raw",
-              "action_list.5._cleaned"
+              "action_list.5._raw"
             ],
             "@local.glossary_word_6_ptr": [
               "action_list.6.args.1",
-              "action_list.6._raw",
-              "action_list.6._cleaned"
+              "action_list.6._raw"
             ]
           }
         }

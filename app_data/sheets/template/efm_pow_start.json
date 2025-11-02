@@ -33,8 +33,7 @@
                   "args": [
                     "esm_pows_tour"
                   ],
-                  "_raw": "click | start_tour: esm_pows_tour",
-                  "_cleaned": "click | start_tour: esm_pows_tour"
+                  "_raw": "click | start_tour: esm_pows_tour"
                 }
               ],
               "parameter_list": {
@@ -524,8 +523,7 @@
                                 "current_pow",
                                 "data.efm_pows.@item.id"
                               ],
-                              "_raw": "click | set_field:current_pow: data.efm_pows.@item.id",
-                              "_cleaned": "click | set_field:current_pow: data.efm_pows.@item.id"
+                              "_raw": "click | set_field:current_pow: data.efm_pows.@item.id"
                             },
                             {
                               "trigger": "click",
@@ -533,8 +531,7 @@
                               "args": [
                                 "efm_pow_template"
                               ],
-                              "_raw": "click | go_to: efm_pow_template",
-                              "_cleaned": "click | go_to: efm_pow_template"
+                              "_raw": "click | go_to: efm_pow_template"
                             },
                             {
                               "trigger": "click",
@@ -543,8 +540,7 @@
                                 "@local.click_history_field_name",
                                 "@local.pows_click_history"
                               ],
-                              "_raw": "click | set_field:@local.click_history_field_name: @local.pows_click_history",
-                              "_cleaned": "click | set_field:@local.click_history_field_name: @local.pows_click_history"
+                              "_raw": "click | set_field:@local.click_history_field_name: @local.pows_click_history"
                             }
                           ],
                           "parameter_list": {
@@ -588,14 +584,6 @@
                                     "type": "item",
                                     "fieldName": "id"
                                   }
-                                ],
-                                "_cleaned": [
-                                  {
-                                    "fullExpression": "click | set_field:current_pow: data.efm_pows.@item.id",
-                                    "matchedExpression": "@item.id",
-                                    "type": "item",
-                                    "fieldName": "id"
-                                  }
                                 ]
                               },
                               "2": {
@@ -630,20 +618,6 @@
                                     "type": "local",
                                     "fieldName": "pows_click_history"
                                   }
-                                ],
-                                "_cleaned": [
-                                  {
-                                    "fullExpression": "click | set_field:@local.click_history_field_name: @local.pows_click_history",
-                                    "matchedExpression": "@local.click_history_field_name",
-                                    "type": "local",
-                                    "fieldName": "click_history_field_name"
-                                  },
-                                  {
-                                    "fullExpression": "click | set_field:@local.click_history_field_name: @local.pows_click_history",
-                                    "matchedExpression": "@local.pows_click_history",
-                                    "type": "local",
-                                    "fieldName": "pows_click_history"
-                                  }
                                 ]
                               }
                             },
@@ -661,7 +635,6 @@
                               "name",
                               "action_list.0.args.1",
                               "action_list.0._raw",
-                              "action_list.0._cleaned",
                               "_nested_name"
                             ],
                             "@item.name": [
@@ -669,13 +642,11 @@
                             ],
                             "@local.click_history_field_name": [
                               "action_list.2.args.0",
-                              "action_list.2._raw",
-                              "action_list.2._cleaned"
+                              "action_list.2._raw"
                             ],
                             "@local.pows_click_history": [
                               "action_list.2.args.1",
-                              "action_list.2._raw",
-                              "action_list.2._cleaned"
+                              "action_list.2._raw"
                             ]
                           }
                         }
@@ -1016,8 +987,7 @@
                                 "current_pow",
                                 "data.efm_pows.@item.id"
                               ],
-                              "_raw": "click | set_field:current_pow: data.efm_pows.@item.id",
-                              "_cleaned": "click | set_field:current_pow: data.efm_pows.@item.id"
+                              "_raw": "click | set_field:current_pow: data.efm_pows.@item.id"
                             },
                             {
                               "trigger": "click",
@@ -1025,8 +995,7 @@
                               "args": [
                                 "efm_pow_template"
                               ],
-                              "_raw": "click | go_to: efm_pow_template",
-                              "_cleaned": "click | go_to: efm_pow_template"
+                              "_raw": "click | go_to: efm_pow_template"
                             },
                             {
                               "trigger": "click",
@@ -1035,8 +1004,7 @@
                                 "@local.click_history_field_name",
                                 "@local.pows_click_history"
                               ],
-                              "_raw": "click | set_field:@local.click_history_field_name: @local.pows_click_history",
-                              "_cleaned": "click | set_field:@local.click_history_field_name: @local.pows_click_history"
+                              "_raw": "click | set_field:@local.click_history_field_name: @local.pows_click_history"
                             }
                           ],
                           "parameter_list": {
@@ -1080,14 +1048,6 @@
                                     "type": "item",
                                     "fieldName": "id"
                                   }
-                                ],
-                                "_cleaned": [
-                                  {
-                                    "fullExpression": "click | set_field:current_pow: data.efm_pows.@item.id",
-                                    "matchedExpression": "@item.id",
-                                    "type": "item",
-                                    "fieldName": "id"
-                                  }
                                 ]
                               },
                               "2": {
@@ -1122,20 +1082,6 @@
                                     "type": "local",
                                     "fieldName": "pows_click_history"
                                   }
-                                ],
-                                "_cleaned": [
-                                  {
-                                    "fullExpression": "click | set_field:@local.click_history_field_name: @local.pows_click_history",
-                                    "matchedExpression": "@local.click_history_field_name",
-                                    "type": "local",
-                                    "fieldName": "click_history_field_name"
-                                  },
-                                  {
-                                    "fullExpression": "click | set_field:@local.click_history_field_name: @local.pows_click_history",
-                                    "matchedExpression": "@local.pows_click_history",
-                                    "type": "local",
-                                    "fieldName": "pows_click_history"
-                                  }
                                 ]
                               }
                             },
@@ -1153,7 +1099,6 @@
                               "name",
                               "action_list.0.args.1",
                               "action_list.0._raw",
-                              "action_list.0._cleaned",
                               "_nested_name"
                             ],
                             "@item.name": [
@@ -1161,13 +1106,11 @@
                             ],
                             "@local.click_history_field_name": [
                               "action_list.2.args.0",
-                              "action_list.2._raw",
-                              "action_list.2._cleaned"
+                              "action_list.2._raw"
                             ],
                             "@local.pows_click_history": [
                               "action_list.2.args.1",
-                              "action_list.2._raw",
-                              "action_list.2._cleaned"
+                              "action_list.2._raw"
                             ]
                           }
                         }
@@ -1508,8 +1451,7 @@
                                 "current_pow",
                                 "data.efm_pows.@item.id"
                               ],
-                              "_raw": "click | set_field:current_pow: data.efm_pows.@item.id",
-                              "_cleaned": "click | set_field:current_pow: data.efm_pows.@item.id"
+                              "_raw": "click | set_field:current_pow: data.efm_pows.@item.id"
                             },
                             {
                               "trigger": "click",
@@ -1517,8 +1459,7 @@
                               "args": [
                                 "efm_pow_template"
                               ],
-                              "_raw": "click | go_to: efm_pow_template",
-                              "_cleaned": "click | go_to: efm_pow_template"
+                              "_raw": "click | go_to: efm_pow_template"
                             },
                             {
                               "trigger": "click",
@@ -1527,8 +1468,7 @@
                                 "@local.click_history_field_name",
                                 "@local.pows_click_history"
                               ],
-                              "_raw": "click | set_field:@local.click_history_field_name: @local.pows_click_history",
-                              "_cleaned": "click | set_field:@local.click_history_field_name: @local.pows_click_history"
+                              "_raw": "click | set_field:@local.click_history_field_name: @local.pows_click_history"
                             }
                           ],
                           "parameter_list": {
@@ -1572,14 +1512,6 @@
                                     "type": "item",
                                     "fieldName": "id"
                                   }
-                                ],
-                                "_cleaned": [
-                                  {
-                                    "fullExpression": "click | set_field:current_pow: data.efm_pows.@item.id",
-                                    "matchedExpression": "@item.id",
-                                    "type": "item",
-                                    "fieldName": "id"
-                                  }
                                 ]
                               },
                               "2": {
@@ -1614,20 +1546,6 @@
                                     "type": "local",
                                     "fieldName": "pows_click_history"
                                   }
-                                ],
-                                "_cleaned": [
-                                  {
-                                    "fullExpression": "click | set_field:@local.click_history_field_name: @local.pows_click_history",
-                                    "matchedExpression": "@local.click_history_field_name",
-                                    "type": "local",
-                                    "fieldName": "click_history_field_name"
-                                  },
-                                  {
-                                    "fullExpression": "click | set_field:@local.click_history_field_name: @local.pows_click_history",
-                                    "matchedExpression": "@local.pows_click_history",
-                                    "type": "local",
-                                    "fieldName": "pows_click_history"
-                                  }
                                 ]
                               }
                             },
@@ -1645,7 +1563,6 @@
                               "name",
                               "action_list.0.args.1",
                               "action_list.0._raw",
-                              "action_list.0._cleaned",
                               "_nested_name"
                             ],
                             "@item.name": [
@@ -1653,13 +1570,11 @@
                             ],
                             "@local.click_history_field_name": [
                               "action_list.2.args.0",
-                              "action_list.2._raw",
-                              "action_list.2._cleaned"
+                              "action_list.2._raw"
                             ],
                             "@local.pows_click_history": [
                               "action_list.2.args.1",
-                              "action_list.2._raw",
-                              "action_list.2._cleaned"
+                              "action_list.2._raw"
                             ]
                           }
                         }
@@ -2000,8 +1915,7 @@
                                 "current_pow",
                                 "data.efm_pows.@item.id"
                               ],
-                              "_raw": "click | set_field:current_pow: data.efm_pows.@item.id",
-                              "_cleaned": "click | set_field:current_pow: data.efm_pows.@item.id"
+                              "_raw": "click | set_field:current_pow: data.efm_pows.@item.id"
                             },
                             {
                               "trigger": "click",
@@ -2009,8 +1923,7 @@
                               "args": [
                                 "efm_pow_template"
                               ],
-                              "_raw": "click | go_to: efm_pow_template",
-                              "_cleaned": "click | go_to: efm_pow_template"
+                              "_raw": "click | go_to: efm_pow_template"
                             },
                             {
                               "trigger": "click",
@@ -2019,8 +1932,7 @@
                                 "@local.click_history_field_name",
                                 "@local.pows_click_history"
                               ],
-                              "_raw": "click | set_field:@local.click_history_field_name: @local.pows_click_history",
-                              "_cleaned": "click | set_field:@local.click_history_field_name: @local.pows_click_history"
+                              "_raw": "click | set_field:@local.click_history_field_name: @local.pows_click_history"
                             }
                           ],
                           "parameter_list": {
@@ -2064,14 +1976,6 @@
                                     "type": "item",
                                     "fieldName": "id"
                                   }
-                                ],
-                                "_cleaned": [
-                                  {
-                                    "fullExpression": "click | set_field:current_pow: data.efm_pows.@item.id",
-                                    "matchedExpression": "@item.id",
-                                    "type": "item",
-                                    "fieldName": "id"
-                                  }
                                 ]
                               },
                               "2": {
@@ -2106,20 +2010,6 @@
                                     "type": "local",
                                     "fieldName": "pows_click_history"
                                   }
-                                ],
-                                "_cleaned": [
-                                  {
-                                    "fullExpression": "click | set_field:@local.click_history_field_name: @local.pows_click_history",
-                                    "matchedExpression": "@local.click_history_field_name",
-                                    "type": "local",
-                                    "fieldName": "click_history_field_name"
-                                  },
-                                  {
-                                    "fullExpression": "click | set_field:@local.click_history_field_name: @local.pows_click_history",
-                                    "matchedExpression": "@local.pows_click_history",
-                                    "type": "local",
-                                    "fieldName": "pows_click_history"
-                                  }
                                 ]
                               }
                             },
@@ -2137,7 +2027,6 @@
                               "name",
                               "action_list.0.args.1",
                               "action_list.0._raw",
-                              "action_list.0._cleaned",
                               "_nested_name"
                             ],
                             "@item.name": [
@@ -2145,13 +2034,11 @@
                             ],
                             "@local.click_history_field_name": [
                               "action_list.2.args.0",
-                              "action_list.2._raw",
-                              "action_list.2._cleaned"
+                              "action_list.2._raw"
                             ],
                             "@local.pows_click_history": [
                               "action_list.2.args.1",
-                              "action_list.2._raw",
-                              "action_list.2._cleaned"
+                              "action_list.2._raw"
                             ]
                           }
                         }
@@ -2492,8 +2379,7 @@
                                 "current_pow",
                                 "data.efm_pows.@item.id"
                               ],
-                              "_raw": "click | set_field:current_pow: data.efm_pows.@item.id",
-                              "_cleaned": "click | set_field:current_pow: data.efm_pows.@item.id"
+                              "_raw": "click | set_field:current_pow: data.efm_pows.@item.id"
                             },
                             {
                               "trigger": "click",
@@ -2501,8 +2387,7 @@
                               "args": [
                                 "efm_pow_template"
                               ],
-                              "_raw": "click | go_to: efm_pow_template",
-                              "_cleaned": "click | go_to: efm_pow_template"
+                              "_raw": "click | go_to: efm_pow_template"
                             },
                             {
                               "trigger": "click",
@@ -2511,8 +2396,7 @@
                                 "@local.click_history_field_name",
                                 "@local.pows_click_history"
                               ],
-                              "_raw": "click | set_field:@local.click_history_field_name: @local.pows_click_history",
-                              "_cleaned": "click | set_field:@local.click_history_field_name: @local.pows_click_history"
+                              "_raw": "click | set_field:@local.click_history_field_name: @local.pows_click_history"
                             }
                           ],
                           "parameter_list": {
@@ -2556,14 +2440,6 @@
                                     "type": "item",
                                     "fieldName": "id"
                                   }
-                                ],
-                                "_cleaned": [
-                                  {
-                                    "fullExpression": "click | set_field:current_pow: data.efm_pows.@item.id",
-                                    "matchedExpression": "@item.id",
-                                    "type": "item",
-                                    "fieldName": "id"
-                                  }
                                 ]
                               },
                               "2": {
@@ -2598,20 +2474,6 @@
                                     "type": "local",
                                     "fieldName": "pows_click_history"
                                   }
-                                ],
-                                "_cleaned": [
-                                  {
-                                    "fullExpression": "click | set_field:@local.click_history_field_name: @local.pows_click_history",
-                                    "matchedExpression": "@local.click_history_field_name",
-                                    "type": "local",
-                                    "fieldName": "click_history_field_name"
-                                  },
-                                  {
-                                    "fullExpression": "click | set_field:@local.click_history_field_name: @local.pows_click_history",
-                                    "matchedExpression": "@local.pows_click_history",
-                                    "type": "local",
-                                    "fieldName": "pows_click_history"
-                                  }
                                 ]
                               }
                             },
@@ -2629,7 +2491,6 @@
                               "name",
                               "action_list.0.args.1",
                               "action_list.0._raw",
-                              "action_list.0._cleaned",
                               "_nested_name"
                             ],
                             "@item.name": [
@@ -2637,13 +2498,11 @@
                             ],
                             "@local.click_history_field_name": [
                               "action_list.2.args.0",
-                              "action_list.2._raw",
-                              "action_list.2._cleaned"
+                              "action_list.2._raw"
                             ],
                             "@local.pows_click_history": [
                               "action_list.2.args.1",
-                              "action_list.2._raw",
-                              "action_list.2._cleaned"
+                              "action_list.2._raw"
                             ]
                           }
                         }
@@ -2984,8 +2843,7 @@
                                 "current_pow",
                                 "data.efm_pows.@item.id"
                               ],
-                              "_raw": "click | set_field:current_pow: data.efm_pows.@item.id",
-                              "_cleaned": "click | set_field:current_pow: data.efm_pows.@item.id"
+                              "_raw": "click | set_field:current_pow: data.efm_pows.@item.id"
                             },
                             {
                               "trigger": "click",
@@ -2993,8 +2851,7 @@
                               "args": [
                                 "efm_pow_template"
                               ],
-                              "_raw": "click | go_to: efm_pow_template",
-                              "_cleaned": "click | go_to: efm_pow_template"
+                              "_raw": "click | go_to: efm_pow_template"
                             },
                             {
                               "trigger": "click",
@@ -3003,8 +2860,7 @@
                                 "@local.click_history_field_name",
                                 "@local.pows_click_history"
                               ],
-                              "_raw": "click | set_field:@local.click_history_field_name: @local.pows_click_history",
-                              "_cleaned": "click | set_field:@local.click_history_field_name: @local.pows_click_history"
+                              "_raw": "click | set_field:@local.click_history_field_name: @local.pows_click_history"
                             }
                           ],
                           "parameter_list": {
@@ -3048,14 +2904,6 @@
                                     "type": "item",
                                     "fieldName": "id"
                                   }
-                                ],
-                                "_cleaned": [
-                                  {
-                                    "fullExpression": "click | set_field:current_pow: data.efm_pows.@item.id",
-                                    "matchedExpression": "@item.id",
-                                    "type": "item",
-                                    "fieldName": "id"
-                                  }
                                 ]
                               },
                               "2": {
@@ -3090,20 +2938,6 @@
                                     "type": "local",
                                     "fieldName": "pows_click_history"
                                   }
-                                ],
-                                "_cleaned": [
-                                  {
-                                    "fullExpression": "click | set_field:@local.click_history_field_name: @local.pows_click_history",
-                                    "matchedExpression": "@local.click_history_field_name",
-                                    "type": "local",
-                                    "fieldName": "click_history_field_name"
-                                  },
-                                  {
-                                    "fullExpression": "click | set_field:@local.click_history_field_name: @local.pows_click_history",
-                                    "matchedExpression": "@local.pows_click_history",
-                                    "type": "local",
-                                    "fieldName": "pows_click_history"
-                                  }
                                 ]
                               }
                             },
@@ -3121,7 +2955,6 @@
                               "name",
                               "action_list.0.args.1",
                               "action_list.0._raw",
-                              "action_list.0._cleaned",
                               "_nested_name"
                             ],
                             "@item.name": [
@@ -3129,13 +2962,11 @@
                             ],
                             "@local.click_history_field_name": [
                               "action_list.2.args.0",
-                              "action_list.2._raw",
-                              "action_list.2._cleaned"
+                              "action_list.2._raw"
                             ],
                             "@local.pows_click_history": [
                               "action_list.2.args.1",
-                              "action_list.2._raw",
-                              "action_list.2._cleaned"
+                              "action_list.2._raw"
                             ]
                           }
                         }

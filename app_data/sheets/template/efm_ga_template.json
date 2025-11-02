@@ -390,8 +390,7 @@
                 "current_ga",
                 "@local.prev_ga"
               ],
-              "_raw": "click | set_field:current_ga:@local.prev_ga",
-              "_cleaned": "click | set_field:current_ga:@local.prev_ga"
+              "_raw": "click | set_field:current_ga:@local.prev_ga"
             },
             {
               "trigger": "click",
@@ -399,8 +398,7 @@
               "args": [
                 "force_reload"
               ],
-              "_raw": "click | emit:force_reload",
-              "_cleaned": "click | emit:force_reload"
+              "_raw": "click | emit:force_reload"
             }
           ],
           "condition": "@local.prev_ga",
@@ -433,14 +431,6 @@
                     "type": "local",
                     "fieldName": "prev_ga"
                   }
-                ],
-                "_cleaned": [
-                  {
-                    "fullExpression": "click | set_field:current_ga:@local.prev_ga",
-                    "matchedExpression": "@local.prev_ga",
-                    "type": "local",
-                    "fieldName": "prev_ga"
-                  }
                 ]
               }
             },
@@ -457,7 +447,6 @@
             "@local.prev_ga": [
               "action_list.0.args.1",
               "action_list.0._raw",
-              "action_list.0._cleaned",
               "condition"
             ]
           }
@@ -532,8 +521,7 @@
                 "current_ga",
                 "@local.next_ga"
               ],
-              "_raw": "click | set_field:current_ga:@local.next_ga",
-              "_cleaned": "click | set_field:current_ga:@local.next_ga"
+              "_raw": "click | set_field:current_ga:@local.next_ga"
             },
             {
               "trigger": "click",
@@ -541,8 +529,7 @@
               "args": [
                 "force_reload"
               ],
-              "_raw": "click | emit:force_reload",
-              "_cleaned": "click | emit:force_reload"
+              "_raw": "click | emit:force_reload"
             }
           ],
           "condition": "@local.next_ga",
@@ -575,14 +562,6 @@
                     "type": "local",
                     "fieldName": "next_ga"
                   }
-                ],
-                "_cleaned": [
-                  {
-                    "fullExpression": "click | set_field:current_ga:@local.next_ga",
-                    "matchedExpression": "@local.next_ga",
-                    "type": "local",
-                    "fieldName": "next_ga"
-                  }
                 ]
               }
             },
@@ -599,7 +578,6 @@
             "@local.next_ga": [
               "action_list.0.args.1",
               "action_list.0._raw",
-              "action_list.0._cleaned",
               "condition"
             ]
           }

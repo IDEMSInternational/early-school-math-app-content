@@ -1971,8 +1971,7 @@
                       "args": [
                         "@@local.block_text"
                       ],
-                      "_raw": "click | go_to: @@local.block_text",
-                      "_cleaned": "click | go_to: @@local.block_text"
+                      "_raw": "click | go_to: @@local.block_text"
                     }
                   ],
                   "parameter_list": {
@@ -2008,14 +2007,6 @@
                             "type": "local",
                             "fieldName": "block_text"
                           }
-                        ],
-                        "_cleaned": [
-                          {
-                            "fullExpression": "click | go_to: @@local.block_text",
-                            "matchedExpression": "@local.block_text",
-                            "type": "local",
-                            "fieldName": "block_text"
-                          }
                         ]
                       }
                     },
@@ -2040,8 +2031,7 @@
                     ],
                     "@local.block_text": [
                       "action_list.0.args.0",
-                      "action_list.0._raw",
-                      "action_list.0._cleaned"
+                      "action_list.0._raw"
                     ],
                     "@item.number.dg_button_": [
                       "_nested_name"

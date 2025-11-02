@@ -390,8 +390,7 @@
                 "current_pow",
                 "@local.prev_pow"
               ],
-              "_raw": "click | set_field:current_pow:@local.prev_pow",
-              "_cleaned": "click | set_field:current_pow:@local.prev_pow"
+              "_raw": "click | set_field:current_pow:@local.prev_pow"
             },
             {
               "trigger": "click",
@@ -399,8 +398,7 @@
               "args": [
                 "force_reload"
               ],
-              "_raw": "click | emit:force_reload",
-              "_cleaned": "click | emit:force_reload"
+              "_raw": "click | emit:force_reload"
             }
           ],
           "condition": "@local.prev_pow",
@@ -433,14 +431,6 @@
                     "type": "local",
                     "fieldName": "prev_pow"
                   }
-                ],
-                "_cleaned": [
-                  {
-                    "fullExpression": "click | set_field:current_pow:@local.prev_pow",
-                    "matchedExpression": "@local.prev_pow",
-                    "type": "local",
-                    "fieldName": "prev_pow"
-                  }
                 ]
               }
             },
@@ -457,7 +447,6 @@
             "@local.prev_pow": [
               "action_list.0.args.1",
               "action_list.0._raw",
-              "action_list.0._cleaned",
               "condition"
             ]
           }
@@ -532,8 +521,7 @@
                 "current_pow",
                 "@local.next_pow"
               ],
-              "_raw": "click | set_field:current_pow:@local.next_pow",
-              "_cleaned": "click | set_field:current_pow:@local.next_pow"
+              "_raw": "click | set_field:current_pow:@local.next_pow"
             },
             {
               "trigger": "click",
@@ -541,8 +529,7 @@
               "args": [
                 "force_reload"
               ],
-              "_raw": "click | emit:force_reload",
-              "_cleaned": "click | emit:force_reload"
+              "_raw": "click | emit:force_reload"
             }
           ],
           "condition": "@local.next_pow",
@@ -575,14 +562,6 @@
                     "type": "local",
                     "fieldName": "next_pow"
                   }
-                ],
-                "_cleaned": [
-                  {
-                    "fullExpression": "click | set_field:current_pow:@local.next_pow",
-                    "matchedExpression": "@local.next_pow",
-                    "type": "local",
-                    "fieldName": "next_pow"
-                  }
                 ]
               }
             },
@@ -599,7 +578,6 @@
             "@local.next_pow": [
               "action_list.0.args.1",
               "action_list.0._raw",
-              "action_list.0._cleaned",
               "condition"
             ]
           }

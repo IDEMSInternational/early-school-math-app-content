@@ -33,8 +33,7 @@
                   "args": [
                     "esm_gas_tour"
                   ],
-                  "_raw": "click | start_tour: esm_gas_tour",
-                  "_cleaned": "click | start_tour: esm_gas_tour"
+                  "_raw": "click | start_tour: esm_gas_tour"
                 }
               ],
               "parameter_list": {
@@ -1406,8 +1405,7 @@
                         "current_ga",
                         "data.efm_gas.@item.id"
                       ],
-                      "_raw": "click | set_field:current_ga: data.efm_gas.@item.id",
-                      "_cleaned": "click | set_field:current_ga: data.efm_gas.@item.id"
+                      "_raw": "click | set_field:current_ga: data.efm_gas.@item.id"
                     },
                     {
                       "trigger": "click",
@@ -1415,8 +1413,7 @@
                       "args": [
                         "efm_ga_template"
                       ],
-                      "_raw": "click | go_to: efm_ga_template",
-                      "_cleaned": "click | go_to: efm_ga_template"
+                      "_raw": "click | go_to: efm_ga_template"
                     },
                     {
                       "trigger": "click",
@@ -1425,8 +1422,7 @@
                         "@local.click_history_field_name",
                         "@local.gas_click_history"
                       ],
-                      "_raw": "click | set_field:@local.click_history_field_name: @local.gas_click_history",
-                      "_cleaned": "click | set_field:@local.click_history_field_name: @local.gas_click_history"
+                      "_raw": "click | set_field:@local.click_history_field_name: @local.gas_click_history"
                     }
                   ],
                   "parameter_list": {
@@ -1456,14 +1452,6 @@
                           ]
                         },
                         "_raw": [
-                          {
-                            "fullExpression": "click | set_field:current_ga: data.efm_gas.@item.id",
-                            "matchedExpression": "@item.id",
-                            "type": "item",
-                            "fieldName": "id"
-                          }
-                        ],
-                        "_cleaned": [
                           {
                             "fullExpression": "click | set_field:current_ga: data.efm_gas.@item.id",
                             "matchedExpression": "@item.id",
@@ -1504,20 +1492,6 @@
                             "type": "local",
                             "fieldName": "gas_click_history"
                           }
-                        ],
-                        "_cleaned": [
-                          {
-                            "fullExpression": "click | set_field:@local.click_history_field_name: @local.gas_click_history",
-                            "matchedExpression": "@local.click_history_field_name",
-                            "type": "local",
-                            "fieldName": "click_history_field_name"
-                          },
-                          {
-                            "fullExpression": "click | set_field:@local.click_history_field_name: @local.gas_click_history",
-                            "matchedExpression": "@local.gas_click_history",
-                            "type": "local",
-                            "fieldName": "gas_click_history"
-                          }
                         ]
                       }
                     }
@@ -1528,18 +1502,15 @@
                     ],
                     "@item.id": [
                       "action_list.0.args.1",
-                      "action_list.0._raw",
-                      "action_list.0._cleaned"
+                      "action_list.0._raw"
                     ],
                     "@local.click_history_field_name": [
                       "action_list.2.args.0",
-                      "action_list.2._raw",
-                      "action_list.2._cleaned"
+                      "action_list.2._raw"
                     ],
                     "@local.gas_click_history": [
                       "action_list.2.args.1",
-                      "action_list.2._raw",
-                      "action_list.2._cleaned"
+                      "action_list.2._raw"
                     ]
                   }
                 }

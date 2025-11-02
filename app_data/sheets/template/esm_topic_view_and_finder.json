@@ -111,8 +111,7 @@
                                 "curriculum_standard_abbrev",
                                 "@item.id"
                               ],
-                              "_raw": "click | set_field:curriculum_standard_abbrev: @item.id",
-                              "_cleaned": "click | set_field:curriculum_standard_abbrev: @item.id"
+                              "_raw": "click | set_field:curriculum_standard_abbrev: @item.id"
                             },
                             {
                               "trigger": "click",
@@ -121,8 +120,7 @@
                                 "curriculum_standard_name",
                                 "@item.name"
                               ],
-                              "_raw": "click | set_field:curriculum_standard_name: @item.name",
-                              "_cleaned": "click | set_field:curriculum_standard_name: @item.name"
+                              "_raw": "click | set_field:curriculum_standard_name: @item.name"
                             },
                             {
                               "trigger": "click",
@@ -130,8 +128,7 @@
                               "args": [
                                 "force_reload"
                               ],
-                              "_raw": "click | emit: force_reload",
-                              "_cleaned": "click | emit: force_reload"
+                              "_raw": "click | emit: force_reload"
                             }
                           ],
                           "parameter_list": {
@@ -175,14 +172,6 @@
                                     "type": "item",
                                     "fieldName": "id"
                                   }
-                                ],
-                                "_cleaned": [
-                                  {
-                                    "fullExpression": "click | set_field:curriculum_standard_abbrev: @item.id",
-                                    "matchedExpression": "@item.id",
-                                    "type": "item",
-                                    "fieldName": "id"
-                                  }
                                 ]
                               },
                               "1": {
@@ -197,14 +186,6 @@
                                   ]
                                 },
                                 "_raw": [
-                                  {
-                                    "fullExpression": "click | set_field:curriculum_standard_name: @item.name",
-                                    "matchedExpression": "@item.name",
-                                    "type": "item",
-                                    "fieldName": "name"
-                                  }
-                                ],
-                                "_cleaned": [
                                   {
                                     "fullExpression": "click | set_field:curriculum_standard_name: @item.name",
                                     "matchedExpression": "@item.name",
@@ -228,14 +209,12 @@
                               "name",
                               "action_list.0.args.1",
                               "action_list.0._raw",
-                              "action_list.0._cleaned",
                               "_nested_name"
                             ],
                             "@item.name": [
                               "value",
                               "action_list.1.args.1",
-                              "action_list.1._raw",
-                              "action_list.1._cleaned"
+                              "action_list.1._raw"
                             ]
                           }
                         }
@@ -680,6 +659,67 @@
       "_nested_name": "topic_click_history"
     },
     {
+      "name": "zero",
+      "value": 0,
+      "type": "set_variable",
+      "_nested_name": "zero"
+    },
+    {
+      "name": "countem",
+      "value": "@local.zero - @local.zero",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "countem",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.zero - @local.zero",
+            "matchedExpression": "@local.zero",
+            "type": "local",
+            "fieldName": "zero"
+          },
+          {
+            "fullExpression": "@local.zero - @local.zero",
+            "matchedExpression": "@local.zero",
+            "type": "local",
+            "fieldName": "zero"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.zero": [
+          "value",
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "debugggg",
+      "value": "Countem value: @local.countem",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "debugggg",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Countem value: @local.countem",
+            "matchedExpression": "@local.countem",
+            "type": "local",
+            "fieldName": "countem"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.countem": [
+          "value"
+        ]
+      }
+    },
+    {
       "type": "display_group",
       "parameter_list": {
         "style": "column"
@@ -830,7 +870,7 @@
                               "name": "middle_level_accords_@item_id",
                               "value": "@data.num_list_one_to_twenty",
                               "parameter_list": {
-                                "style": "column"
+                                "limit": "@item.count"
                               },
                               "rows": [
                                 {
@@ -1114,7 +1154,7 @@
                                           "name": "topic_accords_@ocal.middle_level_id",
                                           "value": "@data.num_list_one_to_twenty",
                                           "parameter_list": {
-                                            "style": "column"
+                                            "limit": "@local.middle_level_entries.count"
                                           },
                                           "rows": [
                                             {
@@ -1470,6 +1510,77 @@
                                               },
                                               "rows": [
                                                 {
+                                                  "name": "countem",
+                                                  "value": "@local.countem + 1",
+                                                  "_translations": {
+                                                    "value": {}
+                                                  },
+                                                  "type": "set_variable",
+                                                  "_nested_name": "display_group_10.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level_@item_id.middle_level_accords_@item_id.@local.middle_level_entries.name.dg_@local.middle_level_entries.name.topic_accords_@ocal.middle_level_id.dg_@local.topic_entries.name.countem",
+                                                  "_dynamicFields": {
+                                                    "value": [
+                                                      {
+                                                        "fullExpression": "@local.countem + 1",
+                                                        "matchedExpression": "@local.countem",
+                                                        "type": "local",
+                                                        "fieldName": "countem"
+                                                      }
+                                                    ],
+                                                    "_nested_name": [
+                                                      {
+                                                        "fullExpression": "display_group_10.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level_@item_id.middle_level_accords_@item_id.@local.middle_level_entries.name.dg_@local.middle_level_entries.name.topic_accords_@ocal.middle_level_id.dg_@local.topic_entries.name.countem",
+                                                        "matchedExpression": "@item.id.dg_",
+                                                        "type": "item",
+                                                        "fieldName": "id"
+                                                      },
+                                                      {
+                                                        "fullExpression": "display_group_10.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level_@item_id.middle_level_accords_@item_id.@local.middle_level_entries.name.dg_@local.middle_level_entries.name.topic_accords_@ocal.middle_level_id.dg_@local.topic_entries.name.countem",
+                                                        "matchedExpression": "@item.id.accordion_middle_level_",
+                                                        "type": "item",
+                                                        "fieldName": "id"
+                                                      },
+                                                      {
+                                                        "fullExpression": "display_group_10.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level_@item_id.middle_level_accords_@item_id.@local.middle_level_entries.name.dg_@local.middle_level_entries.name.topic_accords_@ocal.middle_level_id.dg_@local.topic_entries.name.countem",
+                                                        "matchedExpression": "@local.middle_level_entries.name.dg_",
+                                                        "type": "local",
+                                                        "fieldName": "middle_level_entries"
+                                                      },
+                                                      {
+                                                        "fullExpression": "display_group_10.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level_@item_id.middle_level_accords_@item_id.@local.middle_level_entries.name.dg_@local.middle_level_entries.name.topic_accords_@ocal.middle_level_id.dg_@local.topic_entries.name.countem",
+                                                        "matchedExpression": "@local.middle_level_entries.name.topic_accords_",
+                                                        "type": "local",
+                                                        "fieldName": "middle_level_entries"
+                                                      },
+                                                      {
+                                                        "fullExpression": "display_group_10.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level_@item_id.middle_level_accords_@item_id.@local.middle_level_entries.name.dg_@local.middle_level_entries.name.topic_accords_@ocal.middle_level_id.dg_@local.topic_entries.name.countem",
+                                                        "matchedExpression": "@local.topic_entries.name.countem",
+                                                        "type": "local",
+                                                        "fieldName": "topic_entries"
+                                                      }
+                                                    ]
+                                                  },
+                                                  "_dynamicDependencies": {
+                                                    "@local.countem": [
+                                                      "value"
+                                                    ],
+                                                    "@item.id.dg_": [
+                                                      "_nested_name"
+                                                    ],
+                                                    "@item.id.accordion_middle_level_": [
+                                                      "_nested_name"
+                                                    ],
+                                                    "@local.middle_level_entries.name.dg_": [
+                                                      "_nested_name"
+                                                    ],
+                                                    "@local.middle_level_entries.name.topic_accords_": [
+                                                      "_nested_name"
+                                                    ],
+                                                    "@local.topic_entries.name.countem": [
+                                                      "_nested_name"
+                                                    ]
+                                                  }
+                                                },
+                                                {
                                                   "name": "click_history_field_name",
                                                   "value": "@local.topic_id@local.topic_click_history",
                                                   "_translations": {
@@ -1740,8 +1851,7 @@
                                                         "current_topic",
                                                         "@local.topic_ptr"
                                                       ],
-                                                      "_raw": "click | set_field:current_topic: @local.topic_ptr",
-                                                      "_cleaned": "click | set_field:current_topic: @local.topic_ptr"
+                                                      "_raw": "click | set_field:current_topic: @local.topic_ptr"
                                                     },
                                                     {
                                                       "trigger": "click",
@@ -1749,8 +1859,7 @@
                                                       "args": [
                                                         "esm_topic_template"
                                                       ],
-                                                      "_raw": "click | go_to: esm_topic_template",
-                                                      "_cleaned": "click | go_to: esm_topic_template"
+                                                      "_raw": "click | go_to: esm_topic_template"
                                                     },
                                                     {
                                                       "trigger": "click",
@@ -1759,8 +1868,7 @@
                                                         "@local.click_history_field_name",
                                                         "@local.topics_click_history"
                                                       ],
-                                                      "_raw": "click | set_field:@local.click_history_field_name: @local.topics_click_history",
-                                                      "_cleaned": "click | set_field:@local.click_history_field_name: @local.topics_click_history"
+                                                      "_raw": "click | set_field:@local.click_history_field_name: @local.topics_click_history"
                                                     }
                                                   ],
                                                   "parameter_list": {
@@ -1796,14 +1904,6 @@
                                                             "type": "local",
                                                             "fieldName": "topic_ptr"
                                                           }
-                                                        ],
-                                                        "_cleaned": [
-                                                          {
-                                                            "fullExpression": "click | set_field:current_topic: @local.topic_ptr",
-                                                            "matchedExpression": "@local.topic_ptr",
-                                                            "type": "local",
-                                                            "fieldName": "topic_ptr"
-                                                          }
                                                         ]
                                                       },
                                                       "2": {
@@ -1826,20 +1926,6 @@
                                                           ]
                                                         },
                                                         "_raw": [
-                                                          {
-                                                            "fullExpression": "click | set_field:@local.click_history_field_name: @local.topics_click_history",
-                                                            "matchedExpression": "@local.click_history_field_name",
-                                                            "type": "local",
-                                                            "fieldName": "click_history_field_name"
-                                                          },
-                                                          {
-                                                            "fullExpression": "click | set_field:@local.click_history_field_name: @local.topics_click_history",
-                                                            "matchedExpression": "@local.topics_click_history",
-                                                            "type": "local",
-                                                            "fieldName": "topics_click_history"
-                                                          }
-                                                        ],
-                                                        "_cleaned": [
                                                           {
                                                             "fullExpression": "click | set_field:@local.click_history_field_name: @local.topics_click_history",
                                                             "matchedExpression": "@local.click_history_field_name",
@@ -1894,18 +1980,15 @@
                                                     ],
                                                     "@local.topic_ptr": [
                                                       "action_list.0.args.1",
-                                                      "action_list.0._raw",
-                                                      "action_list.0._cleaned"
+                                                      "action_list.0._raw"
                                                     ],
                                                     "@local.click_history_field_name": [
                                                       "action_list.2.args.0",
-                                                      "action_list.2._raw",
-                                                      "action_list.2._cleaned"
+                                                      "action_list.2._raw"
                                                     ],
                                                     "@local.topics_click_history": [
                                                       "action_list.2.args.1",
-                                                      "action_list.2._raw",
-                                                      "action_list.2._cleaned"
+                                                      "action_list.2._raw"
                                                     ],
                                                     "@item.id.dg_": [
                                                       "_nested_name"
@@ -2009,6 +2092,16 @@
                                                 "fieldName": "num_list_one_to_twenty"
                                               }
                                             ],
+                                            "parameter_list": {
+                                              "limit": [
+                                                {
+                                                  "fullExpression": "@local.middle_level_entries.count",
+                                                  "matchedExpression": "@local.middle_level_entries.count",
+                                                  "type": "local",
+                                                  "fieldName": "middle_level_entries"
+                                                }
+                                              ]
+                                            },
                                             "_nested_name": [
                                               {
                                                 "fullExpression": "display_group_10.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level_@item_id.middle_level_accords_@item_id.@local.middle_level_entries.name.dg_@local.middle_level_entries.name.topic_accords_@ocal.middle_level_id",
@@ -2039,6 +2132,9 @@
                                           "_dynamicDependencies": {
                                             "@data.num_list_one_to_twenty": [
                                               "value"
+                                            ],
+                                            "@local.middle_level_entries.count": [
+                                              "parameter_list.limit"
                                             ],
                                             "@item.id.dg_": [
                                               "_nested_name"
@@ -2184,6 +2280,16 @@
                                     "fieldName": "num_list_one_to_twenty"
                                   }
                                 ],
+                                "parameter_list": {
+                                  "limit": [
+                                    {
+                                      "fullExpression": "@item.count",
+                                      "matchedExpression": "@item.count",
+                                      "type": "item",
+                                      "fieldName": "count"
+                                    }
+                                  ]
+                                },
                                 "_nested_name": [
                                   {
                                     "fullExpression": "display_group_10.accordion_top_level.top_level_acoords.block2_@item.id.dg_@item.id.accordion_middle_level_@item_id.middle_level_accords_@item_id",
@@ -2202,6 +2308,9 @@
                               "_dynamicDependencies": {
                                 "@data.num_list_one_to_twenty": [
                                   "value"
+                                ],
+                                "@item.count": [
+                                  "parameter_list.limit"
                                 ],
                                 "@item.id.dg_": [
                                   "_nested_name"

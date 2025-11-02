@@ -6,6 +6,8 @@
   "rows": [
     {
       "id": "FMT",
+      "text": "Family Math Talk",
+      "count": 2,
       "theme_id_1": "FMT_EAA_",
       "theme_id_2": "FMT_RWC_",
       "name": "Family Math Talk",
@@ -20,6 +22,8 @@
     },
     {
       "id": "Geom",
+      "text": "Geometry",
+      "count": 3,
       "theme_id_1": "Geom_OP_",
       "theme_id_2": "Geom_Pat_",
       "theme_id_3": "Geom_Shape_",
@@ -35,6 +39,8 @@
     },
     {
       "id": "NPV",
+      "text": "Number & Place Value",
+      "count": 2,
       "theme_id_1": "NPV_QC10_",
       "theme_id_2": "NPV_CPV100_",
       "name": "Number & Place Value",
@@ -49,6 +55,8 @@
     },
     {
       "id": "NO",
+      "text": "Number Operations",
+      "count": 7,
       "theme_id_1": "NO_AS10_",
       "theme_id_2": "NO_ASSD_",
       "theme_id_3": "NO_DD_",
@@ -68,6 +76,8 @@
     },
     {
       "id": "PS",
+      "text": "Problem Solving",
+      "count": 1,
       "theme_id_1": "PS_SWP_",
       "name": "Problem Solving",
       "_translations": {
@@ -81,12 +91,11 @@
     },
     {
       "id": "Meas",
-      "theme_id_1": "Meas_Dist_",
-      "theme_id_2": "Meas_Wt_",
-      "theme_id_3": "Meas_Vol_",
-      "theme_id_4": "Meas_Area_",
-      "theme_id_5": "Meas_Time_",
-      "theme_id_6": "Meas_Money_",
+      "text": "Measurement",
+      "count": 3,
+      "theme_id_1": "Meas_Early_",
+      "theme_id_2": "Meas_Time_",
+      "theme_id_3": "Meas_Money_",
       "name": "Measurement",
       "_translations": {
         "name": {}
@@ -99,6 +108,8 @@
     },
     {
       "id": "Data",
+      "text": "Data",
+      "count": 4,
       "theme_id_1": "Data_CO_",
       "theme_id_2": "Data_Rep_",
       "theme_id_3": "Data_Graph_",
@@ -115,6 +126,8 @@
     },
     {
       "id": "BandA",
+      "text": "Behaviors and Attitudes",
+      "count": 2,
       "theme_id_1": "BandA_B_",
       "theme_id_2": "BandA_A_",
       "name": "Behaviors and Attitudes",
@@ -129,5 +142,10 @@
     }
   ],
   "_xlsxPath": "ESM_topics_esm.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1PeJ5ishcTCWUvjhflbQqKO6M8u9rNuec"
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1PeJ5ishcTCWUvjhflbQqKO6M8u9rNuec",
+  "_metadata": {
+    "count": {
+      "type": "number"
+    }
+  }
 }

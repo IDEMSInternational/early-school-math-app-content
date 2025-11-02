@@ -91,8 +91,7 @@
                               "args": [
                                 "efm_routines_start"
                               ],
-                              "_raw": "click | go_to: efm_routines_start",
-                              "_cleaned": "click | go_to: efm_routines_start"
+                              "_raw": "click | go_to: efm_routines_start"
                             }
                           ],
                           "parameter_list": {
@@ -146,8 +145,7 @@
                               "args": [
                                 "efm_pow_start"
                               ],
-                              "_raw": "click | go_to: efm_pow_start",
-                              "_cleaned": "click | go_to: efm_pow_start"
+                              "_raw": "click | go_to: efm_pow_start"
                             }
                           ],
                           "parameter_list": {
@@ -233,8 +231,7 @@
                                 "oe_content_ptr",
                                 "data.esm_open_ended_tasks_data_list.@item.id"
                               ],
-                              "_raw": "click | set_field:oe_content_ptr : data.esm_open_ended_tasks_data_list.@item.id",
-                              "_cleaned": "click | set_field:oe_content_ptr : data.esm_open_ended_tasks_data_list.@item.id"
+                              "_raw": "click | set_field:oe_content_ptr : data.esm_open_ended_tasks_data_list.@item.id"
                             },
                             {
                               "trigger": "click",
@@ -242,8 +239,7 @@
                               "args": [
                                 "esm_oe_displayer"
                               ],
-                              "_raw": "click | go_to: esm_oe_displayer",
-                              "_cleaned": "click | go_to: esm_oe_displayer"
+                              "_raw": "click | go_to: esm_oe_displayer"
                             }
                           ],
                           "parameter_list": {
@@ -287,14 +283,6 @@
                                     "type": "item",
                                     "fieldName": "id"
                                   }
-                                ],
-                                "_cleaned": [
-                                  {
-                                    "fullExpression": "click | set_field:oe_content_ptr : data.esm_open_ended_tasks_data_list.@item.id",
-                                    "matchedExpression": "@item.id",
-                                    "type": "item",
-                                    "fieldName": "id"
-                                  }
                                 ]
                               }
                             },
@@ -312,7 +300,6 @@
                               "name",
                               "action_list.0.args.1",
                               "action_list.0._raw",
-                              "action_list.0._cleaned",
                               "_nested_name"
                             ],
                             "@item.name": [
@@ -396,8 +383,7 @@
                                 "oe_content_ptr",
                                 "data.esm_open_ended_tasks_data_list.@item.id"
                               ],
-                              "_raw": "click | set_field:oe_content_ptr : data.esm_open_ended_tasks_data_list.@item.id",
-                              "_cleaned": "click | set_field:oe_content_ptr : data.esm_open_ended_tasks_data_list.@item.id"
+                              "_raw": "click | set_field:oe_content_ptr : data.esm_open_ended_tasks_data_list.@item.id"
                             },
                             {
                               "trigger": "click",
@@ -405,8 +391,7 @@
                               "args": [
                                 "esm_oe_displayer"
                               ],
-                              "_raw": "click | go_to: esm_oe_displayer",
-                              "_cleaned": "click | go_to: esm_oe_displayer"
+                              "_raw": "click | go_to: esm_oe_displayer"
                             }
                           ],
                           "parameter_list": {
@@ -450,14 +435,6 @@
                                     "type": "item",
                                     "fieldName": "id"
                                   }
-                                ],
-                                "_cleaned": [
-                                  {
-                                    "fullExpression": "click | set_field:oe_content_ptr : data.esm_open_ended_tasks_data_list.@item.id",
-                                    "matchedExpression": "@item.id",
-                                    "type": "item",
-                                    "fieldName": "id"
-                                  }
                                 ]
                               }
                             },
@@ -475,7 +452,6 @@
                               "name",
                               "action_list.0.args.1",
                               "action_list.0._raw",
-                              "action_list.0._cleaned",
                               "_nested_name"
                             ],
                             "@item.name": [

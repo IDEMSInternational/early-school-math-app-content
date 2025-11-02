@@ -33,8 +33,7 @@
                   "args": [
                     "esm_storybooks_tour"
                   ],
-                  "_raw": "click | start_tour: esm_storybooks_tour",
-                  "_cleaned": "click | start_tour: esm_storybooks_tour"
+                  "_raw": "click | start_tour: esm_storybooks_tour"
                 }
               ],
               "parameter_list": {
@@ -106,8 +105,7 @@
                           "args": [
                             "@item.id"
                           ],
-                          "_raw": "click | go_to: @item.id",
-                          "_cleaned": "click | go_to: @item.id"
+                          "_raw": "click | go_to: @item.id"
                         }
                       ],
                       "condition": "@item.book_level == \"beginner\"",
@@ -144,14 +142,6 @@
                                 "type": "item",
                                 "fieldName": "id"
                               }
-                            ],
-                            "_cleaned": [
-                              {
-                                "fullExpression": "click | go_to: @item.id",
-                                "matchedExpression": "@item.id",
-                                "type": "item",
-                                "fieldName": "id"
-                              }
                             ]
                           }
                         },
@@ -170,8 +160,7 @@
                         ],
                         "@item.id": [
                           "action_list.0.args.0",
-                          "action_list.0._raw",
-                          "action_list.0._cleaned"
+                          "action_list.0._raw"
                         ],
                         "@item.book_level": [
                           "condition"
@@ -233,8 +222,7 @@
                           "args": [
                             "@item.id"
                           ],
-                          "_raw": "click | go_to: @item.id",
-                          "_cleaned": "click | go_to: @item.id"
+                          "_raw": "click | go_to: @item.id"
                         }
                       ],
                       "condition": "@item.book_level == \"intermediate\"",
@@ -271,14 +259,6 @@
                                 "type": "item",
                                 "fieldName": "id"
                               }
-                            ],
-                            "_cleaned": [
-                              {
-                                "fullExpression": "click | go_to: @item.id",
-                                "matchedExpression": "@item.id",
-                                "type": "item",
-                                "fieldName": "id"
-                              }
                             ]
                           }
                         },
@@ -297,8 +277,7 @@
                         ],
                         "@item.id": [
                           "action_list.0.args.0",
-                          "action_list.0._raw",
-                          "action_list.0._cleaned"
+                          "action_list.0._raw"
                         ],
                         "@item.book_level": [
                           "condition"
@@ -360,8 +339,7 @@
                           "args": [
                             "@item.id"
                           ],
-                          "_raw": "click | go_to: @item.id",
-                          "_cleaned": "click | go_to: @item.id"
+                          "_raw": "click | go_to: @item.id"
                         }
                       ],
                       "condition": "@item.book_level == \"advanced\"",
@@ -398,14 +376,6 @@
                                 "type": "item",
                                 "fieldName": "id"
                               }
-                            ],
-                            "_cleaned": [
-                              {
-                                "fullExpression": "click | go_to: @item.id",
-                                "matchedExpression": "@item.id",
-                                "type": "item",
-                                "fieldName": "id"
-                              }
                             ]
                           }
                         },
@@ -424,8 +394,7 @@
                         ],
                         "@item.id": [
                           "action_list.0.args.0",
-                          "action_list.0._raw",
-                          "action_list.0._cleaned"
+                          "action_list.0._raw"
                         ],
                         "@item.book_level": [
                           "condition"
