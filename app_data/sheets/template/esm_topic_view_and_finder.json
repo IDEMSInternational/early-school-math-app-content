@@ -23,12 +23,242 @@
       "_nested_name": "dg_top_of_page"
     },
     {
+      "name": "match_ESM",
+      "value": "@fields.curriculum_standard_abbrev == \"ESM\"",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "match_ESM",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@fields.curriculum_standard_abbrev == \"ESM\"",
+            "matchedExpression": "@fields.curriculum_standard_abbrev",
+            "type": "fields",
+            "fieldName": "curriculum_standard_abbrev"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.curriculum_standard_abbrev": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "match_CCSSM",
+      "value": "@fields.curriculum_standard_abbrev == \"CCSSM\"",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "match_CCSSM",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@fields.curriculum_standard_abbrev == \"CCSSM\"",
+            "matchedExpression": "@fields.curriculum_standard_abbrev",
+            "type": "fields",
+            "fieldName": "curriculum_standard_abbrev"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.curriculum_standard_abbrev": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "match_TEKS",
+      "value": "@fields.curriculum_standard_abbrev == \"TEKS\"",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "match_TEKS",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@fields.curriculum_standard_abbrev == \"TEKS\"",
+            "matchedExpression": "@fields.curriculum_standard_abbrev",
+            "type": "fields",
+            "fieldName": "curriculum_standard_abbrev"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.curriculum_standard_abbrev": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "match_AC9M",
+      "value": "@fields.curriculum_standard_abbrev == \"AC9M\"",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "match_AC9M",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@fields.curriculum_standard_abbrev == \"AC9M\"",
+            "matchedExpression": "@fields.curriculum_standard_abbrev",
+            "type": "fields",
+            "fieldName": "curriculum_standard_abbrev"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.curriculum_standard_abbrev": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "match_UK20",
+      "value": "@fields.curriculum_standard_abbrev == \"UK20\"",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "match_UK20",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@fields.curriculum_standard_abbrev == \"UK20\"",
+            "matchedExpression": "@fields.curriculum_standard_abbrev",
+            "type": "fields",
+            "fieldName": "curriculum_standard_abbrev"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.curriculum_standard_abbrev": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "it_matches",
+      "value": "@local.match_ESM || @local.match_CCSSM || @local.match_TEKS || @local.match_AC9M || @local.match_UK20",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "it_matches",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.match_ESM || @local.match_CCSSM || @local.match_TEKS || @local.match_AC9M || @local.match_UK20",
+            "matchedExpression": "@local.match_ESM",
+            "type": "local",
+            "fieldName": "match_ESM"
+          },
+          {
+            "fullExpression": "@local.match_ESM || @local.match_CCSSM || @local.match_TEKS || @local.match_AC9M || @local.match_UK20",
+            "matchedExpression": "@local.match_CCSSM",
+            "type": "local",
+            "fieldName": "match_CCSSM"
+          },
+          {
+            "fullExpression": "@local.match_ESM || @local.match_CCSSM || @local.match_TEKS || @local.match_AC9M || @local.match_UK20",
+            "matchedExpression": "@local.match_TEKS",
+            "type": "local",
+            "fieldName": "match_TEKS"
+          },
+          {
+            "fullExpression": "@local.match_ESM || @local.match_CCSSM || @local.match_TEKS || @local.match_AC9M || @local.match_UK20",
+            "matchedExpression": "@local.match_AC9M",
+            "type": "local",
+            "fieldName": "match_AC9M"
+          },
+          {
+            "fullExpression": "@local.match_ESM || @local.match_CCSSM || @local.match_TEKS || @local.match_AC9M || @local.match_UK20",
+            "matchedExpression": "@local.match_UK20",
+            "type": "local",
+            "fieldName": "match_UK20"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.match_ESM": [
+          "value"
+        ],
+        "@local.match_CCSSM": [
+          "value"
+        ],
+        "@local.match_TEKS": [
+          "value"
+        ],
+        "@local.match_AC9M": [
+          "value"
+        ],
+        "@local.match_UK20": [
+          "value"
+        ]
+      }
+    },
+    {
       "type": "display_group",
       "name": "view_intro",
       "parameter_list": {
         "style": "column"
       },
       "rows": [
+        {
+          "type": "set_field",
+          "name": "curriculum_standard_name",
+          "value": "Early School Math",
+          "_translations": {
+            "value": {}
+          },
+          "condition": "!@local.it_matches",
+          "_nested_name": "view_intro.curriculum_standard_name",
+          "_dynamicFields": {
+            "condition": [
+              {
+                "fullExpression": "!@local.it_matches",
+                "matchedExpression": "!@local.it_matches",
+                "type": "local",
+                "fieldName": "it_matches"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "!@local.it_matches": [
+              "condition"
+            ]
+          }
+        },
+        {
+          "type": "set_field",
+          "name": "curriculum_standard_abbrev",
+          "value": "ESM",
+          "_translations": {
+            "value": {}
+          },
+          "condition": "!@local.it_matches",
+          "_nested_name": "view_intro.curriculum_standard_abbrev",
+          "_dynamicFields": {
+            "condition": [
+              {
+                "fullExpression": "!@local.it_matches",
+                "matchedExpression": "!@local.it_matches",
+                "type": "local",
+                "fieldName": "it_matches"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "!@local.it_matches": [
+              "condition"
+            ]
+          }
+        },
         {
           "type": "text",
           "name": "view_select",
@@ -49,30 +279,6 @@
           },
           "_dynamicDependencies": {
             "@fields.curriculum_standard_name": [
-              "value"
-            ]
-          }
-        },
-        {
-          "type": "text",
-          "name": "debuggggggg",
-          "value": "Standard abbreviation: @fields.curriculum_standard_abbrev",
-          "_translations": {
-            "value": {}
-          },
-          "_nested_name": "view_intro.debuggggggg",
-          "_dynamicFields": {
-            "value": [
-              {
-                "fullExpression": "Standard abbreviation: @fields.curriculum_standard_abbrev",
-                "matchedExpression": "@fields.curriculum_standard_abbrev",
-                "type": "fields",
-                "fieldName": "curriculum_standard_abbrev"
-              }
-            ]
-          },
-          "_dynamicDependencies": {
-            "@fields.curriculum_standard_abbrev": [
               "value"
             ]
           }
