@@ -5,7 +5,7 @@
 | --- | --- |
 | accordion | 72 |
 | accordion_section | 131 |
-| button | 174 |
+| button | 175 |
 | debug_toggle | 1 |
 | display_group | 433 |
 | image | 65 |
@@ -14,8 +14,8 @@
 | radio_button_grid | 1 |
 | round_button | 10 |
 | select_text | 1 |
-| set_field | 44 |
-| set_variable | 747 |
+| set_field | 46 |
+| set_variable | 763 |
 | simple_checkbox | 4 |
 | template | 92 |
 | text | 341 |
@@ -32,7 +32,7 @@
 | --- | --- |
 | app_update | 1 |
 | emit: completed | 58 |
-| emit: force_reload | 14 |
+| emit: force_reload | 13 |
 | emit: force_reprocess | 4 |
 | emit: server_sync | 1 |
 | emit: set_language | 1 |
@@ -42,7 +42,7 @@
 | go_to_url | 3 |
 | reset_app | 1 |
 | set_field | 152 |
-| set_local | 6 |
+| set_local | 7 |
 | start_tour | 19 |
 </details>
 

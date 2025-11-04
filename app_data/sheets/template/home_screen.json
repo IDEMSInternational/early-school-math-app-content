@@ -91,12 +91,12 @@
       "_nested_name": "dg_image"
     },
     {
-      "type": "text",
       "name": "debbuggg",
       "value": "Current Topics View: @fields.curriculum_standard_name",
       "_translations": {
         "value": {}
       },
+      "type": "set_variable",
       "_nested_name": "debbuggg",
       "_dynamicFields": {
         "value": [
@@ -115,12 +115,12 @@
       }
     },
     {
-      "type": "text",
       "name": "debuggggggg",
       "value": "Standard abbreviation: @fields.curriculum_standard_abbrev",
       "_translations": {
         "value": {}
       },
+      "type": "set_variable",
       "_nested_name": "debuggggggg",
       "_dynamicFields": {
         "value": [
