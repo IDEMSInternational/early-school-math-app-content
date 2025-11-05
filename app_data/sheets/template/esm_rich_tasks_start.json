@@ -14,14 +14,12 @@
           "_translations": {
             "value": {}
           },
-          "style_list": [
-            "flex:1"
-          ],
           "_nested_name": "dg_top_of_page.spacer"
         },
         {
           "type": "display_group",
           "name": "dg_help",
+          "condition": false,
           "rows": [
             {
               "type": "round_button",
@@ -36,6 +34,7 @@
                   "_raw": "click | start_tour: esm_rich_tasks_tour"
                 }
               ],
+              "condition": false,
               "parameter_list": {
                 "icon_src": "help",
                 "style": "navigation"
