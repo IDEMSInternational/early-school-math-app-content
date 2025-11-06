@@ -14,14 +14,12 @@
           "_translations": {
             "value": {}
           },
-          "style_list": [
-            "flex:1"
-          ],
           "_nested_name": "dg_top_of_page.spacer"
         },
         {
           "type": "display_group",
           "name": "dg_help",
+          "condition": false,
           "rows": [
             {
               "type": "round_button",
@@ -36,6 +34,7 @@
                   "_raw": "click | start_tour: esm_gas_tour"
                 }
               ],
+              "condition": false,
               "parameter_list": {
                 "icon_src": "help",
                 "style": "navigation"
@@ -1569,6 +1568,9 @@
       "_nested_name": "fake_group"
     }
   ],
-  "_xlsxPath": "ESM_gas_high_level_sheets.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1PeJ5ishcTCWUvjhflbQqKO6M8u9rNuec"
+  "_source": {
+    "name": "1PeJ5ishcTCWUvjhflbQqKO6M8u9rNuec",
+    "path": "ESM_gas_high_level_sheets.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/16rHVyQ-Jy4LxsZhIoidQBHzrCEyEmbE0CHmElBdvx9E"
+  }
 }

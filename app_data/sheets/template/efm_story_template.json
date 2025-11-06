@@ -133,6 +133,30 @@
       }
     },
     {
+      "name": "ESM_standard",
+      "value": "@fields.curriculum_standard_abbrev == \"ESM\"",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "ESM_standard",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@fields.curriculum_standard_abbrev == \"ESM\"",
+            "matchedExpression": "@fields.curriculum_standard_abbrev",
+            "type": "fields",
+            "fieldName": "curriculum_standard_abbrev"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.curriculum_standard_abbrev": [
+          "value"
+        ]
+      }
+    },
+    {
       "name": "book_pages",
       "value": "@local.book_entry.pages",
       "_translations": {
@@ -285,6 +309,7 @@
       "type": "template",
       "name": "display_standards",
       "value": "esm_standards_viewer",
+      "condition": "!@local.ESM_standard",
       "style_list": [
         "margin-top: -50px"
       ],
@@ -314,7 +339,22 @@
           }
         }
       ],
-      "_nested_name": "display_standards"
+      "_nested_name": "display_standards",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "!@local.ESM_standard",
+            "matchedExpression": "!@local.ESM_standard",
+            "type": "local",
+            "fieldName": "ESM_standard"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "!@local.ESM_standard": [
+          "condition"
+        ]
+      }
     },
     {
       "type": "image",
@@ -965,6 +1005,9 @@
       }
     }
   ],
-  "_xlsxPath": "EFM_storybooks_high_level_sheets.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1PeJ5ishcTCWUvjhflbQqKO6M8u9rNuec"
+  "_source": {
+    "name": "1PeJ5ishcTCWUvjhflbQqKO6M8u9rNuec",
+    "path": "EFM_storybooks_high_level_sheets.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1hGK9Et-HeYyo41512FiUkEAsp5TrlrLsJQxszpJgo6w"
+  }
 }
