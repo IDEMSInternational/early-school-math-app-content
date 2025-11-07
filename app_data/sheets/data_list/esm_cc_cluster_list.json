@@ -419,9 +419,9 @@
       "id": "CC_MD_K_DCM_",
       "strand_id": "CC_MD",
       "count": 3,
-      "topic_id_1": "Meas_Dist_CL",
-      "topic_id_2": "Meas_Wt_CW",
-      "topic_id_3": "Meas_Vol_CV",
+      "topic_id_1": "Meas_Early_Overview",
+      "topic_id_2": "Meas_Early_Comparing",
+      "topic_id_3": "Meas_Early_Units",
       "name": "K.MD.A: Work with Meas.",
       "_translations": {
         "name": {}
@@ -435,8 +435,9 @@
     {
       "id": "CC_MD_K_CCO_",
       "strand_id": "CC_MD",
-      "count": 1,
-      "topic_id_1": "Data_CO_P",
+      "count": 2,
+      "topic_id_1": "Meas_Early_Units",
+      "topic_id_2": "Data_CO_P",
       "name": "K.MD.B: Classify & Count",
       "_translations": {
         "name": {}
@@ -450,8 +451,10 @@
     {
       "id": "CC_MD_1_ML_",
       "strand_id": "CC_MD",
-      "count": 1,
-      "topic_id_1": "Meas_Dist_MLNS",
+      "count": 3,
+      "topic_id_1": "Meas_Early_Overview",
+      "topic_id_2": "Meas_Early_Comparing",
+      "topic_id_3": "Meas_Early_Units",
       "name": "1.MD.A: Meas. Lengths",
       "_translations": {
         "name": {}
@@ -500,7 +503,7 @@
       "id": "CC_MD_2_ML_",
       "strand_id": "CC_MD",
       "count": 1,
-      "topic_id_1": "Meas_Dist_MLS",
+      "topic_id_1": "Meas_Early_Units",
       "name": "2.MD.A: Meas. Lengths",
       "_translations": {
         "name": {}
