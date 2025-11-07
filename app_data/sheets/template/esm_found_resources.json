@@ -111,6 +111,7 @@
         {
           "type": "display_group",
           "name": "count_matches",
+          "condition": false,
           "parameter_list": {
             "style": "column"
           },
@@ -2813,7 +2814,7 @@
                 {
                   "type": "accordion_section",
                   "name": "topic_buttons",
-                  "value": "@local.topic_counter Topic(s)",
+                  "value": "Topic(s)",
                   "parameter_list": {
                     "style": "column"
                   },
@@ -2997,27 +2998,12 @@
                       "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.topic_buttons.topic_buttons"
                     }
                   ],
-                  "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.topic_buttons",
-                  "_dynamicFields": {
-                    "value": [
-                      {
-                        "fullExpression": "@local.topic_counter Topic(s)",
-                        "matchedExpression": "@local.topic_counter",
-                        "type": "local",
-                        "fieldName": "topic_counter"
-                      }
-                    ]
-                  },
-                  "_dynamicDependencies": {
-                    "@local.topic_counter": [
-                      "value"
-                    ]
-                  }
+                  "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.topic_buttons"
                 },
                 {
                   "type": "accordion_section",
                   "name": "pow_buttons",
-                  "value": "@local.pow_counter Puzzle(s)",
+                  "value": "Puzzle(s)",
                   "parameter_list": {
                     "style": "column"
                   },
@@ -3480,27 +3466,12 @@
                       "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.pow_buttons.pow_buttons"
                     }
                   ],
-                  "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.pow_buttons",
-                  "_dynamicFields": {
-                    "value": [
-                      {
-                        "fullExpression": "@local.pow_counter Puzzle(s)",
-                        "matchedExpression": "@local.pow_counter",
-                        "type": "local",
-                        "fieldName": "pow_counter"
-                      }
-                    ]
-                  },
-                  "_dynamicDependencies": {
-                    "@local.pow_counter": [
-                      "value"
-                    ]
-                  }
+                  "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.pow_buttons"
                 },
                 {
                   "type": "accordion_section",
                   "name": "gas_buttons",
-                  "value": "@local.gas_counter Game(s)",
+                  "value": "Game(s)",
                   "parameter_list": {
                     "style": "column"
                   },
@@ -3963,27 +3934,12 @@
                       "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.gas_buttons.gas_buttons"
                     }
                   ],
-                  "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.gas_buttons",
-                  "_dynamicFields": {
-                    "value": [
-                      {
-                        "fullExpression": "@local.gas_counter Game(s)",
-                        "matchedExpression": "@local.gas_counter",
-                        "type": "local",
-                        "fieldName": "gas_counter"
-                      }
-                    ]
-                  },
-                  "_dynamicDependencies": {
-                    "@local.gas_counter": [
-                      "value"
-                    ]
-                  }
+                  "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.gas_buttons"
                 },
                 {
                   "type": "accordion_section",
                   "name": "sb_buttons",
-                  "value": "@local.sb_counter Storybook(s)",
+                  "value": "Storybook(s)",
                   "parameter_list": {
                     "style": "column"
                   },
@@ -4437,27 +4393,12 @@
                       "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.sb_buttons.sb_buttons"
                     }
                   ],
-                  "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.sb_buttons",
-                  "_dynamicFields": {
-                    "value": [
-                      {
-                        "fullExpression": "@local.sb_counter Storybook(s)",
-                        "matchedExpression": "@local.sb_counter",
-                        "type": "local",
-                        "fieldName": "sb_counter"
-                      }
-                    ]
-                  },
-                  "_dynamicDependencies": {
-                    "@local.sb_counter": [
-                      "value"
-                    ]
-                  }
+                  "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.sb_buttons"
                 },
                 {
                   "type": "accordion_section",
                   "name": "routines_buttons",
-                  "value": "@local.routine_counter Routines(s)",
+                  "value": "Routines(s)",
                   "parameter_list": {
                     "style": "column"
                   },
@@ -5075,27 +5016,12 @@
                       "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.routines_buttons.routine_buttons"
                     }
                   ],
-                  "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.routines_buttons",
-                  "_dynamicFields": {
-                    "value": [
-                      {
-                        "fullExpression": "@local.routine_counter Routines(s)",
-                        "matchedExpression": "@local.routine_counter",
-                        "type": "local",
-                        "fieldName": "routine_counter"
-                      }
-                    ]
-                  },
-                  "_dynamicDependencies": {
-                    "@local.routine_counter": [
-                      "value"
-                    ]
-                  }
+                  "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.routines_buttons"
                 },
                 {
                   "type": "accordion_section",
                   "name": "oe_buttons",
-                  "value": "@local.oe_counter Open-Ended Task(s)",
+                  "value": "Open-Ended Task(s)",
                   "parameter_list": {
                     "style": "column"
                   },
@@ -5558,27 +5484,12 @@
                       "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.oe_buttons.oe_buttons"
                     }
                   ],
-                  "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.oe_buttons",
-                  "_dynamicFields": {
-                    "value": [
-                      {
-                        "fullExpression": "@local.oe_counter Open-Ended Task(s)",
-                        "matchedExpression": "@local.oe_counter",
-                        "type": "local",
-                        "fieldName": "oe_counter"
-                      }
-                    ]
-                  },
-                  "_dynamicDependencies": {
-                    "@local.oe_counter": [
-                      "value"
-                    ]
-                  }
+                  "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.oe_buttons"
                 },
                 {
                   "type": "accordion_section",
                   "name": "ps_buttons",
-                  "value": "@local.ps_counter Problem Solving Task(s)",
+                  "value": "Problem Solving Task(s)",
                   "parameter_list": {
                     "style": "column"
                   },
@@ -6041,22 +5952,7 @@
                       "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.ps_buttons.ps_buttons"
                     }
                   ],
-                  "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.ps_buttons",
-                  "_dynamicFields": {
-                    "value": [
-                      {
-                        "fullExpression": "@local.ps_counter Problem Solving Task(s)",
-                        "matchedExpression": "@local.ps_counter",
-                        "type": "local",
-                        "fieldName": "ps_counter"
-                      }
-                    ]
-                  },
-                  "_dynamicDependencies": {
-                    "@local.ps_counter": [
-                      "value"
-                    ]
-                  }
+                  "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.ps_buttons"
                 }
               ],
               "_nested_name": "do_the_lookup.topic_matches2.topic_accordion"
