@@ -1,0 +1,31 @@
+{
+  "flow_type": "template",
+  "flow_name": "esm_routine_displayer",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_display_group",
+      "name": "dg_routine_page",
+      "parameter_list": "style: column"
+    },
+    {
+      "name": "content_ptr",
+      "value": "@fields.routine_content_ptr"
+    },
+    {
+      "type": "begin_template",
+      "name": "routine_body",
+      "value": "esm_page_viewer"
+    },
+    {
+      "name": "esm_content_ptr",
+      "value": "@@local.content_ptr"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

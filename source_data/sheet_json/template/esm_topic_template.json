@@ -1,0 +1,169 @@
+{
+  "flow_type": "template",
+  "flow_name": "esm_topic_template",
+  "status": "released",
+  "rows": [
+    {
+      "name": "esm_topic",
+      "value": "@@fields.current_topic"
+    },
+    {
+      "name": "topic_name",
+      "value": "@local.esm_topic.name"
+    },
+    {
+      "name": "topic_id",
+      "value": "@local.esm_topic.id"
+    },
+    {
+      "name": "local_false",
+      "value": false
+    },
+    {
+      "name": "next_topic",
+      "value": "@local.local_false"
+    },
+    {
+      "name": "prev_topic",
+      "value": "@local.local_false"
+    },
+    {
+      "name": "has_topic_been_seen",
+      "value": "@local.local_false"
+    },
+    {
+      "name": "do_ids_match",
+      "value": "@local.local_false"
+    },
+    {
+      "type": "begin_items",
+      "name": "find_next_and_prev",
+      "value": "@data.esm_topics",
+      "comments": "Cycle through all topics to find the previous and next activities of an ok_type"
+    },
+    {
+      "name": "do_ids_match",
+      "value": "@item.id == @local.topic_id",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "has_topic_been_seen",
+      "value": "@local.has_topic_been_seen || @local.do_ids_match",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "prev_topic",
+      "value": "data.esm_topics.@item.id",
+      "condition": "!@local.do_ids_match && !@local.has_topic_been_seen",
+      "comments": "The previous topic keeps being updated with topics until we have matching titles.",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "next_topic",
+      "value": "data.esm_topics.@item.id",
+      "condition": "!@local.do_ids_match && @local.has_topic_been_seen && !@local.next_topic",
+      "comments": "The next_topic should be the very first topic after we have matching titles.",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_prev_next_topics",
+      "style_list": "margin-top: -8px;"
+    },
+    {
+      "type": "button",
+      "name": "prev_button_1",
+      "value": "<",
+      "action_list": "click | set_field:current_topic:@local.prev_topic;\nclick | emit:force_reload",
+      "condition": "@local.prev_topic",
+      "parameter_list": "style: short;\ntext_align: center",
+      "style_list": "flex: 30",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "left_spacer",
+      "condition": "!@local.prev_topic",
+      "style_list": "flex: 30"
+    },
+    {
+      "type": "text",
+      "name": "title",
+      "value": "@local.topic_name",
+      "parameter_list": "text_align: center;\nstyle: large emphasised",
+      "style_list": "flex: 300"
+    },
+    {
+      "type": "button",
+      "name": "next_button_1",
+      "value": "\\>",
+      "action_list": "click | set_field:current_topic:@local.next_topic;\nclick | emit:force_reload",
+      "condition": "@local.next_topic",
+      "parameter_list": "style: short;\ntext_align: center",
+      "style_list": "flex: 30",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "right_spacer",
+      "condition": "!@local.next_topic",
+      "style_list": "flex: 30"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "name": "ccssm_standards_list",
+      "value": "@local.esm_topic.ccssm_standards"
+    },
+    {
+      "name": "ccssm_should_be_seen",
+      "value": "@fields.curriculum_standard_abbrev == \"CCSSM\""
+    },
+    {
+      "name": "display_ccssm_standards",
+      "value": "@local.ccssm_standards_list && @local.ccssm_should_be_seen"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "ccssm_standards",
+      "condition": "@local.display_ccssm_standards",
+      "style_list": "margin-top: -1px;"
+    },
+    {
+      "type": "text",
+      "name": "standards_list",
+      "value": "CCSSM: @local.ccssm_standards_list"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_template",
+      "name": "topic_body_generator",
+      "value": "esm_topic_body_template"
+    },
+    {
+      "name": "esm_topic_ptr",
+      "value": "@local.esm_topic"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "fake_group",
+      "style_list": "margin-top: 12px;"
+    },
+    {
+      "type": "text",
+      "name": "empty"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

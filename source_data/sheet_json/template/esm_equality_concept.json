@@ -1,0 +1,177 @@
+{
+  "flow_type": "template",
+  "flow_name": "esm_equality_concept",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_display_group",
+      "name": "dg_top_of_page"
+    },
+    {
+      "type": "title",
+      "name": "spacer",
+      "value": "Equality Concept",
+      "style_list": "flex:1"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_info"
+    },
+    {
+      "type": "text",
+      "name": "help_text",
+      "value": "These routines develop the idea of equality and the use of an equal sign (=). The routines have children deciding whether an equality statement is true or false, and also thinking about what is necessary to make an equality statement true.",
+      "parameter_list": "icon_src: help; style:navigation"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_advice",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion_for_intro",
+      "parameter_list": "open_multiple:TRUE;",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_topics",
+      "value": "Topics & Goals",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_topics_accord",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "topics_text",
+      "value": "The goals for these routines are:\n* Understand what it means for two expressions to be equal or not equal.\n* Overcome the misconception that an equal sign means a result is being obtained. Children can get used to seeing 2 + 3 = 5 as meaning that the equal sign is a cue that 2 + 3 is producing 5. This misconception is reinforced by practices such as writing \"2 + 3 = ?\" Make a habit of writing ? = 2 + 3 as often as you write it the other way.\n* Overcome the misconception that one side of the equal sign should have a single number. Overcome this misconception by writing examples such as 2 + 5 = 2 + 2 + 3.\n* Understand that mathematical statements can be false sometimes, that one should not assume that written statements are always true. Make intentional \"mistakes\" such as writing \"2 + 6 = 3 + 4.\" When your students say this is false, ask them for their ideas on how to fix it.",
+      "parameter_list": "icon_src: help; style:navigation"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_advice",
+      "value": "Teaching Ideas & Directions",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_advice_accord",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "advice_text",
+      "value": "Here is a possible sequence of ideas that get more complicated and sophisticated as your students are ready.\n* **3 = 3 and 3 = 4** These \"simple\" equations are not so simple. They break the habit of having a calculation in an equality. They also demonstrate that some statements are false.\n* **3 = 1 + 2 and 1 = 4 – 2** Use examples where the \"result\" is on the left side of the equation and where the statement may be false.\n* **3 + 2 = 2 + 3** These serve two purposes. They show that expressions can be on both sides. They also can be used to illustrate properties – in this case, that the order of addition is not important.\n* **3 + 2 = 7 – 2** This has an expression on both sides and different operations.\n* **3 + 2 + 2 = 1 + 1 + 2 + 2 + 1** This helps illustrate that the expressions on either or both sides can be as complicated as you like.",
+      "parameter_list": "icon_src: help; style:navigation"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_equality_concept_talks",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "intro_2_text",
+      "value": "Use this sequence of equality concept routines to develop ideas related to equality and equations."
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion_for_equality_concept_groups",
+      "parameter_list": "open_multiple:TRUE;",
+      "comments": true
+    },
+    {
+      "type": "begin_items",
+      "name": "equality_concept_accordions",
+      "value": "@data.esm_equality_concept_data_list"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_@item.id",
+      "value": "@item.name",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_@item.id",
+      "parameter_list": "style: column"
+    },
+    {
+      "name": "content_ptr",
+      "value": "data.esm_equality_concept_data_list.@item.id"
+    },
+    {
+      "type": "begin_template",
+      "name": "equality_concept_body_maker",
+      "value": "esm_page_viewer"
+    },
+    {
+      "name": "esm_content_ptr",
+      "value": "@@local.content_ptr"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "fake_group",
+      "style_list": "margin-top: 40px;"
+    },
+    {
+      "type": "text",
+      "name": "spacer"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

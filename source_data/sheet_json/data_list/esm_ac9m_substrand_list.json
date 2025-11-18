@@ -1,0 +1,350 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "esm_ac9m_substrand_list",
+  "data_list_name": "esm_ac9m_substrands",
+  "status": "released",
+  "rows": [
+    {
+      "id": "AC9M_FMT_EAA_",
+      "name::eng": "FMT.EAA: Early & Always",
+      "strand_id": "AC9M_FMT",
+      "count": 6,
+      "topic_id_1": "FMT_EAA_EandO",
+      "topic_id_2": "FMT_EAA_FMTinH",
+      "topic_id_3": "FMT_EAA_FMTOA",
+      "topic_id_4": "FMT_EAA_FMTDC",
+      "topic_id_5": "FMT_EAA_FMTC",
+      "topic_id_6": "FMT_EAA_FMTPDA"
+    },
+    {
+      "id": "AC9M_FMT_RWC_",
+      "name::eng": "FMT.RWC: Read w/ Children",
+      "strand_id": "AC9M_FMT",
+      "count": 2,
+      "topic_id_1": "FMT_RWC_DRP",
+      "topic_id_2": "FMT_RWC_DRV"
+    },
+    {
+      "id": "AC9M_N_FN01_",
+      "name::eng": "FN01: Numbers from 0 to 20",
+      "strand_id": "AC9M_N",
+      "count": 5,
+      "topic_id_1": "NPV_QC10_QC",
+      "topic_id_2": "NPV_QC10_CMQ10",
+      "topic_id_3": "NPV_QC10_WN10",
+      "topic_id_4": "NPV_QC10_Ordinals",
+      "topic_id_5": "NPV_CPV100_Count20"
+    },
+    {
+      "id": "AC9M_N_FN02_",
+      "name::eng": "FN02: Subitizing to 5",
+      "strand_id": "AC9M_N",
+      "count": 2,
+      "topic_id_1": "NPV_QC10_Sub10",
+      "topic_id_2": "NPV_QC10_Comp10"
+    },
+    {
+      "id": "AC9M_N_FN03_",
+      "name::eng": "FN03: Quantify, Compare to 20",
+      "strand_id": "AC9M_N",
+      "count": 4,
+      "topic_id_1": "NO_AS10_QAS",
+      "topic_id_2": "NPV_QC10_Comp10",
+      "topic_id_3": "NPV_CPV100_Count20",
+      "topic_id_4": "NPV_CPV100_Comp20"
+    },
+    {
+      "id": "AC9M_N_FN04_",
+      "name::eng": "FN04: Part-Whole to 10",
+      "strand_id": "AC9M_N",
+      "count": 3,
+      "topic_id_1": "NO_AS10_QAS",
+      "topic_id_2": "NPV_QC10_Sub10",
+      "topic_id_3": "NO_AS10_NBFF"
+    },
+    {
+      "id": "AC9M_N_FN05_",
+      "name::eng": "FN05: Probs. with + & –",
+      "strand_id": "AC9M_N",
+      "count": 3,
+      "topic_id_1": "PS_SWP_EASP",
+      "topic_id_2": "NO_AS10_AS1and2",
+      "topic_id_3": "NO_AS10_ASto5"
+    },
+    {
+      "id": "AC9M_N_FN06_",
+      "name::eng": "FN06: Probs. with Sharing",
+      "strand_id": "AC9M_N",
+      "count": 3,
+      "topic_id_1": "PS_SWP_EASP",
+      "topic_id_2": "NO_AS10_AT",
+      "topic_id_3": "NO_AS10_ANT"
+    },
+    {
+      "id": "AC9M_N_1N01_",
+      "name::eng": "1N01: Numbers to 120",
+      "strand_id": "AC9M_N",
+      "count": 5,
+      "topic_id_1": "NPV_CPV100_Count20",
+      "topic_id_2": "NPV_CPV100_PV20",
+      "topic_id_3": "NPV_CPV100_Comp20",
+      "topic_id_4": "NPV_CPV100_CountPV100",
+      "topic_id_5": "NPV_CPV100_Comp100"
+    },
+    {
+      "id": "AC9M_N_1N02_",
+      "name::eng": "1N02: Part-Whole to 120 & 2-Digit PV",
+      "strand_id": "AC9M_N",
+      "count": 3,
+      "topic_id_1": "NO_AS10_NBFF",
+      "topic_id_2": "NPV_CPV100_PV20",
+      "topic_id_3": "NPV_CPV100_CountPV100"
+    },
+    {
+      "id": "AC9M_N_1N03_",
+      "name::eng": "1N03: Skip Count & Place Val. to 120",
+      "strand_id": "AC9M_N",
+      "count": 6,
+      "topic_id_1": "NPV_CPV100_PV20",
+      "topic_id_2": "NPV_CPV100_CountPV100",
+      "topic_id_3": "NO_MSD_Skipping",
+      "topic_id_4": "NO_DD_AS2and1",
+      "topic_id_5": "NO_DD_AS2noRegroup",
+      "topic_id_6": "NO_DD_AS2wRegroup"
+    },
+    {
+      "id": "AC9M_N_1N04_",
+      "name::eng": "1N04: Add & Sub within 20",
+      "strand_id": "AC9M_N",
+      "count": 14,
+      "topic_id_1": "NO_AS10_AS1and2",
+      "topic_id_2": "NO_AS10_ASto5",
+      "topic_id_3": "NO_AS10_AT",
+      "topic_id_4": "NO_AS10_ANT",
+      "topic_id_5": "NO_AS10_AComm",
+      "topic_id_6": "NO_AS10_NBFF",
+      "topic_id_7": "NO_ASSD_AddFingers",
+      "topic_id_8": "NO_ASSD_SubFingers",
+      "topic_id_9": "NO_ASSD_ASto10",
+      "topic_id_10": "NO_ASSD_AS10",
+      "topic_id_11": "NO_ASSD_PVto19",
+      "topic_id_12": "NO_ASSD_10BridgeA",
+      "topic_id_13": "NO_ASSD_10BridgeS",
+      "topic_id_14": "NO_ASSD_SD_Add_Sub"
+    },
+    {
+      "id": "AC9M_N_1N05_",
+      "name::eng": "1N05: Probs with + & –",
+      "strand_id": "AC9M_N",
+      "count": 2,
+      "topic_id_1": "PS_SWP_ASP",
+      "topic_id_2": "PS_SWP_EASE"
+    },
+    {
+      "id": "AC9M_N_1N06_",
+      "name::eng": "1N06: Probs with Sharing",
+      "strand_id": "AC9M_N",
+      "count": 3,
+      "topic_id_1": "PS_SWP_ASP",
+      "topic_id_2": "NO_AS10_AT",
+      "topic_id_3": "NO_AS10_ANT"
+    },
+    {
+      "id": "AC9M_A_FA01_",
+      "name::eng": "FA01: Working with Patterns",
+      "strand_id": "AC9M_A",
+      "count": 4,
+      "topic_id_1": "Geom_OP_PG",
+      "topic_id_2": "Geom_OP_SD",
+      "topic_id_3": "Geom_Pat_Intro",
+      "topic_id_4": "Geom_Pat_MSP"
+    },
+    {
+      "id": "AC9M_A_1A01_",
+      "name::eng": "1A01: Patterns, Skip Count 2s, 5s, 10s",
+      "strand_id": "AC9M_A",
+      "count": 3,
+      "topic_id_1": "Geom_Pat_Intro",
+      "topic_id_2": "NO_MSD_Skipping",
+      "topic_id_3": "NO_MSD_Doubling"
+    },
+    {
+      "id": "AC9M_A_1A02_",
+      "name::eng": "1A02: Repeating Patterns",
+      "strand_id": "AC9M_A",
+      "count": 2,
+      "topic_id_1": "Geom_Pat_Intro",
+      "topic_id_2": "Geom_Pat_MSP"
+    },
+    {
+      "id": "AC9M_A_2A01_",
+      "name::eng": "2A01: Patterns – Add, and Others",
+      "strand_id": "AC9M_A",
+      "count": 3,
+      "topic_id_1": "NO_DD_AS2and1",
+      "topic_id_2": "NO_MSD_Skipping",
+      "topic_id_3": "NO_MSD_MultRep"
+    },
+    {
+      "id": "AC9M_A_2A01_",
+      "name::eng": "2A02: Add & Sub Facts within 20",
+      "strand_id": "AC9M_A",
+      "count": 10,
+      "topic_id_1": "NO_AS10_AT",
+      "topic_id_2": "NO_AS10_ANT",
+      "topic_id_3": "NO_AS10_AComm",
+      "topic_id_4": "NO_AS10_NBFF",
+      "topic_id_5": "NO_ASSD_ASto10",
+      "topic_id_6": "NO_ASSD_AS10",
+      "topic_id_7": "NO_ASSD_PVto19",
+      "topic_id_8": "NO_ASSD_10BridgeA",
+      "topic_id_9": "NO_ASSD_10BridgeS",
+      "topic_id_10": "NO_ASSD_SD_Add_Sub"
+    },
+    {
+      "id": "AC9M_A_2A01_",
+      "name::eng": "2A03: Doubling and Halving",
+      "strand_id": "AC9M_A",
+      "count": 4,
+      "topic_id_1": "NO_MSD_Doubling",
+      "topic_id_2": "NO_NT_EvenOdd",
+      "topic_id_3": "NO_AS10_AT",
+      "topic_id_4": "NO_AS10_ANT"
+    },
+    {
+      "id": "AC9M_A_PS_",
+      "name::eng": "PS: Problem Solving",
+      "strand_id": "TEKS_AR",
+      "count": 1,
+      "topic_id_1": "PS_SWP_MPS"
+    },
+    {
+      "id": "AC9M_A_NT_",
+      "name::eng": "NT: Number Theory",
+      "strand_id": "TEKS_AR",
+      "count": 5,
+      "topic_id_1": "NO_NT_EvenOdd",
+      "topic_id_2": "NO_NT_PowExp",
+      "topic_id_3": "NO_NT_Primes",
+      "topic_id_4": "NO_NT_Sieve",
+      "topic_id_5": "NO_NT_PrimeFactoring"
+    },
+    {
+      "id": "AC9M_M_FM01_",
+      "name::eng": "FM01: Describe and Compare Object Props.",
+      "strand_id": "AC9M_M",
+      "count": 3,
+      "topic_id_1": "Geom_OP_PG",
+      "topic_id_2": "Geom_OP_SD",
+      "topic_id_3": "Meas_Early_Comparing"
+    },
+    {
+      "id": "AC9M_M_FM02_",
+      "name::eng": "FM02: Weekdays & Times of Day",
+      "strand_id": "AC9M_M",
+      "count": 1,
+      "topic_id_1": "Meas_Time_TTH"
+    },
+    {
+      "id": "AC9M_M_1M01_",
+      "name::eng": "1M01: Non-unit Meas. of all Types",
+      "strand_id": "AC9M_M",
+      "count": 3,
+      "topic_id_1": "Meas_Early_Overview",
+      "topic_id_2": "Meas_Early_Comparing",
+      "topic_id_3": "Meas_Early_Units"
+    },
+    {
+      "id": "AC9M_M_1M02_",
+      "name::eng": "1M02: Informal Units",
+      "strand_id": "AC9M_M",
+      "count": 1,
+      "topic_id_1": "Meas_Early_Units"
+    },
+    {
+      "id": "AC9M_M_1M03_",
+      "name::eng": "1M03: Time Duration - Hrs, Days, Wks,",
+      "strand_id": "AC9M_M",
+      "count": 3,
+      "topic_id_1": "Meas_Time_TTH",
+      "topic_id_2": "Meas_Time_PofD",
+      "topic_id_3": "Meas_Time_Cal"
+    },
+    {
+      "id": "AC9M_SP_FSP01_",
+      "name::eng": "FSP01: 2D Shapes – Sort, Name, Create",
+      "strand_id": "AC9M_SP",
+      "count": 5,
+      "topic_id_1": "Geom_OP_PG",
+      "topic_id_2": "Geom_OP_SD",
+      "topic_id_3": "Geom_Shape_DS",
+      "topic_id_4": "Geom_Shape_SN2D3D",
+      "topic_id_5": "Geom_Shape_CompSort"
+    },
+    {
+      "id": "AC9M_SP_FSP02_",
+      "name::eng": "FSP02: Describe Postion & Location",
+      "strand_id": "AC9M_SP",
+      "count": 1,
+      "topic_id_1": "Geom_Shape_DS"
+    },
+    {
+      "id": "AC9M_SP_1SP01_",
+      "name::eng": "1SP01: Shapes – Similarities & Diffs.",
+      "strand_id": "AC9M_SP",
+      "count": 1,
+      "topic_id_1": "Geom_OP_SD"
+    },
+    {
+      "id": "AC9M_SP_1SP02_",
+      "name::eng": "1SP02: Directions for Moving Objects in Space",
+      "strand_id": "AC9M_SP",
+      "count": 1,
+      "topic_id_1": "Geom_Shape_DS"
+    },
+    {
+      "id": "AC9M_SP_2SP01_",
+      "name::eng": "2SP01: Shapes – Compare & Classify",
+      "strand_id": "AC9M_SP",
+      "count": 5,
+      "topic_id_1": "Geom_OP_SD",
+      "topic_id_2": "Geom_Shape_DS",
+      "topic_id_3": "Geom_Shape_SN2D3D",
+      "topic_id_4": "Geom_Shape_CompSort",
+      "topic_id_5": "Geom_Shape_CompDecomp"
+    },
+    {
+      "id": "AC9M_SP_2SP02_",
+      "name::eng": "2SP02: Positions in 2D Space",
+      "strand_id": "AC9M_SP",
+      "count": 2,
+      "topic_id_1": "Geom_Shape_DS",
+      "topic_id_2": "Geom_Shape_CompDecomp"
+    },
+    {
+      "id": "AC9M_ST_FST01_",
+      "name::eng": "FST01: Data – Collect, Sort, Compare",
+      "strand_id": "AC9M_ST",
+      "count": 4,
+      "topic_id_1": "Geom_OP_PG",
+      "topic_id_2": "Geom_OP_SD",
+      "topic_id_3": "Data_Rep_P",
+      "topic_id_4": "Data_Graph_P"
+    },
+    {
+      "id": "AC9M_ST_1ST01_",
+      "name::eng": "1ST01: Data – Collecting and Recording",
+      "strand_id": "AC9M_ST",
+      "count": 2,
+      "topic_id_1": "Data_Rep_P",
+      "topic_id_2": "Data_Graph_P"
+    },
+    {
+      "id": "AC9M_ST_1ST02_",
+      "name::eng": "1ST02: Data – Comparing",
+      "strand_id": "AC9M_ST",
+      "count": 1,
+      "topic_id_1": "Data_Anal_P"
+    }
+  ]
+}

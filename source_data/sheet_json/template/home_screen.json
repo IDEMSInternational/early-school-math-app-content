@@ -1,0 +1,257 @@
+{
+  "flow_type": "template",
+  "flow_name": "home_screen",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_template",
+      "name": "inits",
+      "value": "initializations_on_startup",
+      "condition": "! @fields.already_started"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_top_of_page"
+    },
+    {
+      "type": "title",
+      "name": "spacer",
+      "value": "Welcome!"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_help",
+      "condition": false
+    },
+    {
+      "type": "round_button",
+      "name": "help_button",
+      "action_list": "click | start_tour: home_screen_tour",
+      "condition": false,
+      "parameter_list": "icon_src: help; style: navigation"
+    },
+    {
+      "type": "end_display_group",
+      "condition": false
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_image",
+      "parameter_list": "style: dashed_box"
+    },
+    {
+      "type": "image",
+      "name": "main_image",
+      "value": "ESMLogo.png"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "name": "debbuggg",
+      "value": "Current Topics View: @fields.curriculum_standard_name"
+    },
+    {
+      "name": "debuggggggg",
+      "value": "Standard abbreviation: @fields.curriculum_standard_abbrev"
+    },
+    {
+      "name": "now",
+      "value": "@calc(timestamp())",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "click_history_field_name",
+      "value": "intro_start_button_click_history",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "button_click_history",
+      "value": "@fields.@local.click_history_field_name ;  @local.now",
+      "condition": "!!(@fields.@local.click_history_field_name)",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "button_click_history",
+      "value": "@local.now",
+      "condition": "!(@fields.@local.click_history_field_name)",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_intro_start"
+    },
+    {
+      "type": "button",
+      "name": "button_intro_start",
+      "value": "Introduction",
+      "action_list": "click | go_to: esm_intro_start_start; click | set_field:@local.click_history_field_name: @local.button_click_history",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "name": "now",
+      "value": "@calc(timestamp())",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "click_history_field_name",
+      "value": "topics_button_click_history",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "button_click_history",
+      "value": "@fields.@local.click_history_field_name ;  @local.now",
+      "condition": "!!(@fields.@local.click_history_field_name)",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "button_click_history",
+      "value": "@local.now",
+      "condition": "!(@fields.@local.click_history_field_name)",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_topics"
+    },
+    {
+      "type": "button",
+      "name": "button_topics",
+      "value": "Topics",
+      "action_list": "click | go_to: esm_topic_start; click | set_field:@local.click_history_field_name: @local.button_click_history",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "name": "now",
+      "value": "@calc(timestamp())",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "click_history_field_name",
+      "value": "resources_button_click_history",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "button_click_history",
+      "value": "@fields.@local.click_history_field_name ;  @local.now",
+      "condition": "!!(@fields.@local.click_history_field_name)",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "button_click_history",
+      "value": "@local.now",
+      "condition": "!(@fields.@local.click_history_field_name)",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_resources"
+    },
+    {
+      "type": "button",
+      "name": "button_pows",
+      "value": "Resources",
+      "action_list": "click | go_to: esm_resources; \nclick | set_field:@local.click_history_field_name: @local.button_click_history",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "fake_group",
+      "style_list": "margin-top: 40px;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_testing_group",
+      "condition": false,
+      "parameter_list": "style: column;"
+    },
+    {
+      "name": "test_string",
+      "value": "aa,bb,dd,cc,ee,de,ed"
+    },
+    {
+      "type": "text",
+      "name": "deebugg_string",
+      "value": "String: @local.test_string"
+    },
+    {
+      "name": "test_array1",
+      "value": "@calc(@local.test_string.split(\",\"))"
+    },
+    {
+      "type": "text",
+      "name": "deeeebug1",
+      "value": "Array1: @local.test_array1"
+    },
+    {
+      "name": "test_set",
+      "value": "@calc(new Set(@local.test_array1))"
+    },
+    {
+      "name": "test_array2",
+      "value": "@calc(Array.from(@local.test_set))"
+    },
+    {
+      "type": "text",
+      "name": "deeeebug2",
+      "value": "Array2: @local.test_array2"
+    },
+    {
+      "name": "test_array_sort",
+      "value": "@calc(@local.test_array1.sort())"
+    },
+    {
+      "type": "text",
+      "name": "deeeebug_sorted",
+      "value": "Array1 Sorted: @local.test_array1"
+    },
+    {
+      "type": "text",
+      "name": "deeeebug_sort",
+      "value": "Array Sorted: @local.test_array_sort"
+    },
+    {
+      "name": "test_string2",
+      "value": "@calc(@local.test_array1.join(', '))"
+    },
+    {
+      "type": "text",
+      "name": "deebug_string",
+      "value": "String: @local.test_string2"
+    },
+    {
+      "name": "test_string3",
+      "value": "@calc(@local.test_array2.join(', '))"
+    },
+    {
+      "type": "text",
+      "name": "deebug_string",
+      "value": "String: @local.test_string3"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "text",
+      "name": "spacer"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

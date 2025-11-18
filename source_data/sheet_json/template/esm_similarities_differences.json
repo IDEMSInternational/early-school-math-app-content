@@ -1,0 +1,178 @@
+{
+  "flow_type": "template",
+  "flow_name": "esm_similarities_differences",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_display_group",
+      "name": "dg_top_of_page"
+    },
+    {
+      "type": "title",
+      "name": "spacer",
+      "value": "Similarities and Differences",
+      "style_list": "flex:1"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_info"
+    },
+    {
+      "type": "text",
+      "name": "help_text",
+      "value": "These talks provide different approaches for working with properties of objects by looking for differences and similarities among the objects. They use small groups of 2 to 6 objects, pictures, or numbers.",
+      "parameter_list": "icon_src: help; style:navigation"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_advice",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion_for_intro",
+      "parameter_list": "open_multiple:TRUE;",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_topics",
+      "value": "Topics & Goals",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_topics_accord",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "topics_text",
+      "value": "**Foundational** Working with object properties is where mathematics starts. It lays the foundation for all the mathematics to come.\n\n**Deeper than Memorizing** Simply memorizng properties leads to a very shallow relationship with them. Interacting more deeply with properties by looking for similarities and differences will lead to a better understanding of them. Asking a student to describe a square is a start; however, if you ask them to find similarities and differences between a square and a triangle you immediately go more deeply into the material and develop richer understandings. This interaction with properties also gives your students a chance to work on their observational and discussion skills.\n\n**Games** Many of these routines are duplicated by games in the Short Math Games section.",
+      "parameter_list": "icon_src: help; style:navigation"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_advice",
+      "value": "Teaching Ideas & Directions",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_advice_accord",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "advice_text",
+      "value": "These routines can be used for any properties that you feel need emphasizing.\n\n**Very young students:** Build up their vocabulary and an appreciation that objects can be seen in multiple ways depending on the characteristics you want to focus on.\n\n**Slightly older students:** Develop their eyes and practice searching through the properties they are familiar with. If you have (tree, bird, fish, rock), it is not immediately obvious which property to use, so your students will be thinking through all the things they know about these things. This is more interesting and leads to better understandings that simply asking which of these things are alive.\n\n**Even older students:** Asking what is the same and different for a small group of numbers gives your students a chance to think about features they know about numbers. For example, suppose you have (1, 4, 9, 13): Is the unusual one 4 for being the only even number, or 13 for being the only two-digit number, or 13 for being the only non-square? This provides ideas to discover, explore, and discuss!",
+      "parameter_list": "icon_src: help; style:navigation"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_all_dot_talks",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "example__intro",
+      "value": "These routines all practice using object properties by looking for similarities and differences."
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion_for_dot_talk_categories",
+      "parameter_list": "open_multiple:TRUE;",
+      "comments": true
+    },
+    {
+      "type": "begin_items",
+      "name": "dot_talk_accordions",
+      "value": "@data.esm_similarity_diffs_data_list",
+      "parameter_list": "filter: @item.type==\"beginning\""
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_@item.id",
+      "value": "@item.name",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_@item.id",
+      "parameter_list": "style: column"
+    },
+    {
+      "name": "content_ptr",
+      "value": "data.esm_similarity_diffs_data_list.@item.id"
+    },
+    {
+      "type": "begin_template",
+      "name": "dot_talk_body_maker",
+      "value": "esm_page_viewer"
+    },
+    {
+      "name": "esm_content_ptr",
+      "value": "@@local.content_ptr"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "fake_group",
+      "style_list": "margin-top: 40px;"
+    },
+    {
+      "type": "text",
+      "name": "spacer"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

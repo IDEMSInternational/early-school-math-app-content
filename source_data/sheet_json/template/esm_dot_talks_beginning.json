@@ -1,0 +1,178 @@
+{
+  "flow_type": "template",
+  "flow_name": "esm_dot_talks_beginning",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_display_group",
+      "name": "dg_top_of_page"
+    },
+    {
+      "type": "title",
+      "name": "spacer",
+      "value": "Dot Talks – Beginning",
+      "style_list": "flex:1"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_info"
+    },
+    {
+      "type": "text",
+      "name": "help_text",
+      "value": "These routines have collections of dots in different patterns. They develop counting, subitizing, unitizing, and Counting On skills.",
+      "parameter_list": "icon_src: help; style:navigation"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_advice",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion_for_intro",
+      "parameter_list": "open_multiple:TRUE;",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_topics",
+      "value": "Topics & Goals",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_topics_accord",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "topics_text",
+      "value": "There are two major ideas that dot talks help develop:\n\n* **Subitizing** is the ability to \"instantly\" see the size of small groups. It builds quantity recognition and saves time while counting. Recognizing small groups also starts unitizing those groups. \n* **Unitizing** is seeing a group of items as a single new kind of thing. It is an important developmental step and may take time. Unitizing groups of 10 is central to understanding place value. Unitizing also helps with Counting On and beginning addition.\n\nDot talks also help with learning Counting, Counting On, Addition, Subtraction, Part-whole relationship, and Fact Families.",
+      "parameter_list": "icon_src: help; style:navigation"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_advice",
+      "value": "Teaching Ideas & Directions",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_advice_accord",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "advice_text",
+      "value": "**Learning Sequence**\n* Initially, allow time for the students to count the dots and gain a feeling for the quantities.\n* After the students have a feel for the quantities, start working on subitizing the groups of dots on the cards. Do this by showing a card for 1 or 2 seconds and then hiding it – long enough to see the dots but not long enough to count them out – and then ask questions such as \"How many dots are there?\" \"How do you know?\" and \"Did you recognize any groups of dots?\"\n* At first, your students will want to describe a card as having \"two and one and two more.\" This is fine to start with, but eventually you want them to instantly recognize the full amount.\n* Build up the recognition of quantities by starting with 1, 2, 3, 4, and 5. Once those amounts and their standard patterns are learned, then build larger quantities using those smaller groups as building blocks.\n* As your students get consistent with recognizing amounts of dots, start representing what's going on for the dot cards with numerals. If done gradually, the use of numerals, equal signs, addition and subtraction symbols will be empowering and help them move forward.\n\n**Cards and Plates:** An alternative to dot cards is dot plates. Use paper plates with dots drawn on them or with cut out dots placed on them.",
+      "parameter_list": "icon_src: help; style:navigation"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_all_dot_talks",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "example__intro",
+      "value": "This level of dot talks typically involves ten or fewer dots. The talks are broken up into categories, but feel free to mix them as you like."
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion_for_dot_talk_categories",
+      "parameter_list": "open_multiple:TRUE;",
+      "comments": true
+    },
+    {
+      "type": "begin_items",
+      "name": "dot_talk_accordions",
+      "value": "@data.esm_dot_talks_data_list",
+      "parameter_list": "filter: @item.type==\"beginning\""
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_@item.id",
+      "value": "@item.name",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_@item.id",
+      "parameter_list": "style: column"
+    },
+    {
+      "name": "content_ptr",
+      "value": "data.esm_dot_talks_data_list.@item.id"
+    },
+    {
+      "type": "begin_template",
+      "name": "dot_talk_body_maker",
+      "value": "esm_page_viewer"
+    },
+    {
+      "name": "esm_content_ptr",
+      "value": "@@local.content_ptr"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "fake_group",
+      "style_list": "margin-top: 40px;"
+    },
+    {
+      "type": "text",
+      "name": "spacer"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

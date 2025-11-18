@@ -1,0 +1,174 @@
+{
+  "flow_type": "template",
+  "flow_name": "efm_storybooks",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_display_group",
+      "name": "dg_top_of_page"
+    },
+    {
+      "type": "title",
+      "name": "spacer",
+      "value": "Storybooks"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_help",
+      "condition": false
+    },
+    {
+      "type": "round_button",
+      "name": "help_button",
+      "action_list": "click | start_tour: esm_storybooks_tour",
+      "condition": false,
+      "parameter_list": "icon_src: help; style:navigation"
+    },
+    {
+      "type": "end_display_group",
+      "condition": false
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_sb_intro",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "intro_text",
+      "value": "These storybooks are for an adult to read to a child or a group. The three annotations on each page provide questions and quiding discussion points for story material on the page. These are not intended as beginning readers for a child to read. There are 3 levels.\n* **Beginner Storybooks** These have simple storylines and cover basic things such as shapes, colors, comparisons, and quantities.\n* **Intermediate Storybooks** These are somewhat longer and more complex, and involve more sophisticated ideas.\n* **Advanced Storybooks** The storylines and object descriptions are more detailed and complex. The math involves larger numbers and more advanced concepts."
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion_top_level",
+      "parameter_list": "open_multiple:TRUE;",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_beginning",
+      "value": "Beginning Storybooks",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_begin",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "begin_items",
+      "name": "activity_buttons",
+      "value": "@data.efm_storybooks"
+    },
+    {
+      "type": "button",
+      "name": "button_sb",
+      "value": "@item.name",
+      "action_list": "click | go_to: @item.id;",
+      "condition": "@item.book_level == \"beginner\"",
+      "parameter_list": "style: short; \ntext_align: center",
+      "comments": "click | go_to: @item.template"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_intermediate",
+      "value": "Intermediate Storybooks",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_intermediate",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "begin_items",
+      "name": "activity_buttons",
+      "value": "@data.efm_storybooks"
+    },
+    {
+      "type": "button",
+      "name": "button_sb",
+      "value": "@item.name",
+      "action_list": "click | go_to: @item.id;",
+      "condition": "@item.book_level == \"intermediate\"",
+      "parameter_list": "style: short; \ntext_align: center",
+      "comments": "click | go_to: @item.template"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_advanced",
+      "value": "Advanced Storybooks",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_advanced",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "begin_items",
+      "name": "activity_buttons",
+      "value": "@data.efm_storybooks"
+    },
+    {
+      "type": "button",
+      "name": "button_sb",
+      "value": "@item.name",
+      "action_list": "click | go_to: @item.id;",
+      "condition": "@item.book_level == \"advanced\"",
+      "parameter_list": "style: short; \ntext_align: center",
+      "comments": "click | go_to: @item.template"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "fake_group",
+      "style_list": "margin-top: 40px;"
+    },
+    {
+      "type": "text",
+      "name": "spacer"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

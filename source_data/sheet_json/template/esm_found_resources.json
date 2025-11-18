@@ -1,0 +1,805 @@
+{
+  "flow_type": "template",
+  "flow_name": "esm_found_resources",
+  "status": "released",
+  "rows": [
+    {
+      "name": "comment",
+      "value": "If button is pushed,then display resource information."
+    },
+    {
+      "name": "comment",
+      "value": "First, count each of the resource types that these topics relate to"
+    },
+    {
+      "name": "passed_search_string"
+    },
+    {
+      "name": "passed_search_array",
+      "value": "@calc(@local.passed_search_string.split(\",\"))"
+    },
+    {
+      "name": "search_set",
+      "value": "@calc(new Set(@local.passed_search_array))"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "do_the_lookup",
+      "parameter_list": "style:column;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "count_matches",
+      "condition": false,
+      "parameter_list": "style:column;"
+    },
+    {
+      "name": "topic_counter",
+      "value": 0
+    },
+    {
+      "name": "topic_counter",
+      "value": "@local.topic_counter - @local.topic_counter"
+    },
+    {
+      "type": "begin_items",
+      "name": "topic_checks",
+      "value": "@data.esm_topics"
+    },
+    {
+      "name": "does_it_match",
+      "value": "@calc(@local.search_set.has(@item.id))"
+    },
+    {
+      "name": "topic_counter",
+      "value": "@local.topic_counter + 1",
+      "condition": "@local.does_it_match"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "name": "pow_counter",
+      "value": "@local.topic_counter - @local.topic_counter"
+    },
+    {
+      "type": "begin_items",
+      "name": "pow_checks",
+      "value": "@data.efm_pows"
+    },
+    {
+      "name": "match1",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_1))"
+    },
+    {
+      "name": "match2",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_2))"
+    },
+    {
+      "name": "match3",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_3))"
+    },
+    {
+      "name": "match4",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_4))"
+    },
+    {
+      "name": "match5",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_5))"
+    },
+    {
+      "name": "match6",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_6))"
+    },
+    {
+      "name": "does_it_match",
+      "value": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6"
+    },
+    {
+      "name": "pow_counter",
+      "value": "@local.pow_counter + 1",
+      "condition": "@local.does_it_match"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "name": "gas_counter",
+      "value": "@local.topic_counter - @local.topic_counter"
+    },
+    {
+      "type": "begin_items",
+      "name": "gas_checks",
+      "value": "@data.efm_gas"
+    },
+    {
+      "name": "match1",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_1))"
+    },
+    {
+      "name": "match2",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_2))"
+    },
+    {
+      "name": "match3",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_3))"
+    },
+    {
+      "name": "match4",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_4))"
+    },
+    {
+      "name": "match5",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_5))"
+    },
+    {
+      "name": "match6",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_6))"
+    },
+    {
+      "name": "does_it_match",
+      "value": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6"
+    },
+    {
+      "name": "gas_counter",
+      "value": "@local.gas_counter + 1",
+      "condition": "@local.does_it_match"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "name": "sb_counter",
+      "value": "@local.topic_counter - @local.topic_counter"
+    },
+    {
+      "type": "begin_items",
+      "name": "sb_checks",
+      "value": "@data.efm_storybooks"
+    },
+    {
+      "name": "match1",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_1))"
+    },
+    {
+      "name": "match2",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_2))"
+    },
+    {
+      "name": "match3",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_3))"
+    },
+    {
+      "name": "match4",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_4))"
+    },
+    {
+      "name": "match5",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_5))"
+    },
+    {
+      "name": "match6",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_6))"
+    },
+    {
+      "name": "does_it_match",
+      "value": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6"
+    },
+    {
+      "name": "sb_counter",
+      "value": "@local.sb_counter + 1",
+      "condition": "@local.does_it_match"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "name": "routine_counter",
+      "value": "@local.topic_counter - @local.topic_counter"
+    },
+    {
+      "type": "begin_items",
+      "name": "routine_checks",
+      "value": "@data.esm_routines_master_data_list"
+    },
+    {
+      "name": "routine_type_name",
+      "value": "@item.name"
+    },
+    {
+      "name": "routine_data_list_id",
+      "value": "@item.data_list_id"
+    },
+    {
+      "type": "begin_items",
+      "name": "individual_routine_checks",
+      "value": "@data.@local.routine_data_list_id"
+    },
+    {
+      "name": "match1",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_1))"
+    },
+    {
+      "name": "match2",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_2))"
+    },
+    {
+      "name": "match3",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_3))"
+    },
+    {
+      "name": "match4",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_4))"
+    },
+    {
+      "name": "match5",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_5))"
+    },
+    {
+      "name": "match6",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_6))"
+    },
+    {
+      "name": "does_it_match",
+      "value": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6"
+    },
+    {
+      "name": "routine_counter",
+      "value": "@local.routine_counter + 1",
+      "condition": "@local.does_it_match"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "name": "oe_counter",
+      "value": "@local.topic_counter - @local.topic_counter"
+    },
+    {
+      "type": "begin_items",
+      "name": "oe_checks",
+      "value": "@data.esm_open_ended_tasks_data_list"
+    },
+    {
+      "name": "match1",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_1))"
+    },
+    {
+      "name": "match2",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_2))"
+    },
+    {
+      "name": "match3",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_3))"
+    },
+    {
+      "name": "match4",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_4))"
+    },
+    {
+      "name": "match5",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_5))"
+    },
+    {
+      "name": "match6",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_6))"
+    },
+    {
+      "name": "does_it_match",
+      "value": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6"
+    },
+    {
+      "name": "oe_counter",
+      "value": "@local.oe_counter + 1",
+      "condition": "@local.does_it_match"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "name": "ps_counter",
+      "value": "@local.topic_counter - @local.topic_counter"
+    },
+    {
+      "type": "begin_items",
+      "name": "ps_checks",
+      "value": "@data.esm_ps_tasks_data_list"
+    },
+    {
+      "name": "match1",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_1))"
+    },
+    {
+      "name": "match2",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_2))"
+    },
+    {
+      "name": "match3",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_3))"
+    },
+    {
+      "name": "match4",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_4))"
+    },
+    {
+      "name": "match5",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_5))"
+    },
+    {
+      "name": "match6",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_6))"
+    },
+    {
+      "name": "does_it_match",
+      "value": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6"
+    },
+    {
+      "name": "ps_counter",
+      "value": "@local.ps_counter + 1",
+      "condition": "@local.does_it_match"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "name": "comment2",
+      "value": "Make accordians of buttons to list resources that relate"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "topic_matches2",
+      "parameter_list": "style:column;",
+      "style_list": "margin-top: -5px;"
+    },
+    {
+      "type": "begin_accordion",
+      "name": "topic_accordion",
+      "parameter_list": "open_multiple:TRUE;"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "topic_buttons",
+      "value": "Topic(s)",
+      "parameter_list": "style:column;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "topic_buttons",
+      "parameter_list": "style:column;"
+    },
+    {
+      "type": "begin_items",
+      "name": "topic_checks",
+      "value": "@data.esm_topics"
+    },
+    {
+      "name": "does_it_match",
+      "value": "@calc(@local.search_set.has(@item.id))"
+    },
+    {
+      "type": "button",
+      "name": "topic_@item.id",
+      "value": "@item.name",
+      "action_list": "click | set_field:current_topic: @item.id;\nclick | go_to: esm_topic_template;",
+      "condition": "@local.does_it_match",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "pow_buttons",
+      "value": "Puzzle(s)",
+      "parameter_list": "style:column;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "pow_buttons",
+      "parameter_list": "style:column;"
+    },
+    {
+      "type": "begin_items",
+      "name": "pow_checks",
+      "value": "@data.efm_pows"
+    },
+    {
+      "name": "match1",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_1))"
+    },
+    {
+      "name": "match2",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_2))"
+    },
+    {
+      "name": "match3",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_3))"
+    },
+    {
+      "name": "match4",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_4))"
+    },
+    {
+      "name": "match5",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_5))"
+    },
+    {
+      "name": "match6",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_6))"
+    },
+    {
+      "name": "does_it_match",
+      "value": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6"
+    },
+    {
+      "type": "button",
+      "name": "button_@item.id",
+      "value": "@item.name",
+      "action_list": "click | set_field:current_pow: data.efm_pows.@item.id;\nclick | go_to: efm_pow_template;",
+      "condition": "@local.does_it_match",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "gas_buttons",
+      "value": "Game(s)",
+      "parameter_list": "style:column;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "gas_buttons",
+      "parameter_list": "style:column;"
+    },
+    {
+      "type": "begin_items",
+      "name": "gas_checks",
+      "value": "@data.efm_gas"
+    },
+    {
+      "name": "match1",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_1))"
+    },
+    {
+      "name": "match2",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_2))"
+    },
+    {
+      "name": "match3",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_3))"
+    },
+    {
+      "name": "match4",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_4))"
+    },
+    {
+      "name": "match5",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_5))"
+    },
+    {
+      "name": "match6",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_6))"
+    },
+    {
+      "name": "does_it_match",
+      "value": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6"
+    },
+    {
+      "type": "button",
+      "name": "button_@item.id",
+      "value": "@item.name",
+      "action_list": "click | set_field:current_ga: data.efm_gas.@item.id;\nclick | go_to: efm_ga_template;",
+      "condition": "@local.does_it_match",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "sb_buttons",
+      "value": "Storybook(s)",
+      "parameter_list": "style:column;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "sb_buttons",
+      "parameter_list": "style:column;"
+    },
+    {
+      "type": "begin_items",
+      "name": "sb_checks",
+      "value": "@data.efm_storybooks"
+    },
+    {
+      "name": "match1",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_1))"
+    },
+    {
+      "name": "match2",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_2))"
+    },
+    {
+      "name": "match3",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_3))"
+    },
+    {
+      "name": "match4",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_4))"
+    },
+    {
+      "name": "match5",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_5))"
+    },
+    {
+      "name": "match6",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_6))"
+    },
+    {
+      "name": "does_it_match",
+      "value": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6"
+    },
+    {
+      "type": "button",
+      "name": "button_@item.id",
+      "value": "@item.name",
+      "action_list": "click | go_to: @item.id;",
+      "condition": "@local.does_it_match",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "routines_buttons",
+      "value": "Routines(s)",
+      "parameter_list": "style:column;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "routine_buttons",
+      "parameter_list": "style:column;"
+    },
+    {
+      "type": "begin_items",
+      "name": "routine_checks",
+      "value": "@data.esm_routines_master_data_list"
+    },
+    {
+      "name": "routine_type_name",
+      "value": "@item.name"
+    },
+    {
+      "name": "routine_data_list_id",
+      "value": "@item.data_list_id"
+    },
+    {
+      "type": "begin_items",
+      "name": "individual_routine_checks",
+      "value": "@data.@local.routine_data_list_id"
+    },
+    {
+      "name": "match1",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_1))"
+    },
+    {
+      "name": "match2",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_2))"
+    },
+    {
+      "name": "match3",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_3))"
+    },
+    {
+      "name": "match4",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_4))"
+    },
+    {
+      "name": "match5",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_5))"
+    },
+    {
+      "name": "match6",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_6))"
+    },
+    {
+      "name": "does_it_match",
+      "value": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6"
+    },
+    {
+      "name": "content_ptr",
+      "value": "data.@local.routine_data_list_id.@item.id",
+      "condition": false
+    },
+    {
+      "type": "set_field",
+      "name": "routine_content_ptr",
+      "value": "@local.content_ptr",
+      "condition": false
+    },
+    {
+      "type": "button",
+      "name": "button_@item.id",
+      "value": "@local.routine_type_name – @item.name",
+      "action_list": "click | set_field:routine_content_ptr : data.@local.routine_data_list_id.@item.id;\nclick | go_to: esm_routine_displayer;",
+      "condition": "@local.does_it_match",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "oe_buttons",
+      "value": "Open-Ended Task(s)",
+      "parameter_list": "style:column;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "oe_buttons",
+      "parameter_list": "style:column;"
+    },
+    {
+      "type": "begin_items",
+      "name": "oe_checks",
+      "value": "@data.esm_open_ended_tasks_data_list"
+    },
+    {
+      "name": "match1",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_1))"
+    },
+    {
+      "name": "match2",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_2))"
+    },
+    {
+      "name": "match3",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_3))"
+    },
+    {
+      "name": "match4",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_4))"
+    },
+    {
+      "name": "match5",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_5))"
+    },
+    {
+      "name": "match6",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_6))"
+    },
+    {
+      "name": "does_it_match",
+      "value": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6"
+    },
+    {
+      "type": "button",
+      "name": "button_@item.id",
+      "value": "@item.name",
+      "action_list": "click | set_field:oe_content_ptr : data.esm_open_ended_tasks_data_list.@item.id;\nclick | go_to: esm_oe_displayer;",
+      "condition": "@local.does_it_match",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "ps_buttons",
+      "value": "Problem Solving Task(s)",
+      "parameter_list": "style:column;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "ps_buttons",
+      "parameter_list": "style:column;"
+    },
+    {
+      "type": "begin_items",
+      "name": "ps_checks",
+      "value": "@data.esm_ps_tasks_data_list"
+    },
+    {
+      "name": "match1",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_1))"
+    },
+    {
+      "name": "match2",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_2))"
+    },
+    {
+      "name": "match3",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_3))"
+    },
+    {
+      "name": "match4",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_4))"
+    },
+    {
+      "name": "match5",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_5))"
+    },
+    {
+      "name": "match6",
+      "value": "@calc(@local.search_set.has(@item.topic_theme_6))"
+    },
+    {
+      "name": "does_it_match",
+      "value": "@local.match1 || @local.match2 || @local.match3 || @local.match4 || @local.match5 || @local.match6"
+    },
+    {
+      "type": "button",
+      "name": "button_@item.id",
+      "value": "@item.name",
+      "action_list": "click | set_field:ps_content_ptr : data.esm_ps_tasks_data_list.@item.id;\nclick | go_to: esm_ps_displayer;",
+      "condition": "@local.does_it_match",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

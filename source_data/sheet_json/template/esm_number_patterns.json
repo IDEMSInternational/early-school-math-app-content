@@ -1,0 +1,112 @@
+{
+  "flow_type": "template",
+  "flow_name": "esm_number_patterns",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_display_group",
+      "name": "dg_top_of_page"
+    },
+    {
+      "type": "title",
+      "name": "spacer",
+      "value": "Number Patterns",
+      "style_list": "flex:1"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_info"
+    },
+    {
+      "type": "text",
+      "name": "help_text",
+      "value": "Present a sequence of numbers to your students and challenge them to find the next few numbers in the sequence. If you do not give them a long sequence, be welcoming to pattern descriptions that are not the ones you expected.",
+      "parameter_list": "icon_src: help; style:navigation"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_advice",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion_for_intro",
+      "parameter_list": "open_multiple:TRUE;",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_advice",
+      "value": "Teaching Ideas & Directions",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_advice_accord",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "advice_text",
+      "value": "The Open-Ended Tasks in Rich Tasks has an activity called Growing Patterns with Numbers. Those growing patterns can be used for these number patterns, but there is also a lot more freedom here to use other patterns.\n\nTeachers often use short sequences of numbers for patterns. Doing this invites perfectly reasonable answers from your students that are not the ones you were looking for. This is fine and it may lead to some rich discussions, just be prepared to be accepting of many viewpoints.\n\n**Example:** What are the next numbers in the sequence 2, 4, 8?\n* 16, 32 – The student is seeing a doubling pattern.\n* 10, 14 – The student is seeing the pattern which alternates adding 2 and adding 4.\n* 14, 22 – The student is seeing a pattern of increasing differences – add 2, add 4, add 6, add 8.",
+      "parameter_list": "icon_src: help; style:navigation"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_topics",
+      "value": "Topics & Goals",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_topics_accord",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "topics_text",
+      "value": "Number patterns can support many strategies from numerical calculations.\n\nIn addition to providing practice with student strategies, it also encourages students to survey all the different characteristics of numbers and operations. This engaged thinking and survey of methods produces fresh insights and productive wrestling with the ideas. It can also be quite fun and challenging.",
+      "parameter_list": "icon_src: help; style:navigation"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "fake_group",
+      "style_list": "margin-top: 40px;"
+    },
+    {
+      "type": "text",
+      "name": "spacer"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

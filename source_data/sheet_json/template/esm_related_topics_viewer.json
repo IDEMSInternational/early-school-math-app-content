@@ -1,0 +1,101 @@
+{
+  "flow_type": "template",
+  "flow_name": "esm_related_topics_viewer",
+  "status": "released",
+  "rows": [
+    {
+      "name": "esm_content_ptr",
+      "comments": true
+    },
+    {
+      "name": "Commnts_b",
+      "value": "Put \"Related Topics\" accordian if they exist"
+    },
+    {
+      "name": "topic1_ptr",
+      "value": "local.esm_content_ptr.topic_theme_1"
+    },
+    {
+      "name": "topic1",
+      "value": "@@local.topic1_ptr"
+    },
+    {
+      "type": "begin_display_group",
+      "condition": "@local.topic1",
+      "parameter_list": "style: column;"
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion_related_topics",
+      "parameter_list": "open_multiple:TRUE;"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "required_topics_block",
+      "value": "Related Topics",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "related_topics_content",
+      "parameter_list": "style: column;"
+    },
+    {
+      "name": "topic_theme_base_chars",
+      "value": "topic_theme_"
+    },
+    {
+      "type": "begin_items",
+      "name": "run_through_previous_topics",
+      "value": "@data.efm_num_list_one_to_ten"
+    },
+    {
+      "name": "topic_theme_chars",
+      "value": "@local.topic_theme_base_chars@item.number"
+    },
+    {
+      "name": "theme_ptr",
+      "value": "local.esm_content_ptr.@local.topic_theme_chars"
+    },
+    {
+      "name": "topic_theme",
+      "value": "@@local.theme_ptr"
+    },
+    {
+      "name": "topic_row",
+      "value": "data.esm_topics.@local.topic_theme",
+      "condition": "@local.topic_theme"
+    },
+    {
+      "name": "topic_row_ptr",
+      "value": "@@local.topic_row"
+    },
+    {
+      "name": "topic_name",
+      "value": "@local.topic_row_ptr.name"
+    },
+    {
+      "type": "button",
+      "name": "button_list_@item.number",
+      "value": "@local.topic_name",
+      "action_list": "click | set_field:current_topic:@local.topic_row;\nclick | go_to: esm_topic_template;\nclick | emit:force_reload",
+      "condition": "@local.topic_theme",
+      "parameter_list": "style: short;\ntext_align: center"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

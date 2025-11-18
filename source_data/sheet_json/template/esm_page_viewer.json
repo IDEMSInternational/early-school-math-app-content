@@ -1,0 +1,413 @@
+{
+  "flow_type": "template",
+  "flow_name": "esm_page_viewer",
+  "status": "released",
+  "rows": [
+    {
+      "name": "esm_content_ptr",
+      "comments": true
+    },
+    {
+      "name": "block_chars",
+      "value": "block",
+      "comments": true
+    },
+    {
+      "name": "chars_type",
+      "value": "_type",
+      "comments": true
+    },
+    {
+      "name": "chars_accord",
+      "value": "_accord",
+      "comments": true
+    },
+    {
+      "name": "chars_text",
+      "value": "_text",
+      "comments": true
+    },
+    {
+      "name": "chars_illust",
+      "value": "_illust",
+      "comments": true
+    },
+    {
+      "name": "chars_illust_flex",
+      "value": "_illust_flex",
+      "comments": true
+    },
+    {
+      "name": "chars_illust_max_width",
+      "value": "_illust_max_size",
+      "comments": true
+    },
+    {
+      "name": "chars_id",
+      "value": "id"
+    },
+    {
+      "name": "remove_paragraph_space",
+      "value": "margin-top: -5px",
+      "comments": true
+    },
+    {
+      "name": "paragraph_space",
+      "value": "margin-top: 0px",
+      "comments": true
+    },
+    {
+      "type": "begin_template",
+      "name": "display_standards",
+      "value": "esm_standards_viewer"
+    },
+    {
+      "name": "esm_content_ptr",
+      "value": "@local.esm_content_ptr",
+      "comments": true
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "begin_items",
+      "name": "run_through_body_sections",
+      "value": "@data.efm_num_list_one_to_ten",
+      "comments": true
+    },
+    {
+      "name": "block_num_chars",
+      "value": "@local.block_chars@item.number",
+      "comments": true
+    },
+    {
+      "name": "block_type",
+      "value": "local.esm_content_ptr.@local.block_num_chars@local.chars_type",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_body_section_@item.number",
+      "condition": "@@local.block_type"
+    },
+    {
+      "name": "block_text",
+      "value": "local.esm_content_ptr.@local.block_num_chars@local.chars_text",
+      "comments": true
+    },
+    {
+      "name": "accordion_label",
+      "value": "local.esm_content_ptr.@local.block_num_chars@local.chars_accord",
+      "comments": true
+    },
+    {
+      "name": "block_illustration",
+      "value": "local.esm_content_ptr.@local.block_num_chars@local.chars_illust",
+      "comments": true
+    },
+    {
+      "name": "block_illustration_flex",
+      "value": "local.esm_content_ptr.@local.block_num_chars@local.chars_illust_flex",
+      "comments": true
+    },
+    {
+      "name": "block_illustration_max_width",
+      "value": "local.esm_content_ptr.@local.block_num_chars@local.chars_illust_max_width",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_accord_all_text_@item.number",
+      "condition": "@@local.block_type == \"accord_all_text\"",
+      "comments": true
+    },
+    {
+      "name": "paragraph_space",
+      "value": "margin-top: 0px",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion",
+      "parameter_list": "open_multiple:TRUE;",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "bloxk_1",
+      "value": "@@local.accordion_label",
+      "comments": true
+    },
+    {
+      "type": "text",
+      "name": "display_text",
+      "value": "@@local.block_text",
+      "comments": true
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "end_accordion",
+      "comments": true
+    },
+    {
+      "type": "end_display_group",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_accord_illust_below_@item.number",
+      "condition": "@@local.block_type == \"accord_illust_below\"",
+      "comments": true
+    },
+    {
+      "name": "paragraph_space",
+      "value": "margin-top: 0px",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion",
+      "parameter_list": "open_multiple:TRUE;",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "bloxk_2",
+      "value": "@@local.accordion_label",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "text_and_illust_dg",
+      "parameter_list": "style: column;"
+    },
+    {
+      "type": "text",
+      "name": "display_text",
+      "value": "@@local.block_text",
+      "comments": true
+    },
+    {
+      "type": "image",
+      "name": "display_illust",
+      "value": "@@local.block_illustration",
+      "style_list": "margin-top: -5px;\nmax-width: @@local.block_illustration_max_width",
+      "comments": true
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "end_accordion",
+      "comments": true
+    },
+    {
+      "type": "end_display_group",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_all_text_@item.number",
+      "condition": "@@local.block_type == \"all_text\"",
+      "style_list": "@local.paragraph_space; ",
+      "comments": true
+    },
+    {
+      "name": "paragraph_space",
+      "value": "@local.remove_paragraph_space",
+      "comments": true
+    },
+    {
+      "type": "text",
+      "name": "display_text",
+      "value": "@@local.block_text",
+      "comments": true
+    },
+    {
+      "type": "end_display_group",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_all_illust_@item.number",
+      "condition": "@@local.block_type == \"all_illust\"",
+      "parameter_list": "style: column;",
+      "style_list": "@local.paragraph_space",
+      "comments": true
+    },
+    {
+      "type": "image",
+      "name": "display_illust",
+      "value": "@@local.block_illustration",
+      "style_list": "max-width: @@local.block_illustration_max_width",
+      "comments": true
+    },
+    {
+      "type": "end_display_group",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_illust_left_@item.number",
+      "condition": "@@local.block_type == \"illust_left\"",
+      "style_list": "@local.paragraph_space",
+      "comments": true
+    },
+    {
+      "name": "paragraph_space",
+      "value": "@local.remove_paragraph_space",
+      "comments": true
+    },
+    {
+      "type": "image",
+      "name": "display_illust",
+      "value": "@@local.block_illustration",
+      "style_list": "flex: @@local.block_illustration_flex;\nmax-width: @@local.block_illustration_max_width",
+      "comments": true
+    },
+    {
+      "type": "text",
+      "name": "display_text",
+      "value": "@@local.block_text",
+      "style_list": "flex:100",
+      "comments": true
+    },
+    {
+      "type": "end_display_group",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_illust_right_@item.number",
+      "condition": "@@local.block_type == \"illust_right\"",
+      "style_list": "@local.paragraph_space",
+      "comments": true
+    },
+    {
+      "name": "paragraph_space",
+      "value": "@local.remove_paragraph_space",
+      "comments": true
+    },
+    {
+      "type": "text",
+      "name": "display_text",
+      "value": "@@local.block_text",
+      "style_list": "flex:100",
+      "comments": true
+    },
+    {
+      "type": "image",
+      "name": "display_illust",
+      "value": "@@local.block_illustration",
+      "style_list": "flex: @@local.block_illustration_flex;\nmax-width: @@local.block_illustration_max_width",
+      "comments": true
+    },
+    {
+      "type": "end_display_group",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_illust_below_@item.number",
+      "condition": "@@local.block_type == \"illust_below\"",
+      "parameter_list": "style: column;",
+      "style_list": "@local.paragraph_space",
+      "comments": true
+    },
+    {
+      "name": "paragraph_space",
+      "value": "@local.remove_paragraph_space",
+      "comments": true
+    },
+    {
+      "type": "text",
+      "name": "display_text",
+      "value": "@@local.block_text",
+      "comments": true
+    },
+    {
+      "type": "image",
+      "name": "display_illust",
+      "value": "@@local.block_illustration",
+      "style_list": "margin-top: -5px;\nmax-width: @@local.block_illustration_max_width",
+      "comments": true
+    },
+    {
+      "type": "end_display_group",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_button_@item.number",
+      "condition": "@@local.block_type == \"button\"",
+      "parameter_list": "style: column;",
+      "style_list": "@local.paragraph_space",
+      "comments": true
+    },
+    {
+      "name": "paragraph_space",
+      "value": "@local.remove_paragraph_space",
+      "comments": true
+    },
+    {
+      "type": "button",
+      "name": "display_button",
+      "value": "@@local.accordion_label",
+      "action_list": "click | go_to: @@local.block_text",
+      "parameter_list": "style: short; \ntext_align: center",
+      "comments": true
+    },
+    {
+      "type": "end_display_group",
+      "comments": true
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_items",
+      "comments": true
+    },
+    {
+      "name": "Comments_a",
+      "value": "Put \"Glossary\" buttons at bottom of page"
+    },
+    {
+      "type": "begin_template",
+      "name": "display_glossary",
+      "value": "esm_glossary_viewer"
+    },
+    {
+      "name": "esm_content_ptr",
+      "value": "@local.esm_content_ptr",
+      "comments": true
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "name": "Commnts_b",
+      "value": "Put \"Related Topics\" accordian if they exist"
+    },
+    {
+      "type": "begin_template",
+      "name": "display_related_topics",
+      "value": "esm_related_topics_viewer"
+    },
+    {
+      "name": "esm_content_ptr",
+      "value": "@local.esm_content_ptr",
+      "comments": true
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}

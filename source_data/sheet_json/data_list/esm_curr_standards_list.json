@@ -1,0 +1,38 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "esm_curr_standards_list",
+  "data_list_name": "esm_curr_standards",
+  "status": "released",
+  "rows": [
+    {
+      "id": "ESM",
+      "name::eng": "Early School Math",
+      "top_level_list": "data.esm_strands",
+      "mid_level_list": "data.esm_themes"
+    },
+    {
+      "id": "CCSSM",
+      "name::eng": "Common Core State Stds for Math",
+      "top_level_list": "data.esm_cc_domains",
+      "mid_level_list": "data.esm_cc_clusters"
+    },
+    {
+      "id": "TEKS",
+      "name::eng": "Texas Ess. Knowledge & Skills",
+      "top_level_list": "data.esm_teks_strands",
+      "mid_level_list": "data.esm_teks_skills"
+    },
+    {
+      "id": "AC9M",
+      "name::eng": "Australian Cur. Vers. 9.0 Math",
+      "top_level_list": "data.esm_ac9m_strands",
+      "mid_level_list": "data.esm_ac9m_substrands"
+    },
+    {
+      "id": "UK20",
+      "name::eng": "United Kingdom 2020 Math",
+      "top_level_list": "data.esm_uk20_strands",
+      "mid_level_list": "data.esm_uk20_substrands"
+    }
+  ]
+}

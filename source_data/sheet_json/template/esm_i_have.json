@@ -1,0 +1,177 @@
+{
+  "flow_type": "template",
+  "flow_name": "esm_i_have",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_display_group",
+      "name": "dg_top_of_page"
+    },
+    {
+      "type": "title",
+      "name": "spacer",
+      "value": "I Have ... I WIsh I Had ...",
+      "style_list": "flex:1"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_info"
+    },
+    {
+      "type": "text",
+      "name": "help_text",
+      "value": "The two routines\n* \"I have ☐, and I wish I had ☐\"\n* \"I have ☐, and I only need ☐\" \n\nare a way to attach engaging stories to the questions of how many more do I need and how many do I need to take away. For young children, the repetition makes it a familiar scenario they can jump right into.\n\nThis is a task that lends itself to being used for addition and subtraction of many types of numbers in early mathematics - small whole numbers, larger whole numbers, integers, fractions, mixed numbers, and decimals.",
+      "parameter_list": "icon_src: help; style:navigation"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_advice",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion_for_intro",
+      "parameter_list": "open_multiple:TRUE;",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_topics",
+      "value": "Topics & Goals",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_topics_accord",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "topics_text",
+      "value": "While all these problems can be solved using Counting On or subtraction, a number of different perspectives can encourage different methods to be employed.\n\nIf you point to a number path or number line and say that you have 4 and you need 6, then your students will look at the relationship of those two numbers and either see that they are 2 apart or that they can Count On from 4 to 6 by adding 2. This also encourages them to see that the difference of 4 and 6 is 2.\n\nOn the other hand, if you say you have 4 and you need 6, and you follow that up with the question of what do you need to add to 4 to get 6, then your students will see that this can be thought of as an unknown addition problem with one unknown – 4 + ☐ = 6.\n\nSimilarly, \"I have ☐, and I only need ☐\" can be presented as a difference problem, an addition problem, or a subtraction problem.",
+      "parameter_list": "icon_src: help; style:navigation"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_advice",
+      "value": "Teaching Ideas & Directions",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_advice_accord",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "advice_text",
+      "value": "While this task pretty much presents itself, you can embellish it to make the discussion livelier. Children are always more engaged when a calculation is wrapped in an interesting story.\n\n**Examples:**\n* You have 3 players for a team and you need 5 players in all. \n* You have 1 pieces of candy and you wish you had 3 pieces of candy.",
+      "parameter_list": "icon_src: help; style:navigation"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_i_have_talks",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "intro_2_text",
+      "value": "The tasks are separated by the types of numbers and by whether \"you wish you had ☐\" or \"you only need ☐.\""
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion_for_i_have_groups",
+      "parameter_list": "open_multiple:TRUE;",
+      "comments": true
+    },
+    {
+      "type": "begin_items",
+      "name": "i_have_accordions",
+      "value": "@data.esm_i_have_data_list"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_@item.id",
+      "value": "@item.name",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_@item.id",
+      "parameter_list": "style: column"
+    },
+    {
+      "name": "content_ptr",
+      "value": "data.esm_i_have_data_list.@item.id"
+    },
+    {
+      "type": "begin_template",
+      "name": "equality_concept_body_maker",
+      "value": "esm_page_viewer"
+    },
+    {
+      "name": "esm_content_ptr",
+      "value": "@@local.content_ptr"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "fake_group",
+      "style_list": "margin-top: 40px;"
+    },
+    {
+      "type": "text",
+      "name": "spacer"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

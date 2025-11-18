@@ -1,0 +1,21 @@
+{
+  "flow_type": "data_list",
+  "flow_subtype": "lifecycle_actions",
+  "flow_name": "launch_actions",
+  "status": "released",
+  "rows": [
+    {
+      "lifecycle_event": "app_start",
+      "id": "app_start_update_complete",
+      "priority": 1,
+      "condition_list": "@fields._app_update_downloaded",
+      "action_list": "app_update: complete"
+    },
+    {
+      "lifecycle_event": "app_start",
+      "id": "app_start_update_prompt",
+      "priority": 2,
+      "action_list": "app_update: prompt"
+    }
+  ]
+}

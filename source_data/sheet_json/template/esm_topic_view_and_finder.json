@@ -1,0 +1,432 @@
+{
+  "flow_type": "template",
+  "flow_name": "esm_topic_view_and_finder",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_display_group",
+      "name": "dg_top_of_page"
+    },
+    {
+      "type": "title",
+      "name": "spacer",
+      "value": "Topics View and Finder",
+      "style_list": "flex:1"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "view_intro",
+      "parameter_list": "style:column"
+    },
+    {
+      "name": "match_ESM",
+      "value": "@fields.curriculum_standard_abbrev == \"ESM\""
+    },
+    {
+      "name": "match_CCSSM",
+      "value": "@fields.curriculum_standard_abbrev == \"CCSSM\""
+    },
+    {
+      "name": "match_TEKS",
+      "value": "@fields.curriculum_standard_abbrev == \"TEKS\""
+    },
+    {
+      "name": "match_AC9M",
+      "value": "@fields.curriculum_standard_abbrev == \"AC9M\""
+    },
+    {
+      "name": "match_UK20",
+      "value": "@fields.curriculum_standard_abbrev == \"UK20\""
+    },
+    {
+      "name": "it_matches",
+      "value": "@local.match_ESM || @local.match_CCSSM || @local.match_TEKS || @local.match_AC9M || @local.match_UK20"
+    },
+    {
+      "type": "set_field",
+      "name": "curriculum_standard_name",
+      "value": "Early School Math",
+      "condition": "!@local.it_matches"
+    },
+    {
+      "type": "set_field",
+      "name": "curriculum_standard_abbrev",
+      "value": "ESM",
+      "condition": "!@local.it_matches"
+    },
+    {
+      "type": "text",
+      "name": "view_select",
+      "value": "**Current Topics View:** @fields.curriculum_standard_name\n\nUse the buttons in this dropdown menu to change the view."
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_select_view_new",
+      "parameter_list": "style:column"
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion_for_views",
+      "parameter_list": "open_multiple:TRUE;",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "view_list",
+      "value": "Select a New View",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_list_of_views",
+      "parameter_list": "style:column"
+    },
+    {
+      "type": "begin_items",
+      "name": "list_of_views",
+      "value": "@data.esm_curr_standards"
+    },
+    {
+      "type": "button",
+      "name": "button_@item.id",
+      "value": "@item.name",
+      "action_list": "click | set_field:curriculum_standard_abbrev: @item.id; \nclick | set_field:curriculum_standard_name: @item.name;\nclick | emit: force_reload;",
+      "parameter_list": "style: short; \ntext_align: center",
+      "comments": "click | set_field.current_topic: data.efm_topics.@item.id;\nclick | go_to: efm_topic_template;\nclick | set_field:@local.click_history_field_name: @local.topics_click_history"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "name": "comment_ignore",
+      "value": "This code is duplicated in the Resource Finder"
+    },
+    {
+      "type": "set_field",
+      "name": "curriculum_standard_name",
+      "value": "Early School Math",
+      "condition": "@fields.curriculum_standard_abbrev == \"ESM\""
+    },
+    {
+      "type": "set_field",
+      "name": "top_standards_level",
+      "value": "data.esm_strands",
+      "condition": "@fields.curriculum_standard_abbrev == \"ESM\""
+    },
+    {
+      "type": "set_field",
+      "name": "middle_standards_level",
+      "value": "data.esm_themes",
+      "condition": "@fields.curriculum_standard_abbrev == \"ESM\""
+    },
+    {
+      "type": "set_field",
+      "name": "curriculum_standard_name",
+      "value": "Common Core State Stds. for Math",
+      "condition": "@fields.curriculum_standard_abbrev == \"CCSSM\""
+    },
+    {
+      "type": "set_field",
+      "name": "top_standards_level",
+      "value": "data.esm_cc_domains",
+      "condition": "@fields.curriculum_standard_abbrev == \"CCSSM\""
+    },
+    {
+      "type": "set_field",
+      "name": "middle_standards_level",
+      "value": "data.esm_cc_clusters",
+      "condition": "@fields.curriculum_standard_abbrev == \"CCSSM\""
+    },
+    {
+      "type": "set_field",
+      "name": "curriculum_standard_name",
+      "value": "Texas Ess. Knowledge & Skills",
+      "condition": "@fields.curriculum_standard_abbrev == \"TEKS\""
+    },
+    {
+      "type": "set_field",
+      "name": "top_standards_level",
+      "value": "data.esm_teks_strands",
+      "condition": "@fields.curriculum_standard_abbrev == \"TEKS\""
+    },
+    {
+      "type": "set_field",
+      "name": "middle_standards_level",
+      "value": "data.esm_teks_skills",
+      "condition": "@fields.curriculum_standard_abbrev == \"TEKS\""
+    },
+    {
+      "type": "set_field",
+      "name": "curriculum_standard_name",
+      "value": "Australian Cur. Vers. 9.0 Math",
+      "condition": "@fields.curriculum_standard_abbrev == \"AC9M\""
+    },
+    {
+      "type": "set_field",
+      "name": "top_standards_level",
+      "value": "data.esm_ac9m_strands",
+      "condition": "@fields.curriculum_standard_abbrev == \"AC9M\""
+    },
+    {
+      "type": "set_field",
+      "name": "middle_standards_level",
+      "value": "data.esm_ac9m_substrands",
+      "condition": "@fields.curriculum_standard_abbrev == \"AC9M\""
+    },
+    {
+      "type": "set_field",
+      "name": "curriculum_standard_name",
+      "value": "United Kingdom 2020 Math",
+      "condition": "@fields.curriculum_standard_abbrev == \"UK20\""
+    },
+    {
+      "type": "set_field",
+      "name": "top_standards_level",
+      "value": "data.esm_uk20_strands",
+      "condition": "@fields.curriculum_standard_abbrev == \"UK20\""
+    },
+    {
+      "type": "set_field",
+      "name": "middle_standards_level",
+      "value": "data.esm_uk20_substrands",
+      "condition": "@fields.curriculum_standard_abbrev == \"UK20\""
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "name": "now",
+      "value": "@calc(timestamp())",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "topic_click_history",
+      "value": "_topic_click_history",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "parameter_list": "style: column",
+      "style_list": "margin-top: 10px;"
+    },
+    {
+      "type": "text",
+      "name": "accordion_intro",
+      "value": "Select a topic to learn about from these dropdown menus."
+    },
+    {
+      "name": "zero",
+      "value": 0
+    },
+    {
+      "name": "countem",
+      "value": "@local.zero - @local.zero"
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion_top_level",
+      "parameter_list": "open_multiple:TRUE;",
+      "comments": true
+    },
+    {
+      "type": "begin_items",
+      "name": "top_level_acoords",
+      "value": "@@fields.top_standards_level"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "block2_@item.id",
+      "value": "@item.name",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_@item.id",
+      "parameter_list": "style: column"
+    },
+    {
+      "name": "top_level_ptr",
+      "value": "@fields.top_standards_level.@item.id"
+    },
+    {
+      "name": "top_level_entries",
+      "value": "@@local.top_level_ptr"
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion_middle_level_@item_id",
+      "parameter_list": "open_multiple:TRUE;"
+    },
+    {
+      "type": "begin_items",
+      "name": "middle_level_accords_@item_id",
+      "value": "@data.num_list_one_to_twenty",
+      "parameter_list": "limit: @item.count;"
+    },
+    {
+      "name": "middle_level_index",
+      "value": "theme_id_@item.number"
+    },
+    {
+      "name": "middle_level_id_ptr",
+      "value": "local.top_level_entries.@local.middle_level_index"
+    },
+    {
+      "name": "middle_level_id",
+      "value": "@@local.middle_level_id_ptr",
+      "condition": "@@local.middle_level_id_ptr"
+    },
+    {
+      "name": "middle_level_ptr",
+      "value": "@fields.middle_standards_level.@local.middle_level_id",
+      "condition": "@@local.middle_level_id_ptr"
+    },
+    {
+      "name": "middle_level_entries",
+      "value": "@@local.middle_level_ptr",
+      "condition": "@@local.middle_level_id_ptr"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "@local.middle_level_entries.name",
+      "value": "@local.middle_level_entries.name",
+      "condition": "@@local.middle_level_id_ptr"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_@local.middle_level_entries.name",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "begin_items",
+      "name": "topic_accords_@ocal.middle_level_id",
+      "value": "@data.num_list_one_to_twenty",
+      "parameter_list": "limit: @local.middle_level_entries.count;"
+    },
+    {
+      "name": "topic_index",
+      "value": "topic_id_@item.number"
+    },
+    {
+      "name": "topic_id_ptr",
+      "value": "local.middle_level_entries.@local.topic_index"
+    },
+    {
+      "name": "topic_id",
+      "value": "@@local.topic_id_ptr",
+      "condition": "@@local.topic_id_ptr"
+    },
+    {
+      "name": "topic_ptr",
+      "value": "data.esm_topics.@local.topic_id",
+      "condition": "@@local.topic_id_ptr"
+    },
+    {
+      "name": "topic_entries",
+      "value": "@@local.topic_ptr",
+      "condition": "@@local.topic_id_ptr"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_@local.topic_entries.name",
+      "condition": "@@local.topic_id_ptr",
+      "parameter_list": "style: column"
+    },
+    {
+      "name": "countem",
+      "value": "@local.countem + 1"
+    },
+    {
+      "name": "click_history_field_name",
+      "value": "@local.topic_id@local.topic_click_history",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "topics_click_history",
+      "value": "@fields.@local.click_history_field_name ;  @local.now",
+      "condition": "!!(@fields.@local.click_history_field_name)",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "topics_click_history",
+      "value": "@local.now",
+      "condition": "!(@fields.@local.click_history_field_name)",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button_topic",
+      "value": "@local.topic_entries.name",
+      "action_list": "click | set_field:current_topic: @local.topic_ptr;\nclick | go_to: esm_topic_template;\nclick | set_field:@local.click_history_field_name: @local.topics_click_history",
+      "parameter_list": "style: short; \ntext_align: center",
+      "comments": "click | set_field.current_topic: data.efm_topics.@item.id;\nclick | go_to: efm_topic_template;\nclick | set_field:@local.click_history_field_name: @local.topics_click_history"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "end_items",
+      "comments": true
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "name": "debugggg",
+      "value": "Countem value: @local.countem"
+    },
+    {
+      "type": "end_display_group",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "fake_group",
+      "style_list": "margin-top: 40px;"
+    },
+    {
+      "type": "text",
+      "name": "empty"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

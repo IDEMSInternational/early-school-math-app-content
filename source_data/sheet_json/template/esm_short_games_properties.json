@@ -1,0 +1,58 @@
+{
+  "flow_type": "template",
+  "flow_name": "esm_short_games_properties",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_display_group",
+      "name": "dg_top_of_page"
+    },
+    {
+      "type": "title",
+      "name": "spacer",
+      "value": "Short Math Games – Properties",
+      "style_list": "flex:1"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_info",
+      "parameter_list": "style: column;"
+    },
+    {
+      "type": "text",
+      "name": "intro_text",
+      "value": "These games take just a few minutes, involve properties of objects, and many are active. Learn more about them by selecting the Games button below, then selecting \"Breaks\" and deselecting \"All.\""
+    },
+    {
+      "type": "button",
+      "name": "button_to_games",
+      "value": "Go To Games",
+      "action_list": "click | go_to: efm_ga_start;",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "text",
+      "name": "help_text",
+      "value": "* **Follow the Leader** – A leader demonstrates a pattern and others repeat it.\n* **Same and DIfferent** – Pick two objects and discuss how they are the same and different.\n* **Scavenger Hunt** – Give a list of descriptions and students find the items.\n* **Which One Doesn't Below?** – Students describe which item doesn't belong among four objects.\n* **Whose Shape is this Anyway?** – Students act out shapes with their bodies; the other students guess the shape.",
+      "parameter_list": "icon_src: help; style:navigation"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "fake_group",
+      "style_list": "margin-top: 40px;"
+    },
+    {
+      "type": "text",
+      "name": "spacer"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

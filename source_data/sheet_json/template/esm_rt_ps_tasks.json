@@ -1,0 +1,318 @@
+{
+  "flow_type": "template",
+  "flow_name": "esm_rt_ps_tasks",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_display_group",
+      "name": "dg_top_of_page"
+    },
+    {
+      "type": "title",
+      "name": "spacer",
+      "value": "Problem Solving Tasks",
+      "style_list": "flex:1"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_info",
+      "parameter_list": "style: column;"
+    },
+    {
+      "type": "text",
+      "name": "ps_intro",
+      "value": "These tasks have challenges involving finding specific answers. For example, they may involve solving a puzzle or winning a game. The tasks usually involve 1 or more full class sessions to explore completely.\n\nYour students can use these task to practice their problem solving techniques and strategies. See the Problem Solving Overview for general problem solving ideas."
+    },
+    {
+      "type": "button",
+      "name": "button_problem_solving",
+      "value": "Problem Solving Overview",
+      "action_list": "click | go_to: esm_rt_problem_solving;",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_ps_common_steps",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "intro_to_common_steps",
+      "value": "**Common Steps:** These steps usually begin and end problem solving tasks. "
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion_for_ps_common_steps",
+      "parameter_list": "open_multiple:TRUE;",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_ps_common_steps",
+      "value": "Starting and Ending Steps",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_ps_start_and_end_steps",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "intro_ps_start_and_end_steps",
+      "value": "* **Mull, Distill, Represent** When first encountering a puzzle, have your students learn about it deeply. Encourage them to take the time to mull over what is going on, and distill out what seems important and what seems irrelevant. Find ways to represent or model the situation that help it become easier to understand and analyze.\n* **Play with it!** Have fun and play with the puzzle. Try examples or easier versions of the puzzle. Have your students get to know the puzzle and look for patterns by getting their hands dirty trying things out.\n* **Middle Steps** These steps vary tremendously by puzzle. Read the Problem Solving Overview for to get many suggestions.\n* **Review** After you've reached the end of your work on each puzzle, always take time with your class to review how you got to where you are.This review is an important habit for students to develop. Sometimes they will find mistakes. Other times they may see easier ways to do things. Have them briefly summarize the important steps in the solution to help them develop awareness of useful tools.\n* **Explorations** Solving the puzzle at hand is just one step along a mathematical journey. Develop a habit in your students of looking for further connections and extensions. If you make a habit of nudging them in this direction, your students will find this a natural and exciting way to do mathematics. Among other things, it gives them agency and deeper engagement."
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_ps_puzzles_games",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "intro_to_puzzles_games",
+      "value": "**Puzzles and Games:** Here are notes on using the material from the puzzles and Games sections as Problem Solving tasks."
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion_for_ps_examples",
+      "parameter_list": "open_multiple:TRUE;",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_ps_puzzles",
+      "value": "Puzzles",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_ps_puzzles",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "intro_ps_puzzles_1",
+      "value": "Many of the EFM math puzzles provide excellent rich tasks. Look for interesting observations and new directions to explore along the road to solving a puzzle. Each EFM puzzle comes with ideas for further exploration. Encourage your students to see each puzzle as the beginning of a mathematical journey.\n\n**Eye Openers versus Puzzlers** The Puzzles section has these two types of puzzles. Eye Openers are generally shorter fresh-thinking activities, though they can be made longer by having group work and deeper discussions. Puzzlers may take more than one lesson, and they naturally lend themselves to much exploration.\n\nGo to the Puzzles section to find puzzles on any topic."
+    },
+    {
+      "type": "button",
+      "name": "button_oe_pows",
+      "value": "Puzzles",
+      "action_list": "click | go_to: efm_pow_start;",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_ps_games",
+      "value": "Games",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_ps_games",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "intro_ps_games_1",
+      "value": "Games where players have choices that change the game outcome are natural rich tasks. They invite students to problem solve to figure out ways to win. Developing strategies for playing against a perfect opponent means creating your own puzzle and attempting to solve it.\n\nAs an example, the game of Nim 1-2 is one of the Problem Solving tasks discussed and analyzed in this section."
+    },
+    {
+      "type": "button",
+      "name": "button_ps_gas",
+      "value": "Games",
+      "action_list": "click | go_to: efm_ga_start;",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "text",
+      "name": "help_text",
+      "value": "**Source:** Many of the following tasks are based on material in John Mason's excellent book Thinking Mathematically.\n\n**By Topic:** The tasks are separated into progressive math topics."
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_ps_examples",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion_for_ps_examples",
+      "parameter_list": "open_multiple:TRUE;",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_ps_logic",
+      "value": "Early Logic",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_ps_logic",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "begin_items",
+      "name": "ps_logic",
+      "value": "@data.esm_ps_tasks_data_list",
+      "parameter_list": "filter: @item.type==\"early_logic\""
+    },
+    {
+      "type": "button",
+      "name": "button_@item.id",
+      "value": "@item.name",
+      "action_list": "click | set_field:ps_content_ptr : data.esm_ps_tasks_data_list.@item.id;\nclick | go_to: esm_ps_displayer;",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_ps_add_sub_basic",
+      "value": "Early Counting, Add, Sub",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_ps_add_sub_basic",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "begin_items",
+      "name": "ps_add_sub_basic",
+      "value": "@data.esm_ps_tasks_data_list",
+      "parameter_list": "filter: @item.type==\"early_count_as\""
+    },
+    {
+      "type": "button",
+      "name": "button_@item.id",
+      "value": "@item.name",
+      "action_list": "click | set_field:ps_content_ptr : data.esm_ps_tasks_data_list.@item.id;\nclick | go_to: esm_ps_displayer;",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_comment_out",
+      "condition": false,
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_ps_mult_1digit",
+      "value": "Early Multiplication – NOT READY",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_ps_mult_1digit",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "begin_items",
+      "name": "ps_add_sub_basic",
+      "value": "@data.esm_ps_tasks_data_list",
+      "parameter_list": "filter: @item.type==\"mult\""
+    },
+    {
+      "type": "button",
+      "name": "button_@item.id",
+      "value": "@item.name",
+      "action_list": "click | set_field:ps_content_ptr : data.esm_ps_tasks_data_list.@item.id;\nclick | go_to: esm_ps_displayer;",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "fake_group",
+      "style_list": "margin-top: 40px;"
+    },
+    {
+      "type": "text",
+      "name": "spacer"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

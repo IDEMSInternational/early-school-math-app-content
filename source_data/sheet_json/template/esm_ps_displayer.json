@@ -1,0 +1,43 @@
+{
+  "flow_type": "template",
+  "flow_name": "esm_ps_displayer",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_display_group",
+      "name": "dg_ps_page",
+      "parameter_list": "style: column"
+    },
+    {
+      "name": "content_ptr",
+      "value": "@fields.ps_content_ptr"
+    },
+    {
+      "type": "begin_template",
+      "name": "ps_body",
+      "value": "esm_page_viewer"
+    },
+    {
+      "name": "esm_content_ptr",
+      "value": "@@local.content_ptr"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "fake_space_maker2",
+      "style_list": "margin-top: 25px;"
+    },
+    {
+      "type": "text",
+      "name": "fakeit"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}
