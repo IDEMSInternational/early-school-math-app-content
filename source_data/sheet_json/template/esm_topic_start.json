@@ -1,0 +1,79 @@
+{
+  "flow_type": "template",
+  "flow_name": "esm_topic_start",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_display_group",
+      "name": "dg_top_of_page"
+    },
+    {
+      "type": "title",
+      "name": "spacer",
+      "value": "Topics"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_help",
+      "condition": false
+    },
+    {
+      "type": "round_button",
+      "name": "help_button",
+      "action_list": "click | start_tour: esm_topics_tour",
+      "condition": false,
+      "parameter_list": "icon_src: help; style:navigation"
+    },
+    {
+      "type": "end_display_group",
+      "condition": false
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_topics_intro",
+      "parameter_list": "style:column"
+    },
+    {
+      "type": "text",
+      "name": "view_and_finder_intro",
+      "value": "**Topics Display** We divided early mathematics into topics. These topics are ideas from all math standards and do not represent any one of them. The topics are displayed in a hierarchy of three levels: top-level major categories, middle-level categories, and finally at the lowest level are the topics.\n\n**Select a Standard** View the topics by selecting a standard for the top-level and middle-level categories. The default standard is EFM, but you can choose any other standard that we support. If you select a standard other than EFM, each Resource will show the individual standards related to it."
+    },
+    {
+      "type": "button",
+      "name": "button_topics_view_and_finder",
+      "value": "Topics View and Finder",
+      "action_list": "click | go_to: esm_topic_view_and_finder",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "text",
+      "name": "learning_pathways_intro",
+      "value": "**Pathways** Another way to view the topics is as part of learning pathways. These paths show how the topics fit together and depend on each other."
+    },
+    {
+      "type": "button",
+      "name": "button_learning_pathways",
+      "value": "Learning Pathways",
+      "action_list": "click | go_to: esm_learning_pathways",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "fake_group",
+      "style_list": "margin-top: 40px;"
+    },
+    {
+      "type": "text",
+      "name": "empty"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

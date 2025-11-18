@@ -1,0 +1,177 @@
+{
+  "flow_type": "template",
+  "flow_name": "esm_number_strings",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_display_group",
+      "name": "dg_top_of_page"
+    },
+    {
+      "type": "title",
+      "name": "spacer",
+      "value": "Number Strings",
+      "style_list": "flex:1"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_info"
+    },
+    {
+      "type": "text",
+      "name": "help_text",
+      "value": "A Number String is a sequence of 3 to 6 mental computation problems that reinforce a specific arithmetic skill. The problems are displayed one at a time, and are left up until all can be seen. Each new problem, and its possible relationship with previous problems, is discussed as it comes into view.",
+      "parameter_list": "icon_src: help; style:navigation"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_advice",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion_for_intro",
+      "parameter_list": "open_multiple:TRUE;",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_topics",
+      "value": "Topics & Goals",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_topics_accord",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "topics_text",
+      "value": "Number strings are great for reinforcing any strategy or method of basic arithmetic. Pick a problem or two of the type you are interested in, and then add variations on those starting problems, perhaps building on other recent material.",
+      "parameter_list": "icon_src: help; style:navigation"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_advice",
+      "value": "Teaching Ideas & Directions",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_advice_accord",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "advice_text",
+      "value": "**Number Strings** engage children in mentally solving a string of related equations. Each task is designed to highlight a single computation strategy or method and develop understanding of properties of operations. In contrast, **Problem Strings** use a string of problems in a more open-ended way, allowing for more exploration and discovery on their own of interesting methods and approaches.\n\n**Focus on One Strategy:** Determine a goal strategy or method for the students to practice. Present a sequence of three to five expressions or equations that encourages students to notice / discover that goal method and practice it. Think of the first problem in the sequence as the \"base problem\" from which the other problems can be built from.\n\n**One at a Time:** After introducing the task, give students the first problem and engage in a conversation about how they solved it, highlighting efficient strategies and how the strategies work. Record these ideas on the board. Then pose another problem in the sequence and repeat the process, usually offering three to six problems in a session. At the end of the activity, synthesize the methods students found helpful and the mathematical goal of the lesson.\n\n**Listen** Be open to methods and ideas you weren't expecting. Highlighting student ideas gives a sense of agency, is empowering, and encourages further engagement.",
+      "parameter_list": "icon_src: help; style:navigation"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_num_string_talks",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "intro_text",
+      "value": "In each sequence of problems, earlier problems may be helpful to do subsequent problems. Prompt students to discuss the connections between the problems in a string.\n"
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion_for_num_string_groups",
+      "parameter_list": "open_multiple:TRUE;",
+      "comments": true
+    },
+    {
+      "type": "begin_items",
+      "name": "number_string_accordions",
+      "value": "@data.esm_number_strings_data_list"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_@item.id",
+      "value": "@item.name",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_@item.id",
+      "parameter_list": "style: column"
+    },
+    {
+      "name": "content_ptr",
+      "value": "data.esm_number_strings_data_list.@item.id"
+    },
+    {
+      "type": "begin_template",
+      "name": "number_string_body_maker",
+      "value": "esm_page_viewer"
+    },
+    {
+      "name": "esm_content_ptr",
+      "value": "@@local.content_ptr"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "fake_group",
+      "style_list": "margin-top: 40px;"
+    },
+    {
+      "type": "text",
+      "name": "spacer"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

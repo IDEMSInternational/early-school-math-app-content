@@ -1,0 +1,596 @@
+{
+  "flow_type": "template",
+  "flow_name": "efm_pow_start",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_display_group",
+      "name": "dg_top_of_page"
+    },
+    {
+      "type": "title",
+      "name": "spacer",
+      "value": "Puzzles"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_help",
+      "condition": false
+    },
+    {
+      "type": "round_button",
+      "name": "help_button",
+      "action_list": "click | start_tour: esm_pows_tour",
+      "condition": false,
+      "parameter_list": "icon_src: help; style:navigation"
+    },
+    {
+      "type": "end_display_group",
+      "condition": false
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_info"
+    },
+    {
+      "type": "text",
+      "name": "help_button",
+      "value": "Instead of using routine methods to practice math facts and skills, use puzzles to practice those same skills in more engaging ways that invite discussion and exploration.\n\nThese puzzles are separated into increasing levels of difficulty and math content.\n\nSelect from two types of puzzles. \n* **Eye Openers** might be done during one class session.\n* **Puzzlers** take time, quite possibly several days..",
+      "parameter_list": "icon_src: help; style:navigation"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_types",
+      "parameter_list": "style:column"
+    },
+    {
+      "name": "description_0",
+      "value": "Eye Opener"
+    },
+    {
+      "name": "description_1",
+      "value": "Puzzler"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_puzzle_types",
+      "parameter_list": "style:column"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_first_pair_puzzle_types"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "checkbox_eye_opener",
+      "value": true,
+      "parameter_list": "true_text: @local.description_0;\nfalse_text: @local.description_0;"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "checkbox_puzzler",
+      "value": true,
+      "parameter_list": "true_text: @local.description_1;\nfalse_text: @local.description_1;\n"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "text",
+      "name": "blank",
+      "style_list": "flex: 1"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_spacer"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "name": "now",
+      "value": "@calc(timestamp())",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "pow_click_history",
+      "value": "_topic_click_history",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion_for_pows",
+      "parameter_list": "open_multiple:TRUE;",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "level_a",
+      "value": "Count to 15; 1-digit Add",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_powlist_a",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "begin_items",
+      "name": "activity_buttons_a",
+      "value": "@data.efm_pows",
+      "parameter_list": "filter: @item.level==\"A\""
+    },
+    {
+      "name": "pow_id",
+      "value": "@item.id"
+    },
+    {
+      "name": "okay_eye_opener",
+      "value": "@local.checkbox_eye_opener && @item.eye_opener"
+    },
+    {
+      "name": "okay_puzzler",
+      "value": "@local.checkbox_puzzler && @item.puzzler"
+    },
+    {
+      "name": "its_an_okay_puzzle",
+      "value": "@local.okay_eye_opener || @local.okay_puzzler"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_ok_puzzle_a",
+      "condition": "@local.its_an_okay_puzzle"
+    },
+    {
+      "name": "click_history_field_name",
+      "value": "@local.pow_id@local.pow_click_history",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "pows_click_history",
+      "value": "@fields.@local.click_history_field_name ;  @local.now",
+      "condition": "!!(@fields.@local.click_history_field_name)",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "pows_click_history",
+      "value": "@local.now",
+      "condition": "!(@fields.@local.click_history_field_name)",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button_pow_@item.id",
+      "value": "@item.name",
+      "action_list": "click | set_field:current_pow: data.efm_pows.@item.id;\nclick | go_to: efm_pow_template;\nclick | set_field:@local.click_history_field_name: @local.pows_click_history",
+      "parameter_list": "style: short; \ntext_align: center",
+      "comments": "click | set_field.current_topic: data.efm_topics.@item.id;\nclick | go_to: efm_topic_template;\nclick | set_field:@local.click_history_field_name: @local.topics_click_history"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "level_s1",
+      "value": "Geometry 1",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_powlist_s1",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "begin_items",
+      "name": "activity_buttons_s1",
+      "value": "@data.efm_pows",
+      "parameter_list": "filter: @item.level==\"S1\""
+    },
+    {
+      "name": "pow_id",
+      "value": "@item.id"
+    },
+    {
+      "name": "okay_eye_opener",
+      "value": "@local.checkbox_eye_opener && @item.eye_opener"
+    },
+    {
+      "name": "okay_puzzler",
+      "value": "@local.checkbox_puzzler && @item.puzzler"
+    },
+    {
+      "name": "its_an_okay_puzzle",
+      "value": "@local.okay_eye_opener || @local.okay_puzzler"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_ok_puzzle_s1",
+      "condition": "@local.its_an_okay_puzzle"
+    },
+    {
+      "name": "click_history_field_name",
+      "value": "@local.pow_id@local.pow_click_history",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "pows_click_history",
+      "value": "@fields.@local.click_history_field_name ;  @local.now",
+      "condition": "!!(@fields.@local.click_history_field_name)",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "pows_click_history",
+      "value": "@local.now",
+      "condition": "!(@fields.@local.click_history_field_name)",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button_pow_@item.id",
+      "value": "@item.name",
+      "action_list": "click | set_field:current_pow: data.efm_pows.@item.id;\nclick | go_to: efm_pow_template;\nclick | set_field:@local.click_history_field_name: @local.pows_click_history",
+      "parameter_list": "style: short; \ntext_align: center",
+      "comments": "click | set_field.current_topic: data.efm_topics.@item.id;\nclick | go_to: efm_topic_template;\nclick | set_field:@local.click_history_field_name: @local.topics_click_history"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "level_b",
+      "value": "Count to 100; 1-digit Add / Sub",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_powlist_b",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "begin_items",
+      "name": "activity_buttons_b",
+      "value": "@data.efm_pows",
+      "parameter_list": "filter: @item.level==\"B\""
+    },
+    {
+      "name": "pow_id",
+      "value": "@item.id"
+    },
+    {
+      "name": "okay_eye_opener",
+      "value": "@local.checkbox_eye_opener && @item.eye_opener"
+    },
+    {
+      "name": "okay_puzzler",
+      "value": "@local.checkbox_puzzler && @item.puzzler"
+    },
+    {
+      "name": "its_an_okay_puzzle",
+      "value": "@local.okay_eye_opener || @local.okay_puzzler"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_ok_puzzle_b",
+      "condition": "@local.its_an_okay_puzzle"
+    },
+    {
+      "name": "click_history_field_name",
+      "value": "@local.pow_id@local.pow_click_history",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "pows_click_history",
+      "value": "@fields.@local.click_history_field_name ;  @local.now",
+      "condition": "!!(@fields.@local.click_history_field_name)",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "pows_click_history",
+      "value": "@local.now",
+      "condition": "!(@fields.@local.click_history_field_name)",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button_pow_@item.id",
+      "value": "@item.name",
+      "action_list": "click | set_field:current_pow: data.efm_pows.@item.id;\nclick | go_to: efm_pow_template;\nclick | set_field:@local.click_history_field_name: @local.pows_click_history",
+      "parameter_list": "style: short; \ntext_align: center",
+      "comments": "click | set_field.current_topic: data.efm_topics.@item.id;\nclick | go_to: efm_topic_template;\nclick | set_field:@local.click_history_field_name: @local.topics_click_history"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "level_s2",
+      "value": "Geometry 2",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_powlist_s2",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "begin_items",
+      "name": "activity_buttons_s2",
+      "value": "@data.efm_pows",
+      "parameter_list": "filter: @item.level==\"S2\""
+    },
+    {
+      "name": "pow_id",
+      "value": "@item.id"
+    },
+    {
+      "name": "okay_eye_opener",
+      "value": "@local.checkbox_eye_opener && @item.eye_opener"
+    },
+    {
+      "name": "okay_puzzler",
+      "value": "@local.checkbox_puzzler && @item.puzzler"
+    },
+    {
+      "name": "its_an_okay_puzzle",
+      "value": "@local.okay_eye_opener || @local.okay_puzzler"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_ok_puzzle_s2",
+      "condition": "@local.its_an_okay_puzzle"
+    },
+    {
+      "name": "click_history_field_name",
+      "value": "@local.pow_id@local.pow_click_history",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "pows_click_history",
+      "value": "@fields.@local.click_history_field_name ;  @local.now",
+      "condition": "!!(@fields.@local.click_history_field_name)",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "pows_click_history",
+      "value": "@local.now",
+      "condition": "!(@fields.@local.click_history_field_name)",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button_pow_@item.id",
+      "value": "@item.name",
+      "action_list": "click | set_field:current_pow: data.efm_pows.@item.id;\nclick | go_to: efm_pow_template;\nclick | set_field:@local.click_history_field_name: @local.pows_click_history",
+      "parameter_list": "style: short; \ntext_align: center",
+      "comments": "click | set_field.current_topic: data.efm_topics.@item.id;\nclick | go_to: efm_topic_template;\nclick | set_field:@local.click_history_field_name: @local.topics_click_history"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "level_l1",
+      "value": "Logic and Even / Odd",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_powlist_l1",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "begin_items",
+      "name": "activity_buttons_l1",
+      "value": "@data.efm_pows",
+      "parameter_list": "filter: @item.level==\"L1\""
+    },
+    {
+      "name": "pow_id",
+      "value": "@item.id"
+    },
+    {
+      "name": "okay_eye_opener",
+      "value": "@local.checkbox_eye_opener && @item.eye_opener"
+    },
+    {
+      "name": "okay_puzzler",
+      "value": "@local.checkbox_puzzler && @item.puzzler"
+    },
+    {
+      "name": "its_an_okay_puzzle",
+      "value": "@local.okay_eye_opener || @local.okay_puzzler"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_ok_puzzle_l1",
+      "condition": "@local.its_an_okay_puzzle"
+    },
+    {
+      "name": "click_history_field_name",
+      "value": "@local.pow_id@local.pow_click_history",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "pows_click_history",
+      "value": "@fields.@local.click_history_field_name ;  @local.now",
+      "condition": "!!(@fields.@local.click_history_field_name)",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "pows_click_history",
+      "value": "@local.now",
+      "condition": "!(@fields.@local.click_history_field_name)",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button_pow_@item.id",
+      "value": "@item.name",
+      "action_list": "click | set_field:current_pow: data.efm_pows.@item.id;\nclick | go_to: efm_pow_template;\nclick | set_field:@local.click_history_field_name: @local.pows_click_history",
+      "parameter_list": "style: short; \ntext_align: center",
+      "comments": "click | set_field.current_topic: data.efm_topics.@item.id;\nclick | go_to: efm_topic_template;\nclick | set_field:@local.click_history_field_name: @local.topics_click_history"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "level_c",
+      "value": "Count to 200; 2-digit Add / Sub; 1-digit Mult.",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_powlist_c",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "begin_items",
+      "name": "activity_buttons_c",
+      "value": "@data.efm_pows",
+      "parameter_list": "filter: @item.level==\"C\""
+    },
+    {
+      "name": "pow_id",
+      "value": "@item.id"
+    },
+    {
+      "name": "okay_eye_opener",
+      "value": "@local.checkbox_eye_opener && @item.eye_opener"
+    },
+    {
+      "name": "okay_puzzler",
+      "value": "@local.checkbox_puzzler && @item.puzzler"
+    },
+    {
+      "name": "its_an_okay_puzzle",
+      "value": "@local.okay_eye_opener || @local.okay_puzzler"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_ok_puzzle_c",
+      "condition": "@local.its_an_okay_puzzle"
+    },
+    {
+      "name": "click_history_field_name",
+      "value": "@local.pow_id@local.pow_click_history",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "pows_click_history",
+      "value": "@fields.@local.click_history_field_name ;  @local.now",
+      "condition": "!!(@fields.@local.click_history_field_name)",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "pows_click_history",
+      "value": "@local.now",
+      "condition": "!(@fields.@local.click_history_field_name)",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button_pow_@item.id",
+      "value": "@item.name",
+      "action_list": "click | set_field:current_pow: data.efm_pows.@item.id;\nclick | go_to: efm_pow_template;\nclick | set_field:@local.click_history_field_name: @local.pows_click_history",
+      "parameter_list": "style: short; \ntext_align: center",
+      "comments": "click | set_field.current_topic: data.efm_topics.@item.id;\nclick | go_to: efm_topic_template;\nclick | set_field:@local.click_history_field_name: @local.topics_click_history"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "fake_group",
+      "style_list": "margin-top: 40px;"
+    },
+    {
+      "type": "text",
+      "name": "spacer"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

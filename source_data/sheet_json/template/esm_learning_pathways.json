@@ -1,0 +1,1827 @@
+{
+  "flow_type": "template",
+  "flow_name": "esm_learning_pathways",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_display_group",
+      "name": "dg_top_of_page",
+      "parameter_list": "style:column"
+    },
+    {
+      "type": "title",
+      "name": "title_text",
+      "value": "Learning Pathways"
+    },
+    {
+      "type": "text",
+      "name": "intro_text",
+      "value": "These pathways have sequences for teaching each area. These are only suggestions, and many variations are possible. It is helpful to see each topic in context – which topics lead to it and which topics follow from it.\n\nEach Overview describes the overall flow of a pathway. Click on a topic button to learn about it."
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion_pathways",
+      "parameter_list": "open_multiple:TRUE;"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_readking_math_talk",
+      "value": "Reading & Math Talk"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_accord_rmt_pathway",
+      "parameter_list": "style:column"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_accord_reading_math_talk",
+      "parameter_list": "style:column",
+      "style_list": "margin-top: 5px;"
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion_reading_math_talk",
+      "parameter_list": "open_multiple:TRUE;"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_reading_math_talk",
+      "value": "Overview",
+      "parameter_list": "text_align: center;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_reading_math_talk",
+      "parameter_list": "style:column"
+    },
+    {
+      "type": "text",
+      "name": "info_reading_math_talk",
+      "value": "Reading and other forms of verbal interaction with children should start long before they can speak. Early exposure to words and ideas will lead to understanding.\n\n**Dialogic Reading – Preverbal** Dialogic reading occurs when you read with a child and discuss each page of the story as you go along. It deepens the experience of the story and provides opportunities for exploring concepts and vocabulary involved in the story. With a preverbal child, the discussion is one-sided, but important all the same. Point to and describe elements of the pictures and the story. As the child starts understanding your words, you can ask for nonverbal responses such as pointing at elements of the page.\n\n**Math Talk – Early and Often** Talking with a child about the mathematics that is always all around them is essential to their early mathematical development. Point to and describe all the math you see. As the child develops, point to, describe, and ask about things around them. Dialogic reading is an important form of Math Talk.\n\n**Math Talk – Describe and Compare** Looking at and describing properties of objects is a part of the foundations of mathematics. Compare objects by talking about how their properties differ. These comparisons will deepen the child's understanding of the properties.\n\n**Math Talk – At Home, Math Talk – Out and About** As you go about your lives in the home and out and about in the rest of the world, look for mathematical things to discuss together.\n\n**Dialogic Reading – Verbal, Math Talk – Point, Describe, and Ask** As a child becomes verbal, it opens up possibilities for much more interesting discussions. You can now point to things and ask about them, and your child can start asking questions too. Follow up and build on your child's questions and ideas, but be sure to keep them at an appropriate developemental level.\n\n**Math Talk – Counting** There is a great deal going on as a child begins to learn to count and understand quantities. Counting in front of your child and, later on, with your child, is important aspect of their learning to count. Mix in counting downwards and also mix in starting or ending at 0 sometimes.\n\n**What Comes Next:** This pathway for reading and Math Talk leads into two pathways – working with Object Properties and Geometry as well as beginning Quantities and Counting."
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_rmt_group1"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "button",
+      "name": "button_rmt_group1_1",
+      "value": "Reading Preverbal",
+      "action_list": "click | set_field:current_topic: data.esm_topics.FMT_RWC_DRP;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex: 5;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "button",
+      "name": "button_rmt_group1_2",
+      "value": "MT – Early",
+      "action_list": "click | set_field:current_topic: data.esm_topics.FMT_EAA_EandO;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex: 5;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "image",
+      "name": "arrows3",
+      "value": "ESMIll/ESMLPArrows3.svg",
+      "style_list": "max-width: 90px;\nmargin-top: 0px;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_rmt_group2",
+      "style_list": "margin-top: -3px;"
+    },
+    {
+      "type": "button",
+      "name": "button_rmt_group2_1",
+      "value": "MT – Describe",
+      "action_list": "click | set_field:current_topic: data.esm_topics.FMT_EAA_FMTDC;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex:1;"
+    },
+    {
+      "type": "button",
+      "name": "button_rmt_group2_2",
+      "value": "MT – Home",
+      "action_list": "click | set_field:current_topic: data.esm_topics.FMT_EAA_FMTinH;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex:1;"
+    },
+    {
+      "type": "button",
+      "name": "button_rmt_group2_3",
+      "value": "MT – Outside",
+      "action_list": "click | set_field:current_topic: data.esm_topics.FMT_EAA_FMTOA;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex:1;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "image",
+      "name": "arrows3",
+      "value": "ESMIll/ESMLPArrows3.svg",
+      "style_list": "max-width: 90px;\nmargin-top: 0px;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_rmt_group3",
+      "style_list": "margin-top: -3px;"
+    },
+    {
+      "type": "button",
+      "name": "button_rmt_group3_1",
+      "value": "Reading Verbal",
+      "action_list": "click | set_field:current_topic: data.esm_topics.FMT_RWC_DRV;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex:1;"
+    },
+    {
+      "type": "button",
+      "name": "button_rmt_group3_2",
+      "value": "MT – Ask",
+      "action_list": "click | set_field:current_topic: data.esm_topics.FMT_EAA_FMTPDA;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex:1;"
+    },
+    {
+      "type": "button",
+      "name": "button_rmt_group3_3",
+      "value": "MT – Count",
+      "action_list": "click | set_field:current_topic: data.esm_topics.FMT_EAA_FMTC;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex:1;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_object_props_geometry",
+      "value": "Object Properties & Geometry"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_accord_pg_pathway",
+      "parameter_list": "style:column"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_accord_props_geom",
+      "parameter_list": "style:column",
+      "style_list": "margin-top: 15px;"
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion_props_geom",
+      "parameter_list": "open_multiple:TRUE;"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_props_geom",
+      "value": "Overview",
+      "parameter_list": "text_align: center;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_props_geom",
+      "parameter_list": "style:column"
+    },
+    {
+      "type": "text",
+      "name": "info_props_geom",
+      "value": "**Object Properties** Mathematics starts here! Practice this by using many descriptive words as you talk about things. Then, ask your students to describe objects and situations.\n\n**Ways to Practice** As your students become capable with using properties, develop deeper understandings by using these activities:\n* Grouping – Have your students group objects using a property.\n* Same / Different – Have two objects and ask how they are the same and how they differ.\n* Patterns – Create repeating patterns using properties to identify the pattern.\n\n**Geometric Shapes** Once students develop skills with properties of general objects, start examining 2-and 3-dimensional geometric shapes.\n\n**Naming and Describing Shapes** Start by naming the simplest shapes and giving standard descriptions involving numbers of edges, angles, and faces.\n\n**Compare and Sort** Apply skills developed earlier with general objects to obtain deeper understandings of shapes and their properties. Naming shapes is not nearly as deep an understanding as being able to compare and contrast properties of shapes.\n\n**Identifying and Combining Pieces** Looking at the faces of 3-dimensional shapes provides great practice with seeing how polygons fit together. Similarly, using shapes to build bigger shapes, or decomposing bigger shapes into individual pieces, is a playful environment for improving understandings.\n\n**What Comes Next:** The ideas of object properties and geometry in this pathway are foundational for so much of mathematics. Later pathways will develop more sophisticated geometric ideas. The search for patterns is central to all of mathematics."
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_pg_group1"
+    },
+    {
+      "type": "button",
+      "name": "button_pg_group1_1",
+      "value": "Props. Group",
+      "action_list": "click | set_field:current_topic: data.esm_topics.Geom_OP_PG;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;"
+    },
+    {
+      "type": "button",
+      "name": "button_pg_group1_2",
+      "value": "Same Diff.",
+      "action_list": "click | set_field:current_topic: data.esm_topics.Geom_OP_SD;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;"
+    },
+    {
+      "type": "button",
+      "name": "button_pg_group1_3",
+      "value": "Patterns",
+      "action_list": "click | set_field:current_topic: data.esm_topics.Geom_Pat_Intro;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "image",
+      "name": "arrows3",
+      "value": "ESMIll/ESMLPArrows3.svg",
+      "style_list": "max-width: 90px;\nmargin-top: 0px;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_pg_group3",
+      "style_list": "margin-top: -3px;"
+    },
+    {
+      "type": "button",
+      "name": "button_pg_group3_1",
+      "value": "Describe Shapes",
+      "action_list": "click | set_field:current_topic: data.esm_topics.Geom_Shape_DS;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex: 7;"
+    },
+    {
+      "type": "button",
+      "name": "button_pg_group3_2",
+      "value": "Shape Name",
+      "action_list": "click | set_field:current_topic: data.esm_topics.Geom_Shape_SN2D3D;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex: 5;"
+    },
+    {
+      "type": "button",
+      "name": "button_pg_group3_3",
+      "value": "Compare Sort",
+      "action_list": "click | set_field:current_topic: data.esm_topics.Geom_Shape_CompSort;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex: 7;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "image",
+      "name": "arrows2",
+      "value": "ESMIll/ESMLPArrows2.svg",
+      "style_list": "max-width: 70px;\nmargin-top: 0px;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_pg_group4",
+      "style_list": "margin-top: -3px;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 10"
+    },
+    {
+      "type": "button",
+      "name": "button_pg_group4_1",
+      "value": "Faces of 3d",
+      "action_list": "click | set_field:current_topic: data.esm_topics.Geom_Shape_2Dof3DS;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex: 50"
+    },
+    {
+      "type": "button",
+      "name": "button_pg_group4_2",
+      "value": "Compose / Decompose",
+      "action_list": "click | set_field:current_topic: data.esm_topics.Geom_Shape_CompDecomp;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex: 40"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 10"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_quantities_counting",
+      "value": "Quantities & Counting"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_accord_qc_pathway",
+      "parameter_list": "style:column"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_accord_quants_counts",
+      "parameter_list": "style:column",
+      "style_list": "margin-top: 15px;"
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion_quants_counts",
+      "parameter_list": "open_multiple:TRUE;"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_quants_counts",
+      "value": "Overview",
+      "parameter_list": "text_align: center;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_quants_counts",
+      "parameter_list": "style:column"
+    },
+    {
+      "type": "text",
+      "name": "info_quants_counts",
+      "value": "**Quantities and Beginning Counting** A grounding in quantities is an essential basis for counting, addition, subtraction, and other skills. The steps involved in doing counting and understanding its relationship to sizes can be subtle, and they must be done thoroughly.\n\n**Subitizing and Unitizing** These two related skills are important in establishing Counting On, addition, subtraction, and place value. Spend lots of time with routines involving dot cards to develop these two skills.\n\n**Ordering and Comparing** Putting quantities and numbers in order establishes the sequence and the relative sizes of numbers. Number Paths and Number Lines are helpful for this. Comparing quantities also deepens an understanding of the relative sizes of quantities.\n\n**Counting Up and Down** Do lots of counting in various ways. Count up from 1 or 0. Starting sometimes at 0 establishes 0 as a number and size. Counting down to 1 or 0 helps your students avoid simply repeating the sequence of numbers without understanding – it forces more thought and understanding to work with the same numbers in descending order.\n\n**Counting On** As counting and unitizing skills become established, start using Counting On to count collections of objects.\n\nFor example, if you have 5 things, count out 3 of them and put those in a pile. Then, count the entire group of 5 things by saying 3 while pointing at your pile of 3, and then saying 4 and 5 as you count the remaining two things.\n\n**Skip Count by 2s** Advertise this as a faster way to count. Start by counting normally while saying the odd numbers softly – eventually you can stop saying the odd numbers. Later, in other pathways, this will lead to skip counting by other skip amounts.\n\n**Bundles of Ten** For counting between 10 and 20, your students should use a bundle of ten to organize their counting. Create bundles of ten objects, or use ten frames. Using bundles of ten depends on your students being able to unitize groups of ten. This bundling into tens is a great introduction to the ideas needed later on for place value.\n\n**What Comes Next:** This counting up, down, and on in this pathway leads naturally to the adding and subtracting pathways. Becoming familiar with bundles of ten will help with adding and subtracting, as well as two-digit place value."
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_qc_group1"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "button",
+      "name": "button_qc_group1_1",
+      "value": "Quantities",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NPV_QC10_QC;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex: 4;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "button",
+      "name": "button_qc_group1_2",
+      "value": "Subitize Unitize",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NPV_QC10_Sub10;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex:4;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "image",
+      "name": "arrows2",
+      "value": "ESMIll/ESMLPArrows2.svg",
+      "style_list": "max-width: 70px;\nmargin-top: 0px;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_qc_group2",
+      "style_list": "margin-top: -3px;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "button",
+      "name": "button_qc_group2_1",
+      "value": "Order",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NPV_QC10_Ordinals;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex: 4;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "button",
+      "name": "button_qc_group2_2",
+      "value": "Compare",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NPV_QC10_Comp10;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex:4;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "image",
+      "name": "arrows2",
+      "value": "ESMIll/ESMLPArrows2.svg",
+      "style_list": "max-width: 70px;\nmargin-top: 0px;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_qc_group3",
+      "style_list": "margin-top: -3px;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "button",
+      "name": "button_qc_group3_1",
+      "value": "Counting Down",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NPV_QC10_QC;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex: 4;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "button",
+      "name": "button_qc_group3_2",
+      "value": "Counting On",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_AS10_QAS;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex:4;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "image",
+      "name": "arrows2",
+      "value": "ESMIll/ESMLPArrows2.svg",
+      "style_list": "max-width: 70px;\nmargin-top: 0px;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_qc_group4",
+      "style_list": "margin-top: -3px;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "button",
+      "name": "button_qc_group4_1",
+      "value": "Count by 2s",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_MSD_Skipping;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex: 4;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "button",
+      "name": "button_qc_group4_2",
+      "value": "Bundles of Ten",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NPV_CPV100_Count20;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex:4;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_aw10",
+      "value": "Addition Within 10"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_accord_aw10_pathway",
+      "parameter_list": "style:column"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_accord_aw10",
+      "parameter_list": "style:column",
+      "style_list": "margin-top: 15px;"
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion_aw10",
+      "parameter_list": "open_multiple:TRUE;"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_aw10",
+      "value": "Overview",
+      "parameter_list": "text_align: center;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_aw10",
+      "parameter_list": "style:column"
+    },
+    {
+      "type": "text",
+      "name": "info_aw10_1",
+      "value": "**Prerequisite: Quantities and Counting Pathway** Complete this earlier pathway at least through basic counting up and down, and perhaps Counting On.\n\n**Adding Order – Addition Commutes** Children do not need to learn the words \"commutes\" and \"commutativity.\" However, they should learn that the order addition is done in does not change the result. It is useful in many ways, one of which is saving time in calculations: 2 + 9 is easier to do as 2 more than 9 than as 9 more than 2. It is so natural to children that it almost does not need to be taught.\n\n**Counting On** This was introduced and covered in the Quantities and Counting pathway, but it is important to realize this is the main tool your students have, beyond simply counting everything together, for adding as they enter this pathway. It leads very naturally to the Adding 1 and 2 step.\n\n**Add 1 and 2** Exploit the connection with counting up and Counting On to establish these facts. Adding 1 is going to the next number on a number path (\"1 more\"), and adding 2 is going two numbers along the number path (\"2 more\").\n\n**Doubles** Children enjoy learning and practicing doubles. Start with small doubles whose sum is less than or equal to 10. The small doubles are naturally worked with in a vertical ten frame. You can also discuss even and odd numbers at this point.\n\n**Near Doubles** Think of 4 + 5 as 4 + 4 plus one more. This is the start of making new problems understandable in terms of older problems. Using Near Doubles is an optional method that may not work well with all students.\n\n**Combinations of 10** Combinations that add up to 10 are extremely useful for addition and subtraction. Ten frames make these easy to see.\n\n**Misc. Sums to 10** There are a surprisingly small number of addition facts not covered by earlier strategies. List them out and be surprised! This points out the importance of your students mastering those techniques and ideas.\n\nIf you leave out facts covered by \"Add 1 and 2,\" \"Doubles,\" \"Combinations of 10,\" and \"Adding Order\" you are left with the following very short list. These remaining facts can either be learned separately, or as near doubles and \"3 more.\"\n* 3 + 4\n* 3 + 5\n* 3 + 6\n* 4 + 5\n\n**All Facts Within 10** At this point all the adding facts within 10 have been mastered.\n\n**What Comes Next:** The pathways of Addition within 20 and Subtraction Within 10 follow directly from this pathway. You can do those two pathways in either order or even at the same time."
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_aw10_group0",
+      "style_list": "margin-top: 5px;"
+    },
+    {
+      "type": "text",
+      "name": "blank",
+      "style_list": "flex: 1"
+    },
+    {
+      "type": "text",
+      "name": "text_aw10_group0_1",
+      "value": "Do the Quantities & Counting pathway through counting up and down, and maybe Counting On, before starting this pathway."
+    },
+    {
+      "type": "text",
+      "name": "blank",
+      "style_list": "flex: 1"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "image",
+      "name": "arrows2",
+      "value": "ESMIll/ESMLPArrows2.svg",
+      "style_list": "max-width: 70px;\nmargin-top: -15px;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_aw10_group1",
+      "style_list": "margin-top: -3px;"
+    },
+    {
+      "type": "text",
+      "name": "blank",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "button",
+      "name": "button_aw10_group1_1",
+      "value": "Adding Order",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_AS10_AComm;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex: 4;"
+    },
+    {
+      "type": "text",
+      "name": "blank",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "button",
+      "name": "button_qc_group3_2",
+      "value": "Counting On",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_AS10_QAS;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex:4;"
+    },
+    {
+      "type": "text",
+      "name": "blank",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "image",
+      "name": "arrows1",
+      "value": "ESMIll/ESMLPArrows1.svg",
+      "style_list": "max-width: 30px;\nmargin-top: -15px;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_aw10_group2",
+      "style_list": "margin-top: -3px;"
+    },
+    {
+      "type": "text",
+      "name": "blank",
+      "style_list": "flex: 1"
+    },
+    {
+      "type": "button",
+      "name": "button_aw10_group2_1",
+      "value": "1 or 2 More",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_AS10_AS1and2;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;"
+    },
+    {
+      "type": "text",
+      "name": "blank",
+      "style_list": "flex: 1"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "image",
+      "name": "arrows2",
+      "value": "ESMIll/ESMLPArrows2.svg",
+      "style_list": "max-width: 70px;\nmargin-top: 0px;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_aw10_group3",
+      "style_list": "margin-top: -3px;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "button",
+      "name": "button_aw10_group3_1",
+      "value": "Small Doubles",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_AS10_AT;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex: 4;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "button",
+      "name": "button_aw10_group3_2",
+      "value": "Sums of 10",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_AS10_NBFF;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex:4;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "image",
+      "name": "arrows2",
+      "value": "ESMIll/ESMLPArrows2.svg",
+      "style_list": "max-width: 70px;\nmargin-top: 0px;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_aw10_group4",
+      "style_list": "margin-top: -3px;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "button",
+      "name": "button_aw10_group4_1",
+      "value": "Near Doubles",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_AS10_ANT;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex: 4;"
+    },
+    {
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "button",
+      "name": "button_aw10_group4_2",
+      "value": "Misc Sums\nto 10",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_ASSD_ASto10;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex:4;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "image",
+      "name": "arrows1",
+      "value": "ESMIll/ESMLPArrows1.svg",
+      "style_list": "max-width: 30px;\nmargin-top: -2px;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_aw10_group5",
+      "style_list": "margin-top: -3px;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "button",
+      "name": "button_aw10_group5_1",
+      "value": "Adding Within 10",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_ASSD_ASto10;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_aw20",
+      "value": "Addition Within 20"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_accord_aw20_pathway",
+      "parameter_list": "style:column"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_accord_aw20",
+      "parameter_list": "style:column",
+      "style_list": "margin-top: 15px;"
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion_aw20",
+      "parameter_list": "open_multiple:TRUE;"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_aw20",
+      "value": "Overview",
+      "parameter_list": "text_align: center;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_aw20",
+      "parameter_list": "style:column"
+    },
+    {
+      "type": "text",
+      "name": "info_aw20_1",
+      "value": "**Prerequisite:** Do the Addition Within 10 pathway before starting this pathway.\n\n**Adding 10 and Place Value to 19** While mastering place value up to 19, it is natural to practice adding 10 to single-digit numbers and subtracting 10 from numbers between 10 and 19. Understand that all the numbers from 10 to 19 can be thought of as a bundle of 10 plus some more.\n\n**Making a 10 – Use 10 as a Bridge for Adding** For sums larger than 10, use 10 as an intermediate stopping point.\n\n**Example** Consider 7 + 6 . 7 + 3 is 10, so rewrite this as 7 + 6 = (7 + 3) + 3 = 10 + 3 = 13. This is closely tied to the idea of compensation for addition, where we can change an addition problem by adding to one number the same amount we subtract from the other number. In this case, 3 was added to the 7 and subtracted from the 6 to change 7 + 6 into 10 + 3 (we made a 10).\n\n**Addition Within 20** After finishing this pathway and the previous pathway of Addition Within 10, your students have now mastered all single-digit addition facts!\n\n**What Comes Next:** The mastery of this pathway leads to the pathways for subtraction. If you have not started it yet, now is the time for the Subtraction Within 10 pathway – if that has been completed, then proceed with the Subtraction Within 20 pathway."
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_aw20_group0",
+      "style_list": "margin-top: 5px;"
+    },
+    {
+      "type": "text",
+      "name": "blank",
+      "style_list": "flex: 1"
+    },
+    {
+      "type": "text",
+      "name": "text_aw20_group0_1",
+      "value": "Do the Addition Within 10 pathway first before starting this pathway."
+    },
+    {
+      "type": "text",
+      "name": "blank",
+      "style_list": "flex: 1"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "image",
+      "name": "arrows2",
+      "value": "ESMIll/ESMLPArrows2.svg",
+      "style_list": "max-width: 70px;\nmargin-top: -15px;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_aw20_group1",
+      "style_list": "margin-top: -3px;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "button",
+      "name": "button_aw20_group1_1",
+      "value": "Adding 10",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_ASSD_AS10;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex: 4;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "button",
+      "name": "button_aw20_group1_2",
+      "value": "Place Value",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_ASSD_PVto19;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex:4;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "image",
+      "name": "arrows2",
+      "value": "ESMIll/ESMLPArrows2.svg",
+      "style_list": "max-width: 70px;\nmargin-top: 0px;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_aw20_group2",
+      "style_list": "margin-top: -3px;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "button",
+      "name": "button_aw20_group2_1",
+      "value": "Large Doubles",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_AS10_AT;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex: 8;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "button",
+      "name": "button_aw20_group2_2",
+      "value": "Making a 10",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_ASSD_10BridgeA;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex: 8;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "image",
+      "name": "arrows1",
+      "value": "ESMIll/ESMLPArrows1.svg",
+      "style_list": "max-width: 30px;\nmargin-top: -2px;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_aw20_group3",
+      "style_list": "margin-top: -3px;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "button",
+      "name": "button_aw20_group3_1",
+      "value": "Adding Within 20",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_ASSD_SD_Add_Sub;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_sw10",
+      "value": "Subtraction Within 10"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_accord_sw10_pathway",
+      "parameter_list": "style:column"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_accord_sw10",
+      "parameter_list": "style:column",
+      "style_list": "margin-top: 15px;"
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion_sw10",
+      "parameter_list": "open_multiple:TRUE;"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_sw10",
+      "value": "Overview",
+      "parameter_list": "text_align: center;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_sw10",
+      "parameter_list": "style:column"
+    },
+    {
+      "type": "text",
+      "name": "info_sw10_1",
+      "value": "**Prerequisite:** Do the Addition Within 10 pathway first before starting this pathway. The only exceptions are doing the steps \"1 or 2 Less\" and \"1 or 2 Apart,\" which can be done anytime. In particular, the \"1 or 2 Less\" step should probably be done at the same time as the \"1 or 2 More\" step.\n\n**Take Away & Difference** Subtraction can be modeled as difference or take away, and adopting the right mental model can make a problem much easier. For example, 5  – 1 is much easier to do as taking 1 away from 5, whereas 5 – 4 is much easier to do as finding the difference between 5 and 4.\n\n**Subtract 1 and 2** Use \"take away\" and exploit the connection with counting down to establish these facts. Adding 1 is going to the next number on a number path, subtracting 1 goes to the previous number.\n\n**1 or 2 Apart** Use \"difference\" to subtract by finding how far apart two numbers are, perhaps on a number path. For example, to do 8 – 6, it is much easier to see that their difference is 2 than it is to take 6 awa y from 8.\n\n**Part Part / Whole and Fact Families** This method can be used to do any subtraction facts that are related to addition facts that have already been mastered. A number can be deconstructed into two parts that make up the whole number. This creates an important connection between addition and subtraction. For example, the family of math facts for 3 + 7 = 10 includes 7 + 3 = 10, 10 – 3 = 7, and 10 – 7 = 3. \n\n**Surprisingly Few Left** If you remove the subtractions that subtract 1 or 2, or that are 1 or 2 apart, and you assume a student can apply fact families for doubles and sums of 10, then you are left with:\n* 7 – 3\n* 7 – 4\n* 8 – 3\n* 8 – 5\n* 9 – 3\n* 9 – 4\n* 9 – 5\n* 9 – 6\n\nThese eight subtraction facts come from the four fact families for: 3 + 4 = 7; 3 + 5 = 8; 3 + 6 = 9, and 4 + 5 = 9.These four can be given special attention to finish things off.\n\n**All Facts Within 10** At this point all the adding and subtracting facts within 10 have been mastered!\n\n**What Comes Next:** This pathway leads quite naturally to the Subtraction Within 20 pathway."
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_sw10_group0",
+      "style_list": "margin-top: 5px;"
+    },
+    {
+      "type": "text",
+      "name": "blank",
+      "style_list": "flex: 1"
+    },
+    {
+      "type": "text",
+      "name": "text_sw10_group0_1",
+      "value": "Do the Addition Within 10 pathway before starting this pathway, with the exception that 1 or 2 Less should be done at the same time as 1 or 2 More."
+    },
+    {
+      "type": "text",
+      "name": "blank",
+      "style_list": "flex: 1"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "image",
+      "name": "arrows2",
+      "value": "ESMIll/ESMLPArrows2.svg",
+      "style_list": "max-width: 70px;\nmargin-top: -15px;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_sw10_group1",
+      "style_list": "margin-top: -3px;"
+    },
+    {
+      "type": "button",
+      "name": "button_sw10_group1_1",
+      "value": "Take Away & Difference",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_AS10_QAS;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "button",
+      "name": "button_sw10_group1_2",
+      "value": "Part Part / Whole",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_AS10_NBFF;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "image",
+      "name": "arrows2",
+      "value": "ESMIll/ESMLPArrows2.svg",
+      "style_list": "max-width: 70px;\nmargin-top: 0px;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_sw10_group2",
+      "style_list": "margin-top: -3px;"
+    },
+    {
+      "type": "text",
+      "name": "blank",
+      "style_list": "flex: 10"
+    },
+    {
+      "type": "button",
+      "name": "button_sw10_group2_1",
+      "value": "1 or 2 Less",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_AS10_AS1and2;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex: 200"
+    },
+    {
+      "type": "text",
+      "name": "blank",
+      "style_list": "flex: 10"
+    },
+    {
+      "type": "button",
+      "name": "button_sw10_group2_2",
+      "value": "1 or 2 Apart",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_AS10_AS1and2;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex: 200"
+    },
+    {
+      "type": "text",
+      "name": "blank",
+      "style_list": "flex: 10"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "image",
+      "name": "arrows1",
+      "value": "ESMIll/ESMLPArrows1.svg",
+      "style_list": "max-width: 30px;\nmargin-top: 0px;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_sw10_group3",
+      "style_list": "margin-top: -3px;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "button",
+      "name": "button_ss_group3_1",
+      "value": "Subtraction Within 10",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_ASSD_ASto10;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex: 3;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_sw20",
+      "value": "Subtraction Within 20"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_accord_sw20_pathway",
+      "parameter_list": "style:column"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_accord_sw20",
+      "parameter_list": "style:column",
+      "style_list": "margin-top: 15px;"
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion_sw20",
+      "parameter_list": "open_multiple:TRUE;"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_sw20",
+      "value": "Overview",
+      "parameter_list": "text_align: center;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_sw20",
+      "parameter_list": "style:column"
+    },
+    {
+      "type": "text",
+      "name": "info_sw20_1",
+      "value": "**Prerequisite:** Do the Subtraction Within 10 and Addition Within 10 pathways first.\n\n**Place Value up to 19** Understand that the numbers from 10 to 19 can be thought of as a bundle of 10 plus some more.\n\n**Subtract 10** While mastering place value up to 19, it is natural to practice adding 10 to single-digit numbers and subtracting 10 from numbers between 10 and 19.\n\n**10 as a Bridge for Subtracting** Use 10 as an intermediate point for subtraction. For example, to find the difference between 12 and 5, find the difference between12 and 10 (2) and to it the difference between 10 and 5 (5). 12 - 5 = (12 - 10) + (10 - 5) = 2 + 5 = 7. \n\nCompensation for subtraction is done by adding or subtracting the same amount from both numbers to create a simpler problem involving 10. By subtracting 2 from both numbers 12 - 5 becomes 10 - 3. By adding 5 to both numbers 12 - 5 becomes 17 - 10.\n\n**All Subtractions Within 20** All the subtractions from numbers between 10 and 20 can be done with this small collection of methods. At this point, all adding and subtracting facts within 20 are done!\n\n**What Comes Next:** This pathway completes the series of pathways involving single-digit addition and subtraction. Use this foundation to start working on the Single-digit Multiplication pathway."
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_sw20_group0",
+      "style_list": "margin-top: 5px;"
+    },
+    {
+      "type": "text",
+      "name": "blank",
+      "style_list": "flex: 1"
+    },
+    {
+      "type": "text",
+      "name": "text_sw20_group0_1",
+      "value": "Do the Subtraction Within 10 and Addition Within 10 pathways first before starting this pathway."
+    },
+    {
+      "type": "text",
+      "name": "blank",
+      "style_list": "flex: 1"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "image",
+      "name": "arrows3",
+      "value": "ESMIll/ESMLPArrows3.svg",
+      "style_list": "max-width: 90px;\nmargin-top: -15px;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_sw20_group1",
+      "style_list": "margin-top: -3px;"
+    },
+    {
+      "type": "button",
+      "name": "button_sw20_group1_1",
+      "value": "Subtract 10",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_ASSD_AS10;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex: 10"
+    },
+    {
+      "type": "button",
+      "name": "button_sw20_group1_2",
+      "value": "Place Value",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_ASSD_PVto19;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex:8"
+    },
+    {
+      "type": "button",
+      "name": "button_sw20_group1_3",
+      "value": "10 as Bridge",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_ASSD_10BridgeS;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex: 10"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "image",
+      "name": "arrows1",
+      "value": "ESMIll/ESMLPArrows1.svg",
+      "style_list": "max-width: 30px;\nmargin-top: -2px;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_sw20_group2",
+      "style_list": "margin-top: -3px;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "button",
+      "name": "button_sw20_group2_1",
+      "value": "Subtraction Within 20",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_ASSD_SD_Add_Sub;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex: 3;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_sm_mult",
+      "value": "Single-digit Multiplication"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_accord_sm_pathway",
+      "parameter_list": "style:column"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_accord_single_mult",
+      "parameter_list": "style:column",
+      "style_list": "margin-top: 15px;"
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion_single_mult",
+      "parameter_list": "open_multiple:TRUE;"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_single_mult",
+      "value": "Overview",
+      "parameter_list": "text_align: center;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_single_mult",
+      "parameter_list": "style:column"
+    },
+    {
+      "type": "text",
+      "name": "info_single_mult",
+      "value": "**Multiplication Models** Multiplication involves some number of equal-sized groups. Use representations of this with equal piles or with arrays with equal rows. The array model makes it easy to discuss why multiplication is commutative.\n\n**Skip Counting** As with doubles for additioin, the natural place to start skipping is with skip sizes of 2. Quickly branch out to skips of 10 and 5. After familiarity is gained, skip count upward and downward. With a little more practice, start skip counting from numbers other than multiples of the skip amount. Skip counting is useful for multiplication and division, and it is also great practice for addition and subtraction. A child who is confident with skip counting can use it initially for multiplication, but it should quickly give way to mastering the facts so that they are automatic.\n\n**Order does not matter** Your students do not need to know the word commutativity, but it is important for them to know that the order multiplication is done in makes no difference. For example, 6 x 3 gives the same result as 3 x 6. This will save them learning approximatelly half of the multiplication facts.\n\n**Multiplying by 2, 10, and 5**\n* **Multiplying by 2 – Doubling** Addition doubles are a natural way to introduce multiplication. When adding a number to itself it is easy to describe it as twice the number or two of the number.\n* **Multiplying by 10 – Place Value** Once the number names are learned, multiples of 10 are easy to do and will help with understanding place value.\n* **Multiplying by 5 – Even Multiples** Calculate even multiples of 5 as half as big a multiple of 10. For example, 6 x 5 is 3 x 10.\n* **Multiplying by 5 – Odd Multiples** Once the even multiples of 5 are mastered, calculate odd multiples as one more 5 than the last even multiple. For example, 7 x 5 is 6 x 5 plus 5.\n\n**Squares** These are usually enjoyed in the same way that doubles are enjoyed for addition.\n\n**Combining Methods** These three strategies use the idea of calculating new multiples by adding or subtracting two multiples you already know. This takes advantage of the distributive property, though your students do not need to learn this vocabulary at this age  This method does often require some skill with adding and subtracting 2-digit numbers.\n* **Doubling** Used for multiplying by 4, 6, and 8. For example: 6 x 7 is 3 x 7 plus 3 x 7 = 21 + 21 = 42.\n* **One Group More or One Group Less** Use One More for multiplying by 3 and 6, and One Less for multiplying by 4 and 9. Examples, 3 x 7 is 2 x 7 + 1 x 7, and 9 x 7 is 10 x 7 – 1 x 7. You can also use this idea to calculate Near Squares such as 6 x 7 (one more 6 than 6 x 6, or one less 7 than 7 x 7).\n* **Misc. Combinations** You can choose to combine other multiples. Multiples of 5 can be handy for this. For example, 7 x 8 is 5 x 8 + 2 x 8.\n\n**Focus on 1, 2, 5, 10** It may organize your thinking to view all these combinations as being based on knowing the multiples of 1, 2, 5, and 10. Once you know these, they can be combined by adding and subtracting to create the rest.\n\n**What Comes Next:** A solid grounding in this pathway is an important basis for the Single-digit Division pathway."
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_sm_group1"
+    },
+    {
+      "type": "button",
+      "name": "button_sm_group1_1",
+      "value": "Mult. Model",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_MSD_MultRep;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex: 3;"
+    },
+    {
+      "type": "button",
+      "name": "button_sm_group1_2",
+      "value": "Mult. Order",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_MSD_MultCommutes;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex: 1"
+    },
+    {
+      "type": "button",
+      "name": "button_sm_group1_3",
+      "value": "Skip Count",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_MSD_Skipping;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex: 1"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "image",
+      "name": "arrows3",
+      "value": "ESMIll/ESMLPArrows3.svg",
+      "style_list": "max-width: 90px;\nmargin-top: 0px;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_sm_group2",
+      "style_list": "margin-top: -3px;"
+    },
+    {
+      "type": "button",
+      "name": "button_sm_group2_1",
+      "value": "2 Times",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_MSD_Doubling;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;"
+    },
+    {
+      "type": "button",
+      "name": "button_sm_group2_2",
+      "value": "Times 10, 5",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_MSD_Mult_5_10;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;"
+    },
+    {
+      "type": "button",
+      "name": "button_sm_group2_3",
+      "value": "Squares",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_MSD_AllSingles;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "image",
+      "name": "arrows3",
+      "value": "ESMIll/ESMLPArrows3.svg",
+      "style_list": "max-width: 90px;\nmargin-top: 0px;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_sm_group3",
+      "style_list": "margin-top: -3px;"
+    },
+    {
+      "type": "button",
+      "name": "button_sm_group3_1",
+      "value": "Using Doubles",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_MSD_Combining;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "button",
+      "name": "button_sm_group3_2",
+      "value": "One group more or less",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_MSD_Combining;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex: 3;"
+    },
+    {
+      "type": "button",
+      "name": "button_sm_group3_3",
+      "value": "Comb.",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_MSD_Combining;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "image",
+      "name": "arrows1",
+      "value": "ESMIll/ESMLPArrows1.svg",
+      "style_list": "max-width: 30px;\nmargin-top: -2px;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_sm_group4",
+      "style_list": "margin-top: -3px;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "button",
+      "name": "button_sm_group4_1",
+      "value": "All Single-digit Multiplication",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_MSD_AllSingles;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex: 3;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_sd_mult_div",
+      "value": "Single-digit Division"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_accord_sd_pathway",
+      "parameter_list": "style:column"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_accord_single_div",
+      "parameter_list": "style:column",
+      "style_list": "margin-top: 15px;"
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion_single_div",
+      "parameter_list": "open_multiple:TRUE;"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_single_div",
+      "value": "Overview",
+      "parameter_list": "text_align: center;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_single_div",
+      "parameter_list": "style:column"
+    },
+    {
+      "type": "text",
+      "name": "info_single_div",
+      "value": "**Equal Parts for Shapes and Sets** Splitting up shapes and sets of objects into equal-size pieces is a good introduction to fractions and division. It also gives lots of practice for understanding the model for division.\n\n**Equal Parts – Sharing Quantities** Sharing situations are a wonderful source of problems that children can relate to. Sharing a quantity equally among two people is an early and powerfuly way of learning dividing by 2 and taking halves. This naturally leads to more complicated sharing as your children's skills develop.\n\n**Division Models** As with subtraction, division can be thought of in at least two ways. If you have 20 things and want to put them in piles of 5, you can ask how many piles there will be. Or, if you want to make 5 equal piles, you can ask how big the piles will be. The idea of sharing is an example of the second interpretation – you want to share equally among a certain number of people. \n\n**Skip Counting** As will be discussed in the \"Guess and Revise\" method, skip counting is a useful resource for finding division results after an initial estimate. It is not intended as a tool to do division all on its own.\n\n**Dividsion With No Remainder** Although skip counting can be used for this in the short term, a better long term solution is to have a strong knowledge of the single-digit multiplication facts and use fact families to connect your students' knowledge of multiplication with solving division problems. For example, if 3 x 5 is well known to a child, then the fact family for 3 x 5 = 15 will help with the related facts: 5 x 3 = 15, 15 ÷ 3 = 5, and 15 ÷ 5 = 3.\n\n**Division With Remainders** Until division becomes fully automatic, some version of guessing and revising is the way to approach these. There is no way to memorize all these math facts. Being good at skip counting helps a lot with these. The number 5 is often a good initial guess to start from – it is in the middle of 1-digit numbers and it is easy to calculate the multiples of it.\n\nFor example, to calculate 27 ÷ 4 encourage your students to do the following:\n* Make an initial guess. Perhaps 5 in this example.\n* Check the guess and see if it is too high or too low.  5 x 4 = 20 is 7 too low, so we'll need one more 4.\n* Revise the guess and check again.\n\nWith practice, their initial guesses will grow increasingly accurate.\n\n**All Single-Digit Division** Using these methods for dividing with and without remainders, your students will now be able to master (with practice) all single-digit division problems!"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_sd_group0",
+      "style_list": "margin-top: 5px;"
+    },
+    {
+      "type": "text",
+      "name": "blank",
+      "style_list": "flex: 1"
+    },
+    {
+      "type": "text",
+      "name": "text_sd_group0_1",
+      "value": "Before starting this pathway, do the Single-Digit Multiplication pathway."
+    },
+    {
+      "type": "text",
+      "name": "blank",
+      "style_list": "flex: 1"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "image",
+      "name": "arrows2",
+      "value": "ESMIll/ESMLPArrows2.svg",
+      "style_list": "max-width: 70px;\nmargin-top: -15px;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_sd_group1",
+      "style_list": "margin-top: -3px;"
+    },
+    {
+      "type": "button",
+      "name": "button_sd_group1_1",
+      "value": "Equal Parts - Shapes",
+      "action_list": "click | set_field:current_topic: data.esm_topics.FEP_EP_NMEP_Shapes;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex: 20;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "button",
+      "name": "button_sd_group1_2",
+      "value": "Equal Parts - Sharing",
+      "action_list": "click | set_field:current_topic: data.esm_topics.FEP_EP_NMEP_Sets;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex: 20;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "image",
+      "name": "arrows3",
+      "value": "ESMIll/ESMLPArrows3.svg",
+      "style_list": "max-width: 90px;\nmargin-top: 0px;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_sd_group2",
+      "style_list": "margin-top: -3px;"
+    },
+    {
+      "type": "button",
+      "name": "button_sd_group2_1",
+      "value": "Division Model",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_DSD_Models;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;"
+    },
+    {
+      "type": "button",
+      "name": "button_sd_group2_2",
+      "value": "Skip Count",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_MSD_Skipping;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;"
+    },
+    {
+      "type": "button",
+      "name": "button_sd_group2_3",
+      "value": "Division and 0",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_DSD_Zero;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "image",
+      "name": "arrows2",
+      "value": "ESMIll/ESMLPArrows2.svg",
+      "style_list": "max-width: 70px;\nmargin-top: 0px;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_sd_group4",
+      "style_list": "margin-top: -3px;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "button",
+      "name": "button_sd_group4_1",
+      "value": "With No Remainder",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_DSD_Without_Rem;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex: 3;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "button",
+      "name": "button_sd_group4_2",
+      "value": "With a Remainder",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_DSD_With_Rem;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex: 3;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 2;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "image",
+      "name": "arrows1",
+      "value": "ESMIll/ESMLPArrows1.svg",
+      "style_list": "max-width: 30px;\nmargin-top: -2px;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_sd_group5",
+      "style_list": "margin-top: -3px;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "button",
+      "name": "button_sd_group5_1",
+      "value": "All Single-digit Division",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_DSD_AllSingles;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex: 3;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "fake_group",
+      "style_list": "margin-top: 40px;"
+    },
+    {
+      "type": "text",
+      "name": "empty"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

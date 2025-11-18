@@ -1,0 +1,417 @@
+{
+  "flow_type": "template",
+  "flow_name": "efm_ga_start",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_display_group",
+      "name": "dg_top_of_page"
+    },
+    {
+      "type": "title",
+      "name": "spacer",
+      "value": "Games"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_help",
+      "condition": false
+    },
+    {
+      "type": "round_button",
+      "name": "help_button",
+      "action_list": "click | start_tour: esm_gas_tour",
+      "condition": false,
+      "parameter_list": "icon_src: help; style:navigation"
+    },
+    {
+      "type": "end_display_group",
+      "condition": false
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_games_advice",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion_for_games_advice",
+      "parameter_list": "open_multiple:TRUE;",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_games_advice",
+      "value": "Games Advice",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_advice_accord",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "games_advice_text",
+      "value": "Games where players have choices that change the game outcome are natural problem solving environments. Developing strategies for playing against a perfect opponent means creating your own puzzle and attempting to solve it.\n\nGames that have an element of chance are great levelers. Without randomness, poorer players may consistently lose and get overly discouraged thereby losing interest.\n\nMath games with no choices, such as the game of War, can give fun ways for students to practice math skills, but their lack of problem solving limits their mathematical value.\n\nBeware providing games with artificial gamification. These teach students that math needs extrinsic rewards to be interesting. Strive to make the math be the reward."
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_info"
+    },
+    {
+      "type": "text",
+      "name": "help_button",
+      "value": "These classroom games also have specialty uses you may want to select.\n\n* **Tutoring:** These provide focused practice with a particular skill.\n* **Breaks:** These are quick to set up and play – ideal for short breaks.\n* **Home:** For families to play and practice at home skills being learned in class.",
+      "parameter_list": "icon_src: help; style:navigation"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_types",
+      "parameter_list": "style:column"
+    },
+    {
+      "name": "description_0",
+      "value": "All"
+    },
+    {
+      "name": "description_1",
+      "value": "Tutoring"
+    },
+    {
+      "name": "description_2",
+      "value": "Breaks"
+    },
+    {
+      "name": "description_3",
+      "value": "Home"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_game_types",
+      "parameter_list": "style:column",
+      "style_list": "margin-top: -12px;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_first_pair_game_types"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "checkbox_all",
+      "value": true,
+      "parameter_list": "true_text: @local.description_0;\nfalse_text: @local.description_0;"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "checkbox_tutoring",
+      "value": false,
+      "parameter_list": "true_text: @local.description_1;\nfalse_text: @local.description_1;\n"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_second_pair_game_types"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "checkbox_breaks",
+      "value": false,
+      "parameter_list": "true_text: @local.description_2;\nfalse_text: @local.description_2;\n"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "checkbox_home",
+      "value": false,
+      "parameter_list": "true_text: @local.description_3;\nfalse_text: @local.description_3;\n"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "text",
+      "name": "blank",
+      "style_list": "flex: 1"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_spacer"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_ga_levels",
+      "parameter_list": "style:column",
+      "style_list": "margin-top: -10px;"
+    },
+    {
+      "type": "text",
+      "name": "ga_level_intro",
+      "value": "Select general levels to view."
+    },
+    {
+      "name": "desc_all",
+      "value": "All"
+    },
+    {
+      "name": "desc_00",
+      "value": "Level 00"
+    },
+    {
+      "name": "desc_0",
+      "value": "Level 0"
+    },
+    {
+      "name": "desc_1",
+      "value": "Level 1"
+    },
+    {
+      "name": "desc_2",
+      "value": "Level 2"
+    },
+    {
+      "name": "desc_3",
+      "value": "Level 3"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_ga_level_groups",
+      "parameter_list": "style:column",
+      "style_list": "margin-top: -4px;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_ga_level_groups_1"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "checkbox_level_all",
+      "value": true,
+      "parameter_list": "true_text: @local.desc_all;\nfalse_text: @local.desc_all;"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "checkbox_level_00",
+      "value": false,
+      "parameter_list": "true_text: @local.desc_00;\nfalse_text: @local.desc_00;"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "checkbox_level_0",
+      "value": false,
+      "parameter_list": "true_text: @local.desc_0;\nfalse_text: @local.desc_0;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_ga_level_groups_2"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "checkbox_level_1",
+      "value": false,
+      "parameter_list": "true_text: @local.desc_1;\nfalse_text: @local.desc_1;"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "checkbox_level_2",
+      "value": false,
+      "parameter_list": "true_text: @local.desc_2;\nfalse_text: @local.desc_2;"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "checkbox_level_3",
+      "value": false,
+      "parameter_list": "true_text: @local.desc_3;\nfalse_text: @local.desc_3;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "text",
+      "name": "blank",
+      "style_list": "flex: 1"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_spacer"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "name": "now",
+      "value": "@calc(timestamp())",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "ga_click_history",
+      "value": "_ga_click_history",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_galist",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "begin_items",
+      "name": "activity_buttons",
+      "value": "@data.efm_gas"
+    },
+    {
+      "name": "ga_id",
+      "value": "@item.id"
+    },
+    {
+      "name": "ok_tutoring",
+      "value": "@local.checkbox_tutoring && @item.tutoring"
+    },
+    {
+      "name": "ok_breaks",
+      "value": "@local.checkbox_breaks && @item.breaks"
+    },
+    {
+      "name": "ok_home",
+      "value": "@local.checkbox_home && @item.home"
+    },
+    {
+      "name": "its_an_okay_type",
+      "value": "@local.checkbox_all || @local.ok_tutoring || @local.ok_breaks || @local.ok_home"
+    },
+    {
+      "name": "ok_level_00",
+      "value": "@local.checkbox_level_00 && @item.LPK"
+    },
+    {
+      "name": "ok_level_0",
+      "value": "@local.checkbox_level_0 && @item.LK"
+    },
+    {
+      "name": "ok_level_1",
+      "value": "@local.checkbox_level_1 && @item.L1"
+    },
+    {
+      "name": "ok_level_2",
+      "value": "@local.checkbox_level_2 && @item.L2"
+    },
+    {
+      "name": "ok_level_3",
+      "value": "@local.checkbox_level_3 && @item.L3"
+    },
+    {
+      "name": "its_an_okay_level",
+      "value": "@local.checkbox_level_all || @local.ok_level_00 || @local.ok_level_0 || @local.ok_level_1 || @local.ok_level_2 || @local.ok_level_3"
+    },
+    {
+      "name": "its_okay",
+      "value": "@local.its_an_okay_type && @local.its_an_okay_level"
+    },
+    {
+      "name": "its_an_okay_game",
+      "value": "@local.its_an_okay_type"
+    },
+    {
+      "name": "debug1",
+      "value": "Type OK: @local.its_an_okay_type"
+    },
+    {
+      "name": "debug2",
+      "value": "Level OK: @local.its_an_okay_level"
+    },
+    {
+      "name": "debug3",
+      "value": "OK: @local.its_okay"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_okay_games",
+      "condition": "@local.its_okay",
+      "parameter_list": "style: column"
+    },
+    {
+      "name": "click_history_field_name",
+      "value": "@local.ga_id@local.ga_click_history",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "gas_click_history",
+      "value": "@fields.@local.click_history_field_name ;  @local.now",
+      "condition": "!!(@fields.@local.click_history_field_name)",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "gas_click_history",
+      "value": "@local.now",
+      "condition": "!(@fields.@local.click_history_field_name)",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button_ga",
+      "value": "@item.name",
+      "action_list": "click | set_field:current_ga: data.efm_gas.@item.id;\nclick | go_to: efm_ga_template;\nclick | set_field:@local.click_history_field_name: @local.gas_click_history",
+      "parameter_list": "style: short; \ntext_align: center",
+      "comments": "click | set_field.current_ga: data.efm_gas.@item.id;\nclick | go_to: efm_ga_template;\nclick | set_field:@local.click_history_field_name: @local.gas_click_history"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "fake_group",
+      "style_list": "margin-top: 40px;"
+    },
+    {
+      "type": "text",
+      "name": "spacer"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

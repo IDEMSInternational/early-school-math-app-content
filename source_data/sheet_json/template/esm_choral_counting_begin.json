@@ -1,0 +1,177 @@
+{
+  "flow_type": "template",
+  "flow_name": "esm_choral_counting_begin",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_display_group",
+      "name": "dg_top_of_page"
+    },
+    {
+      "type": "title",
+      "name": "spacer",
+      "value": "Choral Counting",
+      "style_list": "flex:1"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_info"
+    },
+    {
+      "type": "text",
+      "name": "help_text",
+      "value": "Choral counting involves a teacher leading students to count aloud together. The teacher often records each number on a board as the number is spoken. The teacher decides on a skip count amount, whether to count up or down, a number to start on, and sometimes a number to end on.",
+      "parameter_list": "icon_src: help; style:navigation"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_advice",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion_for_intro",
+      "parameter_list": "open_multiple:TRUE;",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_topics",
+      "value": "Topics & Goals",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_topics_accord",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "topics_text",
+      "value": "This activity can involve much deeper math practice than just rote counting. Writing the numbers on the board allows the students to look for patterns. It allows them to practice predicting and reasoning about which number should come next. Ask them \"What comes next?\" and \"Why do you think that is true?\"\n\nSkip counting is valuable for developing many skills.\n* Counting On – Count forward by 1s starting anywhere. This helps with beginning addition.\n* Counting Down by 1s – Helps with understanding the number order more deeply, and it also helps with beginning subtraction.\n* Skip Counting up or down – Helps with mental addition and subtraction. It also helps with multiplication and division.",
+      "parameter_list": "icon_src: help; style:navigation"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_advice",
+      "value": "Teaching Ideas & Directions",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_advice_accord",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "advice_text",
+      "value": "**Many Modes** There are quite a few modes that choral counting can be done in. Here is a good progression to use as your students gain more confidence in their counting.\n* Use a Number Path / Number Line or 100 Number Chart as a nearby visual reference.\n* Use a Group of Objects\n* Count the Students - Line up the students in 1s, 2s, or whatever the skip count is. Count them as they walk through a doorway or any special place. Have a few walk through first and start with that number, if you don't want to start at 0.\n* Count abstractly. As your students get better at this, do the counting sometimes without reference to anything.\n\n**Estimates** Sometimes, when counting a group of objects, ask the students to first estimate how many there are and write that estimate on the board. Line up the objects in 2s, 3s, or whatever you like to practice skip counting by that many.\n\n**Varied Start Points** Don't always start or end at 0. Also, when skip counting, don't always start at a multiple of the skip amount. Otherwise, you will always just count multiples of the skip amount and say the same number sequence every time.\n\nWhen counting things, sometimes count a set of them and put that group in a special pile to start with. For example, if you are counting 15 pebbles by 2s, sometimes start by counting out 5 of them and put them in a pile. Then count the remaining ones by starting at 5 – 5, 7, 9, 11, 13, 15.\n\n**Counting Down** Counting down is just as important as up, so please give it equal time.",
+      "parameter_list": "icon_src: help; style:navigation"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_choral_count_talks",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "intro_2_text",
+      "value": "During and after the counting, have students look for patterns and come up with ideas for what causes them."
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion_for_choral_count_groups",
+      "parameter_list": "open_multiple:TRUE;",
+      "comments": true
+    },
+    {
+      "type": "begin_items",
+      "name": "choral_counting_accordions",
+      "value": "@data.esm_choral_counting_data_list"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_@item.id",
+      "value": "@item.name",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_@item.id",
+      "parameter_list": "style: column"
+    },
+    {
+      "name": "content_ptr",
+      "value": "data.esm_choral_counting_data_list.@item.id"
+    },
+    {
+      "type": "begin_template",
+      "name": "choral_counting_body_maker",
+      "value": "esm_page_viewer"
+    },
+    {
+      "name": "esm_content_ptr",
+      "value": "@@local.content_ptr"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "fake_group",
+      "style_list": "margin-top: 40px;"
+    },
+    {
+      "type": "text",
+      "name": "spacer"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

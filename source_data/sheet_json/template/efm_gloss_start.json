@@ -1,0 +1,271 @@
+{
+  "flow_type": "template",
+  "flow_name": "efm_gloss_start",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_display_group",
+      "name": "dg_top_of_page"
+    },
+    {
+      "type": "title",
+      "name": "spacer",
+      "value": "Glossary"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_help",
+      "condition": false
+    },
+    {
+      "type": "round_button",
+      "name": "help_button",
+      "action_list": "click | start_tour: esm_glossary_tour",
+      "condition": false,
+      "parameter_list": "icon_src: help; style:navigation"
+    },
+    {
+      "type": "end_display_group",
+      "condition": false
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_info"
+    },
+    {
+      "type": "text",
+      "name": "Intro_text",
+      "value": "When arriving from a topic, you will see the glossary words associated with that topic, if any have been specified.",
+      "parameter_list": "icon_src: help; style:navigation"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_all_or_some"
+    },
+    {
+      "name": "phrase_count",
+      "value": "@fields.glossary_words_count"
+    },
+    {
+      "type": "set_field",
+      "name": "glossary_words_count",
+      "value": "@fields.glossary_words_count - @fields.glossary_words_count"
+    },
+    {
+      "name": "see_all_phrases",
+      "value": "@local.phrase_count == 0"
+    },
+    {
+      "type": "button",
+      "name": "see_all_button",
+      "value": "See All Phrases",
+      "action_list": "click | set_local:see_all_phrases:TRUE;\nclick | emit:force_reload;",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "name": "description_1",
+      "value": "See all phrases",
+      "condition": false
+    },
+    {
+      "type": "toggle_bar",
+      "name": "checkbox_see_all_phrases",
+      "value": "@local.see_all_phrases",
+      "condition": false,
+      "parameter_list": "true_text: @local.description_1;\nfalse_text: @local.description_1;",
+      "comments": "changed | emit:force_reload"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "name": "comment_a",
+      "value": "If glossar words are in fields, then only use them"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_glossary_block_some",
+      "condition": "!@local.see_all_phrases",
+      "parameter_list": "style: column;"
+    },
+    {
+      "name": "gloss_word_1",
+      "value": "@fields.glossary_word_1"
+    },
+    {
+      "name": "gloss_word_2",
+      "value": "@fields.glossary_word_2"
+    },
+    {
+      "name": "gloss_word_3",
+      "value": "@fields.glossary_word_3"
+    },
+    {
+      "name": "gloss_word_4",
+      "value": "@fields.glossary_word_4"
+    },
+    {
+      "name": "gloss_word_5",
+      "value": "@fields.glossary_word_5"
+    },
+    {
+      "name": "gloss_word_6",
+      "value": "@fields.glossary_word_6"
+    },
+    {
+      "type": "begin_items",
+      "name": "word_list",
+      "value": "@data.esm_glossary",
+      "parameter_list": "style: column;",
+      "style_list": "margin-top: 10px;"
+    },
+    {
+      "name": "same_phrase_1",
+      "value": "@item.phrase == @local.gloss_word_1"
+    },
+    {
+      "name": "same_phrase_2",
+      "value": "@item.phrase == @local.gloss_word_2"
+    },
+    {
+      "name": "same_phrase_3",
+      "value": "@item.phrase == @local.gloss_word_3"
+    },
+    {
+      "name": "same_phrase_4",
+      "value": "@item.phrase == @local.gloss_word_4"
+    },
+    {
+      "name": "same_phrase_5",
+      "value": "@item.phrase == @local.gloss_word_5"
+    },
+    {
+      "name": "same_phrase_6",
+      "value": "@item.phrase == @local.gloss_word_6"
+    },
+    {
+      "name": "use_entry",
+      "value": "@local.same_phrase_1 || @local.same_phrase_2 || @local.same_phrase_3 || @local.same_phrase_4 || @local.same_phrase_5 || @local.same_phrase_6"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_glossary_entry",
+      "condition": "@local.use_entry",
+      "parameter_list": "style: column;"
+    },
+    {
+      "type": "text",
+      "name": "title_phrase",
+      "value": "**@item.phrase**",
+      "style_list": "margin-top: -10px; color: red;"
+    },
+    {
+      "type": "begin_template",
+      "name": "glossary_entry_creator",
+      "value": "esm_glossary_entry_display",
+      "style_list": "margin-top: -10px;"
+    },
+    {
+      "name": "content_ptr",
+      "value": "data.esm_glossary.@item.id"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "image",
+      "name": "glossary_line",
+      "value": "ESMIll/ESM0GlossaryDividingLine.svg",
+      "condition": false,
+      "style_list": "margin-top: 4px;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "name": "commont_b",
+      "value": "dispaly all glossary entries"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_glossary_block_all",
+      "condition": "@local.see_all_phrases",
+      "parameter_list": "style: column;"
+    },
+    {
+      "type": "begin_items",
+      "name": "word_list",
+      "value": "@data.esm_glossary",
+      "parameter_list": "style: column;",
+      "style_list": "margin-top: 10px;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_glossary_entry",
+      "parameter_list": "style: column;"
+    },
+    {
+      "type": "text",
+      "name": "title_phrase",
+      "value": "**@item.phrase**",
+      "style_list": "margin-top: -4px; color: red;"
+    },
+    {
+      "type": "begin_template",
+      "name": "glossary_entry_creator",
+      "value": "esm_glossary_entry_display",
+      "style_list": "margin-top: -10px;"
+    },
+    {
+      "name": "content_ptr",
+      "value": "data.esm_glossary.@item.id"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "fake_group",
+      "style_list": "margin-top: 10px;"
+    },
+    {
+      "type": "image",
+      "name": "glossary_line",
+      "value": "ESMIll/ESM0GlossaryDividingLine.svg",
+      "condition": false
+    },
+    {
+      "type": "text",
+      "name": "spacer"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

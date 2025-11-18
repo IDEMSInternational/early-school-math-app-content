@@ -1,0 +1,19 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "language_data_list",
+  "data_list_name": "language",
+  "status": "released",
+  "flow_subtype": "app_config_language_list",
+  "rows": [
+    {
+      "id": "us_en",
+      "country_code": "us",
+      "country_label": "United States",
+      "language_code": "en",
+      "language_label": "English",
+      "name": "@row.id",
+      "text": "@row.language_label",
+      "comments": "Country code given by alpha-2\nhttps://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes"
+    }
+  ]
+}

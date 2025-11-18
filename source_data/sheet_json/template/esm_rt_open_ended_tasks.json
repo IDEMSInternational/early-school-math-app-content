@@ -1,0 +1,216 @@
+{
+  "flow_type": "template",
+  "flow_name": "esm_rt_open_ended_tasks",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_display_group",
+      "name": "dg_top_of_page"
+    },
+    {
+      "type": "title",
+      "name": "spacer",
+      "value": "Open-Ended Tasks",
+      "style_list": "flex:1"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_info",
+      "parameter_list": "style: column;"
+    },
+    {
+      "type": "text",
+      "name": "oe_intro_text_1",
+      "value": "These are questions that are often broadly focused, may have many variations, and do not necessarily have a small set of answers The point is to invite exploration and play, and then for students to look for interesting new places to take the inquiry to.\n\nThese two tabs have notes on using the material from the Routines and Puzzles sections as Open-Ended tasks,"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_oe_routines_puzzles",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion_for_oe_examples",
+      "parameter_list": "open_multiple:TRUE;",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_oe_routines",
+      "value": "Groups of Routines",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_oe_routines",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "intro_oe_routines_1",
+      "value": "Routines are intended to be 2 to 10 minute activities. However, they can be grouped to create open-ended explorations and good discussions of various topics. For example, a progression of Dot Cards can be used to emphasize a particular topic about quantities, subitizing, and unitizing.\n\nGo to the Routines section to find routines on any topic."
+    },
+    {
+      "type": "button",
+      "name": "button_routines",
+      "value": "Routines",
+      "action_list": "click | go_to: efm_routines_start;",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_oe_puzzles",
+      "value": "Puzzles",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_oe_puzzles",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "intro_oe_puzzles_1",
+      "value": "Many of the EFM math puzzles provide excellent rich tasks. Look for interesting observations and new directions to explore along the road to solving a puzzle. Each EFM puzzle comes with ideas for further exploration. Encourage your students to see each puzzle as the beginning of a mathematical journey.\n\n**Eye Openers versus Puzzlers** The Puzzles section has these two types of puzzles. Eye Openers are generally shorter fresh-thinking activities, though they can be made longer by having group work and deeper discussions. Puzzlers may take more than one lesson, and they naturally lend themselves to much exploration.\n\nGo to the Puzzles section to find puzzles on any topic."
+    },
+    {
+      "type": "button",
+      "name": "button_oe_pows",
+      "value": "Puzzles",
+      "action_list": "click | go_to: efm_pow_start;",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "text",
+      "name": "oe_intro_text_2",
+      "value": "**Sources:** We have used many Thinking Tasks from Peter Liljedahl's books on Thinking Classrooms and from Mike Fitchett's Open-Ended Math Tasks notebook.\n\n**By Topic:** The tasks are separated into progressive math topics. Some of these are open ended in the sense that they invite creating many examples of similar challenges. Use the creation of examples, and the comparing of strategies, as a road to many interesting discussions."
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_oe_examples",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion_for_oe_examples",
+      "parameter_list": "open_multiple:TRUE;",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_oe_counting",
+      "value": "Early Logic and Counting",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_oe_counting",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "begin_items",
+      "name": "oe_counting",
+      "value": "@data.esm_open_ended_tasks_data_list",
+      "parameter_list": "filter: @item.type==\"early_logic_counting\""
+    },
+    {
+      "type": "button",
+      "name": "button_@item.id",
+      "value": "@item.name",
+      "action_list": "click | set_field:oe_content_ptr : data.esm_open_ended_tasks_data_list.@item.id;\nclick | go_to: esm_oe_displayer;",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_oe_logic",
+      "value": "Count, Add, Subtract",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_oe_logic",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "begin_items",
+      "name": "oe_logic",
+      "value": "@data.esm_open_ended_tasks_data_list",
+      "parameter_list": "filter: @item.type==\"medium_counting_add_sub\""
+    },
+    {
+      "type": "button",
+      "name": "button_@item.id",
+      "value": "@item.name",
+      "action_list": "click | set_field:oe_content_ptr : data.esm_open_ended_tasks_data_list.@item.id;\nclick | go_to: esm_oe_displayer;",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "fake_group",
+      "style_list": "margin-top: 40px;"
+    },
+    {
+      "type": "text",
+      "name": "spacer"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

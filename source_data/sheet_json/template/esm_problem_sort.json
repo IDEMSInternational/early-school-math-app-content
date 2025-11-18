@@ -1,0 +1,177 @@
+{
+  "flow_type": "template",
+  "flow_name": "esm_problem_sort",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_display_group",
+      "name": "dg_top_of_page"
+    },
+    {
+      "type": "title",
+      "name": "spacer",
+      "value": "Problem Sort",
+      "style_list": "flex:1"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_info"
+    },
+    {
+      "type": "text",
+      "name": "help_text",
+      "value": "Present a group of three to six problems all at once for your students to sort from easiest to hardest. Discuss the reasoning behind the sorting order, and then discuss the methods they used to do the problems. Where in the sequence did students stop being able to do the problems in their heads and why.",
+      "parameter_list": "icon_src: help; style:navigation"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_advice",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion_for_intro",
+      "parameter_list": "open_multiple:TRUE;",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_topics",
+      "value": "Topics & Goals",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_topics_accord",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "topics_text",
+      "value": "In doing this routine, students become more aware of the stretegies they use. You and they also learn about their limitations and where new strategies would be useful. In addition to generating interesting and fun discussions, it also promotes introspection in your students.",
+      "parameter_list": "icon_src: help; style:navigation"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_advice",
+      "value": "Teaching Ideas & Directions",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_advice_accord",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "advice_text",
+      "value": "Present four to six mental math problems that are increasingly difficult. Mix them up and show them all at the same time so it is not obvious which problems will be hardest. After a minute of quiet inspection, students discuss and rank these from easiest to hardest. Next, students solve the problems and compare their methods and answers.\n\nKnowing which problems your students have trouble with points the way to skills to work on or introduce in the near future.",
+      "parameter_list": "icon_src: help; style:navigation"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_prob_string_talks",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "intro_text",
+      "value": "Here are sequences of problems to sort, solve, and discuss."
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion_for_prob_sort_groups",
+      "parameter_list": "open_multiple:TRUE;",
+      "comments": true
+    },
+    {
+      "type": "begin_items",
+      "name": "problem_sort_accordions",
+      "value": "@data.esm_problem_sort_data_list"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_@item.id",
+      "value": "@item.name",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_@item.id",
+      "parameter_list": "style: column"
+    },
+    {
+      "name": "content_ptr",
+      "value": "data.esm_problem_sort_data_list.@item.id"
+    },
+    {
+      "type": "begin_template",
+      "name": "problem_sort_body_maker",
+      "value": "esm_page_viewer"
+    },
+    {
+      "name": "esm_content_ptr",
+      "value": "@@local.content_ptr"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "fake_group",
+      "style_list": "margin-top: 40px;"
+    },
+    {
+      "type": "text",
+      "name": "spacer"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

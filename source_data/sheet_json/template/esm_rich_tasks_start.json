@@ -1,0 +1,115 @@
+{
+  "flow_type": "template",
+  "flow_name": "esm_rich_tasks_start",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_display_group",
+      "name": "dg_top_of_page"
+    },
+    {
+      "type": "title",
+      "name": "spacer",
+      "value": "Rich Tasks"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_help",
+      "condition": false
+    },
+    {
+      "type": "round_button",
+      "name": "help_button",
+      "action_list": "click | start_tour: esm_rich_tasks_tour",
+      "condition": false,
+      "parameter_list": "icon_src: help; style:navigation"
+    },
+    {
+      "type": "end_display_group",
+      "condition": false
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_info",
+      "parameter_list": "style: column;"
+    },
+    {
+      "type": "text",
+      "name": "help_text",
+      "value": "**Rich tasks** These tasks dive deeply into material using flexible and engaging explorations taking 1 to 3 class periods.\n\n**Open-Ended versus Problem-Solving Tasks** Open-ended tasks explore with more loosely-defined endpoints in mind and with a greater range of possible answers along the way.  Problem-solving tasks have very well-defined goals and usually just a small set of answers. Both types invite lots of exploration, play, and discussion, and there is overlap between the two.\n\n**Journeys** All rich tasks provide opportunities for further explorations. Which questions do your students think of along the way and at the end? Keep track of their questions and use them as further tasks to be pursued. This give your students deeper experiences as mathematicians, and it gives them more agency and engagement. ",
+      "parameter_list": "icon_src: help; style:navigation"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_advice",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion_for_rt_categories",
+      "parameter_list": "open_multiple:TRUE;",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_advice",
+      "value": "Directions and Observations",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_advice_accord",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "advice_text",
+      "value": "**Counterexamples** This game is a good first step for doing rich tasks. Deepen any task by having students conjecture about what is going on. If they are accustomed to discussing conjectures and their counterexamples, they can approach this playfully and cooperatively.\n\n**Relaxed Discussions** Don't tightly control the discussions. You are not the answer key. Be open to hearing student ideas and follow them as possible. They may have interesting variations they want to pursue, and giving them agency will greatly increase their engagement. Develop a culture where students are not afraid to share ideas and take risks, where partial answers are valued, where mistakes are okay and are steps to possible answers, and where the group acts together to explore and learn math together.\n\n**Patience and Persistence** Model these for your students by not insisting on always coming up with an answer immediately. Let your students see that it is not only okay, it's a good thing, to come back to a puzzle the next day or even the next week. You can have a list of puzzles started and unanswered to highlight that this is an interesting challenge."
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "button",
+      "name": "button_open_ended_tasks",
+      "value": "Open-Ended Tasks",
+      "action_list": "click | go_to: esm_rt_open_ended_tasks;",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "button",
+      "name": "button_ps_tasks",
+      "value": "Problem Solving Tasks",
+      "action_list": "click | go_to: esm_rt_ps_tasks",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "fake_group"
+    },
+    {
+      "type": "text",
+      "name": "spacer"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "flow_type": "template",
+  "flow_name": "esm_standards_viewer",
+  "status": "released",
+  "rows": [
+    {
+      "name": "esm_content_ptr",
+      "comments": true
+    },
+    {
+      "name": "remove_paragraph_space",
+      "value": "margin-top: -5px",
+      "comments": true
+    },
+    {
+      "name": "paragraph_space",
+      "value": "margin-top: 0px",
+      "comments": true
+    },
+    {
+      "name": "topic1_ptr",
+      "value": "local.esm_content_ptr.topic_theme_1"
+    },
+    {
+      "name": "topic1",
+      "value": "@@local.topic1_ptr"
+    },
+    {
+      "name": "standard_chars",
+      "value": "NONE"
+    },
+    {
+      "name": "standard_chars",
+      "value": "ccssm_standards",
+      "condition": "@fields.curriculum_standard_abbrev == \"CCSSM\""
+    },
+    {
+      "name": "standard_chars",
+      "value": "teks_standards",
+      "condition": "@fields.curriculum_standard_abbrev == \"TEKS\""
+    },
+    {
+      "name": "standard_chars",
+      "value": "ac9m_standards",
+      "condition": "@fields.curriculum_standard_abbrev == \"AC9M\""
+    },
+    {
+      "name": "standard_chars",
+      "value": "uk20_standards",
+      "condition": "@fields.curriculum_standard_abbrev == \"UK20\""
+    },
+    {
+      "name": "topic_theme_base_chars",
+      "value": "topic_theme_"
+    },
+    {
+      "name": "viewable_standard_not_seen",
+      "value": "@local.standard_chars == \"NONE\""
+    },
+    {
+      "name": "display_standard",
+      "value": "@local.topic1 && !@local.viewable_standard_not_seen"
+    },
+    {
+      "name": "standards_set",
+      "value": "@calc(new Set())"
+    },
+    {
+      "name": "standards_array"
+    },
+    {
+      "name": "standards_string"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_all_standard_steps",
+      "condition": "@local.display_standard",
+      "parameter_list": "style: column;",
+      "style_list": "margin-top: -10px;"
+    },
+    {
+      "name": "added_something",
+      "value": false
+    },
+    {
+      "type": "begin_items",
+      "name": "run_through_topics_a",
+      "value": "@data.efm_num_list_one_to_ten"
+    },
+    {
+      "name": "topic_theme_chars",
+      "value": "@local.topic_theme_base_chars@item.number"
+    },
+    {
+      "name": "theme_ptr",
+      "value": "local.esm_content_ptr.@local.topic_theme_chars"
+    },
+    {
+      "name": "topic_theme",
+      "value": "@@local.theme_ptr"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_process_topic",
+      "condition": "@local.topic_theme"
+    },
+    {
+      "name": "topic_row",
+      "value": "data.esm_topics.@local.topic_theme"
+    },
+    {
+      "name": "topic_standards",
+      "value": "@@local.topic_row.@local.standard_chars"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "process_teks",
+      "condition": "@local.topic_standards",
+      "parameter_list": "style: column;"
+    },
+    {
+      "name": "added_something",
+      "value": true
+    },
+    {
+      "name": "this_standards_array",
+      "value": "@calc(@local.topic_standards.split(\",\"))"
+    },
+    {
+      "name": "this_standards_set",
+      "value": "@calc(new Set(@local.this_standards_array))"
+    },
+    {
+      "type": "text",
+      "name": "deeebug",
+      "value": "@fields.curriculum_standard_abbrev Array: @local.this_standards_array",
+      "condition": false
+    },
+    {
+      "name": "standards_set",
+      "value": "@calc(@local.standards_set.union(@local.this_standards_set))"
+    },
+    {
+      "name": "standards_array",
+      "value": "@calc(Array.from(@local.standards_set))"
+    },
+    {
+      "type": "text",
+      "name": "debugg",
+      "value": "Topic @fields.curriculum_standard_abbrev: @local.topic_standards",
+      "condition": false
+    },
+    {
+      "name": "standards_array",
+      "value": "@calc(@local.standards_array.sort())"
+    },
+    {
+      "name": "standards_string",
+      "value": "@calc(@local.standards_array.join(', '))"
+    },
+    {
+      "type": "text",
+      "name": "deebug_string",
+      "value": "String: @local.standards_string",
+      "condition": false
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "text",
+      "name": "output",
+      "value": "@fields.curriculum_standard_abbrev: @local.standards_array",
+      "condition": false
+    },
+    {
+      "type": "text",
+      "name": "output2",
+      "value": "@fields.curriculum_standard_abbrev: @local.standards_string",
+      "condition": "@local.added_something"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

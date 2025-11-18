@@ -1,0 +1,22 @@
+{
+  "flow_type": "template",
+  "flow_name": "esm_glossary_entry_display",
+  "status": "released",
+  "rows": [
+    {
+      "name": "content_ptr"
+    },
+    {
+      "type": "begin_template",
+      "name": "glossary_body",
+      "value": "esm_page_viewer"
+    },
+    {
+      "name": "esm_content_ptr",
+      "value": "@@local.content_ptr"
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}

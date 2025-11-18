@@ -1,0 +1,58 @@
+{
+  "flow_type": "template",
+  "flow_name": "esm_short_games_counting",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_display_group",
+      "name": "dg_top_of_page"
+    },
+    {
+      "type": "title",
+      "name": "spacer",
+      "value": "Short Math Games – Counting",
+      "style_list": "flex:1"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_info",
+      "parameter_list": "style: column;"
+    },
+    {
+      "type": "text",
+      "name": "intro_text",
+      "value": "These games take just a few minutes, and many are active. Learn more about them by selecting the button below, then selecting \"Breaks\" and deselecting \"All.\""
+    },
+    {
+      "type": "button",
+      "name": "button_to_games",
+      "value": "Go To Games",
+      "action_list": "click | go_to: efm_ga_start;",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "text",
+      "name": "help_text",
+      "value": "* **High Fives and More** – Students give the right number of high fives to other students.\n* **I'm Thinking of a Number** – 2-players – one person thinks of a number; the other asks questions to find it (written or verbal).\n* **Line 'em Up** – With numbers on their backs, students line up in numerical order.\n* **Rolly Poly** – Randomly choose an action and how many times to do it.\n* **Smallest Single Number** – whole class – A quick counting game.",
+      "parameter_list": "icon_src: help; style:navigation"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "fake_group",
+      "style_list": "margin-top: 40px;"
+    },
+    {
+      "type": "text",
+      "name": "spacer"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

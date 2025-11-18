@@ -1,0 +1,149 @@
+{
+  "flow_type": "template",
+  "flow_name": "esm_intro_start_start",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_display_group",
+      "name": "dg_top_of_page"
+    },
+    {
+      "type": "title",
+      "name": "spacer",
+      "value": "Welcome!"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_help",
+      "condition": false
+    },
+    {
+      "type": "round_button",
+      "name": "help_button",
+      "action_list": "click | start_tour: esm_intro_start_tour;",
+      "condition": false,
+      "parameter_list": "icon_src: help; style:navigation"
+    },
+    {
+      "type": "end_display_group",
+      "condition": false
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_intro",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "greeting_message",
+      "value": "We hope you enjoy this app by Early Family Math. Please send feedback to Chris@EarlyFamilyMath.org.",
+      "style_list": "margin-top: -4px;"
+    },
+    {
+      "type": "title",
+      "name": "intro",
+      "value": "Introduction"
+    },
+    {
+      "type": "text",
+      "name": "intro_text",
+      "value": "This app has two entry points on the home page.",
+      "style_list": "margin-top: -4px;"
+    },
+    {
+      "type": "text",
+      "name": "intro_text",
+      "value": "**1. Topics**\n\nWe dividied early mathematics into topics from all the math standards. Each topic has a description with teaching tips. It also has links to a Glossary and a Resource Finder. There are two ways to see the topics.\n\n**Hierarchical View** The topics are listed by themes which are organiized into strands. This is also the place to choose the standard to use for viewing topics throughout the app.\n\n**Learning Pathways** This presents the topics as part of learning pathways.\n\n**2. Resources**\n* **Resource Finder** – Lists resources for a topic or group of topics\n* **Instructional Routines** – Groups of 1-10-minute tasks\n* **Rich Tasks** – 1-3-lesson activities going more deeply into a topic\n* **Puzzles**\n* **Games**\n* **Storybooks**\n* **Glossary** – Definitions and explanations of math terminology",
+      "style_list": "margin-top: -4px;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "intro_start_examples",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "title",
+      "name": "examples__intro",
+      "value": "Example Experiences"
+    },
+    {
+      "type": "text",
+      "name": "examples__intro",
+      "value": "These introduce many of this app's capabilities.",
+      "style_list": "margin-top: -4px;"
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accord_intro_start_egs",
+      "parameter_list": "open_multiple:TRUE;",
+      "comments": true
+    },
+    {
+      "type": "begin_items",
+      "name": "dot_talk_accordions",
+      "value": "@data.esm_intro_starts_egs_data_list"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_@item.id",
+      "value": "@item.name",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_@item.id",
+      "parameter_list": "style: column"
+    },
+    {
+      "name": "content_ptr",
+      "value": "data.esm_intro_starts_egs_data_list.@item.id"
+    },
+    {
+      "type": "begin_template",
+      "name": "example_body_maker",
+      "value": "esm_page_viewer"
+    },
+    {
+      "name": "esm_content_ptr",
+      "value": "@@local.content_ptr"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_create_spae",
+      "style_list": "margin-top: 30px;"
+    },
+    {
+      "name": "no_message",
+      "value": "fake"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

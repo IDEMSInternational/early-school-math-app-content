@@ -1,0 +1,177 @@
+{
+  "flow_type": "template",
+  "flow_name": "esm_splat_routines",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_display_group",
+      "name": "dg_top_of_page"
+    },
+    {
+      "type": "title",
+      "name": "spacer",
+      "value": "Splat!",
+      "style_list": "flex:1"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_info"
+    },
+    {
+      "type": "text",
+      "name": "help_text",
+      "value": "This is a collection of dot cards where one or more \"Splats\" cover some of the dots. The total number of dots, both covered and uncovered, is written in the upper right-hand corner of each card.",
+      "parameter_list": "icon_src: help; style:navigation"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_advice",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion_for_intro",
+      "parameter_list": "open_multiple:TRUE;",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_topics",
+      "value": "Topics & Goals",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_topics_accord",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "topics_text",
+      "value": "There are two major ideas that Splats develop, and they are the same as for Dot Talks:\n\n* **Subitizing** is the ability to \"instantly\" see the size of small groups. It builds quantity recognition and saves time while counting. Recognizing small groups also starts unitizing those groups. \n* **Unitizing** is seeing a group of items as a single new kind of thing. It is an important developmental step and may take time. Unitizing groups of 10 is central to understanding place value. Unitizing also helps with Counting On and beginning addition.\n\nSplats also help with learning Counting, Counting On, Addition, Subtraction, Part-whole relationship, and Fact Families.",
+      "parameter_list": "icon_src: help; style:navigation"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_advice",
+      "value": "Teaching Ideas & Directions",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_advice_accord",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "advice_text",
+      "value": "This uses the idea of Splat! routines from Steve Wyborney. The total number of dots is written in the upper right-hand corner. The Splats you use should be opaque. When there are several Splats, all Splats with the same color must have the same value, and Splats with different colors must have different values.\n\n**Other Presentations** While using \"Splats\" is an engaging, playful way to present these ideas to students, there are lots of equivalent ways to do this that can be playful. You can use anything you have handy to cover some of the dots. Some examples are a plate, a cup, or your hand, You can use physical objects such as beans or stones, and you can grab some of the objects in a closed hand.\n\nFor **Single Splats,** start by showing your students the card with the Splat removed and count all the dots together. After counting, place the Splat over some of the dots. As a child matures with this activity, skip the first step and start with all the Splats in place.\n\n**Another story** for Single Splats is: \"I have ... I wish I had.\" Show the Splat on the card and say that \"you have\" the number of dots showing. Then say \"I wish I had\" the total of dots shown in the corner of the card. How many more dots do you need to get what you wish you had?\n\nFor **Double Splats,** initially mentally group the Splats together and proceed as you would with a Single Splat. Once your students figure out what must be in the combination of the Splats, then figure out how that amount should be apportioned to the Splats individually. For two colors, after you remove one Splat ask what must be under the other Splat. If you have a student with color blindness, use different shades of gray or different designs on the Splats.\n\n**The guiding questions:** These questions, and the discussions they generate, are the best part of doing Splats.\n\n1. How many dots can you see?\n2. What is the total number of dots?\n3. How many dots are covered by the Splat? How do you know?\n4. Think of many other ways to figure that out or confirm it.\n5. Uncover a Splat and check to see if that works.\n\nThe \"How do you know?\" part of step 3 is where the fun begins. The exploration in step 4 is where a lot of good stuff can happen. When there is more than one possible answer, discuss how to find all the answers.",
+      "parameter_list": "icon_src: help; style:navigation"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_splat_talks",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "intro_text",
+      "value": "The Splat talks are broken into levels of increasing mathematical skills."
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion_for_splat_categories",
+      "parameter_list": "open_multiple:TRUE;",
+      "comments": true
+    },
+    {
+      "type": "begin_items",
+      "name": "splat_accordions",
+      "value": "@data.esm_splats_data_list"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_@item.id",
+      "value": "@item.name",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_@item.id",
+      "parameter_list": "style: column"
+    },
+    {
+      "name": "content_ptr",
+      "value": "data.esm_splats_data_list.@item.id"
+    },
+    {
+      "type": "begin_template",
+      "name": "splat_body_maker",
+      "value": "esm_page_viewer"
+    },
+    {
+      "name": "esm_content_ptr",
+      "value": "@@local.content_ptr"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "fake_group",
+      "style_list": "margin-top: 40px;"
+    },
+    {
+      "type": "text",
+      "name": "spacer"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

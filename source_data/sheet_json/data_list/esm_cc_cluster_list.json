@@ -1,0 +1,320 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "esm_cc_cluster_list",
+  "data_list_name": "esm_cc_clusters",
+  "status": "released",
+  "rows": [
+    {
+      "id": "CC_FMT_EAA_",
+      "name::eng": "FMT.EAA: Early & Always",
+      "strand_id": "FMT",
+      "count": 6,
+      "topic_id_1": "FMT_EAA_EandO",
+      "topic_id_2": "FMT_EAA_FMTinH",
+      "topic_id_3": "FMT_EAA_FMTOA",
+      "topic_id_4": "FMT_EAA_FMTDC",
+      "topic_id_5": "FMT_EAA_FMTC",
+      "topic_id_6": "FMT_EAA_FMTPDA"
+    },
+    {
+      "id": "CC_FMT_RWC_",
+      "name::eng": "FMT.RWC: Read w/ Children",
+      "strand_id": "FMT",
+      "count": 2,
+      "topic_id_1": "FMT_RWC_DRP",
+      "topic_id_2": "FMT_RWC_DRV"
+    },
+    {
+      "id": "CC_CC_K_NNS_",
+      "name::eng": "K.CC.A: No. Names to 100",
+      "strand_id": "CC_CC",
+      "count": 2,
+      "topic_id_1": "NPV_QC10_CMQ10",
+      "topic_id_2": "NPV_QC10_WN10"
+    },
+    {
+      "id": "CC_CC_K_CQS_",
+      "name::eng": "K.CC.B: Count, Quant. to 10",
+      "strand_id": "CC_CC",
+      "count": 2,
+      "topic_id_1": "NPV_QC10_QC",
+      "topic_id_2": "NPV_QC10_Sub10"
+    },
+    {
+      "id": "CC_CC_K_CN_",
+      "name::eng": "K.CC.C: Compare No. to 10",
+      "strand_id": "CC_CC",
+      "count": 2,
+      "topic_id_1": "NPV_QC10_Comp10",
+      "topic_id_2": "NPV_QC10_Ordinals"
+    },
+    {
+      "id": "CC_OA_K_NAS_",
+      "name::eng": "K.OA.A: Nature of + & –",
+      "strand_id": "CC_OA",
+      "count": 1,
+      "topic_id_1": "NO_AS10_QAS"
+    },
+    {
+      "id": "CC_OA_1_ASP_",
+      "name::eng": "1.OA.A: Probs: + & – to 20",
+      "strand_id": "CC_OA",
+      "count": 1,
+      "topic_id_1": "PS_SWP_EASP"
+    },
+    {
+      "id": "CC_OA_1_RAS_",
+      "name::eng": "1.OA.B: Relate + & – to 20",
+      "strand_id": "CC_OA",
+      "count": 2,
+      "topic_id_1": "NO_AS10_AComm",
+      "topic_id_2": "NO_AS10_NBFF"
+    },
+    {
+      "id": "CC_OA_1_ASW20_",
+      "name::eng": "1.OA.C: + & – within 20",
+      "strand_id": "CC_OA",
+      "count": 11,
+      "topic_id_1": "NO_AS10_AS1and2",
+      "topic_id_2": "NO_AS10_ASto5",
+      "topic_id_3": "NO_AS10_AT",
+      "topic_id_4": "NO_AS10_ANT",
+      "topic_id_5": "NO_ASSD_AddFingers",
+      "topic_id_6": "NO_ASSD_SubFingers",
+      "topic_id_7": "NO_ASSD_ASto10",
+      "topic_id_8": "NO_ASSD_AS10",
+      "topic_id_9": "NO_ASSD_10BridgeA",
+      "topic_id_10": "NO_ASSD_10BridgeS",
+      "topic_id_11": "NO_ASSD_SD_Add_Sub"
+    },
+    {
+      "id": "CC_OA_1_ASE_",
+      "name::eng": "1.OA.D: Equats: + & – to 20",
+      "strand_id": "CC_OA",
+      "count": 1,
+      "topic_id_1": "PS_SWP_EASE"
+    },
+    {
+      "id": "CC_OA_2_ASP_",
+      "name::eng": "2.OA.A: Probs: + & – to 100",
+      "strand_id": "CC_OA",
+      "count": 1,
+      "topic_id_1": "PS_SWP_ASP"
+    },
+    {
+      "id": "CC_OA_2_ASW20_",
+      "name::eng": "2.OA.B: + & – within 20",
+      "strand_id": "CC_OA",
+      "count": 3,
+      "topic_id_1": "NO_ASSD_10BridgeA",
+      "topic_id_2": "NO_ASSD_10BridgeS",
+      "topic_id_3": "NO_ASSD_SD_Add_Sub"
+    },
+    {
+      "id": "CC_OA_2_EGM_",
+      "name::eng": "2.OA.C: Equal Grps => Mult",
+      "strand_id": "CC_OA",
+      "count": 1,
+      "topic_id_1": "NO_MSD_MultRep"
+    },
+    {
+      "id": "CC_OA_3_MDP_",
+      "name::eng": "3.OA.A: Probs: x & ÷ to 100",
+      "strand_id": "CC_OA",
+      "count": 1,
+      "topic_id_1": "PS_SWP_EMDP"
+    },
+    {
+      "id": "CC_OA_3_RMD_",
+      "name::eng": "3.OA.B: Relate x & ÷",
+      "strand_id": "CC_OA",
+      "count": 1,
+      "topic_id_1": "NO_MSD_MultCommutes"
+    },
+    {
+      "id": "CC_OA_3_MD100_",
+      "name::eng": "3.OA.C: x & ÷ within 100",
+      "strand_id": "CC_OA",
+      "count": 3,
+      "topic_id_1": "NO_MSD_Doubling",
+      "topic_id_2": "NO_MSD_Skipping",
+      "topic_id_3": "NO_MSD_AllSingles"
+    },
+    {
+      "id": "CC_OA_PS_",
+      "name::eng": "OA.PS: Problem Solving",
+      "strand_id": "CC_OA",
+      "count": 1,
+      "topic_id_1": "PS_SWP_MPS"
+    },
+    {
+      "id": "CC_OA_NT_",
+      "name::eng": "OA.NT: Number Theory",
+      "strand_id": "CC_OA",
+      "count": 5,
+      "topic_id_1": "NO_NT_EvenOdd",
+      "topic_id_2": "NO_NT_PowExp",
+      "topic_id_3": "NO_NT_Primes",
+      "topic_id_4": "NO_NT_Sieve",
+      "topic_id_5": "NO_NT_PrimeFactoring"
+    },
+    {
+      "id": "CC_NBT_K_PV19_",
+      "name::eng": "K.NBT.A: Place Val: 11 – 19",
+      "strand_id": "CC_NBT",
+      "count": 1,
+      "topic_id_1": "NPV_CPV100_PV20"
+    },
+    {
+      "id": "CC_NBT_1_ExC_",
+      "name::eng": "1.NBT.A: Count to 120",
+      "strand_id": "CC_NBT",
+      "count": 1,
+      "topic_id_1": "NPV_CPV100_CountPV100"
+    },
+    {
+      "id": "CC_NBT_1_UPV_",
+      "name::eng": "1.NBT.B: Place Val 2 Digit",
+      "strand_id": "CC_NBT",
+      "count": 4,
+      "topic_id_1": "NPV_CPV100_Count20",
+      "topic_id_2": "NPV_CPV100_Comp20",
+      "topic_id_3": "NPV_CPV100_Comp100",
+      "topic_id_4": "NPV_CPV100_CountPV100"
+    },
+    {
+      "id": "CC_NBT_1_ASPV_",
+      "name::eng": "1.NBT.C: Place Val + & – 2 Digit",
+      "strand_id": "CC_NBT",
+      "count": 4,
+      "topic_id_1": "NO_ASSD_PVto19",
+      "topic_id_2": "NO_DD_AS2and1",
+      "topic_id_3": "NO_DD_AS2noRegroup",
+      "topic_id_4": "NO_DD_AS2wRegroup"
+    },
+    {
+      "id": "CC_NBT_2_UPV_",
+      "name::eng": "2.NBT.A: Place Val 3 Digit",
+      "strand_id": "CC_NBT",
+      "count": 1,
+      "topic_id_1": "NPV_CPV100_CountPV100"
+    },
+    {
+      "id": "CC_NBT_2_ASPV_",
+      "name::eng": "2.NBT.B: Place Val + & – 3 Digit",
+      "strand_id": "CC_NBT",
+      "count": 2,
+      "topic_id_1": "NO_DD_AS2noRegroup",
+      "topic_id_2": "NO_DD_AS2wRegroup"
+    },
+    {
+      "id": "CC_NF_3_UFN_",
+      "name::eng": "3.NF.A: Fraction as Number",
+      "strand_id": "CC_NF",
+      "count": 2,
+      "topic_id_1": "FEP_EP_NMEP_Shapes",
+      "topic_id_2": "FEP_EP_NMEP_Sets"
+    },
+    {
+      "id": "CC_MD_K_DCM_",
+      "name::eng": "K.MD.A: Work with Meas.",
+      "strand_id": "CC_MD",
+      "count": 3,
+      "topic_id_1": "Meas_Early_Overview",
+      "topic_id_2": "Meas_Early_Comparing",
+      "topic_id_3": "Meas_Early_Units"
+    },
+    {
+      "id": "CC_MD_K_CCO_",
+      "name::eng": "K.MD.B: Classify & Count",
+      "strand_id": "CC_MD",
+      "count": 2,
+      "topic_id_1": "Meas_Early_Units",
+      "topic_id_2": "Data_CO_P"
+    },
+    {
+      "id": "CC_MD_1_ML_",
+      "name::eng": "1.MD.A: Meas. Lengths",
+      "strand_id": "CC_MD",
+      "count": 3,
+      "topic_id_1": "Meas_Early_Overview",
+      "topic_id_2": "Meas_Early_Comparing",
+      "topic_id_3": "Meas_Early_Units"
+    },
+    {
+      "id": "CC_MD_1_TWT_",
+      "name::eng": "1.MD.B: Time – Hours",
+      "strand_id": "CC_MD",
+      "count": 3,
+      "topic_id_1": "Meas_Time_PofD",
+      "topic_id_2": "Meas_Time_Cal",
+      "topic_id_3": "Meas_Time_TTH"
+    },
+    {
+      "id": "CC_MD_1_RID_",
+      "name::eng": "1.MD.C: Work with Data",
+      "strand_id": "CC_MD",
+      "count": 3,
+      "topic_id_1": "Data_Rep_P",
+      "topic_id_2": "Data_Graph_P",
+      "topic_id_3": "Data_Anal_P"
+    },
+    {
+      "id": "CC_MD_2_ML_",
+      "name::eng": "2.MD.A: Meas. Lengths",
+      "strand_id": "CC_MD",
+      "count": 1,
+      "topic_id_1": "Meas_Early_Units"
+    },
+    {
+      "id": "CC_MD_2_TM_",
+      "name::eng": "2.MD.C: Time & Money",
+      "strand_id": "CC_MD",
+      "count": 2,
+      "topic_id_1": "Meas_Time_TTH",
+      "topic_id_2": "Meas_Money_Money"
+    },
+    {
+      "id": "CC_G_K_Pat_",
+      "name::eng": "K.G.Pat: Patterns",
+      "strand_id": "CC_G",
+      "count": 2,
+      "topic_id_1": "Geom_Pat_Intro",
+      "topic_id_2": "Geom_Pat_MSP"
+    },
+    {
+      "id": "CC_G_K_IDS_",
+      "name::eng": "K.G.A: Id., Describe Shapes",
+      "strand_id": "CC_G",
+      "count": 5,
+      "topic_id_1": "Geom_OP_PG",
+      "topic_id_2": "Geom_OP_SD",
+      "topic_id_3": "Geom_Shape_DS",
+      "topic_id_4": "Geom_Shape_SN2D3D",
+      "topic_id_5": "Geom_Shape_CompSort"
+    },
+    {
+      "id": "CC_G_K_WWS_",
+      "name::eng": "K.G.B: Work with Shapes",
+      "strand_id": "CC_G",
+      "count": 2,
+      "topic_id_1": "Geom_Shape_2Dof3DS",
+      "topic_id_2": "Geom_Shape_CompDecomp"
+    },
+    {
+      "id": "CC_G_1_RWS_",
+      "name::eng": "1.G.A: Reason with Shapes",
+      "strand_id": "CC_G",
+      "count": 1,
+      "topic_id_1": "FEP_EP_NMEP_Shapes"
+    },
+    {
+      "id": "CC_MP_MP_",
+      "name::eng": "MP.1-8: Math Practices",
+      "strand_id": "CC_MP",
+      "count": 2,
+      "topic_id_1": "BandA_B_B",
+      "topic_id_2": "BandA_A_A"
+    }
+  ]
+}

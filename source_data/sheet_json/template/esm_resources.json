@@ -1,0 +1,303 @@
+{
+  "flow_type": "template",
+  "flow_name": "esm_resources",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_display_group",
+      "name": "top_of_page"
+    },
+    {
+      "type": "title",
+      "name": "spacer",
+      "value": "Resources"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_help",
+      "condition": false
+    },
+    {
+      "type": "round_button",
+      "name": "help_button",
+      "action_list": "click | start_tour: esm_resources_tour",
+      "condition": false,
+      "parameter_list": "icon_src: help; style: navigation"
+    },
+    {
+      "type": "end_display_group",
+      "condition": false
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_resource_finder",
+      "style_list": "margin-top: 1px"
+    },
+    {
+      "name": "EmPtY_string",
+      "value": "EmPtY"
+    },
+    {
+      "type": "text",
+      "name": "rf_intro",
+      "value": "Look up resources for groups of topics.",
+      "style_list": "flex:140"
+    },
+    {
+      "type": "button",
+      "name": "button_resources_finder",
+      "value": "Resource Finder",
+      "action_list": "click | set_field:topics_search_set: @local.EmPtY_string;\nclick | go_to: esm_resources_finder;",
+      "parameter_list": "style: short; \ntext_align: center",
+      "style_list": "flex:100"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_intro_for_routines_rich_tasks",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "intro_text_for_routines_rich_tasks",
+      "value": "Instructional Routines are 1 to 10-minute tasks. Rich Tasks are 1 to 3-lesson exploration tasks."
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "name": "now",
+      "value": "@calc(timestamp())",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "click_history_field_name",
+      "value": "routines_button_click_history",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "button_click_history",
+      "value": "@fields.@local.click_history_field_name ;  @local.now",
+      "condition": "!!(@fields.@local.click_history_field_name)",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "button_click_history",
+      "value": "@local.now",
+      "condition": "!(@fields.@local.click_history_field_name)",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_routines"
+    },
+    {
+      "type": "button",
+      "name": "button_routines",
+      "value": "Instructional Routines",
+      "action_list": "click | go_to: efm_routines_start; click | set_field:@local.click_history_field_name: @local.button_click_history",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "name": "now",
+      "value": "@calc(timestamp())",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "click_history_field_name",
+      "value": "rich_tasks_button_click_history",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "button_click_history",
+      "value": "@fields.@local.click_history_field_name ;  @local.now",
+      "condition": "!!(@fields.@local.click_history_field_name)",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "button_click_history",
+      "value": "@local.now",
+      "condition": "!(@fields.@local.click_history_field_name)",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_rich_tasks"
+    },
+    {
+      "type": "button",
+      "name": "button_rich_tasks",
+      "value": "Rich Tasks",
+      "action_list": "click | go_to: esm_rich_tasks_start; click | set_field:@local.click_history_field_name: @local.button_click_history",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "name": "now",
+      "value": "@calc(timestamp())",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "click_history_field_name",
+      "value": "pows_button_click_history",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "button_click_history",
+      "value": "@fields.@local.click_history_field_name ;  @local.now",
+      "condition": "!!(@fields.@local.click_history_field_name)",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "button_click_history",
+      "value": "@local.now",
+      "condition": "!(@fields.@local.click_history_field_name)",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_pows",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "intro_text_for_misc_resources",
+      "value": "Puzzles, Games, and Storybooks."
+    },
+    {
+      "type": "button",
+      "name": "button_pows",
+      "value": "Puzzles",
+      "action_list": "click | go_to: efm_pow_start; click | set_field:@local.click_history_field_name: @local.button_click_history",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "name": "now",
+      "value": "@calc(timestamp())",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "click_history_field_name",
+      "value": "gas_button_click_history",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "button_click_history",
+      "value": "@fields.@local.click_history_field_name ;  @local.now",
+      "condition": "!!(@fields.@local.click_history_field_name)",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "button_click_history",
+      "value": "@local.now",
+      "condition": "!(@fields.@local.click_history_field_name)",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_gas"
+    },
+    {
+      "type": "button",
+      "name": "button_gas",
+      "value": "Games",
+      "action_list": "click | go_to: efm_ga_start; click | set_field:@local.click_history_field_name: @local.button_click_history",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "name": "now",
+      "value": "@calc(timestamp())",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "click_history_field_name",
+      "value": "storybooks_button_click_history",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "button_click_history",
+      "value": "@fields.@local.click_history_field_name ;  @local.now",
+      "condition": "!!(@fields.@local.click_history_field_name)",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "button_click_history",
+      "value": "@local.now",
+      "condition": "!(@fields.@local.click_history_field_name)",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_storybooks"
+    },
+    {
+      "type": "button",
+      "name": "button_storybooks",
+      "value": "Storybooks",
+      "action_list": "click | go_to: efm_storybooks; click | set_field:@local.click_history_field_name: @local.button_click_history",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "name": "now",
+      "value": "@calc(timestamp())",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "click_history_field_name",
+      "value": "glossary_button_click_history",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "button_click_history",
+      "value": "@fields.@local.click_history_field_name ;  @local.now",
+      "condition": "!!(@fields.@local.click_history_field_name)",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "button_click_history",
+      "value": "@local.now",
+      "condition": "!(@fields.@local.click_history_field_name)",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_glossary"
+    },
+    {
+      "type": "text",
+      "name": "intro_for_glossary",
+      "value": "Look up mathematical words and phrases.",
+      "style_list": "flex:140"
+    },
+    {
+      "type": "button",
+      "name": "button_glossary",
+      "value": "Glossary",
+      "action_list": "click | set_field:glossary_words_count : 0; \nclick | set_field:glossary_word_1 : NO_ENTRY; \nclick | set_field:glossary_word_2 : NO_ENTRY; \nclick | set_field:glossary_word_3 : NO_ENTRY; \nclick | go_to: efm_gloss_start; \nclick | set_field:@local.click_history_field_name: @local.button_click_history",
+      "parameter_list": "style: short; \ntext_align: center",
+      "style_list": "flex:100"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

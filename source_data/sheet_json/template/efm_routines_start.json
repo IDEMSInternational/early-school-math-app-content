@@ -1,0 +1,250 @@
+{
+  "flow_type": "template",
+  "flow_name": "efm_routines_start",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_display_group",
+      "name": "dg_top_of_page"
+    },
+    {
+      "type": "title",
+      "name": "spacer",
+      "value": "Instructional Routines"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_help",
+      "condition": false
+    },
+    {
+      "type": "round_button",
+      "name": "help_button",
+      "action_list": "click | start_tour: esm_routines_tour",
+      "condition": false,
+      "parameter_list": "icon_src: help; style:navigation"
+    },
+    {
+      "type": "end_display_group",
+      "condition": false
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_info",
+      "parameter_list": "style: column;"
+    },
+    {
+      "type": "text",
+      "name": "Intro_text",
+      "value": "**Short and Focused Tasks** Use these routines during short breaks or as part of a larger lesson. Each group of 1- to 10-minute routines develops a skill, such as subitizing or working on a number line.\n\n**Structured and Predictable Routines** Used repeatedly, these become familiar and eagerly anticipated situations where you and your students know what to expect. This allows everyone to focus on the math content and not on the format, lightening the cognitive load on the students."
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion_for_routines",
+      "parameter_list": "open_multiple:TRUE;",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "level_shapes",
+      "value": "Shapes & Properties",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_routinelist_shapes",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "button",
+      "name": "button_shapes_properties",
+      "value": "Properties and Shapes Talks",
+      "action_list": "click | go_to: esm_properties_and_shapes;",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "button",
+      "name": "button_sims_diffs",
+      "value": "Similarities and Differences",
+      "action_list": "click | go_to: esm_similarities_differences;;",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "button",
+      "name": "button_short_games_properties",
+      "value": "Short Games – Properties",
+      "action_list": "click | go_to: esm_short_games_properties;",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "level_quants_and_counts",
+      "value": "Small Quantities & Counting",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_routinelist_quants_and_counts",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "button",
+      "name": "button_dot_talks_beginning",
+      "value": "Dot Talks – Beginning",
+      "action_list": "click | go_to: esm_dot_talks_beginning;",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "button",
+      "name": "button_splat_routines",
+      "value": "Splat!",
+      "action_list": "click | go_to: esm_splat_routines",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "button",
+      "name": "button_number_line",
+      "value": "Number Paths – Number Lines",
+      "action_list": "click | go_to: esm_number_line;",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "button",
+      "name": "button_choral_counting",
+      "value": "Choral Counting",
+      "action_list": "click | go_to: esm_choral_counting_begin;",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "button",
+      "name": "button_short_games_counting",
+      "value": "Short Games – Counting",
+      "action_list": "click | go_to: esm_short_games_counting;",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "level_misc",
+      "value": "Small Numbers & Operations",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_routinelist_misc",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "button",
+      "name": "button_dot_talks_structured",
+      "value": "Dot Talks – More Structure",
+      "action_list": "click | go_to: esm_dot_talks_structured;",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "button",
+      "name": "button_target_number",
+      "value": "Target No. – No. of the Day",
+      "action_list": "click | go_to: esm_target_number;",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "button",
+      "name": "button_number_strings",
+      "value": "Number Strings",
+      "action_list": "click | go_to: esm_number_strings;",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "button",
+      "name": "button_problem_strings",
+      "value": "Problem Strings",
+      "action_list": "click | go_to: esm_problem_strings;",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "button",
+      "name": "button_problem_sort",
+      "value": "Problem Sort",
+      "action_list": "click | go_to: esm_problem_sort;",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "button",
+      "name": "button_equality_concept",
+      "value": "Equality Concept",
+      "action_list": "click | go_to: esm_equality_concept;",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "button",
+      "name": "button_i_have",
+      "value": "I Have ... I Wish I Had ...",
+      "action_list": "click | go_to: esm_i_have;",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "button",
+      "name": "button_number_patterns",
+      "value": "Number Patterns",
+      "action_list": "click | go_to: esm_number_patterns",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "button",
+      "name": "button_short_games",
+      "value": "Short Games – Small Add Sub",
+      "action_list": "click | go_to: esm_short_games_small_add_sub;",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "button",
+      "name": "button_fluency_practice",
+      "value": "~~Fluency Practice~~",
+      "action_list": "click | go_to: esm_fluency_practice;",
+      "condition": false,
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "fake_group",
+      "style_list": "margin-top: 40px;"
+    },
+    {
+      "type": "text",
+      "name": "spacer"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

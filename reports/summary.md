@@ -5,7 +5,7 @@
 | --- | --- |
 | accordion | 72 |
 | accordion_section | 131 |
-| button | 175 |
+| button | 166 |
 | debug_toggle | 1 |
 | display_group | 433 |
 | image | 65 |
@@ -41,9 +41,9 @@
 | go_to | 139 |
 | go_to_url | 3 |
 | reset_app | 1 |
-| set_field | 152 |
+| set_field | 133 |
 | set_local | 7 |
-| start_tour | 19 |
+| start_tour | 10 |
 </details>
 
 <details open>
@@ -51,8 +51,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 44721 KB | 44.7 MB |
-| unused | 21858 KB | 21.9 MB |
+| total | 44807 KB | 44.8 MB |
+| unused | 21863 KB | 21.9 MB |
 </details>
 
 <details open>
@@ -308,6 +308,7 @@ Assets that appear in app-data but do not have references within sheets
 | ESMIll/ESMPOWBSujikoBlank3by3.svg | 5.9 |
 | ESMIll/ESMPOWCAvoidingRectanglesAnswer4.svg | 7.5 |
 | ESMIll/ESMTopicComparingLinesofDots.svg | 3.3 |
+| ESMIll/ESMTopicEquivRectangles2.svg | 5 |
 | ESMLogo OLD.png | 165.2 |
 | android/icon-background.png | 7 |
 | android/icon-foreground.png | 53.9 |
@@ -1707,13 +1708,17 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMTopicDivisionNotation.svg | 18.2 | 1 |
 | ESMIll/ESMTopicDoubles.svg | 6.6 | 1 |
 | ESMIll/ESMTopicEqualParts.svg | 8.8 | 1 |
+| ESMIll/ESMTopicEquivNumberLine.svg | 43.7 | 1 |
+| ESMIll/ESMTopicEquivRectangles1.svg | 6 | 1 |
 | ESMIll/ESMTopicEvensOdds.svg | 8.8 | 5 |
 | ESMIll/ESMTopicFlatShapes.svg | 12.5 | 2 |
+| ESMIll/ESMTopicFractionalPartLargerThan1.svg | 9.1 | 1 |
 | ESMIll/ESMTopicMult3BagsOf4.svg | 7.6 | 1 |
 | ESMIll/ESMTopicNearDoubles3+3+1.svg | 6.7 | 1 |
 | ESMIll/ESMTopicNearDoubles4+4-1.svg | 6.8 | 1 |
 | ESMIll/ESMTopicNumberBonds2.4.svg | 3.5 | 1 |
 | ESMIll/ESMTopicNumberBondsTenFrames.svg | 4.6 | 1 |
+| ESMIll/ESMTopicNumberLineFractions.svg | 27.5 | 1 |
 | ESMIll/ESMTopicNumberPathsLines.svg | 53.5 | 2 |
 | ESMIll/ESMTopicObjectProperties.svg | 9.5 | 2 |
 | ESMIll/ESMTopicPVto19.svg | 14.7 | 1 |
@@ -1746,5 +1751,4 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | global |  | 2 |
 | template |  | 61 |
 | template | generated | 58 |
-| tour |  | 10 |
 </details>
