@@ -1615,7 +1615,7 @@
     {
       "type": "text",
       "name": "info_single_div",
-      "value": "**Equal Parts for Shapes and Sets** Splitting up shapes and sets of objects into equal-size pieces is a good introduction to fractions and division. It also gives lots of practice for understanding the model for division.\n\n**Equal Parts – Sharing Quantities** Sharing situations are a wonderful source of problems that children can relate to. Sharing a quantity equally among two people is an early and powerfuly way of learning dividing by 2 and taking halves. This naturally leads to more complicated sharing as your children's skills develop.\n\n**Division Models** As with subtraction, division can be thought of in at least two ways. If you have 20 things and want to put them in piles of 5, you can ask how many piles there will be. Or, if you want to make 5 equal piles, you can ask how big the piles will be. The idea of sharing is an example of the second interpretation – you want to share equally among a certain number of people. \n\n**Skip Counting** As will be discussed in the \"Guess and Revise\" method, skip counting is a useful resource for finding division results after an initial estimate. It is not intended as a tool to do division all on its own.\n\n**Dividsion With No Remainder** Although skip counting can be used for this in the short term, a better long term solution is to have a strong knowledge of the single-digit multiplication facts and use fact families to connect your students' knowledge of multiplication with solving division problems. For example, if 3 x 5 is well known to a child, then the fact family for 3 x 5 = 15 will help with the related facts: 5 x 3 = 15, 15 ÷ 3 = 5, and 15 ÷ 5 = 3.\n\n**Division With Remainders** Until division becomes fully automatic, some version of guessing and revising is the way to approach these. There is no way to memorize all these math facts. Being good at skip counting helps a lot with these. The number 5 is often a good initial guess to start from – it is in the middle of 1-digit numbers and it is easy to calculate the multiples of it.\n\nFor example, to calculate 27 ÷ 4 encourage your students to do the following:\n* Make an initial guess. Perhaps 5 in this example.\n* Check the guess and see if it is too high or too low.  5 x 4 = 20 is 7 too low, so we'll need one more 4.\n* Revise the guess and check again.\n\nWith practice, their initial guesses will grow increasingly accurate.\n\n**All Single-Digit Division** Using these methods for dividing with and without remainders, your students will now be able to master (with practice) all single-digit division problems!"
+      "value": "**Equal Parts for Shapes and Sets** Splitting up shapes and sets of objects into equal-size pieces is a good introduction to fractions and division. It also gives lots of practice for understanding the model for division.\n\n**Equal Parts – Sharing Quantities** Sharing situations are a wonderful source of problems that children can relate to. Sharing a quantity equally among two people is an early and powerfuly way of learning dividing by 2 and taking halves. This naturally leads to more complicated sharing as your children's skills develop.\n\n**Division Models** As with subtraction, division can be thought of in at least two ways. If you have 20 things and want to put them in piles of 5, you can ask how many piles there will be. Or, if you want to make 5 equal piles, you can ask how big the piles will be. The idea of sharing is an example of the second interpretation – you want to share equally among a certain number of people. \n\n**Skip Counting** As will be discussed in the \"Guess and Revise\" method, skip counting is a useful resource for finding division results after an initial estimate. It is not intended as a tool to do division all on its own.\n\n**Dividsion With No Remainder** Although skip counting can be used for this in the short term, a better long term solution is to have a strong knowledge of the single-digit multiplication facts and use fact families to connect your students' knowledge of multiplication with solving division problems. For example, if 3 x 5 is well known to a child, then the fact family for 3 x 5 = 15 will help with the related facts: 5 x 3 = 15, 15 ÷ 3 = 5, and 15 ÷ 5 = 3.\n\n**Division With Remainders** Until division becomes fully automatic, some version of guessing and revising is the way to approach these. There is no way to memorize all these math facts. Being good at skip counting helps a lot with these. The number 5 is often a good initial guess to start from – it is in the middle of 1-digit numbers and it is easy to calculate the multiples of it.\n\nFor example, to calculate 27 ÷ 4 encourage your students to do the following:\n* Make an initial guess. Perhaps 5 in this example.\n* Check the guess and see if it is too high or too low.  5 x 4 = 20 is 7 too low, so we'll need one more 4.\n* Revise the guess and check again.\n\nWith practice, their initial guesses will grow increasingly accurate.\n\n**Division and Sharing** Working with sharing problems leads to better division number sense. It also is a good platform for discussing what happens in real world problems when there are division problems with non-zero remainders.\n\n**All Single-Digit Division** Using these methods for dividing with and without remainders, your students will now be able to master (with practice) all single-digit division problems!"
     },
     {
       "type": "end_display_group"
@@ -1666,8 +1666,8 @@
     {
       "type": "button",
       "name": "button_sd_group1_1",
-      "value": "Equal Parts - Shapes",
-      "action_list": "click | set_field:current_topic: data.esm_topics.FEP_EP_NMEP_Shapes;\nclick | go_to: esm_topic_template;",
+      "value": "Equal Parts – Shapes",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_F_EP_Shapes;\nclick | go_to: esm_topic_template;",
       "parameter_list": "variant: card;",
       "style_list": "flex: 20;"
     },
@@ -1679,8 +1679,8 @@
     {
       "type": "button",
       "name": "button_sd_group1_2",
-      "value": "Equal Parts - Sharing",
-      "action_list": "click | set_field:current_topic: data.esm_topics.FEP_EP_NMEP_Sets;\nclick | go_to: esm_topic_template;",
+      "value": "Equal Parts – Sets",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_F_EP_Sets;\nclick | go_to: esm_topic_template;",
       "parameter_list": "variant: card;",
       "style_list": "flex: 20;"
     },
@@ -1715,7 +1715,7 @@
     {
       "type": "button",
       "name": "button_sd_group2_3",
-      "value": "Division and 0",
+      "value": "Div. and 0",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_DSD_Zero;\nclick | go_to: esm_topic_template;",
       "parameter_list": "variant: card;"
     },
@@ -1724,9 +1724,9 @@
     },
     {
       "type": "image",
-      "name": "arrows2",
-      "value": "ESMIll/ESMLPArrows2.svg",
-      "style_list": "max-width: 70px;\nmargin-top: 0px;"
+      "name": "arrows3",
+      "value": "ESMIll/ESMLPArrows3.svg",
+      "style_list": "max-width: 90px;\nmargin-top: 0px;"
     },
     {
       "type": "begin_display_group",
@@ -1734,35 +1734,28 @@
       "style_list": "margin-top: -3px;"
     },
     {
-      "type": "text",
-      "name": "spacer",
-      "style_list": "flex: 1;"
-    },
-    {
       "type": "button",
       "name": "button_sd_group4_1",
-      "value": "With No Remainder",
+      "value": "With No Rem.",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_DSD_Without_Rem;\nclick | go_to: esm_topic_template;",
       "parameter_list": "variant: card;",
       "style_list": "flex: 3;"
     },
     {
-      "type": "text",
-      "name": "spacer",
-      "style_list": "flex: 1;"
-    },
-    {
       "type": "button",
       "name": "button_sd_group4_2",
-      "value": "With a Remainder",
+      "value": "With a Rem.",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_DSD_With_Rem;\nclick | go_to: esm_topic_template;",
       "parameter_list": "variant: card;",
       "style_list": "flex: 3;"
     },
     {
-      "type": "text",
-      "name": "spacer",
-      "style_list": "flex: 2;"
+      "type": "button",
+      "name": "button_sd_group4_3",
+      "value": "Div. & Sharing",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_DSD_Div_Sharing;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex: 3;"
     },
     {
       "type": "end_display_group"
@@ -1790,6 +1783,266 @@
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_DSD_AllSingles;\nclick | go_to: esm_topic_template;",
       "parameter_list": "variant: card;",
       "style_list": "flex: 3;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_early_fract",
+      "value": "Early Fractions"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_accord_efract_pathway",
+      "parameter_list": "style:column"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_accord_efract",
+      "parameter_list": "style:column",
+      "style_list": "margin-top: 15px;"
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion_efract",
+      "parameter_list": "open_multiple:TRUE;"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_efract",
+      "value": "Overview",
+      "parameter_list": "text_align: center;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_efract",
+      "parameter_list": "style:column"
+    },
+    {
+      "type": "text",
+      "name": "info_single_div",
+      "value": "**Fractions Introduction** This introduces some basic definitions and vocabulary. It also points out how many different meanings fractions can have and why that contributes to making fractions a trickier subject to learn. \n\n**Equal Parts for Shapes and Sets** Splitting up shapes and sets of objects into equal-size pieces is a good introduction to fractions and division.\n\n**Unit & Non-unit** Unit fractions are where the understanding of fractions begins – breaking shapes and sets into equal pieces, each piece of which is a unit fraction of the whole thing. Unit fractions are also the essential building blocks for understanding doing operations with fractions. Non-unit fractions are of course the beginning of dealing with general fractions.\n\n**Value & Number Line** It is important to keep your students grounded in the understanding that fractions are numbers and they have a value. A good way to help build that number sense is to have them play with putting fractions on a number line. It also helps if they spend time seeing how whole numbers can be represented as fractions.\n\n**Comparing & Add/Sub – Same Denominator** Having fractions with the same denominator is essential for being able to do comparing, adding, and subtracting of fractions. Use the model of comparing, adding, or subtracting some numbers of apples to help this feel more natural.\n\n**Equivalent Fractions** This is the gateway to being able to do more things with fractions. It is also develops number sense for when two fractions are equal. The central rule here is that to get an equivalent fraction you must do the same thing to the top and bottom - mulltiply or divide both by the same thing.\n\n**Comparing & Add/Sub – Dividing Denomiinators** Using equivalent fraction skills, your students are ready to do operations with fractions that do not have the same denominator. Having one fraction's denominator divide the other's denominator is the simplest case of this. The more general case will be left until your students know about least common multiples and finding smallest common denominators.\n\n**Integer Times Fraction** This covers the easy case of multiplication of a whole number and a fraction. The study of multiplying and dividing general fractions will be left for later."
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_sd_group1",
+      "style_list": "margin-top: 5px;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "button",
+      "name": "button_efract_group1_1",
+      "value": "Fractions Introduction",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_F_Intro;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "image",
+      "name": "arrows2",
+      "value": "ESMIll/ESMLPArrows2.svg",
+      "style_list": "max-width: 70px;\nmargin-top: 0px;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_efract_group2",
+      "style_list": "margin-top: -3px;"
+    },
+    {
+      "type": "button",
+      "name": "button_efract_group2_1",
+      "value": "Equal Parts – Shapes",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_F_EP_Shapes;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;"
+    },
+    {
+      "type": "button",
+      "name": "button_efract_group2_2",
+      "value": "Equal Parts – Sets",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_F_EP_Sets;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "image",
+      "name": "arrows2",
+      "value": "ESMIll/ESMLPArrows2.svg",
+      "style_list": "max-width: 70px;\nmargin-top: 0px;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_efract_group3",
+      "style_list": "margin-top: -3px;"
+    },
+    {
+      "type": "button",
+      "name": "button_efract_group3_1",
+      "value": "Unit & Non-unit",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_F_Unit_Non;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex: 10;"
+    },
+    {
+      "type": "button",
+      "name": "button_efract_group3_2",
+      "value": "Value & Number Line",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_F_Value;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex: 10;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "image",
+      "name": "arrows2",
+      "value": "ESMIll/ESMLPArrows2.svg",
+      "style_list": "max-width: 70px;\nmargin-top: 0px;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_efract_group4",
+      "style_list": "margin-top: -3px;"
+    },
+    {
+      "type": "button",
+      "name": "button_efract_group4_1",
+      "value": "Compare – Same Denom.",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_F_Comp_Order_Same;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex: 3;"
+    },
+    {
+      "type": "button",
+      "name": "button_efract_group4_2",
+      "value": "Add/Sub – Same Denom.",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_F_Add_Sub_Same;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex: 3;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "image",
+      "name": "arrows1",
+      "value": "ESMIll/ESMLPArrows1.svg",
+      "style_list": "max-width: 30px;\nmargin-top: 0px;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_efract_group5",
+      "style_list": "margin-top: -3px;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "button",
+      "name": "button_efract_group5_1",
+      "value": "Equivalent Fractions",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_F_Equivalent;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "image",
+      "name": "arrows2",
+      "value": "ESMIll/ESMLPArrows2.svg",
+      "style_list": "max-width: 70px;\nmargin-top: 0px;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_efract_group6",
+      "style_list": "margin-top: -3px;"
+    },
+    {
+      "type": "button",
+      "name": "button_efract_group6_1",
+      "value": "Compare – Dividing Denoms.",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_F_Comp_Order_Divide;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex: 10;"
+    },
+    {
+      "type": "button",
+      "name": "button_efract_group6_2",
+      "value": "Add/Sub – Dividing Denoms.",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_F_Add_Sub_Divide;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;",
+      "style_list": "flex: 10;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "image",
+      "name": "arrows1",
+      "value": "ESMIll/ESMLPArrows1.svg",
+      "style_list": "max-width: 30px;\nmargin-top: 0px;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_efract_group7",
+      "style_list": "margin-top: -3px;"
+    },
+    {
+      "type": "text",
+      "name": "spacer",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "button",
+      "name": "button_efract_group7_1",
+      "value": "Integer Times Fraction",
+      "action_list": "click | set_field:current_topic: data.esm_topics.NO_F_Int_Times_Fract;\nclick | go_to: esm_topic_template;",
+      "parameter_list": "variant: card;"
     },
     {
       "type": "text",
