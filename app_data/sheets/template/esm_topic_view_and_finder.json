@@ -143,8 +143,32 @@
       }
     },
     {
+      "name": "match_NCRT",
+      "value": "@fields.curriculum_standard_abbrev == \"NCRT\"",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "match_NCRT",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@fields.curriculum_standard_abbrev == \"NCRT\"",
+            "matchedExpression": "@fields.curriculum_standard_abbrev",
+            "type": "fields",
+            "fieldName": "curriculum_standard_abbrev"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.curriculum_standard_abbrev": [
+          "value"
+        ]
+      }
+    },
+    {
       "name": "it_matches",
-      "value": "@local.match_ESM || @local.match_CCSSM || @local.match_TEKS || @local.match_AC9M || @local.match_UK20",
+      "value": "@local.match_ESM || @local.match_CCSSM || @local.match_TEKS || @local.match_AC9M || @local.match_UK20 || @local.match_NCRT",
       "_translations": {
         "value": {}
       },
@@ -153,34 +177,40 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@local.match_ESM || @local.match_CCSSM || @local.match_TEKS || @local.match_AC9M || @local.match_UK20",
+            "fullExpression": "@local.match_ESM || @local.match_CCSSM || @local.match_TEKS || @local.match_AC9M || @local.match_UK20 || @local.match_NCRT",
             "matchedExpression": "@local.match_ESM",
             "type": "local",
             "fieldName": "match_ESM"
           },
           {
-            "fullExpression": "@local.match_ESM || @local.match_CCSSM || @local.match_TEKS || @local.match_AC9M || @local.match_UK20",
+            "fullExpression": "@local.match_ESM || @local.match_CCSSM || @local.match_TEKS || @local.match_AC9M || @local.match_UK20 || @local.match_NCRT",
             "matchedExpression": "@local.match_CCSSM",
             "type": "local",
             "fieldName": "match_CCSSM"
           },
           {
-            "fullExpression": "@local.match_ESM || @local.match_CCSSM || @local.match_TEKS || @local.match_AC9M || @local.match_UK20",
+            "fullExpression": "@local.match_ESM || @local.match_CCSSM || @local.match_TEKS || @local.match_AC9M || @local.match_UK20 || @local.match_NCRT",
             "matchedExpression": "@local.match_TEKS",
             "type": "local",
             "fieldName": "match_TEKS"
           },
           {
-            "fullExpression": "@local.match_ESM || @local.match_CCSSM || @local.match_TEKS || @local.match_AC9M || @local.match_UK20",
+            "fullExpression": "@local.match_ESM || @local.match_CCSSM || @local.match_TEKS || @local.match_AC9M || @local.match_UK20 || @local.match_NCRT",
             "matchedExpression": "@local.match_AC9M",
             "type": "local",
             "fieldName": "match_AC9M"
           },
           {
-            "fullExpression": "@local.match_ESM || @local.match_CCSSM || @local.match_TEKS || @local.match_AC9M || @local.match_UK20",
+            "fullExpression": "@local.match_ESM || @local.match_CCSSM || @local.match_TEKS || @local.match_AC9M || @local.match_UK20 || @local.match_NCRT",
             "matchedExpression": "@local.match_UK20",
             "type": "local",
             "fieldName": "match_UK20"
+          },
+          {
+            "fullExpression": "@local.match_ESM || @local.match_CCSSM || @local.match_TEKS || @local.match_AC9M || @local.match_UK20 || @local.match_NCRT",
+            "matchedExpression": "@local.match_NCRT",
+            "type": "local",
+            "fieldName": "match_NCRT"
           }
         ]
       },
@@ -198,6 +228,9 @@
           "value"
         ],
         "@local.match_UK20": [
+          "value"
+        ],
+        "@local.match_NCRT": [
           "value"
         ]
       }
@@ -838,6 +871,81 @@
             "condition": [
               {
                 "fullExpression": "@fields.curriculum_standard_abbrev == \"UK20\"",
+                "matchedExpression": "@fields.curriculum_standard_abbrev",
+                "type": "fields",
+                "fieldName": "curriculum_standard_abbrev"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@fields.curriculum_standard_abbrev": [
+              "condition"
+            ]
+          }
+        },
+        {
+          "type": "set_field",
+          "name": "curriculum_standard_name",
+          "value": "India NCRT Math",
+          "_translations": {
+            "value": {}
+          },
+          "condition": "@fields.curriculum_standard_abbrev == \"NCRT\"",
+          "_nested_name": "dg_select_view_new.curriculum_standard_name",
+          "_dynamicFields": {
+            "condition": [
+              {
+                "fullExpression": "@fields.curriculum_standard_abbrev == \"NCRT\"",
+                "matchedExpression": "@fields.curriculum_standard_abbrev",
+                "type": "fields",
+                "fieldName": "curriculum_standard_abbrev"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@fields.curriculum_standard_abbrev": [
+              "condition"
+            ]
+          }
+        },
+        {
+          "type": "set_field",
+          "name": "top_standards_level",
+          "value": "data.esm_india_strands",
+          "_translations": {
+            "value": {}
+          },
+          "condition": "@fields.curriculum_standard_abbrev == \"NCRT\"",
+          "_nested_name": "dg_select_view_new.top_standards_level",
+          "_dynamicFields": {
+            "condition": [
+              {
+                "fullExpression": "@fields.curriculum_standard_abbrev == \"NCRT\"",
+                "matchedExpression": "@fields.curriculum_standard_abbrev",
+                "type": "fields",
+                "fieldName": "curriculum_standard_abbrev"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@fields.curriculum_standard_abbrev": [
+              "condition"
+            ]
+          }
+        },
+        {
+          "type": "set_field",
+          "name": "middle_standards_level",
+          "value": "data.esm_india_substrands",
+          "_translations": {
+            "value": {}
+          },
+          "condition": "@fields.curriculum_standard_abbrev == \"NCRT\"",
+          "_nested_name": "dg_select_view_new.middle_standards_level",
+          "_dynamicFields": {
+            "condition": [
+              {
+                "fullExpression": "@fields.curriculum_standard_abbrev == \"NCRT\"",
                 "matchedExpression": "@fields.curriculum_standard_abbrev",
                 "type": "fields",
                 "fieldName": "curriculum_standard_abbrev"

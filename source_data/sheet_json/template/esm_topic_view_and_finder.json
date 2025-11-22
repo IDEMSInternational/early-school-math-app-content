@@ -42,8 +42,12 @@
       "value": "@fields.curriculum_standard_abbrev == \"UK20\""
     },
     {
+      "name": "match_NCRT",
+      "value": "@fields.curriculum_standard_abbrev == \"NCRT\""
+    },
+    {
       "name": "it_matches",
-      "value": "@local.match_ESM || @local.match_CCSSM || @local.match_TEKS || @local.match_AC9M || @local.match_UK20"
+      "value": "@local.match_ESM || @local.match_CCSSM || @local.match_TEKS || @local.match_AC9M || @local.match_UK20 || @local.match_NCRT"
     },
     {
       "type": "set_field",
@@ -205,6 +209,24 @@
       "name": "middle_standards_level",
       "value": "data.esm_uk20_substrands",
       "condition": "@fields.curriculum_standard_abbrev == \"UK20\""
+    },
+    {
+      "type": "set_field",
+      "name": "curriculum_standard_name",
+      "value": "India NCRT Math",
+      "condition": "@fields.curriculum_standard_abbrev == \"NCRT\""
+    },
+    {
+      "type": "set_field",
+      "name": "top_standards_level",
+      "value": "data.esm_india_strands",
+      "condition": "@fields.curriculum_standard_abbrev == \"NCRT\""
+    },
+    {
+      "type": "set_field",
+      "name": "middle_standards_level",
+      "value": "data.esm_india_substrands",
+      "condition": "@fields.curriculum_standard_abbrev == \"NCRT\""
     },
     {
       "type": "end_display_group"

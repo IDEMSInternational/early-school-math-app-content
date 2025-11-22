@@ -50,6 +50,11 @@
       "condition": "@fields.curriculum_standard_abbrev == \"UK20\""
     },
     {
+      "name": "standard_chars",
+      "value": "ncrt_standards",
+      "condition": "@fields.curriculum_standard_abbrev == \"NCRT\""
+    },
+    {
       "name": "topic_theme_base_chars",
       "value": "topic_theme_"
     },

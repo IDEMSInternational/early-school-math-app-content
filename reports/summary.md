@@ -3,22 +3,22 @@
 
 | type | count |
 | --- | --- |
-| accordion | 72 |
-| accordion_section | 131 |
-| button | 166 |
+| accordion | 73 |
+| accordion_section | 133 |
+| button | 178 |
 | debug_toggle | 1 |
-| display_group | 433 |
-| image | 65 |
+| display_group | 443 |
+| image | 71 |
 | items | 68 |
 | qr_code | 1 |
 | radio_button_grid | 1 |
 | round_button | 10 |
 | select_text | 1 |
-| set_field | 48 |
-| set_variable | 770 |
+| set_field | 51 |
+| set_variable | 772 |
 | simple_checkbox | 4 |
 | template | 92 |
-| text | 341 |
+| text | 345 |
 | text_area | 2 |
 | tile_component | 3 |
 | title | 52 |
@@ -38,10 +38,10 @@
 | emit: set_language | 1 |
 | emit: uncompleted | 58 |
 | feedback | 11 |
-| go_to | 139 |
+| go_to | 151 |
 | go_to_url | 3 |
 | reset_app | 1 |
-| set_field | 133 |
+| set_field | 145 |
 | set_local | 7 |
 | start_tour | 10 |
 </details>
@@ -1400,9 +1400,9 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMGlossTenFrame.svg | 7.5 | 1 |
 | ESMIll/ESMGlossTriangularNumbers.svg | 8 | 1 |
 | ESMIll/ESMGlossUnitize.svg | 12.3 | 1 |
-| ESMIll/ESMLPArrows1.svg | 12.6 | 7 |
-| ESMIll/ESMLPArrows2.svg | 13 | 13 |
-| ESMIll/ESMLPArrows3.svg | 13.3 | 7 |
+| ESMIll/ESMLPArrows1.svg | 12.6 | 9 |
+| ESMIll/ESMLPArrows2.svg | 13 | 16 |
+| ESMIll/ESMLPArrows3.svg | 13.3 | 8 |
 | ESMIll/ESMOEColoringShapesExample1.svg | 7.4 | 1 |
 | ESMIll/ESMOEColoringShapesExample2.svg | 7.3 | 1 |
 | ESMIll/ESMOEColoringShapesIntro.svg | 10.4 | 1 |
@@ -1744,7 +1744,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | type | subtype | total |
 | --- | --- | --- |
-| data_list |  | 93 |
+| data_list |  | 95 |
 | data_list | app_config_language_list | 1 |
 | data_list | lifecycle_actions | 1 |
 | generator |  | 1 |

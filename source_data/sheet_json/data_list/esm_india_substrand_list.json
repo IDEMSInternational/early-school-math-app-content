@@ -1,0 +1,324 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "esm_india_substrand_list",
+  "data_list_name": "esm_india_substrands",
+  "status": "released",
+  "rows": [
+    {
+      "id": "NCRT_FMT_EAA_",
+      "name::eng": "FMT.EAA: Early & Always",
+      "strand_id": "NCRT_FMT",
+      "count": 6,
+      "topic_id_1": "FMT_EAA_EandO",
+      "topic_id_2": "FMT_EAA_FMTinH",
+      "topic_id_3": "FMT_EAA_FMTOA",
+      "topic_id_4": "FMT_EAA_FMTDC",
+      "topic_id_5": "FMT_EAA_FMTC",
+      "topic_id_6": "FMT_EAA_FMTPDA"
+    },
+    {
+      "id": "NCRT_FMT_RWC_",
+      "name::eng": "FMT.RWC: Read w/ Children",
+      "strand_id": "NCRT_FMT",
+      "count": 2,
+      "topic_id_1": "FMT_RWC_DRP",
+      "topic_id_2": "FMT_RWC_DRV"
+    },
+    {
+      "id": "NCRT_G_1A_",
+      "name::eng": "1G.A: Shapes & Properties",
+      "strand_id": "NCRT_G",
+      "count": 1,
+      "topic_id_1": "Geom_OP_PG"
+    },
+    {
+      "id": "NCRT_G_1B_",
+      "name::eng": "1G.B: Describe, Sort, Classify",
+      "strand_id": "NCRT_G",
+      "count": 3,
+      "topic_id_1": "Geom_OP_SD",
+      "topic_id_2": "Geom_Shape_DS",
+      "topic_id_3": "Geom_Shape_CompSort"
+    },
+    {
+      "id": "NCRT_G_2A_",
+      "name::eng": "2G.A: Id & Name 2D & 3D Shapes",
+      "strand_id": "NCRT_G",
+      "count": 1,
+      "topic_id_1": "Geom_Shape_SN2D3D"
+    },
+    {
+      "id": "NCRT_G_3A_",
+      "name::eng": "3G.A: Shapes & Properties",
+      "strand_id": "NCRT_G",
+      "count": 3,
+      "topic_id_1": "Geom_Shape_SN2D3D",
+      "topic_id_2": "Geom_Shape_2Dof3DS",
+      "topic_id_3": "Geom_Shape_CompDecomp"
+    },
+    {
+      "id": "NCRT_N_1A_",
+      "name::eng": "1N.A: Count, Compare 0-10",
+      "strand_id": "NCRT_N",
+      "count": 6,
+      "topic_id_1": "NPV_QC10_QC",
+      "topic_id_2": "NPV_QC10_CMQ10",
+      "topic_id_3": "NPV_QC10_Sub10",
+      "topic_id_4": "NPV_QC10_Comp10",
+      "topic_id_5": "NPV_QC10_Ordinals",
+      "topic_id_6": "NPV_QC10_WN10"
+    },
+    {
+      "id": "NCRT_N_1B_",
+      "name::eng": "1N.B: Count, Compare 10-20",
+      "strand_id": "NCRT_N",
+      "count": 3,
+      "topic_id_1": "NPV_CPV100_Count20",
+      "topic_id_2": "NPV_CPV100_PV20",
+      "topic_id_3": "NPV_CPV100_Comp20"
+    },
+    {
+      "id": "NCRT_N_1C_",
+      "name::eng": "1N.C: Add & Sub within 20",
+      "strand_id": "NCRT_N",
+      "count": 16,
+      "topic_id_1": "NO_AS10_QAS",
+      "topic_id_2": "NPV_QC10_Sub10",
+      "topic_id_3": "NO_AS10_AS1and2",
+      "topic_id_4": "NO_AS10_ASto5",
+      "topic_id_5": "NO_AS10_AT",
+      "topic_id_6": "NO_AS10_ANT",
+      "topic_id_7": "NO_AS10_AComm",
+      "topic_id_8": "NO_AS10_NBFF",
+      "topic_id_9": "NO_ASSD_PVto19",
+      "topic_id_10": "NO_ASSD_AddFingers",
+      "topic_id_11": "NO_ASSD_SubFingers",
+      "topic_id_12": "NO_ASSD_ASto10",
+      "topic_id_13": "NO_ASSD_AS10",
+      "topic_id_14": "NO_ASSD_10BridgeA",
+      "topic_id_15": "NO_ASSD_10BridgeS",
+      "topic_id_16": "NO_ASSD_SD_Add_Sub"
+    },
+    {
+      "id": "NCRT_N_1D_",
+      "name::eng": "1N.D: Read 20 to 99",
+      "strand_id": "NCRT_N",
+      "count": 2,
+      "topic_id_1": "NPV_CPV100_Count20",
+      "topic_id_2": "NPV_CPV100_CountPV100"
+    },
+    {
+      "id": "NCRT_N_1E_",
+      "name::eng": "1N.E: Mental Add & Sub within 20",
+      "strand_id": "NCRT_N",
+      "count": 5,
+      "topic_id_1": "NO_ASSD_ASto10",
+      "topic_id_2": "NO_ASSD_AS10",
+      "topic_id_3": "NO_ASSD_10BridgeA",
+      "topic_id_4": "NO_ASSD_10BridgeS",
+      "topic_id_5": "NO_ASSD_SD_Add_Sub"
+    },
+    {
+      "id": "NCRT_N_2A_",
+      "name::eng": "2N.A: 2-Digit Add & Sub",
+      "strand_id": "NCRT_N",
+      "count": 3,
+      "topic_id_1": "NO_DD_AS2and1",
+      "topic_id_2": "NO_DD_AS2noRegroup",
+      "topic_id_3": "NO_DD_AS2wRegroup"
+    },
+    {
+      "id": "NCRT_N_2B_",
+      "name::eng": "2N.B: Mult. & Div. Models",
+      "strand_id": "NCRT_N",
+      "count": 2,
+      "topic_id_1": "NO_MSD_MultRep",
+      "topic_id_2": "NO_DSD_Models"
+    },
+    {
+      "id": "NCRT_N_2C_",
+      "name::eng": "2N.C: Mental – Add & Sub within 20, 10s",
+      "strand_id": "NCRT_N",
+      "count": 6,
+      "topic_id_1": "NO_ASSD_ASto10",
+      "topic_id_2": "NO_ASSD_AS10",
+      "topic_id_3": "NO_ASSD_10BridgeA",
+      "topic_id_4": "NO_ASSD_10BridgeS",
+      "topic_id_5": "NO_ASSD_SD_Add_Sub",
+      "topic_id_6": "NO_MSD_Mult_5_10"
+    },
+    {
+      "id": "NCRT_N_2D_",
+      "name::eng": "2N.D: Place Val & Comp. to 100",
+      "strand_id": "NCRT_N",
+      "count": 5,
+      "topic_id_1": "NPV_CPV100_Count20",
+      "topic_id_2": "NPV_CPV100_Comp20",
+      "topic_id_3": "NPV_CPV100_PV20",
+      "topic_id_4": "NPV_CPV100_CountPV100",
+      "topic_id_5": "NPV_CPV100_Comp100"
+    },
+    {
+      "id": "NCRT_N_3A_",
+      "name::eng": "3N.A: Numbers to 1000",
+      "strand_id": "NCRT_N",
+      "count": 1,
+      "topic_id_1": "Unwritten"
+    },
+    {
+      "id": "NCRT_N_3B_",
+      "name::eng": "3N.B: 3-Digit Add & Sub",
+      "strand_id": "NCRT_N",
+      "count": 1,
+      "topic_id_1": "Unwritten"
+    },
+    {
+      "id": "NCRT_N_3C_",
+      "name::eng": "3N.C: 1-Digit Mult.",
+      "strand_id": "NCRT_N",
+      "count": 7,
+      "topic_id_1": "NO_MSD_Doubling",
+      "topic_id_2": "NO_MSD_Mult_5_10",
+      "topic_id_3": "NO_MSD_MultRep",
+      "topic_id_4": "NO_MSD_MultCommutes",
+      "topic_id_5": "NO_MSD_Skipping",
+      "topic_id_6": "NO_MSD_Combining",
+      "topic_id_7": "NO_MSD_AllSingles"
+    },
+    {
+      "id": "NCRT_N_3D_",
+      "name::eng": "3N.D: 1-Digit Div.",
+      "strand_id": "NCRT_N",
+      "count": 7,
+      "topic_id_1": "NO_DSD_Models",
+      "topic_id_2": "NO_DSD_Zero",
+      "topic_id_3": "NO_DSD_Without_Rem",
+      "topic_id_4": "NO_DSD_With_Rem",
+      "topic_id_5": "NO_DSD_Div_Sharing",
+      "topic_id_6": "NO_DSD_AllSingles",
+      "topic_id_7": "NO_DSD_NotationProgression"
+    },
+    {
+      "id": "NCRT_N_3E_",
+      "name::eng": "3N.E: Mental – 2-Digit Add & Sub, x2 to 100",
+      "strand_id": "NCRT_N",
+      "count": 1,
+      "topic_id_1": "Unwritten"
+    },
+    {
+      "id": "NCRT_P_1_",
+      "name::eng": "1P: Shape Patterns",
+      "strand_id": "NCRT_P",
+      "count": 2,
+      "topic_id_1": "Geom_Pat_Intro",
+      "topic_id_2": "Geom_Pat_MSP"
+    },
+    {
+      "id": "NCRT_P_2_",
+      "name::eng": "2P: Shape & Num. Patterns",
+      "strand_id": "NCRT_P",
+      "count": 3,
+      "topic_id_1": "Geom_Pat_Intro",
+      "topic_id_2": "Geom_Pat_MSP",
+      "topic_id_3": "NO_NT_EvenOdd"
+    },
+    {
+      "id": "NCRT_P_3_",
+      "name::eng": "3P: Symmetry Patterns; Even/Odd",
+      "strand_id": "NCRT_P",
+      "count": 2,
+      "topic_id_1": "NO_MSD_Skipping",
+      "topic_id_2": "NO_NT_EvenOdd"
+    },
+    {
+      "id": "NCRT_MEA_1LW_",
+      "name::eng": "1MEA: Length & Weight",
+      "strand_id": "NCRT_MEA",
+      "count": 2,
+      "topic_id_1": "Meas_Early_Overview",
+      "topic_id_2": "Meas_Early_Comparing"
+    },
+    {
+      "id": "NCRT_MEA_1T_",
+      "name::eng": "1MEA.T: Time",
+      "strand_id": "NCRT_MEA",
+      "count": 1,
+      "topic_id_1": "Unwritten"
+    },
+    {
+      "id": "NCRT_MEA_2LWCV_",
+      "name::eng": "2MEA: Length, Weight, Capacity (Vol)",
+      "strand_id": "NCRT_MEA",
+      "count": 2,
+      "topic_id_1": "Meas_Early_Overview",
+      "topic_id_2": "Meas_Early_Comparing"
+    },
+    {
+      "id": "NCRT_MEA_2T_",
+      "name::eng": "2MEA.T: Time",
+      "strand_id": "NCRT_MEA",
+      "count": 2,
+      "topic_id_1": "~~Parts of a Day~~",
+      "topic_id_2": "~~Calendar~~"
+    },
+    {
+      "id": "NCRT_MEA_3LWV_",
+      "name::eng": "3MEA: Length, Weight, Volume",
+      "strand_id": "NCRT_MEA",
+      "count": 2,
+      "topic_id_1": "Meas_Early_Comparing",
+      "topic_id_2": "Meas_Early_Units"
+    },
+    {
+      "id": "NCRT_MEA_3T_",
+      "name::eng": "3MEA.T: Time",
+      "strand_id": "NCRT_MEA",
+      "count": 3,
+      "topic_id_1": "~~Parts of a Day~~",
+      "topic_id_2": "~~Calendar~~",
+      "topic_id_3": "~~Telling Time – Hours~~"
+    },
+    {
+      "id": "NCRT_D_1_",
+      "name::eng": "1D: Data Handling",
+      "strand_id": "NCRT_D",
+      "count": 1,
+      "topic_id_1": "Unwritten"
+    },
+    {
+      "id": "NCRT_D_2_",
+      "name::eng": "2D: Data Handling",
+      "strand_id": "NCRT_D",
+      "count": 1,
+      "topic_id_1": "Unwritten"
+    },
+    {
+      "id": "NCRT_D_3_",
+      "name::eng": "3D: Data Handling",
+      "strand_id": "NCRT_D",
+      "count": 1,
+      "topic_id_1": "Unwritten"
+    },
+    {
+      "id": "NCRT_MON_1_",
+      "name::eng": "1MON: Money",
+      "strand_id": "NCRT_MON",
+      "count": 1,
+      "topic_id_1": "~~Money Placeholder~~"
+    },
+    {
+      "id": "NCRT_MON_2_",
+      "name::eng": "2MON: Money",
+      "strand_id": "NCRT_MON",
+      "count": 1,
+      "topic_id_1": "~~Money Placeholder~~"
+    },
+    {
+      "id": "NCRT_MON_3_",
+      "name::eng": "3MON: Money",
+      "strand_id": "NCRT_MON",
+      "count": 1,
+      "topic_id_1": "~~Money Placeholder~~"
+    }
+  ]
+}
