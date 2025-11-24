@@ -51,7 +51,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 44807 KB | 44.8 MB |
+| total | 44903 KB | 44.9 MB |
 | unused | 21863 KB | 21.9 MB |
 </details>
 
@@ -343,7 +343,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | EFM200NumberShapesAddingEvensOdds.svg | 21.4 | 1 |
 | EFM200SimilarStars.svg | 4.1 | 1 |
 | EFM200SymmetricArt.svg | 12.3 | 3 |
-| EFM20ColoredTiling.svg | 14.7 | 1 |
+| EFM20ColoredTiling.svg | 14.7 | 2 |
 | EFM230OrderingCards.svg | 21.7 | 1 |
 | EFM290Fingers11-3.svg | 21.6 | 1 |
 | EFM290FingersFor8-3.svg | 11.8 | 1 |
@@ -1727,6 +1727,9 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMTopicQASDifference5-2.svg | 4.7 | 1 |
 | ESMIll/ESMTopicQASTakeAway5-2.svg | 7.1 | 1 |
 | ESMIll/ESMTopicRectangleSquare.svg | 5.4 | 1 |
+| ESMIll/ESMTopicReflectionRotation.svg | 12.9 | 1 |
+| ESMIll/ESMTopicRegularTilings.svg | 14.5 | 1 |
+| ESMIll/ESMTopicSemiRegTilings.svg | 68.9 | 1 |
 | ESMIll/ESMTopicSub1-5.svg | 7.1 | 1 |
 | ESMIll/ESMTopicSub35.svg | 3.7 | 2 |
 | ESMIll/ESMTopicSub456Plus1-2.svg | 12.9 | 1 |
