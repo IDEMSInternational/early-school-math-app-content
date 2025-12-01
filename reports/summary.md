@@ -51,8 +51,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 44903 KB | 44.9 MB |
-| unused | 21863 KB | 21.9 MB |
+| total | 45557 KB | 45.6 MB |
+| unused | 22663 KB | 22.7 MB |
 </details>
 
 <details open>
@@ -309,6 +309,16 @@ Assets that appear in app-data but do not have references within sheets
 | ESMIll/ESMPOWCAvoidingRectanglesAnswer4.svg | 7.5 |
 | ESMIll/ESMTopicComparingLinesofDots.svg | 3.3 |
 | ESMIll/ESMTopicEquivRectangles2.svg | 5 |
+| ESMIll/ESMTopicGraphs10FlippedCoinsBarGraph.svg | 62.1 |
+| ESMIll/ESMTopicGraphsAliceFrankBarGraph.svg | 38.6 |
+| ESMIll/ESMTopicGraphsApOrBanBarGraph.svg | 85.8 |
+| ESMIll/ESMTopicGraphsApOrBanDotGraph.svg | 48.7 |
+| ESMIll/ESMTopicGraphsApOrBanLineGraph.svg | 52.5 |
+| ESMIll/ESMTopicGraphsApOrBanPictoBarGraph.svg | 237.6 |
+| ESMIll/ESMTopicGraphsHomerunsBarGraph.svg | 35.5 |
+| ESMIll/ESMTopicGraphsHomerunsTallyChart.svg | 113.5 |
+| ESMIll/ESMTopicGraphsMonToFriLineGraph.svg | 65 |
+| ESMIll/ESMTopicGraphsMonToFriTruncatedLineGraph.svg | 61.5 |
 | ESMLogo OLD.png | 165.2 |
 | android/icon-background.png | 7 |
 | android/icon-foreground.png | 53.9 |
@@ -1713,6 +1723,12 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMTopicEvensOdds.svg | 8.8 | 5 |
 | ESMIll/ESMTopicFlatShapes.svg | 12.5 | 2 |
 | ESMIll/ESMTopicFractionalPartLargerThan1.svg | 9.1 | 1 |
+| ESMIll/ESMTopicGraphsApOrBanDotAndLineGraphs.svg | 70.1 | 1 |
+| ESMIll/ESMTopicGraphsApOrBanPictograph.svg | 151.8 | 1 |
+| ESMIll/ESMTopicGraphsApOrBanPictographAndBarGraph.svg | 334.3 | 1 |
+| ESMIll/ESMTopicGraphsCoastalTermperatureScatterPlot.svg | 57.9 | 1 |
+| ESMIll/ESMTopicGraphsShapeCountsChartAndTable.svg | 21.1 | 1 |
+| ESMIll/ESMTopicGraphsShapeCountsTallyAndTChart.svg | 18.1 | 1 |
 | ESMIll/ESMTopicMult3BagsOf4.svg | 7.6 | 1 |
 | ESMIll/ESMTopicNearDoubles3+3+1.svg | 6.7 | 1 |
 | ESMIll/ESMTopicNearDoubles4+4-1.svg | 6.8 | 1 |
