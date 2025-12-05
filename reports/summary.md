@@ -18,7 +18,7 @@
 | set_variable | 772 |
 | simple_checkbox | 4 |
 | template | 92 |
-| text | 345 |
+| text | 346 |
 | text_area | 2 |
 | tile_component | 3 |
 | title | 52 |
@@ -51,8 +51,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 45557 KB | 45.6 MB |
-| unused | 22663 KB | 22.7 MB |
+| total | 45713 KB | 45.7 MB |
+| unused | 22328 KB | 22.3 MB |
 </details>
 
 <details open>
@@ -309,14 +309,9 @@ Assets that appear in app-data but do not have references within sheets
 | ESMIll/ESMPOWCAvoidingRectanglesAnswer4.svg | 7.5 |
 | ESMIll/ESMTopicComparingLinesofDots.svg | 3.3 |
 | ESMIll/ESMTopicEquivRectangles2.svg | 5 |
-| ESMIll/ESMTopicGraphs10FlippedCoinsBarGraph.svg | 62.1 |
-| ESMIll/ESMTopicGraphsAliceFrankBarGraph.svg | 38.6 |
-| ESMIll/ESMTopicGraphsApOrBanBarGraph.svg | 85.8 |
 | ESMIll/ESMTopicGraphsApOrBanDotGraph.svg | 48.7 |
 | ESMIll/ESMTopicGraphsApOrBanLineGraph.svg | 52.5 |
 | ESMIll/ESMTopicGraphsApOrBanPictoBarGraph.svg | 237.6 |
-| ESMIll/ESMTopicGraphsHomerunsBarGraph.svg | 35.5 |
-| ESMIll/ESMTopicGraphsHomerunsTallyChart.svg | 113.5 |
 | ESMIll/ESMTopicGraphsMonToFriLineGraph.svg | 65 |
 | ESMIll/ESMTopicGraphsMonToFriTruncatedLineGraph.svg | 61.5 |
 | ESMLogo OLD.png | 165.2 |
@@ -352,7 +347,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | EFM145Estimation.svg | 34.4 | 1 |
 | EFM200NumberShapesAddingEvensOdds.svg | 21.4 | 1 |
 | EFM200SimilarStars.svg | 4.1 | 1 |
-| EFM200SymmetricArt.svg | 12.3 | 3 |
+| EFM200SymmetricArt.svg | 12.3 | 5 |
 | EFM20ColoredTiling.svg | 14.7 | 2 |
 | EFM230OrderingCards.svg | 21.7 | 1 |
 | EFM290Fingers11-3.svg | 21.6 | 1 |
@@ -1723,12 +1718,14 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMTopicEvensOdds.svg | 8.8 | 5 |
 | ESMIll/ESMTopicFlatShapes.svg | 12.5 | 2 |
 | ESMIll/ESMTopicFractionalPartLargerThan1.svg | 9.1 | 1 |
-| ESMIll/ESMTopicGraphsApOrBanDotAndLineGraphs.svg | 70.1 | 1 |
-| ESMIll/ESMTopicGraphsApOrBanPictograph.svg | 151.8 | 1 |
-| ESMIll/ESMTopicGraphsApOrBanPictographAndBarGraph.svg | 334.3 | 1 |
-| ESMIll/ESMTopicGraphsCoastalTermperatureScatterPlot.svg | 57.9 | 1 |
-| ESMIll/ESMTopicGraphsShapeCountsChartAndTable.svg | 21.1 | 1 |
-| ESMIll/ESMTopicGraphsShapeCountsTallyAndTChart.svg | 18.1 | 1 |
+| ESMIll/ESMTopicGraphs10FlippedCoinsBarGraph.svg | 62.1 | 1 |
+| ESMIll/ESMTopicGraphsApOrBanBarGraph.svg | 85.8 | 1 |
+| ESMIll/ESMTopicGraphsApOrBanDotAndLineGraphs.svg | 70.1 | 2 |
+| ESMIll/ESMTopicGraphsApOrBanPictograph.svg | 151.8 | 2 |
+| ESMIll/ESMTopicGraphsApOrBanPictographAndBarGraph.svg | 334.3 | 2 |
+| ESMIll/ESMTopicGraphsCoastalTermperatureScatterPlot.svg | 57.9 | 2 |
+| ESMIll/ESMTopicGraphsShapeCountsChartAndTable.svg | 21.1 | 2 |
+| ESMIll/ESMTopicGraphsShapeCountsTallyAndTChart.svg | 18.1 | 2 |
 | ESMIll/ESMTopicMult3BagsOf4.svg | 7.6 | 1 |
 | ESMIll/ESMTopicNearDoubles3+3+1.svg | 6.7 | 1 |
 | ESMIll/ESMTopicNearDoubles4+4-1.svg | 6.8 | 1 |
@@ -1743,9 +1740,10 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMTopicQASDifference5-2.svg | 4.7 | 1 |
 | ESMIll/ESMTopicQASTakeAway5-2.svg | 7.1 | 1 |
 | ESMIll/ESMTopicRectangleSquare.svg | 5.4 | 1 |
-| ESMIll/ESMTopicReflectionRotation.svg | 12.9 | 1 |
-| ESMIll/ESMTopicRegularTilings.svg | 14.5 | 1 |
-| ESMIll/ESMTopicSemiRegTilings.svg | 68.9 | 1 |
+| ESMIll/ESMTopicReflectionRotation.svg | 12.9 | 2 |
+| ESMIll/ESMTopicRegularTilings.svg | 14.5 | 2 |
+| ESMIll/ESMTopicRotation.svg | 8.8 | 1 |
+| ESMIll/ESMTopicSemiRegTilings.svg | 68.9 | 2 |
 | ESMIll/ESMTopicSub1-5.svg | 7.1 | 1 |
 | ESMIll/ESMTopicSub35.svg | 3.7 | 2 |
 | ESMIll/ESMTopicSub456Plus1-2.svg | 12.9 | 1 |
