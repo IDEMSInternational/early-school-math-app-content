@@ -1,0 +1,434 @@
+{
+  "flow_type": "template",
+  "flow_name": "esm_which_is_more_fractions",
+  "status": "released",
+  "rows": [
+    {
+      "type": "display_group",
+      "name": "dg_top_of_page",
+      "rows": [
+        {
+          "type": "title",
+          "name": "spacer",
+          "value": "Which is More (or Less)? – Fractions",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "flex:1"
+          ],
+          "_nested_name": "dg_top_of_page.spacer"
+        }
+      ],
+      "_nested_name": "dg_top_of_page"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_info",
+      "rows": [
+        {
+          "type": "text",
+          "name": "help_text",
+          "value": "Given two numbers, Which one is more? Switch between that question and the nearly identical problem, Which one is less?\n\nFor example: Which is more, 4/8 or 3/8? Similarly this could be: Which is less, 4/8 or 3/8?",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "icon_src": "help",
+            "style": "navigation"
+          },
+          "_nested_name": "dg_info.help_text"
+        }
+      ],
+      "_nested_name": "dg_info"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_advice",
+      "parameter_list": {
+        "style": "column"
+      },
+      "rows": [
+        {
+          "type": "accordion",
+          "name": "accordion_for_intro",
+          "parameter_list": {
+            "open_multiple": "TRUE"
+          },
+          "rows": [
+            {
+              "type": "accordion_section",
+              "name": "accord_topics",
+              "value": "Topics & Goals",
+              "parameter_list": {
+                "text_align": "center",
+                "style": "large emphasised"
+              },
+              "rows": [
+                {
+                  "type": "display_group",
+                  "name": "dg_topics_accord",
+                  "parameter_list": {
+                    "style": "column"
+                  },
+                  "rows": [
+                    {
+                      "type": "text",
+                      "name": "topics_text",
+                      "value": "The goal is to develop number sense for fractions. Which characteristics of the numerator and denominator make a fraction larger or smaller in value? Which techniques can a student develop that help them easily see which fraction is smaller or larger?",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "parameter_list": {
+                        "icon_src": "help",
+                        "style": "navigation"
+                      },
+                      "_nested_name": "dg_advice.accordion_for_intro.accord_topics.dg_topics_accord.topics_text"
+                    }
+                  ],
+                  "_nested_name": "dg_advice.accordion_for_intro.accord_topics.dg_topics_accord"
+                }
+              ],
+              "_nested_name": "dg_advice.accordion_for_intro.accord_topics"
+            },
+            {
+              "type": "accordion_section",
+              "name": "accord_advice",
+              "value": "Teaching Ideas & Directions",
+              "parameter_list": {
+                "text_align": "center",
+                "style": "large emphasised"
+              },
+              "rows": [
+                {
+                  "type": "display_group",
+                  "name": "dg_advice_accord",
+                  "parameter_list": {
+                    "style": "column"
+                  },
+                  "rows": [
+                    {
+                      "type": "text",
+                      "name": "advice_text",
+                      "value": "These routines develop various strategies for understanding the values of fractions and comparing them. Students can always fall back on converting the two fractions to have a common denominator and then compare that way. However, that approach gives up opportunities for deeper understandings of fractions, and it is not nearly as playful or interesting.\n\nPossible strategies include:\n* Use the same denominator and see how the numerators compare. If you have 4/8 and 3/8, why make it harder than it needs to be?\n* If two fractions have the same denominator, the one with the smaller numerator will be smaller.\n* If two fractions have the same numerator, the one with the larger denominator will be smaller.\n* Use a benchmark number to simplify the comparison. To stay with the 4/8 and 3/8 example, 4/8 is 1/2. 3 is less than half of 8, so 3/8 is less than 1/2. Whole numbers and very simple fractions like halves and thirds can make good benchmarks.\n* Sometimes look at the distance from a benchmark number. For example, 9/10 is 1 - 1/10 and 7/8 is 1 - 1/8. The larger the number you subtract from the same number, the smaller the number becomes.\n* Treat one of the fractions as division. If you want to compare 1/2 and 2/3, your student can say that 2 is more than half of 3, so 2/3 must be bigger.",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "parameter_list": {
+                        "icon_src": "help",
+                        "style": "navigation"
+                      },
+                      "_nested_name": "dg_advice.accordion_for_intro.accord_advice.dg_advice_accord.advice_text"
+                    }
+                  ],
+                  "_nested_name": "dg_advice.accordion_for_intro.accord_advice.dg_advice_accord"
+                }
+              ],
+              "_nested_name": "dg_advice.accordion_for_intro.accord_advice"
+            }
+          ],
+          "_nested_name": "dg_advice.accordion_for_intro"
+        }
+      ],
+      "_nested_name": "dg_advice"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_which_is_more_talks",
+      "parameter_list": {
+        "style": "column"
+      },
+      "rows": [
+        {
+          "type": "text",
+          "name": "intro_2_text",
+          "value": "Each task has two numbers. The students should decide which one is the biggest and which is the smallest.",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "dg_which_is_more_talks.intro_2_text"
+        },
+        {
+          "type": "accordion",
+          "name": "accordion_for_which_is_more_groups",
+          "parameter_list": {
+            "open_multiple": "TRUE"
+          },
+          "rows": [
+            {
+              "type": "items",
+              "name": "which_is_more_accordions",
+              "value": "@data.esm_which_is_more_data_list",
+              "parameter_list": {
+                "filter": "@item.type==\"fraction\""
+              },
+              "rows": [
+                {
+                  "type": "accordion_section",
+                  "name": "accord_@item.id",
+                  "value": "@item.name",
+                  "parameter_list": {
+                    "text_align": "center",
+                    "style": "large emphasised"
+                  },
+                  "rows": [
+                    {
+                      "type": "display_group",
+                      "name": "dg_@item.id",
+                      "parameter_list": {
+                        "style": "column"
+                      },
+                      "rows": [
+                        {
+                          "name": "content_ptr",
+                          "value": "data.esm_which_is_more_data_list.@item.id",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "type": "set_variable",
+                          "_nested_name": "dg_which_is_more_talks.accordion_for_which_is_more_groups.which_is_more_accordions.accord_@item.id.dg_@item.id.content_ptr",
+                          "_dynamicFields": {
+                            "value": [
+                              {
+                                "fullExpression": "data.esm_which_is_more_data_list.@item.id",
+                                "matchedExpression": "@item.id",
+                                "type": "item",
+                                "fieldName": "id"
+                              }
+                            ],
+                            "_nested_name": [
+                              {
+                                "fullExpression": "dg_which_is_more_talks.accordion_for_which_is_more_groups.which_is_more_accordions.accord_@item.id.dg_@item.id.content_ptr",
+                                "matchedExpression": "@item.id.dg_",
+                                "type": "item",
+                                "fieldName": "id"
+                              },
+                              {
+                                "fullExpression": "dg_which_is_more_talks.accordion_for_which_is_more_groups.which_is_more_accordions.accord_@item.id.dg_@item.id.content_ptr",
+                                "matchedExpression": "@item.id.content_ptr",
+                                "type": "item",
+                                "fieldName": "id"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@item.id": [
+                              "value"
+                            ],
+                            "@item.id.dg_": [
+                              "_nested_name"
+                            ],
+                            "@item.id.content_ptr": [
+                              "_nested_name"
+                            ]
+                          }
+                        },
+                        {
+                          "type": "template",
+                          "name": "which_is_more_body_maker",
+                          "value": "esm_page_viewer",
+                          "rows": [
+                            {
+                              "name": "esm_content_ptr",
+                              "value": "@@local.content_ptr",
+                              "_translations": {
+                                "value": {}
+                              },
+                              "type": "set_variable",
+                              "_nested_name": "dg_which_is_more_talks.accordion_for_which_is_more_groups.which_is_more_accordions.accord_@item.id.dg_@item.id.which_is_more_body_maker.esm_content_ptr",
+                              "_dynamicFields": {
+                                "value": [
+                                  {
+                                    "fullExpression": "@@local.content_ptr",
+                                    "matchedExpression": "@local.content_ptr",
+                                    "type": "local",
+                                    "fieldName": "content_ptr"
+                                  }
+                                ],
+                                "_nested_name": [
+                                  {
+                                    "fullExpression": "dg_which_is_more_talks.accordion_for_which_is_more_groups.which_is_more_accordions.accord_@item.id.dg_@item.id.which_is_more_body_maker.esm_content_ptr",
+                                    "matchedExpression": "@item.id.dg_",
+                                    "type": "item",
+                                    "fieldName": "id"
+                                  },
+                                  {
+                                    "fullExpression": "dg_which_is_more_talks.accordion_for_which_is_more_groups.which_is_more_accordions.accord_@item.id.dg_@item.id.which_is_more_body_maker.esm_content_ptr",
+                                    "matchedExpression": "@item.id.which_is_more_body_maker.esm_content_ptr",
+                                    "type": "item",
+                                    "fieldName": "id"
+                                  }
+                                ]
+                              },
+                              "_dynamicDependencies": {
+                                "@local.content_ptr": [
+                                  "value"
+                                ],
+                                "@item.id.dg_": [
+                                  "_nested_name"
+                                ],
+                                "@item.id.which_is_more_body_maker.esm_content_ptr": [
+                                  "_nested_name"
+                                ]
+                              }
+                            }
+                          ],
+                          "_nested_name": "dg_which_is_more_talks.accordion_for_which_is_more_groups.which_is_more_accordions.accord_@item.id.dg_@item.id.which_is_more_body_maker",
+                          "_dynamicFields": {
+                            "_nested_name": [
+                              {
+                                "fullExpression": "dg_which_is_more_talks.accordion_for_which_is_more_groups.which_is_more_accordions.accord_@item.id.dg_@item.id.which_is_more_body_maker",
+                                "matchedExpression": "@item.id.dg_",
+                                "type": "item",
+                                "fieldName": "id"
+                              },
+                              {
+                                "fullExpression": "dg_which_is_more_talks.accordion_for_which_is_more_groups.which_is_more_accordions.accord_@item.id.dg_@item.id.which_is_more_body_maker",
+                                "matchedExpression": "@item.id.which_is_more_body_maker",
+                                "type": "item",
+                                "fieldName": "id"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@item.id.dg_": [
+                              "_nested_name"
+                            ],
+                            "@item.id.which_is_more_body_maker": [
+                              "_nested_name"
+                            ]
+                          }
+                        }
+                      ],
+                      "_nested_name": "dg_which_is_more_talks.accordion_for_which_is_more_groups.which_is_more_accordions.accord_@item.id.dg_@item.id",
+                      "_dynamicFields": {
+                        "name": [
+                          {
+                            "fullExpression": "dg_@item.id",
+                            "matchedExpression": "@item.id",
+                            "type": "item",
+                            "fieldName": "id"
+                          }
+                        ],
+                        "_nested_name": [
+                          {
+                            "fullExpression": "dg_which_is_more_talks.accordion_for_which_is_more_groups.which_is_more_accordions.accord_@item.id.dg_@item.id",
+                            "matchedExpression": "@item.id.dg_",
+                            "type": "item",
+                            "fieldName": "id"
+                          },
+                          {
+                            "fullExpression": "dg_which_is_more_talks.accordion_for_which_is_more_groups.which_is_more_accordions.accord_@item.id.dg_@item.id",
+                            "matchedExpression": "@item.id",
+                            "type": "item",
+                            "fieldName": "id"
+                          }
+                        ]
+                      },
+                      "_dynamicDependencies": {
+                        "@item.id": [
+                          "name",
+                          "_nested_name"
+                        ],
+                        "@item.id.dg_": [
+                          "_nested_name"
+                        ]
+                      }
+                    }
+                  ],
+                  "_nested_name": "dg_which_is_more_talks.accordion_for_which_is_more_groups.which_is_more_accordions.accord_@item.id",
+                  "_dynamicFields": {
+                    "name": [
+                      {
+                        "fullExpression": "accord_@item.id",
+                        "matchedExpression": "@item.id",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ],
+                    "value": [
+                      {
+                        "fullExpression": "@item.name",
+                        "matchedExpression": "@item.name",
+                        "type": "item",
+                        "fieldName": "name"
+                      }
+                    ],
+                    "_nested_name": [
+                      {
+                        "fullExpression": "dg_which_is_more_talks.accordion_for_which_is_more_groups.which_is_more_accordions.accord_@item.id",
+                        "matchedExpression": "@item.id",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@item.id": [
+                      "name",
+                      "_nested_name"
+                    ],
+                    "@item.name": [
+                      "value"
+                    ]
+                  }
+                }
+              ],
+              "_nested_name": "dg_which_is_more_talks.accordion_for_which_is_more_groups.which_is_more_accordions",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@data.esm_which_is_more_data_list",
+                    "matchedExpression": "@data.esm_which_is_more_data_list",
+                    "type": "data",
+                    "fieldName": "esm_which_is_more_data_list"
+                  }
+                ],
+                "parameter_list": {
+                  "filter": [
+                    {
+                      "fullExpression": "@item.type==\"fraction\"",
+                      "matchedExpression": "@item.type",
+                      "type": "item",
+                      "fieldName": "type"
+                    }
+                  ]
+                }
+              },
+              "_dynamicDependencies": {
+                "@data.esm_which_is_more_data_list": [
+                  "value"
+                ],
+                "@item.type": [
+                  "parameter_list.filter"
+                ]
+              }
+            }
+          ],
+          "_nested_name": "dg_which_is_more_talks.accordion_for_which_is_more_groups"
+        }
+      ],
+      "_nested_name": "dg_which_is_more_talks"
+    },
+    {
+      "type": "display_group",
+      "name": "fake_group",
+      "style_list": [
+        "margin-top: 40px"
+      ],
+      "rows": [
+        {
+          "type": "text",
+          "name": "spacer",
+          "_nested_name": "fake_group.spacer"
+        }
+      ],
+      "_nested_name": "fake_group"
+    }
+  ],
+  "_source": {
+    "name": "1PeJ5ishcTCWUvjhflbQqKO6M8u9rNuec",
+    "path": "ESM_routines_high_level_sheets.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1qf1nWmDsN-EkV8QR3lEP7xWnlSLpakgCdVraS56y_Mg"
+  }
+}

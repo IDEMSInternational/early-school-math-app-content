@@ -1,0 +1,112 @@
+{
+  "flow_type": "template",
+  "flow_name": "esm_target_number_fractions",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_display_group",
+      "name": "dg_top_of_page"
+    },
+    {
+      "type": "title",
+      "name": "spacer",
+      "value": "Target Number – Fractions",
+      "style_list": "flex:1"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_info"
+    },
+    {
+      "type": "text",
+      "name": "help_text",
+      "value": "Pick a fraction to use as a special number. It could be for the day, or just for a special event. It can be a proper fraction, improer fraction, mixed number, or whole number. Students are challenged to 5 to 8 ways to make that number using addition, subtraction, multiplication, or division (sharing).\n\nAdd constraints to methods that are allowed to steer your students to ideas you want them to practice.",
+      "parameter_list": "icon_src: help; style:navigation"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_advice",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion_for_intro",
+      "parameter_list": "open_multiple:TRUE;",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_topics",
+      "value": "Topics & Goals",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_topics_accord",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "topics_text",
+      "value": "This develops skills doing arithmetic with fractions. It also increases number sense for the fractions.",
+      "parameter_list": "icon_src: help; style:navigation"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_advice",
+      "value": "Teaching Ideas & Directions",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_advice_accord",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "advice_text",
+      "value": "Including interesting constraints is what drives this routine. \n\nHere are some possible constraint examples:\n* Only use unit fractions.\n* Cannot use 1/2's\n* Must use a whole number in at least one solution\n* Must use equivalent fractions in your solution\n* Must use addition (subtraction, multiplication, division) at least once\n* Must include both addition and subtraction in at least one solution\n* Must include at least one drawing\n* Must include decimals in one or more solutions\n* Must include fractions with three different denominators in each solution",
+      "parameter_list": "icon_src: help; style:navigation"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "fake_group",
+      "style_list": "margin-top: 40px;"
+    },
+    {
+      "type": "text",
+      "name": "spacer"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

@@ -1,0 +1,434 @@
+{
+  "flow_type": "template",
+  "flow_name": "esm_fraction_sharing",
+  "status": "released",
+  "rows": [
+    {
+      "type": "display_group",
+      "name": "dg_top_of_page",
+      "rows": [
+        {
+          "type": "title",
+          "name": "spacer",
+          "value": "Fraction Sharing",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "flex:1"
+          ],
+          "_nested_name": "dg_top_of_page.spacer"
+        }
+      ],
+      "_nested_name": "dg_top_of_page"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_info",
+      "rows": [
+        {
+          "type": "text",
+          "name": "help_text",
+          "value": "How do you share some mixed number amount equally among some number of people? These routines build on the ideas of wholes and fractional parts.\n\nSuppose you have 1 1/2 pies and want to share it with 6 people, how much does each person get? Use everyday things to make these routines relateable.",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "icon_src": "help",
+            "style": "navigation"
+          },
+          "_nested_name": "dg_info.help_text"
+        }
+      ],
+      "_nested_name": "dg_info"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_advice",
+      "parameter_list": {
+        "style": "column"
+      },
+      "rows": [
+        {
+          "type": "accordion",
+          "name": "accordion_for_intro",
+          "parameter_list": {
+            "open_multiple": "TRUE"
+          },
+          "rows": [
+            {
+              "type": "accordion_section",
+              "name": "accord_topics",
+              "value": "Topics & Goals",
+              "parameter_list": {
+                "text_align": "center",
+                "style": "large emphasised"
+              },
+              "rows": [
+                {
+                  "type": "display_group",
+                  "name": "dg_topics_accord",
+                  "parameter_list": {
+                    "style": "column"
+                  },
+                  "rows": [
+                    {
+                      "type": "text",
+                      "name": "topics_text",
+                      "value": "Your students are developing an understanding of how multiple equal pieces can make up a whole thing. This starts with one whole thing broken up into equal pieces, and it then grows to larger whole numbers and even mixed numbers.\n\nThese routines are also developing a number sense for halves, thirds, and fourths. You can use larger denominators when your students are ready.",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "parameter_list": {
+                        "icon_src": "help",
+                        "style": "navigation"
+                      },
+                      "_nested_name": "dg_advice.accordion_for_intro.accord_topics.dg_topics_accord.topics_text"
+                    }
+                  ],
+                  "_nested_name": "dg_advice.accordion_for_intro.accord_topics.dg_topics_accord"
+                }
+              ],
+              "_nested_name": "dg_advice.accordion_for_intro.accord_topics"
+            },
+            {
+              "type": "accordion_section",
+              "name": "accord_advice",
+              "value": "Teaching Ideas & Directions",
+              "parameter_list": {
+                "text_align": "center",
+                "style": "large emphasised"
+              },
+              "rows": [
+                {
+                  "type": "display_group",
+                  "name": "dg_advice_accord",
+                  "parameter_list": {
+                    "style": "column"
+                  },
+                  "rows": [
+                    {
+                      "type": "text",
+                      "name": "advice_text",
+                      "value": "Initially, start by breaking up one or more circles or rectangles into equal size pieces.\n\nThese routines pick up after that phase. For these, think of something from their lives (cookies, cake, bread, paint) that can be split evenly among several people.\n\nEncourage your students to try estimates and then adjust as needed. For example, suppose 5 cookies need to be split among 4 people. If they estimate 1 1/2, have them find out that 4 x 1 1/2 is 6, so they need a smaller answer. 1 is clearly too small, so the answer is between 1 and 1 1/2.\n\nExplore the practical side of this. If you split 3 cookies 4 ways, three people can get one piece that is 3/4 of a cookie and the fourth can get three pieces that are 1/4 of a cookie. Or, each of the 4 people can get 1/2 a cookie and 1/4 of a cookie. Which method would your students prefer? Lots' of fun discussions develop this way. When is it possible to give each person the same set of pieces? - Can this always be done reasonably?\n\nNote that some problems can reasonably and productively be thought of two ways. For example, 3 cookies split among 4 people can be thought of as 3/4 for each (with the difficulty noted before). Or, you can simply break all of the cookies into 1/4's and give each person 3.",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "parameter_list": {
+                        "icon_src": "help",
+                        "style": "navigation"
+                      },
+                      "_nested_name": "dg_advice.accordion_for_intro.accord_advice.dg_advice_accord.advice_text"
+                    }
+                  ],
+                  "_nested_name": "dg_advice.accordion_for_intro.accord_advice.dg_advice_accord"
+                }
+              ],
+              "_nested_name": "dg_advice.accordion_for_intro.accord_advice"
+            }
+          ],
+          "_nested_name": "dg_advice.accordion_for_intro"
+        }
+      ],
+      "_nested_name": "dg_advice"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_fraction_sharing_talks",
+      "parameter_list": {
+        "style": "column"
+      },
+      "rows": [
+        {
+          "type": "text",
+          "name": "intro_2_text",
+          "value": "Each task has two numbers. The first number is the number of people sharing, and the second number is how much is being shared.",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "dg_fraction_sharing_talks.intro_2_text"
+        },
+        {
+          "type": "accordion",
+          "name": "accordion_for_fraction_sharing_groups",
+          "parameter_list": {
+            "open_multiple": "TRUE"
+          },
+          "rows": [
+            {
+              "type": "items",
+              "name": "fraction_sharing_accordions",
+              "value": "@data.esm_fraction_sharing_data_list",
+              "parameter_list": {
+                "filter": "@item.type==\"fraction\""
+              },
+              "rows": [
+                {
+                  "type": "accordion_section",
+                  "name": "accord_@item.id",
+                  "value": "@item.name",
+                  "parameter_list": {
+                    "text_align": "center",
+                    "style": "large emphasised"
+                  },
+                  "rows": [
+                    {
+                      "type": "display_group",
+                      "name": "dg_@item.id",
+                      "parameter_list": {
+                        "style": "column"
+                      },
+                      "rows": [
+                        {
+                          "name": "content_ptr",
+                          "value": "data.esm_fraction_sharing_data_list.@item.id",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "type": "set_variable",
+                          "_nested_name": "dg_fraction_sharing_talks.accordion_for_fraction_sharing_groups.fraction_sharing_accordions.accord_@item.id.dg_@item.id.content_ptr",
+                          "_dynamicFields": {
+                            "value": [
+                              {
+                                "fullExpression": "data.esm_fraction_sharing_data_list.@item.id",
+                                "matchedExpression": "@item.id",
+                                "type": "item",
+                                "fieldName": "id"
+                              }
+                            ],
+                            "_nested_name": [
+                              {
+                                "fullExpression": "dg_fraction_sharing_talks.accordion_for_fraction_sharing_groups.fraction_sharing_accordions.accord_@item.id.dg_@item.id.content_ptr",
+                                "matchedExpression": "@item.id.dg_",
+                                "type": "item",
+                                "fieldName": "id"
+                              },
+                              {
+                                "fullExpression": "dg_fraction_sharing_talks.accordion_for_fraction_sharing_groups.fraction_sharing_accordions.accord_@item.id.dg_@item.id.content_ptr",
+                                "matchedExpression": "@item.id.content_ptr",
+                                "type": "item",
+                                "fieldName": "id"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@item.id": [
+                              "value"
+                            ],
+                            "@item.id.dg_": [
+                              "_nested_name"
+                            ],
+                            "@item.id.content_ptr": [
+                              "_nested_name"
+                            ]
+                          }
+                        },
+                        {
+                          "type": "template",
+                          "name": "fraction_sharing_body_maker",
+                          "value": "esm_page_viewer",
+                          "rows": [
+                            {
+                              "name": "esm_content_ptr",
+                              "value": "@@local.content_ptr",
+                              "_translations": {
+                                "value": {}
+                              },
+                              "type": "set_variable",
+                              "_nested_name": "dg_fraction_sharing_talks.accordion_for_fraction_sharing_groups.fraction_sharing_accordions.accord_@item.id.dg_@item.id.fraction_sharing_body_maker.esm_content_ptr",
+                              "_dynamicFields": {
+                                "value": [
+                                  {
+                                    "fullExpression": "@@local.content_ptr",
+                                    "matchedExpression": "@local.content_ptr",
+                                    "type": "local",
+                                    "fieldName": "content_ptr"
+                                  }
+                                ],
+                                "_nested_name": [
+                                  {
+                                    "fullExpression": "dg_fraction_sharing_talks.accordion_for_fraction_sharing_groups.fraction_sharing_accordions.accord_@item.id.dg_@item.id.fraction_sharing_body_maker.esm_content_ptr",
+                                    "matchedExpression": "@item.id.dg_",
+                                    "type": "item",
+                                    "fieldName": "id"
+                                  },
+                                  {
+                                    "fullExpression": "dg_fraction_sharing_talks.accordion_for_fraction_sharing_groups.fraction_sharing_accordions.accord_@item.id.dg_@item.id.fraction_sharing_body_maker.esm_content_ptr",
+                                    "matchedExpression": "@item.id.fraction_sharing_body_maker.esm_content_ptr",
+                                    "type": "item",
+                                    "fieldName": "id"
+                                  }
+                                ]
+                              },
+                              "_dynamicDependencies": {
+                                "@local.content_ptr": [
+                                  "value"
+                                ],
+                                "@item.id.dg_": [
+                                  "_nested_name"
+                                ],
+                                "@item.id.fraction_sharing_body_maker.esm_content_ptr": [
+                                  "_nested_name"
+                                ]
+                              }
+                            }
+                          ],
+                          "_nested_name": "dg_fraction_sharing_talks.accordion_for_fraction_sharing_groups.fraction_sharing_accordions.accord_@item.id.dg_@item.id.fraction_sharing_body_maker",
+                          "_dynamicFields": {
+                            "_nested_name": [
+                              {
+                                "fullExpression": "dg_fraction_sharing_talks.accordion_for_fraction_sharing_groups.fraction_sharing_accordions.accord_@item.id.dg_@item.id.fraction_sharing_body_maker",
+                                "matchedExpression": "@item.id.dg_",
+                                "type": "item",
+                                "fieldName": "id"
+                              },
+                              {
+                                "fullExpression": "dg_fraction_sharing_talks.accordion_for_fraction_sharing_groups.fraction_sharing_accordions.accord_@item.id.dg_@item.id.fraction_sharing_body_maker",
+                                "matchedExpression": "@item.id.fraction_sharing_body_maker",
+                                "type": "item",
+                                "fieldName": "id"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@item.id.dg_": [
+                              "_nested_name"
+                            ],
+                            "@item.id.fraction_sharing_body_maker": [
+                              "_nested_name"
+                            ]
+                          }
+                        }
+                      ],
+                      "_nested_name": "dg_fraction_sharing_talks.accordion_for_fraction_sharing_groups.fraction_sharing_accordions.accord_@item.id.dg_@item.id",
+                      "_dynamicFields": {
+                        "name": [
+                          {
+                            "fullExpression": "dg_@item.id",
+                            "matchedExpression": "@item.id",
+                            "type": "item",
+                            "fieldName": "id"
+                          }
+                        ],
+                        "_nested_name": [
+                          {
+                            "fullExpression": "dg_fraction_sharing_talks.accordion_for_fraction_sharing_groups.fraction_sharing_accordions.accord_@item.id.dg_@item.id",
+                            "matchedExpression": "@item.id.dg_",
+                            "type": "item",
+                            "fieldName": "id"
+                          },
+                          {
+                            "fullExpression": "dg_fraction_sharing_talks.accordion_for_fraction_sharing_groups.fraction_sharing_accordions.accord_@item.id.dg_@item.id",
+                            "matchedExpression": "@item.id",
+                            "type": "item",
+                            "fieldName": "id"
+                          }
+                        ]
+                      },
+                      "_dynamicDependencies": {
+                        "@item.id": [
+                          "name",
+                          "_nested_name"
+                        ],
+                        "@item.id.dg_": [
+                          "_nested_name"
+                        ]
+                      }
+                    }
+                  ],
+                  "_nested_name": "dg_fraction_sharing_talks.accordion_for_fraction_sharing_groups.fraction_sharing_accordions.accord_@item.id",
+                  "_dynamicFields": {
+                    "name": [
+                      {
+                        "fullExpression": "accord_@item.id",
+                        "matchedExpression": "@item.id",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ],
+                    "value": [
+                      {
+                        "fullExpression": "@item.name",
+                        "matchedExpression": "@item.name",
+                        "type": "item",
+                        "fieldName": "name"
+                      }
+                    ],
+                    "_nested_name": [
+                      {
+                        "fullExpression": "dg_fraction_sharing_talks.accordion_for_fraction_sharing_groups.fraction_sharing_accordions.accord_@item.id",
+                        "matchedExpression": "@item.id",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@item.id": [
+                      "name",
+                      "_nested_name"
+                    ],
+                    "@item.name": [
+                      "value"
+                    ]
+                  }
+                }
+              ],
+              "_nested_name": "dg_fraction_sharing_talks.accordion_for_fraction_sharing_groups.fraction_sharing_accordions",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@data.esm_fraction_sharing_data_list",
+                    "matchedExpression": "@data.esm_fraction_sharing_data_list",
+                    "type": "data",
+                    "fieldName": "esm_fraction_sharing_data_list"
+                  }
+                ],
+                "parameter_list": {
+                  "filter": [
+                    {
+                      "fullExpression": "@item.type==\"fraction\"",
+                      "matchedExpression": "@item.type",
+                      "type": "item",
+                      "fieldName": "type"
+                    }
+                  ]
+                }
+              },
+              "_dynamicDependencies": {
+                "@data.esm_fraction_sharing_data_list": [
+                  "value"
+                ],
+                "@item.type": [
+                  "parameter_list.filter"
+                ]
+              }
+            }
+          ],
+          "_nested_name": "dg_fraction_sharing_talks.accordion_for_fraction_sharing_groups"
+        }
+      ],
+      "_nested_name": "dg_fraction_sharing_talks"
+    },
+    {
+      "type": "display_group",
+      "name": "fake_group",
+      "style_list": [
+        "margin-top: 40px"
+      ],
+      "rows": [
+        {
+          "type": "text",
+          "name": "spacer",
+          "_nested_name": "fake_group.spacer"
+        }
+      ],
+      "_nested_name": "fake_group"
+    }
+  ],
+  "_source": {
+    "name": "1PeJ5ishcTCWUvjhflbQqKO6M8u9rNuec",
+    "path": "ESM_routines_high_level_sheets.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1qf1nWmDsN-EkV8QR3lEP7xWnlSLpakgCdVraS56y_Mg"
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "flow_type": "template",
+  "flow_name": "esm_fraction_sharing",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_display_group",
+      "name": "dg_top_of_page"
+    },
+    {
+      "type": "title",
+      "name": "spacer",
+      "value": "Fraction Sharing",
+      "style_list": "flex:1"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_info"
+    },
+    {
+      "type": "text",
+      "name": "help_text",
+      "value": "How do you share some mixed number amount equally among some number of people? These routines build on the ideas of wholes and fractional parts.\n\nSuppose you have 1 1/2 pies and want to share it with 6 people, how much does each person get? Use everyday things to make these routines relateable. ",
+      "parameter_list": "icon_src: help; style:navigation"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_advice",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion_for_intro",
+      "parameter_list": "open_multiple:TRUE;",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_topics",
+      "value": "Topics & Goals",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_topics_accord",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "topics_text",
+      "value": "Your students are developing an understanding of how multiple equal pieces can make up a whole thing. This starts with one whole thing broken up into equal pieces, and it then grows to larger whole numbers and even mixed numbers.\n\nThese routines are also developing a number sense for halves, thirds, and fourths. You can use larger denominators when your students are ready.",
+      "parameter_list": "icon_src: help; style:navigation"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_advice",
+      "value": "Teaching Ideas & Directions",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_advice_accord",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "advice_text",
+      "value": "Initially, start by breaking up one or more circles or rectangles into equal size pieces.\n\nThese routines pick up after that phase. For these, think of something from their lives (cookies, cake, bread, paint) that can be split evenly among several people.\n\nEncourage your students to try estimates and then adjust as needed. For example, suppose 5 cookies need to be split among 4 people. If they estimate 1 1/2, have them find out that 4 x 1 1/2 is 6, so they need a smaller answer. 1 is clearly too small, so the answer is between 1 and 1 1/2.\n\nExplore the practical side of this. If you split 3 cookies 4 ways, three people can get one piece that is 3/4 of a cookie and the fourth can get three pieces that are 1/4 of a cookie. Or, each of the 4 people can get 1/2 a cookie and 1/4 of a cookie. Which method would your students prefer? Lots' of fun discussions develop this way. When is it possible to give each person the same set of pieces? - Can this always be done reasonably?\n\nNote that some problems can reasonably and productively be thought of two ways. For example, 3 cookies split among 4 people can be thought of as 3/4 for each (with the difficulty noted before). Or, you can simply break all of the cookies into 1/4's and give each person 3.",
+      "parameter_list": "icon_src: help; style:navigation"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_fraction_sharing_talks",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "intro_2_text",
+      "value": "Each task has two numbers. The first number is the number of people sharing, and the second number is how much is being shared."
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion_for_fraction_sharing_groups",
+      "parameter_list": "open_multiple:TRUE;",
+      "comments": true
+    },
+    {
+      "type": "begin_items",
+      "name": "fraction_sharing_accordions",
+      "value": "@data.esm_fraction_sharing_data_list",
+      "parameter_list": "filter: @item.type==\"fraction\""
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accord_@item.id",
+      "value": "@item.name",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_@item.id",
+      "parameter_list": "style: column"
+    },
+    {
+      "name": "content_ptr",
+      "value": "data.esm_fraction_sharing_data_list.@item.id"
+    },
+    {
+      "type": "begin_template",
+      "name": "fraction_sharing_body_maker",
+      "value": "esm_page_viewer"
+    },
+    {
+      "name": "esm_content_ptr",
+      "value": "@@local.content_ptr"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "fake_group",
+      "style_list": "margin-top: 40px;"
+    },
+    {
+      "type": "text",
+      "name": "spacer"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

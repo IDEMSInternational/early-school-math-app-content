@@ -3,25 +3,25 @@
 
 | type | count |
 | --- | --- |
-| accordion | 73 |
-| accordion_section | 133 |
-| button | 178 |
+| accordion | 84 |
+| accordion_section | 151 |
+| button | 184 |
 | debug_toggle | 1 |
-| display_group | 443 |
+| display_group | 490 |
 | image | 71 |
-| items | 68 |
+| items | 73 |
 | qr_code | 1 |
 | radio_button_grid | 1 |
 | round_button | 10 |
 | select_text | 1 |
 | set_field | 51 |
-| set_variable | 772 |
+| set_variable | 782 |
 | simple_checkbox | 4 |
-| template | 92 |
-| text | 346 |
+| template | 97 |
+| text | 375 |
 | text_area | 2 |
 | tile_component | 3 |
-| title | 52 |
+| title | 58 |
 | toggle_bar | 13 |
 </details>
 
@@ -38,7 +38,7 @@
 | emit: set_language | 1 |
 | emit: uncompleted | 58 |
 | feedback | 11 |
-| go_to | 151 |
+| go_to | 157 |
 | go_to_url | 3 |
 | reset_app | 1 |
 | set_field | 145 |
@@ -51,8 +51,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 45713 KB | 45.7 MB |
-| unused | 22328 KB | 22.3 MB |
+| total | 46088 KB | 46.1 MB |
+| unused | 22374 KB | 22.4 MB |
 </details>
 
 <details open>
@@ -307,6 +307,10 @@ Assets that appear in app-data but do not have references within sheets
 | ESMIll/ESMPOWBSujikoBlank2by3.svg | 4 |
 | ESMIll/ESMPOWBSujikoBlank3by3.svg | 5.9 |
 | ESMIll/ESMPOWCAvoidingRectanglesAnswer4.svg | 7.5 |
+| ESMIll/ESMRoutineFractionsRectangles1.svg | 12.4 |
+| ESMIll/ESMRoutineFractionsRectangles2.svg | 10.6 |
+| ESMIll/ESMRoutineFractionsRectangles3.svg | 11 |
+| ESMIll/ESMRoutineFractionsRectangles4.svg | 11.7 |
 | ESMIll/ESMTopicComparingLinesofDots.svg | 3.3 |
 | ESMIll/ESMTopicEquivRectangles2.svg | 5 |
 | ESMIll/ESMTopicGraphsApOrBanDotGraph.svg | 48.7 |
@@ -329,6 +333,10 @@ Assets that have references within sheets but do not appear in app-data
 
 | path | count |
 | --- | --- |
+| ESMRoutineFractionsRectangles1.svg | 1 |
+| ESMRoutineFractionsRectangles2.svg | 1 |
+| ESMRoutineFractionsRectangles3.svg | 1 |
+| ESMRoutineFractionsRectangles4.svg | 1 |
 </details>
 
 <details >
@@ -1658,6 +1666,13 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMRoutWhichOneIsDifferentFixed.svg | 4.9 | 1 |
 | ESMIll/ESMRoutWhosTheSpy.svg | 4.3 | 1 |
 | ESMIll/ESMRoutWhosTheSpyNumbers.svg | 4.4 | 1 |
+| ESMIll/ESMRoutineFractionsUnusualBaker1.svg | 2.9 | 1 |
+| ESMIll/ESMRoutineFractionsUnusualBaker2.svg | 4.3 | 1 |
+| ESMIll/ESMRoutineFractionsUnusualBaker3.svg | 3.8 | 1 |
+| ESMIll/ESMRoutineFractionsUnusualBaker4.svg | 3.3 | 1 |
+| ESMIll/ESMRoutineFractionsUnusualBaker5.svg | 3.5 | 1 |
+| ESMIll/ESMRoutineFractionsUnusualBaker6.svg | 3.3 | 1 |
+| ESMIll/ESMRoutineFractionsUnusualBaker7.svg | 4.2 | 1 |
 | ESMIll/ESMRoutineNumberLineTo12.svg | 12.1 | 1 |
 | ESMIll/ESMRoutineStringNumberLineFrom0.svg | 23.9 | 2 |
 | ESMIll/ESMSplats1Color1Splat10-10.svg | 9.2 | 1 |
@@ -1726,6 +1741,8 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMTopicGraphsCoastalTermperatureScatterPlot.svg | 57.9 | 2 |
 | ESMIll/ESMTopicGraphsShapeCountsChartAndTable.svg | 21.1 | 2 |
 | ESMIll/ESMTopicGraphsShapeCountsTallyAndTChart.svg | 18.1 | 2 |
+| ESMIll/ESMTopicMeasureOrderPencils.svg | 124.7 | 1 |
+| ESMIll/ESMTopicMeasuredPencil.svg | 224.4 | 1 |
 | ESMIll/ESMTopicMult3BagsOf4.svg | 7.6 | 1 |
 | ESMIll/ESMTopicNearDoubles3+3+1.svg | 6.7 | 1 |
 | ESMIll/ESMTopicNearDoubles4+4-1.svg | 6.8 | 1 |
@@ -1761,11 +1778,11 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | type | subtype | total |
 | --- | --- | --- |
-| data_list |  | 95 |
+| data_list |  | 99 |
 | data_list | app_config_language_list | 1 |
 | data_list | lifecycle_actions | 1 |
 | generator |  | 1 |
 | global |  | 2 |
-| template |  | 61 |
+| template |  | 67 |
 | template | generated | 58 |
 </details>

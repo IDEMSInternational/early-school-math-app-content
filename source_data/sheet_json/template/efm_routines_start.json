@@ -196,7 +196,7 @@
     {
       "type": "button",
       "name": "button_i_have",
-      "value": "I Have ... I Wish I Had ...",
+      "value": "I Have ... – Small Whole Numbers",
       "action_list": "click | go_to: esm_i_have;",
       "parameter_list": "style: short; \ntext_align: center"
     },
@@ -220,6 +220,66 @@
       "value": "~~Fluency Practice~~",
       "action_list": "click | go_to: esm_fluency_practice;",
       "condition": false,
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "level_fractions",
+      "value": "Fractions",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_routinelist_fractions",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "button",
+      "name": "button_i_have_fractions",
+      "value": "I Have ... – Fractions",
+      "action_list": "click | go_to: esm_i_have_fractions;",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "button",
+      "name": "button_how_many_fractions",
+      "value": "How Many? – Fractions",
+      "action_list": "click | go_to: esm_how_many_fractions;",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "button",
+      "name": "button_which_is_more_fractions",
+      "value": "Which is More? – Fractions",
+      "action_list": "click | go_to: esm_which_is_more_fractions;",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "button",
+      "name": "button_fraction_sharing",
+      "value": "Fraction Sharing",
+      "action_list": "click | go_to: esm_fraction_sharing;",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "button",
+      "name": "button_target_number_fractions",
+      "value": "Target Number – Fractions",
+      "action_list": "click | go_to: esm_target_number_fractions;",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "button",
+      "name": "button_fraction_areas",
+      "value": "Fraction Areas",
+      "action_list": "click | go_to: esm_fraction_areas;",
       "parameter_list": "style: short; \ntext_align: center"
     },
     {

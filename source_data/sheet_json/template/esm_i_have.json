@@ -10,7 +10,7 @@
     {
       "type": "title",
       "name": "spacer",
-      "value": "I Have ... I WIsh I Had ...",
+      "value": "I Have ... – Small Whole Numbers",
       "style_list": "flex:1"
     },
     {
@@ -23,7 +23,7 @@
     {
       "type": "text",
       "name": "help_text",
-      "value": "The two routines\n* \"I have ☐, and I wish I had ☐\"\n* \"I have ☐, and I only need ☐\" \n\nare a way to attach engaging stories to the questions of how many more do I need and how many do I need to take away. For young children, the repetition makes it a familiar scenario they can jump right into.\n\nThis is a task that lends itself to being used for addition and subtraction of many types of numbers in early mathematics - small whole numbers, larger whole numbers, integers, fractions, mixed numbers, and decimals.",
+      "value": "The two routines\n* \"I have ☐, and I wish I had ☐\"\n* \"I have ☐, and I only need ☐\" \n\nare a way to attach engaging stories to the questions of how many more do I need and how many do I need to take away. For young children, the repetition makes it a familiar scenario they can jump right into.\n\nThis is a task that lends itself to being used for addition and subtraction of many types of numbers in early mathematics - small whole numbers, larger whole numbers, integers, fractions, mixed numbers, and decimals.\n\nThe two routines use the same set of numbers, it's just that their roles are reversed when traded between the routines. \"I have 3, and I wish I had 5\" asks for the same answer as \"I have 5, and I only need 3\" – however, the models used to solve these two problems will feel very different.",
       "parameter_list": "icon_src: help; style:navigation"
     },
     {
@@ -55,7 +55,7 @@
     {
       "type": "text",
       "name": "topics_text",
-      "value": "While all these problems can be solved using Counting On or subtraction, a number of different perspectives can encourage different methods to be employed.\n\nIf you point to a number path or number line and say that you have 4 and you need 6, then your students will look at the relationship of those two numbers and either see that they are 2 apart or that they can Count On from 4 to 6 by adding 2. This also encourages them to see that the difference of 4 and 6 is 2.\n\nOn the other hand, if you say you have 4 and you need 6, and you follow that up with the question of what do you need to add to 4 to get 6, then your students will see that this can be thought of as an unknown addition problem with one unknown – 4 + ☐ = 6.\n\nSimilarly, \"I have ☐, and I only need ☐\" can be presented as a difference problem, an addition problem, or a subtraction problem.",
+      "value": "While all these small whole number problems can be solved using Counting On or subtraction, a number of different perspectives can encourage different methods to be employed.\n\nIf you point to a number path or number line and say that you have 4 and you need 6, then your students will look at the relationship of those two numbers and either see that they are 2 apart or that they can Count On from 4 to 6 by adding 2. This also encourages them to see that the difference of 4 and 6 is 2.\n\nOn the other hand, if you say you have 4 and you need 6, and you follow that up with the question of what do you need to add to 4 to get 6, then your students will see that this can be thought of as an unknown addition problem with one unknown – 4 + ☐ = 6.\n\nSimilarly, \"I have ☐, and I only need ☐\" can be presented as a difference problem, an addition problem, or a subtraction problem.",
       "parameter_list": "icon_src: help; style:navigation"
     },
     {
@@ -115,7 +115,8 @@
     {
       "type": "begin_items",
       "name": "i_have_accordions",
-      "value": "@data.esm_i_have_data_list"
+      "value": "@data.esm_i_have_data_list",
+      "parameter_list": "filter: @item.type==\"beginning\""
     },
     {
       "type": "begin_accordion_section",
@@ -135,7 +136,7 @@
     },
     {
       "type": "begin_template",
-      "name": "equality_concept_body_maker",
+      "name": "i_have_body_maker",
       "value": "esm_page_viewer"
     },
     {
