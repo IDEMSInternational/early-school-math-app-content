@@ -455,7 +455,7 @@
                     {
                       "type": "button",
                       "name": "button_i_have",
-                      "value": "I Have ... I Wish I Had ...",
+                      "value": "I Have ... – Small Whole Numbers",
                       "_translations": {
                         "value": {}
                       },
@@ -550,6 +550,166 @@
                 }
               ],
               "_nested_name": "dg_info.accordion_for_routines.level_misc"
+            },
+            {
+              "type": "accordion_section",
+              "name": "level_fractions",
+              "value": "Fractions",
+              "parameter_list": {
+                "text_align": "center",
+                "style": "large emphasised"
+              },
+              "rows": [
+                {
+                  "type": "display_group",
+                  "name": "dg_routinelist_fractions",
+                  "parameter_list": {
+                    "style": "column"
+                  },
+                  "rows": [
+                    {
+                      "type": "button",
+                      "name": "button_i_have_fractions",
+                      "value": "I Have ... – Fractions",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "action_list": [
+                        {
+                          "trigger": "click",
+                          "action_id": "go_to",
+                          "args": [
+                            "esm_i_have_fractions"
+                          ],
+                          "_raw": "click | go_to: esm_i_have_fractions"
+                        }
+                      ],
+                      "parameter_list": {
+                        "style": "short",
+                        "text_align": "center"
+                      },
+                      "_nested_name": "dg_info.accordion_for_routines.level_fractions.dg_routinelist_fractions.button_i_have_fractions"
+                    },
+                    {
+                      "type": "button",
+                      "name": "button_how_many_fractions",
+                      "value": "How Many? – Fractions",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "action_list": [
+                        {
+                          "trigger": "click",
+                          "action_id": "go_to",
+                          "args": [
+                            "esm_how_many_fractions"
+                          ],
+                          "_raw": "click | go_to: esm_how_many_fractions"
+                        }
+                      ],
+                      "parameter_list": {
+                        "style": "short",
+                        "text_align": "center"
+                      },
+                      "_nested_name": "dg_info.accordion_for_routines.level_fractions.dg_routinelist_fractions.button_how_many_fractions"
+                    },
+                    {
+                      "type": "button",
+                      "name": "button_which_is_more_fractions",
+                      "value": "Which is More? – Fractions",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "action_list": [
+                        {
+                          "trigger": "click",
+                          "action_id": "go_to",
+                          "args": [
+                            "esm_which_is_more_fractions"
+                          ],
+                          "_raw": "click | go_to: esm_which_is_more_fractions"
+                        }
+                      ],
+                      "parameter_list": {
+                        "style": "short",
+                        "text_align": "center"
+                      },
+                      "_nested_name": "dg_info.accordion_for_routines.level_fractions.dg_routinelist_fractions.button_which_is_more_fractions"
+                    },
+                    {
+                      "type": "button",
+                      "name": "button_fraction_sharing",
+                      "value": "Fraction Sharing",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "action_list": [
+                        {
+                          "trigger": "click",
+                          "action_id": "go_to",
+                          "args": [
+                            "esm_fraction_sharing"
+                          ],
+                          "_raw": "click | go_to: esm_fraction_sharing"
+                        }
+                      ],
+                      "parameter_list": {
+                        "style": "short",
+                        "text_align": "center"
+                      },
+                      "_nested_name": "dg_info.accordion_for_routines.level_fractions.dg_routinelist_fractions.button_fraction_sharing"
+                    },
+                    {
+                      "type": "button",
+                      "name": "button_target_number_fractions",
+                      "value": "Target Number – Fractions",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "action_list": [
+                        {
+                          "trigger": "click",
+                          "action_id": "go_to",
+                          "args": [
+                            "esm_target_number_fractions"
+                          ],
+                          "_raw": "click | go_to: esm_target_number_fractions"
+                        }
+                      ],
+                      "parameter_list": {
+                        "style": "short",
+                        "text_align": "center"
+                      },
+                      "_nested_name": "dg_info.accordion_for_routines.level_fractions.dg_routinelist_fractions.button_target_number_fractions"
+                    },
+                    {
+                      "type": "button",
+                      "name": "button_fraction_areas",
+                      "value": "Fraction Areas",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "action_list": [
+                        {
+                          "trigger": "click",
+                          "action_id": "go_to",
+                          "args": [
+                            "esm_fraction_areas"
+                          ],
+                          "_raw": "click | go_to: esm_fraction_areas"
+                        }
+                      ],
+                      "parameter_list": {
+                        "style": "short",
+                        "text_align": "center"
+                      },
+                      "_nested_name": "dg_info.accordion_for_routines.level_fractions.dg_routinelist_fractions.button_fraction_areas"
+                    }
+                  ],
+                  "_nested_name": "dg_info.accordion_for_routines.level_fractions.dg_routinelist_fractions"
+                }
+              ],
+              "_nested_name": "dg_info.accordion_for_routines.level_fractions"
             }
           ],
           "_nested_name": "dg_info.accordion_for_routines"

@@ -1,0 +1,434 @@
+{
+  "flow_type": "template",
+  "flow_name": "esm_fraction_areas",
+  "status": "released",
+  "rows": [
+    {
+      "type": "display_group",
+      "name": "dg_top_of_page",
+      "rows": [
+        {
+          "type": "title",
+          "name": "spacer",
+          "value": "Fraction Areas",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "flex:1"
+          ],
+          "_nested_name": "dg_top_of_page.spacer"
+        }
+      ],
+      "_nested_name": "dg_top_of_page"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_info",
+      "rows": [
+        {
+          "type": "text",
+          "name": "help_text",
+          "value": "These routines provide designs broken up into individual pieces (usually polygons). The general challenge is to find the total area and the inidividual areas, and then find the fraction of the whole represented by each piece or group of pieces.\n\nThese problems can be worked in three ways. One way is to assign a number (e.g. 1) to the area of one piece and have students find all the other areas (no fractions needed for this). Another way is to find what fraction of the total each piece represents. Yet another way is to assign a value (e.g. $10) to the whole thing and ask the value of each piece.",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "icon_src": "help",
+            "style": "navigation"
+          },
+          "_nested_name": "dg_info.help_text"
+        }
+      ],
+      "_nested_name": "dg_info"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_advice",
+      "parameter_list": {
+        "style": "column"
+      },
+      "rows": [
+        {
+          "type": "accordion",
+          "name": "accordion_for_intro",
+          "parameter_list": {
+            "open_multiple": "TRUE"
+          },
+          "rows": [
+            {
+              "type": "accordion_section",
+              "name": "accord_topics",
+              "value": "Topics & Goals",
+              "parameter_list": {
+                "text_align": "center",
+                "style": "large emphasised"
+              },
+              "rows": [
+                {
+                  "type": "display_group",
+                  "name": "dg_topics_accord",
+                  "parameter_list": {
+                    "style": "column"
+                  },
+                  "rows": [
+                    {
+                      "type": "text",
+                      "name": "topics_text",
+                      "value": "This is an exercise in seeing parts and wholes. It also is great practice in seeing the relative areas of the shapes. This moves students away from just memorizing area formulas and instead develops a feeling for relative sizes and how the figures fit together.",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "parameter_list": {
+                        "icon_src": "help",
+                        "style": "navigation"
+                      },
+                      "_nested_name": "dg_advice.accordion_for_intro.accord_topics.dg_topics_accord.topics_text"
+                    }
+                  ],
+                  "_nested_name": "dg_advice.accordion_for_intro.accord_topics.dg_topics_accord"
+                }
+              ],
+              "_nested_name": "dg_advice.accordion_for_intro.accord_topics"
+            },
+            {
+              "type": "accordion_section",
+              "name": "accord_advice",
+              "value": "Teaching Ideas & Directions",
+              "parameter_list": {
+                "text_align": "center",
+                "style": "large emphasised"
+              },
+              "rows": [
+                {
+                  "type": "display_group",
+                  "name": "dg_advice_accord",
+                  "parameter_list": {
+                    "style": "column"
+                  },
+                  "rows": [
+                    {
+                      "type": "text",
+                      "name": "advice_text",
+                      "value": "Encourage your students to see the relationships between the compatibly sized pieces. For example, that the equilateral triangle is half of the corresponding parallelogram and one sixth of the regular hexagon.\n\nThere are at least three ways these routines can be done.\n* Assign some number (e.g. 1) to the area of one of the pieces, and challenge students to find the corresponding number for all the other pieces and for the whole design. This way can avoid dealing with fractions if you want.\n* Challenge your students to find what fraction of the whole each piece represents.\n* Assign a value to the whole design – for example, $10 in the Unusual Baker tasks. Then find the value of each individual piece.",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "parameter_list": {
+                        "icon_src": "help",
+                        "style": "navigation"
+                      },
+                      "_nested_name": "dg_advice.accordion_for_intro.accord_advice.dg_advice_accord.advice_text"
+                    }
+                  ],
+                  "_nested_name": "dg_advice.accordion_for_intro.accord_advice.dg_advice_accord"
+                }
+              ],
+              "_nested_name": "dg_advice.accordion_for_intro.accord_advice"
+            }
+          ],
+          "_nested_name": "dg_advice.accordion_for_intro"
+        }
+      ],
+      "_nested_name": "dg_advice"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_fraction_areas_talks",
+      "parameter_list": {
+        "style": "column"
+      },
+      "rows": [
+        {
+          "type": "text",
+          "name": "intro_2_text",
+          "value": "Each task presents a design broken up into individual regions. Assess what fraction of the whole each region represents.",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "dg_fraction_areas_talks.intro_2_text"
+        },
+        {
+          "type": "accordion",
+          "name": "accordion_for_fraction_areas_groups",
+          "parameter_list": {
+            "open_multiple": "TRUE"
+          },
+          "rows": [
+            {
+              "type": "items",
+              "name": "fraction_areas_accordions",
+              "value": "@data.esm_fraction_areas_data_list",
+              "parameter_list": {
+                "filter": "@item.type==\"fraction\""
+              },
+              "rows": [
+                {
+                  "type": "accordion_section",
+                  "name": "accord_@item.id",
+                  "value": "@item.name",
+                  "parameter_list": {
+                    "text_align": "center",
+                    "style": "large emphasised"
+                  },
+                  "rows": [
+                    {
+                      "type": "display_group",
+                      "name": "dg_@item.id",
+                      "parameter_list": {
+                        "style": "column"
+                      },
+                      "rows": [
+                        {
+                          "name": "content_ptr",
+                          "value": "data.esm_fraction_areas_data_list.@item.id",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "type": "set_variable",
+                          "_nested_name": "dg_fraction_areas_talks.accordion_for_fraction_areas_groups.fraction_areas_accordions.accord_@item.id.dg_@item.id.content_ptr",
+                          "_dynamicFields": {
+                            "value": [
+                              {
+                                "fullExpression": "data.esm_fraction_areas_data_list.@item.id",
+                                "matchedExpression": "@item.id",
+                                "type": "item",
+                                "fieldName": "id"
+                              }
+                            ],
+                            "_nested_name": [
+                              {
+                                "fullExpression": "dg_fraction_areas_talks.accordion_for_fraction_areas_groups.fraction_areas_accordions.accord_@item.id.dg_@item.id.content_ptr",
+                                "matchedExpression": "@item.id.dg_",
+                                "type": "item",
+                                "fieldName": "id"
+                              },
+                              {
+                                "fullExpression": "dg_fraction_areas_talks.accordion_for_fraction_areas_groups.fraction_areas_accordions.accord_@item.id.dg_@item.id.content_ptr",
+                                "matchedExpression": "@item.id.content_ptr",
+                                "type": "item",
+                                "fieldName": "id"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@item.id": [
+                              "value"
+                            ],
+                            "@item.id.dg_": [
+                              "_nested_name"
+                            ],
+                            "@item.id.content_ptr": [
+                              "_nested_name"
+                            ]
+                          }
+                        },
+                        {
+                          "type": "template",
+                          "name": "fraction_areas_body_maker",
+                          "value": "esm_page_viewer",
+                          "rows": [
+                            {
+                              "name": "esm_content_ptr",
+                              "value": "@@local.content_ptr",
+                              "_translations": {
+                                "value": {}
+                              },
+                              "type": "set_variable",
+                              "_nested_name": "dg_fraction_areas_talks.accordion_for_fraction_areas_groups.fraction_areas_accordions.accord_@item.id.dg_@item.id.fraction_areas_body_maker.esm_content_ptr",
+                              "_dynamicFields": {
+                                "value": [
+                                  {
+                                    "fullExpression": "@@local.content_ptr",
+                                    "matchedExpression": "@local.content_ptr",
+                                    "type": "local",
+                                    "fieldName": "content_ptr"
+                                  }
+                                ],
+                                "_nested_name": [
+                                  {
+                                    "fullExpression": "dg_fraction_areas_talks.accordion_for_fraction_areas_groups.fraction_areas_accordions.accord_@item.id.dg_@item.id.fraction_areas_body_maker.esm_content_ptr",
+                                    "matchedExpression": "@item.id.dg_",
+                                    "type": "item",
+                                    "fieldName": "id"
+                                  },
+                                  {
+                                    "fullExpression": "dg_fraction_areas_talks.accordion_for_fraction_areas_groups.fraction_areas_accordions.accord_@item.id.dg_@item.id.fraction_areas_body_maker.esm_content_ptr",
+                                    "matchedExpression": "@item.id.fraction_areas_body_maker.esm_content_ptr",
+                                    "type": "item",
+                                    "fieldName": "id"
+                                  }
+                                ]
+                              },
+                              "_dynamicDependencies": {
+                                "@local.content_ptr": [
+                                  "value"
+                                ],
+                                "@item.id.dg_": [
+                                  "_nested_name"
+                                ],
+                                "@item.id.fraction_areas_body_maker.esm_content_ptr": [
+                                  "_nested_name"
+                                ]
+                              }
+                            }
+                          ],
+                          "_nested_name": "dg_fraction_areas_talks.accordion_for_fraction_areas_groups.fraction_areas_accordions.accord_@item.id.dg_@item.id.fraction_areas_body_maker",
+                          "_dynamicFields": {
+                            "_nested_name": [
+                              {
+                                "fullExpression": "dg_fraction_areas_talks.accordion_for_fraction_areas_groups.fraction_areas_accordions.accord_@item.id.dg_@item.id.fraction_areas_body_maker",
+                                "matchedExpression": "@item.id.dg_",
+                                "type": "item",
+                                "fieldName": "id"
+                              },
+                              {
+                                "fullExpression": "dg_fraction_areas_talks.accordion_for_fraction_areas_groups.fraction_areas_accordions.accord_@item.id.dg_@item.id.fraction_areas_body_maker",
+                                "matchedExpression": "@item.id.fraction_areas_body_maker",
+                                "type": "item",
+                                "fieldName": "id"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@item.id.dg_": [
+                              "_nested_name"
+                            ],
+                            "@item.id.fraction_areas_body_maker": [
+                              "_nested_name"
+                            ]
+                          }
+                        }
+                      ],
+                      "_nested_name": "dg_fraction_areas_talks.accordion_for_fraction_areas_groups.fraction_areas_accordions.accord_@item.id.dg_@item.id",
+                      "_dynamicFields": {
+                        "name": [
+                          {
+                            "fullExpression": "dg_@item.id",
+                            "matchedExpression": "@item.id",
+                            "type": "item",
+                            "fieldName": "id"
+                          }
+                        ],
+                        "_nested_name": [
+                          {
+                            "fullExpression": "dg_fraction_areas_talks.accordion_for_fraction_areas_groups.fraction_areas_accordions.accord_@item.id.dg_@item.id",
+                            "matchedExpression": "@item.id.dg_",
+                            "type": "item",
+                            "fieldName": "id"
+                          },
+                          {
+                            "fullExpression": "dg_fraction_areas_talks.accordion_for_fraction_areas_groups.fraction_areas_accordions.accord_@item.id.dg_@item.id",
+                            "matchedExpression": "@item.id",
+                            "type": "item",
+                            "fieldName": "id"
+                          }
+                        ]
+                      },
+                      "_dynamicDependencies": {
+                        "@item.id": [
+                          "name",
+                          "_nested_name"
+                        ],
+                        "@item.id.dg_": [
+                          "_nested_name"
+                        ]
+                      }
+                    }
+                  ],
+                  "_nested_name": "dg_fraction_areas_talks.accordion_for_fraction_areas_groups.fraction_areas_accordions.accord_@item.id",
+                  "_dynamicFields": {
+                    "name": [
+                      {
+                        "fullExpression": "accord_@item.id",
+                        "matchedExpression": "@item.id",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ],
+                    "value": [
+                      {
+                        "fullExpression": "@item.name",
+                        "matchedExpression": "@item.name",
+                        "type": "item",
+                        "fieldName": "name"
+                      }
+                    ],
+                    "_nested_name": [
+                      {
+                        "fullExpression": "dg_fraction_areas_talks.accordion_for_fraction_areas_groups.fraction_areas_accordions.accord_@item.id",
+                        "matchedExpression": "@item.id",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@item.id": [
+                      "name",
+                      "_nested_name"
+                    ],
+                    "@item.name": [
+                      "value"
+                    ]
+                  }
+                }
+              ],
+              "_nested_name": "dg_fraction_areas_talks.accordion_for_fraction_areas_groups.fraction_areas_accordions",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@data.esm_fraction_areas_data_list",
+                    "matchedExpression": "@data.esm_fraction_areas_data_list",
+                    "type": "data",
+                    "fieldName": "esm_fraction_areas_data_list"
+                  }
+                ],
+                "parameter_list": {
+                  "filter": [
+                    {
+                      "fullExpression": "@item.type==\"fraction\"",
+                      "matchedExpression": "@item.type",
+                      "type": "item",
+                      "fieldName": "type"
+                    }
+                  ]
+                }
+              },
+              "_dynamicDependencies": {
+                "@data.esm_fraction_areas_data_list": [
+                  "value"
+                ],
+                "@item.type": [
+                  "parameter_list.filter"
+                ]
+              }
+            }
+          ],
+          "_nested_name": "dg_fraction_areas_talks.accordion_for_fraction_areas_groups"
+        }
+      ],
+      "_nested_name": "dg_fraction_areas_talks"
+    },
+    {
+      "type": "display_group",
+      "name": "fake_group",
+      "style_list": [
+        "margin-top: 40px"
+      ],
+      "rows": [
+        {
+          "type": "text",
+          "name": "spacer",
+          "_nested_name": "fake_group.spacer"
+        }
+      ],
+      "_nested_name": "fake_group"
+    }
+  ],
+  "_source": {
+    "name": "1PeJ5ishcTCWUvjhflbQqKO6M8u9rNuec",
+    "path": "ESM_routines_high_level_sheets.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1qf1nWmDsN-EkV8QR3lEP7xWnlSLpakgCdVraS56y_Mg"
+  }
+}
