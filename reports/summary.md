@@ -51,8 +51,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 46088 KB | 46.1 MB |
-| unused | 22374 KB | 22.4 MB |
+| total | 46252 KB | 46.3 MB |
+| unused | 22328 KB | 22.3 MB |
 </details>
 
 <details open>
@@ -307,10 +307,6 @@ Assets that appear in app-data but do not have references within sheets
 | ESMIll/ESMPOWBSujikoBlank2by3.svg | 4 |
 | ESMIll/ESMPOWBSujikoBlank3by3.svg | 5.9 |
 | ESMIll/ESMPOWCAvoidingRectanglesAnswer4.svg | 7.5 |
-| ESMIll/ESMRoutineFractionsRectangles1.svg | 12.4 |
-| ESMIll/ESMRoutineFractionsRectangles2.svg | 10.6 |
-| ESMIll/ESMRoutineFractionsRectangles3.svg | 11 |
-| ESMIll/ESMRoutineFractionsRectangles4.svg | 11.7 |
 | ESMIll/ESMTopicComparingLinesofDots.svg | 3.3 |
 | ESMIll/ESMTopicEquivRectangles2.svg | 5 |
 | ESMIll/ESMTopicGraphsApOrBanDotGraph.svg | 48.7 |
@@ -333,10 +329,6 @@ Assets that have references within sheets but do not appear in app-data
 
 | path | count |
 | --- | --- |
-| ESMRoutineFractionsRectangles1.svg | 1 |
-| ESMRoutineFractionsRectangles2.svg | 1 |
-| ESMRoutineFractionsRectangles3.svg | 1 |
-| ESMRoutineFractionsRectangles4.svg | 1 |
 </details>
 
 <details >
@@ -1666,6 +1658,21 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMRoutWhichOneIsDifferentFixed.svg | 4.9 | 1 |
 | ESMIll/ESMRoutWhosTheSpy.svg | 4.3 | 1 |
 | ESMIll/ESMRoutWhosTheSpyNumbers.svg | 4.4 | 1 |
+| ESMIll/ESMRoutineFractionsRectangles1.svg | 12.4 | 1 |
+| ESMIll/ESMRoutineFractionsRectangles2.svg | 10.6 | 1 |
+| ESMIll/ESMRoutineFractionsRectangles3.svg | 11 | 1 |
+| ESMIll/ESMRoutineFractionsRectangles4.svg | 11.7 | 1 |
+| ESMIll/ESMRoutineFractionsRectangles5.svg | 18.2 | 1 |
+| ESMIll/ESMRoutineFractionsRectangles6.svg | 18.7 | 1 |
+| ESMIll/ESMRoutineFractionsTriangles1.svg | 6.5 | 1 |
+| ESMIll/ESMRoutineFractionsTriangles2.svg | 7.7 | 1 |
+| ESMIll/ESMRoutineFractionsTriangles3.svg | 6.6 | 1 |
+| ESMIll/ESMRoutineFractionsTriangles4.svg | 8.7 | 1 |
+| ESMIll/ESMRoutineFractionsTriangles5.svg | 7.2 | 1 |
+| ESMIll/ESMRoutineFractionsTriangles6.svg | 9.4 | 1 |
+| ESMIll/ESMRoutineFractionsTriangles7.svg | 13.6 | 1 |
+| ESMIll/ESMRoutineFractionsTriangles8.svg | 11.8 | 1 |
+| ESMIll/ESMRoutineFractionsTriangles9.svg | 9.6 | 1 |
 | ESMIll/ESMRoutineFractionsUnusualBaker1.svg | 2.9 | 1 |
 | ESMIll/ESMRoutineFractionsUnusualBaker2.svg | 4.3 | 1 |
 | ESMIll/ESMRoutineFractionsUnusualBaker3.svg | 3.8 | 1 |
