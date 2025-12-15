@@ -2436,6 +2436,144 @@
       "block5_text": "**The Challenge:** As with the other Fill in the Blanks puzzles, a child can just play with this and eventually arrive at the answers. That exploration involves a lot of good experiences, and there is no reason to avoid it.\n\nIf you want to be more systematic, the first question is: What is the common sum for these pairs of numbers? The five pairs have the same sum, and when we add them all up we get the same thing as adding the numbers up from 0 to 9. The sum from 0 to 9 is 45, so when we divide that by 5 we get 9 - the sum for each pair must be 9. Once that is established, the rest is simple:\n\n0 + 9 = 1 + 8 = 2 + 7 = 3 + 6 = 4 + 5.\n\n**Exploration:** The first step is to see whether the sum of the range of numbers can be broken into that many equal pieces. Also, note that it makes no difference whether we start at 0 or 1, so we’ll just look at starting at 0.\n\n**0 to 7 using 4 pairs:** The sum of the numbers from 0 to 7 is 28. Dividing 28 into 4 pairs gives a sum of 7 for each pair.\n\nThis is simple enough: 7 = 0 + 7 = 1 + 6 = 2 + 5 = 3 + 4.\n\n**0 to 2n - 1 using n pairs:** After looking at 0 to 7 and 0 to 9, the pattern is clear: write n as the n possible sums.\n\n**0 to 8 using 3 triplets:** The sum from 0 to 8 is 36. Dividing 36 into 3 triplets gives a sum of 12 for each triplet. The triplets will be largely driven by the three largest numbers (6, 7, 8), no two of which can be in a triplet together. This produces triplets (8, 0, 4), (7, 2, 3), and (6, 1, 5). This could also be done as (8, 1, 3), (7, 0, 5), and (6, 2, 4).\n\n**0 to 9 using 2 groups of 5:** The sum from 0 to 9 is 45. 45 cannot be divided evenly into two equal groups!\n\nThe very interested child may want to go exploring further to see more examples of when this works and when it doesn’t. What fun!"
     },
     {
+      "id": "esm_pow_b_letter_substitution_1",
+      "level": "B",
+      "topic_theme_1": "NO_ASSD_ASto10",
+      "topic_theme_2": "NO_ASSD_SD_Add_Sub",
+      "eye_opener": true,
+      "puzzler": false,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWBLetterSubstitutionIntro.svg",
+      "block1_illust_max_size": "180px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWBLetterSubstitution1.svg",
+      "block2_illust_max_size": "340px",
+      "block3_type": "all_text",
+      "block4_type": "all_text",
+      "name": "Letter Substitution – 1",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Letter Substitution – 1"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** Letter substition puzzles have three rules:\n* A letter represents a digit from 0 to 9, and has the same value throughout a single puzzle.\n* No number can start with the digit 0.\n* Within a puzzle, different letters must have different values.\n\n**Example:**"
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Find the value of C, D, E, F and G in these puzzles."
+        },
+        "block3_text": {
+          "eng": "**Exploration:** Make some letter substitution puzzles for others to solve."
+        },
+        "block4_text": {
+          "eng": "**The Challenge:** In the C + 8 = D, the sum must be less than 10. C cannot be 0 because that would break the rule of not having numbers start with 0. Therefore C is 1 and D is 9, which gives the answer: 1 + 8 = 9.\n\nE must be half of 8, so E is 4. The answer is: 4 + 4 = 8.\n\nThis problem involves an important insight about adding: if you add two single-digit numbers, including possibly a carry, the result cannot be larger than 19, so the carry is always either 0 or 1. For this problem, the carry must be 1, so G is 1. F is half of 14, so F is 7. The answer is: 7 + 7 = 14.\n\n**Exploration:** Here are two, slightly more challenging, letter substitution puzzles to play with.\n\nH + 4 = KK: K must be 1, so the problem becomes H + 4 = 11, which forces H = 7. The answer is: 7 + 4 = 11.\n\nM + M + 8 = MN: As a carry, M could be 1 or 2. However, if M is 2 then 2 + 2 + 8 must be at least 20, which it isn’t. Therefore, M is 1 and the answer becomes 1 + 1 + 8 = 10."
+        }
+      },
+      "block1_text": "**Introduction:** Letter substition puzzles have three rules:\n* A letter represents a digit from 0 to 9, and has the same value throughout a single puzzle.\n* No number can start with the digit 0.\n* Within a puzzle, different letters must have different values.\n\n**Example:**",
+      "block2_text": "**The Challenge:** Find the value of C, D, E, F and G in these puzzles.",
+      "block3_text": "**Exploration:** Make some letter substitution puzzles for others to solve.",
+      "block4_text": "**The Challenge:** In the C + 8 = D, the sum must be less than 10. C cannot be 0 because that would break the rule of not having numbers start with 0. Therefore C is 1 and D is 9, which gives the answer: 1 + 8 = 9.\n\nE must be half of 8, so E is 4. The answer is: 4 + 4 = 8.\n\nThis problem involves an important insight about adding: if you add two single-digit numbers, including possibly a carry, the result cannot be larger than 19, so the carry is always either 0 or 1. For this problem, the carry must be 1, so G is 1. F is half of 14, so F is 7. The answer is: 7 + 7 = 14.\n\n**Exploration:** Here are two, slightly more challenging, letter substitution puzzles to play with.\n\nH + 4 = KK: K must be 1, so the problem becomes H + 4 = 11, which forces H = 7. The answer is: 7 + 4 = 11.\n\nM + M + 8 = MN: As a carry, M could be 1 or 2. However, if M is 2 then 2 + 2 + 8 must be at least 20, which it isn’t. Therefore, M is 1 and the answer becomes 1 + 1 + 8 = 10."
+    },
+    {
+      "id": "esm_pow_b_letter_substitution_2",
+      "level": "B",
+      "topic_theme_1": "NO_ASSD_ASto10",
+      "topic_theme_2": "NO_ASSD_SD_Add_Sub",
+      "eye_opener": true,
+      "puzzler": false,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWBLetterSubstitutionIntro.svg",
+      "block1_illust_max_size": "180px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWBLetterSubstitution2.svg",
+      "block2_illust_max_size": "240px",
+      "block3_type": "all_text",
+      "block4_type": "all_text",
+      "name": "Letter Substitution – 2",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Letter Substitution – 2"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** Letter substition puzzles have three rules:\n* A letter represents a digit from 0 to 9, and has the same value throughout a single puzzle.\n* No number can start with the digit 0.\n* Within a puzzle, different letters must have different values.\n\n**Example:**"
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Find the value of C, D, E, F, G, and H in these puzzles."
+        },
+        "block3_text": {
+          "eng": "**Exploration:** Make some letter substitution puzzles for others to solve."
+        },
+        "block4_text": {
+          "eng": "**The Challenge:** In problems with more letters, it is often helpful to rewrite the problem replacing each letter as you discover its value.\n\nThese problems involve an important insight about adding: if you add two single-digit numbers, including possibly a carry, the result cannot be larger than 19, so the carry is always either 0 or 1.\n\nIn the first problem, as a leading digit D cannot be 0, so it must be 1. C + 2 must be at least 10, so C is 8 or 9. If C is 9, then DE would be 11 – this would cause D and E to have the same value, which is not allowed. Therefore, C is 8, and the answer is: 8 + 2 = 10.\n\nThe second starts off the same way. F must be 1. The problem becomes 1 + G = 1H. The only way 1 + G can be 10 or higher is for G to be 9. The answer becomes: 1 + 9 = 10.\n\n**Exploration:** Here are three more letter substitution puzzles to play with.\n\nJ + J + K = K0: As a carry, K must be 1 or 2. If K is 1, then J + J + 1 is an odd number, which cannot end in 0. Therefore, K is 2. Now, J + J + 2 = 20 forces J to be 9. The answer is: 9 + 9 + 2 = 20.\n\nL + L + L = M2: Three times L ends in 2 forces L to be 4 and M to be 1. The answer is: 4 + 4 + 4 = 12.\n\nN + N + N = P4: Three times N ends in 4 forces N to be 8 and P to be 2. The answer is: 8 + 8 + 8 = 24."
+        }
+      },
+      "block1_text": "**Introduction:** Letter substition puzzles have three rules:\n* A letter represents a digit from 0 to 9, and has the same value throughout a single puzzle.\n* No number can start with the digit 0.\n* Within a puzzle, different letters must have different values.\n\n**Example:**",
+      "block2_text": "**The Challenge:** Find the value of C, D, E, F, G, and H in these puzzles.",
+      "block3_text": "**Exploration:** Make some letter substitution puzzles for others to solve.",
+      "block4_text": "**The Challenge:** In problems with more letters, it is often helpful to rewrite the problem replacing each letter as you discover its value.\n\nThese problems involve an important insight about adding: if you add two single-digit numbers, including possibly a carry, the result cannot be larger than 19, so the carry is always either 0 or 1.\n\nIn the first problem, as a leading digit D cannot be 0, so it must be 1. C + 2 must be at least 10, so C is 8 or 9. If C is 9, then DE would be 11 – this would cause D and E to have the same value, which is not allowed. Therefore, C is 8, and the answer is: 8 + 2 = 10.\n\nThe second starts off the same way. F must be 1. The problem becomes 1 + G = 1H. The only way 1 + G can be 10 or higher is for G to be 9. The answer becomes: 1 + 9 = 10.\n\n**Exploration:** Here are three more letter substitution puzzles to play with.\n\nJ + J + K = K0: As a carry, K must be 1 or 2. If K is 1, then J + J + 1 is an odd number, which cannot end in 0. Therefore, K is 2. Now, J + J + 2 = 20 forces J to be 9. The answer is: 9 + 9 + 2 = 20.\n\nL + L + L = M2: Three times L ends in 2 forces L to be 4 and M to be 1. The answer is: 4 + 4 + 4 = 12.\n\nN + N + N = P4: Three times N ends in 4 forces N to be 8 and P to be 2. The answer is: 8 + 8 + 8 = 24."
+    },
+    {
+      "id": "esm_pow_b_letter_substitution_3",
+      "level": "B",
+      "topic_theme_1": "NO_ASSD_ASto10",
+      "topic_theme_2": "NO_ASSD_SD_Add_Sub",
+      "eye_opener": true,
+      "puzzler": false,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWBLetterSubstitutionIntro.svg",
+      "block1_illust_max_size": "180px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWBLetterSubstitution3.svg",
+      "block2_illust_max_size": "240px",
+      "block3_type": "all_text",
+      "block4_type": "all_text",
+      "name": "Letter Substitution – 3",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Letter Substitution – 3"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** Letter substition puzzles have three rules:\n* A letter represents a digit from 0 to 9, and has the same value throughout a single puzzle.\n* No number can start with the digit 0.\n* Within a puzzle, different letters must have different values.\n\n**Example:**"
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Find the value of A, B, C, and D in these puzzles."
+        },
+        "block3_text": {
+          "eng": "**Exploration:** Make some letter substitution puzzles for others to solve."
+        },
+        "block4_text": {
+          "eng": "**The Challenge:** For A + A + 6 = BB: The largest number B + B + 6 can be is 9 + 9 + 6 = 24, so B is either 1 or 2. A + A + 6 must be an even number, so B = 2. A + A + 6 = 22 means A + A = 16, so A = 8.\n\nSo, the answer is 8 + 8 + 6 = 22.\n\nC + C + 6 = D: The only way that C + C + 6 can be less than 10 is if C is 1.\n\nThe answer is 1 + 1 + 6 = 8."
+        }
+      },
+      "block1_text": "**Introduction:** Letter substition puzzles have three rules:\n* A letter represents a digit from 0 to 9, and has the same value throughout a single puzzle.\n* No number can start with the digit 0.\n* Within a puzzle, different letters must have different values.\n\n**Example:**",
+      "block2_text": "**The Challenge:** Find the value of A, B, C, and D in these puzzles.",
+      "block3_text": "**Exploration:** Make some letter substitution puzzles for others to solve.",
+      "block4_text": "**The Challenge:** For A + A + 6 = BB: The largest number B + B + 6 can be is 9 + 9 + 6 = 24, so B is either 1 or 2. A + A + 6 must be an even number, so B = 2. A + A + 6 = 22 means A + A = 16, so A = 8.\n\nSo, the answer is 8 + 8 + 6 = 22.\n\nC + C + 6 = D: The only way that C + C + 6 can be less than 10 is if C is 1.\n\nThe answer is 1 + 1 + 6 = 8."
+    },
+    {
       "id": "esm_pow_b_parentheses_1",
       "level": "B",
       "topic_theme_1": "NO_ASSD_ASto10",
@@ -4798,6 +4936,190 @@
       "block2_text": "**The Challenge and Exploration:** Three leaves is a lot trickier to deal with in an organized way than two leaves.\n\nWhile there is much that is complex about this problem, there are two simple ways to put numbers in a leaf that are surprisingly powerful: 1) put the powers of 2 on the leaf (1 2 4 8 16 …) and 2) starting with some number, put all the consecutive numbers up through twice that number (5 6 7 8 9 10).\n\nWe can also take the best answer for two leaves, (1 2 4 8) - (3 5 6 7), and then put the next numbers on the third leaf: (1 2 4 8) - (3 5 6 7) - (9 10 11 12 13 14 15 16 17 18). After that good start, we can put a few more numbers on the first two leaves: (1 2 4 8 22) - (3 5 6 7 19 20 21) - (9 10 11 12 13 14 15 16 17 18).\n\nThat answer, that goes up to 22, is surprisingly close to the best answer. To know for sure what the best possible answer is, you either need to write a computer program or you can consult the math literature on “sum-free sets” or “sum-free partitions.” In the literature you will find the following answer to 23, which has only a couple changes (moving the 11 and 16)from the earlier answer: (1 2 4 8 11 16 22) (3 5 6 7 19 21 23) (9 10 12 13 14 15 17 18 20).\n\nThe best answer for four leaves goes up to 66 and is: (1 2 4 8 11 16 22 25 40 43 53 66) (3 5 6 7 19 21 23 34 35 50 51 52 63 64 65) (9 10 12 13 14 15 17 18 20 54 55 56 57 58 59 60 61 62) (24 26 27 28 29 30 31 32 33 36 37 38 39 41 42 44 45 46 47 48 49). You can get surprisingly close to this answer by employing the same strategy as we used for getting a first answer for three leaves.\n\nThe best answer for five leaves goes up to 196. It is an unsolved problem what the best answer is for six leaves! Perhaps one of your students will have fun playing with this and coming up with a great answer!\n\nWorking with even numbers is simply a matter of doubling everything from before. The best answer for even numbers will be twice the best answer for regular numbers.\n\nThe odd numbers can all be put on one leaf, so having three leaves doesn’t make much difference for them."
     },
     {
+      "id": "esm_pow_d_letter_substitution_4",
+      "level": "C",
+      "topic_theme_1": "NO_ASSD_SD_Add_Sub",
+      "topic_theme_2": "NO_DD_AS2and1",
+      "eye_opener": true,
+      "puzzler": false,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWBLetterSubstitutionIntro.svg",
+      "block1_illust_max_size": "180px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWDLetterSubstitution4.svg",
+      "block2_illust_max_size": "240px",
+      "block3_type": "all_text",
+      "block4_type": "all_text",
+      "name": "Letter Substitution – 4",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Letter Substitution – 4"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** Letter substition puzzles have three rules:\n* A letter represents a digit from 0 to 9, and has the same value throughout a single puzzle.\n* No number can start with the digit 0.\n* Within a puzzle, different letters must have different values.\n\n**Example:**"
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Find the value of A, B, C, D, and E in these puzzles."
+        },
+        "block3_text": {
+          "eng": "**Exploration:** Make some letter substitution puzzles for others to solve."
+        },
+        "block4_text": {
+          "eng": "**The Challenge:** A + BB = C6: Adding A forces a carry, so C must be one more than B. A + B is 16, so this must be 9 + 7 = 16.\n\nThe answer is 9 + 77 = 86.\n.\nD + ED = DE: Notice that D + D ends in E and has a carry. That is, D + D = 1E. Also, because of the carry to the tens place, D must be one more than E. List out the possibilities for D + D = 1E:\n\n 5 + 5 = 10, 6 + 6 = 12, 7 + 7 = 14, 8 + 8 = 16, 9 + 9 = 18. \n\nThe only one of these possibilities that fits the requirements is when D = 9 and E = 8.\n\nThe answer is: 9 + 89 = 98."
+        }
+      },
+      "block1_text": "**Introduction:** Letter substition puzzles have three rules:\n* A letter represents a digit from 0 to 9, and has the same value throughout a single puzzle.\n* No number can start with the digit 0.\n* Within a puzzle, different letters must have different values.\n\n**Example:**",
+      "block2_text": "**The Challenge:** Find the value of A, B, C, D, and E in these puzzles.",
+      "block3_text": "**Exploration:** Make some letter substitution puzzles for others to solve.",
+      "block4_text": "**The Challenge:** A + BB = C6: Adding A forces a carry, so C must be one more than B. A + B is 16, so this must be 9 + 7 = 16.\n\nThe answer is 9 + 77 = 86.\n.\nD + ED = DE: Notice that D + D ends in E and has a carry. That is, D + D = 1E. Also, because of the carry to the tens place, D must be one more than E. List out the possibilities for D + D = 1E:\n\n 5 + 5 = 10, 6 + 6 = 12, 7 + 7 = 14, 8 + 8 = 16, 9 + 9 = 18. \n\nThe only one of these possibilities that fits the requirements is when D = 9 and E = 8.\n\nThe answer is: 9 + 89 = 98."
+    },
+    {
+      "id": "esm_pow_d_letter_substitution_5",
+      "level": "C",
+      "topic_theme_1": "NO_ASSD_SD_Add_Sub",
+      "topic_theme_2": "NO_DD_AS2and1",
+      "eye_opener": true,
+      "puzzler": false,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWBLetterSubstitutionIntro.svg",
+      "block1_illust_max_size": "180px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWDLetterSubstitution5.svg",
+      "block2_illust_max_size": "240px",
+      "block3_type": "all_text",
+      "block4_type": "all_text",
+      "name": "Letter Substitution – 5",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Letter Substitution – 5"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** Letter substition puzzles have three rules:\n* A letter represents a digit from 0 to 9, and has the same value throughout a single puzzle.\n* No number can start with the digit 0.\n* Within a puzzle, different letters must have different values.\n\n**Example:**"
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Find the value of B, E, S, T, O, G, and U in these puzzles."
+        },
+        "block3_text": {
+          "eng": "**Exploration:** Make some letter substitution puzzles for others to solve."
+        },
+        "block4_text": {
+          "eng": "**The Challenge:** BE + BE = SEE: For E + E to end in E, it must be that E = 0. The largest the carry can be from the tens place to the hundreds place is 1, so S = 1. Finally, B + B = 10 forces B = 5.\n\nSo, the answer is 50 + 50 = 100.\n\nTO + GO = OUT: The largest the carry can be into the hundreds place is 1, so O = 1. O + O ends in T forces T = 2.\n\n We now have 21 + G1 = 1U2. This means 2 + G = 1U. For 2 + G to be at least 10, G must be 8 or 9. If G = 9, then 2 + G = 11 and that would mean U = 1 and O = 1, which is not allowed. So, G = 8 and U = 0.\n\nSo, the answer is 21 + 81 = 102."
+        }
+      },
+      "block1_text": "**Introduction:** Letter substition puzzles have three rules:\n* A letter represents a digit from 0 to 9, and has the same value throughout a single puzzle.\n* No number can start with the digit 0.\n* Within a puzzle, different letters must have different values.\n\n**Example:**",
+      "block2_text": "**The Challenge:** Find the value of B, E, S, T, O, G, and U in these puzzles.",
+      "block3_text": "**Exploration:** Make some letter substitution puzzles for others to solve.",
+      "block4_text": "**The Challenge:** BE + BE = SEE: For E + E to end in E, it must be that E = 0. The largest the carry can be from the tens place to the hundreds place is 1, so S = 1. Finally, B + B = 10 forces B = 5.\n\nSo, the answer is 50 + 50 = 100.\n\nTO + GO = OUT: The largest the carry can be into the hundreds place is 1, so O = 1. O + O ends in T forces T = 2.\n\n We now have 21 + G1 = 1U2. This means 2 + G = 1U. For 2 + G to be at least 10, G must be 8 or 9. If G = 9, then 2 + G = 11 and that would mean U = 1 and O = 1, which is not allowed. So, G = 8 and U = 0.\n\nSo, the answer is 21 + 81 = 102."
+    },
+    {
+      "id": "esm_pow_d_letter_substitution_6",
+      "level": "C",
+      "topic_theme_1": "NO_ASSD_SD_Add_Sub",
+      "topic_theme_2": "NO_DD_AS2and1",
+      "eye_opener": true,
+      "puzzler": false,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWBLetterSubstitutionIntro.svg",
+      "block1_illust_max_size": "180px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWDLetterSubstitution6.svg",
+      "block2_illust_max_size": "360px",
+      "block3_type": "all_text",
+      "block4_type": "all_text",
+      "name": "Letter Substitution – 6",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Letter Substitution – 6"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** Letter substition puzzles have three rules:\n* A letter represents a digit from 0 to 9, and has the same value throughout a single puzzle.\n* No number can start with the digit 0.\n* Within a puzzle, different letters must have different values.\n\n**Example:**"
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Find the value of A, B, C, D, E, F, G, K, L, and M in these puzzles."
+        },
+        "block3_text": {
+          "eng": "**Exploration:** Make some letter substitution puzzles for others to solve."
+        },
+        "block4_text": {
+          "eng": "**The Challenge:** BA + BB = CAB: The carry can be at most 1, so C = 1. A + B = B forces A = 0. B + B = 10 finishes it off with B = 5.\nThe solution is: 50 + 55 = 105.\n\nED + FD = FGG: The carry must be 1, so F = 1. With F = 1, E + 1 + (possible carry) = 1G forces G = 0, and E = 8 or 9. D + D = 0 or 10 leaves us with D = 5, a carry into the next column, and then E = 8.\n\nThe solution is: 85 + 15 = 100.\n\nKK + LK = LLM: Once again, the carry must be 1, so L = 1. K + 1 + (possible carry) = 11 forces K = 9 and the possible carry is a definite carry. Then K + K = 1M becomes 9 + 9 = 1M, so M = 8.\n\nThe solution is: 99 + 19 = 118."
+        }
+      },
+      "block1_text": "**Introduction:** Letter substition puzzles have three rules:\n* A letter represents a digit from 0 to 9, and has the same value throughout a single puzzle.\n* No number can start with the digit 0.\n* Within a puzzle, different letters must have different values.\n\n**Example:**",
+      "block2_text": "**The Challenge:** Find the value of A, B, C, D, E, F, G, K, L, and M in these puzzles.",
+      "block3_text": "**Exploration:** Make some letter substitution puzzles for others to solve.",
+      "block4_text": "**The Challenge:** BA + BB = CAB: The carry can be at most 1, so C = 1. A + B = B forces A = 0. B + B = 10 finishes it off with B = 5.\nThe solution is: 50 + 55 = 105.\n\nED + FD = FGG: The carry must be 1, so F = 1. With F = 1, E + 1 + (possible carry) = 1G forces G = 0, and E = 8 or 9. D + D = 0 or 10 leaves us with D = 5, a carry into the next column, and then E = 8.\n\nThe solution is: 85 + 15 = 100.\n\nKK + LK = LLM: Once again, the carry must be 1, so L = 1. K + 1 + (possible carry) = 11 forces K = 9 and the possible carry is a definite carry. Then K + K = 1M becomes 9 + 9 = 1M, so M = 8.\n\nThe solution is: 99 + 19 = 118."
+    },
+    {
+      "id": "esm_pow_d_letter_substitution_7",
+      "level": "C",
+      "topic_theme_1": "NO_ASSD_SD_Add_Sub",
+      "topic_theme_2": "NO_DD_AS2and1",
+      "eye_opener": true,
+      "puzzler": false,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWBLetterSubstitutionIntro.svg",
+      "block1_illust_max_size": "180px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWDLetterSubstitution7.svg",
+      "block2_illust_max_size": "360px",
+      "block3_type": "all_text",
+      "block4_type": "all_text",
+      "name": "Letter Substitution – 7",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Letter Substitution – 7"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** Letter substition puzzles have three rules:\n* A letter represents a digit from 0 to 9, and has the same value throughout a single puzzle.\n* No number can start with the digit 0.\n* Within a puzzle, different letters must have different values.\n\n**Example:**"
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Find the value of A, B, C, D, E, F, K, L, and M in these puzzles."
+        },
+        "block3_text": {
+          "eng": "**Exploration:** Make some letter substitution puzzles for others to solve."
+        },
+        "block4_text": {
+          "eng": "**The Challenge:** AA + CB = BBC: The carry must be 1, so B = 1. A + B = C becomes A + 1 = C, so C is one more than A. A + C = 11 together with C = A + 1 forces A = 5 and C = 6.\n\nThe solution is: 55 + 61 = 116.\n\nDD + DE = FDF: The carry must be 1, so F = 1. Looking through the possibilites, D + D + (possible carry) = 1D has only one way of working out - we must have D = 9 and the possible carry is a definite carry. Finally, D + E = 1F becomes 9 + E = 11 forces E = 2.\n\nThe solution is 99 + 92 = 191.\n\nKK + KK = LLM: Again, the carry must be 1, so L = 1. For K + K + (possible carry) = 11, we must have K = 5 and the possible carry is a definite carry. 5 + 5 = 1M forces M = 0.\n\nThe solution is: 55 + 55 = 110."
+        }
+      },
+      "block1_text": "**Introduction:** Letter substition puzzles have three rules:\n* A letter represents a digit from 0 to 9, and has the same value throughout a single puzzle.\n* No number can start with the digit 0.\n* Within a puzzle, different letters must have different values.\n\n**Example:**",
+      "block2_text": "**The Challenge:** Find the value of A, B, C, D, E, F, K, L, and M in these puzzles.",
+      "block3_text": "**Exploration:** Make some letter substitution puzzles for others to solve.",
+      "block4_text": "**The Challenge:** AA + CB = BBC: The carry must be 1, so B = 1. A + B = C becomes A + 1 = C, so C is one more than A. A + C = 11 together with C = A + 1 forces A = 5 and C = 6.\n\nThe solution is: 55 + 61 = 116.\n\nDD + DE = FDF: The carry must be 1, so F = 1. Looking through the possibilites, D + D + (possible carry) = 1D has only one way of working out - we must have D = 9 and the possible carry is a definite carry. Finally, D + E = 1F becomes 9 + E = 11 forces E = 2.\n\nThe solution is 99 + 92 = 191.\n\nKK + KK = LLM: Again, the carry must be 1, so L = 1. For K + K + (possible carry) = 11, we must have K = 5 and the possible carry is a definite carry. 5 + 5 = 1M forces M = 0.\n\nThe solution is: 55 + 55 = 110."
+    },
+    {
       "id": "esm_pow_c_magicsquares3",
       "level": "C",
       "topic_theme_1": "NO_ASSD_SD_Add_Sub",
@@ -5265,6 +5587,985 @@
       "block2_text": "**The Challenge:** Show that every odd number is a Trapezoidal Number.",
       "block3_text": "**Exploration:** Can you find some even numbers that are Trapezoidal Numbers? Can you find some that aren’t?",
       "block4_text": "**The Challenge**: Every odd number is of the form 2n + 1. Because 2n + 1 = n + (n + 1), that shows every odd number, larger than 1, is a Trapezoidal number.\n\n**Exploration:** Among the first few even numbers, we have the following:\n\n2: Not trapezoidal\n4: Not trapezoidal\n6: 6 = 1 + 2 + 3\n8: Not trapezoidal\n10. 10 = 1 + 2 + 3 + 4\n12: 12 = 3 + 4 + 5\n14: 14 = 2 + 3 + 4 + 5\n16: Not trapezoidal\n\nIt looks like powers of 2 are never trapezoidal. We will follow that up in a later Puzzle of the Week."
+    },
+    {
+      "id": "esm_pow_f_crossing_lines",
+      "level": "S3",
+      "eye_opener": false,
+      "puzzler": true,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWFLineCrossingsIntro.svg",
+      "block1_illust_max_size": "330px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWFLineCrossingsChallenge.svg",
+      "block2_illust_max_size": "330px",
+      "block3_type": "all_text",
+      "block4_type": "illust_below",
+      "block4_illust": "ESMIll/ESMPOWFLineCrossings4by6.svg",
+      "block4_illust_max_size": "330px",
+      "block5_type": "all_text",
+      "name": "Crossing Lines",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {},
+        "block5_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Crossing Lines"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** These two rectangles have been cut in half using a red line.\n\nIn the 3 by 5 rectangle: the red line crosses 6 sides of small squares. Check to see you agree!\n\nIn the 4 by 6 rectangle: the red line also crosses 6 sides of small squares. (We're not counting the place where the line goes through the corner of a square.)"
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Here's a 36 by 42 rectangle that's been cut in half by a red line. How many sides of small squares will the red line cross?"
+        },
+        "block3_text": {
+          "eng": "**Exploration:** What happens for rectangles of other sizes? What patterns do you see?"
+        },
+        "block4_text": {
+          "eng": "**The Challenge & Exploration:** A diagonal will go through a corner of a box exactly when the change in height and width evenly divides the height and width of the rectangle.."
+        },
+        "block5_text": {
+          "eng": "Consider the 4 by 6 box in the introduction. Because 2 is a common factor of 4 and 6, we can break the larger 4 by 6 box into a 2 by 2 collection of 4/2 by 6/2 boxes. The diagonal of the 4 by 6 box will be the diagonal in 2 of the 2 by 3 boxes and go through the corner between them.\n\nIn the other introductory example of the 3 by 5 rectangle, the greatest common divisor is 1, so the diagonal does not go through any corners.\n\nSuppose the rectangle is n by m, and that the greatest common divisor of n and m is c.\n\n* c = 1: In this case, the diagonal will cross all n - 1 internal horizontal lines and all m - 1 internal vertical lines. So, it will cross a total of n + m - 2 box sides.\n\n* c > 1: Break the diagonal into c pieces. Each piece of the diagonal will be a diagonal for a n/c by m/c rectangle, where the greatest common factor of n/c and m/c is 1. So, each piece of the diagonal will cross n/c + m/c - 2 box sides. All the pieces together will cross c x (n/c + m/c - 2) = n + m - 2c box sides.\n\nThe general answer is n + m - 2c. Let’s apply this to the two introductory examples and the challenge puzzle.\n\nFor a 3 by 5 rectangle, c will be 1 and the answer is 3 + 5 - (2 x 1) = 8 – 2 = 6.\n\nFor a 4 by 6 rectangle, c will be 2 and the answer is 4 + 6 - (2 x 2) = 10 - 4 = 6.\n\nFor the challenge 36 by 42 rectangle, c will be 6 and the answer is 36 + 42 - (2 x 6) = 78 - 12 = 66."
+        }
+      },
+      "block1_text": "**Introduction:** These two rectangles have been cut in half using a red line.\n\nIn the 3 by 5 rectangle: the red line crosses 6 sides of small squares. Check to see you agree!\n\nIn the 4 by 6 rectangle: the red line also crosses 6 sides of small squares. (We're not counting the place where the line goes through the corner of a square.)",
+      "block2_text": "**The Challenge:** Here's a 36 by 42 rectangle that's been cut in half by a red line. How many sides of small squares will the red line cross?",
+      "block3_text": "**Exploration:** What happens for rectangles of other sizes? What patterns do you see?",
+      "block4_text": "**The Challenge & Exploration:** A diagonal will go through a corner of a box exactly when the change in height and width evenly divides the height and width of the rectangle..",
+      "block5_text": "Consider the 4 by 6 box in the introduction. Because 2 is a common factor of 4 and 6, we can break the larger 4 by 6 box into a 2 by 2 collection of 4/2 by 6/2 boxes. The diagonal of the 4 by 6 box will be the diagonal in 2 of the 2 by 3 boxes and go through the corner between them.\n\nIn the other introductory example of the 3 by 5 rectangle, the greatest common divisor is 1, so the diagonal does not go through any corners.\n\nSuppose the rectangle is n by m, and that the greatest common divisor of n and m is c.\n\n* c = 1: In this case, the diagonal will cross all n - 1 internal horizontal lines and all m - 1 internal vertical lines. So, it will cross a total of n + m - 2 box sides.\n\n* c > 1: Break the diagonal into c pieces. Each piece of the diagonal will be a diagonal for a n/c by m/c rectangle, where the greatest common factor of n/c and m/c is 1. So, each piece of the diagonal will cross n/c + m/c - 2 box sides. All the pieces together will cross c x (n/c + m/c - 2) = n + m - 2c box sides.\n\nThe general answer is n + m - 2c. Let’s apply this to the two introductory examples and the challenge puzzle.\n\nFor a 3 by 5 rectangle, c will be 1 and the answer is 3 + 5 - (2 x 1) = 8 – 2 = 6.\n\nFor a 4 by 6 rectangle, c will be 2 and the answer is 4 + 6 - (2 x 2) = 10 - 4 = 6.\n\nFor the challenge 36 by 42 rectangle, c will be 6 and the answer is 36 + 42 - (2 x 6) = 78 - 12 = 66."
+    },
+    {
+      "id": "esm_pow_e_filling_squares_w_diff_rectangles",
+      "level": "S3",
+      "eye_opener": true,
+      "puzzler": true,
+      "notes_block_start": 3,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWEFillingSquaresWithRectanglesIntro.svg",
+      "block1_illust_max_size": "330px",
+      "block2_type": "all_text",
+      "block3_type": "illust_below",
+      "block3_illust": "ESMIll/ESMPOWEFillingSquaresWithRectanglesSolutions.svg",
+      "block3_illust_max_size": "330px",
+      "block4_type": "all_text",
+      "name": "Filling Squares with Different Rectangles",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Filling Squares with Different Rectangles"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** The goal is to fill a square with all different rectangles that are roughly the same size. Use the score, which is the difference of the areas of the largest and smallest rectangles, to measure how successful the diagram is. The scores of these three squares, from left to right, are 9 - 4 = 5, 15 - 10 = 5, and 10 - 6 = 4. However, the leftmost square is not allowed as it has two rectangles with the same dimensions (2 by 3 and 3 by 2)."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Find designs with the lowest scores you can for legally breaking up a 3 by 3, 4 by 4, 5 by 5, and 6 by 6 square.\n\n**Exploration:** Continue your exploration with 7 by 7, 8 by 8, 9 by 9, and 10 by 10 squares."
+        },
+        "block3_text": {
+          "eng": "**The Challenge & Exploration:** Here are some solutions for 3 by 3 through 10 by 10. There are of course other solutions, not shown, for most of these sizes.\n\nThe difference in areas is:\n* 3: 4 - 2 = 2\n* 4: 6 - 2 = 4\n* 5: 10 - 6 = 4\n* 6: 10 - 5 = 5\n* 7: 9 - 4 = 5\n* 8: 12 - 6 = 6\n* 9: 12 - 6 = 6\n* 10: 15 - 7 = 8"
+        },
+        "block4_text": {
+          "eng": "There are some general principles that can help get you started. When looking at a square with odd dimensions, such as 7 by 7, it can always be broken up nearly in half as a 4 by 7 and a 3 by 7 - this has a score of 7. In general, this method provides a score of n for an n by n square with n odd. This is not usually the best possible score, as is seen by the 5 by 5 example on the main page, yet it is a good place to start.\n\nAnother relatively easy thing to try is to put a narrow strip (one or two wide) on the right and bottom edges together with a previous solution. This type of construction was used for the 3 by 3, 5 by 5, 6 by 6, 7 by 7, and 10 by 10."
+        }
+      },
+      "block1_text": "**Introduction:** The goal is to fill a square with all different rectangles that are roughly the same size. Use the score, which is the difference of the areas of the largest and smallest rectangles, to measure how successful the diagram is. The scores of these three squares, from left to right, are 9 - 4 = 5, 15 - 10 = 5, and 10 - 6 = 4. However, the leftmost square is not allowed as it has two rectangles with the same dimensions (2 by 3 and 3 by 2).",
+      "block2_text": "**The Challenge:** Find designs with the lowest scores you can for legally breaking up a 3 by 3, 4 by 4, 5 by 5, and 6 by 6 square.\n\n**Exploration:** Continue your exploration with 7 by 7, 8 by 8, 9 by 9, and 10 by 10 squares.",
+      "block3_text": "**The Challenge & Exploration:** Here are some solutions for 3 by 3 through 10 by 10. There are of course other solutions, not shown, for most of these sizes.\n\nThe difference in areas is:\n* 3: 4 - 2 = 2\n* 4: 6 - 2 = 4\n* 5: 10 - 6 = 4\n* 6: 10 - 5 = 5\n* 7: 9 - 4 = 5\n* 8: 12 - 6 = 6\n* 9: 12 - 6 = 6\n* 10: 15 - 7 = 8",
+      "block4_text": "There are some general principles that can help get you started. When looking at a square with odd dimensions, such as 7 by 7, it can always be broken up nearly in half as a 4 by 7 and a 3 by 7 - this has a score of 7. In general, this method provides a score of n for an n by n square with n odd. This is not usually the best possible score, as is seen by the 5 by 5 example on the main page, yet it is a good place to start.\n\nAnother relatively easy thing to try is to put a narrow strip (one or two wide) on the right and bottom edges together with a previous solution. This type of construction was used for the 3 by 3, 5 by 5, 6 by 6, 7 by 7, and 10 by 10."
+    },
+    {
+      "id": "esm_pow_d_filling_squares_w_squares",
+      "level": "S3",
+      "eye_opener": false,
+      "puzzler": true,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWDSquaresinSquaresIntro.svg",
+      "block1_illust_max_size": "280px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWDSquaresWithinSquaresGrid.svg",
+      "block2_illust_max_size": "280px",
+      "block3_type": "all_text",
+      "block4_type": "illust_below",
+      "block4_illust": "ESMIll/ESMPOWDSquaresinSquaresEvens.svg",
+      "block4_illust_max_size": "280px",
+      "block5_type": "all_text",
+      "name": "Filling Squares with Squares",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {},
+        "block5_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Filling Squares with Squares"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** Here is how to fill one large square with 1, 4, or 7 squares."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Find other square counts for filling a large square. Can you do it for 2, 3, 5, 6, 8, 9, or 10 squares?"
+        },
+        "block3_text": {
+          "eng": "**Exploration:** When possible, find more than one way to get some of these numbers."
+        },
+        "block4_text": {
+          "eng": "**The Challenge:** Here is a systematic way of building up various counts.\n\n**Squares:** A good place to start is with square numbers. It is easy to fill a square with 1, 4, and 9 squares by filling it, respectively, in a 1 by 1, 2 by 2, and 3 by 3 pattern.\n\n**Even Numbers:** After some experimentation, you can create patterns for 6, 8, 10, or any other larger even number as follows. Start with a large square and then put smaller squares around two sides of it as in these drawings."
+        },
+        "block5_text": {
+          "eng": "**Replacing One Square:** The next big step is to see that any one square in a solution can be replaced by any other existing solution. For example, this was done in producing the pattern for 7 in the introduction – the square in the bottom right corner for “4” was replaced with four smaller squares to produce “7.”.\n\nWhenever one square is replaced by four squares, that will increase the total square count by 3. Start with the list of solutions using square numbers and even numbers: 1, 4, 6, 8, 9, 10, 12, 14, and 16, and then add 3 to each entry on that list to get 4, 7, 9, 11, 12, 13, 15, and 17. Combining these two lists gives all the possibilities up through 17: 1, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, and 17. Using these ideas, every number above 17 is easy enough, and so we reach the conclusion that:\n\n**Answer:** Every number is possible except 2, 3, and 5.\n\n**Exploration:** Some of these numbers can be produced in more than one way. For example, 9 can be done as a 3 by 3 pattern or as 6 plus three more. \nThere are many other patterns that can be created that are not made in the same way as these examples. For example, you can start with a 4 by 4 square and group 2 by 2 collections of squares into single 2 by 2 squares - each time you do that you will reduce the total count by 3."
+        }
+      },
+      "block1_text": "**Introduction:** Here is how to fill one large square with 1, 4, or 7 squares.",
+      "block2_text": "**The Challenge:** Find other square counts for filling a large square. Can you do it for 2, 3, 5, 6, 8, 9, or 10 squares?",
+      "block3_text": "**Exploration:** When possible, find more than one way to get some of these numbers.",
+      "block4_text": "**The Challenge:** Here is a systematic way of building up various counts.\n\n**Squares:** A good place to start is with square numbers. It is easy to fill a square with 1, 4, and 9 squares by filling it, respectively, in a 1 by 1, 2 by 2, and 3 by 3 pattern.\n\n**Even Numbers:** After some experimentation, you can create patterns for 6, 8, 10, or any other larger even number as follows. Start with a large square and then put smaller squares around two sides of it as in these drawings.",
+      "block5_text": "**Replacing One Square:** The next big step is to see that any one square in a solution can be replaced by any other existing solution. For example, this was done in producing the pattern for 7 in the introduction – the square in the bottom right corner for “4” was replaced with four smaller squares to produce “7.”.\n\nWhenever one square is replaced by four squares, that will increase the total square count by 3. Start with the list of solutions using square numbers and even numbers: 1, 4, 6, 8, 9, 10, 12, 14, and 16, and then add 3 to each entry on that list to get 4, 7, 9, 11, 12, 13, 15, and 17. Combining these two lists gives all the possibilities up through 17: 1, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, and 17. Using these ideas, every number above 17 is easy enough, and so we reach the conclusion that:\n\n**Answer:** Every number is possible except 2, 3, and 5.\n\n**Exploration:** Some of these numbers can be produced in more than one way. For example, 9 can be done as a 3 by 3 pattern or as 6 plus three more. \nThere are many other patterns that can be created that are not made in the same way as these examples. For example, you can start with a 4 by 4 square and group 2 by 2 collections of squares into single 2 by 2 squares - each time you do that you will reduce the total count by 3."
+    },
+    {
+      "id": "esm_pow_d_filling_triangles_w_triangles",
+      "level": "S3",
+      "eye_opener": false,
+      "puzzler": true,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWDTrianglesinTrianglesIntro.svg",
+      "block1_illust_max_size": "280px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWDTrianglesinTrianglesChallenge.svg",
+      "block2_illust_max_size": "280px",
+      "block3_type": "all_text",
+      "block4_type": "illust_below",
+      "block4_illust": "ESMIll/ESMPOWDTrianglesinTrianglesSquares.svg",
+      "block4_illust_max_size": "280px",
+      "block5_type": "illust_below",
+      "block5_illust": "ESMIll/ESMPOWDTrianglesinTrianglesEvens.svg",
+      "block5_illust_max_size": "280px",
+      "block6_type": "all_text",
+      "name": "Filling Triangles with Triangles",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {},
+        "block5_text": {},
+        "block6_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Filling Triangles with Triangles"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** Here’s how to fill one large triangle with 1, 4, or 7 triangles."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Find other triangle counts for filling a large triangle. Can you do it for 2, 3, 5, 6, 8, 9, or 10 triangles?"
+        },
+        "block3_text": {
+          "eng": "**Exploration:** When possible, find more than one way to get some of these numbers."
+        },
+        "block4_text": {
+          "eng": "**The Challenge:** Here is a systematic way of building up various counts.\n\n**Squares:** A good place to start is with square numbers. It is easy to fill a triangle with 1, 4, and 9 triangles by filling it with the regular pattern used in the following illustration."
+        },
+        "block5_text": {
+          "eng": "**Even Numbers:** After some experimentation, you can create patterns for 6, 8, 10, or any other larger even number as follows. Start with a large triangle and then put smaller triangles along one side."
+        },
+        "block6_text": {
+          "eng": "**Replacing One Triangle:** The next big step is to see that any one triangle in a solution can be replaced by any other existing solution. For example, this was done in producing the pattern for 7 in the introduction – the triangle in the center for “4” was replaced with four smaller triangles to produce “7.”.\n\nWhenever one triangle is replaced by four triangles, that will increase the total triangle count by 3. Start with the list of solutions using square numbers and even numbers: 1, 4, 6, 8, 9, 10, 12, 14, and 16, and then add 3 to each entry on that list to get 4, 7, 9, 11, 12, 13, 15, and 17. Combining these two lists gives all the possibilities up through 17: 1, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, and 17. Using these ideas, every number above 17 is easy enough, and so we reach the conclusion that:\n\n**Answer:** Every number is possible except 2, 3, and 5.\n\n**Exploration:** Some of these numbers can be produced in more than one way. For example, 9 can be done as a 3 by 3 pattern or as 6 plus three more. Of course, there are other interesting ways to fill out a triangle to discover."
+        }
+      },
+      "block1_text": "**Introduction:** Here’s how to fill one large triangle with 1, 4, or 7 triangles.",
+      "block2_text": "**The Challenge:** Find other triangle counts for filling a large triangle. Can you do it for 2, 3, 5, 6, 8, 9, or 10 triangles?",
+      "block3_text": "**Exploration:** When possible, find more than one way to get some of these numbers.",
+      "block4_text": "**The Challenge:** Here is a systematic way of building up various counts.\n\n**Squares:** A good place to start is with square numbers. It is easy to fill a triangle with 1, 4, and 9 triangles by filling it with the regular pattern used in the following illustration.",
+      "block5_text": "**Even Numbers:** After some experimentation, you can create patterns for 6, 8, 10, or any other larger even number as follows. Start with a large triangle and then put smaller triangles along one side.",
+      "block6_text": "**Replacing One Triangle:** The next big step is to see that any one triangle in a solution can be replaced by any other existing solution. For example, this was done in producing the pattern for 7 in the introduction – the triangle in the center for “4” was replaced with four smaller triangles to produce “7.”.\n\nWhenever one triangle is replaced by four triangles, that will increase the total triangle count by 3. Start with the list of solutions using square numbers and even numbers: 1, 4, 6, 8, 9, 10, 12, 14, and 16, and then add 3 to each entry on that list to get 4, 7, 9, 11, 12, 13, 15, and 17. Combining these two lists gives all the possibilities up through 17: 1, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, and 17. Using these ideas, every number above 17 is easy enough, and so we reach the conclusion that:\n\n**Answer:** Every number is possible except 2, 3, and 5.\n\n**Exploration:** Some of these numbers can be produced in more than one way. For example, 9 can be done as a 3 by 3 pattern or as 6 plus three more. Of course, there are other interesting ways to fill out a triangle to discover."
+    },
+    {
+      "id": "esm_pow_e_finding_rectangles_in_squares",
+      "level": "S3",
+      "eye_opener": false,
+      "puzzler": true,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWESquareGrid4by4RectangleExamples.svg",
+      "block1_illust_max_size": "200px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWDSquareGrid4by4.svg",
+      "block2_illust_max_size": "200px",
+      "block3_type": "all_text",
+      "block4_type": "illust_below",
+      "block4_illust": "ESMIll/ESMPOWESquareGrid4by4RectangleSides.svg",
+      "block4_illust_max_size": "220px",
+      "name": "Finding Rectangles in Squares",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Finding Rectangles in Squares"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** Drawn in red in this grid are a 1 by 1 rectangle (square), a 2 by 1 rectangle and a 1 by 3 rectangle."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Count the number of all the rectangles you can make in this 4 by 4 grid."
+        },
+        "block3_text": {
+          "eng": "**Exploration:** Calculate the number of rectangles in a 2 by 2 grid and a 3 by 3 grid. Compare those answers to your answer for the 4 by 4 grid. What is the pattern you see, and can you explain it?"
+        },
+        "block4_text": {
+          "eng": "**The Challenge and Exploration:** The careful student will find 36 rectangles. The key is to be organized in your approach. Here is a count for each type of rectangle:\n\n* 1 x 1 - 9\n* 1 x 2 - 6\n* 1 x 3 - 3\n* 2 x 1 - 6\n* 2 x 2 - 4\n* 2 x 3 - 2\n* 3 x 1 - 3\n* 3 x 2 - 2\n* 3 x 3 - 1\n\nAdding these all together, we get 9 + 6 + 3 + 6 + 4 + 2 + 3 + 2 + 1 = 36 rectangles.\n\nFor n by n grids, the number of rectangles is:\n\n* 2 by 2 - 1 = 1x1\n* 3 by 3 - 9 = 3x3\n* 4 by 4 - 36 = 6x6\n* 5 by 5 - 100 = 10x10\n* 6 by 6 - 225 = 15x15\n\nThey are all squares. What are the numbers 1, 3, 6, 10, and 15? They are the triangular numbers, and they are also the number of ways of choosing two things from n things.\n\nTo see why this works, consider how a rectangle is determined inside the square. As shown in this illustration, every rectangle is determined by picking the two vertical sides and the two horizontal sides. And for each choice of positions for the sides, there is one rectangle that is determined.\n\nSo, the number of rectangles is equal to the number of ways of making these choices. In a 4 by 4 grid, there are 4 vertical lines to choose from and 4 horizontal lines to choose from. The number of ways of choosing 2 things from 4 things  is 6. So the number of rectangles is 6 x 6 = 36.\n\nThe same reasoning is true for other sizes of square grids."
+        }
+      },
+      "block1_text": "**Introduction:** Drawn in red in this grid are a 1 by 1 rectangle (square), a 2 by 1 rectangle and a 1 by 3 rectangle.",
+      "block2_text": "**The Challenge:** Count the number of all the rectangles you can make in this 4 by 4 grid.",
+      "block3_text": "**Exploration:** Calculate the number of rectangles in a 2 by 2 grid and a 3 by 3 grid. Compare those answers to your answer for the 4 by 4 grid. What is the pattern you see, and can you explain it?",
+      "block4_text": "**The Challenge and Exploration:** The careful student will find 36 rectangles. The key is to be organized in your approach. Here is a count for each type of rectangle:\n\n* 1 x 1 - 9\n* 1 x 2 - 6\n* 1 x 3 - 3\n* 2 x 1 - 6\n* 2 x 2 - 4\n* 2 x 3 - 2\n* 3 x 1 - 3\n* 3 x 2 - 2\n* 3 x 3 - 1\n\nAdding these all together, we get 9 + 6 + 3 + 6 + 4 + 2 + 3 + 2 + 1 = 36 rectangles.\n\nFor n by n grids, the number of rectangles is:\n\n* 2 by 2 - 1 = 1x1\n* 3 by 3 - 9 = 3x3\n* 4 by 4 - 36 = 6x6\n* 5 by 5 - 100 = 10x10\n* 6 by 6 - 225 = 15x15\n\nThey are all squares. What are the numbers 1, 3, 6, 10, and 15? They are the triangular numbers, and they are also the number of ways of choosing two things from n things.\n\nTo see why this works, consider how a rectangle is determined inside the square. As shown in this illustration, every rectangle is determined by picking the two vertical sides and the two horizontal sides. And for each choice of positions for the sides, there is one rectangle that is determined.\n\nSo, the number of rectangles is equal to the number of ways of making these choices. In a 4 by 4 grid, there are 4 vertical lines to choose from and 4 horizontal lines to choose from. The number of ways of choosing 2 things from 4 things  is 6. So the number of rectangles is 6 x 6 = 36.\n\nThe same reasoning is true for other sizes of square grids."
+    },
+    {
+      "id": "esm_pow_f_finding_squares_3",
+      "level": "S3",
+      "eye_opener": false,
+      "puzzler": true,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWFSquareGrid5by5SimpleExamples.svg",
+      "block1_illust_max_size": "280px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWFSquareGrid5by5Challenge.svg",
+      "block2_illust_max_size": "280px",
+      "block4_type": "illust_below",
+      "block4_illust": "ESMIll/ESMPOWFSquareGrid5by5DiagonalsArea.svg",
+      "block4_illust_max_size": "280px",
+      "block5_type": "all_text",
+      "name": "Finding Squares – 3",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {},
+        "block5_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Finding Squares – 3"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** Drawn in red in this grid are two 1 by 1 squares and one 2 by 2 square with horizontal and vertical sides."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** FInd all the different sizes of squares you can in this grid. Note that there are some squares that do not have horizontal and vertical sides. For each size square you find, what is its area? Once you know its area, what is its side length?"
+        },
+        "block3_text": {
+          "eng": "**Exploration:** Can you discover different methods for finding these areas? Can you find a formula for the side length using just the description of one side?"
+        },
+        "block4_text": {
+          "eng": "**The Challenge & Exploration:** Finding the area of the squares with horizontal and vertical sides is easy enough. There are four of these of sizes 1 by 1, 2 by 2, 3 by 3, and 4 by 4, with areas 1, 4, 9, and 16.\n\nThe other squares are a bit trickier. The insight is to cut the region into pieces whose area we know. Alternatively, we can surround the square by a bigger square and look at the pieces inside it.\n\nLet’s look at a square formed by a side that goes over three and up one."
+        },
+        "block5_text": {
+          "eng": "We can find the area by putting together the four interior blue right triangles together with the white square. That produces an area of 4 x (½ x 3 x 1) + 2 x 2 = 6 + 4 = 10. The side length will be the square root of 10.\n\nWe can also find the area by taking the big outer square and subtracting off the four green right triangles. That produces an area of 4 x 4 - (4 x (½ x 3 x 1)) = 16 - 6 = 10, just as before.\n\nA similar process can be used for any of the diagonal squares.\n\nAfter doing several of these, the interested student may notice a pattern in this. Your students’ algebra may not be up to this, but a pattern with the numbers, if laid out in a table, can still be seen in lieu of using letters. Let “a” is the amount the side goes to the right, and “b” is the amount the side goes up. Finding the area from the inside amounts to adding 4 x (½ x a x b) + (a - b) x (a - b), which is axa + bxb. Finding the area from the outside yields (a + b) x (a + b) - 4 x (½ x a x b), which simplifies to the same result.\n\nWhat we have done is found two proofs for the Pythagorean Theorem!"
+        }
+      },
+      "block1_text": "**Introduction:** Drawn in red in this grid are two 1 by 1 squares and one 2 by 2 square with horizontal and vertical sides.",
+      "block2_text": "**The Challenge:** FInd all the different sizes of squares you can in this grid. Note that there are some squares that do not have horizontal and vertical sides. For each size square you find, what is its area? Once you know its area, what is its side length?",
+      "block3_text": "**Exploration:** Can you discover different methods for finding these areas? Can you find a formula for the side length using just the description of one side?",
+      "block4_text": "**The Challenge & Exploration:** Finding the area of the squares with horizontal and vertical sides is easy enough. There are four of these of sizes 1 by 1, 2 by 2, 3 by 3, and 4 by 4, with areas 1, 4, 9, and 16.\n\nThe other squares are a bit trickier. The insight is to cut the region into pieces whose area we know. Alternatively, we can surround the square by a bigger square and look at the pieces inside it.\n\nLet’s look at a square formed by a side that goes over three and up one.",
+      "block5_text": "We can find the area by putting together the four interior blue right triangles together with the white square. That produces an area of 4 x (½ x 3 x 1) + 2 x 2 = 6 + 4 = 10. The side length will be the square root of 10.\n\nWe can also find the area by taking the big outer square and subtracting off the four green right triangles. That produces an area of 4 x 4 - (4 x (½ x 3 x 1)) = 16 - 6 = 10, just as before.\n\nA similar process can be used for any of the diagonal squares.\n\nAfter doing several of these, the interested student may notice a pattern in this. Your students’ algebra may not be up to this, but a pattern with the numbers, if laid out in a table, can still be seen in lieu of using letters. Let “a” is the amount the side goes to the right, and “b” is the amount the side goes up. Finding the area from the inside amounts to adding 4 x (½ x a x b) + (a - b) x (a - b), which is axa + bxb. Finding the area from the outside yields (a + b) x (a + b) - 4 x (½ x a x b), which simplifies to the same result.\n\nWhat we have done is found two proofs for the Pythagorean Theorem!"
+    },
+    {
+      "id": "esm_pow_d_lines_6",
+      "level": "S3",
+      "eye_opener": false,
+      "puzzler": true,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWDLines5by4Intro.svg",
+      "block1_illust_max_size": "200px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWDSquareGrid3by4.svg",
+      "block2_illust_max_size": "200px",
+      "block3_type": "all_text",
+      "block4_type": "illust_below",
+      "block4_illust": "ESMIll/ESMPOWDLines6Answer.svg",
+      "block4_illust_max_size": "300px",
+      "name": "Lines – 6",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Lines – 6"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** Here is an example of a path created by 7 line segments drawn in one continuous drawing, without lifting the pen off the paper, that begins and ends at the same spot, and visits every dot on this 5 by 4 grid exactly once."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Find a continuous path using 5 line segments that begins and ends at the same point and that visits each of the points on this 3 by 4 grid exactly once."
+        },
+        "block3_text": {
+          "eng": "**Exploration:**  Experiment with larger grids and see how few line segments you can use."
+        },
+        "block4_text": {
+          "eng": "**The Challenge:** The answer is:"
+        }
+      },
+      "block1_text": "**Introduction:** Here is an example of a path created by 7 line segments drawn in one continuous drawing, without lifting the pen off the paper, that begins and ends at the same spot, and visits every dot on this 5 by 4 grid exactly once.",
+      "block2_text": "**The Challenge:** Find a continuous path using 5 line segments that begins and ends at the same point and that visits each of the points on this 3 by 4 grid exactly once.",
+      "block3_text": "**Exploration:**  Experiment with larger grids and see how few line segments you can use.",
+      "block4_text": "**The Challenge:** The answer is:"
+    },
+    {
+      "id": "esm_pow_d_lines_7",
+      "level": "S3",
+      "eye_opener": false,
+      "puzzler": true,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWDLines5by4Intro.svg",
+      "block1_illust_max_size": "200px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWDSquareGrid4by4.svg",
+      "block2_illust_max_size": "200px",
+      "block3_type": "all_text",
+      "block4_type": "illust_below",
+      "block4_illust": "ESMIll/ESMPOWDLines7Answer.svg",
+      "block4_illust_max_size": "300px",
+      "name": "Lines – 7",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Lines – 7"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** Here is an example of a path created by 7 line segments drawn in one continuous drawing, without lifting the pen off the paper, that begins and ends at the same spot, and visits every dot on this 5 by 4 grid exactly once."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Find a continuous path using 6 line segments that begins and ends at the same point and that visits each of the points on this 4 by 4 grid exactly once."
+        },
+        "block3_text": {
+          "eng": "**Exploration:**  Experiment with larger grids and see how few line segments you can use."
+        },
+        "block4_text": {
+          "eng": "**The Challenge:** The answer is:"
+        }
+      },
+      "block1_text": "**Introduction:** Here is an example of a path created by 7 line segments drawn in one continuous drawing, without lifting the pen off the paper, that begins and ends at the same spot, and visits every dot on this 5 by 4 grid exactly once.",
+      "block2_text": "**The Challenge:** Find a continuous path using 6 line segments that begins and ends at the same point and that visits each of the points on this 4 by 4 grid exactly once.",
+      "block3_text": "**Exploration:**  Experiment with larger grids and see how few line segments you can use.",
+      "block4_text": "**The Challenge:** The answer is:"
+    },
+    {
+      "id": "esm_pow_e_perfect_rectangles_1",
+      "level": "S3",
+      "eye_opener": false,
+      "puzzler": true,
+      "notes_block_start": 3,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWEPerfectRectangle47by65Revised.svg",
+      "block1_illust_max_size": "330px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/PerfectRectangle33by32BlankRevised.svg",
+      "block2_illust_max_size": "330px",
+      "block3_type": "illust_below",
+      "block3_illust": "ESMIll/PerfectRectangle33by32Answers.svg",
+      "block3_illust_max_size": "330px",
+      "name": "Perfect Rectangles – 1",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Perfect Rectangles – 1"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** A rectangle that can be filled with squares, no two of which have the same size, is called a Perfect Rectangle. Here is an example of a 47 by 65 Perfect Rectangle filled with 10 squares of different sizes."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Find the sizes of the squares in this 33 by 32 Perfect Rectangle filled with 9 squares."
+        },
+        "block3_text": {
+          "eng": "**The Challenge:** Your students can measure the diagram carefully to come up with the sizes, but hopefully they will enjoy the challenge of doing the problem solving instead.\n\nA good place to start is with the six squares in the lower left corner.\n\nLet n be the size of the smallest square, and x the size of the square in the Middle of the Bottom row (call it MB for short).\n\nThe squares that surround the smallest square increase in size by n as they go around the smallest square. The square on top of MB has size x - n, and the square in the bottom left corner has size x + n. Also the square in the bottom right corner has the combined sizes of MB and the square on top of MB, so its size is x + (x - n) = 2x - n.\n\nThe sizes of the squares on the bottom “row” of this diagram add up to 32, so 32 = (x + n) + x + (2x - n) = 4x, which means x = 8.\n\nThe stack along the bottom left side is (x + n) + (x + 2n) = 2x + 3n high. The stack of three squares in the bottom middle is x + (x -n) + middle square = 2x - n + middle square. Because 2x + 3n = 2x - n + middle square, the middle square is 4n in size. If n is 2, we would have two squares of size 8. If n is 3 or bigger, that middle square would be too big. So, n = 1.\n\nWith x = 8 and n = 1, and knowing the size of the rectangle as 33 by 32, filling in the rest of the squares is automatic."
+        }
+      },
+      "block1_text": "**Introduction:** A rectangle that can be filled with squares, no two of which have the same size, is called a Perfect Rectangle. Here is an example of a 47 by 65 Perfect Rectangle filled with 10 squares of different sizes.",
+      "block2_text": "**The Challenge:** Find the sizes of the squares in this 33 by 32 Perfect Rectangle filled with 9 squares.",
+      "block3_text": "**The Challenge:** Your students can measure the diagram carefully to come up with the sizes, but hopefully they will enjoy the challenge of doing the problem solving instead.\n\nA good place to start is with the six squares in the lower left corner.\n\nLet n be the size of the smallest square, and x the size of the square in the Middle of the Bottom row (call it MB for short).\n\nThe squares that surround the smallest square increase in size by n as they go around the smallest square. The square on top of MB has size x - n, and the square in the bottom left corner has size x + n. Also the square in the bottom right corner has the combined sizes of MB and the square on top of MB, so its size is x + (x - n) = 2x - n.\n\nThe sizes of the squares on the bottom “row” of this diagram add up to 32, so 32 = (x + n) + x + (2x - n) = 4x, which means x = 8.\n\nThe stack along the bottom left side is (x + n) + (x + 2n) = 2x + 3n high. The stack of three squares in the bottom middle is x + (x -n) + middle square = 2x - n + middle square. Because 2x + 3n = 2x - n + middle square, the middle square is 4n in size. If n is 2, we would have two squares of size 8. If n is 3 or bigger, that middle square would be too big. So, n = 1.\n\nWith x = 8 and n = 1, and knowing the size of the rectangle as 33 by 32, filling in the rest of the squares is automatic."
+    },
+    {
+      "id": "esm_pow_e_perfect_rectangles_2",
+      "level": "S3",
+      "eye_opener": false,
+      "puzzler": true,
+      "notes_block_start": 3,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWEPerfectRectangle47by65Revised.svg",
+      "block1_illust_max_size": "330px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/PerfectRectangle69by61BlankRevised.svg",
+      "block2_illust_max_size": "330px",
+      "block3_type": "illust_below",
+      "block3_illust": "ESMIll/PerfectRectangle69by61Answers.svg",
+      "block3_illust_max_size": "330px",
+      "name": "Perfect Rectangles – 2",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Perfect Rectangles – 2"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** A rectangle that can be filled with squares, no two of which have the same size, is called a Perfect Rectangle. Here is an example of a 47 by 65 Perfect Rectangle filled with 10 squares of different sizes."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Find the sizes of the squares in this 61 by 69 Perfect Rectangle filled with 9 squares."
+        },
+        "block3_text": {
+          "eng": "**The Challenge:** One of the easier places to start is to look at the four large squares in the four corners.\n\nThe size of the upper left plus the upper right is 69, while the upper left plus the lower left is 61, so that means the lower left is 8 less than the upper right. Similarly, the size of the upper right plus upper left is 69, while the upper right plus the lower right is 61, so that means the lower right is 8 less than the upper left. Putting that together, the sum of the two upper squares is 16 more than the sum of the two bottom corners. Therefore, the square in the middle of the bottom must have size 16.\n\nThe two squares on top of the size 16 square have sizes that add up to 16 and a difference that is the size of the central small square. Therefore, the central square has size 2, 4, or 6. However, 4 and 6 are visibly too large, so the central squares size is 2, and the two squares on top of the 16 square are 7 and 9.\n\nThe rest of the sizes follows pretty easily from that information and knowing the size of the rectangle."
+        }
+      },
+      "block1_text": "**Introduction:** A rectangle that can be filled with squares, no two of which have the same size, is called a Perfect Rectangle. Here is an example of a 47 by 65 Perfect Rectangle filled with 10 squares of different sizes.",
+      "block2_text": "**The Challenge:** Find the sizes of the squares in this 61 by 69 Perfect Rectangle filled with 9 squares.",
+      "block3_text": "**The Challenge:** One of the easier places to start is to look at the four large squares in the four corners.\n\nThe size of the upper left plus the upper right is 69, while the upper left plus the lower left is 61, so that means the lower left is 8 less than the upper right. Similarly, the size of the upper right plus upper left is 69, while the upper right plus the lower right is 61, so that means the lower right is 8 less than the upper left. Putting that together, the sum of the two upper squares is 16 more than the sum of the two bottom corners. Therefore, the square in the middle of the bottom must have size 16.\n\nThe two squares on top of the size 16 square have sizes that add up to 16 and a difference that is the size of the central small square. Therefore, the central square has size 2, 4, or 6. However, 4 and 6 are visibly too large, so the central squares size is 2, and the two squares on top of the 16 square are 7 and 9.\n\nThe rest of the sizes follows pretty easily from that information and knowing the size of the rectangle."
+    },
+    {
+      "id": "esm_pow_f_rectangle_shapes",
+      "level": "S3",
+      "eye_opener": true,
+      "puzzler": false,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWFRectangleDotsIntro.svg",
+      "block1_illust_max_size": "380px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWFRectangleDots4by6.svg",
+      "block2_illust_max_size": "200px",
+      "block3_type": "all_text",
+      "block4_type": "all_text",
+      "name": "Rectangle Shapes",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Rectangle Shapes"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** Here are all the rectangles that can be made with 7, 8, and 9 dots."
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** What are all the rectangles you can make with 23, 24, 25, 26, and 27 dots? How many  different shapes of rectangles can you make with each of these sizes?"
+        },
+        "block3_text": {
+          "eng": "**Exploration:** Which types of numbers have exactly two rectangles, both of which are flat? Which numbers have exactly three rectangles?"
+        },
+        "block4_text": {
+          "eng": "**The Challenge:** Each rectangle represents one way to factor the number. The number of rectangles will be the number of divisors of the number.\n\nHere are the factorings (= rectangles) for each number.\n\n* 23: 1 x 23, 23 x 1\n* 24: 1 x 24, 2 x 12, 3 x 8, 4 x 6, 6 x 4, 8 x 3, 12 x 2, 24 x 1\n* 25: 1 x 25, 5 x 5, 25 x 1\n* 26: 1 x 26, 2 x 13, 13 x 2, 26 x 1\n* 27: 1 x 27, 3 x 9, 9 x 3, 27 x 1\n\n**Exploration:** The numbers with exactly two factorings are the prime, such as 7 and 23. They can be factored as having just one row or just one column.\n\nThe numbers with exactly three factorings are squares of primes, such as 9 and 25. In addition to the two flat rectangles, they have one more that is a square that has the prime number of dots on each side.\n\nThere is a lot more that can be done to count divisors. For example, it is very easy to count the divisors of prime powers. For example, 5 to the 10th power will have 11 divisors - one for each power of 5 from 0 to 10.\n\nThere is a lot more exploration of divisors that is possible for the interested student."
+        }
+      },
+      "block1_text": "**Introduction:** Here are all the rectangles that can be made with 7, 8, and 9 dots.",
+      "block2_text": "**The Challenge:** What are all the rectangles you can make with 23, 24, 25, 26, and 27 dots? How many  different shapes of rectangles can you make with each of these sizes?",
+      "block3_text": "**Exploration:** Which types of numbers have exactly two rectangles, both of which are flat? Which numbers have exactly three rectangles?",
+      "block4_text": "**The Challenge:** Each rectangle represents one way to factor the number. The number of rectangles will be the number of divisors of the number.\n\nHere are the factorings (= rectangles) for each number.\n\n* 23: 1 x 23, 23 x 1\n* 24: 1 x 24, 2 x 12, 3 x 8, 4 x 6, 6 x 4, 8 x 3, 12 x 2, 24 x 1\n* 25: 1 x 25, 5 x 5, 25 x 1\n* 26: 1 x 26, 2 x 13, 13 x 2, 26 x 1\n* 27: 1 x 27, 3 x 9, 9 x 3, 27 x 1\n\n**Exploration:** The numbers with exactly two factorings are the prime, such as 7 and 23. They can be factored as having just one row or just one column.\n\nThe numbers with exactly three factorings are squares of primes, such as 9 and 25. In addition to the two flat rectangles, they have one more that is a square that has the prime number of dots on each side.\n\nThere is a lot more that can be done to count divisors. For example, it is very easy to count the divisors of prime powers. For example, 5 to the 10th power will have 11 divisors - one for each power of 5 from 0 to 10.\n\nThere is a lot more exploration of divisors that is possible for the interested student."
+    },
+    {
+      "id": "esm_pow_f_egyptian_fractions_1",
+      "level": "F1",
+      "eye_opener": true,
+      "puzzler": false,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block2_type": "illust_below",
+      "name": "Egyptian Fractions – 1",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Egyptian Fractions – 1"
+        },
+        "block1_text": {
+          "eng": "**Introduction:**"
+        },
+        "block2_text": {
+          "eng": "**The Challenge:**"
+        },
+        "block3_text": {
+          "eng": "**Exploration:**"
+        }
+      },
+      "block1_text": "**Introduction:**",
+      "block2_text": "**The Challenge:**",
+      "block3_text": "**Exploration:**"
+    },
+    {
+      "id": "esm_pow_f_egyptian_fractions_2",
+      "level": "F1",
+      "eye_opener": true,
+      "puzzler": false,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block2_type": "illust_below",
+      "name": "Egyptian Fractions – 2",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block3_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Egyptian Fractions – 2"
+        },
+        "block1_text": {
+          "eng": "**Introduction:**"
+        },
+        "block3_text": {
+          "eng": "**Exploration:**"
+        }
+      },
+      "block1_text": "**Introduction:**",
+      "block3_text": "**Exploration:**"
+    },
+    {
+      "id": "esm_pow_f_egyptian_fractions_3",
+      "level": "F1",
+      "eye_opener": true,
+      "puzzler": false,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block2_type": "illust_below",
+      "name": "Egyptian Fractions – 3",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block3_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Egyptian Fractions – 3"
+        },
+        "block1_text": {
+          "eng": "**Introduction:**"
+        },
+        "block3_text": {
+          "eng": "**Exploration:**"
+        }
+      },
+      "block1_text": "**Introduction:**",
+      "block3_text": "**Exploration:**"
+    },
+    {
+      "id": "esm_pow_f_egyptian_fractions_4",
+      "level": "F1",
+      "eye_opener": true,
+      "puzzler": false,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block2_type": "illust_below",
+      "name": "Egyptian Fractions – 4",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block3_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Egyptian Fractions – 4"
+        },
+        "block1_text": {
+          "eng": "**Introduction:**"
+        },
+        "block3_text": {
+          "eng": "**Exploration:**"
+        }
+      },
+      "block1_text": "**Introduction:**",
+      "block3_text": "**Exploration:**"
+    },
+    {
+      "id": "esm_pow_f_fractions_1",
+      "level": "F1",
+      "eye_opener": true,
+      "puzzler": false,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block2_type": "illust_below",
+      "name": "Fractions – 1 – Equiv. Fracts",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block3_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Fractions – 1 – Equiv. Fracts"
+        },
+        "block1_text": {
+          "eng": "**Introduction:**"
+        },
+        "block3_text": {
+          "eng": "**Exploration:**"
+        }
+      },
+      "block1_text": "**Introduction:**",
+      "block3_text": "**Exploration:**"
+    },
+    {
+      "id": "esm_pow_f_fractions_2",
+      "level": "F1",
+      "eye_opener": true,
+      "puzzler": false,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block2_type": "illust_below",
+      "name": "Fractions – 2 – Size of Added Fracts",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block3_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Fractions – 2 – Size of Added Fracts"
+        },
+        "block1_text": {
+          "eng": "**Introduction:**"
+        },
+        "block3_text": {
+          "eng": "**Exploration:**"
+        }
+      },
+      "block1_text": "**Introduction:**",
+      "block3_text": "**Exploration:**"
+    },
+    {
+      "id": "esm_pow_f_fractions_3",
+      "level": "F1",
+      "eye_opener": true,
+      "puzzler": false,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block2_type": "illust_below",
+      "name": "Fractions – 3 – Subtract Mixed Nums.",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block3_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Fractions – 3 – Subtract Mixed Nums."
+        },
+        "block1_text": {
+          "eng": "**Introduction:**"
+        },
+        "block3_text": {
+          "eng": "**Exploration:**"
+        }
+      },
+      "block1_text": "**Introduction:**",
+      "block3_text": "**Exploration:**"
+    },
+    {
+      "id": "esm_pow_f_fractions_4",
+      "level": "F1",
+      "eye_opener": true,
+      "puzzler": false,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block2_type": "illust_below",
+      "name": "Fractions – 4 – Comp. Fracts to Whole",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block3_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Fractions – 4 – Comp. Fracts to Whole"
+        },
+        "block1_text": {
+          "eng": "**Introduction:**"
+        },
+        "block3_text": {
+          "eng": "**Exploration:**"
+        }
+      },
+      "block1_text": "**Introduction:**",
+      "block3_text": "**Exploration:**"
+    },
+    {
+      "id": "esm_pow_f_fractions_5",
+      "level": "F1",
+      "eye_opener": true,
+      "puzzler": false,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block2_type": "illust_below",
+      "name": "Fractions – 5 – Comp. Fracts to 1/2",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block3_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Fractions – 5 – Comp. Fracts to 1/2"
+        },
+        "block1_text": {
+          "eng": "**Introduction:**"
+        },
+        "block3_text": {
+          "eng": "**Exploration:**"
+        }
+      },
+      "block1_text": "**Introduction:**",
+      "block3_text": "**Exploration:**"
+    },
+    {
+      "id": "esm_pow_f_fractions_6",
+      "level": "F1",
+      "eye_opener": true,
+      "puzzler": false,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block2_type": "illust_below",
+      "name": "Fractions – 6 – Add Fracts. to get Whole",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block3_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Fractions – 6 – Add Fracts. to get Whole"
+        },
+        "block1_text": {
+          "eng": "**Introduction:**"
+        },
+        "block3_text": {
+          "eng": "**Exploration:**"
+        }
+      },
+      "block1_text": "**Introduction:**",
+      "block3_text": "**Exploration:**"
+    },
+    {
+      "id": "esm_pow_f_fractions_7",
+      "level": "F1",
+      "eye_opener": true,
+      "puzzler": false,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block2_type": "illust_below",
+      "name": "Fractions – 7 – Add Fracts. to get Fract.",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block3_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Fractions – 7 – Add Fracts. to get Fract."
+        },
+        "block1_text": {
+          "eng": "**Introduction:**"
+        },
+        "block3_text": {
+          "eng": "**Exploration:**"
+        }
+      },
+      "block1_text": "**Introduction:**",
+      "block3_text": "**Exploration:**"
+    },
+    {
+      "id": "esm_pow_f_fractions_8",
+      "level": "F1",
+      "eye_opener": true,
+      "puzzler": false,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block2_type": "illust_below",
+      "name": "Fractions – 8 – Add 3 Fracts to get 1",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block3_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Fractions – 8 – Add 3 Fracts to get 1"
+        },
+        "block1_text": {
+          "eng": "**Introduction:**"
+        },
+        "block3_text": {
+          "eng": "**Exploration:**"
+        }
+      },
+      "block1_text": "**Introduction:**",
+      "block3_text": "**Exploration:**"
+    },
+    {
+      "id": "esm_pow_f_fractions_9",
+      "level": "F1",
+      "eye_opener": true,
+      "puzzler": false,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block2_type": "illust_below",
+      "name": "Fractions – 9 – Mult Fracts to get Whole I",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block3_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Fractions – 9 – Mult Fracts to get Whole I"
+        },
+        "block1_text": {
+          "eng": "**Introduction:**"
+        },
+        "block3_text": {
+          "eng": "**Exploration:**"
+        }
+      },
+      "block1_text": "**Introduction:**",
+      "block3_text": "**Exploration:**"
+    },
+    {
+      "id": "esm_pow_f_fractions_10",
+      "level": "F1",
+      "eye_opener": true,
+      "puzzler": false,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block2_type": "illust_below",
+      "name": "Fractions – 10 – Mult Fracts to get Whole II",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block3_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Fractions – 10 – Mult Fracts to get Whole II"
+        },
+        "block1_text": {
+          "eng": "**Introduction:**"
+        },
+        "block3_text": {
+          "eng": "**Exploration:**"
+        }
+      },
+      "block1_text": "**Introduction:**",
+      "block3_text": "**Exploration:**"
+    },
+    {
+      "id": "esm_pow_f_fractions_11",
+      "level": "F1",
+      "eye_opener": true,
+      "puzzler": false,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block2_type": "illust_below",
+      "name": "Fractions – 11 – Mult 3 Fracts to get Whole",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block3_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Fractions – 11 – Mult 3 Fracts to get Whole"
+        },
+        "block1_text": {
+          "eng": "**Introduction:**"
+        },
+        "block3_text": {
+          "eng": "**Exploration:**"
+        }
+      },
+      "block1_text": "**Introduction:**",
+      "block3_text": "**Exploration:**"
+    },
+    {
+      "id": "esm_pow_f_fractions_12",
+      "level": "F1",
+      "eye_opener": true,
+      "puzzler": false,
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block2_type": "illust_below",
+      "name": "Fractions – 12 – Div Fractions to get Target",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Fractions – 12 – Div Fractions to get Target"
+        },
+        "block1_text": {
+          "eng": "**Introduction:**"
+        },
+        "block2_text": {
+          "eng": "**The Challenge:**"
+        },
+        "block3_text": {
+          "eng": "**Exploration:**"
+        }
+      },
+      "block1_text": "**Introduction:**",
+      "block2_text": "**The Challenge:**",
+      "block3_text": "**Exploration:**"
     }
   ],
   "_source": {
