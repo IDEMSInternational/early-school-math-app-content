@@ -4,18 +4,18 @@
 | type | count |
 | --- | --- |
 | accordion | 84 |
-| accordion_section | 151 |
-| button | 184 |
+| accordion_section | 153 |
+| button | 186 |
 | debug_toggle | 1 |
-| display_group | 490 |
+| display_group | 494 |
 | image | 71 |
-| items | 73 |
+| items | 75 |
 | qr_code | 1 |
 | radio_button_grid | 1 |
 | round_button | 10 |
 | select_text | 1 |
 | set_field | 51 |
-| set_variable | 782 |
+| set_variable | 796 |
 | simple_checkbox | 4 |
 | template | 97 |
 | text | 375 |
@@ -38,10 +38,10 @@
 | emit: set_language | 1 |
 | emit: uncompleted | 58 |
 | feedback | 11 |
-| go_to | 157 |
+| go_to | 159 |
 | go_to_url | 3 |
 | reset_app | 1 |
-| set_field | 145 |
+| set_field | 149 |
 | set_local | 7 |
 | start_tour | 10 |
 </details>
@@ -51,7 +51,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 46252 KB | 46.3 MB |
+| total | 47022 KB | 47 MB |
 | unused | 22328 KB | 22.3 MB |
 </details>
 
@@ -1534,6 +1534,10 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMPOWBFindingthePieces5Intro.svg | 4.5 | 1 |
 | ESMIll/ESMPOWBLadybugs2Challenge.svg | 4.7 | 1 |
 | ESMIll/ESMPOWBLadybugsIntro.svg | 7 | 1 |
+| ESMIll/ESMPOWBLetterSubstitution1.svg | 27.6 | 1 |
+| ESMIll/ESMPOWBLetterSubstitution2.svg | 13.3 | 1 |
+| ESMIll/ESMPOWBLetterSubstitution3.svg | 18.1 | 1 |
+| ESMIll/ESMPOWBLetterSubstitutionIntro.svg | 16.7 | 7 |
 | ESMIll/ESMPOWBMagicFlowers1.svg | 6.5 | 1 |
 | ESMIll/ESMPOWBMagicFlowers2.svg | 7.4 | 1 |
 | ESMIll/ESMPOWBMagicFlowersIntro.svg | 16.6 | 2 |
@@ -1641,6 +1645,35 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMPOWCTiedHandsChallenge.svg | 51.5 | 1 |
 | ESMIll/ESMPOWCTrapezoidalNumbersChallenge1.svg | 2.3 | 1 |
 | ESMIll/ESMPOWCTrapezoidalNumbersIntro.svg | 7.4 | 1 |
+| ESMIll/ESMPOWDLetterSubstitution4.svg | 17 | 1 |
+| ESMIll/ESMPOWDLetterSubstitution5.svg | 21.1 | 1 |
+| ESMIll/ESMPOWDLetterSubstitution6.svg | 27.1 | 1 |
+| ESMIll/ESMPOWDLetterSubstitution7.svg | 25.1 | 1 |
+| ESMIll/ESMPOWDLines5by4Intro.svg | 6.9 | 2 |
+| ESMIll/ESMPOWDLines6Answer.svg | 116.7 | 1 |
+| ESMIll/ESMPOWDLines7Answer.svg | 214.8 | 1 |
+| ESMIll/ESMPOWDSquareGrid3by4.svg | 3.6 | 1 |
+| ESMIll/ESMPOWDSquareGrid4by4.svg | 4.5 | 2 |
+| ESMIll/ESMPOWDSquaresWithinSquaresGrid.svg | 7.3 | 1 |
+| ESMIll/ESMPOWDSquaresinSquaresEvens.svg | 7.4 | 1 |
+| ESMIll/ESMPOWDSquaresinSquaresIntro.svg | 4.4 | 1 |
+| ESMIll/ESMPOWDTrianglesinTrianglesChallenge.svg | 2.4 | 1 |
+| ESMIll/ESMPOWDTrianglesinTrianglesEvens.svg | 15.4 | 1 |
+| ESMIll/ESMPOWDTrianglesinTrianglesIntro.svg | 9.4 | 1 |
+| ESMIll/ESMPOWDTrianglesinTrianglesSquares.svg | 7.9 | 1 |
+| ESMIll/ESMPOWEFillingSquaresWithRectanglesIntro.svg | 23.8 | 1 |
+| ESMIll/ESMPOWEFillingSquaresWithRectanglesSolutions.svg | 71.4 | 1 |
+| ESMIll/ESMPOWEPerfectRectangle47by65Revised.svg | 11.4 | 2 |
+| ESMIll/ESMPOWESquareGrid4by4RectangleExamples.svg | 5.1 | 1 |
+| ESMIll/ESMPOWESquareGrid4by4RectangleSides.svg | 6.1 | 1 |
+| ESMIll/ESMPOWFLineCrossings4by6.svg | 5 | 1 |
+| ESMIll/ESMPOWFLineCrossingsChallenge.svg | 4.2 | 1 |
+| ESMIll/ESMPOWFLineCrossingsIntro.svg | 6.1 | 1 |
+| ESMIll/ESMPOWFRectangleDots4by6.svg | 6.3 | 1 |
+| ESMIll/ESMPOWFRectangleDotsIntro.svg | 14.9 | 1 |
+| ESMIll/ESMPOWFSquareGrid5by5Challenge.svg | 6.5 | 1 |
+| ESMIll/ESMPOWFSquareGrid5by5DiagonalsArea.svg | 8.9 | 1 |
+| ESMIll/ESMPOWFSquareGrid5by5SimpleExamples.svg | 7.9 | 1 |
 | ESMIll/ESMPS4by4ChessboardEmpty.svg | 6.4 | 1 |
 | ESMIll/ESMPSEightCubesIntro.svg | 5.5 | 1 |
 | ESMIll/ESMPSEightCubesSixFaces.svg | 10.2 | 1 |
@@ -1777,6 +1810,10 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMTopicTenFrameIntro.svg | 8.5 | 1 |
 | ESMIll/ESMTopicWritingNumeralsBackwards.svg | 5.2 | 1 |
 | ESMIll/ESMTreasureMap2.svg | 13.7 | 1 |
+| ESMIll/PerfectRectangle33by32Answers.svg | 7.5 | 1 |
+| ESMIll/PerfectRectangle33by32BlankRevised.svg | 5 | 1 |
+| ESMIll/PerfectRectangle69by61Answers.svg | 8.5 | 1 |
+| ESMIll/PerfectRectangle69by61BlankRevised.svg | 5.1 | 1 |
 | ESMLogo.png | 155.8 | 1 |
 </details>
 
