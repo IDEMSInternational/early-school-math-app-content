@@ -51,7 +51,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 47022 KB | 47 MB |
+| total | 47335 KB | 47.3 MB |
 | unused | 22328 KB | 22.3 MB |
 </details>
 
@@ -1666,6 +1666,18 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMPOWEPerfectRectangle47by65Revised.svg | 11.4 | 2 |
 | ESMIll/ESMPOWESquareGrid4by4RectangleExamples.svg | 5.1 | 1 |
 | ESMIll/ESMPOWESquareGrid4by4RectangleSides.svg | 6.1 | 1 |
+| ESMIll/ESMPOWFFractions1.svg | 20.1 | 1 |
+| ESMIll/ESMPOWFFractions10.svg | 21.7 | 1 |
+| ESMIll/ESMPOWFFractions11.svg | 26.9 | 1 |
+| ESMIll/ESMPOWFFractions12.svg | 38.8 | 1 |
+| ESMIll/ESMPOWFFractions2.svg | 20.7 | 1 |
+| ESMIll/ESMPOWFFractions3.svg | 20.2 | 1 |
+| ESMIll/ESMPOWFFractions4.svg | 42.7 | 1 |
+| ESMIll/ESMPOWFFractions5.svg | 36.6 | 1 |
+| ESMIll/ESMPOWFFractions6.svg | 20.2 | 1 |
+| ESMIll/ESMPOWFFractions7.svg | 20.3 | 1 |
+| ESMIll/ESMPOWFFractions8.svg | 22.4 | 1 |
+| ESMIll/ESMPOWFFractions9.svg | 22.9 | 1 |
 | ESMIll/ESMPOWFLineCrossings4by6.svg | 5 | 1 |
 | ESMIll/ESMPOWFLineCrossingsChallenge.svg | 4.2 | 1 |
 | ESMIll/ESMPOWFLineCrossingsIntro.svg | 6.1 | 1 |
