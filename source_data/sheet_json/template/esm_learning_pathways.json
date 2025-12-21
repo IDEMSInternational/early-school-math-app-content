@@ -86,7 +86,7 @@
       "name": "button_rmt_group1_1",
       "value": "Reading Preverbal",
       "action_list": "click | set_field:current_topic: data.esm_topics.FMT_RWC_DRP;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
+      "parameter_list": "variant: card, compact;",
       "style_list": "flex: 5;"
     },
     {
@@ -99,7 +99,7 @@
       "name": "button_rmt_group1_2",
       "value": "MT – Early",
       "action_list": "click | set_field:current_topic: data.esm_topics.FMT_EAA_EandO;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
+      "parameter_list": "variant: card, compact;",
       "style_list": "flex: 5;"
     },
     {
@@ -126,7 +126,7 @@
       "name": "button_rmt_group2_1",
       "value": "MT – Describe",
       "action_list": "click | set_field:current_topic: data.esm_topics.FMT_EAA_FMTDC;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
+      "parameter_list": "variant: compact;",
       "style_list": "flex:1;"
     },
     {
@@ -134,7 +134,7 @@
       "name": "button_rmt_group2_2",
       "value": "MT – Home",
       "action_list": "click | set_field:current_topic: data.esm_topics.FMT_EAA_FMTinH;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
+      "parameter_list": "variant: compact;",
       "style_list": "flex:1;"
     },
     {
@@ -142,7 +142,7 @@
       "name": "button_rmt_group2_3",
       "value": "MT – Outside",
       "action_list": "click | set_field:current_topic: data.esm_topics.FMT_EAA_FMTOA;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
+      "parameter_list": "variant: compact;",
       "style_list": "flex:1;"
     },
     {
@@ -164,7 +164,6 @@
       "name": "button_rmt_group3_1",
       "value": "Reading Verbal",
       "action_list": "click | set_field:current_topic: data.esm_topics.FMT_RWC_DRV;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
       "style_list": "flex:1;"
     },
     {
@@ -172,7 +171,6 @@
       "name": "button_rmt_group3_2",
       "value": "MT – Ask",
       "action_list": "click | set_field:current_topic: data.esm_topics.FMT_EAA_FMTPDA;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
       "style_list": "flex:1;"
     },
     {
@@ -180,7 +178,6 @@
       "name": "button_rmt_group3_3",
       "value": "MT – Count",
       "action_list": "click | set_field:current_topic: data.esm_topics.FMT_EAA_FMTC;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
       "style_list": "flex:1;"
     },
     {

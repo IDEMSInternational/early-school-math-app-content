@@ -30,7 +30,6 @@
     {
       "type": "begin_display_group",
       "name": "count_matches",
-      "condition": false,
       "parameter_list": "style:column;"
     },
     {
@@ -69,27 +68,33 @@
     },
     {
       "name": "match1",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_1))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_1))",
+      "condition": "@item.topic_theme_1"
     },
     {
       "name": "match2",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_2))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_2))",
+      "condition": "@item.topic_theme_2"
     },
     {
       "name": "match3",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_3))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_3))",
+      "condition": "@item.topic_theme_3"
     },
     {
       "name": "match4",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_4))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_4))",
+      "condition": "@item.topic_theme_4"
     },
     {
       "name": "match5",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_5))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_5))",
+      "condition": "@item.topic_theme_5"
     },
     {
       "name": "match6",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_6))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_6))",
+      "condition": "@item.topic_theme_6"
     },
     {
       "name": "does_it_match",
@@ -114,27 +119,33 @@
     },
     {
       "name": "match1",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_1))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_1))",
+      "condition": "@item.topic_theme_1"
     },
     {
       "name": "match2",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_2))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_2))",
+      "condition": "@item.topic_theme_2"
     },
     {
       "name": "match3",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_3))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_3))",
+      "condition": "@item.topic_theme_3"
     },
     {
       "name": "match4",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_4))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_4))",
+      "condition": "@item.topic_theme_4"
     },
     {
       "name": "match5",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_5))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_5))",
+      "condition": "@item.topic_theme_5"
     },
     {
       "name": "match6",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_6))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_6))",
+      "condition": "@item.topic_theme_6"
     },
     {
       "name": "does_it_match",
@@ -159,27 +170,33 @@
     },
     {
       "name": "match1",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_1))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_1))",
+      "condition": "@item.topic_theme_1"
     },
     {
       "name": "match2",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_2))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_2))",
+      "condition": "@item.topic_theme_2"
     },
     {
       "name": "match3",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_3))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_3))",
+      "condition": "@item.topic_theme_3"
     },
     {
       "name": "match4",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_4))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_4))",
+      "condition": "@item.topic_theme_4"
     },
     {
       "name": "match5",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_5))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_5))",
+      "condition": "@item.topic_theme_5"
     },
     {
       "name": "match6",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_6))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_6))",
+      "condition": "@item.topic_theme_6"
     },
     {
       "name": "does_it_match",
@@ -217,27 +234,33 @@
     },
     {
       "name": "match1",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_1))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_1))",
+      "condition": "@item.topic_theme_1"
     },
     {
       "name": "match2",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_2))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_2))",
+      "condition": "@item.topic_theme_2"
     },
     {
       "name": "match3",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_3))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_3))",
+      "condition": "@item.topic_theme_3"
     },
     {
       "name": "match4",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_4))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_4))",
+      "condition": "@item.topic_theme_4"
     },
     {
       "name": "match5",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_5))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_5))",
+      "condition": "@item.topic_theme_5"
     },
     {
       "name": "match6",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_6))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_6))",
+      "condition": "@item.topic_theme_6"
     },
     {
       "name": "does_it_match",
@@ -265,27 +288,33 @@
     },
     {
       "name": "match1",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_1))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_1))",
+      "condition": "@item.topic_theme_1"
     },
     {
       "name": "match2",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_2))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_2))",
+      "condition": "@item.topic_theme_2"
     },
     {
       "name": "match3",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_3))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_3))",
+      "condition": "@item.topic_theme_3"
     },
     {
       "name": "match4",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_4))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_4))",
+      "condition": "@item.topic_theme_4"
     },
     {
       "name": "match5",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_5))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_5))",
+      "condition": "@item.topic_theme_5"
     },
     {
       "name": "match6",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_6))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_6))",
+      "condition": "@item.topic_theme_6"
     },
     {
       "name": "does_it_match",
@@ -310,27 +339,33 @@
     },
     {
       "name": "match1",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_1))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_1))",
+      "condition": "@item.topic_theme_1"
     },
     {
       "name": "match2",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_2))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_2))",
+      "condition": "@item.topic_theme_2"
     },
     {
       "name": "match3",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_3))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_3))",
+      "condition": "@item.topic_theme_3"
     },
     {
       "name": "match4",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_4))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_4))",
+      "condition": "@item.topic_theme_4"
     },
     {
       "name": "match5",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_5))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_5))",
+      "condition": "@item.topic_theme_5"
     },
     {
       "name": "match6",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_6))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_6))",
+      "condition": "@item.topic_theme_6"
     },
     {
       "name": "does_it_match",
@@ -365,7 +400,7 @@
     {
       "type": "begin_accordion_section",
       "name": "topic_buttons",
-      "value": "Topic(s)",
+      "value": "@local.topic_counter Topic(s)",
       "parameter_list": "style:column;"
     },
     {
@@ -402,7 +437,7 @@
     {
       "type": "begin_accordion_section",
       "name": "pow_buttons",
-      "value": "Puzzle(s)",
+      "value": "@local.pow_counter Puzzle(s)",
       "parameter_list": "style:column;"
     },
     {
@@ -417,27 +452,33 @@
     },
     {
       "name": "match1",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_1))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_1))",
+      "condition": "@item.topic_theme_1"
     },
     {
       "name": "match2",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_2))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_2))",
+      "condition": "@item.topic_theme_2"
     },
     {
       "name": "match3",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_3))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_3))",
+      "condition": "@item.topic_theme_3"
     },
     {
       "name": "match4",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_4))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_4))",
+      "condition": "@item.topic_theme_4"
     },
     {
       "name": "match5",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_5))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_5))",
+      "condition": "@item.topic_theme_5"
     },
     {
       "name": "match6",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_6))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_6))",
+      "condition": "@item.topic_theme_6"
     },
     {
       "name": "does_it_match",
@@ -463,7 +504,7 @@
     {
       "type": "begin_accordion_section",
       "name": "gas_buttons",
-      "value": "Game(s)",
+      "value": "@local.gas_counter Game(s)",
       "parameter_list": "style:column;"
     },
     {
@@ -478,27 +519,33 @@
     },
     {
       "name": "match1",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_1))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_1))",
+      "condition": "@item.topic_theme_1"
     },
     {
       "name": "match2",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_2))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_2))",
+      "condition": "@item.topic_theme_2"
     },
     {
       "name": "match3",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_3))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_3))",
+      "condition": "@item.topic_theme_3"
     },
     {
       "name": "match4",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_4))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_4))",
+      "condition": "@item.topic_theme_4"
     },
     {
       "name": "match5",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_5))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_5))",
+      "condition": "@item.topic_theme_5"
     },
     {
       "name": "match6",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_6))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_6))",
+      "condition": "@item.topic_theme_6"
     },
     {
       "name": "does_it_match",
@@ -524,7 +571,7 @@
     {
       "type": "begin_accordion_section",
       "name": "sb_buttons",
-      "value": "Storybook(s)",
+      "value": "@local.sb_counter Storybook(s)",
       "parameter_list": "style:column;"
     },
     {
@@ -539,27 +586,33 @@
     },
     {
       "name": "match1",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_1))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_1))",
+      "condition": "@item.topic_theme_1"
     },
     {
       "name": "match2",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_2))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_2))",
+      "condition": "@item.topic_theme_2"
     },
     {
       "name": "match3",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_3))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_3))",
+      "condition": "@item.topic_theme_3"
     },
     {
       "name": "match4",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_4))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_4))",
+      "condition": "@item.topic_theme_4"
     },
     {
       "name": "match5",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_5))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_5))",
+      "condition": "@item.topic_theme_5"
     },
     {
       "name": "match6",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_6))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_6))",
+      "condition": "@item.topic_theme_6"
     },
     {
       "name": "does_it_match",
@@ -585,7 +638,7 @@
     {
       "type": "begin_accordion_section",
       "name": "routines_buttons",
-      "value": "Routines(s)",
+      "value": "@local.routine_counter Routines(s)",
       "parameter_list": "style:column;"
     },
     {
@@ -613,27 +666,33 @@
     },
     {
       "name": "match1",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_1))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_1))",
+      "condition": "@item.topic_theme_1"
     },
     {
       "name": "match2",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_2))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_2))",
+      "condition": "@item.topic_theme_2"
     },
     {
       "name": "match3",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_3))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_3))",
+      "condition": "@item.topic_theme_3"
     },
     {
       "name": "match4",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_4))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_4))",
+      "condition": "@item.topic_theme_4"
     },
     {
       "name": "match5",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_5))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_5))",
+      "condition": "@item.topic_theme_5"
     },
     {
       "name": "match6",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_6))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_6))",
+      "condition": "@item.topic_theme_6"
     },
     {
       "name": "does_it_match",
@@ -673,7 +732,7 @@
     {
       "type": "begin_accordion_section",
       "name": "oe_buttons",
-      "value": "Open-Ended Task(s)",
+      "value": "@local.oe_counter Open-Ended Task(s)",
       "parameter_list": "style:column;"
     },
     {
@@ -688,27 +747,33 @@
     },
     {
       "name": "match1",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_1))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_1))",
+      "condition": "@item.topic_theme_1"
     },
     {
       "name": "match2",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_2))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_2))",
+      "condition": "@item.topic_theme_2"
     },
     {
       "name": "match3",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_3))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_3))",
+      "condition": "@item.topic_theme_3"
     },
     {
       "name": "match4",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_4))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_4))",
+      "condition": "@item.topic_theme_4"
     },
     {
       "name": "match5",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_5))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_5))",
+      "condition": "@item.topic_theme_5"
     },
     {
       "name": "match6",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_6))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_6))",
+      "condition": "@item.topic_theme_6"
     },
     {
       "name": "does_it_match",
@@ -734,7 +799,7 @@
     {
       "type": "begin_accordion_section",
       "name": "ps_buttons",
-      "value": "Problem Solving Task(s)",
+      "value": "@local.ps_counter Problem Solving Task(s)",
       "parameter_list": "style:column;"
     },
     {
@@ -749,27 +814,33 @@
     },
     {
       "name": "match1",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_1))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_1))",
+      "condition": "@item.topic_theme_1"
     },
     {
       "name": "match2",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_2))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_2))",
+      "condition": "@item.topic_theme_2"
     },
     {
       "name": "match3",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_3))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_3))",
+      "condition": "@item.topic_theme_3"
     },
     {
       "name": "match4",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_4))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_4))",
+      "condition": "@item.topic_theme_4"
     },
     {
       "name": "match5",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_5))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_5))",
+      "condition": "@item.topic_theme_5"
     },
     {
       "name": "match6",
-      "value": "@calc(@local.search_set.has(@item.topic_theme_6))"
+      "value": "@calc(@local.search_set.has(@item.topic_theme_6))",
+      "condition": "@item.topic_theme_6"
     },
     {
       "name": "does_it_match",

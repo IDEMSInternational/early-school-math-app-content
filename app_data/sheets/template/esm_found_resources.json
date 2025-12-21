@@ -111,7 +111,6 @@
         {
           "type": "display_group",
           "name": "count_matches",
-          "condition": false,
           "parameter_list": {
             "style": "column"
           },
@@ -296,6 +295,7 @@
                   "_translations": {
                     "value": {}
                   },
+                  "condition": "@item.topic_theme_1",
                   "type": "set_variable",
                   "_nested_name": "do_the_lookup.count_matches.pow_checks.match1",
                   "_dynamicFields": {
@@ -318,6 +318,14 @@
                         "type": "calc",
                         "fieldName": "@local.search_set.has(@item.topic_theme_1)"
                       }
+                    ],
+                    "condition": [
+                      {
+                        "fullExpression": "@item.topic_theme_1",
+                        "matchedExpression": "@item.topic_theme_1",
+                        "type": "item",
+                        "fieldName": "topic_theme_1"
+                      }
                     ]
                   },
                   "_dynamicDependencies": {
@@ -325,7 +333,8 @@
                       "value"
                     ],
                     "@item.topic_theme_1": [
-                      "value"
+                      "value",
+                      "condition"
                     ],
                     "@calc(@local.search_set.has(@item.topic_theme_1))": [
                       "value"
@@ -338,6 +347,7 @@
                   "_translations": {
                     "value": {}
                   },
+                  "condition": "@item.topic_theme_2",
                   "type": "set_variable",
                   "_nested_name": "do_the_lookup.count_matches.pow_checks.match2",
                   "_dynamicFields": {
@@ -360,6 +370,14 @@
                         "type": "calc",
                         "fieldName": "@local.search_set.has(@item.topic_theme_2)"
                       }
+                    ],
+                    "condition": [
+                      {
+                        "fullExpression": "@item.topic_theme_2",
+                        "matchedExpression": "@item.topic_theme_2",
+                        "type": "item",
+                        "fieldName": "topic_theme_2"
+                      }
                     ]
                   },
                   "_dynamicDependencies": {
@@ -367,7 +385,8 @@
                       "value"
                     ],
                     "@item.topic_theme_2": [
-                      "value"
+                      "value",
+                      "condition"
                     ],
                     "@calc(@local.search_set.has(@item.topic_theme_2))": [
                       "value"
@@ -380,6 +399,7 @@
                   "_translations": {
                     "value": {}
                   },
+                  "condition": "@item.topic_theme_3",
                   "type": "set_variable",
                   "_nested_name": "do_the_lookup.count_matches.pow_checks.match3",
                   "_dynamicFields": {
@@ -402,6 +422,14 @@
                         "type": "calc",
                         "fieldName": "@local.search_set.has(@item.topic_theme_3)"
                       }
+                    ],
+                    "condition": [
+                      {
+                        "fullExpression": "@item.topic_theme_3",
+                        "matchedExpression": "@item.topic_theme_3",
+                        "type": "item",
+                        "fieldName": "topic_theme_3"
+                      }
                     ]
                   },
                   "_dynamicDependencies": {
@@ -409,7 +437,8 @@
                       "value"
                     ],
                     "@item.topic_theme_3": [
-                      "value"
+                      "value",
+                      "condition"
                     ],
                     "@calc(@local.search_set.has(@item.topic_theme_3))": [
                       "value"
@@ -422,6 +451,7 @@
                   "_translations": {
                     "value": {}
                   },
+                  "condition": "@item.topic_theme_4",
                   "type": "set_variable",
                   "_nested_name": "do_the_lookup.count_matches.pow_checks.match4",
                   "_dynamicFields": {
@@ -444,6 +474,14 @@
                         "type": "calc",
                         "fieldName": "@local.search_set.has(@item.topic_theme_4)"
                       }
+                    ],
+                    "condition": [
+                      {
+                        "fullExpression": "@item.topic_theme_4",
+                        "matchedExpression": "@item.topic_theme_4",
+                        "type": "item",
+                        "fieldName": "topic_theme_4"
+                      }
                     ]
                   },
                   "_dynamicDependencies": {
@@ -451,7 +489,8 @@
                       "value"
                     ],
                     "@item.topic_theme_4": [
-                      "value"
+                      "value",
+                      "condition"
                     ],
                     "@calc(@local.search_set.has(@item.topic_theme_4))": [
                       "value"
@@ -464,6 +503,7 @@
                   "_translations": {
                     "value": {}
                   },
+                  "condition": "@item.topic_theme_5",
                   "type": "set_variable",
                   "_nested_name": "do_the_lookup.count_matches.pow_checks.match5",
                   "_dynamicFields": {
@@ -486,6 +526,14 @@
                         "type": "calc",
                         "fieldName": "@local.search_set.has(@item.topic_theme_5)"
                       }
+                    ],
+                    "condition": [
+                      {
+                        "fullExpression": "@item.topic_theme_5",
+                        "matchedExpression": "@item.topic_theme_5",
+                        "type": "item",
+                        "fieldName": "topic_theme_5"
+                      }
                     ]
                   },
                   "_dynamicDependencies": {
@@ -493,7 +541,8 @@
                       "value"
                     ],
                     "@item.topic_theme_5": [
-                      "value"
+                      "value",
+                      "condition"
                     ],
                     "@calc(@local.search_set.has(@item.topic_theme_5))": [
                       "value"
@@ -506,6 +555,7 @@
                   "_translations": {
                     "value": {}
                   },
+                  "condition": "@item.topic_theme_6",
                   "type": "set_variable",
                   "_nested_name": "do_the_lookup.count_matches.pow_checks.match6",
                   "_dynamicFields": {
@@ -528,6 +578,14 @@
                         "type": "calc",
                         "fieldName": "@local.search_set.has(@item.topic_theme_6)"
                       }
+                    ],
+                    "condition": [
+                      {
+                        "fullExpression": "@item.topic_theme_6",
+                        "matchedExpression": "@item.topic_theme_6",
+                        "type": "item",
+                        "fieldName": "topic_theme_6"
+                      }
                     ]
                   },
                   "_dynamicDependencies": {
@@ -535,7 +593,8 @@
                       "value"
                     ],
                     "@item.topic_theme_6": [
-                      "value"
+                      "value",
+                      "condition"
                     ],
                     "@calc(@local.search_set.has(@item.topic_theme_6))": [
                       "value"
@@ -707,6 +766,7 @@
                   "_translations": {
                     "value": {}
                   },
+                  "condition": "@item.topic_theme_1",
                   "type": "set_variable",
                   "_nested_name": "do_the_lookup.count_matches.gas_checks.match1",
                   "_dynamicFields": {
@@ -729,6 +789,14 @@
                         "type": "calc",
                         "fieldName": "@local.search_set.has(@item.topic_theme_1)"
                       }
+                    ],
+                    "condition": [
+                      {
+                        "fullExpression": "@item.topic_theme_1",
+                        "matchedExpression": "@item.topic_theme_1",
+                        "type": "item",
+                        "fieldName": "topic_theme_1"
+                      }
                     ]
                   },
                   "_dynamicDependencies": {
@@ -736,7 +804,8 @@
                       "value"
                     ],
                     "@item.topic_theme_1": [
-                      "value"
+                      "value",
+                      "condition"
                     ],
                     "@calc(@local.search_set.has(@item.topic_theme_1))": [
                       "value"
@@ -749,6 +818,7 @@
                   "_translations": {
                     "value": {}
                   },
+                  "condition": "@item.topic_theme_2",
                   "type": "set_variable",
                   "_nested_name": "do_the_lookup.count_matches.gas_checks.match2",
                   "_dynamicFields": {
@@ -771,6 +841,14 @@
                         "type": "calc",
                         "fieldName": "@local.search_set.has(@item.topic_theme_2)"
                       }
+                    ],
+                    "condition": [
+                      {
+                        "fullExpression": "@item.topic_theme_2",
+                        "matchedExpression": "@item.topic_theme_2",
+                        "type": "item",
+                        "fieldName": "topic_theme_2"
+                      }
                     ]
                   },
                   "_dynamicDependencies": {
@@ -778,7 +856,8 @@
                       "value"
                     ],
                     "@item.topic_theme_2": [
-                      "value"
+                      "value",
+                      "condition"
                     ],
                     "@calc(@local.search_set.has(@item.topic_theme_2))": [
                       "value"
@@ -791,6 +870,7 @@
                   "_translations": {
                     "value": {}
                   },
+                  "condition": "@item.topic_theme_3",
                   "type": "set_variable",
                   "_nested_name": "do_the_lookup.count_matches.gas_checks.match3",
                   "_dynamicFields": {
@@ -813,6 +893,14 @@
                         "type": "calc",
                         "fieldName": "@local.search_set.has(@item.topic_theme_3)"
                       }
+                    ],
+                    "condition": [
+                      {
+                        "fullExpression": "@item.topic_theme_3",
+                        "matchedExpression": "@item.topic_theme_3",
+                        "type": "item",
+                        "fieldName": "topic_theme_3"
+                      }
                     ]
                   },
                   "_dynamicDependencies": {
@@ -820,7 +908,8 @@
                       "value"
                     ],
                     "@item.topic_theme_3": [
-                      "value"
+                      "value",
+                      "condition"
                     ],
                     "@calc(@local.search_set.has(@item.topic_theme_3))": [
                       "value"
@@ -833,6 +922,7 @@
                   "_translations": {
                     "value": {}
                   },
+                  "condition": "@item.topic_theme_4",
                   "type": "set_variable",
                   "_nested_name": "do_the_lookup.count_matches.gas_checks.match4",
                   "_dynamicFields": {
@@ -855,6 +945,14 @@
                         "type": "calc",
                         "fieldName": "@local.search_set.has(@item.topic_theme_4)"
                       }
+                    ],
+                    "condition": [
+                      {
+                        "fullExpression": "@item.topic_theme_4",
+                        "matchedExpression": "@item.topic_theme_4",
+                        "type": "item",
+                        "fieldName": "topic_theme_4"
+                      }
                     ]
                   },
                   "_dynamicDependencies": {
@@ -862,7 +960,8 @@
                       "value"
                     ],
                     "@item.topic_theme_4": [
-                      "value"
+                      "value",
+                      "condition"
                     ],
                     "@calc(@local.search_set.has(@item.topic_theme_4))": [
                       "value"
@@ -875,6 +974,7 @@
                   "_translations": {
                     "value": {}
                   },
+                  "condition": "@item.topic_theme_5",
                   "type": "set_variable",
                   "_nested_name": "do_the_lookup.count_matches.gas_checks.match5",
                   "_dynamicFields": {
@@ -897,6 +997,14 @@
                         "type": "calc",
                         "fieldName": "@local.search_set.has(@item.topic_theme_5)"
                       }
+                    ],
+                    "condition": [
+                      {
+                        "fullExpression": "@item.topic_theme_5",
+                        "matchedExpression": "@item.topic_theme_5",
+                        "type": "item",
+                        "fieldName": "topic_theme_5"
+                      }
                     ]
                   },
                   "_dynamicDependencies": {
@@ -904,7 +1012,8 @@
                       "value"
                     ],
                     "@item.topic_theme_5": [
-                      "value"
+                      "value",
+                      "condition"
                     ],
                     "@calc(@local.search_set.has(@item.topic_theme_5))": [
                       "value"
@@ -917,6 +1026,7 @@
                   "_translations": {
                     "value": {}
                   },
+                  "condition": "@item.topic_theme_6",
                   "type": "set_variable",
                   "_nested_name": "do_the_lookup.count_matches.gas_checks.match6",
                   "_dynamicFields": {
@@ -939,6 +1049,14 @@
                         "type": "calc",
                         "fieldName": "@local.search_set.has(@item.topic_theme_6)"
                       }
+                    ],
+                    "condition": [
+                      {
+                        "fullExpression": "@item.topic_theme_6",
+                        "matchedExpression": "@item.topic_theme_6",
+                        "type": "item",
+                        "fieldName": "topic_theme_6"
+                      }
                     ]
                   },
                   "_dynamicDependencies": {
@@ -946,7 +1064,8 @@
                       "value"
                     ],
                     "@item.topic_theme_6": [
-                      "value"
+                      "value",
+                      "condition"
                     ],
                     "@calc(@local.search_set.has(@item.topic_theme_6))": [
                       "value"
@@ -1118,6 +1237,7 @@
                   "_translations": {
                     "value": {}
                   },
+                  "condition": "@item.topic_theme_1",
                   "type": "set_variable",
                   "_nested_name": "do_the_lookup.count_matches.sb_checks.match1",
                   "_dynamicFields": {
@@ -1140,6 +1260,14 @@
                         "type": "calc",
                         "fieldName": "@local.search_set.has(@item.topic_theme_1)"
                       }
+                    ],
+                    "condition": [
+                      {
+                        "fullExpression": "@item.topic_theme_1",
+                        "matchedExpression": "@item.topic_theme_1",
+                        "type": "item",
+                        "fieldName": "topic_theme_1"
+                      }
                     ]
                   },
                   "_dynamicDependencies": {
@@ -1147,7 +1275,8 @@
                       "value"
                     ],
                     "@item.topic_theme_1": [
-                      "value"
+                      "value",
+                      "condition"
                     ],
                     "@calc(@local.search_set.has(@item.topic_theme_1))": [
                       "value"
@@ -1160,6 +1289,7 @@
                   "_translations": {
                     "value": {}
                   },
+                  "condition": "@item.topic_theme_2",
                   "type": "set_variable",
                   "_nested_name": "do_the_lookup.count_matches.sb_checks.match2",
                   "_dynamicFields": {
@@ -1182,6 +1312,14 @@
                         "type": "calc",
                         "fieldName": "@local.search_set.has(@item.topic_theme_2)"
                       }
+                    ],
+                    "condition": [
+                      {
+                        "fullExpression": "@item.topic_theme_2",
+                        "matchedExpression": "@item.topic_theme_2",
+                        "type": "item",
+                        "fieldName": "topic_theme_2"
+                      }
                     ]
                   },
                   "_dynamicDependencies": {
@@ -1189,7 +1327,8 @@
                       "value"
                     ],
                     "@item.topic_theme_2": [
-                      "value"
+                      "value",
+                      "condition"
                     ],
                     "@calc(@local.search_set.has(@item.topic_theme_2))": [
                       "value"
@@ -1202,6 +1341,7 @@
                   "_translations": {
                     "value": {}
                   },
+                  "condition": "@item.topic_theme_3",
                   "type": "set_variable",
                   "_nested_name": "do_the_lookup.count_matches.sb_checks.match3",
                   "_dynamicFields": {
@@ -1224,6 +1364,14 @@
                         "type": "calc",
                         "fieldName": "@local.search_set.has(@item.topic_theme_3)"
                       }
+                    ],
+                    "condition": [
+                      {
+                        "fullExpression": "@item.topic_theme_3",
+                        "matchedExpression": "@item.topic_theme_3",
+                        "type": "item",
+                        "fieldName": "topic_theme_3"
+                      }
                     ]
                   },
                   "_dynamicDependencies": {
@@ -1231,7 +1379,8 @@
                       "value"
                     ],
                     "@item.topic_theme_3": [
-                      "value"
+                      "value",
+                      "condition"
                     ],
                     "@calc(@local.search_set.has(@item.topic_theme_3))": [
                       "value"
@@ -1244,6 +1393,7 @@
                   "_translations": {
                     "value": {}
                   },
+                  "condition": "@item.topic_theme_4",
                   "type": "set_variable",
                   "_nested_name": "do_the_lookup.count_matches.sb_checks.match4",
                   "_dynamicFields": {
@@ -1266,6 +1416,14 @@
                         "type": "calc",
                         "fieldName": "@local.search_set.has(@item.topic_theme_4)"
                       }
+                    ],
+                    "condition": [
+                      {
+                        "fullExpression": "@item.topic_theme_4",
+                        "matchedExpression": "@item.topic_theme_4",
+                        "type": "item",
+                        "fieldName": "topic_theme_4"
+                      }
                     ]
                   },
                   "_dynamicDependencies": {
@@ -1273,7 +1431,8 @@
                       "value"
                     ],
                     "@item.topic_theme_4": [
-                      "value"
+                      "value",
+                      "condition"
                     ],
                     "@calc(@local.search_set.has(@item.topic_theme_4))": [
                       "value"
@@ -1286,6 +1445,7 @@
                   "_translations": {
                     "value": {}
                   },
+                  "condition": "@item.topic_theme_5",
                   "type": "set_variable",
                   "_nested_name": "do_the_lookup.count_matches.sb_checks.match5",
                   "_dynamicFields": {
@@ -1308,6 +1468,14 @@
                         "type": "calc",
                         "fieldName": "@local.search_set.has(@item.topic_theme_5)"
                       }
+                    ],
+                    "condition": [
+                      {
+                        "fullExpression": "@item.topic_theme_5",
+                        "matchedExpression": "@item.topic_theme_5",
+                        "type": "item",
+                        "fieldName": "topic_theme_5"
+                      }
                     ]
                   },
                   "_dynamicDependencies": {
@@ -1315,7 +1483,8 @@
                       "value"
                     ],
                     "@item.topic_theme_5": [
-                      "value"
+                      "value",
+                      "condition"
                     ],
                     "@calc(@local.search_set.has(@item.topic_theme_5))": [
                       "value"
@@ -1328,6 +1497,7 @@
                   "_translations": {
                     "value": {}
                   },
+                  "condition": "@item.topic_theme_6",
                   "type": "set_variable",
                   "_nested_name": "do_the_lookup.count_matches.sb_checks.match6",
                   "_dynamicFields": {
@@ -1350,6 +1520,14 @@
                         "type": "calc",
                         "fieldName": "@local.search_set.has(@item.topic_theme_6)"
                       }
+                    ],
+                    "condition": [
+                      {
+                        "fullExpression": "@item.topic_theme_6",
+                        "matchedExpression": "@item.topic_theme_6",
+                        "type": "item",
+                        "fieldName": "topic_theme_6"
+                      }
                     ]
                   },
                   "_dynamicDependencies": {
@@ -1357,7 +1535,8 @@
                       "value"
                     ],
                     "@item.topic_theme_6": [
-                      "value"
+                      "value",
+                      "condition"
                     ],
                     "@calc(@local.search_set.has(@item.topic_theme_6))": [
                       "value"
@@ -1582,6 +1761,7 @@
                       "_translations": {
                         "value": {}
                       },
+                      "condition": "@item.topic_theme_1",
                       "type": "set_variable",
                       "_nested_name": "do_the_lookup.count_matches.routine_checks.individual_routine_checks.match1",
                       "_dynamicFields": {
@@ -1604,6 +1784,14 @@
                             "type": "calc",
                             "fieldName": "@local.search_set.has(@item.topic_theme_1)"
                           }
+                        ],
+                        "condition": [
+                          {
+                            "fullExpression": "@item.topic_theme_1",
+                            "matchedExpression": "@item.topic_theme_1",
+                            "type": "item",
+                            "fieldName": "topic_theme_1"
+                          }
                         ]
                       },
                       "_dynamicDependencies": {
@@ -1611,7 +1799,8 @@
                           "value"
                         ],
                         "@item.topic_theme_1": [
-                          "value"
+                          "value",
+                          "condition"
                         ],
                         "@calc(@local.search_set.has(@item.topic_theme_1))": [
                           "value"
@@ -1624,6 +1813,7 @@
                       "_translations": {
                         "value": {}
                       },
+                      "condition": "@item.topic_theme_2",
                       "type": "set_variable",
                       "_nested_name": "do_the_lookup.count_matches.routine_checks.individual_routine_checks.match2",
                       "_dynamicFields": {
@@ -1646,6 +1836,14 @@
                             "type": "calc",
                             "fieldName": "@local.search_set.has(@item.topic_theme_2)"
                           }
+                        ],
+                        "condition": [
+                          {
+                            "fullExpression": "@item.topic_theme_2",
+                            "matchedExpression": "@item.topic_theme_2",
+                            "type": "item",
+                            "fieldName": "topic_theme_2"
+                          }
                         ]
                       },
                       "_dynamicDependencies": {
@@ -1653,7 +1851,8 @@
                           "value"
                         ],
                         "@item.topic_theme_2": [
-                          "value"
+                          "value",
+                          "condition"
                         ],
                         "@calc(@local.search_set.has(@item.topic_theme_2))": [
                           "value"
@@ -1666,6 +1865,7 @@
                       "_translations": {
                         "value": {}
                       },
+                      "condition": "@item.topic_theme_3",
                       "type": "set_variable",
                       "_nested_name": "do_the_lookup.count_matches.routine_checks.individual_routine_checks.match3",
                       "_dynamicFields": {
@@ -1688,6 +1888,14 @@
                             "type": "calc",
                             "fieldName": "@local.search_set.has(@item.topic_theme_3)"
                           }
+                        ],
+                        "condition": [
+                          {
+                            "fullExpression": "@item.topic_theme_3",
+                            "matchedExpression": "@item.topic_theme_3",
+                            "type": "item",
+                            "fieldName": "topic_theme_3"
+                          }
                         ]
                       },
                       "_dynamicDependencies": {
@@ -1695,7 +1903,8 @@
                           "value"
                         ],
                         "@item.topic_theme_3": [
-                          "value"
+                          "value",
+                          "condition"
                         ],
                         "@calc(@local.search_set.has(@item.topic_theme_3))": [
                           "value"
@@ -1708,6 +1917,7 @@
                       "_translations": {
                         "value": {}
                       },
+                      "condition": "@item.topic_theme_4",
                       "type": "set_variable",
                       "_nested_name": "do_the_lookup.count_matches.routine_checks.individual_routine_checks.match4",
                       "_dynamicFields": {
@@ -1730,6 +1940,14 @@
                             "type": "calc",
                             "fieldName": "@local.search_set.has(@item.topic_theme_4)"
                           }
+                        ],
+                        "condition": [
+                          {
+                            "fullExpression": "@item.topic_theme_4",
+                            "matchedExpression": "@item.topic_theme_4",
+                            "type": "item",
+                            "fieldName": "topic_theme_4"
+                          }
                         ]
                       },
                       "_dynamicDependencies": {
@@ -1737,7 +1955,8 @@
                           "value"
                         ],
                         "@item.topic_theme_4": [
-                          "value"
+                          "value",
+                          "condition"
                         ],
                         "@calc(@local.search_set.has(@item.topic_theme_4))": [
                           "value"
@@ -1750,6 +1969,7 @@
                       "_translations": {
                         "value": {}
                       },
+                      "condition": "@item.topic_theme_5",
                       "type": "set_variable",
                       "_nested_name": "do_the_lookup.count_matches.routine_checks.individual_routine_checks.match5",
                       "_dynamicFields": {
@@ -1772,6 +1992,14 @@
                             "type": "calc",
                             "fieldName": "@local.search_set.has(@item.topic_theme_5)"
                           }
+                        ],
+                        "condition": [
+                          {
+                            "fullExpression": "@item.topic_theme_5",
+                            "matchedExpression": "@item.topic_theme_5",
+                            "type": "item",
+                            "fieldName": "topic_theme_5"
+                          }
                         ]
                       },
                       "_dynamicDependencies": {
@@ -1779,7 +2007,8 @@
                           "value"
                         ],
                         "@item.topic_theme_5": [
-                          "value"
+                          "value",
+                          "condition"
                         ],
                         "@calc(@local.search_set.has(@item.topic_theme_5))": [
                           "value"
@@ -1792,6 +2021,7 @@
                       "_translations": {
                         "value": {}
                       },
+                      "condition": "@item.topic_theme_6",
                       "type": "set_variable",
                       "_nested_name": "do_the_lookup.count_matches.routine_checks.individual_routine_checks.match6",
                       "_dynamicFields": {
@@ -1814,6 +2044,14 @@
                             "type": "calc",
                             "fieldName": "@local.search_set.has(@item.topic_theme_6)"
                           }
+                        ],
+                        "condition": [
+                          {
+                            "fullExpression": "@item.topic_theme_6",
+                            "matchedExpression": "@item.topic_theme_6",
+                            "type": "item",
+                            "fieldName": "topic_theme_6"
+                          }
                         ]
                       },
                       "_dynamicDependencies": {
@@ -1821,7 +2059,8 @@
                           "value"
                         ],
                         "@item.topic_theme_6": [
-                          "value"
+                          "value",
+                          "condition"
                         ],
                         "@calc(@local.search_set.has(@item.topic_theme_6))": [
                           "value"
@@ -2011,6 +2250,7 @@
                   "_translations": {
                     "value": {}
                   },
+                  "condition": "@item.topic_theme_1",
                   "type": "set_variable",
                   "_nested_name": "do_the_lookup.count_matches.oe_checks.match1",
                   "_dynamicFields": {
@@ -2033,6 +2273,14 @@
                         "type": "calc",
                         "fieldName": "@local.search_set.has(@item.topic_theme_1)"
                       }
+                    ],
+                    "condition": [
+                      {
+                        "fullExpression": "@item.topic_theme_1",
+                        "matchedExpression": "@item.topic_theme_1",
+                        "type": "item",
+                        "fieldName": "topic_theme_1"
+                      }
                     ]
                   },
                   "_dynamicDependencies": {
@@ -2040,7 +2288,8 @@
                       "value"
                     ],
                     "@item.topic_theme_1": [
-                      "value"
+                      "value",
+                      "condition"
                     ],
                     "@calc(@local.search_set.has(@item.topic_theme_1))": [
                       "value"
@@ -2053,6 +2302,7 @@
                   "_translations": {
                     "value": {}
                   },
+                  "condition": "@item.topic_theme_2",
                   "type": "set_variable",
                   "_nested_name": "do_the_lookup.count_matches.oe_checks.match2",
                   "_dynamicFields": {
@@ -2075,6 +2325,14 @@
                         "type": "calc",
                         "fieldName": "@local.search_set.has(@item.topic_theme_2)"
                       }
+                    ],
+                    "condition": [
+                      {
+                        "fullExpression": "@item.topic_theme_2",
+                        "matchedExpression": "@item.topic_theme_2",
+                        "type": "item",
+                        "fieldName": "topic_theme_2"
+                      }
                     ]
                   },
                   "_dynamicDependencies": {
@@ -2082,7 +2340,8 @@
                       "value"
                     ],
                     "@item.topic_theme_2": [
-                      "value"
+                      "value",
+                      "condition"
                     ],
                     "@calc(@local.search_set.has(@item.topic_theme_2))": [
                       "value"
@@ -2095,6 +2354,7 @@
                   "_translations": {
                     "value": {}
                   },
+                  "condition": "@item.topic_theme_3",
                   "type": "set_variable",
                   "_nested_name": "do_the_lookup.count_matches.oe_checks.match3",
                   "_dynamicFields": {
@@ -2117,6 +2377,14 @@
                         "type": "calc",
                         "fieldName": "@local.search_set.has(@item.topic_theme_3)"
                       }
+                    ],
+                    "condition": [
+                      {
+                        "fullExpression": "@item.topic_theme_3",
+                        "matchedExpression": "@item.topic_theme_3",
+                        "type": "item",
+                        "fieldName": "topic_theme_3"
+                      }
                     ]
                   },
                   "_dynamicDependencies": {
@@ -2124,7 +2392,8 @@
                       "value"
                     ],
                     "@item.topic_theme_3": [
-                      "value"
+                      "value",
+                      "condition"
                     ],
                     "@calc(@local.search_set.has(@item.topic_theme_3))": [
                       "value"
@@ -2137,6 +2406,7 @@
                   "_translations": {
                     "value": {}
                   },
+                  "condition": "@item.topic_theme_4",
                   "type": "set_variable",
                   "_nested_name": "do_the_lookup.count_matches.oe_checks.match4",
                   "_dynamicFields": {
@@ -2159,6 +2429,14 @@
                         "type": "calc",
                         "fieldName": "@local.search_set.has(@item.topic_theme_4)"
                       }
+                    ],
+                    "condition": [
+                      {
+                        "fullExpression": "@item.topic_theme_4",
+                        "matchedExpression": "@item.topic_theme_4",
+                        "type": "item",
+                        "fieldName": "topic_theme_4"
+                      }
                     ]
                   },
                   "_dynamicDependencies": {
@@ -2166,7 +2444,8 @@
                       "value"
                     ],
                     "@item.topic_theme_4": [
-                      "value"
+                      "value",
+                      "condition"
                     ],
                     "@calc(@local.search_set.has(@item.topic_theme_4))": [
                       "value"
@@ -2179,6 +2458,7 @@
                   "_translations": {
                     "value": {}
                   },
+                  "condition": "@item.topic_theme_5",
                   "type": "set_variable",
                   "_nested_name": "do_the_lookup.count_matches.oe_checks.match5",
                   "_dynamicFields": {
@@ -2201,6 +2481,14 @@
                         "type": "calc",
                         "fieldName": "@local.search_set.has(@item.topic_theme_5)"
                       }
+                    ],
+                    "condition": [
+                      {
+                        "fullExpression": "@item.topic_theme_5",
+                        "matchedExpression": "@item.topic_theme_5",
+                        "type": "item",
+                        "fieldName": "topic_theme_5"
+                      }
                     ]
                   },
                   "_dynamicDependencies": {
@@ -2208,7 +2496,8 @@
                       "value"
                     ],
                     "@item.topic_theme_5": [
-                      "value"
+                      "value",
+                      "condition"
                     ],
                     "@calc(@local.search_set.has(@item.topic_theme_5))": [
                       "value"
@@ -2221,6 +2510,7 @@
                   "_translations": {
                     "value": {}
                   },
+                  "condition": "@item.topic_theme_6",
                   "type": "set_variable",
                   "_nested_name": "do_the_lookup.count_matches.oe_checks.match6",
                   "_dynamicFields": {
@@ -2243,6 +2533,14 @@
                         "type": "calc",
                         "fieldName": "@local.search_set.has(@item.topic_theme_6)"
                       }
+                    ],
+                    "condition": [
+                      {
+                        "fullExpression": "@item.topic_theme_6",
+                        "matchedExpression": "@item.topic_theme_6",
+                        "type": "item",
+                        "fieldName": "topic_theme_6"
+                      }
                     ]
                   },
                   "_dynamicDependencies": {
@@ -2250,7 +2548,8 @@
                       "value"
                     ],
                     "@item.topic_theme_6": [
-                      "value"
+                      "value",
+                      "condition"
                     ],
                     "@calc(@local.search_set.has(@item.topic_theme_6))": [
                       "value"
@@ -2422,6 +2721,7 @@
                   "_translations": {
                     "value": {}
                   },
+                  "condition": "@item.topic_theme_1",
                   "type": "set_variable",
                   "_nested_name": "do_the_lookup.count_matches.ps_checks.match1",
                   "_dynamicFields": {
@@ -2444,6 +2744,14 @@
                         "type": "calc",
                         "fieldName": "@local.search_set.has(@item.topic_theme_1)"
                       }
+                    ],
+                    "condition": [
+                      {
+                        "fullExpression": "@item.topic_theme_1",
+                        "matchedExpression": "@item.topic_theme_1",
+                        "type": "item",
+                        "fieldName": "topic_theme_1"
+                      }
                     ]
                   },
                   "_dynamicDependencies": {
@@ -2451,7 +2759,8 @@
                       "value"
                     ],
                     "@item.topic_theme_1": [
-                      "value"
+                      "value",
+                      "condition"
                     ],
                     "@calc(@local.search_set.has(@item.topic_theme_1))": [
                       "value"
@@ -2464,6 +2773,7 @@
                   "_translations": {
                     "value": {}
                   },
+                  "condition": "@item.topic_theme_2",
                   "type": "set_variable",
                   "_nested_name": "do_the_lookup.count_matches.ps_checks.match2",
                   "_dynamicFields": {
@@ -2486,6 +2796,14 @@
                         "type": "calc",
                         "fieldName": "@local.search_set.has(@item.topic_theme_2)"
                       }
+                    ],
+                    "condition": [
+                      {
+                        "fullExpression": "@item.topic_theme_2",
+                        "matchedExpression": "@item.topic_theme_2",
+                        "type": "item",
+                        "fieldName": "topic_theme_2"
+                      }
                     ]
                   },
                   "_dynamicDependencies": {
@@ -2493,7 +2811,8 @@
                       "value"
                     ],
                     "@item.topic_theme_2": [
-                      "value"
+                      "value",
+                      "condition"
                     ],
                     "@calc(@local.search_set.has(@item.topic_theme_2))": [
                       "value"
@@ -2506,6 +2825,7 @@
                   "_translations": {
                     "value": {}
                   },
+                  "condition": "@item.topic_theme_3",
                   "type": "set_variable",
                   "_nested_name": "do_the_lookup.count_matches.ps_checks.match3",
                   "_dynamicFields": {
@@ -2528,6 +2848,14 @@
                         "type": "calc",
                         "fieldName": "@local.search_set.has(@item.topic_theme_3)"
                       }
+                    ],
+                    "condition": [
+                      {
+                        "fullExpression": "@item.topic_theme_3",
+                        "matchedExpression": "@item.topic_theme_3",
+                        "type": "item",
+                        "fieldName": "topic_theme_3"
+                      }
                     ]
                   },
                   "_dynamicDependencies": {
@@ -2535,7 +2863,8 @@
                       "value"
                     ],
                     "@item.topic_theme_3": [
-                      "value"
+                      "value",
+                      "condition"
                     ],
                     "@calc(@local.search_set.has(@item.topic_theme_3))": [
                       "value"
@@ -2548,6 +2877,7 @@
                   "_translations": {
                     "value": {}
                   },
+                  "condition": "@item.topic_theme_4",
                   "type": "set_variable",
                   "_nested_name": "do_the_lookup.count_matches.ps_checks.match4",
                   "_dynamicFields": {
@@ -2570,6 +2900,14 @@
                         "type": "calc",
                         "fieldName": "@local.search_set.has(@item.topic_theme_4)"
                       }
+                    ],
+                    "condition": [
+                      {
+                        "fullExpression": "@item.topic_theme_4",
+                        "matchedExpression": "@item.topic_theme_4",
+                        "type": "item",
+                        "fieldName": "topic_theme_4"
+                      }
                     ]
                   },
                   "_dynamicDependencies": {
@@ -2577,7 +2915,8 @@
                       "value"
                     ],
                     "@item.topic_theme_4": [
-                      "value"
+                      "value",
+                      "condition"
                     ],
                     "@calc(@local.search_set.has(@item.topic_theme_4))": [
                       "value"
@@ -2590,6 +2929,7 @@
                   "_translations": {
                     "value": {}
                   },
+                  "condition": "@item.topic_theme_5",
                   "type": "set_variable",
                   "_nested_name": "do_the_lookup.count_matches.ps_checks.match5",
                   "_dynamicFields": {
@@ -2612,6 +2952,14 @@
                         "type": "calc",
                         "fieldName": "@local.search_set.has(@item.topic_theme_5)"
                       }
+                    ],
+                    "condition": [
+                      {
+                        "fullExpression": "@item.topic_theme_5",
+                        "matchedExpression": "@item.topic_theme_5",
+                        "type": "item",
+                        "fieldName": "topic_theme_5"
+                      }
                     ]
                   },
                   "_dynamicDependencies": {
@@ -2619,7 +2967,8 @@
                       "value"
                     ],
                     "@item.topic_theme_5": [
-                      "value"
+                      "value",
+                      "condition"
                     ],
                     "@calc(@local.search_set.has(@item.topic_theme_5))": [
                       "value"
@@ -2632,6 +2981,7 @@
                   "_translations": {
                     "value": {}
                   },
+                  "condition": "@item.topic_theme_6",
                   "type": "set_variable",
                   "_nested_name": "do_the_lookup.count_matches.ps_checks.match6",
                   "_dynamicFields": {
@@ -2654,6 +3004,14 @@
                         "type": "calc",
                         "fieldName": "@local.search_set.has(@item.topic_theme_6)"
                       }
+                    ],
+                    "condition": [
+                      {
+                        "fullExpression": "@item.topic_theme_6",
+                        "matchedExpression": "@item.topic_theme_6",
+                        "type": "item",
+                        "fieldName": "topic_theme_6"
+                      }
                     ]
                   },
                   "_dynamicDependencies": {
@@ -2661,7 +3019,8 @@
                       "value"
                     ],
                     "@item.topic_theme_6": [
-                      "value"
+                      "value",
+                      "condition"
                     ],
                     "@calc(@local.search_set.has(@item.topic_theme_6))": [
                       "value"
@@ -2814,7 +3173,7 @@
                 {
                   "type": "accordion_section",
                   "name": "topic_buttons",
-                  "value": "Topic(s)",
+                  "value": "@local.topic_counter Topic(s)",
                   "parameter_list": {
                     "style": "column"
                   },
@@ -2998,12 +3357,27 @@
                       "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.topic_buttons.topic_buttons"
                     }
                   ],
-                  "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.topic_buttons"
+                  "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.topic_buttons",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@local.topic_counter Topic(s)",
+                        "matchedExpression": "@local.topic_counter",
+                        "type": "local",
+                        "fieldName": "topic_counter"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@local.topic_counter": [
+                      "value"
+                    ]
+                  }
                 },
                 {
                   "type": "accordion_section",
                   "name": "pow_buttons",
-                  "value": "Puzzle(s)",
+                  "value": "@local.pow_counter Puzzle(s)",
                   "parameter_list": {
                     "style": "column"
                   },
@@ -3026,6 +3400,7 @@
                               "_translations": {
                                 "value": {}
                               },
+                              "condition": "@item.topic_theme_1",
                               "type": "set_variable",
                               "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.pow_buttons.pow_buttons.pow_checks.match1",
                               "_dynamicFields": {
@@ -3048,6 +3423,14 @@
                                     "type": "calc",
                                     "fieldName": "@local.search_set.has(@item.topic_theme_1)"
                                   }
+                                ],
+                                "condition": [
+                                  {
+                                    "fullExpression": "@item.topic_theme_1",
+                                    "matchedExpression": "@item.topic_theme_1",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_1"
+                                  }
                                 ]
                               },
                               "_dynamicDependencies": {
@@ -3055,7 +3438,8 @@
                                   "value"
                                 ],
                                 "@item.topic_theme_1": [
-                                  "value"
+                                  "value",
+                                  "condition"
                                 ],
                                 "@calc(@local.search_set.has(@item.topic_theme_1))": [
                                   "value"
@@ -3068,6 +3452,7 @@
                               "_translations": {
                                 "value": {}
                               },
+                              "condition": "@item.topic_theme_2",
                               "type": "set_variable",
                               "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.pow_buttons.pow_buttons.pow_checks.match2",
                               "_dynamicFields": {
@@ -3090,6 +3475,14 @@
                                     "type": "calc",
                                     "fieldName": "@local.search_set.has(@item.topic_theme_2)"
                                   }
+                                ],
+                                "condition": [
+                                  {
+                                    "fullExpression": "@item.topic_theme_2",
+                                    "matchedExpression": "@item.topic_theme_2",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_2"
+                                  }
                                 ]
                               },
                               "_dynamicDependencies": {
@@ -3097,7 +3490,8 @@
                                   "value"
                                 ],
                                 "@item.topic_theme_2": [
-                                  "value"
+                                  "value",
+                                  "condition"
                                 ],
                                 "@calc(@local.search_set.has(@item.topic_theme_2))": [
                                   "value"
@@ -3110,6 +3504,7 @@
                               "_translations": {
                                 "value": {}
                               },
+                              "condition": "@item.topic_theme_3",
                               "type": "set_variable",
                               "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.pow_buttons.pow_buttons.pow_checks.match3",
                               "_dynamicFields": {
@@ -3132,6 +3527,14 @@
                                     "type": "calc",
                                     "fieldName": "@local.search_set.has(@item.topic_theme_3)"
                                   }
+                                ],
+                                "condition": [
+                                  {
+                                    "fullExpression": "@item.topic_theme_3",
+                                    "matchedExpression": "@item.topic_theme_3",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_3"
+                                  }
                                 ]
                               },
                               "_dynamicDependencies": {
@@ -3139,7 +3542,8 @@
                                   "value"
                                 ],
                                 "@item.topic_theme_3": [
-                                  "value"
+                                  "value",
+                                  "condition"
                                 ],
                                 "@calc(@local.search_set.has(@item.topic_theme_3))": [
                                   "value"
@@ -3152,6 +3556,7 @@
                               "_translations": {
                                 "value": {}
                               },
+                              "condition": "@item.topic_theme_4",
                               "type": "set_variable",
                               "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.pow_buttons.pow_buttons.pow_checks.match4",
                               "_dynamicFields": {
@@ -3174,6 +3579,14 @@
                                     "type": "calc",
                                     "fieldName": "@local.search_set.has(@item.topic_theme_4)"
                                   }
+                                ],
+                                "condition": [
+                                  {
+                                    "fullExpression": "@item.topic_theme_4",
+                                    "matchedExpression": "@item.topic_theme_4",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_4"
+                                  }
                                 ]
                               },
                               "_dynamicDependencies": {
@@ -3181,7 +3594,8 @@
                                   "value"
                                 ],
                                 "@item.topic_theme_4": [
-                                  "value"
+                                  "value",
+                                  "condition"
                                 ],
                                 "@calc(@local.search_set.has(@item.topic_theme_4))": [
                                   "value"
@@ -3194,6 +3608,7 @@
                               "_translations": {
                                 "value": {}
                               },
+                              "condition": "@item.topic_theme_5",
                               "type": "set_variable",
                               "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.pow_buttons.pow_buttons.pow_checks.match5",
                               "_dynamicFields": {
@@ -3216,6 +3631,14 @@
                                     "type": "calc",
                                     "fieldName": "@local.search_set.has(@item.topic_theme_5)"
                                   }
+                                ],
+                                "condition": [
+                                  {
+                                    "fullExpression": "@item.topic_theme_5",
+                                    "matchedExpression": "@item.topic_theme_5",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_5"
+                                  }
                                 ]
                               },
                               "_dynamicDependencies": {
@@ -3223,7 +3646,8 @@
                                   "value"
                                 ],
                                 "@item.topic_theme_5": [
-                                  "value"
+                                  "value",
+                                  "condition"
                                 ],
                                 "@calc(@local.search_set.has(@item.topic_theme_5))": [
                                   "value"
@@ -3236,6 +3660,7 @@
                               "_translations": {
                                 "value": {}
                               },
+                              "condition": "@item.topic_theme_6",
                               "type": "set_variable",
                               "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.pow_buttons.pow_buttons.pow_checks.match6",
                               "_dynamicFields": {
@@ -3258,6 +3683,14 @@
                                     "type": "calc",
                                     "fieldName": "@local.search_set.has(@item.topic_theme_6)"
                                   }
+                                ],
+                                "condition": [
+                                  {
+                                    "fullExpression": "@item.topic_theme_6",
+                                    "matchedExpression": "@item.topic_theme_6",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_6"
+                                  }
                                 ]
                               },
                               "_dynamicDependencies": {
@@ -3265,7 +3698,8 @@
                                   "value"
                                 ],
                                 "@item.topic_theme_6": [
-                                  "value"
+                                  "value",
+                                  "condition"
                                 ],
                                 "@calc(@local.search_set.has(@item.topic_theme_6))": [
                                   "value"
@@ -3466,12 +3900,27 @@
                       "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.pow_buttons.pow_buttons"
                     }
                   ],
-                  "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.pow_buttons"
+                  "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.pow_buttons",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@local.pow_counter Puzzle(s)",
+                        "matchedExpression": "@local.pow_counter",
+                        "type": "local",
+                        "fieldName": "pow_counter"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@local.pow_counter": [
+                      "value"
+                    ]
+                  }
                 },
                 {
                   "type": "accordion_section",
                   "name": "gas_buttons",
-                  "value": "Game(s)",
+                  "value": "@local.gas_counter Game(s)",
                   "parameter_list": {
                     "style": "column"
                   },
@@ -3494,6 +3943,7 @@
                               "_translations": {
                                 "value": {}
                               },
+                              "condition": "@item.topic_theme_1",
                               "type": "set_variable",
                               "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.gas_buttons.gas_buttons.gas_checks.match1",
                               "_dynamicFields": {
@@ -3516,6 +3966,14 @@
                                     "type": "calc",
                                     "fieldName": "@local.search_set.has(@item.topic_theme_1)"
                                   }
+                                ],
+                                "condition": [
+                                  {
+                                    "fullExpression": "@item.topic_theme_1",
+                                    "matchedExpression": "@item.topic_theme_1",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_1"
+                                  }
                                 ]
                               },
                               "_dynamicDependencies": {
@@ -3523,7 +3981,8 @@
                                   "value"
                                 ],
                                 "@item.topic_theme_1": [
-                                  "value"
+                                  "value",
+                                  "condition"
                                 ],
                                 "@calc(@local.search_set.has(@item.topic_theme_1))": [
                                   "value"
@@ -3536,6 +3995,7 @@
                               "_translations": {
                                 "value": {}
                               },
+                              "condition": "@item.topic_theme_2",
                               "type": "set_variable",
                               "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.gas_buttons.gas_buttons.gas_checks.match2",
                               "_dynamicFields": {
@@ -3558,6 +4018,14 @@
                                     "type": "calc",
                                     "fieldName": "@local.search_set.has(@item.topic_theme_2)"
                                   }
+                                ],
+                                "condition": [
+                                  {
+                                    "fullExpression": "@item.topic_theme_2",
+                                    "matchedExpression": "@item.topic_theme_2",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_2"
+                                  }
                                 ]
                               },
                               "_dynamicDependencies": {
@@ -3565,7 +4033,8 @@
                                   "value"
                                 ],
                                 "@item.topic_theme_2": [
-                                  "value"
+                                  "value",
+                                  "condition"
                                 ],
                                 "@calc(@local.search_set.has(@item.topic_theme_2))": [
                                   "value"
@@ -3578,6 +4047,7 @@
                               "_translations": {
                                 "value": {}
                               },
+                              "condition": "@item.topic_theme_3",
                               "type": "set_variable",
                               "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.gas_buttons.gas_buttons.gas_checks.match3",
                               "_dynamicFields": {
@@ -3600,6 +4070,14 @@
                                     "type": "calc",
                                     "fieldName": "@local.search_set.has(@item.topic_theme_3)"
                                   }
+                                ],
+                                "condition": [
+                                  {
+                                    "fullExpression": "@item.topic_theme_3",
+                                    "matchedExpression": "@item.topic_theme_3",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_3"
+                                  }
                                 ]
                               },
                               "_dynamicDependencies": {
@@ -3607,7 +4085,8 @@
                                   "value"
                                 ],
                                 "@item.topic_theme_3": [
-                                  "value"
+                                  "value",
+                                  "condition"
                                 ],
                                 "@calc(@local.search_set.has(@item.topic_theme_3))": [
                                   "value"
@@ -3620,6 +4099,7 @@
                               "_translations": {
                                 "value": {}
                               },
+                              "condition": "@item.topic_theme_4",
                               "type": "set_variable",
                               "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.gas_buttons.gas_buttons.gas_checks.match4",
                               "_dynamicFields": {
@@ -3642,6 +4122,14 @@
                                     "type": "calc",
                                     "fieldName": "@local.search_set.has(@item.topic_theme_4)"
                                   }
+                                ],
+                                "condition": [
+                                  {
+                                    "fullExpression": "@item.topic_theme_4",
+                                    "matchedExpression": "@item.topic_theme_4",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_4"
+                                  }
                                 ]
                               },
                               "_dynamicDependencies": {
@@ -3649,7 +4137,8 @@
                                   "value"
                                 ],
                                 "@item.topic_theme_4": [
-                                  "value"
+                                  "value",
+                                  "condition"
                                 ],
                                 "@calc(@local.search_set.has(@item.topic_theme_4))": [
                                   "value"
@@ -3662,6 +4151,7 @@
                               "_translations": {
                                 "value": {}
                               },
+                              "condition": "@item.topic_theme_5",
                               "type": "set_variable",
                               "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.gas_buttons.gas_buttons.gas_checks.match5",
                               "_dynamicFields": {
@@ -3684,6 +4174,14 @@
                                     "type": "calc",
                                     "fieldName": "@local.search_set.has(@item.topic_theme_5)"
                                   }
+                                ],
+                                "condition": [
+                                  {
+                                    "fullExpression": "@item.topic_theme_5",
+                                    "matchedExpression": "@item.topic_theme_5",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_5"
+                                  }
                                 ]
                               },
                               "_dynamicDependencies": {
@@ -3691,7 +4189,8 @@
                                   "value"
                                 ],
                                 "@item.topic_theme_5": [
-                                  "value"
+                                  "value",
+                                  "condition"
                                 ],
                                 "@calc(@local.search_set.has(@item.topic_theme_5))": [
                                   "value"
@@ -3704,6 +4203,7 @@
                               "_translations": {
                                 "value": {}
                               },
+                              "condition": "@item.topic_theme_6",
                               "type": "set_variable",
                               "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.gas_buttons.gas_buttons.gas_checks.match6",
                               "_dynamicFields": {
@@ -3726,6 +4226,14 @@
                                     "type": "calc",
                                     "fieldName": "@local.search_set.has(@item.topic_theme_6)"
                                   }
+                                ],
+                                "condition": [
+                                  {
+                                    "fullExpression": "@item.topic_theme_6",
+                                    "matchedExpression": "@item.topic_theme_6",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_6"
+                                  }
                                 ]
                               },
                               "_dynamicDependencies": {
@@ -3733,7 +4241,8 @@
                                   "value"
                                 ],
                                 "@item.topic_theme_6": [
-                                  "value"
+                                  "value",
+                                  "condition"
                                 ],
                                 "@calc(@local.search_set.has(@item.topic_theme_6))": [
                                   "value"
@@ -3934,12 +4443,27 @@
                       "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.gas_buttons.gas_buttons"
                     }
                   ],
-                  "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.gas_buttons"
+                  "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.gas_buttons",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@local.gas_counter Game(s)",
+                        "matchedExpression": "@local.gas_counter",
+                        "type": "local",
+                        "fieldName": "gas_counter"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@local.gas_counter": [
+                      "value"
+                    ]
+                  }
                 },
                 {
                   "type": "accordion_section",
                   "name": "sb_buttons",
-                  "value": "Storybook(s)",
+                  "value": "@local.sb_counter Storybook(s)",
                   "parameter_list": {
                     "style": "column"
                   },
@@ -3962,6 +4486,7 @@
                               "_translations": {
                                 "value": {}
                               },
+                              "condition": "@item.topic_theme_1",
                               "type": "set_variable",
                               "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.sb_buttons.sb_buttons.sb_checks.match1",
                               "_dynamicFields": {
@@ -3984,6 +4509,14 @@
                                     "type": "calc",
                                     "fieldName": "@local.search_set.has(@item.topic_theme_1)"
                                   }
+                                ],
+                                "condition": [
+                                  {
+                                    "fullExpression": "@item.topic_theme_1",
+                                    "matchedExpression": "@item.topic_theme_1",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_1"
+                                  }
                                 ]
                               },
                               "_dynamicDependencies": {
@@ -3991,7 +4524,8 @@
                                   "value"
                                 ],
                                 "@item.topic_theme_1": [
-                                  "value"
+                                  "value",
+                                  "condition"
                                 ],
                                 "@calc(@local.search_set.has(@item.topic_theme_1))": [
                                   "value"
@@ -4004,6 +4538,7 @@
                               "_translations": {
                                 "value": {}
                               },
+                              "condition": "@item.topic_theme_2",
                               "type": "set_variable",
                               "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.sb_buttons.sb_buttons.sb_checks.match2",
                               "_dynamicFields": {
@@ -4026,6 +4561,14 @@
                                     "type": "calc",
                                     "fieldName": "@local.search_set.has(@item.topic_theme_2)"
                                   }
+                                ],
+                                "condition": [
+                                  {
+                                    "fullExpression": "@item.topic_theme_2",
+                                    "matchedExpression": "@item.topic_theme_2",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_2"
+                                  }
                                 ]
                               },
                               "_dynamicDependencies": {
@@ -4033,7 +4576,8 @@
                                   "value"
                                 ],
                                 "@item.topic_theme_2": [
-                                  "value"
+                                  "value",
+                                  "condition"
                                 ],
                                 "@calc(@local.search_set.has(@item.topic_theme_2))": [
                                   "value"
@@ -4046,6 +4590,7 @@
                               "_translations": {
                                 "value": {}
                               },
+                              "condition": "@item.topic_theme_3",
                               "type": "set_variable",
                               "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.sb_buttons.sb_buttons.sb_checks.match3",
                               "_dynamicFields": {
@@ -4068,6 +4613,14 @@
                                     "type": "calc",
                                     "fieldName": "@local.search_set.has(@item.topic_theme_3)"
                                   }
+                                ],
+                                "condition": [
+                                  {
+                                    "fullExpression": "@item.topic_theme_3",
+                                    "matchedExpression": "@item.topic_theme_3",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_3"
+                                  }
                                 ]
                               },
                               "_dynamicDependencies": {
@@ -4075,7 +4628,8 @@
                                   "value"
                                 ],
                                 "@item.topic_theme_3": [
-                                  "value"
+                                  "value",
+                                  "condition"
                                 ],
                                 "@calc(@local.search_set.has(@item.topic_theme_3))": [
                                   "value"
@@ -4088,6 +4642,7 @@
                               "_translations": {
                                 "value": {}
                               },
+                              "condition": "@item.topic_theme_4",
                               "type": "set_variable",
                               "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.sb_buttons.sb_buttons.sb_checks.match4",
                               "_dynamicFields": {
@@ -4110,6 +4665,14 @@
                                     "type": "calc",
                                     "fieldName": "@local.search_set.has(@item.topic_theme_4)"
                                   }
+                                ],
+                                "condition": [
+                                  {
+                                    "fullExpression": "@item.topic_theme_4",
+                                    "matchedExpression": "@item.topic_theme_4",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_4"
+                                  }
                                 ]
                               },
                               "_dynamicDependencies": {
@@ -4117,7 +4680,8 @@
                                   "value"
                                 ],
                                 "@item.topic_theme_4": [
-                                  "value"
+                                  "value",
+                                  "condition"
                                 ],
                                 "@calc(@local.search_set.has(@item.topic_theme_4))": [
                                   "value"
@@ -4130,6 +4694,7 @@
                               "_translations": {
                                 "value": {}
                               },
+                              "condition": "@item.topic_theme_5",
                               "type": "set_variable",
                               "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.sb_buttons.sb_buttons.sb_checks.match5",
                               "_dynamicFields": {
@@ -4152,6 +4717,14 @@
                                     "type": "calc",
                                     "fieldName": "@local.search_set.has(@item.topic_theme_5)"
                                   }
+                                ],
+                                "condition": [
+                                  {
+                                    "fullExpression": "@item.topic_theme_5",
+                                    "matchedExpression": "@item.topic_theme_5",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_5"
+                                  }
                                 ]
                               },
                               "_dynamicDependencies": {
@@ -4159,7 +4732,8 @@
                                   "value"
                                 ],
                                 "@item.topic_theme_5": [
-                                  "value"
+                                  "value",
+                                  "condition"
                                 ],
                                 "@calc(@local.search_set.has(@item.topic_theme_5))": [
                                   "value"
@@ -4172,6 +4746,7 @@
                               "_translations": {
                                 "value": {}
                               },
+                              "condition": "@item.topic_theme_6",
                               "type": "set_variable",
                               "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.sb_buttons.sb_buttons.sb_checks.match6",
                               "_dynamicFields": {
@@ -4194,6 +4769,14 @@
                                     "type": "calc",
                                     "fieldName": "@local.search_set.has(@item.topic_theme_6)"
                                   }
+                                ],
+                                "condition": [
+                                  {
+                                    "fullExpression": "@item.topic_theme_6",
+                                    "matchedExpression": "@item.topic_theme_6",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_6"
+                                  }
                                 ]
                               },
                               "_dynamicDependencies": {
@@ -4201,7 +4784,8 @@
                                   "value"
                                 ],
                                 "@item.topic_theme_6": [
-                                  "value"
+                                  "value",
+                                  "condition"
                                 ],
                                 "@calc(@local.search_set.has(@item.topic_theme_6))": [
                                   "value"
@@ -4393,12 +4977,27 @@
                       "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.sb_buttons.sb_buttons"
                     }
                   ],
-                  "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.sb_buttons"
+                  "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.sb_buttons",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@local.sb_counter Storybook(s)",
+                        "matchedExpression": "@local.sb_counter",
+                        "type": "local",
+                        "fieldName": "sb_counter"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@local.sb_counter": [
+                      "value"
+                    ]
+                  }
                 },
                 {
                   "type": "accordion_section",
                   "name": "routines_buttons",
-                  "value": "Routines(s)",
+                  "value": "@local.routine_counter Routines(s)",
                   "parameter_list": {
                     "style": "column"
                   },
@@ -4474,6 +5073,7 @@
                                   "_translations": {
                                     "value": {}
                                   },
+                                  "condition": "@item.topic_theme_1",
                                   "type": "set_variable",
                                   "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.routines_buttons.routine_buttons.routine_checks.individual_routine_checks.match1",
                                   "_dynamicFields": {
@@ -4496,6 +5096,14 @@
                                         "type": "calc",
                                         "fieldName": "@local.search_set.has(@item.topic_theme_1)"
                                       }
+                                    ],
+                                    "condition": [
+                                      {
+                                        "fullExpression": "@item.topic_theme_1",
+                                        "matchedExpression": "@item.topic_theme_1",
+                                        "type": "item",
+                                        "fieldName": "topic_theme_1"
+                                      }
                                     ]
                                   },
                                   "_dynamicDependencies": {
@@ -4503,7 +5111,8 @@
                                       "value"
                                     ],
                                     "@item.topic_theme_1": [
-                                      "value"
+                                      "value",
+                                      "condition"
                                     ],
                                     "@calc(@local.search_set.has(@item.topic_theme_1))": [
                                       "value"
@@ -4516,6 +5125,7 @@
                                   "_translations": {
                                     "value": {}
                                   },
+                                  "condition": "@item.topic_theme_2",
                                   "type": "set_variable",
                                   "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.routines_buttons.routine_buttons.routine_checks.individual_routine_checks.match2",
                                   "_dynamicFields": {
@@ -4538,6 +5148,14 @@
                                         "type": "calc",
                                         "fieldName": "@local.search_set.has(@item.topic_theme_2)"
                                       }
+                                    ],
+                                    "condition": [
+                                      {
+                                        "fullExpression": "@item.topic_theme_2",
+                                        "matchedExpression": "@item.topic_theme_2",
+                                        "type": "item",
+                                        "fieldName": "topic_theme_2"
+                                      }
                                     ]
                                   },
                                   "_dynamicDependencies": {
@@ -4545,7 +5163,8 @@
                                       "value"
                                     ],
                                     "@item.topic_theme_2": [
-                                      "value"
+                                      "value",
+                                      "condition"
                                     ],
                                     "@calc(@local.search_set.has(@item.topic_theme_2))": [
                                       "value"
@@ -4558,6 +5177,7 @@
                                   "_translations": {
                                     "value": {}
                                   },
+                                  "condition": "@item.topic_theme_3",
                                   "type": "set_variable",
                                   "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.routines_buttons.routine_buttons.routine_checks.individual_routine_checks.match3",
                                   "_dynamicFields": {
@@ -4580,6 +5200,14 @@
                                         "type": "calc",
                                         "fieldName": "@local.search_set.has(@item.topic_theme_3)"
                                       }
+                                    ],
+                                    "condition": [
+                                      {
+                                        "fullExpression": "@item.topic_theme_3",
+                                        "matchedExpression": "@item.topic_theme_3",
+                                        "type": "item",
+                                        "fieldName": "topic_theme_3"
+                                      }
                                     ]
                                   },
                                   "_dynamicDependencies": {
@@ -4587,7 +5215,8 @@
                                       "value"
                                     ],
                                     "@item.topic_theme_3": [
-                                      "value"
+                                      "value",
+                                      "condition"
                                     ],
                                     "@calc(@local.search_set.has(@item.topic_theme_3))": [
                                       "value"
@@ -4600,6 +5229,7 @@
                                   "_translations": {
                                     "value": {}
                                   },
+                                  "condition": "@item.topic_theme_4",
                                   "type": "set_variable",
                                   "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.routines_buttons.routine_buttons.routine_checks.individual_routine_checks.match4",
                                   "_dynamicFields": {
@@ -4622,6 +5252,14 @@
                                         "type": "calc",
                                         "fieldName": "@local.search_set.has(@item.topic_theme_4)"
                                       }
+                                    ],
+                                    "condition": [
+                                      {
+                                        "fullExpression": "@item.topic_theme_4",
+                                        "matchedExpression": "@item.topic_theme_4",
+                                        "type": "item",
+                                        "fieldName": "topic_theme_4"
+                                      }
                                     ]
                                   },
                                   "_dynamicDependencies": {
@@ -4629,7 +5267,8 @@
                                       "value"
                                     ],
                                     "@item.topic_theme_4": [
-                                      "value"
+                                      "value",
+                                      "condition"
                                     ],
                                     "@calc(@local.search_set.has(@item.topic_theme_4))": [
                                       "value"
@@ -4642,6 +5281,7 @@
                                   "_translations": {
                                     "value": {}
                                   },
+                                  "condition": "@item.topic_theme_5",
                                   "type": "set_variable",
                                   "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.routines_buttons.routine_buttons.routine_checks.individual_routine_checks.match5",
                                   "_dynamicFields": {
@@ -4664,6 +5304,14 @@
                                         "type": "calc",
                                         "fieldName": "@local.search_set.has(@item.topic_theme_5)"
                                       }
+                                    ],
+                                    "condition": [
+                                      {
+                                        "fullExpression": "@item.topic_theme_5",
+                                        "matchedExpression": "@item.topic_theme_5",
+                                        "type": "item",
+                                        "fieldName": "topic_theme_5"
+                                      }
                                     ]
                                   },
                                   "_dynamicDependencies": {
@@ -4671,7 +5319,8 @@
                                       "value"
                                     ],
                                     "@item.topic_theme_5": [
-                                      "value"
+                                      "value",
+                                      "condition"
                                     ],
                                     "@calc(@local.search_set.has(@item.topic_theme_5))": [
                                       "value"
@@ -4684,6 +5333,7 @@
                                   "_translations": {
                                     "value": {}
                                   },
+                                  "condition": "@item.topic_theme_6",
                                   "type": "set_variable",
                                   "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.routines_buttons.routine_buttons.routine_checks.individual_routine_checks.match6",
                                   "_dynamicFields": {
@@ -4706,6 +5356,14 @@
                                         "type": "calc",
                                         "fieldName": "@local.search_set.has(@item.topic_theme_6)"
                                       }
+                                    ],
+                                    "condition": [
+                                      {
+                                        "fullExpression": "@item.topic_theme_6",
+                                        "matchedExpression": "@item.topic_theme_6",
+                                        "type": "item",
+                                        "fieldName": "topic_theme_6"
+                                      }
                                     ]
                                   },
                                   "_dynamicDependencies": {
@@ -4713,7 +5371,8 @@
                                       "value"
                                     ],
                                     "@item.topic_theme_6": [
-                                      "value"
+                                      "value",
+                                      "condition"
                                     ],
                                     "@calc(@local.search_set.has(@item.topic_theme_6))": [
                                       "value"
@@ -5016,12 +5675,27 @@
                       "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.routines_buttons.routine_buttons"
                     }
                   ],
-                  "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.routines_buttons"
+                  "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.routines_buttons",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@local.routine_counter Routines(s)",
+                        "matchedExpression": "@local.routine_counter",
+                        "type": "local",
+                        "fieldName": "routine_counter"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@local.routine_counter": [
+                      "value"
+                    ]
+                  }
                 },
                 {
                   "type": "accordion_section",
                   "name": "oe_buttons",
-                  "value": "Open-Ended Task(s)",
+                  "value": "@local.oe_counter Open-Ended Task(s)",
                   "parameter_list": {
                     "style": "column"
                   },
@@ -5044,6 +5718,7 @@
                               "_translations": {
                                 "value": {}
                               },
+                              "condition": "@item.topic_theme_1",
                               "type": "set_variable",
                               "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.oe_buttons.oe_buttons.oe_checks.match1",
                               "_dynamicFields": {
@@ -5066,6 +5741,14 @@
                                     "type": "calc",
                                     "fieldName": "@local.search_set.has(@item.topic_theme_1)"
                                   }
+                                ],
+                                "condition": [
+                                  {
+                                    "fullExpression": "@item.topic_theme_1",
+                                    "matchedExpression": "@item.topic_theme_1",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_1"
+                                  }
                                 ]
                               },
                               "_dynamicDependencies": {
@@ -5073,7 +5756,8 @@
                                   "value"
                                 ],
                                 "@item.topic_theme_1": [
-                                  "value"
+                                  "value",
+                                  "condition"
                                 ],
                                 "@calc(@local.search_set.has(@item.topic_theme_1))": [
                                   "value"
@@ -5086,6 +5770,7 @@
                               "_translations": {
                                 "value": {}
                               },
+                              "condition": "@item.topic_theme_2",
                               "type": "set_variable",
                               "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.oe_buttons.oe_buttons.oe_checks.match2",
                               "_dynamicFields": {
@@ -5108,6 +5793,14 @@
                                     "type": "calc",
                                     "fieldName": "@local.search_set.has(@item.topic_theme_2)"
                                   }
+                                ],
+                                "condition": [
+                                  {
+                                    "fullExpression": "@item.topic_theme_2",
+                                    "matchedExpression": "@item.topic_theme_2",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_2"
+                                  }
                                 ]
                               },
                               "_dynamicDependencies": {
@@ -5115,7 +5808,8 @@
                                   "value"
                                 ],
                                 "@item.topic_theme_2": [
-                                  "value"
+                                  "value",
+                                  "condition"
                                 ],
                                 "@calc(@local.search_set.has(@item.topic_theme_2))": [
                                   "value"
@@ -5128,6 +5822,7 @@
                               "_translations": {
                                 "value": {}
                               },
+                              "condition": "@item.topic_theme_3",
                               "type": "set_variable",
                               "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.oe_buttons.oe_buttons.oe_checks.match3",
                               "_dynamicFields": {
@@ -5150,6 +5845,14 @@
                                     "type": "calc",
                                     "fieldName": "@local.search_set.has(@item.topic_theme_3)"
                                   }
+                                ],
+                                "condition": [
+                                  {
+                                    "fullExpression": "@item.topic_theme_3",
+                                    "matchedExpression": "@item.topic_theme_3",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_3"
+                                  }
                                 ]
                               },
                               "_dynamicDependencies": {
@@ -5157,7 +5860,8 @@
                                   "value"
                                 ],
                                 "@item.topic_theme_3": [
-                                  "value"
+                                  "value",
+                                  "condition"
                                 ],
                                 "@calc(@local.search_set.has(@item.topic_theme_3))": [
                                   "value"
@@ -5170,6 +5874,7 @@
                               "_translations": {
                                 "value": {}
                               },
+                              "condition": "@item.topic_theme_4",
                               "type": "set_variable",
                               "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.oe_buttons.oe_buttons.oe_checks.match4",
                               "_dynamicFields": {
@@ -5192,6 +5897,14 @@
                                     "type": "calc",
                                     "fieldName": "@local.search_set.has(@item.topic_theme_4)"
                                   }
+                                ],
+                                "condition": [
+                                  {
+                                    "fullExpression": "@item.topic_theme_4",
+                                    "matchedExpression": "@item.topic_theme_4",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_4"
+                                  }
                                 ]
                               },
                               "_dynamicDependencies": {
@@ -5199,7 +5912,8 @@
                                   "value"
                                 ],
                                 "@item.topic_theme_4": [
-                                  "value"
+                                  "value",
+                                  "condition"
                                 ],
                                 "@calc(@local.search_set.has(@item.topic_theme_4))": [
                                   "value"
@@ -5212,6 +5926,7 @@
                               "_translations": {
                                 "value": {}
                               },
+                              "condition": "@item.topic_theme_5",
                               "type": "set_variable",
                               "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.oe_buttons.oe_buttons.oe_checks.match5",
                               "_dynamicFields": {
@@ -5234,6 +5949,14 @@
                                     "type": "calc",
                                     "fieldName": "@local.search_set.has(@item.topic_theme_5)"
                                   }
+                                ],
+                                "condition": [
+                                  {
+                                    "fullExpression": "@item.topic_theme_5",
+                                    "matchedExpression": "@item.topic_theme_5",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_5"
+                                  }
                                 ]
                               },
                               "_dynamicDependencies": {
@@ -5241,7 +5964,8 @@
                                   "value"
                                 ],
                                 "@item.topic_theme_5": [
-                                  "value"
+                                  "value",
+                                  "condition"
                                 ],
                                 "@calc(@local.search_set.has(@item.topic_theme_5))": [
                                   "value"
@@ -5254,6 +5978,7 @@
                               "_translations": {
                                 "value": {}
                               },
+                              "condition": "@item.topic_theme_6",
                               "type": "set_variable",
                               "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.oe_buttons.oe_buttons.oe_checks.match6",
                               "_dynamicFields": {
@@ -5276,6 +6001,14 @@
                                     "type": "calc",
                                     "fieldName": "@local.search_set.has(@item.topic_theme_6)"
                                   }
+                                ],
+                                "condition": [
+                                  {
+                                    "fullExpression": "@item.topic_theme_6",
+                                    "matchedExpression": "@item.topic_theme_6",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_6"
+                                  }
                                 ]
                               },
                               "_dynamicDependencies": {
@@ -5283,7 +6016,8 @@
                                   "value"
                                 ],
                                 "@item.topic_theme_6": [
-                                  "value"
+                                  "value",
+                                  "condition"
                                 ],
                                 "@calc(@local.search_set.has(@item.topic_theme_6))": [
                                   "value"
@@ -5484,12 +6218,27 @@
                       "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.oe_buttons.oe_buttons"
                     }
                   ],
-                  "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.oe_buttons"
+                  "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.oe_buttons",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@local.oe_counter Open-Ended Task(s)",
+                        "matchedExpression": "@local.oe_counter",
+                        "type": "local",
+                        "fieldName": "oe_counter"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@local.oe_counter": [
+                      "value"
+                    ]
+                  }
                 },
                 {
                   "type": "accordion_section",
                   "name": "ps_buttons",
-                  "value": "Problem Solving Task(s)",
+                  "value": "@local.ps_counter Problem Solving Task(s)",
                   "parameter_list": {
                     "style": "column"
                   },
@@ -5512,6 +6261,7 @@
                               "_translations": {
                                 "value": {}
                               },
+                              "condition": "@item.topic_theme_1",
                               "type": "set_variable",
                               "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.ps_buttons.ps_buttons.ps_checks.match1",
                               "_dynamicFields": {
@@ -5534,6 +6284,14 @@
                                     "type": "calc",
                                     "fieldName": "@local.search_set.has(@item.topic_theme_1)"
                                   }
+                                ],
+                                "condition": [
+                                  {
+                                    "fullExpression": "@item.topic_theme_1",
+                                    "matchedExpression": "@item.topic_theme_1",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_1"
+                                  }
                                 ]
                               },
                               "_dynamicDependencies": {
@@ -5541,7 +6299,8 @@
                                   "value"
                                 ],
                                 "@item.topic_theme_1": [
-                                  "value"
+                                  "value",
+                                  "condition"
                                 ],
                                 "@calc(@local.search_set.has(@item.topic_theme_1))": [
                                   "value"
@@ -5554,6 +6313,7 @@
                               "_translations": {
                                 "value": {}
                               },
+                              "condition": "@item.topic_theme_2",
                               "type": "set_variable",
                               "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.ps_buttons.ps_buttons.ps_checks.match2",
                               "_dynamicFields": {
@@ -5576,6 +6336,14 @@
                                     "type": "calc",
                                     "fieldName": "@local.search_set.has(@item.topic_theme_2)"
                                   }
+                                ],
+                                "condition": [
+                                  {
+                                    "fullExpression": "@item.topic_theme_2",
+                                    "matchedExpression": "@item.topic_theme_2",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_2"
+                                  }
                                 ]
                               },
                               "_dynamicDependencies": {
@@ -5583,7 +6351,8 @@
                                   "value"
                                 ],
                                 "@item.topic_theme_2": [
-                                  "value"
+                                  "value",
+                                  "condition"
                                 ],
                                 "@calc(@local.search_set.has(@item.topic_theme_2))": [
                                   "value"
@@ -5596,6 +6365,7 @@
                               "_translations": {
                                 "value": {}
                               },
+                              "condition": "@item.topic_theme_3",
                               "type": "set_variable",
                               "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.ps_buttons.ps_buttons.ps_checks.match3",
                               "_dynamicFields": {
@@ -5618,6 +6388,14 @@
                                     "type": "calc",
                                     "fieldName": "@local.search_set.has(@item.topic_theme_3)"
                                   }
+                                ],
+                                "condition": [
+                                  {
+                                    "fullExpression": "@item.topic_theme_3",
+                                    "matchedExpression": "@item.topic_theme_3",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_3"
+                                  }
                                 ]
                               },
                               "_dynamicDependencies": {
@@ -5625,7 +6403,8 @@
                                   "value"
                                 ],
                                 "@item.topic_theme_3": [
-                                  "value"
+                                  "value",
+                                  "condition"
                                 ],
                                 "@calc(@local.search_set.has(@item.topic_theme_3))": [
                                   "value"
@@ -5638,6 +6417,7 @@
                               "_translations": {
                                 "value": {}
                               },
+                              "condition": "@item.topic_theme_4",
                               "type": "set_variable",
                               "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.ps_buttons.ps_buttons.ps_checks.match4",
                               "_dynamicFields": {
@@ -5660,6 +6440,14 @@
                                     "type": "calc",
                                     "fieldName": "@local.search_set.has(@item.topic_theme_4)"
                                   }
+                                ],
+                                "condition": [
+                                  {
+                                    "fullExpression": "@item.topic_theme_4",
+                                    "matchedExpression": "@item.topic_theme_4",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_4"
+                                  }
                                 ]
                               },
                               "_dynamicDependencies": {
@@ -5667,7 +6455,8 @@
                                   "value"
                                 ],
                                 "@item.topic_theme_4": [
-                                  "value"
+                                  "value",
+                                  "condition"
                                 ],
                                 "@calc(@local.search_set.has(@item.topic_theme_4))": [
                                   "value"
@@ -5680,6 +6469,7 @@
                               "_translations": {
                                 "value": {}
                               },
+                              "condition": "@item.topic_theme_5",
                               "type": "set_variable",
                               "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.ps_buttons.ps_buttons.ps_checks.match5",
                               "_dynamicFields": {
@@ -5702,6 +6492,14 @@
                                     "type": "calc",
                                     "fieldName": "@local.search_set.has(@item.topic_theme_5)"
                                   }
+                                ],
+                                "condition": [
+                                  {
+                                    "fullExpression": "@item.topic_theme_5",
+                                    "matchedExpression": "@item.topic_theme_5",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_5"
+                                  }
                                 ]
                               },
                               "_dynamicDependencies": {
@@ -5709,7 +6507,8 @@
                                   "value"
                                 ],
                                 "@item.topic_theme_5": [
-                                  "value"
+                                  "value",
+                                  "condition"
                                 ],
                                 "@calc(@local.search_set.has(@item.topic_theme_5))": [
                                   "value"
@@ -5722,6 +6521,7 @@
                               "_translations": {
                                 "value": {}
                               },
+                              "condition": "@item.topic_theme_6",
                               "type": "set_variable",
                               "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.ps_buttons.ps_buttons.ps_checks.match6",
                               "_dynamicFields": {
@@ -5744,6 +6544,14 @@
                                     "type": "calc",
                                     "fieldName": "@local.search_set.has(@item.topic_theme_6)"
                                   }
+                                ],
+                                "condition": [
+                                  {
+                                    "fullExpression": "@item.topic_theme_6",
+                                    "matchedExpression": "@item.topic_theme_6",
+                                    "type": "item",
+                                    "fieldName": "topic_theme_6"
+                                  }
                                 ]
                               },
                               "_dynamicDependencies": {
@@ -5751,7 +6559,8 @@
                                   "value"
                                 ],
                                 "@item.topic_theme_6": [
-                                  "value"
+                                  "value",
+                                  "condition"
                                 ],
                                 "@calc(@local.search_set.has(@item.topic_theme_6))": [
                                   "value"
@@ -5952,7 +6761,22 @@
                       "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.ps_buttons.ps_buttons"
                     }
                   ],
-                  "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.ps_buttons"
+                  "_nested_name": "do_the_lookup.topic_matches2.topic_accordion.ps_buttons",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@local.ps_counter Problem Solving Task(s)",
+                        "matchedExpression": "@local.ps_counter",
+                        "type": "local",
+                        "fieldName": "ps_counter"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@local.ps_counter": [
+                      "value"
+                    ]
+                  }
                 }
               ],
               "_nested_name": "do_the_lookup.topic_matches2.topic_accordion"
