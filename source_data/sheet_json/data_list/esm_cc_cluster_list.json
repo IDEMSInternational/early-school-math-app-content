@@ -128,17 +128,29 @@
       "id": "CC_OA_3_RMD_",
       "name::eng": "3.OA.B: Relate x & ÷",
       "strand_id": "CC_OA",
-      "count": 1,
-      "topic_id_1": "NO_MSD_MultCommutes"
+      "count": 3,
+      "topic_id_1": "NO_MSD_MultCommutes",
+      "topic_id_2": "NO_DSD_Models",
+      "topic_id_3": "NO_DSD_Without_Rem"
     },
     {
       "id": "CC_OA_3_MD100_",
       "name::eng": "3.OA.C: x & ÷ within 100",
       "strand_id": "CC_OA",
-      "count": 3,
+      "count": 13,
       "topic_id_1": "NO_MSD_Doubling",
-      "topic_id_2": "NO_MSD_Skipping",
-      "topic_id_3": "NO_MSD_AllSingles"
+      "topic_id_2": "NO_MSD_Mult_5_10",
+      "topic_id_3": "NO_MSD_MultRep",
+      "topic_id_4": "NO_MSD_MultCommutes",
+      "topic_id_5": "NO_MSD_Skipping",
+      "topic_id_6": "NO_MSD_Combining",
+      "topic_id_7": "NO_MSD_AllSingles",
+      "topic_id_8": "NO_DSD_Models",
+      "topic_id_9": "NO_DSD_Zero",
+      "topic_id_10": "NO_DSD_Without_Rem",
+      "topic_id_11": "NO_DSD_With_Rem",
+      "topic_id_12": "NO_DSD_Div_Sharing",
+      "topic_id_13": "NO_DSD_AllSingles"
     },
     {
       "id": "CC_OA_PS_",
@@ -211,26 +223,30 @@
       "id": "CC_NF_3_UFN_",
       "name::eng": "3.NF.A: Fraction as Number",
       "strand_id": "CC_NF",
-      "count": 2,
-      "topic_id_1": "FEP_EP_NMEP_Shapes",
-      "topic_id_2": "FEP_EP_NMEP_Sets"
+      "count": 6,
+      "topic_id_1": "NO_F_Intro",
+      "topic_id_2": "NO_F_EP_Shapes",
+      "topic_id_3": "NO_F_EP_Sets",
+      "topic_id_4": "NO_F_Unit_Non",
+      "topic_id_5": "NO_F_Value",
+      "topic_id_6": "NO_F_Comp_Order_Same",
+      "topic_id_7": "NO_F_Equivalent"
     },
     {
       "id": "CC_MD_K_DCM_",
       "name::eng": "K.MD.A: Work with Meas.",
       "strand_id": "CC_MD",
-      "count": 3,
+      "count": 2,
       "topic_id_1": "Meas_Early_Overview",
-      "topic_id_2": "Meas_Early_Comparing",
-      "topic_id_3": "Meas_Early_Units"
+      "topic_id_2": "Meas_Early_Comparing"
     },
     {
       "id": "CC_MD_K_CCO_",
       "name::eng": "K.MD.B: Classify & Count",
       "strand_id": "CC_MD",
       "count": 2,
-      "topic_id_1": "Meas_Early_Units",
-      "topic_id_2": "Data_CO_P"
+      "topic_id_1": "Data_Early_Overview",
+      "topic_id_2": "Data_Early_ListsChartsTables"
     },
     {
       "id": "CC_MD_1_ML_",
@@ -254,10 +270,9 @@
       "id": "CC_MD_1_RID_",
       "name::eng": "1.MD.C: Work with Data",
       "strand_id": "CC_MD",
-      "count": 3,
-      "topic_id_1": "Data_Rep_P",
-      "topic_id_2": "Data_Graph_P",
-      "topic_id_3": "Data_Anal_P"
+      "count": 2,
+      "topic_id_1": "Data_Early_Overview",
+      "topic_id_2": "Data_Early_ListsChartsTables"
     },
     {
       "id": "CC_MD_2_ML_",
@@ -273,6 +288,16 @@
       "count": 2,
       "topic_id_1": "Meas_Time_TTH",
       "topic_id_2": "Meas_Money_Money"
+    },
+    {
+      "id": "CC_MD_2_GD_",
+      "name::eng": "2.MD.D: Graphing Data",
+      "strand_id": "CC_MD",
+      "count": 4,
+      "topic_id_1": "Data_Early_ListsChartsTables",
+      "topic_id_2": "Data_Early_Pictographs",
+      "topic_id_3": "Data_Early_BarGraphs",
+      "topic_id_4": "Data_Early_LineGraphs"
     },
     {
       "id": "CC_G_K_Pat_",
@@ -306,15 +331,15 @@
       "name::eng": "1.G.A: Reason with Shapes",
       "strand_id": "CC_G",
       "count": 1,
-      "topic_id_1": "FEP_EP_NMEP_Shapes"
+      "topic_id_1": "NO_F_EP_Shapes"
     },
     {
       "id": "CC_MP_MP_",
       "name::eng": "MP.1-8: Math Practices",
       "strand_id": "CC_MP",
       "count": 2,
-      "topic_id_1": "BandA_B_B",
-      "topic_id_2": "BandA_A_A"
+      "topic_id_1": "BandA_BA_B",
+      "topic_id_2": "BandA_BA_A"
     }
   ]
 }
