@@ -4,18 +4,18 @@
 | type | count |
 | --- | --- |
 | accordion | 84 |
-| accordion_section | 153 |
-| button | 186 |
+| accordion_section | 154 |
+| button | 187 |
 | debug_toggle | 1 |
-| display_group | 494 |
+| display_group | 496 |
 | image | 71 |
-| items | 75 |
+| items | 76 |
 | qr_code | 1 |
 | radio_button_grid | 1 |
 | round_button | 10 |
 | select_text | 1 |
 | set_field | 51 |
-| set_variable | 796 |
+| set_variable | 803 |
 | simple_checkbox | 4 |
 | template | 97 |
 | text | 375 |
@@ -38,10 +38,10 @@
 | emit: set_language | 1 |
 | emit: uncompleted | 58 |
 | feedback | 11 |
-| go_to | 159 |
+| go_to | 160 |
 | go_to_url | 3 |
 | reset_app | 1 |
-| set_field | 149 |
+| set_field | 151 |
 | set_local | 7 |
 | start_tour | 10 |
 </details>
@@ -51,7 +51,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 47335 KB | 47.3 MB |
+| total | 52169 KB | 52.2 MB |
 | unused | 22328 KB | 22.3 MB |
 </details>
 
@@ -1593,7 +1593,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMPOWCMagicSquares3Double.svg | 11.4 | 1 |
 | ESMIll/ESMPOWCMagicSquares4Answer1.svg | 13.7 | 2 |
 | ESMIll/ESMPOWCMagicSquares4Answer2.svg | 19.1 | 1 |
-| ESMIll/ESMPOWCMagicSquaresExamples1.svg | 31.6 | 2 |
+| ESMIll/ESMPOWCMagicSquaresExamples1.svg | 31.6 | 3 |
 | ESMIll/ESMPOWCMagicTriangle Annotated.svg | 11.2 | 2 |
 | ESMIll/ESMPOWCMagicTriangle3 - Empty.svg | 6.8 | 1 |
 | ESMIll/ESMPOWCMagicTriangle4 - Empty.svg | 8.5 | 1 |
@@ -1645,6 +1645,10 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMPOWCTiedHandsChallenge.svg | 51.5 | 1 |
 | ESMIll/ESMPOWCTrapezoidalNumbersChallenge1.svg | 2.3 | 1 |
 | ESMIll/ESMPOWCTrapezoidalNumbersIntro.svg | 7.4 | 1 |
+| ESMIll/ESMPOWDDifferenceSquaresChallenge.svg | 3.3 | 1 |
+| ESMIll/ESMPOWDDifferenceSquaresIntro.svg | 15.7 | 1 |
+| ESMIll/ESMPOWDDifferenceTriangleChallenge.svg | 234.6 | 1 |
+| ESMIll/ESMPOWDDifferenceTriangleIntro.svg | 94.9 | 1 |
 | ESMIll/ESMPOWDLetterSubstitution4.svg | 17 | 1 |
 | ESMIll/ESMPOWDLetterSubstitution5.svg | 21.1 | 1 |
 | ESMIll/ESMPOWDLetterSubstitution6.svg | 27.1 | 1 |
@@ -1652,6 +1656,13 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMPOWDLines5by4Intro.svg | 6.9 | 2 |
 | ESMIll/ESMPOWDLines6Answer.svg | 116.7 | 1 |
 | ESMIll/ESMPOWDLines7Answer.svg | 214.8 | 1 |
+| ESMIll/ESMPOWDMagicSquareChallenge.svg | 2.5 | 1 |
+| ESMIll/ESMPOWDMagicSquares5Answer1.svg | 13.9 | 1 |
+| ESMIll/ESMPOWDMagicSquares5Answer2.svg | 13.7 | 1 |
+| ESMIll/ESMPOWDMagicSquares6Answer.svg | 28.9 | 1 |
+| ESMIll/ESMPOWDMagicSquares6Challenge.svg | 28.9 | 1 |
+| ESMIll/ESMPOWDMagicSquares6Intro.svg | 34.4 | 1 |
+| ESMIll/ESMPOWDPanBalance.svg | 4363 | 1 |
 | ESMIll/ESMPOWDSquareGrid3by4.svg | 3.6 | 1 |
 | ESMIll/ESMPOWDSquareGrid4by4.svg | 4.5 | 2 |
 | ESMIll/ESMPOWDSquaresWithinSquaresGrid.svg | 7.3 | 1 |

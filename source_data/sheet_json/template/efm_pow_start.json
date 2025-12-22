@@ -118,7 +118,7 @@
     {
       "type": "begin_accordion_section",
       "name": "level_a",
-      "value": "Count–15; 1-digit Add",
+      "value": "Count–15; 1-digit +",
       "parameter_list": "text_align: center; \nstyle: large emphasised",
       "comments": true
     },
@@ -272,7 +272,7 @@
     {
       "type": "begin_accordion_section",
       "name": "level_b",
-      "value": "Count–100; 1-digit Add/Sub",
+      "value": "Count–100; 1-digit +,–",
       "parameter_list": "text_align: center; \nstyle: large emphasised",
       "comments": true
     },
@@ -426,7 +426,7 @@
     {
       "type": "begin_accordion_section",
       "name": "level_l1",
-      "value": "Logic and Even/Odd",
+      "value": "Logic & Even/Odd",
       "parameter_list": "text_align: center; \nstyle: large emphasised",
       "comments": true
     },
@@ -502,21 +502,21 @@
     },
     {
       "type": "begin_accordion_section",
-      "name": "level_c",
-      "value": "Count–200; 2-digit Add/Sub; 1-digit Mult",
+      "name": "level_cas",
+      "value": "Count–200; 2-digit +,–",
       "parameter_list": "text_align: center; \nstyle: large emphasised",
       "comments": true
     },
     {
       "type": "begin_display_group",
-      "name": "dg_powlist_c",
+      "name": "dg_powlist_cas",
       "parameter_list": "style: column"
     },
     {
       "type": "begin_items",
-      "name": "activity_buttons_c",
+      "name": "activity_buttons_cas",
       "value": "@data.efm_pows",
-      "parameter_list": "filter: @item.level==\"C\""
+      "parameter_list": "filter: @item.level==\"CAS\""
     },
     {
       "name": "pow_id",
@@ -536,7 +536,84 @@
     },
     {
       "type": "begin_display_group",
-      "name": "dg_ok_puzzle_c",
+      "name": "dg_ok_puzzle_cas",
+      "condition": "@local.its_an_okay_puzzle"
+    },
+    {
+      "name": "click_history_field_name",
+      "value": "@local.pow_id@local.pow_click_history",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "pows_click_history",
+      "value": "@fields.@local.click_history_field_name ;  @local.now",
+      "condition": "!!(@fields.@local.click_history_field_name)",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "pows_click_history",
+      "value": "@local.now",
+      "condition": "!(@fields.@local.click_history_field_name)",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button_pow_@item.id",
+      "value": "@item.name",
+      "action_list": "click | set_field:current_pow: data.efm_pows.@item.id;\nclick | go_to: efm_pow_template;\nclick | set_field:@local.click_history_field_name: @local.pows_click_history",
+      "parameter_list": "style: short; \ntext_align: center",
+      "comments": "click | set_field.current_topic: data.efm_topics.@item.id;\nclick | go_to: efm_topic_template;\nclick | set_field:@local.click_history_field_name: @local.topics_click_history"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_accordion_section",
+      "comments": true
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "level_casmd",
+      "value": "Count–200; 2-digit +,–; 1-digit x,÷",
+      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "comments": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_powlist_casmd",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "begin_items",
+      "name": "activity_buttons_casmd",
+      "value": "@data.efm_pows",
+      "parameter_list": "filter: @item.level==\"CASMD\""
+    },
+    {
+      "name": "pow_id",
+      "value": "@item.id"
+    },
+    {
+      "name": "okay_eye_opener",
+      "value": "@local.checkbox_eye_opener && @item.eye_opener"
+    },
+    {
+      "name": "okay_puzzler",
+      "value": "@local.checkbox_puzzler && @item.puzzler"
+    },
+    {
+      "name": "its_an_okay_puzzle",
+      "value": "@local.okay_eye_opener || @local.okay_puzzler"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_ok_puzzle_casmd",
       "condition": "@local.its_an_okay_puzzle"
     },
     {
