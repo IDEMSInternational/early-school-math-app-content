@@ -245,7 +245,7 @@
       "name::eng": "1MEA.T: Time",
       "strand_id": "NCRT_MEA",
       "count": 1,
-      "topic_id_1": "Unwritten"
+      "topic_id_1": "Meas_Time_PofD"
     },
     {
       "id": "NCRT_MEA_2LWCV_",
@@ -260,8 +260,8 @@
       "name::eng": "2MEA.T: Time",
       "strand_id": "NCRT_MEA",
       "count": 2,
-      "topic_id_1": "~~Parts of a Day~~",
-      "topic_id_2": "~~Calendar~~"
+      "topic_id_1": "Meas_Time_PofD",
+      "topic_id_2": "Meas_Time_Cal"
     },
     {
       "id": "NCRT_MEA_3LWV_",
@@ -276,51 +276,57 @@
       "name::eng": "3MEA.T: Time",
       "strand_id": "NCRT_MEA",
       "count": 3,
-      "topic_id_1": "~~Parts of a Day~~",
-      "topic_id_2": "~~Calendar~~",
-      "topic_id_3": "~~Telling Time – Hours~~"
+      "topic_id_1": "Meas_Time_PofD",
+      "topic_id_2": "Meas_Time_Cal",
+      "topic_id_3": "Meas_Time_TTH"
     },
     {
       "id": "NCRT_D_1_",
       "name::eng": "1D: Data Handling",
       "strand_id": "NCRT_D",
-      "count": 1,
-      "topic_id_1": "Unwritten"
+      "count": 2,
+      "topic_id_1": "Data_Early_Overview",
+      "topic_id_2": "Data_Early_ListsChartsTables"
     },
     {
       "id": "NCRT_D_2_",
       "name::eng": "2D: Data Handling",
       "strand_id": "NCRT_D",
-      "count": 1,
-      "topic_id_1": "Unwritten"
+      "count": 2,
+      "topic_id_1": "Data_Early_Overview",
+      "topic_id_2": "Data_Early_ListsChartsTables"
     },
     {
       "id": "NCRT_D_3_",
       "name::eng": "3D: Data Handling",
       "strand_id": "NCRT_D",
-      "count": 1,
-      "topic_id_1": "Unwritten"
+      "count": 4,
+      "topic_id_1": "Data_Early_Overview",
+      "topic_id_2": "Data_Early_ListsChartsTables",
+      "topic_id_3": "Data_Early_Pictographs",
+      "topic_id_4": "Data_Early_BarGraphs",
+      "topic_id_5": "Data_Early_LineGraphs"
     },
     {
       "id": "NCRT_MON_1_",
       "name::eng": "1MON: Money",
       "strand_id": "NCRT_MON",
       "count": 1,
-      "topic_id_1": "~~Money Placeholder~~"
+      "topic_id_1": "Meas_Money_Money"
     },
     {
       "id": "NCRT_MON_2_",
       "name::eng": "2MON: Money",
       "strand_id": "NCRT_MON",
       "count": 1,
-      "topic_id_1": "~~Money Placeholder~~"
+      "topic_id_1": "Meas_Money_Money"
     },
     {
       "id": "NCRT_MON_3_",
       "name::eng": "3MON: Money",
       "strand_id": "NCRT_MON",
       "count": 1,
-      "topic_id_1": "~~Money Placeholder~~"
+      "topic_id_1": "Meas_Money_Money"
     }
   ]
 }

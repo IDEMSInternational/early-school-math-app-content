@@ -436,7 +436,7 @@
       "id": "NCRT_MEA_1T_",
       "strand_id": "NCRT_MEA",
       "count": 1,
-      "topic_id_1": "Unwritten",
+      "topic_id_1": "Meas_Time_PofD",
       "name": "1MEA.T: Time",
       "_translations": {
         "name": {}
@@ -467,8 +467,8 @@
       "id": "NCRT_MEA_2T_",
       "strand_id": "NCRT_MEA",
       "count": 2,
-      "topic_id_1": "~~Parts of a Day~~",
-      "topic_id_2": "~~Calendar~~",
+      "topic_id_1": "Meas_Time_PofD",
+      "topic_id_2": "Meas_Time_Cal",
       "name": "2MEA.T: Time",
       "_translations": {
         "name": {}
@@ -499,9 +499,9 @@
       "id": "NCRT_MEA_3T_",
       "strand_id": "NCRT_MEA",
       "count": 3,
-      "topic_id_1": "~~Parts of a Day~~",
-      "topic_id_2": "~~Calendar~~",
-      "topic_id_3": "~~Telling Time – Hours~~",
+      "topic_id_1": "Meas_Time_PofD",
+      "topic_id_2": "Meas_Time_Cal",
+      "topic_id_3": "Meas_Time_TTH",
       "name": "3MEA.T: Time",
       "_translations": {
         "name": {}
@@ -515,8 +515,9 @@
     {
       "id": "NCRT_D_1_",
       "strand_id": "NCRT_D",
-      "count": 1,
-      "topic_id_1": "Unwritten",
+      "count": 2,
+      "topic_id_1": "Data_Early_Overview",
+      "topic_id_2": "Data_Early_ListsChartsTables",
       "name": "1D: Data Handling",
       "_translations": {
         "name": {}
@@ -530,8 +531,9 @@
     {
       "id": "NCRT_D_2_",
       "strand_id": "NCRT_D",
-      "count": 1,
-      "topic_id_1": "Unwritten",
+      "count": 2,
+      "topic_id_1": "Data_Early_Overview",
+      "topic_id_2": "Data_Early_ListsChartsTables",
       "name": "2D: Data Handling",
       "_translations": {
         "name": {}
@@ -545,8 +547,12 @@
     {
       "id": "NCRT_D_3_",
       "strand_id": "NCRT_D",
-      "count": 1,
-      "topic_id_1": "Unwritten",
+      "count": 4,
+      "topic_id_1": "Data_Early_Overview",
+      "topic_id_2": "Data_Early_ListsChartsTables",
+      "topic_id_3": "Data_Early_Pictographs",
+      "topic_id_4": "Data_Early_BarGraphs",
+      "topic_id_5": "Data_Early_LineGraphs",
       "name": "3D: Data Handling",
       "_translations": {
         "name": {}
@@ -561,7 +567,7 @@
       "id": "NCRT_MON_1_",
       "strand_id": "NCRT_MON",
       "count": 1,
-      "topic_id_1": "~~Money Placeholder~~",
+      "topic_id_1": "Meas_Money_Money",
       "name": "1MON: Money",
       "_translations": {
         "name": {}
@@ -576,7 +582,7 @@
       "id": "NCRT_MON_2_",
       "strand_id": "NCRT_MON",
       "count": 1,
-      "topic_id_1": "~~Money Placeholder~~",
+      "topic_id_1": "Meas_Money_Money",
       "name": "2MON: Money",
       "_translations": {
         "name": {}
@@ -591,7 +597,7 @@
       "id": "NCRT_MON_3_",
       "strand_id": "NCRT_MON",
       "count": 1,
-      "topic_id_1": "~~Money Placeholder~~",
+      "topic_id_1": "Meas_Money_Money",
       "name": "3MON: Money",
       "_translations": {
         "name": {}
