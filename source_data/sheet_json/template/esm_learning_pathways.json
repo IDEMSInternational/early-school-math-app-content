@@ -25,7 +25,7 @@
     },
     {
       "type": "begin_accordion_section",
-      "name": "accord_readking_math_talk",
+      "name": "accord_read_math_talk",
       "value": "Reading & Math Talk"
     },
     {
@@ -78,33 +78,28 @@
     },
     {
       "type": "text",
-      "name": "spacer",
+      "name": "spacer1",
       "style_list": "flex: 1;"
     },
     {
       "type": "button",
       "name": "button_rmt_group1_1",
-      "value": "Reading Preverbal",
+      "value": "Reading  – Preverbal",
       "action_list": "click | set_field:current_topic: data.esm_topics.FMT_RWC_DRP;\nclick | go_to: esm_topic_template;",
       "parameter_list": "variant: card, compact;",
-      "style_list": "flex: 5;"
-    },
-    {
-      "type": "text",
-      "name": "spacer",
-      "style_list": "flex: 1;"
+      "style_list": "flex: 8;"
     },
     {
       "type": "button",
       "name": "button_rmt_group1_2",
-      "value": "MT – Early",
+      "value": "Math Talk: Early & Often",
       "action_list": "click | set_field:current_topic: data.esm_topics.FMT_EAA_EandO;\nclick | go_to: esm_topic_template;",
       "parameter_list": "variant: card, compact;",
-      "style_list": "flex: 5;"
+      "style_list": "flex: 8;"
     },
     {
       "type": "text",
-      "name": "spacer",
+      "name": "spacer2",
       "style_list": "flex: 1;"
     },
     {
@@ -112,7 +107,7 @@
     },
     {
       "type": "image",
-      "name": "arrows3",
+      "name": "arrows31",
       "value": "ESMIll/ESMLPArrows3.svg",
       "style_list": "max-width: 90px;\nmargin-top: 0px;"
     },
@@ -124,33 +119,33 @@
     {
       "type": "button",
       "name": "button_rmt_group2_1",
-      "value": "MT – Describe",
+      "value": "Math Talk: Describe, Compare",
       "action_list": "click | set_field:current_topic: data.esm_topics.FMT_EAA_FMTDC;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: compact;",
-      "style_list": "flex:1;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex:20;"
     },
     {
       "type": "button",
       "name": "button_rmt_group2_2",
-      "value": "MT – Home",
+      "value": "Math Talk: At Home",
       "action_list": "click | set_field:current_topic: data.esm_topics.FMT_EAA_FMTinH;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: compact;",
-      "style_list": "flex:1;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex:20;"
     },
     {
       "type": "button",
       "name": "button_rmt_group2_3",
-      "value": "MT – Outside",
+      "value": "Math Talk: Out & About",
       "action_list": "click | set_field:current_topic: data.esm_topics.FMT_EAA_FMTOA;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: compact;",
-      "style_list": "flex:1;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex:20;"
     },
     {
       "type": "end_display_group"
     },
     {
       "type": "image",
-      "name": "arrows3",
+      "name": "arrows32",
       "value": "ESMIll/ESMLPArrows3.svg",
       "style_list": "max-width: 90px;\nmargin-top: 0px;"
     },
@@ -164,21 +159,24 @@
       "name": "button_rmt_group3_1",
       "value": "Reading Verbal",
       "action_list": "click | set_field:current_topic: data.esm_topics.FMT_RWC_DRV;\nclick | go_to: esm_topic_template;",
-      "style_list": "flex:1;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex:20;"
     },
     {
       "type": "button",
       "name": "button_rmt_group3_2",
-      "value": "MT – Ask",
+      "value": "Math Talk: Describe, Ask",
       "action_list": "click | set_field:current_topic: data.esm_topics.FMT_EAA_FMTPDA;\nclick | go_to: esm_topic_template;",
-      "style_list": "flex:1;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex:30;"
     },
     {
       "type": "button",
       "name": "button_rmt_group3_3",
-      "value": "MT – Count",
+      "value": "Math Talk: Counting",
       "action_list": "click | set_field:current_topic: data.esm_topics.FMT_EAA_FMTC;\nclick | go_to: esm_topic_template;",
-      "style_list": "flex:1;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex:20;"
     },
     {
       "type": "end_display_group"
@@ -192,7 +190,7 @@
     {
       "type": "begin_accordion_section",
       "name": "accord_object_props_geometry",
-      "value": "Object Properties & Geometry"
+      "value": "Object Properties, Geom."
     },
     {
       "type": "begin_display_group",
@@ -243,32 +241,45 @@
       "name": "dg_pg_group1"
     },
     {
+      "type": "text",
+      "name": "spacer10",
+      "style_list": "flex: 1;"
+    },
+    {
       "type": "button",
       "name": "button_pg_group1_1",
-      "value": "Props. Group",
+      "value": "Object Properties",
       "action_list": "click | set_field:current_topic: data.esm_topics.Geom_OP_PG;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 20;"
     },
     {
       "type": "button",
       "name": "button_pg_group1_2",
-      "value": "Same Diff.",
+      "value": "Same & Different",
       "action_list": "click | set_field:current_topic: data.esm_topics.Geom_OP_SD;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 20;"
     },
     {
       "type": "button",
       "name": "button_pg_group1_3",
       "value": "Patterns",
       "action_list": "click | set_field:current_topic: data.esm_topics.Geom_Pat_Intro;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 20;"
+    },
+    {
+      "type": "text",
+      "name": "spacer11",
+      "style_list": "flex: 1;"
     },
     {
       "type": "end_display_group"
     },
     {
       "type": "image",
-      "name": "arrows3",
+      "name": "arrows33",
       "value": "ESMIll/ESMLPArrows3.svg",
       "style_list": "max-width: 90px;\nmargin-top: 0px;"
     },
@@ -278,35 +289,45 @@
       "style_list": "margin-top: -3px;"
     },
     {
+      "type": "text",
+      "name": "spacer12",
+      "style_list": "flex: 1;"
+    },
+    {
       "type": "button",
       "name": "button_pg_group3_1",
       "value": "Describe Shapes",
       "action_list": "click | set_field:current_topic: data.esm_topics.Geom_Shape_DS;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
-      "style_list": "flex: 7;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 20;"
     },
     {
       "type": "button",
       "name": "button_pg_group3_2",
-      "value": "Shape Name",
+      "value": "Shape Names",
       "action_list": "click | set_field:current_topic: data.esm_topics.Geom_Shape_SN2D3D;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
-      "style_list": "flex: 5;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 20;"
     },
     {
       "type": "button",
       "name": "button_pg_group3_3",
-      "value": "Compare Sort",
+      "value": "Compare & Sort",
       "action_list": "click | set_field:current_topic: data.esm_topics.Geom_Shape_CompSort;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
-      "style_list": "flex: 7;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 20;"
+    },
+    {
+      "type": "text",
+      "name": "spacer13",
+      "style_list": "flex: 1;"
     },
     {
       "type": "end_display_group"
     },
     {
       "type": "image",
-      "name": "arrows2",
+      "name": "arrows24",
       "value": "ESMIll/ESMLPArrows2.svg",
       "style_list": "max-width: 70px;\nmargin-top: 0px;"
     },
@@ -317,29 +338,29 @@
     },
     {
       "type": "text",
-      "name": "spacer",
-      "style_list": "flex: 10"
+      "name": "spacer14",
+      "style_list": "flex: 1;"
     },
     {
       "type": "button",
       "name": "button_pg_group4_1",
-      "value": "Faces of 3d",
+      "value": "Faces of 3d Shapes",
       "action_list": "click | set_field:current_topic: data.esm_topics.Geom_Shape_2Dof3DS;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
-      "style_list": "flex: 50"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 10"
     },
     {
       "type": "button",
       "name": "button_pg_group4_2",
-      "value": "Compose / Decompose",
+      "value": "Compose & Decompose",
       "action_list": "click | set_field:current_topic: data.esm_topics.Geom_Shape_CompDecomp;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
-      "style_list": "flex: 40"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 10"
     },
     {
       "type": "text",
-      "name": "spacer",
-      "style_list": "flex: 10"
+      "name": "spacer15",
+      "style_list": "flex: 1;"
     },
     {
       "type": "end_display_group"
@@ -405,7 +426,7 @@
     },
     {
       "type": "text",
-      "name": "spacer",
+      "name": "spacer20",
       "style_list": "flex: 1;"
     },
     {
@@ -413,25 +434,20 @@
       "name": "button_qc_group1_1",
       "value": "Quantities",
       "action_list": "click | set_field:current_topic: data.esm_topics.NPV_QC10_QC;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
-      "style_list": "flex: 4;"
-    },
-    {
-      "type": "text",
-      "name": "spacer",
-      "style_list": "flex: 1;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 20;"
     },
     {
       "type": "button",
       "name": "button_qc_group1_2",
-      "value": "Subitize Unitize",
+      "value": "Subitize & Unitize",
       "action_list": "click | set_field:current_topic: data.esm_topics.NPV_QC10_Sub10;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
-      "style_list": "flex:4;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 20;"
     },
     {
       "type": "text",
-      "name": "spacer",
+      "name": "spacer21",
       "style_list": "flex: 1;"
     },
     {
@@ -439,7 +455,7 @@
     },
     {
       "type": "image",
-      "name": "arrows2",
+      "name": "arrows25",
       "value": "ESMIll/ESMLPArrows2.svg",
       "style_list": "max-width: 70px;\nmargin-top: 0px;"
     },
@@ -450,33 +466,28 @@
     },
     {
       "type": "text",
-      "name": "spacer",
+      "name": "spacer22",
       "style_list": "flex: 1;"
     },
     {
       "type": "button",
       "name": "button_qc_group2_1",
-      "value": "Order",
+      "value": "Ordering",
       "action_list": "click | set_field:current_topic: data.esm_topics.NPV_QC10_Ordinals;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
-      "style_list": "flex: 4;"
-    },
-    {
-      "type": "text",
-      "name": "spacer",
-      "style_list": "flex: 1;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 20;"
     },
     {
       "type": "button",
       "name": "button_qc_group2_2",
-      "value": "Compare",
+      "value": "Comparing",
       "action_list": "click | set_field:current_topic: data.esm_topics.NPV_QC10_Comp10;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
-      "style_list": "flex:4;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 20;"
     },
     {
       "type": "text",
-      "name": "spacer",
+      "name": "spacer23",
       "style_list": "flex: 1;"
     },
     {
@@ -484,7 +495,7 @@
     },
     {
       "type": "image",
-      "name": "arrows2",
+      "name": "arrows26",
       "value": "ESMIll/ESMLPArrows2.svg",
       "style_list": "max-width: 70px;\nmargin-top: 0px;"
     },
@@ -495,7 +506,7 @@
     },
     {
       "type": "text",
-      "name": "spacer",
+      "name": "spacer24",
       "style_list": "flex: 1;"
     },
     {
@@ -503,25 +514,20 @@
       "name": "button_qc_group3_1",
       "value": "Counting Down",
       "action_list": "click | set_field:current_topic: data.esm_topics.NPV_QC10_QC;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
-      "style_list": "flex: 4;"
-    },
-    {
-      "type": "text",
-      "name": "spacer",
-      "style_list": "flex: 1;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 20;"
     },
     {
       "type": "button",
       "name": "button_qc_group3_2",
       "value": "Counting On",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_AS10_QAS;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
-      "style_list": "flex:4;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 20;"
     },
     {
       "type": "text",
-      "name": "spacer",
+      "name": "spacer25",
       "style_list": "flex: 1;"
     },
     {
@@ -529,7 +535,7 @@
     },
     {
       "type": "image",
-      "name": "arrows2",
+      "name": "arrows27",
       "value": "ESMIll/ESMLPArrows2.svg",
       "style_list": "max-width: 70px;\nmargin-top: 0px;"
     },
@@ -540,33 +546,28 @@
     },
     {
       "type": "text",
-      "name": "spacer",
+      "name": "spacer26",
       "style_list": "flex: 1;"
     },
     {
       "type": "button",
       "name": "button_qc_group4_1",
-      "value": "Count by 2s",
+      "value": "Counting by 2s – Skipping",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_MSD_Skipping;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
-      "style_list": "flex: 4;"
-    },
-    {
-      "type": "text",
-      "name": "spacer",
-      "style_list": "flex: 1;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 20;"
     },
     {
       "type": "button",
       "name": "button_qc_group4_2",
       "value": "Bundles of Ten",
       "action_list": "click | set_field:current_topic: data.esm_topics.NPV_CPV100_Count20;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
-      "style_list": "flex:4;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 20;"
     },
     {
       "type": "text",
-      "name": "spacer",
+      "name": "spacer27",
       "style_list": "flex: 1;"
     },
     {
@@ -634,17 +635,17 @@
     },
     {
       "type": "text",
-      "name": "blank",
+      "name": "blank30",
       "style_list": "flex: 1"
     },
     {
       "type": "text",
       "name": "text_aw10_group0_1",
-      "value": "Do the Quantities & Counting pathway through counting up and down, and maybe Counting On, before starting this pathway."
+      "value": "Do the Quantities & Counting pathway through counting up and down, and maybe Counting On, before this pathway."
     },
     {
       "type": "text",
-      "name": "blank",
+      "name": "blank31",
       "style_list": "flex: 1"
     },
     {
@@ -652,7 +653,7 @@
     },
     {
       "type": "image",
-      "name": "arrows2",
+      "name": "arrows28",
       "value": "ESMIll/ESMLPArrows2.svg",
       "style_list": "max-width: 70px;\nmargin-top: -15px;"
     },
@@ -663,33 +664,28 @@
     },
     {
       "type": "text",
-      "name": "blank",
+      "name": "blank32",
       "style_list": "flex: 1;"
     },
     {
       "type": "button",
       "name": "button_aw10_group1_1",
-      "value": "Adding Order",
+      "value": "Addition Any Order",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_AS10_AComm;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
+      "parameter_list": "variant: card, compact;",
       "style_list": "flex: 4;"
-    },
-    {
-      "type": "text",
-      "name": "blank",
-      "style_list": "flex: 1;"
     },
     {
       "type": "button",
       "name": "button_qc_group3_2",
       "value": "Counting On",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_AS10_QAS;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
+      "parameter_list": "variant: card, compact;",
       "style_list": "flex:4;"
     },
     {
       "type": "text",
-      "name": "blank",
+      "name": "blank33",
       "style_list": "flex: 1;"
     },
     {
@@ -697,9 +693,9 @@
     },
     {
       "type": "image",
-      "name": "arrows1",
+      "name": "arrows19",
       "value": "ESMIll/ESMLPArrows1.svg",
-      "style_list": "max-width: 30px;\nmargin-top: -15px;"
+      "style_list": "max-width: 30px;\nmargin-top: -2px;"
     },
     {
       "type": "begin_display_group",
@@ -708,7 +704,7 @@
     },
     {
       "type": "text",
-      "name": "blank",
+      "name": "blank34",
       "style_list": "flex: 1"
     },
     {
@@ -716,11 +712,11 @@
       "name": "button_aw10_group2_1",
       "value": "1 or 2 More",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_AS10_AS1and2;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;"
+      "parameter_list": "variant: card, compact;"
     },
     {
       "type": "text",
-      "name": "blank",
+      "name": "blank35",
       "style_list": "flex: 1"
     },
     {
@@ -728,7 +724,7 @@
     },
     {
       "type": "image",
-      "name": "arrows2",
+      "name": "arrows210",
       "value": "ESMIll/ESMLPArrows2.svg",
       "style_list": "max-width: 70px;\nmargin-top: 0px;"
     },
@@ -739,7 +735,7 @@
     },
     {
       "type": "text",
-      "name": "spacer",
+      "name": "spacer36",
       "style_list": "flex: 1;"
     },
     {
@@ -747,25 +743,20 @@
       "name": "button_aw10_group3_1",
       "value": "Small Doubles",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_AS10_AT;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
+      "parameter_list": "variant: card, compact;",
       "style_list": "flex: 4;"
-    },
-    {
-      "type": "text",
-      "name": "spacer",
-      "style_list": "flex: 1;"
     },
     {
       "type": "button",
       "name": "button_aw10_group3_2",
       "value": "Sums of 10",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_AS10_NBFF;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
+      "parameter_list": "variant: card, compact;",
       "style_list": "flex:4;"
     },
     {
       "type": "text",
-      "name": "spacer",
+      "name": "spacer37",
       "style_list": "flex: 1;"
     },
     {
@@ -773,7 +764,7 @@
     },
     {
       "type": "image",
-      "name": "arrows2",
+      "name": "arrows211",
       "value": "ESMIll/ESMLPArrows2.svg",
       "style_list": "max-width: 70px;\nmargin-top: 0px;"
     },
@@ -784,7 +775,7 @@
     },
     {
       "type": "text",
-      "name": "spacer",
+      "name": "spacer38",
       "style_list": "flex: 1;"
     },
     {
@@ -792,23 +783,20 @@
       "name": "button_aw10_group4_1",
       "value": "Near Doubles",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_AS10_ANT;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
-      "style_list": "flex: 4;"
-    },
-    {
-      "style_list": "flex: 1;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 10;"
     },
     {
       "type": "button",
       "name": "button_aw10_group4_2",
-      "value": "Misc Sums\nto 10",
+      "value": "Misc. Sums\nto 10",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_ASSD_ASto10;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
-      "style_list": "flex:4;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex:10;"
     },
     {
       "type": "text",
-      "name": "spacer",
+      "name": "spacer39",
       "style_list": "flex: 1;"
     },
     {
@@ -816,7 +804,7 @@
     },
     {
       "type": "image",
-      "name": "arrows1",
+      "name": "arrows112",
       "value": "ESMIll/ESMLPArrows1.svg",
       "style_list": "max-width: 30px;\nmargin-top: -2px;"
     },
@@ -827,7 +815,7 @@
     },
     {
       "type": "text",
-      "name": "spacer",
+      "name": "spacer310",
       "style_list": "flex: 1;"
     },
     {
@@ -835,11 +823,11 @@
       "name": "button_aw10_group5_1",
       "value": "Adding Within 10",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_ASSD_ASto10;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;"
+      "parameter_list": "variant: card, compact;"
     },
     {
       "type": "text",
-      "name": "spacer",
+      "name": "spacer311",
       "style_list": "flex: 1;"
     },
     {
@@ -907,17 +895,17 @@
     },
     {
       "type": "text",
-      "name": "blank",
+      "name": "blank40",
       "style_list": "flex: 1"
     },
     {
       "type": "text",
       "name": "text_aw20_group0_1",
-      "value": "Do the Addition Within 10 pathway first before starting this pathway."
+      "value": "Do the Addition Within 10 pathway before this pathway."
     },
     {
       "type": "text",
-      "name": "blank",
+      "name": "blank41",
       "style_list": "flex: 1"
     },
     {
@@ -925,7 +913,7 @@
     },
     {
       "type": "image",
-      "name": "arrows2",
+      "name": "arrows213",
       "value": "ESMIll/ESMLPArrows2.svg",
       "style_list": "max-width: 70px;\nmargin-top: -15px;"
     },
@@ -936,7 +924,7 @@
     },
     {
       "type": "text",
-      "name": "spacer",
+      "name": "spacer42",
       "style_list": "flex: 1;"
     },
     {
@@ -944,25 +932,20 @@
       "name": "button_aw20_group1_1",
       "value": "Adding 10",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_ASSD_AS10;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
-      "style_list": "flex: 4;"
-    },
-    {
-      "type": "text",
-      "name": "spacer",
-      "style_list": "flex: 1;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 20;"
     },
     {
       "type": "button",
       "name": "button_aw20_group1_2",
-      "value": "Place Value",
+      "value": "Place Value With 10",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_ASSD_PVto19;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
-      "style_list": "flex:4;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 20;"
     },
     {
       "type": "text",
-      "name": "spacer",
+      "name": "spacer43",
       "style_list": "flex: 1;"
     },
     {
@@ -970,7 +953,7 @@
     },
     {
       "type": "image",
-      "name": "arrows2",
+      "name": "arrows214",
       "value": "ESMIll/ESMLPArrows2.svg",
       "style_list": "max-width: 70px;\nmargin-top: 0px;"
     },
@@ -981,7 +964,7 @@
     },
     {
       "type": "text",
-      "name": "spacer",
+      "name": "spacer44",
       "style_list": "flex: 1;"
     },
     {
@@ -989,25 +972,20 @@
       "name": "button_aw20_group2_1",
       "value": "Large Doubles",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_AS10_AT;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
-      "style_list": "flex: 8;"
-    },
-    {
-      "type": "text",
-      "name": "spacer",
-      "style_list": "flex: 1;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 20;"
     },
     {
       "type": "button",
       "name": "button_aw20_group2_2",
       "value": "Making a 10",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_ASSD_10BridgeA;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
-      "style_list": "flex: 8;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 20;"
     },
     {
       "type": "text",
-      "name": "spacer",
+      "name": "spacer45",
       "style_list": "flex: 1;"
     },
     {
@@ -1015,7 +993,7 @@
     },
     {
       "type": "image",
-      "name": "arrows1",
+      "name": "arrows115",
       "value": "ESMIll/ESMLPArrows1.svg",
       "style_list": "max-width: 30px;\nmargin-top: -2px;"
     },
@@ -1026,7 +1004,7 @@
     },
     {
       "type": "text",
-      "name": "spacer",
+      "name": "spacer46",
       "style_list": "flex: 1;"
     },
     {
@@ -1034,11 +1012,11 @@
       "name": "button_aw20_group3_1",
       "value": "Adding Within 20",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_ASSD_SD_Add_Sub;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;"
+      "parameter_list": "variant: card, compact;"
     },
     {
       "type": "text",
-      "name": "spacer",
+      "name": "spacer47",
       "style_list": "flex: 1;"
     },
     {
@@ -1106,17 +1084,17 @@
     },
     {
       "type": "text",
-      "name": "blank",
+      "name": "blank50",
       "style_list": "flex: 1"
     },
     {
       "type": "text",
       "name": "text_sw10_group0_1",
-      "value": "Do the Addition Within 10 pathway before starting this pathway, with the exception that 1 or 2 Less should be done at the same time as 1 or 2 More."
+      "value": "Do the Addition Within 10 pathway before this pathway, with the exception of doing 1 or 2 Less at the same time as 1 or 2 More."
     },
     {
       "type": "text",
-      "name": "blank",
+      "name": "blank51",
       "style_list": "flex: 1"
     },
     {
@@ -1124,7 +1102,7 @@
     },
     {
       "type": "image",
-      "name": "arrows2",
+      "name": "arrows216",
       "value": "ESMIll/ESMLPArrows2.svg",
       "style_list": "max-width: 70px;\nmargin-top: -15px;"
     },
@@ -1134,30 +1112,37 @@
       "style_list": "margin-top: -3px;"
     },
     {
+      "type": "text",
+      "name": "blank52",
+      "style_list": "flex: 1"
+    },
+    {
       "type": "button",
       "name": "button_sw10_group1_1",
       "value": "Take Away & Difference",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_AS10_QAS;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;"
-    },
-    {
-      "type": "text",
-      "name": "spacer",
-      "style_list": "flex: 1;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 10"
     },
     {
       "type": "button",
       "name": "button_sw10_group1_2",
       "value": "Part Part / Whole",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_AS10_NBFF;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 10"
+    },
+    {
+      "type": "text",
+      "name": "blank53",
+      "style_list": "flex: 1"
     },
     {
       "type": "end_display_group"
     },
     {
       "type": "image",
-      "name": "arrows2",
+      "name": "arrows217",
       "value": "ESMIll/ESMLPArrows2.svg",
       "style_list": "max-width: 70px;\nmargin-top: 0px;"
     },
@@ -1168,7 +1153,7 @@
     },
     {
       "type": "text",
-      "name": "blank",
+      "name": "blank54",
       "style_list": "flex: 10"
     },
     {
@@ -1176,25 +1161,20 @@
       "name": "button_sw10_group2_1",
       "value": "1 or 2 Less",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_AS10_AS1and2;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
+      "parameter_list": "variant: card, compact;",
       "style_list": "flex: 200"
-    },
-    {
-      "type": "text",
-      "name": "blank",
-      "style_list": "flex: 10"
     },
     {
       "type": "button",
       "name": "button_sw10_group2_2",
       "value": "1 or 2 Apart",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_AS10_AS1and2;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
+      "parameter_list": "variant: card, compact;",
       "style_list": "flex: 200"
     },
     {
       "type": "text",
-      "name": "blank",
+      "name": "blank55",
       "style_list": "flex: 10"
     },
     {
@@ -1202,7 +1182,7 @@
     },
     {
       "type": "image",
-      "name": "arrows1",
+      "name": "arrows118",
       "value": "ESMIll/ESMLPArrows1.svg",
       "style_list": "max-width: 30px;\nmargin-top: 0px;"
     },
@@ -1213,7 +1193,7 @@
     },
     {
       "type": "text",
-      "name": "spacer",
+      "name": "spacer56",
       "style_list": "flex: 1;"
     },
     {
@@ -1221,12 +1201,11 @@
       "name": "button_ss_group3_1",
       "value": "Subtraction Within 10",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_ASSD_ASto10;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
-      "style_list": "flex: 3;"
+      "parameter_list": "variant: card, compact;"
     },
     {
       "type": "text",
-      "name": "spacer",
+      "name": "spacer57",
       "style_list": "flex: 1;"
     },
     {
@@ -1294,7 +1273,7 @@
     },
     {
       "type": "text",
-      "name": "blank",
+      "name": "blank60",
       "style_list": "flex: 1"
     },
     {
@@ -1304,7 +1283,7 @@
     },
     {
       "type": "text",
-      "name": "blank",
+      "name": "blank61",
       "style_list": "flex: 1"
     },
     {
@@ -1312,7 +1291,7 @@
     },
     {
       "type": "image",
-      "name": "arrows3",
+      "name": "arrows319",
       "value": "ESMIll/ESMLPArrows3.svg",
       "style_list": "max-width: 90px;\nmargin-top: -15px;"
     },
@@ -1326,31 +1305,31 @@
       "name": "button_sw20_group1_1",
       "value": "Subtract 10",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_ASSD_AS10;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
-      "style_list": "flex: 10"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 20"
     },
     {
       "type": "button",
       "name": "button_sw20_group1_2",
-      "value": "Place Value",
+      "value": "Place Value with 10",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_ASSD_PVto19;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
-      "style_list": "flex:8"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 20"
     },
     {
       "type": "button",
       "name": "button_sw20_group1_3",
-      "value": "10 as Bridge",
+      "value": "Use 10 as a Bridge",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_ASSD_10BridgeS;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
-      "style_list": "flex: 10"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 20"
     },
     {
       "type": "end_display_group"
     },
     {
       "type": "image",
-      "name": "arrows1",
+      "name": "arrows120",
       "value": "ESMIll/ESMLPArrows1.svg",
       "style_list": "max-width: 30px;\nmargin-top: -2px;"
     },
@@ -1361,7 +1340,7 @@
     },
     {
       "type": "text",
-      "name": "spacer",
+      "name": "spacer62",
       "style_list": "flex: 1;"
     },
     {
@@ -1369,12 +1348,11 @@
       "name": "button_sw20_group2_1",
       "value": "Subtraction Within 20",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_ASSD_SD_Add_Sub;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
-      "style_list": "flex: 3;"
+      "parameter_list": "variant: card, compact;"
     },
     {
       "type": "text",
-      "name": "spacer",
+      "name": "spacer63",
       "style_list": "flex: 1;"
     },
     {
@@ -1442,33 +1420,33 @@
     {
       "type": "button",
       "name": "button_sm_group1_1",
-      "value": "Mult. Model",
+      "value": "Multiply Model",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_MSD_MultRep;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
-      "style_list": "flex: 3;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 20;"
     },
     {
       "type": "button",
       "name": "button_sm_group1_2",
-      "value": "Mult. Order",
+      "value": "Multiply Any Order",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_MSD_MultCommutes;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
-      "style_list": "flex: 1"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 20;"
     },
     {
       "type": "button",
       "name": "button_sm_group1_3",
-      "value": "Skip Count",
+      "value": "Skip Counting",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_MSD_Skipping;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
-      "style_list": "flex: 1"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 20;"
     },
     {
       "type": "end_display_group"
     },
     {
       "type": "image",
-      "name": "arrows3",
+      "name": "arrows321",
       "value": "ESMIll/ESMLPArrows3.svg",
       "style_list": "max-width: 90px;\nmargin-top: 0px;"
     },
@@ -1480,30 +1458,33 @@
     {
       "type": "button",
       "name": "button_sm_group2_1",
-      "value": "2 Times",
+      "value": "Doubling",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_MSD_Doubling;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 20;"
     },
     {
       "type": "button",
       "name": "button_sm_group2_2",
-      "value": "Times 10, 5",
+      "value": "Multiply by 10, 5",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_MSD_Mult_5_10;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 20;"
     },
     {
       "type": "button",
       "name": "button_sm_group2_3",
       "value": "Squares",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_MSD_AllSingles;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 20;"
     },
     {
       "type": "end_display_group"
     },
     {
       "type": "image",
-      "name": "arrows3",
+      "name": "arrows322",
       "value": "ESMIll/ESMLPArrows3.svg",
       "style_list": "max-width: 90px;\nmargin-top: 0px;"
     },
@@ -1517,31 +1498,31 @@
       "name": "button_sm_group3_1",
       "value": "Using Doubles",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_MSD_Combining;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
-      "style_list": "flex: 1;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 20;"
     },
     {
       "type": "button",
       "name": "button_sm_group3_2",
-      "value": "One group more or less",
+      "value": "1 group more/less",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_MSD_Combining;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
-      "style_list": "flex: 3;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 20;"
     },
     {
       "type": "button",
       "name": "button_sm_group3_3",
-      "value": "Comb.",
+      "value": "Combining",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_MSD_Combining;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
-      "style_list": "flex: 1;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 20;"
     },
     {
       "type": "end_display_group"
     },
     {
       "type": "image",
-      "name": "arrows1",
+      "name": "arrows123",
       "value": "ESMIll/ESMLPArrows1.svg",
       "style_list": "max-width: 30px;\nmargin-top: -2px;"
     },
@@ -1552,7 +1533,7 @@
     },
     {
       "type": "text",
-      "name": "spacer",
+      "name": "spacer76",
       "style_list": "flex: 1;"
     },
     {
@@ -1560,12 +1541,11 @@
       "name": "button_sm_group4_1",
       "value": "All Single-digit Multiplication",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_MSD_AllSingles;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
-      "style_list": "flex: 3;"
+      "parameter_list": "variant: card, compact;"
     },
     {
       "type": "text",
-      "name": "spacer",
+      "name": "spacer77",
       "style_list": "flex: 1;"
     },
     {
@@ -1612,7 +1592,7 @@
     {
       "type": "text",
       "name": "info_single_div",
-      "value": "**Equal Parts for Shapes and Sets** Splitting up shapes and sets of objects into equal-size pieces is a good introduction to fractions and division. It also gives lots of practice for understanding the model for division.\n\n**Equal Parts – Sharing Quantities** Sharing situations are a wonderful source of problems that children can relate to. Sharing a quantity equally among two people is an early and powerfuly way of learning dividing by 2 and taking halves. This naturally leads to more complicated sharing as your children's skills develop.\n\n**Division Models** As with subtraction, division can be thought of in at least two ways. If you have 20 things and want to put them in piles of 5, you can ask how many piles there will be. Or, if you want to make 5 equal piles, you can ask how big the piles will be. The idea of sharing is an example of the second interpretation – you want to share equally among a certain number of people. \n\n**Skip Counting** As will be discussed in the \"Guess and Revise\" method, skip counting is a useful resource for finding division results after an initial estimate. It is not intended as a tool to do division all on its own.\n\n**Dividsion With No Remainder** Although skip counting can be used for this in the short term, a better long term solution is to have a strong knowledge of the single-digit multiplication facts and use fact families to connect your students' knowledge of multiplication with solving division problems. For example, if 3 x 5 is well known to a child, then the fact family for 3 x 5 = 15 will help with the related facts: 5 x 3 = 15, 15 ÷ 3 = 5, and 15 ÷ 5 = 3.\n\n**Division With Remainders** Until division becomes fully automatic, some version of guessing and revising is the way to approach these. There is no way to memorize all these math facts. Being good at skip counting helps a lot with these. The number 5 is often a good initial guess to start from – it is in the middle of 1-digit numbers and it is easy to calculate the multiples of it.\n\nFor example, to calculate 27 ÷ 4 encourage your students to do the following:\n* Make an initial guess. Perhaps 5 in this example.\n* Check the guess and see if it is too high or too low.  5 x 4 = 20 is 7 too low, so we'll need one more 4.\n* Revise the guess and check again.\n\nWith practice, their initial guesses will grow increasingly accurate.\n\n**Division and Sharing** Working with sharing problems leads to better division number sense. It also is a good platform for discussing what happens in real world problems when there are division problems with non-zero remainders.\n\n**All Single-Digit Division** Using these methods for dividing with and without remainders, your students will now be able to master (with practice) all single-digit division problems! \n\n**What Comes Next** This pathway is foundational for the \"Early Fractions\" pathway."
+      "value": "**Equal Parts for Shapes and Sets** Splitting up shapes and sets of objects into equal-size pieces is a good introduction to fractions and division. It also gives lots of practice for understanding the model for division.\n\n**Equal Parts – Sharing Quantities** Sharing situations are a wonderful source of problems that children can relate to. Sharing a quantity equally among two people is an early and powerfuly way of learning dividing by 2 and taking halves. This naturally leads to more complicated sharing as your children's skills develop.\n\n**Division Models** As with subtraction, division can be thought of in at least two ways. If you have 20 things and want to put them in piles of 5, you can ask how many piles there will be. Or, if you want to make 5 equal piles, you can ask how big the piles will be. The idea of sharing is an example of the second interpretation – you want to share equally among a certain number of people. \n\n**Skip Counting** As will be discussed in the \"Guess and Revise\" method, skip counting is a useful resource for finding division results after an initial estimate. It is not intended as a tool to do division all on its own.\n\n**Division With 0** Dividing by 0 never makes sense. Dividing into 0 by a nonzero number always produces 0 as a result.\n\n**Dividsion With No Remainder** Although skip counting can be used for this in the short term, a better long term solution is to have a strong knowledge of the single-digit multiplication facts and use fact families to connect your students' knowledge of multiplication with solving division problems. For example, if 3 x 5 is well known to a child, then the fact family for 3 x 5 = 15 will help with the related facts: 5 x 3 = 15, 15 ÷ 3 = 5, and 15 ÷ 5 = 3.\n\n**Division With Remainders** Until division becomes fully automatic, some version of guessing and revising is the way to approach these. There is no way to memorize all these math facts. Being good at skip counting helps a lot with these. The number 5 is often a good initial guess to start from – it is in the middle of 1-digit numbers and it is easy to calculate the multiples of it.\n\nFor example, to calculate 27 ÷ 4 encourage your students to do the following:\n* Make an initial guess. Perhaps 5 in this example.\n* Check the guess and see if it is too high or too low.  5 x 4 = 20 is 7 too low, so we'll need one more 4.\n* Revise the guess and check again.\n\nWith practice, their initial guesses will grow increasingly accurate.\n\n**Division and Sharing** Working with sharing problems leads to better division number sense. It also is a good platform for discussing what happens in real world problems when there are division problems with non-zero remainders.\n\n**All Single-Digit Division** Using these methods for dividing with and without remainders, your students will now be able to master (with practice) all single-digit division problems! \n\n**What Comes Next** This pathway is foundational for the \"Early Fractions\" pathway."
     },
     {
       "type": "end_display_group"
@@ -1633,17 +1613,17 @@
     },
     {
       "type": "text",
-      "name": "blank",
+      "name": "blank80",
       "style_list": "flex: 1"
     },
     {
       "type": "text",
       "name": "text_sd_group0_1",
-      "value": "Before starting this pathway, do the Single-Digit Multiplication pathway."
+      "value": "Do the Single-Digit Multiplication pathway before this pathway."
     },
     {
       "type": "text",
-      "name": "blank",
+      "name": "blank81",
       "style_list": "flex: 1"
     },
     {
@@ -1651,7 +1631,7 @@
     },
     {
       "type": "image",
-      "name": "arrows2",
+      "name": "arrows224",
       "value": "ESMIll/ESMLPArrows2.svg",
       "style_list": "max-width: 70px;\nmargin-top: -15px;"
     },
@@ -1661,32 +1641,37 @@
       "style_list": "margin-top: -3px;"
     },
     {
+      "type": "text",
+      "name": "spacer82",
+      "style_list": "flex: 1;"
+    },
+    {
       "type": "button",
       "name": "button_sd_group1_1",
       "value": "Equal Parts – Shapes",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_F_EP_Shapes;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
+      "parameter_list": "variant: card, compact;",
       "style_list": "flex: 20;"
-    },
-    {
-      "type": "text",
-      "name": "spacer",
-      "style_list": "flex: 1;"
     },
     {
       "type": "button",
       "name": "button_sd_group1_2",
       "value": "Equal Parts – Sets",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_F_EP_Sets;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
+      "parameter_list": "variant: card, compact;",
       "style_list": "flex: 20;"
+    },
+    {
+      "type": "text",
+      "name": "spacer83",
+      "style_list": "flex: 1;"
     },
     {
       "type": "end_display_group"
     },
     {
       "type": "image",
-      "name": "arrows3",
+      "name": "arrows325",
       "value": "ESMIll/ESMLPArrows3.svg",
       "style_list": "max-width: 90px;\nmargin-top: 0px;"
     },
@@ -1696,32 +1681,45 @@
       "style_list": "margin-top: -3px;"
     },
     {
+      "type": "text",
+      "name": "spacer84",
+      "style_list": "flex: 1;"
+    },
+    {
       "type": "button",
       "name": "button_sd_group2_1",
       "value": "Division Model",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_DSD_Models;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 20;"
     },
     {
       "type": "button",
       "name": "button_sd_group2_2",
-      "value": "Skip Count",
+      "value": "Skip Counting",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_MSD_Skipping;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 20;"
     },
     {
       "type": "button",
       "name": "button_sd_group2_3",
-      "value": "Div. and 0",
+      "value": "Division With 0",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_DSD_Zero;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 20;"
+    },
+    {
+      "type": "text",
+      "name": "spacer85",
+      "style_list": "flex: 1;"
     },
     {
       "type": "end_display_group"
     },
     {
       "type": "image",
-      "name": "arrows3",
+      "name": "arrows326",
       "value": "ESMIll/ESMLPArrows3.svg",
       "style_list": "max-width: 90px;\nmargin-top: 0px;"
     },
@@ -1733,33 +1731,33 @@
     {
       "type": "button",
       "name": "button_sd_group4_1",
-      "value": "With No Rem.",
+      "value": "With No Remainder",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_DSD_Without_Rem;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
-      "style_list": "flex: 3;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 20;"
     },
     {
       "type": "button",
       "name": "button_sd_group4_2",
-      "value": "With a Rem.",
+      "value": "With A Remainder",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_DSD_With_Rem;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
-      "style_list": "flex: 3;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 20;"
     },
     {
       "type": "button",
       "name": "button_sd_group4_3",
-      "value": "Div. & Sharing",
+      "value": "Sharing",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_DSD_Div_Sharing;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
-      "style_list": "flex: 3;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 20;"
     },
     {
       "type": "end_display_group"
     },
     {
       "type": "image",
-      "name": "arrows1",
+      "name": "arrows127",
       "value": "ESMIll/ESMLPArrows1.svg",
       "style_list": "max-width: 30px;\nmargin-top: -2px;"
     },
@@ -1770,7 +1768,7 @@
     },
     {
       "type": "text",
-      "name": "spacer",
+      "name": "spacer86",
       "style_list": "flex: 1;"
     },
     {
@@ -1778,12 +1776,11 @@
       "name": "button_sd_group5_1",
       "value": "All Single-digit Division",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_DSD_AllSingles;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
-      "style_list": "flex: 3;"
+      "parameter_list": "variant: card, compact;"
     },
     {
       "type": "text",
-      "name": "spacer",
+      "name": "spacer87",
       "style_list": "flex: 1;"
     },
     {
@@ -1851,7 +1848,7 @@
     },
     {
       "type": "text",
-      "name": "spacer",
+      "name": "spacer90",
       "style_list": "flex: 1;"
     },
     {
@@ -1859,11 +1856,11 @@
       "name": "button_efract_group1_1",
       "value": "Fractions Introduction",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_F_Intro;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;"
+      "parameter_list": "variant: card, compact;"
     },
     {
       "type": "text",
-      "name": "spacer",
+      "name": "spacer91",
       "style_list": "flex: 1;"
     },
     {
@@ -1871,7 +1868,7 @@
     },
     {
       "type": "image",
-      "name": "arrows2",
+      "name": "arrows228",
       "value": "ESMIll/ESMLPArrows2.svg",
       "style_list": "max-width: 70px;\nmargin-top: 0px;"
     },
@@ -1881,25 +1878,37 @@
       "style_list": "margin-top: -3px;"
     },
     {
+      "type": "text",
+      "name": "spacer92",
+      "style_list": "flex: 1;"
+    },
+    {
       "type": "button",
       "name": "button_efract_group2_1",
       "value": "Equal Parts – Shapes",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_F_EP_Shapes;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 20;"
     },
     {
       "type": "button",
       "name": "button_efract_group2_2",
       "value": "Equal Parts – Sets",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_F_EP_Sets;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 20;"
+    },
+    {
+      "type": "text",
+      "name": "spacer93",
+      "style_list": "flex: 1;"
     },
     {
       "type": "end_display_group"
     },
     {
       "type": "image",
-      "name": "arrows2",
+      "name": "arrows229",
       "value": "ESMIll/ESMLPArrows2.svg",
       "style_list": "max-width: 70px;\nmargin-top: 0px;"
     },
@@ -1909,27 +1918,37 @@
       "style_list": "margin-top: -3px;"
     },
     {
+      "type": "text",
+      "name": "spacer94",
+      "style_list": "flex: 1;"
+    },
+    {
       "type": "button",
       "name": "button_efract_group3_1",
-      "value": "Unit & Non-unit",
+      "value": "Unit & Non-unit Fractions",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_F_Unit_Non;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
-      "style_list": "flex: 10;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 20;"
     },
     {
       "type": "button",
       "name": "button_efract_group3_2",
       "value": "Value & Number Line",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_F_Value;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
-      "style_list": "flex: 10;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 20;"
+    },
+    {
+      "type": "text",
+      "name": "spacer95",
+      "style_list": "flex: 1;"
     },
     {
       "type": "end_display_group"
     },
     {
       "type": "image",
-      "name": "arrows2",
+      "name": "arrows230",
       "value": "ESMIll/ESMLPArrows2.svg",
       "style_list": "max-width: 70px;\nmargin-top: 0px;"
     },
@@ -1939,27 +1958,37 @@
       "style_list": "margin-top: -3px;"
     },
     {
+      "type": "text",
+      "name": "spacer96",
+      "style_list": "flex: 1;"
+    },
+    {
       "type": "button",
       "name": "button_efract_group4_1",
-      "value": "Compare – Same Denom.",
+      "value": "Compare – Same Denominator",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_F_Comp_Order_Same;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
-      "style_list": "flex: 3;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 20;"
     },
     {
       "type": "button",
       "name": "button_efract_group4_2",
-      "value": "Add/Sub – Same Denom.",
+      "value": "Add/Sub – Same Denominator",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_F_Add_Sub_Same;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
-      "style_list": "flex: 3;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 20;"
+    },
+    {
+      "type": "text",
+      "name": "spacer97",
+      "style_list": "flex: 1;"
     },
     {
       "type": "end_display_group"
     },
     {
       "type": "image",
-      "name": "arrows1",
+      "name": "arrows131",
       "value": "ESMIll/ESMLPArrows1.svg",
       "style_list": "max-width: 30px;\nmargin-top: 0px;"
     },
@@ -1970,7 +1999,7 @@
     },
     {
       "type": "text",
-      "name": "spacer",
+      "name": "spacer98",
       "style_list": "flex: 1;"
     },
     {
@@ -1978,11 +2007,11 @@
       "name": "button_efract_group5_1",
       "value": "Equivalent Fractions",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_F_Equivalent;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;"
+      "parameter_list": "variant: card, compact;"
     },
     {
       "type": "text",
-      "name": "spacer",
+      "name": "spacer99",
       "style_list": "flex: 1;"
     },
     {
@@ -1990,7 +2019,7 @@
     },
     {
       "type": "image",
-      "name": "arrows2",
+      "name": "arrows232",
       "value": "ESMIll/ESMLPArrows2.svg",
       "style_list": "max-width: 70px;\nmargin-top: 0px;"
     },
@@ -2000,27 +2029,37 @@
       "style_list": "margin-top: -3px;"
     },
     {
+      "type": "text",
+      "name": "spacer910",
+      "style_list": "flex: 1;"
+    },
+    {
       "type": "button",
       "name": "button_efract_group6_1",
-      "value": "Compare – Dividing Denoms.",
+      "value": "Compare – Dividing Denominators",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_F_Comp_Order_Divide;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
-      "style_list": "flex: 10;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 20;"
     },
     {
       "type": "button",
       "name": "button_efract_group6_2",
-      "value": "Add/Sub – Dividing Denoms.",
+      "value": "Add/Sub – Dividing Denominators",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_F_Add_Sub_Divide;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;",
-      "style_list": "flex: 10;"
+      "parameter_list": "variant: card, compact;",
+      "style_list": "flex: 20;"
+    },
+    {
+      "type": "text",
+      "name": "spacer911",
+      "style_list": "flex: 1;"
     },
     {
       "type": "end_display_group"
     },
     {
       "type": "image",
-      "name": "arrows1",
+      "name": "arrows133",
       "value": "ESMIll/ESMLPArrows1.svg",
       "style_list": "max-width: 30px;\nmargin-top: 0px;"
     },
@@ -2031,7 +2070,7 @@
     },
     {
       "type": "text",
-      "name": "spacer",
+      "name": "spacer912",
       "style_list": "flex: 1;"
     },
     {
@@ -2039,11 +2078,11 @@
       "name": "button_efract_group7_1",
       "value": "Integer Times Fraction",
       "action_list": "click | set_field:current_topic: data.esm_topics.NO_F_Int_Times_Fract;\nclick | go_to: esm_topic_template;",
-      "parameter_list": "variant: card;"
+      "parameter_list": "variant: card, compact;"
     },
     {
       "type": "text",
-      "name": "spacer",
+      "name": "spacer913",
       "style_list": "flex: 1;"
     },
     {
