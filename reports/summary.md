@@ -15,10 +15,10 @@
 | round_button | 10 |
 | select_text | 1 |
 | set_field | 51 |
-| set_variable | 803 |
+| set_variable | 802 |
 | simple_checkbox | 4 |
 | template | 97 |
-| text | 375 |
+| text | 381 |
 | text_area | 2 |
 | tile_component | 3 |
 | title | 58 |
@@ -51,7 +51,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 52169 KB | 52.2 MB |
+| total | 52525 KB | 52.5 MB |
 | unused | 22328 KB | 22.3 MB |
 </details>
 
@@ -1779,6 +1779,10 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMTopicAS2and136And7.svg | 19.3 | 1 |
 | ESMIll/ESMTopicASWithin5TenFrame.svg | 3.6 | 1 |
 | ESMIll/ESMTopicAddCommutes.svg | 3.3 | 2 |
+| ESMIll/ESMTopicClockFacesFiveMinutes.svg | 81.9 | 1 |
+| ESMIll/ESMTopicClockFacesHours.svg | 93.4 | 1 |
+| ESMIll/ESMTopicClockFacesQuarterHours.svg | 94.5 | 1 |
+| ESMIll/ESMTopicClockFacesSingleMinutes.svg | 85.6 | 1 |
 | ESMIll/ESMTopicCompDecompBreakingUp.svg | 25.3 | 1 |
 | ESMIll/ESMTopicCompDecompEqualPieces.svg | 6.2 | 2 |
 | ESMIll/ESMTopicCompareTo10047.44.svg | 11.7 | 1 |

@@ -101,7 +101,7 @@
       "name": "button_@item.id",
       "value": "@item.name",
       "action_list": "click | set_field:curriculum_standard_abbrev: @item.id; \nclick | set_field:curriculum_standard_name: @item.name;\nclick | emit: force_reload;",
-      "parameter_list": "style: short; \ntext_align: center",
+      "parameter_list": "style: short;",
       "comments": "click | set_field.current_topic: data.efm_topics.@item.id;\nclick | go_to: efm_topic_template;\nclick | set_field:@local.click_history_field_name: @local.topics_click_history"
     },
     {
@@ -395,7 +395,7 @@
       "name": "button_topic",
       "value": "@local.topic_entries.name",
       "action_list": "click | set_field:current_topic: @local.topic_ptr;\nclick | go_to: esm_topic_template;\nclick | set_field:@local.click_history_field_name: @local.topics_click_history",
-      "parameter_list": "style: short; \ntext_align: center",
+      "parameter_list": "style: short;",
       "comments": "click | set_field.current_topic: data.efm_topics.@item.id;\nclick | go_to: efm_topic_template;\nclick | set_field:@local.click_history_field_name: @local.topics_click_history"
     },
     {
