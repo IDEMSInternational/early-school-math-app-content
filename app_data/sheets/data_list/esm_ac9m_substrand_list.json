@@ -425,8 +425,9 @@
     {
       "id": "AC9M_M_FM02_",
       "strand_id": "AC9M_M",
-      "count": 1,
-      "topic_id_1": "Meas_Time_TTH",
+      "count": 2,
+      "topic_id_1": "Meas_Time_PofD",
+      "topic_id_2": "Meas_Time_Cal",
       "name": "FM02: Weekdays & Times of Day",
       "_translations": {
         "name": {}
@@ -472,17 +473,95 @@
     {
       "id": "AC9M_M_1M03_",
       "strand_id": "AC9M_M",
-      "count": 3,
-      "topic_id_1": "Meas_Time_TTH",
-      "topic_id_2": "Meas_Time_PofD",
-      "topic_id_3": "Meas_Time_Cal",
-      "name": "1M03: Time Duration - Hrs, Days, Wks,",
+      "count": 2,
+      "topic_id_1": "Meas_Time_PofD",
+      "topic_id_2": "Meas_Time_Cal",
+      "name": "1M03: Time Duration - Days, Wks,",
       "_translations": {
         "name": {}
       },
       "_translatedFields": {
         "name": {
-          "eng": "1M03: Time Duration - Hrs, Days, Wks,"
+          "eng": "1M03: Time Duration - Days, Wks,"
+        }
+      }
+    },
+    {
+      "id": "AC9M_M_2M01_",
+      "strand_id": "AC9M_M",
+      "count": 2,
+      "topic_id_1": "Meas_Early_Comparing",
+      "topic_id_2": "Meas_Early_Units",
+      "name": "2M01: Measure Using Informal Units",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "2M01: Measure Using Informal Units"
+        }
+      }
+    },
+    {
+      "id": "AC9M_M_2M02_",
+      "strand_id": "AC9M_M",
+      "count": 2,
+      "topic_id_1": "NO_F_EP_Shapes",
+      "topic_id_2": "NO_F_EP_Sets",
+      "name": "2M02: Measure Fractions of Units",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "2M02: Measure Fractions of Units"
+        }
+      }
+    },
+    {
+      "id": "AC9M_M_2M03_",
+      "strand_id": "AC9M_M",
+      "count": 2,
+      "topic_id_1": "Meas_Time_PofD",
+      "topic_id_2": "Meas_Time_Cal",
+      "name": "2M03: Calendar Events",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "2M03: Calendar Events"
+        }
+      }
+    },
+    {
+      "id": "AC9M_M_2M04_",
+      "strand_id": "AC9M_M",
+      "count": 1,
+      "topic_id_1": "Meas_Time_TTH",
+      "name": "2M04: Analog Clocks - Hours, Halves, Quarters",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "2M04: Analog Clocks - Hours, Halves, Quarters"
+        }
+      }
+    },
+    {
+      "id": "AC9M_M_2M05_",
+      "strand_id": "AC9M_M",
+      "count": 2,
+      "topic_id_1": "Meas_Early_Comparing",
+      "topic_id_2": "Meas_Early_Units",
+      "name": "2M05: Fractions of Full Turn Angles",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "2M05: Fractions of Full Turn Angles"
         }
       }
     },
