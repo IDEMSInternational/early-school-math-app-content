@@ -167,8 +167,56 @@
       }
     },
     {
+      "name": "match_KEN24",
+      "value": "@fields.curriculum_standard_abbrev == \"KEN24\"",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "match_KEN24",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@fields.curriculum_standard_abbrev == \"KEN24\"",
+            "matchedExpression": "@fields.curriculum_standard_abbrev",
+            "type": "fields",
+            "fieldName": "curriculum_standard_abbrev"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.curriculum_standard_abbrev": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "match_GHA19",
+      "value": "@fields.curriculum_standard_abbrev == \"GHA19\"",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "match_GHA19",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@fields.curriculum_standard_abbrev == \"GHA19\"",
+            "matchedExpression": "@fields.curriculum_standard_abbrev",
+            "type": "fields",
+            "fieldName": "curriculum_standard_abbrev"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.curriculum_standard_abbrev": [
+          "value"
+        ]
+      }
+    },
+    {
       "name": "it_matches",
-      "value": "@local.match_ESM || @local.match_CCSSM || @local.match_TEKS || @local.match_AC9M || @local.match_UK20 || @local.match_NCRT",
+      "value": "@local.match_ESM || @local.match_CCSSM || @local.match_TEKS || @local.match_AC9M || @local.match_UK20 || @local.match_NCRT || @local.match_KEN24 || @local.match_GHA19",
       "_translations": {
         "value": {}
       },
@@ -177,40 +225,52 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@local.match_ESM || @local.match_CCSSM || @local.match_TEKS || @local.match_AC9M || @local.match_UK20 || @local.match_NCRT",
+            "fullExpression": "@local.match_ESM || @local.match_CCSSM || @local.match_TEKS || @local.match_AC9M || @local.match_UK20 || @local.match_NCRT || @local.match_KEN24 || @local.match_GHA19",
             "matchedExpression": "@local.match_ESM",
             "type": "local",
             "fieldName": "match_ESM"
           },
           {
-            "fullExpression": "@local.match_ESM || @local.match_CCSSM || @local.match_TEKS || @local.match_AC9M || @local.match_UK20 || @local.match_NCRT",
+            "fullExpression": "@local.match_ESM || @local.match_CCSSM || @local.match_TEKS || @local.match_AC9M || @local.match_UK20 || @local.match_NCRT || @local.match_KEN24 || @local.match_GHA19",
             "matchedExpression": "@local.match_CCSSM",
             "type": "local",
             "fieldName": "match_CCSSM"
           },
           {
-            "fullExpression": "@local.match_ESM || @local.match_CCSSM || @local.match_TEKS || @local.match_AC9M || @local.match_UK20 || @local.match_NCRT",
+            "fullExpression": "@local.match_ESM || @local.match_CCSSM || @local.match_TEKS || @local.match_AC9M || @local.match_UK20 || @local.match_NCRT || @local.match_KEN24 || @local.match_GHA19",
             "matchedExpression": "@local.match_TEKS",
             "type": "local",
             "fieldName": "match_TEKS"
           },
           {
-            "fullExpression": "@local.match_ESM || @local.match_CCSSM || @local.match_TEKS || @local.match_AC9M || @local.match_UK20 || @local.match_NCRT",
+            "fullExpression": "@local.match_ESM || @local.match_CCSSM || @local.match_TEKS || @local.match_AC9M || @local.match_UK20 || @local.match_NCRT || @local.match_KEN24 || @local.match_GHA19",
             "matchedExpression": "@local.match_AC9M",
             "type": "local",
             "fieldName": "match_AC9M"
           },
           {
-            "fullExpression": "@local.match_ESM || @local.match_CCSSM || @local.match_TEKS || @local.match_AC9M || @local.match_UK20 || @local.match_NCRT",
+            "fullExpression": "@local.match_ESM || @local.match_CCSSM || @local.match_TEKS || @local.match_AC9M || @local.match_UK20 || @local.match_NCRT || @local.match_KEN24 || @local.match_GHA19",
             "matchedExpression": "@local.match_UK20",
             "type": "local",
             "fieldName": "match_UK20"
           },
           {
-            "fullExpression": "@local.match_ESM || @local.match_CCSSM || @local.match_TEKS || @local.match_AC9M || @local.match_UK20 || @local.match_NCRT",
+            "fullExpression": "@local.match_ESM || @local.match_CCSSM || @local.match_TEKS || @local.match_AC9M || @local.match_UK20 || @local.match_NCRT || @local.match_KEN24 || @local.match_GHA19",
             "matchedExpression": "@local.match_NCRT",
             "type": "local",
             "fieldName": "match_NCRT"
+          },
+          {
+            "fullExpression": "@local.match_ESM || @local.match_CCSSM || @local.match_TEKS || @local.match_AC9M || @local.match_UK20 || @local.match_NCRT || @local.match_KEN24 || @local.match_GHA19",
+            "matchedExpression": "@local.match_KEN24",
+            "type": "local",
+            "fieldName": "match_KEN24"
+          },
+          {
+            "fullExpression": "@local.match_ESM || @local.match_CCSSM || @local.match_TEKS || @local.match_AC9M || @local.match_UK20 || @local.match_NCRT || @local.match_KEN24 || @local.match_GHA19",
+            "matchedExpression": "@local.match_GHA19",
+            "type": "local",
+            "fieldName": "match_GHA19"
           }
         ]
       },
@@ -231,6 +291,12 @@
           "value"
         ],
         "@local.match_NCRT": [
+          "value"
+        ],
+        "@local.match_KEN24": [
+          "value"
+        ],
+        "@local.match_GHA19": [
           "value"
         ]
       }
@@ -321,7 +387,7 @@
     },
     {
       "name": "comment_ignore",
-      "value": "This code is duplicated in the Resource Finder",
+      "value": "NOTE: This code is duplicated in the Resource Finder. Also update esm_standards_view in esm_routines_viewer.",
       "_translations": {
         "value": {}
       },
@@ -585,7 +651,7 @@
         {
           "type": "set_field",
           "name": "curriculum_standard_name",
-          "value": "Common Core State Stds. for Math",
+          "value": "Common Core St. Stds. Math",
           "_translations": {
             "value": {}
           },
@@ -945,6 +1011,156 @@
             "condition": [
               {
                 "fullExpression": "@fields.curriculum_standard_abbrev == \"NCRT\"",
+                "matchedExpression": "@fields.curriculum_standard_abbrev",
+                "type": "fields",
+                "fieldName": "curriculum_standard_abbrev"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@fields.curriculum_standard_abbrev": [
+              "condition"
+            ]
+          }
+        },
+        {
+          "type": "set_field",
+          "name": "curriculum_standard_name",
+          "value": "Kenya 2024",
+          "_translations": {
+            "value": {}
+          },
+          "condition": "@fields.curriculum_standard_abbrev == \"KEN24\"",
+          "_nested_name": "dg_select_view_new.curriculum_standard_name",
+          "_dynamicFields": {
+            "condition": [
+              {
+                "fullExpression": "@fields.curriculum_standard_abbrev == \"KEN24\"",
+                "matchedExpression": "@fields.curriculum_standard_abbrev",
+                "type": "fields",
+                "fieldName": "curriculum_standard_abbrev"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@fields.curriculum_standard_abbrev": [
+              "condition"
+            ]
+          }
+        },
+        {
+          "type": "set_field",
+          "name": "top_standards_level",
+          "value": "data.esm_kenya24_strands",
+          "_translations": {
+            "value": {}
+          },
+          "condition": "@fields.curriculum_standard_abbrev == \"KEN24\"",
+          "_nested_name": "dg_select_view_new.top_standards_level",
+          "_dynamicFields": {
+            "condition": [
+              {
+                "fullExpression": "@fields.curriculum_standard_abbrev == \"KEN24\"",
+                "matchedExpression": "@fields.curriculum_standard_abbrev",
+                "type": "fields",
+                "fieldName": "curriculum_standard_abbrev"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@fields.curriculum_standard_abbrev": [
+              "condition"
+            ]
+          }
+        },
+        {
+          "type": "set_field",
+          "name": "middle_standards_level",
+          "value": "data.esm_kenya24_substrands",
+          "_translations": {
+            "value": {}
+          },
+          "condition": "@fields.curriculum_standard_abbrev == \"KEN24\"",
+          "_nested_name": "dg_select_view_new.middle_standards_level",
+          "_dynamicFields": {
+            "condition": [
+              {
+                "fullExpression": "@fields.curriculum_standard_abbrev == \"KEN24\"",
+                "matchedExpression": "@fields.curriculum_standard_abbrev",
+                "type": "fields",
+                "fieldName": "curriculum_standard_abbrev"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@fields.curriculum_standard_abbrev": [
+              "condition"
+            ]
+          }
+        },
+        {
+          "type": "set_field",
+          "name": "curriculum_standard_name",
+          "value": "Ghana 2019",
+          "_translations": {
+            "value": {}
+          },
+          "condition": "@fields.curriculum_standard_abbrev == \"GHA19\"",
+          "_nested_name": "dg_select_view_new.curriculum_standard_name",
+          "_dynamicFields": {
+            "condition": [
+              {
+                "fullExpression": "@fields.curriculum_standard_abbrev == \"GHA19\"",
+                "matchedExpression": "@fields.curriculum_standard_abbrev",
+                "type": "fields",
+                "fieldName": "curriculum_standard_abbrev"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@fields.curriculum_standard_abbrev": [
+              "condition"
+            ]
+          }
+        },
+        {
+          "type": "set_field",
+          "name": "top_standards_level",
+          "value": "data.esm_ghana19_strands",
+          "_translations": {
+            "value": {}
+          },
+          "condition": "@fields.curriculum_standard_abbrev == \"GHA19\"",
+          "_nested_name": "dg_select_view_new.top_standards_level",
+          "_dynamicFields": {
+            "condition": [
+              {
+                "fullExpression": "@fields.curriculum_standard_abbrev == \"GHA19\"",
+                "matchedExpression": "@fields.curriculum_standard_abbrev",
+                "type": "fields",
+                "fieldName": "curriculum_standard_abbrev"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@fields.curriculum_standard_abbrev": [
+              "condition"
+            ]
+          }
+        },
+        {
+          "type": "set_field",
+          "name": "middle_standards_level",
+          "value": "data.esm_ghana19_substrands",
+          "_translations": {
+            "value": {}
+          },
+          "condition": "@fields.curriculum_standard_abbrev == \"GHA19\"",
+          "_nested_name": "dg_select_view_new.middle_standards_level",
+          "_dynamicFields": {
+            "condition": [
+              {
+                "fullExpression": "@fields.curriculum_standard_abbrev == \"GHA19\"",
                 "matchedExpression": "@fields.curriculum_standard_abbrev",
                 "type": "fields",
                 "fieldName": "curriculum_standard_abbrev"

@@ -55,6 +55,16 @@
       "condition": "@fields.curriculum_standard_abbrev == \"NCRT\""
     },
     {
+      "name": "standard_chars",
+      "value": "ken24_standards",
+      "condition": "@fields.curriculum_standard_abbrev == \"KEN24\""
+    },
+    {
+      "name": "standard_chars",
+      "value": "gha19_standards",
+      "condition": "@fields.curriculum_standard_abbrev == \"GHA19\""
+    },
+    {
       "name": "topic_theme_base_chars",
       "value": "topic_theme_"
     },
