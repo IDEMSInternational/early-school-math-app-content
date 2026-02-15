@@ -1,0 +1,544 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "esm_ghana19_substrand_list",
+  "data_list_name": "esm_ghana19_substrands",
+  "status": "released",
+  "rows": [
+    {
+      "id": "GHA19_FMT_EAA_",
+      "name::eng": "FMT.EAA: Early & Always",
+      "strand_id": "GHA19_FMT",
+      "count": 6,
+      "topic_id_1": "FMT_EAA_EandO",
+      "topic_id_2": "FMT_EAA_FMTinH",
+      "topic_id_3": "FMT_EAA_FMTOA",
+      "topic_id_4": "FMT_EAA_FMTDC",
+      "topic_id_5": "FMT_EAA_FMTC",
+      "topic_id_6": "FMT_EAA_FMTPDA"
+    },
+    {
+      "id": "GHA19_FMT_RWC_",
+      "name::eng": "FMT.RWC: Read w/ Children",
+      "strand_id": "GHA19_FMT",
+      "count": 2,
+      "topic_id_1": "FMT_RWC_DRP",
+      "topic_id_2": "FMT_RWC_DRV"
+    },
+    {
+      "id": "GHA19_CR_Num9_",
+      "name::eng": "K1.1.1.1 Numbers to 9",
+      "strand_id": "GHA19_CR",
+      "count": 6,
+      "topic_id_1": "NPV_QC10_QC",
+      "topic_id_2": "NPV_QC10_CMQ10",
+      "topic_id_3": "NPV_QC10_Sub10",
+      "topic_id_4": "NPV_QC10_Comp10",
+      "topic_id_5": "NPV_QC10_Ordinals",
+      "topic_id_6": "NPV_QC10_WN10"
+    },
+    {
+      "id": "GHA19_CR_Num20_",
+      "name::eng": "K2.1.1.1 Numbers to 20",
+      "strand_id": "GHA19_CR",
+      "count": 3,
+      "topic_id_1": "NPV_CPV100_Count20",
+      "topic_id_2": "NPV_CPV100_PV20",
+      "topic_id_3": "NPV_CPV100_Comp20"
+    },
+    {
+      "id": "GHA19_CR_Num100_",
+      "name::eng": "B1.1.1.1 Numbers to 100",
+      "strand_id": "GHA19_CR",
+      "count": 4,
+      "topic_id_1": "NPV_CPV100_CountPV100",
+      "topic_id_2": "NPV_CPV100_Comp100",
+      "topic_id_3": "NPV_QC10_Ordinals",
+      "topic_id_4": "Meas_Early_Units"
+    },
+    {
+      "id": "GHA19_CR_Num1000_",
+      "name::eng": "B2.1.1.1 Numbers to 1000",
+      "strand_id": "GHA19_CR",
+      "count": 1,
+      "topic_id_1": "Unwritten"
+    },
+    {
+      "id": "GHA19_CR_Num10000_",
+      "name::eng": "B3.1.1.1 Numbers to 10000",
+      "strand_id": "GHA19_CR",
+      "count": 1,
+      "topic_id_1": "Unwritten"
+    },
+    {
+      "id": "GHA19_CR_NegNum_",
+      "name::eng": "B3.1.1.2 Negative Numbers",
+      "strand_id": "GHA19_CR",
+      "count": 1,
+      "topic_id_1": "Unwritten"
+    },
+    {
+      "id": "GHA19_CR_NumLin_PN_",
+      "name::eng": "B3.1.1.3 Num. Line, Pos. & Neg",
+      "strand_id": "GHA19_CR",
+      "count": 1,
+      "topic_id_1": "Unwritten"
+    },
+    {
+      "id": "GHA19_Op_Order10_",
+      "name::eng": "K1.2.1.1 Order to 10; <,>,=",
+      "strand_id": "GHA19_Op",
+      "count": 1,
+      "topic_id_1": "NPV_QC10_Comp10"
+    },
+    {
+      "id": "GHA19_Op_AS10Obj_",
+      "name::eng": "K1.1.2.2 Add/Sub to 10 w/ Objects",
+      "strand_id": "GHA19_Op",
+      "count": 2,
+      "topic_id_1": "NO_AS10_QAS",
+      "topic_id_2": "NPV_QC10_Sub10"
+    },
+    {
+      "id": "GHA19_Op_ASProb_",
+      "name::eng": "K2.1.2.1 Add/Sub to 10 Word Problems",
+      "strand_id": "GHA19_Op",
+      "count": 1,
+      "topic_id_1": "NO_ASSD_ASto10"
+    },
+    {
+      "id": "GHA19_Op_AS20Obj_",
+      "name::eng": "K2.1.2.2 Part-Whole Add/Sub to 20 w/ Objects",
+      "strand_id": "GHA19_Op",
+      "count": 1,
+      "topic_id_1": "NO_AS10_NBFF"
+    },
+    {
+      "id": "GHA19_Op_AS20_",
+      "name::eng": "B1.1.2.1 Add/Sub within 20",
+      "strand_id": "GHA19_Op",
+      "count": 16,
+      "topic_id_1": "NO_AS10_QAS",
+      "topic_id_2": "NPV_QC10_Sub10",
+      "topic_id_3": "NO_AS10_AS1and2",
+      "topic_id_4": "NO_AS10_ASto5",
+      "topic_id_5": "NO_AS10_AT",
+      "topic_id_6": "NO_AS10_ANT",
+      "topic_id_7": "NO_AS10_AComm",
+      "topic_id_8": "NO_AS10_NBFF",
+      "topic_id_9": "NO_ASSD_PVto19",
+      "topic_id_10": "NO_ASSD_AddFingers",
+      "topic_id_11": "NO_ASSD_SubFingers",
+      "topic_id_12": "NO_ASSD_ASto10",
+      "topic_id_13": "NO_ASSD_AS10",
+      "topic_id_14": "NO_ASSD_10BridgeA",
+      "topic_id_15": "NO_ASSD_10BridgeS",
+      "topic_id_16": "NO_ASSD_SD_Add_Sub"
+    },
+    {
+      "id": "GHA19_Op_Eq_",
+      "name::eng": "B1.1.2.2 Equality Concept",
+      "strand_id": "GHA19_Op",
+      "count": 2,
+      "topic_id_1": "NPV_QC10_Comp10",
+      "topic_id_2": "NPV_CPV100_Comp20",
+      "topic_id_3": "NPV_CPV100_Comp100"
+    },
+    {
+      "id": "GHA19_Op_AS20Strat_",
+      "name::eng": "B1.1.2.3-4 Mental Add/Sub within 20; Problems",
+      "strand_id": "GHA19_Op",
+      "count": 8,
+      "topic_id_1": "NO_AS10_AS1and2",
+      "topic_id_2": "NO_ASSD_ASto10",
+      "topic_id_3": "NO_ASSD_AS10",
+      "topic_id_4": "NO_ASSD_10BridgeA",
+      "topic_id_5": "NO_ASSD_10BridgeS",
+      "topic_id_6": "NO_ASSD_SD_Add_Sub",
+      "topic_id_7": "PS_SWP_EASP",
+      "topic_id_8": "PS_SWP_EASE"
+    },
+    {
+      "id": "GHA19_Op_AS100_",
+      "name::eng": "B2.1.2.1 Add/Sub within 100",
+      "strand_id": "GHA19_Op",
+      "count": 3,
+      "topic_id_1": "NO_DD_AS2and1",
+      "topic_id_2": "NO_DD_AS2noRegroup",
+      "topic_id_3": "NO_DD_AS2wRegroup"
+    },
+    {
+      "id": "GHA19_Op_Eq100_",
+      "name::eng": "B2.1.2.2 = and ≠ within 100",
+      "strand_id": "GHA19_Op",
+      "count": 1,
+      "topic_id_1": "NPV_CPV100_Comp100"
+    },
+    {
+      "id": "GHA19_Op_MentAS20_",
+      "name::eng": "B2.1.2.3-4 Mental Add/Sub within 100; Problems",
+      "strand_id": "GHA19_Op",
+      "count": 5,
+      "topic_id_1": "NO_DD_AS2and1",
+      "topic_id_2": "NO_DD_AS2noRegroup",
+      "topic_id_3": "PS_SWP_EASP",
+      "topic_id_4": "PS_SWP_EASE",
+      "topic_id_5": "PS_SWP_ASP"
+    },
+    {
+      "id": "GHA19_Op_AS1000_",
+      "name::eng": "B3.1.2.1 Add/Sub within 1000",
+      "strand_id": "GHA19_Op",
+      "count": 1,
+      "topic_id_1": "Unwritten"
+    },
+    {
+      "id": "GHA19_Op_Eq1000_",
+      "name::eng": "B3.1.2.2 = and ≠ within 1000",
+      "strand_id": "GHA19_Op",
+      "count": 1,
+      "topic_id_1": "Unwritten"
+    },
+    {
+      "id": "GHA19_Op_MentAS100_",
+      "name::eng": "B3.1.2.3-4 Mental Add/Sub within 100",
+      "strand_id": "GHA19_Op",
+      "count": 1,
+      "topic_id_1": "Unwritten"
+    },
+    {
+      "id": "GHA19_Op_Mult5_",
+      "name::eng": "B3.1.2.5 Mult. Model; 1 to 5",
+      "strand_id": "GHA19_Op",
+      "count": 5,
+      "topic_id_1": "NO_MSD_Doubling",
+      "topic_id_2": "NO_MSD_Mult_5_10",
+      "topic_id_3": "NO_MSD_MultRep",
+      "topic_id_4": "NO_MSD_MultCommutes",
+      "topic_id_5": "NO_MSD_Skipping"
+    },
+    {
+      "id": "GHA19_Op_DivModels_",
+      "name::eng": "B3.1.2.6 Div. Models",
+      "strand_id": "GHA19_Op",
+      "count": 1,
+      "topic_id_1": "NO_DSD_Models"
+    },
+    {
+      "id": "GHA19_Fract_Half_",
+      "name::eng": "B1.1.3.1 Halves",
+      "strand_id": "GHA19_Fract",
+      "count": 4,
+      "topic_id_1": "NO_F_Intro",
+      "topic_id_2": "NO_F_EP_Shapes",
+      "topic_id_3": "NO_F_EP_Sets",
+      "topic_id_4": "NO_F_Unit_Non"
+    },
+    {
+      "id": "GHA19_Fract_HalfQuart_",
+      "name::eng": "B2.1.3.1 Halves, Fourths",
+      "strand_id": "GHA19_Fract",
+      "count": 4,
+      "topic_id_1": "NO_F_Intro",
+      "topic_id_2": "NO_F_EP_Shapes",
+      "topic_id_3": "NO_F_EP_Sets",
+      "topic_id_4": "NO_F_Unit_Non"
+    },
+    {
+      "id": "GHA19_Fract_Unit_",
+      "name::eng": "B3.1.3.1 Unit & Non-Units",
+      "strand_id": "GHA19_Fract",
+      "count": 2,
+      "topic_id_1": "NO_F_Unit_Non",
+      "topic_id_2": "NO_F_Value"
+    },
+    {
+      "id": "GHA19_Mon_CS_",
+      "name::eng": "K2.1.4.1 Coins & Currency; Store",
+      "strand_id": "GHA19_Mon",
+      "count": 1,
+      "topic_id_1": "Unwritten"
+    },
+    {
+      "id": "GHA19_Mon_VC_",
+      "name::eng": "B1.1.4.1 Value of Coins",
+      "strand_id": "GHA19_Mon",
+      "count": 1,
+      "topic_id_1": "Unwritten"
+    },
+    {
+      "id": "GHA19_Mon_CC50_",
+      "name::eng": "B2.1.4.1 Coins & Currency to 50 Cedis",
+      "strand_id": "GHA19_Mon",
+      "count": 1,
+      "topic_id_1": "Unwritten"
+    },
+    {
+      "id": "GHA19_Mon_MT_",
+      "name::eng": "B3.1.4.1 Transactions",
+      "strand_id": "GHA19_Mon",
+      "count": 1,
+      "topic_id_1": "Unwritten"
+    },
+    {
+      "id": "GHA19_PR_K1_Pat_",
+      "name::eng": "K1-2.2.1.1 Repeating Non-Numeric Patterns",
+      "strand_id": "GHA19_PR",
+      "count": 4,
+      "topic_id_1": "Geom_Pat_Intro",
+      "topic_id_2": "Geom_Pat_MSP",
+      "topic_id_3": "Geom_Shape_Tilings",
+      "topic_id_4": "Geom_Shape_Rigid_Symmetry"
+    },
+    {
+      "id": "GHA19_PR_B1_Pat_",
+      "name::eng": "B1.2.1.1 Repeating Patterns",
+      "strand_id": "GHA19_PR",
+      "count": 5,
+      "topic_id_1": "Geom_Pat_Intro",
+      "topic_id_2": "Geom_Pat_MSP",
+      "topic_id_3": "NO_MSD_Skipping",
+      "topic_id_4": "Geom_Shape_Tilings",
+      "topic_id_5": "Geom_Shape_Rigid_Symmetry"
+    },
+    {
+      "id": "GHA19_PR_B2_Pat_",
+      "name::eng": "B2.2.1.1 Number Patterns for Problems",
+      "strand_id": "GHA19_PR",
+      "count": 4,
+      "topic_id_1": "NO_NT_EvenOdd",
+      "topic_id_2": "NO_MSD_Skipping",
+      "topic_id_3": "PS_SWP_EASP",
+      "topic_id_4": "PS_SWP_EASE"
+    },
+    {
+      "id": "GHA19_PR_B3_Pat_",
+      "name::eng": "B3.2.1.1 Number Patterns for Problems",
+      "strand_id": "GHA19_PR",
+      "count": 5,
+      "topic_id_1": "NO_NT_EvenOdd",
+      "topic_id_2": "NO_MSD_Skipping",
+      "topic_id_3": "PS_SWP_EASP",
+      "topic_id_4": "PS_SWP_EASE",
+      "topic_id_5": "PS_SWP_ASP"
+    },
+    {
+      "id": "GHA19_LS_DrawLC_",
+      "name::eng": "K1.3.1.1 Draw w/ Lines & Circles",
+      "strand_id": "GHA19_LS",
+      "count": 1,
+      "topic_id_1": "Geom_Shape_DS"
+    },
+    {
+      "id": "GHA19_LS_23DS_",
+      "name::eng": "K1.3.1.2 2d & 3d Shapes",
+      "strand_id": "GHA19_LS",
+      "count": 2,
+      "topic_id_1": "Geom_Shape_DS",
+      "topic_id_2": "Geom_Shape_SN2D3D"
+    },
+    {
+      "id": "GHA19_LS_SCS_",
+      "name::eng": "K2.3.1.1 Sort & Classify Shapes",
+      "strand_id": "GHA19_LS",
+      "count": 5,
+      "topic_id_1": "Geom_OP_PG",
+      "topic_id_2": "Geom_OP_SD",
+      "topic_id_3": "Geom_Shape_DS",
+      "topic_id_4": "Geom_Shape_SN2D3D",
+      "topic_id_5": "Geom_Shape_CompSort"
+    },
+    {
+      "id": "GHA19_LS_D2dDComp_",
+      "name::eng": "B1.3.1.1 Describe 2d & 3d Shapes; Comp. & Decomp.",
+      "strand_id": "GHA19_LS",
+      "count": 3,
+      "topic_id_1": "Geom_Shape_DS",
+      "topic_id_2": "Geom_Shape_SN2D3D",
+      "topic_id_3": "Geom_Shape_CompDecomp"
+    },
+    {
+      "id": "GHA19_LS_Prop23DS_",
+      "name::eng": "B2.3.1.1 Properties of 2d & 3d Shapes",
+      "strand_id": "GHA19_LS",
+      "count": 3,
+      "topic_id_1": "Geom_Shape_DS",
+      "topic_id_2": "Geom_Shape_SN2D3D",
+      "topic_id_3": "Geom_Shape_CompDecomp"
+    },
+    {
+      "id": "GHA19_LS_AngleSide_",
+      "name::eng": "B3.3.1.1 Angles & Sides",
+      "strand_id": "GHA19_LS",
+      "count": 4,
+      "topic_id_1": "Geom_Shape_DS",
+      "topic_id_2": "Geom_Shape_SN2D3D",
+      "topic_id_3": "Meas_Early_Comparing",
+      "topic_id_4": "Meas_Early_Units"
+    },
+    {
+      "id": "GHA19_PT_K2PosSpace_",
+      "name::eng": "K2.3.2.1 Position in Space",
+      "strand_id": "GHA19_PT",
+      "count": 1,
+      "topic_id_1": "Geom_OP_PG"
+    },
+    {
+      "id": "GHA19_PT_B1PosSpace_",
+      "name::eng": "B1.3.2.1 Position in Space",
+      "strand_id": "GHA19_PT",
+      "count": 1,
+      "topic_id_1": "Geom_OP_PG"
+    },
+    {
+      "id": "GHA19_PT_B2PosIndLen_",
+      "name::eng": "B2.3.2.1 Position Indep. Length",
+      "strand_id": "GHA19_PT",
+      "count": 3,
+      "topic_id_1": "Meas_Early_Overview",
+      "topic_id_2": "Meas_Early_Comparing",
+      "topic_id_3": "Meas_Early_Units"
+    },
+    {
+      "id": "GHA19_PT_B3PosIndLen_",
+      "name::eng": "B3.3.2.1 Position Indep. Length",
+      "strand_id": "GHA19_PT",
+      "count": 3,
+      "topic_id_1": "Meas_Early_Overview",
+      "topic_id_2": "Meas_Early_Comparing",
+      "topic_id_3": "Meas_Early_Units"
+    },
+    {
+      "id": "GHA19_Meas_AnalHours_",
+      "name::eng": "K1.3.3.1 Analog Clock; Hours",
+      "strand_id": "GHA19_Meas",
+      "count": 1,
+      "topic_id_1": "Meas_Time_TTH"
+    },
+    {
+      "id": "GHA19_Meas_K2Comp_",
+      "name::eng": "K2.3.3.1-2 Compare Size, Length, Capacity, Mass",
+      "strand_id": "GHA19_Meas",
+      "count": 2,
+      "topic_id_1": "Meas_Early_Overview",
+      "topic_id_2": "Meas_Early_Comparing"
+    },
+    {
+      "id": "GHA19_Meas_B1Comp_",
+      "name::eng": "B1.3.3.1 Compare Length, Mass, Size",
+      "strand_id": "GHA19_Meas",
+      "count": 2,
+      "topic_id_1": "Meas_Early_Overview",
+      "topic_id_2": "Meas_Early_Comparing"
+    },
+    {
+      "id": "GHA19_Meas_B2Units_",
+      "name::eng": "B2.3.3.1-2 Units of Measure – Standard & Non",
+      "strand_id": "GHA19_Meas",
+      "count": 3,
+      "topic_id_1": "Meas_Early_Overview",
+      "topic_id_2": "Meas_Early_Comparing",
+      "topic_id_3": "Meas_Early_Units"
+    },
+    {
+      "id": "GHA19_Meas_B2CalDur_",
+      "name::eng": "B2.3.3.3 Calendar; Duration",
+      "strand_id": "GHA19_Meas",
+      "count": 4,
+      "topic_id_1": "Meas_Time_PofD",
+      "topic_id_2": "Meas_Time_Cal",
+      "topic_id_3": "Meas_Time_TTH",
+      "topic_id_4": "Meas_Time_TTM"
+    },
+    {
+      "id": "GHA19_Meas_B3Metric_",
+      "name::eng": "B3.3.3.1-2 Length, Mass - Metric Units",
+      "strand_id": "GHA19_Meas",
+      "count": 1,
+      "topic_id_1": "Meas_Early_Units"
+    },
+    {
+      "id": "GHA19_Meas_B3DurConvert_",
+      "name::eng": "B3.3.3.3 Duration; Time Units Conversions",
+      "strand_id": "GHA19_Meas",
+      "count": 2,
+      "topic_id_1": "Meas_Time_TTH",
+      "topic_id_2": "Meas_Time_TTM"
+    },
+    {
+      "id": "GHA19_Data_K1CO_",
+      "name::eng": "K1.4.1.1 Classify Objects",
+      "strand_id": "GHA19_Data",
+      "count": 2,
+      "topic_id_1": "Geom_OP_PG",
+      "topic_id_2": "Geom_OP_SD"
+    },
+    {
+      "id": "GHA19_Data_K2CO_",
+      "name::eng": "K2.4.1.1 Classify Objects by Color, Weight, Shape",
+      "strand_id": "GHA19_Data",
+      "count": 3,
+      "topic_id_1": "Geom_OP_PG",
+      "topic_id_2": "Geom_OP_SD",
+      "topic_id_3": "Geom_Shape_DS"
+    },
+    {
+      "id": "GHA19_Data_K2SG_",
+      "name::eng": "K2.4.1.2 Simple Graphs",
+      "strand_id": "GHA19_Data",
+      "count": 3,
+      "topic_id_1": "Data_Early_Overview",
+      "topic_id_2": "Data_Early_ListsChartsTables",
+      "topic_id_3": "Data_Early_Pictographs"
+    },
+    {
+      "id": "GHA19_Data_B1ORIData_",
+      "name::eng": "B1.4.1.1 Org., Rep, Interpret Data",
+      "strand_id": "GHA19_Data",
+      "count": 4,
+      "topic_id_1": "Data_Early_Overview",
+      "topic_id_2": "Data_Early_ListsChartsTables",
+      "topic_id_3": "Data_Early_Pictographs",
+      "topic_id_4": "Data_Early_BarGraphs"
+    },
+    {
+      "id": "GHA19_Data_B2ORIData_",
+      "name::eng": "B2.4.1.1 Org., Rep, Interpret Data",
+      "strand_id": "GHA19_Data",
+      "count": 2,
+      "topic_id_1": "Data_Early_Overview",
+      "topic_id_2": "Data_Early_ListsChartsTables"
+    },
+    {
+      "id": "GHA19_Data_B2Graphs_",
+      "name::eng": "B2.4.1.2 Graphs & Pictographs",
+      "strand_id": "GHA19_Data",
+      "count": 4,
+      "topic_id_1": "Data_Early_Overview",
+      "topic_id_2": "Data_Early_ListsChartsTables",
+      "topic_id_3": "Data_Early_Pictographs",
+      "topic_id_4": "Data_Early_BarGraphs"
+    },
+    {
+      "id": "GHA19_Data_B3GRData_",
+      "name::eng": "B3.4.1.1 Gather, Record Data",
+      "strand_id": "GHA19_Data",
+      "count": 4,
+      "topic_id_1": "Data_Early_Overview",
+      "topic_id_2": "Data_Early_ListsChartsTables",
+      "topic_id_3": "Data_Early_Pictographs",
+      "topic_id_4": "Data_Early_BarGraphs"
+    },
+    {
+      "id": "GHA19_Data_B3Graphs_",
+      "name::eng": "B3.4.1.2 Graphs For Problems",
+      "strand_id": "GHA19_Data",
+      "count": 6,
+      "topic_id_1": "Data_Early_Overview",
+      "topic_id_2": "Data_Early_ListsChartsTables",
+      "topic_id_3": "Data_Early_Pictographs",
+      "topic_id_4": "Data_Early_BarGraphs",
+      "topic_id_5": "Data_Early_LineGraphs",
+      "topic_id_6": "Data_Early_ScatterPlots"
+    }
+  ]
+}

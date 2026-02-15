@@ -76,14 +76,20 @@
       "value": "@fields.curriculum_standard_abbrev == \"UK20\""
     },
     {
-      "name": "it_matches",
-      "value": "@local.match_ESM || @local.match_CCSSM || @local.match_TEKS || @local.match_AC9M || @local.match_UK20"
+      "name": "match_NCRT",
+      "value": "@fields.curriculum_standard_abbrev == \"NCRT\""
     },
     {
-      "type": "set_field",
-      "name": "curriculum_standard_name",
-      "value": "Early School Math",
-      "condition": "!@local.it_matches"
+      "name": "match_KEN24",
+      "value": "@fields.curriculum_standard_abbrev == \"KEN24\""
+    },
+    {
+      "name": "match_GHA19",
+      "value": "@fields.curriculum_standard_abbrev == \"GHA19\""
+    },
+    {
+      "name": "it_matches",
+      "value": "@local.match_ESM || @local.match_CCSSM || @local.match_TEKS || @local.match_AC9M || @local.match_UK20 || @local.match_NCRT ||@local.match_KEN24 || @local.match_GHA19"
     },
     {
       "type": "set_field",
@@ -112,7 +118,7 @@
     {
       "type": "set_field",
       "name": "curriculum_standard_name",
-      "value": "Common Core State Stds. for Math",
+      "value": "Common Core St. Stds. Math",
       "condition": "@fields.curriculum_standard_abbrev == \"CCSSM\""
     },
     {
@@ -180,6 +186,64 @@
       "name": "middle_standards_level",
       "value": "data.esm_uk20_substrands",
       "condition": "@fields.curriculum_standard_abbrev == \"UK20\""
+    },
+    {
+      "type": "set_field",
+      "name": "curriculum_standard_name",
+      "value": "India NCRT Math",
+      "condition": "@fields.curriculum_standard_abbrev == \"NCRT\""
+    },
+    {
+      "type": "set_field",
+      "name": "top_standards_level",
+      "value": "data.esm_india_strands",
+      "condition": "@fields.curriculum_standard_abbrev == \"NCRT\""
+    },
+    {
+      "type": "set_field",
+      "name": "middle_standards_level",
+      "value": "data.esm_india_substrands",
+      "condition": "@fields.curriculum_standard_abbrev == \"NCRT\""
+    },
+    {
+      "type": "set_field",
+      "name": "curriculum_standard_name",
+      "value": "Kenya 2024",
+      "condition": "@fields.curriculum_standard_abbrev == \"KEN24\""
+    },
+    {
+      "type": "set_field",
+      "name": "top_standards_level",
+      "value": "data.esm_kenya24_strands",
+      "condition": "@fields.curriculum_standard_abbrev == \"KEN24\""
+    },
+    {
+      "type": "set_field",
+      "name": "middle_standards_level",
+      "value": "data.esm_kenya24_substrands",
+      "condition": "@fields.curriculum_standard_abbrev == \"KEN24\""
+    },
+    {
+      "type": "set_field",
+      "name": "curriculum_standard_name",
+      "value": "Ghana 2019",
+      "condition": "@fields.curriculum_standard_abbrev == \"GHA19\""
+    },
+    {
+      "type": "set_field",
+      "name": "top_standards_level",
+      "value": "data.esm_ghana19_strands",
+      "condition": "@fields.curriculum_standard_abbrev == \"GHA19\""
+    },
+    {
+      "type": "set_field",
+      "name": "middle_standards_level",
+      "value": "data.esm_ghana19_substrands",
+      "condition": "@fields.curriculum_standard_abbrev == \"GHA19\""
+    },
+    {
+      "name": "deeebug",
+      "value": "Made it to here. @fields.curriculum_standard_abbrev"
     },
     {
       "type": "begin_display_group",
