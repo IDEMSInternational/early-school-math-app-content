@@ -14,8 +14,8 @@
 | radio_button_grid | 1 |
 | round_button | 10 |
 | select_text | 1 |
-| set_field | 51 |
-| set_variable | 802 |
+| set_field | 65 |
+| set_variable | 810 |
 | simple_checkbox | 4 |
 | template | 97 |
 | text | 381 |
@@ -51,7 +51,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 52525 KB | 52.5 MB |
+| total | 52903 KB | 52.9 MB |
 | unused | 22328 KB | 22.3 MB |
 </details>
 
@@ -1768,6 +1768,31 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMTopic10BridgeForAddCompensation8+7To10+5.svg | 10.7 | 1 |
 | ESMIll/ESMTopic10BridgeForSub12-7As12To10To5.svg | 6.8 | 1 |
 | ESMIll/ESMTopic10BridgeForSubCompensation13-8To15-10.svg | 10.6 | 1 |
+| ESMIll/ESMTopic2D20and48BreakApart.svg | 7.5 | 1 |
+| ESMIll/ESMTopic2D20and48Bundles.svg | 15.4 | 1 |
+| ESMIll/ESMTopic2D23and23.svg | 9 | 1 |
+| ESMIll/ESMTopic2D27and27.svg | 14.4 | 1 |
+| ESMIll/ESMTopic2D27and35BreakApart.svg | 14.4 | 1 |
+| ESMIll/ESMTopic2D27and35Bundles.svg | 22.7 | 1 |
+| ESMIll/ESMTopic2D43and15.svg | 9 | 1 |
+| ESMIll/ESMTopic2DCounting37.svg | 21 | 1 |
+| ESMIll/ESMTopic2DSub40-17.svg | 7.9 | 1 |
+| ESMIll/ESMTopic2DSub42-17.svg | 9.7 | 1 |
+| ESMIll/ESMTopic2DSub54-30.svg | 7.9 | 1 |
+| ESMIll/ESMTopic2DSub65-23a.svg | 12.6 | 1 |
+| ESMIll/ESMTopic2DSub65-23b.svg | 13.3 | 1 |
+| ESMIll/ESMTopic2DVerticalAdd.svg | 9.4 | 1 |
+| ESMIll/ESMTopic2DVerticalSub.svg | 11.3 | 1 |
+| ESMIll/ESMTopic3D426and303.svg | 14.1 | 1 |
+| ESMIll/ESMTopic3D426andMisc.svg | 44.7 | 1 |
+| ESMIll/ESMTopic3D426andMisc2.svg | 33.5 | 1 |
+| ESMIll/ESMTopic3DCount247.svg | 17 | 2 |
+| ESMIll/ESMTopic3DSub520-247.svg | 9.7 | 1 |
+| ESMIll/ESMTopic3DSub527-245a.svg | 9.7 | 1 |
+| ESMIll/ESMTopic3DSub527-245b.svg | 8.9 | 1 |
+| ESMIll/ESMTopic3DVerticalAdd.svg | 11.2 | 1 |
+| ESMIll/ESMTopic3DVerticalAddExpPartial.svg | 18.1 | 1 |
+| ESMIll/ESMTopic3DVerticalSub.svg | 26.3 | 1 |
 | ESMIll/ESMTopic3FlatShapes.svg | 6 | 1 |
 | ESMIll/ESMTopic4SidedShapes.svg | 7 | 1 |
 | ESMIll/ESMTopicAS12NumberLine.svg | 18.9 | 1 |
@@ -1849,7 +1874,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | type | subtype | total |
 | --- | --- | --- |
-| data_list |  | 99 |
+| data_list |  | 103 |
 | data_list | app_config_language_list | 1 |
 | data_list | lifecycle_actions | 1 |
 | generator |  | 1 |
