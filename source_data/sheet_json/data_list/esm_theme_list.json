@@ -38,7 +38,7 @@
     },
     {
       "id": "NPV_CPV100_",
-      "name::eng": "Counting & Place Value to 100",
+      "name::eng": "Count & Place Val. to 100",
       "strand_id": "NPV",
       "count": 5,
       "topic_id_1": "NPV_CPV100_Count20",
@@ -46,6 +46,13 @@
       "topic_id_3": "NPV_CPV100_Comp20",
       "topic_id_4": "NPV_CPV100_CountPV100",
       "topic_id_5": "NPV_CPV100_Comp100"
+    },
+    {
+      "id": "NPV_CPV_",
+      "name::eng": "Count & Place Val. Above 100",
+      "strand_id": "NPV",
+      "count": 1,
+      "topic_id_1": "NPV_CPV_PVComp1000"
     },
     {
       "id": "NO_AS10_",
@@ -64,7 +71,7 @@
       "id": "NO_ASSD_",
       "name::eng": "Add & Sub – Single Digit",
       "strand_id": "NO",
-      "count": 8,
+      "count": 9,
       "topic_id_1": "NO_ASSD_PVto19",
       "topic_id_2": "NO_ASSD_AddFingers",
       "topic_id_3": "NO_ASSD_SubFingers",
@@ -72,16 +79,36 @@
       "topic_id_5": "NO_ASSD_AS10",
       "topic_id_6": "NO_ASSD_10BridgeA",
       "topic_id_7": "NO_ASSD_10BridgeS",
-      "topic_id_8": "NO_ASSD_SD_Add_Sub"
+      "topic_id_8": "NO_ASSD_SD_Add_Sub",
+      "topic_id_9": "NO_ASSD_SD_2D_Add_Sub"
     },
     {
-      "id": "NO_DD_",
-      "name::eng": "Add & Sub – Double Digit",
+      "id": "NO_AS2D_",
+      "name::eng": "Add & Sub – 2-Digit",
       "strand_id": "NO",
-      "count": 3,
-      "topic_id_1": "NO_DD_AS2and1",
-      "topic_id_2": "NO_DD_AS2noRegroup",
-      "topic_id_3": "NO_DD_AS2wRegroup"
+      "count": 9,
+      "topic_id_1": "NO_AS2D_10s_1s",
+      "topic_id_2": "NO_AS2D_Add_10s",
+      "topic_id_3": "NO_AS2D_Add_2D_No_Regroup",
+      "topic_id_4": "NO_AS2D_Add_2D_W_Regroup",
+      "topic_id_5": "NO_AS2D_Add_2D_Compensate",
+      "topic_id_6": "NO_AS2D_Add_2D_Vertical",
+      "topic_id_7": "NO_AS2D_Sub_10s",
+      "topic_id_8": "NO_AS2D_Sub_All_2Digit",
+      "topic_id_9": "NO_AS2D_Sub_2D_Vertical"
+    },
+    {
+      "id": "NO_AS3D_",
+      "name::eng": "Add & Sub – 3-Digit",
+      "strand_id": "NO",
+      "count": 7,
+      "topic_id_1": "NO_AS3D_100s_10s_1s",
+      "topic_id_2": "NO_AS3D_Add_100s_10s_1s",
+      "topic_id_3": "NO_AS3D_Add_All_3Digit",
+      "topic_id_4": "NO_AS3D_Add_3Digit_Vertical",
+      "topic_id_5": "NO_AS3D_Sub_100s_10s",
+      "topic_id_6": "NO_AS3D_Sub_All_3Digit",
+      "topic_id_7": "NO_AS3D_Sub_3Digit_Vertical"
     },
     {
       "id": "NO_MSD_",

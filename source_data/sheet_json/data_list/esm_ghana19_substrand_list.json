@@ -60,7 +60,7 @@
       "name::eng": "B2.1.1.1 Numbers to 1000",
       "strand_id": "GHA19_CR",
       "count": 1,
-      "topic_id_1": "Unwritten"
+      "topic_id_1": "NPV_CPV_PVComp1000"
     },
     {
       "id": "GHA19_CR_Num10000_",
@@ -161,10 +161,17 @@
       "id": "GHA19_Op_AS100_",
       "name::eng": "B2.1.2.1 Add/Sub within 100",
       "strand_id": "GHA19_Op",
-      "count": 3,
-      "topic_id_1": "NO_DD_AS2and1",
-      "topic_id_2": "NO_DD_AS2noRegroup",
-      "topic_id_3": "NO_DD_AS2wRegroup"
+      "count": 10,
+      "topic_id_1": "NO_ASSD_SD_2D_Add_Sub",
+      "topic_id_2": "NO_AS2D_10s_1s",
+      "topic_id_3": "NO_AS2D_Add_10s",
+      "topic_id_4": "NO_AS2D_Add_2D_No_Regroup",
+      "topic_id_5": "NO_AS2D_Add_2D_W_Regroup",
+      "topic_id_6": "NO_AS2D_Add_2D_Compensate",
+      "topic_id_7": "NO_AS2D_Add_2D_Vertical",
+      "topic_id_8": "NO_AS2D_Sub_10s",
+      "topic_id_9": "NO_AS2D_Sub_All_2Digit",
+      "topic_id_10": "NO_AS2D_Sub_2D_Vertical"
     },
     {
       "id": "GHA19_Op_Eq100_",
@@ -177,33 +184,56 @@
       "id": "GHA19_Op_MentAS20_",
       "name::eng": "B2.1.2.3-4 Mental Add/Sub within 100; Problems",
       "strand_id": "GHA19_Op",
-      "count": 5,
-      "topic_id_1": "NO_DD_AS2and1",
-      "topic_id_2": "NO_DD_AS2noRegroup",
-      "topic_id_3": "PS_SWP_EASP",
-      "topic_id_4": "PS_SWP_EASE",
-      "topic_id_5": "PS_SWP_ASP"
+      "count": 13,
+      "topic_id_1": "PS_SWP_EASP",
+      "topic_id_2": "PS_SWP_EASE",
+      "topic_id_3": "PS_SWP_ASP",
+      "topic_id_4": "NO_ASSD_SD_2D_Add_Sub",
+      "topic_id_5": "NO_AS2D_10s_1s",
+      "topic_id_6": "NO_AS2D_Add_10s",
+      "topic_id_7": "NO_AS2D_Add_2D_No_Regroup",
+      "topic_id_8": "NO_AS2D_Add_2D_W_Regroup",
+      "topic_id_9": "NO_AS2D_Add_2D_Compensate",
+      "topic_id_10": "NO_AS2D_Add_2D_Vertical",
+      "topic_id_11": "NO_AS2D_Sub_10s",
+      "topic_id_12": "NO_AS2D_Sub_All_2Digit",
+      "topic_id_13": "NO_AS2D_Sub_2D_Vertical"
     },
     {
       "id": "GHA19_Op_AS1000_",
       "name::eng": "B3.1.2.1 Add/Sub within 1000",
       "strand_id": "GHA19_Op",
-      "count": 1,
-      "topic_id_1": "Unwritten"
+      "count": 7,
+      "topic_id_1": "NO_AS3D_100s_10s_1s",
+      "topic_id_2": "NO_AS3D_Add_100s_10s_1s",
+      "topic_id_3": "NO_AS3D_Add_All_3Digit",
+      "topic_id_4": "NO_AS3D_Add_3Digit_Vertical",
+      "topic_id_5": "NO_AS3D_Sub_100s_10s",
+      "topic_id_6": "NO_AS3D_Sub_All_3Digit",
+      "topic_id_7": "NO_AS3D_Sub_3Digit_Vertical"
     },
     {
       "id": "GHA19_Op_Eq1000_",
       "name::eng": "B3.1.2.2 = and ≠ within 1000",
       "strand_id": "GHA19_Op",
       "count": 1,
-      "topic_id_1": "Unwritten"
+      "topic_id_1": "NPV_CPV_PVComp1000"
     },
     {
       "id": "GHA19_Op_MentAS100_",
       "name::eng": "B3.1.2.3-4 Mental Add/Sub within 100",
       "strand_id": "GHA19_Op",
-      "count": 1,
-      "topic_id_1": "Unwritten"
+      "count": 10,
+      "topic_id_1": "NO_ASSD_SD_2D_Add_Sub",
+      "topic_id_2": "NO_AS2D_10s_1s",
+      "topic_id_3": "NO_AS2D_Add_10s",
+      "topic_id_4": "NO_AS2D_Add_2D_No_Regroup",
+      "topic_id_5": "NO_AS2D_Add_2D_W_Regroup",
+      "topic_id_6": "NO_AS2D_Add_2D_Compensate",
+      "topic_id_7": "NO_AS2D_Add_2D_Vertical",
+      "topic_id_8": "NO_AS2D_Sub_10s",
+      "topic_id_9": "NO_AS2D_Sub_All_2Digit",
+      "topic_id_10": "NO_AS2D_Sub_2D_Vertical"
     },
     {
       "id": "GHA19_Op_Mult5_",
