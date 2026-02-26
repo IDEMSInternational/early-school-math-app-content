@@ -51,8 +51,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 52903 KB | 52.9 MB |
-| unused | 22328 KB | 22.3 MB |
+| total | 52844 KB | 52.8 MB |
+| unused | 22395 KB | 22.4 MB |
 </details>
 
 <details open>
@@ -307,6 +307,10 @@ Assets that appear in app-data but do not have references within sheets
 | ESMIll/ESMPOWBSujikoBlank2by3.svg | 4 |
 | ESMIll/ESMPOWBSujikoBlank3by3.svg | 5.9 |
 | ESMIll/ESMPOWCAvoidingRectanglesAnswer4.svg | 7.5 |
+| ESMIll/ESMTopicAS2No35Add12.svg | 13 |
+| ESMIll/ESMTopicAS2No59-24.svg | 15.5 |
+| ESMIll/ESMTopicAS2With24-18.svg | 19.8 |
+| ESMIll/ESMTopicAS2With25Add17.svg | 18.5 |
 | ESMIll/ESMTopicComparingLinesofDots.svg | 3.3 |
 | ESMIll/ESMTopicEquivRectangles2.svg | 5 |
 | ESMIll/ESMTopicGraphsApOrBanDotGraph.svg | 48.7 |
@@ -1769,7 +1773,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMTopic10BridgeForSub12-7As12To10To5.svg | 6.8 | 1 |
 | ESMIll/ESMTopic10BridgeForSubCompensation13-8To15-10.svg | 10.6 | 1 |
 | ESMIll/ESMTopic2D20and48BreakApart.svg | 7.5 | 1 |
-| ESMIll/ESMTopic2D20and48Bundles.svg | 15.4 | 1 |
+| ESMIll/ESMTopic2D20and48Bundles.svg | 15.9 | 1 |
 | ESMIll/ESMTopic2D23and23.svg | 9 | 1 |
 | ESMIll/ESMTopic2D27and27.svg | 14.4 | 1 |
 | ESMIll/ESMTopic2D27and35BreakApart.svg | 14.4 | 1 |
@@ -1782,7 +1786,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMTopic2DSub65-23a.svg | 12.6 | 1 |
 | ESMIll/ESMTopic2DSub65-23b.svg | 13.3 | 1 |
 | ESMIll/ESMTopic2DVerticalAdd.svg | 9.4 | 1 |
-| ESMIll/ESMTopic2DVerticalSub.svg | 11.3 | 1 |
+| ESMIll/ESMTopic2DVerticalSub.svg | 11.6 | 1 |
 | ESMIll/ESMTopic3D426and303.svg | 14.1 | 1 |
 | ESMIll/ESMTopic3D426andMisc.svg | 44.7 | 1 |
 | ESMIll/ESMTopic3D426andMisc2.svg | 33.5 | 1 |
@@ -1792,14 +1796,10 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMTopic3DSub527-245b.svg | 8.9 | 1 |
 | ESMIll/ESMTopic3DVerticalAdd.svg | 11.2 | 1 |
 | ESMIll/ESMTopic3DVerticalAddExpPartial.svg | 18.1 | 1 |
-| ESMIll/ESMTopic3DVerticalSub.svg | 26.3 | 1 |
+| ESMIll/ESMTopic3DVerticalSub.svg | 32.5 | 1 |
 | ESMIll/ESMTopic3FlatShapes.svg | 6 | 1 |
 | ESMIll/ESMTopic4SidedShapes.svg | 7 | 1 |
 | ESMIll/ESMTopicAS12NumberLine.svg | 18.9 | 1 |
-| ESMIll/ESMTopicAS2No35Add12.svg | 13 | 1 |
-| ESMIll/ESMTopicAS2No59-24.svg | 15.5 | 1 |
-| ESMIll/ESMTopicAS2With24-18.svg | 19.8 | 1 |
-| ESMIll/ESMTopicAS2With25Add17.svg | 18.5 | 1 |
 | ESMIll/ESMTopicAS2and132Sub8.svg | 19.4 | 1 |
 | ESMIll/ESMTopicAS2and136And7.svg | 19.3 | 1 |
 | ESMIll/ESMTopicASWithin5TenFrame.svg | 3.6 | 1 |
