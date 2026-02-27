@@ -51,7 +51,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 52844 KB | 52.8 MB |
+| total | 52874 KB | 52.9 MB |
 | unused | 22395 KB | 22.4 MB |
 </details>
 
@@ -1775,8 +1775,8 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMTopic2D20and48BreakApart.svg | 7.5 | 1 |
 | ESMIll/ESMTopic2D20and48Bundles.svg | 15.9 | 1 |
 | ESMIll/ESMTopic2D23and23.svg | 9 | 1 |
-| ESMIll/ESMTopic2D27and27.svg | 14.4 | 1 |
-| ESMIll/ESMTopic2D27and35BreakApart.svg | 14.4 | 1 |
+| ESMIll/ESMTopic2D27and27.svg | 28.4 | 1 |
+| ESMIll/ESMTopic2D27and35BreakApart.svg | 29.6 | 1 |
 | ESMIll/ESMTopic2D27and35Bundles.svg | 22.7 | 1 |
 | ESMIll/ESMTopic2D43and15.svg | 9 | 1 |
 | ESMIll/ESMTopic2DCounting37.svg | 21 | 1 |
@@ -1785,7 +1785,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMTopic2DSub54-30.svg | 7.9 | 1 |
 | ESMIll/ESMTopic2DSub65-23a.svg | 12.6 | 1 |
 | ESMIll/ESMTopic2DSub65-23b.svg | 13.3 | 1 |
-| ESMIll/ESMTopic2DVerticalAdd.svg | 9.4 | 1 |
+| ESMIll/ESMTopic2DVerticalAdd.svg | 11 | 1 |
 | ESMIll/ESMTopic2DVerticalSub.svg | 11.6 | 1 |
 | ESMIll/ESMTopic3D426and303.svg | 14.1 | 1 |
 | ESMIll/ESMTopic3D426andMisc.svg | 44.7 | 1 |
