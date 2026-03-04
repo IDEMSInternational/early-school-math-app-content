@@ -8,20 +8,24 @@ config.google_drive = {
 
 config.git = {
   content_repo: "https://github.com/IDEMSInternational/early-school-math-app-content.git",
-  content_tag_latest: "1.1.183",
+  content_tag_latest: "1.1.184",
 };
 
 config.android = {
   app_id: "international.idems.early_school_math",
   app_name: "Early School Math",
-  splash_asset_path: "./app_data/assets/android/splash.png",
-  icon_asset_path: "./app_data/assets/android/icon.png",
-  icon_asset_foreground_path: "./app_data/assets/android/icon-foreground.png",
-  icon_asset_background_path: "./app_data/assets/android/icon-background.png",
+  logo_asset_path: "./app_data/assets/global/ESMLogo.png",
+  logo_background_color: "#F6FAFE",
 };
 
 config.ios.app_id = "international.idems.early-school-math";
 config.ios.app_name = "Early School Math"
+config.ios = {
+  app_id: "international.idems.early-school-math",
+  app_name: "Early School Math",
+  logo_asset_path: "./app_data/assets/global/ESMLogo.png",
+  logo_background_color: "#F6FAFE",
+}
 
 config.web.favicon_asset = "logos/swing_favicon.png";
 config.api.db_name = "early_school_math"
