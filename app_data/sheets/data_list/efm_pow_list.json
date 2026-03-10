@@ -6926,6 +6926,495 @@
       },
       "block1_text": "**The Challenge:** Use the numbers 1 to 9 at most once each in each set of boxes. First, make ☐/☐×☐/☐ equal to 2/3, and then find values that make ☐/☐×☐/☐ as close as possible to 5/11. You can reuse digits from one puzzle to the next, if you want to.",
       "block2_text": "**The Challenge:** I will write the expression as A/B x C/D to make it easier to talk about.\n\n**Part 1:** A/B x C/D = 2/3. Multiply both sides by 3 x B x D, so this becomes 3 x A x C = 2 x B x D. Look at this using the prime factors 2 and 3 – these must balance on the two sides of the equation. From 3, 6, 9, we have four factors of 3 to work with. From 2, 4, 6, 8 we have seven factors of 2 to work with. There are two cases for handling the 3’s.\n\n**Case 1:** Neither A nor C is 3 or 6, and B is 3 or 6.\n* B=3: 3 x A x C = 2 x 3 x D reduces to A x C = 2 x D. Solutions to this are 1 x 4 = 2 x 2 and 1 x 8 = 2 x 4.\n* B=6: 3 x A x C = 2 x 6 x D reduces to A x C = 4 x D. The solution to this is 1 x 8 = 4 x 2.\n\n**Case 2:** A is 3 or 6, and B is 9.\n* A=3: 3 x 3 x C = 2 x 9 x D reduces to C = 2 x D - the options for (C, D) are (2, 1), (4, 2), and (8, 4).\n* A=6: 3 x 6 x C = 2 x 9 x D reduces to C = D, which is impossible.\n\nSo, the solutions to the problem are given by:\n\n* (1 x 4) / (3 x 2)\n* (1 x 8) / (3 x 4)\n* (1 x 8) / (6 x 2)\n* (3 x 2) / (9 x 1)\n* (3 x 4) / (9 x 2)\n* (3 x 8) / (9 x 4)\n\n**Part 2:** A/B x C/D ~ 5/11. Multiply both sides by 11 x B x D to turn this into 11 x A x C ~ 5 x B x D. We want to find multiples of 11 that are close to multiples of 5 and that can be produced using 1 to 9. \n\nHere is the list to consider. These are multiples that are 1 apart and are producible using 1 to 9: 11 x 4 ~ 8 x 5; 11 x 9 ~ 20 x 5; and 11 x 16 ~ 35 x 5. The bigger the numbers are, the better, so let’s look at this last one.\n\n(2 x 8) / (5 x 7) = 16 / 35 is very close to 5/11 - they differ by 1 / (35 x 11) = 1 / 385.\n\nPerhaps the multiples that are two or three apart will work out better? There do not seem to be any candidates that would be an improvement."
+    },
+    {
+      "id": "boxed_blocks",
+      "level": "Misc-E",
+      "notes_block_start": 3,
+      "block1_type": "illust_below",
+      "block2_type": "all_text",
+      "block3_type": "all_text",
+      "name": "Boxed Blocks",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Boxed Blocks"
+        },
+        "block1_text": {
+          "eng": "**The Challenge:** There is a wooden box, without a lid, holding a 4 x 4 x 4 collection of 64 blocks. How many of the blocks touch some part of the box?"
+        },
+        "block2_text": {
+          "eng": "**Exploration:** What happens for a 5 x 5 x 5 collection of 125 blocks in a bigger box? What about other sizes of boxes? How do these answers change if the boxes have a lid that touches the top row of blocks?"
+        },
+        "block3_text": {
+          "eng": "**The Challenge:** There are different ways to go about solving this problem.\n\n1. Think of the 2 x 2 x 3 = 12 core of blocks that don’t touch the sides.\n2. If it had a lid, there would be 2 x 2 x 2 = 8 blocks not touching the box. In addition to those 8, there would be 2 x 2 x 1 = 4 blocks only touching the lid.\n3. You can add up the blocks along the sides and subtract them from the 4 x 4 x 4 = 64 total. This is the hardest way. There are 4 x 4 x 1 = 16 blocks on the bottom of the box. There are 3 x 12 = 36 blocks around the sides that don’t touch the bottom. Therefore, there are 64 - (16 + 36) = 12 blocks on the inside.\n\n**Exploration:** Look at these only using the first method.\n\n5 x 5 x 5. Without a lid, there are 3 x 3 x 4 = 36 blocks not touching the box. With a lid, there are 3 x 3 x 3 = 27 blocks not touching.\n\na x b x c, where c is the height. Assume these numbers are each at least three. Without a lid, a and b are reduced by 2 and c by 1, so there are  (a - 2) x (b - 2) x (c - 1) blocks. With a lid, (a - 2) x (b - 2) x (c - 2) blocks not touching."
+        }
+      },
+      "block1_text": "**The Challenge:** There is a wooden box, without a lid, holding a 4 x 4 x 4 collection of 64 blocks. How many of the blocks touch some part of the box?",
+      "block2_text": "**Exploration:** What happens for a 5 x 5 x 5 collection of 125 blocks in a bigger box? What about other sizes of boxes? How do these answers change if the boxes have a lid that touches the top row of blocks?",
+      "block3_text": "**The Challenge:** There are different ways to go about solving this problem.\n\n1. Think of the 2 x 2 x 3 = 12 core of blocks that don’t touch the sides.\n2. If it had a lid, there would be 2 x 2 x 2 = 8 blocks not touching the box. In addition to those 8, there would be 2 x 2 x 1 = 4 blocks only touching the lid.\n3. You can add up the blocks along the sides and subtract them from the 4 x 4 x 4 = 64 total. This is the hardest way. There are 4 x 4 x 1 = 16 blocks on the bottom of the box. There are 3 x 12 = 36 blocks around the sides that don’t touch the bottom. Therefore, there are 64 - (16 + 36) = 12 blocks on the inside.\n\n**Exploration:** Look at these only using the first method.\n\n5 x 5 x 5. Without a lid, there are 3 x 3 x 4 = 36 blocks not touching the box. With a lid, there are 3 x 3 x 3 = 27 blocks not touching.\n\na x b x c, where c is the height. Assume these numbers are each at least three. Without a lid, a and b are reduced by 2 and c by 1, so there are  (a - 2) x (b - 2) x (c - 1) blocks. With a lid, (a - 2) x (b - 2) x (c - 2) blocks not touching."
+    },
+    {
+      "id": "letter_substitution_10",
+      "level": "Misc-E",
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWBLetterSubstitutionIntro.svg",
+      "block1_illust_max_size": "180px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWDLetterSubstitution7.svg",
+      "block2_illust_max_size": "360px",
+      "block3_type": "all_text",
+      "block4_type": "all_text",
+      "name": "Letter Substitution – 10",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Letter Substitution – 10"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** Letter substition puzzles have three rules:\n* A letter represents a digit from 0 to 9, and has the same value throughout a single puzzle.\n* No number can start with the digit 0.\n* Within a puzzle, different letters must have different values.\n\n**Example:**"
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Find the value of S, E, N, D, M, O,  R, and Y  to make this puzzle work."
+        },
+        "block3_text": {
+          "eng": "**Exploration:** Make some letter substitution puzzles for others to solve."
+        },
+        "block4_text": {
+          "eng": "**The Challenge:** Because carries when adding two digits, plus a possible carry, are at most 1, the first thing to notice is that M must be 1.\n\nNow that M is 1, look at S + 1 + (possible carry) = 1O on the left side of the puzzle. S + 1 + (possible carry) cannot be more than 11, and since letters cannot repeat another letter’s value, O must be 0.\n\nOur puzzle now looks like this:\n\n  S E N D\n+ 1 0 R E\n1 0 N E Y\n\nBecause E + 0 = N, there must be a carry into that column and N must be one more than E. Also, that column does not produce a carry into the next column. This means S + 1 = 10, so S = 9.\n\nWith N being one more than E, and N + R + (possible carry) = 1E, this forces R = 8 and there is indeed a carry into that column.\n\nOur puzzle now looks like this:\n\n  9 E N D\n+ 1 0 8 E\n1 0 N E Y\n\nAt this point there is nothing clever to do other than look at possibilities while remembering that E and N are consecutive numbers. The only way D + E = 1Y without duplicating values is for D = 7, E = 5, Y = 2, and N = 6.\n\nAt last we have the solution:\n\n  9 5 6 7\n+ 1 0 8 5\n1 0 6 5 2\n\nNotice how helpful it is to update the puzzle each time we determine the value of some new letters."
+        }
+      },
+      "block1_text": "**Introduction:** Letter substition puzzles have three rules:\n* A letter represents a digit from 0 to 9, and has the same value throughout a single puzzle.\n* No number can start with the digit 0.\n* Within a puzzle, different letters must have different values.\n\n**Example:**",
+      "block2_text": "**The Challenge:** Find the value of S, E, N, D, M, O,  R, and Y  to make this puzzle work.",
+      "block3_text": "**Exploration:** Make some letter substitution puzzles for others to solve.",
+      "block4_text": "**The Challenge:** Because carries when adding two digits, plus a possible carry, are at most 1, the first thing to notice is that M must be 1.\n\nNow that M is 1, look at S + 1 + (possible carry) = 1O on the left side of the puzzle. S + 1 + (possible carry) cannot be more than 11, and since letters cannot repeat another letter’s value, O must be 0.\n\nOur puzzle now looks like this:\n\n  S E N D\n+ 1 0 R E\n1 0 N E Y\n\nBecause E + 0 = N, there must be a carry into that column and N must be one more than E. Also, that column does not produce a carry into the next column. This means S + 1 = 10, so S = 9.\n\nWith N being one more than E, and N + R + (possible carry) = 1E, this forces R = 8 and there is indeed a carry into that column.\n\nOur puzzle now looks like this:\n\n  9 E N D\n+ 1 0 8 E\n1 0 N E Y\n\nAt this point there is nothing clever to do other than look at possibilities while remembering that E and N are consecutive numbers. The only way D + E = 1Y without duplicating values is for D = 7, E = 5, Y = 2, and N = 6.\n\nAt last we have the solution:\n\n  9 5 6 7\n+ 1 0 8 5\n1 0 6 5 2\n\nNotice how helpful it is to update the puzzle each time we determine the value of some new letters."
+    },
+    {
+      "id": "max_products_16",
+      "level": "Misc-E",
+      "name": "Max Products 16",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Max Products 16"
+        }
+      }
+    },
+    {
+      "id": "stars_loops_inside_circles",
+      "level": "Misc-E",
+      "name": "Stars and Loops Inside Circles",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Stars and Loops Inside Circles"
+        }
+      }
+    },
+    {
+      "id": "trapezoidal_numbers_2",
+      "level": "Misc-E",
+      "name": "Trapezoidal Numbers – 2",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Trapezoidal Numbers – 2"
+        }
+      }
+    },
+    {
+      "id": "trapezoidal_numbers_3",
+      "level": "Misc-E",
+      "name": "Trapezoidal Numbers – 3",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Trapezoidal Numbers – 3"
+        }
+      }
+    },
+    {
+      "id": "trapezoidal_numbers_4",
+      "level": "Misc-E",
+      "name": "Trapezoidal Numbers – 4",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Trapezoidal Numbers – 4"
+        }
+      }
+    },
+    {
+      "id": "trapezoidal_numbers_5",
+      "level": "Misc-E",
+      "name": "Trapezoidal Numbers – 5",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Trapezoidal Numbers – 5"
+        }
+      }
+    },
+    {
+      "id": "water_cups_1",
+      "level": "Misc-E",
+      "name": "Water Cups – 1",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Water Cups – 1"
+        }
+      }
+    },
+    {
+      "id": "water_cups_2",
+      "level": "Misc-E",
+      "name": "Water Cups – 2",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Water Cups – 2"
+        }
+      }
+    },
+    {
+      "id": "bouncing_billiard_ball",
+      "level": "Misc-F",
+      "name": "Bouncing Billiard Ball",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Bouncing Billiard Ball"
+        }
+      }
+    },
+    {
+      "id": "equal_products",
+      "level": "Misc-F",
+      "name": "Equal Products",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Equal Products"
+        }
+      }
+    },
+    {
+      "id": "ladybugs_dont_multiply",
+      "level": "Misc-F",
+      "name": "Ladybugs that Don't Multiply",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Ladybugs that Don't Multiply"
+        }
+      }
+    },
+    {
+      "id": "letter_substitution_11",
+      "level": "Misc-F",
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWBLetterSubstitutionIntro.svg",
+      "block1_illust_max_size": "180px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWDLetterSubstitution7.svg",
+      "block2_illust_max_size": "360px",
+      "block3_type": "all_text",
+      "block4_type": "all_text",
+      "name": "Letter Substitution – 11",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Letter Substitution – 11"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** Letter substition puzzles have three rules:\n* A letter represents a digit from 0 to 9, and has the same value throughout a single puzzle.\n* No number can start with the digit 0.\n* Within a puzzle, different letters must have different values.\n\n**Example:**"
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Find the value of A, B, C, D, E, F, K, L, and M in these puzzles."
+        },
+        "block3_text": {
+          "eng": "**Exploration:** Make some letter substitution puzzles for others to solve."
+        },
+        "block4_text": {
+          "eng": "**The Challenge:**"
+        }
+      },
+      "block1_text": "**Introduction:** Letter substition puzzles have three rules:\n* A letter represents a digit from 0 to 9, and has the same value throughout a single puzzle.\n* No number can start with the digit 0.\n* Within a puzzle, different letters must have different values.\n\n**Example:**",
+      "block2_text": "**The Challenge:** Find the value of A, B, C, D, E, F, K, L, and M in these puzzles.",
+      "block3_text": "**Exploration:** Make some letter substitution puzzles for others to solve.",
+      "block4_text": "**The Challenge:**"
+    },
+    {
+      "id": "letter_substitution_12",
+      "level": "Misc-F",
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWBLetterSubstitutionIntro.svg",
+      "block1_illust_max_size": "180px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWDLetterSubstitution7.svg",
+      "block2_illust_max_size": "360px",
+      "block3_type": "all_text",
+      "block4_type": "all_text",
+      "name": "Letter Substitution – 12",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Letter Substitution – 12"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** Letter substition puzzles have three rules:\n* A letter represents a digit from 0 to 9, and has the same value throughout a single puzzle.\n* No number can start with the digit 0.\n* Within a puzzle, different letters must have different values.\n\n**Example:**"
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Find the value of A, B, C, D, E, F, K, L, and M in these puzzles."
+        },
+        "block3_text": {
+          "eng": "**Exploration:** Make some letter substitution puzzles for others to solve."
+        },
+        "block4_text": {
+          "eng": "**The Challenge:**"
+        }
+      },
+      "block1_text": "**Introduction:** Letter substition puzzles have three rules:\n* A letter represents a digit from 0 to 9, and has the same value throughout a single puzzle.\n* No number can start with the digit 0.\n* Within a puzzle, different letters must have different values.\n\n**Example:**",
+      "block2_text": "**The Challenge:** Find the value of A, B, C, D, E, F, K, L, and M in these puzzles.",
+      "block3_text": "**Exploration:** Make some letter substitution puzzles for others to solve.",
+      "block4_text": "**The Challenge:**"
+    },
+    {
+      "id": "letter_substitution_13",
+      "level": "Misc-F",
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWBLetterSubstitutionIntro.svg",
+      "block1_illust_max_size": "180px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWDLetterSubstitution7.svg",
+      "block2_illust_max_size": "360px",
+      "block3_type": "all_text",
+      "block4_type": "all_text",
+      "name": "Letter Substitution – 13",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Letter Substitution – 13"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** Letter substition puzzles have three rules:\n* A letter represents a digit from 0 to 9, and has the same value throughout a single puzzle.\n* No number can start with the digit 0.\n* Within a puzzle, different letters must have different values.\n\n**Example:**"
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Find the value of A, B, C, D, E, F, K, L, and M in these puzzles."
+        },
+        "block3_text": {
+          "eng": "**Exploration:** Make some letter substitution puzzles for others to solve."
+        },
+        "block4_text": {
+          "eng": "**The Challenge:**"
+        }
+      },
+      "block1_text": "**Introduction:** Letter substition puzzles have three rules:\n* A letter represents a digit from 0 to 9, and has the same value throughout a single puzzle.\n* No number can start with the digit 0.\n* Within a puzzle, different letters must have different values.\n\n**Example:**",
+      "block2_text": "**The Challenge:** Find the value of A, B, C, D, E, F, K, L, and M in these puzzles.",
+      "block3_text": "**Exploration:** Make some letter substitution puzzles for others to solve.",
+      "block4_text": "**The Challenge:**"
+    },
+    {
+      "id": "letter_substitution_14",
+      "level": "Misc-F",
+      "notes_block_start": 4,
+      "block1_type": "illust_below",
+      "block1_illust": "ESMIll/ESMPOWBLetterSubstitutionIntro.svg",
+      "block1_illust_max_size": "180px",
+      "block2_type": "illust_below",
+      "block2_illust": "ESMIll/ESMPOWDLetterSubstitution7.svg",
+      "block2_illust_max_size": "360px",
+      "block3_type": "all_text",
+      "block4_type": "all_text",
+      "name": "Letter Substitution – 14",
+      "_translations": {
+        "name": {},
+        "block1_text": {},
+        "block2_text": {},
+        "block3_text": {},
+        "block4_text": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Letter Substitution – 14"
+        },
+        "block1_text": {
+          "eng": "**Introduction:** Letter substition puzzles have three rules:\n* A letter represents a digit from 0 to 9, and has the same value throughout a single puzzle.\n* No number can start with the digit 0.\n* Within a puzzle, different letters must have different values.\n\n**Example:**"
+        },
+        "block2_text": {
+          "eng": "**The Challenge:** Find the value of A, B, C, D, E, F, K, L, and M in these puzzles."
+        },
+        "block3_text": {
+          "eng": "**Exploration:** Make some letter substitution puzzles for others to solve."
+        },
+        "block4_text": {
+          "eng": "**The Challenge:**"
+        }
+      },
+      "block1_text": "**Introduction:** Letter substition puzzles have three rules:\n* A letter represents a digit from 0 to 9, and has the same value throughout a single puzzle.\n* No number can start with the digit 0.\n* Within a puzzle, different letters must have different values.\n\n**Example:**",
+      "block2_text": "**The Challenge:** Find the value of A, B, C, D, E, F, K, L, and M in these puzzles.",
+      "block3_text": "**Exploration:** Make some letter substitution puzzles for others to solve.",
+      "block4_text": "**The Challenge:**"
+    },
+    {
+      "id": "magic_squares_7",
+      "level": "Misc-F",
+      "name": "Magic Squares – 7",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Magic Squares – 7"
+        }
+      }
+    },
+    {
+      "id": "pan_balance_w_weights_1",
+      "level": "Misc-F",
+      "name": "Pan Balance with Weights – 1",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Pan Balance with Weights – 1"
+        }
+      }
+    },
+    {
+      "id": "pan_balance_w_weights_2",
+      "level": "Misc-F",
+      "name": "Pan Balance with Weights – 2",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Pan Balance with Weights – 2"
+        }
+      }
+    },
+    {
+      "id": "pan_balance_w_weights_3",
+      "level": "Misc-F",
+      "name": "Pan Balance with Weights – 3",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Pan Balance with Weights – 3"
+        }
+      }
+    },
+    {
+      "id": "pan_balance_w_weights_4",
+      "level": "Misc-F",
+      "name": "Pan Balance with Weights – 4",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Pan Balance with Weights – 4"
+        }
+      }
+    },
+    {
+      "id": "pan_balance_w_weights_5",
+      "level": "Misc-F",
+      "name": "Pan Balance with Weights – 5",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Pan Balance with Weights – 5"
+        }
+      }
+    },
+    {
+      "id": "pan_balance_w_weights_6",
+      "level": "Misc-F",
+      "name": "Pan Balance with Weights – 6",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Pan Balance with Weights – 6"
+        }
+      }
+    },
+    {
+      "id": "squares_made_of_primes",
+      "level": "Misc-F",
+      "name": "Squares Made of Primes",
+      "_translations": {
+        "name": {}
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Squares Made of Primes"
+        }
+      }
     }
   ],
   "_source": {
