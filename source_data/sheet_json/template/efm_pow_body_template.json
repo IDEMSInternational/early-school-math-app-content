@@ -335,11 +335,8 @@
       "exclude_from_translation": true
     },
     {
-      "type": "begin_display_group",
-      "name": "answers_and_notes",
-      "condition": "@item.number >= @local.block_number_for_notes",
-      "parameter_list": "style: column;",
-      "style_list": "margin_top: -5px;"
+      "name": "number_in_range",
+      "value": "@item.number >= @local.block_number_for_notes"
     },
     {
       "name": "block_num_chars",
@@ -377,8 +374,10 @@
       "exclude_from_translation": true
     },
     {
-      "name": "none_of_the_above",
-      "value": true
+      "type": "begin_display_group",
+      "name": "dg_check_first",
+      "condition": "@@local.block_type && @local.number_in_range",
+      "parameter_list": "style: column;"
     },
     {
       "type": "begin_display_group",
@@ -387,10 +386,6 @@
       "parameter_list": "style: column;",
       "style_list": "@local.paragraph_space; ",
       "exclude_from_translation": true
-    },
-    {
-      "name": "none_of_the_above",
-      "value": false
     },
     {
       "name": "paragraph_space",
@@ -416,10 +411,6 @@
       "exclude_from_translation": true
     },
     {
-      "name": "none_of_the_above",
-      "value": false
-    },
-    {
       "type": "image",
       "name": "display_illust",
       "value": "@@local.block_illustration",
@@ -437,10 +428,6 @@
       "parameter_list": "style: column;",
       "style_list": "@local.paragraph_space",
       "exclude_from_translation": true
-    },
-    {
-      "name": "none_of_the_above",
-      "value": false
     },
     {
       "name": "paragraph_space",
@@ -465,37 +452,11 @@
       "exclude_from_translation": true
     },
     {
-      "type": "begin_display_group",
-      "name": "dg_none_of_the_above_@item.number",
-      "condition": "@local.none_of_the_above",
-      "style_list": "margin-top: 0px;"
-    },
-    {
-      "name": "filler",
-      "value": "IGNORE_THIS",
-      "exclude_from_translation": true
-    },
-    {
-      "type": "end_display_group"
-    },
-    {
       "type": "end_display_group"
     },
     {
       "type": "end_items",
       "exclude_from_translation": true
-    },
-    {
-      "type": "begin_display_group",
-      "name": "fake_space_maker1",
-      "style_list": "margin_top: -50px;"
-    },
-    {
-      "type": "text",
-      "name": "fakeit"
-    },
-    {
-      "type": "end_display_group"
     },
     {
       "type": "end_display_group"
