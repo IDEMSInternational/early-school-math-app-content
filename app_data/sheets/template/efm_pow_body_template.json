@@ -1500,7 +1500,14 @@
                               }
                             },
                             {
+                              "name": "none_of_the_above",
+                              "value": true,
+                              "type": "set_variable",
+                              "_nested_name": "wrap_accord_in_test.accordion_for_answers.answers_notes.wrap_items_to_be_in_a_column.run_through_body_sections.answers_and_notes.none_of_the_above"
+                            },
+                            {
                               "type": "display_group",
+                              "name": "dg_all_text_@item.number",
                               "condition": "@@local.block_type == \"all_text\"",
                               "parameter_list": {
                                 "style": "column"
@@ -1511,6 +1518,27 @@
                               "exclude_from_translation": true,
                               "rows": [
                                 {
+                                  "name": "none_of_the_above",
+                                  "value": false,
+                                  "type": "set_variable",
+                                  "_nested_name": "wrap_accord_in_test.accordion_for_answers.answers_notes.wrap_items_to_be_in_a_column.run_through_body_sections.answers_and_notes.dg_all_text_@item.number.none_of_the_above",
+                                  "_dynamicFields": {
+                                    "_nested_name": [
+                                      {
+                                        "fullExpression": "wrap_accord_in_test.accordion_for_answers.answers_notes.wrap_items_to_be_in_a_column.run_through_body_sections.answers_and_notes.dg_all_text_@item.number.none_of_the_above",
+                                        "matchedExpression": "@item.number.none_of_the_above",
+                                        "type": "item",
+                                        "fieldName": "number"
+                                      }
+                                    ]
+                                  },
+                                  "_dynamicDependencies": {
+                                    "@item.number.none_of_the_above": [
+                                      "_nested_name"
+                                    ]
+                                  }
+                                },
+                                {
                                   "name": "paragraph_space",
                                   "value": "@local.remove_paragraph_space",
                                   "_translations": {
@@ -1518,7 +1546,7 @@
                                   },
                                   "exclude_from_translation": true,
                                   "type": "set_variable",
-                                  "_nested_name": "wrap_accord_in_test.accordion_for_answers.answers_notes.wrap_items_to_be_in_a_column.run_through_body_sections.answers_and_notes.display_group_8.paragraph_space",
+                                  "_nested_name": "wrap_accord_in_test.accordion_for_answers.answers_notes.wrap_items_to_be_in_a_column.run_through_body_sections.answers_and_notes.dg_all_text_@item.number.paragraph_space",
                                   "_dynamicFields": {
                                     "value": [
                                       {
@@ -1527,11 +1555,22 @@
                                         "type": "local",
                                         "fieldName": "remove_paragraph_space"
                                       }
+                                    ],
+                                    "_nested_name": [
+                                      {
+                                        "fullExpression": "wrap_accord_in_test.accordion_for_answers.answers_notes.wrap_items_to_be_in_a_column.run_through_body_sections.answers_and_notes.dg_all_text_@item.number.paragraph_space",
+                                        "matchedExpression": "@item.number.paragraph_space",
+                                        "type": "item",
+                                        "fieldName": "number"
+                                      }
                                     ]
                                   },
                                   "_dynamicDependencies": {
                                     "@local.remove_paragraph_space": [
                                       "value"
+                                    ],
+                                    "@item.number.paragraph_space": [
+                                      "_nested_name"
                                     ]
                                   }
                                 },
@@ -1543,7 +1582,7 @@
                                     "value": {}
                                   },
                                   "exclude_from_translation": true,
-                                  "_nested_name": "wrap_accord_in_test.accordion_for_answers.answers_notes.wrap_items_to_be_in_a_column.run_through_body_sections.answers_and_notes.display_group_8.display_text",
+                                  "_nested_name": "wrap_accord_in_test.accordion_for_answers.answers_notes.wrap_items_to_be_in_a_column.run_through_body_sections.answers_and_notes.dg_all_text_@item.number.display_text",
                                   "_dynamicFields": {
                                     "value": [
                                       {
@@ -1552,18 +1591,36 @@
                                         "type": "local",
                                         "fieldName": "block_text"
                                       }
+                                    ],
+                                    "_nested_name": [
+                                      {
+                                        "fullExpression": "wrap_accord_in_test.accordion_for_answers.answers_notes.wrap_items_to_be_in_a_column.run_through_body_sections.answers_and_notes.dg_all_text_@item.number.display_text",
+                                        "matchedExpression": "@item.number.display_text",
+                                        "type": "item",
+                                        "fieldName": "number"
+                                      }
                                     ]
                                   },
                                   "_dynamicDependencies": {
                                     "@local.block_text": [
                                       "value"
+                                    ],
+                                    "@item.number.display_text": [
+                                      "_nested_name"
                                     ]
                                   }
                                 }
                               ],
-                              "name": "display_group_8",
-                              "_nested_name": "wrap_accord_in_test.accordion_for_answers.answers_notes.wrap_items_to_be_in_a_column.run_through_body_sections.answers_and_notes.display_group_8",
+                              "_nested_name": "wrap_accord_in_test.accordion_for_answers.answers_notes.wrap_items_to_be_in_a_column.run_through_body_sections.answers_and_notes.dg_all_text_@item.number",
                               "_dynamicFields": {
+                                "name": [
+                                  {
+                                    "fullExpression": "dg_all_text_@item.number",
+                                    "matchedExpression": "@item.number",
+                                    "type": "item",
+                                    "fieldName": "number"
+                                  }
+                                ],
                                 "condition": [
                                   {
                                     "fullExpression": "@@local.block_type == \"all_text\"",
@@ -1581,9 +1638,21 @@
                                       "fieldName": "paragraph_space"
                                     }
                                   ]
-                                }
+                                },
+                                "_nested_name": [
+                                  {
+                                    "fullExpression": "wrap_accord_in_test.accordion_for_answers.answers_notes.wrap_items_to_be_in_a_column.run_through_body_sections.answers_and_notes.dg_all_text_@item.number",
+                                    "matchedExpression": "@item.number",
+                                    "type": "item",
+                                    "fieldName": "number"
+                                  }
+                                ]
                               },
                               "_dynamicDependencies": {
+                                "@item.number": [
+                                  "name",
+                                  "_nested_name"
+                                ],
                                 "@local.block_type": [
                                   "condition"
                                 ],
@@ -1594,6 +1663,7 @@
                             },
                             {
                               "type": "display_group",
+                              "name": "dg_all_illust_@item.number",
                               "condition": "@@local.block_type == \"all_illust\"",
                               "parameter_list": {
                                 "style": "column"
@@ -1603,6 +1673,27 @@
                               ],
                               "exclude_from_translation": true,
                               "rows": [
+                                {
+                                  "name": "none_of_the_above",
+                                  "value": false,
+                                  "type": "set_variable",
+                                  "_nested_name": "wrap_accord_in_test.accordion_for_answers.answers_notes.wrap_items_to_be_in_a_column.run_through_body_sections.answers_and_notes.dg_all_illust_@item.number.none_of_the_above",
+                                  "_dynamicFields": {
+                                    "_nested_name": [
+                                      {
+                                        "fullExpression": "wrap_accord_in_test.accordion_for_answers.answers_notes.wrap_items_to_be_in_a_column.run_through_body_sections.answers_and_notes.dg_all_illust_@item.number.none_of_the_above",
+                                        "matchedExpression": "@item.number.none_of_the_above",
+                                        "type": "item",
+                                        "fieldName": "number"
+                                      }
+                                    ]
+                                  },
+                                  "_dynamicDependencies": {
+                                    "@item.number.none_of_the_above": [
+                                      "_nested_name"
+                                    ]
+                                  }
+                                },
                                 {
                                   "type": "image",
                                   "name": "display_illust",
@@ -1614,7 +1705,7 @@
                                     "max-width: @@local.block_illustration_max_width"
                                   ],
                                   "exclude_from_translation": true,
-                                  "_nested_name": "wrap_accord_in_test.accordion_for_answers.answers_notes.wrap_items_to_be_in_a_column.run_through_body_sections.answers_and_notes.display_group_9.display_illust",
+                                  "_nested_name": "wrap_accord_in_test.accordion_for_answers.answers_notes.wrap_items_to_be_in_a_column.run_through_body_sections.answers_and_notes.dg_all_illust_@item.number.display_illust",
                                   "_dynamicFields": {
                                     "value": [
                                       {
@@ -1633,7 +1724,15 @@
                                           "fieldName": "block_illustration_max_width"
                                         }
                                       ]
-                                    }
+                                    },
+                                    "_nested_name": [
+                                      {
+                                        "fullExpression": "wrap_accord_in_test.accordion_for_answers.answers_notes.wrap_items_to_be_in_a_column.run_through_body_sections.answers_and_notes.dg_all_illust_@item.number.display_illust",
+                                        "matchedExpression": "@item.number.display_illust",
+                                        "type": "item",
+                                        "fieldName": "number"
+                                      }
+                                    ]
                                   },
                                   "_dynamicDependencies": {
                                     "@local.block_illustration": [
@@ -1641,13 +1740,23 @@
                                     ],
                                     "@local.block_illustration_max_width": [
                                       "style_list.0"
+                                    ],
+                                    "@item.number.display_illust": [
+                                      "_nested_name"
                                     ]
                                   }
                                 }
                               ],
-                              "name": "display_group_9",
-                              "_nested_name": "wrap_accord_in_test.accordion_for_answers.answers_notes.wrap_items_to_be_in_a_column.run_through_body_sections.answers_and_notes.display_group_9",
+                              "_nested_name": "wrap_accord_in_test.accordion_for_answers.answers_notes.wrap_items_to_be_in_a_column.run_through_body_sections.answers_and_notes.dg_all_illust_@item.number",
                               "_dynamicFields": {
+                                "name": [
+                                  {
+                                    "fullExpression": "dg_all_illust_@item.number",
+                                    "matchedExpression": "@item.number",
+                                    "type": "item",
+                                    "fieldName": "number"
+                                  }
+                                ],
                                 "condition": [
                                   {
                                     "fullExpression": "@@local.block_type == \"all_illust\"",
@@ -1665,9 +1774,21 @@
                                       "fieldName": "paragraph_space"
                                     }
                                   ]
-                                }
+                                },
+                                "_nested_name": [
+                                  {
+                                    "fullExpression": "wrap_accord_in_test.accordion_for_answers.answers_notes.wrap_items_to_be_in_a_column.run_through_body_sections.answers_and_notes.dg_all_illust_@item.number",
+                                    "matchedExpression": "@item.number",
+                                    "type": "item",
+                                    "fieldName": "number"
+                                  }
+                                ]
                               },
                               "_dynamicDependencies": {
+                                "@item.number": [
+                                  "name",
+                                  "_nested_name"
+                                ],
                                 "@local.block_type": [
                                   "condition"
                                 ],
@@ -1678,6 +1799,7 @@
                             },
                             {
                               "type": "display_group",
+                              "name": "dg_illust_below_@item.number",
                               "condition": "@@local.block_type == \"illust_below\"",
                               "parameter_list": {
                                 "style": "column"
@@ -1688,6 +1810,27 @@
                               "exclude_from_translation": true,
                               "rows": [
                                 {
+                                  "name": "none_of_the_above",
+                                  "value": false,
+                                  "type": "set_variable",
+                                  "_nested_name": "wrap_accord_in_test.accordion_for_answers.answers_notes.wrap_items_to_be_in_a_column.run_through_body_sections.answers_and_notes.dg_illust_below_@item.number.none_of_the_above",
+                                  "_dynamicFields": {
+                                    "_nested_name": [
+                                      {
+                                        "fullExpression": "wrap_accord_in_test.accordion_for_answers.answers_notes.wrap_items_to_be_in_a_column.run_through_body_sections.answers_and_notes.dg_illust_below_@item.number.none_of_the_above",
+                                        "matchedExpression": "@item.number.none_of_the_above",
+                                        "type": "item",
+                                        "fieldName": "number"
+                                      }
+                                    ]
+                                  },
+                                  "_dynamicDependencies": {
+                                    "@item.number.none_of_the_above": [
+                                      "_nested_name"
+                                    ]
+                                  }
+                                },
+                                {
                                   "name": "paragraph_space",
                                   "value": "@local.remove_paragraph_space",
                                   "_translations": {
@@ -1695,7 +1838,7 @@
                                   },
                                   "exclude_from_translation": true,
                                   "type": "set_variable",
-                                  "_nested_name": "wrap_accord_in_test.accordion_for_answers.answers_notes.wrap_items_to_be_in_a_column.run_through_body_sections.answers_and_notes.display_group_10.paragraph_space",
+                                  "_nested_name": "wrap_accord_in_test.accordion_for_answers.answers_notes.wrap_items_to_be_in_a_column.run_through_body_sections.answers_and_notes.dg_illust_below_@item.number.paragraph_space",
                                   "_dynamicFields": {
                                     "value": [
                                       {
@@ -1704,11 +1847,22 @@
                                         "type": "local",
                                         "fieldName": "remove_paragraph_space"
                                       }
+                                    ],
+                                    "_nested_name": [
+                                      {
+                                        "fullExpression": "wrap_accord_in_test.accordion_for_answers.answers_notes.wrap_items_to_be_in_a_column.run_through_body_sections.answers_and_notes.dg_illust_below_@item.number.paragraph_space",
+                                        "matchedExpression": "@item.number.paragraph_space",
+                                        "type": "item",
+                                        "fieldName": "number"
+                                      }
                                     ]
                                   },
                                   "_dynamicDependencies": {
                                     "@local.remove_paragraph_space": [
                                       "value"
+                                    ],
+                                    "@item.number.paragraph_space": [
+                                      "_nested_name"
                                     ]
                                   }
                                 },
@@ -1720,7 +1874,7 @@
                                     "value": {}
                                   },
                                   "exclude_from_translation": true,
-                                  "_nested_name": "wrap_accord_in_test.accordion_for_answers.answers_notes.wrap_items_to_be_in_a_column.run_through_body_sections.answers_and_notes.display_group_10.display_text",
+                                  "_nested_name": "wrap_accord_in_test.accordion_for_answers.answers_notes.wrap_items_to_be_in_a_column.run_through_body_sections.answers_and_notes.dg_illust_below_@item.number.display_text",
                                   "_dynamicFields": {
                                     "value": [
                                       {
@@ -1729,11 +1883,22 @@
                                         "type": "local",
                                         "fieldName": "block_text"
                                       }
+                                    ],
+                                    "_nested_name": [
+                                      {
+                                        "fullExpression": "wrap_accord_in_test.accordion_for_answers.answers_notes.wrap_items_to_be_in_a_column.run_through_body_sections.answers_and_notes.dg_illust_below_@item.number.display_text",
+                                        "matchedExpression": "@item.number.display_text",
+                                        "type": "item",
+                                        "fieldName": "number"
+                                      }
                                     ]
                                   },
                                   "_dynamicDependencies": {
                                     "@local.block_text": [
                                       "value"
+                                    ],
+                                    "@item.number.display_text": [
+                                      "_nested_name"
                                     ]
                                   }
                                 },
@@ -1749,7 +1914,7 @@
                                     "max-width: @@local.block_illustration_max_width"
                                   ],
                                   "exclude_from_translation": true,
-                                  "_nested_name": "wrap_accord_in_test.accordion_for_answers.answers_notes.wrap_items_to_be_in_a_column.run_through_body_sections.answers_and_notes.display_group_10.display_illust",
+                                  "_nested_name": "wrap_accord_in_test.accordion_for_answers.answers_notes.wrap_items_to_be_in_a_column.run_through_body_sections.answers_and_notes.dg_illust_below_@item.number.display_illust",
                                   "_dynamicFields": {
                                     "value": [
                                       {
@@ -1768,7 +1933,15 @@
                                           "fieldName": "block_illustration_max_width"
                                         }
                                       ]
-                                    }
+                                    },
+                                    "_nested_name": [
+                                      {
+                                        "fullExpression": "wrap_accord_in_test.accordion_for_answers.answers_notes.wrap_items_to_be_in_a_column.run_through_body_sections.answers_and_notes.dg_illust_below_@item.number.display_illust",
+                                        "matchedExpression": "@item.number.display_illust",
+                                        "type": "item",
+                                        "fieldName": "number"
+                                      }
+                                    ]
                                   },
                                   "_dynamicDependencies": {
                                     "@local.block_illustration": [
@@ -1776,13 +1949,23 @@
                                     ],
                                     "@local.block_illustration_max_width": [
                                       "style_list.1"
+                                    ],
+                                    "@item.number.display_illust": [
+                                      "_nested_name"
                                     ]
                                   }
                                 }
                               ],
-                              "name": "display_group_10",
-                              "_nested_name": "wrap_accord_in_test.accordion_for_answers.answers_notes.wrap_items_to_be_in_a_column.run_through_body_sections.answers_and_notes.display_group_10",
+                              "_nested_name": "wrap_accord_in_test.accordion_for_answers.answers_notes.wrap_items_to_be_in_a_column.run_through_body_sections.answers_and_notes.dg_illust_below_@item.number",
                               "_dynamicFields": {
+                                "name": [
+                                  {
+                                    "fullExpression": "dg_illust_below_@item.number",
+                                    "matchedExpression": "@item.number",
+                                    "type": "item",
+                                    "fieldName": "number"
+                                  }
+                                ],
                                 "condition": [
                                   {
                                     "fullExpression": "@@local.block_type == \"illust_below\"",
@@ -1800,14 +1983,97 @@
                                       "fieldName": "paragraph_space"
                                     }
                                   ]
-                                }
+                                },
+                                "_nested_name": [
+                                  {
+                                    "fullExpression": "wrap_accord_in_test.accordion_for_answers.answers_notes.wrap_items_to_be_in_a_column.run_through_body_sections.answers_and_notes.dg_illust_below_@item.number",
+                                    "matchedExpression": "@item.number",
+                                    "type": "item",
+                                    "fieldName": "number"
+                                  }
+                                ]
                               },
                               "_dynamicDependencies": {
+                                "@item.number": [
+                                  "name",
+                                  "_nested_name"
+                                ],
                                 "@local.block_type": [
                                   "condition"
                                 ],
                                 "@local.paragraph_space": [
                                   "style_list.0"
+                                ]
+                              }
+                            },
+                            {
+                              "type": "display_group",
+                              "name": "dg_none_of_the_above_@item.number",
+                              "condition": "@local.none_of_the_above",
+                              "style_list": [
+                                "margin-top: 0px"
+                              ],
+                              "rows": [
+                                {
+                                  "name": "filler",
+                                  "value": "IGNORE_THIS",
+                                  "_translations": {
+                                    "value": {}
+                                  },
+                                  "exclude_from_translation": true,
+                                  "type": "set_variable",
+                                  "_nested_name": "wrap_accord_in_test.accordion_for_answers.answers_notes.wrap_items_to_be_in_a_column.run_through_body_sections.answers_and_notes.dg_none_of_the_above_@item.number.filler",
+                                  "_dynamicFields": {
+                                    "_nested_name": [
+                                      {
+                                        "fullExpression": "wrap_accord_in_test.accordion_for_answers.answers_notes.wrap_items_to_be_in_a_column.run_through_body_sections.answers_and_notes.dg_none_of_the_above_@item.number.filler",
+                                        "matchedExpression": "@item.number.filler",
+                                        "type": "item",
+                                        "fieldName": "number"
+                                      }
+                                    ]
+                                  },
+                                  "_dynamicDependencies": {
+                                    "@item.number.filler": [
+                                      "_nested_name"
+                                    ]
+                                  }
+                                }
+                              ],
+                              "_nested_name": "wrap_accord_in_test.accordion_for_answers.answers_notes.wrap_items_to_be_in_a_column.run_through_body_sections.answers_and_notes.dg_none_of_the_above_@item.number",
+                              "_dynamicFields": {
+                                "name": [
+                                  {
+                                    "fullExpression": "dg_none_of_the_above_@item.number",
+                                    "matchedExpression": "@item.number",
+                                    "type": "item",
+                                    "fieldName": "number"
+                                  }
+                                ],
+                                "condition": [
+                                  {
+                                    "fullExpression": "@local.none_of_the_above",
+                                    "matchedExpression": "@local.none_of_the_above",
+                                    "type": "local",
+                                    "fieldName": "none_of_the_above"
+                                  }
+                                ],
+                                "_nested_name": [
+                                  {
+                                    "fullExpression": "wrap_accord_in_test.accordion_for_answers.answers_notes.wrap_items_to_be_in_a_column.run_through_body_sections.answers_and_notes.dg_none_of_the_above_@item.number",
+                                    "matchedExpression": "@item.number",
+                                    "type": "item",
+                                    "fieldName": "number"
+                                  }
+                                ]
+                              },
+                              "_dynamicDependencies": {
+                                "@item.number": [
+                                  "name",
+                                  "_nested_name"
+                                ],
+                                "@local.none_of_the_above": [
+                                  "condition"
                                 ]
                               }
                             }

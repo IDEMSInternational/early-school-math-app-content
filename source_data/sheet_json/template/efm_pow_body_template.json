@@ -377,11 +377,20 @@
       "exclude_from_translation": true
     },
     {
+      "name": "none_of_the_above",
+      "value": true
+    },
+    {
       "type": "begin_display_group",
+      "name": "dg_all_text_@item.number",
       "condition": "@@local.block_type == \"all_text\"",
       "parameter_list": "style: column;",
       "style_list": "@local.paragraph_space; ",
       "exclude_from_translation": true
+    },
+    {
+      "name": "none_of_the_above",
+      "value": false
     },
     {
       "name": "paragraph_space",
@@ -400,10 +409,15 @@
     },
     {
       "type": "begin_display_group",
+      "name": "dg_all_illust_@item.number",
       "condition": "@@local.block_type == \"all_illust\"",
       "parameter_list": "style: column;",
       "style_list": "@local.paragraph_space",
       "exclude_from_translation": true
+    },
+    {
+      "name": "none_of_the_above",
+      "value": false
     },
     {
       "type": "image",
@@ -418,10 +432,15 @@
     },
     {
       "type": "begin_display_group",
+      "name": "dg_illust_below_@item.number",
       "condition": "@@local.block_type == \"illust_below\"",
       "parameter_list": "style: column;",
       "style_list": "@local.paragraph_space",
       "exclude_from_translation": true
+    },
+    {
+      "name": "none_of_the_above",
+      "value": false
     },
     {
       "name": "paragraph_space",
@@ -444,6 +463,20 @@
     {
       "type": "end_display_group",
       "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_none_of_the_above_@item.number",
+      "condition": "@local.none_of_the_above",
+      "style_list": "margin-top: 0px;"
+    },
+    {
+      "name": "filler",
+      "value": "IGNORE_THIS",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_display_group"
     },
     {
       "type": "end_display_group"
