@@ -4,18 +4,18 @@
 | type | count |
 | --- | --- |
 | accordion | 84 |
-| accordion_section | 154 |
-| button | 186 |
+| accordion_section | 156 |
+| button | 188 |
 | debug_toggle | 1 |
-| display_group | 496 |
+| display_group | 500 |
 | image | 71 |
-| items | 76 |
+| items | 78 |
 | qr_code | 1 |
 | radio_button_grid | 1 |
 | round_button | 10 |
 | select_text | 1 |
 | set_field | 65 |
-| set_variable | 810 |
+| set_variable | 824 |
 | simple_checkbox | 4 |
 | template | 97 |
 | text | 381 |
@@ -38,10 +38,10 @@
 | emit: set_language | 1 |
 | emit: uncompleted | 58 |
 | feedback | 11 |
-| go_to | 159 |
+| go_to | 161 |
 | go_to_url | 3 |
 | reset_app | 1 |
-| set_field | 151 |
+| set_field | 155 |
 | set_local | 7 |
 | start_tour | 10 |
 </details>
@@ -51,7 +51,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 52874 KB | 52.9 MB |
+| total | 80788 KB | 80.8 MB |
 | unused | 22395 KB | 22.4 MB |
 </details>
 
@@ -1541,7 +1541,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMPOWBLetterSubstitution1.svg | 27.6 | 1 |
 | ESMIll/ESMPOWBLetterSubstitution2.svg | 13.3 | 1 |
 | ESMIll/ESMPOWBLetterSubstitution3.svg | 18.1 | 1 |
-| ESMIll/ESMPOWBLetterSubstitutionIntro.svg | 16.7 | 12 |
+| ESMIll/ESMPOWBLetterSubstitutionIntro.svg | 16.7 | 11 |
 | ESMIll/ESMPOWBMagicFlowers1.svg | 6.5 | 1 |
 | ESMIll/ESMPOWBMagicFlowers2.svg | 7.4 | 1 |
 | ESMIll/ESMPOWBMagicFlowersIntro.svg | 16.6 | 2 |
@@ -1597,7 +1597,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMPOWCMagicSquares3Double.svg | 11.4 | 1 |
 | ESMIll/ESMPOWCMagicSquares4Answer1.svg | 13.7 | 2 |
 | ESMIll/ESMPOWCMagicSquares4Answer2.svg | 19.1 | 1 |
-| ESMIll/ESMPOWCMagicSquaresExamples1.svg | 31.6 | 3 |
+| ESMIll/ESMPOWCMagicSquaresExamples1.svg | 31.6 | 4 |
 | ESMIll/ESMPOWCMagicTriangle Annotated.svg | 11.2 | 2 |
 | ESMIll/ESMPOWCMagicTriangle3 - Empty.svg | 6.8 | 1 |
 | ESMIll/ESMPOWCMagicTriangle4 - Empty.svg | 8.5 | 1 |
@@ -1648,19 +1648,24 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMPOWCTiedHandsAnswer.svg | 100.4 | 1 |
 | ESMIll/ESMPOWCTiedHandsChallenge.svg | 51.5 | 1 |
 | ESMIll/ESMPOWCTrapezoidalNumbersChallenge1.svg | 2.3 | 1 |
-| ESMIll/ESMPOWCTrapezoidalNumbersIntro.svg | 7.4 | 1 |
+| ESMIll/ESMPOWCTrapezoidalNumbersIntro.svg | 7.4 | 5 |
 | ESMIll/ESMPOWDDifferenceSquaresChallenge.svg | 3.3 | 1 |
 | ESMIll/ESMPOWDDifferenceSquaresIntro.svg | 15.7 | 1 |
 | ESMIll/ESMPOWDDifferenceTriangleChallenge.svg | 234.6 | 1 |
 | ESMIll/ESMPOWDDifferenceTriangleIntro.svg | 94.9 | 1 |
+| ESMIll/ESMPOWDLetterSubstitution10.svg | 31.5 | 1 |
+| ESMIll/ESMPOWDLetterSubstitution11.svg | 22.9 | 1 |
+| ESMIll/ESMPOWDLetterSubstitution12.svg | 40.8 | 1 |
+| ESMIll/ESMPOWDLetterSubstitution13.svg | 31.1 | 1 |
+| ESMIll/ESMPOWDLetterSubstitution14.svg | 38 | 1 |
 | ESMIll/ESMPOWDLetterSubstitution4.svg | 17 | 1 |
 | ESMIll/ESMPOWDLetterSubstitution5.svg | 21.1 | 1 |
 | ESMIll/ESMPOWDLetterSubstitution6.svg | 27.1 | 1 |
-| ESMIll/ESMPOWDLetterSubstitution7.svg | 25.1 | 6 |
+| ESMIll/ESMPOWDLetterSubstitution7.svg | 25.1 | 1 |
 | ESMIll/ESMPOWDLines5by4Intro.svg | 6.9 | 2 |
 | ESMIll/ESMPOWDLines6Answer.svg | 116.7 | 1 |
 | ESMIll/ESMPOWDLines7Answer.svg | 214.8 | 1 |
-| ESMIll/ESMPOWDMagicSquareChallenge.svg | 2.5 | 1 |
+| ESMIll/ESMPOWDMagicSquareChallenge.svg | 2.5 | 2 |
 | ESMIll/ESMPOWDMagicSquares5Answer1.svg | 13.9 | 1 |
 | ESMIll/ESMPOWDMagicSquares5Answer2.svg | 13.7 | 1 |
 | ESMIll/ESMPOWDMagicSquares6Answer.svg | 28.9 | 1 |
@@ -1676,11 +1681,30 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMPOWDTrianglesinTrianglesEvens.svg | 15.4 | 1 |
 | ESMIll/ESMPOWDTrianglesinTrianglesIntro.svg | 9.4 | 1 |
 | ESMIll/ESMPOWDTrianglesinTrianglesSquares.svg | 7.9 | 1 |
+| ESMIll/ESMPOWEBouncingBilliardBallIntro.svg | 255.8 | 1 |
+| ESMIll/ESMPOWEBouncingBilliardBallProof.svg | 56.8 | 1 |
+| ESMIll/ESMPOWEBoxOfBlocks.svg | 11.8 | 1 |
 | ESMIll/ESMPOWEFillingSquaresWithRectanglesIntro.svg | 23.8 | 1 |
 | ESMIll/ESMPOWEFillingSquaresWithRectanglesSolutions.svg | 71.4 | 1 |
+| ESMIll/ESMPOWELadybugsIntroMultiply.svg | 7.9 | 1 |
+| ESMIll/ESMPOWEMaxProductsWith16.svg | 43.4 | 1 |
+| ESMIll/ESMPOWEMovingDigits4Mult2.svg | 25.3 | 1 |
+| ESMIll/ESMPOWEMovingDigits9Mult3.svg | 26.1 | 1 |
+| ESMIll/ESMPOWEPanBalanceNotes.svg | 49.6 | 1 |
+| ESMIll/ESMPOWEPanBalanceWithWeights4s7sBothSides.svg | 4404.5 | 1 |
+| ESMIll/ESMPOWEPanBalanceWithWeights4s7sOneSide.svg | 4383.7 | 1 |
+| ESMIll/ESMPOWEPanBalanceWithWeights6s10sBothSides.svg | 4404.5 | 1 |
+| ESMIll/ESMPOWEPanBalanceWithWeights6s10sOneSide.svg | 4383.7 | 1 |
+| ESMIll/ESMPOWEPanBalanceWithWeightsBothSides.svg | 4372.5 | 1 |
+| ESMIll/ESMPOWEPanBalanceWithWeightsOneSide.svg | 4372.5 | 1 |
 | ESMIll/ESMPOWEPerfectRectangle47by65Revised.svg | 11.4 | 2 |
 | ESMIll/ESMPOWESquareGrid4by4RectangleExamples.svg | 5.1 | 1 |
 | ESMIll/ESMPOWESquareGrid4by4RectangleSides.svg | 6.1 | 1 |
+| ESMIll/ESMPOWEStarsInCirclesIntro.svg | 714.4 | 1 |
+| ESMIll/ESMPOWEStarsLoopsCircles.svg | 41.1 | 1 |
+| ESMIll/ESMPOWETrapezoidalNumbersAnswer5a.svg | 5.8 | 1 |
+| ESMIll/ESMPOWETrapezoidalNumbersAnswer5b.svg | 7.3 | 1 |
+| ESMIll/ESMPOWFEqualProducts.svg | 63.1 | 1 |
 | ESMIll/ESMPOWFFractions1.svg | 20.1 | 1 |
 | ESMIll/ESMPOWFFractions10.svg | 21.7 | 1 |
 | ESMIll/ESMPOWFFractions11.svg | 26.9 | 1 |
@@ -1696,11 +1720,15 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMPOWFLineCrossings4by6.svg | 5 | 1 |
 | ESMIll/ESMPOWFLineCrossingsChallenge.svg | 4.2 | 1 |
 | ESMIll/ESMPOWFLineCrossingsIntro.svg | 6.1 | 1 |
+| ESMIll/ESMPOWFMagicSquares71.svg | 33.7 | 1 |
+| ESMIll/ESMPOWFMagicSquares72.svg | 40.8 | 1 |
+| ESMIll/ESMPOWFMagicSquares73.svg | 22.3 | 1 |
 | ESMIll/ESMPOWFRectangleDots4by6.svg | 6.3 | 1 |
 | ESMIll/ESMPOWFRectangleDotsIntro.svg | 14.9 | 1 |
 | ESMIll/ESMPOWFSquareGrid5by5Challenge.svg | 6.5 | 1 |
 | ESMIll/ESMPOWFSquareGrid5by5DiagonalsArea.svg | 8.9 | 1 |
 | ESMIll/ESMPOWFSquareGrid5by5SimpleExamples.svg | 7.9 | 1 |
+| ESMIll/ESMPOWFSquaresPrimes.svg | 22.5 | 1 |
 | ESMIll/ESMPS4by4ChessboardEmpty.svg | 6.4 | 1 |
 | ESMIll/ESMPSEightCubesIntro.svg | 5.5 | 1 |
 | ESMIll/ESMPSEightCubesSixFaces.svg | 10.2 | 1 |
