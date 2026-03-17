@@ -57,7 +57,7 @@
       "type": "begin_accordion_section",
       "name": "accord_advice",
       "value": "Directions and Observations",
-      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "parameter_list": "style: large emphasised",
       "comments": true
     },
     {
@@ -88,21 +88,22 @@
       "name": "button_open_ended_tasks",
       "value": "Open-Ended Tasks",
       "action_list": "click | go_to: esm_rt_open_ended_tasks;",
-      "parameter_list": "style: short; \ntext_align: center"
+      "parameter_list": "style: short;"
     },
     {
       "type": "button",
       "name": "button_ps_tasks",
       "value": "Problem Solving Tasks",
       "action_list": "click | go_to: esm_rt_ps_tasks",
-      "parameter_list": "style: short; \ntext_align: center"
+      "parameter_list": "style: short;"
     },
     {
       "type": "end_display_group"
     },
     {
       "type": "begin_display_group",
-      "name": "fake_group"
+      "name": "fake_group",
+      "style_list": "margin-top: 40px;"
     },
     {
       "type": "text",

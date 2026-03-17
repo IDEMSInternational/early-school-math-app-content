@@ -92,7 +92,7 @@
       "name": "button_intro_start",
       "value": "Introduction",
       "action_list": "click | go_to: esm_intro_start_start; click | set_field:@local.click_history_field_name: @local.button_click_history",
-      "parameter_list": "style: short; \ntext_align: center"
+      "parameter_list": "style: short;"
     },
     {
       "type": "end_display_group"
@@ -128,7 +128,7 @@
       "name": "button_topics",
       "value": "Topics",
       "action_list": "click | go_to: esm_topic_start; click | set_field:@local.click_history_field_name: @local.button_click_history",
-      "parameter_list": "style: short; \ntext_align: center"
+      "parameter_list": "style: short;"
     },
     {
       "type": "end_display_group"
@@ -164,7 +164,7 @@
       "name": "button_pows",
       "value": "Resources",
       "action_list": "click | go_to: esm_resources; \nclick | set_field:@local.click_history_field_name: @local.button_click_history",
-      "parameter_list": "style: short; \ntext_align: center"
+      "parameter_list": "style: short;"
     },
     {
       "type": "end_display_group"

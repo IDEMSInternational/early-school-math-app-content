@@ -78,7 +78,7 @@
       "value": "<",
       "action_list": "click | set_field:current_ga:@local.prev_ga;\nclick | emit:force_reload",
       "condition": "@local.prev_ga",
-      "parameter_list": "style: short;\ntext_align: center",
+      "parameter_list": "style: short;",
       "style_list": "flex: 30",
       "exclude_from_translation": true
     },
@@ -101,7 +101,7 @@
       "value": "\\>",
       "action_list": "click | set_field:current_ga:@local.next_ga;\nclick | emit:force_reload",
       "condition": "@local.next_ga",
-      "parameter_list": "style: short;\ntext_align: center",
+      "parameter_list": "style: short;",
       "style_list": "flex: 30",
       "exclude_from_translation": true
     },

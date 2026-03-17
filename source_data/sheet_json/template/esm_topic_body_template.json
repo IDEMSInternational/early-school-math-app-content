@@ -335,7 +335,7 @@
       "name": "display_button",
       "value": "@@local.accordion_label",
       "action_list": "click | go_to: @@local.block_text",
-      "parameter_list": "style: short; \ntext_align: center",
+      "parameter_list": "style: short;",
       "exclude_from_translation": true
     },
     {
@@ -435,7 +435,7 @@
       "value": "@local.prev_name",
       "action_list": "click | set_field:current_topic:@local.prev_row;\nclick | go_to: esm_topic_template;\nclick | emit:force_reload",
       "condition": "@local.prev_id",
-      "parameter_list": "style: short;\ntext_align: center"
+      "parameter_list": "style: short;"
     },
     {
       "type": "end_items"
@@ -499,7 +499,7 @@
       "value": "@local.next_name",
       "action_list": "click | set_field:current_topic:@local.next_row;\nclick | go_to: esm_topic_template;\nclick | emit:force_reload",
       "condition": "@local.next_id",
-      "parameter_list": "style: short;\ntext_align: center"
+      "parameter_list": "style: short;"
     },
     {
       "type": "end_items"
@@ -576,7 +576,7 @@
       "name": "button_resources",
       "value": "Resources",
       "action_list": "click | set_field:topics_search_set: @local.topic_id;\nclick | go_to: esm_resources_finder;",
-      "parameter_list": "style: short;\ntext_align: center",
+      "parameter_list": "style: short;",
       "comments": "click | @calc(@fields.topics_search_set.add(@local.topic_id));"
     },
     {
@@ -589,7 +589,7 @@
       "name": "button_glossary",
       "value": "Glossary",
       "action_list": "click | set_field:glossary_words_count : @@local.glossary_count_ptr; \nclick | set_field:glossary_word_1 : @@local.glossary_word_1_ptr; \nclick | set_field:glossary_word_2 : @@local.glossary_word_2_ptr; \nclick | set_field:glossary_word_3 : @@local.glossary_word_3_ptr; \nclick | set_field:glossary_word_4 : @@local.glossary_word_4_ptr; \nclick | set_field:glossary_word_5 : @@local.glossary_word_5_ptr; \nclick | set_field:glossary_word_6 : @@local.glossary_word_6_ptr; \nclick | go_to: efm_gloss_start;",
-      "parameter_list": "style: short;\ntext_align: center"
+      "parameter_list": "style: short;"
     },
     {
       "type": "end_display_group",
