@@ -79,7 +79,7 @@
       "value": "<",
       "action_list": "click | set_field:current_topic:@local.prev_topic;\nclick | emit:force_reload",
       "condition": "@local.prev_topic",
-      "parameter_list": "style: short;\ntext_align: center",
+      "parameter_list": "style: short;",
       "style_list": "flex: 30",
       "exclude_from_translation": true
     },
@@ -93,7 +93,7 @@
       "type": "text",
       "name": "title",
       "value": "@local.topic_name",
-      "parameter_list": "text_align: center;\nstyle: large emphasised",
+      "parameter_list": "style: large emphasised",
       "style_list": "flex: 300"
     },
     {
@@ -102,7 +102,7 @@
       "value": "\\>",
       "action_list": "click | set_field:current_topic:@local.next_topic;\nclick | emit:force_reload",
       "condition": "@local.next_topic",
-      "parameter_list": "style: short;\ntext_align: center",
+      "parameter_list": "style: short;",
       "style_list": "flex: 30",
       "exclude_from_translation": true
     },

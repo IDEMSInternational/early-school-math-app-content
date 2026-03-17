@@ -31,7 +31,7 @@
       "name": "button_problem_solving",
       "value": "Problem Solving Overview",
       "action_list": "click | go_to: esm_rt_problem_solving;",
-      "parameter_list": "style: short; \ntext_align: center"
+      "parameter_list": "style: short;"
     },
     {
       "type": "begin_display_group",
@@ -53,7 +53,7 @@
       "type": "begin_accordion_section",
       "name": "accord_ps_common_steps",
       "value": "Starting and Ending Steps",
-      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "parameter_list": "style: large emphasised",
       "comments": true
     },
     {
@@ -99,7 +99,7 @@
       "type": "begin_accordion_section",
       "name": "accord_ps_puzzles",
       "value": "Puzzles",
-      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "parameter_list": "style: large emphasised",
       "comments": true
     },
     {
@@ -117,7 +117,7 @@
       "name": "button_oe_pows",
       "value": "Puzzles",
       "action_list": "click | go_to: efm_pow_start;",
-      "parameter_list": "style: short; \ntext_align: center"
+      "parameter_list": "style: short;"
     },
     {
       "type": "end_display_group"
@@ -130,7 +130,7 @@
       "type": "begin_accordion_section",
       "name": "accord_ps_games",
       "value": "Games",
-      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "parameter_list": "style: large emphasised",
       "comments": true
     },
     {
@@ -148,7 +148,7 @@
       "name": "button_ps_gas",
       "value": "Games",
       "action_list": "click | go_to: efm_ga_start;",
-      "parameter_list": "style: short; \ntext_align: center"
+      "parameter_list": "style: short;"
     },
     {
       "type": "end_display_group"
@@ -186,7 +186,7 @@
       "type": "begin_accordion_section",
       "name": "accord_ps_logic",
       "value": "Early Logic",
-      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "parameter_list": "style: large emphasised",
       "comments": true
     },
     {
@@ -205,7 +205,7 @@
       "name": "button_@item.id",
       "value": "@item.name",
       "action_list": "click | set_field:ps_content_ptr : data.esm_ps_tasks_data_list.@item.id;\nclick | go_to: esm_ps_displayer;",
-      "parameter_list": "style: short; \ntext_align: center"
+      "parameter_list": "style: short;"
     },
     {
       "type": "end_items"
@@ -221,7 +221,7 @@
       "type": "begin_accordion_section",
       "name": "accord_ps_add_sub_basic",
       "value": "Early Counting, Add, Sub",
-      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "parameter_list": "style: large emphasised",
       "comments": true
     },
     {
@@ -240,7 +240,7 @@
       "name": "button_@item.id",
       "value": "@item.name",
       "action_list": "click | set_field:ps_content_ptr : data.esm_ps_tasks_data_list.@item.id;\nclick | go_to: esm_ps_displayer;",
-      "parameter_list": "style: short; \ntext_align: center"
+      "parameter_list": "style: short;"
     },
     {
       "type": "end_items"
@@ -262,7 +262,7 @@
       "type": "begin_accordion_section",
       "name": "accord_ps_mult_1digit",
       "value": "Early Multiplication – NOT READY",
-      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "parameter_list": "style: large emphasised",
       "comments": true
     },
     {
@@ -281,7 +281,7 @@
       "name": "button_@item.id",
       "value": "@item.name",
       "action_list": "click | set_field:ps_content_ptr : data.esm_ps_tasks_data_list.@item.id;\nclick | go_to: esm_ps_displayer;",
-      "parameter_list": "style: short; \ntext_align: center"
+      "parameter_list": "style: short;"
     },
     {
       "type": "end_items"

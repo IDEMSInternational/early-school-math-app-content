@@ -80,7 +80,7 @@
       "value": "@local.topic_name",
       "action_list": "click | set_field:current_topic:@local.topic_row;\nclick | go_to: esm_topic_template;\nclick | emit:force_reload",
       "condition": "@local.topic_theme",
-      "parameter_list": "style: short;\ntext_align: center"
+      "parameter_list": "style: short;"
     },
     {
       "type": "end_items"

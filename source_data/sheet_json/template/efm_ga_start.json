@@ -46,7 +46,7 @@
       "type": "begin_accordion_section",
       "name": "accord_games_advice",
       "value": "Games Advice",
-      "parameter_list": "text_align: center; \nstyle: large emphasised",
+      "parameter_list": "style: large emphasised",
       "comments": true
     },
     {
@@ -389,7 +389,7 @@
       "name": "button_ga",
       "value": "@item.name",
       "action_list": "click | set_field:current_ga: data.efm_gas.@item.id;\nclick | go_to: efm_ga_template;\nclick | set_field:@local.click_history_field_name: @local.gas_click_history",
-      "parameter_list": "style: short; \ntext_align: center",
+      "parameter_list": "style: short;",
       "comments": "click | set_field.current_ga: data.efm_gas.@item.id;\nclick | go_to: efm_ga_template;\nclick | set_field:@local.click_history_field_name: @local.gas_click_history"
     },
     {

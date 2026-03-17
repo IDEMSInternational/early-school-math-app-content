@@ -72,7 +72,7 @@
       "value": "@item.name",
       "action_list": "click | go_to: @item.id;",
       "condition": "@item.book_level == \"beginner\"",
-      "parameter_list": "style: short; \ntext_align: center",
+      "parameter_list": "style: short;",
       "comments": "click | go_to: @item.template"
     },
     {
@@ -107,7 +107,7 @@
       "value": "@item.name",
       "action_list": "click | go_to: @item.id;",
       "condition": "@item.book_level == \"intermediate\"",
-      "parameter_list": "style: short; \ntext_align: center",
+      "parameter_list": "style: short;",
       "comments": "click | go_to: @item.template"
     },
     {
@@ -142,7 +142,7 @@
       "value": "@item.name",
       "action_list": "click | go_to: @item.id;",
       "condition": "@item.book_level == \"advanced\"",
-      "parameter_list": "style: short; \ntext_align: center",
+      "parameter_list": "style: short;",
       "comments": "click | go_to: @item.template"
     },
     {
