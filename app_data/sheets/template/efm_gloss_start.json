@@ -48,26 +48,6 @@
       "_nested_name": "dg_top_of_page"
     },
     {
-      "type": "display_group",
-      "name": "dg_info",
-      "rows": [
-        {
-          "type": "text",
-          "name": "Intro_text",
-          "value": "When arriving from a topic, you will see the glossary words associated with that topic, if any have been specified.",
-          "_translations": {
-            "value": {}
-          },
-          "parameter_list": {
-            "icon_src": "help",
-            "style": "navigation"
-          },
-          "_nested_name": "dg_info.Intro_text"
-        }
-      ],
-      "_nested_name": "dg_info"
-    },
-    {
       "name": "phrase_count",
       "value": "@fields.glossary_words_count",
       "_translations": {
@@ -116,19 +96,84 @@
       }
     },
     {
-      "name": "description_1",
-      "value": "See all phrases",
+      "name": "description_a_to_z",
+      "value": "A-Z (this will be very slow)",
       "_translations": {
         "value": {}
       },
-      "condition": false,
       "type": "set_variable",
-      "_nested_name": "description_1"
+      "_nested_name": "description_a_to_z"
+    },
+    {
+      "name": "description_a_to_c",
+      "value": "A-C",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "description_a_to_c"
+    },
+    {
+      "name": "description_d_to_h",
+      "value": "D-H",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "description_d_to_h"
+    },
+    {
+      "name": "description_i_to_n",
+      "value": "I-N",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "description_i_to_n"
+    },
+    {
+      "name": "description_o_to_p",
+      "value": "O-P",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "description_o_to_p"
+    },
+    {
+      "name": "description_q_to_s",
+      "value": "Q-S",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "description_q_to_s"
+    },
+    {
+      "name": "description_t_to_z",
+      "value": "T-Z",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "description_t_to_z"
     },
     {
       "type": "display_group",
       "name": "dg_all_or_some",
+      "parameter_list": {
+        "style": "column"
+      },
       "rows": [
+        {
+          "type": "text",
+          "name": "intro",
+          "value": "Select interval(s) of phrases to see.",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "dg_all_or_some.intro"
+        },
         {
           "type": "set_field",
           "name": "glossary_words_count",
@@ -161,110 +206,398 @@
           }
         },
         {
-          "type": "text",
-          "name": "spacer",
-          "style_list": [
-            "flex: 1"
-          ],
-          "_nested_name": "dg_all_or_some.spacer"
-        },
-        {
-          "type": "button",
-          "name": "see_all_button",
-          "value": "See All Phrases",
-          "_translations": {
-            "value": {}
-          },
-          "action_list": [
+          "type": "display_group",
+          "rows": [
             {
-              "trigger": "click",
-              "action_id": "set_local",
-              "args": [
-                "see_all_phrases",
-                true
-              ],
-              "_raw": "click | set_local:see_all_phrases:TRUE"
+              "type": "toggle_bar",
+              "name": "checkbox_see_a_to_z",
+              "value": false,
+              "parameter_list": {
+                "true_text": "@local.description_a_to_z",
+                "false_text": "@local.description_a_to_z"
+              },
+              "_nested_name": "dg_all_or_some.display_group_12.checkbox_see_a_to_z",
+              "_dynamicFields": {
+                "parameter_list": {
+                  "true_text": [
+                    {
+                      "fullExpression": "@local.description_a_to_z",
+                      "matchedExpression": "@local.description_a_to_z",
+                      "type": "local",
+                      "fieldName": "description_a_to_z"
+                    }
+                  ],
+                  "false_text": [
+                    {
+                      "fullExpression": "@local.description_a_to_z",
+                      "matchedExpression": "@local.description_a_to_z",
+                      "type": "local",
+                      "fieldName": "description_a_to_z"
+                    }
+                  ]
+                }
+              },
+              "_dynamicDependencies": {
+                "@local.description_a_to_z": [
+                  "parameter_list.true_text",
+                  "parameter_list.false_text"
+                ]
+              }
             },
             {
-              "trigger": "click",
-              "action_id": "emit",
-              "args": [
-                "force_reload"
+              "type": "text",
+              "name": "spacer2",
+              "style_list": [
+                "flex: 1"
               ],
-              "_raw": "click | emit:force_reload"
+              "_nested_name": "dg_all_or_some.display_group_12.spacer2"
             }
           ],
-          "parameter_list": {
-            "style": "short",
-            "text_align": "center"
-          },
-          "_nested_name": "dg_all_or_some.see_all_button"
+          "name": "display_group_12",
+          "_nested_name": "dg_all_or_some.display_group_12"
         },
         {
-          "type": "toggle_bar",
-          "name": "checkbox_see_all_phrases",
-          "value": "@local.see_all_phrases",
-          "_translations": {
-            "value": {}
-          },
-          "condition": false,
-          "parameter_list": {
-            "true_text": "@local.description_1",
-            "false_text": "@local.description_1"
-          },
-          "_nested_name": "dg_all_or_some.checkbox_see_all_phrases",
-          "_dynamicFields": {
-            "value": [
-              {
-                "fullExpression": "@local.see_all_phrases",
-                "matchedExpression": "@local.see_all_phrases",
-                "type": "local",
-                "fieldName": "see_all_phrases"
+          "type": "display_group",
+          "rows": [
+            {
+              "type": "toggle_bar",
+              "name": "checkbox_see_a_to_c",
+              "value": false,
+              "parameter_list": {
+                "true_text": "@local.description_a_to_c",
+                "false_text": "@local.description_a_to_c"
+              },
+              "style_list": [
+                "flex:10"
+              ],
+              "_nested_name": "dg_all_or_some.display_group_13.checkbox_see_a_to_c",
+              "_dynamicFields": {
+                "parameter_list": {
+                  "true_text": [
+                    {
+                      "fullExpression": "@local.description_a_to_c",
+                      "matchedExpression": "@local.description_a_to_c",
+                      "type": "local",
+                      "fieldName": "description_a_to_c"
+                    }
+                  ],
+                  "false_text": [
+                    {
+                      "fullExpression": "@local.description_a_to_c",
+                      "matchedExpression": "@local.description_a_to_c",
+                      "type": "local",
+                      "fieldName": "description_a_to_c"
+                    }
+                  ]
+                }
+              },
+              "_dynamicDependencies": {
+                "@local.description_a_to_c": [
+                  "parameter_list.true_text",
+                  "parameter_list.false_text"
+                ]
               }
-            ],
-            "parameter_list": {
-              "true_text": [
-                {
-                  "fullExpression": "@local.description_1",
-                  "matchedExpression": "@local.description_1",
-                  "type": "local",
-                  "fieldName": "description_1"
-                }
+            },
+            {
+              "type": "text",
+              "name": "spacer2",
+              "style_list": [
+                "flex: 1"
               ],
-              "false_text": [
-                {
-                  "fullExpression": "@local.description_1",
-                  "matchedExpression": "@local.description_1",
-                  "type": "local",
-                  "fieldName": "description_1"
+              "_nested_name": "dg_all_or_some.display_group_13.spacer2"
+            },
+            {
+              "type": "toggle_bar",
+              "name": "checkbox_see_d_to_h",
+              "value": false,
+              "parameter_list": {
+                "true_text": "@local.description_d_to_h",
+                "false_text": "@local.description_d_to_h"
+              },
+              "style_list": [
+                "flex:10"
+              ],
+              "_nested_name": "dg_all_or_some.display_group_13.checkbox_see_d_to_h",
+              "_dynamicFields": {
+                "parameter_list": {
+                  "true_text": [
+                    {
+                      "fullExpression": "@local.description_d_to_h",
+                      "matchedExpression": "@local.description_d_to_h",
+                      "type": "local",
+                      "fieldName": "description_d_to_h"
+                    }
+                  ],
+                  "false_text": [
+                    {
+                      "fullExpression": "@local.description_d_to_h",
+                      "matchedExpression": "@local.description_d_to_h",
+                      "type": "local",
+                      "fieldName": "description_d_to_h"
+                    }
+                  ]
                 }
-              ]
+              },
+              "_dynamicDependencies": {
+                "@local.description_d_to_h": [
+                  "parameter_list.true_text",
+                  "parameter_list.false_text"
+                ]
+              }
+            },
+            {
+              "type": "text",
+              "name": "spacer2",
+              "style_list": [
+                "flex: 1"
+              ],
+              "_nested_name": "dg_all_or_some.display_group_13.spacer2"
+            },
+            {
+              "type": "toggle_bar",
+              "name": "checkbox_see_i_to_n",
+              "value": false,
+              "parameter_list": {
+                "true_text": "@local.description_i_to_n",
+                "false_text": "@local.description_i_to_n"
+              },
+              "style_list": [
+                "flex:10"
+              ],
+              "_nested_name": "dg_all_or_some.display_group_13.checkbox_see_i_to_n",
+              "_dynamicFields": {
+                "parameter_list": {
+                  "true_text": [
+                    {
+                      "fullExpression": "@local.description_i_to_n",
+                      "matchedExpression": "@local.description_i_to_n",
+                      "type": "local",
+                      "fieldName": "description_i_to_n"
+                    }
+                  ],
+                  "false_text": [
+                    {
+                      "fullExpression": "@local.description_i_to_n",
+                      "matchedExpression": "@local.description_i_to_n",
+                      "type": "local",
+                      "fieldName": "description_i_to_n"
+                    }
+                  ]
+                }
+              },
+              "_dynamicDependencies": {
+                "@local.description_i_to_n": [
+                  "parameter_list.true_text",
+                  "parameter_list.false_text"
+                ]
+              }
+            },
+            {
+              "type": "text",
+              "name": "spacer2",
+              "style_list": [
+                "flex: 1"
+              ],
+              "_nested_name": "dg_all_or_some.display_group_13.spacer2"
             }
-          },
-          "_dynamicDependencies": {
-            "@local.see_all_phrases": [
-              "value"
-            ],
-            "@local.description_1": [
-              "parameter_list.true_text",
-              "parameter_list.false_text"
-            ]
-          }
+          ],
+          "name": "display_group_13",
+          "_nested_name": "dg_all_or_some.display_group_13"
         },
         {
-          "type": "text",
-          "name": "spacer",
-          "style_list": [
-            "flex: 1"
+          "type": "display_group",
+          "rows": [
+            {
+              "type": "toggle_bar",
+              "name": "checkbox_see_o_to_p",
+              "value": false,
+              "parameter_list": {
+                "true_text": "@local.description_o_to_p",
+                "false_text": "@local.description_o_to_p"
+              },
+              "style_list": [
+                "flex:10"
+              ],
+              "_nested_name": "dg_all_or_some.display_group_14.checkbox_see_o_to_p",
+              "_dynamicFields": {
+                "parameter_list": {
+                  "true_text": [
+                    {
+                      "fullExpression": "@local.description_o_to_p",
+                      "matchedExpression": "@local.description_o_to_p",
+                      "type": "local",
+                      "fieldName": "description_o_to_p"
+                    }
+                  ],
+                  "false_text": [
+                    {
+                      "fullExpression": "@local.description_o_to_p",
+                      "matchedExpression": "@local.description_o_to_p",
+                      "type": "local",
+                      "fieldName": "description_o_to_p"
+                    }
+                  ]
+                }
+              },
+              "_dynamicDependencies": {
+                "@local.description_o_to_p": [
+                  "parameter_list.true_text",
+                  "parameter_list.false_text"
+                ]
+              }
+            },
+            {
+              "type": "text",
+              "name": "spacer2",
+              "style_list": [
+                "flex: 1"
+              ],
+              "_nested_name": "dg_all_or_some.display_group_14.spacer2"
+            },
+            {
+              "type": "toggle_bar",
+              "name": "checkbox_see_q_to_s",
+              "value": false,
+              "parameter_list": {
+                "true_text": "@local.description_q_to_s",
+                "false_text": "@local.description_q_to_s"
+              },
+              "style_list": [
+                "flex:10"
+              ],
+              "_nested_name": "dg_all_or_some.display_group_14.checkbox_see_q_to_s",
+              "_dynamicFields": {
+                "parameter_list": {
+                  "true_text": [
+                    {
+                      "fullExpression": "@local.description_q_to_s",
+                      "matchedExpression": "@local.description_q_to_s",
+                      "type": "local",
+                      "fieldName": "description_q_to_s"
+                    }
+                  ],
+                  "false_text": [
+                    {
+                      "fullExpression": "@local.description_q_to_s",
+                      "matchedExpression": "@local.description_q_to_s",
+                      "type": "local",
+                      "fieldName": "description_q_to_s"
+                    }
+                  ]
+                }
+              },
+              "_dynamicDependencies": {
+                "@local.description_q_to_s": [
+                  "parameter_list.true_text",
+                  "parameter_list.false_text"
+                ]
+              }
+            },
+            {
+              "type": "text",
+              "name": "spacer2",
+              "style_list": [
+                "flex: 1"
+              ],
+              "_nested_name": "dg_all_or_some.display_group_14.spacer2"
+            },
+            {
+              "type": "toggle_bar",
+              "name": "checkbox_see_t_to_z",
+              "value": false,
+              "parameter_list": {
+                "true_text": "@local.description_t_to_z",
+                "false_text": "@local.description_t_to_z"
+              },
+              "style_list": [
+                "flex:10"
+              ],
+              "_nested_name": "dg_all_or_some.display_group_14.checkbox_see_t_to_z",
+              "_dynamicFields": {
+                "parameter_list": {
+                  "true_text": [
+                    {
+                      "fullExpression": "@local.description_t_to_z",
+                      "matchedExpression": "@local.description_t_to_z",
+                      "type": "local",
+                      "fieldName": "description_t_to_z"
+                    }
+                  ],
+                  "false_text": [
+                    {
+                      "fullExpression": "@local.description_t_to_z",
+                      "matchedExpression": "@local.description_t_to_z",
+                      "type": "local",
+                      "fieldName": "description_t_to_z"
+                    }
+                  ]
+                }
+              },
+              "_dynamicDependencies": {
+                "@local.description_t_to_z": [
+                  "parameter_list.true_text",
+                  "parameter_list.false_text"
+                ]
+              }
+            },
+            {
+              "type": "text",
+              "name": "spacer2",
+              "style_list": [
+                "flex: 1"
+              ],
+              "_nested_name": "dg_all_or_some.display_group_14.spacer2"
+            }
           ],
-          "_nested_name": "dg_all_or_some.spacer"
+          "name": "display_group_14",
+          "_nested_name": "dg_all_or_some.display_group_14"
+        },
+        {
+          "type": "display_group",
+          "condition": false,
+          "rows": [
+            {
+              "type": "button",
+              "name": "see_all_button",
+              "value": "See selected phrase intervals",
+              "_translations": {
+                "value": {}
+              },
+              "action_list": [
+                {
+                  "trigger": "click",
+                  "action_id": "set_local",
+                  "args": [
+                    "see_all_phrases",
+                    true
+                  ],
+                  "_raw": "click | set_local:see_all_phrases:TRUE"
+                },
+                {
+                  "trigger": "click",
+                  "action_id": "emit",
+                  "args": [
+                    "force_reload"
+                  ],
+                  "_raw": "click | emit:force_reload"
+                }
+              ],
+              "parameter_list": {
+                "style": "short",
+                "text_align": "center"
+              },
+              "_nested_name": "dg_all_or_some.display_group_15.see_all_button"
+            }
+          ],
+          "name": "display_group_15",
+          "_nested_name": "dg_all_or_some.display_group_15"
         }
       ],
       "_nested_name": "dg_all_or_some"
     },
     {
       "name": "comment_a",
-      "value": "If glossar words are in fields, then only use them",
+      "value": "If glossary words are in fields, then only use them",
       "_translations": {
         "value": {}
       },
@@ -703,7 +1036,7 @@
             },
             {
               "type": "display_group",
-              "name": "dg_glossary_entry",
+              "name": "dg_glossary_entry_some",
               "condition": "@local.use_entry",
               "parameter_list": {
                 "style": "column"
@@ -720,7 +1053,7 @@
                     "margin-top: -10px",
                     "color: red"
                   ],
-                  "_nested_name": "dg_glossary_block_some.word_list.dg_glossary_entry.title_phrase",
+                  "_nested_name": "dg_glossary_block_some.word_list.dg_glossary_entry_some.title_phrase",
                   "_dynamicFields": {
                     "value": [
                       {
@@ -752,7 +1085,7 @@
                         "value": {}
                       },
                       "type": "set_variable",
-                      "_nested_name": "dg_glossary_block_some.word_list.dg_glossary_entry.glossary_entry_creator.content_ptr",
+                      "_nested_name": "dg_glossary_block_some.word_list.dg_glossary_entry_some.glossary_entry_creator.content_ptr",
                       "_dynamicFields": {
                         "value": [
                           {
@@ -770,7 +1103,7 @@
                       }
                     }
                   ],
-                  "_nested_name": "dg_glossary_block_some.word_list.dg_glossary_entry.glossary_entry_creator"
+                  "_nested_name": "dg_glossary_block_some.word_list.dg_glossary_entry_some.glossary_entry_creator"
                 },
                 {
                   "type": "image",
@@ -783,10 +1116,10 @@
                   "style_list": [
                     "margin-top: 4px"
                   ],
-                  "_nested_name": "dg_glossary_block_some.word_list.dg_glossary_entry.glossary_line"
+                  "_nested_name": "dg_glossary_block_some.word_list.dg_glossary_entry_some.glossary_line"
                 }
               ],
-              "_nested_name": "dg_glossary_block_some.word_list.dg_glossary_entry",
+              "_nested_name": "dg_glossary_block_some.word_list.dg_glossary_entry_some",
               "_dynamicFields": {
                 "condition": [
                   {
@@ -868,8 +1201,337 @@
           ],
           "rows": [
             {
+              "name": "display_a_to_z",
+              "value": "@local.checkbox_see_a_to_z",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "dg_glossary_block_all.word_list.display_a_to_z",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@local.checkbox_see_a_to_z",
+                    "matchedExpression": "@local.checkbox_see_a_to_z",
+                    "type": "local",
+                    "fieldName": "checkbox_see_a_to_z"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.checkbox_see_a_to_z": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "in_a_to_c",
+              "value": "@local.checkbox_see_a_to_c && @item.index < 4",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "dg_glossary_block_all.word_list.in_a_to_c",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@local.checkbox_see_a_to_c && @item.index < 4",
+                    "matchedExpression": "@local.checkbox_see_a_to_c",
+                    "type": "local",
+                    "fieldName": "checkbox_see_a_to_c"
+                  },
+                  {
+                    "fullExpression": "@local.checkbox_see_a_to_c && @item.index < 4",
+                    "matchedExpression": "@item.index",
+                    "type": "item",
+                    "fieldName": "index"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.checkbox_see_a_to_c": [
+                  "value"
+                ],
+                "@item.index": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "in_d_to_h",
+              "value": "@local.checkbox_see_d_to_h && @item.index > 3 && @item.index < 9",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "dg_glossary_block_all.word_list.in_d_to_h",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@local.checkbox_see_d_to_h && @item.index > 3 && @item.index < 9",
+                    "matchedExpression": "@local.checkbox_see_d_to_h",
+                    "type": "local",
+                    "fieldName": "checkbox_see_d_to_h"
+                  },
+                  {
+                    "fullExpression": "@local.checkbox_see_d_to_h && @item.index > 3 && @item.index < 9",
+                    "matchedExpression": "@item.index",
+                    "type": "item",
+                    "fieldName": "index"
+                  },
+                  {
+                    "fullExpression": "@local.checkbox_see_d_to_h && @item.index > 3 && @item.index < 9",
+                    "matchedExpression": "@item.index",
+                    "type": "item",
+                    "fieldName": "index"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.checkbox_see_d_to_h": [
+                  "value"
+                ],
+                "@item.index": [
+                  "value",
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "in_i_to_n",
+              "value": "@local.checkbox_see_i_to_n && @item.index > 8 && @item.index < 15",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "dg_glossary_block_all.word_list.in_i_to_n",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@local.checkbox_see_i_to_n && @item.index > 8 && @item.index < 15",
+                    "matchedExpression": "@local.checkbox_see_i_to_n",
+                    "type": "local",
+                    "fieldName": "checkbox_see_i_to_n"
+                  },
+                  {
+                    "fullExpression": "@local.checkbox_see_i_to_n && @item.index > 8 && @item.index < 15",
+                    "matchedExpression": "@item.index",
+                    "type": "item",
+                    "fieldName": "index"
+                  },
+                  {
+                    "fullExpression": "@local.checkbox_see_i_to_n && @item.index > 8 && @item.index < 15",
+                    "matchedExpression": "@item.index",
+                    "type": "item",
+                    "fieldName": "index"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.checkbox_see_i_to_n": [
+                  "value"
+                ],
+                "@item.index": [
+                  "value",
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "in_o_to_p",
+              "value": "@local.checkbox_see_o_to_p && @item.index > 14 && @item.index < 17",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "dg_glossary_block_all.word_list.in_o_to_p",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@local.checkbox_see_o_to_p && @item.index > 14 && @item.index < 17",
+                    "matchedExpression": "@local.checkbox_see_o_to_p",
+                    "type": "local",
+                    "fieldName": "checkbox_see_o_to_p"
+                  },
+                  {
+                    "fullExpression": "@local.checkbox_see_o_to_p && @item.index > 14 && @item.index < 17",
+                    "matchedExpression": "@item.index",
+                    "type": "item",
+                    "fieldName": "index"
+                  },
+                  {
+                    "fullExpression": "@local.checkbox_see_o_to_p && @item.index > 14 && @item.index < 17",
+                    "matchedExpression": "@item.index",
+                    "type": "item",
+                    "fieldName": "index"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.checkbox_see_o_to_p": [
+                  "value"
+                ],
+                "@item.index": [
+                  "value",
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "in_q_to_s",
+              "value": "@local.checkbox_see_q_to_s && @item.index > 16 && @item.index < 20",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "dg_glossary_block_all.word_list.in_q_to_s",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@local.checkbox_see_q_to_s && @item.index > 16 && @item.index < 20",
+                    "matchedExpression": "@local.checkbox_see_q_to_s",
+                    "type": "local",
+                    "fieldName": "checkbox_see_q_to_s"
+                  },
+                  {
+                    "fullExpression": "@local.checkbox_see_q_to_s && @item.index > 16 && @item.index < 20",
+                    "matchedExpression": "@item.index",
+                    "type": "item",
+                    "fieldName": "index"
+                  },
+                  {
+                    "fullExpression": "@local.checkbox_see_q_to_s && @item.index > 16 && @item.index < 20",
+                    "matchedExpression": "@item.index",
+                    "type": "item",
+                    "fieldName": "index"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.checkbox_see_q_to_s": [
+                  "value"
+                ],
+                "@item.index": [
+                  "value",
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "in_t_to_z",
+              "value": "@local.checkbox_see_t_to_z && @item.index > 19",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "dg_glossary_block_all.word_list.in_t_to_z",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@local.checkbox_see_t_to_z && @item.index > 19",
+                    "matchedExpression": "@local.checkbox_see_t_to_z",
+                    "type": "local",
+                    "fieldName": "checkbox_see_t_to_z"
+                  },
+                  {
+                    "fullExpression": "@local.checkbox_see_t_to_z && @item.index > 19",
+                    "matchedExpression": "@item.index",
+                    "type": "item",
+                    "fieldName": "index"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.checkbox_see_t_to_z": [
+                  "value"
+                ],
+                "@item.index": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "display_it",
+              "value": "@local.display_a_to_z || @local.in_a_to_c || @local.in_d_to_h || @local.in_i_to_n || @local.in_o_to_p || @local.in_q_to_s || @local.in_t_to_z",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "dg_glossary_block_all.word_list.display_it",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@local.display_a_to_z || @local.in_a_to_c || @local.in_d_to_h || @local.in_i_to_n || @local.in_o_to_p || @local.in_q_to_s || @local.in_t_to_z",
+                    "matchedExpression": "@local.display_a_to_z",
+                    "type": "local",
+                    "fieldName": "display_a_to_z"
+                  },
+                  {
+                    "fullExpression": "@local.display_a_to_z || @local.in_a_to_c || @local.in_d_to_h || @local.in_i_to_n || @local.in_o_to_p || @local.in_q_to_s || @local.in_t_to_z",
+                    "matchedExpression": "@local.in_a_to_c",
+                    "type": "local",
+                    "fieldName": "in_a_to_c"
+                  },
+                  {
+                    "fullExpression": "@local.display_a_to_z || @local.in_a_to_c || @local.in_d_to_h || @local.in_i_to_n || @local.in_o_to_p || @local.in_q_to_s || @local.in_t_to_z",
+                    "matchedExpression": "@local.in_d_to_h",
+                    "type": "local",
+                    "fieldName": "in_d_to_h"
+                  },
+                  {
+                    "fullExpression": "@local.display_a_to_z || @local.in_a_to_c || @local.in_d_to_h || @local.in_i_to_n || @local.in_o_to_p || @local.in_q_to_s || @local.in_t_to_z",
+                    "matchedExpression": "@local.in_i_to_n",
+                    "type": "local",
+                    "fieldName": "in_i_to_n"
+                  },
+                  {
+                    "fullExpression": "@local.display_a_to_z || @local.in_a_to_c || @local.in_d_to_h || @local.in_i_to_n || @local.in_o_to_p || @local.in_q_to_s || @local.in_t_to_z",
+                    "matchedExpression": "@local.in_o_to_p",
+                    "type": "local",
+                    "fieldName": "in_o_to_p"
+                  },
+                  {
+                    "fullExpression": "@local.display_a_to_z || @local.in_a_to_c || @local.in_d_to_h || @local.in_i_to_n || @local.in_o_to_p || @local.in_q_to_s || @local.in_t_to_z",
+                    "matchedExpression": "@local.in_q_to_s",
+                    "type": "local",
+                    "fieldName": "in_q_to_s"
+                  },
+                  {
+                    "fullExpression": "@local.display_a_to_z || @local.in_a_to_c || @local.in_d_to_h || @local.in_i_to_n || @local.in_o_to_p || @local.in_q_to_s || @local.in_t_to_z",
+                    "matchedExpression": "@local.in_t_to_z",
+                    "type": "local",
+                    "fieldName": "in_t_to_z"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.display_a_to_z": [
+                  "value"
+                ],
+                "@local.in_a_to_c": [
+                  "value"
+                ],
+                "@local.in_d_to_h": [
+                  "value"
+                ],
+                "@local.in_i_to_n": [
+                  "value"
+                ],
+                "@local.in_o_to_p": [
+                  "value"
+                ],
+                "@local.in_q_to_s": [
+                  "value"
+                ],
+                "@local.in_t_to_z": [
+                  "value"
+                ]
+              }
+            },
+            {
               "type": "display_group",
-              "name": "dg_glossary_entry",
+              "name": "dg_glossary_entry_all",
+              "condition": "@local.display_it",
               "parameter_list": {
                 "style": "column"
               },
@@ -885,7 +1547,7 @@
                     "margin-top: -4px",
                     "color: red"
                   ],
-                  "_nested_name": "dg_glossary_block_all.word_list.dg_glossary_entry.title_phrase",
+                  "_nested_name": "dg_glossary_block_all.word_list.dg_glossary_entry_all.title_phrase",
                   "_dynamicFields": {
                     "value": [
                       {
@@ -917,7 +1579,7 @@
                         "value": {}
                       },
                       "type": "set_variable",
-                      "_nested_name": "dg_glossary_block_all.word_list.dg_glossary_entry.glossary_entry_creator.content_ptr",
+                      "_nested_name": "dg_glossary_block_all.word_list.dg_glossary_entry_all.glossary_entry_creator.content_ptr",
                       "_dynamicFields": {
                         "value": [
                           {
@@ -935,10 +1597,25 @@
                       }
                     }
                   ],
-                  "_nested_name": "dg_glossary_block_all.word_list.dg_glossary_entry.glossary_entry_creator"
+                  "_nested_name": "dg_glossary_block_all.word_list.dg_glossary_entry_all.glossary_entry_creator"
                 }
               ],
-              "_nested_name": "dg_glossary_block_all.word_list.dg_glossary_entry"
+              "_nested_name": "dg_glossary_block_all.word_list.dg_glossary_entry_all",
+              "_dynamicFields": {
+                "condition": [
+                  {
+                    "fullExpression": "@local.display_it",
+                    "matchedExpression": "@local.display_it",
+                    "type": "local",
+                    "fieldName": "display_it"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.display_it": [
+                  "condition"
+                ]
+              }
             }
           ],
           "_nested_name": "dg_glossary_block_all.word_list",

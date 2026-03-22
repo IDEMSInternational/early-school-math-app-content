@@ -33,20 +33,13 @@
     },
     {
       "type": "begin_display_group",
-      "name": "dg_info"
+      "name": "dg_all_or_some",
+      "parameter_list": "style: column;"
     },
     {
       "type": "text",
-      "name": "Intro_text",
-      "value": "When arriving from a topic, you will see the glossary words associated with that topic, if any have been specified.",
-      "parameter_list": "icon_src: help; style:navigation"
-    },
-    {
-      "type": "end_display_group"
-    },
-    {
-      "type": "begin_display_group",
-      "name": "dg_all_or_some"
+      "name": "intro",
+      "value": "Select interval(s) of phrases to see."
     },
     {
       "name": "phrase_count",
@@ -62,41 +55,154 @@
       "value": "@local.phrase_count == 0"
     },
     {
-      "type": "text",
-      "name": "spacer",
-      "style_list": "flex: 1;"
+      "name": "description_a_to_z",
+      "value": "A-Z (this will be very slow)"
     },
     {
-      "type": "button",
-      "name": "see_all_button",
-      "value": "See All Phrases",
-      "action_list": "click | set_local:see_all_phrases:TRUE;\nclick | emit:force_reload;",
-      "parameter_list": "style: short; \ntext_align: center"
+      "name": "description_a_to_c",
+      "value": "A-C"
     },
     {
-      "name": "description_1",
-      "value": "See all phrases",
-      "condition": false
+      "name": "description_d_to_h",
+      "value": "D-H"
+    },
+    {
+      "name": "description_i_to_n",
+      "value": "I-N"
+    },
+    {
+      "name": "description_o_to_p",
+      "value": "O-P"
+    },
+    {
+      "name": "description_q_to_s",
+      "value": "Q-S"
+    },
+    {
+      "name": "description_t_to_z",
+      "value": "T-Z"
+    },
+    {
+      "type": "begin_display_group"
     },
     {
       "type": "toggle_bar",
-      "name": "checkbox_see_all_phrases",
-      "value": "@local.see_all_phrases",
-      "condition": false,
-      "parameter_list": "true_text: @local.description_1;\nfalse_text: @local.description_1;",
-      "comments": "changed | emit:force_reload"
+      "name": "checkbox_see_a_to_z",
+      "value": false,
+      "parameter_list": "true_text: @local.description_a_to_z;\nfalse_text: @local.description_a_to_z;"
     },
     {
       "type": "text",
-      "name": "spacer",
+      "name": "spacer2",
       "style_list": "flex: 1;"
     },
     {
       "type": "end_display_group"
     },
     {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "checkbox_see_a_to_c",
+      "value": false,
+      "parameter_list": "true_text: @local.description_a_to_c;\nfalse_text: @local.description_a_to_c;",
+      "style_list": "flex:10;\n"
+    },
+    {
+      "type": "text",
+      "name": "spacer2",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "checkbox_see_d_to_h",
+      "value": false,
+      "parameter_list": "true_text: @local.description_d_to_h;\nfalse_text: @local.description_d_to_h;",
+      "style_list": "flex:10;\n"
+    },
+    {
+      "type": "text",
+      "name": "spacer2",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "checkbox_see_i_to_n",
+      "value": false,
+      "parameter_list": "true_text: @local.description_i_to_n;\nfalse_text: @local.description_i_to_n;",
+      "style_list": "flex:10;\n"
+    },
+    {
+      "type": "text",
+      "name": "spacer2",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "checkbox_see_o_to_p",
+      "value": false,
+      "parameter_list": "true_text: @local.description_o_to_p;\nfalse_text: @local.description_o_to_p;",
+      "style_list": "flex:10;\n"
+    },
+    {
+      "type": "text",
+      "name": "spacer2",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "checkbox_see_q_to_s",
+      "value": false,
+      "parameter_list": "true_text: @local.description_q_to_s;\nfalse_text: @local.description_q_to_s;",
+      "style_list": "flex:10;\n"
+    },
+    {
+      "type": "text",
+      "name": "spacer2",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "checkbox_see_t_to_z",
+      "value": false,
+      "parameter_list": "true_text: @local.description_t_to_z;\nfalse_text: @local.description_t_to_z;",
+      "style_list": "flex:10;\n"
+    },
+    {
+      "type": "text",
+      "name": "spacer2",
+      "style_list": "flex: 1;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "condition": false
+    },
+    {
+      "type": "button",
+      "name": "see_all_button",
+      "value": "See selected phrase intervals",
+      "action_list": "click | set_local:see_all_phrases:TRUE;\nclick | emit:force_reload;",
+      "parameter_list": "style: short; \ntext_align: center"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
       "name": "comment_a",
-      "value": "If glossar words are in fields, then only use them"
+      "value": "If glossary words are in fields, then only use them"
     },
     {
       "type": "begin_display_group",
@@ -165,7 +271,7 @@
     },
     {
       "type": "begin_display_group",
-      "name": "dg_glossary_entry",
+      "name": "dg_glossary_entry_some",
       "condition": "@local.use_entry",
       "parameter_list": "style: column;"
     },
@@ -222,8 +328,41 @@
       "style_list": "margin-top: 10px;"
     },
     {
+      "name": "display_a_to_z",
+      "value": "@local.checkbox_see_a_to_z"
+    },
+    {
+      "name": "in_a_to_c",
+      "value": "@local.checkbox_see_a_to_c && @item.index < 4"
+    },
+    {
+      "name": "in_d_to_h",
+      "value": "@local.checkbox_see_d_to_h && @item.index > 3 && @item.index < 9"
+    },
+    {
+      "name": "in_i_to_n",
+      "value": "@local.checkbox_see_i_to_n && @item.index > 8 && @item.index < 15"
+    },
+    {
+      "name": "in_o_to_p",
+      "value": "@local.checkbox_see_o_to_p && @item.index > 14 && @item.index < 17"
+    },
+    {
+      "name": "in_q_to_s",
+      "value": "@local.checkbox_see_q_to_s && @item.index > 16 && @item.index < 20"
+    },
+    {
+      "name": "in_t_to_z",
+      "value": "@local.checkbox_see_t_to_z && @item.index > 19"
+    },
+    {
+      "name": "display_it",
+      "value": "@local.display_a_to_z || @local.in_a_to_c || @local.in_d_to_h || @local.in_i_to_n || @local.in_o_to_p || @local.in_q_to_s || @local.in_t_to_z"
+    },
+    {
       "type": "begin_display_group",
-      "name": "dg_glossary_entry",
+      "name": "dg_glossary_entry_all",
+      "condition": "@local.display_it",
       "parameter_list": "style: column;"
     },
     {

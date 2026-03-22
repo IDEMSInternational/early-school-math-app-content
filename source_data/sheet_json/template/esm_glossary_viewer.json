@@ -100,7 +100,8 @@
     },
     {
       "type": "text",
-      "name": "blank_line2"
+      "name": "blank_line2",
+      "condition": false
     },
     {
       "name": "button_label",
@@ -116,7 +117,7 @@
       "type": "button",
       "name": "button_glossary",
       "value": "@local.button_label",
-      "action_list": "click | set_field:glossary_words_count : @@local.glossary_count_ptr; \nclick | set_field:glossary_word_1 : @@local.glossary_word_1_ptr; \nclick | set_field:glossary_word_2 : @@local.glossary_word_2_ptr; \nclick | set_field:glossary_word_3 : @@local.glossary_word_3_ptr; \nclick | set_field:glossary_word_4 : @@local.glossary_word_4_ptr; \nclick | set_field:glossary_word_5 : @@local.glossary_word_5_ptr; \nclick | set_field:glossary_word_6 : @@local.glossary_word_6_ptr; \nclick | go_to: efm_gloss_start;",
+      "action_list": "click | set_field:glossary_words_count : @@local.glossary_count_ptr; \nclick | set_field:glossary_word_1 : @@local.glossary_word_1_ptr; \nclick | set_field:glossary_word_2 : @@local.glossary_word_2_ptr; \nclick | set_field:glossary_word_3 : @@local.glossary_word_3_ptr; \nclick | set_field:glossary_word_4 : @@local.glossary_word_4_ptr; \nclick | set_field:glossary_word_5 : @@local.glossary_word_5_ptr; \nclick | set_field:glossary_word_6 : @@local.glossary_word_6_ptr; \nclick | go_to: efm_gloss_start;\nclick | emit:force_reload;",
       "parameter_list": "style: short;"
     },
     {
