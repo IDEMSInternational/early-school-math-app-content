@@ -727,6 +727,9 @@
           "type": "items",
           "name": "activity_buttons",
           "value": "@data.efm_gas",
+          "parameter_list": {
+            "sort": "name"
+          },
           "rows": [
             {
               "name": "ga_id",
