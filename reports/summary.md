@@ -7,7 +7,7 @@
 | accordion_section | 156 |
 | button | 188 |
 | debug_toggle | 1 |
-| display_group | 500 |
+| display_group | 502 |
 | image | 71 |
 | items | 78 |
 | qr_code | 1 |
@@ -15,14 +15,14 @@
 | round_button | 10 |
 | select_text | 1 |
 | set_field | 65 |
-| set_variable | 824 |
+| set_variable | 839 |
 | simple_checkbox | 4 |
 | template | 97 |
-| text | 381 |
+| text | 385 |
 | text_area | 2 |
 | tile_component | 3 |
 | title | 58 |
-| toggle_bar | 13 |
+| toggle_bar | 19 |
 </details>
 
 <details >
@@ -32,7 +32,7 @@
 | --- | --- |
 | app_update | 1 |
 | emit: completed | 58 |
-| emit: force_reload | 13 |
+| emit: force_reload | 14 |
 | emit: force_reprocess | 4 |
 | emit: server_sync | 1 |
 | emit: set_language | 1 |
