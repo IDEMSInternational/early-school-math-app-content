@@ -39,6 +39,7 @@
       "type": "begin_items",
       "name": "find_next_and_prev",
       "value": "@data.efm_gas",
+      "parameter_list": "sort: name",
       "comments": "Cycle through all gas to find the previous and next activities of an ok_type"
     },
     {
@@ -117,30 +118,32 @@
     {
       "type": "text",
       "name": "ga_concepts",
-      "value": "Concepts: @local.efm_ga.concepts"
+      "value": "Concepts: @local.efm_ga.concepts",
+      "style_list": "color: red;"
     },
     {
       "type": "text",
       "name": "ga_uses",
       "value": "Uses: @local.efm_ga.uses",
-      "style_list": "margin-top: -14px;"
+      "style_list": "margin-top: -14px; color: red;"
     },
     {
       "type": "text",
       "name": "ga_materials",
       "value": "Materials: @local.efm_ga.materials",
-      "style_list": "margin-top: -14px;"
+      "style_list": "margin-top: -14px; color: red;"
     },
     {
       "type": "text",
       "name": "ga_players",
       "value": "Players: @local.efm_ga.players",
-      "style_list": "margin-top: -14px;"
+      "style_list": "margin-top: -14px; color: red;"
     },
     {
       "type": "begin_template",
       "name": "ga_body_generator",
-      "value": "efm_ga_body_template"
+      "value": "efm_ga_body_template",
+      "style_list": "margin-top: -10px;"
     },
     {
       "name": "efm_ga_ptr",

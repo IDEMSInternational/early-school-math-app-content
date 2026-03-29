@@ -51,8 +51,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 80788 KB | 80.8 MB |
-| unused | 22395 KB | 22.4 MB |
+| total | 80761 KB | 80.8 MB |
+| unused | 22434 KB | 22.4 MB |
 </details>
 
 <details open>
@@ -303,6 +303,9 @@ Assets that appear in app-data but do not have references within sheets
 | ESMIll/ESMDots4-5.svg | 4 |
 | ESMIll/ESMGridPlus.svg | 38.8 |
 | ESMIll/ESMGridTimes.svg | 38.8 |
+| ESMIll/ESMLPArrows1.svg | 12.6 |
+| ESMIll/ESMLPArrows2.svg | 13 |
+| ESMIll/ESMLPArrows3.svg | 13.3 |
 | ESMIll/ESMPOWACoinFlipStart2.svg | 11626.6 |
 | ESMIll/ESMPOWBSujikoBlank2by3.svg | 4 |
 | ESMIll/ESMPOWBSujikoBlank3by3.svg | 5.9 |
@@ -1409,9 +1412,9 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMGlossTenFrame.svg | 7.5 | 1 |
 | ESMIll/ESMGlossTriangularNumbers.svg | 8 | 1 |
 | ESMIll/ESMGlossUnitize.svg | 12.3 | 1 |
-| ESMIll/ESMLPArrows1.svg | 12.6 | 9 |
-| ESMIll/ESMLPArrows2.svg | 13 | 16 |
-| ESMIll/ESMLPArrows3.svg | 13.3 | 8 |
+| ESMIll/ESMLPArrows1.png | 1.6 | 9 |
+| ESMIll/ESMLPArrows2.png | 4.8 | 16 |
+| ESMIll/ESMLPArrows3.png | 5.5 | 8 |
 | ESMIll/ESMOEColoringShapesExample1.svg | 7.4 | 1 |
 | ESMIll/ESMOEColoringShapesExample2.svg | 7.3 | 1 |
 | ESMIll/ESMOEColoringShapesIntro.svg | 10.4 | 1 |
