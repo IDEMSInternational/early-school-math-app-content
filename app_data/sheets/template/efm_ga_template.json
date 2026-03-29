@@ -181,6 +181,9 @@
       "type": "items",
       "name": "find_next_and_prev",
       "value": "@data.efm_gas",
+      "parameter_list": {
+        "sort": "name"
+      },
       "rows": [
         {
           "name": "do_ids_match",
@@ -615,6 +618,9 @@
       "_translations": {
         "value": {}
       },
+      "style_list": [
+        "color: red"
+      ],
       "_nested_name": "ga_concepts",
       "_dynamicFields": {
         "value": [
@@ -640,7 +646,8 @@
         "value": {}
       },
       "style_list": [
-        "margin-top: -14px"
+        "margin-top: -14px",
+        "color: red"
       ],
       "_nested_name": "ga_uses",
       "_dynamicFields": {
@@ -667,7 +674,8 @@
         "value": {}
       },
       "style_list": [
-        "margin-top: -14px"
+        "margin-top: -14px",
+        "color: red"
       ],
       "_nested_name": "ga_materials",
       "_dynamicFields": {
@@ -694,7 +702,8 @@
         "value": {}
       },
       "style_list": [
-        "margin-top: -14px"
+        "margin-top: -14px",
+        "color: red"
       ],
       "_nested_name": "ga_players",
       "_dynamicFields": {
@@ -717,6 +726,9 @@
       "type": "template",
       "name": "ga_body_generator",
       "value": "efm_ga_body_template",
+      "style_list": [
+        "margin-top: -10px"
+      ],
       "rows": [
         {
           "name": "efm_ga_ptr",
