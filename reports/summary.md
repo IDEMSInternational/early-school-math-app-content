@@ -51,8 +51,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 80761 KB | 80.8 MB |
-| unused | 22434 KB | 22.4 MB |
+| total | 80767 KB | 80.8 MB |
+| unused | 22467 KB | 22.5 MB |
 </details>
 
 <details open>
@@ -301,6 +301,7 @@ Assets that appear in app-data but do not have references within sheets
 | EFMStorybooks/EFM-SB-SSMILE-8.jpg | 3.5 |
 | EFMStorybooks/EFM-SB-TFHH-2.jpg | 10.6 |
 | ESMIll/ESMDots4-5.svg | 4 |
+| ESMIll/ESMGLossLinesAndSegments.svg | 14.2 |
 | ESMIll/ESMGridPlus.svg | 38.8 |
 | ESMIll/ESMGridTimes.svg | 38.8 |
 | ESMIll/ESMLPArrows1.svg | 12.6 |
@@ -310,6 +311,7 @@ Assets that appear in app-data but do not have references within sheets
 | ESMIll/ESMPOWBSujikoBlank2by3.svg | 4 |
 | ESMIll/ESMPOWBSujikoBlank3by3.svg | 5.9 |
 | ESMIll/ESMPOWCAvoidingRectanglesAnswer4.svg | 7.5 |
+| ESMIll/ESMTopicAS12NumberLine.svg | 18.9 |
 | ESMIll/ESMTopicAS2No35Add12.svg | 13 |
 | ESMIll/ESMTopicAS2No59-24.svg | 15.5 |
 | ESMIll/ESMTopicAS2With24-18.svg | 19.8 |
@@ -1387,7 +1389,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMGLossChords.svg | 8.9 | 2 |
 | ESMIll/ESMGLossHexagons.svg | 9.7 | 1 |
 | ESMIll/ESMGLossKite.svg | 4.9 | 1 |
-| ESMIll/ESMGLossLinesAndSegments.svg | 14.2 | 5 |
+| ESMIll/ESMGLossLinesAndSegments.png | 28.2 | 5 |
 | ESMIll/ESMGLossLinesSegmentsRays.svg | 11.5 | 2 |
 | ESMIll/ESMGLossObtuseAngle.svg | 13.2 | 1 |
 | ESMIll/ESMGLossObtuseTriangle.svg | 4.9 | 1 |
@@ -1830,7 +1832,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMTopic3DVerticalSub.svg | 32.5 | 1 |
 | ESMIll/ESMTopic3FlatShapes.svg | 6 | 1 |
 | ESMIll/ESMTopic4SidedShapes.svg | 7 | 1 |
-| ESMIll/ESMTopicAS12NumberLine.svg | 18.9 | 1 |
+| ESMIll/ESMTopicAS12NumberLine.png | 11.5 | 1 |
 | ESMIll/ESMTopicAS2and132Sub8.svg | 19.4 | 1 |
 | ESMIll/ESMTopicAS2and136And7.svg | 19.3 | 1 |
 | ESMIll/ESMTopicASWithin5TenFrame.svg | 3.6 | 1 |
