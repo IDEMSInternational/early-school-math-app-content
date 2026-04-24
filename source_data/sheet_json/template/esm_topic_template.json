@@ -116,27 +116,70 @@
       "type": "end_display_group"
     },
     {
-      "name": "ccssm_standards_list",
-      "value": "@local.esm_topic.ccssm_standards"
-    },
-    {
-      "name": "ccssm_should_be_seen",
-      "value": "@fields.curriculum_standard_abbrev == \"CCSSM\""
-    },
-    {
-      "name": "display_ccssm_standards",
-      "value": "@local.ccssm_standards_list && @local.ccssm_should_be_seen"
-    },
-    {
       "type": "begin_display_group",
-      "name": "ccssm_standards",
-      "condition": "@local.display_ccssm_standards",
-      "style_list": "margin-top: -1px;"
+      "name": "dg_display_standards"
+    },
+    {
+      "name": "standard_chars",
+      "value": "NONE"
+    },
+    {
+      "name": "standard_chars",
+      "value": "ccssm_standards",
+      "condition": "@fields.curriculum_standard_abbrev == \"CCSSM\""
+    },
+    {
+      "name": "standard_chars",
+      "value": "teks_standards",
+      "condition": "@fields.curriculum_standard_abbrev == \"TEKS\""
+    },
+    {
+      "name": "standard_chars",
+      "value": "ac9m_standards",
+      "condition": "@fields.curriculum_standard_abbrev == \"AC9M\""
+    },
+    {
+      "name": "standard_chars",
+      "value": "uk20_standards",
+      "condition": "@fields.curriculum_standard_abbrev == \"UK20\""
+    },
+    {
+      "name": "standard_chars",
+      "value": "ncrt_standards",
+      "condition": "@fields.curriculum_standard_abbrev == \"NCRT\""
+    },
+    {
+      "name": "standard_chars",
+      "value": "ken24_standards",
+      "condition": "@fields.curriculum_standard_abbrev == \"KEN24\""
+    },
+    {
+      "name": "standard_chars",
+      "value": "gha19_standards",
+      "condition": "@fields.curriculum_standard_abbrev == \"GHA19\""
+    },
+    {
+      "name": "viewable_standard_not_seen",
+      "value": "@local.standard_chars == \"NONE\""
+    },
+    {
+      "name": "standards_list_text",
+      "value": "local.esm_topic.@local.standard_chars"
+    },
+    {
+      "name": "standards_list",
+      "value": "@@local.standards_list_text"
+    },
+    {
+      "name": "display_standards",
+      "value": "@local.standards_list && !@local.viewable_standard_not_seen"
     },
     {
       "type": "text",
-      "name": "standards_list",
-      "value": "CCSSM: @local.ccssm_standards_list"
+      "name": "show_standards_list",
+      "value": "@fields.curriculum_standard_abbrev: @local.standards_list",
+      "condition": "@local.display_standards",
+      "style_list": "margin-top: -1px;"
     },
     {
       "type": "end_display_group"

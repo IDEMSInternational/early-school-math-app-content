@@ -609,39 +609,25 @@
       "_nested_name": "dg_prev_next_topics"
     },
     {
-      "name": "ccssm_standards_list",
-      "value": "@local.esm_topic.ccssm_standards",
+      "name": "standard_chars",
+      "value": "NONE",
       "_translations": {
         "value": {}
       },
       "type": "set_variable",
-      "_nested_name": "ccssm_standards_list",
-      "_dynamicFields": {
-        "value": [
-          {
-            "fullExpression": "@local.esm_topic.ccssm_standards",
-            "matchedExpression": "@local.esm_topic.ccssm_standards",
-            "type": "local",
-            "fieldName": "esm_topic"
-          }
-        ]
-      },
-      "_dynamicDependencies": {
-        "@local.esm_topic.ccssm_standards": [
-          "value"
-        ]
-      }
+      "_nested_name": "standard_chars"
     },
     {
-      "name": "ccssm_should_be_seen",
-      "value": "@fields.curriculum_standard_abbrev == \"CCSSM\"",
+      "name": "standard_chars",
+      "value": "ccssm_standards",
       "_translations": {
         "value": {}
       },
+      "condition": "@fields.curriculum_standard_abbrev == \"CCSSM\"",
       "type": "set_variable",
-      "_nested_name": "ccssm_should_be_seen",
+      "_nested_name": "standard_chars",
       "_dynamicFields": {
-        "value": [
+        "condition": [
           {
             "fullExpression": "@fields.curriculum_standard_abbrev == \"CCSSM\"",
             "matchedExpression": "@fields.curriculum_standard_abbrev",
@@ -652,92 +638,319 @@
       },
       "_dynamicDependencies": {
         "@fields.curriculum_standard_abbrev": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "name": "standard_chars",
+      "value": "teks_standards",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "@fields.curriculum_standard_abbrev == \"TEKS\"",
+      "type": "set_variable",
+      "_nested_name": "standard_chars",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@fields.curriculum_standard_abbrev == \"TEKS\"",
+            "matchedExpression": "@fields.curriculum_standard_abbrev",
+            "type": "fields",
+            "fieldName": "curriculum_standard_abbrev"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.curriculum_standard_abbrev": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "name": "standard_chars",
+      "value": "ac9m_standards",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "@fields.curriculum_standard_abbrev == \"AC9M\"",
+      "type": "set_variable",
+      "_nested_name": "standard_chars",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@fields.curriculum_standard_abbrev == \"AC9M\"",
+            "matchedExpression": "@fields.curriculum_standard_abbrev",
+            "type": "fields",
+            "fieldName": "curriculum_standard_abbrev"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.curriculum_standard_abbrev": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "name": "standard_chars",
+      "value": "uk20_standards",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "@fields.curriculum_standard_abbrev == \"UK20\"",
+      "type": "set_variable",
+      "_nested_name": "standard_chars",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@fields.curriculum_standard_abbrev == \"UK20\"",
+            "matchedExpression": "@fields.curriculum_standard_abbrev",
+            "type": "fields",
+            "fieldName": "curriculum_standard_abbrev"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.curriculum_standard_abbrev": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "name": "standard_chars",
+      "value": "ncrt_standards",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "@fields.curriculum_standard_abbrev == \"NCRT\"",
+      "type": "set_variable",
+      "_nested_name": "standard_chars",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@fields.curriculum_standard_abbrev == \"NCRT\"",
+            "matchedExpression": "@fields.curriculum_standard_abbrev",
+            "type": "fields",
+            "fieldName": "curriculum_standard_abbrev"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.curriculum_standard_abbrev": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "name": "standard_chars",
+      "value": "ken24_standards",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "@fields.curriculum_standard_abbrev == \"KEN24\"",
+      "type": "set_variable",
+      "_nested_name": "standard_chars",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@fields.curriculum_standard_abbrev == \"KEN24\"",
+            "matchedExpression": "@fields.curriculum_standard_abbrev",
+            "type": "fields",
+            "fieldName": "curriculum_standard_abbrev"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.curriculum_standard_abbrev": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "name": "standard_chars",
+      "value": "gha19_standards",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "@fields.curriculum_standard_abbrev == \"GHA19\"",
+      "type": "set_variable",
+      "_nested_name": "standard_chars",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@fields.curriculum_standard_abbrev == \"GHA19\"",
+            "matchedExpression": "@fields.curriculum_standard_abbrev",
+            "type": "fields",
+            "fieldName": "curriculum_standard_abbrev"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.curriculum_standard_abbrev": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "name": "viewable_standard_not_seen",
+      "value": "@local.standard_chars == \"NONE\"",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "viewable_standard_not_seen",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.standard_chars == \"NONE\"",
+            "matchedExpression": "@local.standard_chars",
+            "type": "local",
+            "fieldName": "standard_chars"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.standard_chars": [
           "value"
         ]
       }
     },
     {
-      "name": "display_ccssm_standards",
-      "value": "@local.ccssm_standards_list && @local.ccssm_should_be_seen",
+      "name": "standards_list_text",
+      "value": "local.esm_topic.@local.standard_chars",
       "_translations": {
         "value": {}
       },
       "type": "set_variable",
-      "_nested_name": "display_ccssm_standards",
+      "_nested_name": "standards_list_text",
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@local.ccssm_standards_list && @local.ccssm_should_be_seen",
-            "matchedExpression": "@local.ccssm_standards_list",
+            "fullExpression": "local.esm_topic.@local.standard_chars",
+            "matchedExpression": "@local.standard_chars",
             "type": "local",
-            "fieldName": "ccssm_standards_list"
-          },
-          {
-            "fullExpression": "@local.ccssm_standards_list && @local.ccssm_should_be_seen",
-            "matchedExpression": "@local.ccssm_should_be_seen",
-            "type": "local",
-            "fieldName": "ccssm_should_be_seen"
+            "fieldName": "standard_chars"
           }
         ]
       },
       "_dynamicDependencies": {
-        "@local.ccssm_standards_list": [
+        "@local.standard_chars": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "standards_list",
+      "value": "@@local.standards_list_text",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "standards_list",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@@local.standards_list_text",
+            "matchedExpression": "@local.standards_list_text",
+            "type": "local",
+            "fieldName": "standards_list_text"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.standards_list_text": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "display_standards",
+      "value": "@local.standards_list && !@local.viewable_standard_not_seen",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "display_standards",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.standards_list && !@local.viewable_standard_not_seen",
+            "matchedExpression": "@local.standards_list",
+            "type": "local",
+            "fieldName": "standards_list"
+          },
+          {
+            "fullExpression": "@local.standards_list && !@local.viewable_standard_not_seen",
+            "matchedExpression": "!@local.viewable_standard_not_seen",
+            "type": "local",
+            "fieldName": "viewable_standard_not_seen"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.standards_list": [
           "value"
         ],
-        "@local.ccssm_should_be_seen": [
+        "!@local.viewable_standard_not_seen": [
           "value"
         ]
       }
     },
     {
       "type": "display_group",
-      "name": "ccssm_standards",
-      "condition": "@local.display_ccssm_standards",
-      "style_list": [
-        "margin-top: -1px"
-      ],
+      "name": "dg_display_standards",
       "rows": [
         {
           "type": "text",
-          "name": "standards_list",
-          "value": "CCSSM: @local.ccssm_standards_list",
+          "name": "show_standards_list",
+          "value": "@fields.curriculum_standard_abbrev: @local.standards_list",
           "_translations": {
             "value": {}
           },
-          "_nested_name": "ccssm_standards.standards_list",
+          "condition": "@local.display_standards",
+          "style_list": [
+            "margin-top: -1px"
+          ],
+          "_nested_name": "dg_display_standards.show_standards_list",
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "CCSSM: @local.ccssm_standards_list",
-                "matchedExpression": "@local.ccssm_standards_list",
+                "fullExpression": "@fields.curriculum_standard_abbrev: @local.standards_list",
+                "matchedExpression": "@fields.curriculum_standard_abbrev",
+                "type": "fields",
+                "fieldName": "curriculum_standard_abbrev"
+              },
+              {
+                "fullExpression": "@fields.curriculum_standard_abbrev: @local.standards_list",
+                "matchedExpression": "@local.standards_list",
                 "type": "local",
-                "fieldName": "ccssm_standards_list"
+                "fieldName": "standards_list"
+              }
+            ],
+            "condition": [
+              {
+                "fullExpression": "@local.display_standards",
+                "matchedExpression": "@local.display_standards",
+                "type": "local",
+                "fieldName": "display_standards"
               }
             ]
           },
           "_dynamicDependencies": {
-            "@local.ccssm_standards_list": [
+            "@fields.curriculum_standard_abbrev": [
               "value"
+            ],
+            "@local.standards_list": [
+              "value"
+            ],
+            "@local.display_standards": [
+              "condition"
             ]
           }
         }
       ],
-      "_nested_name": "ccssm_standards",
-      "_dynamicFields": {
-        "condition": [
-          {
-            "fullExpression": "@local.display_ccssm_standards",
-            "matchedExpression": "@local.display_ccssm_standards",
-            "type": "local",
-            "fieldName": "display_ccssm_standards"
-          }
-        ]
-      },
-      "_dynamicDependencies": {
-        "@local.display_ccssm_standards": [
-          "condition"
-        ]
-      }
+      "_nested_name": "dg_display_standards"
     },
     {
       "type": "template",
