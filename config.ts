@@ -8,7 +8,7 @@ config.google_drive = {
 
 config.git = {
   content_repo: "https://github.com/IDEMSInternational/early-school-math-app-content.git",
-  content_tag_latest: "1.1.196",
+  content_tag_latest: "1.1.197",
 };
 
 config.android = {
