@@ -1003,6 +1003,9 @@
                               "_raw": "click | set_field:@local.click_history_field_name: @local.pows_click_history"
                             }
                           ],
+                          "parameter_list": {
+                            "style": "short"
+                          },
                           "_nested_name": "accordion_for_pows.level_s1.dg_powlist_s1.activity_buttons_s1.dg_ok_puzzle_s1.button_pow_@item.id",
                           "_dynamicFields": {
                             "name": [

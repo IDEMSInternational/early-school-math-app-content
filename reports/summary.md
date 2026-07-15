@@ -51,7 +51,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 27114 KB | 27.1 MB |
+| total | 27378 KB | 27.4 MB |
 | unused | 308 KB | 0.3 MB |
 </details>
 
@@ -1544,13 +1544,13 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMTopic10BridgeForAddCompensation8+7To10+5.svg | 2.6 | 1 |
 | ESMIll/ESMTopic10BridgeForSub12-7As12To10To5.svg | 1.9 | 1 |
 | ESMIll/ESMTopic10BridgeForSubCompensation13-8To15-10.svg | 2.6 | 1 |
-| ESMIll/ESMTopic2D20and48BreakApart.svg | 2.4 | 1 |
+| ESMIll/ESMTopic2D20and48BreakApart.png | 14.5 | 1 |
 | ESMIll/ESMTopic2D20and48Bundles.svg | 5.7 | 1 |
-| ESMIll/ESMTopic2D23and23.svg | 3 | 1 |
-| ESMIll/ESMTopic2D27and27.svg | 11 | 1 |
-| ESMIll/ESMTopic2D27and35BreakApart.svg | 11.3 | 1 |
+| ESMIll/ESMTopic2D23and23.png | 17.6 | 1 |
+| ESMIll/ESMTopic2D27and27.png | 57.4 | 1 |
+| ESMIll/ESMTopic2D27and35BreakApart.png | 61.8 | 1 |
 | ESMIll/ESMTopic2D27and35Bundles.svg | 8.2 | 1 |
-| ESMIll/ESMTopic2D43and15.svg | 3 | 1 |
+| ESMIll/ESMTopic2D43and15.png | 17.2 | 1 |
 | ESMIll/ESMTopic2DCounting37.svg | 6.3 | 1 |
 | ESMIll/ESMTopic2DSub40-17.svg | 3.2 | 1 |
 | ESMIll/ESMTopic2DSub42-17.svg | 4.1 | 1 |
@@ -1559,9 +1559,9 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | ESMIll/ESMTopic2DSub65-23b.svg | 5.1 | 1 |
 | ESMIll/ESMTopic2DVerticalAdd.svg | 3.5 | 1 |
 | ESMIll/ESMTopic2DVerticalSub.svg | 4 | 1 |
-| ESMIll/ESMTopic3D426and303.svg | 4.8 | 1 |
-| ESMIll/ESMTopic3D426andMisc.svg | 14.2 | 1 |
-| ESMIll/ESMTopic3D426andMisc2.svg | 8 | 1 |
+| ESMIll/ESMTopic3D426and303.png | 28 | 1 |
+| ESMIll/ESMTopic3D426andMisc.png | 81.1 | 1 |
+| ESMIll/ESMTopic3D426andMisc2.png | 43.8 | 1 |
 | ESMIll/ESMTopic3DCount247.svg | 3.4 | 2 |
 | ESMIll/ESMTopic3DSub520-247.svg | 4.1 | 1 |
 | ESMIll/ESMTopic3DSub527-245a.svg | 4.1 | 1 |
