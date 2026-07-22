@@ -83,7 +83,8 @@
       "value": "T-Z"
     },
     {
-      "type": "begin_display_group"
+      "type": "begin_display_group",
+      "name": "dg_atoz_checkbox"
     },
     {
       "type": "toggle_bar",
@@ -93,14 +94,15 @@
     },
     {
       "type": "text",
-      "name": "spacer2",
+      "name": "spacer21",
       "style_list": "flex: 1;"
     },
     {
       "type": "end_display_group"
     },
     {
-      "type": "begin_display_group"
+      "type": "begin_display_group",
+      "name": "dg_first_three_checkboxes"
     },
     {
       "type": "toggle_bar",
@@ -111,7 +113,7 @@
     },
     {
       "type": "text",
-      "name": "spacer2",
+      "name": "spacer22",
       "style_list": "flex: 1;"
     },
     {
@@ -123,7 +125,7 @@
     },
     {
       "type": "text",
-      "name": "spacer2",
+      "name": "spacer23",
       "style_list": "flex: 1;"
     },
     {
@@ -135,14 +137,15 @@
     },
     {
       "type": "text",
-      "name": "spacer2",
+      "name": "spacer24",
       "style_list": "flex: 1;"
     },
     {
       "type": "end_display_group"
     },
     {
-      "type": "begin_display_group"
+      "type": "begin_display_group",
+      "name": "dg_second_three_checkboxes"
     },
     {
       "type": "toggle_bar",
@@ -153,7 +156,7 @@
     },
     {
       "type": "text",
-      "name": "spacer2",
+      "name": "spacer25",
       "style_list": "flex: 1;"
     },
     {
@@ -165,7 +168,7 @@
     },
     {
       "type": "text",
-      "name": "spacer2",
+      "name": "spacer26",
       "style_list": "flex: 1;"
     },
     {
@@ -177,7 +180,7 @@
     },
     {
       "type": "text",
-      "name": "spacer2",
+      "name": "spacer27",
       "style_list": "flex: 1;"
     },
     {
@@ -270,8 +273,12 @@
       "value": "@local.same_phrase_1 || @local.same_phrase_2 || @local.same_phrase_3 || @local.same_phrase_4 || @local.same_phrase_5 || @local.same_phrase_6"
     },
     {
+      "name": "temp_dg1",
+      "value": "dg_glossary_entry_some_@item.id"
+    },
+    {
       "type": "begin_display_group",
-      "name": "dg_glossary_entry_some",
+      "name": "dg_@local.temp_dg1",
       "condition": "@local.use_entry",
       "parameter_list": "style: column;"
     },
@@ -360,8 +367,12 @@
       "value": "@local.display_a_to_z || @local.in_a_to_c || @local.in_d_to_h || @local.in_i_to_n || @local.in_o_to_p || @local.in_q_to_s || @local.in_t_to_z"
     },
     {
+      "name": "temp_dg2",
+      "value": "dg_glossary_entry_all_@item.id"
+    },
+    {
       "type": "begin_display_group",
-      "name": "dg_glossary_entry_all",
+      "name": "dg_@local.temp_dg2",
       "condition": "@local.display_it",
       "parameter_list": "style: column;"
     },
@@ -406,7 +417,7 @@
     },
     {
       "type": "text",
-      "name": "spacer"
+      "name": "spacer29"
     },
     {
       "type": "end_display_group"

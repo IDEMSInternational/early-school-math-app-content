@@ -207,6 +207,7 @@
         },
         {
           "type": "display_group",
+          "name": "dg_atoz_checkbox",
           "rows": [
             {
               "type": "toggle_bar",
@@ -216,7 +217,7 @@
                 "true_text": "@local.description_a_to_z",
                 "false_text": "@local.description_a_to_z"
               },
-              "_nested_name": "dg_all_or_some.display_group_12.checkbox_see_a_to_z",
+              "_nested_name": "dg_all_or_some.dg_atoz_checkbox.checkbox_see_a_to_z",
               "_dynamicFields": {
                 "parameter_list": {
                   "true_text": [
@@ -246,18 +247,18 @@
             },
             {
               "type": "text",
-              "name": "spacer2",
+              "name": "spacer21",
               "style_list": [
                 "flex: 1"
               ],
-              "_nested_name": "dg_all_or_some.display_group_12.spacer2"
+              "_nested_name": "dg_all_or_some.dg_atoz_checkbox.spacer21"
             }
           ],
-          "name": "display_group_12",
-          "_nested_name": "dg_all_or_some.display_group_12"
+          "_nested_name": "dg_all_or_some.dg_atoz_checkbox"
         },
         {
           "type": "display_group",
+          "name": "dg_first_three_checkboxes",
           "rows": [
             {
               "type": "toggle_bar",
@@ -270,7 +271,7 @@
               "style_list": [
                 "flex:10"
               ],
-              "_nested_name": "dg_all_or_some.display_group_13.checkbox_see_a_to_c",
+              "_nested_name": "dg_all_or_some.dg_first_three_checkboxes.checkbox_see_a_to_c",
               "_dynamicFields": {
                 "parameter_list": {
                   "true_text": [
@@ -300,11 +301,11 @@
             },
             {
               "type": "text",
-              "name": "spacer2",
+              "name": "spacer22",
               "style_list": [
                 "flex: 1"
               ],
-              "_nested_name": "dg_all_or_some.display_group_13.spacer2"
+              "_nested_name": "dg_all_or_some.dg_first_three_checkboxes.spacer22"
             },
             {
               "type": "toggle_bar",
@@ -317,7 +318,7 @@
               "style_list": [
                 "flex:10"
               ],
-              "_nested_name": "dg_all_or_some.display_group_13.checkbox_see_d_to_h",
+              "_nested_name": "dg_all_or_some.dg_first_three_checkboxes.checkbox_see_d_to_h",
               "_dynamicFields": {
                 "parameter_list": {
                   "true_text": [
@@ -347,11 +348,11 @@
             },
             {
               "type": "text",
-              "name": "spacer2",
+              "name": "spacer23",
               "style_list": [
                 "flex: 1"
               ],
-              "_nested_name": "dg_all_or_some.display_group_13.spacer2"
+              "_nested_name": "dg_all_or_some.dg_first_three_checkboxes.spacer23"
             },
             {
               "type": "toggle_bar",
@@ -364,7 +365,7 @@
               "style_list": [
                 "flex:10"
               ],
-              "_nested_name": "dg_all_or_some.display_group_13.checkbox_see_i_to_n",
+              "_nested_name": "dg_all_or_some.dg_first_three_checkboxes.checkbox_see_i_to_n",
               "_dynamicFields": {
                 "parameter_list": {
                   "true_text": [
@@ -394,18 +395,18 @@
             },
             {
               "type": "text",
-              "name": "spacer2",
+              "name": "spacer24",
               "style_list": [
                 "flex: 1"
               ],
-              "_nested_name": "dg_all_or_some.display_group_13.spacer2"
+              "_nested_name": "dg_all_or_some.dg_first_three_checkboxes.spacer24"
             }
           ],
-          "name": "display_group_13",
-          "_nested_name": "dg_all_or_some.display_group_13"
+          "_nested_name": "dg_all_or_some.dg_first_three_checkboxes"
         },
         {
           "type": "display_group",
+          "name": "dg_second_three_checkboxes",
           "rows": [
             {
               "type": "toggle_bar",
@@ -418,7 +419,7 @@
               "style_list": [
                 "flex:10"
               ],
-              "_nested_name": "dg_all_or_some.display_group_14.checkbox_see_o_to_p",
+              "_nested_name": "dg_all_or_some.dg_second_three_checkboxes.checkbox_see_o_to_p",
               "_dynamicFields": {
                 "parameter_list": {
                   "true_text": [
@@ -448,11 +449,11 @@
             },
             {
               "type": "text",
-              "name": "spacer2",
+              "name": "spacer25",
               "style_list": [
                 "flex: 1"
               ],
-              "_nested_name": "dg_all_or_some.display_group_14.spacer2"
+              "_nested_name": "dg_all_or_some.dg_second_three_checkboxes.spacer25"
             },
             {
               "type": "toggle_bar",
@@ -465,7 +466,7 @@
               "style_list": [
                 "flex:10"
               ],
-              "_nested_name": "dg_all_or_some.display_group_14.checkbox_see_q_to_s",
+              "_nested_name": "dg_all_or_some.dg_second_three_checkboxes.checkbox_see_q_to_s",
               "_dynamicFields": {
                 "parameter_list": {
                   "true_text": [
@@ -495,11 +496,11 @@
             },
             {
               "type": "text",
-              "name": "spacer2",
+              "name": "spacer26",
               "style_list": [
                 "flex: 1"
               ],
-              "_nested_name": "dg_all_or_some.display_group_14.spacer2"
+              "_nested_name": "dg_all_or_some.dg_second_three_checkboxes.spacer26"
             },
             {
               "type": "toggle_bar",
@@ -512,7 +513,7 @@
               "style_list": [
                 "flex:10"
               ],
-              "_nested_name": "dg_all_or_some.display_group_14.checkbox_see_t_to_z",
+              "_nested_name": "dg_all_or_some.dg_second_three_checkboxes.checkbox_see_t_to_z",
               "_dynamicFields": {
                 "parameter_list": {
                   "true_text": [
@@ -542,15 +543,14 @@
             },
             {
               "type": "text",
-              "name": "spacer2",
+              "name": "spacer27",
               "style_list": [
                 "flex: 1"
               ],
-              "_nested_name": "dg_all_or_some.display_group_14.spacer2"
+              "_nested_name": "dg_all_or_some.dg_second_three_checkboxes.spacer27"
             }
           ],
-          "name": "display_group_14",
-          "_nested_name": "dg_all_or_some.display_group_14"
+          "_nested_name": "dg_all_or_some.dg_second_three_checkboxes"
         },
         {
           "type": "display_group",
@@ -1035,8 +1035,32 @@
               }
             },
             {
+              "name": "temp_dg1",
+              "value": "dg_glossary_entry_some_@item.id",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "dg_glossary_block_some.word_list.temp_dg1",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "dg_glossary_entry_some_@item.id",
+                    "matchedExpression": "@item.id",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.id": [
+                  "value"
+                ]
+              }
+            },
+            {
               "type": "display_group",
-              "name": "dg_glossary_entry_some",
+              "name": "dg_@local.temp_dg1",
               "condition": "@local.use_entry",
               "parameter_list": {
                 "style": "column"
@@ -1053,7 +1077,7 @@
                     "margin-top: -10px",
                     "color: red"
                   ],
-                  "_nested_name": "dg_glossary_block_some.word_list.dg_glossary_entry_some.title_phrase",
+                  "_nested_name": "dg_glossary_block_some.word_list.dg_@local.temp_dg1.title_phrase",
                   "_dynamicFields": {
                     "value": [
                       {
@@ -1062,11 +1086,22 @@
                         "type": "item",
                         "fieldName": "phrase"
                       }
+                    ],
+                    "_nested_name": [
+                      {
+                        "fullExpression": "dg_glossary_block_some.word_list.dg_@local.temp_dg1.title_phrase",
+                        "matchedExpression": "@local.temp_dg1.title_phrase",
+                        "type": "local",
+                        "fieldName": "temp_dg1"
+                      }
                     ]
                   },
                   "_dynamicDependencies": {
                     "@item.phrase": [
                       "value"
+                    ],
+                    "@local.temp_dg1.title_phrase": [
+                      "_nested_name"
                     ]
                   }
                 },
@@ -1085,7 +1120,7 @@
                         "value": {}
                       },
                       "type": "set_variable",
-                      "_nested_name": "dg_glossary_block_some.word_list.dg_glossary_entry_some.glossary_entry_creator.content_ptr",
+                      "_nested_name": "dg_glossary_block_some.word_list.dg_@local.temp_dg1.glossary_entry_creator.content_ptr",
                       "_dynamicFields": {
                         "value": [
                           {
@@ -1094,16 +1129,42 @@
                             "type": "item",
                             "fieldName": "id"
                           }
+                        ],
+                        "_nested_name": [
+                          {
+                            "fullExpression": "dg_glossary_block_some.word_list.dg_@local.temp_dg1.glossary_entry_creator.content_ptr",
+                            "matchedExpression": "@local.temp_dg1.glossary_entry_creator.content_ptr",
+                            "type": "local",
+                            "fieldName": "temp_dg1"
+                          }
                         ]
                       },
                       "_dynamicDependencies": {
                         "@item.id": [
                           "value"
+                        ],
+                        "@local.temp_dg1.glossary_entry_creator.content_ptr": [
+                          "_nested_name"
                         ]
                       }
                     }
                   ],
-                  "_nested_name": "dg_glossary_block_some.word_list.dg_glossary_entry_some.glossary_entry_creator"
+                  "_nested_name": "dg_glossary_block_some.word_list.dg_@local.temp_dg1.glossary_entry_creator",
+                  "_dynamicFields": {
+                    "_nested_name": [
+                      {
+                        "fullExpression": "dg_glossary_block_some.word_list.dg_@local.temp_dg1.glossary_entry_creator",
+                        "matchedExpression": "@local.temp_dg1.glossary_entry_creator",
+                        "type": "local",
+                        "fieldName": "temp_dg1"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@local.temp_dg1.glossary_entry_creator": [
+                      "_nested_name"
+                    ]
+                  }
                 },
                 {
                   "type": "image",
@@ -1116,11 +1177,34 @@
                   "style_list": [
                     "margin-top: 4px"
                   ],
-                  "_nested_name": "dg_glossary_block_some.word_list.dg_glossary_entry_some.glossary_line"
+                  "_nested_name": "dg_glossary_block_some.word_list.dg_@local.temp_dg1.glossary_line",
+                  "_dynamicFields": {
+                    "_nested_name": [
+                      {
+                        "fullExpression": "dg_glossary_block_some.word_list.dg_@local.temp_dg1.glossary_line",
+                        "matchedExpression": "@local.temp_dg1.glossary_line",
+                        "type": "local",
+                        "fieldName": "temp_dg1"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@local.temp_dg1.glossary_line": [
+                      "_nested_name"
+                    ]
+                  }
                 }
               ],
-              "_nested_name": "dg_glossary_block_some.word_list.dg_glossary_entry_some",
+              "_nested_name": "dg_glossary_block_some.word_list.dg_@local.temp_dg1",
               "_dynamicFields": {
+                "name": [
+                  {
+                    "fullExpression": "dg_@local.temp_dg1",
+                    "matchedExpression": "@local.temp_dg1",
+                    "type": "local",
+                    "fieldName": "temp_dg1"
+                  }
+                ],
                 "condition": [
                   {
                     "fullExpression": "@local.use_entry",
@@ -1128,9 +1212,21 @@
                     "type": "local",
                     "fieldName": "use_entry"
                   }
+                ],
+                "_nested_name": [
+                  {
+                    "fullExpression": "dg_glossary_block_some.word_list.dg_@local.temp_dg1",
+                    "matchedExpression": "@local.temp_dg1",
+                    "type": "local",
+                    "fieldName": "temp_dg1"
+                  }
                 ]
               },
               "_dynamicDependencies": {
+                "@local.temp_dg1": [
+                  "name",
+                  "_nested_name"
+                ],
                 "@local.use_entry": [
                   "condition"
                 ]
@@ -1529,8 +1625,32 @@
               }
             },
             {
+              "name": "temp_dg2",
+              "value": "dg_glossary_entry_all_@item.id",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "dg_glossary_block_all.word_list.temp_dg2",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "dg_glossary_entry_all_@item.id",
+                    "matchedExpression": "@item.id",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.id": [
+                  "value"
+                ]
+              }
+            },
+            {
               "type": "display_group",
-              "name": "dg_glossary_entry_all",
+              "name": "dg_@local.temp_dg2",
               "condition": "@local.display_it",
               "parameter_list": {
                 "style": "column"
@@ -1547,7 +1667,7 @@
                     "margin-top: -4px",
                     "color: red"
                   ],
-                  "_nested_name": "dg_glossary_block_all.word_list.dg_glossary_entry_all.title_phrase",
+                  "_nested_name": "dg_glossary_block_all.word_list.dg_@local.temp_dg2.title_phrase",
                   "_dynamicFields": {
                     "value": [
                       {
@@ -1556,11 +1676,22 @@
                         "type": "item",
                         "fieldName": "phrase"
                       }
+                    ],
+                    "_nested_name": [
+                      {
+                        "fullExpression": "dg_glossary_block_all.word_list.dg_@local.temp_dg2.title_phrase",
+                        "matchedExpression": "@local.temp_dg2.title_phrase",
+                        "type": "local",
+                        "fieldName": "temp_dg2"
+                      }
                     ]
                   },
                   "_dynamicDependencies": {
                     "@item.phrase": [
                       "value"
+                    ],
+                    "@local.temp_dg2.title_phrase": [
+                      "_nested_name"
                     ]
                   }
                 },
@@ -1579,7 +1710,7 @@
                         "value": {}
                       },
                       "type": "set_variable",
-                      "_nested_name": "dg_glossary_block_all.word_list.dg_glossary_entry_all.glossary_entry_creator.content_ptr",
+                      "_nested_name": "dg_glossary_block_all.word_list.dg_@local.temp_dg2.glossary_entry_creator.content_ptr",
                       "_dynamicFields": {
                         "value": [
                           {
@@ -1588,20 +1719,54 @@
                             "type": "item",
                             "fieldName": "id"
                           }
+                        ],
+                        "_nested_name": [
+                          {
+                            "fullExpression": "dg_glossary_block_all.word_list.dg_@local.temp_dg2.glossary_entry_creator.content_ptr",
+                            "matchedExpression": "@local.temp_dg2.glossary_entry_creator.content_ptr",
+                            "type": "local",
+                            "fieldName": "temp_dg2"
+                          }
                         ]
                       },
                       "_dynamicDependencies": {
                         "@item.id": [
                           "value"
+                        ],
+                        "@local.temp_dg2.glossary_entry_creator.content_ptr": [
+                          "_nested_name"
                         ]
                       }
                     }
                   ],
-                  "_nested_name": "dg_glossary_block_all.word_list.dg_glossary_entry_all.glossary_entry_creator"
+                  "_nested_name": "dg_glossary_block_all.word_list.dg_@local.temp_dg2.glossary_entry_creator",
+                  "_dynamicFields": {
+                    "_nested_name": [
+                      {
+                        "fullExpression": "dg_glossary_block_all.word_list.dg_@local.temp_dg2.glossary_entry_creator",
+                        "matchedExpression": "@local.temp_dg2.glossary_entry_creator",
+                        "type": "local",
+                        "fieldName": "temp_dg2"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@local.temp_dg2.glossary_entry_creator": [
+                      "_nested_name"
+                    ]
+                  }
                 }
               ],
-              "_nested_name": "dg_glossary_block_all.word_list.dg_glossary_entry_all",
+              "_nested_name": "dg_glossary_block_all.word_list.dg_@local.temp_dg2",
               "_dynamicFields": {
+                "name": [
+                  {
+                    "fullExpression": "dg_@local.temp_dg2",
+                    "matchedExpression": "@local.temp_dg2",
+                    "type": "local",
+                    "fieldName": "temp_dg2"
+                  }
+                ],
                 "condition": [
                   {
                     "fullExpression": "@local.display_it",
@@ -1609,9 +1774,21 @@
                     "type": "local",
                     "fieldName": "display_it"
                   }
+                ],
+                "_nested_name": [
+                  {
+                    "fullExpression": "dg_glossary_block_all.word_list.dg_@local.temp_dg2",
+                    "matchedExpression": "@local.temp_dg2",
+                    "type": "local",
+                    "fieldName": "temp_dg2"
+                  }
                 ]
               },
               "_dynamicDependencies": {
+                "@local.temp_dg2": [
+                  "name",
+                  "_nested_name"
+                ],
                 "@local.display_it": [
                   "condition"
                 ]
@@ -1672,8 +1849,8 @@
         },
         {
           "type": "text",
-          "name": "spacer",
-          "_nested_name": "fake_group.spacer"
+          "name": "spacer29",
+          "_nested_name": "fake_group.spacer29"
         }
       ],
       "_nested_name": "fake_group"
