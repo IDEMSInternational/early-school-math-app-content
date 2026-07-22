@@ -335,12 +335,12 @@
     },
     {
       "type": "begin_accordion",
-      "name": "accordion_middle_level_@item_id",
+      "name": "accordion_middle_level_@item.id",
       "parameter_list": "open_multiple:TRUE;"
     },
     {
       "type": "begin_items",
-      "name": "middle_level_accords_@item_id",
+      "name": "middle_level_accords_@item.id",
       "value": "@data.num_list_one_to_twenty",
       "parameter_list": "limit: @item.count;"
     },
